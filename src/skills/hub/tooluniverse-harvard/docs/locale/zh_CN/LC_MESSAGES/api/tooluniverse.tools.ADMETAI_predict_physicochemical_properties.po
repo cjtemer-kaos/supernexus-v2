@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_physicochemical_properties.rst:2
+#: aff5acf7923f48ccaa44d3923179bed7
+msgid "tooluniverse.tools.ADMETAI\\_predict\\_physicochemical\\_properties module"
+msgstr "tooluniverse.tools.ADMETAI\\_predict\\_physicochemical\\_properties 模块"
+
+#: a4353c50b8c1439da5891ccf5d1527e3 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties:1
+msgid "ADMETAI_predict_physicochemical_properties"
+msgstr "ADMETAI_预测理化性质"
+
+#: 3e0f6ea622fa4d8d8162f62c1b68c8e0 f4e54ccc9faf40839b35d12473a6e045 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties:3
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:1
+msgid ""
+"Predicts physicochemical properties (molecular weight, logP, hydrogen bond "
+"acceptors/donors, Lipi..."
+msgstr "预测理化性质（分子量、logP、氢键受体/供体、Lipi..."
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_physicochemical_properties.rst
+#: 91c951d9cd614738bf9f7288977fabdd
+msgid "Parameters"
+msgstr "参数"
+
+#: 390b23b66c4b4a8f9d93e92c87880240 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:3
+msgid "The list of SMILES strings."
+msgstr "SMILES 字符串列表"
+
+#: 8f71855130f6492a85828d1703d1e3fd of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ecad6a9fc4cd4c73b625c956977919c8 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ebf11c62a8d845ca93e2d6d7cb91d8b3 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_physicochemical_properties.rst
+#: d64b503ef19f4228877f4343cd6b3ffd
+msgid "Return type"
+msgstr "返回类型"
+
+#: fbd97baa8cd94a16b38b88108fa31505 of
+#: tooluniverse.tools.ADMETAI_predict_physicochemical_properties.ADMETAI_predict_physicochemical_properties:12
+msgid ":py:class:`Any`"
+msgstr ""

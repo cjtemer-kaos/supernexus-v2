@@ -1,0 +1,22 @@
+[
+  {
+    "id": "qa_20260515032839347506",
+    "query": "test query",
+    "response_preview": "test response",
+    "gem_used": "coder",
+    "success": true,
+    "feedback": "",
+    "metrics": {},
+    "timestamp": "2026-05-15T03:28:39.347506"
+  },
+  {
+    "id": "qa_20260515032839349019",
+    "query": "test query 2",
+    "response_preview": "error response",
+    "gem_used": "coder",
+    "success": false,
+    "feedback": "timeout",
+    "metrics": {},
+    "timestamp": "2026-05-15T03:28:39.349019"
+  }
+]

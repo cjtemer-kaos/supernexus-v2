@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.rst:2
+#: e8ea35636b1b4a74bdffb643df891dbc
+msgid "tooluniverse.tools.ADMETAI\\_predict\\_nuclear\\_receptor\\_activity module"
+msgstr "tooluniverse.tools.ADMETAI\\_predict\\_nuclear\\_receptor\\_activity 模块"
+
+#: 66cfef07a8a84525b0483a9333b555a9 of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity:1
+msgid "ADMETAI_predict_nuclear_receptor_activity"
+msgstr "ADMETAI_predict_核受体活性"
+
+#: 2c0f4e3057604b80950f5b6154a5dd72 947acd1b4b884f298773ee69a3a4d496 of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity:3
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:1
+msgid ""
+"Predicts nuclear receptor activity endpoints (NR-AR-LBD, NR-AR, NR-AhR, NR-"
+"Aromatase, NR-ER-LBD, ..."
+msgstr "预测核受体活性终点（NR-AR-LBD、NR-AR、NR-AhR、NR-Aromatase、NR-ER-LBD，..."
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.rst
+#: e292fd4ece2447e5a60a9e696e82d027
+msgid "Parameters"
+msgstr "参数"
+
+#: cb9075d36b984cb29fd6ee648b29407b of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:3
+msgid "The list of SMILES strings."
+msgstr "SMILES 字符串列表"
+
+#: 792c392f370849d8a919998b3d79591f of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:5
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 1b0476c2120e4d7e97f025f8ed837c1b of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ee836d9341ab4e92b3357bb9784e799c of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.rst
+#: 0446a5083db94fadbde2c1acb7ec72cf
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7d57b8eb0f6e4a3b993ba4c8f55b38e8 of
+#: tooluniverse.tools.ADMETAI_predict_nuclear_receptor_activity.ADMETAI_predict_nuclear_receptor_activity:12
+msgid ":py:class:`Any`"
+msgstr ""

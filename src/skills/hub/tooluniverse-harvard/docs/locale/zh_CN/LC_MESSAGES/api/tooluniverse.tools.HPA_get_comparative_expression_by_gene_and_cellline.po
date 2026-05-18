@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.rst:2
+#: 861ac31b9bcf4a72bdac1850d7d7114e
+msgid ""
+"tooluniverse.tools.HPA\\_get\\_comparative\\_expression\\_by\\_gene\\_and\\_cellline"
+" module"
+msgstr ""
+"tooluniverse.tools.HPA\\_get\\_comparative\\_expression\\_by\\_gene\\_and\\_cellline"
+" 模块"
+
+#: 7c58aee2215348cc87a2f4fefa6cffd1 of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline:1
+msgid "HPA_get_comparative_expression_by_gene_and_cellline"
+msgstr "HPA_按基因和细胞系获取比较表达"
+
+#: 4de56a8954344436a5465386cfe9afb5 ff25d075181d4abaa3e970783354b222 of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline:3
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:1
+msgid ""
+"Compare the expression level differences of a gene between a specific cell "
+"line and healthy tissu..."
+msgstr "比较特定细胞系与健康组织之间该基因的表达水平差异。"
+
+#: ../../api/tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.rst
+#: b0131cb9eee54780ae14de209fea6ea8
+msgid "Parameters"
+msgstr "参数"
+
+#: 17e8d66844274ff086b9dc7bd49fabc7 of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:3
+msgid "Gene name or gene symbol, e.g., 'TP53', 'BRCA1', 'EGFR', etc."
+msgstr "基因名称或基因符号，例如“TP53”、“BRCA1”、“EGFR”等。"
+
+#: 004ce5b2638d43dbb269fbb9acabfc7c of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:5
+msgid ""
+"Cell line name, supported cell lines include: ishikawa, hela, mcf7, a549, "
+"hep..."
+msgstr "细胞系名称，支持的细胞系包括：Ishikawa、HeLa、MCF7、A549、Hep..."
+
+#: 449f99f2e0bc4c30aa243d34d7c24dce of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d1b1f3b56c024c5c92499c1f2df64507 of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 47c094170fb34f3fb0eacf890d72fbcb of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.rst
+#: 29e6a84a9fc9476082fa33101f45c7ed
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7c94c3b491d34e93b36257748e0d18d8 of
+#: tooluniverse.tools.HPA_get_comparative_expression_by_gene_and_cellline.HPA_get_comparative_expression_by_gene_and_cellline:14
+msgid ":py:class:`Any`"
+msgstr ""

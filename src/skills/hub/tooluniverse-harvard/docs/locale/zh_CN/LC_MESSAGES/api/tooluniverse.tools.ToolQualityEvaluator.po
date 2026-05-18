@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolQualityEvaluator.rst:2
+#: d60743bc69a34507907bc1578b7f4111
+msgid "tooluniverse.tools.ToolQualityEvaluator module"
+msgstr "tooluniverse.tools.ToolQualityEvaluator 模块"
+
+#: 11173c9ae7f14bbbb486b762bcbd7162 of
+#: tooluniverse.tools.ToolQualityEvaluator:1
+msgid "ToolQualityEvaluator"
+msgstr "工具质量评估器"
+
+#: 9c8b41a0a76d4bb18cc22e0eb28d0ac7 cf3110086f8a41f890f291da0c86508f of
+#: tooluniverse.tools.ToolQualityEvaluator:3
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:1
+msgid ""
+"Evaluates the quality of tool configurations and implementations. Provides "
+"detailed scoring and f..."
+msgstr "评估工具配置和实施的质量。提供详细的评分和反馈。"
+
+#: ../../api/tooluniverse.tools.ToolQualityEvaluator.rst
+#: ba834b9e981044c79f4b18fa450ea5f3
+msgid "Parameters"
+msgstr "参数"
+
+#: 720c0e76e9884dad85ef54eacbd03c48 of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:3
+msgid "JSON string of the tool configuration"
+msgstr "工具配置的 JSON 字符串"
+
+#: d0f3a083afcd4be782f67755b147b6a1 of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:5
+msgid "JSON string of test cases"
+msgstr "测试用例的 JSON 字符串"
+
+#: a0d5e7e78e084142bcbe19f2c74921fb of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:7
+msgid ""
+"Aspects to evaluate (functionality, usability, completeness, best_practices)"
+msgstr "评估方面（功能性、可用性、完整性、最佳实践）"
+
+#: cb4f412b37bc46cbb35994caf245efbe of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9c74c61384854b04951226264bbb8867 of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 449a3297d6ec4183a082cf14c86f36e8 of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolQualityEvaluator.rst
+#: 9e495b89c7c14c74b6cc3ce5d2c486e4
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1e3065aac2824d0eacf0a97767fcf80e of
+#: tooluniverse.tools.ToolQualityEvaluator.ToolQualityEvaluator:16
+msgid ":py:class:`Any`"
+msgstr ""

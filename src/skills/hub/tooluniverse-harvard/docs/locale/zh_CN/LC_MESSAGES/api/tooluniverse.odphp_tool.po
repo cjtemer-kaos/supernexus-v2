@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.odphp_tool.rst:2 69aa5c0c65894ef39d47610bf75186f9
+msgid "tooluniverse.odphp\\_tool module"
+msgstr "tooluniverse.odphp_tool 模块"
+
+#: 0d42467a8c004aeb8fb6a3f6e1c93607 d92d017578704789aac8599883ec9389 of
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch:1
+#: tooluniverse.odphp_tool.ODPHPRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 6d1304b2e81f4bc5a0c59c3c714da78c of tooluniverse.odphp_tool.ODPHPRESTTool:1
+msgid "Base class for ODPHP (MyHealthfinder) REST API tools."
+msgstr "ODPHP（MyHealthfinder）REST API 工具的基类。"
+
+#: 7d21bed30b1f4fcc853ce666eafc2da5 of
+#: tooluniverse.odphp_tool._sections_array:1
+msgid ""
+"Tolerant accessor for the sections array. Data sometimes uses "
+"Sections.Section (capital S) and sometimes Sections.section (lowercase)."
+msgstr ""
+"容错访问器用于 sections 数组。数据有时使用 Sections.Section（大写 S），有时使用 Sections.section（小写 "
+"s）。"
+
+#: 1b5c2b336bd8414cb91c902d7891d623 aebcbed8473248c4a7a1e2777812205c
+#: de60b7fc8b4e490691a14b8ebb005433 of tooluniverse.odphp_tool.ODPHPItemList:1
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder:1
+#: tooluniverse.odphp_tool.ODPHPTopicSearch:1
+msgid "Bases: :py:class:`~tooluniverse.odphp_tool.ODPHPRESTTool`"
+msgstr "基类：:py:class:`~tooluniverse.odphp_tool.ODPHPRESTTool`"
+
+#: 9a8b187d49514d32b0f9f0a9bb634c7e of
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder:1
+msgid ""
+"Search for demographic-specific health recommendations (MyHealthfinder)."
+msgstr "搜索特定人群的健康建议（MyHealthfinder）。"
+
+#: 4bb0cfeb23234783b0aab4d185d3ee86 5813a7d07762446bbb29f8333b265850
+#: 62b65ad0b1d54405bb9898741cd49808 bbf7f054f6cb47859584aa2477ecbed4 of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:1
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:1
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:1
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 55cbc8b982444abea5f18327698a64c6 6a4797e23e58450986a4d5e9042e4681
+#: 7524f92a128a4018b250de8cdf97c0ee e67cb9a3181c4d3f8bdd2e56ba0e684e of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:3
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:3
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:3
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.odphp_tool.rst 0273875111fd4c76ac0c12cc3efdc042
+#: 2b213856c7f741ce8801859e2a5a5f21 2eba85ad70814a0ea3b5c9c1e0e7d429
+#: e73e55aa88fd49c783236908824b5dcb
+msgid "Parameters"
+msgstr "参数"
+
+#: 2aee027035bb406585b663a582d7490d b4984969ec2949f0b3ccd88aaa2058f3
+#: ced94c9018084e7892a60b4a06f56933 ef79ca3158484fe795d797a017915733 of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:7
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:7
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:7
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 40fd383dbdec498e957eb6b94f07349e 9b20592aaa1e4682ab832913c8bab6ab
+#: b453a6e485b54c69b72d1f03687a31fd d5a433e94d494b80ae43b0218cab609f of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:9
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:9
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:9
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 13c8af97d02f4c888517216957243d39 14bf32f37a8b48bf81939bd6885a67e6
+#: 91fb0c42587448e4a505ea5557d6b578 946a53ebaef24ac4bea25dfdd5326073 of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:11
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:11
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:11
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 0d9059675f7448b39d733e09bf594ce2 365f629726a94a24be39fdb1bec26a47
+#: 6d048a44455546e2901677f40fb4e4c4 fa69fd9531144e27833e7d7aec88c99e of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:13
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:13
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:13
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 1b5f0aff8f814c4488daf1e29e48f4dd 6678f2a5854546e69937bd000565458c
+#: dd11c8dbe0fc4c1abc092ec60e25dc64 ed41f6289ee64668b4bb171825bc5aef of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:18
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:18
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:18
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文信息。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 73712bb5f2f6428fa581240e3c35a7e8 74d556cb7d4848389e48c291aab0d40c
+#: 84666ca9cf5044b2be050746aad5f662 e61289a51998463e8e44cbfa6fbb02f6 of
+#: tooluniverse.odphp_tool.ODPHPItemList.run:22
+#: tooluniverse.odphp_tool.ODPHPMyHealthfinder.run:22
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch.run:22
+#: tooluniverse.odphp_tool.ODPHPTopicSearch.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不支持这些参数的工具仍然可以正常工作——它们将仅接收 arguments 参数。"
+
+#: 4a1a34bdbd0a4da2ae694fef37e4b411 of tooluniverse.odphp_tool.ODPHPItemList:1
+msgid "Retrieve list of topics or categories."
+msgstr "检索主题或类别列表。"
+
+#: 043649e573094db8919b085f2163ae5a of
+#: tooluniverse.odphp_tool.ODPHPTopicSearch:1
+msgid "Search for health topics by ID, category, or keyword."
+msgstr "通过ID、类别或关键词搜索健康主题。"
+
+#: b127ab163f0344f8aab1fdc7f304c7fd of
+#: tooluniverse.odphp_tool.ODPHPOutlinkFetch:1
+msgid ""
+"Fetch article pages referenced by AccessibleVersion / RelatedItems.Url and "
+"return readable text. - HTML: extracts main/article/body text; strips "
+"nav/aside/footer/script/style. - PDF or non-HTML: returns metadata + URL so "
+"the agent can surface it."
+msgstr ""
+"根据AccessibleVersion / RelatedItems.Url获取引用的文章页面，并返回可读文本。  \n"
+"- 对于HTML：提取主要内容/文章/正文文本；剔除导航栏（nav）、侧边栏（aside）、页脚（footer）、脚本（script）和样式（style）。  \n"
+"- 对于PDF或非HTML：返回元数据和URL，以便智能体能够展示相关内容。"

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.rst:2
+#: bab72ac7d09c4e1f96ba7b193b3e5fb9
+msgid "tooluniverse.tools.OpenTargets\\_get\\_gene\\_ontology\\_terms\\_by\\_goID module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_gene\\_ontology\\_terms\\_by\\_goID 模块"
+
+#: 47d77b20362746ea9244fb81b0510317 of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID:1
+msgid "OpenTargets_get_gene_ontology_terms_by_goID"
+msgstr "OpenTargets_通过GO ID获取基因本体术语"
+
+#: 652fb8827f044fdbaa7564ad2f6e8984 983aba9b407549829b4ac27331307b8a of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID:3
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:1
+msgid "Retrieve Gene Ontology terms based on a list of GO IDs."
+msgstr "根据GO ID列表检索基因本体（Gene Ontology）术语。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.rst
+#: 9435a35682734bbc87e49b0b2e620b2c
+msgid "Parameters"
+msgstr "参数"
+
+#: c127afdc39d44a8cbe5bfe0abe4c40bb of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:3
+msgid "A list of Gene Ontology (GO) IDs to fetch the corresponding terms."
+msgstr "一组基因本体（GO）ID，用于获取对应的术语。"
+
+#: 3241b599c0e14479994461de4d20d18d of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 802ae0dc9fc54b68bf2f2a6a74e70eaf of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c0849241987940a28b32b78c53e08d82 of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.rst
+#: f62b88e018154eff87c9dc0856e4e253
+msgid "Return type"
+msgstr "返回类型"
+
+#: df82b219c9d143fc8d9e88383f93bb6b of
+#: tooluniverse.tools.OpenTargets_get_gene_ontology_terms_by_goID.OpenTargets_get_gene_ontology_terms_by_goID:12
+msgid ":py:class:`Any`"
+msgstr ""

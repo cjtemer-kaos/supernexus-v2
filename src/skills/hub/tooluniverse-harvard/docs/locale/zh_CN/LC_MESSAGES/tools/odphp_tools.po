@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/odphp_tools.rst:2 9d83e7f7d113407c9c27e9664a943ddc
+msgid "Odphp Tools"
+msgstr "Odphp 工具"
+
+#: ../../tools/odphp_tools.rst:4 b85775183b0b4caab4853620d9e0d486
+msgid ""
+"**Configuration File**: ``odphp_tools.json`` **Tool Type**: Local **Tools"
+" Count**: 4"
+msgstr ""
+"**配置文件**：``odphp_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：4"
+
+#: ../../tools/odphp_tools.rst:8 4f52163130154f4eac624f10003bff8d
+msgid ""
+"This page contains all tools defined in the ``odphp_tools.json`` "
+"configuration file."
+msgstr "此页面包含在 ``odphp_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/odphp_tools.rst:11 6c921e1ceecd40bfb4cb9e99d9b1dbb6
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/odphp_tools.rst:14 b40320b27b8d409d88ab4a4ff728687b
+msgid "**odphp_itemlist** (Type: ODPHPItemList)"
+msgstr "**odphp_itemlist**（类型：ODPHPItemList）"
+
+#: ../../tools/odphp_tools.rst:16 37393cc50c954468834335e4931ef6d3
+msgid ""
+"This tools browses and returns available topics and categories and it is "
+"helpful to help narrow a..."
+msgstr "该工具用于浏览并返回可用的主题和类别，有助于缩小范围以便更精确地..."
+
+#: ../../tools/odphp_tools.rst 0be51f42d8a04902b377d928d9385be1
+msgid "odphp_itemlist tool specification"
+msgstr "odphp_itemlist 工具规范"
+
+#: ../../tools/odphp_tools.rst:20 ../../tools/odphp_tools.rst:55
+#: ../../tools/odphp_tools.rst:102 ../../tools/odphp_tools.rst:141
+#: 17f611d3595d4c25b5cf594774006af2 1cf1bb47a94b41868035cd5098b3ee66
+#: d66126b5dc12438883900c419ee80ecb ed8e4db5b10b48fca62195b925565832
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/odphp_tools.rst:22 7a395284a7554ceea5efa4eb2ffa7599
+msgid "**Name**: ``odphp_itemlist``"
+msgstr "**名称**：``odphp_itemlist``"
+
+#: ../../tools/odphp_tools.rst:23 cb1941e8e215454db8aa9bae107a2112
+msgid "**Type**: ``ODPHPItemList``"
+msgstr "**类型**：``ODPHPItemList``"
+
+#: ../../tools/odphp_tools.rst:24 58126441286e4983bdfcfc2d108d5a90
+msgid ""
+"**Description**: This tools browses and returns available topics and "
+"categories and it is helpful to help narrow a broad request (e.g., “show "
+"me all topics”). For full topic content, `odphp_topicsearch` tool is "
+"helpful."
+msgstr ""
+"**描述**：此工具用于浏览并返回可用的主题和类别，有助于缩小范围较广的请求（例如，“显示所有主题”）。若需获取完整的主题内容，可使用 "
+"`odphp_topicsearch` 工具。"
+
+#: ../../tools/odphp_tools.rst:26 ../../tools/odphp_tools.rst:61
+#: ../../tools/odphp_tools.rst:108 ../../tools/odphp_tools.rst:147
+#: 0e91b995ed0647a483682b5c340d611e 6436b3d736fd4a13a10456792b6f2df5
+#: 975cec47efe54e2ca8f4f6750634f3e7 f3805a7910524dee8ba73469aefe13a2
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/odphp_tools.rst:28 ../../tools/odphp_tools.rst:63
+#: ../../tools/odphp_tools.rst:149 953a1632e50e47cf89cb6ce1ab8fa44f
+#: af535252a5774dbe9cba5b043851107f fe14b40e095f41fc8604c4b88852f05e
+#, fuzzy
+msgid "``lang`` (string) (required) Language code (en or es)"
+msgstr "``lang``（字符串）（可选）语言代码（en 或 es）"
+
+#: ../../tools/odphp_tools.rst:31 a4e2d4a922ad4ac7a05e8430746dc958
+#, fuzzy
+msgid "``type`` (string) (required) topic or category"
+msgstr "``type``（字符串）（可选）主题或类别"
+
+#: ../../tools/odphp_tools.rst:34 ../../tools/odphp_tools.rst:78
+#: ../../tools/odphp_tools.rst:119 ../../tools/odphp_tools.rst:164
+#: 3b70f936d8ba450f97f8a127843252f7 7fec3b647d6546c0be672e48ac9b8be1
+#: 9cf0380a1b02478bb4810257cae18873 cd18044397684daeaafbfdbaa7debd19
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/odphp_tools.rst:49 8e8972e3a2834609aa7e593815c3744a
+msgid "**odphp_myhealthfinder** (Type: ODPHPMyHealthfinder)"
+msgstr "**odphp_myhealthfinder**（类型：ODPHPMyHealthfinder）"
+
+#: ../../tools/odphp_tools.rst:51 0d8642452539418ba3834a3b1710a29f
+msgid ""
+"This tool provides personalized preventive-care recommendations and it is"
+" helpful for different a..."
+msgstr "该工具提供个性化的预防护理建议，并对不同年龄段和健康状况的用户具有重要帮助。"
+
+#: ../../tools/odphp_tools.rst 9ac8e55f054e41a191f68b6c74234ec1
+msgid "odphp_myhealthfinder tool specification"
+msgstr "odphp_myhealthfinder 工具规范"
+
+#: ../../tools/odphp_tools.rst:57 bbfa9013110b4c22bbbf086cef81c3a2
+msgid "**Name**: ``odphp_myhealthfinder``"
+msgstr "**名称**: ``odphp_myhealthfinder``"
+
+#: ../../tools/odphp_tools.rst:58 961592b7e2154feab6938e395a977894
+msgid "**Type**: ``ODPHPMyHealthfinder``"
+msgstr "**类型**: ``ODPHPMyHealthfinder``"
+
+#: ../../tools/odphp_tools.rst:59 17866ab457ec4cb9a1112fc2f7e5e7c2
+msgid ""
+"**Description**: This tool provides personalized preventive-care "
+"recommendations and it is helpful for different ages, sexes, pregnancy "
+"status, gives age/sex/pregnancy. It retrieves metadata, plain-language "
+"sections, and dataset links to the full article (AccessibleVersion "
+"links). If the user wants the full text of a recommendation, the "
+"`odphp_outlink_fetch` tool is helpful."
+msgstr ""
+"**描述**：此工具提供个性化的预防护理建议，适用于不同年龄、性别和怀孕状态，并根据年龄/性别/怀孕状态提供相关信息。它可以检索元数据、通俗语言部分以及指向完整文章的数据信息链接（AccessibleVersion"
+" 链接）。如果用户需要获取建议的完整文本，可以使用 `odphp_outlink_fetch` 工具。"
+
+#: ../../tools/odphp_tools.rst:66 2b4cca47aa80400f8c20332c26d84bb3
+#, fuzzy
+msgid "``age`` (integer) (required) Age in years (0–120)"
+msgstr "``age``（整数）（可选）年龄（以年为单位，0–120）"
+
+#: ../../tools/odphp_tools.rst:69 aac9d9665a4845fe8e1d74f28c3b30fd
+#, fuzzy
+msgid "``sex`` (string) (required) Male or Female"
+msgstr "``sex``（字符串）（可选）男或女"
+
+#: ../../tools/odphp_tools.rst:72 0a60ae7ed031447a8a1b6f37b12b8efc
+#, fuzzy
+msgid "``pregnant`` (string) (required) \"Yes\" or \"No\""
+msgstr "``pregnant``（字符串）（可选）“是”或“否”"
+
+#: ../../tools/odphp_tools.rst:75 ../../tools/odphp_tools.rst:161
+#: 7a9cca0b69734d54a62ef3f2d7d42cb4 c32aa361a8804a6ab31e8c6cfc84bdcd
+#, fuzzy
+msgid ""
+"``strip_html`` (boolean) (required) If true, also return PlainSections[] "
+"with HTML removed for each topic"
+msgstr ""
+"``strip_html``（布尔值）（可选）  \n"
+"如果为 true，则返回的每个主题中还会包含移除 HTML 的 PlainSections[]"
+
+#: ../../tools/odphp_tools.rst:96 ee4b3c6c8cb84136a7f90bf74955165c
+msgid "**odphp_outlink_fetch** (Type: ODPHPOutlinkFetch)"
+msgstr "**odphp_outlink_fetch**（类型：ODPHPOutlinkFetch）"
+
+#: ../../tools/odphp_tools.rst:98 beb663ef0252470bb5d37be460dd0206
+msgid ""
+"This tool retrieves readable text from ODPHP article links and "
+"information sources. This is helpf..."
+msgstr "该工具从ODPHP文章链接和信息源中提取可读文本。这对于..."
+
+#: ../../tools/odphp_tools.rst dfa2758cd5ee41d097b86ee33ef0af6a
+msgid "odphp_outlink_fetch tool specification"
+msgstr "odphp_outlink_fetch 工具规范"
+
+#: ../../tools/odphp_tools.rst:104 c9c7b83c04434afbb8a944caf34d7359
+msgid "**Name**: ``odphp_outlink_fetch``"
+msgstr "**名称**: ``odphp_outlink_fetch``"
+
+#: ../../tools/odphp_tools.rst:105 3892a7c163494d3ebc047900179b8e2f
+msgid "**Type**: ``ODPHPOutlinkFetch``"
+msgstr "**类型**：``ODPHPOutlinkFetch``"
+
+#: ../../tools/odphp_tools.rst:106 8ea7467a1f04493780620272c324d7fc
+msgid ""
+"**Description**: This tool retrieves readable text from ODPHP article "
+"links and information sources. This is helpful after using the "
+"`odphp_myhealthfinder` or `odphp_topicsearch` tools or when the user "
+"wants to simply dive deeper into ODPHP data."
+msgstr "**描述**：该工具从ODPHP文章链接和信息来源中提取可读文本。此功能在使用`odphp_myhealthfinder`或`odphp_topicsearch`工具后，或用户希望深入了解ODPHP数据时非常有用。"
+
+#: ../../tools/odphp_tools.rst:110 e496111ee4fb45cfb75f705a5da36419
+msgid ""
+"``urls`` (array) (required) 1–3 absolute URLs from AccessibleVersion or "
+"RelatedItems.Url"
+msgstr "``urls``（数组）（必填）1–3 个来自 AccessibleVersion 或 RelatedItems.Url 的绝对 URL 地址"
+
+#: ../../tools/odphp_tools.rst:113 f656a33860bc4c3cab6a7051920275e0
+#, fuzzy
+msgid ""
+"``max_chars`` (integer) (required) Optional hard cap on extracted text "
+"length (e.g., 5000)"
+msgstr "``max_chars``（整数）（可选） 可选的提取文本长度硬性上限（例如，5000）"
+
+#: ../../tools/odphp_tools.rst:116 21b4208b7a1341f6acd20fd00d2a097f
+#, fuzzy
+msgid ""
+"``return_html`` (boolean) (required) If true, also return minimally "
+"cleaned HTML"
+msgstr "``return_html``（布尔值）（可选）如果为 true，则同时返回经过最小清理的 HTML。"
+
+#: ../../tools/odphp_tools.rst:135 a03fce5149214c8d8c44de2e6033e311
+msgid "**odphp_topicsearch** (Type: ODPHPTopicSearch)"
+msgstr "**odphp_topicsearch**（类型：ODPHPTopicSearch）"
+
+#: ../../tools/odphp_tools.rst:137 d89940d54b39497e8fb9f85e4863613c
+msgid ""
+"Find specific health topics and get their full content. Use when the user"
+" mentions a keyword (e.g..."
+msgstr "查找特定健康主题并获取其完整内容。用户提及关键词时使用（例如...）。"
+
+#: ../../tools/odphp_tools.rst b16d99266f4f4ad7b0f589f0d3ef3242
+msgid "odphp_topicsearch tool specification"
+msgstr "odphp_topicsearch 工具规范"
+
+#: ../../tools/odphp_tools.rst:143 d047ebc4abda4105adfc0c757a3b7b8d
+msgid "**Name**: ``odphp_topicsearch``"
+msgstr "**名称**：``odphp_topicsearch``"
+
+#: ../../tools/odphp_tools.rst:144 70043e10956746adb6a8a72860e0acc3
+msgid "**Type**: ``ODPHPTopicSearch``"
+msgstr "**类型**：``ODPHPTopicSearch``"
+
+#: ../../tools/odphp_tools.rst:145 bf816d74c14f45f5b651c92fa3def975
+msgid ""
+"**Description**: Find specific health topics and get their full content. "
+"Use when the user mentions a keyword (e.g., “folic acid”, “blood "
+"pressure”) or when you already have topic/category IDs from "
+"`odphp_itemlist`. Returns detailed topic pages (Title, Sections, "
+"RelatedItems) and an AccessibleVersion link. Next: to quote or summarize "
+"the actual page text, pass the AccessibleVersion (or RelatedItems URLs) "
+"to `odphp_outlink_fetch`."
+msgstr ""
+"**描述**：查找特定健康主题并获取其完整内容。当用户提及关键词（例如“叶酸”、“血压”）或已从 `odphp_itemlist` 获得主题/类别"
+" ID 时使用。返回详细的主题页面（标题、章节、相关项目）及无障碍版本链接。下一步：如需引用或摘要实际页面文本，请将无障碍版本链接（或相关项目 "
+"URL）传递给 `odphp_outlink_fetch`。"
+
+#: ../../tools/odphp_tools.rst:152 44005811b99940d193a043124dc693ac
+#, fuzzy
+msgid "``topicId`` (string) (required) Comma-separated topic IDs"
+msgstr "``topicId``（字符串）（可选）以逗号分隔的主题ID列表"
+
+#: ../../tools/odphp_tools.rst:155 2e46af616e8b4739b367dc377ef3601f
+#, fuzzy
+msgid "``categoryId`` (string) (required) Comma-separated category IDs"
+msgstr "``categoryId``（字符串）（可选）以逗号分隔的类别ID列表"
+
+#: ../../tools/odphp_tools.rst:158 0349be1e12b84e5e95184cd2801bdbf8
+#, fuzzy
+msgid "``keyword`` (string) (required) Keyword search for topics"
+msgstr "``keyword``（字符串）（可选）用于主题的关键词搜索"
+
+#: ../../tools/odphp_tools.rst:182 b10a1343fb374350a836b88c9543b807
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/odphp_tools.rst:184 10a62091eec149b69cdbdfead441e05a
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/odphp_tools.rst:185 04003691e1d34bfe9b27d9126167dd62
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pillow_info.rst:2
+#: 37a1c8ce707346218c9d2a42ae3a2bb2
+msgid "tooluniverse.tools.get\\_pillow\\_info module"
+msgstr "tooluniverse.tools.get\\_pillow\\_info 模块"
+
+#: 639165ae27e54a4ca27971e8bdc5dad9 of tooluniverse.tools.get_pillow_info:1
+msgid "get_pillow_info"
+msgstr "获取枕头信息"
+
+#: 3e521185a8194b9298ec915c910571f6 92be1cb1766849f6b141ab243897b9ab of
+#: tooluniverse.tools.get_pillow_info:3
+#: tooluniverse.tools.get_pillow_info.get_pillow_info:1
+msgid "Get information about the pillow package. Python Imaging Library fork"
+msgstr "获取有关 Pillow 包的信息。Python Imaging Library 分支"
+
+#: ../../api/tooluniverse.tools.get_pillow_info.rst
+#: d43b03cec86640a19c63e36e3a90d07c
+msgid "Parameters"
+msgstr "参数"
+
+#: f54b9c1aec834393811fbf293d5190cb of
+#: tooluniverse.tools.get_pillow_info.get_pillow_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 802696a022454195a34a95398ea25b8c of
+#: tooluniverse.tools.get_pillow_info.get_pillow_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 80f7101a3c474c7a93f7b3f4d1c293e8 of
+#: tooluniverse.tools.get_pillow_info.get_pillow_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pillow_info.rst
+#: e9c46fde9ac349a2b889bc07bce11ecc
+msgid "Return type"
+msgstr "返回类型"
+
+#: 128b9f8e1e21429aa57acc023d5f4712 of
+#: tooluniverse.tools.get_pillow_info.get_pillow_info:11
+msgid ":py:class:`Any`"
+msgstr ""

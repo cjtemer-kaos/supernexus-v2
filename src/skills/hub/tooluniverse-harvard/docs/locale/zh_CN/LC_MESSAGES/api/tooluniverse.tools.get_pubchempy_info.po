@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pubchempy_info.rst:2
+#: 9cff2962e94b4415a671d3dcbdc91c0f
+msgid "tooluniverse.tools.get\\_pubchempy\\_info module"
+msgstr "tooluniverse.tools.get\\_pubchempy\\_info 模块"
+
+#: 2dc40ef1d72743d780ccb30aaabf9d6f of tooluniverse.tools.get_pubchempy_info:1
+msgid "get_pubchempy_info"
+msgstr ""
+
+#: 6606f9f44aa1437c84bf4e04455f4102 9adf121bdf2a4ba589fe5c8a080850cc of
+#: tooluniverse.tools.get_pubchempy_info:3
+#: tooluniverse.tools.get_pubchempy_info.get_pubchempy_info:1
+msgid ""
+"Get information about the pubchempy package. Python interface for PubChem "
+"REST API"
+msgstr "获取有关pubchempy软件包的信息。用于PubChem REST API的Python接口"
+
+#: ../../api/tooluniverse.tools.get_pubchempy_info.rst
+#: 2dbec607b3c34e369a4bdd7f3e1f40af
+msgid "Parameters"
+msgstr "参数"
+
+#: b8b71035d5ca4f108d1c8d22a95fb8d2 of
+#: tooluniverse.tools.get_pubchempy_info.get_pubchempy_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b7f18773d344499cbb5dd0f700bc7abd of
+#: tooluniverse.tools.get_pubchempy_info.get_pubchempy_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6dbf14266cff4a4f84c7c1f1ae66b9fe of
+#: tooluniverse.tools.get_pubchempy_info.get_pubchempy_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pubchempy_info.rst
+#: 60e8563fa2fa48f3b565f638afc65084
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8e5137961ef940a28c3078e3e6209499 of
+#: tooluniverse.tools.get_pubchempy_info.get_pubchempy_info:11
+msgid ":py:class:`Any`"
+msgstr ""

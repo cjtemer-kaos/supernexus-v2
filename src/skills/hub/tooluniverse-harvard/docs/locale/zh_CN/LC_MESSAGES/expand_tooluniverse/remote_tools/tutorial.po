@@ -1,0 +1,323 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:2
+#: 78242e77560546d9bfadb9bf80565b41
+msgid "Remote Tools Tutorial"
+msgstr "远程工具教程"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:4
+#: a02d61f29f874a06adc3b530a8e0c4ef
+msgid ""
+"Learn how to create and integrate remote tools with ToolUniverse. Remote "
+"tools run on separate servers and are accessed via MCP (Model Context "
+"Protocol) or REST APIs."
+msgstr ""
+"了解如何使用 ToolUniverse 创建和集成远程工具。远程工具运行在独立的服务器上，并通过 MCP（模型上下文协议）或 REST API "
+"进行访问。"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:7
+#: 4639e9c1856745fc8ed47a2e2d91613e
+msgid ""
+"💡 **Self-Use**: This tutorial covers using remote tools in your own "
+"projects."
+msgstr "💡 **自用**：本教程涵盖在您自己的项目中使用远程工具。"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:9
+#: bd0d445e345348bf8983f64681b3126a
+msgid ""
+"🚀 **Contributing**: If you want to contribute remote tools to the "
+"ToolUniverse repository, see :doc:`../contributing/remote_tools` for "
+"additional steps."
+msgstr ""
+"🚀 **贡献**：如果您希望向 ToolUniverse 仓库贡献远程工具，请参阅 "
+":doc:`../contributing/remote_tools` 了解更多步骤。"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:12
+#: ebd907ade52748a7952dc11376143a77
+msgid "What are Remote Tools?"
+msgstr "什么是远程工具？"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:14
+#: 2afb5cb27399488b8c778d23b1ed6f5b
+msgid ""
+"Remote tools allow you to integrate external services, APIs, or tools "
+"running on different servers. They provide:"
+msgstr "远程工具允许您集成运行在不同服务器上的外部服务、API或工具。它们提供："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:16
+#: d2fc4fa6baeb496da70aef5b93a5ed4b
+msgid "**Scalability**: Offload heavy computation to dedicated servers"
+msgstr "**可扩展性**：将繁重的计算任务卸载到专用服务器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:17
+#: dc8a383faf6844bab16cca4b3e5e9b1a
+msgid "**Integration**: Connect with existing systems and services"
+msgstr "**集成**：与现有系统和服务连接"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:18
+#: b1221fc894ba44939f62169d611c11b4
+msgid "**Flexibility**: Use tools in different programming languages"
+msgstr "**灵活性**：使用不同编程语言的工具"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:19
+#: 7d3a915c4ce142509caeea39c689f170
+msgid "**Isolation**: Keep sensitive operations separate"
+msgstr "**隔离**：将敏感操作分开进行"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:21
+#: 0f718ee4a0d54aa68c84a9327c2e166c
+msgid ""
+"**Best for:** - External API integrations - Microservice connections - "
+"Cloud-based AI services - Proprietary system connections"
+msgstr ""
+"**最佳用途：**  \n"
+"- 外部 API 集成  \n"
+"- 微服务连接  \n"
+"- 基于云的 AI 服务  \n"
+"- 专有系统连接"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:28
+#: 95a98912292e45a2b8d35309e88939ee
+msgid "Quick Start with MCP"
+msgstr "快速入门 MCP"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:30
+#: bb4746c2dfa1467e818cecf1d49638b6
+msgid ""
+"Here's the fastest way to integrate a remote tool using MCP (Model Context "
+"Protocol):"
+msgstr "以下是使用MCP（模型上下文协议）集成远程工具的最快方法："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:55
+#: 2fd930dcc97d483eb3af332a3afe80ba
+msgid "MCP (Model Context Protocol) Integration"
+msgstr "MCP（模型上下文协议）集成"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:57
+#: 46e4b7b8561246dea146fd2a5cdb2edc
+msgid ""
+"MCP is the recommended way to integrate remote tools with ToolUniverse. It "
+"provides a standardized protocol for tool communication."
+msgstr "MCP 是将远程工具集成到 ToolUniverse 的推荐方式。它提供了一种用于工具通信的标准化协议。"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:60
+#: bb4453aa5f1c406f8ffc21c40bc6721c
+msgid "Setting up an MCP Server"
+msgstr "设置 MCP 服务器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:62
+#: 8819de4be9de4eee8ff58aea3313701d
+msgid "Create a simple MCP server:"
+msgstr "创建一个简单的MCP服务器："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:97
+#: 51e3b66da3c74bfb9411f1912d6a8db3
+msgid "Connecting to MCP Servers"
+msgstr "连接到MCP服务器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:99
+#: 7e23b444a7ae4226ba59b261a06d7e97
+msgid "Connect to remote MCP servers from ToolUniverse:"
+msgstr "从 ToolUniverse 连接到远程 MCP 服务器："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:136
+#: ee814644d7ee44c78aae8b5c021729fc
+msgid "REST API Integration"
+msgstr "REST API 集成"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:138
+#: c8ecce2ba9d3442cb0611dcd818fed8e
+msgid "For simple REST API integration, create wrapper tools:"
+msgstr "对于简单的REST API集成，请创建封装工具："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:141
+#: d36c410561fb46d48d80c00b7c584ad3
+msgid "Basic REST API Wrapper"
+msgstr "基本的REST API封装"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:203
+#: 3d42abb5f04649d7880012fc04c1e1bd
+msgid "Specialized API Wrappers"
+msgstr "专用API封装器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:206
+#: 90ca49deb69440da99a89c5b6bddb217
+msgid "OpenAI API Wrapper"
+msgstr "OpenAI API 包装器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:258
+#: 06a2e4ecbb924d41981d548be0dd61b4
+msgid "Weather API Wrapper"
+msgstr "天气 API 封装"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:318
+#: b9c3f9bc8b8d4d6b99e67733b87e4211
+msgid "Testing Remote Tools"
+msgstr "测试远程工具"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:321
+#: 627ceafebc734fb28941f1912eadec46
+msgid "Unit Testing"
+msgstr "单元测试"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:323
+#: b3acd9318075401c804f71cc18a032eb
+msgid "Test remote tools with mocked responses:"
+msgstr "测试远程工具的模拟响应："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:355
+#: 0b67e7aac2f042f194926150a18f8bec
+msgid "Integration Testing"
+msgstr "集成测试"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:357
+#: ac193de8a0ee42c7a46b41a7b1ea1e55
+msgid "Test with actual remote services:"
+msgstr "使用实际远程服务进行测试："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:370
+#: cecd76cd70f8451bb147a6a305df26c4
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:373
+#: 51010db9201241aaa20417a6efa0b7cf
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:379
+#: bf9b2e90cfa34ff993f34f57c3e47751
+msgid "Problem"
+msgstr "问题"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:380
+#: 13430afacd3c4efb89fc957ce3b623c8
+msgid "Solution"
+msgstr "解决方案"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:381
+#: 618e57271cb440529728504f834f510c
+msgid "Connection timeout"
+msgstr "连接超时"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:382
+#: 50c2858a01754b9eb4bf49e2cbac8bc7
+msgid "Increase timeout setting, check network connectivity"
+msgstr "增加超时设置，检查网络连接"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:383
+#: c6922967bbfa462593f5fffcbea99221
+msgid "Authentication failed"
+msgstr "身份验证失败"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:384
+#: c670551b66bd4b01b836255a697ab712
+msgid "Verify API keys and authentication headers"
+msgstr "验证 API 密钥和认证头"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:385
+#: 1b216b4cb9a749ff997396e2151bc08f
+msgid "Service unavailable"
+msgstr "服务不可用"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:386
+#: 92eb432ff3ea4559bcd5ac7a0d535cc4
+msgid "Implement retry logic and circuit breaker"
+msgstr "实现重试逻辑和断路器"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:387
+#: 514a7dab01aa4f09895f010ee93a7916
+msgid "Rate limiting"
+msgstr "速率限制"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:388
+#: 4100deba1d0d4915a3d1922de71381bd
+msgid "Add rate limiting and exponential backoff"
+msgstr "添加速率限制和指数退避"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:389
+#: 159682583a6f41acab22d971c9f602e0
+msgid "SSL certificate errors"
+msgstr "SSL证书错误"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:390
+#: 39ce9a16d22a448c800b8d1bdd926f94
+msgid "Update certificates or disable SSL verification for testing"
+msgstr "更新证书或禁用SSL验证以进行测试"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:393
+#: 16fb12834f374b3d8df4b4929c934a23
+msgid "Debugging Tools"
+msgstr "调试工具"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:395
+#: 387d6fb5d7dc4e8da315d19cf864832c
+msgid "Enable detailed logging:"
+msgstr "启用详细日志："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:412
+#: f16faad5f687463484f8873a784b18a7
+msgid "Next Steps"
+msgstr "下一步"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:414
+#: be10448f065649559ec110ccbfaeb536
+msgid "Now that you can integrate remote tools:"
+msgstr "现在您可以集成远程工具："
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:416
+#: d7722cb4b9f54dc18737db951c9feb37
+msgid ""
+"🏠 **Local Tools**: :doc:`../local_tools/tutorial` - Learn about local tool "
+"development"
+msgstr "🏠 **本地工具**：:doc:`../local_tools/tutorial` - 了解本地工具开发"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:417
+#: d782704d0fd04612a58894b90017391f
+msgid ""
+"🚀 **Contributing**: :doc:`../contributing/remote_tools` - Submit your tools "
+"to ToolUniverse"
+msgstr "🚀 **贡献**：:doc:`../contributing/remote_tools` - 将您的工具提交至 ToolUniverse"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:418
+#: 68052da931c7471ba047f0bc94e9bfd0
+msgid ""
+"🔧 **Advanced Patterns**: :doc:`advanced_patterns` - Advanced development "
+"patterns"
+msgstr "🔧 **高级模式**：:doc:`advanced_patterns` - 高级开发模式"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:419
+#: 56eb2a09d90140ff82811dd2818985e6
+msgid ""
+"🤖 **AI Integration**: :doc:`../guide/building_ai_scientists/mcp_integration`"
+" - Connect with AI assistants"
+msgstr ""
+"🤖 **AI集成**：:doc:`../guide/building_ai_scientists/mcp_integration` - 与AI助手连接"
+
+#: ../../expand_tooluniverse/remote_tools/tutorial.rst:422
+#: ae566753b65543e5af902b4cf59781d1
+msgid ""
+"**Integration tip**: Start with simple REST API wrappers, then move to MCP "
+"for more complex integrations. Always implement proper error handling and "
+"monitoring!"
+msgstr "**集成提示**：从简单的REST API封装开始，然后逐步过渡到MCP以实现更复杂的集成。始终实施适当的错误处理和监控！"

@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/neuroscience_tools.rst:2 6689402ecab5424e9eaea62fc6e9c3d7
+msgid "Neuroscience Tools"
+msgstr "神经科学工具"
+
+#: ../../tools/neuroscience_tools.rst:4 cf2b1c72fdc94420b2edb4c4ab1639b6
+msgid ""
+"**Configuration File**: ``packages/neuroscience_tools.json`` **Tool Type**: "
+"Local **Tools Count**: 5"
+msgstr ""
+"**配置文件**: ``packages/neuroscience_tools.json`` **工具类型**: 本地 **工具数量**: 5"
+
+#: ../../tools/neuroscience_tools.rst:8 509e6f31415846eeb4ebd36ec39f0e05
+msgid ""
+"This page contains all tools defined in the ``neuroscience_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``neuroscience_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/neuroscience_tools.rst:11 b88c5e8d9c5448c9837c451738c5cfd0
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/neuroscience_tools.rst:14 e09dc6cbdc80479fa5a8d710ff015589
+msgid "**get_brian2_info** (Type: PackageTool)"
+msgstr "**get_brian2_info**（类型：PackageTool）"
+
+#: ../../tools/neuroscience_tools.rst:16 44f2cf89c6f94210afd5e44dd26d0b02
+msgid ""
+"Get information about the brian2 package. Spiking neural network simulator"
+msgstr "获取有关 brian2 软件包的信息。尖峰神经网络模拟器"
+
+#: ../../tools/neuroscience_tools.rst 2cbf43c93ef24e889fa068656ebe5543
+msgid "get_brian2_info tool specification"
+msgstr "get_brian2_info 工具规范"
+
+#: ../../tools/neuroscience_tools.rst:20 ../../tools/neuroscience_tools.rst:49
+#: ../../tools/neuroscience_tools.rst:78
+#: ../../tools/neuroscience_tools.rst:107
+#: ../../tools/neuroscience_tools.rst:136 1f512c05bbd34f969c072737a11ea014
+#: 8fa8c8f0df734eee943ef0070a3a696e a38907ea3e1a4318abdf5a4ae3ae3f77
+#: b2b0d983419147cf9455d2eb22c9673d d804951b34874866831f73b49fb92c55
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/neuroscience_tools.rst:22 ef2e2dad14ee4c9f8e37b1e85bcec635
+msgid "**Name**: ``get_brian2_info``"
+msgstr "**名称**: ``get_brian2_info``"
+
+#: ../../tools/neuroscience_tools.rst:23 ../../tools/neuroscience_tools.rst:52
+#: ../../tools/neuroscience_tools.rst:81
+#: ../../tools/neuroscience_tools.rst:110
+#: ../../tools/neuroscience_tools.rst:139 1a18ab126b6d4896b0eb3ca20811e80a
+#: 4cbabdba43f8415ba707470171586e41 8f050405b80b4fcba63e976602eda254
+#: 926c568fd4634fe5ab3aa632d12342be bb11e8ef17c844a8b5427aba1ad2c64f
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**: ``PackageTool``"
+
+#: ../../tools/neuroscience_tools.rst:24 89eeaf607afa4f6f97f88c609f6d1108
+msgid ""
+"**Description**: Get information about the brian2 package. Spiking neural "
+"network simulator"
+msgstr "**描述**：获取有关 brian2 软件包的信息。尖峰神经网络模拟器"
+
+#: ../../tools/neuroscience_tools.rst:26 ../../tools/neuroscience_tools.rst:55
+#: ../../tools/neuroscience_tools.rst:84
+#: ../../tools/neuroscience_tools.rst:113
+#: ../../tools/neuroscience_tools.rst:142 01309a3eaa4e405bac3c54092a088a39
+#: 7c7dbfae5d1c4d34952ae996f174b817 9d7530becc364967b63468b059a3d96a
+#: a3e3f72c17ab4079af71aa9738618ab2 c07ebcf37132477c9babad3f1f920c8b
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/neuroscience_tools.rst:28 ../../tools/neuroscience_tools.rst:57
+#: ../../tools/neuroscience_tools.rst:86
+#: ../../tools/neuroscience_tools.rst:115
+#: ../../tools/neuroscience_tools.rst:144 0344e23bc02f4f0cae5af3f3288d36f2
+#: 16ac583407a343f3a02941c1dc9b7aec 1dcf05ece9fc4d5285effceed573720f
+#: 94543fc44369431e8e92d884dbc088e4 aceae07d2fd84fbd8baeb1941f40ad5a
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/neuroscience_tools.rst:30 ../../tools/neuroscience_tools.rst:59
+#: ../../tools/neuroscience_tools.rst:88
+#: ../../tools/neuroscience_tools.rst:117
+#: ../../tools/neuroscience_tools.rst:146 674110c5135c464bb3b2acc4e0f6eec0
+#: baf22df84cc04941aeb389e5205e2973 cc8fe82619164eb6911eeed02457b199
+#: d9273e198ab94a3a9b43ce870e258597 e0b506d7f014443e8b732be922e970e3
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/neuroscience_tools.rst:43 f26d9c3d13494c5593b9980c075d03f2
+msgid "**get_elephant_info** (Type: PackageTool)"
+msgstr "**get_elephant_info**（类型：PackageTool）"
+
+#: ../../tools/neuroscience_tools.rst:45 be28e7f6ab8b406f86dc69074ab9a980
+msgid ""
+"Get information about the elephant package. Electrophysiology analysis "
+"toolkit"
+msgstr "获取有关 elephant 软件包的信息。电生理学分析工具包"
+
+#: ../../tools/neuroscience_tools.rst 48bd7e86e40f42eda4b06239650d6d6a
+msgid "get_elephant_info tool specification"
+msgstr "get_elephant_info 工具规范"
+
+#: ../../tools/neuroscience_tools.rst:51 32d219568bd94f738c4d05a36a6f29d2
+msgid "**Name**: ``get_elephant_info``"
+msgstr "**名称**: ``get_elephant_info``"
+
+#: ../../tools/neuroscience_tools.rst:53 1f2dc786e5624fdcade5f604175052b7
+msgid ""
+"**Description**: Get information about the elephant package. "
+"Electrophysiology analysis toolkit"
+msgstr "**描述**：获取有关 elephant 软件包的信息。电生理分析工具包"
+
+#: ../../tools/neuroscience_tools.rst:72 93dd18a9ea9943429fd0606f3a8620c4
+msgid "**get_mne_info** (Type: PackageTool)"
+msgstr "**get_mne_info**（类型：PackageTool）"
+
+#: ../../tools/neuroscience_tools.rst:74 c4540f8341f840b5b97c29b18801a000
+msgid "Get information about the mne package. MEG and EEG data analysis"
+msgstr "获取有关 mne 软件包的信息。MEG 和 EEG 数据分析"
+
+#: ../../tools/neuroscience_tools.rst 5963df327b764f5f814e847884b22be0
+msgid "get_mne_info tool specification"
+msgstr "get_mne_info 工具规格说明"
+
+#: ../../tools/neuroscience_tools.rst:80 67fe968a9f0d4af79e7c0a4058653708
+msgid "**Name**: ``get_mne_info``"
+msgstr "**名称**：``get_mne_info``"
+
+#: ../../tools/neuroscience_tools.rst:82 bca9d6f2cefe45de886048ac5aefdf95
+msgid ""
+"**Description**: Get information about the mne package. MEG and EEG data "
+"analysis"
+msgstr "**描述**：获取有关 mne 软件包的信息。MEG 和 EEG 数据分析"
+
+#: ../../tools/neuroscience_tools.rst:101 ec401eab33094d1a84e341674ff6aef1
+msgid "**get_neo_info** (Type: PackageTool)"
+msgstr "**get_neo_info**（类型：PackageTool）"
+
+#: ../../tools/neuroscience_tools.rst:103 3286ab1ab6824e6b8b57b24b0b28ff92
+msgid ""
+"Get information about the neo package. Representation of electrophysiology "
+"data"
+msgstr "获取有关 neo 包的信息。电生理数据的表示方法"
+
+#: ../../tools/neuroscience_tools.rst cec77891ba4740e7a4508fdafad2d3f8
+msgid "get_neo_info tool specification"
+msgstr "get_neo_info 工具规格说明"
+
+#: ../../tools/neuroscience_tools.rst:109 b2ec4a7333c74125b1cdc303eb0152e8
+msgid "**Name**: ``get_neo_info``"
+msgstr "**名称**：``get_neo_info``"
+
+#: ../../tools/neuroscience_tools.rst:111 dfc0c768c3ad4701955471b5f7fe2e7f
+msgid ""
+"**Description**: Get information about the neo package. Representation of "
+"electrophysiology data"
+msgstr "**描述**：获取有关 neo 包的信息。电生理数据的表示。"
+
+#: ../../tools/neuroscience_tools.rst:130 a568b52f20d349cf808fc67ee877f370
+msgid "**get_nilearn_info** (Type: PackageTool)"
+msgstr "**get_nilearn_info**（类型：PackageTool）"
+
+#: ../../tools/neuroscience_tools.rst:132 5b6b17e6f8e248c88ab97e30d3ad56b2
+msgid ""
+"Get information about the nilearn package. Machine learning for neuroimaging"
+msgstr "获取有关 nilearn 包的信息。用于神经影像的机器学习"
+
+#: ../../tools/neuroscience_tools.rst 79cab56bb85c4f01a4a8ee9a1d2fbe33
+msgid "get_nilearn_info tool specification"
+msgstr "get_nilearn_info 工具规范"
+
+#: ../../tools/neuroscience_tools.rst:138 33502844d29f4e1a920c6320d86e9081
+msgid "**Name**: ``get_nilearn_info``"
+msgstr "**名称**: ``get_nilearn_info``"
+
+#: ../../tools/neuroscience_tools.rst:140 feb1502173954a94a4e5f73593aa0399
+msgid ""
+"**Description**: Get information about the nilearn package. Machine learning"
+" for neuroimaging"
+msgstr "**描述**：获取有关 nilearn 包的信息。用于神经影像的机器学习"
+
+#: ../../tools/neuroscience_tools.rst:159 22360634d462491996b9e75523489dbd
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/neuroscience_tools.rst:161 562b9a91a8264bc3ae90a9c36517e717
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/neuroscience_tools.rst:162 b47cbf51c6f24c76bb5b7c0b26fb6ee4
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

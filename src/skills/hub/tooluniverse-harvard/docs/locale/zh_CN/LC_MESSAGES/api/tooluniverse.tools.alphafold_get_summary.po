@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.alphafold_get_summary.rst:2
+#: 27f3a5978cf24708b6249dfceabbd217
+msgid "tooluniverse.tools.alphafold\\_get\\_summary module"
+msgstr "tooluniverse.tools.alphafold\\_get\\_summary 模块"
+
+#: b1b121c273e54aa4b7782b9581b2d53c of
+#: tooluniverse.tools.alphafold_get_summary:1
+msgid "alphafold_get_summary"
+msgstr "alphafold_获取摘要"
+
+#: 677b846634f046d6942a4cf4daae45f7 eb72f3247d884552b23d60347e3a2037 of
+#: tooluniverse.tools.alphafold_get_summary:3
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:1
+msgid ""
+"Retrieve summary details of AlphaFold 3D models for a given protein. Input "
+"must be a UniProt acce..."
+msgstr "检索指定蛋白质的AlphaFold三维模型摘要信息。输入必须为UniProt访问号。"
+
+#: ../../api/tooluniverse.tools.alphafold_get_summary.rst
+#: 70fe219011fa4c1e92145e29a9eeaf07
+msgid "Parameters"
+msgstr "参数"
+
+#: 18359bdb91ba44dd86c779f9b327cb65 of
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:3
+msgid "Protein identifier: UniProt accession, entry name, or CRC64 checksum."
+msgstr "蛋白质标识符：UniProt登录号、条目名称或CRC64校验和。"
+
+#: a557f42d4f0d4077b5405d71eeffb1e3 of
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9518e2b8b81842f98912bd7014036b18 of
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c3cc09cb7b0344e489ae9a2793e63303 of
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.alphafold_get_summary.rst
+#: 62f3e4564b1c4eb1bdd34f4dc367874c
+msgid "Return type"
+msgstr "返回类型"
+
+#: c9b88bd209c24228885e4da7758f7903 of
+#: tooluniverse.tools.alphafold_get_summary.alphafold_get_summary:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

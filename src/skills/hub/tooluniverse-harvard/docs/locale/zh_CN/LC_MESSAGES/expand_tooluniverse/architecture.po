@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../expand_tooluniverse/architecture.rst:2
+#: cb1da3b4f66847bba30c87fcc0acd130
+msgid "ToolUniverse Architecture"
+msgstr "ToolUniverse 架构"
+
+#: ../../expand_tooluniverse/architecture.rst:4
+#: e9852be13c2346a19e71d8360755359a
+msgid ""
+"This document provides a comprehensive overview of ToolUniverse's code "
+"architecture, directory organization, core components, tool "
+"discovery/execution flow, MCP integration, and extension points."
+msgstr "本文档全面介绍了ToolUniverse的代码架构、目录结构、核心组件、工具发现与执行流程、MCP集成及扩展点。"
+
+#: ../../expand_tooluniverse/architecture.rst:7
+#: 7bbedace2e44489ea9e60ef761c094db
+msgid "Overview"
+msgstr "概述"
+
+#: ../../expand_tooluniverse/architecture.rst:9
+#: 164defd6efc54fc886f5398cc0c15e7c
+msgid ""
+"ToolUniverse follows a modular, registry-based architecture centered around "
+"the unified `ToolUniverse` engine. It connects to massive scientific "
+"databases and APIs through tool registration, configuration, and auto-"
+"discovery, providing a consistent interface for upper-layer agents, "
+"applications, and MCP clients."
+msgstr ""
+"ToolUniverse 采用以统一的 `ToolUniverse` "
+"引擎为核心的模块化、基于注册表的架构。通过工具注册、配置和自动发现，连接海量科学数据库和 API，为上层智能体、应用程序及 MCP "
+"客户端提供一致的接口。"
+
+#: ../../expand_tooluniverse/architecture.rst:31
+#: 09a7db80349c4cff9d29722815584aba
+msgid "Repository Structure Tree"
+msgstr "仓库结构树"
+
+#: ../../expand_tooluniverse/architecture.rst:179
+#: 4c25129bf1604bceb149d720d3f49b07
+msgid "Core Components"
+msgstr "核心组件"
+
+#: ../../expand_tooluniverse/architecture.rst:181
+#: a773dc7495c0414eb6fa8ace3e6989dc
+msgid "**Engine & Registry**"
+msgstr "**引擎与注册表**"
+
+#: ../../expand_tooluniverse/architecture.rst:183
+#: decfa44c9ea145808ab66946158e67f7
+msgid ""
+"`execute_function.py`: Core `ToolUniverse` engine class responsible for: - "
+"Reading tool configurations (local JSON, default configs) and building "
+"`all_tools`/`all_tool_dict` - Mapping tool types to concrete classes "
+"(`tool_type_mappings`) and instantiation - Tool execution routing "
+"(`run_tool`), validation, and result processing - Handling MCP auto-loaders,"
+" temporary clients (with `mcp_integration.py`)"
+msgstr ""
+"`execute_function.py`：核心 `ToolUniverse` 引擎类，负责：  \n"
+"- 读取工具配置（本地 JSON、默认配置）并构建 `all_tools`/`all_tool_dict`  \n"
+"- 将工具类型映射到具体类（`tool_type_mappings`）并实例化  \n"
+"- 工具执行路由（`run_tool`）、校验及结果处理  \n"
+"- 处理 MCP 自动加载器、临时客户端（配合 `mcp_integration.py`）"
+
+#: ../../expand_tooluniverse/architecture.rst:189
+#: 0c9e87f944f744eeaa3847b0351666ac
+msgid ""
+"`base_tool.py`: `BaseTool` base class and exception types. Supports: - "
+"Loading default configurations from `tooluniverse.data` package - Parameter "
+"validation, required parameter extraction, function call validation"
+msgstr ""
+"`base_tool.py`：`BaseTool` 基类及异常类型。支持：  \n"
+"- 从 `tooluniverse.data` 包加载默认配置  \n"
+"- 参数验证、必需参数提取、函数调用验证"
+
+#: ../../expand_tooluniverse/architecture.rst:193
+#: 811bfe810fec4005ace0e56f2155ea32
+msgid ""
+"`tool_registry.py`: Tool registration and discovery: - `@register_tool` "
+"decorator for registering tool classes - Lazy loading registry (on-demand "
+"module imports) and full discovery - Smart matching of configuration JSON to"
+" modules and tool types"
+msgstr ""
+"`tool_registry.py`：工具注册与发现：  \n"
+"- 使用 `@register_tool` 装饰器注册工具类  \n"
+"- 延迟加载注册表（按需导入模块）及全面发现  \n"
+"- 智能匹配配置 JSON 与模块及工具类型"
+
+#: ../../expand_tooluniverse/architecture.rst:198
+#: 85d1891defdc4310aeb597299a0abec5
+msgid "`default_config.py`: Default tool configuration file list"
+msgstr "`default_config.py`：默认工具配置文件列表"
+
+#: ../../expand_tooluniverse/architecture.rst:199
+#: e41f5dab8eb643518006ab3323afe6a7
+msgid "`logging_config.py`, `utils.py`: Logging setup and utility functions"
+msgstr "`logging_config.py`，`utils.py`：日志配置和工具函数"
+
+#: ../../expand_tooluniverse/architecture.rst:201
+#: 9823343ee4b540269932529126c0c1a3
+msgid "**Tool Implementation Classes**"
+msgstr "**工具实现类**"
+
+#: ../../expand_tooluniverse/architecture.rst:203
+#: b9ed63a2ffb5439aba877e51f190bab9
+msgid "Available tool classes (alphabetically organized):"
+msgstr "可用的工具类别（按字母顺序排列）："
+
+#: ../../expand_tooluniverse/architecture.rst:205
+#: 0b7357e8b217408ba4d79b166982af0e
+msgid ""
+"`ADMETAITool`, `AgenticTool`, `AlphaFoldRESTTool`, `BoltzTool`, "
+"`ChEMBLTool`, `ClinicalTrialsDetailsTool`, `ClinicalTrialsSearchTool`, "
+"`ComposeTool`, `DatasetTool`, `DiseaseTargetScoreTool`, `EFOTool`, "
+"`EmbeddingDatabase`, `EmbeddingSync`, `EnrichrTool`, `EuropePMCTool`, "
+"`FDACountAdditiveReactionsTool`, `FDADrugAdverseEventTool`, "
+"`FDADrugLabelGetDrugGenericNameTool`, `FDADrugLabelSearchIDTool`, "
+"`FDADrugLabelSearchTool`, `FDADrugLabelTool`, `GWASAssociationByID`, "
+"`GWASAssociationSearch`, `GWASAssociationsForSNP`, "
+"`GWASAssociationsForStudy`, `GWASAssociationsForTrait`, `GWASSNPByID`, "
+"`GWASSNPSearch`, `GWASSNPsForGene`, `GWASStudiesForTrait`, `GWASStudyByID`, "
+"`GWASStudySearch`, `GWASVariantsForTrait`, `GeneOntologyTool`, "
+"`GetSPLBySetIDTool`, `HPAGetGeneJSONTool`, `HPAGetGeneXMLTool`, "
+"`HumanBaseTool`, `MCPAutoLoaderTool`, `MCPClientTool`, "
+"`MedlinePlusRESTTool`, `MonarchDiseasesForMultiplePhenoTool`, `MonarchTool`,"
+" `OpenAlexTool`, `OpentargetGeneticsTool`, `OpentargetTool`, "
+"`OpentargetToolDrugNameMatch`, `PackageTool`, `PubChemRESTTool`, "
+"`PubTatorTool`, `RCSBTool`, `ReactomeRESTTool`, `RemoteTool`, "
+"`SearchSPLTool`, `SemanticScholarTool`, `ToolFinderEmbedding`, "
+"`ToolFinderKeyword`, `ToolFinderLLM`, `URLHTMLTagTool`, `URLToPDFTextTool`, "
+"`USPTODownloaderTool`, `USPTOOpenDataPortalTool`, `UniProtRESTTool`, "
+"`XMLDatasetTool`"
+msgstr ""
+"`ADMETAITool`、`AgenticTool`、`AlphaFoldRESTTool`、`BoltzTool`、`ChEMBLTool`、`ClinicalTrialsDetailsTool`、`ClinicalTrialsSearchTool`、`ComposeTool`、`DatasetTool`、`DiseaseTargetScoreTool`、`EFOTool`、`EmbeddingDatabase`、`EmbeddingSync`、`EnrichrTool`、`EuropePMCTool`、`FDACountAdditiveReactionsTool`、`FDADrugAdverseEventTool`、`FDADrugLabelGetDrugGenericNameTool`、`FDADrugLabelSearchIDTool`、`FDADrugLabelSearchTool`、`FDADrugLabelTool`、`GWASAssociationByID`、`GWASAssociationSearch`、`GWASAssociationsForSNP`、`GWASAssociationsForStudy`、`GWASAssociationsForTrait`、`GWASSNPByID`、`GWASSNPSearch`、`GWASSNPsForGene`、`GWASStudiesForTrait`、`GWASStudyByID`、`GWASStudySearch`、`GWASVariantsForTrait`、`GeneOntologyTool`、`GetSPLBySetIDTool`、`HPAGetGeneJSONTool`、`HPAGetGeneXMLTool`、`HumanBaseTool`、`MCPAutoLoaderTool`、`MCPClientTool`、`MedlinePlusRESTTool`、`MonarchDiseasesForMultiplePhenoTool`、`MonarchTool`、`OpenAlexTool`、`OpentargetGeneticsTool`、`OpentargetTool`、`OpentargetToolDrugNameMatch`、`PackageTool`、`PubChemRESTTool`、`PubTatorTool`、`RCSBTool`、`ReactomeRESTTool`、`RemoteTool`、`SearchSPLTool`、`SemanticScholarTool`、`ToolFinderEmbedding`、`ToolFinderKeyword`、`ToolFinderLLM`、`URLHTMLTagTool`、`URLToPDFTextTool`、`USPTODownloaderTool`、`USPTOOpenDataPortalTool`、`UniProtRESTTool`、`XMLDatasetTool`"
+
+#: ../../expand_tooluniverse/architecture.rst:207
+#: 84ae109c156243dfa4f4e972068a7c3f
+msgid "**Data & Configuration**"
+msgstr "**数据与配置**"
+
+#: ../../expand_tooluniverse/architecture.rst:209
+#: 91779f8c2fe74ed5b8a7b001972c2072
+msgid ""
+"`data/*.json`: Tool configuration manifests for each data source or category"
+msgstr "`data/*.json`：每个数据源或类别的工具配置清单"
+
+#: ../../expand_tooluniverse/architecture.rst:210
+#: 08bb2cbbdfdd48f884f2260a098cdd63
+msgid "`data/packages/*`: Package-related extension configurations"
+msgstr "`data/packages/*`：与软件包相关的扩展配置"
+
+#: ../../expand_tooluniverse/architecture.rst:211
+#: 4ba3210259de4d4891346b41c79b24e1
+msgid "`data/remote_tools/*`: Remote tool/MCP definitions"
+msgstr "`data/remote_tools/*`：远程工具/MCP 定义"
+
+#: ../../expand_tooluniverse/architecture.rst:212
+#: 53296c20ec8c4f25ba0b48d5731ea06a
+msgid ""
+"`toolsets/`: Scenario-organized tool collections (`bioinformatics/`, "
+"`research/`, `software_dev/`)"
+msgstr "`toolsets/`：按场景组织的工具集合（`bioinformatics/`，`research/`，`software_dev/`）"
+
+#: ../../expand_tooluniverse/architecture.rst:214
+#: cd1fcbf4878e4bfaac39eef30ab47806
+msgid "**MCP Integration & Servers**"
+msgstr "**MCP 集成与服务器**"
+
+#: ../../expand_tooluniverse/architecture.rst:216
+#: 8cd445ad6fb9403d92915fa71361f590
+msgid "`smcp.py`: FastMCP wrapper providing `SMCP` and `create_smcp_server`"
+msgstr "`smcp.py`：FastMCP 的封装器，提供 `SMCP` 和 `create_smcp_server`"
+
+#: ../../expand_tooluniverse/architecture.rst:217
+#: fae076b4295640eca0012b1cb9a7825e
+msgid ""
+"`smcp_server.py`: Package MCP server entry points (exposed via "
+"`pyproject.toml` CLI)"
+msgstr "`smcp_server.py`：封装MCP服务器入口点（通过`pyproject.toml`命令行界面暴露）"
+
+#: ../../expand_tooluniverse/architecture.rst:218
+#: 12621cbe00da488bb90b7df51cd48e7b
+msgid ""
+"`mcp_integration.py`: Injects `load_mcp_tools`, `discover_mcp_tools` methods"
+" into `ToolUniverse`"
+msgstr ""
+"`mcp_integration.py`：将 `load_mcp_tools` 和 `discover_mcp_tools` 方法注入到 "
+"`ToolUniverse` 中"
+
+#: ../../expand_tooluniverse/architecture.rst:219
+#: 699ebf67756041b7b4b443a0b82ea83e
+msgid "`mcp_tool_registry.py`: MCP tool registry for URLs and tool discovery"
+msgstr "`mcp_tool_registry.py`：用于URL和工具发现的MCP工具注册表"
+
+#: ../../expand_tooluniverse/architecture.rst:220
+#: a4f7ae65607a420f8ada6acb9d7951e1
+msgid ""
+"Root `smcp_tooluniverse_server.py`: Simplified startup script for local "
+"quick server startup"
+msgstr "根目录下的 `smcp_tooluniverse_server.py`：用于本地快速启动服务器的简化启动脚本"
+
+#: ../../expand_tooluniverse/architecture.rst:222
+#: 002435c25c20455c981bd92453269b4d
+msgid "**External Ecosystem & Extension Examples**"
+msgstr "**外部生态系统与扩展示例**"
+
+#: ../../expand_tooluniverse/architecture.rst:224
+#: 3c5921431e5f40c489f44190a225c1c4
+msgid ""
+"`remote/`: External system integrations including: - `expert_feedback/`: "
+"Human expert feedback system - `expert_feedback_mcp/`: MCP-enabled expert "
+"feedback - `boltz/`: Boltz protein folding integration - `depmap_24q2/`: "
+"DepMap cancer dependency data integration - `immune_compass/`: Immune system"
+" analysis tools - `pinnacle/`: Pinnacle platform integration - "
+"`transcriptformer/`: Transcriptformer model integration - "
+"`uspto_downloader/`: USPTO patent downloader service"
+msgstr ""
+"`remote/`：外部系统集成，包括：  \n"
+"- `expert_feedback/`：人工专家反馈系统  \n"
+"- `expert_feedback_mcp/`：支持MCP的专家反馈系统  \n"
+"- `boltz/`：Boltz蛋白质折叠集成  \n"
+"- `depmap_24q2/`：DepMap癌症依赖性数据集成（24Q2版本）  \n"
+"- `immune_compass/`：免疫系统分析工具  \n"
+"- `pinnacle/`：Pinnacle平台集成  \n"
+"- `transcriptformer/`：Transcriptformer模型集成  \n"
+"- `uspto_downloader/`：USPTO专利下载服务"
+
+#: ../../expand_tooluniverse/architecture.rst:235
+#: 84796ad4a16e44a4b807d8eba367a93c
+msgid "Execution Flow (Configuration to Invocation)"
+msgstr "执行流程（从配置到调用）"
+
+#: ../../expand_tooluniverse/architecture.rst:237
+#: 64a63b8568864b8e86f7f71a5d693d14
+msgid ""
+"**Configuration Loading** - Engine startup reads `default_tool_files` and "
+"`data/*.json` to build tool manifest - Each JSON entry defines a tool "
+"instance: `name`, `type`, `description`, `parameter` (JSON Schema), "
+"endpoints, etc."
+msgstr ""
+"**配置加载**  \n"
+"- 引擎启动时读取 `default_tool_files` 和 `data/*.json` 来构建工具清单  \n"
+"- 每个 JSON 条目定义一个工具实例：`name`、`type`、`description`、`parameter`（JSON Schema）、endpoints 等。"
+
+#: ../../expand_tooluniverse/architecture.rst:241
+#: 0716262f9897405bb7d95e4c195fff9d
+msgid ""
+"**Tool Registration & Mapping** - `tool_registry.py` maintains \"tool type →"
+" tool class\" mappings - Supports both full import discovery and lazy "
+"loading mappings (smart config-to-module matching)"
+msgstr ""
+"**工具注册与映射**  \n"
+"- `tool_registry.py` 维护“工具类型 → 工具类”的映射  \n"
+"- 支持完整导入发现和延迟加载映射（智能配置到模块匹配）"
+
+#: ../../expand_tooluniverse/architecture.rst:245
+#: cf87bc8784bc48f9b1513b0211f5c886
+msgid ""
+"**Instantiation & Default Configuration** - Based on `type`, finds "
+"corresponding class (e.g., `FDADrugLabelTool`) - Merges `BaseTool` default "
+"configurations with entry-specific config"
+msgstr ""
+"**实例化与默认配置**  \n"
+"- 根据 `type` 查找对应的类（例如，`FDADrugLabelTool`）  \n"
+"- 将 `BaseTool` 的默认配置与条目特定配置合并"
+
+#: ../../expand_tooluniverse/architecture.rst:249
+#: 18379edc6a3e467f8a1b220cd4b583d8
+msgid ""
+"**Execution & Validation** - `ToolUniverse.run_tool(tool_name, params)`:"
+msgstr "**执行与验证** - `ToolUniverse.run_tool(tool_name, params)`："
+
+#: ../../expand_tooluniverse/architecture.rst:251
+#: 8bc5e2d71d634341a491ecda0f1b498a
+msgid ""
+"Locate instance by name → Parameter validation (required fields) → Call "
+"concrete implementation"
+msgstr "通过名称定位实例 → 参数验证（必填字段） → 调用具体实现"
+
+#: ../../expand_tooluniverse/architecture.rst:252
+#: b686783269764b8cb862bad510ebae4d
+msgid "Unified error handling and return structure"
+msgstr "统一的错误处理和返回结构"
+
+#: ../../expand_tooluniverse/architecture.rst:254
+#: 5535ce888904430c8d6e783f10b74dd5
+msgid ""
+"**Composition/Discovery & Graphs** - Use `compose_tool.py` or "
+"`compose_scripts/` for orchestration - Leverage `tool_finder_*` "
+"(keyword/embedding/LLM) for tool retrieval - Visualize tool relationships "
+"and call chains via scripts or `tool_graph_web_ui.py`"
+msgstr ""
+"**组合/发现与图表**  \n"
+"- 使用 `compose_tool.py` 或 `compose_scripts/` 进行编排  \n"
+"- 利用 `tool_finder_*`（关键词/嵌入/大语言模型）进行工具检索  \n"
+"- 通过脚本或 `tool_graph_web_ui.py` 可视化工具关系及调用链"
+
+#: ../../expand_tooluniverse/architecture.rst:260
+#: 277ea3f6ad344269ad534b26a14da5c2
+msgid "MCP Integration"
+msgstr "MCP 集成"
+
+#: ../../expand_tooluniverse/architecture.rst:262
+#: 56a8ab07184847f38b94e56f3b288abc
+msgid ""
+"**Server Side:** - `smcp.py` provides `SMCP` object for one-click exposure "
+"of all ToolUniverse tools - `smcp_server.py` and root "
+"`smcp_tooluniverse_server.py` provide convenient startup - `pyproject.toml` "
+"exposes commands: `tooluniverse-mcp`, `tooluniverse-smcp*`, etc."
+msgstr ""
+"**服务器端：**  \n"
+"- `smcp.py` 提供 `SMCP` 对象，实现一键暴露所有 ToolUniverse 工具  \n"
+"- `smcp_server.py` 及根目录下的 `smcp_tooluniverse_server.py` 提供便捷的启动方式  \n"
+"- `pyproject.toml` 暴露命令：`tooluniverse-mcp`、`tooluniverse-smcp*` 等。"
+
+#: ../../expand_tooluniverse/architecture.rst:267
+#: b5d62427770d4607b39bf7e08f035f2d
+msgid ""
+"**Client/Remote Tools:** - `mcp_client_tool.py`, `mcp_integration.py` "
+"support discovery and dynamic registration from remote MCP servers - "
+"`MCPAutoLoaderTool` can auto-discover and batch-register remote tools by URL"
+" with configurable prefixes and timeouts - `list_mcp_connections()` shows "
+"loaded remote connections and tool counts"
+msgstr ""
+"**客户端/远程工具：**  \n"
+"- `mcp_client_tool.py`、`mcp_integration.py` 支持从远程 MCP 服务器进行发现和动态注册  \n"
+"- `MCPAutoLoaderTool` 可通过配置前缀和超时时间，自动发现并批量注册远程工具的 URL  \n"
+"- `list_mcp_connections()` 显示已加载的远程连接及工具数量"
+
+#: ../../expand_tooluniverse/architecture.rst:273
+#: ef6a644dd11848a6812186d2ad5dd229
+msgid "Configuration & Data Conventions"
+msgstr "配置与数据约定"
+
+#: ../../expand_tooluniverse/architecture.rst:275
+#: c25442720e894e968277ce347ba43935
+msgid "**Tool Configuration Structure** (`data/*.json` files):"
+msgstr "**工具配置结构**（`data/*.json` 文件）："
+
+#: ../../expand_tooluniverse/architecture.rst:293
+#: a0824c0f840740d8858278856800b4b7
+msgid ""
+"**Naming & Mapping Conventions:** - `*_tools.json` typically corresponds to "
+"`*_tool.py` modules - `tool_registry.py` performs smart matching - Can use "
+"`@register_tool` for explicit registration at class definition"
+msgstr ""
+"**命名与映射规范：**  \n"
+"- `*_tools.json` 通常对应 `*_tool.py` 模块  \n"
+"- `tool_registry.py` 执行智能匹配  \n"
+"- 可在类定义时使用 `@register_tool` 进行显式注册"
+
+#: ../../expand_tooluniverse/architecture.rst:299
+#: 1daf77bd6e414f6697f4516b20e9a578
+msgid "Extension Points"
+msgstr "扩展点"
+
+#: ../../expand_tooluniverse/architecture.rst:301
+#: 6573d79087d54a838e5c6e6426ec6fc4
+msgid "**Adding New Data Source Tools:**"
+msgstr "**添加新数据源工具：**"
+
+#: ../../expand_tooluniverse/architecture.rst:303
+#: 5b194253f82147028990c6957b9182c7
+msgid "Create `xxx_tool.py` in `src/tooluniverse/` inheriting from `BaseTool`"
+msgstr "在 `src/tooluniverse/` 目录下创建继承自 `BaseTool` 的 `xxx_tool.py` 文件"
+
+#: ../../expand_tooluniverse/architecture.rst:304
+#: 022d49eecc0a4882aa4392177182d5fe
+msgid ""
+"Use `@register_tool('YourToolType')` for registration, or rely on naming "
+"conventions"
+msgstr "使用 `@register_tool('YourToolType')` 进行注册，或依赖命名约定。"
+
+#: ../../expand_tooluniverse/architecture.rst:305
+#: e8fba26be5d546d0bf3dd295346bb823
+msgid "Add one or more tool entries in `data/xxx_tools.json`"
+msgstr "在 `data/xxx_tools.json` 中添加一个或多个工具条目"
+
+#: ../../expand_tooluniverse/architecture.rst:307
+#: b26a47778feb45588252c7d15f24a74c
+msgid "**Integrating Remote MCP Tools:**"
+msgstr "**集成远程MCP工具：**"
+
+#: ../../expand_tooluniverse/architecture.rst:309
+#: d487138635cc4a9a872d36d6d067fb13
+msgid "Use `MCPAutoLoaderTool` with server URL for auto-discovery"
+msgstr "使用带有服务器 URL 的 `MCPAutoLoaderTool` 进行自动发现"
+
+#: ../../expand_tooluniverse/architecture.rst:310
+#: 79e5c3e90b424e569fda2b508c3a074b
+msgid ""
+"Or use `ToolUniverse.load_mcp_tools([...])` for runtime dynamic loading"
+msgstr "或者使用 `ToolUniverse.load_mcp_tools([...])` 进行运行时动态加载"
+
+#: ../../expand_tooluniverse/architecture.rst:312
+#: c2abd033aa114f60b4c626afd40d6fe1
+msgid "**Composition & Workflows:**"
+msgstr "**组成与工作流程：**"
+
+#: ../../expand_tooluniverse/architecture.rst:314
+#: 973a31f04664450887e5f1c58ffc8895
+msgid ""
+"Use `compose_tool.py` or add scripts in `compose_scripts/` for complex call "
+"chains"
+msgstr "对于复杂的调用链，请使用 `compose_tool.py` 或在 `compose_scripts/` 中添加脚本。"
+
+#: ../../expand_tooluniverse/architecture.rst:315
+#: c23b0e2636334fd789e1112da725503f
+msgid "Leverage `tool_finder_*` for retrieval and routing assistance"
+msgstr "利用 `tool_finder_*` 进行检索和路由辅助"
+
+#: ../../expand_tooluniverse/architecture.rst:318
+#: 1d573b23bb7c4b4a83738f7fce7c7111
+msgid "Directory Quick Reference"
+msgstr "目录快速参考"
+
+#: ../../expand_tooluniverse/architecture.rst:320
+#: 484014ed74684250ad141a88a4b8d6a0
+msgid "**Core Package**: `src/tooluniverse/`"
+msgstr "**核心包**：`src/tooluniverse/`"
+
+#: ../../expand_tooluniverse/architecture.rst:321
+#: c2bc8fda3f3149e1a4e99eb0b3f419d0
+msgid "**Tool Implementations**: Various `*_tool.py` files in same directory"
+msgstr "**工具实现**：同一目录下的各个 `*_tool.py` 文件"
+
+#: ../../expand_tooluniverse/architecture.rst:322
+#: b9258d09f4b64a2f8f9e884dcb984a83
+msgid "**Tool Configurations**: `src/tooluniverse/data/*.json`"
+msgstr "**工具配置**：`src/tooluniverse/data/*.json`"
+
+#: ../../expand_tooluniverse/architecture.rst:323
+#: 6b28875fa8b54800a2b3ea1ca52c147e
+msgid "**Tool Collections**: `src/tooluniverse/toolsets/`"
+msgstr "**工具集合**：`src/tooluniverse/toolsets/`"
+
+#: ../../expand_tooluniverse/architecture.rst:324
+#: 5b0944558d8147b981bfd107c79dbc0a
+msgid "**Composition Scripts**: `src/tooluniverse/compose_scripts/`"
+msgstr "**组合脚本**：`src/tooluniverse/compose_scripts/`"
+
+#: ../../expand_tooluniverse/architecture.rst:325
+#: 4ae6be93141445e0803fadf3a8859095
+msgid ""
+"**MCP & Servers**: `src/tooluniverse/smcp.py`, "
+"`src/tooluniverse/smcp_server.py`, root `smcp_tooluniverse_server.py`"
+msgstr ""
+"**MCP "
+"与服务器**：`src/tooluniverse/smcp.py`，`src/tooluniverse/smcp_server.py`，根目录下的 "
+"`smcp_tooluniverse_server.py`"
+
+#: ../../expand_tooluniverse/architecture.rst:326
+#: 8f0678154b6c427d9362709040347325
+msgid "**External Integrations**: `src/tooluniverse/remote/`"
+msgstr "**外部集成**：`src/tooluniverse/remote/`"
+
+#: ../../expand_tooluniverse/architecture.rst:327
+#: f2730804713142ed8d684b9e08c8c01e
+msgid ""
+"**Visualization & Graphs**: `src/tooluniverse/scripts/`, "
+"`src/tooluniverse/tool_graph_web_ui.py`"
+msgstr ""
+"**可视化与图表**：`src/tooluniverse/scripts/`，`src/tooluniverse/tool_graph_web_ui.py`"
+
+#: ../../expand_tooluniverse/architecture.rst:328
+#: 4a97b8abdef04b52983e9b82ef64aedb
+msgid ""
+"**Temp/cache outputs**: user cache directory (macOS: "
+"`~/Library/Caches/ToolUniverse`, Linux: `~/.cache/tooluniverse`, Windows: "
+"`%LOCALAPPDATA%\\\\ToolUniverse\\\\Cache`)"
+msgstr ""
+"**临时/缓存输出**：用户缓存目录（macOS: `~/Library/Caches/ToolUniverse`，Linux: "
+"`~/.cache/tooluniverse`，Windows: `%LOCALAPPDATA%\\\\ToolUniverse\\\\Cache`）"
+
+#: ../../expand_tooluniverse/architecture.rst:331
+#: 24bba2aac48e436e9ff9f5a6acbb5336
+msgid "Summary"
+msgstr "摘要"
+
+#: ../../expand_tooluniverse/architecture.rst:333
+#: c95a016539544ba8965bbd7287cd7e51
+msgid ""
+"ToolUniverse provides a complete ecosystem from tool discovery and execution"
+" to remote integration (MCP) through clear registry mechanisms, standardized"
+" JSON configurations, and rich tool modules. You can quickly extend new data"
+" sources or capabilities by adding modules and configurations without "
+"modifying the engine. The composition and visualization tools enable "
+"building explainable, reusable scientific workflows."
+msgstr ""
+"ToolUniverse 通过清晰的注册机制、标准化的 JSON "
+"配置和丰富的工具模块，提供了从工具发现与执行到远程集成（MCP）的完整生态系统。您可以通过添加模块和配置，快速扩展新的数据源或功能，而无需修改引擎。组合与可视化工具支持构建可解释且可复用的科学工作流。"
+
+#~ msgid "**Tests**: `src/tooluniverse/test/`"
+#~ msgstr "**测试**：`src/tooluniverse/test/`"

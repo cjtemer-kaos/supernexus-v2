@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.rst:2
+#: b69b9e9279ec4a38add2a727c6cf5cf3
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_and\\_description\\_by\\_pathway\\_name"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_and\\_description\\_by\\_pathway\\_name"
+" 模块"
+
+#: 0a10ea449bbf4c7d820da9f92e6a0987 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name:1
+msgid "drugbank_get_drug_name_and_description_by_pathway_name"
+msgstr "drugbank_通过通路名称获取药物名称和描述"
+
+#: 0358e1ed288344bfaa4eb64d2131f244 7f1f3eeff3d44a44917a04bc6d0e2e36 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name:3
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:1
+msgid "Get drug names and descriptions by pathway name."
+msgstr "通过通路名称获取药物名称和描述。"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.rst
+#: cdb34a5f787b4dc49b0d98461006d8f3
+msgid "Parameters"
+msgstr "参数"
+
+#: e2473eee0bf54cc3b3f0d1e2a450e97f of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:3
+msgid "Pathway name to search for"
+msgstr "搜索路径名称"
+
+#: 8df50e7e2b6b413280790049041f1530 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择 True 以执行区分大小写的搜索"
+
+#: 02f08ea960d140bf8ce0af61e0c64f46 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: 5e388b9250fc4c4e80a24a782c2a2f80 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 9ceb2cfc4ba74b108e6f629edbb93b3e of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fa0f0d7cec544861afd7883618a7b008 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: db4a3b10589b4a9aa20397e93d39d6e4 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.rst
+#: 9bfe36cb7ce044d1bfc4be86e6811220
+msgid "Return type"
+msgstr "返回类型"
+
+#: f8d03855c9e7480393f2b35d9a301a7a of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_pathway_name.drugbank_get_drug_name_and_description_by_pathway_name:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

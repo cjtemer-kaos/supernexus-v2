@@ -1,0 +1,16 @@
+{
+  "name": "engineer",
+  "version": "2.0.0",
+  "description": "Scripting de sistemas, automatizacion CLI e integraciones",
+  "main": "src.agents.engineer_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:engineer", "onCommand:script", "onCommand:automate"],
+  "semanticKeywords": ["script", "automate", "cli", "bash", "shell", "pipeline", "integration", "tool", "engineering"],
+  "category": "development",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 300,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

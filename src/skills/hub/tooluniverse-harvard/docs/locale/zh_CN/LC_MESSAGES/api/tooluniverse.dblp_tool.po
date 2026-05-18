@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.dblp_tool.rst:2 f19cf6c9e9e945ffa0450fb264725714
+msgid "tooluniverse.dblp\\_tool module"
+msgstr "tooluniverse.dblp_tool 模块"
+
+#: ac12e27e21cd4b23a8954b6cc6c7e4c5 of tooluniverse.dblp_tool.DBLPTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 795239d8afd54f13ac55129c43dd4aae of tooluniverse.dblp_tool.DBLPTool:1
+msgid "Search DBLP Computer Science Bibliography for publications."
+msgstr "在 DBLP 计算机科学文献库中搜索出版物。"
+
+#: a131848750cc4686a525dce8f4403694 of tooluniverse.dblp_tool.DBLPTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: a106633deb834cd7beba12af2364aea0 of tooluniverse.dblp_tool.DBLPTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.dblp_tool.rst dbd347fbc809496987f651b1d837ee78
+msgid "Parameters"
+msgstr "参数"
+
+#: 614652d4cc664809a70a576fe689d2c6 of tooluniverse.dblp_tool.DBLPTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: c3782d6d8a2f44c6a54968b1d83e2965 of tooluniverse.dblp_tool.DBLPTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 1b264f526daf4263aa5fedab23648bc3 of tooluniverse.dblp_tool.DBLPTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用结果缓存"
+
+#: bf8e00eb3ba64ecc9a4845c6ed879464 of tooluniverse.dblp_tool.DBLPTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: a588f93ab0f242c09da077066a833641 of tooluniverse.dblp_tool.DBLPTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由函数 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: f8e36ca03913463cae7e96791824a11e of tooluniverse.dblp_tool.DBLPTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

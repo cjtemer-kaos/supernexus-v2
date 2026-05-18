@@ -1,0 +1,385 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:1
+#: 1c404a013df54d1cb6457a5780afd74d
+msgid "MCP Tool Registration Tutorial - Register Local Tools as MCP Tools"
+msgstr "MCP 工具注册教程 - 将本地工具注册为 MCP 工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:3
+#: efcc54a7d19a44d08997a6ccf4df56a9
+msgid ""
+"This tutorial demonstrates how to use ToolUniverse's new functionality to "
+"register local tools as MCP tools and automatically load them on other "
+"servers."
+msgstr "本教程演示如何使用 ToolUniverse 的新功能，将本地工具注册为 MCP 工具，并在其他服务器上自动加载。"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:5
+#: 3ec22cd04f0c4f30ae7a3039fe4e4db9
+msgid "🚀 Quick Reference (60 seconds)"
+msgstr "🚀 快速参考（60秒）"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:7
+#: 1f8bcb4da2064b148bda6bb08dd1f9d7
+msgid "Server Side - Expose Your Tool"
+msgstr "服务器端 - 公开您的工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:40
+#: 192229a3860f49e3a921b9833f39f699
+msgid "Client Side - Use Remote Tool"
+msgstr "客户端 - 使用远程工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:56
+#: d0f44de187834d7287e189cc13a1bd8c
+msgid "📋 Common MCP Tool Patterns"
+msgstr "📋 常见的 MCP 工具模式"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:58
+#: 76cf28cb8af24385b20c393ba4630534
+msgid "API Service Tool"
+msgstr "API 服务工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:75
+#: cc0a5cc30448471c87ed11375c453293
+msgid "Data Processor Tool"
+msgstr "数据处理工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:103
+#: c53b7c0648e343638ae067141d7d7001
+msgid "🔧 Configuration Templates"
+msgstr "🔧 配置模板"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:105
+#: 57eb6ba6a47840f6b99f58a9e1b5eae9
+msgid "Simple MCP Tool"
+msgstr "简单MCP工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:123
+#: dc15dd22b3c941ca979b9b61ab50a36d
+msgid "Multi-Server Setup"
+msgstr "多服务器设置"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:135
+#: 01f6e961f1d946eab8d0c0c3c21dd92b
+msgid "❌ Common Mistakes"
+msgstr "❌ 常见错误"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:137
+#: ee83d95e16534114b995fd276b89a589
+msgid "❌ Wrong: Old parameter format"
+msgstr "❌ 错误：旧参数格式"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:146
+#: 0aaad22294614b56b54a871f6df9a355
+msgid "✅ Correct: New parameter format"
+msgstr "✅ 正确：新参数格式"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:158
+#: e1cb7563e58a4a5684b38afe5feea0d4
+msgid "❌ Wrong: Missing run method"
+msgstr "❌ 错误：缺少 run 方法"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:165
+#: ec821e1b2dce483e829564534aa6ea48
+msgid "✅ Correct: Proper run method"
+msgstr "✅ 正确：正确的运行方法"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:172
+#: b0a83754892f46e497fb9d0145f64426
+msgid "🧪 Testing Your MCP Tools"
+msgstr "🧪 测试您的MCP工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:174
+#: f1114c5454ea4aec91ef2a8701b58aa8
+msgid "1. Test Server Start"
+msgstr "1. 测试服务器启动"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:180
+#: 216ce7526eb447d3ad9501c668ffd535
+msgid "2. Test Tool Discovery"
+msgstr "2. 测试工具发现"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:188
+#: 3404550a518c40fd90478ffd659ba8eb
+msgid "3. Test Tool Execution"
+msgstr "3. 测试工具执行"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:199
+#: bc9eb3f9f00643ffb40ff3f8979ab033
+msgid "🆘 Troubleshooting"
+msgstr "🆘 故障排除"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 3465b89696194b21a7696978aeaafb74
+msgid "Problem"
+msgstr "问题"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: ca6c159110ba45caa6939f8e6a5cfbdd
+msgid "Solution"
+msgstr "解决方案"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 1c17a897ddc7484198889081837ae1cf
+msgid "Server won't start"
+msgstr "服务器无法启动"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 24cc76d665fc4918a3d04c0cd5d66f67
+msgid "Check if port is already in use: `lsof -i :8001`"
+msgstr "检查端口是否已被占用：`lsof -i :8001`"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 2eeefef7f9864cbe8504555aa5e7aea2
+msgid "Tool not discoverable"
+msgstr "工具无法被发现"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 684adcf732404093b20bebab7266624a
+msgid "Verify `@register_mcp_tool` decorator is correct"
+msgstr "验证 `@register_mcp_tool` 装饰器是否正确"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 926931a8ebb74d629f5e6fc65f868023
+msgid "Connection timeout"
+msgstr "连接超时"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 22e189e13f494fffba7a5ed61515e915
+msgid "Increase timeout: `tu.load_mcp_tools([...], timeout=60)`"
+msgstr "增加超时时间：`tu.load_mcp_tools([...], timeout=60)`"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: 406130335a374b11bff2d0a62e458e24
+msgid "Wrong tool name"
+msgstr "工具名称错误"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: c12c211ae94a40688527a90764069c5a
+msgid "MCP tools are prefixed with `mcp_`: use `mcp_my_tool`"
+msgstr "MCP 工具以 `mcp_` 为前缀：使用 `mcp_my_tool`"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: b08803a6e84a4ee9b32d41f06a16059f
+msgid "Parameter errors"
+msgstr "参数错误"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md
+#: cc03ef62f9f243aa96b43798641a44e1
+msgid "Check `parameter_schema` matches your `run()` method"
+msgstr "检查 `parameter_schema` 是否与您的 `run()` 方法匹配"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:209
+#: 4c425999856e4d4385cdab131d5c3762
+msgid "📚 Full Documentation"
+msgstr "📚 完整文档"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:211
+#: 65d57e8598084d58896989334cfb3466
+msgid "For complete examples and advanced usage, see the sections below."
+msgstr "有关完整示例和高级用法，请参见以下各节。"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:213
+#: d58fda738229427894026654f71983fe
+msgid "Core Concepts"
+msgstr "核心概念"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:215
+#: daac677cf7a94d4380b4241da9497769
+msgid "The Problem"
+msgstr "问题"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:216
+#: 53e390be943e4cd6aa0403ce539bcdc7
+msgid "You have a useful local tool"
+msgstr "您拥有一个实用的本地工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:217
+#: 74ebe1090dd146b582ececb1f7f90644
+msgid "Want to expose it for use by other ToolUniverse instances"
+msgstr "希望将其公开以供其他 ToolUniverse 实例使用"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:218
+#: e68db2aee670400491a9d61caa125d1f
+msgid "Need remote access through MCP protocol"
+msgstr "需要通过 MCP 协议进行远程访问"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:220
+#: c91c9aa8d3f74879bc25a7f73a48fcaa
+msgid "The Solution"
+msgstr "解决方案"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:221
+#: 02adcd86abe341379dd2466df6606e0b
+msgid "Use the `@register_mcp_tool` decorator to register local tools"
+msgstr "使用 `@register_mcp_tool` 装饰器注册本地工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:222
+#: c5dd11a9eb7a43f298c06f70bc0bdb3a
+msgid "Start MCP servers to expose these tools"
+msgstr "启动 MCP 服务器以暴露这些工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:223
+#: 2951d1c389cc4ea6a8cf7ffa7645e221
+msgid "Use `load_mcp_tools()` in other ToolUniverse instances to auto-load"
+msgstr "在其他 ToolUniverse 实例中使用 `load_mcp_tools()` 以实现自动加载"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:225
+#: 55a290af91104d57a120b96c005eb40f
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:227
+#: c8900eb93a6c42048aa04510f6bec59f
+msgid "1. Server Side - Register and Expose Tools"
+msgstr "1. 服务器端 - 注册并暴露工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:296
+#: 6428659972164ff1b2ae5bfd55a70490
+msgid "2. Client Side - Auto-load and Use Remote Tools"
+msgstr "2. 客户端 - 自动加载并使用远程工具"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:330
+#: c0085afa3b9149bfa6971616f3fe3f45
+msgid "Complete Usage Examples"
+msgstr "完整使用示例"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:332
+#: b7b5a06746c04b0b8ef74b1edf6b6ce9
+msgid "1. Multi-Tool Server"
+msgstr "1. 多功能服务器"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:436
+#: f5256998d9f0419bab881d5b4857cf60
+msgid "2. Smart Client Usage"
+msgstr "2. 智能客户端使用"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:512
+#: db09fea6c3ad4b7bb758e8f45d22d6cc
+msgid "Advanced Configuration"
+msgstr "高级配置"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:514
+#: 0588cbfa63d24586ae32f71616084db7
+msgid "1. Custom Parameter Schema"
+msgstr "1. 自定义参数架构"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:557
+#: 3824b8178c9f4f4288f34eb443d3cdf4
+msgid "2. Production Environment Configuration"
+msgstr "2. 生产环境配置"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:590
+#: babce923f29d44aabefe1d0e34461ab2
+msgid "3. Batch Registration of Existing Tools"
+msgstr "3. 现有工具的批量注册"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:633
+#: 77e7ec7471c04cf8b6669671d32de075
+msgid "Best Practices"
+msgstr "最佳实践"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:635
+#: e4330ae1e5a3460dbebd91ace5e1c2a2
+msgid "1. Error Handling"
+msgstr "1. 错误处理"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:655
+#: cdd0e6db4afe447ca90f317a7d84fc4c
+msgid "2. Performance Optimization"
+msgstr "2. 性能优化"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:682
+#: faae26e6beaa45edb14dad4ece816266
+msgid "3. Security Considerations"
+msgstr "3. 安全注意事项"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:704
+#: bf7bdd553728498780894ea1f9c0ad1d
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:706
+#: 7dc7878149294239a098a76db8073e85
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:708
+#: bc59b754b8ea4f29b613fb755cfedab1
+msgid "**Server Start Failure**"
+msgstr "**服务器启动失败**"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:718
+#: 190215b836314c41a937460cdf59aa88
+msgid "**Tools Not Discoverable**"
+msgstr "**工具无法被发现**"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:726
+#: b96434969a4841c3abd415bffe963323
+msgid "**Connection Timeout**"
+msgstr "**连接超时**"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:732
+#: cbb5700dff5c4810a92a569b506778ff
+msgid "Summary"
+msgstr "摘要"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:734
+#: 92792db72e4f4b128b331dc276f1827c
+msgid "With this MCP tool registration system, you can:"
+msgstr "通过此MCP工具注册系统，您可以："
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:736
+#: 5c61fc6f2c2f4f28a7e2af66c8fec658
+msgid "✅ **Simple Registration** - Use `@register_mcp_tool` decorator"
+msgstr "✅ **简单注册** - 使用 `@register_mcp_tool` 装饰器"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:737
+#: 73ea24dc074f431994d73a1f37654423
+msgid "✅ **Auto Exposure** - One-click MCP server startup"
+msgstr "✅ **自动曝光** - 一键启动 MCP 服务器"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:738
+#: 6c5565ac8717408ea075104082a7ef21
+msgid ""
+"✅ **Seamless Integration** - Other ToolUniverse instances auto-discover and "
+"load"
+msgstr "✅ **无缝集成** - 其他 ToolUniverse 实例自动发现并加载"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:739
+#: 0592a1074dd2435bb73d33317085177a
+msgid "✅ **Reuse SMCP** - Fully based on existing SMCP architecture"
+msgstr "✅ **重用 SMCP** - 完全基于现有的 SMCP 架构"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:740
+#: 659818c3a88f44b0ade6e44b6a4c70a2
+msgid ""
+"✅ **Production Ready** - Support for concurrency, error handling, "
+"configuration management"
+msgstr "✅ **生产就绪** - 支持并发处理、错误处理、配置管理"
+
+#: ../../tutorials/addtools/mcp_tool_registration_en.md:742
+#: 8d6f99a5ad1b4ebda3b297cdfa523eef
+msgid ""
+"This makes it easy to share useful local tools with team members or reuse "
+"tool functionality across different servers!"
+msgstr "这使得与团队成员共享有用的本地工具变得轻松，或在不同服务器之间重用工具功能！"

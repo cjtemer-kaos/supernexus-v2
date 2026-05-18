@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.rst:2
+#: cb50255a40724674af36943efba6b993
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_drugs\\_by\\_disease\\_efoId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_drugs\\_by\\_disease\\_efoId"
+" 模块"
+
+#: ee3d4ed97ea74e659fc03de9a019b691 of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId:1
+msgid "OpenTargets_get_associated_drugs_by_disease_efoId"
+msgstr "OpenTargets_根据疾病EFO ID获取相关药物"
+
+#: 4f97a497d59148689e5f506333017cc8 827f0ae82dcc4c9fa73c54d9de6ee7cd of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId:3
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:1
+msgid ""
+"Retrieve known drugs associated with a specific disease by disease efoId."
+msgstr "通过疾病的 efoId 检索与特定疾病相关的已知药物。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.rst
+#: 5ff2029d7ff148079bc8e009dcb72b7a
+msgid "Parameters"
+msgstr "参数"
+
+#: ce53870aab34497387a2a568f184f833 of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:3
+msgid "The EFO ID of the disease."
+msgstr "疾病的EFO ID。"
+
+#: 87c29c50f10b4ddc902cee3afdbcefba of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:5
+msgid ""
+"Number of entries to fetch, recomanding a large number to avoid missing "
+"drugs."
+msgstr "要获取的条目数量，建议设置较大的数量以避免遗漏药物。"
+
+#: b284492426cf41e3819569a1d19c77ea of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7ffb044d8caa4376a0de5c1782335c9c of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cb8653eefdee4391985b2b44d228f654 of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.rst
+#: fb6d2809cf6f4155a4a4e32de05f3d83
+msgid "Return type"
+msgstr "返回类型"
+
+#: fc557833089545a691b633233f0bcafb of
+#: tooluniverse.tools.OpenTargets_get_associated_drugs_by_disease_efoId.OpenTargets_get_associated_drugs_by_disease_efoId:14
+msgid ":py:class:`Any`"
+msgstr ""

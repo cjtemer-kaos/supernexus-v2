@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_deepchem_info.rst:2
+#: f5aa5e5941044dfa9d422664b75d1662
+msgid "tooluniverse.tools.get\\_deepchem\\_info module"
+msgstr "tooluniverse.tools.get\\_deepchem\\_info 模块"
+
+#: 907c12f90f7e4be8a79038aaa4dd3877 of tooluniverse.tools.get_deepchem_info:1
+msgid "get_deepchem_info"
+msgstr ""
+
+#: 477faf8dd25d4a43bdda436260d77872 76ec351e134e40788ea4c1b928328106 of
+#: tooluniverse.tools.get_deepchem_info:3
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:1
+msgid ""
+"Get comprehensive information about DeepChem – an open-source toolkit that "
+"brings advanced AI/ML ..."
+msgstr "获取有关DeepChem的全面信息——一个开源工具包，提供先进的AI/ML技术..."
+
+#: ../../api/tooluniverse.tools.get_deepchem_info.rst
+#: fe0c1ab5a125479a92c83f56e27e8f06
+msgid "Parameters"
+msgstr "参数"
+
+#: 6db8c75ee0594150a4665eb83a9be6f2 of
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 3473af7aa1b94ec9abd9ad4946a255d9 of
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6519845b614345c78b41b73e5c936672 of
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d22649e3d27f4984804af95675187ff0 of
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_deepchem_info.rst
+#: 122c9ead2f2e4ac5974cc35660297bc5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2fe20f5358814f8fa7d55a3f5d39cdac of
+#: tooluniverse.tools.get_deepchem_info.get_deepchem_info:12
+msgid ":py:class:`Any`"
+msgstr ""

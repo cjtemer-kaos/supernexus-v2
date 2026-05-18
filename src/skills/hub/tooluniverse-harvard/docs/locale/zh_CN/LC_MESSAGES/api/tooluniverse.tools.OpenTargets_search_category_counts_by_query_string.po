@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.rst:2
+#: 99f1147af22941a8907fe50c62b2b16c
+msgid ""
+"tooluniverse.tools.OpenTargets\\_search\\_category\\_counts\\_by\\_query\\_string"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_search\\_category\\_counts\\_by\\_query\\_string"
+" 模块"
+
+#: b0894df77998459ca7323326f4c95304 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string:1
+msgid "OpenTargets_search_category_counts_by_query_string"
+msgstr "OpenTargets_按查询字符串分类的搜索计数"
+
+#: 495c36876a3b484d8419f1222c04f040 684907d12d274638bc07d70744423487 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string:3
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:1
+msgid ""
+"Get the count of entries in each entity category (disease, target, drug) "
+"based on a query string."
+msgstr "根据查询字符串获取每个实体类别（疾病、靶点、药物）的条目数量。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.rst
+#: a3e873c915f04731b7a08969a1f4235d
+msgid "Parameters"
+msgstr "参数"
+
+#: 258f7fa6d4df42b3933c9baf8970b3e1 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:3
+msgid "The search string for querying information."
+msgstr "用于查询信息的搜索字符串。"
+
+#: 4c8740461ebe495e9341ae420e92f504 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c7fe5e2ed7c84424a8bfed4c7812a0a6 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2953ae393bcf46fabea68b8383532a6f of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.rst
+#: 089a8c7b5a6c4d46bbb12f206ac9216f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 758f953496384fa1ac44e9f8b9c087d7 of
+#: tooluniverse.tools.OpenTargets_search_category_counts_by_query_string.OpenTargets_search_category_counts_by_query_string:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_contraindications_by_drug_name.rst:2
+#: ed822b7e0fa946ffb98d453fc374fef7
+msgid "tooluniverse.tools.FDA\\_get\\_contraindications\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_contraindications\\_by\\_drug\\_name 模块"
+
+#: 306233f812b3466daea2b10d653403d0 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name:1
+msgid "FDA_get_contraindications_by_drug_name"
+msgstr "FDA_根据药品名称获取禁忌症"
+
+#: 45b5ac9440ad433d8862c136eb4b5e66 6b6660c37cfa47d09f5082f153e03a76 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name:3
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:1
+msgid "Retrieve contraindications information based on the drug name."
+msgstr "根据药品名称检索禁忌信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_contraindications_by_drug_name.rst
+#: a6bc49d2d54446448d2ea19884bf7ed4
+msgid "Parameters"
+msgstr "参数"
+
+#: a3caf42e4a4743f290435020cff0b100 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: 779ded84bb4f4360849d7355a22f4c4d of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 24912b560d5e43a0a087d1d812cf5834 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: fa33fd77c2dd4a8cad7066c9c7132204 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 90d3bd073665450fa6ddd3e2a24b21df of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2018e38ee4194d749decf56e44f9e118 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_contraindications_by_drug_name.rst
+#: 319a6c728dc44dbe84ac41b1975264ce
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7c0eb50eb33049189e8e1f6309dc2659 of
+#: tooluniverse.tools.FDA_get_contraindications_by_drug_name.FDA_get_contraindications_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

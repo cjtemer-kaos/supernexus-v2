@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools._shared_client.rst:2
+#: 371dedfe348d45b2ae55e2b4fddf031f
+msgid "tooluniverse.tools.\\_shared\\_client module"
+msgstr "tooluniverse.tools.\\_shared\\_client 模块"
+
+#: 3221e45db1324904a06156ee0bd59b51 of tooluniverse.tools._shared_client:1
+msgid "Shared ToolUniverse client for all tools."
+msgstr "共享的ToolUniverse客户端适用于所有工具。"
+
+#: 5e4020b783204da3b5e890eb760e3fb6 of tooluniverse.tools._shared_client:3
+msgid ""
+"This module provides a singleton ToolUniverse client to avoid reloading "
+"tools multiple times when using different tool functions."
+msgstr "此模块提供一个单例的ToolUniverse客户端，以避免在使用不同工具功能时多次重新加载工具。"
+
+#: 0523c8174b3d41e4975fb4444b06f6bc 304aca9c9ad94ce688df547c158b55b9
+#: 360675461124451fb202c9a484b53043 of tooluniverse.tools._shared_client:6
+#: tooluniverse.tools._shared_client.get_shared_client:18
+#: tooluniverse.tools._shared_client.reset_shared_client:7
+msgid "Thread Safety:"
+msgstr "线程安全："
+
+#: 58fe81b923cf4784b1351150b56f9fc1 of tooluniverse.tools._shared_client:7
+msgid ""
+"The shared client is thread-safe and uses double-checked locking to ensure "
+"only one ToolUniverse instance is created even in multi-threaded "
+"environments."
+msgstr "共享客户端是线程安全的，并使用双重检查锁定机制确保即使在多线程环境中也只创建一个 ToolUniverse 实例。"
+
+#: 45a8327af25c4825bdf6424d08f84437 c19f5a4d856d4892a98d0e909c487282 of
+#: tooluniverse.tools._shared_client:11
+#: tooluniverse.tools._shared_client.get_shared_client:22
+msgid "Configuration:"
+msgstr "配置："
+
+#: 2bfc7a1a7a0a460f9518210d8942bff9 of tooluniverse.tools._shared_client:12
+msgid ""
+"You can provide custom configuration parameters that will be used during the"
+" initial creation of the ToolUniverse instance. These parameters are ignored"
+" if the client has already been initialized."
+msgstr "您可以提供自定义配置参数，这些参数将在初始创建 ToolUniverse 实例时使用。如果客户端已被初始化，这些参数将被忽略。"
+
+#: cfcc2a9f1187413aacf026675c87830d of tooluniverse.tools._shared_client:16
+msgid "Custom Instance:"
+msgstr ""
+"自定义实例：\n"
+"\n"
+"上下文：文档"
+
+#: 404a2f1e10a44dfd8bb49a930b3476dc of tooluniverse.tools._shared_client:17
+msgid ""
+"You can provide your own ToolUniverse instance to be used instead of the "
+"shared singleton. This is useful when you need specific configurations or "
+"want to maintain separate instances."
+msgstr "您可以提供您自己的 ToolUniverse 实例，以替代共享的单例。这在您需要特定配置或希望维护独立实例时非常有用。"
+
+#: c50d03ec2cd2459d9412abe47191f566 e209903f7da546a48ce951d873c0ab88
+#: e27d34fcabc4461f983f3f883f8e016b of tooluniverse.tools._shared_client:21
+#: tooluniverse.tools._shared_client.get_shared_client:27
+#: tooluniverse.tools._shared_client.reset_shared_client:17
+msgid "Examples"
+msgstr "示例"
+
+#: 5cbe2b4fc1aa4652b98ad065ed0cde3b of tooluniverse.tools._shared_client:23
+msgid "Basic usage (default behavior):"
+msgstr "基本用法（默认行为）："
+
+#: 2ca1bf9203ef4243915f86400c585487 of tooluniverse.tools._shared_client:24
+msgid ""
+"from tooluniverse.tools import get_shared_client client = "
+"get_shared_client()"
+msgstr ""
+"从 tooluniverse.tools 导入 get_shared_client  \n"
+"client = get_shared_client()"
+
+#: 35575ea99aec4dcf8679f6ae62029576 of tooluniverse.tools._shared_client:27
+msgid "With custom configuration (only effective on first call):"
+msgstr "在首次调用时生效的自定义配置："
+
+#: 2c39434302fe40ef877fd29c65047ddc of tooluniverse.tools._shared_client:28
+msgid "client = get_shared_client(hooks_enabled=True, log_level=\"INFO\")"
+msgstr ""
+
+#: 3d073522a745430a81100a538e718f9b of tooluniverse.tools._shared_client:30
+msgid "Using your own instance:"
+msgstr "使用您自己的实例："
+
+#: 8ce4d2b213d7464783f04ed5cba44080 of tooluniverse.tools._shared_client:31
+msgid ""
+"my_tu = ToolUniverse(hooks_enabled=True) client = "
+"get_shared_client(custom_instance=my_tu)"
+msgstr ""
+"my_tu = ToolUniverse(hooks_enabled=True)  \n"
+"client = get_shared_client(custom_instance=my_tu)"
+
+#: 44951284b58c46658e9f050f82e2cb47 of tooluniverse.tools._shared_client:34
+msgid "Reset for testing:"
+msgstr "重置以进行测试："
+
+#: cc54b3749eaa40658d26b2a2e65f2da1 of tooluniverse.tools._shared_client:35
+msgid ""
+"from tooluniverse.tools import reset_shared_client reset_shared_client()"
+msgstr ""
+"从 tooluniverse.tools 导入 reset_shared_client  \n"
+"reset_shared_client()"
+
+#: 15407bca8b164cd38e3bbc698fa050d1 of
+#: tooluniverse.tools._shared_client.get_shared_client:1
+msgid "Get the shared ToolUniverse client instance."
+msgstr "获取共享的 ToolUniverse 客户端实例。"
+
+#: e4c59b7e8fcc458080876d46258ff1b1 of
+#: tooluniverse.tools._shared_client.get_shared_client:3
+msgid ""
+"This function implements a thread-safe singleton pattern with support for "
+"custom configurations and external instances."
+msgstr "此函数实现了线程安全的单例模式，并支持自定义配置和外部实例。"
+
+#: ../../api/tooluniverse.tools._shared_client.rst
+#: 139684dcf9c741028ff6dfe4a250557e
+msgid "Parameters"
+msgstr "参数"
+
+#: 56ccbe3f500b4d1cbd58ba913591e25b of
+#: tooluniverse.tools._shared_client.get_shared_client:6
+msgid ""
+"Optional ToolUniverse instance to use instead of the shared singleton. If "
+"provided, this instance will be returned directly without any singleton "
+"logic."
+msgstr "可选的 ToolUniverse 实例，可替代共享的单例。如果提供此实例，将直接返回该实例，而无需任何单例逻辑。"
+
+#: bec99027b00a447eb698937977a76e79 of
+#: tooluniverse.tools._shared_client.get_shared_client:9
+msgid ""
+"Optional configuration parameters to pass to ToolUniverse constructor. These"
+" are only used during the initial creation of the shared instance. If the "
+"shared instance already exists, these parameters are ignored."
+msgstr "可选配置参数可传递至ToolUniverse构造函数。这些参数仅在共享实例初始创建时使用。如果共享实例已存在，则会忽略这些参数。"
+
+#: ../../api/tooluniverse.tools._shared_client.rst
+#: b9f2e8f60dd84a10b2d4410d33866349
+msgid "Returns"
+msgstr "退货"
+
+#: 0e816d97c84345cdb3c1bdda3bf6724f of
+#: tooluniverse.tools._shared_client.get_shared_client:15
+msgid "The client instance to use for tool execution"
+msgstr "用于工具执行的客户端实例"
+
+#: ../../api/tooluniverse.tools._shared_client.rst
+#: 102d27cb91bd456fa0aab62a81c1ba31
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4616497858c443268cd1aa9c40c655ab of
+#: tooluniverse.tools._shared_client.get_shared_client:19
+msgid ""
+"This function is thread-safe. Multiple threads can call this function "
+"concurrently without risk of creating multiple ToolUniverse instances."
+msgstr "此函数是线程安全的。多个线程可以同时调用此函数，而无需担心会创建多个 ToolUniverse 实例。"
+
+#: e6f4567e7b4c419896241a98a4babd9a of
+#: tooluniverse.tools._shared_client.get_shared_client:23
+msgid ""
+"Configuration parameters are only applied during the initial creation of the"
+" shared instance. Subsequent calls with different parameters will not affect"
+" the already-created instance."
+msgstr "配置参数仅在共享实例初始创建时应用。后续使用不同参数的调用将不会影响已创建的实例。"
+
+#: efdd64fb4b8d4d8da58b6953178f7546 of
+#: tooluniverse.tools._shared_client.get_shared_client:29
+msgid "# Basic usage client = get_shared_client()"
+msgstr ""
+"# 基本用法  \n"
+"client = get_shared_client()"
+
+#: 9046c2b6a8444c1e91c343c5c614b13b of
+#: tooluniverse.tools._shared_client.get_shared_client:32
+msgid ""
+"# With custom configuration (only effective on first call) client = "
+"get_shared_client(hooks_enabled=True, log_level=\"DEBUG\")"
+msgstr ""
+"# 使用自定义配置（仅在首次调用时生效）  \n"
+"client = get_shared_client(hooks_enabled=True, log_level=\"DEBUG\")"
+
+#: a1769cca42cf4d70877e2461acf5592b of
+#: tooluniverse.tools._shared_client.get_shared_client:35
+msgid ""
+"# Using your own instance my_tu = ToolUniverse(hooks_enabled=True) client = "
+"get_shared_client(custom_instance=my_tu)"
+msgstr ""
+"# 使用您自己的实例  \n"
+"my_tu = ToolUniverse(hooks_enabled=True)  \n"
+"client = get_shared_client(custom_instance=my_tu)"
+
+#: c0c740b427704820b392ed7bbf453f02 of
+#: tooluniverse.tools._shared_client.reset_shared_client:1
+msgid ""
+"Reset the shared client (useful for testing or when you need to reload)."
+msgstr "重置共享客户端（适用于测试或需要重新加载时）。"
+
+#: 85f5506bab6a4cfaa76a94309254c162 of
+#: tooluniverse.tools._shared_client.reset_shared_client:3
+msgid ""
+"This function clears the shared client instance, allowing a new instance to "
+"be created on the next call to get_shared_client(). This is primarily useful"
+" for testing scenarios where you need to ensure a clean state."
+msgstr ""
+"此函数用于清除共享客户端实例，使得在下一次调用 get_shared_client() "
+"时可以创建一个新的实例。这主要用于测试场景，确保系统处于干净状态。"
+
+#: 9032cc9e570e47158d3b634285ca0791 of
+#: tooluniverse.tools._shared_client.reset_shared_client:8
+msgid ""
+"This function is thread-safe and uses the same lock as get_shared_client() "
+"to ensure proper synchronization."
+msgstr "此函数是线程安全的，并使用与 get_shared_client() 相同的锁以确保正确的同步。"
+
+#: a8848ef985624ed3aae0732a5bcf0a2f of
+#: tooluniverse.tools._shared_client.reset_shared_client:13
+msgid ""
+"Calling this function while other threads are using the shared client may "
+"cause unexpected behavior. It's recommended to only call this function when "
+"you're certain no other threads are accessing the client."
+msgstr "在其他线程使用共享客户端时调用此函数可能会导致意外行为。建议仅在确定没有其他线程访问客户端时调用此函数。"
+
+#: ba9dbd87942d4b42838a52ad473f44e7 of
+#: tooluniverse.tools._shared_client.reset_shared_client:19
+msgid "# Reset for testing reset_shared_client()"
+msgstr "# 测试 reset_shared_client() 的重置"
+
+#: 50c56c203bf44aaeb4b9a2f9f0f92d83 of
+#: tooluniverse.tools._shared_client.reset_shared_client:22
+msgid ""
+"# Now get_shared_client() will create a new instance client = "
+"get_shared_client(hooks_enabled=True)"
+msgstr ""
+"# 现在 get_shared_client() 将创建一个新实例 client = "
+"get_shared_client(hooks_enabled=True)"

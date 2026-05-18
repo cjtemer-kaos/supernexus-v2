@@ -1,0 +1,16 @@
+{
+  "name": "scholar",
+  "version": "2.0.0",
+  "description": "Investigador web y sintetizador de informacion",
+  "main": "src.agents.scholar_gem",
+  "model": "deepseek-r1:8b",
+  "activationEvents": ["onCommand:research", "onCommand:search", "onCommand:learn"],
+  "semanticKeywords": ["research", "search", "investigate", "learn", "study", "analyze", "paper", "article", "busca", "investiga"],
+  "category": "research",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 180,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

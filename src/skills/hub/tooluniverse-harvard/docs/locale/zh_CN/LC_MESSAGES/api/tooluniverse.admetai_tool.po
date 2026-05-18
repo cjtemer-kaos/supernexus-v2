@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.admetai_tool.rst:2 463a396167fe4646bfb4de49b3d2a515
+msgid "tooluniverse.admetai\\_tool module"
+msgstr "tooluniverse.admetai_tool 模块"
+
+#: 11c4637e969f4aa9aa2353c39d0c7dc9 of tooluniverse.admetai_tool.ADMETAITool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 3482d99b429e4a9e99ab690cab52b13e of tooluniverse.admetai_tool.ADMETAITool:1
+msgid ""
+"Tool to predict ADMET properties for a given SMILES string using the admet-"
+"ai Python package."
+msgstr "使用 admet-ai Python 包预测给定 SMILES 字符串的 ADMET 性质的工具。"
+
+#: bc8f2de5ce3b42b2a54ab05b7ca6e6e0 of
+#: tooluniverse.admetai_tool.ADMETAITool._predict:1
+msgid "Gets ADMET predictions for the given smiles"
+msgstr "获取给定SMILES的ADMET预测结果"
+
+#: 4e3075867db94ae3a3a9ed505b9e12e0 of
+#: tooluniverse.admetai_tool.ADMETAITool.run:1
+msgid "Predicts ADMET properties for a given SMILES string."
+msgstr "预测给定SMILES字符串的ADMET性质。"
+
+#: ../../api/tooluniverse.admetai_tool.rst e1e8fb01a2bc4bd5877f7974864acf2c
+msgid "Parameters"
+msgstr "参数"
+
+#: c61630201fff4d7e9964e16a35d43098 of
+#: tooluniverse.admetai_tool.ADMETAITool.run:3
+msgid "The SMILES string(s) of the molecule(s)."
+msgstr "分子的SMILES字符串。"
+
+#: ../../api/tooluniverse.admetai_tool.rst 6b002981a19749288273215573d89546
+msgid "Returns"
+msgstr "返回值"
+
+#: 5f6e729f09aa45b2b10428604f1a4fb9 of
+#: tooluniverse.admetai_tool.ADMETAITool.run:5
+msgid ""
+"A dictionary mapping each SMILES string to a subdictionary of selected ADMET"
+" properties and their predicted values."
+msgstr "一个字典，将每个SMILES字符串映射到一个包含所选ADMET属性及其预测值的子字典。"
+
+#: ../../api/tooluniverse.admetai_tool.rst 1ffd2a08c8b44c21984ee985f48ca9a5
+msgid "Return type"
+msgstr "返回类型"

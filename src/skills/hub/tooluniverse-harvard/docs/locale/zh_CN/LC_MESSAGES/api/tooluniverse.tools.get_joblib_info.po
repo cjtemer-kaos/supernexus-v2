@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_joblib_info.rst:2
+#: 2b7c667551f9499c909e7c92bee1f39b
+msgid "tooluniverse.tools.get\\_joblib\\_info module"
+msgstr "tooluniverse.tools.get\\_joblib\\_info 模块"
+
+#: 675f8b6aa9324b059855a73788a1f5aa of tooluniverse.tools.get_joblib_info:1
+msgid "get_joblib_info"
+msgstr "获取_joblib_信息"
+
+#: 2af21accf38d461ba29672358f02e415 f1491a052390433a88ee722ff627ba5e of
+#: tooluniverse.tools.get_joblib_info:3
+#: tooluniverse.tools.get_joblib_info.get_joblib_info:1
+msgid ""
+"Get information about the joblib package. Lightweight pipelining with Python"
+" functions"
+msgstr "获取有关 joblib 包的信息。使用 Python 函数实现轻量级流水线处理"
+
+#: ../../api/tooluniverse.tools.get_joblib_info.rst
+#: 3cd2a2d9e03a479cb942f6c73e7ade4c
+msgid "Parameters"
+msgstr "参数"
+
+#: 02d1eb3d675d4c7ba78a3f6a51652fe5 of
+#: tooluniverse.tools.get_joblib_info.get_joblib_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e9cf69c4df214abfa0bcb4575fbc044c of
+#: tooluniverse.tools.get_joblib_info.get_joblib_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0a162b4b57584590a3aee9bfdd308af7 of
+#: tooluniverse.tools.get_joblib_info.get_joblib_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_joblib_info.rst
+#: 01e2a928aeb04f8294a5cbf33315ed91
+msgid "Return type"
+msgstr "返回类型"
+
+#: 61e28c0dd44945b29560cf90b1b52871 of
+#: tooluniverse.tools.get_joblib_info.get_joblib_info:11
+msgid ":py:class:`Any`"
+msgstr ""

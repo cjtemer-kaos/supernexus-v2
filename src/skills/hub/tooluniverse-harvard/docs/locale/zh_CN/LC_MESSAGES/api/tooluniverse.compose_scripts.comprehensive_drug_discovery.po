@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.comprehensive_drug_discovery.rst:2
+#: f681115c793b4098ae2e73d495b10982
+msgid "tooluniverse.compose\\_scripts.comprehensive\\_drug\\_discovery module"
+msgstr "tooluniverse.compose_scripts.comprehensive_drug_discovery 模块"
+
+#: 9c068582aeda4bb98bf4583563f0d288 of
+#: tooluniverse.compose_scripts.comprehensive_drug_discovery:1
+msgid ""
+"Comprehensive Drug Discovery Pipeline Complete end-to-end drug discovery "
+"workflow from disease to optimized candidates"
+msgstr "全面药物发现流程 从疾病到优化候选药物的完整端到端药物发现工作流程"
+
+#: a630cdf522bb4ecaafb34586ed0ce8cc of
+#: tooluniverse.compose_scripts.comprehensive_drug_discovery.compose:1
+msgid "End-to-end drug discovery: Target → Lead → Optimization → Validation"
+msgstr "端到端药物发现：靶点 → 先导化合物 → 优化 → 验证"

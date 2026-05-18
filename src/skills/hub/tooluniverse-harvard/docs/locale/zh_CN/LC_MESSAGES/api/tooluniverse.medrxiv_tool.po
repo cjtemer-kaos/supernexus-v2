@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.medrxiv_tool.rst:2 a358fddc19954428b2b3e62582e4197c
+msgid "tooluniverse.medrxiv\\_tool module"
+msgstr "tooluniverse.medrxiv_tool 模块"
+
+#: 46466aed815142a48fa1ba6f9ab871d8 of tooluniverse.medrxiv_tool.MedRxivTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: d3f519ed2e114eae94bf16aa7202307a of tooluniverse.medrxiv_tool.MedRxivTool:1
+msgid ""
+"Search medRxiv preprints using medRxiv's API (same interface as bioRxiv)."
+msgstr "使用 medRxiv 的 API（与 bioRxiv 相同的接口）搜索 medRxiv 预印本。"
+
+#: ../../api/tooluniverse.medrxiv_tool.rst 0f7914966ac4459e9020c29237b1da3a
+#: 3773eb630b824e0ea414acf29192fdd2
+msgid "Parameters"
+msgstr "参数"
+
+#: d931bed1a6104180934db260f5a999c0 of tooluniverse.medrxiv_tool.MedRxivTool:3
+msgid "Search term"
+msgstr "搜索词"
+
+#: cb7aa2b415aa485bb197f1b257872729 of tooluniverse.medrxiv_tool.MedRxivTool:5
+msgid "Max results to return (default 10, max 200)"
+msgstr "返回的最大结果数（默认10，最大200）"
+
+#: da9bd00a25aa428aa6ad9eb5482058d9 of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 13998209f52c423ab3d279ad9ee3beeb of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: 4b5715f2dab9455cbaac9f037efc8bdb of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: cdd421189cef402eb68fd7985167c97a of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: b03042b3730543cab60a9cefeedd9c0a of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 447f590af11a4ba38d309cadf390b6c9 of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 3ddd64b8e924410d99cec55177ce3bdf of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: e50fa5c8305d4d9a8a51f647d8976e0e of
+#: tooluniverse.medrxiv_tool.MedRxivTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

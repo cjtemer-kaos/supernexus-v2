@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_reportlab_info.rst:2
+#: 78af74bdcfeb4c9f8f17ca41e433f347
+msgid "tooluniverse.tools.get\\_reportlab\\_info module"
+msgstr "tooluniverse.tools.get\\_reportlab\\_info 模块"
+
+#: 1758b09dcdec4949970b3ee0b5c13df7 of tooluniverse.tools.get_reportlab_info:1
+msgid "get_reportlab_info"
+msgstr "获取_reportlab_信息"
+
+#: 4ee26a9dc57549639919294f4879a21c de8a08b296b64ce486ae9eaa8c357c22 of
+#: tooluniverse.tools.get_reportlab_info:3
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:1
+msgid "Get comprehensive information about ReportLab – PDF generation library"
+msgstr "获取有关 ReportLab – PDF 生成库的全面信息"
+
+#: ../../api/tooluniverse.tools.get_reportlab_info.rst
+#: ad466fb15a2f49c39914e36e9944fa39
+msgid "Parameters"
+msgstr "参数"
+
+#: 7f6e9b3bea2d42db9e4ed8c789dac4f0 of
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: e63060922eec4eb7bb510f53660f96b6 of
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 53b25b4c497a495fa247016c13ea83c6 of
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 63c070f884df4e64a233e69222eb0aa5 of
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_reportlab_info.rst
+#: 4cb325a6593d4d3b92dc12de592de716
+msgid "Return type"
+msgstr "返回类型"
+
+#: ee69d81499e84d14861d20bc2f4e5295 of
+#: tooluniverse.tools.get_reportlab_info.get_reportlab_info:12
+msgid ":py:class:`Any`"
+msgstr ""

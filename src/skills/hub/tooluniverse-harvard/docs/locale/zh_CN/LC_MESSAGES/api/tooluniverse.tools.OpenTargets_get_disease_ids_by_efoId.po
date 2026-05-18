@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.rst:2
+#: 23c285a428be4dfe94733eb340697ed6
+msgid "tooluniverse.tools.OpenTargets\\_get\\_disease\\_ids\\_by\\_efoId module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_disease\\_ids\\_by\\_efoId 模块"
+
+#: efe219e06b264e70be2d7db9cbd5feb0 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId:1
+msgid "OpenTargets_get_disease_ids_by_efoId"
+msgstr ""
+"OpenTargets_get_disease_ids_by_efoId  \n"
+"获取疾病ID通过efoId"
+
+#: 7750b2ca10af4daabdf71d7fdcf4b81e bf04eeda9a1042e691b3d2588bd677cb of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId:3
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:1
+msgid ""
+"Given an EFO ID, retrieve all cross-referenced external disease IDs "
+"including MONDO, OMIM, MeSH, ..."
+msgstr "给定一个EFO ID，检索所有交叉引用的外部疾病ID，包括MONDO、OMIM、MeSH等..."
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.rst
+#: bed5a4adc4fa45dc9824f2a43de4d853
+msgid "Parameters"
+msgstr "参数"
+
+#: 5ea35a2f42fa45289136b921f7bdf140 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:3
+msgid "The EFO ID of the disease or phenotype."
+msgstr "疾病或表型的EFO ID。"
+
+#: 9b83b6b16de44e9e8520a1f35f7c161a of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 41fc40c428fb401cac847c0b77f2c980 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cd21646b125c426085ba37885fe6b2d4 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.rst
+#: ad43f3922d864747987ea8d858b12b3e
+msgid "Return type"
+msgstr "返回类型"
+
+#: cae4c2651595452a9b77011665450953 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_efoId.OpenTargets_get_disease_ids_by_efoId:12
+msgid ":py:class:`Any`"
+msgstr ""

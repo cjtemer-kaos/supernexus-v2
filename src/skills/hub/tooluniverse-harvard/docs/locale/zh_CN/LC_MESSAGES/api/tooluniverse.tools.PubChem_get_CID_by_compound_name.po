@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_compound_name.rst:2
+#: 96805919c7fa417cbf6ca17b339ea356
+msgid "tooluniverse.tools.PubChem\\_get\\_CID\\_by\\_compound\\_name module"
+msgstr "tooluniverse.tools.PubChem\\_get\\_CID\\_by\\_compound\\_name 模块"
+
+#: 5d7468935794435f9056cdfcdb36f85b of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name:1
+msgid "PubChem_get_CID_by_compound_name"
+msgstr "PubChem_通过化合物名称获取CID"
+
+#: 6cabcb83f2624c46b68ca01b28e30d24 84edb47d7c824ab29b425c4ed7e1a9e9 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name:3
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:1
+msgid "Retrieve corresponding CID list (IdentifierList) by chemical name."
+msgstr "通过化学名称检索对应的CID列表（IdentifierList）。"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_compound_name.rst
+#: d179f61f5da440e6b7e0de71eb39e8f9
+msgid "Parameters"
+msgstr "参数"
+
+#: a4db053617ca4081a6a700fa6bf44b50 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:3
+msgid "Chemical name (e.g., \"Aspirin\" or IUPAC name)."
+msgstr "化学名称（例如，“阿司匹林”或IUPAC名称）。"
+
+#: 8647bb3d86f7482ca1ed664d52869739 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9a76081b56d54dd194340f305e2fe1c3 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 67bf75bcbff8416fa5959a70b894e926 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_compound_name.rst
+#: e9550e82735a40fa9619bf683dce9c28
+msgid "Return type"
+msgstr "返回类型"
+
+#: 31747e0596aa446fb189bd06be56ea01 of
+#: tooluniverse.tools.PubChem_get_CID_by_compound_name.PubChem_get_CID_by_compound_name:12
+msgid ":py:class:`Any`"
+msgstr ""

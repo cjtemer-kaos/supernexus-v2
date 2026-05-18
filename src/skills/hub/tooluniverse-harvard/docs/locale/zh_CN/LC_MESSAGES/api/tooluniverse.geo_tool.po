@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.geo_tool.rst:2 9e755aa803df493d960f88e036d20c9f
+msgid "tooluniverse.geo\\_tool module"
+msgstr "tooluniverse.geo\\_tool 模块"
+
+#: 2329d71d35ed49a5b253dc3fd7efc49c of tooluniverse.geo_tool:1
+msgid "GEO Database REST API Tool"
+msgstr "GEO数据库REST API工具"
+
+#: c7bc20aa19374e209c40415805c799c2 of tooluniverse.geo_tool:3
+msgid ""
+"This tool provides access to gene expression data from the GEO database. GEO"
+" is a public repository that archives and freely distributes microarray, "
+"next-generation sequencing, and other forms of high-throughput functional "
+"genomics data."
+msgstr ""
+"该工具提供从GEO数据库获取基因表达数据的功能。GEO是一个公共存储库，用于存档并免费分发微阵列、下一代测序以及其他形式的高通量功能基因组学数据。"
+
+#: b48295a46ee544738231bf6d85523860 of tooluniverse.geo_tool.GEORESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: e1a00a43354244428fadab77eebb8fdc of tooluniverse.geo_tool.GEORESTTool:1
+msgid ""
+"GEO Database REST API tool. Generic wrapper for GEO API endpoints defined in"
+" expression_tools.json."
+msgstr "GEO数据库REST API工具。用于GEO API端点的通用封装，定义于expression_tools.json中。"
+
+#: 123bbab61810488faf0cb764de535c15 of
+#: tooluniverse.geo_tool.GEORESTTool._build_url:1
+msgid "Build URL for GEO API request."
+msgstr "构建用于GEO API请求的URL。"
+
+#: 715052d3b10a44e3b2b2bb271dc476c8 of
+#: tooluniverse.geo_tool.GEORESTTool._build_params:1
+msgid "Build parameters for GEO API request."
+msgstr "构建用于GEO API请求的参数。"
+
+#: bf792556edb54f429fe90989de415c00 of
+#: tooluniverse.geo_tool.GEORESTTool._make_request:1
+msgid "Perform a GET request and handle common errors."
+msgstr "执行 GET 请求并处理常见错误。"
+
+#: a3410c659255493c912533f93ce76c78 of tooluniverse.geo_tool.GEORESTTool.run:1
+msgid "Execute the tool with given arguments."
+msgstr "使用指定的参数执行工具。"

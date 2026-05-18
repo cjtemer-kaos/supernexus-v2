@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.WHO_Guidelines_Search.rst:2
+#: 2de195cfc7d04e908cb76f2b0b2afb62
+msgid "tooluniverse.tools.WHO\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.WHO\\_Guidelines\\_Search 模块"
+
+#: 51477a33d13448578f8203b4c47932d1 of
+#: tooluniverse.tools.WHO_Guidelines_Search:1
+msgid "WHO_Guidelines_Search"
+msgstr "WHO_指南_搜索"
+
+#: 119fec2003354daf996dc170e75dfea0 bc869de8f2604fb5a5189a437b5bf2fe of
+#: tooluniverse.tools.WHO_Guidelines_Search:3
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:1
+msgid ""
+"Search WHO (World Health Organization) official clinical guidelines and "
+"health recommendations. P..."
+msgstr "搜索世界卫生组织（WHO）官方临床指南和健康建议。"
+
+#: ../../api/tooluniverse.tools.WHO_Guidelines_Search.rst
+#: 3fdd5ce825eb4e22aa7222c918da53e0
+msgid "Parameters"
+msgstr "参数"
+
+#: 0a6dbcb522a641ab8abedaca79fe889a of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:3
+msgid ""
+"Medical condition, disease, or health topic to search for in WHO guidelines "
+"(..."
+msgstr "医学状况、疾病或健康主题以搜索WHO指南（..."
+
+#: 212f7fbc6f8548fbab015e19e2a7ac58 of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回指南的最大数量（默认值：10）"
+
+#: 8440f5bdbbe94fe6b4c0854a21e80b50 of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 99bd0c2e82504353befa5cc6a27956ce of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a69c9c5c103148a49608953837ae871c of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.WHO_Guidelines_Search.rst
+#: c668547b959a4ddbb1ac549ef080c4f7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1d5da264db7441ddae15f4100577b43b of
+#: tooluniverse.tools.WHO_Guidelines_Search.WHO_Guidelines_Search:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

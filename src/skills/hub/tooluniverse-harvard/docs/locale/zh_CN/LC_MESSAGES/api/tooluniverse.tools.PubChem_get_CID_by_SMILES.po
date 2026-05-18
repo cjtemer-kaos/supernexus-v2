@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_SMILES.rst:2
+#: 1430802b67704eb6a3b4bde05ad2be0c
+msgid "tooluniverse.tools.PubChem\\_get\\_CID\\_by\\_SMILES module"
+msgstr "tooluniverse.tools.PubChem\\_get\\_CID\\_by\\_SMILES 模块"
+
+#: cc10ce7a3b7d41b0b90c92c89083b7b0 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES:1
+msgid "PubChem_get_CID_by_SMILES"
+msgstr "PubChem_通过SMILES获取CID"
+
+#: 4b09a405061542f4844df7e1e3265a87 8d37ff94918b4853ab84866bed505b48 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES:3
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:1
+msgid "Retrieve corresponding CID list by SMILES string."
+msgstr "通过SMILES字符串检索对应的CID列表。"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_SMILES.rst
+#: 1e597166ca8446df96d6d3c4d15c79ac
+msgid "Parameters"
+msgstr "参数"
+
+#: f85030365eba4afbbc3cf0b0d12696b9 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:3
+msgid ""
+"SMILES expression (e.g., \"CC(=O)OC1=CC=CC=C1C(=O)O\" corresponds to "
+"aspirin)."
+msgstr "SMILES 表达式（例如，“CC(=O)OC1=CC=CC=C1C(=O)O” 对应阿司匹林）。"
+
+#: 319ec62857d64b6ea7b599bb8dda9541 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 21033c4456b147a8b68ad0467b33e542 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a399aea347154bd59060cd1db205d2d0 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_get_CID_by_SMILES.rst
+#: b0e849c4f82644118410d098cff9fa25
+msgid "Return type"
+msgstr "返回类型"
+
+#: fd9f2abfbcc749208eff8dd7c2ecf2f0 of
+#: tooluniverse.tools.PubChem_get_CID_by_SMILES.PubChem_get_CID_by_SMILES:12
+msgid ":py:class:`Any`"
+msgstr ""

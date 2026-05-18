@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.rst:2
+#: f3ed343a45f04048a769d2d96351927e
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_approved\\_indications\\_by\\_drug\\_chemblId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_approved\\_indications\\_by\\_drug\\_chemblId"
+" 模块"
+
+#: a63949110874451da97bb6723b4d4f33 of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId:1
+msgid "OpenTargets_get_approved_indications_by_drug_chemblId"
+msgstr "OpenTargets_根据药物ChemblId获取已批准适应症"
+
+#: 185d4d084612489cbe897d732bb04f25 e82a7275a8c141fea8bd07235955147c of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:1
+msgid ""
+"Retrieve detailed information about multiple drugs using a list of ChEMBL "
+"IDs."
+msgstr "使用 ChEMBL ID 列表检索多个药物的详细信息。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.rst
+#: 45c0421711c4411f90ae8f8a062d201f
+msgid "Parameters"
+msgstr "参数"
+
+#: 898ed70622504359aded54279d1153e1 of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: 61d715fbd92a479daa6bf4bb12b4254d of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 26fad31267e143e68674f8e1854346a6 of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d488bf2a31744dacad7ceb8fb535db83 of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.rst
+#: 5cffc821bcd649deb0584711649871ab
+msgid "Return type"
+msgstr "返回类型"
+
+#: b2533a25ce884d88a5fb2f127b0da926 of
+#: tooluniverse.tools.OpenTargets_get_approved_indications_by_drug_chemblId.OpenTargets_get_approved_indications_by_drug_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

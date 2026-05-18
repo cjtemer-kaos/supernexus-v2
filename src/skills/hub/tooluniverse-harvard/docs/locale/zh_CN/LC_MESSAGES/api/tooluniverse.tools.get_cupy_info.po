@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_cupy_info.rst:2
+#: d071591aba374edda733df256d7901e2
+msgid "tooluniverse.tools.get\\_cupy\\_info module"
+msgstr "tooluniverse.tools.get_cupy_info 模块"
+
+#: 0be3d857acf74bf1a5beab05ff8ac400 of tooluniverse.tools.get_cupy_info:1
+msgid "get_cupy_info"
+msgstr ""
+
+#: 4cf473617ed1451a9bd72233f8f0f89d 5fe835581e4c4420af89b0ddf53cdd0e of
+#: tooluniverse.tools.get_cupy_info:3
+#: tooluniverse.tools.get_cupy_info.get_cupy_info:1
+msgid ""
+"Get information about the cupy package. NumPy-compatible array library "
+"accelerated with CUDA"
+msgstr "获取有关cupy软件包的信息。与NumPy兼容的数组库，使用CUDA加速。"
+
+#: ../../api/tooluniverse.tools.get_cupy_info.rst
+#: 6e3fa3c177c246e7b69d882cda0235cc
+msgid "Parameters"
+msgstr "参数"
+
+#: 1e820ddd094f4cd6987c0ac69d49b591 of
+#: tooluniverse.tools.get_cupy_info.get_cupy_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8db2bc1f5548408fb8388a5e7fb6e321 of
+#: tooluniverse.tools.get_cupy_info.get_cupy_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 73ef7308c64f4fa69d41a664c7b0a82b of
+#: tooluniverse.tools.get_cupy_info.get_cupy_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_cupy_info.rst
+#: 022d264951ce4929a1ca18cc994c17b2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8d11b56485b541f6bcf19cb93eff984c of
+#: tooluniverse.tools.get_cupy_info.get_cupy_info:11
+msgid ":py:class:`Any`"
+msgstr ""

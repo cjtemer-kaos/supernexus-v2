@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.rst:2
+#: 642fe424fd13492d86879776ccf6536e
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_other\\_safety\\_info module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_other\\_safety\\_info 模块"
+
+#: 751c06fc582f4664ab55e6f6c0dec2c8 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info:1
+msgid "FDA_get_drug_name_by_other_safety_info"
+msgstr "FDA_根据其他安全信息获取药品名称"
+
+#: 38307bda945d470098bd1a73e15d50f8 6f37002511df4ee3b5ffb22913f20851 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info:3
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:1
+msgid ""
+"Retrieve the drug name based on the provided safety information. This tool "
+"looks through safety i..."
+msgstr "根据提供的安全信息检索药品名称。本工具会通过安全信息进行搜索。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.rst
+#: 57d07e3c6e0946b0972b9296b9f882d6
+msgid "Parameters"
+msgstr "参数"
+
+#: c1f596be53f941429b558e6100272c07 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:3
+msgid "Information about safe use and handling of the product."
+msgstr "关于产品安全使用和操作的信息。"
+
+#: 9b2e4d02a6be4b9499673ef2291fe2a1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: b7b1d5502b124ca5a689c277ab7fc6b2 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: ac4f935e56854d90818af3c8af0feeb1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 091d178ee9934305be8dbb5160ff6b7f of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4de892c165264d8bbe078b058a01f6b9 of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.rst
+#: 6364341c11ba4c2c8ee9cece7514d464
+msgid "Return type"
+msgstr "返回类型"
+
+#: 94d0f7b15d054446a5e05bfe58ff8c5b of
+#: tooluniverse.tools.FDA_get_drug_name_by_other_safety_info.FDA_get_drug_name_by_other_safety_info:16
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.rst:2
+#: c9ad8c2506ff4bf1bdf7aedc05a065e3
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_consulting\\_doctor\\_pharmacist\\_info"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_consulting\\_doctor\\_pharmacist\\_info"
+" 模块"
+
+#: c3646c042ae74aa5afb4cc7be86a5f11 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:1
+msgid "FDA_get_drug_names_by_consulting_doctor_pharmacist_info"
+msgstr "FDA_通过咨询医生药剂师信息获取药物名称"
+
+#: 613bd6855ed5409c987e7af3b653ff09 993d5912a04e4a5e8d62c2956913c522 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:1
+msgid ""
+"Retrieve drug names based on information about when a doctor or pharmacist "
+"should be consulted re..."
+msgstr "根据有关何时应咨询医生或药剂师的信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.rst
+#: afcd4beba9a846d8ac3767cae4e44e08
+msgid "Parameters"
+msgstr "参数"
+
+#: f272afdcf65e4ea2986d81ca0ffb1862 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:3
+msgid ""
+"Information about when a doctor or pharmacist should be consulted regarding "
+"d..."
+msgstr "有关何时应咨询医生或药剂师的信息"
+
+#: e2843ea24fd74ada889b92e5ae102bb6 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 3e5c35ae1d6442feb299c1c8853006ef of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: baeb96f072ab411896ddbc494d8a5afd of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: f3c56c5dcc144f099525c892e9b40ed3 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4d78980eb9f14d6791ac25de9f461e15 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e16c1708813144658348f90926e4f5de of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.rst
+#: dbf2c240d37d47188dffe9cc6dec57dc
+msgid "Return type"
+msgstr "返回类型"
+
+#: bd58912a07de4095bb3f25f6050cefd5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_consulting_doctor_pharmacist_info.FDA_get_drug_names_by_consulting_doctor_pharmacist_info:18
+msgid ":py:class:`Any`"
+msgstr ""

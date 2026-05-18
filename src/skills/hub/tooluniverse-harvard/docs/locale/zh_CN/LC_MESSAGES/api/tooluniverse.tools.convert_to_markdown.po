@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.convert_to_markdown.rst:2
+#: 6fb7498177a04717aea050992b162cc6
+msgid "tooluniverse.tools.convert\\_to\\_markdown module"
+msgstr "tooluniverse.tools.convert\\_to\\_markdown 模块"
+
+#: 6c5f144ef34541cc9d8b690ae650ebc2 of
+#: tooluniverse.tools.convert_to_markdown:1
+msgid "convert_to_markdown"
+msgstr "转换为Markdown"
+
+#: 6ee7e506a2bc49a09cce592cf1ebe3cb f4a5b8093daa46f98ec2a05e8a6e85ab of
+#: tooluniverse.tools.convert_to_markdown:3
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:1
+msgid ""
+"Convert a resource described by an http:, https:, file: or data: URI to "
+"markdown."
+msgstr "将由 http:、https:、file: 或 data: URI 描述的资源转换为 Markdown。"
+
+#: ../../api/tooluniverse.tools.convert_to_markdown.rst
+#: ebb0ed02ce614207a16397b3cdaa1e3b
+msgid "Parameters"
+msgstr "参数"
+
+#: 97782f66ce1e4426a8e825fc809351cd of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:3
+msgid ""
+"URI of the resource to convert (supports http:, https:, file:, data: URIs)"
+msgstr "要转换的资源的URI（支持http:、https:、file:、data: URI）"
+
+#: 752b461b62e04a0a9ae42d218391cb1a of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:5
+msgid "Optional output file path"
+msgstr "可选输出文件路径"
+
+#: 2eb7c0e5eef24d6788e504e70341081f of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:7
+msgid "Enable 3rd-party plugins"
+msgstr "启用第三方插件"
+
+#: dfbeb3abf9654e92b351d3225f2a40a3 of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: da8c9b06250d41d9ae760ac5957a463e of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6ae3c43573d940c289e96405a3151a8c of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.convert_to_markdown.rst
+#: b8fc71f0ebc646a7bcb873013eac5e56
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9b93c54726064e08b4cf5897b800fe52 of
+#: tooluniverse.tools.convert_to_markdown.convert_to_markdown:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

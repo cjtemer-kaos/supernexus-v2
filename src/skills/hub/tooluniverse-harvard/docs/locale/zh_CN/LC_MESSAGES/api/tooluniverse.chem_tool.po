@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.chem_tool.rst:2 9559af93ba4e4d8e9a1ad5e6baa1357c
+msgid "tooluniverse.chem\\_tool module"
+msgstr "tooluniverse.chem_tool 模块"
+
+#: c9752b8776a340409d7bedcac1979806 of tooluniverse.chem_tool.ChEMBLTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 177470b4959a43808ee65308835c84ba of tooluniverse.chem_tool.ChEMBLTool:1
+msgid ""
+"Tool to search for molecules similar to a given compound name or SMILES "
+"using the ChEMBL Web Services API."
+msgstr "使用 ChEMBL Web Services API，根据给定的化合物名称或 SMILES 搜索相似分子的工具。"
+
+#: 52bb00240465438caeb85b377c0e9f87 of tooluniverse.chem_tool.ChEMBLTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 3b58ccdaca034676876fdb6035ce8b56 of tooluniverse.chem_tool.ChEMBLTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.chem_tool.rst 5d3c1cadd7e04a939615bdea18653789
+msgid "Parameters"
+msgstr "参数"
+
+#: f1bc26248789428db243415a670f46ce of tooluniverse.chem_tool.ChEMBLTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: e367abefbc304437a0d637908d8b4ec0 of tooluniverse.chem_tool.ChEMBLTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 438dec84d3f440549c1e50635384b387 of
+#: tooluniverse.chem_tool.ChEMBLTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: f7f11b99eeba4527a66433937052da7f of
+#: tooluniverse.chem_tool.ChEMBLTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: e0daa2bf8642479b87e49ccbe3e1d8eb of
+#: tooluniverse.chem_tool.ChEMBLTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）从 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: a2e30e5b86e241248a52732450653e51 of
+#: tooluniverse.chem_tool.ChEMBLTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"
+
+#: 285b8c5f4d204f75a6b370f078e60b33 of
+#: tooluniverse.chem_tool.ChEMBLTool.get_chembl_id_by_name:1
+msgid ""
+"Search ChEMBL for a compound by name and return the ChEMBL ID of the first "
+"match."
+msgstr "通过名称在 ChEMBL 中搜索化合物，并返回第一个匹配项的 ChEMBL ID。"
+
+#: 7eaa632caf5544c8809561fcc3110518 of
+#: tooluniverse.chem_tool.ChEMBLTool.get_smiles_pref_name_by_chembl_id:1
+msgid ""
+"Given a ChEMBL ID, return a dict with canonical SMILES and preferred name."
+msgstr "给定一个 ChEMBL ID，返回包含规范 SMILES 和首选名称的字典。"
+
+#: 11f041f9e4964f88bb45559b7940b990 of
+#: tooluniverse.chem_tool.ChEMBLTool.get_chembl_smiles_pref_name_id_by_name:1
+msgid ""
+"Search ChEMBL for a compound by name and return a list of dicts with ChEMBL "
+"ID, canonical SMILES, and preferred name for the top 5 matches."
+msgstr "通过名称在 ChEMBL 中搜索化合物，并返回前五个匹配项的字典列表，包含 ChEMBL ID、规范 SMILES 及首选名称。"

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_cellpose_info.rst:2
+#: 43d8c76acac24adca902f13f650988fb
+msgid "tooluniverse.tools.get\\_cellpose\\_info module"
+msgstr "tooluniverse.tools.get\\_cellpose\\_info 模块"
+
+#: e43bcd4800a54313a125bba6700f6dde of tooluniverse.tools.get_cellpose_info:1
+msgid "get_cellpose_info"
+msgstr "get_cellpose_info 获取 Cellpose 信息"
+
+#: 547cfd9f7e9a42778f1484f2d7d02b32 8442fd734b6b4edba7cbed57ba52b8e1 of
+#: tooluniverse.tools.get_cellpose_info:3
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:1
+msgid ""
+"Get comprehensive information about Cellpose – cell segmentation algorithm"
+msgstr "获取有关 Cellpose——细胞分割算法的全面信息"
+
+#: ../../api/tooluniverse.tools.get_cellpose_info.rst
+#: 4bf97f9b7f2143ac9471a2c355f7ed5d
+msgid "Parameters"
+msgstr "参数"
+
+#: aa0baf32ab56465b8777d93027eaf367 of
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 317c991fa27448f398b7d351adcf5dd4 of
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a66dba1d3b10407d93d562b83e84757a of
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d39a037fd9ad4185a0820067a391df99 of
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_cellpose_info.rst
+#: 0f1234a19e0e4327939b764d80c7c68b
+msgid "Return type"
+msgstr "返回类型"
+
+#: d001e3489c88464e8b26f74bb45469aa of
+#: tooluniverse.tools.get_cellpose_info.get_cellpose_info:12
+msgid ":py:class:`Any`"
+msgstr ""

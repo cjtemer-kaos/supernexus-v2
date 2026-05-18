@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.doaj_tool.rst:2 580a68e7ca12446c9334ff4ff2a75356
+msgid "tooluniverse.doaj\\_tool module"
+msgstr "tooluniverse.doaj_tool 模块"
+
+#: 314664a4ca0345deabcf968acb5610d8 of tooluniverse.doaj_tool.DOAJTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: f7c4dbd53fb94981b0686ab550fb6a8c of tooluniverse.doaj_tool.DOAJTool:1
+msgid "Search DOAJ (Directory of Open Access Journals) articles and journals."
+msgstr "搜索 DOAJ（开放获取期刊目录）中的文章和期刊。"
+
+#: eed73e2ee8d94c9faebd390a573433e0 of tooluniverse.doaj_tool.DOAJTool:3
+msgid "Parameters (arguments):"
+msgstr "参数（参数列表）："
+
+#: c792cc67c1354dd496ef75fead907ee2 of tooluniverse.doaj_tool.DOAJTool:4
+msgid ""
+"query (str): Query string (Lucene syntax supported by DOAJ) max_results "
+"(int): Max number of results (default 10, max 100) type (str): \"articles\" "
+"or \"journals\" (default: \"articles\")"
+msgstr ""
+"query (str)：查询字符串（支持 DOAJ 的 Lucene 语法）  \n"
+"max_results (int)：最大结果数量（默认 10，最大 100）  \n"
+"type (str)：“articles” 或 “journals”（默认：“articles”）"
+
+#: 8659f4a16def42aa97e023f4b418d9df of tooluniverse.doaj_tool.DOAJTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 0ff796b8511f40eea4f44917992c2d5d of tooluniverse.doaj_tool.DOAJTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.doaj_tool.rst 5809c75d65e74f47801a5436bd5aa968
+#, fuzzy
+msgid "Parameters"
+msgstr "参数（参数列表）："
+
+#: bee472ae01f9492ab8f26151cc2b7e0e of tooluniverse.doaj_tool.DOAJTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 183bc410adc04ce3bb3dec274d71c092 of tooluniverse.doaj_tool.DOAJTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: aab6bb13db5646f0817cf7f58167fe7d of tooluniverse.doaj_tool.DOAJTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 303fab3489ce462ba500be1b7c628f09 of tooluniverse.doaj_tool.DOAJTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: f537a1ef78374b06b436633ee9ef5b2b of tooluniverse.doaj_tool.DOAJTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 91e437f908f14306bc30d79043b24511 of tooluniverse.doaj_tool.DOAJTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

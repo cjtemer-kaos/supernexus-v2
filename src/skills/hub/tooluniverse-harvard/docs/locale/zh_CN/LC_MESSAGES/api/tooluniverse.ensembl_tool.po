@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.ensembl_tool.rst:2 0d0ac637e2f7406f8f8d7eb95fe6380c
+msgid "tooluniverse.ensembl\\_tool module"
+msgstr "tooluniverse.ensembl\\_tool 模块"
+
+#: 0bbfdcae13464ad1914b3ed68c1dcdfa of tooluniverse.ensembl_tool.EnsemblTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 2213a6fbbdd24aef9d1f06c596ea6cca of tooluniverse.ensembl_tool.EnsemblTool:1
+msgid ""
+"Local tool wrapper for Ensembl REST API lookups. Supports symbol→gene lookup"
+" (xrefs/symbol) then lookup/id to fetch metadata."
+msgstr ""
+"本地工具封装用于Ensembl REST API查询。支持符号→基因查询（xrefs/symbol），然后通过lookup/id获取元数据。"
+
+#: 4ebc077230f64134a66d985553e8fcf0 of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 4108d50106a841a99152d32805f9ee1f of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些实现通常需要一个输入字典。"
+
+#: ../../api/tooluniverse.ensembl_tool.rst 993ac78cd796403ab11da3aef1b600a1
+msgid "Parameters"
+msgstr "参数"
+
+#: 907d65a40c874329a63a752f5658d7bf of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 499ab1f28c6f4686af5e5873bf097eb0 of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 4ad254a402ae422b8493aecfe7ad4133 of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 55acd00315f9438ea9ad5f148fef64b4 of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 9408ab66556f448aa429ca7437f5ab1a of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: bcd8ef7c28a44e0ba23fd09a925e296a of
+#: tooluniverse.ensembl_tool.EnsemblTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们将仅接收 arguments 参数。"

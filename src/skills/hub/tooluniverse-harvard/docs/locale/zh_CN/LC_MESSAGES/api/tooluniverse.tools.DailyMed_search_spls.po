@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DailyMed_search_spls.rst:2
+#: 68f8b381694f4a968a3058aa1314a36a
+msgid "tooluniverse.tools.DailyMed\\_search\\_spls module"
+msgstr "tooluniverse.tools.DailyMed\\_search\\_spls 模块"
+
+#: 84aeb2d58fb54719b17663f8eb3648ad of
+#: tooluniverse.tools.DailyMed_search_spls:1
+msgid "DailyMed_search_spls"
+msgstr "DailyMed_搜索_spls"
+
+#: 3a647bdd7efc4462a7d759bc6638d26e 78f4b57d0c1d4edab6c25a6312407dfd of
+#: tooluniverse.tools.DailyMed_search_spls:3
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:1
+msgid ""
+"Search SPL list using multiple filter conditions (drug_name/ndc/rxcui/setid)"
+" and return metadata ..."
+msgstr "使用多个过滤条件（drug_name/ndc/rxcui/setid）搜索SPL列表，并返回元数据..."
+
+#: ../../api/tooluniverse.tools.DailyMed_search_spls.rst
+#: a8c182dd9b904fe0b5cc439110c07d41
+msgid "Parameters"
+msgstr "参数"
+
+#: 424ed42bdae746099c94ccec45a9b61d of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:3
+msgid "Generic or brand name of the drug, e.g., 'TAMSULOSIN HYDROCHLORIDE'."
+msgstr "药物的通用名或品牌名，例如“盐酸坦索罗辛”。"
+
+#: cda87af60b7e4e14abb158e89d8afd25 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:5
+msgid "National Drug Code (NDC)."
+msgstr "国家药品代码 (NDC)。"
+
+#: 40e157e2daf64163831f2a24b54cd3cc of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:7
+msgid "RxNorm Code (RXCUI)."
+msgstr "RxNorm代码（RXCUI）。"
+
+#: 825a4cb89a3e4fb69b0b42e92e05b5fe of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:9
+msgid "Set ID corresponding to the SPL."
+msgstr "设置与SPL对应的ID。"
+
+#: dbdd795d90634337a8f9ede182f59100 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:11
+msgid "Published date >= specified date, format 'YYYY-MM-DD'."
+msgstr "发布日期 >= 指定日期，格式为 'YYYY-MM-DD'。"
+
+#: c8fd6e6a58364571b1fb4430d0a491cd of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:13
+msgid "Published date == specified date, format 'YYYY-MM-DD'."
+msgstr "发布日期 == 指定日期，格式为 'YYYY-MM-DD'。"
+
+#: 068338a2ed154286b8626d2b4d052bee of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:15
+msgid "Number of items per page, maximum 100, default 100."
+msgstr "每页项目数量，最大值为100，默认值为100。"
+
+#: 3f341c54fb3d47ce9bbadbe68db00510 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:17
+msgid "Page number, starts from 1, default 1."
+msgstr "页码，从1开始，默认值为1。"
+
+#: cb4815a299af48f594192370837112b8 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:19
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 52eea779ecca4ab09f9b7a96eba30d29 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:21
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1795e2d2cfaf4ea686efeb85b0c39986 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:23
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DailyMed_search_spls.rst
+#: 8ac12db0e7474cd6b02cf42553a29278
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4934db4c0e1243c8887435428834a048 of
+#: tooluniverse.tools.DailyMed_search_spls.DailyMed_search_spls:26
+msgid ":py:class:`Any`"
+msgstr ""

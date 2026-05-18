@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ScientificTextSummarizer.rst:2
+#: 7814c3322180405a94f1551fbd576d7d
+msgid "tooluniverse.tools.ScientificTextSummarizer module"
+msgstr "tooluniverse.tools.ScientificTextSummarizer 模块"
+
+#: 31364b8373bd4a5bbb9430b31eb32329 of
+#: tooluniverse.tools.ScientificTextSummarizer:1
+msgid "ScientificTextSummarizer"
+msgstr "科学文本摘要器"
+
+#: 0f5a4675a9954b0781d6d70ae2ef1231 3ac031edb1354906ba2c48b619071d36 of
+#: tooluniverse.tools.ScientificTextSummarizer:3
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:1
+msgid ""
+"Summarizes biomedical research texts, abstracts, or papers with specified "
+"length and focus areas...."
+msgstr "总结生物医学研究文本、摘要或论文，按照指定的长度和重点领域进行概述。"
+
+#: ../../api/tooluniverse.tools.ScientificTextSummarizer.rst
+#: 81e45a07beea40d392dd1930b1eb9268
+msgid "Parameters"
+msgstr "参数"
+
+#: cf29b943c5674359879aa41f502686d2 of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:3
+msgid "The biomedical text, abstract, or paper content to be summarized."
+msgstr "生物医学文本、摘要或论文内容需进行总结。"
+
+#: f893fbf05e474b6bb163e1ee1ace9c86 of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:5
+msgid "Desired length of summary (e.g., '50', '100', '200 words')."
+msgstr "所需摘要长度（例如：“50”、“100”、“200字”）。"
+
+#: 7c5b143d683d48bebc1d53e2fe1eaf1e of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:7
+msgid ""
+"What to focus on in the summary (e.g., 'methodology', 'results', 'clinical "
+"im..."
+msgstr "在摘要中需要关注的内容（例如，“方法论”、“结果”、“临床影响”）。"
+
+#: b9d34665a31a461cac806bba9cf01b60 of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 907b6abe300b4d0eacddb8834bdbc2cb of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 608a8c211ff6404da3e244087464b069 of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ScientificTextSummarizer.rst
+#: dec9e8bb984043889fee1db5b6a3ab61
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6832cc73ed9f463d90d55308bb4640a0 of
+#: tooluniverse.tools.ScientificTextSummarizer.ScientificTextSummarizer:16
+msgid ":py:class:`Any`"
+msgstr ""

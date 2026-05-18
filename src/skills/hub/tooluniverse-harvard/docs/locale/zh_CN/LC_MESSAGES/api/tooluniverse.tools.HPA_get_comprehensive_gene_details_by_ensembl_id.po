@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.rst:2
+#: 0cc8f833a85f4ca184d342e9a781f474
+msgid ""
+"tooluniverse.tools.HPA\\_get\\_comprehensive\\_gene\\_details\\_by\\_ensembl\\_id"
+" module"
+msgstr ""
+"tooluniverse.tools.HPA\\_get\\_comprehensive\\_gene\\_details\\_by\\_ensembl\\_id"
+" 模块"
+
+#: 8199ba4d04f5451aa5bf62343595aaa0 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id:1
+msgid "HPA_get_comprehensive_gene_details_by_ensembl_id"
+msgstr "HPA_通过Ensembl ID获取综合基因详情"
+
+#: 5430e97930b74f4c8cdef19b3064b7cf ac818380a620438e9c1cbd782f09a4e9 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id:3
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:1
+msgid ""
+"Get detailed in-depth information from gene page using Ensembl Gene ID, "
+"including image URLs, ant..."
+msgstr "通过使用Ensembl基因ID从基因页面获取详细的深入信息，包括图像URL、注释等。"
+
+#: ../../api/tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.rst
+#: dad932e051d84962ae826625151cf591
+msgid "Parameters"
+msgstr "参数"
+
+#: 5609e1b26b1f48c4a62bf1b302b1346a of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:3
+msgid ""
+"Ensembl Gene ID, e.g., 'ENSG00000064787' (BCAS1), 'ENSG00000141510' (TP53), "
+"e..."
+msgstr "Ensembl基因ID，例如：'ENSG00000064787'（BCAS1）、'ENSG00000141510'（TP53）、e..."
+
+#: f44ca5c410164f5fb1ebf8930a97dc96 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:5
+msgid ""
+"Whether to include image URL information (immunofluorescence, cell line "
+"image..."
+msgstr "是否包含图像URL信息（免疫荧光、细胞系图像..."
+
+#: 7cf124ecec024d7a897bf5bba5a4e264 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:7
+msgid ""
+"Whether to include detailed antibody information (validation status, Western"
+" ..."
+msgstr "是否包含详细的抗体信息（验证状态、西方..."
+
+#: 1ae52ce05af740c0a68310464f2f29c8 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:9
+msgid ""
+"Whether to include detailed expression data (tissue specificity, subcellular"
+" ..."
+msgstr "是否包含详细的表达数据（组织特异性、亚细胞定位等）..."
+
+#: c88a52a53e934470bc8f66aadbe2be66 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ac6375ec598643b886b8aa59bac7cc7e of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fc1919f7f9b64d928034095a9dcfafa5 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.rst
+#: 3504ee0c656745679d8dd0916e5ea87c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 04c606f1e2a94932bb3c344001ce5847 of
+#: tooluniverse.tools.HPA_get_comprehensive_gene_details_by_ensembl_id.HPA_get_comprehensive_gene_details_by_ensembl_id:18
+msgid ":py:class:`Any`"
+msgstr ""

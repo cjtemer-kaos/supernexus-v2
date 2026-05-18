@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/output_summarization_tools.rst:2
+#: cceb5ae8f8184bf89693feec3ae5772a
+msgid "Output Summarization Tools"
+msgstr "输出摘要工具"
+
+#: ../../tools/output_summarization_tools.rst:4
+#: 89d7597c709c46128fb0047ccc02c19e
+msgid ""
+"**Configuration File**: ``output_summarization_tools.json`` **Tool Type**: "
+"Local **Tools Count**: 2"
+msgstr ""
+"**配置文件**: ``output_summarization_tools.json`` **工具类型**: 本地 **工具数量**: 2"
+
+#: ../../tools/output_summarization_tools.rst:8
+#: 1a16185b27dc48deaac5bb8d0b9e13d6
+msgid ""
+"This page contains all tools defined in the "
+"``output_summarization_tools.json`` configuration file."
+msgstr "此页面包含在``output_summarization_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/output_summarization_tools.rst:11
+#: 3ec68d0fbef0478086df5da0a0c754b3
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/output_summarization_tools.rst:14
+#: 147f2e5aa7904ffd917790adf89e2bac
+msgid "**OutputSummarizationComposer** (Type: ComposeTool)"
+msgstr "**OutputSummarizationComposer**（类型：ComposeTool）"
+
+#: ../../tools/output_summarization_tools.rst:16
+#: 061e7e26e9f444d78417d77f3e63c153
+msgid ""
+"Composes output summarization workflow by chunking long outputs, processing "
+"each chunk with AI su..."
+msgstr "通过将长输出分块、使用AI处理每个分块来构建输出摘要工作流程。"
+
+#: ../../tools/output_summarization_tools.rst 9d108b2e82e147e197b7cc27c5b3f564
+msgid "OutputSummarizationComposer tool specification"
+msgstr "OutputSummarizationComposer 工具规范"
+
+#: ../../tools/output_summarization_tools.rst:20
+#: ../../tools/output_summarization_tools.rst:68
+#: b1569977b5a445338243b26e79012fa7 d06211663b4a4307a6ebf3039afd4121
+msgid "**Tool Information:**"
+msgstr ""
+"**工具信息：**\n"
+"\n"
+"Context: 文档"
+
+#: ../../tools/output_summarization_tools.rst:22
+#: 25ed89d1dc5f46a8a3e3e3147f344b38
+msgid "**Name**: ``OutputSummarizationComposer``"
+msgstr "**名称**: ``OutputSummarizationComposer``"
+
+#: ../../tools/output_summarization_tools.rst:23
+#: e272b3b843a64cccb18035d95814288d
+msgid "**Type**: ``ComposeTool``"
+msgstr "**类型**: ``ComposeTool``"
+
+#: ../../tools/output_summarization_tools.rst:24
+#: 3ae371078b094d77b73d033fe3c44f78
+msgid ""
+"**Description**: Composes output summarization workflow by chunking long "
+"outputs, processing each chunk with AI summarization, and merging results"
+msgstr "**描述**：通过将长输出分块、使用AI摘要处理每个分块并合并结果，构建输出摘要工作流程"
+
+#: ../../tools/output_summarization_tools.rst:26
+#: ../../tools/output_summarization_tools.rst:74
+#: 1eaf2f26478d4c7dab604a16113f51c5 698f03fe7ab84225a3b4bb4e9dc67416
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/output_summarization_tools.rst:28
+#: ../../tools/output_summarization_tools.rst:76
+#: 0b55dc95d9544825a2059f5188322741 102fcb47d8694bbeb7c3d07a05a8fba3
+msgid ""
+"``tool_output`` (string) (required) The original tool output to be "
+"summarized"
+msgstr "``tool_output``（字符串）（必填）需要汇总的原始工具输出"
+
+#: ../../tools/output_summarization_tools.rst:31
+#: f6d19a264fcc4c498cacbe502992d2fd
+msgid "``query_context`` (string) (required) Context about the original query"
+msgstr "``query_context``（字符串）（必填）关于原始查询的上下文"
+
+#: ../../tools/output_summarization_tools.rst:34
+#: ../../tools/output_summarization_tools.rst:82
+#: 5d1249cea2314353a44568df6be86c71 fd8264c1df79468b93e3df2d87280f18
+msgid ""
+"``tool_name`` (string) (required) Name of the tool that generated the output"
+msgstr "``tool_name``（字符串）（必填）生成输出结果的工具名称"
+
+#: ../../tools/output_summarization_tools.rst:37
+#: 2c23ca691156421c8897f3bf142b2d0e
+msgid "``chunk_size`` (integer) (optional) Size of each chunk for processing"
+msgstr "``chunk_size``（整数）（可选）每个处理块的大小"
+
+#: ../../tools/output_summarization_tools.rst:40
+#: 530b846808984d0dbccfcbbcb267acdf
+msgid "``focus_areas`` (string) (optional) Areas to focus on in summarization"
+msgstr "``focus_areas``（字符串）（可选）总结时需要关注的领域"
+
+#: ../../tools/output_summarization_tools.rst:43
+#: 935c74fc297f4ac2b7db4c9d12c13234
+msgid ""
+"``max_summary_length`` (integer) (optional) Maximum length of final summary"
+msgstr "``max_summary_length``（整数）（可选）最终摘要的最大长度"
+
+#: ../../tools/output_summarization_tools.rst:46
+#: ../../tools/output_summarization_tools.rst:91
+#: 53aadc3535ae4a849e37ff4ff3786f8d a88527d6d4e1456c8c6d89a7cb782aff
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/output_summarization_tools.rst:62
+#: ba3f368709654c809c8904c32097ff6a
+msgid "**ToolOutputSummarizer** (Type: AgenticTool)"
+msgstr "**ToolOutputSummarizer**（类型：AgenticTool）"
+
+#: ../../tools/output_summarization_tools.rst:64
+#: 6bcc41d6a8614560a1dd9448d3d74ec3
+msgid ""
+"AI-powered tool for summarizing long tool outputs, focusing on key "
+"information relevant to the or..."
+msgstr "基于人工智能的工具，用于总结冗长工具输出内容，重点提取与或相关的关键信息..."
+
+#: ../../tools/output_summarization_tools.rst 33decadf8e6f45ca8b85defad82dcae4
+msgid "ToolOutputSummarizer tool specification"
+msgstr "ToolOutputSummarizer 工具规格说明"
+
+#: ../../tools/output_summarization_tools.rst:70
+#: c5728605684544829af3196ef09da4ff
+msgid "**Name**: ``ToolOutputSummarizer``"
+msgstr "**名称**：``ToolOutputSummarizer``"
+
+#: ../../tools/output_summarization_tools.rst:71
+#: fa7f00e7e1774cb2b9d66c05e8fe5cc5
+msgid "**Type**: ``AgenticTool``"
+msgstr "**类型**：``AgenticTool``"
+
+#: ../../tools/output_summarization_tools.rst:72
+#: f0bd9c56fbc9493f96386c39e82ba538
+msgid ""
+"**Description**: AI-powered tool for summarizing long tool outputs, focusing"
+" on key information relevant to the original query"
+msgstr "**描述**：基于人工智能的工具，用于总结冗长的工具输出，重点提取与原始查询相关的关键信息。"
+
+#: ../../tools/output_summarization_tools.rst:79
+#: 30b77d775afe42008e01b65fffdf4b4f
+msgid ""
+"``query_context`` (string) (required) Context about the original query that "
+"triggered the tool"
+msgstr "``query_context``（字符串）（必填）触发该工具的原始查询的上下文信息"
+
+#: ../../tools/output_summarization_tools.rst:85
+#: da7e9e52b9754d529d38a5629d0bde5a
+msgid ""
+"``focus_areas`` (string) (optional) Specific areas to focus on in the "
+"summary"
+msgstr "``focus_areas``（字符串）（可选）摘要中需重点关注的具体领域"
+
+#: ../../tools/output_summarization_tools.rst:88
+#: 36769b82b1f748f78485171bcd262bdb
+msgid ""
+"``max_length`` (integer) (optional) Maximum length of the summary in "
+"characters"
+msgstr "``max_length``（整数）（可选）摘要的最大字符长度"
+
+#: ../../tools/output_summarization_tools.rst:107
+#: a1a92d667c854e49be9e30fba6119ea4
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/output_summarization_tools.rst:109
+#: 0e56dfd264d9464cbbadfb52225b6076
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/output_summarization_tools.rst:110
+#: b52ebf4ea8a6433a98e12883f470c84a
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

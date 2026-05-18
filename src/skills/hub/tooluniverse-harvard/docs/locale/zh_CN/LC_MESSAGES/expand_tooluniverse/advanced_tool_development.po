@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-18 22:16-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:2
+#: 3faa5334d90c4e7e8e8822c0fd84c432
+msgid "Advanced Tool Development"
+msgstr "高级工具开发"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:4
+#: cf133ed3940a453a9ab961af51dbdf3a
+msgid ""
+"This guide explains how to develop custom tools using the enhanced "
+"BaseTool capabilities. This is for advanced users who want to leverage "
+"the full power of ToolUniverse's tool development framework."
+msgstr "本指南介绍了如何使用增强的BaseTool功能开发自定义工具。适用于希望充分利用ToolUniverse工具开发框架全部功能的高级用户。"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:7
+#: 0dbea48123a44898be625b0ca7b978d2
+#, fuzzy
+msgid ""
+"**New to tool development?** Start with :doc:`local_tools/tutorial` for "
+"basic tool creation, then return here for advanced features."
+msgstr "**工具开发新手？** 请先查看 :doc:`local_tool_registration` 了解基础工具创建，然后再返回此处学习高级功能。"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:10
+#: 9a485d0f2c9f4fe9ab16b4ff37c16aba
+msgid "Overview"
+msgstr "概述"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:12
+#: 24d5aad8042e4f22ab50269bfd6695d7
+msgid ""
+"The BaseTool class now provides several standard capabilities that can be"
+" overridden by custom tool implementations:"
+msgstr "BaseTool 类现在提供了多项标准功能，这些功能可以通过自定义工具实现进行重写："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:14
+#: 1bdc5def9f264d0c8c1a733ee30bcea3
+msgid ""
+"**Parameter Validation**: `validate_parameters()` - Validate input "
+"parameters against schemas"
+msgstr "**参数验证**：`validate_parameters()` - 根据模式验证输入参数"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:15
+#: 8037f8066dd24aa888d3810b3a0cb96e
+msgid ""
+"**Error Handling**: `handle_error()` - Classify exceptions into "
+"structured errors"
+msgstr "**错误处理**: `handle_error()` - 将异常分类为结构化错误"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:16
+#: 44119fa4c59b43aa854bb57060def0e0
+msgid "**Caching**: `get_cache_key()` - Generate cache keys for tool calls"
+msgstr "**缓存**：`get_cache_key()` - 为工具调用生成缓存键"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:17
+#: 6662edaf43754418b38b3c7eb696bd71
+msgid ""
+"**Capability Queries**: `supports_streaming()`, `supports_caching()` - "
+"Declare tool capabilities"
+msgstr "**功能查询**：`supports_streaming()`，`supports_caching()` - 声明工具功能"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:18
+#: db3ce28c5cd940dc8149e7ce9b5d5995
+msgid ""
+"**Tool Information**: `get_tool_info()` - Provide comprehensive tool "
+"metadata"
+msgstr "**工具信息**: `get_tool_info()` - 提供全面的工具元数据"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:21
+#: a06f018cac18419aba63cbe9d1235b05
+msgid "Basic Tool Implementation"
+msgstr "基础工具实施"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:23
+#: 1076627e3c5041659c96efbb7b275c19
+msgid "Here's a minimal tool implementation:"
+msgstr "以下是一个简约的工具实现："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:35
+#: 006f776ea64346fe9a68efa7401251d2
+msgid "Custom Parameter Validation"
+msgstr "自定义参数验证"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:37
+#: c5c35c8ed2dc48d8a1fabe579ed06dcf
+msgid "Override `validate_parameters()` to implement custom validation logic:"
+msgstr "重写 `validate_parameters()` 以实现自定义验证逻辑："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:59
+#: ecee410df3dc423b81d0fb2913dc3499
+msgid "Custom Error Handling"
+msgstr "自定义错误处理"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:61
+#: cbcfc9b5589141418c96010d73b9bf89
+msgid "Override `handle_error()` to provide tool-specific error classification:"
+msgstr "重写 `handle_error()` 以提供工具特定的错误分类："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:80
+#: 674d69bb0f604f07b8716b2070f8d76b
+msgid "Custom Caching"
+msgstr "自定义缓存"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:82
+#: d7c9c0cda1e347439151117b06023187
+msgid "Override `get_cache_key()` for custom cache key generation:"
+msgstr "重写 `get_cache_key()` 方法以生成自定义缓存键："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:97
+#: fa5ada8bd75247beb1b13f60c174e15b
+msgid "Capability Declaration"
+msgstr "能力声明"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:99
+#: 028b2d80b72d41a49cc28c9c39a6d7fb
+msgid "Override capability methods to declare tool features:"
+msgstr "重写功能方法以声明工具特性："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:112
+#: 9f41b73affd042a38f09e57a20c40dd1
+msgid "Complete Example"
+msgstr "完整示例"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:114
+#: c9bf0dee3cb64cce990d9a9575235fb3
+msgid "Here's a complete example of a custom tool with all capabilities:"
+msgstr "以下是一个包含所有功能的自定义工具完整示例："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:202
+#: 4a62bd8b5b36409dbdf03cd058e171a7
+msgid "Migration Guide"
+msgstr "迁移指南"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:204
+#: c555adf56be8411796a04f8fba20c0f8
+msgid ""
+"If you have existing tools, here's how to migrate them to use the new "
+"capabilities:"
+msgstr "如果您已有现有工具，以下是将其迁移以使用新功能的方法："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:206
+#: b02b605d89cc42eebd897e5bb749847b
+msgid ""
+"**No Changes Required**: Existing tools will continue to work without "
+"modification. The new methods have sensible defaults."
+msgstr "**无需更改**：现有工具将继续正常运行，无需修改。新方法具有合理的默认设置。"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:208
+#: 0d76024611b745718d948f27c4a23784
+msgid ""
+"**Gradual Enhancement**: You can gradually add custom validation and "
+"error handling:"
+msgstr "**逐步增强**：您可以逐步添加自定义验证和错误处理："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:230
+#: 5a3f678fa5f341da84e109c36e3b91db
+msgid ""
+"**Exception Handling**: If you're catching old exception classes, "
+"consider migrating to new ones:"
+msgstr "**异常处理**：如果您正在捕获旧的异常类，请考虑迁移到新的异常类："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:248
+#: 845d7a0859174f5b81bcf0e533b6933a
+msgid "Best Practices"
+msgstr "最佳实践"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:250
+#: dc3ba1fdadf94dbd923decd2ca83f11f
+msgid ""
+"**Always Call Super**: When overriding methods, call the parent "
+"implementation first:"
+msgstr "**始终调用父类方法**：在重写方法时，请先调用父类的实现："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:263
+#: 6026ac6514004e48aa0136566151035f
+msgid "**Provide Recovery Steps**: Include helpful next steps in error messages:"
+msgstr "**提供恢复步骤**：在错误消息中包含有用的后续步骤："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:276
+#: 324cbd08d2704a1594c926525f57495c
+msgid ""
+"**Use Structured Details**: Include structured information in error "
+"details:"
+msgstr "**使用结构化详细信息**：在错误详细信息中包含结构化信息："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:289
+#: 40cd3c62773d42d4bf8311894c0f87ef
+msgid "**Cache Appropriately**: Only cache results that are safe to cache:"
+msgstr "**适当缓存**：仅缓存安全的结果。"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:298
+#: ece30b0c7cf2409ebbd2f23fcc33055a
+msgid "Testing Custom Tools"
+msgstr "测试自定义工具"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:300
+#: c6443b692bfc421faf13c50cd9f4a5ce
+msgid "Test your custom tools using the standard testing patterns:"
+msgstr "使用标准测试模式测试您的自定义工具："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:320
+#: ebfa9e50f6654f2da34607995733f61e
+msgid "Backward Compatibility"
+msgstr "向后兼容"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:322
+#: 93a5cd3674394f0891145ef9064216f5
+msgid "All existing tools and code will continue to work without modification:"
+msgstr "所有现有工具和代码将无需修改即可继续运行："
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:324
+#: fb5531727377401791bd5b2b893dd7d2
+msgid "Old exception classes still work (with deprecation warnings)"
+msgstr "旧的异常类仍然可用（但会显示弃用警告）"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:325
+#: 643253916d024b8888e90074f41abebf
+msgid "Tools without new methods use default implementations"
+msgstr "未使用新方法的工具将使用默认实现"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:326
+#: e760b12558964a48ab31c04867c535ba
+msgid "ToolUniverse provides fallback logic for missing methods"
+msgstr "ToolUniverse 提供用于缺失方法的回退逻辑"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:327
+#: 6109f8abb4ad41229f049f63a19b0c01
+msgid "All existing APIs remain unchanged"
+msgstr "所有现有的 API 保持不变"
+
+#: ../../expand_tooluniverse/advanced_tool_development.rst:329
+#: b7b165d5ddbb48c7aa7a2b6a8b6ce9f3
+msgid ""
+"The refactoring is designed to be completely backward compatible while "
+"providing enhanced capabilities for new development."
+msgstr "重构旨在完全向后兼容，同时为新开发提供增强的功能。"
+

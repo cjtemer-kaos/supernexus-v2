@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pymassspec_info.rst:2
+#: fd8536a56dc6498395b40ef3016de312
+msgid "tooluniverse.tools.get\\_pymassspec\\_info module"
+msgstr "tooluniverse.tools.get\\_pymassspec\\_info 模块"
+
+#: 9f18c2c29545453dbc468ae9c4460b20 of
+#: tooluniverse.tools.get_pymassspec_info:1
+msgid "get_pymassspec_info"
+msgstr ""
+
+#: 4e38f5f76afa4ef4bc3a8a71e1a87fe8 b5acc6a144da46b9842fa6f6584a073b of
+#: tooluniverse.tools.get_pymassspec_info:3
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:1
+msgid ""
+"Get comprehensive information about PyMassSpec – mass spectrometry data "
+"analysis"
+msgstr "获取关于PyMassSpec——质谱数据分析的全面信息"
+
+#: ../../api/tooluniverse.tools.get_pymassspec_info.rst
+#: 20275703237c46d08aec866daeb0f33d
+msgid "Parameters"
+msgstr "参数"
+
+#: 92cdd497641c4debb0bc69a45ea3c2da of
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:3
+msgid "Type of information to retrieve about PyMassSpec"
+msgstr "关于 PyMassSpec 可检索的信息类型"
+
+#: b7079a84e7cf4d83bcd671d589a7a91e of
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b05eab82f9674b2ba9668e7230172282 of
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ba6597cc04b742e897a637a43effa192 of
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pymassspec_info.rst
+#: 441cde9c4c8143c68db0424ff836da71
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4a6908fff290497d94bc1b0ec785b772 of
+#: tooluniverse.tools.get_pymassspec_info.get_pymassspec_info:12
+msgid ":py:class:`Any`"
+msgstr ""

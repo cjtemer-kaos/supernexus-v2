@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HypothesisGenerator.rst:2
+#: da98ba8e020547c49a9af53974019983
+msgid "tooluniverse.tools.HypothesisGenerator module"
+msgstr "tooluniverse.tools.HypothesisGenerator 模块"
+
+#: 295a1d622915443b9ca74d2d291de8bb of
+#: tooluniverse.tools.HypothesisGenerator:1
+msgid "HypothesisGenerator"
+msgstr "假设生成器"
+
+#: 26bd3102e5634cf9819a59c7794fd439 9f90de909e644056beb23d68a27bd618 of
+#: tooluniverse.tools.HypothesisGenerator:3
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:1
+msgid ""
+"Generates research hypotheses based on provided background context, domain, "
+"and desired format. U..."
+msgstr "根据提供的背景信息、领域和所需格式生成研究假设。"
+
+#: ../../api/tooluniverse.tools.HypothesisGenerator.rst
+#: a9429adc85d24fb0b3616ccf1906c9cc
+msgid "Parameters"
+msgstr "参数"
+
+#: e8fad08104664a84a5f6087264007abb of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:3
+msgid ""
+"Background information, observations, or data description from which to "
+"deriv..."
+msgstr "背景信息、观察结果或数据描述，用于推导..."
+
+#: b44e1b0729524967b2f7f9fd0fd639ae of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:5
+msgid ""
+"Field of study or research area (e.g., 'neuroscience', 'ecology', 'materials"
+" ..."
+msgstr "研究领域或研究方向（例如：“神经科学”、“生态学”、“材料学”...）"
+
+#: 3558c162a7504c13bbd3057836f3d37b of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:7
+msgid "Number of hypotheses to generate (e.g., '3', '5')."
+msgstr "生成假设的数量（例如，“3”、“5”）。"
+
+#: cc9df6653af049e2bf5d00482fe1c27d of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:9
+msgid ""
+"Optional directive on how to structure each hypothesis. Choose from one of "
+"th..."
+msgstr "关于如何构建每个假设的可选指令。请选择以下之一："
+
+#: cc2ef461de7d4b4884ab5557e8d89577 of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4bd6ab457f7948e78cfbadf2b8541e64 of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 70373d761b9a476cb834322b6dd7efbc of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HypothesisGenerator.rst
+#: f8c1901596ea43b0993dd0a4c45222a5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 556d36a73033414e9bd914ddc49eba08 of
+#: tooluniverse.tools.HypothesisGenerator.HypothesisGenerator:18
+msgid ":py:class:`Any`"
+msgstr ""

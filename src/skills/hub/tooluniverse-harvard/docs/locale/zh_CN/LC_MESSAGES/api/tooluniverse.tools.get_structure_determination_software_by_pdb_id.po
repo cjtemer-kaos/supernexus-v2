@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_structure_determination_software_by_pdb_id.rst:2
+#: 3a2ae9ee9cae464aa7c83e828ff2aec3
+msgid ""
+"tooluniverse.tools.get\\_structure\\_determination\\_software\\_by\\_pdb\\_id"
+" module"
+msgstr "tooluniverse.tools.get\\_structure\\_determination\\_software\\_by\\_pdb\\_id 模块"
+
+#: bc4e5bc923e649f0a9bb27b823a17a66 of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id:1
+msgid "get_structure_determination_software_by_pdb_id"
+msgstr "通过PDB ID获取结构测定软件"
+
+#: 4b2ca317e93b419dbb7423c7ce557621 dbc998e982ce4a6384fd1d9eba7d1560 of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id:3
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:1
+msgid "Retrieve names of software used during structure determination."
+msgstr "检索用于结构解析的软件名称。"
+
+#: ../../api/tooluniverse.tools.get_structure_determination_software_by_pdb_id.rst
+#: b1c6f6eb8e074f1fb095b9e17f33437b
+msgid "Parameters"
+msgstr "参数"
+
+#: 4241f75fc36d428ca30ee6b7dc37f742 of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:3
+msgid "RCSB PDB entry ID"
+msgstr "RCSB PDB 条目 ID"
+
+#: 0b8be9647c624ad582b2ba174003252f of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fe515991cf8149608f988de2d17f8e7e of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 16808e68a09d421098b4aadf9c165584 of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_structure_determination_software_by_pdb_id.rst
+#: c767206c241347bd8f726def7ba35545
+msgid "Return type"
+msgstr "返回类型"
+
+#: 611a4dcfd6bf4ae9be3df60241b5c3a1 of
+#: tooluniverse.tools.get_structure_determination_software_by_pdb_id.get_structure_determination_software_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

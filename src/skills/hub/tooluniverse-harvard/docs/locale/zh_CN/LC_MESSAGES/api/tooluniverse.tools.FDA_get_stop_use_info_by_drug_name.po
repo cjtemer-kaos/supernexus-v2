@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.rst:2
+#: 184a51dda74e40baafa4e572a10f52fa
+msgid "tooluniverse.tools.FDA\\_get\\_stop\\_use\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_stop\\_use\\_info\\_by\\_drug\\_name 模块"
+
+#: dc50cdc5420a4aed86d26b9793843817 of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name:1
+msgid "FDA_get_stop_use_info_by_drug_name"
+msgstr ""
+"FDA_get_stop_use_info_by_drug_name  \n"
+"获取药品名称停止使用信息"
+
+#: 01ab6791762341979e6e5f78abb45ac2 68fd71e1af114042b737b823dc61644e of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:1
+msgid "Retrieve stop use information based on the drug name provided."
+msgstr "根据提供的药品名称检索停用信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.rst
+#: 4708b5fae7414fa5bf64b26364c00454
+msgid "Parameters"
+msgstr "参数"
+
+#: f38516971770456584145e6f6843e35a of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 8d110faa887d4900a493fa4bee88532d of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 0a791b1636ee44f894472f5e62b21c44 of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 4ba7e86bdb5a4909a3b43fcf0175cf65 of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d010323e6f334e36937173b30e4df2c6 of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7c709b385335437689429478f6f44eb0 of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.rst
+#: f536714102454f40abdb499f98601468
+msgid "Return type"
+msgstr "返回类型"
+
+#: af83e6f10b93401280906cb18c8663fe of
+#: tooluniverse.tools.FDA_get_stop_use_info_by_drug_name.FDA_get_stop_use_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

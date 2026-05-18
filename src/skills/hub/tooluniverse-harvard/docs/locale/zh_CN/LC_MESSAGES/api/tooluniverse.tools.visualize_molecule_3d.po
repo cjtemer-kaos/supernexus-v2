@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.visualize_molecule_3d.rst:2
+#: 82818486d5ac4fa5a06cbd4f17e3b3bd
+msgid "tooluniverse.tools.visualize\\_molecule\\_3d module"
+msgstr "tooluniverse.tools.visualize\\_molecule\\_3d 模块"
+
+#: c86e10d8e41e4e76b240c78ba0a8bb23 of
+#: tooluniverse.tools.visualize_molecule_3d:1
+msgid "visualize_molecule_3d"
+msgstr "可视化_分子_3D"
+
+#: 313e5a0c0a534bcf9086a134f389d0ab f93f0b4c36074ebeb67ef34f4a85ce9c of
+#: tooluniverse.tools.visualize_molecule_3d:3
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:1
+msgid ""
+"Visualize 3D molecular structures using RDKit and py3Dmol. Supports SMILES, "
+"MOL files, SDF conten..."
+msgstr "使用 RDKit 和 py3Dmol 可视化 3D 分子结构。支持 SMILES、MOL 文件、SDF 内容..."
+
+#: ../../api/tooluniverse.tools.visualize_molecule_3d.rst
+#: a13e07aed3de4218b338aad623126060
+msgid "Parameters"
+msgstr "参数"
+
+#: 0c3069a1c29a482aa1fc7f6644d9f529 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:3
+msgid "SMILES string representation of the molecule"
+msgstr "分子的SMILES字符串表示"
+
+#: c3a204b4b1a14d50ae13630e40cfe72b of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:5
+msgid "MOL file content as string"
+msgstr "MOL 文件内容作为字符串"
+
+#: 07f9e5d2c10947a7833145771b24c2ce of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:7
+msgid "SDF file content as string"
+msgstr "SDF 文件内容作为字符串"
+
+#: 8297d10747d24f9f841866a4b532577a of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:9
+msgid "Visualization style"
+msgstr "可视化样式"
+
+#: 067195c156954b4faedb44ef9820dd00 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:11
+msgid "Color scheme for the molecule"
+msgstr "分子颜色方案"
+
+#: 1c4e48c7ab094cd7accf299fab9e2098 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:13
+msgid "Width of the visualization in pixels"
+msgstr "可视化的宽度（以像素为单位）"
+
+#: 908fd9083c6c4aa09f0369f4b55a291f of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:15
+msgid "Height of the visualization in pixels"
+msgstr "可视化的高度（以像素为单位）"
+
+#: 85c914cfc60f43528dc4982b14c3a6c5 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:17
+msgid "Whether to show hydrogen atoms"
+msgstr "是否显示氢原子"
+
+#: a0990fe4d8cd40b3a1d3aca93de9a00e of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:19
+msgid "Whether to show molecular surface"
+msgstr "是否显示分子表面"
+
+#: 0392f99eb7874273a0b1ff3481b80ef1 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:21
+msgid "Whether to generate multiple conformers"
+msgstr "是否生成多个构象"
+
+#: 81441e66c7924793b1ad541d929e2a79 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:23
+msgid "Number of conformers to generate"
+msgstr "生成构象的数量"
+
+#: bba8869731f54556b6434ecd74e2a28f of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:25
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0e71cace086a4c139e5e9677a0f77872 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:27
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ed3d4dd00f894a3dbfdf95eb56fcea73 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:29
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.visualize_molecule_3d.rst
+#: 830d966718504a79a62d3f7966a5edc3
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1fbc3f31e75b4f93a680a21c00632c88 of
+#: tooluniverse.tools.visualize_molecule_3d.visualize_molecule_3d:32
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/tooluniverse_case_study.rst:2
+#: d0c16ac995eb49db8ff1f87d8ce3ce2c
+msgid "Case Study: Hypercholesterolemia Drug Discovery"
+msgstr "案例研究：高胆固醇血症药物研发"
+
+#: ../../tutorials/tooluniverse_case_study.rst:4
+#: af96c7933882407db4572fcb8125a634
+msgid "Open in Google Colab"
+msgstr "在 Google Colab 中打开"
+
+#: ../../tutorials/tooluniverse_case_study.rst:8
+#: ba9bd8ce212f4b7c91cee0d1549ff00d
+msgid ""
+"**Explore a full AI-driven drug discovery workflow using ToolUniverse and "
+"Gemini 2.5 Pro!**"
+msgstr "**使用 ToolUniverse 和 Gemini 2.5 Pro 探索完整的 AI 驱动药物发现工作流程！**"
+
+#: ../../tutorials/tooluniverse_case_study.rst:10
+#: 70ff12f42d8541998e45d9c6d0491675
+msgid ""
+"This tutorial walks you through the hypercholesterolemia case study "
+"presented in our paper, \"Democratizing AI scientist systems using "
+"ToolUniverse.\" You can run the entire workflow interactively in Google "
+"Colab: `ToolUniverse Case Study Notebook "
+"<https://colab.research.google.com/drive/1UwJ6RwyUoqI5risKQ365EeFdDQWOeOCv?usp=sharing>`_."
+msgstr ""
+"本教程将引导您完成我们论文《利用 ToolUniverse 实现 AI 科学家系统民主化》中呈现的高胆固醇血症案例研究。您可以在 Google "
+"Colab 中交互式运行整个工作流程：`ToolUniverse 案例研究笔记本 "
+"<https://colab.research.google.com/drive/1UwJ6RwyUoqI5risKQ365EeFdDQWOeOCv?usp=sharing>`_。"
+
+#: ../../tutorials/tooluniverse_case_study.rst:13
+#: f5e6fb37f45f4dc5b02d70801dec8127
+msgid "What does the case study cover?"
+msgstr "案例研究涵盖哪些内容？"
+
+#: ../../tutorials/tooluniverse_case_study.rst:14
+#: 9a707419ebda4643ad3cc79e58273bdf
+msgid "**End-to-end drug discovery pipeline** for hypercholesterolemia"
+msgstr "**高胆固醇血症的端到端药物发现流程**"
+
+#: ../../tutorials/tooluniverse_case_study.rst:15
+#: 4e6e0c7152274b72b6ebfb2464a90c7b
+msgid ""
+"**AI scientist reasoning**: See how Gemini 2.5 Pro uses ToolUniverse tools "
+"to select targets, analyze tissue expression, choose drugs, and optimize "
+"molecules"
+msgstr "**AI科学家推理**：了解Gemini 2.5 Pro如何使用ToolUniverse工具选择目标、分析组织表达、筛选药物及优化分子。"
+
+#: ../../tutorials/tooluniverse_case_study.rst:16
+#: f5c716f040584f7bbdaebf12f0cd5db6
+msgid ""
+"**Human-in-the-loop**: Integrates expert feedback for final decision making"
+msgstr "**人机交互环节**：整合专家反馈以辅助最终决策"
+
+#: ../../tutorials/tooluniverse_case_study.rst:17
+#: 58848300b30c4a7f9b9a4fce31d53b95
+msgid ""
+"**Tool calls and outputs**: All code and tool calls are shown step-by-step"
+msgstr "**工具调用与输出**：所有代码和工具调用均逐步展示"
+
+#: ../../tutorials/tooluniverse_case_study.rst:20
+#: 3970adf3efde4b34ab5988292f82cf4f
+msgid "Sections in the tutorial:"
+msgstr "教程章节："
+
+#: ../../tutorials/tooluniverse_case_study.rst:21
+#: 50588750cfa24fcfaa9ce03062ae81dd
+msgid ""
+"**Target Selection**: Identify top protein targets for hypercholesterolemia "
+"using OpenTargets and literature review"
+msgstr "**目标选择**：使用OpenTargets和文献综述识别高胆固醇血症的主要蛋白靶点"
+
+#: ../../tutorials/tooluniverse_case_study.rst:22
+#: 27808d000c6a401fa5cb360469673cec
+msgid ""
+"**Target Characterization**: Analyze tissue/organ expression of selected "
+"target to assess drug side effects"
+msgstr "**靶点特性分析**：分析所选靶点在组织/器官中的表达情况，以评估药物副作用"
+
+#: ../../tutorials/tooluniverse_case_study.rst:23
+#: 0cdf85c7929e42339414fd4a8322c3c4
+msgid ""
+"**Drug Selection**: Review current drugs targeting the protein and select a "
+"molecule to optimize"
+msgstr "**药物选择**：审查当前针对该蛋白的药物，并选择一种分子进行优化"
+
+#: ../../tutorials/tooluniverse_case_study.rst:24
+#: 260fd6a285f64c3bbe1ad34d7cfeed7a
+msgid ""
+"**Analog Search & ADMET Prediction**: Find structural analogs and predict "
+"pharmaceutical properties"
+msgstr "**类比搜索与ADMET预测**：查找结构类似物并预测药物特性"
+
+#: ../../tutorials/tooluniverse_case_study.rst:25
+#: cae385fcf5d4482787c8b84b74dfaad3
+msgid ""
+"**IP Review**: Check intellectual property status for the optimized molecule"
+msgstr "**知识产权审查**：检查优化分子的知识产权状态"
+
+#: ../../tutorials/tooluniverse_case_study.rst:28
+#: 963970cb7c8a476d89de23c5f2fbc832
+msgid "How to use this tutorial:"
+msgstr "如何使用本教程："
+
+#: ../../tutorials/tooluniverse_case_study.rst:29
+#: 58d5259d392d40afa8759a6c304e8065
+msgid "**Open the Colab notebook**: Click the badge or link above"
+msgstr "**打开 Colab 笔记本**：点击上方的徽章或链接"
+
+#: ../../tutorials/tooluniverse_case_study.rst:30
+#: 68288ea38e7e44699421fb3f03d10706
+msgid ""
+"**Follow the step-by-step code**: Each section includes code, tool calls, "
+"and reasoning"
+msgstr "**按照分步代码操作**：每个部分都包含代码、工具调用和逻辑说明"
+
+#: ../../tutorials/tooluniverse_case_study.rst:31
+#: 6a333d3175b148b8913beedefdc292b6
+msgid ""
+"**Learn by example**: See how ToolUniverse enables agentic workflows for "
+"real-world biomedical research"
+msgstr "**通过示例学习**：了解ToolUniverse如何为实际生物医学研究实现自主工作流"
+
+#: ../../tutorials/tooluniverse_case_study.rst:34
+#: 8d1a32bf200442e4bde3b45cfddc951f
+msgid "Useful links:"
+msgstr "有用链接："
+
+#: ../../tutorials/tooluniverse_case_study.rst:35
+#: fcb8bb96f11c4fcfbc0981386b447db6
+msgid "`ToolUniverse Documentation <https://aiscientist.tools>`_"
+msgstr "`ToolUniverse 文档 <https://aiscientist.tools>`_"
+
+#: ../../tutorials/tooluniverse_case_study.rst:36
+#: 349975d931e34440a371a82d5e514ecb
+msgid "`ToolUniverse GitHub <https://github.com/mims-harvard/ToolUniverse>`_"
+msgstr "ToolUniverse GitHub <https://github.com/mims-harvard/ToolUniverse>`_"
+
+#: ../../tutorials/tooluniverse_case_study.rst:37
+#: a887019c08e94de0afe41e1360d5579a
+msgid "`Gemini 2.5 Pro <https://deepmind.google/technologies/gemini/>`_"
+msgstr "Gemini 2.5 Pro <https://deepmind.google/technologies/gemini/>`_"

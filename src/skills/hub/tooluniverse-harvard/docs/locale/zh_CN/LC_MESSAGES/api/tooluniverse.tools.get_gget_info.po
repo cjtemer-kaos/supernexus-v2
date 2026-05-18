@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_gget_info.rst:2
+#: 99d9c97d6c2048a1a58242a76a8b40ea
+msgid "tooluniverse.tools.get\\_gget\\_info module"
+msgstr "tooluniverse.tools.get\\_gget\\_info 模块"
+
+#: 8add12c511ff4d6a9c55650b92220b29 of tooluniverse.tools.get_gget_info:1
+msgid "get_gget_info"
+msgstr ""
+
+#: 882ac87eff824f8f83e19478c1756a48 8a7961c82b7c4f36b94990d622f531ca of
+#: tooluniverse.tools.get_gget_info:3
+#: tooluniverse.tools.get_gget_info.get_gget_info:1
+msgid ""
+"Get comprehensive information about gget – genomics command-line tool and "
+"Python package"
+msgstr "获取关于 gget 的全面信息——基因组学命令行工具和 Python 软件包"
+
+#: ../../api/tooluniverse.tools.get_gget_info.rst
+#: 22dee38e04024fe3b2dbe1aea41367d9
+msgid "Parameters"
+msgstr "参数"
+
+#: a87b86939b4c4ecaac4b37f919c87c25 of
+#: tooluniverse.tools.get_gget_info.get_gget_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 9fb5123504d24ea3a02331d63bb28bd4 of
+#: tooluniverse.tools.get_gget_info.get_gget_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 869d3f0fe35249b6982cc744357dc1cd of
+#: tooluniverse.tools.get_gget_info.get_gget_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1ae9a747e5d14cebb45a5d21a8eed4b5 of
+#: tooluniverse.tools.get_gget_info.get_gget_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_gget_info.rst
+#: 71c66a890a4142e8a60bffea372ff211
+msgid "Return type"
+msgstr "返回类型"
+
+#: b20f635078b84376b85179cc2ea59cc3 of
+#: tooluniverse.tools.get_gget_info.get_gget_info:12
+msgid ":py:class:`Any`"
+msgstr ""

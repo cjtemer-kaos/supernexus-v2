@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-09 12:42-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../faq.rst:2 7d392844b6014e518a48568f9ac84842
+msgid "FAQ - Frequently Asked Questions"
+msgstr "FAQ - 常见问题解答"
+
+#: ../../faq.rst:4 4db5a4b63e0b4173a4385b7b75006b08
+msgid "Quick answers to the most common questions about ToolUniverse."
+msgstr "关于ToolUniverse最常见问题的快速答案。"
+
+#: ../../faq.rst:7 d4558019edc2477ebcb4163bf0be625d
+msgid "What is ToolUniverse?"
+msgstr "什么是ToolUniverse？"
+
+#: ../../faq.rst:9 457ba090b24c404eaae859556d25cac0
+msgid ""
+"ToolUniverse is a collection of 1000+ scientific tools for AI agents, "
+"providing unified access to drug safety data, genomics, literature, "
+"clinical trials, and more."
+msgstr "ToolUniverse是为AI智能体收集的600多种科学工具，提供对药物安全数据、基因组学、文献、临床试验等的统一访问。"
+
+#: ../../faq.rst:23 3182b88951da46ad8d803acd8dce7999
+msgid "How do I install it?"
+msgstr "如何安装它？"
+
+#: ../../faq.rst:30 d46d4b8e884f44bc903f3033afbb6aaf
+msgid "Do I need API keys?"
+msgstr "我需要API密钥吗？"
+
+#: ../../faq.rst:32 8b91ccc91d094d1ba031f0cfd955daea
+msgid ""
+"Most tools work without API keys. For enhanced features, set these as "
+"environment variables:"
+msgstr "大多数工具无需API密钥即可工作。对于增强功能，请将这些设置为环境变量："
+
+#: ../../faq.rst:40 d38b0e9ea1b440bf9a0f90ce5e1dc2e3
+msgid "How do I use it with Claude?"
+msgstr "如何与Claude一起使用？"
+
+#: ../../faq.rst:42 809de983241048478fb932ae8a030659
+msgid "Start the MCP server: ``python -m tooluniverse.smcp_server``"
+msgstr "启动MCP服务器：``python -m tooluniverse.smcp_server``"
+
+#: ../../faq.rst:43 78632a71decf4a76ab66f37aa9be1e1a
+msgid "Configure Claude Desktop with the MCP server"
+msgstr "使用MCP服务器配置Claude Desktop"
+
+#: ../../faq.rst:44 db8475dc2ea942808936810244a55ab2
+msgid "Ask Claude: \"What tools are available from ToolUniverse?\""
+msgstr "询问Claude：\"ToolUniverse中有哪些工具可用？\""
+
+#: ../../faq.rst:47 5c93f3bd11084e2caed3214e04a05ae9
+msgid "Need more help?"
+msgstr "需要更多帮助？"
+
+#: ../../faq.rst:49 1ad2cb0497134ad78096a620feb3623a
+#, fuzzy
+msgid "**Troubleshooting**: :doc:`help/troubleshooting`"
+msgstr "**故障排除**：:doc:`troubleshooting`"
+
+#: ../../faq.rst:50 ff1d64b529ca418ab1165062de4f206b
+msgid ""
+"**GitHub Issues**: `Report problems <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+msgstr ""
+"**GitHub Issues**：`报告问题 <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+

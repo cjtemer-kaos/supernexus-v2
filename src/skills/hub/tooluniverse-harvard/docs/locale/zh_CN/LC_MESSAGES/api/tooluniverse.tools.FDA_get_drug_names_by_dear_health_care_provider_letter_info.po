@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.rst:2
+#: b34b2270d9de43e993491a3d1f1623a6
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_dear\\_health\\_care\\_provider\\_letter\\_info"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_dear\\_health\\_care\\_provider\\_letter\\_info"
+" 模块"
+
+#: e69f61e52da045e9af5102f7ffe1bc12 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info:1
+msgid "FDA_get_drug_names_by_dear_health_care_provider_letter_info"
+msgstr "FDA_通过重要医疗保健提供者信函信息获取药品名称"
+
+#: 13f951590bc74013859cbe17c4aca44d ddbae108cac842c399ccccd0b1e17e65 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:1
+msgid ""
+"Fetch drug names based on information about dear health care provider "
+"letters. The letters are se..."
+msgstr "根据有关亲爱的医疗保健提供者信函的信息获取药品名称。这些信函是..."
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.rst
+#: 8e90243792ab439d89e8506ec0c2f1bf
+msgid "Parameters"
+msgstr "参数"
+
+#: 4d0c2830ed6c45b3824d6c6ec48cdf6a of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:3
+msgid "Information about the specific dear health care provider letters."
+msgstr "关于特定致医疗保健提供者信函的信息。"
+
+#: b89340ea0a6e4cd8ad4cab5194055ebd of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 8e529614a36b4cfe81b432f2789edb4a of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: e0a5fec404c241c1a75a6f2d657d1392 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:9
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: 3d2842a3da5147168e75e08313e383e2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 86789391215e47b0a2ee46a66368c6e1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4d6e10a2a37244df94c31d90286b9a2d of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.rst
+#: f4cede3ce63b41479c96b655b1137df8
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9d8a45c3f4da43769a29a1bc1ec26e40 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dear_health_care_provider_letter_info.FDA_get_drug_names_by_dear_health_care_provider_letter_info:18
+msgid ":py:class:`Any`"
+msgstr ""

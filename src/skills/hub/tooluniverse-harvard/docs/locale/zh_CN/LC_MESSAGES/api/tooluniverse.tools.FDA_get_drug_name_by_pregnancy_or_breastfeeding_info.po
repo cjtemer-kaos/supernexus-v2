@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.rst:2
+#: 2aa01b4b47e14410a428f471d7183016
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_pregnancy\\_or\\_breastfeeding\\_info"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_pregnancy\\_or\\_breastfeeding\\_info"
+" 模块"
+
+#: ea85f628e4b84cc2962d458f85d47806 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:1
+msgid "FDA_get_drug_name_by_pregnancy_or_breastfeeding_info"
+msgstr "FDA_根据孕期或哺乳期信息获取药物名称"
+
+#: 17c8e7d198094cbebe0fad5634b1c402 1bd65b32a5074bcc9e0eb68cbb15694f of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:3
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:1
+msgid ""
+"Retrieve the drug names based on pregnancy or breastfeeding information."
+msgstr "根据怀孕或哺乳期信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.rst
+#: 417c2bcfc44f4831afa28fc7ca683df0
+msgid "Parameters"
+msgstr "参数"
+
+#: b2d0ad2691334865aa24454ae09ba0e0 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:3
+msgid "Information related to pregnancy or breastfeeding."
+msgstr "与怀孕或哺乳相关的信息。"
+
+#: db112308fd454ee4b1640a3728fd0034 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 014b5c6b4e2443d18eeb310533f3c595 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数量。"
+
+#: ea5d42d1b7374cf6ab861f06de00a5c9 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 52e2f1bba8444adaa19d09b4328d3507 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 18673f64091140529f9133adf7616f0c of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.rst
+#: a140e321da724cd182d234935a208c12
+msgid "Return type"
+msgstr "返回类型"
+
+#: 85975bd919ae44ba910d75edcb71710e of
+#: tooluniverse.tools.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info.FDA_get_drug_name_by_pregnancy_or_breastfeeding_info:16
+msgid ":py:class:`Any`"
+msgstr ""

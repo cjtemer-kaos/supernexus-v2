@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.xml_tool.rst:2 07aa0cb57f534bd784f797b768e961ba
+msgid "tooluniverse.xml\\_tool module"
+msgstr "tooluniverse.xml_tool 模块"
+
+#: dabed00893604fbe866a94abacfd3b80 of tooluniverse.xml_tool.XMLDatasetTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 844cbb2c85b34609b67060e787558a95 of tooluniverse.xml_tool.XMLDatasetTool:1
+msgid ""
+"Tool to search and filter XML datasets that are organized as a collection of"
+" searchable records (e.g., dataset of medical subjects or drug "
+"descriptions). Supports user-friendly queries without requiring XPath "
+"knowledge."
+msgstr ""
+"用于搜索和筛选以可搜索记录集合形式组织的 XML 数据集的工具（例如，医学主题或药物描述的数据集）。支持用户友好的查询，无需掌握 XPath 知识。"
+
+#: 495c70dc4b16490fb783aa1157732fd2 of
+#: tooluniverse.xml_tool.XMLDatasetTool._load_dataset:1
+msgid "Load and parse the XML dataset."
+msgstr "加载并解析 XML 数据集。"
+
+#: abdefda666a044a08fb131f1c433c8d3 of
+#: tooluniverse.xml_tool.XMLDatasetTool._get_dataset_path:1
+msgid "Get the path to the XML dataset."
+msgstr "获取 XML 数据集的路径。"
+
+#: e0cbe904f81e4322b730e5c56faae11f of
+#: tooluniverse.xml_tool.XMLDatasetTool._extract_record_data:1
+msgid "Extract data from a record element with caching."
+msgstr "从记录元素中提取数据并进行缓存。"
+
+#: 68e58631da37478295d2ca0d416af7c6 of
+#: tooluniverse.xml_tool.XMLDatasetTool._extract_field_value:1
+msgid "Extract field value using XPath expression."
+msgstr "使用 XPath 表达式提取字段值。"
+
+#: 70ae49dfd20c4b6a8af46119776866af of
+#: tooluniverse.xml_tool.XMLDatasetTool._get_all_records_data:1
+msgid "Get all records data with caching."
+msgstr "通过缓存获取所有记录数据。"
+
+#: 9e1ff9af6c6844778c398ab1cd69dac8 of
+#: tooluniverse.xml_tool.XMLDatasetTool.run:1
+msgid "Main entry point for the tool."
+msgstr "工具的主要入口点。"
+
+#: fbc97f0d143d45f0b65725b69a3b34d9 of
+#: tooluniverse.xml_tool.XMLDatasetTool._search:1
+msgid "Search records by text content across multiple fields."
+msgstr "通过多个字段按文本内容搜索记录。"
+
+#: 459164965a174f7f8e30df1896a535c9 of
+#: tooluniverse.xml_tool.XMLDatasetTool._find_matches:1
+msgid "Find matching fields in a record."
+msgstr "在记录中查找匹配的字段。"
+
+#: 818d8f3689554cc4897088d572d87477 of
+#: tooluniverse.xml_tool.XMLDatasetTool._get_searchable_value:1
+msgid "Get searchable string value for a field."
+msgstr "获取字段的可搜索字符串值。"
+
+#: c4fd240252384fe4b4f6e2e3476407ef of
+#: tooluniverse.xml_tool.XMLDatasetTool._is_match:1
+msgid "Check if field value matches search query."
+msgstr "检查字段值是否与搜索查询匹配。"
+
+#: a5407145dabd4ec78d11e8c0a9681e38 of
+#: tooluniverse.xml_tool.XMLDatasetTool._filter:1
+msgid "Filter records based on field criteria."
+msgstr "根据字段条件筛选记录。"
+
+#: 01b25bf5d2734eb1b450e3a852251b02 of
+#: tooluniverse.xml_tool.XMLDatasetTool._get_filter_function:1
+msgid "Get the appropriate filter function for the condition."
+msgstr "获取适用于该条件的过滤函数。"
+
+#: c1dfd9e1f895477fa43869cd02a6c7fe of
+#: tooluniverse.xml_tool.XMLDatasetTool._get_filter_description:1
+msgid "Get human-readable filter description."
+msgstr "获取人类可读的过滤器描述。"
+
+#: 34138f00079446928f8726331e1e526b of
+#: tooluniverse.xml_tool.XMLDatasetTool.get_dataset_info:1
+msgid "Get comprehensive information about the loaded XML dataset."
+msgstr "获取有关已加载 XML 数据集的全面信息。"

@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DiseaseAnalyzerAgent.rst:2
+#: 2f28fc7c963a43b7af08c377cc631ce3
+msgid "tooluniverse.tools.DiseaseAnalyzerAgent module"
+msgstr "tooluniverse.tools.DiseaseAnalyzerAgent 模块"
+
+#: d3141d398a174354b73628c0cdf0ccf1 of
+#: tooluniverse.tools.DiseaseAnalyzerAgent:1
+msgid "DiseaseAnalyzerAgent"
+msgstr "疾病分析器代理"
+
+#: 419c773659c7454cad7ad125b5a036c6 b3dc6eec242746b5bffe79504217e167 of
+#: tooluniverse.tools.DiseaseAnalyzerAgent:3
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:1
+msgid ""
+"AI agent that analyzes disease characteristics and identifies potential "
+"therapeutic targets using..."
+msgstr "AI代理可分析疾病特征并识别潜在的治疗靶点，使用..."
+
+#: ../../api/tooluniverse.tools.DiseaseAnalyzerAgent.rst
+#: 430a197ccced4f59a316f3d7fa8495c6
+msgid "Parameters"
+msgstr "参数"
+
+#: 90fe8a9633154b1897d97664f6d03edb of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:3
+msgid "Name of the disease to analyze"
+msgstr "要分析的疾病名称"
+
+#: a6759469f09646d5ae3f1050a30c12ef of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:5
+msgid "Additional context or specific focus areas"
+msgstr "附加上下文或具体关注领域"
+
+#: a6d3063a501a4ca5b35b4f773ae48ac6 of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 82f5f10db6124b20a5373bd58fb0cf16 of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f256a7a0eed0406196f6f193319cd1ed of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DiseaseAnalyzerAgent.rst
+#: c8ca7a43ca5f466d93f5a36a9ce6e592
+msgid "Return type"
+msgstr "返回类型"
+
+#: 887ab8b69e544150b68991fc359c80f2 of
+#: tooluniverse.tools.DiseaseAnalyzerAgent.DiseaseAnalyzerAgent:14
+msgid ":py:class:`Any`"
+msgstr ""

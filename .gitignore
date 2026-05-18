@@ -1,0 +1,100 @@
+# SuperNEXUS v2 - .gitignore para GitHub
+
+# ═══════════════════════════════════════════════════════════
+# SECRETOS Y CONFIGURACION PERSONAL
+# ═══════════════════════════════════════════════════════════
+.env
+.env.local
+.env.backup
+*.key
+*.pem
+*.p12
+data/config/apis/
+data/config/drive/
+
+# ═══════════════════════════════════════════════════════════
+# BASES DE DATOS Y MEMORIA
+# ═══════════════════════════════════════════════════════════
+*.db
+*.db-wal
+*.db-shm
+memory/
+screenshots/
+data/projects/
+
+# ═══════════════════════════════════════════════════════════
+# ENTORNOS VIRTUALES Y DEPENDENCIAS
+# ═══════════════════════════════════════════════════════════
+.venv/
+venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ═══════════════════════════════════════════════════════════
+# IDE Y EDITORES
+# ═══════════════════════════════════════════════════════════
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ═══════════════════════════════════════════════════════════
+# SISTEMA OPERATIVO
+# ═══════════════════════════════════════════════════════════
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ═══════════════════════════════════════════════════════════
+# LOGS Y TEMPORALES
+# ═══════════════════════════════════════════════════════════
+*.log
+*.tmp
+*.bak
+*.pid
+temp_*.py
+check_*.py
+read_*.py
+test_*.py
+test_*.png
+test_*.glb
+
+# ═══════════════════════════════════════════════════════════
+# BUILD UI
+# ═══════════════════════════════════════════════════════════
+ui/dist/
+ui/.vite/
+tsconfig.tsbuildinfo
+
+# ═══════════════════════════════════════════════════════════
+# LOCK FILES (opcional - descomentar si no quieres trackearlos)
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+# Pipfile.lock
+# poetry.lock
+
+# ═══════════════════════════════════════════════════════════
+# ARCHIVOS PERSONALES DEL DESARROLLADOR
+# ═══════════════════════════════════════════════════════════
+.codegraph/
+.nexus/
+.nexus.pid
+deploy/
+legacy/
+docs/autopsia/
+docs/informes/

@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.tool_discover.rst:2
+#: 2466a535bccd47448ff5b0a7bc1ae5ab
+msgid "tooluniverse.compose\\_scripts.tool\\_discover module"
+msgstr "tooluniverse.compose_scripts.tool_discover 模块"
+
+#: 355476ebb1614af0ba0af110a1e15d99 of
+#: tooluniverse.compose_scripts.tool_discover._discover_similar_tools:1
+msgid "Discover similar tools"
+msgstr "发现类似工具"
+
+#: 4c2b2e4f71e54b9680c57af36343a526 of
+#: tooluniverse.compose_scripts.tool_discover._generate_tool_specification:1
+msgid "Generate tool specification"
+msgstr "生成工具规格"
+
+#: 56cdf1a887f447b0a2a27b4c1598754e of
+#: tooluniverse.compose_scripts.tool_discover._generate_implementation:1
+msgid "Generate implementation code for all tool types"
+msgstr "为所有工具类型生成实现代码"
+
+#: aeaf6786c0344625ad246718f4e53806 of
+#: tooluniverse.compose_scripts.tool_discover._generate_test_cases:1
+msgid "Generate test cases"
+msgstr "生成测试用例"
+
+#: 841a2781db5d4f3e97830cbf6ca180c1 of
+#: tooluniverse.compose_scripts.tool_discover._validate_test_cases:1
+msgid "Validate test cases"
+msgstr "验证测试用例"
+
+#: 24bffe9b05624206a8c8100f0b4ea176 of
+#: tooluniverse.compose_scripts.tool_discover._execute_test_cases:1
+msgid "Execute test cases to validate code functionality"
+msgstr "执行测试用例以验证代码功能性"
+
+#: 300a9407a7d6460d85630fec3107e207 of
+#: tooluniverse.compose_scripts.tool_discover._evaluate_quality:1
+msgid "评估代码质量 - 使用增强的CodeQualityAnalyzer + 实际测试执行"
+msgstr "评估代码质量 - 使用增强版 CodeQualityAnalyzer 及实际测试执行"
+
+#: 503ce1f9393e4f2e8fbbe2f5a2c998a5 of
+#: tooluniverse.compose_scripts.tool_discover._expand_test_coverage:1
+msgid "Expand test coverage"
+msgstr "扩大测试覆盖范围"
+
+#: 6d5def6d3dac420b9d13236d1143130b of
+#: tooluniverse.compose_scripts.tool_discover._optimize_code:1
+msgid "General code optimization"
+msgstr "通用代码优化"
+
+#: 3309e2a11efc45f59f9bb52eeb41b873 of
+#: tooluniverse.compose_scripts.tool_discover.iterative_code_improvement:1
+msgid ""
+"Iteratively improve code implementation until target quality score is "
+"reached"
+msgstr "迭代优化代码实现，直到达到目标质量评分。"
+
+#: 93747f3012dd49d8a7a1bf70100ae1e8 of
+#: tooluniverse.compose_scripts.tool_discover._save_tool_files:1
+msgid "Save tool files"
+msgstr "保存工具文件"
+
+#: c0a466df0f4446e484d31491d5ac378d of
+#: tooluniverse.compose_scripts.tool_discover._convert_json_to_python:1
+msgid "Recursively convert JSON object booleans and types to Python format"
+msgstr "递归将 JSON 对象中的布尔值和类型转换为 Python 格式"
+
+#: 0068df57db8d4201bfa3876d62a19d4a of
+#: tooluniverse.compose_scripts.tool_discover._convert_python_types_to_strings:1
+msgid ""
+"Recursively convert Python type objects to string representations for JSON "
+"serialization"
+msgstr "递归地将 Python 类型对象转换为字符串表示形式，以用于 JSON 序列化"
+
+#: 060e76d164244170955f32e23dfd20aa of
+#: tooluniverse.compose_scripts.tool_discover._generate_tool_code:1
+msgid ""
+"Generate Python code for all tool types using correct register_tool method"
+msgstr "使用正确的 register_tool 方法为所有工具类型生成 Python 代码"
+
+#: 02c121aa0ddb4c82b15f68b928f1a370 of
+#: tooluniverse.compose_scripts.tool_discover.compose:1
+msgid "General tool discovery and generation system"
+msgstr "通用工具发现与生成系统"

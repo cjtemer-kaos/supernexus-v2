@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/building_ai_scientists/index.rst:31
+#: ../../guide/building_ai_scientists/index.rst:33
+#: f80c288799b34f88aadb0649afb2cd5d
+msgid "Integration Methods"
+msgstr "集成方法"
+
+#: ../../guide/building_ai_scientists/index.rst:2
+#: 4305a413daba4c7abe024d7994f57241
+msgid "Building AI Scientists"
+msgstr "构建人工智能科学家"
+
+#: ../../guide/building_ai_scientists/index.rst:5
+#: f06c9ff42e12461dbc70e5908e0d11e9
+msgid "Overview"
+msgstr "概述"
+
+#: ../../guide/building_ai_scientists/index.rst:7
+#: da2897c7890d47769a3e8371748da1b3
+msgid ""
+"A customized AI scientist can be developed by integrating ToolUniverse with "
+"LLMs, reasoning models, and AI agents. In this configuration, the LLMs and "
+"reasoning models provide the core capabilities for reasoning and tool usage,"
+" while ToolUniverse serves as the scientific environment for interaction and"
+" experimentation."
+msgstr ""
+"通过将 ToolUniverse 与大型语言模型（LLMs）、推理模型及 AI 智能体集成，可以开发定制化的 AI 科学家。在此配置中，LLMs "
+"和推理模型提供推理及工具使用的核心能力，而 ToolUniverse 则作为科学环境，支持交互与实验。"
+
+#: ../../guide/building_ai_scientists/index.rst:9
+#: 4115cf93c1fd4d329bcef6a59a83aacf
+msgid "The development process typically involves three steps:"
+msgstr "开发过程通常包括三个步骤："
+
+#: ../../guide/building_ai_scientists/index.rst:11
+#: bd94e3fc2e0a4b47a8888f488c0102bd
+msgid ""
+"Installing ToolUniverse with a single command (``pip install tooluniverse``)"
+msgstr "使用单条命令安装 ToolUniverse（``pip install tooluniverse``）"
+
+#: ../../guide/building_ai_scientists/index.rst:12
+#: a437604559ba47389e33b71f405d62ec
+msgid ""
+"Connecting ToolUniverse to the chosen model so it can access the tools "
+"provided by ToolUniverse"
+msgstr "将 ToolUniverse 连接到所选模型，以便其能够访问 ToolUniverse 提供的工具"
+
+#: ../../guide/building_ai_scientists/index.rst:13
+#: dd1e205a9778433383ef9629fa4c6e5c
+msgid ""
+"Instructing the model to use these tools to address a given scientific "
+"problem"
+msgstr "指导模型使用这些工具来解决特定的科学问题"
+
+#: ../../guide/building_ai_scientists/index.rst:16
+#: 8b985f5bb68a46e092ad40d1fe6dfc00
+msgid "How AI Scientists Operate"
+msgstr "人工智能科学家的工作方式"
+
+#: ../../guide/building_ai_scientists/index.rst:18
+#: dae4a3f711db4f0fa1bacc7d3346e34b
+msgid ""
+"Once the setup is complete, the AI scientist operates as follows: given a "
+"user instruction or task, it formulates a plan or hypothesis, employs the "
+"tool finder in ToolUniverse to identify relevant tools, and iteratively "
+"applies these tools to gather information, conduct experiments, verify "
+"hypotheses, and request human feedback when necessary. For each required "
+"tool call, the AI scientist generates arguments that conform to the "
+"ToolUniverse protocol, after which ToolUniverse executes the tool and "
+"returns the results for further reasoning."
+msgstr ""
+"设置完成后，AI科学家的运行流程如下：针对用户指令或任务，制定计划或假设，利用ToolUniverse中的工具查找器识别相关工具，并迭代应用这些工具以收集信息、进行实验、验证假设，必要时请求人工反馈。对于每次所需的工具调用，AI科学家生成符合ToolUniverse协议的参数，随后ToolUniverse执行该工具并返回结果以供进一步推理。"
+
+#: ../../guide/building_ai_scientists/index.rst:21
+#: 38aebe62a4414c08a007e5b3f290bc05
+msgid "Model Types"
+msgstr "模型类型"
+
+#: ../../guide/building_ai_scientists/index.rst:23
+#: fa64ed5331c0406e952c46311667622c
+msgid "The models used to construct AI scientists can include:"
+msgstr "用于构建人工智能科学家的模型包括："
+
+#: ../../guide/building_ai_scientists/index.rst:25
+#: ff2d0fb8ec5d4f8d9ced9ddbae7d3c27
+msgid ""
+"**LLMs**: API-based (GPT, Claude, Gemini) or open-weight models (LLaMA, "
+"DeepSeek, Qwen)"
+msgstr ""
+"**大型语言模型（LLMs）**：基于API的模型（GPT、Claude、Gemini）或开源权重模型（LLaMA、DeepSeek、Qwen）"
+
+#: ../../guide/building_ai_scientists/index.rst:26
+#: 7f23cb2a58024410987ecbdd72b8b87b
+msgid ""
+"**Reasoning Models**: Enhance problem-solving capabilities by applying "
+"built-in chains of thought to analyze the current step before interacting "
+"with ToolUniverse"
+msgstr "**推理模型**：通过应用内置的思维链，在与ToolUniverse交互之前分析当前步骤，从而增强问题解决能力。"
+
+#: ../../guide/building_ai_scientists/index.rst:27
+#: 9808a8edaf3b4c47a51db0c9fee8a7b3
+msgid ""
+"**Agentic Systems**: Such as Gemini CLI or Claude Code, integrate reasoning "
+"models with agentic feedback loops to autonomously manage multi-step problem"
+" solving and tool use"
+msgstr ""
+"**智能智能体系统**：如 Gemini CLI 或 Claude Code，将推理模型与智能智能体反馈循环相结合，实现多步骤问题解决和工具使用的自主管理。"
+
+#: ../../guide/building_ai_scientists/index.rst:28
+#: 154a844a43324e7b9f70b0f3cc143d6d
+msgid ""
+"**Specialized Agents**: Trained for specific scientific domains, enabling "
+"stronger performance on targeted tasks"
+msgstr "**专业智能体**：针对特定科学领域进行培训，提升在目标任务上的表现能力"

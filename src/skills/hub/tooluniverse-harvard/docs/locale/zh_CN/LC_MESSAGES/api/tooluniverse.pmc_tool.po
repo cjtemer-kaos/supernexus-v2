@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 21:51-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.pmc_tool.rst:2 0d5db0f2be084a9f9c7275a2f7da3a39
+msgid "tooluniverse.pmc\\_tool module"
+msgstr "tooluniverse.pmc_tool 模块"
+
+#: ea2a53e150d34818948ceb5fa39919e1 of tooluniverse.pmc_tool:1
+msgid ""
+"PMC (PubMed Central) Tool for searching full-text biomedical literature."
+msgstr "PMC（PubMed Central）全文生物医学文献检索工具。"
+
+#: e3bb1e91acc74f26acd6d11f9219b20d of tooluniverse.pmc_tool:3
+msgid ""
+"PMC is the free full-text archive of biomedical and life sciences journal "
+"literature at the U.S. National Institutes of Health's National Library of "
+"Medicine. This tool provides access to millions of full-text articles."
+msgstr "PMC 是美国国立卫生研究院国家医学图书馆提供的生物医学与生命科学期刊文献免费全文档案库。该工具可访问数百万篇全文文章。"
+
+#: 0682377572354c6297b6e6474a97e05b of tooluniverse.pmc_tool.PMCTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: b340928c37bb4a50bc95e007889df199 of tooluniverse.pmc_tool.PMCTool:1
+msgid "Tool for searching PMC full-text biomedical literature."
+msgstr "用于检索PMC全文生物医学文献的工具。"
+
+#: 65169b770fab4f0784a1c2313ab6394d of tooluniverse.pmc_tool.PMCTool._search:1
+msgid "Search for papers using PMC API."
+msgstr "使用 PMC API 搜索论文。"
+
+#: ../../api/tooluniverse.pmc_tool.rst 089180aa6cf849f9ba13034e112a5163
+#: 563dafcf71ce4cd19561a72bb5710218
+msgid "Parameters"
+msgstr "参数"
+
+#: f3ba00b4423c4a5f80225c67b511b3e6 of tooluniverse.pmc_tool.PMCTool._search:3
+msgid "Search query"
+msgstr "搜索查询"
+
+#: bd5db8459ec849729a508d2f0b093611 of tooluniverse.pmc_tool.PMCTool._search:4
+msgid "Maximum number of results"
+msgstr "最大结果数"
+
+#: bae3af9b068440c7b82e56a4f5949f2e of tooluniverse.pmc_tool.PMCTool._search:5
+msgid "Start date filter (YYYY/MM/DD)"
+msgstr "开始日期筛选（YYYY/MM/DD）"
+
+#: 729033c80c964715a01540bce3bcb891 of tooluniverse.pmc_tool.PMCTool._search:6
+msgid "End date filter (YYYY/MM/DD)"
+msgstr "结束日期筛选（YYYY/MM/DD）"
+
+#: 5b6caf845dfc49ef9a960773110b7ff6 of tooluniverse.pmc_tool.PMCTool._search:7
+msgid "Article type filter (e.g., 'research-article', 'review')"
+msgstr "文章类型筛选器（例如，“research-article”、“review”）"
+
+#: ../../api/tooluniverse.pmc_tool.rst 1903651b65304b21abdd431f2e034677
+#: cf98f4def01544778147a5496c7ac714
+msgid "Returns"
+msgstr "返回值"
+
+#: 4f709790047249af8e42fbc6bba5525b 8dba811d91a24a84ae20351ee3d532c1 of
+#: tooluniverse.pmc_tool.PMCTool._search:9 tooluniverse.pmc_tool.PMCTool.run:5
+msgid "List of paper dictionaries"
+msgstr "纸质词典列表"
+
+#: ../../api/tooluniverse.pmc_tool.rst 195be07c46eb4c14bc3e040c0acdf3be
+#: 7c58771bdc824fa49169d17e60eb618e
+msgid "Return type"
+msgstr "返回类型"
+
+#: e9bb70d5cdcf4cbab608f1bc29c632ac of
+#: tooluniverse.pmc_tool.PMCTool._extract_authors:1
+msgid "Extract author names from PMC API response."
+msgstr "从 PMC API 响应中提取作者姓名。"
+
+#: 29790684a15645e4b98af9271c727f76 of
+#: tooluniverse.pmc_tool.PMCTool._extract_year:1
+msgid "Extract year from publication date."
+msgstr "从出版日期中提取年份。"
+
+#: c63e017fa3344e80b39599b25673346f of tooluniverse.pmc_tool.PMCTool.run:1
+msgid "Execute the PMC search."
+msgstr "执行PMC搜索。"
+
+#: 158a17f26fb34c34b03a75ff0392cc26 of tooluniverse.pmc_tool.PMCTool.run:3
+msgid "Dictionary containing search parameters"
+msgstr "包含搜索参数的字典"

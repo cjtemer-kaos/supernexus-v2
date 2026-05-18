@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationOptimizer.rst:2
+#: f2dbf57db46e44dbb543a24ce98bb8b7
+msgid "tooluniverse.tools.ToolSpecificationOptimizer module"
+msgstr "tooluniverse.tools.ToolSpecificationOptimizer 模块"
+
+#: 77e0a4d731ca436e8f1030857ef639e1 of
+#: tooluniverse.tools.ToolSpecificationOptimizer:1
+msgid "ToolSpecificationOptimizer"
+msgstr "工具规格优化器"
+
+#: 749cc6817e82468189ac1e73d79d6ca9 9c7a7981242e4851859b65c3a55742cc of
+#: tooluniverse.tools.ToolSpecificationOptimizer:3
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:1
+msgid ""
+"Optimizes tool specifications for clarity, completeness, and usability with "
+"comprehensive benchma..."
+msgstr "优化工具规格，以确保清晰性、完整性和可用性，并结合全面的基准测试。"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationOptimizer.rst
+#: b74eb91ed3ba454a9118185e4e0c252f
+msgid "Parameters"
+msgstr "参数"
+
+#: f1ad6daaa36d40d0bb992c7b501d398e of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:3
+msgid "JSON string of current tool configuration to optimize"
+msgstr "当前工具配置的JSON字符串以进行优化"
+
+#: d29761c0e48444b19cdcb4de158b5f12 of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:5
+msgid "Primary optimization focus"
+msgstr "主要优化重点"
+
+#: ef0f2744b5114817a81366a195d9d1f8 of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:7
+msgid "Target user expertise level"
+msgstr "目标用户专业水平"
+
+#: b14d6d5050804f6f863d742b3bb71624 of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:9
+msgid "JSON string array of similar tools for comparison and benchmarking"
+msgstr "用于比较和基准测试的类似工具的JSON字符串数组"
+
+#: f3172d94b4dd43b5b3b9e80cab6c893b of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4b4f228ce4ce4b419965b1bd8642f707 of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 468d4fd3d0184b639b2eeae875fa3dde of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationOptimizer.rst
+#: 1d48bfd7ed694aeba3763e2ad57d949c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0699aae493084604a7fd701c41a094eb of
+#: tooluniverse.tools.ToolSpecificationOptimizer.ToolSpecificationOptimizer:18
+msgid ":py:class:`Any`"
+msgstr ""

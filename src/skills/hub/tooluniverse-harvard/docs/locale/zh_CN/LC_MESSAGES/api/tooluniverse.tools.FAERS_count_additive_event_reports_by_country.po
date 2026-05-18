@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_event_reports_by_country.rst:2
+#: b914beb9721a494b8dcc814e13512d78
+msgid ""
+"tooluniverse.tools.FAERS\\_count\\_additive\\_event\\_reports\\_by\\_country"
+" module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_additive\\_event\\_reports\\_by\\_country 模块"
+
+#: 61c61fa278a24ef7853304d421f0bb80 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country:1
+msgid "FAERS_count_additive_event_reports_by_country"
+msgstr "按国家统计FAERS附加事件报告数"
+
+#: 8ee3844906424562912882d79d175c2d bcaa133055334a9891967679b66c4ad6 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country:3
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:1
+msgid ""
+"Additive multi-drug data: Aggregate report counts by country of occurrence "
+"across specified medic..."
+msgstr "添加性多药数据：按指定药物发生国家汇总报告计数。"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_event_reports_by_country.rst
+#: 865abcd2a42a4ebcb0d59e0076f18324
+msgid "Parameters"
+msgstr "参数"
+
+#: 45cfd4b630c5480f9413d4369cd66510 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:3
+msgid "Array of medicinal product names."
+msgstr "药品名称数组"
+
+#: 85c4a94b275a41c5a2ca527ff6a09174 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:5
+msgid "Filter by sex."
+msgstr "按性别筛选。"
+
+#: afdaac0fa8bf49be979deb24f0049d89 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:7
+msgid "Filter by age group."
+msgstr "按年龄组筛选。"
+
+#: 27fb5e91b2794887a233ca69d735205b of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:9
+msgid "Filter by seriousness."
+msgstr "根据严重程度筛选。"
+
+#: 631d0a0f3184468a80e098fe7167d4e8 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: eb182a0939564365951370c158a86025 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cd177584db8f4f118e574953be91bb22 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_event_reports_by_country.rst
+#: 380b5b8024aa4174865b384edb23d565
+msgid "Return type"
+msgstr "返回类型"
+
+#: b766ae9f8b264d98a683d3a0a3873145 of
+#: tooluniverse.tools.FAERS_count_additive_event_reports_by_country.FAERS_count_additive_event_reports_by_country:18
+msgid ":py:class:`Any`"
+msgstr ""

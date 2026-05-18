@@ -1,0 +1,102 @@
+[
+  {
+    "type": "RemoteTool",
+    "name": "compute_depmap24q2_gene_correlations",
+    "description": "Analyzes gene-gene correlations from DepMap CRISPR knockout screening data. This tool validates genetic interactions using empirical cell viability data from 1,320+ cancer cell lines in the DepMap 24Q2 dataset. It determines if two genes have correlated knockout effects, providing insights into genetic dependencies and synthetic lethal relationships.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_a": {
+          "type": "string",
+          "description": "First gene symbol for correlation analysis (e.g., 'BRAF', 'TP53'). Must use standard HUGO gene nomenclature."
+        },
+        "gene_b": {
+          "type": "string",
+          "description": "Second gene symbol for correlation analysis (e.g., 'MAPK1', 'MDM2'). Must use standard HUGO gene nomenclature."
+        },
+        "data_dir": {
+          "type": "string",
+          "description": "Path to directory containing DepMap correlation matrices. If None, uses DEPMAP_DATA_PATH/depmap_24q2."
+        }
+      },
+      "required": [
+        "gene_a",
+        "gene_b"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "correlation_data": {
+          "type": "object",
+          "description": "Statistical measures including correlation coefficient, p-value, and adjusted p-value",
+          "properties": {
+            "correlation": {
+              "type": "number",
+              "description": "Pearson correlation coefficient (-1.0 to 1.0)"
+            },
+            "p_value": {
+              "type": "number",
+              "description": "Statistical significance of correlation"
+            },
+            "adjusted_p_value": {
+              "type": "number",
+              "description": "FDR-corrected p-value (when available)"
+            }
+          }
+        },
+        "interpretation": {
+          "type": "object",
+          "description": "Biological and statistical context",
+          "properties": {
+            "strength": {
+              "type": "string",
+              "description": "Descriptive correlation strength assessment"
+            },
+            "significance": {
+              "type": "string",
+              "description": "Statistical significance interpretation"
+            },
+            "direction": {
+              "type": "string",
+              "description": "Relationship type (similar vs opposing effects)"
+            },
+            "biological_relationship": {
+              "type": "string",
+              "description": "Biological context for correlation direction and strength"
+            },
+            "summary": {
+              "type": "string",
+              "description": "Comprehensive analysis summary"
+            }
+          }
+        },
+        "context_info": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Detailed analysis messages and metadata"
+        },
+        "error": {
+          "type": "string",
+          "description": "Error description if analysis failed"
+        }
+      }
+    },
+    "remote_info": {
+      "server_type": "SMCP",
+      "transport": "http",
+      "original_type": "DepmapCorrelationTool",
+      "url": "https://zitniklab.hms.harvard.edu/ToolUniverse/expand_tooluniverse/remote/depmap_24q2.html",
+      "code_url": "https://github.com/mims-harvard/bioagent/tree/main/ToolUniverse/src/tooluniverse/remote/depmap_24q2",
+      "mcp_tool_name": "compute_depmap24q2_gene_correlations"
+    },
+    "test_examples": [
+      {
+        "gene_a": "BRAF",
+        "gene_b": "MAPK1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Crossref_search_works.rst:2
+#: 0ddbfb640f934b5a9e6a29c20bc3cb25
+msgid "tooluniverse.tools.Crossref\\_search\\_works module"
+msgstr "tooluniverse.tools.Crossref\\_search\\_works 模块"
+
+#: 61f774e7830b40aa9e6ceaa119098bcc of
+#: tooluniverse.tools.Crossref_search_works:1
+msgid "Crossref_search_works"
+msgstr "Crossref_搜索作品"
+
+#: 1153fde79e2747958479468e731c8045 aab7ba6d6cce46b6b5f8d4ca017a2985 of
+#: tooluniverse.tools.Crossref_search_works:3
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:1
+msgid ""
+"Search Crossref Works API for articles by keyword. Returns articles with "
+"title, abstract, journal..."
+msgstr "通过关键词搜索 Crossref Works API 获取文章。返回包含标题、摘要、期刊的文章..."
+
+#: ../../api/tooluniverse.tools.Crossref_search_works.rst
+#: bd1e503cd94741c7bddbc98bb1f0fbda
+msgid "Parameters"
+msgstr "参数"
+
+#: df3940d39ff24dc3afab25a815f9c7a6 of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:3
+msgid ""
+"Search query for Crossref works. Use keywords separated by spaces to refine "
+"y..."
+msgstr "搜索 Crossref 作品的查询。使用空格分隔的关键词来优化搜索结果。"
+
+#: 9ec3c897839746fd8bfa4287005f0623 of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:5
+msgid ""
+"Number of articles to return. This sets the maximum number of articles "
+"retrie..."
+msgstr "返回的文章数量。此参数设置检索文章的最大数量。"
+
+#: 4950a0c884744cb3bd1e7ef35a779a6d of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:7
+msgid ""
+"Optional filter string for Crossref API. Examples: 'type:journal-"
+"article,from..."
+msgstr "可选的Crossref API过滤字符串。例如：'type:journal-article,from..."
+
+#: ed8ce493d3f74aa1895b897fd8040000 of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 64f2fe85eb4943f59a4e23cb6e2a746c of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1754fcddd79543acb1dd3ac7eee2e3dd of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Crossref_search_works.rst
+#: efd7385e68f9411497add38ee17f884f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7018df67ac414259a75b24342c244c85 of
+#: tooluniverse.tools.Crossref_search_works.Crossref_search_works:16
+msgid ":py:class:`list[Any]`"
+msgstr ""

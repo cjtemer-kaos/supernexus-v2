@@ -1,0 +1,864 @@
+[
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_patent_overview_by_text_query",
+    "description": "Search for patent application overviews using a query string of the format 'applicationMetaData.inventionTitle:your_search_term', where your_search_term is the case-insensitive keyword or keyphrase you are searching for. If your_search_term is a multi-word phrase, it must be encased in escaped double quotation marks for exact matching. This tool allows for sorting, offsetting, and filterin of results. Returns a list of important metadata fields for each application, including application number, filing date, grant date, invention title, and CPC classifications.",
+    "api_endpoint": "patent/applications/search",
+    "field_name_mappings": {
+      "": ""
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword or keyphrase to search for in the patent application title. This field is required."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "If true, the search will only return results that exactly match the provided query. Default is false.",
+          "default": false
+        },
+        "sort": {
+          "type": "string",
+          "description": "Sorts results by one of the following fields: filingDate or grantDate. Follow the field name with a space and 'asc' or 'desc' for ascending or descending by date, respectively. For example: 'filingDate desc'",
+          "default": "filingDate desc"
+        },
+        "offset": {
+          "type": "integer",
+          "description": "The starting position (zero-indexed) of the result set. Default is 0.",
+          "default": 0
+        },
+        "limit": {
+          "type": "integer",
+          "description": "The maximum number of results to return. Default is 25.",
+          "default": 25
+        },
+        "rangeFilters": {
+          "type": "string",
+          "description": "Limits results to the date range specified for one of the following fields: filingDate or grantDate. Provide the field name, a space, and a colon-separated start and end value in YYYY-MM-DD format. For example: 'grantDate 2010-01-01:2011-01-01'"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "default_query_params": {
+      "fields": "applicationNumberText,grantDocumentMetaData,applicationMetaData.cpcClassificationBag,applicationMetaData.filingDate,applicationMetaData.grantDate,applicationMetaData.inventionTitle,applicationMetaData.applicationStatusDescriptionText,parentContinuityBag,childContinuityBag,applicationMetaData.earliestPublicationDate"
+    },
+    "required": [
+      "query"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "applicationMetaData": {
+                "type": "object",
+                "properties": {
+                  "filingDate": {
+                    "type": "string",
+                    "description": "The filing date of the application (YYYY-MM-DD format)"
+                  },
+                  "grantDate": {
+                    "type": "string",
+                    "description": "The grant date of the patent (YYYY-MM-DD format)"
+                  },
+                  "inventionTitle": {
+                    "type": "string",
+                    "description": "The title of the invention"
+                  },
+                  "applicationStatusDescriptionText": {
+                    "type": "string",
+                    "description": "Current status description of the application"
+                  },
+                  "earliestPublicationDate": {
+                    "type": "string",
+                    "description": "The earliest publication date (YYYY-MM-DD format)"
+                  },
+                  "cpcClassificationBag": {
+                    "type": "array",
+                    "description": "CPC classification codes for the patent"
+                  }
+                }
+              },
+              "grantDocumentMetaData": {
+                "type": "object",
+                "description": "Contains patent grant zip and xml file meta data for an application",
+                "properties": {
+                  "zipFileName": {
+                    "type": "string",
+                    "description": "Name of the zip file containing the grant data"
+                  },
+                  "productIdentifier": {
+                    "type": "string",
+                    "description": "Product identifier for the grant data"
+                  },
+                  "fileLocationURI": {
+                    "type": "string",
+                    "description": "URI location of the grant file"
+                  },
+                  "fileCreateDateTime": {
+                    "type": "string",
+                    "description": "Date and time when the file was created"
+                  },
+                  "xmlFileName": {
+                    "type": "string",
+                    "description": "Name of the XML file containing the grant data"
+                  }
+                }
+              },
+              "parentContinuityBag": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "firstInventorToFileIndicator": {
+                      "type": "boolean",
+                      "description": "(if present) Indicates whether this application was the first inventor to file"
+                    },
+                    "parentPatentNumber": {
+                      "type": "string",
+                      "description": "(if present) Patent number of the parent application"
+                    },
+                    "parentApplicationStatusCode": {
+                      "type": "integer",
+                      "description": "Status code of the parent application"
+                    },
+                    "claimParentageTypeCode": {
+                      "type": "string",
+                      "description": "Code indicating the type of parent relationship"
+                    },
+                    "claimParentageTypeCodeDescriptionText": {
+                      "type": "string",
+                      "description": "Description of the parent relationship type"
+                    },
+                    "parentApplicationStatusDescriptionText": {
+                      "type": "string",
+                      "description": "Status description of the parent application"
+                    },
+                    "parentApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the parent application"
+                    },
+                    "parentApplicationFilingDate": {
+                      "type": "string",
+                      "description": "Filing date of the parent application (YYYY-MM-DD format)"
+                    },
+                    "childApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the child application of this parent application, which is the current application"
+                    }
+                  }
+                }
+              },
+              "childContinuityBag": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "childApplicationStatusCode": {
+                      "type": "number",
+                      "description": "Status code of the child application"
+                    },
+                    "parentApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the parent application"
+                    },
+                    "childApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the child application"
+                    },
+                    "childApplicationStatusDescriptionText": {
+                      "type": "string",
+                      "description": "Status description of the child application"
+                    },
+                    "childApplicationFilingDate": {
+                      "type": "string",
+                      "description": "Filing date of the child application (YYYY-MM-DD format)"
+                    },
+                    "firstInventorToFileIndicator": {
+                      "type": "boolean",
+                      "description": "Indicates if this application was the first inventor to file"
+                    },
+                    "childPatentNumber": {
+                      "type": "string",
+                      "description": "Patent number of the child application"
+                    },
+                    "claimParentageTypeCode": {
+                      "type": "string",
+                      "description": "Code indicating the type of parent relationship"
+                    },
+                    "claimParentageTypeCodeDescriptionText": {
+                      "type": "string",
+                      "description": "Description of the parent relationship type"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "exact_match": false,
+        "sort": "filingDate desc",
+        "offset": 0,
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_patent_application_metadata",
+    "description": "Retrieves only the metadata for a specific patent application by its application number.",
+    "api_endpoint": "patent/applications/{applicationNumberText}/meta-data",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "applicationNumberText": {
+          "type": "string",
+          "description": "The application number of the patent."
+        }
+      },
+      "required": [
+        "applicationNumberText"
+      ]
+    },
+    "return_fields": [
+      "applicationNumberText",
+      "applicationMetaData.firstInventorToFileIndicator",
+      "applicationMetaData.applicationStatusCode",
+      "applicationMetaData.applicationTypeCode",
+      "applicationMetaData.filingDate",
+      "applicationMetaData.effectiveFilingDate",
+      "applicationMetaData.grantDate",
+      "applicationMetaData.uspcSymbolText",
+      "applicationMetaData.cpcClassificationBag",
+      "applicationMetaData.applicationTypeLabelName",
+      "applicationMetaData.applicationTypeCategory",
+      "applicationMetaData.applicationStatusDate",
+      "applicationMetaData.applicationStatusDescriptionText",
+      "applicationMetaData.class",
+      "applicationMetaData.subclass",
+      "applicationMetaData.inventionTitle",
+      "applicationMetaData.patentNumber",
+      "applicationMetaData.pctPublicationNumber",
+      "applicationMetaData.pctPublicationDate",
+      "applicationMetaData.internationalRegistrationPublicationDate",
+      "applicationMetaData.internationalRegistrationNumber",
+      "applicationMetaData.applicantBag/applicantNameText",
+      "applicationMetaData.inventorBag/inventorNameText"
+    ],
+    "required": [
+      "applicationNumberText"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "missing_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "Field that was not present in the response"
+                },
+                "description": "List of fields that were not present in the response"
+              },
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "applicationMetaData": {
+                "type": "object",
+                "properties": {
+                  "firstInventorToFileIndicator": {
+                    "type": "string",
+                    "description": "Indicates whether this is the first inventor to file (Y/N)"
+                  },
+                  "applicationStatusCode": {
+                    "type": "integer",
+                    "description": "Numeric code for the application status"
+                  },
+                  "applicationTypeCode": {
+                    "type": "string",
+                    "description": "Code for the type of application (e.g., UTL for Utility)"
+                  },
+                  "filingDate": {
+                    "type": "string",
+                    "description": "The filing date of the application (YYYY-MM-DD format)"
+                  },
+                  "effectiveFilingDate": {
+                    "type": "string",
+                    "description": "The effective filing date (YYYY-MM-DD format)"
+                  },
+                  "grantDate": {
+                    "type": "string",
+                    "description": "The grant date of the patent (YYYY-MM-DD format)"
+                  },
+                  "uspcSymbolText": {
+                    "type": "string",
+                    "description": "USPC classification symbol"
+                  },
+                  "cpcClassificationBag": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "CPC classification codes for the patent"
+                  },
+                  "applicationTypeLabelName": {
+                    "type": "string",
+                    "description": "Label name for the application type"
+                  },
+                  "applicationTypeCategory": {
+                    "type": "string",
+                    "description": "Category of the application type"
+                  },
+                  "applicationStatusDate": {
+                    "type": "string",
+                    "description": "Date of the application status (YYYY-MM-DD format)"
+                  },
+                  "applicationStatusDescriptionText": {
+                    "type": "string",
+                    "description": "Current status description of the application"
+                  },
+                  "class": {
+                    "type": "string",
+                    "description": "USPC class"
+                  },
+                  "subclass": {
+                    "type": "string",
+                    "description": "USPC subclass"
+                  },
+                  "inventionTitle": {
+                    "type": "string",
+                    "description": "The title of the invention"
+                  },
+                  "patentNumber": {
+                    "type": "string",
+                    "description": "Patent number if granted"
+                  },
+                  "pctPublicationNumber": {
+                    "type": "string",
+                    "description": "PCT publication number"
+                  },
+                  "pctPublicationDate": {
+                    "type": "string",
+                    "description": "PCT publication date (YYYY-MM-DD format)"
+                  },
+                  "internationalRegistrationPublicationDate": {
+                    "type": "string",
+                    "description": "International registration publication date (YYYY-MM-DD format)"
+                  },
+                  "internationalRegistrationNumber": {
+                    "type": "string",
+                    "description": "International registration number"
+                  },
+                  "applicantBag": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "applicantNameText": {
+                          "type": "string",
+                          "description": "Name of the applicant"
+                        }
+                      }
+                    }
+                  },
+                  "inventorBag": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "inventorNameText": {
+                          "type": "string",
+                          "description": "Full name of the inventor"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "applicationNumberText": "16123456"
+      }
+    ]
+  },
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_patent_term_adjustment_data",
+    "description": "Obtains the patent term adjustment details for a given application number.",
+    "api_endpoint": "patent/applications/{applicationNumberText}/adjustment",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "applicationNumberText": {
+          "type": "string",
+          "description": "The application number of the patent."
+        }
+      },
+      "required": [
+        "applicationNumberText"
+      ]
+    },
+    "required": [
+      "applicationNumberText"
+    ],
+    "return_fields": [
+      "applicationNumberText",
+      "patentTermAdjustmentData.adjustmentTotalQuantity"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "patentTermAdjustmentData": {
+                "type": "object",
+                "description": "Patent term adjustment data",
+                "properties": {
+                  "adjustmentTotalQuantity": {
+                    "type": "integer",
+                    "description": "Patent term adjustment total quantity number that is a summation of NONOVERLAPPING USPTO DELAYS (+/- PTO MANUAL ADJUSTMENTS) - APPLICANT DELAYS"
+                  }
+                }
+              },
+              "missing_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "Field that was not present in the response"
+                },
+                "description": "List of fields that were not present in the response"
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "applicationNumberText": "16123456"
+      }
+    ]
+  },
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_patent_continuity_data",
+    "description": "Fetches the parent and child continuity data for a patent application, showing its relationship to other applications.",
+    "api_endpoint": "patent/applications/{applicationNumberText}/continuity",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "applicationNumberText": {
+          "type": "string",
+          "description": "The application number of the patent."
+        }
+      },
+      "required": [
+        "applicationNumberText"
+      ]
+    },
+    "required": [
+      "applicationNumberText"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "parentContinuityBag": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "firstInventorToFileIndicator": {
+                      "type": "boolean",
+                      "description": "Indicates whether this is the first inventor to file"
+                    },
+                    "parentApplicationStatusCode": {
+                      "type": "integer",
+                      "description": "Status code of the parent application"
+                    },
+                    "parentPatentNumber": {
+                      "type": "string",
+                      "description": "Patent number of the parent application"
+                    },
+                    "parentApplicationStatusDescriptionText": {
+                      "type": "string",
+                      "description": "Status description of the parent application"
+                    },
+                    "parentApplicationFilingDate": {
+                      "type": "string",
+                      "description": "Filing date of the parent application (YYYY-MM-DD format)"
+                    },
+                    "parentApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the parent application"
+                    },
+                    "childApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the child application"
+                    },
+                    "claimParentageTypeCode": {
+                      "type": "string",
+                      "description": "Code indicating the type of parent relationship"
+                    },
+                    "claimParentageTypeCodeDescriptionText": {
+                      "type": "string",
+                      "description": "Description of the parent relationship type"
+                    }
+                  }
+                }
+              },
+              "childContinuityBag": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "childApplicationStatusCode": {
+                      "type": "number",
+                      "description": "Status code of the child application"
+                    },
+                    "parentApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the parent application"
+                    },
+                    "childApplicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the child application"
+                    },
+                    "childApplicationStatusDescriptionText": {
+                      "type": "string",
+                      "description": "Status description of the child application"
+                    },
+                    "childApplicationFilingDate": {
+                      "type": "string",
+                      "description": "Filing date of the child application (YYYY-MM-DD format)"
+                    },
+                    "firstInventorToFileIndicator": {
+                      "type": "boolean",
+                      "description": "Indicates whether this is the first inventor to file"
+                    },
+                    "childPatentNumber": {
+                      "type": "string",
+                      "description": "Patent number of the child application"
+                    },
+                    "claimParentageTypeCode": {
+                      "type": "string",
+                      "description": "Code indicating the type of parent relationship"
+                    },
+                    "claimParentageTypeCodeDescriptionText": {
+                      "type": "string",
+                      "description": "Description of the parent relationship type"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "applicationNumberText": "16123456"
+      }
+    ]
+  },
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_patent_foreign_priority_data",
+    "description": "Accesses information about any foreign priority claims associated with an application.",
+    "api_endpoint": "patent/applications/{applicationNumberText}/foreign-priority",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "applicationNumberText": {
+          "type": "string",
+          "description": "The application number of the patent."
+        }
+      },
+      "required": [
+        "applicationNumberText"
+      ]
+    },
+    "required": [
+      "applicationNumberText"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "foreignPriorityBag": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ipOfficeName": {
+                      "type": "string",
+                      "description": "Name of the intellectual property office where the foreign priority application was filed"
+                    },
+                    "filingDate": {
+                      "type": "string",
+                      "description": "Filing date of the foreign priority application (YYYY-MM-DD format)"
+                    },
+                    "applicationNumberText": {
+                      "type": "string",
+                      "description": "Application number of the foreign priority application"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "applicationNumberText": "16123456"
+      }
+    ]
+  },
+  {
+    "type": "USPTOOpenDataPortalTool",
+    "name": "get_associated_documents_metadata",
+    "description": "Obtains metadata for documents associated with an application, such as publications and grants.",
+    "api_endpoint": "patent/applications/{applicationNumberText}/associated-documents",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "applicationNumberText": {
+          "type": "string",
+          "description": "The application number of the patent."
+        }
+      },
+      "required": [
+        "applicationNumberText"
+      ]
+    },
+    "required": [
+      "applicationNumberText"
+    ],
+    "return_fields": [
+      "applicationNumberText",
+      "grantDocumentMetaData"
+    ],
+    "required_api_keys": [
+      "USPTO_API_KEY"
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "(if present) Error message if the request fails"
+        },
+        "details": {
+          "type": "object",
+          "description": "(if present) Additional details about the error if the request fails"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Total number of matching patent applications"
+        },
+        "patentFileWrapperDataBag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "missing_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "Field that was not present in the response"
+                },
+                "description": "List of fields that were not present in the response"
+              },
+              "applicationNumberText": {
+                "type": "string",
+                "description": "The application number of the patent"
+              },
+              "grantDocumentMetaData": {
+                "type": "object",
+                "description": "Contains patent grant zip and xml file meta data for an application",
+                "properties": {
+                  "zipFileName": {
+                    "type": "string",
+                    "description": "Name of the zip file containing the grant data"
+                  },
+                  "productIdentifier": {
+                    "type": "string",
+                    "description": "Product identifier for the grant data"
+                  },
+                  "fileLocationURI": {
+                    "type": "string",
+                    "description": "URI location of the grant file"
+                  },
+                  "fileCreateDateTime": {
+                    "type": "string",
+                    "description": "Date and time when the file was created"
+                  },
+                  "xmlFileName": {
+                    "type": "string",
+                    "description": "Name of the XML file containing the grant data"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestIdentifier": {
+          "type": "string",
+          "description": "Unique identifier for the API request"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "applicationNumberText": "16123456"
+      }
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "type": "DOAJTool",
+    "name": "DOAJ_search_articles",
+    "description": "Search DOAJ (Directory of Open Access Journals) for open-access articles. Returns articles with title, authors, year, DOI, venue, and URL.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for DOAJ articles. Supports Lucene syntax for advanced queries."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of articles to return. Default is 10, maximum is 100.",
+          "default": 10
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of search: 'articles' or 'journals'. Default is 'articles'.",
+          "default": "articles"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of DOAJ articles or journals matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the article or journal"
+          },
+          "abstract": {
+            "type": ["string", "null"],
+            "description": "Abstract of the article (HTML tags removed)"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names (for articles)"
+          },
+          "year": {
+            "type": ["integer", "null"],
+            "description": "Publication year"
+          },
+          "doi": {
+            "type": ["string", "null"],
+            "description": "Digital Object Identifier"
+          },
+          "venue": {
+            "type": ["string", "null"],
+            "description": "Journal name (for articles)"
+          },
+          "url": {
+            "type": ["string", "null"],
+            "description": "URL to the article or journal"
+          },
+          "citations": {
+            "type": ["integer", "null"],
+            "description": "Number of citations (not available from DOAJ)"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status (always true for DOAJ)"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of subject keywords"
+          },
+          "article_type": {
+            "type": ["string", "null"],
+            "description": "Type of article"
+          },
+          "publisher": {
+            "oneOf": [
+              {"type": "string"},
+              {"type": "object", "properties": {"country": {"type": "string"}, "name": {"type": "string"}}},
+              {"type": "null"}
+            ],
+            "description": "Publisher name (string for articles) or publisher object with country and name (for journals)"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'DOAJ')"
+          },
+          "data_quality": {
+            "type": "object",
+            "description": "Data quality indicators",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean"
+              },
+              "has_authors": {
+                "type": "boolean"
+              },
+              "has_journal": {
+                "type": "boolean"
+              },
+              "has_year": {
+                "type": "boolean"
+              },
+              "has_doi": {
+                "type": "boolean"
+              },
+              "has_citations": {
+                "type": "boolean"
+              },
+              "has_keywords": {
+                "type": "boolean"
+              },
+              "has_url": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "open access",
+        "max_results": 2,
+        "type": "articles"
+      },
+      {
+        "query": "biology",
+        "max_results": 1,
+        "type": "journals"
+      }
+    ]
+  }
+]

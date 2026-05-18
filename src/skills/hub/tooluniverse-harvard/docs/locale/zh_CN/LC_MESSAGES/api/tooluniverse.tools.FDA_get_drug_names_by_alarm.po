@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_alarm.rst:2
+#: 1fbdb805fe8e49f69d717ec81e3261a2
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_alarm module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_alarm 模块"
+
+#: 42556e8afd2c4c96864f520373c3a803 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm:1
+msgid "FDA_get_drug_names_by_alarm"
+msgstr ""
+
+#: a34d381fc7a948b396a0e910bf08bea2 f74f1f16dac147ca95876c86fa3515a2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm:3
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:1
+msgid ""
+"Retrieve drug names based on the presence of specific alarms, which are "
+"related to adverse reacti..."
+msgstr "根据特定警报的存在检索药品名称，这些警报与不良反应相关。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_alarm.rst
+#: 5176c3ba14c24fd7a381a541aa1db2f5
+msgid "Parameters"
+msgstr "参数"
+
+#: b7b98413cbd5416d8f393178dec87a94 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:3
+msgid "The type of alarm to search for."
+msgstr "要搜索的报警类型。"
+
+#: a2ec84b76516414c8c7b0fb46b97853a of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 9475aca492a64d4da87721ecb0616001 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: bb498d83192242768ed516087064132a of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 72f1fa7e8a4d4bc3acd7296e9736575c of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ff193d8689144fd1a310b4ecb3708714 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b844d8c8e1ac4f7ca634ed59957e4c67 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_alarm.rst
+#: e5a78abb42124c8c89b66aa8d99b9a0e
+msgid "Return type"
+msgstr "返回类型"
+
+#: b1cf758e24b2407498de9ba63d06aa89 of
+#: tooluniverse.tools.FDA_get_drug_names_by_alarm.FDA_get_drug_names_by_alarm:18
+msgid ":py:class:`Any`"
+msgstr ""

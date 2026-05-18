@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_altair_info.rst:2
+#: cb5b10f64cd544638efe9536e9edee5c
+msgid "tooluniverse.tools.get\\_altair\\_info module"
+msgstr "tooluniverse.tools.get\\_altair\\_info 模块"
+
+#: d757685d6ff74380a8d33529edee2cef of tooluniverse.tools.get_altair_info:1
+msgid "get_altair_info"
+msgstr "获取_altair_信息"
+
+#: 8ec5cf42d2384ecfbfff6446daa7b7ff ad9f5010f4db4abc929fe906a627022e of
+#: tooluniverse.tools.get_altair_info:3
+#: tooluniverse.tools.get_altair_info.get_altair_info:1
+msgid ""
+"Get information about the altair package. Declarative statistical "
+"visualization library"
+msgstr "获取有关 altair 软件包的信息。声明式统计可视化库"
+
+#: ../../api/tooluniverse.tools.get_altair_info.rst
+#: 69eb030c6f344eaca1ec802f56871d6a
+msgid "Parameters"
+msgstr "参数"
+
+#: c5c4b4eaa16a434e81449d22efb2927f of
+#: tooluniverse.tools.get_altair_info.get_altair_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7827a71649c64c008f09e664d0d28a37 of
+#: tooluniverse.tools.get_altair_info.get_altair_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 9bfb215072dd4cf2bd45d32c8b76612a of
+#: tooluniverse.tools.get_altair_info.get_altair_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_altair_info.rst
+#: b340923aff294b56a572a664dd9660e3
+msgid "Return type"
+msgstr "返回类型"
+
+#: a92db3d072d34f1abcf575e17d2649ce of
+#: tooluniverse.tools.get_altair_info.get_altair_info:11
+msgid ":py:class:`Any`"
+msgstr ""

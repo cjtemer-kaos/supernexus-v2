@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.embedding_sync.rst:2
+#: 740190676854441eb0d7625bd3d8ab62
+msgid "tooluniverse.embedding\\_sync module"
+msgstr "tooluniverse.embedding_sync 模块"
+
+#: 7ac20fb38f4f475fae96427b0298cc0a of tooluniverse.embedding_sync:1
+msgid "Embedding Sync Tool for ToolUniverse"
+msgstr "ToolUniverse 嵌入同步工具"
+
+#: 471bf3d6c8674eeb91b085c3f93e4f8e of tooluniverse.embedding_sync:3
+msgid ""
+"Synchronize embedding databases with HuggingFace Hub for sharing and "
+"collaboration. Supports uploading local databases to HuggingFace and "
+"downloading databases from HuggingFace."
+msgstr ""
+"将嵌入数据库与 HuggingFace Hub 同步，实现共享与协作。支持将本地数据库上传至 HuggingFace 以及从 HuggingFace "
+"下载数据库。"
+
+#: ae919d8374e94c929c4dbcdc8c6db08f of
+#: tooluniverse.embedding_sync.EmbeddingSync:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 300b7e609f274205910a77bed38c7de9 of
+#: tooluniverse.embedding_sync.EmbeddingSync:1
+msgid ""
+"Sync embedding databases with HuggingFace Hub. Supports uploading local "
+"databases and downloading shared databases."
+msgstr "将嵌入数据库同步至 HuggingFace Hub。支持上传本地数据库及下载共享数据库。"
+
+#: e4d52de152804c84935b16883bf5fc06 of
+#: tooluniverse.embedding_sync.EmbeddingSync.run:1
+msgid "Main entry point for the tool"
+msgstr "工具的主要入口点"
+
+#: 0d63975c635e44159636b58dab5574a8 of
+#: tooluniverse.embedding_sync.EmbeddingSync._upload_to_huggingface:1
+msgid "Upload local database to HuggingFace Hub"
+msgstr "将本地数据库上传至 HuggingFace Hub"
+
+#: 0593066b5f1a42d8aec5270a383b2beb of
+#: tooluniverse.embedding_sync.EmbeddingSync._download_from_huggingface:1
+msgid "Download database from HuggingFace Hub"
+msgstr "从 HuggingFace Hub 下载数据库"
+
+#: 80c48a4de78f4fb18c461fa1d723d9bf of
+#: tooluniverse.embedding_sync.EmbeddingSync._get_database_info:1
+msgid "Get database information from local SQLite"
+msgstr "从本地 SQLite 获取数据库信息"
+
+#: f0f8ec3c9c82438a892fe3ecf449aaa3 of
+#: tooluniverse.embedding_sync.EmbeddingSync._local_database_exists:1
+msgid "Check if database exists locally"
+msgstr "检查本地是否存在数据库"
+
+#: 714e6e233b87415ea5ad4915757d67ed of
+#: tooluniverse.embedding_sync.EmbeddingSync._generate_readme:1
+msgid "Generate README content for HuggingFace repository"
+msgstr "生成 HuggingFace 仓库的 README 内容"
+
+#: 6ac2a04ad0794532923699f6025268c3 of
+#: tooluniverse.embedding_sync.EmbeddingSync._merge_databases:1
+msgid "Merge source database into target database (simplified implementation)"
+msgstr "将源数据库合并到目标数据库（简化实现）"
+
+#: 9fc03494871c4bb6b2d6b5873e0242ba of
+#: tooluniverse.embedding_sync.EmbeddingSync._rename_database_in_db:1
+msgid "Rename database in SQLite file"
+msgstr "在 SQLite 文件中重命名数据库"

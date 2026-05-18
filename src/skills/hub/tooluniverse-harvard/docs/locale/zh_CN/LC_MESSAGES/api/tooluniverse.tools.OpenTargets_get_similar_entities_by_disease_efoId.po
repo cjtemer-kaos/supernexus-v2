@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.rst:2
+#: c5f7a07916354b69a4c4b06df352f787
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_similar\\_entities\\_by\\_disease\\_efoId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_similar\\_entities\\_by\\_disease\\_efoId"
+" 模块"
+
+#: 89a7c466e9484e9292f6e605cf7c0e60 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId:1
+msgid "OpenTargets_get_similar_entities_by_disease_efoId"
+msgstr "OpenTargets_通过疾病EFO ID获取相似实体"
+
+#: 39ca1065f7c74138ab8f0a2e1dab6fd6 f0d1d2d40ae04d22bcb3db56f6a1414e of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId:3
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:1
+msgid ""
+"Retrieve similar entities for a given disease efoId using a model trained "
+"with PubMed."
+msgstr "使用通过PubMed训练的模型，根据给定疾病的efoId检索相似实体。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.rst
+#: 8e5a98c03e94453fa5d6fd73e0ca2a8f
+msgid "Parameters"
+msgstr "参数"
+
+#: 9f68bb0bfd15478a8e7070df9f620bc3 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:3
+msgid "The EFO ID of the disease."
+msgstr "疾病的EFO ID。"
+
+#: e83cbe24af264b87b3723ad7c9f7a73d of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:5
+msgid ""
+"Threshold similarity between 0 and 1. Only results above threshold are "
+"returned."
+msgstr "相似度阈值范围为0到1。仅返回高于阈值的结果。"
+
+#: 5fa0f31ab00348838c36e8d145b33059 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:7
+msgid "Number of similar entities to fetch."
+msgstr "要获取的相似实体数量。"
+
+#: 9b4dc4ba82234ac5ab625c60fe16d686 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ad0c8f92faaa419baa57de0f245011cd of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ba5c0702018b4d05b279d1fde50155d3 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.rst
+#: 3c1c31ba99a544b3b1780d5fd051c928
+msgid "Return type"
+msgstr "返回类型"
+
+#: 928fd93b76724f09a37ed2d84fef5376 of
+#: tooluniverse.tools.OpenTargets_get_similar_entities_by_disease_efoId.OpenTargets_get_similar_entities_by_disease_efoId:16
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/molecule_2d_tools.rst:2 7fdfa9da856044efa60c4939f0041567
+msgid "Molecule 2D Tools"
+msgstr "分子二维工具"
+
+#: ../../tools/molecule_2d_tools.rst:4 7a3d469d1f4b4710a79b97d1b0789c9a
+msgid ""
+"**Configuration File**: ``molecule_2d_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 1"
+msgstr "**配置文件**: ``molecule_2d_tools.json`` **工具类型**: 本地 **工具数量**: 1"
+
+#: ../../tools/molecule_2d_tools.rst:8 dc598282a1c84e8993c787c4ff70cbad
+msgid ""
+"This page contains all tools defined in the ``molecule_2d_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``molecule_2d_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/molecule_2d_tools.rst:11 cb5e88b2048f4ceb8a065c392484e4d4
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/molecule_2d_tools.rst:14 b80adf0cac5d46e1929b057453e7531b
+msgid "**visualize_molecule_2d** (Type: Molecule2DTool)"
+msgstr "**visualize_molecule_2d**（类型：Molecule2DTool）"
+
+#: ../../tools/molecule_2d_tools.rst:16 1ba12807f5de43d68f5fa3ec2b7ab9b1
+msgid ""
+"Visualize 2D molecular structures using RDKit. Supports SMILES, InChI, "
+"molecule names, and variou..."
+msgstr "使用RDKit可视化二维分子结构。支持SMILES、InChI、分子名称以及各种格式。"
+
+#: ../../tools/molecule_2d_tools.rst b2f1eb89779940359992f26f54b979af
+msgid "visualize_molecule_2d tool specification"
+msgstr "visualize_molecule_2d 工具规范"
+
+#: ../../tools/molecule_2d_tools.rst:20 9f63e7c2c5d74e0db2ec5d1ae908464b
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/molecule_2d_tools.rst:22 31f4e98448844be08b8fe01471a8ff0a
+msgid "**Name**: ``visualize_molecule_2d``"
+msgstr "**名称**: ``visualize_molecule_2d``"
+
+#: ../../tools/molecule_2d_tools.rst:23 c7f009ec286e42b4a3e5aa18abb2bc92
+msgid "**Type**: ``Molecule2DTool``"
+msgstr "**类型**: ``Molecule2DTool``"
+
+#: ../../tools/molecule_2d_tools.rst:24 31e0ca58de8f407f9a063302930e1483
+msgid ""
+"**Description**: Visualize 2D molecular structures using RDKit. Supports "
+"SMILES, InChI, molecule names, and various output formats including PNG, "
+"SVG, and interactive HTML."
+msgstr ""
+"**描述**：使用RDKit可视化二维分子结构。支持SMILES、InChI、分子名称以及多种输出格式，包括PNG、SVG和交互式HTML。"
+
+#: ../../tools/molecule_2d_tools.rst:26 4dbed12b334340e7b389662a0342a2d2
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/molecule_2d_tools.rst:28 d8e1a9f738db4e7b991b55895f3e87c0
+msgid ""
+"``smiles`` (string) (required) SMILES string representation of the molecule"
+msgstr "``smiles``（字符串）（必需）分子结构的SMILES字符串表示形式"
+
+#: ../../tools/molecule_2d_tools.rst:31 42379964cfd243fda42853bda7e49cb9
+msgid ""
+"``inchi`` (string) (required) InChI string representation of the molecule"
+msgstr "``inchi``（字符串）（必需）分子InChI字符串表示形式"
+
+#: ../../tools/molecule_2d_tools.rst:34 b11d044a96584a5387a7d6c84b946353
+msgid ""
+"``molecule_name`` (string) (required) Common name of the molecule (will be "
+"resolved to SMILES via PubChem)"
+msgstr "``molecule_name``（字符串）（必填）分子通用名称（将通过PubChem解析为SMILES）"
+
+#: ../../tools/molecule_2d_tools.rst:37 4e688a2c28024fc8bbb37e93dd68671a
+msgid "``width`` (integer) (optional) Width of the visualization in pixels"
+msgstr "``width``（整数）（可选）可视化的宽度，单位为像素"
+
+#: ../../tools/molecule_2d_tools.rst:40 df157d55981840f7a277c6e7bfbe1458
+msgid "``height`` (integer) (optional) Height of the visualization in pixels"
+msgstr "``height``（整数）（可选）可视化的高度，单位为像素"
+
+#: ../../tools/molecule_2d_tools.rst:43 d9343f522ce449c4881d73ab22cb3d4a
+msgid "``output_format`` (string) (optional) Output format"
+msgstr "``output_format``（字符串）（可选）输出格式"
+
+#: ../../tools/molecule_2d_tools.rst:46 c72766ab662a495cb2c3719649e90c7f
+msgid ""
+"``show_atom_numbers`` (boolean) (optional) Whether to show atom numbers"
+msgstr "``show_atom_numbers``（布尔值）（可选）是否显示原子编号"
+
+#: ../../tools/molecule_2d_tools.rst:49 e6e7924082f24e569410febc58ee4fff
+msgid ""
+"``show_bond_numbers`` (boolean) (optional) Whether to show bond numbers"
+msgstr "``show_bond_numbers``（布尔值）（可选）是否显示键编号"
+
+#: ../../tools/molecule_2d_tools.rst:52 1f931c0d75434f2481183471672f4156
+msgid ""
+"``include_stereo`` (boolean) (optional) Whether to include stereochemistry "
+"information"
+msgstr "``include_stereo``（布尔值）（可选）是否包含立体化学信息"
+
+#: ../../tools/molecule_2d_tools.rst:55 2f820cab2c2f423a99ec190de6fdc1b6
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/molecule_2d_tools.rst:71 371b71f034894d2090ecd959e5bd3e6d
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/molecule_2d_tools.rst:73 97c2da438e1e473caedfe014d636bf56
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/molecule_2d_tools.rst:74 293c15ef6eee4ee7943e77971edd0043
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

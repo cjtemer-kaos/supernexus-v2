@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_recent_changes_by_drug_name.rst:2
+#: 9785422915e54bdabd3880cbf17a1713
+msgid "tooluniverse.tools.FDA\\_get\\_recent\\_changes\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_recent\\_changes\\_by\\_drug\\_name 模块"
+
+#: 789e0dd5d0a24e2da8df64525a33e859 of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name:1
+msgid "FDA_get_recent_changes_by_drug_name"
+msgstr ""
+"FDA_get_recent_changes_by_drug_name  \n"
+"获取药品名称的最新变更"
+
+#: 38ef07911f4b4dc1b437a226d0e723f1 99a01e3e5e274e5bae80cd00efa8b9a5 of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name:3
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:1
+msgid "Retrieve recent major changes in labeling for a specific drug."
+msgstr "检索特定药物标签的近期主要变更。"
+
+#: ../../api/tooluniverse.tools.FDA_get_recent_changes_by_drug_name.rst
+#: 4d96c7eb6eaf49ad9b4e3e5eab934112
+msgid "Parameters"
+msgstr "参数"
+
+#: 80049760aa2a4332997ff407eec7f300 of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称。"
+
+#: 03bddf3a63d84fc7b3354da312205882 of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 7572067320284a8ab1da5a76a529c8bc of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 654a37e64de84040a7ab2ec9ef429aee of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4e318696e3f94844860092f0e6b1d32f of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a91e7c0d39694a0ea6d90925fe7ac7de of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_recent_changes_by_drug_name.rst
+#: da9698d28d0445ad807f8d77b45962ed
+msgid "Return type"
+msgstr "返回类型"
+
+#: cbf4345849294d4590d089f3872d4380 of
+#: tooluniverse.tools.FDA_get_recent_changes_by_drug_name.FDA_get_recent_changes_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

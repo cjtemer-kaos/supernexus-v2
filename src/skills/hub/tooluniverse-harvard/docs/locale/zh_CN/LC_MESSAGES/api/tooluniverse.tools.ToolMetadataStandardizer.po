@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolMetadataStandardizer.rst:2
+#: 07176414d60846e49a9a38b14a1fb5bd
+msgid "tooluniverse.tools.ToolMetadataStandardizer module"
+msgstr "tooluniverse.tools.ToolMetadataStandardizer 模块"
+
+#: df1ee90bddb9450790a62003a9db9676 of
+#: tooluniverse.tools.ToolMetadataStandardizer:1
+msgid "ToolMetadataStandardizer"
+msgstr ""
+"ToolMetadataStandardizer\n"
+"\n"
+"工具元数据标准化器"
+
+#: 972c68b45e1d4a72811d0b83c6a86363 fcf8bbf10fb649c6877981f1113c3ca8 of
+#: tooluniverse.tools.ToolMetadataStandardizer:3
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:1
+msgid ""
+"Standardizes and groups semantically equivalent metadata strings (e.g., "
+"sources, tags) into canon..."
+msgstr "标准化并将语义上等价的元数据字符串（例如：来源、标签）归类为规范..."
+
+#: ../../api/tooluniverse.tools.ToolMetadataStandardizer.rst
+#: c811744d88fa46199515d45ff7fd32d2
+msgid "Parameters"
+msgstr "参数"
+
+#: c16fff5046a44e249879e39173884e03 of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:3
+msgid ""
+"List of raw metadata strings (e.g., sources, tags) to standardize and group."
+msgstr "原始元数据字符串（例如来源、标签）的列表，以进行标准化和分组。"
+
+#: 592b505279684c889fab3a8259bce670 of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:5
+msgid ""
+"If provided, the maximum number of canonical strings to return. The LLM will"
+" ..."
+msgstr "如果提供，则返回的规范字符串的最大数量。LLM 将..."
+
+#: 30a96289debd4776a6fe71d77f538e5e of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4a5ff94abeb74db99b8821d431fa2de1 of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5beb2dc323c843beb7e9573b882a4363 of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolMetadataStandardizer.rst
+#: 40792a9f1f1d45bb871a57c2d5db4146
+msgid "Return type"
+msgstr "返回类型"
+
+#: 32b6f91320c44a6ea809ebdb15a5e8ec of
+#: tooluniverse.tools.ToolMetadataStandardizer.ToolMetadataStandardizer:14
+msgid ":py:class:`Any`"
+msgstr ""

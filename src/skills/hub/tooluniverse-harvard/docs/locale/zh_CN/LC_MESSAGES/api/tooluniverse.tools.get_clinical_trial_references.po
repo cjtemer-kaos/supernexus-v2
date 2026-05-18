@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_references.rst:2
+#: 40e8ec0289e8420abb0277636120bfaa
+msgid "tooluniverse.tools.get\\_clinical\\_trial\\_references module"
+msgstr "tooluniverse.tools.get\\_clinical\\_trial\\_references 模块"
+
+#: 18689209658d45999c0e49aefd7d4f87 of
+#: tooluniverse.tools.get_clinical_trial_references:1
+msgid "get_clinical_trial_references"
+msgstr "获取临床试验参考文献"
+
+#: 14024020472e4c09b7ab72301a461105 6fc08c84b2c44118986da87624112087 of
+#: tooluniverse.tools.get_clinical_trial_references:3
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:1
+msgid ""
+"Retrieves the references (if any) for the clinical trials, using their NCT "
+"IDs."
+msgstr "使用其 NCT ID 检索临床试验的参考文献（如果有）。"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_references.rst
+#: 7e5d254660c7472996fb4f21d65cfeeb
+msgid "Parameters"
+msgstr "参数"
+
+#: 6d1230b738a34ba68c60ba7c7aec8e72 of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:3
+msgid ""
+"List of NCT IDs of the clinical trials (e.g., ['NCT04852770', "
+"'NCT01728545'])."
+msgstr "临床试验的NCT编号列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: 6cb43aefdd804bc0a1ebd762ca732938 of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:5
+msgid "Placeholder."
+msgstr "占位符"
+
+#: a2e9be07fcfc4ca4b945c9d5f52c3a85 of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: dbaab12f9eb3443283493e76b3324163 of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 63986a6b76dc43d68fc3310340d648e0 of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_references.rst
+#: 4a7346a527e44d42b9a3cef14199b1a0
+msgid "Return type"
+msgstr "返回类型"
+
+#: ed6f14f649b141e2a2ee567333687e2c of
+#: tooluniverse.tools.get_clinical_trial_references.get_clinical_trial_references:14
+msgid ":py:class:`Any`"
+msgstr ""

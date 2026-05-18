@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_crystallographic_properties_by_pdb_id.rst:2
+#: 301420d3450942f997a3762274b40cb7
+msgid "tooluniverse.tools.get\\_crystallographic\\_properties\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_crystallographic\\_properties\\_by\\_pdb\\_id 模块"
+
+#: 3bc00ba8e1d84b07bdec6426664d0730 of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id:1
+msgid "get_crystallographic_properties_by_pdb_id"
+msgstr "通过PDB ID获取晶体学属性"
+
+#: 6f3c32ba268b4cbcb3793327a37e2ab2 c4b5b97934564a119fe790f0940f0585 of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id:3
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:1
+msgid ""
+"Retrieve crystallographic properties such as unit cell dimensions and space "
+"group for a PDB entry."
+msgstr "检索 PDB 条目中的晶体学属性，例如晶胞尺寸和空间群。"
+
+#: ../../api/tooluniverse.tools.get_crystallographic_properties_by_pdb_id.rst
+#: 13359e54456b4c12a0668a660315ba94
+msgid "Parameters"
+msgstr "参数"
+
+#: 0d091913e8ee4d379fabdd0bd504a89b of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:3
+msgid "PDB ID of the structure"
+msgstr "结构的PDB ID"
+
+#: e9966d2435aa4d85bb3e0d6c623c55af of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b97bb73989da4a4c94bbe7c25f08ac6e of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7d3206e758c14a9c9ac53a8af8ae2ab7 of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_crystallographic_properties_by_pdb_id.rst
+#: 4f587513c8554955bfd0730119966ea5
+msgid "Return type"
+msgstr "返回类型"
+
+#: db5d0dafd1fa42e8bbc103145405fb91 of
+#: tooluniverse.tools.get_crystallographic_properties_by_pdb_id.get_crystallographic_properties_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

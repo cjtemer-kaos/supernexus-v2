@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.rst:2
+#: cb49b25445564f25b3ba8d393e2ea58c
+msgid "tooluniverse.tools.get\\_joint\\_associated\\_diseases\\_by\\_HPO\\_ID\\_list module"
+msgstr "tooluniverse.tools.get\\_joint\\_associated\\_diseases\\_by\\_HPO\\_ID\\_list 模块"
+
+#: ebc5ccbba65c4ef99166bff23eb98055 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list:1
+msgid "get_joint_associated_diseases_by_HPO_ID_list"
+msgstr ""
+"get_joint_associated_diseases_by_HPO_ID_list  \n"
+"获取与HPO ID列表相关联的关节疾病"
+
+#: 3e6306ea1a5e4650bf59c211485544ad ad548637c5e8466bb909b70bdce146ee of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list:3
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:1
+msgid ""
+"Retrieve diseases associated with a list of phenotypes or symptoms by a list"
+" of HPO IDs."
+msgstr "通过一组HPO ID检索与一组表型或症状相关的疾病。"
+
+#: ../../api/tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.rst
+#: acabd99cf6154116854d28bd88ea95f6
+msgid "Parameters"
+msgstr "参数"
+
+#: 5d2a4c5215c8470b88753e57bc59e1a4 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:3
+msgid "List of phenotypes or symptoms"
+msgstr "表型或症状列表"
+
+#: db3990055b7e4216b64ff1f8bcb7399c of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:5
+msgid "Number of entries to fetch."
+msgstr "要获取的条目数量。"
+
+#: 5df5c7157ae0477baaca28ef381e9515 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:7
+msgid "Number of initial entries to skip."
+msgstr "跳过的初始条目数量。"
+
+#: 93787c5e0eca4ad79f420cb91c3cf7a7 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9403f08d056f47e9b4d93fde8aef4a38 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 17e13a11e2184b0e82fc447355d9bd19 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.rst
+#: f9f08da5900245afb990ce038406d873
+msgid "Return type"
+msgstr "返回类型"
+
+#: ef662d51632144238b1b26c7d36c0be0 of
+#: tooluniverse.tools.get_joint_associated_diseases_by_HPO_ID_list.get_joint_associated_diseases_by_HPO_ID_list:16
+msgid ":py:class:`Any`"
+msgstr ""

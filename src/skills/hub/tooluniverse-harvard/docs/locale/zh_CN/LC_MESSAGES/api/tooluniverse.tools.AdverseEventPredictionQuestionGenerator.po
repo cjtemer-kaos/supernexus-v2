@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGenerator.rst:2
+#: de62dcbe613642049fa5b948fb236258
+msgid "tooluniverse.tools.AdverseEventPredictionQuestionGenerator module"
+msgstr "tooluniverse.tools.AdverseEventPredictionQuestionGenerator 模块"
+
+#: ca58f5f1ddc940d690405ebbf5d67faa of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator:1
+msgid "AdverseEventPredictionQuestionGenerator"
+msgstr "不良事件预测问题生成器"
+
+#: 86a3e882d4154ada856e2e7265715b73 d2dc19615d3249a6aabec3e9164bd880 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator:3
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:1
+msgid ""
+"Generates a set of personalized adverse‐event prediction questions for a "
+"given disease and drug, ..."
+msgstr "生成一组针对特定疾病和药物的个性化不良事件预测问题，..."
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGenerator.rst
+#: 1be419ab42c14bfdb1f71783a4293367
+msgid "Parameters"
+msgstr "参数"
+
+#: b02b4ce06fc5438ca5ebccfa22df2fbf of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:3
+msgid "The name of the disease or condition"
+msgstr "疾病或病症的名称"
+
+#: 797a8f70ca664d8293f795eec93a5ad6 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:5
+msgid "The name of the drug"
+msgstr "药物名称"
+
+#: 30e9c2f6ccb54f4da3695e8a7979e0e5 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 72a56d17966a4e688b76bf2f01b46f3d of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 09e3effc7da4447c9e6a431342a17b76 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGenerator.rst
+#: 1d60be84650743bfbc1ef263efdfa5d7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 311a3009555849cea05541ff6071eee6 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGenerator.AdverseEventPredictionQuestionGenerator:14
+msgid ":py:class:`Any`"
+msgstr ""

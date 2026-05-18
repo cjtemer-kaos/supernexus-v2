@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PMC_search_papers.rst:2
+#: 480788f889a94867ab6ed507319c9924
+msgid "tooluniverse.tools.PMC\\_search\\_papers module"
+msgstr "tooluniverse.tools.PMC\\_search\\_papers 模块"
+
+#: 322b53705bbc4aeaaaecd0cfaeab4426 of tooluniverse.tools.PMC_search_papers:1
+msgid "PMC_search_papers"
+msgstr ""
+
+#: c4027381eee9479a8efd401a4dbe716b f195660a415440108d86c11a2e3adf34 of
+#: tooluniverse.tools.PMC_search_papers:3
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:1
+msgid ""
+"Search for full-text biomedical literature using PMC (PubMed Central) API. "
+"PMC is the free full-t..."
+msgstr "使用PMC（PubMed Central）API搜索全文生物医学文献。PMC是一个免费的全文..."
+
+#: ../../api/tooluniverse.tools.PMC_search_papers.rst
+#: ed184d62f392490baf534b6715fb6103
+msgid "Parameters"
+msgstr "参数"
+
+#: 3a2042cb3c55437888586a83e97a6f1e of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:3
+msgid ""
+"Search query for PMC papers. Use keywords separated by spaces to refine your"
+" ..."
+msgstr "搜索PMC论文的查询。使用以空格分隔的关键词来优化您的搜索..."
+
+#: ed1fcc78e6284e57ba615cd3aa134ebb of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:5
+msgid ""
+"Maximum number of papers to return. This sets the maximum number of papers "
+"re..."
+msgstr "返回的论文最大数量。此设置用于定义返回论文的最大数量。"
+
+#: 1c5265e996cc44a2937ed61cf9869739 of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:7
+msgid ""
+"Start date for publication date filter (YYYY/MM/DD format). Optional "
+"paramete..."
+msgstr "发布日期筛选器的开始日期（YYYY/MM/DD格式）。可选参数。"
+
+#: cceaa32b2a2745d9b8efdfac31e7d8f8 of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:9
+msgid ""
+"End date for publication date filter (YYYY/MM/DD format). Optional parameter"
+" ..."
+msgstr "用于筛选发布日期的结束日期（YYYY/MM/DD 格式）。可选参数..."
+
+#: af8f76c1c6f2477496cda9f29d4f0aed of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:11
+msgid ""
+"Article type filter (e.g., 'research-article', 'review', 'case-report'). "
+"Opti..."
+msgstr "文章类型过滤器（例如，“研究文章”、“综述”、“病例报告”）。"
+
+#: b1b1d5e00b184335884d3288f0fcc223 of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ef107a4d5c7e4f1dbb1c8425fc291712 of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0565e244358341d9be00b6ba1cc1aebf of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PMC_search_papers.rst
+#: a56784eb6853435c8293c957be96d317
+msgid "Return type"
+msgstr "返回类型"
+
+#: 840b3f7a217149f5866b3173bed7c672 of
+#: tooluniverse.tools.PMC_search_papers.PMC_search_papers:20
+msgid ":py:class:`list[Any]`"
+msgstr ""

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_health_claims_by_drug_name.rst:2
+#: 9440aad0d9e046e8aec47596cf607689
+msgid "tooluniverse.tools.FDA\\_get\\_health\\_claims\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_health\\_claims\\_by\\_drug\\_name 模块"
+
+#: 4c64a5408fe042118e33def0412428f3 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name:1
+msgid "FDA_get_health_claims_by_drug_name"
+msgstr ""
+"FDA_get_health_claims_by_drug_name  \n"
+"获取药品名称相关健康声明"
+
+#: 5208be18cf3a4a0b800a904abb57ced0 730e988433584c68b644e3cae0f28e2a of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name:3
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:1
+msgid "Retrieve health claims associated with a specific drug name."
+msgstr "检索与特定药物名称相关的健康声明。"
+
+#: ../../api/tooluniverse.tools.FDA_get_health_claims_by_drug_name.rst
+#: 960c44ec93df43dfadf655675de06d54
+msgid "Parameters"
+msgstr "参数"
+
+#: ddc4657ac49147f3b7265fbaba26cd15 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: 72108702565740d8997eef92a15d071f of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 1057188379db43d4b9b04825ccabe158 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数量。"
+
+#: c6428d8db39147978384e46371df5017 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 67e8cccbf4f940c1af9b1291c0625766 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a3783fa70f86442bbf0095aef87c8a62 of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_health_claims_by_drug_name.rst
+#: 1b4c0411286941139546ac96993b52c9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 41c9800e077c4202b638bc5e4f04dd1b of
+#: tooluniverse.tools.FDA_get_health_claims_by_drug_name.FDA_get_health_claims_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

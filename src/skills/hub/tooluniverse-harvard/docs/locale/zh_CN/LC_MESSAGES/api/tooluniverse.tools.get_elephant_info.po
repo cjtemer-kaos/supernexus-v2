@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_elephant_info.rst:2
+#: f2f0ed7ec87e4e2c8ca59d0797f0c8e5
+msgid "tooluniverse.tools.get\\_elephant\\_info module"
+msgstr "tooluniverse.tools.get\\_elephant\\_info 模块"
+
+#: fc3fba2de9554a269b5034a46472ad48 of tooluniverse.tools.get_elephant_info:1
+msgid "get_elephant_info"
+msgstr "获取大象信息"
+
+#: 554941ff719b4b30b4e1408ce16d91fe 7b2e8f481e78494cb8f367e72de49637 of
+#: tooluniverse.tools.get_elephant_info:3
+#: tooluniverse.tools.get_elephant_info.get_elephant_info:1
+msgid ""
+"Get information about the elephant package. Electrophysiology analysis "
+"toolkit"
+msgstr "获取有关 elephant 软件包的信息。电生理分析工具包"
+
+#: ../../api/tooluniverse.tools.get_elephant_info.rst
+#: 3a61fb2518a44a429efb6bcd19e235dd
+msgid "Parameters"
+msgstr "参数"
+
+#: cb2a39e49d6947d380b70e3266e92ad2 of
+#: tooluniverse.tools.get_elephant_info.get_elephant_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 51e8478f58bf4b34acebf759e51dbf8c of
+#: tooluniverse.tools.get_elephant_info.get_elephant_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3a9b783642b54886b14457dd124eda58 of
+#: tooluniverse.tools.get_elephant_info.get_elephant_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_elephant_info.rst
+#: 7c5fb14b22294c0f97198f44d77b854e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0af3468ae711429bb634f2508f9a29f2 of
+#: tooluniverse.tools.get_elephant_info.get_elephant_info:11
+msgid ":py:class:`Any`"
+msgstr ""

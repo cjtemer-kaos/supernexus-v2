@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.biogrid_tool.rst:2 5040b07829a2458897711d44ffcb7048
+msgid "tooluniverse.biogrid\\_tool module"
+msgstr "tooluniverse.biogrid\\_tool 模块"
+
+#: ef358fc762a945b98faef936dc7fabc6 of tooluniverse.biogrid_tool:1
+msgid "BioGRID Database REST API Tool"
+msgstr "BioGRID数据库REST API工具"
+
+#: fe7e725b6d4d4a18b980170cef4f9fe1 of tooluniverse.biogrid_tool:3
+msgid ""
+"This tool provides access to protein and genetic interaction data from the "
+"BioGRID database. BioGRID is a comprehensive database of physical and "
+"genetic interactions."
+msgstr "该工具提供从BioGRID数据库访问蛋白质和基因交互数据的功能。BioGRID是一个全面的物理和基因交互数据库。"
+
+#: ae44c10d19f449f191594e318ff2adfe of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 16356f0e8bf540cc9c6bb9edd7927cf8 of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool:1
+msgid ""
+"BioGRID Database REST API tool. Generic wrapper for BioGRID API endpoints "
+"defined in ppi_tools.json."
+msgstr "BioGRID数据库REST API工具。用于BioGRID API端点的通用封装，定义于ppi_tools.json文件中。"
+
+#: 83f7e30965ef4e3f996d18bc020b87a6 of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool._build_url:1
+msgid "Build URL for BioGRID API request."
+msgstr "构建用于BioGRID API请求的URL。"
+
+#: 38ffb114c31b4e61aa675a2c59e8d35b of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool._build_params:1
+msgid "Build parameters for BioGRID API request."
+msgstr "为BioGRID API请求构建参数。"
+
+#: 39f9efaaee8746e599ae417220c1ca8d of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool._make_request:1
+msgid "Perform a GET request and handle common errors."
+msgstr "执行 GET 请求并处理常见错误。"
+
+#: 8a19848ce38640a5a12d63d7e759befb of
+#: tooluniverse.biogrid_tool.BioGRIDRESTTool.run:1
+msgid "Execute the tool with given arguments."
+msgstr "使用指定的参数执行工具。"

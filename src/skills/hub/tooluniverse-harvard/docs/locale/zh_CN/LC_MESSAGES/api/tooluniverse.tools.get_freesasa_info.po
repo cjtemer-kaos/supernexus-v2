@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_freesasa_info.rst:2
+#: e0f87812a0ab40bda825779918f762f9
+msgid "tooluniverse.tools.get\\_freesasa\\_info module"
+msgstr "tooluniverse.tools.get\\_freesasa\\_info 模块"
+
+#: 41cd841619d1448d8727ce97245473c7 of tooluniverse.tools.get_freesasa_info:1
+msgid "get_freesasa_info"
+msgstr "get_freesasa_信息"
+
+#: 8c3007d6ff8f4ad7a2b3c786cd16ed6f fd8e5ff8d79e461dbc317f1986b77922 of
+#: tooluniverse.tools.get_freesasa_info:3
+#: tooluniverse.tools.get_freesasa_info.get_freesasa_info:1
+msgid ""
+"Get information about the freesasa package. Calculate solvent accessible "
+"surface areas of proteins"
+msgstr "获取有关freesasa软件包的信息。计算蛋白质的溶剂可接触表面积。"
+
+#: ../../api/tooluniverse.tools.get_freesasa_info.rst
+#: ec9cc793177c43a1a7fafe7d29d6a52d
+msgid "Parameters"
+msgstr "参数"
+
+#: 4178307a89c043c9ab8b7d7926e0701d of
+#: tooluniverse.tools.get_freesasa_info.get_freesasa_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ce8c2d03cd8d4b4ca015da3c6486d241 of
+#: tooluniverse.tools.get_freesasa_info.get_freesasa_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 76f87707ab8f4732b802449f1143f2f1 of
+#: tooluniverse.tools.get_freesasa_info.get_freesasa_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_freesasa_info.rst
+#: 55e8bdf9aeb744a3ad1972195adf4487
+msgid "Return type"
+msgstr "返回类型"
+
+#: 23820a51d8214ff5bd56245081398466 of
+#: tooluniverse.tools.get_freesasa_info.get_freesasa_info:11
+msgid ":py:class:`Any`"
+msgstr ""

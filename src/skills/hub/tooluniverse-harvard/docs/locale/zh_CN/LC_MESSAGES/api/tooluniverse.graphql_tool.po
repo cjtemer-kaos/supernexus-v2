@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.graphql_tool.rst:2 84b1b59dbb89434291fbf98ab4b8d9b7
+msgid "tooluniverse.graphql\\_tool module"
+msgstr "tooluniverse.graphql_tool 模块"
+
+#: bd599dccdd344684aa4e6b2bebf0fb8e of
+#: tooluniverse.graphql_tool.remove_none_and_empty_values:1
+msgid "Remove all key-value pairs where the value is None or an empty list"
+msgstr "删除所有值为 None 或空列表的键值对"
+
+#: cbc68717a344431eb94920ed856227d9 of tooluniverse.graphql_tool.GraphQLTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 14a079b535e745e3b7d0ca8a7f307d17 bc3a1d91603948458b8a0504f130d075
+#: d31ac2f24ed24677a24bfe038ed23973 of
+#: tooluniverse.graphql_tool.GraphQLTool.run:1
+#: tooluniverse.graphql_tool.OpentargetTool.run:1
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 0b7ca8c572ff46e0a036413060974294 250e72299d6a4877a3b563795f34a575
+#: 48f2ad85c09b4719a8d0d15fa0fe8f40 of
+#: tooluniverse.graphql_tool.GraphQLTool.run:3
+#: tooluniverse.graphql_tool.OpentargetTool.run:3
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以与大多数具体工具实现保持一致，这些实现通常期望接收一个输入字典。"
+
+#: ../../api/tooluniverse.graphql_tool.rst 755354ecb2da43fe8da661f75b6aa577
+#: 7e94b89339f549b28b2ff8eaa5ae545b 8a6c5cabc0814d6bbf60d7e872205dd0
+msgid "Parameters"
+msgstr "参数"
+
+#: 1c2a3988d1cc4f608d1d21e95169d84e c572813144174ad8980511823f892807
+#: f1c79103e3f343c9ac004019c847cfa5 of
+#: tooluniverse.graphql_tool.GraphQLTool.run:7
+#: tooluniverse.graphql_tool.OpentargetTool.run:7
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 62e116e32d774cf7b0f958a803ab3bc9 e29af193ab27412e81bc53b20ee6f8f9
+#: f1cbc5f8669a4c07a23140f0fd4ac97b of
+#: tooluniverse.graphql_tool.GraphQLTool.run:9
+#: tooluniverse.graphql_tool.OpentargetTool.run:9
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 250626e9b960437e9bb27d506635a77e c6efd8d250714c2d93cc4c2f280ec418
+#: ed05e882a1e24773856ac3601444d9af of
+#: tooluniverse.graphql_tool.GraphQLTool.run:11
+#: tooluniverse.graphql_tool.OpentargetTool.run:11
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 19e08b4d4f244948910743b4fb9885d5 3c6ee611eac949fd93e27d060620f706
+#: bf8e50509ad04288bca048c00f549f7f of
+#: tooluniverse.graphql_tool.GraphQLTool.run:13
+#: tooluniverse.graphql_tool.OpentargetTool.run:13
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 96ec7fc1b72a442693939afe10f0d88c b54f5763f3dd4dacbef3b779321e5f8f
+#: df849a89b57b4162a303c643dbf58414 of
+#: tooluniverse.graphql_tool.GraphQLTool.run:18
+#: tooluniverse.graphql_tool.OpentargetTool.run:18
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文信息。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 0909d28436644b74b7ce87272d96ea2d 90314e1a420848e1bae24b80e89fb058
+#: ff5c4de5cf2d4e9b848e448440495406 of
+#: tooluniverse.graphql_tool.GraphQLTool.run:22
+#: tooluniverse.graphql_tool.OpentargetTool.run:22
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"
+
+#: 1538ff3da46242ebb244f97cc8438dd2 2d5fcb8347524f7c92f588cf8e80b4ce
+#: 515a488710914666b7866fe31a93f4ca 608b47671a8c4adba36627bed63e5535 of
+#: tooluniverse.graphql_tool.DiseaseTargetScoreTool:1
+#: tooluniverse.graphql_tool.OpentargetGeneticsTool:1
+#: tooluniverse.graphql_tool.OpentargetTool:1
+#: tooluniverse.graphql_tool.OpentargetToolDrugNameMatch:1
+msgid "Bases: :py:class:`~tooluniverse.graphql_tool.GraphQLTool`"
+msgstr "基类：:py:class:`~tooluniverse.graphql_tool.GraphQLTool`"
+
+#: 2ef69d0b327e4411a1c20e10b336033f of
+#: tooluniverse.graphql_tool.DiseaseTargetScoreTool:1
+msgid ""
+"Tool to extract disease-target association scores from specific data sources"
+msgstr "用于从特定数据源提取疾病-靶点关联评分的工具"
+
+#: 8d97b1768b3947e099365243475449c7 of
+#: tooluniverse.graphql_tool.DiseaseTargetScoreTool.run:1
+msgid ""
+"Extract disease-target scores for a specific datasource Arguments should "
+"contain: efoId, datasourceId (optional), pageSize (optional)"
+msgstr "提取特定数据源的疾病-靶点评分 参数应包含：efoId，datasourceId（可选），pageSize（可选）"

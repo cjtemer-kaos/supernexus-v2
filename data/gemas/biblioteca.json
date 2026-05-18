@@ -1,0 +1,16 @@
+{
+  "name": "biblioteca",
+  "version": "2.0.0",
+  "description": "Indexador de habilidades y metadatos de skills",
+  "main": "src.agents.biblioteca_gem",
+  "model": "deepseek-r1:8b",
+  "activationEvents": ["onCommand:organize", "onCommand:index", "onCommand:catalog"],
+  "semanticKeywords": ["organize", "index", "catalog", "library", "skill", "metadata", "classify", "knowledge", "archive"],
+  "category": "core",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 10,
+  "timeoutSeconds": 60,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": false
+}

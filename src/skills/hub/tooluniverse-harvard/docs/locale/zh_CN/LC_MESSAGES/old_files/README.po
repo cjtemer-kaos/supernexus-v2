@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 14:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../old_files/README.md:1 ff6836ec65e2468f86f05e20390b1669
+msgid "旧文件归档 / Old Files Archive"
+msgstr "旧文件归档"
+
+#: ../../old_files/README.md:3 79ab2402f74443e29d97486ae2d31f7d
+msgid "这个文件夹包含了在文档主题切换和优化过程中产生的旧文件。"
+msgstr "该文件夹包含在文档主题切换与优化过程中产生的旧文件。"
+
+#: ../../old_files/README.md:5 6d78c74b01fa42708fabdae2d6dccd1a
+msgid ""
+"This folder contains old files from the documentation theme switching and "
+"optimization process."
+msgstr "此文件夹包含文档主题切换与优化过程中的旧文件。"
+
+#: ../../old_files/README.md:7 ebcf6bc751df42928b19ebcf6a2f9f4f
+msgid "文件说明 / File Description"
+msgstr "文件说明 / 文件描述"
+
+#: ../../old_files/README.md:9 c822573da3e643069cc785ad9890ea66
+msgid "主题研究文档 / Theme Research Documents"
+msgstr "主题研究文档"
+
+#: ../../old_files/README.md:10 4fcf374a6b2b41c9b9811e9f6ba8f766
+msgid "`AI_COMPANIES_THEME_RESEARCH.md` - AI 公司文档主题研究"
+msgstr "`AI_COMPANIES_THEME_RESEARCH.md` - AI公司文档主题研究"
+
+#: ../../old_files/README.md:11 8c00d1199a6c4c279e57960354141f6f
+msgid "`COMPLETE_THEME_GUIDE.md` - 完整主题指南"
+msgstr ""
+
+#: ../../old_files/README.md:12 d6b8979d866045cab8dd0e7bb65e6348
+msgid "`THEME_COMPARISON.md` - 主题对比分析"
+msgstr ""
+"```markdown\n"
+"# 主题对比分析\n"
+"\n"
+"本文档旨在对不同主题进行详细比较，以帮助用户选择最适合其需求的主题。\n"
+"\n"
+"## 比较维度\n"
+"\n"
+"以下是主题比较的主要维度：\n"
+"\n"
+"1. **性能**  \n"
+"   评估主题的加载速度和资源使用情况。\n"
+"\n"
+"2. **可定制性**  \n"
+"   分析主题提供的自定义选项和灵活性。\n"
+"\n"
+"3. **兼容性**  \n"
+"   检查主题与不同浏览器、设备以及第三方插件的兼容性。\n"
+"\n"
+"4. **用户体验**  \n"
+"   评估主题的设计、导航和整体用户友好性。\n"
+"\n"
+"## 测试方法\n"
+"\n"
+"我们采用以下方法对主题进行评估：\n"
+"\n"
+"- 使用标准化工具进行性能测试。\n"
+"- 对主题的设置选项进行全面审查。\n"
+"- 在多种设备和浏览器上进行兼容性测试。\n"
+"- 收集用户反馈以评估实际使用体验。\n"
+"\n"
+"## 结论\n"
+"\n"
+"根据上述比较维度和测试结果，用户可以根据自身需求选择最适合的主题。有关具体主题的详细信息，请参考相关文档。\n"
+"```"
+
+#: ../../old_files/README.md:14 55810ddd7a49406f8bf430d28f859809
+msgid "多语言指南 / Multilingual Guides"
+msgstr "多语言指南"
+
+#: ../../old_files/README.md:15 d9c4a50285ae439cb5cab0d1738155a2
+msgid "`I18N_GUIDE.md` - 国际化(i18n)实施指南"
+msgstr "`I18N_GUIDE.md` - 国际化（i18n）实施指南"
+
+#: ../../old_files/README.md:16 b72e3dc79c034f1e9fbd1a9bb0fc2431
+msgid "`MULTILANG_README.md` - 多语言文档系统说明"
+msgstr ""
+"```\n"
+"MULTILANG_README.md - 多语言文档系统说明\n"
+"\n"
+"# 简介\n"
+"本项目旨在提供一个支持多语言的文档系统，帮助开发者轻松管理和维护多语言内容。通过使用标准化的文件结构和工具，用户可以快速切换语言版本并确保内容的一致性。\n"
+"\n"
+"## 功能\n"
+"- 支持多语言内容的自动切换\n"
+"- 使用模板化结构简化文档维护\n"
+"- 提供语言版本的差异检查工具\n"
+"- 集成版本控制系统以跟踪文档更新\n"
+"\n"
+"## 安装\n"
+"1. 克隆项目仓库：\n"
+"   ```bash\n"
+"   git clone https://github.com/example/multilang-doc-system.git\n"
+"   ```\n"
+"2. 安装依赖：\n"
+"   ```bash\n"
+"   cd multilang-doc-system\n"
+"   npm install\n"
+"   ```\n"
+"3. 配置语言选项：\n"
+"   编辑 `config.json` 文件以定义支持的语言列表。\n"
+"\n"
+"## 使用方法\n"
+"### 启动本地开发环境\n"
+"运行以下命令以启动本地开发服务器：\n"
+"```bash\n"
+"npm run dev\n"
+"```\n"
+"服务器启动后，访问 `http://localhost:3000` 查看文档。\n"
+"\n"
+"### 添加新语言\n"
+"1. 在 `languages/` 目录中创建新的语言文件夹，例如 `zh/`。\n"
+"2. 根据模板文件结构添加内容。\n"
+"3. 更新 `config.json` 文件以包含新语言。\n"
+"\n"
+"### 发布文档\n"
+"运行以下命令以生成生产环境的静态文件：\n"
+"```bash\n"
+"npm run build\n"
+"```\n"
+"生成的文件将存储在 `dist/` 目录中，可直接部署到任何静态文件服务器。\n"
+"\n"
+"## 贡献\n"
+"我们欢迎社区贡献！请确保遵循以下步骤：\n"
+"1. Fork 本仓库。\n"
+"2. 创建新分支以提交您的更改。\n"
+"3. 提交 Pull Request 并描述您的更改。\n"
+"\n"
+"## 支持\n"
+"如有任何问题，请通过以下方式联系我们：\n"
+"- 邮件支持：support@example.com\n"
+"- GitHub Issues: https://github.com/example/multilang-doc-system/issues\n"
+"\n"
+"感谢您使用多语言文档系统！\n"
+"```"
+
+#: ../../old_files/README.md:17 7710a8495809466b896caeedf41e8dee
+msgid "`QUICK_BUILD_GUIDE.md` - 快速构建指南"
+msgstr ""
+"`QUICK_BUILD_GUIDE.md` - 快速构建指南\n"
+"\n"
+"---\n"
+"\n"
+"# 快速构建指南\n"
+"\n"
+"## 前置条件\n"
+"\n"
+"在开始构建之前，请确保您的系统满足以下要求：\n"
+"\n"
+"1. 安装了最新版本的 [Node.js](https://nodejs.org/) 和 npm。\n"
+"2. 配置了正确的环境变量，例如 `PATH` 和 `NODE_ENV`。\n"
+"3. 确保已安装必要的依赖工具，例如 Git 和 Python（某些模块可能需要）。\n"
+"\n"
+"## 构建步骤\n"
+"\n"
+"按照以下步骤快速构建项目：\n"
+"\n"
+"### 第一步：克隆仓库\n"
+"\n"
+"使用以下命令克隆项目代码：\n"
+"\n"
+"```bash\n"
+"git clone https://github.com/your-repo/project-name.git\n"
+"cd project-name\n"
+"```\n"
+"\n"
+"### 第二步：安装依赖\n"
+"\n"
+"运行以下命令以安装项目所需的依赖：\n"
+"\n"
+"```bash\n"
+"npm install\n"
+"```\n"
+"\n"
+"### 第三步：构建项目\n"
+"\n"
+"执行以下命令以构建项目：\n"
+"\n"
+"```bash\n"
+"npm run build\n"
+"```\n"
+"\n"
+"构建完成后，生成的文件将位于 `dist/` 目录中。\n"
+"\n"
+"## 常见问题\n"
+"\n"
+"### 问题 1: 构建失败\n"
+"\n"
+"如果构建失败，请检查以下几点：\n"
+"\n"
+"- 确保所有依赖已正确安装。\n"
+"- 检查是否有权限问题，例如文件读写权限。\n"
+"- 查看构建日志，定位具体错误信息。\n"
+"\n"
+"### 问题 2: 依赖版本冲突\n"
+"\n"
+"如果遇到依赖版本冲突，请尝试以下解决方案：\n"
+"\n"
+"- 删除 `node_modules` 目录并重新安装依赖：\n"
+"\n"
+"```bash\n"
+"rm -rf node_modules\n"
+"npm install\n"
+"```\n"
+"\n"
+"- 使用 `npm audit` 检查并修复潜在问题：\n"
+"\n"
+"```bash\n"
+"npm audit fix\n"
+"```\n"
+"\n"
+"---\n"
+"\n"
+"如果您在构建过程中遇到其他问题，请参考 [官方文档](https://example.com/docs) 或联系技术支持团队。"
+
+#: ../../old_files/README.md:18 2669e34c2c494564a63de444bd947019
+msgid "`SUMMARY.md` - 文档系统总结"
+msgstr ""
+
+#: ../../old_files/README.md:20 9cdf206e98b44f7bb09be6621734f7bf
+msgid "旧配置文件 / Old Configuration Files"
+msgstr "旧配置文件 / 旧配置文件"
+
+#: ../../old_files/README.md:21 ee05c1ed9f3646939c43a5884eefe6ea
+msgid "`conf_backup_pydata.py` - PyData 主题备份配置"
+msgstr "`conf_backup_pydata.py` - PyData 主题的备份配置"
+
+#: ../../old_files/README.md:22 a38af102fe3f4e0fbe80231f225cd8d5
+msgid "`conf_enhanced.py` - Enhanced 主题配置"
+msgstr "`conf_enhanced.py` - 增强型主题配置"
+
+#: ../../old_files/README.md:23 18beded8a6c446b8a24a1c9f5789c602
+msgid "`conf_furo.py` - Furo 主题配置"
+msgstr ""
+
+#: ../../old_files/README.md:24 2431a242f978484987aa1d58914227a6
+msgid "`conf_pydata.py` - PyData 主题配置"
+msgstr "`conf_pydata.py` - PyData 主题配置文件"
+
+#: ../../old_files/README.md:25 32645aa36e114a7a8b9a9fd228a060b7
+msgid "`conf_shibuya.py` - Shibuya 主题独立配置"
+msgstr "`conf_shibuya.py` - Shibuya 主题的独立配置"
+
+#: ../../old_files/README.md:27 40b644764c814393a4e6e66ca49d7575
+msgid "旧构建脚本 / Old Build Scripts"
+msgstr "旧构建脚本"
+
+#: ../../old_files/README.md:28 0dfc2fcaf1054756bbfb49229f657633
+msgid "`build_lang.sh` - 语言构建脚本"
+msgstr ""
+
+#: ../../old_files/README.md:29 8d37df2e18f34c9ca537e1f293452bde
+msgid "`build_multilang.sh` - 多语言构建脚本"
+msgstr ""
+
+#: ../../old_files/README.md:30 b8f66f6d72af4c10be3afa3e9ffbfff3
+msgid "`quick_build_zh.sh` - 中文快速构建脚本"
+msgstr ""
+
+#: ../../old_files/README.md:31 f5a6bf86764346d5ab54d1991440a86e
+msgid "`quick_doc_build_cn.sh` - 中文文档快速构建脚本"
+msgstr "`quick_doc_build_cn.sh` - 中文文档快速生成脚本"
+
+#: ../../old_files/README.md:32 fa962a75db904c0da514441479ba81c9
+msgid "`show_multilang_features.sh` - 多语言功能展示脚本"
+msgstr "`show_multilang_features.sh` - 多语言功能演示脚本"
+
+#: ../../old_files/README.md:33 98a768a05e5d4589ae3969d4c0786bf6
+msgid "`test_theme.sh` - 主题测试脚本"
+msgstr ""
+
+#: ../../old_files/README.md:35 7732702e848345e9b92da49032729cde
+msgid "主题切换工具 / Theme Switching Tools"
+msgstr "主题切换工具 / 主题切换工具"
+
+#: ../../old_files/README.md:36 3dc64f3c002d4e009e065911b2f1aae6
+msgid "`switch_theme.py` - Python 主题切换工具"
+msgstr ""
+
+#: ../../old_files/README.md:37 6fefcae9bd6947099c92044b57acae09
+msgid "`switch_theme.sh` - Shell 主题切换脚本"
+msgstr ""
+
+#: ../../old_files/README.md:39 b896dafa5e854514a234df293d387b9b
+msgid "测试文件 / Test Files"
+msgstr "测试文件 / 测试文件"
+
+#: ../../old_files/README.md:40 e839548ff5d249c48070dd33f80b0c9d
+msgid "`test_switcher.html` - 语言切换器测试页面"
+msgstr "`test_switcher.html` - 语言切换器测试页"
+
+#: ../../old_files/README.md:42 0751bc85210a4d7b9408fe0c58ee855b
+msgid "文件统计 / File Statistics"
+msgstr "文件统计 / 文件统计"
+
+#: ../../old_files/README.md:44 44e062b241bb4bbabc5674d52145fec4
+msgid "**Markdown 文档**: 8 个"
+msgstr "**Markdown 文档**：8 个"
+
+#: ../../old_files/README.md:45 8548562783c64522a2992edef4c42aa3
+msgid "**Python 配置文件**: 6 个"
+msgstr "**Python 配置文件**：6 个"
+
+#: ../../old_files/README.md:46 5027b70f1edd48efaf1c99839915fcf5
+msgid "**Shell 脚本**: 6 个"
+msgstr "**Shell 脚本**：6 个"
+
+#: ../../old_files/README.md:47 2da369a4844346e3b4492b088eaef243
+msgid "**总计**: 21 个文件"
+msgstr "**总计**：21 个文件"
+
+#: ../../old_files/README.md:49 764a0d9d9f844d8c97fe155d4c331637
+msgid "当前使用 / Currently Using"
+msgstr "当前使用 / 当前使用"
+
+#: ../../old_files/README.md:51 f2eef41a6bfe4a9184ff0fb18f2f6c48
+msgid ""
+"项目现在使用 **Shibuya 主题** 配置在 `conf.py` 中,通过 `quick_doc_build.sh` 进行双语文档构建。"
+msgstr ""
+"项目当前使用 **Shibuya 主题**，在 `conf.py` 中进行配置，并通过 `quick_doc_build.sh` 脚本构建双语文档。"
+
+#: ../../old_files/README.md:53 fd354a9502e04caf80cab4056a693f32
+msgid ""
+"The project now uses **Shibuya theme** configured in `conf.py`, with "
+"bilingual documentation built via `quick_doc_build.sh`."
+msgstr "该项目现使用在 `conf.py` 中配置的**Shibuya 主题**，通过 `quick_doc_build.sh` 构建双语文档。"
+
+#: ../../old_files/README.md:55 54014e893f8c4da49c39866ee6104766
+msgid "注意 / Note"
+msgstr "注意 / 注意事项"
+
+#: ../../old_files/README.md:57 79bf916bbe9c4628bf59176190c621ee
+msgid "这些文件保留用于参考,但不再被主文档构建系统使用。"
+msgstr "这些文件保留供参考，但不再被主文档构建系统使用。"
+
+#: ../../old_files/README.md:59 bae5886b46334001bd22ef199e35757d
+msgid ""
+"These files are kept for reference but are no longer used by the main "
+"documentation build system."
+msgstr "这些文件被保留以供参考，但不再被主文档构建系统使用。"

@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 15:24-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../ENGLISH_AS_DEFAULT.md:1 b6c59d6c80f849268ee0afe5769c950d
+msgid "英文作为默认语言配置说明"
+msgstr "英文作为默认语言的配置说明"
+
+#: ../../ENGLISH_AS_DEFAULT.md:3 02c7a791c8a64994ae5ff19a5796f273
+msgid "📋 两种模式"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:5 acc955cf9c834ed897d571099435bba5
+msgid "模式1: 重定向模式 (默认)"
+msgstr "模式1：重定向模式（默认）"
+
+#: ../../ENGLISH_AS_DEFAULT.md:6 bb50854a239042abb07d2cd6acf1ae30
+msgid "**行为**: `/` → 自动跳转到 `/en/index.html`"
+msgstr "**行为**: `/` → 自动跳转至 `/en/index.html`"
+
+#: ../../ENGLISH_AS_DEFAULT.md:8 ../../ENGLISH_AS_DEFAULT.md:24
+#: c9b538e33f294b1783bc5a8c6785d785 d6fb51e51e7b44e18524b59fe2026534
+msgid "**特点**:"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:9 4b33a09056e4446c884c4f258d8955d5
+msgid "✅ URL清晰,明确显示语言"
+msgstr "✅ URL清晰，明确显示语言"
+
+#: ../../ENGLISH_AS_DEFAULT.md:10 674cf77849124dac853bb8e0cc9b17d8
+msgid "✅ 文件不重复"
+msgstr "✅ 文件无重复"
+
+#: ../../ENGLISH_AS_DEFAULT.md:11 6c78144a292a46f09b053d5cbede439c
+msgid "❌ 必须通过 `/en/` 访问英文"
+msgstr "❌ 必须通过 `/en/` 访问英文版页面"
+
+#: ../../ENGLISH_AS_DEFAULT.md:13 ../../ENGLISH_AS_DEFAULT.md:29
+#: 5a2ef92bc298420ebc1432cab6d524fd f17e5b7255c44b12a2b341f0cf17c971
+msgid "**使用方法**:"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:21 5981cf6ad8464b97bab55feeb70f102b
+msgid "模式2: 根目录模式 (推荐)"
+msgstr "模式2：根目录模式（推荐）"
+
+#: ../../ENGLISH_AS_DEFAULT.md:22 f8736d88218e4403acb7aef32178c62f
+msgid "**行为**: `/` 和 `/en/` 都可访问英文文档"
+msgstr "**行为**：`/` 和 `/en/` 均可访问英文文档"
+
+#: ../../ENGLISH_AS_DEFAULT.md:25 a043eb2166464c2eb3e2c9317493b459
+msgid "✅ 无需 `/en/` 前缀也能访问"
+msgstr "✅ 无需 `/en/` 前缀即可访问"
+
+#: ../../ENGLISH_AS_DEFAULT.md:26 b1f84c57fb9a4cf690346695195d5ce4
+msgid "✅ SEO友好,根路径有内容"
+msgstr "✅ SEO友好，根路径包含内容"
+
+#: ../../ENGLISH_AS_DEFAULT.md:27 33a6e41287844c94b2f31a78c219a6fe
+msgid "❌ 英文文档会被复制两份"
+msgstr "❌ 英文文档将被复制两份"
+
+#: ../../ENGLISH_AS_DEFAULT.md:40 de368c054c034e4ca81d8f3658a70e61
+msgid "🚀 快速设置(永久启用根目录模式)"
+msgstr "🚀 快速设置（永久启用根目录模式）"
+
+#: ../../ENGLISH_AS_DEFAULT.md:42 cfe2e5feabfe4477bdc1db0e7f662b1a
+msgid "在你的 shell 配置文件中添加:"
+msgstr "在你的 shell 配置文件中添加："
+
+#: ../../ENGLISH_AS_DEFAULT.md:49 bbac8ec2aea24a5cb8a434e1097fbe1c
+msgid "然后重启终端或运行:"
+msgstr "然后重新启动终端或运行："
+
+#: ../../ENGLISH_AS_DEFAULT.md:56 8d8013ea0f0c4816861daaa0e162055d
+msgid "📊 URL 结构对比"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:58 1db168ef84c542f69fa6c4c0a93a54d1
+msgid "模式1 (重定向):"
+msgstr "模式1（重定向）："
+
+#: ../../ENGLISH_AS_DEFAULT.md:66 177bc0628dab47dea9610ebd6133feaa
+msgid "模式2 (根目录):"
+msgstr "模式2（根目录）："
+
+#: ../../ENGLISH_AS_DEFAULT.md:76 cf9ee641415f436d95224d3eb412f60b
+msgid "🔧 语言切换器行为"
+msgstr "🔧 语言切换器的行为"
+
+#: ../../ENGLISH_AS_DEFAULT.md:78 7ceed27d1af24d3db09b255ed41eb7c7
+msgid "无论哪种模式,语言切换器都会:"
+msgstr "无论哪种模式，语言切换器都会："
+
+#: ../../ENGLISH_AS_DEFAULT.md:79 aa0713a6ebcf4d3381b6145933cb7ee7
+msgid "从任何英文页面 → 跳转到对应的中文页面"
+msgstr "从任何英文页面 → 跳转至对应的中文页面"
+
+#: ../../ENGLISH_AS_DEFAULT.md:80 17360fdf33b64aad99c6f9ec9752f60b
+msgid "从任何中文页面 → 跳转到 `/en/` 路径"
+msgstr "从任何中文页面 → 跳转至 `/en/` 路径"
+
+#: ../../ENGLISH_AS_DEFAULT.md:84 9b97f3fa3a5f443e97c85b8f8692b5d3
+msgid "💡 生产环境建议"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:86 708c8aff7557448fb799371d394af788
+msgid "对于生产环境部署,建议使用 **Web服务器的URL重写**:"
+msgstr "对于生产环境部署，建议使用 **Web服务器的URL重写**："
+
+#: ../../ENGLISH_AS_DEFAULT.md:88 9d9d2cde00214da38f369c1f25b8ff4e
+msgid "Nginx 配置:"
+msgstr "Nginx 配置："
+
+#: ../../ENGLISH_AS_DEFAULT.md:97 3ef77b1c85dd431fafb196d982510d0f
+msgid "Apache 配置:"
+msgstr "Apache 配置："
+
+#: ../../ENGLISH_AS_DEFAULT.md:104 b6842943302d4878b8c39243e40c6cd8
+msgid "这样可以避免文件重复,同时提供友好的URL。"
+msgstr "这样可以避免文件重复，同时提供友好的URL。"
+
+#: ../../ENGLISH_AS_DEFAULT.md:108 a5e8e9e4dbd2465db669b8cb2947bb79
+msgid "📝 测试命令"
+msgstr "📝 测试指令"
+
+#: ../../ENGLISH_AS_DEFAULT.md:129 0ab4a07f04c64e5aa94948c7fc453780
+msgid "❓ 常见问题"
+msgstr ""
+
+#: ../../ENGLISH_AS_DEFAULT.md:131 15a518fee65148bc8942d19d0fbf7a46
+msgid "**Q: 我应该选择哪种模式?** A:"
+msgstr ""
+"**问：我应该选择哪种模式？**  \n"
+"答："
+
+#: ../../ENGLISH_AS_DEFAULT.md:133 59a97bb57eb6469983c2240699e4b154
+msgid "开发环境: 模式2 (DOC_EN_AS_ROOT=true) - 方便测试"
+msgstr "开发环境：模式2 (DOC_EN_AS_ROOT=true) - 便于测试"
+
+#: ../../ENGLISH_AS_DEFAULT.md:134 ba0aa3fe2c6349f2892cfefb4c60c06c
+msgid "生产环境: 模式1 + Nginx重写 - 节省空间"
+msgstr "生产环境：模式1 + Nginx重写 - 节省空间"
+
+#: ../../ENGLISH_AS_DEFAULT.md:136 22f69d5bdd3d41babe2699caea24b3c2
+msgid "**Q: 语言切换不工作?** A: 确保服务器在 `_build/html` 目录启动,不是在 `_build/html/en` 目录"
+msgstr ""
+"**问：语言切换不工作？** 答：请确保服务器是在 `_build/html` 目录下启动，而不是在 `_build/html/en` 目录下启动。"
+
+#: ../../ENGLISH_AS_DEFAULT.md:139 ad748064910644d4a3fa13b8bd09384c
+msgid "**Q: 能否让中文也在根目录?** A: 不推荐。保持英文为默认是国际惯例。"
+msgstr ""
+"**问：能否将中文也放在根目录？**  \n"
+"答：不推荐。保持英文为默认语言是国际惯例。"

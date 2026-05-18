@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.rst:2
+#: 3fb2485cfcaf4939827aa3b49445b17f
+msgid "tooluniverse.tools.FDA\\_get\\_user\\_safety\\_warning\\_by\\_drug\\_names module"
+msgstr "tooluniverse.tools.FDA\\_get\\_user\\_safety\\_warning\\_by\\_drug\\_names 模块"
+
+#: 7bf64ccabc124e2e8b5e7f78e5eedc50 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names:1
+msgid "FDA_get_user_safety_warning_by_drug_names"
+msgstr "FDA_通过药物名称获取用户安全警告"
+
+#: 520593a83d114d8ca7f6dca6014e1548 b1dbc4baa14f4790a9ef326c337f7aa2 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names:3
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:1
+msgid "Retrieve specific user safety warnings based on drug names."
+msgstr "根据药品名称检索特定的用户安全警告。"
+
+#: ../../api/tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.rst
+#: e7ddac439e6c4cd8a092c11c775ee7bb
+msgid "Parameters"
+msgstr "参数"
+
+#: f4527552821648a5ab06219d76027c93 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:3
+msgid "The specific drug name."
+msgstr "具体药物名称。"
+
+#: ea6f7463380e414c9b4efff8567dc7ef of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: dfb77f6157b4481dbe93fc8e99c40e4e of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 48ace29c277d4b6f92b1558d45b6c7b2 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 594062f2410b4493997fd4fe5a1910ae of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2b11580145b045d79bb3d698d01acb87 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.rst
+#: e700833e6dd04efe8abb8f28a59b6807
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3ec06e2120404eb6a58830fd82e86f63 of
+#: tooluniverse.tools.FDA_get_user_safety_warning_by_drug_names.FDA_get_user_safety_warning_by_drug_names:16
+msgid ":py:class:`Any`"
+msgstr ""

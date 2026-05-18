@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.extended_hooks.rst:2
+#: fcefd455a2f24973b4555a59caf771e1
+msgid "tooluniverse.extended\\_hooks module"
+msgstr "tooluniverse.extended_hooks 模块"
+
+#: 65bea7d21aa14d428982247bbd1ef602 of tooluniverse.extended_hooks:1
+msgid "Extended Hook Types for ToolUniverse"
+msgstr "ToolUniverse 的扩展钩子类型"
+
+#: efbc56edea534c37b3c19375c1f2bdd5 of tooluniverse.extended_hooks:3
+msgid ""
+"This module demonstrates how to extend the hook system with additional hook "
+"types beyond summarization. It shows the pattern for creating new hook types"
+" while maintaining compatibility with the existing system."
+msgstr "该模块演示了如何通过新增钩子类型来扩展钩子系统，超越仅限于摘要功能。它展示了创建新钩子类型的模式，同时保持与现有系统的兼容性。"
+
+#: 1187087a66ef41e5a1df8649b8e16e4e 4bf3f24b9b0d4fc3b0e51127ed7b4886
+#: 801323c0d98644a087d4290653cf3341 facead3e6d934e2085f3c3f31d4f668a of
+#: tooluniverse.extended_hooks.FilteringHook:1
+#: tooluniverse.extended_hooks.FormattingHook:1
+#: tooluniverse.extended_hooks.LoggingHook:1
+#: tooluniverse.extended_hooks.ValidationHook:1
+msgid "Bases: :py:class:`~tooluniverse.output_hook.OutputHook`"
+msgstr "基类：:py:class:`~tooluniverse.output_hook.OutputHook`"
+
+#: 071bb40d2d864e44a3d2c3558d62c4cd of
+#: tooluniverse.extended_hooks.FilteringHook:1
+msgid "Hook for filtering sensitive or unwanted content from tool outputs."
+msgstr "用于过滤工具输出中敏感或不需要内容的钩子。"
+
+#: 3dce437ead684a738f9dd06cfe217f70 of
+#: tooluniverse.extended_hooks.FilteringHook:3
+msgid ""
+"This hook can be used to: - Remove sensitive information (emails, phones, "
+"SSNs) - Filter inappropriate content - Sanitize data before display"
+msgstr ""
+"此钩子可用于：  \n"
+"- 移除敏感信息（电子邮件、电话、社会保障号码）  \n"
+"- 过滤不当内容  \n"
+"- 在显示前对数据进行清理"
+
+#: ../../api/tooluniverse.extended_hooks.rst 058bf407d0024166b0c4d285d83cb813
+#: 175477643aa74580b4bd386791dd88c9 450a1120e3c34eb6a3eaf1d0c0495036
+#: 63b2ac76f8c94892a06fadbd6a5bf358 7deb2248d02d49288f1bbe37d1861b1b
+#: 8a3fc12b8dcd44e592fd0076d4d72c20 a9e6f6ce52d647ffae12b1e6303e9964
+#: b2c908e3f63e4380a4022c7412ad36ea b8d9acb78c2040f1afba5ddce3f1b058
+#: cc4f345e57ce4db8b5c769477b0307f8 e64fd80b7ca94147a16289019d152513
+#: f82b5204b393427c8c9220c6b879fc4c
+msgid "Parameters"
+msgstr "参数"
+
+#: 28e3fe7cf12b49ecafc125940501f031 of
+#: tooluniverse.extended_hooks.FilteringHook:8
+msgid "Hook configuration containing filter settings"
+msgstr "包含筛选设置的钩子配置"
+
+#: 183f0fa5f2164e99a9303993f0ff9e25 of
+#: tooluniverse.extended_hooks.FilteringHook:10
+msgid "Optional ToolUniverse instance (not used for filtering)"
+msgstr "可选的 ToolUniverse 实例（不用于过滤）"
+
+#: fa964474906a4138bd0bd889f39c9b3b of
+#: tooluniverse.extended_hooks.FilteringHook.__init__:1
+msgid "Initialize the filtering hook with configuration."
+msgstr "使用配置初始化过滤钩子。"
+
+#: 3ef789570189489c9687990000230513 54b539cfd01642ebb95158c13f4e1333
+#: 901ddb16bfe347669a9d1be5d8488436 e5608a6799ad4627955385546e50a7c7 of
+#: tooluniverse.extended_hooks.FilteringHook.__init__:3
+#: tooluniverse.extended_hooks.FormattingHook.__init__:3
+#: tooluniverse.extended_hooks.LoggingHook.__init__:3
+#: tooluniverse.extended_hooks.ValidationHook.__init__:3
+msgid "Hook configuration"
+msgstr "钩子配置"
+
+#: 3c26f7cce9424f1899ae37bc94ad2f79 4b25ba9130b5469ea9c40dbc0b751ec0
+#: c1e26c475153466c9643f695b89eb94a c642403fedfb459493bdd651b591081c of
+#: tooluniverse.extended_hooks.FilteringHook.__init__:5
+#: tooluniverse.extended_hooks.FormattingHook.__init__:5
+#: tooluniverse.extended_hooks.LoggingHook.__init__:5
+#: tooluniverse.extended_hooks.ValidationHook.__init__:5
+msgid "ToolUniverse instance (optional, not used)"
+msgstr "ToolUniverse 实例（可选，未使用）"
+
+#: e03f3f05dece46ff8b2dc6110ca0785b of
+#: tooluniverse.extended_hooks.FilteringHook.process:1
+msgid "Apply filtering to the tool output."
+msgstr "对工具输出应用过滤。"
+
+#: bbd5176b7cb04c499cc2763e0aec1f48 of
+#: tooluniverse.extended_hooks.FilteringHook.process:3
+msgid "The tool output to filter"
+msgstr "工具输出以进行过滤"
+
+#: 8c02578fdeb44b2abb72c7b172705683 9e206b269bf84322a0920b13d045e2e1
+#: ac946a9e733e44ebaf762942241bd7a0 bb1508cc597a4b09b01d7a6bfee8dff7 of
+#: tooluniverse.extended_hooks.FilteringHook.process:5
+#: tooluniverse.extended_hooks.FormattingHook.process:5
+#: tooluniverse.extended_hooks.LoggingHook.process:5
+#: tooluniverse.extended_hooks.ValidationHook.process:5
+msgid "Name of the tool that produced the output"
+msgstr "生成输出的工具名称"
+
+#: 25cda1c4b28341638dceb8990e1055a5 3fff2814a8bb4b7e829446d25e505b29
+#: f646cbaa74714ca89ccf16ccd213fb30 fee3a9d220634b5f8858f91ef3fbc2eb of
+#: tooluniverse.extended_hooks.FilteringHook.process:7
+#: tooluniverse.extended_hooks.FormattingHook.process:7
+#: tooluniverse.extended_hooks.LoggingHook.process:7
+#: tooluniverse.extended_hooks.ValidationHook.process:7
+msgid "Arguments passed to the tool"
+msgstr "传递给工具的参数"
+
+#: 041e56921ee5400b81b059ff2a6b2cca 5eab70a5295c4c909633181b21a5c30c
+#: 6c0d4d38ca7b4881acc8d8c68e72083c 8eb79a809e014e76a6b3195031b30917 of
+#: tooluniverse.extended_hooks.FilteringHook.process:9
+#: tooluniverse.extended_hooks.FormattingHook.process:9
+#: tooluniverse.extended_hooks.LoggingHook.process:9
+#: tooluniverse.extended_hooks.ValidationHook.process:9
+msgid "Additional context information"
+msgstr "附加上下文信息"
+
+#: ../../api/tooluniverse.extended_hooks.rst 396969ec86354862b20a3e7c78f8b92f
+#: 8d4a3fd250284efaa7b0ab5d6320e231 946992b931784842b67cead2d534d410
+#: ffc03dc646d24360b78aca551c360500
+msgid "Returns"
+msgstr "退货"
+
+#: 09030eadb7d04872aa0a0207ff598f4b of
+#: tooluniverse.extended_hooks.FilteringHook.process:12
+msgid "The filtered output, or original output if filtering fails"
+msgstr "过滤后的输出，或在过滤失败时的原始输出"
+
+#: ../../api/tooluniverse.extended_hooks.rst 22bd989cf7d34d888b72eff646d013f3
+#: 8bc9caef5ce945aca798adacb8451682 dd1997d2062148c8a25587645698f8d7
+#: f75987d90b5342b890d8147f3947b73d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 50e208784fa54ff7a4678c92485c4dda of
+#: tooluniverse.extended_hooks.FormattingHook:1
+msgid "Hook for formatting and beautifying tool outputs."
+msgstr "用于格式化和美化工具输出的钩子。"
+
+#: 803327cd452647b4ad4207ab219b5df0 of
+#: tooluniverse.extended_hooks.FormattingHook:3
+msgid ""
+"This hook can be used to: - Pretty-print JSON/XML outputs - Format text with"
+" proper indentation - Standardize output formats"
+msgstr ""
+"此钩子可用于：  \n"
+"- 美化 JSON/XML 输出  \n"
+"- 格式化文本并添加适当的缩进  \n"
+"- 标准化输出格式"
+
+#: d6fc22852e834f7cb455b6a9f645cef3 of
+#: tooluniverse.extended_hooks.FormattingHook:8
+msgid "Hook configuration containing formatting settings"
+msgstr "钩子配置包含格式设置"
+
+#: 3acb9ed2afdd49fc9bf08ffcb8243ed6 of
+#: tooluniverse.extended_hooks.FormattingHook:10
+msgid "Optional ToolUniverse instance (not used for formatting)"
+msgstr "可选的 ToolUniverse 实例（不用于格式化）"
+
+#: 6f932ad8f33d494d818e91530163a1ae of
+#: tooluniverse.extended_hooks.FormattingHook.__init__:1
+msgid "Initialize the formatting hook with configuration."
+msgstr "使用配置初始化格式化钩子。"
+
+#: 602478d34eee4dcab0f04c4a62bb9f2d of
+#: tooluniverse.extended_hooks.FormattingHook.process:1
+msgid "Apply formatting to the tool output."
+msgstr "对工具输出应用格式化。"
+
+#: 61a46097c96c494a9ae4262bd6d011fc of
+#: tooluniverse.extended_hooks.FormattingHook.process:3
+msgid "The tool output to format"
+msgstr "工具输出为格式"
+
+#: cd366ccba16a4e12894b7526ce7715d2 of
+#: tooluniverse.extended_hooks.FormattingHook.process:12
+msgid "The formatted output, or original output if formatting fails"
+msgstr "格式化输出，或在格式化失败时的原始输出"
+
+#: 380c6c6650f34098ab591001a273ae5b of
+#: tooluniverse.extended_hooks.FormattingHook._format_json:1
+msgid "Format JSON data with pretty printing."
+msgstr "格式化 JSON 数据并进行美化打印。"
+
+#: eab693825929440ca19726712a7810fb of
+#: tooluniverse.extended_hooks.FormattingHook._format_text:1
+msgid "Format plain text with line wrapping."
+msgstr "请提供需要翻译的具体文本，我将为您提供符合要求的中文翻译。"
+
+#: bb6e6a0f7c3642af8be296638a4002db of
+#: tooluniverse.extended_hooks.FormattingHook._format_list:1
+msgid "Format list data."
+msgstr "格式化列表数据。"
+
+#: a4800712aa0745b59ca174b8dfb0ed9d of
+#: tooluniverse.extended_hooks.ValidationHook:1
+msgid "Hook for validating tool outputs against schemas or rules."
+msgstr "用于根据模式或规则验证工具输出的钩子。"
+
+#: 252a467b06b442dc8cc99459699772e1 of
+#: tooluniverse.extended_hooks.ValidationHook:3
+msgid ""
+"This hook can be used to: - Validate JSON against schemas - Check required "
+"fields - Ensure data quality"
+msgstr ""
+"此钩子可用于：  \n"
+"- 根据模式验证 JSON  \n"
+"- 检查必填字段  \n"
+"- 确保数据质量"
+
+#: 6708aead1d2f4bcbb9f550c4394f3ecc of
+#: tooluniverse.extended_hooks.ValidationHook:8
+msgid "Hook configuration containing validation settings"
+msgstr "包含验证设置的钩子配置"
+
+#: 43b50f052ec14ec4bbbc1dc43ad30f7b of
+#: tooluniverse.extended_hooks.ValidationHook:10
+msgid "Optional ToolUniverse instance (not used for validation)"
+msgstr "可选的 ToolUniverse 实例（不用于验证）"
+
+#: 68a450737c4d4c4f96e3547138479447 of
+#: tooluniverse.extended_hooks.ValidationHook.__init__:1
+msgid "Initialize the validation hook with configuration."
+msgstr "使用配置初始化验证钩子。"
+
+#: 7ddb7011e02346d18ec2201a43cf869d of
+#: tooluniverse.extended_hooks.ValidationHook.process:1
+msgid "Apply validation to the tool output."
+msgstr "对工具输出应用验证。"
+
+#: 01254900b2f749eaaede8d514d782f67 of
+#: tooluniverse.extended_hooks.ValidationHook.process:3
+msgid "The tool output to validate"
+msgstr "工具输出验证"
+
+#: 1c158e013d94431dbd0ae0269496e240 of
+#: tooluniverse.extended_hooks.ValidationHook.process:12
+msgid "The validated output, or original output if validation fails"
+msgstr "经过验证的输出，或验证失败时的原始输出"
+
+#: dda4f27eb55747ed8205d90244653ab4 of
+#: tooluniverse.extended_hooks.ValidationHook._validate_output:1
+msgid "Validate the output against configured rules."
+msgstr "根据配置的规则验证输出。"
+
+#: 4b0f09137d6f4141b1b12ea6a1e54c72 of
+#: tooluniverse.extended_hooks.ValidationHook._fix_output:1
+msgid "Attempt to fix validation errors."
+msgstr "尝试修复验证错误。"
+
+#: aef3e6dbad514fdda6a57f558815e387 of
+#: tooluniverse.extended_hooks.LoggingHook:1
+msgid "Hook for logging tool outputs and execution details."
+msgstr "用于记录工具输出和执行详情的钩子。"
+
+#: fa3749792f4146788248b5e99986ac0c of
+#: tooluniverse.extended_hooks.LoggingHook:3
+msgid ""
+"This hook can be used to: - Log all tool outputs - Track execution metrics -"
+" Audit tool usage"
+msgstr ""
+"此钩子可用于：  \n"
+"- 记录所有工具输出  \n"
+"- 跟踪执行指标  \n"
+"- 审计工具使用情况"
+
+#: c5b2f5f90b964b5385c3094137cf9fd7 of
+#: tooluniverse.extended_hooks.LoggingHook:8
+msgid "Hook configuration containing logging settings"
+msgstr "包含日志设置的钩子配置"
+
+#: 3b32818cee834fbfb479a23e99dc7225 of
+#: tooluniverse.extended_hooks.LoggingHook:10
+msgid "Optional ToolUniverse instance (not used for logging)"
+msgstr "可选的 ToolUniverse 实例（不用于日志记录）"
+
+#: e0855a68fcfc4b739f196c18a8f899f8 of
+#: tooluniverse.extended_hooks.LoggingHook.__init__:1
+msgid "Initialize the logging hook with configuration."
+msgstr "使用配置初始化日志钩子。"
+
+#: 2a7ddcbc3baa4c21acb229f96a2f6f81 of
+#: tooluniverse.extended_hooks.LoggingHook.process:1
+msgid "Log the tool output and execution details."
+msgstr "记录工具输出和执行详情。"
+
+#: 0715e23f965c4bbaa5597dedf89dc0aa of
+#: tooluniverse.extended_hooks.LoggingHook.process:3
+msgid "The tool output to log"
+msgstr "工具输出到日志"
+
+#: 424faa2e759840a5a39ef60c26228ce6 of
+#: tooluniverse.extended_hooks.LoggingHook.process:12
+msgid "The original output (logging doesn't modify the output)"
+msgstr "原始输出（日志记录不会修改输出）"
+
+#: d3915df63e594f0f8652118511a13738 of
+#: tooluniverse.extended_hooks.LoggingHook._create_log_entry:1
+msgid "Create a log entry for the tool execution."
+msgstr "为工具执行创建日志条目。"
+
+#: 0c2397a82bf3408d8c45f2e381484f73 of
+#: tooluniverse.extended_hooks.LoggingHook._write_log:1
+msgid "Write the log entry to the configured destination."
+msgstr "将日志条目写入配置的目标位置。"

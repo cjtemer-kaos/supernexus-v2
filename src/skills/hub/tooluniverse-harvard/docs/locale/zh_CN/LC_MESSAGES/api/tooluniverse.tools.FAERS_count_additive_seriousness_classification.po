@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_seriousness_classification.rst:2
+#: 67abc080fa574736826fcaa3a0d7ab38
+msgid ""
+"tooluniverse.tools.FAERS\\_count\\_additive\\_seriousness\\_classification "
+"module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_additive\\_seriousness\\_classification 模块"
+
+#: 89d1984539a74c158a18d39ed292d5c6 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification:1
+msgid "FAERS_count_additive_seriousness_classification"
+msgstr "FAERS_count_additive_严重性分类"
+
+#: 8e09b03a498f44708e4f08d0338003c5 a1843c93299748f8b688394abf3565f8 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification:3
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:1
+msgid ""
+"Additive multi-drug data: Quantify serious vs non-serious classifications "
+"across medicinal produc..."
+msgstr "添加多药数据：量化药品中严重与非严重分类的分布情况..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_seriousness_classification.rst
+#: bd74394f5ed646c4a23ea10a9ff2a5fd
+msgid "Parameters"
+msgstr "参数"
+
+#: a5508a23f3b94501bc61d23d0baaa766 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:3
+msgid "Array of medicinal product names."
+msgstr "药品名称数组"
+
+#: 4272e78489184da8a6d555aaafa5c3b1 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:5
+msgid "Filter by sex."
+msgstr "按性别筛选。"
+
+#: 05208d770cfc4b938020c9ebdfd9e439 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:7
+msgid "Filter by age group."
+msgstr "按年龄组筛选。"
+
+#: 81fb1ea4560e4ca8bcc3912dd5708e82 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:9
+msgid "ISO2 country code filter."
+msgstr "ISO2国家代码过滤器"
+
+#: 2f5e80d07c3441b9897aafa774467a65 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d157cfff6cb04676b237b9c8fc9e4b94 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 9131aa7182b844029c52de6596dcc1aa of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_seriousness_classification.rst
+#: 558a52abb24a4616bea480aa930b4552
+msgid "Return type"
+msgstr "返回类型"
+
+#: e5e787f277234e808a0d68dff5476e46 of
+#: tooluniverse.tools.FAERS_count_additive_seriousness_classification.FAERS_count_additive_seriousness_classification:18
+msgid ":py:class:`Any`"
+msgstr ""

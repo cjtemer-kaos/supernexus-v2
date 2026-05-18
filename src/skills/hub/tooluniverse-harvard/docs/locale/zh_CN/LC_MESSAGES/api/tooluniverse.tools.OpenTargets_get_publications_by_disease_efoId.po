@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.rst:2
+#: ee12762f52f74adc84c3da9a0aa7274a
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_disease\\_efoId "
+"module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_disease\\_efoId 模块"
+
+#: 423db145536b4a5ab94bfce177ea6d36 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId:1
+msgid "OpenTargets_get_publications_by_disease_efoId"
+msgstr "OpenTargets_根据疾病EFO ID获取文献"
+
+#: 2f08ede650694eb5995dad376a2117c7 a61be2c1c4ab4f9985e8acf1c225e9fd of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId:3
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:1
+msgid ""
+"Retrieve publications related to a disease efoId, including PubMed IDs and "
+"publication dates."
+msgstr "检索与疾病 efoId 相关的出版物，包括 PubMed ID 和出版日期。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.rst
+#: 0cd14d9d169448b8b7e884dedeaaabe4
+msgid "Parameters"
+msgstr "参数"
+
+#: a12d8f3e64864cc09d28e323e786ffb4 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:3
+msgid "The ID of the entity (efoId)."
+msgstr "实体的ID（efoId）。"
+
+#: 9f7bc3e92a194cf1bb7dadaed53480aa of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:5
+msgid "List of additional IDs to include in the search."
+msgstr "在搜索中包含的附加ID列表。"
+
+#: ab1fe7d0847a4fa9a5b69bcc71d68930 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:7
+msgid "Year at the lower end of the filter."
+msgstr "过滤器下限的年份。"
+
+#: 053120fac2ea407a9ff8e39724b4e37e of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:9
+msgid "Month at the lower end of the filter."
+msgstr "过滤器底部的月份。"
+
+#: ae557fcc0cfe417eaaaaae3fe38b1e5a of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:11
+msgid "Year at the higher end of the filter."
+msgstr "过滤器高端的年份。"
+
+#: bb56d84bad18479895c15d84a89cc3d4 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:13
+msgid "Month at the higher end of the filter."
+msgstr "过滤器高端的月份。"
+
+#: a90bd5cb2ff44f1b8a273eac5be1132f of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e51508f9c61f4616a8d990781068316a of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 55d488871a5d4f65949adc5b739a3d6d of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.rst
+#: fa32ccf753e2447687067e31cd775e3b
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0175284581a1460b8f02aa3344c9c59b of
+#: tooluniverse.tools.OpenTargets_get_publications_by_disease_efoId.OpenTargets_get_publications_by_disease_efoId:22
+msgid ":py:class:`Any`"
+msgstr ""

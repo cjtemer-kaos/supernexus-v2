@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pandas_info.rst:2
+#: 66cdead3a8bf4169ab7cd44087305c75
+msgid "tooluniverse.tools.get\\_pandas\\_info module"
+msgstr "tooluniverse.tools.get\\_pandas\\_info 模块"
+
+#: 7e98f7c35b6d437b9610fea8d4c615b8 of tooluniverse.tools.get_pandas_info:1
+msgid "get_pandas_info"
+msgstr "获取_pandas_信息"
+
+#: 46383d38d18a420289be15ce1a303875 6a121fc651ed42c9b0659dcd42f2ba12 of
+#: tooluniverse.tools.get_pandas_info:3
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:1
+msgid ""
+"Get comprehensive information about pandas - powerful data structures and "
+"data analysis tools for..."
+msgstr "获取有关pandas的全面信息——强大的数据结构和数据分析工具，用于..."
+
+#: ../../api/tooluniverse.tools.get_pandas_info.rst
+#: 6d83a80728a949fea9516819c33c776f
+msgid "Parameters"
+msgstr "参数"
+
+#: 173e7985a2b24573b757c11a84f6b71f of
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: af5fa849c4cb4a37b0ae189a71e821be of
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 421d9e205dee484984365150ed1865ca of
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cb01af51fd9d445bbfbd975fe9bc4218 of
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pandas_info.rst
+#: e0d8c23b9b3c4c1ab304535bdd30c656
+msgid "Return type"
+msgstr "返回类型"
+
+#: b40c6dc973c94ad58c7cf196a9abe64e of
+#: tooluniverse.tools.get_pandas_info.get_pandas_info:12
+msgid ":py:class:`Any`"
+msgstr ""

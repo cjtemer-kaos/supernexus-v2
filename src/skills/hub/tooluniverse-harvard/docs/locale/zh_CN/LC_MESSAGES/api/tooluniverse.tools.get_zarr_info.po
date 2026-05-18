@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_zarr_info.rst:2
+#: dc2182e6d5eb41979fd8c9917bf4f803
+msgid "tooluniverse.tools.get\\_zarr\\_info module"
+msgstr "tooluniverse.tools.get\\_zarr\\_info 模块"
+
+#: f5798790dbea469093ec94343c161b83 of tooluniverse.tools.get_zarr_info:1
+msgid "get_zarr_info"
+msgstr ""
+
+#: 17238c8c38c94a29ba7f1eaffc97c5ce 39b74330fb6d4100aa1651d9242e1bdd of
+#: tooluniverse.tools.get_zarr_info:3
+#: tooluniverse.tools.get_zarr_info.get_zarr_info:1
+msgid ""
+"Get information about the zarr package. Chunked, compressed, N-dimensional "
+"arrays"
+msgstr "获取有关 zarr 软件包的信息。分块、压缩的 N 维数组"
+
+#: ../../api/tooluniverse.tools.get_zarr_info.rst
+#: 7db3098d66c9456ca2ec041e1e914ed3
+msgid "Parameters"
+msgstr "参数"
+
+#: 14ea000987b5453297ad15abf610d24b of
+#: tooluniverse.tools.get_zarr_info.get_zarr_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4ea7c1c9a4f847789dba279859f816b6 of
+#: tooluniverse.tools.get_zarr_info.get_zarr_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5683b12d9368494089736553c9db63b6 of
+#: tooluniverse.tools.get_zarr_info.get_zarr_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_zarr_info.rst
+#: 170174b73d764855a14904deb2c0df4e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1a3e9be46f424d4c93d2871429c4276a of
+#: tooluniverse.tools.get_zarr_info.get_zarr_info:11
+msgid ":py:class:`Any`"
+msgstr ""

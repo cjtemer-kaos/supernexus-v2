@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.openaire_tool.rst:2 d6848dbd416f4ad9b7362676ff32878f
+msgid "tooluniverse.openaire\\_tool module"
+msgstr "tooluniverse.openaire_tool 模块"
+
+#: dea46b565d6444758d1be3cbf5ba2c5e of
+#: tooluniverse.openaire_tool.OpenAIRETool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 720c610b8b4d40739803eae2b021b2ec of
+#: tooluniverse.openaire_tool.OpenAIRETool:1
+msgid ""
+"Search OpenAIRE Explore for research products (publications by default)."
+msgstr "在 OpenAIRE Explore 中搜索研究成果（默认显示出版物）。"
+
+#: b9f04a7f7fe240afbea20f6d637e1442 of
+#: tooluniverse.openaire_tool.OpenAIRETool:3
+msgid "Parameters (arguments):"
+msgstr "参数（参数列表）："
+
+#: 227179e4defe4db08d879e49157b83b2 of
+#: tooluniverse.openaire_tool.OpenAIRETool:4
+msgid ""
+"query (str): Query string max_results (int): Max number of results (default "
+"10, max 100) type (str): product type filter: publications | datasets | "
+"software"
+msgstr ""
+"query (str)：查询字符串  \n"
+"max_results (int)：最大结果数（默认值为10，最大值为100）  \n"
+"type (str)：产品类型过滤器：publications | datasets | software"
+
+#: 9b988919d3344aa8a0ffc212184c9e89 of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 02887b5b956c4603a72a4525197e9ef2 of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以适应大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.openaire_tool.rst 6e6f49346d2b46febcf4089d4878e619
+#, fuzzy
+msgid "Parameters"
+msgstr "参数（参数列表）："
+
+#: 4aa6f096854543a19544e6f967381d5d of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: f3064528c845470a9f1060f76df28a2c of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:9
+msgid "Callback for streaming responses"
+msgstr "流式响应的回调"
+
+#: 506ee8d1498944f0b5d88dceb91b67b5 of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: ba0237ced4204e92ba4e8d9254e94c35 of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 2a84ea3d144f454883aba2215cd7d12d of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: ef138fb6a3f14d028c2d505650057bf8 of
+#: tooluniverse.openaire_tool.OpenAIRETool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"

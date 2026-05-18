@@ -1,0 +1,494 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/visualization_tools.rst:2 2210e70fd2e745b7aa41249bc41ca736
+msgid "Visualization Tools"
+msgstr "可视化工具"
+
+#: ../../tools/visualization_tools.rst:4 de765a97d88f41dabfc1d0bac47479d7
+msgid ""
+"**Configuration File**: ``packages/visualization_tools.json`` **Tool "
+"Type**: Local **Tools Count**: 13"
+msgstr ""
+"**配置文件**：``packages/visualization_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：13"
+
+#: ../../tools/visualization_tools.rst:8 224635ec7dd345d0b4757dd9a2dad9c3
+msgid ""
+"This page contains all tools defined in the ``visualization_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``visualization_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/visualization_tools.rst:11 9c250b60308547af9b423f87b337c507
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/visualization_tools.rst:14 d4f788b79de748229c637514208b9aa9
+msgid "**get_altair_info** (Type: PackageTool)"
+msgstr "**get_altair_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:16 64a2fa48aba34826a97120efbdbd5286
+msgid ""
+"Get information about the altair package. Declarative statistical "
+"visualization library"
+msgstr "获取有关 altair 包的信息。声明式统计可视化库"
+
+#: ../../tools/visualization_tools.rst bab9aaf45218407cb7a561c4dc2e98d8
+msgid "get_altair_info tool specification"
+msgstr "get_altair_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:20
+#: ../../tools/visualization_tools.rst:49
+#: ../../tools/visualization_tools.rst:78
+#: ../../tools/visualization_tools.rst:109
+#: ../../tools/visualization_tools.rst:138
+#: ../../tools/visualization_tools.rst:167
+#: ../../tools/visualization_tools.rst:198
+#: ../../tools/visualization_tools.rst:229
+#: ../../tools/visualization_tools.rst:260
+#: ../../tools/visualization_tools.rst:291
+#: ../../tools/visualization_tools.rst:320
+#: ../../tools/visualization_tools.rst:349
+#: ../../tools/visualization_tools.rst:380 00fdd744b987499798616e7487d02c52
+#: 0916f8af143342b7ac9f1f2fdd999d00 464b6bf0783e407089a4c3b2769d97e2
+#: 50430d030aa948adaaf9976244266d58 62d63ca1f53b43fe86f6dc1cffbb90d6
+#: 6d37f11f025148d6bb2925864a62ca7f 74051b791fd74162aaf3c508e9f10e57
+#: 99212d37b43d48008bc27ee621e18fea a3d250c2a17a4d08a2ccb9281c8b40f6
+#: cbd51f464e974935a25d89700c923989 cc5af2c70de24b69945d4b7733014a35
+#: e45aa1a6b7a84561bd4a28b1558dabbd e51670229aa443fcbf10cedbba7bdeb3
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/visualization_tools.rst:22 f402bd520f7f409fb58d66a5fb8eedde
+msgid "**Name**: ``get_altair_info``"
+msgstr "**名称**：``get_altair_info``"
+
+#: ../../tools/visualization_tools.rst:23
+#: ../../tools/visualization_tools.rst:52
+#: ../../tools/visualization_tools.rst:81
+#: ../../tools/visualization_tools.rst:112
+#: ../../tools/visualization_tools.rst:141
+#: ../../tools/visualization_tools.rst:170
+#: ../../tools/visualization_tools.rst:201
+#: ../../tools/visualization_tools.rst:232
+#: ../../tools/visualization_tools.rst:263
+#: ../../tools/visualization_tools.rst:294
+#: ../../tools/visualization_tools.rst:323
+#: ../../tools/visualization_tools.rst:352
+#: ../../tools/visualization_tools.rst:383 20f7b1f72d7e45148442756552855033
+#: 29f5a124b8c3470dbeef1f2073290c66 3bf7b47821df461da1fea2f5eed36529
+#: 4c930b684c2c4550b211033d285fad4a 4e852511792049cb9f92267cab456665
+#: 6eebf6e8c4cf4f54a4f0c6669d420ef8 8d3cba5714f8474d8ddda69560f8eed4
+#: 9347db4c71a9497cbde4b6fed36c08e8 b988acce43a04989814e75dd31c6869a
+#: d5810031ca8947008cda2b419db417d4 e2258ca259e5405185255baf1d4717df
+#: f9d1e825d028482c99a6b38728b0614d fe4f287ed3d3428c96bc20101e2a8593
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**：``PackageTool``"
+
+#: ../../tools/visualization_tools.rst:24 9aa783bcfcab4b1aae9c696153d64d67
+msgid ""
+"**Description**: Get information about the altair package. Declarative "
+"statistical visualization library"
+msgstr "**描述**：获取有关 altair 包的信息。声明式统计可视化库"
+
+#: ../../tools/visualization_tools.rst:26
+#: ../../tools/visualization_tools.rst:55
+#: ../../tools/visualization_tools.rst:84
+#: ../../tools/visualization_tools.rst:115
+#: ../../tools/visualization_tools.rst:144
+#: ../../tools/visualization_tools.rst:173
+#: ../../tools/visualization_tools.rst:204
+#: ../../tools/visualization_tools.rst:235
+#: ../../tools/visualization_tools.rst:266
+#: ../../tools/visualization_tools.rst:297
+#: ../../tools/visualization_tools.rst:326
+#: ../../tools/visualization_tools.rst:355
+#: ../../tools/visualization_tools.rst:386 0f6d3eccdcbc462995b0eca46dc25b27
+#: 14a1b95656f74bba89a4c3aa15dbf706 1ca0fabba9504a4c859428d6308edf85
+#: 4222517532e94cadb26afc15a8f2ad8e 4571061c088941988bb99ed55b8ca48e
+#: 5301824b32d14541b698ce0be79dc817 72fc8a12e9434d6c8d78c8e25233024e
+#: 7acf82fce7b84a2d857db258ba500b07 7f78430bcb214c53978c474e869725fe
+#: 8d3281f9b2b64f268133ec7e7c816013 a149309bdd014504a34d314937cdd7ae
+#: deed8fad8c624f6eb31d02b015e4b2ac fdc4ff4936de45ffad679f04d82f744f
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/visualization_tools.rst:28
+#: ../../tools/visualization_tools.rst:57
+#: ../../tools/visualization_tools.rst:117
+#: ../../tools/visualization_tools.rst:146
+#: ../../tools/visualization_tools.rst:299
+#: ../../tools/visualization_tools.rst:328 2b1722557f11424a92792502a6103838
+#: 33ae239b0d0b4cb09834a7c4ad81466d 48adb9b3b1a4459cabeff1452b5e2bba
+#: 4e494d7c3b154b9aaca26f907b1aba71 e1614be0e0db4333a5ac6a55b823e4cd
+#: eb9bb48f3681488f9f6d639723365ef0
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/visualization_tools.rst:30
+#: ../../tools/visualization_tools.rst:59
+#: ../../tools/visualization_tools.rst:89
+#: ../../tools/visualization_tools.rst:119
+#: ../../tools/visualization_tools.rst:148
+#: ../../tools/visualization_tools.rst:178
+#: ../../tools/visualization_tools.rst:209
+#: ../../tools/visualization_tools.rst:240
+#: ../../tools/visualization_tools.rst:271
+#: ../../tools/visualization_tools.rst:301
+#: ../../tools/visualization_tools.rst:330
+#: ../../tools/visualization_tools.rst:360
+#: ../../tools/visualization_tools.rst:391 30dd358461f645eda02303153a6409ef
+#: 343ff3085331470b80ff3bdb762f36e9 37b7f54d17474be7b20a47c745f38224
+#: 45ad4a143e6e4bfeaa496cedcd7bfa77 500598d39f97411086781027e8852636
+#: 67771ec5e8744620899b4be9b64c7a4b 769b1bbe8ca740ab855c5b65c1098ec4
+#: 869a8a81dc4746b3b1d8ec2ee1a790d2 ab660757e4a648dfb60c265a74ea1e82
+#: ae2da6e1f0aa418d8d2c6dc93326f45d c41f1c65a8d24e0793c7e36d18fe8461
+#: e9c28b2558b647c597438c6d349c3237 ee84df73a0f74b3a9d0d01b80cf0ac17
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/visualization_tools.rst:43 b343b56a7e814b9e8a476458e4ed705c
+msgid "**get_bokeh_info** (Type: PackageTool)"
+msgstr "**get_bokeh_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:45 0a74569f43ac48ffa19dbc2856738b59
+msgid ""
+"Get information about the bokeh package. Interactive visualization "
+"library for modern web browsers"
+msgstr "获取有关 bokeh 软件包的信息。用于现代网页浏览器的交互式可视化库"
+
+#: ../../tools/visualization_tools.rst 7c56b51e6c994d8d86c0ba7d3d5fb711
+msgid "get_bokeh_info tool specification"
+msgstr "get_bokeh_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:51 5a62b915ab9c4a92af85436d825efe51
+msgid "**Name**: ``get_bokeh_info``"
+msgstr "**名称**: ``get_bokeh_info``"
+
+#: ../../tools/visualization_tools.rst:53 67e322903dab4276bdeb007817b00d19
+msgid ""
+"**Description**: Get information about the bokeh package. Interactive "
+"visualization library for modern web browsers"
+msgstr "**描述**：获取有关 bokeh 软件包的信息。用于现代网页浏览器的交互式可视化库"
+
+#: ../../tools/visualization_tools.rst:72 3e31536fc0b54589ab9d8e549197f089
+msgid "**get_cellpose_info** (Type: PackageTool)"
+msgstr "**get_cellpose_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:74 b8ae5a5b877d49a8834487bc55cd44e7
+msgid "Get comprehensive information about Cellpose – cell segmentation algorithm"
+msgstr "获取有关 Cellpose——细胞分割算法的全面信息"
+
+#: ../../tools/visualization_tools.rst b9bfa922d7bd45a19ec8cdfaddece436
+msgid "get_cellpose_info tool specification"
+msgstr "get_cellpose_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:80 1362baa40f8d4935ace0eb3645757fc0
+msgid "**Name**: ``get_cellpose_info``"
+msgstr "**名称**: ``get_cellpose_info``"
+
+#: ../../tools/visualization_tools.rst:82 a9d333c64c314cbe91d4c28aff101925
+msgid ""
+"**Description**: Get comprehensive information about Cellpose – cell "
+"segmentation algorithm"
+msgstr "**描述**：获取有关 Cellpose——细胞分割算法的全面信息"
+
+#: ../../tools/visualization_tools.rst:86
+#: ../../tools/visualization_tools.rst:175
+#: ../../tools/visualization_tools.rst:206
+#: ../../tools/visualization_tools.rst:237
+#: ../../tools/visualization_tools.rst:388 5514971b64f34e28a313980c566d9992
+#: 9386cae7405944d982c58f96927e1650 c9f46ae7697e4d73ba181753acb5d44b
+#: d3ba85ccd17b4fce8d0fb527350a9373 ea71b02e4af24adeb6ab4c364dd2ede4
+#, fuzzy
+msgid ""
+"``include_examples`` (boolean) (required) Whether to include usage "
+"examples and quick start guide"
+msgstr "``include_examples``（布尔值）（可选）是否包含使用示例和快速入门指南"
+
+#: ../../tools/visualization_tools.rst:103 17f0b7cd31c6476eb8ffd0b4eea0f20a
+msgid "**get_datashader_info** (Type: PackageTool)"
+msgstr "**get_datashader_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:105 a9040307c9a24c83a24c04a1230daa01
+msgid ""
+"Get information about the datashader package. Graphics pipeline system "
+"for creating meaningful vi..."
+msgstr ""
+"获取有关 datashader 包的信息。  \n"
+"这是一个用于创建有意义可视化的图形管线系统..."
+
+#: ../../tools/visualization_tools.rst e522890128da4d5abe87d3fb6e092d83
+msgid "get_datashader_info tool specification"
+msgstr "get_datashader_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:111 d7b0f2ba399749b8ad4769c5fab4b616
+msgid "**Name**: ``get_datashader_info``"
+msgstr "**名称**: ``get_datashader_info``"
+
+#: ../../tools/visualization_tools.rst:113 f4097760e7bb4f9b82ded580f0fd15c1
+msgid ""
+"**Description**: Get information about the datashader package. Graphics "
+"pipeline system for creating meaningful visualizations of large datasets"
+msgstr "**描述**：获取有关 datashader 软件包的信息。用于创建大型数据集有意义可视化的图形管道系统"
+
+#: ../../tools/visualization_tools.rst:132 245f1156dcee4c9fb9c52ba43dc9d548
+msgid "**get_holoviews_info** (Type: PackageTool)"
+msgstr "**get_holoviews_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:134 633d94712ca145d19b9c6b9e1c6a5230
+msgid ""
+"Get information about the holoviews package. Declarative data "
+"visualization in Python"
+msgstr "获取有关 holoviews 软件包的信息。使用 Python 进行声明式数据可视化"
+
+#: ../../tools/visualization_tools.rst 2543e9b57dfe40aaa270cb13639de7fd
+msgid "get_holoviews_info tool specification"
+msgstr "get_holoviews_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:140 48ef43a13a824537826714b3eb109965
+msgid "**Name**: ``get_holoviews_info``"
+msgstr "**名称**: ``get_holoviews_info``"
+
+#: ../../tools/visualization_tools.rst:142 1329bf9ca5dc418f9cd0fa21b911f297
+msgid ""
+"**Description**: Get information about the holoviews package. Declarative"
+" data visualization in Python"
+msgstr "**描述**：获取有关 holoviews 软件包的信息。使用 Python 进行声明式数据可视化"
+
+#: ../../tools/visualization_tools.rst:161 f3ba3f0253de4fc0825e968231762a49
+msgid "**get_igraph_info** (Type: PackageTool)"
+msgstr "**get_igraph_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:163 7ef138cc67444ffcb85f7fb3c997e983
+msgid ""
+"Get comprehensive information about igraph – network analysis and "
+"visualization"
+msgstr "获取有关 igraph 的全面信息——网络分析与可视化"
+
+#: ../../tools/visualization_tools.rst f15519b21a914e68b62082769f6a0d4c
+msgid "get_igraph_info tool specification"
+msgstr "get_igraph_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:169 c8ba089c357a43bbbbe88923ccbd26e6
+msgid "**Name**: ``get_igraph_info``"
+msgstr "**名称**: ``get_igraph_info``"
+
+#: ../../tools/visualization_tools.rst:171 309239e745b048b59502da3fafd18642
+msgid ""
+"**Description**: Get comprehensive information about igraph – network "
+"analysis and visualization"
+msgstr "**描述**：获取关于igraph的全面信息——网络分析与可视化"
+
+#: ../../tools/visualization_tools.rst:192 4b98fa15158044998ae380fb905bac5a
+msgid "**get_matplotlib_info** (Type: PackageTool)"
+msgstr "**get_matplotlib_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:194 43aae0108f2a482cb39171ffe331063b
+msgid ""
+"Get comprehensive information about Matplotlib – comprehensive library "
+"for creating visualization..."
+msgstr "获取有关 Matplotlib 的全面信息——一个用于创建可视化的综合库..."
+
+#: ../../tools/visualization_tools.rst 9c4da494d9654383a9af62bba8cb7ec7
+msgid "get_matplotlib_info tool specification"
+msgstr "get_matplotlib_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:200 9b57560726374176aeaef9f4806f792d
+msgid "**Name**: ``get_matplotlib_info``"
+msgstr "**名称**: ``get_matplotlib_info``"
+
+#: ../../tools/visualization_tools.rst:202 2a6b8cb946d74270a748ccb12fc61414
+msgid ""
+"**Description**: Get comprehensive information about Matplotlib – "
+"comprehensive library for creating visualizations in Python"
+msgstr "**描述**：获取有关 Matplotlib 的全面信息——一个用于在 Python 中创建可视化的综合库"
+
+#: ../../tools/visualization_tools.rst:223 bcbd42efe0b44d9080c739af904c3812
+msgid "**get_opencv_info** (Type: PackageTool)"
+msgstr "**get_opencv_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:225 eea80bff4b5e46d48ee73b6dd3fa6a53
+msgid ""
+"Get comprehensive information about OpenCV-Python – computer vision "
+"library"
+msgstr "获取关于 OpenCV-Python 的全面信息 —— 计算机视觉库"
+
+#: ../../tools/visualization_tools.rst ba5058861377499080074a4c8edf2384
+msgid "get_opencv_info tool specification"
+msgstr "get_opencv_info 工具规范"
+
+#: ../../tools/visualization_tools.rst:231 f04e370363694a959bf40441c5552183
+msgid "**Name**: ``get_opencv_info``"
+msgstr "**名称**: ``get_opencv_info``"
+
+#: ../../tools/visualization_tools.rst:233 e2742c728c0b452888044713075d944c
+msgid ""
+"**Description**: Get comprehensive information about OpenCV-Python – "
+"computer vision library"
+msgstr "**描述**：获取有关 OpenCV-Python（计算机视觉库）的全面信息"
+
+#: ../../tools/visualization_tools.rst:254 d7a3042dfef240c8b6eaba896e420971
+msgid "**get_plantcv_info** (Type: PackageTool)"
+msgstr "**get_plantcv_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:256 e73fdafa49ca46aaa3eb84c73512d8ae
+msgid ""
+"Get comprehensive information about PlantCV – plant phenotyping with "
+"image analysis"
+msgstr "获取关于 PlantCV —— 基于图像分析的植物表型测定的全面信息"
+
+#: ../../tools/visualization_tools.rst 5d1dc75bd0f347ab83e1ad1f1b766961
+msgid "get_plantcv_info tool specification"
+msgstr "get_plantcv_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:262 a57d0cb51d41418ab9b76d7eca0cc033
+msgid "**Name**: ``get_plantcv_info``"
+msgstr "**名称**：``get_plantcv_info``"
+
+#: ../../tools/visualization_tools.rst:264 e1b639e3863b430eb761229d3e59f9a7
+msgid ""
+"**Description**: Get comprehensive information about PlantCV – plant "
+"phenotyping with image analysis"
+msgstr "**描述**：获取关于PlantCV——基于图像分析的植物表型测定的全面信息"
+
+#: ../../tools/visualization_tools.rst:268 12c27ff9be714e56af8301aa5daf90eb
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"PlantCV"
+msgstr "``info_type``（字符串）（必填）要检索的 PlantCV 信息类型"
+
+#: ../../tools/visualization_tools.rst:285 f4d8551a31904024978a0e81daf6bf84
+msgid "**get_plotly_info** (Type: PackageTool)"
+msgstr "**get_plotly_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:287 dcd10a3e87e34f5bbcfe5e58c795dcf8
+msgid ""
+"Get information about the plotly package. Interactive plotting library "
+"for Python"
+msgstr "获取有关 plotly 包的信息。Python 的交互式绘图库。"
+
+#: ../../tools/visualization_tools.rst 6f24430d5be34f028d4767f304f73e18
+msgid "get_plotly_info tool specification"
+msgstr "get_plotly_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:293 d8a8bdf6043242f48c87c9671b38d114
+msgid "**Name**: ``get_plotly_info``"
+msgstr "**名称**：``get_plotly_info``"
+
+#: ../../tools/visualization_tools.rst:295 448fea45768245cdb036979763b2ef60
+msgid ""
+"**Description**: Get information about the plotly package. Interactive "
+"plotting library for Python"
+msgstr "**描述**：获取有关 plotly 包的信息。Python 的交互式绘图库。"
+
+#: ../../tools/visualization_tools.rst:314 b3b7cbda33c945d6839523943072ee5f
+msgid "**get_pyvis_info** (Type: PackageTool)"
+msgstr "**get_pyvis_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:316 cc070cf738ac44158891f24c473fefed
+msgid ""
+"Get information about the pyvis package. Python library for visualizing "
+"networks"
+msgstr "获取有关 pyvis 包的信息。用于可视化网络的 Python 库"
+
+#: ../../tools/visualization_tools.rst 00ab50226140403ab3312107be92c6a0
+msgid "get_pyvis_info tool specification"
+msgstr "get_pyvis_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:322 cf530cd559834016b9493048ff715b6f
+msgid "**Name**: ``get_pyvis_info``"
+msgstr "**名称**：``get_pyvis_info``"
+
+#: ../../tools/visualization_tools.rst:324 c7934932c50443ef8abdc3857e1af688
+msgid ""
+"**Description**: Get information about the pyvis package. Python library "
+"for visualizing networks"
+msgstr "**描述**：获取有关 pyvis 包的信息。用于可视化网络的 Python 库"
+
+#: ../../tools/visualization_tools.rst:343 68bfdaceb64f478e9cc2bdc28a02223c
+msgid "**get_scikit_image_info** (Type: PackageTool)"
+msgstr "**get_scikit_image_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:345 b2d1ddfe82324747b3cd9c11fd554499
+msgid ""
+"Get comprehensive information about scikit-image – image processing in "
+"Python"
+msgstr "获取关于 scikit-image —— Python 图像处理的全面信息"
+
+#: ../../tools/visualization_tools.rst a855fb5b26e049ada70a7e05045e53aa
+msgid "get_scikit_image_info tool specification"
+msgstr "get_scikit_image_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:351 a451724998f643078e1d2e1bbe7929ac
+msgid "**Name**: ``get_scikit_image_info``"
+msgstr "**名称**：``get_scikit_image_info``"
+
+#: ../../tools/visualization_tools.rst:353 5d73660e5ec44d24a3313fc3df9470bb
+msgid ""
+"**Description**: Get comprehensive information about scikit-image – image"
+" processing in Python"
+msgstr "**描述**：获取有关 scikit-image —— Python 图像处理的全面信息"
+
+#: ../../tools/visualization_tools.rst:357 51435f081abc4bb49571a4f2cb6c3aee
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"scikit-image"
+msgstr "``info_type``（字符串）（必填）要检索的关于 scikit-image 的信息类型"
+
+#: ../../tools/visualization_tools.rst:374 a0a3f67793e54a59b74806f8117b0a7f
+msgid "**get_seaborn_info** (Type: PackageTool)"
+msgstr "**get_seaborn_info**（类型：PackageTool）"
+
+#: ../../tools/visualization_tools.rst:376 284d4aa4cb2248bf85fb83efac7ee91f
+msgid ""
+"Get comprehensive information about Seaborn – statistical data "
+"visualization"
+msgstr "获取关于 Seaborn —— 统计数据可视化的全面信息"
+
+#: ../../tools/visualization_tools.rst fc0923e5c25540f38591b9cefb1b95d1
+msgid "get_seaborn_info tool specification"
+msgstr "get_seaborn_info 工具规格说明"
+
+#: ../../tools/visualization_tools.rst:382 481e4f899415472cb7702573619d4c59
+msgid "**Name**: ``get_seaborn_info``"
+msgstr "**名称**：``get_seaborn_info``"
+
+#: ../../tools/visualization_tools.rst:384 639f437fa5cc4b82a8d71894b1d9cfdd
+msgid ""
+"**Description**: Get comprehensive information about Seaborn – "
+"statistical data visualization"
+msgstr "**描述**：获取关于 Seaborn —— 统计数据可视化的全面信息"
+
+#: ../../tools/visualization_tools.rst:405 c4719b1535d0451890544f27d0fec7c2
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/visualization_tools.rst:407 2e6a31e3a6594830afd86ef191dbaebc
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/visualization_tools.rst:408 7d0561c7ec5c4c50b1a8fc954064e938
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

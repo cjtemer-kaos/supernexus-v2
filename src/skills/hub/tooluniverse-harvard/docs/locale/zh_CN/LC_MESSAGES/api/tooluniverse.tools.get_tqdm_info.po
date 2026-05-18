@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_tqdm_info.rst:2
+#: 85f35418bd2b40c28e0bdb6330925575
+msgid "tooluniverse.tools.get\\_tqdm\\_info module"
+msgstr "tooluniverse.tools.get\\_tqdm\\_info 模块"
+
+#: b7afb4b11f154099a7cbed25c8d5b9b1 of tooluniverse.tools.get_tqdm_info:1
+msgid "get_tqdm_info"
+msgstr ""
+
+#: 14b264889dda477ab21f6aae29b5d531 a216004c7418496e8e4ce19615921211 of
+#: tooluniverse.tools.get_tqdm_info:3
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:1
+msgid ""
+"Get comprehensive information about tqdm – fast progress bars for Python"
+msgstr "获取关于 tqdm 的全面信息——适用于 Python 的快速进度条"
+
+#: ../../api/tooluniverse.tools.get_tqdm_info.rst
+#: ffdef781be454b42a220633ea077c4f2
+msgid "Parameters"
+msgstr "参数"
+
+#: f602a9f07ae043308e4b271cdc463d1a of
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 4cacc465c09943feaf42ecdd3bc139bc of
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6e106a7efa2a43cdaad33996b3085acf of
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6cc75a5becfd439da068e1e7a2a48178 of
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_tqdm_info.rst
+#: 22db14cf49834c51a2036213d80f88c5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 20c1f600d69e477aa1922ea02763a78a of
+#: tooluniverse.tools.get_tqdm_info.get_tqdm_info:12
+msgid ":py:class:`Any`"
+msgstr ""

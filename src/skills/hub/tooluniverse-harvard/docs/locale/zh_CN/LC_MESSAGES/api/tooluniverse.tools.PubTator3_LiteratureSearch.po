@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubTator3_LiteratureSearch.rst:2
+#: 9953cee20cc54c5f943400d9af5a80db
+msgid "tooluniverse.tools.PubTator3\\_LiteratureSearch module"
+msgstr "tooluniverse.tools.PubTator3\\_LiteratureSearch 模块"
+
+#: 3cb552e11faf448e9d579b83e399de5b of
+#: tooluniverse.tools.PubTator3_LiteratureSearch:1
+msgid "PubTator3_LiteratureSearch"
+msgstr "PubTator3_文献搜索"
+
+#: 464e3637e569483dad2b61f4122b5b29 9ff771b5174741f8aa3471477027f58b of
+#: tooluniverse.tools.PubTator3_LiteratureSearch:3
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:1
+msgid ""
+"Find PubMed articles that match a keyword, a PubTator entity ID (e.g. "
+"“@GENE_BRAF”), or an entity..."
+msgstr "查找与关键词、PubTator实体ID（例如“@GENE_BRAF”）或实体匹配的PubMed文章..."
+
+#: ../../api/tooluniverse.tools.PubTator3_LiteratureSearch.rst
+#: efd85b13d6924e8fadec40e4245eac87
+msgid "Parameters"
+msgstr "参数"
+
+#: 401b0664e5254bdb8346fc4c01481e3b of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:3
+msgid ""
+"What you want to search for. This can be plain keywords, a single PubTator "
+"ID..."
+msgstr "您想要搜索的内容。这可以是普通关键词，也可以是单个PubTator ID..."
+
+#: 9e81b0a122dc403d9c4843654f16224e of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:5
+msgid "Zero-based results page (optional; default = 0)."
+msgstr "零基结果页面（可选；默认值 = 0）。"
+
+#: 1b3d08fe736a4324bcf122e6a77300c4 of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:7
+msgid ""
+"How many PMIDs to return per page (optional; default = 20, maximum = 200)."
+msgstr "每页返回的PMID数量（可选；默认值=20，最大值=200）。"
+
+#: 34cc765f39c54d498ba291eda87dd0d9 of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 76c4986d1a384830a0bb4546271d0d8c of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 45825b0aff88498389ea2bf459a04cb7 of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubTator3_LiteratureSearch.rst
+#: d2122d28684c4613b138650969d311ba
+msgid "Return type"
+msgstr "返回类型"
+
+#: bade93c0a78f40f39ee5f6d96099e0cf of
+#: tooluniverse.tools.PubTator3_LiteratureSearch.PubTator3_LiteratureSearch:16
+msgid ":py:class:`Any`"
+msgstr ""

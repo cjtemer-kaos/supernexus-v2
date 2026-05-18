@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.agentic_tools.rst:2
+#: 999b7996db924effa82ffb3c1c79884a
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.agentic\\_tools module"
+msgstr "tooluniverse.web_tools.literature_search_ui.agentic_tools 模块"
+
+#~ msgid ""
+#~ "Advanced Agentic Tools for Literature "
+#~ "Search Web UI Specialized tools for "
+#~ "intelligent literature analysis and "
+#~ "summarization"
+#~ msgstr "高级智能体工具用于文献检索 Web UI 专用工具，支持智能文献分析与摘要生成"
+
+#~ msgid "Bases: :py:class:`object`"
+#~ msgstr "基类：:py:class:`object`"
+
+#~ msgid "Main analyzer that coordinates different analysis tools"
+#~ msgstr "主要分析器，负责协调不同的分析工具"
+
+#~ msgid "Generate comprehensive literature review summary"
+#~ msgstr "生成全面的文献综述摘要"
+
+#~ msgid "Extract papers from search results"
+#~ msgstr "从搜索结果中提取论文"
+
+#~ msgid "Extract author names from various formats"
+#~ msgstr "从多种格式中提取作者姓名"
+
+#~ msgid "Extract year from various formats"
+#~ msgstr "从各种格式中提取年份"
+
+#~ msgid "Generate research overview section"
+#~ msgstr "生成研究概述部分"
+
+#~ msgid "Generate methodology note"
+#~ msgstr "生成方法说明"
+
+#~ msgid "Generate summary when no results are found"
+#~ msgstr "未找到结果时生成摘要"
+
+#~ msgid "Analyzes temporal patterns in literature"
+#~ msgstr "分析文献中的时间模式"
+
+#~ msgid "Generate temporal analysis of research trends"
+#~ msgstr "生成研究趋势的时间分析"
+
+#~ msgid "Analyzes research themes and topics"
+#~ msgstr "分析研究主题和课题"
+
+#~ msgid "Generate thematic analysis of research topics"
+#~ msgstr "生成研究主题的主题分析"
+
+#~ msgid "Extract research themes from papers"
+#~ msgstr "从论文中提取研究主题"
+
+#~ msgid "Extract methodological approaches from papers"
+#~ msgstr "从论文中提取方法论方法"
+
+#~ msgid "Analyzes key contributions and important papers"
+#~ msgstr "分析关键贡献和重要论文"
+
+#~ msgid "Generate key contributions section"
+#~ msgstr "生成主要贡献部分"
+
+#~ msgid "Identify important papers based on various criteria"
+#~ msgstr "根据多种标准识别重要论文"
+
+#~ msgid "Analyzes research trends and patterns"
+#~ msgstr "分析研究趋势和模式"
+
+#~ msgid "Analyze research trends and patterns"
+#~ msgstr "分析研究趋势与模式"
+
+#~ msgid "Extract themes from recent papers"
+#~ msgstr "从近期论文中提取主题"
+
+#~ msgid "Analyze collaboration patterns"
+#~ msgstr "分析协作模式"
+
+#~ msgid "Identifies research gaps and future opportunities"
+#~ msgstr "识别研究空白与未来机遇"
+
+#~ msgid "Generate research gaps and future directions"
+#~ msgstr "生成研究空白与未来方向"
+
+#~ msgid "Identify specific research gaps"
+#~ msgstr "识别具体的研究空白"
+
+#~ msgid "Identify future research opportunities"
+#~ msgstr "确定未来的研究机会"
+

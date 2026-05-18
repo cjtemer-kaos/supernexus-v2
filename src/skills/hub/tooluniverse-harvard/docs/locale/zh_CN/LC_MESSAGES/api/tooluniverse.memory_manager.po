@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-09 00:49-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.memory_manager.rst:2
+#: 0432483987a54576a9c7ab410c072876
+msgid "tooluniverse.memory\\_manager module"
+msgstr "tooluniverse.memory\\_manager 模块"
+
+#: 5e60fe19fdf6496eb60e15b357f621ed of tooluniverse.memory_manager:1
+msgid ""
+"Memory Manager for Multi-Agent Systems Manages session-based memory for "
+"multi-agent workflows"
+msgstr ""
+"多代理系统的内存管理器  \n"
+"管理基于会话的多代理工作流内存"
+
+#: b5c45dc9adcc43e78254f335f11acbe7 of
+#: tooluniverse.memory_manager.MemoryManager:1
+msgid "Bases: :py:class:`object`"
+msgstr "基础：:py:class:`object`"
+
+#: 133f3a6160b741758e8354bacf6ef7c2 of
+#: tooluniverse.memory_manager.MemoryManager:1
+msgid "专门管理multi-agent系统的记忆"
+msgstr "专门管理多智能体系统的内存"
+
+#: be6e8e0543534ee6a23290750d1b3150 of
+#: tooluniverse.memory_manager.MemoryManager.create_session:1
+msgid "创建新的会话"
+msgstr "创建新会话"
+
+#: 85de8af4983a431b8f38160c8694cbd2 of
+#: tooluniverse.memory_manager.MemoryManager.get_session:1
+msgid "获取会话信息"
+msgstr "Retrieve Session Information"
+
+#: 67aa7de1810348dfa9d6fe270c90f9cf of
+#: tooluniverse.memory_manager.MemoryManager.update_session_context:1
+msgid "更新会话上下文"
+msgstr ""
+
+#: 372de18b50974cfda3d7816eee4e6f98 of
+#: tooluniverse.memory_manager.MemoryManager.add_agent_result:1
+msgid "添加agent执行结果"
+msgstr "添加代理执行结果"
+
+#: 8475afe488524715bc170c23fe6b7e81 of
+#: tooluniverse.memory_manager.MemoryManager.get_context_for_agent:1
+msgid "获取适合传递给agent的context信息"
+msgstr "Retrieve the context information suitable for passing to the agent"
+
+#: f60d8bab94f84f7dbd64e05485136966 of
+#: tooluniverse.memory_manager.MemoryManager.set_current_phase:1
+msgid "设置当前执行阶段"
+msgstr ""
+
+#: c87676df353a4787a7ba8439bf3ff840 of
+#: tooluniverse.memory_manager.MemoryManager.get_session_summary:1
+msgid "获取会话摘要"
+msgstr ""
+
+#: ee9844dc930d4d00bef0d3990a2a6306 of
+#: tooluniverse.memory_manager.MemoryManager.list_user_sessions:1
+msgid "获取用户的所有会话"
+msgstr "Retrieve all user sessions"
+
+#: 426dd72667ca4cddad79a4d52b418c5e of
+#: tooluniverse.memory_manager.MemoryManager._cleanup_expired_sessions:1
+msgid "清理过期会话"
+msgstr ""
+
+#: 77e6a5330f774e2297bde9d43391fed8 of
+#: tooluniverse.memory_manager.MemoryManager.close_session:1
+msgid "关闭会话"
+msgstr ""

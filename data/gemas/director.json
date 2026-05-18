@@ -1,0 +1,16 @@
+{
+  "name": "director",
+  "version": "2.0.0",
+  "description": "Orquestador principal y planificador de la colmena",
+  "main": "src.core.director",
+  "model": "deepseek-r1:8b",
+  "activationEvents": ["onCommand:orchestrate", "onCommand:plan", "onTask:leadership"],
+  "semanticKeywords": ["orchestrate", "plan", "coordinate", "delegate", "leadership", "organize"],
+  "category": "core",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 3,
+  "parallelCapable": true
+}

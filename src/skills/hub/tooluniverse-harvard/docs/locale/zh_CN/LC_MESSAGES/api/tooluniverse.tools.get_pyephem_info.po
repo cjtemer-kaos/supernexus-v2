@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyephem_info.rst:2
+#: d4b9c06edad74df5a2dfdadf95b494c2
+msgid "tooluniverse.tools.get\\_pyephem\\_info module"
+msgstr "tooluniverse.tools.get\\_pyephem\\_info 模块"
+
+#: f4870c8e88fb45eab252707d4eb7f62b of tooluniverse.tools.get_pyephem_info:1
+msgid "get_pyephem_info"
+msgstr "获取_pyephem_信息"
+
+#: 481c6bc990bf448faa66106dc3253752 85beafa9d08f4826a29caad6d8feadc0 of
+#: tooluniverse.tools.get_pyephem_info:3
+#: tooluniverse.tools.get_pyephem_info.get_pyephem_info:1
+msgid ""
+"Get information about the pyephem package. Astronomical computations for "
+"Python"
+msgstr "获取有关 pyephem 软件包的信息。用于 Python 的天文计算"
+
+#: ../../api/tooluniverse.tools.get_pyephem_info.rst
+#: b3431428732f4424b40191d4327a9770
+msgid "Parameters"
+msgstr "参数"
+
+#: 4c59f292af614c9897ed7471cb1338b5 of
+#: tooluniverse.tools.get_pyephem_info.get_pyephem_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f174c5645a1b450cb323fb12ae0641ed of
+#: tooluniverse.tools.get_pyephem_info.get_pyephem_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5d9269b5fc0541d68dba88c8b51ac323 of
+#: tooluniverse.tools.get_pyephem_info.get_pyephem_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyephem_info.rst
+#: 0b7d98c273834068909e081d0f84b48f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 50128254782244048b77ae1fb9f51c32 of
+#: tooluniverse.tools.get_pyephem_info.get_pyephem_info:11
+msgid ":py:class:`Any`"
+msgstr ""

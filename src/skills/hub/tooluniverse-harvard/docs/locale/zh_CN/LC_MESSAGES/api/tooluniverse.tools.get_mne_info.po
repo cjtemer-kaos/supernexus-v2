@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_mne_info.rst:2
+#: 5bdeb32e945345ce9dec9a094b38dfa1
+msgid "tooluniverse.tools.get\\_mne\\_info module"
+msgstr "tooluniverse.tools.get\\_mne\\_info 模块"
+
+#: 10b8965c0a6546f5b5ab6bac708e786a of tooluniverse.tools.get_mne_info:1
+msgid "get_mne_info"
+msgstr ""
+"get_mne_info\n"
+"\n"
+"获取 MNE 信息"
+
+#: 3366c373c5f54249a426fab24bc1da10 4b3e8cc784e04eaab1f93a5364a2415c of
+#: tooluniverse.tools.get_mne_info:3
+#: tooluniverse.tools.get_mne_info.get_mne_info:1
+msgid "Get information about the mne package. MEG and EEG data analysis"
+msgstr "获取有关 mne 软件包的信息。用于 MEG 和 EEG 数据分析"
+
+#: ../../api/tooluniverse.tools.get_mne_info.rst
+#: 2a519d52bfb44927a9077f5e230cc926
+msgid "Parameters"
+msgstr "参数"
+
+#: 678d8a8d44234f9dad8ae90885fecdc9 of
+#: tooluniverse.tools.get_mne_info.get_mne_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: cb3cc959bbde43a5b60da50a22b215c0 of
+#: tooluniverse.tools.get_mne_info.get_mne_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 72ab8896d45a4fd1a89a0c59d7a1bfae of
+#: tooluniverse.tools.get_mne_info.get_mne_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_mne_info.rst
+#: 410f577d55434cfd8882ce41d0962769
+msgid "Return type"
+msgstr "返回类型"
+
+#: d0647a802034408da56e38dc61978c57 of
+#: tooluniverse.tools.get_mne_info.get_mne_info:11
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.rst:2
+#: 3ff14ae166df43dca83132baee2d9c58
+msgid "tooluniverse.tools.FDA\\_get\\_pharmacodynamics\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_pharmacodynamics\\_by\\_drug\\_name 模块"
+
+#: 0f4faa34a33946f5bc8205bd63a3a7b5 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name:1
+msgid "FDA_get_pharmacodynamics_by_drug_name"
+msgstr "FDA_根据药物名称获取药效学"
+
+#: 1c23c768c10f4acea60c798511010210 beeb8d5a3eb54354a27b0e8a0414b7e2 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name:3
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:1
+msgid "Retrieve pharmacodynamics information based on the drug name."
+msgstr "根据药物名称检索药效学信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.rst
+#: d6e47cdbba834bb8ab92f80e8cdbd63d
+msgid "Parameters"
+msgstr "参数"
+
+#: b5c9b6fcef7b4170881e9b6e2a7f4714 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称。"
+
+#: 963e648e927547ddaa929931e98dd601 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 90d87830e00b47c68b6e44d4026cff50 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c848216448ce4c009e1a6baf8644b249 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3b01ff56057b469caec308551e9fda47 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 480536804b10485cb0ce7debad3c015d of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.rst
+#: 9758c2af74754e95966a0ba41585a11d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1663f92ac9234d459ca7f2b5ce4daf10 of
+#: tooluniverse.tools.FDA_get_pharmacodynamics_by_drug_name.FDA_get_pharmacodynamics_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

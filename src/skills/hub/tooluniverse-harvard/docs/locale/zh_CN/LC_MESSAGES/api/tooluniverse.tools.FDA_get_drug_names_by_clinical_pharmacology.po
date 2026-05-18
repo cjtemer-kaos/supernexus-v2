@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.rst:2
+#: bce32653c1d44c52876dada5b85c54da
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_clinical\\_pharmacology module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_clinical\\_pharmacology 模块"
+
+#: 7ec8ebf79f2948af8d0640d3d484d008 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology:1
+msgid "FDA_get_drug_names_by_clinical_pharmacology"
+msgstr "FDA_按临床药理学获取药物名称"
+
+#: 4abb532366454a90b96680bed86bdbb2 9917f8baac824a6d9c4f2e55ea170ef6 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology:3
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:1
+msgid ""
+"Retrieve drug names based on clinical pharmacology information. Warning: "
+"This tool only outputs a..."
+msgstr "根据临床药理学信息检索药物名称。警告：此工具仅输出..."
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.rst
+#: c4719ae6c703449bae941375cdc63a31
+msgid "Parameters"
+msgstr "参数"
+
+#: 483e7a1258b44dd7967da02bbe535f2c of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:3
+msgid ""
+"Information about the clinical pharmacology and actions of the drug in "
+"humans..."
+msgstr "有关该药物在人类中的临床药理学和作用的信息..."
+
+#: ece67df6a18f4ce4b6b17e8fe86375b8 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 05e6d2d0b7874d23ba2ae7fb94457647 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 026a61d2d5904578a4b8edb2b7bd4f4e of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 9678c91965404429855a1548ab09319f of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b698f2684ea94f2ba1316d2dc0b4228d of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: dbe2172d8dc14a40885e1041df156ea9 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.rst
+#: e6832922d6514c1c819075e9a36d529b
+msgid "Return type"
+msgstr "返回类型"
+
+#: edbc196b6ae242288b192af756f32438 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_pharmacology.FDA_get_drug_names_by_clinical_pharmacology:18
+msgid ":py:class:`Any`"
+msgstr ""

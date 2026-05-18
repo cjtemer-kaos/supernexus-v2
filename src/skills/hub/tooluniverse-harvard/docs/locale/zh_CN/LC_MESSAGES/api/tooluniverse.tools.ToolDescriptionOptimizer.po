@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolDescriptionOptimizer.rst:2
+#: 001920fe3de5481a98e15f84b3c07c2d
+msgid "tooluniverse.tools.ToolDescriptionOptimizer module"
+msgstr "tooluniverse.tools.ToolDescriptionOptimizer 模块"
+
+#: 529d5e61d53e43b19fe82d6f953a636a of
+#: tooluniverse.tools.ToolDescriptionOptimizer:1
+msgid "ToolDescriptionOptimizer"
+msgstr "工具描述优化器"
+
+#: 23c2cfaa44a14028a602186ac4e6b730 5b331048cb9245db9eed0cb93f479043 of
+#: tooluniverse.tools.ToolDescriptionOptimizer:3
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:1
+msgid ""
+"Optimizes a tool's description and parameter descriptions by generating test"
+" cases, executing the..."
+msgstr "优化工具的描述和参数描述，通过生成测试用例并执行..."
+
+#: ../../api/tooluniverse.tools.ToolDescriptionOptimizer.rst
+#: d0b84ec0b3594b7aa3d6f0660537120f
+msgid "Parameters"
+msgstr "参数"
+
+#: 3dd0e538fd5b4cc28dcbe02a5d65bfcd of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:3
+msgid "The full configuration of the tool to optimize."
+msgstr "工具的完整配置以进行优化。"
+
+#: 46cc6753b2db48bd826cabd50fa9435c of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:5
+msgid ""
+"If true, save the optimized description to a file (do not overwrite the "
+"origi..."
+msgstr "如果为真，将优化后的描述保存到文件中（不要覆盖原始文件）。"
+
+#: 15036840427440a7aeaf7c93d4119e5a of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:7
+msgid ""
+"Optional file path to save the optimized description. If not provided, use "
+"'<..."
+msgstr "可选文件路径用于保存优化后的描述。如果未提供，则使用 '<..."
+
+#: a15c45bc47f644fcb96840fdac36f919 of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:9
+msgid "Maximum number of optimization rounds to perform."
+msgstr "最大优化轮次执行次数。"
+
+#: 2c1c9d34015f4113aab2f1491ce82f6c of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:11
+msgid "Quality score threshold (1-10) to consider optimization satisfactory."
+msgstr "质量评分阈值（1-10），以评估优化是否达到满意标准。"
+
+#: ecc13d31334d41d8923ff0ef7585cb56 of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:13
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 71df9e744c9047a18f11aaf6353b5b33 of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 04ffc0c9053343c3855680cd67a96e76 of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolDescriptionOptimizer.rst
+#: d16cc6ba5e794e35a4e996ad8b92461f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8830d09e8e9644949f8810389fd7002a of
+#: tooluniverse.tools.ToolDescriptionOptimizer.ToolDescriptionOptimizer:20
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyfaidx_info.rst:2
+#: 00cdfc62337040a3bd38734697dd8e7e
+msgid "tooluniverse.tools.get\\_pyfaidx\\_info module"
+msgstr "tooluniverse.tools.get\\_pyfaidx\\_info 模块"
+
+#: 661cac1af2304a8a974b3522dd1d8487 of tooluniverse.tools.get_pyfaidx_info:1
+msgid "get_pyfaidx_info"
+msgstr ""
+
+#: 83d3126b3754453eac8af546a2d1a854 98de62960b234b4d93d36c6fff9d5d6c of
+#: tooluniverse.tools.get_pyfaidx_info:3
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:1
+msgid ""
+"Get comprehensive information about pyfaidx – efficient FASTA file indexing "
+"and random access"
+msgstr "获取有关 pyfaidx 的全面信息 —— 高效的 FASTA 文件索引和随机访问"
+
+#: ../../api/tooluniverse.tools.get_pyfaidx_info.rst
+#: 2421d3cb4cfa4fc2872a09b57fb0e5fb
+msgid "Parameters"
+msgstr "参数"
+
+#: f205716737c44e0b85c836ed39bef739 of
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 63ba555e7d8d4ab89f4f6576f52b22b7 of
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d373130a260140e282eb7339c977c16e of
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6c336c4cf11146a18da7afac17785f99 of
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyfaidx_info.rst
+#: dd972e4d17d24220b34cf83220d92ab4
+msgid "Return type"
+msgstr "返回类型"
+
+#: fbb008f4f7994779b340ec7a875390be of
+#: tooluniverse.tools.get_pyfaidx_info.get_pyfaidx_info:12
+msgid ":py:class:`Any`"
+msgstr ""

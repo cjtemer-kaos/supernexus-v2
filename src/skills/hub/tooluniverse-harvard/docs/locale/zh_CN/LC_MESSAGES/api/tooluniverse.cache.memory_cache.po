@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.cache.memory_cache.rst:2
+#: a68420b0902e4592ac008ab6c6d6d4f9
+msgid "tooluniverse.cache.memory\\_cache module"
+msgstr "tooluniverse.cache.memory\\_cache 模块"
+
+#: 6350e3bb782f4312a0d7d3f6f83a2c04 of tooluniverse.cache.memory_cache:1
+msgid "In-memory cache utilities for ToolUniverse."
+msgstr "用于ToolUniverse的内存缓存工具。"
+
+#: c1dd0ce615db439fa526b8a8fdba3b65 of tooluniverse.cache.memory_cache:3
+msgid ""
+"Provides a lightweight, thread-safe LRU cache with optional singleflight "
+"deduplication for expensive misses."
+msgstr "提供一个轻量级、线程安全的LRU缓存，并支持可选的singleflight机制以减少高成本的缓存未命中重复请求。"
+
+#: 176b459e72d94a2c84043cb32b09ad55 4d7db559c37941ac9f283c18fae775ea of
+#: tooluniverse.cache.memory_cache.LRUCache:1
+#: tooluniverse.cache.memory_cache.SingleFlight:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: ab422828e8b044af98ae32aa91d80469 of
+#: tooluniverse.cache.memory_cache.LRUCache:1
+msgid "Thread-safe LRU cache with basic telemetry."
+msgstr "线程安全的LRU缓存，附带基础遥测功能。"
+
+#: 28040cf02bbf4a48bf0041283cc6689c of
+#: tooluniverse.cache.memory_cache.SingleFlight:1
+msgid "Per-key lock manager to collapse duplicate cache misses."
+msgstr "每键锁管理器，用于合并重复的缓存未命中。"

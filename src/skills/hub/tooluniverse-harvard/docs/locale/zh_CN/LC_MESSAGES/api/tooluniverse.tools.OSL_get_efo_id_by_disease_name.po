@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OSL_get_efo_id_by_disease_name.rst:2
+#: 8a079e3d3dfb41ba8633dc3c9ca5a79f
+msgid "tooluniverse.tools.OSL\\_get\\_efo\\_id\\_by\\_disease\\_name module"
+msgstr "tooluniverse.tools.OSL\\_get\\_efo\\_id\\_by\\_disease\\_name 模块"
+
+#: b340caaf955d4ad2864b1da95715cf4a of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name:1
+msgid "OSL_get_efo_id_by_disease_name"
+msgstr "OSL_get_efo_id_by_disease_name（通过疾病名称获取EFO ID）"
+
+#: 3b88701778a34b2b88c57c8da3453b65 69ff2cbf214b4857922f49f888dd732b of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name:3
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:1
+msgid ""
+"Tool to lookup Experimental Factor Ontology (EFO) IDs for diseases via the "
+"EMBL-EBI OLS API."
+msgstr "通过EMBL-EBI OLS API查找疾病的实验因子本体（EFO）ID的工具。"
+
+#: ../../api/tooluniverse.tools.OSL_get_efo_id_by_disease_name.rst
+#: 7d6ae8774ef148c58d1766151d06a199
+msgid "Parameters"
+msgstr "参数"
+
+#: 69ad2d85c9ee4d468874a7bf1e46abac of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:3
+msgid ""
+"Search query for diseases. Provide the disease name to lookup the "
+"correspondi..."
+msgstr "搜索疾病查询。提供疾病名称以查找相应信息。"
+
+#: f6f1170653394c3e9e3bd7c4b84e8bc4 of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 974e75c18ad84619ab513e435acf11f3 of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3327a1361a304640907cbcb6e83ebe5d of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OSL_get_efo_id_by_disease_name.rst
+#: ac31f0f6130e4b1cbf6d596fa9201327
+msgid "Return type"
+msgstr "返回类型"
+
+#: b706b8a6815e42e3b1e279da211bf2a1 of
+#: tooluniverse.tools.OSL_get_efo_id_by_disease_name.OSL_get_efo_id_by_disease_name:12
+msgid ":py:class:`Any`"
+msgstr ""

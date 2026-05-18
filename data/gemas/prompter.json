@@ -1,0 +1,16 @@
+{
+  "name": "prompter",
+  "version": "2.0.0",
+  "description": "Ingenieria de prompts y alineacion de temperaturas del LLM",
+  "main": "src.agents.prompter_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:prompt", "onCommand:compress", "onCommand:optimize"],
+  "semanticKeywords": ["prompt", "token", "compression", "optimization", "temperature", "context", "system", "instruction"],
+  "category": "core",
+  "maxMemoryMB": 128,
+  "maxCPUPercent": 10,
+  "timeoutSeconds": 60,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

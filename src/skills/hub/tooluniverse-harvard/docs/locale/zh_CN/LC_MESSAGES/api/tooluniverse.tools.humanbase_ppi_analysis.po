@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.humanbase_ppi_analysis.rst:2
+#: 2c8c43aec19c4fe6bb213de1433710c6
+msgid "tooluniverse.tools.humanbase\\_ppi\\_analysis module"
+msgstr "tooluniverse.tools.humanbase\\_ppi\\_analysis 模块"
+
+#: 7d8c4d0afb394823addc14be01b6f6c2 of
+#: tooluniverse.tools.humanbase_ppi_analysis:1
+msgid "humanbase_ppi_analysis"
+msgstr "humanbase_ppi_分析"
+
+#: 64dc41aca19f4611977c9b0637d2dc4a ca102188c69d49d4a8e40eacb5495367 of
+#: tooluniverse.tools.humanbase_ppi_analysis:3
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:1
+msgid ""
+"Retrieve tissue-specific protein-protein interactions and biological "
+"processes from HumanBase. Re..."
+msgstr "从HumanBase检索组织特异性蛋白质-蛋白质相互作用和生物过程。"
+
+#: ../../api/tooluniverse.tools.humanbase_ppi_analysis.rst
+#: 37d3dc77bf144ea78cf6ba076fc078d9
+msgid "Parameters"
+msgstr "参数"
+
+#: 226d53147c70491087f989eb540c1fef of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:3
+msgid ""
+"List of gene names or symbols to analyze for protein-protein interactions. "
+"Th..."
+msgstr "基因名称或符号列表，用于分析蛋白质-蛋白质相互作用。"
+
+#: 0571b6ca96a64f25990cc1060186cec9 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:5
+msgid ""
+"Tissue type for tissue-specific interactions. Examples: 'brain', 'heart', "
+"'li..."
+msgstr "组织类型，用于组织特异性交互。示例：“脑”、“心”、“肝”等。"
+
+#: 0c860a52c6644b8080c26cea14bb2914 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:7
+msgid ""
+"Maximum number of nodes to retrieve in the interaction network. Warning: the"
+" ..."
+msgstr "交互网络中要检索的节点最大数量。警告：..."
+
+#: bae07b3cc7df4c5e80172a991b39f943 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:9
+msgid ""
+"Specific interaction type to filter by. Available types: 'co-expression', "
+"'in..."
+msgstr "用于筛选的特定交互类型。可用类型包括：'共表达'、'in..."
+
+#: 0952ad5ff07c40f4a49f495aa6078b66 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:11
+msgid ""
+"Whether to return the result in string mode. If True, the result will be a "
+"st..."
+msgstr "是否以字符串模式返回结果。如果为 True，结果将以字符串形式返回。"
+
+#: 14e8e4271022479f8424c87a342b20d3 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d78c698ebc754e9f90058f248bc070fa of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4f9f9e9bc9da43c2b896de3dad47e0c1 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.humanbase_ppi_analysis.rst
+#: bfeeaed9371d409999d1d2b67e23be17
+msgid "Return type"
+msgstr "返回类型"
+
+#: 318b3670f76b43189f69419bbcaace67 of
+#: tooluniverse.tools.humanbase_ppi_analysis.humanbase_ppi_analysis:20
+msgid ":py:class:`Any`"
+msgstr ""

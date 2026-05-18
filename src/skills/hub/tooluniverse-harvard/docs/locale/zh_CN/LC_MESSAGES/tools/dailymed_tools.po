@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/dailymed_tools.rst:2 01516f24ae3247fdbb13500fcdced46a
+msgid "Dailymed Tools"
+msgstr "Dailymed 工具"
+
+#: ../../tools/dailymed_tools.rst:4 5c16fd4a8690434390b77c00a0eb2b26
+msgid ""
+"**Configuration File**: ``dailymed_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 2"
+msgstr "**配置文件**：``dailymed_tools.json`` **工具类型**：本地 **工具数量**：2"
+
+#: ../../tools/dailymed_tools.rst:8 432f09e21fff4343b02285145418a8aa
+msgid ""
+"This page contains all tools defined in the ``dailymed_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``dailymed_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/dailymed_tools.rst:11 7055489f6a994daaaa6036ab3d3effee
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/dailymed_tools.rst:14 7f64028ab1134e2cb4a8e922d5fe26d4
+msgid "**DailyMed_get_spl_by_setid** (Type: GetSPLBySetIDTool)"
+msgstr "**DailyMed_get_spl_by_setid**（类型：GetSPLBySetIDTool）"
+
+#: ../../tools/dailymed_tools.rst:16 7abe5c050a9a42d4a4b02d3e8a46cae3
+msgid ""
+"Get complete label corresponding to SPL Set ID, returns content in XML or"
+" JSON format."
+msgstr "获取与SPL Set ID对应的完整标签，以XML或JSON格式返回内容。"
+
+#: ../../tools/dailymed_tools.rst 8fbebf8a8e074001b6967fece3682b95
+msgid "DailyMed_get_spl_by_setid tool specification"
+msgstr "DailyMed_get_spl_by_setid 工具规格"
+
+#: ../../tools/dailymed_tools.rst:20 ../../tools/dailymed_tools.rst:55
+#: 49dc0cb0e8da43d29ec2fc2af929470d e71cb5a22a4e4959bdd86d8ffee4fab4
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/dailymed_tools.rst:22 44ae6f73fcaa4cb899eb8fd68c152d2c
+msgid "**Name**: ``DailyMed_get_spl_by_setid``"
+msgstr "**名称**: ``DailyMed_get_spl_by_setid``"
+
+#: ../../tools/dailymed_tools.rst:23 bca280dfd33d4c31ad14e15145302409
+msgid "**Type**: ``GetSPLBySetIDTool``"
+msgstr "**类型**: ``GetSPLBySetIDTool``"
+
+#: ../../tools/dailymed_tools.rst:24 800cfbe56fc243de95aec8253eecc2a4
+msgid ""
+"**Description**: Get complete label corresponding to SPL Set ID, returns "
+"content in XML or JSON format."
+msgstr "**描述**：获取与SPL Set ID对应的完整标签，返回内容为XML或JSON格式。"
+
+#: ../../tools/dailymed_tools.rst:26 ../../tools/dailymed_tools.rst:61
+#: 93c57817c729420e9c3b2f23265540af ce7132fd4c13458ba94b2cb488d431a7
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/dailymed_tools.rst:28 51aecfbf1a32402bbbfcfaae7a6b025d
+msgid "``setid`` (string) (required) SPL Set ID to query."
+msgstr "``setid``（字符串）（必填）用于查询的 SPL 集合 ID。"
+
+#: ../../tools/dailymed_tools.rst:31 f8af2fc60a204c3abeb89c47554fbbc5
+#, fuzzy
+msgid "``format`` (string) (required) Return format, only supports 'xml'."
+msgstr "``format``（字符串）（可选）返回格式，仅支持“xml”。"
+
+#: ../../tools/dailymed_tools.rst:34 ../../tools/dailymed_tools.rst:87
+#: 6c3e419a19364d628dd1a74cbb6f803b c2280546b659487aad1b1bd95ca415f5
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/dailymed_tools.rst:49 7dec56624ad443c79cdd6b2afec2222f
+msgid "**DailyMed_search_spls** (Type: SearchSPLTool)"
+msgstr "**DailyMed_search_spls**（类型：SearchSPLTool）"
+
+#: ../../tools/dailymed_tools.rst:51 0c2063d84f6942e49fc084a6645232aa
+msgid ""
+"Search SPL list using multiple filter conditions "
+"(drug_name/ndc/rxcui/setid) and return metadata ..."
+msgstr "使用多个筛选条件（drug_name/ndc/rxcui/setid）搜索SPL列表，并返回元数据..."
+
+#: ../../tools/dailymed_tools.rst b99a7bc18abb4f199a8e20616087fc96
+msgid "DailyMed_search_spls tool specification"
+msgstr "DailyMed_search_spls 工具规范"
+
+#: ../../tools/dailymed_tools.rst:57 3dbdf306effb4800afe067b85b7be21f
+msgid "**Name**: ``DailyMed_search_spls``"
+msgstr "**名称**: ``DailyMed_search_spls``"
+
+#: ../../tools/dailymed_tools.rst:58 3c359dfc1409475991700fd390cb61e0
+msgid "**Type**: ``SearchSPLTool``"
+msgstr "**类型**：``SearchSPLTool``"
+
+#: ../../tools/dailymed_tools.rst:59 6b1832bef5cb45348d78f1278b4d1f93
+msgid ""
+"**Description**: Search SPL list using multiple filter conditions "
+"(drug_name/ndc/rxcui/setid) and return metadata + data array."
+msgstr "**描述**：使用多个过滤条件（drug_name/ndc/rxcui/setid）搜索SPL列表，并返回元数据及数据数组。"
+
+#: ../../tools/dailymed_tools.rst:63 b4dedfea5cf34910b3d65394a1ef7b4b
+#, fuzzy
+msgid ""
+"``drug_name`` (string) (required) Generic or brand name of the drug, "
+"e.g., 'TAMSULOSIN HYDROCHLORIDE'."
+msgstr "``drug_name``（字符串）（可选）药物的通用名或商品名，例如，“盐酸坦索罗辛”。"
+
+#: ../../tools/dailymed_tools.rst:66 e0de1b9407764367a48cb20207f2dd15
+#, fuzzy
+msgid "``ndc`` (string) (required) National Drug Code (NDC)."
+msgstr "``ndc``（字符串）（可选）国家药品代码（NDC）。"
+
+#: ../../tools/dailymed_tools.rst:69 8cdb5316484d4e09ad997cca700d2bdb
+#, fuzzy
+msgid "``rxcui`` (string) (required) RxNorm Code (RXCUI)."
+msgstr "``rxcui``（字符串）（可选）RxNorm代码（RXCUI）。"
+
+#: ../../tools/dailymed_tools.rst:72 9973c88853d1497fbb8f2e5d38358e83
+#, fuzzy
+msgid "``setid`` (string) (required) Set ID corresponding to the SPL."
+msgstr "``setid``（字符串）（可选）对应于SPL的设置ID。"
+
+#: ../../tools/dailymed_tools.rst:75 a21f291f3a4148e79291fe372eb69e15
+#, fuzzy
+msgid ""
+"``published_date_gte`` (string) (required) Published date >= specified "
+"date, format 'YYYY-MM-DD'."
+msgstr "``published_date_gte``（字符串）（可选）发布日期 >= 指定日期，格式为“YYYY-MM-DD”。"
+
+#: ../../tools/dailymed_tools.rst:78 ec79973b7ea04574b9db070ce2867d94
+#, fuzzy
+msgid ""
+"``published_date_eq`` (string) (required) Published date == specified "
+"date, format 'YYYY-MM-DD'."
+msgstr "``published_date_eq``（字符串）（可选）发布日期 == 指定日期，格式为“YYYY-MM-DD”。"
+
+#: ../../tools/dailymed_tools.rst:81 e9595be7a47f4e19b219778e20c49369
+#, fuzzy
+msgid ""
+"``pagesize`` (integer) (required) Number of items per page, maximum 100, "
+"default 100."
+msgstr "``pagesize``（整数）（可选）每页显示的条目数，最大值为100，默认值为100。"
+
+#: ../../tools/dailymed_tools.rst:84 e6505e6a26d44c3f8b87d75edc9f7b55
+#, fuzzy
+msgid "``page`` (integer) (required) Page number, starts from 1, default 1."
+msgstr "``page``（整数）（可选）页码，起始值为1，默认值为1。"
+
+#: ../../tools/dailymed_tools.rst:108 a3937d0b466549baaa338e30067e7917
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/dailymed_tools.rst:110 62472132a1074fc782055d85563001d6
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/dailymed_tools.rst:111 15711eea6af942c8a1182c4d5a3c7d19
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

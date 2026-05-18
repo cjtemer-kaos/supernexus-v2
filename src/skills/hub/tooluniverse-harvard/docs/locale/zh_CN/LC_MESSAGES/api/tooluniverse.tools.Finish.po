@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Finish.rst:2 d69a7ab9e3054abf9788933268076d1d
+msgid "tooluniverse.tools.Finish module"
+msgstr "tooluniverse.tools.Finish 模块"
+
+#: 7a9072f21a584a849d28564e0178b7ee of tooluniverse.tools.Finish:1
+msgid "Finish"
+msgstr "完成"
+
+#: 40e79b2287f84951abaab08d5eb19805 4e7e9b1e21f346c9a2560c9de45422f3 of
+#: tooluniverse.tools.Finish:3 tooluniverse.tools.Finish.Finish:1
+msgid "Indicate the end of multi-step reasoning."
+msgstr "指示多步骤推理的结束。"
+
+#: ../../api/tooluniverse.tools.Finish.rst 27510b89d94c4decaef742b6aa6f1835
+msgid "Parameters"
+msgstr "参数"
+
+#: e4f4008b88fc49f38141cbd9abedfa3b of tooluniverse.tools.Finish.Finish:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f8b622e1ac674627ae38bbaf521c8beb of tooluniverse.tools.Finish.Finish:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f943ec0582ca4846b243f1ae74482d53 of tooluniverse.tools.Finish.Finish:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Finish.rst 9089c45465bb45deb651015524ca39e6
+msgid "Return type"
+msgstr "返回类型"
+
+#: c2c59186911a4ece879f84f56a5fe9a6 of tooluniverse.tools.Finish.Finish:11
+msgid ":py:class:`Any`"
+msgstr ""

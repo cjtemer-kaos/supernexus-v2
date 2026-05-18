@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_snp.rst:2
+#: 063313e76cd44cf0a1ea01b917f72a79
+msgid "tooluniverse.tools.gwas\\_get\\_associations\\_for\\_snp module"
+msgstr "tooluniverse.tools.gwas\\_get\\_associations\\_for\\_snp 模块"
+
+#: a1f761bd3af14a9fb5014d68a269f170 of
+#: tooluniverse.tools.gwas_get_associations_for_snp:1
+msgid "gwas_get_associations_for_snp"
+msgstr "gwas_get_associations_for_snp（获取SNP的关联信息）"
+
+#: 06de6d1661af4f3084d58c60225fff8b 405d0b8fda0c410ba7b3b80651fd8c8f of
+#: tooluniverse.tools.gwas_get_associations_for_snp:3
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:1
+msgid "Get all associations for a specific SNP with optional sorting."
+msgstr "获取特定SNP的所有关联，并可选择排序。"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_snp.rst
+#: 8d8285f2d81148d7a1e8753a68adc83e
+msgid "Parameters"
+msgstr "参数"
+
+#: 0e5c6116a31f412d93eebf79c80ba15e of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:3
+msgid "dbSNP rs identifier"
+msgstr "dbSNP rs标识符"
+
+#: 6f5aa729d6ef40fb99f32376980d593a of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:5
+msgid "Sort field (e.g., 'p_value', 'or_value')"
+msgstr "排序字段（例如：'p_value'、'or_value'）"
+
+#: 83e401e9650542979c1c587c751b60f8 of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:7
+msgid "Sort direction ('asc' or 'desc')"
+msgstr "排序方向（“asc” 或 “desc”）"
+
+#: fe9da8554ce44c21ae8725e07ff141a3 of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:9
+msgid "Number of results to return per page"
+msgstr "每页返回结果的数量"
+
+#: 53e3ff61b085465c968712fb180fcfd7 of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:11
+msgid "Page number for pagination"
+msgstr "分页页码"
+
+#: 74b6e6c985024d719e1ba58339ccf197 of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ea8bc0c44f9740f3a31a60b3ca342b3c of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 912080289ad2410eb00b2e6f95455ced of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_snp.rst
+#: a611ae26a27b4e5498d82242df024dc5
+msgid "Return type"
+msgstr "返回类型"
+
+#: a844867fd0d540e497f907116ce80203 of
+#: tooluniverse.tools.gwas_get_associations_for_snp.gwas_get_associations_for_snp:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

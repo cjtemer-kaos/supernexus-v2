@@ -1,0 +1,16 @@
+{
+  "name": "devops",
+  "version": "2.0.0",
+  "description": "Orquestador de Docker, Tailscale y despliegues",
+  "main": "src.agents.devops_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:deploy", "onCommand:docker", "onCommand:infra"],
+  "semanticKeywords": ["deploy", "docker", "container", "kubernetes", "tailscale", "ci", "cd", "pipeline", "infrastructure", "cloud"],
+  "category": "infrastructure",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 300,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

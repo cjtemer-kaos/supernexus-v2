@@ -1,0 +1,678 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:1
+#: d6a7f264cd3a4028aefab7681ee8916b
+msgid "在 ToolUniverse 中添加 MCP 工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:3
+#: e2ae98923b7149bf822f9b73a52bfdc7
+msgid ""
+"本教程将指导你如何在 ToolUniverse 中集成 Model Context Protocol (MCP) 工具。ToolUniverse "
+"提供了多种方式来连接和使用 MCP 服务器的工具。"
+msgstr ""
+"本教程将指导您如何在 ToolUniverse 中集成 Model Context Protocol (MCP) 工具。ToolUniverse "
+"提供多种方式来连接和使用 MCP 服务器的工具。"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:5
+#: 0a6db970f00549fcb71c8a182586d6cf
+msgid "目录"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:7
+#: 0a7dff4825034d56beaf860ac6405c05
+msgid "[MCP 工具类型概述](#mcp-工具类型概述)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:8
+#: ea81a3b87d734a1e99d2f4110e93eb8a
+msgid "[配置 MCP 客户端工具](#配置-mcp-客户端工具)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:9
+#: cd5fb2a043c74d369fc74d5975252fc0
+msgid "[使用自动加载器](#使用自动加载器)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:10
+#: 08e01e5cc1064f94a82361d1ad9e2514
+msgid "[智能体工具配置](#智能体工具配置)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:11
+#: 0b7d752386cd4ea780c7129bb6df1d98
+msgid "[高级配置选项](#高级配置选项)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:12
+#: c440473d82e7447e9c0324b800ce0a3d
+msgid "[故障排除](#故障排除)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:14
+#: 5ff235877a5d4c9899cf9d2d0e5e6921
+msgid "MCP 工具类型概述"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:16
+#: 5af480290f6e420699f7b4f94d7ecc8b
+msgid "ToolUniverse 支持三种主要的 MCP 工具类型："
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:18
+#: 59eef54a7e534eeba87e98e00b62dfd1
+msgid "1. MCPClientTool"
+msgstr "1. MCP客户端工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:19
+#: 762951daa1a449f8962d15280b4359e2
+msgid "**用途**: 通用的 MCP 客户端，支持所有 MCP 操作"
+msgstr "**用途**：通用的 MCP 客户端，支持所有 MCP 操作"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:20
+#: e7c2eb431c494a979fd9dc81f8e1b1ce
+msgid "**特点**: 手动配置，精确控制"
+msgstr "**特点**：手动配置，精确控制"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:21
+#: c0019290e2b5416fb99cccc0018f77e4
+msgid "**适用场景**: 需要访问多种 MCP 功能（工具、资源、提示）"
+msgstr "**适用场景**：需要访问多种 MCP 功能（工具、资源、提示）"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:23
+#: aa238925b44147cbaeb3a8cf456936a0
+msgid "2. MCPAutoLoaderTool"
+msgstr "2. MCP自动加载工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:24
+#: 26ff4ef73fab44268811fe329a30f4f1
+msgid "**用途**: 自动发现并加载 MCP 服务器上的所有工具"
+msgstr "**用途**：自动发现并加载 MCP 服务器上的所有工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:25
+#: bafa265802444eefb33e9d34a6c878e8
+msgid "**特点**: 自动化配置，批量加载"
+msgstr "**特点**：自动化配置，批量加载"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:26
+#: d8494b05736c4e84b62745e9253a8819
+msgid "**适用场景**: 快速集成整个 MCP 服务器的工具集"
+msgstr "**适用场景**：快速集成整个 MCP 服务器的工具集"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:28
+#: f72e992ecb884d65a4dda9a38ad5e566
+msgid "3. MCPProxyTool"
+msgstr ""
+"3. MCPProxyTool\n"
+"\n"
+"3. MCPProxyTool"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:29
+#: 0d4359626bbc43e8835d0e9898bf7e18
+msgid "**用途**: 为特定的 MCP 工具创建直接智能体"
+msgstr "**用途**：为特定的 MCP 工具创建直接智能体"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:30
+#: 94b335a5d7dd423486b47b612f110828
+msgid "**特点**: 一对一映射，透明转发"
+msgstr "**特点**：一对一映射，透明转发"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:31
+#: ac1a48585df24e328cddfbca39a192e3
+msgid "**适用场景**: 将单个 MCP 工具集成为 ToolUniverse 工具"
+msgstr "**适用场景**：将单个 MCP 工具集成至 ToolUniverse 工具中"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:33
+#: c04696235ea14dec9c0312b3418f83ac
+msgid "配置 MCP 客户端工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:35
+#: d9f0b908dbd344a58727079b56a6ab57
+msgid "基本配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:37
+#: a0fcd68fc8084788bd5f24d2d8d80348
+msgid "创建一个通用的 MCP 客户端工具配置："
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:81
+#: 82bc9f906e3942e38073e95dad7f0482
+msgid "使用示例"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:102
+#: 10eb072cb81a4736a3445cda4f83c1f1
+msgid "使用自动加载器"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:104
+#: d9ca1256afe74f69888c27b00cbad2b1
+msgid "基本自动加载器配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:119
+#: 1f46e373ace84b50aa08127aaf2829a9
+msgid "高级自动加载器配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:135
+#: 558f0d8e94fc4c65a477bdeb1ba975a9
+msgid "配置选项说明"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 0632b713a6ab440a99d68bfef92ab349
+msgid "参数"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 9ac0ecea4edf42d5989ad9952c114f52
+msgid "类型"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: a9a52a394c314f79861ced09a51102cf
+msgid "默认值"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: e5175ca899eb45699318fc545270f848
+msgid "描述"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 829050bc35304aa8b201363586010c9f
+msgid "`server_url`"
+msgstr "服务器地址"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 094793dc05154ad68800664eeac2d33d e40b3188c127438080e70298880d4fcb
+#: ec9f72e793a24fa7b8fd4b461966b36e
+msgid "string"
+msgstr "字符串"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 0aa713e722874406a76ed81f4bf6be81
+msgid "-"
+msgstr "请提供需要翻译的英文文本。"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: c48e23d614d34e2887925e1918c7926f
+msgid "MCP 服务器 URL"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 765ddfefa3794991a97658ecdcff27d8
+msgid "`transport`"
+msgstr "传输"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 903cc0316985404b81c391733d691157
+msgid "\"http\""
+msgstr "http"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 36f0f05abd474de5a55afa2546bb4700
+msgid "传输协议（http/websocket）"
+msgstr "传输协议（HTTP/WebSocket）"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: bdef63337aaa418caf8cb74ba115eaf4
+msgid "`auto_register`"
+msgstr "自动注册"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: c25a3b1a168e4209a52826dfa6402d88
+msgid "boolean"
+msgstr "布尔型"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: cdf096b6b8cd409aac618c45f4d2d62e
+msgid "true"
+msgstr "真"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 9a9090fe084a4c9fadb0e64dc230cb1d
+msgid "是否自动注册发现的工具"
+msgstr "是否自动注册已发现的工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: b68d04050fa24a089c718af7f32c2718
+msgid "`tool_prefix`"
+msgstr "工具前缀"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 4acf4734128d48bb82d0af9ed149d3ca
+msgid "\"mcp_\""
+msgstr "mcp_"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 9da9beda4b04460489d8e53487599395
+msgid "工具名称前缀"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 07d5729b525d4925a8294bafbf75e5d0
+msgid "`selected_tools`"
+msgstr "已选择的工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 5296cf562fcb4c03b57cb19279dad9ae
+msgid "array"
+msgstr "数组"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: ac90428344fa43af9ace367ceb2468fe
+msgid "null"
+msgstr "空"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 9e3fa634555d4e5fbf4fe8e16616fd0c
+msgid "要加载的特定工具列表"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 2031a528db4346ec933ae2d4c5d2314c
+msgid "`timeout`"
+msgstr "超时"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: c7097196b269472ca44dc737b6371e52
+msgid "integer"
+msgstr "整数"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: 4cddde4fbe784a7b81088a9555f7eef7
+msgid "30"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md
+#: ab89e004117f416993c90fabe89d8ca5
+msgid "请求超时时间（秒）"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:146
+#: ce9ddaba1f774b87aeeeb6dcf32265cb
+msgid "使用自动加载器进行工具发现"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:167
+#: 24675489b2c84c94bd28fa7cea7ca255
+msgid "智能体工具配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:169
+#: 985d4df7459e43fd878ab8374853171e
+msgid "手动创建智能体工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:192
+#: e6d26b9c8dfd465d8c84e7aeed27b346
+msgid "批量创建智能体工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:194
+#: fa3813cea6e144ccbbb21027c446abd1
+msgid "使用 `MCPServerDiscovery` 类批量发现和创建智能体工具："
+msgstr "使用 `MCPServerDiscovery` 类批量发现并创建智能体工具："
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:216
+#: 55af0e4c2dbe443689cbb74f7d70f182
+msgid "高级配置选项"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:218
+#: 560dcba3d01b4df6b302239db06ed8b7
+msgid "支持的传输协议"
+msgstr "Supported Transmission Protocols"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:220
+#: 3f608e206b4e4f9c8e894d5f6e27834d
+msgid "HTTP 传输"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:228
+#: cdaa0fe39286440aaeac3e15235e3246
+msgid "WebSocket 传输"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:236
+#: a2d6b3a57f414b52bc4a7a5e59ac4c4d
+msgid "环境变量支持"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:238
+#: dfa7237760c74587a315b87819a70a65
+msgid "配置中可以使用环境变量："
+msgstr "在配置中可以使用环境变量："
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:247
+#: 3a9fc330dca44dbf96c91dcd017e7f5c
+msgid "错误处理和重试"
+msgstr "错误处理与重试"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:260
+#: 5149ff0fffbf4bcc93aaa56c1b495cfc
+msgid "配置文件组织"
+msgstr "配置文件组织结构"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:262
+#: df5eef0367a54135920e3b3bf0d9801a
+msgid "推荐的目录结构"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:272
+#: 9f5a226216634341b460af0a3aaf8a28
+msgid "模块化配置示例"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:274
+#: 7f62cd737fce48a483c2d8315c67354d
+msgid "`expert_feedback_tools.json`:"
+msgstr "`expert_feedback_tools.json`："
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:315
+#: 603ba3c036b046ad86a73dcf3f4751d4
+msgid "实际应用示例"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:317
+#: 272304d88657411cba37efaa7181235a
+msgid "示例 1: 医疗专家咨询系统"
+msgstr "示例 1：医疗专家咨询系统"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:340
+#: f6bf5928869548f5b59cf6807e1d8dcd
+msgid "示例 2: 数据分析工具集"
+msgstr "示例 2：数据分析工具集"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:363
+#: c58c1437319a4339b608334aaa589bed
+msgid "故障排除"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:365
+#: df2b8a0cb0e2470e96db2c5c4e206f45
+msgid "常见问题和解决方案"
+msgstr "常见问题及解决方案"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:367
+#: aec0e4dbc6be499aa134281e38f8b749
+msgid "1. 连接超时"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:372
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:382
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:391
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:401
+#: 6fae702bd1f542b6ab9e775a618d3969 7b7d2d487d0b460d9e7513f707893d62
+#: ec754dd6183d435995bd97ef856a2e0d fdd2310e23e84d0293e637f2704d9b78
+msgid "**解决方案**:"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:373
+#: 26777c22d22f4d40a127eafe58efad0c
+msgid "增加 `timeout` 值"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:374
+#: f997129caadb4fa5a0ffc57f441143ec
+msgid "检查网络连接"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:375
+#: 2feaec908b834077b8293ddca7111328
+msgid "验证服务器 URL"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:377
+#: 3e930286b3eb458aa6e4246ab780f6e6
+msgid "2. 传输协议不匹配"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:383
+#: 57c5c81fe2d242f49b6452de51f54491
+msgid "确保 `transport` 设置为 \"http\" 或 \"websocket\""
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:384
+#: 1ac02a666024439abe4df8b465f23a25
+msgid "检查服务器支持的协议"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:386
+#: 736e20e5dfea4983970063817fc2de12
+msgid "3. 工具未找到"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:392
+#: 8583f2f0dd964d76a4b45418d4902365
+msgid "使用 `list_tools` 操作查看可用工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:393
+#: 8a291e1b1f25460e9fa0117a9c28be3b
+msgid "检查工具名称拼写"
+msgstr "检查工具名称的拼写"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:394
+#: 2d0d7eb3007543129f387e240e6b0a0c
+msgid "确认服务器已启动并运行"
+msgstr "确认服务器已启动并正常运行"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:396
+#: 7987476bc09549b697cd7b41377d98c6
+msgid "4. 参数验证失败"
+msgstr "4. 参数验证未通过"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:402
+#: e700c1bd8afc4e3c8da1dba2f91f35ba
+msgid "检查工具的参数 schema"
+msgstr "检查工具的参数架构"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:403
+#: adec7929d59a4799903bbaed58868b9b
+msgid "确保提供所有必需参数"
+msgstr "确保提供所有必要参数"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:404
+#: e239d8e1b1d147ee91401196de63f580
+msgid "验证参数数据类型"
+msgstr "验证参数的数据类型"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:406
+#: 59fdd1ad8ad745f6b672fcfcc7279ac5
+msgid "调试技巧"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:408
+#: 058ff342cc3b488988f5f832ca0d0c93
+msgid "启用详细日志"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:416
+#: 2fd97bb203de4dceab200a7c2eeb1523
+msgid "测试连接"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:429
+#: 76b3d83c2b7b40ae86c1949918147182
+msgid "验证工具配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:440
+#: 684d42f1d74043f3a9dd4befd0a65f73
+msgid "最佳实践"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:442
+#: 530cb4e24b8d4a42bb8034b6698f8348
+msgid "1. 安全考虑"
+msgstr "1. 安全注意事项"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:443
+#: e5a7beb48a3a40bf9114b59e81588046
+msgid "使用 HTTPS 连接生产环境的 MCP 服务器"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:444
+#: 3f1101333d63489d89e6c1963a794e63
+msgid "配置适当的超时值避免长时间等待"
+msgstr "配置适当的超时值以避免长时间等待"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:445
+#: 36b215aff0c94ee996e2e86d177dc67a
+msgid "验证所有输入参数"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:447
+#: e2c01f8959ac4ac7937acef7dfb51b1b
+msgid "2. 性能优化"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:448
+#: bfb813f32133437181500a2d1e138fbc
+msgid "为频繁使用的工具启用缓存"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:449
+#: 746c4d7b941e46c7950ec2b34beaf895
+msgid "合理设置 `timeout` 值"
+msgstr "合理设置 `timeout` 参数值"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:450
+#: 9a3631e9285f456289159de06ceabfcd
+msgid "使用 `selected_tools` 只加载需要的工具"
+msgstr "使用 `selected_tools` 仅加载所需工具"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:452
+#: c866d230c436440e9a6508b8e05c42b0
+msgid "3. 错误处理"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:453
+#: dd49d41c3a2c40a18cf7ae8e44cc333b
+msgid "始终检查返回结果中的 `error` 字段"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:454
+#: dc21cc68128b460d9ccaeabd8092aee1
+msgid "实现重试机制处理临时网络问题"
+msgstr "实现重试机制以处理临时网络问题"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:455
+#: e1cd8f897fc34274b78cf721e1efd270
+msgid "记录详细的错误信息便于调试"
+msgstr "记录详细的错误信息以便调试"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:457
+#: 6c6ed1b0da864b6394ea48344903b5d5
+msgid "4. 配置管理"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:458
+#: 0bbbaa81e88a4919af7c0ef6db34c8a2
+msgid "使用环境变量管理敏感配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:459
+#: 1f77f882419e4ca0af5c3ce8329b3b0a
+msgid "将配置文件按功能模块组织"
+msgstr "将配置文件按功能模块进行组织"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:460
+#: 9ae9161ec8e14c719ae54ea6f7940d48
+msgid "定期更新和验证配置"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:462
+#: 262d15d2e2184cbc819198c3ef483fe6
+msgid "总结"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:464
+#: 9d5e3d3ed9f54530a0c6a4a66aa1d5b3
+msgid "通过本教程，你已经学会了："
+msgstr "通过本教程，您已经学会了："
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:466
+#: 5ccb8b2a3b184fd8b92d87b4c3f66c7a
+msgid "✅ 理解三种 MCP 工具类型的用途和特点"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:467
+#: 6cbd152d390942188dec5fa415f6aeee
+msgid "✅ 配置和使用 MCPClientTool 进行通用 MCP 操作"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:468
+#: bc177f0a22764554b666c157668328fc
+msgid "✅ 使用 MCPAutoLoaderTool 自动发现和加载工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:469
+#: e30e8a60e4c24b8c99244be78dab7736
+msgid "✅ 创建 MCPProxyTool 进行直接工具智能体"
+msgstr "✅ 创建 MCPProxyTool 以实现直接工具智能体"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:470
+#: f827d54ea3f844899cca7584ffed0480
+msgid "✅ 处理常见问题和故障排除"
+msgstr "✅ Troubleshooting常见问题和故障排除"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:471
+#: 7c8d4e2ba18343008206e151c65cace0
+msgid "✅ 应用最佳实践确保安全和性能"
+msgstr "✅ 应用最佳实践以确保安全性和性能"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:473
+#: 9d497ea26fe241b1bfa2c07a13e9179f
+msgid "现在你可以将任何 MCP 服务器的工具集成到 ToolUniverse 中，扩展你的工具生态系统！"
+msgstr "现在，您可以将任何 MCP 服务器的工具集成到 ToolUniverse 中，扩展您的工具生态系统！"
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:475
+#: 43681ac98494412bb059aeb04a5a9d40
+msgid "参考资源"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:477
+#: 93c5f3b66afb41ebb0d6a796b2433500
+msgid "[MCP 协议规范](https://spec.modelcontextprotocol.io/)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:478
+#: aaf630fcb3f24e55b1197a8d99b0a72b
+msgid "[ToolUniverse 官方文档](../README.md)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:479
+#: 86dc91b306924ea89557f5f3f52f2d4b
+msgid "[MCP 工具配置示例](../../data/mcp_client_tools.json)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/adding_mcp_tools.md:480
+#: 986583527ff04eb19f01db4724436af0
+msgid "[API 参考文档](../../api/mcp_tools.rst)"
+msgstr ""

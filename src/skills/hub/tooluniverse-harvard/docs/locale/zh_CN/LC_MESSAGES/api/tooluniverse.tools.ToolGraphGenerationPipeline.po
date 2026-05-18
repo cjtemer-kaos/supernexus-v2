@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolGraphGenerationPipeline.rst:2
+#: 18e090184ac34869adaad79faa2e23f8
+msgid "tooluniverse.tools.ToolGraphGenerationPipeline module"
+msgstr "tooluniverse.tools.ToolGraphGenerationPipeline 模块"
+
+#: 7624b5a2be8c4540b781538fc38eb682 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline:1
+msgid "ToolGraphGenerationPipeline"
+msgstr "工具图生成管道"
+
+#: b49d54e3810a403e894751fa60b685bb d88c004c8384493bbb6cf41b56b70841 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline:3
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:1
+msgid ""
+"Generates a directed tool relationship graph among provided tool configs "
+"using ToolRelationshipDe..."
+msgstr "生成一个基于提供的工具配置的有向工具关系图，使用ToolRelationshipDe..."
+
+#: ../../api/tooluniverse.tools.ToolGraphGenerationPipeline.rst
+#: b2fde6c89413425db9e289855794433c
+msgid "Parameters"
+msgstr "参数"
+
+#: 201c63750d104745aef4ba072cb71bb5 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:3
+msgid "List of tool configuration objects"
+msgstr "工具配置对象列表"
+
+#: f97b0fd54a3d4a60b7601c74634fdd5b of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:5
+msgid "Optional max number of tools to process (debug)"
+msgstr "可选的最大处理工具数量（调试）"
+
+#: 692b1eef0a9244e7a1a2ecd31b2a4bbb of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:7
+msgid "Path for output graph JSON"
+msgstr "输出图表 JSON 的路径"
+
+#: ea881f546696400e86a875237fda8380 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:9
+msgid "Checkpoint every N processed pairs"
+msgstr "每处理 N 对数据后进行检查点"
+
+#: 96add02fbd23468d84f3c74f359d5896 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9daa7007c8a74ed2a8580a980fe5096a of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 109eec91c5a84c918556b69729f7cbef of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolGraphGenerationPipeline.rst
+#: 578266cdbb7c4110be752a92b9af7240
+msgid "Return type"
+msgstr "返回类型"
+
+#: 534b61c97dd6435e91b87c43f6e04a74 of
+#: tooluniverse.tools.ToolGraphGenerationPipeline.ToolGraphGenerationPipeline:18
+msgid ":py:class:`Any`"
+msgstr ""

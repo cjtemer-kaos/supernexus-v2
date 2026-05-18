@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_scikit_image_info.rst:2
+#: bc0026bb35514aafbefe5776a5100d0d
+msgid "tooluniverse.tools.get\\_scikit\\_image\\_info module"
+msgstr "tooluniverse.tools.get\\_scikit\\_image\\_info 模块"
+
+#: a6b6e11a5fe44bbda0eb1a08a5c436cc of
+#: tooluniverse.tools.get_scikit_image_info:1
+msgid "get_scikit_image_info"
+msgstr "get_scikit_image_info 获取scikit图像信息"
+
+#: 5a553b597db84c079e9cfc838fed7b01 60fea7414c214f558ae7c0d916e6eebd of
+#: tooluniverse.tools.get_scikit_image_info:3
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:1
+msgid ""
+"Get comprehensive information about scikit-image – image processing in "
+"Python"
+msgstr "获取关于 scikit-image 的全面信息——Python 中的图像处理"
+
+#: ../../api/tooluniverse.tools.get_scikit_image_info.rst
+#: 69e07c8c7faa4a4e98b7941dd5159b79
+msgid "Parameters"
+msgstr "参数"
+
+#: 2b6d46b95c67420ab56fd04153365e3c of
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:3
+msgid "Type of information to retrieve about scikit-image"
+msgstr "关于 scikit-image 可检索的信息类型"
+
+#: b333ccc03a764d8eadede573e9a911bd of
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fe9046dda1164b19acdabb6b428ef8ba of
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: edd6d501b91c45108c5decfbc8024c91 of
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_scikit_image_info.rst
+#: 3506fcffff9543f8a57497867dc55a29
+msgid "Return type"
+msgstr "返回类型"
+
+#: 540e2bb8f8fd4492b815089a769053ac of
+#: tooluniverse.tools.get_scikit_image_info.get_scikit_image_info:12
+msgid ":py:class:`Any`"
+msgstr ":py:class:`任意`"

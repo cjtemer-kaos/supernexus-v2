@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolOptimizer.rst:2
+#: 1a3bec9cc6f34a5ea0f3d207dd6903a0
+msgid "tooluniverse.tools.ToolOptimizer module"
+msgstr "tooluniverse.tools.ToolOptimizer 模块"
+
+#: 84b24819affa452fb1afdc5704e213db of tooluniverse.tools.ToolOptimizer:1
+msgid "ToolOptimizer"
+msgstr "工具优化器"
+
+#: 1e2cdf7a6766434c95025e870f6ef703 a7dcd6a214924dcc9494109e410f67de of
+#: tooluniverse.tools.ToolOptimizer:3
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:1
+msgid ""
+"Optimizes tool configurations based on quality feedback. Improves tool "
+"specifications and impleme..."
+msgstr "根据质量反馈优化工具配置。改进工具规格并实施..."
+
+#: ../../api/tooluniverse.tools.ToolOptimizer.rst
+#: 20fc0a495cfc42db8f9211fc6ac5d981
+msgid "Parameters"
+msgstr "参数"
+
+#: 7cc47248d72e4dca8b04403e96c5969a of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:3
+msgid "JSON string of the original tool configuration"
+msgstr "原始工具配置的JSON字符串"
+
+#: 086c412296fe498ab8ea88a0e699be51 of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:5
+msgid "JSON string of quality evaluation feedback"
+msgstr "质量评估反馈的JSON字符串"
+
+#: b454746ea7024a16b5bc1a5475c20812 of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:7
+msgid "What to optimize for (improve_quality, enhance_performance, etc.)"
+msgstr "优化目标（提高质量、增强性能等）"
+
+#: 1af46f0dc586488596652d7f087c3680 of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3dd32850cef942cfa2af66322b2bbbae of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 76380a572112471299c372fb62134593 of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolOptimizer.rst
+#: 3a72a65a0ab04380abef86911b64038f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 864ddecf77aa4a949995ed8973731d2b of
+#: tooluniverse.tools.ToolOptimizer.ToolOptimizer:16
+msgid ":py:class:`Any`"
+msgstr ""

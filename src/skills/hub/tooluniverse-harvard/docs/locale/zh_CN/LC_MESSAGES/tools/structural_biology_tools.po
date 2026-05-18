@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/structural_biology_tools.rst:2 b27e35feeeec41a1be6a28bc8da6db28
+msgid "Structural Biology Tools"
+msgstr "结构生物学工具"
+
+#: ../../tools/structural_biology_tools.rst:4 1840519567234e099af28b1a0c1c484c
+msgid ""
+"**Configuration File**: ``packages/structural_biology_tools.json`` **Tool"
+" Type**: Local **Tools Count**: 12"
+msgstr ""
+"**配置文件**: ``packages/structural_biology_tools.json`` **工具类型**: 本地 "
+"**工具数量**: 12"
+
+#: ../../tools/structural_biology_tools.rst:8 e98bed34f40c48e8b3e5f1ecb68b11c6
+msgid ""
+"This page contains all tools defined in the "
+"``structural_biology_tools.json`` configuration file."
+msgstr "本页面包含在``structural_biology_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/structural_biology_tools.rst:11 47f3d15bc0c142629417e03b209c4956
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/structural_biology_tools.rst:14 671a2884f6c54ecfa555aaa0161e0faa
+msgid "**get_ase_info** (Type: PackageTool)"
+msgstr "**get_ase_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:16 996d40c8658240d38940c13a592db1f2
+msgid ""
+"Get comprehensive information about ASE (Atomic Simulation Environment) –"
+" a toolkit for building,..."
+msgstr "获取关于ASE（原子模拟环境）的全面信息——一个用于构建、..."
+
+#: ../../tools/structural_biology_tools.rst 399113b6eaf74e8b87f984bb91f964af
+msgid "get_ase_info tool specification"
+msgstr "get_ase_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:20
+#: ../../tools/structural_biology_tools.rst:51
+#: ../../tools/structural_biology_tools.rst:82
+#: ../../tools/structural_biology_tools.rst:113
+#: ../../tools/structural_biology_tools.rst:144
+#: ../../tools/structural_biology_tools.rst:173
+#: ../../tools/structural_biology_tools.rst:202
+#: ../../tools/structural_biology_tools.rst:233
+#: ../../tools/structural_biology_tools.rst:262
+#: ../../tools/structural_biology_tools.rst:291
+#: ../../tools/structural_biology_tools.rst:322
+#: ../../tools/structural_biology_tools.rst:351
+#: 27796ab23194402db881a7854b279640 5ab5d9c680b34992beb7f8e0aaa31cf9
+#: 69ee7348cebf4934b72278ecdb94fc42 87535f4e1c50435fad1f2b7f3d4ec4f2
+#: 9daa0e114d014c67874ac521e57b776b a98fa0763e674e00876dfc932f6d8231
+#: c05f91d0e29f4c7fadd475af53fa5580 c228f5ea117e4cba81f73b5a55b993b3
+#: d261366dea7647b0b63dbbec98606bc0 d56c2a56f4ff4621b7b53e8ccfc4720e
+#: e8d32b53d14c4cbca1c0860f3492b080 f00e7115eadb43249d8b840a0db77145
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/structural_biology_tools.rst:22 816da46875fe43f9ac2a07183ebdd4c5
+msgid "**Name**: ``get_ase_info``"
+msgstr "**名称**: ``get_ase_info``"
+
+#: ../../tools/structural_biology_tools.rst:23
+#: ../../tools/structural_biology_tools.rst:54
+#: ../../tools/structural_biology_tools.rst:85
+#: ../../tools/structural_biology_tools.rst:116
+#: ../../tools/structural_biology_tools.rst:147
+#: ../../tools/structural_biology_tools.rst:176
+#: ../../tools/structural_biology_tools.rst:205
+#: ../../tools/structural_biology_tools.rst:236
+#: ../../tools/structural_biology_tools.rst:265
+#: ../../tools/structural_biology_tools.rst:294
+#: ../../tools/structural_biology_tools.rst:325
+#: ../../tools/structural_biology_tools.rst:354
+#: 06f44eab0b054f4899bf7b08542e2e6c 0bca5f23bfac425ab6abb248e636c2d3
+#: 0c7e3b5624f5444e80692c76a38acb67 190265135e7c45fe970abdd67cef403c
+#: 40208191de1e4eae8b4258a53df0ba43 5f217b50b83141e29cd97ae21db36417
+#: 6695671f7a954691a949be846c6260cf c122288d28994cdd937d01ec07ed45f3
+#: c655cb53e8df45b9849535d8b7dde443 d540df7d772f42a28397c6a11399a9d8
+#: e9dde07cded44dd99667145f9055b432 f45dc68faefa48e8852639d14107f060
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**: ``PackageTool``"
+
+#: ../../tools/structural_biology_tools.rst:24 3bf4867dee2d4c5fb947433262541f03
+msgid ""
+"**Description**: Get comprehensive information about ASE (Atomic "
+"Simulation Environment) – a toolkit for building, running and analysing "
+"atomistic simulations."
+msgstr "**描述**：获取有关 ASE（原子模拟环境）的全面信息——一个用于构建、运行和分析原子级模拟的工具包。"
+
+#: ../../tools/structural_biology_tools.rst:26
+#: ../../tools/structural_biology_tools.rst:57
+#: ../../tools/structural_biology_tools.rst:88
+#: ../../tools/structural_biology_tools.rst:119
+#: ../../tools/structural_biology_tools.rst:150
+#: ../../tools/structural_biology_tools.rst:179
+#: ../../tools/structural_biology_tools.rst:208
+#: ../../tools/structural_biology_tools.rst:239
+#: ../../tools/structural_biology_tools.rst:268
+#: ../../tools/structural_biology_tools.rst:297
+#: ../../tools/structural_biology_tools.rst:328
+#: ../../tools/structural_biology_tools.rst:357
+#: 38ef60b889e849bfacb5d96c0493b3ca 45a1d499661b428a9d16315be4bdbfd3
+#: 5e24942700574a249be25495dd35c3fb 8e11b9dbcda24e3999c44478ca10bbd8
+#: a7eda791f7b443e28d5e99ec6322036f ad1a751b55bd44ce918cb15bb80d856e
+#: b01ac24ffc65418e98de1fa83c302dd6 b63599552d404d5691c0c524858c71eb
+#: cb2231868d6f4608b9af44b013695b03 dbd6b9f6d32c47078bc2874d01a4be91
+#: e4e8ef6bd0234828b1decf137c2c8fcd ea09de89144042bd9eecf8e990066ec7
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/structural_biology_tools.rst:28
+#: ../../tools/structural_biology_tools.rst:59
+#: ../../tools/structural_biology_tools.rst:299
+#: ../../tools/structural_biology_tools.rst:359
+#: 8f2bc2e05b174856958b0599fff93383 9be8638426b94ff783e07e373d93f41b
+#: c7fb4e406586460aa244a8aa86b2bb63 fa5f1778052346449b4c6037ec1200c1
+#, fuzzy
+msgid ""
+"``include_examples`` (boolean) (required) Whether to include usage "
+"examples and quick start guide"
+msgstr "``include_examples``（布尔值）（可选）是否包含使用示例和快速入门指南"
+
+#: ../../tools/structural_biology_tools.rst:31
+#: ../../tools/structural_biology_tools.rst:62
+#: ../../tools/structural_biology_tools.rst:93
+#: ../../tools/structural_biology_tools.rst:124
+#: ../../tools/structural_biology_tools.rst:154
+#: ../../tools/structural_biology_tools.rst:183
+#: ../../tools/structural_biology_tools.rst:213
+#: ../../tools/structural_biology_tools.rst:243
+#: ../../tools/structural_biology_tools.rst:272
+#: ../../tools/structural_biology_tools.rst:302
+#: ../../tools/structural_biology_tools.rst:332
+#: ../../tools/structural_biology_tools.rst:362
+#: 1d0e14adbcb3471cb865221512bb54e2 377852eb440041f092e273557ce1e4e8
+#: 3d0162807c724e2fbe716709e5a7d554 3e61cb66fc44450ba3000ef5ffdbe62c
+#: 7cd1f8bcea874033abe055c056d396a5 8349f1953d774ab49c0c808a97876209
+#: 90f5c8d2e8994162a75b0750688ae174 9d2f729c6b58411e8953947969715c01
+#: a2b46cf893314a72ad28704aec5efa11 a370ad04c2134c30974e521afc30bdae
+#: abccf7bfd9f243fabadf45b9c5185437 af5e271d9e7f4aff8a475c3b14af9531
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/structural_biology_tools.rst:45 222f9df84e704d41aea6dfd5c4d5ecb8
+msgid "**get_biopandas_info** (Type: PackageTool)"
+msgstr "**get_biopandas_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:47 710cd0ca50374535a48b1f79f1f6afa9
+msgid ""
+"Get comprehensive information about BioPandas – pandas-based molecular "
+"structure analysis"
+msgstr "获取有关 BioPandas 的全面信息 —— 基于 pandas 的分子结构分析"
+
+#: ../../tools/structural_biology_tools.rst 6b49f58eba444610a69c277a241129df
+msgid "get_biopandas_info tool specification"
+msgstr "get_biopandas_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:53 4065a6278cfa4d248e0cedf01a46583f
+msgid "**Name**: ``get_biopandas_info``"
+msgstr "**名称**: ``get_biopandas_info``"
+
+#: ../../tools/structural_biology_tools.rst:55 22655e57e8434641b9c02d30ea6c79ea
+msgid ""
+"**Description**: Get comprehensive information about BioPandas – pandas-"
+"based molecular structure analysis"
+msgstr "**描述**：获取关于 BioPandas 的全面信息——基于 pandas 的分子结构分析"
+
+#: ../../tools/structural_biology_tools.rst:76 bcd222f0d84e4368bf37ec913a0e44e3
+msgid "**get_descriptastorus_info** (Type: PackageTool)"
+msgstr "**get_descriptastorus_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:78 db2b2779c8c242b3aaecb6ca0d4d4e1f
+msgid ""
+"Get comprehensive information about Descriptastorus – molecular "
+"descriptor calculation"
+msgstr "获取有关 Descriptastorus 的全面信息——分子描述符计算"
+
+#: ../../tools/structural_biology_tools.rst be6591a286b8413dacbb1e1a2c383e51
+msgid "get_descriptastorus_info tool specification"
+msgstr "get_descriptastorus_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:84 bad09f8d0ba9465f868a75645d6f4084
+msgid "**Name**: ``get_descriptastorus_info``"
+msgstr "**名称**: ``get_descriptastorus_info``"
+
+#: ../../tools/structural_biology_tools.rst:86 aa30fb44cb574f7e958cd753617190d8
+msgid ""
+"**Description**: Get comprehensive information about Descriptastorus – "
+"molecular descriptor calculation"
+msgstr "**描述**：获取有关 Descriptastorus 的全面信息——分子描述符计算"
+
+#: ../../tools/structural_biology_tools.rst:90 8494e354fd344bd2b73d24c3dc23f99a
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"Descriptastorus"
+msgstr "``info_type``（字符串）（必填）要检索的关于 Descriptastorus 的信息类型"
+
+#: ../../tools/structural_biology_tools.rst:107
+#: 75b63ae05a72472f873d98b6941baeb3
+msgid "**get_diffdock_info** (Type: PackageTool)"
+msgstr "**get_diffdock_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:109
+#: 51959edcc73c4e6c9aff5f03a80644d7
+msgid ""
+"Get comprehensive information about DiffDock – diffusion model for "
+"molecular docking"
+msgstr "获取关于DiffDock——用于分子对接的扩散模型的全面信息"
+
+#: ../../tools/structural_biology_tools.rst 3b111033de4c4ebc848dd85dc7a8ee88
+msgid "get_diffdock_info tool specification"
+msgstr "get_diffdock_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:115
+#: 440afac1f7b54fc19f156d2038f3bc3a
+msgid "**Name**: ``get_diffdock_info``"
+msgstr "**名称**: ``get_diffdock_info``"
+
+#: ../../tools/structural_biology_tools.rst:117
+#: 8d511fe77611442cbf643304773ddc15
+msgid ""
+"**Description**: Get comprehensive information about DiffDock – diffusion"
+" model for molecular docking"
+msgstr "**描述**：获取关于DiffDock——用于分子对接的扩散模型的全面信息"
+
+#: ../../tools/structural_biology_tools.rst:121
+#: f29d20fd062942389dba85589116139c
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"DiffDock"
+msgstr "``info_type``（字符串）（必填）要检索的关于 DiffDock 的信息类型"
+
+#: ../../tools/structural_biology_tools.rst:138
+#: c5a0fbf956524d768e6b6d460d9973e7
+msgid "**get_freesasa_info** (Type: PackageTool)"
+msgstr "**get_freesasa_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:140
+#: 104bc2a3ec3a4b5d8f6924d2150f2bf7
+msgid ""
+"Get information about the freesasa package. Calculate solvent accessible "
+"surface areas of proteins"
+msgstr "获取有关freesasa软件包的信息。计算蛋白质的溶剂可接触表面积。"
+
+#: ../../tools/structural_biology_tools.rst 4c803a00017244cab38b0ee33d706e87
+msgid "get_freesasa_info tool specification"
+msgstr "get_freesasa_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:146
+#: ed1aaff4be5e487994e4b62e051a91a1
+msgid "**Name**: ``get_freesasa_info``"
+msgstr "**名称**: ``get_freesasa_info``"
+
+#: ../../tools/structural_biology_tools.rst:148
+#: 61b38ed5dbd74cf2a8d8e472d62c1c0b
+msgid ""
+"**Description**: Get information about the freesasa package. Calculate "
+"solvent accessible surface areas of proteins"
+msgstr "**描述**：获取有关freesasa软件包的信息。计算蛋白质的溶剂可及表面积"
+
+#: ../../tools/structural_biology_tools.rst:152
+#: ../../tools/structural_biology_tools.rst:181
+#: ../../tools/structural_biology_tools.rst:241
+#: ../../tools/structural_biology_tools.rst:270
+#: ../../tools/structural_biology_tools.rst:330
+#: 40e6e594eb61432caacde4303750663e 4bc53040f88e40028a7f4a0ff8233f81
+#: 555c7ca232f54de5aecccd1a93a06959 7f83d8ed1e0c48e8bb79e86e1fff4ace
+#: db894dd35d56426ebcfd28da33addea9
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/structural_biology_tools.rst:167
+#: 26d48540e9c84b83adef2b285543ad4c
+msgid "**get_htmd_info** (Type: PackageTool)"
+msgstr "**get_htmd_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:169
+#: 36f659f7b900413886ad1f2f7ac75193
+msgid ""
+"Get information about the htmd package. High throughput molecular "
+"dynamics platform"
+msgstr "获取有关 htmd 软件包的信息。高通量分子动力学平台"
+
+#: ../../tools/structural_biology_tools.rst 84de126ca3d64b9bb70bb118f249e4ae
+msgid "get_htmd_info tool specification"
+msgstr "get_htmd_info 工具规范"
+
+#: ../../tools/structural_biology_tools.rst:175
+#: 36f45b7f6b8746628bb0e10b0308b357
+msgid "**Name**: ``get_htmd_info``"
+msgstr "**名称**：``get_htmd_info``"
+
+#: ../../tools/structural_biology_tools.rst:177
+#: a7819c7f3d0946c182651574d69bd23c
+msgid ""
+"**Description**: Get information about the htmd package. High throughput "
+"molecular dynamics platform"
+msgstr "**描述**：获取有关 htmd 软件包的信息。高通量分子动力学平台"
+
+#: ../../tools/structural_biology_tools.rst:196
+#: c4f8f97db3e244218102feb9e11b0e3f
+msgid "**get_mdanalysis_info** (Type: PackageTool)"
+msgstr "**get_mdanalysis_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:198
+#: 7287fc4a124644758637559999dd7264
+msgid ""
+"Get comprehensive information about MDAnalysis – molecular dynamics "
+"trajectory analysis"
+msgstr "获取关于 MDAnalysis —— 分子动力学轨迹分析的全面信息"
+
+#: ../../tools/structural_biology_tools.rst 42cb45987c8a476a928ba810159487f7
+msgid "get_mdanalysis_info tool specification"
+msgstr "get_mdanalysis_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:204
+#: 6bf1caed8beb48fc9aed547cef55850f
+msgid "**Name**: ``get_mdanalysis_info``"
+msgstr "**名称**：``get_mdanalysis_info``"
+
+#: ../../tools/structural_biology_tools.rst:206
+#: b8381dda9c634020b57232ed70dd72a0
+msgid ""
+"**Description**: Get comprehensive information about MDAnalysis – "
+"molecular dynamics trajectory analysis"
+msgstr "**描述**：获取关于MDAnalysis——分子动力学轨迹分析的全面信息"
+
+#: ../../tools/structural_biology_tools.rst:210
+#: b188744740884ab0bee1073c6f9c0ccd
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"MDAnalysis"
+msgstr "``info_type``（字符串）（必填）要检索的有关 MDAnalysis 的信息类型"
+
+#: ../../tools/structural_biology_tools.rst:227
+#: 4c6889e2919841ff9de75febc0a850b9
+msgid "**get_mdtraj_info** (Type: PackageTool)"
+msgstr "**get_mdtraj_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:229
+#: 963801a8d194444992705b7cac7075b2
+msgid ""
+"Get information about the mdtraj package. Modern library for molecular "
+"dynamics trajectory analysis"
+msgstr "获取有关 mdtraj 软件包的信息。用于分子动力学轨迹分析的现代库。"
+
+#: ../../tools/structural_biology_tools.rst 20c58d30b4e0473a9a045aab0df1abec
+msgid "get_mdtraj_info tool specification"
+msgstr "get_mdtraj_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:235
+#: ae862abe622b45168f5827cbe05f173a
+msgid "**Name**: ``get_mdtraj_info``"
+msgstr "**名称**：``get_mdtraj_info``"
+
+#: ../../tools/structural_biology_tools.rst:237
+#: 1d75bab859c042ebba73c3a2d2ec4ef1
+msgid ""
+"**Description**: Get information about the mdtraj package. Modern library"
+" for molecular dynamics trajectory analysis"
+msgstr "**描述**：获取有关 mdtraj 软件包的信息。用于分子动力学轨迹分析的现代库。"
+
+#: ../../tools/structural_biology_tools.rst:256
+#: 8106dee1673d422ea2436c7aeea4a27a
+msgid "**get_nglview_info** (Type: PackageTool)"
+msgstr "**get_nglview_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:258
+#: 284770d42aa040ee827d4dbd93935f02
+msgid ""
+"Get information about the nglview package. Jupyter widget for molecular "
+"visualization"
+msgstr "获取有关 nglview 软件包的信息。用于分子可视化的 Jupyter 小部件"
+
+#: ../../tools/structural_biology_tools.rst 84f5bf8fbd1f4a32b835eb3dffae8678
+msgid "get_nglview_info tool specification"
+msgstr "get_nglview_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:264
+#: bc6b15fd76c24073b959bd26aa86096c
+msgid "**Name**: ``get_nglview_info``"
+msgstr "**名称**：``get_nglview_info``"
+
+#: ../../tools/structural_biology_tools.rst:266
+#: 0e40ca85983a49718d5a36769de5e4cd
+msgid ""
+"**Description**: Get information about the nglview package. Jupyter "
+"widget for molecular visualization"
+msgstr "**描述**：获取有关 nglview 包的信息。用于分子可视化的 Jupyter 小部件。"
+
+#: ../../tools/structural_biology_tools.rst:285
+#: d2a4253ed08d4d4e8783a2a289fb1b2d
+msgid "**get_openmm_info** (Type: PackageTool)"
+msgstr "**get_openmm_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:287
+#: e713834958b84a4b8ed25dff1c5086a4
+msgid ""
+"Get comprehensive information about OpenMM – molecular dynamics "
+"simulation toolkit"
+msgstr "获取关于 OpenMM —— 分子动力学模拟工具包的全面信息"
+
+#: ../../tools/structural_biology_tools.rst 4572f682409c48c4b0e083e7e2fa27c7
+msgid "get_openmm_info tool specification"
+msgstr "get_openmm_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:293
+#: adb8072c8d5a42e18dc744278d4d6e8f
+msgid "**Name**: ``get_openmm_info``"
+msgstr "**名称**：``get_openmm_info``"
+
+#: ../../tools/structural_biology_tools.rst:295
+#: 663202c3d43346569b5daf4fce130890
+msgid ""
+"**Description**: Get comprehensive information about OpenMM – molecular "
+"dynamics simulation toolkit"
+msgstr "**描述**：获取关于 OpenMM —— 分子动力学模拟工具包的全面信息"
+
+#: ../../tools/structural_biology_tools.rst:316
+#: 50ae16d59a8b4463a6411321e0f25287
+msgid "**get_pyrosetta_info** (Type: PackageTool)"
+msgstr "**get_pyrosetta_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:318
+#: 09e4b8d151e349df9f192cba2c87ffcf
+msgid ""
+"Get information about the pyrosetta package. Python interface to Rosetta "
+"macromolecular modeling ..."
+msgstr "获取有关 pyrosetta 软件包的信息。Rosetta 大分子建模的 Python 接口..."
+
+#: ../../tools/structural_biology_tools.rst 8b96f14468414554a4f208c8bbe5562a
+msgid "get_pyrosetta_info tool specification"
+msgstr "get_pyrosetta_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:324
+#: 65ce5f627d494e9691dbc0ab804af3c4
+msgid "**Name**: ``get_pyrosetta_info``"
+msgstr "**名称**：``get_pyrosetta_info``"
+
+#: ../../tools/structural_biology_tools.rst:326
+#: 098fb304dd61405f9d41789e27da390d
+msgid ""
+"**Description**: Get information about the pyrosetta package. Python "
+"interface to Rosetta macromolecular modeling suite"
+msgstr "**描述**：获取有关 pyrosetta 软件包的信息。Rosetta 大分子建模套件的 Python 接口。"
+
+#: ../../tools/structural_biology_tools.rst:345
+#: cf2af4d3063842d58cac56647c1ae784
+msgid "**get_pyscf_info** (Type: PackageTool)"
+msgstr "**get_pyscf_info**（类型：PackageTool）"
+
+#: ../../tools/structural_biology_tools.rst:347
+#: 0a63257edbfb4a9aac75b633cba74bca
+msgid ""
+"Get comprehensive information about PySCF – a versatile quantum-chemistry"
+" framework in Python."
+msgstr "获取关于 PySCF —— 一个多功能 Python 量子化学框架的全面信息。"
+
+#: ../../tools/structural_biology_tools.rst 82ed2a3e4c434ed7aaa01e3508e92074
+msgid "get_pyscf_info tool specification"
+msgstr "get_pyscf_info 工具规格说明"
+
+#: ../../tools/structural_biology_tools.rst:353
+#: c1183f40bbda4deba83af656da71461b
+msgid "**Name**: ``get_pyscf_info``"
+msgstr "**名称**：``get_pyscf_info``"
+
+#: ../../tools/structural_biology_tools.rst:355
+#: e2c430eb0c8c4dd3831fd8312c68c94c
+msgid ""
+"**Description**: Get comprehensive information about PySCF – a versatile "
+"quantum-chemistry framework in Python."
+msgstr "**描述**：获取关于 PySCF 的全面信息——一个功能强大的 Python 量子化学框架。"
+
+#: ../../tools/structural_biology_tools.rst:376
+#: 4a47ce30f13f41edbc66b87167a4bf00
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/structural_biology_tools.rst:378
+#: 16fcb64aa5254f229e8066c73c7521c3
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/structural_biology_tools.rst:379
+#: bcc39513535a474e892de7901519c74d
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

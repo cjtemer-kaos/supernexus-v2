@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../about/deployment.rst:4 841b6f9e64c343d8b21ece750080c7f0
+msgid "Documentation Deployment"
+msgstr "文档部署"
+
+#: ../../about/deployment.rst:6 bea461159f3e44b386480e35caabeaec
+msgid ""
+"This Tutorial covers different options for deploying the ToolUniverse "
+"documentation."
+msgstr "本教程涵盖了部署 ToolUniverse 文档的不同选项。"
+
+#: ../../about/deployment.rst:9 7a5c6261862646378e9704692abaee68
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../about/deployment.rst:11 7b3bd0818e7b492caa973b94555e1e2c
+msgid "Build and serve documentation locally:"
+msgstr "本地构建并服务文档："
+
+#: ../../about/deployment.rst:19 cf78d5e1940540aab61a961aa56c2567
+msgid ""
+"The validation script will offer to start a local server at "
+"http://localhost:8080."
+msgstr "验证脚本将提示启动本地服务器，地址为 http://localhost:8080。"
+
+#: ../../about/deployment.rst:22 84c6e6b0f1634644b89e540ce669b9b9
+msgid "GitHub Pages"
+msgstr "GitHub 页面"
+
+#: ../../about/deployment.rst:25 0026260e521943ac83aa3e338975150d
+msgid "Automated Deployment"
+msgstr "自动化部署"
+
+#: ../../about/deployment.rst:27 f27d22bc9153458b808a837d6fe08a21
+msgid ""
+"The repository includes GitHub Actions workflow for automatic deployment to "
+"GitHub Pages."
+msgstr "该仓库包含用于自动部署到 GitHub Pages 的 GitHub Actions 工作流。"
+
+#: ../../about/deployment.rst:29 2cdcea19d2394059a42f7c3b2e4cb427
+msgid "**Setup Steps:**"
+msgstr "**设置步骤：**"
+
+#: ../../about/deployment.rst:32 ff97225259d542d189ee95b6bd10350b
+msgid "1. Enable GitHub Pages in repository settings:"
+msgstr "1. 在仓库设置中启用 GitHub Pages："
+
+#: ../../about/deployment.rst:33 1596c3d48c8243c98887bc85e43b2a1e
+msgid "Go to repository **Settings > Pages**"
+msgstr "转到存储库 **设置 > 页面**"
+
+#: ../../about/deployment.rst:34 f7d356a5811f48ccae70df7df40a5ee6
+msgid "Set source to **GitHub Actions**"
+msgstr "将源设置为 **GitHub Actions**"
+
+#: ../../about/deployment.rst:36 fd95c854516040049dea2d57d0a3c1d6
+msgid "Push to main branch - documentation will build automatically"
+msgstr "推送到主分支 - 文档将自动生成"
+
+#: ../../about/deployment.rst:38 e5de127e4d72461cbaff7ae190088703
+msgid ""
+"Access documentation at: ``https://yourusername.github.io/ToolUniverse/``"
+msgstr "访问文档地址：``https://yourusername.github.io/ToolUniverse/``"
+
+#: ../../about/deployment.rst:43 b95ddd2d24cb406ebabdf09a4f5ab9f7
+msgid "For manual GitHub Pages deployment:"
+msgstr "手动部署 GitHub Pages："
+
+#: ../../about/deployment.rst:60 e439550fb4c042d8b97409b88688dcd1
+msgid "ReadTheDocs"
+msgstr "阅读文档"
+
+#: ../../about/deployment.rst:63 f1da90578e7d42d092698de79c7f6c15
+msgid "Automated Setup"
+msgstr "自动化设置"
+
+#: ../../about/deployment.rst:66 78589f717dc9415797a4b30daca4aed5
+msgid "1. Connect repository to ReadTheDocs:"
+msgstr "1. 将代码库连接到 ReadTheDocs："
+
+#: ../../about/deployment.rst:67 118ed33602fb4e59b37a6fe1f6c7800e
+msgid "Visit https://readthedocs.org/"
+msgstr "访问 https://readthedocs.org/"
+
+#: ../../about/deployment.rst:68 4f9497dcfc13435c99ffe25db99b32ed
+msgid "Import repository"
+msgstr "导入存储库"
+
+#: ../../about/deployment.rst:69 e407e33cae764340a1848fb8c77214ba
+msgid "Configure webhook (automatic)"
+msgstr "配置 Webhook（自动）"
+
+#: ../../about/deployment.rst:71 deeba551b4e146c3ac6cd71b21cb573b
+msgid "Configuration file ``.readthedocs.yaml`` is already provided"
+msgstr "配置文件 ``.readthedocs.yaml`` 已经提供"
+
+#: ../../about/deployment.rst:73 137605156b5d42e89c973f7b452ef9f6
+msgid "Documentation builds automatically on commits"
+msgstr "文档会在提交时自动生成"
+
+#: ../../about/deployment.rst:78 fd4446305bee41b7a721105b08435763
+msgid "The ``.readthedocs.yaml`` file specifies:"
+msgstr "``.readthedocs.yaml`` 文件指定："
+
+#: ../../about/deployment.rst:80 2b242fcb7e9e454e9f481fb0371ede10
+msgid "**Python version**: 3.8+"
+msgstr "**Python 版本**：3.8+"
+
+#: ../../about/deployment.rst:81 0ad39ed7451a49bbac9b6f6efc561be9
+msgid "**Requirements**: ``docs/requirements.txt``"
+msgstr "**要求**: ``docs/requirements.txt``"
+
+#: ../../about/deployment.rst:82 ba7f975b30ac4b82a0ae9e7d5f2df1b6
+msgid "**Sphinx configuration**: ``docs/conf.py``"
+msgstr "**Sphinx 配置**：``docs/conf.py``"
+
+#: ../../about/deployment.rst:83 1d1f68cb8f2745349287e8eb6f6307d1
+msgid "**Output formats**: HTML, PDF"
+msgstr "**输出格式**：HTML、PDF"
+
+#: ../../about/deployment.rst:86 70aa6dc8ee1342179890083176c97b7f
+msgid "Local Development Server"
+msgstr "本地开发服务器"
+
+#: ../../about/deployment.rst:89 1f43f2e1e8fb4cd8a8347df27340147a
+msgid "Development with Auto-reload"
+msgstr "自动重新加载开发"
+
+#: ../../about/deployment.rst:91 89cbe6a626e64e1f8ea72eea537554b8
+msgid "Use sphinx-autobuild for live reloading during development:"
+msgstr "在开发过程中使用 sphinx-autobuild 实现实时重载："
+
+#: ../../about/deployment.rst:102 1fd4314b5a084068842e4d08c2698c5f
+msgid "The server will automatically rebuild when files change."
+msgstr "当文件发生更改时，服务器将自动重建。"
+
+#: ../../about/deployment.rst:105 ffd76ae040904e878fb0dfa6432963ad
+msgid "Production Server"
+msgstr "生产服务器"
+
+#: ../../about/deployment.rst:107 9580746bfe444331a8b58b11b3bfa2d0
+msgid "For production hosting, use a proper web server:"
+msgstr "对于生产环境托管，请使用合适的 Web 服务器："
+
+#: ../../about/deployment.rst:109 32f29cabbfcf4933a91e9c4fb32e7462
+msgid "**Nginx example:**"
+msgstr "**Nginx 示例：**"
+
+#: ../../about/deployment.rst:124 54f49d5ea6f34e21a0741174c8be92a1
+msgid "**Apache example:**"
+msgstr "**Apache 示例：**"
+
+#: ../../about/deployment.rst:135 c70377948c3147d9947306329fd7857e
+msgid "Docker Deployment"
+msgstr "Docker 部署"
+
+#: ../../about/deployment.rst:138 5900e3c95acf49f2a169d94246bb6d0c
+msgid "Dockerfile for Nginx"
+msgstr "Nginx 的 Dockerfile"
+
+#: ../../about/deployment.rst:140 01a3ffc7ed3245758b595ef008019c67
+msgid "Create ``Dockerfile`` in docs directory:"
+msgstr "在 docs 目录中创建 ``Dockerfile``："
+
+#: ../../about/deployment.rst:148 da95825dd4304c8ab520b93c66e7c38f
+msgid "Build and run:"
+msgstr "构建并运行："
+
+#: ../../about/deployment.rst:158 59a0db802f87402fbc710db3d07cd547
+msgid "Multi-stage Build"
+msgstr "多阶段构建"
+
+#: ../../about/deployment.rst:160 fc34aeee83dc4ebe85453d8dda113d8f
+msgid "For smaller images with build included:"
+msgstr "对于包含构建的小型镜像："
+
+#: ../../about/deployment.rst:177 57ee0d5129004dcd93e3baa68c74533d
+msgid "Continuous Integration"
+msgstr "持续集成"
+
+#: ../../about/deployment.rst:180 5130fa1272a64319b478086a2e8f5765
+msgid "GitHub Actions"
+msgstr "GitHub 操作"
+
+#: ../../about/deployment.rst:182 a00153e666994e2f848e7cbbb7d82faf
+msgid "The ``.github/workflows/docs.yml`` workflow:"
+msgstr "``.github/workflows/docs.yml`` 工作流："
+
+#: ../../about/deployment.rst:184 d4b5b9b1a5d54c499eef549853b677fa
+msgid "**Triggers**: Push to main, pull requests"
+msgstr "**触发器**：推送到主分支，拉取请求"
+
+#: ../../about/deployment.rst:185 80ab8034f8944d8fa05732a540549556
+msgid "**Builds**: HTML and PDF documentation"
+msgstr "**构建**：HTML 和 PDF 文档"
+
+#: ../../about/deployment.rst:186 904b6010420f4b1cacf24d5cc567e943
+msgid "**Deploys**: To GitHub Pages (on main branch)"
+msgstr "**部署**：部署到 GitHub Pages（主分支）"
+
+#: ../../about/deployment.rst:187 b8602673c78d40248f9404c875af3838
+msgid "**Tests**: Link checking, validation"
+msgstr "**测试**：链接检查，验证"
+
+#: ../../about/deployment.rst:189 242e618a9cb246b7ac434b6c73266780
+msgid "View workflow status in repository **Actions** tab."
+msgstr "在仓库的 **Actions** 选项卡中查看工作流状态。"
+
+#: ../../about/deployment.rst:192 08071e2a99084e6aaf94d6ab4edb2c91
+msgid "Custom CI/CD"
+msgstr "自定义 CI/CD"
+
+#: ../../about/deployment.rst:194 98efd08291d24099a470fa36ea00ee2f
+msgid "For other CI systems, use these commands:"
+msgstr "对于其他持续集成系统，请使用以下命令："
+
+#: ../../about/deployment.rst:212 93324284bb184cd3a8658adb11a1c082
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../about/deployment.rst:215 410f2b34b5b046038caed6b476dc35db
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../about/deployment.rst:217 52f97c62a70d41a7a8a10af9beca6e71
+msgid "**Build fails with module import errors:**"
+msgstr "**构建失败，出现模块导入错误：**"
+
+#: ../../about/deployment.rst:226 39ba4c9058ca49abae98184aa7364f22
+msgid "**Missing static files:**"
+msgstr "**缺少静态文件：**"
+
+#: ../../about/deployment.rst:235 c2901de3a83846f0a807d537c1a82502
+msgid "**Broken links:**"
+msgstr "**断链：**"
+
+#: ../../about/deployment.rst:242 80473b180ab24b35a54fce9fbae9f4a0
+msgid "**Permission errors on deployment:**"
+msgstr "**部署时的权限错误：**"
+
+#: ../../about/deployment.rst:250 a264f1cf14084b5791d2c9f9c4250dca
+msgid "Performance Optimization"
+msgstr "性能优化"
+
+#: ../../about/deployment.rst:252 bd60c7b82d2f4316a068e31060b43f6a
+msgid "For large documentation sites:"
+msgstr "对于大型文档站点："
+
+#: ../../about/deployment.rst:254 e690984cd3a842c6bbfde2c14b9917d3
+msgid "**Enable parallel builds:**"
+msgstr "**启用并行构建：**"
+
+#: ../../about/deployment.rst:261 3321ac7a4232482c840c572730aaa270
+msgid "**Optimize images:**"
+msgstr "**优化图像：**"
+
+#: ../../about/deployment.rst:268 c95453dd2e35467fbdae5b55218b0b23
+msgid "**Use CDN for static files:**"
+msgstr "**使用 CDN 加速静态文件：**"
+
+#: ../../about/deployment.rst:276 5ac7e0b5693943b7ba41d19e6e5723b5
+msgid "Monitoring"
+msgstr "监控"
+
+#: ../../about/deployment.rst:279 96905bb97fb240c3b7fb92c6cd7d2b5c
+msgid "Health Checks"
+msgstr "健康检查"
+
+#: ../../about/deployment.rst:281 5fa016876995486886ec44868f0de011
+msgid "Create a simple health check endpoint:"
+msgstr "创建一个简单的健康检查端点："
+
+#: ../../about/deployment.rst:289 774fdae033634bfaa5eba030b72b0921
+msgid "Analytics"
+msgstr "分析功能"
+
+#: ../../about/deployment.rst:291 31d138d90770405faa656eb9b47a3e50
+msgid "Add Google Analytics to ``conf.py``:"
+msgstr "将 Google Analytics 添加到 ``conf.py``："
+
+#: ../../about/deployment.rst:299 ec44d5df756b4aafb6f571addb766d46
+msgid "Or add custom tracking code to ``_templates/layout.html``."
+msgstr "或者将自定义跟踪代码添加到 ``_templates/layout.html``。"
+
+#: ../../about/deployment.rst:302 c73fd7a6e3cd4d4089aacdc98ac96ae6
+msgid "Backup and Recovery"
+msgstr "备份与恢复"
+
+#: ../../about/deployment.rst:305 f30ca9165ef4424eaf12e6919b5ff580
+msgid "Backup Strategy"
+msgstr "备份策略"
+
+#: ../../about/deployment.rst:307 258e7a68d1cc43789b7c2c84032c255b
+msgid "**Source control**: Documentation source in Git"
+msgstr "**版本控制**：文档源代码存储于 Git 中"
+
+#: ../../about/deployment.rst:308 7b1269b4dee54de7a27998dfd4e98293
+msgid "**Built artifacts**: Archive built documentation"
+msgstr "**构建产物**：归档已构建的文档"
+
+#: ../../about/deployment.rst:309 e067ac6f3493442fa21f9195121e0d45
+msgid "**Dependencies**: Pin versions in requirements.txt"
+msgstr "**依赖项**：在 requirements.txt 中固定版本号"
+
+#: ../../about/deployment.rst:317 d8f090df214b4583aec06573902308e9
+msgid "Recovery"
+msgstr "恢复"
+
+#: ../../about/deployment.rst:327 9c34736bef9244f6b312b7bc191f2393
+msgid ""
+"This completes the deployment configuration. The documentation system now "
+"supports multiple deployment targets with automated CI/CD integration."
+msgstr "部署配置已完成。文档系统现支持多个部署目标，并实现了自动化的CI/CD集成。"

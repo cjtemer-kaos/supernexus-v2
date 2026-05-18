@@ -1,0 +1,926 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.output_hook.rst:2 0cbf4480e1a0442c93bcac50ece99633
+msgid "tooluniverse.output\\_hook module"
+msgstr "tooluniverse.output_hook 模块"
+
+#: 278d4bdc104547c49dbad0df223ef3fc of tooluniverse.output_hook:1
+msgid "Output Hook System for ToolUniverse"
+msgstr "ToolUniverse 输出钩子系统"
+
+#: 69abd5c38658427f91327e81c63ce93d of tooluniverse.output_hook:3
+msgid ""
+"This module provides a comprehensive hook-based output processing system "
+"that allows for intelligent post-processing of tool outputs. The system "
+"supports various types of hooks including summarization, filtering, and "
+"transformation hooks."
+msgstr "该模块提供了一个基于钩子的全面输出处理系统，支持对工具输出进行智能后处理。该系统支持多种类型的钩子，包括摘要钩子、过滤钩子和转换钩子。"
+
+#: 0baf1433b9dd40d589e1923dbc9486ae of tooluniverse.output_hook:7
+msgid ""
+"Key Components: - HookRule: Defines conditions for when hooks should trigger"
+" - OutputHook: Base class for all output hooks - SummarizationHook: "
+"Specialized hook for output summarization - HookManager: Manages and "
+"coordinates all hooks"
+msgstr ""
+"关键组件：  \n"
+"- HookRule：定义钩子触发的条件  \n"
+"- OutputHook：所有输出钩子的基类  \n"
+"- SummarizationHook：用于输出摘要的专用钩子  \n"
+"- HookManager：管理和协调所有钩子"
+
+#: 2119630856304eb6a5a13848c8637eeb of tooluniverse.output_hook:13
+msgid ""
+"The hook system integrates seamlessly with ToolUniverse's existing "
+"architecture, leveraging AgenticTool and ComposeTool for intelligent output "
+"processing."
+msgstr "钩子系统与 ToolUniverse 现有架构无缝集成，利用 AgenticTool 和 ComposeTool 实现智能输出处理。"
+
+#: 1962d56d769e436799e497237a85b765 331b7ea753be4ff3996306ffd7733364
+#: 4db32cf935eb446398518d0410bdc34a 5b7e69d63bea402c90e90448e2a4449c of
+#: tooluniverse.output_hook.HookManager:1 tooluniverse.output_hook.HookRule:1
+#: tooluniverse.output_hook.OutputHook:1
+#: tooluniverse.output_hook.SummarizationHookConfig:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: ef66bcadd9e3434ea18c4aba9384caaa of tooluniverse.output_hook.HookRule:1
+msgid "Defines rules for when hooks should be triggered."
+msgstr "定义钩子触发时机的规则。"
+
+#: 659fd5e68620448bb99a5c0a2b3e045b of tooluniverse.output_hook.HookRule:3
+msgid ""
+"This class evaluates various conditions to determine if a hook should be "
+"applied to a tool's output. Supports multiple condition types including "
+"output length, content type, and tool-specific criteria."
+msgstr "该类评估多种条件，以确定是否应将钩子应用于工具的输出。支持多种条件类型，包括输出长度、内容类型及工具特定的标准。"
+
+#: ../../api/tooluniverse.output_hook.rst 00530e7182454b11bd968a87502ce4fb
+#: 0ee79cc7c64c457ba9acaec1036ddf58 12dfd16ef5e749e99dd8d34a8a4a468d
+#: 15c880ddb6794a59bbcd1bd987b8b5ef 21ca60c7c15841c9ae3e809d0b13255c
+#: 27a483a166db43198dad893b96000214 2839cbad6f504223bf6e48939916506b
+#: 3e99f55e5c164197a53320bb9ec0457a 4ba925099949439bb2950326fe63c9b6
+#: 54eb89837cc34d558927887cbf3a3ad3 6a7238e304a04a15b651704a72b229a7
+#: 6b03306fc8ef429fa5e0748b7a0218dd 6b8232dfd7eb48fdb614a8972f0f544c
+#: 7cc256e4354d4618a2e4d675a4f3cea0 8096a9f703764ebda18fa99b5f564a8b
+#: 909a683635dd4914b51136769750911c 93a8a8038f5940af8a93fa0dfe16f313
+#: 977806e4f58e442aa9068176e11dab1c 98f1b5b0dba546fa95f9bacb4d4363c5
+#: 9ffc2b2bf458465d9756b24d1f4f8def a916467186ef41b0a4bdf0b58da7224f
+#: aedc33869649405eac1946924db5808c be180135d5414143a4961c368a756b3a
+#: d2ae52ec2f5345e6b87e15b676989118 e1880a17ad8c411790b7cd238deea181
+#: e84c7e6576714f669824672f37693516 f51e2566a42a438c9931f9e1d0b9da77
+#: f81558582be740c4be6160ec625313dc
+msgid "Parameters"
+msgstr "参数"
+
+#: 0356c0470ac74f8bb0d89cb17801cb0e of tooluniverse.output_hook.HookRule:7
+msgid "Dictionary containing condition specifications"
+msgstr "包含条件规格的字典"
+
+#: caeff131eb3f4896bcd4648a2cdfe646 of tooluniverse.output_hook.HookRule:12
+msgid "The condition specifications"
+msgstr "条件规范"
+
+#: 078ce6d3c4d24abc84ac5dc16101d480 0e49e84aa1064bbba32b52010ba2bd1c
+#: 0f9c89a655b84ef28f8479c6306383f8 26bce60e3bd14b38b9ee918bd1736efe
+#: 2bbac92aebe44f39a756fe4dc26d4445 313609fe3da741d98ade1ee82937532a
+#: 4064f239fb1640a9991d7845ba6d5994 5eb61e7a604e46f387defa4ebf5b830f
+#: 6100cf8bade24ed48ac7fe5223cb8747 6da2fd80b447436998e1247127f517c8
+#: 7c843e5a1b824791a60834816bf0b576 8e30d355f8b045ecbeb34c227befdb1e
+#: 9bb9cee660984833b2803aa53fb9c546 f0626f7b36df451b96e3134df8cead10 of
+#: tooluniverse.output_hook.HookManager tooluniverse.output_hook.HookRule
+#: tooluniverse.output_hook.OutputHook
+#: tooluniverse.output_hook.SummarizationHook
+msgid "type"
+msgstr "类型"
+
+#: 319eb470d5a44e3ab051efa323118125 a1d7512ad1954303b19b24ddc4ee8522
+#: bb8e710c99ff4b2c9dceddfd751f5c3e of tooluniverse.output_hook.HookManager:15
+#: tooluniverse.output_hook.HookRule:14 tooluniverse.output_hook.OutputHook:15
+msgid ":py:class:`Dict[str`, :py:class:`Any]`"
+msgstr ""
+
+#: a8c8df91122742df85e0ee80a5e7d71e of
+#: tooluniverse.output_hook.HookRule.__init__:1
+msgid "Initialize the hook rule with conditions."
+msgstr "使用条件初始化钩子规则。"
+
+#: 92c0a17e8368415a800e1f3597276e57 of
+#: tooluniverse.output_hook.HookRule.__init__:3
+msgid ""
+"Condition specifications including output_length, content_type, tool_type, "
+"etc."
+msgstr "条件规范包括 output_length、content_type、tool_type 等。"
+
+#: 6b2be841fc464775a23f9719e9ee3789 of
+#: tooluniverse.output_hook.HookRule.evaluate:1
+msgid "Evaluate whether the rule conditions are met."
+msgstr "评估规则条件是否满足。"
+
+#: 3b8de4feff734e3f8499e4fdd2e9d2ad af334c1488714eadb4db326b80163d4f of
+#: tooluniverse.output_hook.HookRule.evaluate:3
+#: tooluniverse.output_hook.OutputHook.should_trigger:3
+msgid "The tool output to evaluate"
+msgstr "工具输出以评估"
+
+#: 1a077abe65f141da972948a5cbc2e092 9a25bedcfa0647aaa59e317ee3933c26
+#: b14fd40c52054da4b50d607a698c0eaf b748f6f8788e4f7ba0d29a5563b16e16
+#: d156d81787124f02ae295cc4b8f07609 d882e8a574ef48b18b0f9f09dc0d2201 of
+#: tooluniverse.output_hook.FileSaveHook.process:5
+#: tooluniverse.output_hook.HookManager.apply_hooks:9
+#: tooluniverse.output_hook.HookRule.evaluate:5
+#: tooluniverse.output_hook.OutputHook.process:8
+#: tooluniverse.output_hook.OutputHook.should_trigger:5
+#: tooluniverse.output_hook.SummarizationHook.process:10
+msgid "Name of the tool that produced the output"
+msgstr "生成输出的工具名称"
+
+#: 0227bf622f3d46ed8113cfaaab55213e 09083a241c334b82ba35f53743a0fa07
+#: 23034e989c5845dd92ec7d95e07aa0cb 29d1cff9151546e19d22544f2351a8f0
+#: 6c9d07e555c04aef8b62907c93dae91e d6a25d98a96c4e0caa34398158034e94 of
+#: tooluniverse.output_hook.FileSaveHook.process:7
+#: tooluniverse.output_hook.HookManager.apply_hooks:11
+#: tooluniverse.output_hook.HookRule.evaluate:7
+#: tooluniverse.output_hook.OutputHook.process:10
+#: tooluniverse.output_hook.OutputHook.should_trigger:7
+#: tooluniverse.output_hook.SummarizationHook.process:12
+msgid "Arguments passed to the tool"
+msgstr "传递给工具的参数"
+
+#: 1ae838efbb634bc5a4a84691fbc04cdd 1b98ab07d56249079feee02517101e13
+#: ba255efa495d41f3916e57e8cbe275b6 c9cba1f2a810415d8ba6ce106dac09b9
+#: f035470e93b146cf816fa56fbf2b6e85 of
+#: tooluniverse.output_hook.HookManager.apply_hooks:13
+#: tooluniverse.output_hook.HookRule.evaluate:9
+#: tooluniverse.output_hook.OutputHook.process:12
+#: tooluniverse.output_hook.OutputHook.should_trigger:9
+#: tooluniverse.output_hook.SummarizationHook.process:14
+msgid "Additional context information"
+msgstr "附加上下文信息"
+
+#: ../../api/tooluniverse.output_hook.rst 06d0d0f704fd48fe87ad5f965f9b1870
+#: 142c3cc2998e43eba95adc54406352b6 2a22c5830543451da73fb3140da7ceb6
+#: 575d632095604b8994b0d078f816df26 7d3802ac2a6f42e1862e16e4381847f8
+#: 94d9185893b3427faff8115a09ccd550 b10615f812944555931b2ccdf0038161
+#: ba1c2286446a4874b482637439aae2f2 c04c155483d343c589d8a5e3391db9ba
+#: c434d30b26564243ab3505eb017edf89 c8af21cbfc7c4b138833bc4c6d6cb028
+#: d7c2e6cf61c240fc9fde91689850ccd1 e3fc597762c64b2296e5dd6fe6f3e651
+#: fd9ea8cf659b45849086adf25b547d2c fe3f90fa26774a57ad8c703cac9f8066
+msgid "Returns"
+msgstr "退货"
+
+#: 8527c17cd2cb4996b1a6559f2c7c7919 of
+#: tooluniverse.output_hook.HookRule.evaluate:12
+msgid "True if conditions are met, False otherwise"
+msgstr "如果满足条件，则为 True，否则为 False"
+
+#: ../../api/tooluniverse.output_hook.rst 3f2890165c1e43b893872709c427943e
+#: 453acae451dc4ca3956c5fd31f166108 5fc357f8f9d445c2b048049a11c7e593
+#: 623c7a7f2a9d4ae6a411683391844f93 640245c682c64d3cbe0391e2ba857d7b
+#: 6ba74f435a9d4321b1a718cd1fe45bec 78f2aac6444b441a8714d8979bfd2f6b
+#: 7cc876686dc54788b0225684e81cd498 7d3c420681e7416abb2e3dbc437371c8
+#: 94e6a96bfd144ea689ffaee562da0d01 bac969b8a5424020a6761e628b2d31f1
+#: f4346f48fa714b429bb9f40de39ac2c3 f477d6280b5d46d3bff2529ef129696d
+#: f4e4eccca0c343539af5d68361550adf fff4b1f7015747a88212b321d4b131c7
+msgid "Return type"
+msgstr "返回类型"
+
+#: c8353c6ba6334c53a9f89c0d67b655db of tooluniverse.output_hook.OutputHook:1
+msgid "Base class for all output hooks."
+msgstr "所有输出钩子的基类。"
+
+#: c223ae5c0d984f6abf2eba064e2361fc of tooluniverse.output_hook.OutputHook:3
+msgid ""
+"This abstract base class defines the interface that all output hooks must "
+"implement. Hooks are used to process tool outputs after execution, enabling "
+"features like summarization, filtering, transformation, and validation."
+msgstr "此抽象基类定义了所有输出钩子必须实现的接口。钩子用于在工具执行后处理输出，从而实现摘要、过滤、转换和验证等功能。"
+
+#: ef531c7e89e8402b8b036d97ad6f45ad of tooluniverse.output_hook.OutputHook:7
+msgid ""
+"Hook configuration including name, enabled status, priority, and conditions"
+msgstr "钩子配置，包括名称、启用状态、优先级和条件"
+
+#: 4c56e53e53f446b9b9641206e1cdc1a2 8f82b95e347b43d3a9ef108bf6d8b846
+#: c751483152e146039d4511e94c084ecc of
+#: tooluniverse.output_hook.HookManager._create_hook_instance:6
+#: tooluniverse.output_hook.OutputHook:13
+#: tooluniverse.output_hook.SummarizationHook.__init__:3
+msgid "Hook configuration"
+msgstr "钩子配置"
+
+#: 4e3a1400629d48f08a15800ff99b5789 of tooluniverse.output_hook.OutputHook:19
+msgid "Name of the hook"
+msgstr "挂钩名称"
+
+#: 889bc5b10a9946069698cb08dee2c0f2 9b7e9152e3454a2db42047c18f8fe46d
+#: fb84b3fedcd34438b44df8a6532017ff fff77e918e2b44008fe14b4967cca27f of
+#: tooluniverse.output_hook.HookManager:37
+#: tooluniverse.output_hook.OutputHook:21
+#: tooluniverse.output_hook.SummarizationHook:19
+#: tooluniverse.output_hook.SummarizationHook:31
+msgid ":py:class:`str`"
+msgstr ""
+
+#: 4ca1ca4c2bda461aaeea12c558a8f530 of tooluniverse.output_hook.OutputHook:25
+msgid "Whether the hook is enabled"
+msgstr "是否启用钩子"
+
+#: 319d9783addf4cfb93ceee585080f8b6 eccb6a108e424e5e957ad6ea05945940 of
+#: tooluniverse.output_hook.HookManager:31
+#: tooluniverse.output_hook.OutputHook:27
+msgid ":py:class:`bool`"
+msgstr ":py:class:`布尔值`"
+
+#: e759ad53e71f4ecbb1b03771b53cf9ed of tooluniverse.output_hook.OutputHook:31
+msgid "Hook priority (lower numbers execute first)"
+msgstr "钩子优先级（数字越小优先执行）"
+
+#: 4e70082f0b724b739f43858f170671f9 a7d301fd8a36413d8e35417f36ce3cd9
+#: b44dcd55b3354439b337b45688dd18c4 of tooluniverse.output_hook.OutputHook:33
+#: tooluniverse.output_hook.SummarizationHook:25
+#: tooluniverse.output_hook.SummarizationHook:37
+msgid ":py:class:`int`"
+msgstr ""
+
+#: b242b28a35bf4c89a576491dcd4a31b7 of tooluniverse.output_hook.OutputHook:37
+msgid "Rule for when this hook should trigger"
+msgstr "触发此钩子的规则"
+
+#: 88f9c4aeef5b4aff947a78ccc66e832c of tooluniverse.output_hook.OutputHook:39
+msgid ":py:class:`HookRule`"
+msgstr ""
+
+#: 2892dee524104c8d9166ec8b82c1e50c of
+#: tooluniverse.output_hook.OutputHook.__init__:1
+msgid "Initialize the output hook with configuration."
+msgstr "使用配置初始化输出钩子。"
+
+#: 72c952e22e214f08b14891c8e5d9bd77 of
+#: tooluniverse.output_hook.OutputHook.__init__:3
+msgid ""
+"Hook configuration containing: - name: Hook identifier - enabled: Whether "
+"hook is active - priority: Execution priority - conditions: Trigger "
+"conditions"
+msgstr ""
+"钩子配置包含：  \n"
+"- name：钩子标识符  \n"
+"- enabled：钩子是否启用  \n"
+"- priority：执行优先级  \n"
+"- conditions：触发条件"
+
+#: 5b88ab2fc30f47a1a87596c35471cbf2 of
+#: tooluniverse.output_hook.OutputHook.should_trigger:1
+msgid "Determine if this hook should be triggered for the given output."
+msgstr "确定是否应为给定的输出触发此钩子。"
+
+#: c1619d0dcb26442eb9a63b9be2f72883 of
+#: tooluniverse.output_hook.OutputHook.should_trigger:12
+msgid "True if hook should trigger, False otherwise"
+msgstr "如果钩子应触发，则为 True，否则为 False"
+
+#: 53671e33f8b14d988b85dc014641df52 of
+#: tooluniverse.output_hook.OutputHook.process:1
+msgid "Process the tool output."
+msgstr "处理工具输出。"
+
+#: d7a3a0137be845b98f8ef2b93b9c5b5e of
+#: tooluniverse.output_hook.OutputHook.process:3
+msgid ""
+"This method must be implemented by subclasses to define the specific "
+"processing logic for the hook."
+msgstr "此方法必须由子类实现，以定义钩子的具体处理逻辑。"
+
+#: 5e28f920d1f44f24868ee0fc7efe5e13 dc1eb458c5cd4cb8b48070a4f35c66be
+#: fd58214b01a647b9a86bc76b1f1d40a1 of
+#: tooluniverse.output_hook.FileSaveHook.process:3
+#: tooluniverse.output_hook.HookManager.apply_hooks:7
+#: tooluniverse.output_hook.OutputHook.process:6
+msgid "The tool output to process"
+msgstr "工具输出以处理"
+
+#: e83f5aecc2ec4526ad3aa29271eba9ff of
+#: tooluniverse.output_hook.OutputHook.process:15
+msgid "The processed output"
+msgstr "处理后的输出"
+
+#: ../../api/tooluniverse.output_hook.rst 54302154d961454b9a12b685a61f8189
+msgid "Raises"
+msgstr "提升"
+
+#: 6511a47b2e5d445bb36587d3c46aa3d2 of
+#: tooluniverse.output_hook.OutputHook.process:18
+msgid "If not implemented by subclass"
+msgstr "如果未被子类实现"
+
+#: 9d4fd678c1b24286ae555435b2087c96 of
+#: tooluniverse.output_hook.SummarizationHookConfig:1
+msgid ""
+"SummarizationHookConfig(composer_tool: str = 'OutputSummarizationComposer', "
+"chunk_size: int = 30000, focus_areas: str = 'key_findings_and_results', "
+"max_summary_length: int = 3000, composer_timeout_sec: int = 60)"
+msgstr ""
+"SummarizationHookConfig(composer_tool: str = 'OutputSummarizationComposer', "
+"chunk_size: int = 30000, focus_areas: str = '关键发现和结果', max_summary_length: "
+"int = 3000, composer_timeout_sec: int = 60)"
+
+#: 220df384e72e4cd684b88a0ccaa82da1 f590835dbf4549bc998d769dfa81fcc4 of
+#: tooluniverse.output_hook.FileSaveHook:1
+#: tooluniverse.output_hook.SummarizationHook:1
+msgid "Bases: :py:class:`~tooluniverse.output_hook.OutputHook`"
+msgstr "基础类：:py:class:`~tooluniverse.output_hook.OutputHook`"
+
+#: 3ad06374067340f487071c97075c3ca7 of
+#: tooluniverse.output_hook.SummarizationHook:1
+msgid "Hook for intelligent output summarization using AI."
+msgstr "用于智能输出摘要的 AI 钩子"
+
+#: 84364a06d1f04f3baee68e3835ae1b49 of
+#: tooluniverse.output_hook.SummarizationHook:3
+msgid ""
+"This hook uses the ToolUniverse's AgenticTool and ComposeTool infrastructure"
+" to provide intelligent summarization of long tool outputs. It supports "
+"chunking large outputs, processing each chunk with AI, and merging results."
+msgstr ""
+"此钩子利用ToolUniverse的AgenticTool和ComposeTool基础架构，提供对长工具输出的智能摘要功能。它支持对大型输出进行分块处理，使用AI处理每个分块，并合并结果。"
+
+#: 25feb33300e34f179a94ce9e0cf25258 of
+#: tooluniverse.output_hook.SummarizationHook:7
+msgid "Hook configuration including summarization parameters"
+msgstr "钩子配置，包括汇总参数"
+
+#: 38f2dcf3fe14423b924c7ec4e03dd458 9888d728f33148ebb3de04ba72b2b872 of
+#: tooluniverse.output_hook.HookManager:9
+#: tooluniverse.output_hook.SummarizationHook:9
+msgid "Reference to the ToolUniverse instance"
+msgstr "引用 ToolUniverse 实例"
+
+#: 0eae2fe9ec004051a3d792a6efa10fb0 34ef74a40b2646d59e3f0b199e94aa0b of
+#: tooluniverse.output_hook.HookManager:19
+#: tooluniverse.output_hook.SummarizationHook:13
+msgid "ToolUniverse instance for tool execution"
+msgstr "用于工具执行的 ToolUniverse 实例"
+
+#: 30784e1975a744549bc05999c1e628e5 of
+#: tooluniverse.output_hook.SummarizationHook:17
+msgid "Name of the ComposeTool for summarization"
+msgstr "用于摘要的ComposeTool名称"
+
+#: 4b3afb4dc4504a529b0749c1094934b7 of
+#: tooluniverse.output_hook.SummarizationHook:23
+msgid "Size of chunks for processing large outputs"
+msgstr "处理大输出的块大小"
+
+#: f02d609cbfeb483ca1e95706ff430630 of
+#: tooluniverse.output_hook.SummarizationHook:29
+msgid "Areas to focus on during summarization"
+msgstr "总结时需重点关注的领域"
+
+#: 6b8775a8c63d4302b2a2a7b546464427 of
+#: tooluniverse.output_hook.SummarizationHook:35
+msgid "Maximum length of final summary"
+msgstr "最终摘要的最大长度"
+
+#: 2ccdab94cfca48479a60d7f352c6ecb5 of
+#: tooluniverse.output_hook.SummarizationHook.__init__:1
+msgid "Initialize the summarization hook."
+msgstr "初始化摘要钩子。"
+
+#: 3f5e83fded684c9cafb3be09f8f312da of
+#: tooluniverse.output_hook.SummarizationHook.__init__:5
+msgid "ToolUniverse instance for executing summarization tools"
+msgstr "用于执行摘要工具的 ToolUniverse 实例"
+
+#: 1a80e53e65494186babfc5fcc0b6c613 of
+#: tooluniverse.output_hook.SummarizationHook.process:1
+msgid "Execute summarization processing using Compose Summarizer Tool."
+msgstr "使用 Compose Summarizer 工具执行摘要处理。"
+
+#: 959e80a708cd4e7c8d000fabe06d0cb0 of
+#: tooluniverse.output_hook.SummarizationHook.process:3
+msgid ""
+"This method orchestrates the summarization workflow by: 1. Preparing "
+"parameters for the Compose Summarizer Tool 2. Calling the tool through "
+"ToolUniverse 3. Processing and returning the summarized result"
+msgstr ""
+"该方法通过以下步骤协调摘要工作流程：1. 准备 Compose Summarizer 工具的参数 2. 通过 ToolUniverse 调用该工具 3."
+" 处理并返回摘要结果"
+
+#: 7eaf80d6765149639d850cb7d1aa5e46 of
+#: tooluniverse.output_hook.SummarizationHook.process:8
+msgid "The tool output to summarize"
+msgstr "工具输出摘要"
+
+#: e9182fe4ef934bdf8b951fb615beec4c of
+#: tooluniverse.output_hook.SummarizationHook.process:17
+msgid "The summarized output, or original output if summarization fails"
+msgstr "汇总输出，或在汇总失败时的原始输出"
+
+#: 991aa578d6784b0da612576cd5642727 of
+#: tooluniverse.output_hook.SummarizationHook._extract_query_context:1
+msgid "Extract query context from execution context."
+msgstr "从执行上下文中提取查询上下文。"
+
+#: 6c6faaef964143c691412acca1692db2 of
+#: tooluniverse.output_hook.SummarizationHook._extract_query_context:3
+msgid ""
+"This method attempts to identify the original user query or intent from the "
+"context information to provide better summarization."
+msgstr "该方法试图从上下文信息中识别原始用户查询或意图，以提供更优的摘要。"
+
+#: 460d035803cf4afebbfc88401739ed49 of
+#: tooluniverse.output_hook.SummarizationHook._extract_query_context:6
+msgid "Execution context containing arguments and metadata"
+msgstr "包含参数和元数据的执行上下文"
+
+#: 9165be19d0f94b2aa00ed6c67e91187c of
+#: tooluniverse.output_hook.SummarizationHook._extract_query_context:9
+msgid "Extracted query context or fallback description"
+msgstr "提取的查询上下文或备用描述"
+
+#: ac02bd6fdab5484f8157e94148b2ad19 of tooluniverse.output_hook.HookManager:1
+msgid "Manages and coordinates all output hooks."
+msgstr "管理并协调所有输出钩子。"
+
+#: 3bff1ac7530449d7af4a43a6281231ac of tooluniverse.output_hook.HookManager:3
+msgid ""
+"The HookManager is responsible for loading hook configurations, creating "
+"hook instances, and applying hooks to tool outputs. It provides a unified "
+"interface for hook management and supports dynamic configuration updates."
+msgstr "HookManager 负责加载钩子配置、创建钩子实例并将钩子应用于工具输出。它提供了统一的钩子管理接口，并支持动态配置更新。"
+
+#: 15a916f8f6234c4689be6f7ad478e3dc ce574163fc8c4c38820713939ef9b4df of
+#: tooluniverse.output_hook.HookManager:7
+#: tooluniverse.output_hook.HookManager:13
+msgid "Hook manager configuration"
+msgstr "钩子管理器配置"
+
+#: 010503bbeec74fe4a956489dbc47bf4d of tooluniverse.output_hook.HookManager:23
+msgid "List of loaded hook instances"
+msgstr "已加载的钩子实例列表"
+
+#: a4da2eec68a34c51a35d1a4a9484f251 of tooluniverse.output_hook.HookManager:25
+msgid ":py:class:`List[OutputHook]`"
+msgstr ""
+
+#: 21f0d83b4b8e472e89b8b30ed9cc833a of tooluniverse.output_hook.HookManager:29
+msgid "Whether hook processing is enabled"
+msgstr "是否启用钩子处理"
+
+#: 56fdad191e804670bdf2d75a3a4901a0 of tooluniverse.output_hook.HookManager:35
+msgid "Path to hook configuration file"
+msgstr "钩子配置文件路径"
+
+#: b2fe51dd22554afe8b6531e2bca02f19 of
+#: tooluniverse.output_hook.HookManager.__init__:1
+msgid "Initialize the hook manager."
+msgstr "初始化钩子管理器。"
+
+#: 7892bd6655104c11adbb032c4da1ae4a of
+#: tooluniverse.output_hook.HookManager.__init__:3
+msgid "Configuration for hook manager"
+msgstr "钩子管理器配置"
+
+#: 6154f0d06b614caf827f1bad89f6a43b of
+#: tooluniverse.output_hook.HookManager.__init__:5
+msgid "ToolUniverse instance for executing tools"
+msgstr "用于执行工具的 ToolUniverse 实例"
+
+#: f9d7643a4099479db03229c90d6e4fd9 of
+#: tooluniverse.output_hook.HookManager.apply_hooks:1
+msgid "Apply all applicable hooks to the tool output."
+msgstr "将所有适用的钩子应用于工具输出。"
+
+#: 975dbf3f85554d1f883defdc4574cb05 of
+#: tooluniverse.output_hook.HookManager.apply_hooks:3
+msgid ""
+"This method iterates through all loaded hooks, checks if they should be "
+"applied to the current output, and processes the output through each "
+"applicable hook in priority order."
+msgstr "该方法遍历所有已加载的钩子，检查它们是否应应用于当前输出，并按照优先级顺序通过每个适用的钩子处理输出。"
+
+#: 1d59783f416141789434fb036664ba93 of
+#: tooluniverse.output_hook.HookManager.apply_hooks:16
+msgid "The processed output after applying all applicable hooks"
+msgstr "应用所有适用钩子后处理的输出结果"
+
+#: 62024dd73d304608b670013c561db067 of
+#: tooluniverse.output_hook.HookManager._validate_llm_api_keys:1
+msgid "Validate that LLM API keys are available for hook tools."
+msgstr "验证是否为钩子工具提供了 LLM API 密钥。"
+
+#: 7bca7652c82141fd88d06c401f8a4f14 of
+#: tooluniverse.output_hook.HookManager._validate_llm_api_keys:3
+msgid "True if API keys are available, False otherwise"
+msgstr "如果 API 密钥可用，则为 True，否则为 False"
+
+#: 06d178b654e448508376247be0fb401e of
+#: tooluniverse.output_hook.HookManager.enable_hook:1
+msgid "Enable a specific hook by name."
+msgstr "通过名称启用特定钩子。"
+
+#: 77b4a20b3dfd4c9289fcb9b18523e211 of
+#: tooluniverse.output_hook.HookManager.enable_hook:3
+msgid "Name of the hook to enable"
+msgstr "要启用的钩子名称"
+
+#: d69a43b2a935449796b8e5a8b9937f25 of
+#: tooluniverse.output_hook.HookManager.disable_hook:1
+msgid "Disable a specific hook by name."
+msgstr "通过名称禁用特定钩子。"
+
+#: b8aac4e14b46474a852a5181a9f74a4a of
+#: tooluniverse.output_hook.HookManager.disable_hook:3
+msgid "Name of the hook to disable"
+msgstr "要禁用的钩子名称"
+
+#: f2de82fc3e464ff68ab79562f55df57b of
+#: tooluniverse.output_hook.HookManager.toggle_hooks:1
+msgid "Enable or disable all hooks globally."
+msgstr "全局启用或禁用所有钩子。"
+
+#: c9158522f48e44eb8765f507491a94cf of
+#: tooluniverse.output_hook.HookManager.toggle_hooks:3
+msgid "True to enable all hooks, False to disable"
+msgstr "True 表示启用所有钩子，False 表示禁用"
+
+#: 6a46ce01c6db4e9da8e29716f970cfba of
+#: tooluniverse.output_hook.HookManager.enable_hooks:1
+msgid "Enable hooks and (re)load configurations and required tools."
+msgstr "启用钩子并（重新）加载配置和所需工具。"
+
+#: ce9f63bf1ede4b6fa8ac794868d662e4 of
+#: tooluniverse.output_hook.HookManager.disable_hooks:1
+#, fuzzy
+msgid "Disable hooks and clear in-memory hook instances."
+msgstr "加载钩子配置并创建钩子实例。"
+
+#: 558a98b4ea8a4d3aa20e54776db3e1fe of
+#: tooluniverse.output_hook.HookManager.reload_config:1
+msgid "Reload hook configuration from file."
+msgstr "从文件重新加载钩子配置。"
+
+#: 31ffb3e7884848fbb4ccaab1351f9609 of
+#: tooluniverse.output_hook.HookManager.reload_config:3
+msgid "Path to configuration file. If None, uses the current config_path"
+msgstr "配置文件路径。若为 None，则使用当前的 config_path。"
+
+#: 33d6b77753984f89900c06e355783ff9 of
+#: tooluniverse.output_hook.HookManager.get_hook:1
+msgid "Get a hook instance by name."
+msgstr "通过名称获取钩子实例。"
+
+#: 528cee8e95744032a4d723eb39f56f04 of
+#: tooluniverse.output_hook.HookManager.get_hook:3
+msgid "Name of the hook to retrieve"
+msgstr "要检索的钩子名称"
+
+#: 09e87f5a7b9e4144afb0d44a612b5d4b of
+#: tooluniverse.output_hook.HookManager.get_hook:6
+msgid "Hook instance if found, None otherwise"
+msgstr "如果找到，则返回 Hook 实例，否则返回 None"
+
+#: b9df12fc349947029de38a5c551333b7 of
+#: tooluniverse.output_hook.HookManager._load_hook_config:1
+msgid "Load hook configuration from file."
+msgstr "从文件加载挂钩配置。"
+
+#: 1795f9dac5694324ab45391407d04cff of
+#: tooluniverse.output_hook.HookManager._load_hook_config:3
+msgid ""
+"This method attempts to load the hook configuration from the specified file "
+"path, handling both package resources and file system paths. If the config "
+"is already provided and not empty, it uses that instead."
+msgstr "该方法尝试从指定的文件路径加载钩子配置，支持包资源和文件系统路径两种方式。如果配置已提供且非空，则直接使用该配置。"
+
+#: 30a5e29650b54b5dbf9a6b764087f82a of
+#: tooluniverse.output_hook.HookManager._get_config_file_path:1
+msgid "Get the path to the hook configuration file."
+msgstr "获取钩子配置文件的路径。"
+
+#: 1d827442c97a417e98a29bafa2318a83 of
+#: tooluniverse.output_hook.HookManager._get_config_file_path:3
+msgid "Path to the configuration file"
+msgstr "配置文件路径"
+
+#: 167ab90fb19d40e3925b76894ddc116b of
+#: tooluniverse.output_hook.HookManager._load_hooks:1
+msgid "Load hook configurations and create hook instances."
+msgstr "加载钩子配置并创建钩子实例。"
+
+#: 44789f6e85a54abb86c01594a7bec89f of
+#: tooluniverse.output_hook.HookManager._load_hooks:3
+msgid ""
+"This method processes the configuration and creates appropriate hook "
+"instances for global, tool-specific, and category-specific hooks. It also "
+"automatically loads any tools required by the hooks."
+msgstr "该方法处理配置并为全局、工具特定及类别特定的钩子创建相应的钩子实例。同时，它还会自动加载钩子所需的任何工具。"
+
+#: 7134e7d38a394b76a6d2e351ff344e97 of
+#: tooluniverse.output_hook.HookManager._auto_load_hook_tools:1
+msgid "Automatically load tools required by hooks."
+msgstr "自动加载钩子所需的工具。"
+
+#: d7e5aef7f813410aa8ef75bf0c4b61b1 of
+#: tooluniverse.output_hook.HookManager._auto_load_hook_tools:3
+msgid ""
+"This method analyzes hook configurations to determine which tools are needed"
+" and automatically loads them into the ToolUniverse."
+msgstr "该方法分析钩子配置以确定所需工具，并自动将其加载到工具宇宙中。"
+
+#: f87ce2cca7fa4551a170549f95fea1e6 of
+#: tooluniverse.output_hook.HookManager._auto_load_hook_tools:6
+msgid "List of hook configurations"
+msgstr "钩子配置列表"
+
+#: bb1ed9d06608402785b3c3be068a762c of
+#: tooluniverse.output_hook.HookManager._ensure_hook_tools_loaded:1
+msgid "Ensure that tools required by hooks are loaded."
+msgstr "确保钩子所需的工具已加载。"
+
+#: 50b7629e5d0e433f92e079b73648228c of
+#: tooluniverse.output_hook.HookManager._ensure_hook_tools_loaded:3
+msgid ""
+"This method is called during HookManager initialization to make sure that "
+"the necessary tools (like output_summarization tools) are available."
+msgstr "该方法在 HookManager 初始化期间调用，以确保所需的工具（如 output_summarization 工具）可用。"
+
+#: fa311bd7cb3d4081ae01333dd9c9df3f of
+#: tooluniverse.output_hook.HookManager._load_pending_tools:1
+msgid "Load any pending tools that were queued during initialization."
+msgstr "加载初始化期间排队的所有待处理工具。"
+
+#: 9e268800d6af4c7590c475a152233430 of
+#: tooluniverse.output_hook.HookManager._load_pending_tools:3
+msgid ""
+"This method is called when hooks are applied to ensure that any tools that "
+"couldn't be loaded during HookManager initialization are loaded once the "
+"ToolUniverse is fully ready."
+msgstr ""
+"当应用钩子时，会调用此方法以确保在 HookManager 初始化期间未能加载的任何工具，在 ToolUniverse 完全准备就绪后能够被加载。"
+
+#: e0c7448a07554546b35781b6fa845be1 of
+#: tooluniverse.output_hook.HookManager._is_hook_tool:1
+msgid ""
+"Check if a tool is a hook-related tool that should not be processed by "
+"hooks."
+msgstr "检查工具是否为与钩子相关的工具，且不应由钩子处理。"
+
+#: 483c4cc7c11b4c4ba2ac73f1cec7deb3 of
+#: tooluniverse.output_hook.HookManager._is_hook_tool:3
+msgid ""
+"This prevents recursive hook processing where hook tools (like "
+"ToolOutputSummarizer) produce output that would trigger more hook "
+"processing."
+msgstr "这可以防止递归钩子处理，即钩子工具（如 ToolOutputSummarizer）生成的输出触发更多钩子处理。"
+
+#: 178e22856a76478580097ae8dcbc6c8c of
+#: tooluniverse.output_hook.HookManager._is_hook_tool:6
+msgid "Name of the tool to check"
+msgstr "检查工具名称"
+
+#: f3d6432256e543e5b48c87665f5889e0 of
+#: tooluniverse.output_hook.HookManager._is_hook_tool:9
+msgid ""
+"True if the tool is a hook tool and should be excluded from hook processing"
+msgstr "如果该工具是挂钩工具，则返回真，应排除在挂钩处理之外。"
+
+#: bce8526835f14342bee69eb48a1eb132 of
+#: tooluniverse.output_hook.HookManager._create_hook_instance:1
+msgid "Create a hook instance based on configuration."
+msgstr "根据配置创建钩子实例。"
+
+#: 0d20632acba449bd87b2812467cc4e52 of
+#: tooluniverse.output_hook.HookManager._create_hook_instance:3
+msgid ""
+"This method creates hook instances and applies hook type-specific defaults "
+"from the configuration before initializing the hook."
+msgstr "该方法在初始化钩子之前，创建钩子实例并应用配置中钩子类型特定的默认设置。"
+
+#: b9bba94a387e490baf515884f3514aa3 of
+#: tooluniverse.output_hook.HookManager._create_hook_instance:9
+msgid "Created hook instance or None if type not supported"
+msgstr "创建钩子实例，若类型不支持则返回 None"
+
+#: a902460e045a49898edc1e6abdc1b7bd of
+#: tooluniverse.output_hook.HookManager._apply_hook_type_defaults:1
+msgid "Apply hook type-specific default values to hook configuration."
+msgstr "将钩子类型特定的默认值应用于钩子配置。"
+
+#: 195ecd44c1664643ae7ed0379cfb3ee8 of
+#: tooluniverse.output_hook.HookManager._apply_hook_type_defaults:3
+msgid ""
+"This method merges hook type defaults with individual hook configuration, "
+"ensuring that each hook type gets its appropriate default values."
+msgstr "此方法将钩子类型的默认值与各个钩子的配置合并，确保每种钩子类型都能获得其适当的默认值。"
+
+#: 6c9fc9b52a2f434e80509f56b33566aa of
+#: tooluniverse.output_hook.HookManager._apply_hook_type_defaults:6
+msgid "Original hook configuration"
+msgstr "原始钩子配置"
+
+#: 12784682fcd7497aa42ef7bc5449f483 of
+#: tooluniverse.output_hook.HookManager._apply_hook_type_defaults:9
+msgid "Enhanced configuration with defaults applied"
+msgstr "使用默认值的增强配置"
+
+#: 3725cb1cbae04792b8de34572aef80f1 of
+#: tooluniverse.output_hook.HookManager._is_hook_applicable:1
+msgid "Check if a hook is applicable to the current tool."
+msgstr "检查挂钩是否适用于当前工具。"
+
+#: 77133083276c426597bc7167eae7fc1f of
+#: tooluniverse.output_hook.HookManager._is_hook_applicable:3
+msgid "Hook instance to check"
+msgstr "挂钩实例以进行检查"
+
+#: d649d64d41b44114bc6047642ec4ee22 of
+#: tooluniverse.output_hook.HookManager._is_hook_applicable:5
+msgid "Name of the current tool"
+msgstr "当前工具的名称"
+
+#: 00e3630ee2a247e9b021a2f6c70eadd3 41f6e65ca347409ead89100ce7d5d077 of
+#: tooluniverse.output_hook.FileSaveHook.process:9
+#: tooluniverse.output_hook.HookManager._is_hook_applicable:7
+msgid "Execution context"
+msgstr "执行上下文"
+
+#: 2cb23dec788d44fe9a5125c4e9a6eca5 of
+#: tooluniverse.output_hook.HookManager._is_hook_applicable:10
+msgid "True if hook is applicable, False otherwise"
+msgstr "如果钩子适用，则为 True，否则为 False"
+
+#: 362ec054871a45adb85be85d96462fd2 of tooluniverse.output_hook.FileSaveHook:1
+msgid ""
+"Hook that saves tool outputs to temporary files and returns file "
+"information."
+msgstr "用于将工具输出保存到临时文件并返回文件信息的钩子。"
+
+#: 1349ad6933924711b23310132f3ceb80 of tooluniverse.output_hook.FileSaveHook:3
+msgid ""
+"This hook saves the tool output to a temporary file and returns information "
+"about the file path, data format, and data structure instead of the original"
+" output. This is useful for handling large outputs or when you need to "
+"process outputs as files rather than in-memory data."
+msgstr ""
+"此钩子将工具的输出保存到一个临时文件中，并返回有关文件路径、数据格式和数据结构的信息，而不是原始输出。这对于处理大型输出或需要将输出作为文件而非内存数据进行处理的情况非常有用。"
+
+#: de9c877602ee4b9cbc579f48e65e5e60 of tooluniverse.output_hook.FileSaveHook:8
+msgid ""
+"Configuration options: - temp_dir: Directory to save temporary files "
+"(default: system temp) - file_prefix: Prefix for generated filenames "
+"(default: 'tool_output') - include_metadata: Whether to include metadata in "
+"the response (default: True) - auto_cleanup: Whether to automatically clean "
+"up old files (default: False) - cleanup_age_hours: Age in hours for auto "
+"cleanup (default: 24)"
+msgstr ""
+"配置选项：  \n"
+"- `temp_dir`：用于保存临时文件的目录（默认值：系统临时目录）  \n"
+"- `file_prefix`：生成文件名的前缀（默认值：`tool_output`）  \n"
+"- `include_metadata`：是否在响应中包含元数据（默认值：`True`）  \n"
+"- `auto_cleanup`：是否自动清理旧文件（默认值：`False`）  \n"
+"- `cleanup_age_hours`：自动清理的文件年龄（以小时为单位）（默认值：`24`）"
+
+#: 6fd7c0f7fedb4e70b5fe2be667339f52 of
+#: tooluniverse.output_hook.FileSaveHook.__init__:1
+msgid "Initialize the FileSaveHook."
+msgstr "初始化 FileSaveHook。"
+
+#: 4a3077c37b744c34b02c4a2f95843fd9 of
+#: tooluniverse.output_hook.FileSaveHook.__init__:3
+msgid ""
+"Hook configuration including: - name: Hook name - temp_dir: Directory for "
+"temporary files - file_prefix: Prefix for filenames - include_metadata: "
+"Include metadata flag - auto_cleanup: Auto cleanup flag - cleanup_age_hours:"
+" Cleanup age in hours"
+msgstr ""
+"钩子配置包括：  \n"
+"- name: 钩子名称  \n"
+"- temp_dir: 临时文件目录  \n"
+"- file_prefix: 文件名前缀  \n"
+"- include_metadata: 是否包含元数据标志  \n"
+"- auto_cleanup: 是否自动清理标志  \n"
+"- cleanup_age_hours: 清理时间（以小时为单位）"
+
+#: d195e07cc7994089bacc16b19a684fcf of
+#: tooluniverse.output_hook.FileSaveHook.process:1
+msgid "Process the tool output by saving it to a temporary file."
+msgstr "将工具的输出保存到临时文件中进行处理。"
+
+#: 3d864f7a80b443d4849952177491226a of
+#: tooluniverse.output_hook.FileSaveHook.process:12
+msgid ""
+"Dictionary containing file information:     - file_path: Path to the saved "
+"file     - data_format: Format of the data (json, text, binary, etc.)     - "
+"data_structure: Structure information about the data     - file_size: Size "
+"of the file in bytes     - created_at: Timestamp when file was created     -"
+" metadata: Additional metadata (if include_metadata is True)"
+msgstr ""
+"包含文件信息的字典：  \n"
+"- `file_path`：文件保存路径  \n"
+"- `data_format`：数据格式（如 json、text、binary 等）  \n"
+"- `data_structure`：数据的结构信息  \n"
+"- `file_size`：文件大小（以字节为单位）  \n"
+"- `created_at`：文件创建的时间戳  \n"
+"- `metadata`：附加的元数据（如果 `include_metadata` 为 True）"
+
+#: 79be4d57f39f48cab2116d90c8483399 of
+#: tooluniverse.output_hook.FileSaveHook.process:14
+msgid "Dictionary containing file information:"
+msgstr "包含文件信息的字典："
+
+#: aa4afb7444104659bef0ea53617f246c of
+#: tooluniverse.output_hook.FileSaveHook.process:15
+msgid "file_path: Path to the saved file"
+msgstr "file_path：保存文件的路径"
+
+#: 19feea30147c48e18fda0b85e47adac2 of
+#: tooluniverse.output_hook.FileSaveHook.process:16
+msgid "data_format: Format of the data (json, text, binary, etc.)"
+msgstr "data_format：数据的格式（json、text、binary 等）"
+
+#: 4770d51efc4d48128c4c83735ad9d95c of
+#: tooluniverse.output_hook.FileSaveHook.process:17
+msgid "data_structure: Structure information about the data"
+msgstr "data_structure：关于数据的结构信息"
+
+#: 67a60ebb03584a21a73f406623a4171c of
+#: tooluniverse.output_hook.FileSaveHook.process:18
+msgid "file_size: Size of the file in bytes"
+msgstr "file_size：文件的大小（以字节为单位）"
+
+#: c8de783f34ea4d73a37bae1b08163ec9 of
+#: tooluniverse.output_hook.FileSaveHook.process:19
+msgid "created_at: Timestamp when file was created"
+msgstr "created_at：文件创建的时间戳"
+
+#: f55dbae6d3d84d64bd5f5db3423a5ef1 of
+#: tooluniverse.output_hook.FileSaveHook.process:20
+msgid "metadata: Additional metadata (if include_metadata is True)"
+msgstr "元数据：附加元数据（如果 include_metadata 为 True）"
+
+#: d1c968e74e5a429eb558fdcd0b4b2eca of
+#: tooluniverse.output_hook.FileSaveHook._analyze_data:1
+msgid "Analyze the data to determine its format and structure."
+msgstr "分析数据以确定其格式和结构。"
+
+#: 4be432d5981e491b9be7d4ef46456f5f of
+#: tooluniverse.output_hook.FileSaveHook._analyze_data:3
+msgid "The data to analyze"
+msgstr "需要分析的数据"
+
+#: 3511cc09782143a38ef3b1ab057847c9 of
+#: tooluniverse.output_hook.FileSaveHook._analyze_data:6
+msgid "(data_format, data_structure)"
+msgstr "（data_format，data_structure）"
+
+#: b86c203b2f2b4dce8ca3b2deafc4bf82 of
+#: tooluniverse.output_hook.FileSaveHook._write_data_to_file:1
+msgid "Write data to file in the appropriate format."
+msgstr "将数据以适当的格式写入文件。"
+
+#: 3e5b1ce743c54ad5aae94153edeb918a of
+#: tooluniverse.output_hook.FileSaveHook._write_data_to_file:3
+msgid "The data to write"
+msgstr "要写入的数据"
+
+#: e38384fd7c5d4b19ae97761a6120a6a5 of
+#: tooluniverse.output_hook.FileSaveHook._write_data_to_file:5
+msgid "Path to the file"
+msgstr "文件路径"
+
+#: f820ee3de27f4e8eb491ec8764b1045c of
+#: tooluniverse.output_hook.FileSaveHook._write_data_to_file:7
+msgid "Format of the data"
+msgstr "数据格式"
+
+#: 38731edfcbbe47e585fe6ed5cb1ad7d7 of
+#: tooluniverse.output_hook.FileSaveHook._cleanup_old_files:1
+msgid "Clean up old files based on the cleanup_age_hours setting."
+msgstr "根据 cleanup_age_hours 设置清理旧文件。"
+
+#~ msgid ":py:class:`Dict[str`, :py:class:`Any]`"
+#~ msgstr ""
+
+#~ msgid ":py:class:`Dict[str, Any]`"
+#~ msgstr ""

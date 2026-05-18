@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_datashader_info.rst:2
+#: 2f4cbcac38674617a358381a15b6219c
+msgid "tooluniverse.tools.get\\_datashader\\_info module"
+msgstr "tooluniverse.tools.get\\_datashader\\_info 模块"
+
+#: 7f7befb36281457f80831fb9158e7d49 of
+#: tooluniverse.tools.get_datashader_info:1
+msgid "get_datashader_info"
+msgstr ""
+"get_datashader_info\n"
+"\n"
+"获取_datashader_信息"
+
+#: 10c24f5158ad4ffab942f13ee216ef8a 634713870a424564ba61f44f7c45032f of
+#: tooluniverse.tools.get_datashader_info:3
+#: tooluniverse.tools.get_datashader_info.get_datashader_info:1
+msgid ""
+"Get information about the datashader package. Graphics pipeline system for "
+"creating meaningful vi..."
+msgstr "获取有关 datashader 包的信息。图形管线系统，用于创建有意义的可视化数据展示。"
+
+#: ../../api/tooluniverse.tools.get_datashader_info.rst
+#: 20d439f8b1a64d7cbe80227c5369f367
+msgid "Parameters"
+msgstr "参数"
+
+#: 2a33b1ae964f487c84b819349250d90c of
+#: tooluniverse.tools.get_datashader_info.get_datashader_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6326e84436a04c65833c3fd5e485431c of
+#: tooluniverse.tools.get_datashader_info.get_datashader_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7e81acf978f4485d81f53df7912a8bf4 of
+#: tooluniverse.tools.get_datashader_info.get_datashader_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_datashader_info.rst
+#: fef085b51fae4db596a09e34778c1cda
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0cf862720f784068903e2034a4da66df of
+#: tooluniverse.tools.get_datashader_info.get_datashader_info:11
+msgid ":py:class:`Any`"
+msgstr ""

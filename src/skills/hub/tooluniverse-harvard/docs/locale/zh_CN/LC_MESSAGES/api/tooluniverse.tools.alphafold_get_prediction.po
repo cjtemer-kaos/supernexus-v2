@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.alphafold_get_prediction.rst:2
+#: e43d71fa190e415093d340137f35bfda
+msgid "tooluniverse.tools.alphafold\\_get\\_prediction module"
+msgstr "tooluniverse.tools.alphafold\\_get\\_prediction 模块"
+
+#: 295b6bf06a2a47218b4d84ad004a9b99 of
+#: tooluniverse.tools.alphafold_get_prediction:1
+msgid "alphafold_get_prediction"
+msgstr "alphafold_获取预测结果"
+
+#: 256c2202713042d7bd32d9207f8fb062 33f719b81a0943caafe0435b95275978 of
+#: tooluniverse.tools.alphafold_get_prediction:3
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:1
+msgid ""
+"Retrieve full AlphaFold 3D structure predictions for a given protein. Input "
+"must be a UniProt acc..."
+msgstr "检索指定蛋白质的完整AlphaFold三维结构预测。输入必须为UniProt编号。"
+
+#: ../../api/tooluniverse.tools.alphafold_get_prediction.rst
+#: e793d60beb1142abbbb1e386bff6e04f
+msgid "Parameters"
+msgstr "参数"
+
+#: fdb0acf7b3c547cfb3aba6b50b2cb671 of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:3
+msgid ""
+"Protein identifier: UniProt accession (e.g., 'P69905'), entry name (e.g., "
+"'HB..."
+msgstr "蛋白质标识符：UniProt登录号（例如，“P69905”），条目名称（例如，“HB...）。"
+
+#: 7d2107ba83a14a22adb26a8b5c578f82 of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:5
+msgid "Optional CRC64 checksum of the UniProt sequence."
+msgstr "UniProt序列的可选CRC64校验和。"
+
+#: 852c4fddd16c4afaa676cdf25d968e15 of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b15ae48eb08d40c3a4662f5b7328029e of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 34917d0c570a485c9ff30c915d96e7e7 of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.alphafold_get_prediction.rst
+#: f2a4488990ae40b89b714d7fdfefc93b
+msgid "Return type"
+msgstr "返回类型"
+
+#: a988e30df9fd4b90a94012da9b32a182 of
+#: tooluniverse.tools.alphafold_get_prediction.alphafold_get_prediction:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

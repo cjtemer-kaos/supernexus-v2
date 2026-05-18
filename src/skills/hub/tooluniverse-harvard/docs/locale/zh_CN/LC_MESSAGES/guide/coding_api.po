@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/coding_api.rst:2 b2b0fcd9c9da4d89bf90c522336cf609
+msgid "Coding API - Typed Functions"
+msgstr "编码 API - 类型化函数"
+
+#: ../../guide/coding_api.rst:4 ae359524bf434d30ad35cb8b39ba1137
+msgid "Import and call tools like normal Python functions:"
+msgstr "像正常的 Python 函数一样导入并调用工具："
+
+#: ../../guide/coding_api.rst:15 3a60a3409d78441e81bd25b497bd8ce5
+msgid "With Options"
+msgstr "带选项"
+
+#: ../../guide/coding_api.rst:26 8492d2ee32b34513b622b335fbeae703
+msgid "Error Handling"
+msgstr "错误处理"
+
+#: ../../guide/coding_api.rst:40 c0f2f9a1dd794ab9825a7b090b229730
+msgid "Caching"
+msgstr "缓存"
+
+#: ../../guide/coding_api.rst:59 d29df73f501445cca469d6bcccd22e65
+msgid "Examples"
+msgstr "示例"
+
+#: ../../guide/coding_api.rst:61 fe3d0edd223b40de8f3368a36fb85a26
+msgid "See ``examples/coding_api_example.py`` for more examples."
+msgstr "请参阅 ``examples/coding_api_example.py`` 以获取更多示例。"

@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/hooks/index.rst:90
+msgid "Hook Topics"
+msgstr "钩子主题"
+
+#: ../../guide/hooks/index.rst:2 0f6c8136599a45a083268811e81186b6
+msgid "Post-processing Tool Outputs"
+msgstr "后处理工具输出"
+
+#: ../../guide/hooks/index.rst:4 87411897427645ad98599505b229ad98
+msgid "**Intelligent output processing for ToolUniverse**"
+msgstr "**ToolUniverse 的智能输出处理**"
+
+#: ../../guide/hooks/index.rst:6 dedb0ac96f044ff795b4be541a81b33c
+msgid ""
+"The ToolUniverse Hooks system provides automatic post-processing of tool "
+"outputs. Use hooks to summarize long results, save large outputs to files, "
+"and customize behavior per tool or workflow."
+msgstr ""
+"ToolUniverse Hooks 系统提供对工具输出的自动后处理功能。使用 Hooks "
+"可对长结果进行摘要，将大量输出保存到文件中，并根据具体工具或工作流程自定义行为。"
+
+#: ../../guide/hooks/index.rst:9 521f6ce051ec4d67bf3dda79b18ebe9a
+msgid "What are Hooks?"
+msgstr "什么是钩子（Hooks）？"
+
+#: ../../guide/hooks/index.rst:11 45caa94d3a30415a8e698e0d3adef968
+msgid ""
+"Hooks are post-processing functions that automatically transform tool "
+"outputs before they're returned to you. They're designed to:"
+msgstr "Hooks 是一种后处理函数，可在工具输出返回给您之前自动对其进行转换。它们的设计目的包括："
+
+#: ../../guide/hooks/index.rst:13 d849301d8e734a269f08064659c443b8
+msgid ""
+"**Summarize long outputs**: Use AI to condense lengthy results into key "
+"insights"
+msgstr "**总结长输出**：使用人工智能将冗长的结果浓缩为关键洞察"
+
+#: ../../guide/hooks/index.rst:14 8b0bcd34fb024461b90eeacfd2285110
+msgid "**Save large datasets**: Store massive outputs as files with metadata"
+msgstr "**保存大型数据集**：将大量输出作为带有元数据的文件存储"
+
+#: ../../guide/hooks/index.rst:15 488111135c174defafb810971606ea41
+msgid ""
+"**Customize processing**: Apply different logic based on tool type or output"
+" size"
+msgstr "**自定义处理**：根据工具类型或输出尺寸应用不同的逻辑"
+
+#: ../../guide/hooks/index.rst:16 fda097761ed24d5e8f5d228ac6103be5
+msgid "**Improve performance**: Reduce memory usage and processing time"
+msgstr "**提升性能**：减少内存使用和处理时间"
+
+#: ../../guide/hooks/index.rst:19 591a2fb09a6445409a08fc01aa88049e
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../guide/hooks/index.rst:21 47c829f3231f40f4a07e1cde1ab3a161
+msgid "**Enable hooks with one line:**"
+msgstr "**通过一行代码启用钩子：**"
+
+#: ../../guide/hooks/index.rst:37 a0b60e9ac4244ca8bb41ad7b79543c4b
+msgid "**Choose different hook types:**"
+msgstr "**选择不同的钩子类型：**"
+
+#: ../../guide/hooks/index.rst:48 da29f4fbc6b74dc9be75d02397ffb430
+#, fuzzy
+msgid "Hook Types"
+msgstr "钩子主题"
+
+#: ../../guide/hooks/index.rst:50 25d0361e62bd49349176c58841616b7c
+msgid "**SummarizationHook** - AI-powered summarization"
+msgstr "**SummarizationHook** - 基于AI的摘要功能"
+
+#: ../../guide/hooks/index.rst:51 f478638b0e5d4a4cb078265482f262c4
+msgid ""
+"Automatically summarizes long tool outputs using advanced AI models. "
+"Preserves key findings while reducing length."
+msgstr "自动使用先进的人工智能模型对冗长的工具输出进行总结，在缩短长度的同时保留关键结果。"
+
+#: ../../guide/hooks/index.rst:53 fa411e0f78c44f84ae626a2109fd925a
+msgid "**FileSaveHook** - File-based processing"
+msgstr "**FileSaveHook** - 基于文件的处理"
+
+#: ../../guide/hooks/index.rst:54 b51e5af4949447aca8861f0d0f691995
+msgid ""
+"Saves large outputs to disk with metadata. Returns file information instead "
+"of the original output."
+msgstr "将大型输出保存到磁盘并附加元数据。返回文件信息而非原始输出。"
+
+#: ../../guide/hooks/index.rst:56 efe8a77a90c9451398ad75eada47bf6d
+msgid "**Custom Hooks** - User-defined processing"
+msgstr "**自定义钩子** - 用户定义的处理"
+
+#: ../../guide/hooks/index.rst:57 f81b789ba7714581897a06fc0520d3c0
+msgid "Create your own hooks for specialized processing needs."
+msgstr "创建您自己的钩子以满足特殊处理需求。"
+
+#: ../../guide/hooks/index.rst:60 0ce8627f97d74810b88efdaa51457e8a
+msgid "When to Use Hooks"
+msgstr "何时使用钩子"
+
+#: ../../guide/hooks/index.rst:62 1d697c5285ac48ef8cd3086e290f7963
+msgid ""
+"**Use SummarizationHook when:** - Tool outputs are too long to read "
+"efficiently - You need quick insights from detailed data - Working with "
+"literature search results - Processing large scientific datasets"
+msgstr ""
+"**使用 SummarizationHook 的场景：**  \n"
+"- 工具输出内容过长，难以高效阅读  \n"
+"- 需要从详细数据中快速获取洞察  \n"
+"- 处理文献搜索结果  \n"
+"- 处理大型科学数据集"
+
+#: ../../guide/hooks/index.rst:68 e9570f2197f042d99f98719181e64a2b
+msgid ""
+"**Use FileSaveHook when:** - Outputs exceed memory limits - You need to "
+"process outputs as files - Archiving results for later analysis - "
+"Integrating with external tools"
+msgstr ""
+"**使用 FileSaveHook 的场景：**  \n"
+"- 输出超出内存限制  \n"
+"- 需要将输出作为文件进行处理  \n"
+"- 归档结果以供后续分析  \n"
+"- 与外部工具集成"
+
+#: ../../guide/hooks/index.rst:74 872f9bc430a84ad592d73c161fb81e56
+msgid ""
+"**Use Custom Hooks when:** - You have specific processing requirements - "
+"Standard hooks don't meet your needs - You need specialized data "
+"transformations"
+msgstr ""
+"**使用自定义钩子（Custom Hooks）的场景：**  \n"
+"- 您有特定的处理需求  \n"
+"- 标准钩子无法满足您的需求  \n"
+"- 您需要进行专门的数据转换"
+
+#: ../../guide/hooks/index.rst:80 199b9e4f481e497cb3bd286e94d06a02
+msgid "Performance Impact"
+msgstr "性能影响"
+
+#: ../../guide/hooks/index.rst:82 ac73e9053bfd4d869fb3099e54b3bcf1
+msgid "Hooks add processing overhead but provide significant benefits:"
+msgstr "钩子会增加处理开销，但能带来显著的优势："
+
+#: ../../guide/hooks/index.rst:84 0456a85850ba4614b87cfaf3cf3b3d21
+#, python-format
+msgid "**SummarizationHook**: 2-5x processing time, 50-80% output reduction"
+msgstr "**SummarizationHook**：处理时间增加2-5倍，输出减少50-80%"
+
+#: ../../guide/hooks/index.rst:85 6f1276bf406b4a7f9983b79c83077195
+msgid "**FileSaveHook**: Minimal overhead, significant memory savings"
+msgstr "**FileSaveHook**：极低的开销，显著的内存节省"
+
+#: ../../guide/hooks/index.rst:86 ee6fdf2a3d3342e0bce79f4a35decf00
+msgid "**Custom Hooks**: Depends on implementation"
+msgstr "**自定义钩子**：取决于实现"
+
+#: ../../guide/hooks/index.rst:88 0a3b875812e0464786bfe62ed8a51e33
+msgid ""
+"The trade-off is usually worth it for large outputs that benefit from "
+"processing."
+msgstr "权衡通常是值得的，尤其是对于从处理过程中获益的大规模输出。"
+
+#: ../../guide/hooks/index.rst:99 0a81389325594d27bec0aef78bf83588
+msgid "**Topic summaries**"
+msgstr "**主题摘要**"
+
+#: ../../guide/hooks/index.rst:101 3ad37a76e052416f98aa9ad3a814dc6e
+msgid ""
+":doc:`summarization_hook`: Automatically condenses long tool outputs into "
+"concise, high-signal summaries. Useful for literature results, large "
+"datasets, and multi-step workflows."
+msgstr ""
+":doc:`summarization_hook`：自动将冗长的工具输出浓缩为简洁且高效的信息摘要。适用于文献结果、大型数据集及多步骤工作流程。"
+
+#: ../../guide/hooks/index.rst:102 17855e33eb4744c4821f042b827aea2c
+msgid ""
+":doc:`file_save_hook`: Saves large outputs to disk with metadata for later "
+"processing and sharing. Ideal for heavy payloads, audit trails, and external"
+" pipelines."
+msgstr ":doc:`file_save_hook`：将大型输出及其元数据保存到磁盘，以便后续处理和共享。适用于大容量数据、审计追踪和外部管道。"
+
+#: ../../guide/hooks/index.rst:103 3e0ccfe7aaa74259973618be6e991a77
+msgid ""
+":doc:`hook_configuration`: Configure which hooks run, when they trigger, and"
+" how they behave. Supports thresholds, per-tool rules, and advanced options."
+msgstr ":doc:`hook_configuration`：配置钩子的运行时机、触发条件及行为方式。支持阈值设置、按工具规则及高级选项。"
+
+#: ../../guide/hooks/index.rst:104 b99271fdaa2749ceae0559013cd0b6df
+msgid ""
+":doc:`server_stdio_hooks`: How to use hooks in server (HTTP/SSE) and stdio "
+"modes. Covers CLI flags, Python API, defaults, and best practices."
+msgstr ""
+":doc:`server_stdio_hooks`：如何在服务器（HTTP/SSE）和标准输入输出模式中使用钩子。涵盖命令行参数、Python "
+"API、默认设置及最佳实践。"
+
+#: ../../guide/hooks/index.rst:107 438c15866e954c1f8adaad663a9c9ffc
+msgid "Examples"
+msgstr "示例"
+
+#: ../../guide/hooks/index.rst:109 4ca378012cc149528f4992d52813879d
+msgid "**Complete Hook Example:**"
+msgstr "**完整的 Hook 示例：**"
+
+#: ../../guide/hooks/index.rst:111 0998b37b39414b77b9cc0ffdd6b4d2f6
+msgid ""
+"A comprehensive example demonstrating all hook functionality is available "
+"at:"
+msgstr "一个全面展示所有钩子功能的示例可在以下位置查看："
+
+#: ../../guide/hooks/index.rst:118 95c68d317dab4ff0939c421a60c10f10
+msgid "**Example Features:**"
+msgstr "**示例功能：**"
+
+#: ../../guide/hooks/index.rst:120 11a86767c04e4e7a83a311741141ec12
+msgid "**Basic Usage**: Simple SummarizationHook and FileSaveHook examples"
+msgstr "**基本用法**：简单的SummarizationHook和FileSaveHook示例"
+
+#: ../../guide/hooks/index.rst:121 ee9395d0cd994db0bc3e1116d60d9fde
+msgid "**Advanced Configuration**: Custom settings and tool-specific hooks"
+msgstr "**高级配置**：自定义设置和工具专用挂钩"
+
+#: ../../guide/hooks/index.rst:122 715f41242e8340cfa2f2112462cf7955
+msgid ""
+"**Performance Testing**: Comparison between different hook configurations"
+msgstr "**性能测试**：不同钩子配置之间的比较"
+
+#: ../../guide/hooks/index.rst:123 eadfbc3358454d0c9035ba336c0a5041
+msgid "**Error Handling**: Graceful degradation and error recovery"
+msgstr "**错误处理**：优雅降级与错误恢复"

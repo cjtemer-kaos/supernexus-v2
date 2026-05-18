@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_cftime_info.rst:2
+#: 60162243bdd14ce8a5030708115a60d7
+msgid "tooluniverse.tools.get\\_cftime\\_info module"
+msgstr "tooluniverse.tools.get\\_cftime\\_info 模块"
+
+#: 28c28d4a20fa430fbb8a0be0af87407e of tooluniverse.tools.get_cftime_info:1
+msgid "get_cftime_info"
+msgstr ""
+"get_cftime_info\n"
+"\n"
+"获取 cftime 信息"
+
+#: 6b488dd3a60f4deb8035ce5cc5cf4638 b2f60a56cd304c6887fb471c06f868a4 of
+#: tooluniverse.tools.get_cftime_info:3
+#: tooluniverse.tools.get_cftime_info.get_cftime_info:1
+msgid ""
+"Get information about the cftime package. Time-handling functionality from "
+"netcdf4-python"
+msgstr "获取有关 cftime 包的信息。来自 netcdf4-python 的时间处理功能。"
+
+#: ../../api/tooluniverse.tools.get_cftime_info.rst
+#: 6fd1cfb681444cd48f5b61ecd7b79117
+msgid "Parameters"
+msgstr "参数"
+
+#: 6e467b3f3cc14603907bb1cd64cee8cf of
+#: tooluniverse.tools.get_cftime_info.get_cftime_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 65bb616975344f90ad063e1199d174d7 of
+#: tooluniverse.tools.get_cftime_info.get_cftime_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 693235c334b44e5b8fe4d03d3a08a2d4 of
+#: tooluniverse.tools.get_cftime_info.get_cftime_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_cftime_info.rst
+#: fec57da8ee794932b9e9585d110aac62
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7f4eac42b12c4607b80c0c449dc797d9 of
+#: tooluniverse.tools.get_cftime_info.get_cftime_info:11
+msgid ":py:class:`Any`"
+msgstr ""

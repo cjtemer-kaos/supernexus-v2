@@ -1,0 +1,16 @@
+{
+  "name": "music",
+  "version": "2.0.0",
+  "description": "Manejo de pipelines de voz, sintesis TTS y conversion de audio",
+  "main": "src.agents.music_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:music", "onCommand:voice", "onCommand:tts"],
+  "semanticKeywords": ["music", "audio", "sound", "voice", "tts", "stt", "speak", "song", "melody", "bpm", "wav2lip"],
+  "category": "multimedia",
+  "maxMemoryMB": 384,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

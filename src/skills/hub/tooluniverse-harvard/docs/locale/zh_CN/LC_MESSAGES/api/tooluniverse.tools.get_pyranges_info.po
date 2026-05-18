@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyranges_info.rst:2
+#: 225aecfe2c9e4eb0b22f763bb5a19880
+msgid "tooluniverse.tools.get\\_pyranges\\_info module"
+msgstr "tooluniverse.tools.get\\_pyranges\\_info 模块"
+
+#: 11135fc1a19144afa2d98019ab8834a8 of tooluniverse.tools.get_pyranges_info:1
+msgid "get_pyranges_info"
+msgstr "get_pyranges_info 获取 Pyranges 信息"
+
+#: 5b69ef1f4bba44d19cbbe522c847e013 d5303cc7f5da4233ac4fe2686f2e76e1 of
+#: tooluniverse.tools.get_pyranges_info:3
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:1
+msgid ""
+"Get comprehensive information about PyRanges – efficient genomic interval "
+"operations"
+msgstr "获取有关 PyRanges 的全面信息——高效的基因组区间操作"
+
+#: ../../api/tooluniverse.tools.get_pyranges_info.rst
+#: 6653a8c9194647b2a77906268dc3c2fa
+msgid "Parameters"
+msgstr "参数"
+
+#: 3a987d880c7443d1bb8be15ae10e2c8a of
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 2e7520fae46148f68eff1ebbffe7810f of
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 831fdfc6f944465198b002e149918e29 of
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f9c8884d9890495faaafc36730420e63 of
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyranges_info.rst
+#: 95473833367346f4a8e39e870ff749c3
+msgid "Return type"
+msgstr "返回类型"
+
+#: de620671306143909bb903486b320d25 of
+#: tooluniverse.tools.get_pyranges_info.get_pyranges_info:12
+msgid ":py:class:`Any`"
+msgstr ""

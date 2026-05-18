@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.rst:2
+#: 6f83b5dfce7a484ab337afc12377b068
+msgid "tooluniverse.tools.FDA\\_get\\_mechanism\\_of\\_action\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_mechanism\\_of\\_action\\_by\\_drug\\_name 模块"
+
+#: 10d4f67ab3494675ab7fb74626f2ade3 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name:1
+msgid "FDA_get_mechanism_of_action_by_drug_name"
+msgstr "FDA_按药物名称获取作用机制"
+
+#: 444fbc2389174f50b9a6324f242187f3 ec1010aaf71f4c529cd0034e4a1e1d26 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name:3
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:1
+msgid "Retrieve the mechanism of action information for a specific drug."
+msgstr "检索特定药物的作用机制信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.rst
+#: 3399fd5a1c27417ea5f668153fa88d3a
+msgid "Parameters"
+msgstr "参数"
+
+#: 6e6b060612734c39b7687a0527e19148 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称。"
+
+#: 0e08cd2f7efb4e2fa9dfd8539d4e4fd5 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 72a93652bbc844a593aa7097d43e0701 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: f02c3fe50ebb4c4a8aeef1de576069b9 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2d573cc731a04062af1ad4927928850a of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7068b0e5d3f64e25bc5d85a30159bdd7 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.rst
+#: cbb286ede2de419a949eb0ee2c6616e2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5f32490dc1614b3e809eb4692f362608 of
+#: tooluniverse.tools.FDA_get_mechanism_of_action_by_drug_name.FDA_get_mechanism_of_action_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

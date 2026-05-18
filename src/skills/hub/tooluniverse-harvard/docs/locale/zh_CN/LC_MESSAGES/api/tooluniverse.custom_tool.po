@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.custom_tool.rst:2 7707f3ebf5904ef180f681c798b40ffc
+msgid "tooluniverse.custom\\_tool module"
+msgstr "tooluniverse.custom_tool 模块"
+
+#: 28804f1614c14a8091e352051a697759 of tooluniverse.custom_tool:1
+msgid ""
+"CustomTool implementation for ToolUniverse Handles execution of "
+"dynamically generated tools with external code files"
+msgstr "CustomTool 实现用于 ToolUniverse，处理带有外部代码文件的动态生成工具的执行"
+
+#: d50791363908442f9ebdd7be3fafc141 of tooluniverse.custom_tool.CustomTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 4162a5f7094d4064aa0bc812a80ec339 of tooluniverse.custom_tool.CustomTool:1
+msgid "CustomTool class for executing dynamically generated tools"
+msgstr "CustomTool 类用于执行动态生成的工具"
+
+#: 497500a2e69b49e6ae4a4052c4aef17d of
+#: tooluniverse.custom_tool.CustomTool._load_external_code:1
+msgid "Load the execute_tool function from external Python file"
+msgstr "从外部 Python 文件加载 execute_tool 函数"
+
+#: 71b2dd5578a7415aa508d2a51b037274 of
+#: tooluniverse.custom_tool.CustomTool._load_embedded_code:1
+#, fuzzy
+msgid "Load the execute_tool function from embedded source code"
+msgstr "从外部 Python 文件加载 execute_tool 函数"
+
+#: 4fdf318308e3493fadb9b320d88e5e55 of
+#: tooluniverse.custom_tool.CustomTool.run:1
+msgid "Execute the custom tool"
+msgstr "执行自定义工具"
+
+#: ../../api/tooluniverse.custom_tool.rst e9a39ebc89c14cea960abb0364cedbd4
+msgid "Parameters"
+msgstr "参数"
+
+#: 8bcba60a8b6f4b7e9c1eccd7a611630a of
+#: tooluniverse.custom_tool.CustomTool.run:3
+msgid "Input arguments for the tool"
+msgstr "工具的输入参数"
+
+#: ../../api/tooluniverse.custom_tool.rst 9916c316b0ab4a70bed789f81779b404
+msgid "Returns"
+msgstr "返回值"
+
+#: 281dbe0e34424ad4a907b06f260ccc6a of
+#: tooluniverse.custom_tool.CustomTool.run:5
+msgid "Dict containing the result of tool execution"
+msgstr "包含工具执行结果的字典"
+
+#: ../../api/tooluniverse.custom_tool.rst c9cc926cc7a5492a86f3ffa141ffb5c0
+msgid "Return type"
+msgstr "返回类型"
+

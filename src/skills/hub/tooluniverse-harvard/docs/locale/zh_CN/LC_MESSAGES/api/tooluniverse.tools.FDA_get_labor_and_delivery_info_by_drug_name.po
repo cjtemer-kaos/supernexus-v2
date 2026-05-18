@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.rst:2
+#: 8106cf92a73f4f37b9d6076df1beefc5
+msgid "tooluniverse.tools.FDA\\_get\\_labor\\_and\\_delivery\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_labor\\_and\\_delivery\\_info\\_by\\_drug\\_name 模块"
+
+#: c1baf922f1394d74a55291f06734356f of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name:1
+msgid "FDA_get_labor_and_delivery_info_by_drug_name"
+msgstr ""
+"FDA_get_labor_and_delivery_info_by_drug_name  \n"
+"获取基于药物名称的分娩和生产信息"
+
+#: 93ce3b004cd64f489f56b01ac8f00b3b 98c439d8e82f4d6ba277dfc43f6f41f7 of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:1
+msgid ""
+"Retrieve information about the drug’s use during labor or delivery based on "
+"the drug name."
+msgstr "根据药物名称检索该药物在分娩或生产期间的使用信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.rst
+#: 4caa4a2f3fc4480f8c8c4582b88325ab
+msgid "Parameters"
+msgstr "参数"
+
+#: d488fdd4a97f45fe8976c9bcc8f3f846 of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: a931b4f2124a4d35a321ebc85f6bf7cc of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 3cb4f234c68240a9a8295624ddc845c5 of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: 027fc2ef116c473cbeeca9c823da8cd7 of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9c9098d49c7d42ea948f24e34fef3511 of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 04ecbe1fd59447c18f185573ffbe02eb of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.rst
+#: ba928eea91684a7a8f75bb85a1743905
+msgid "Return type"
+msgstr "返回类型"
+
+#: 75ad734bbaf74656aa288f7b72da110f of
+#: tooluniverse.tools.FDA_get_labor_and_delivery_info_by_drug_name.FDA_get_labor_and_delivery_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

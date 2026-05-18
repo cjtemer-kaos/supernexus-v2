@@ -1,0 +1,290 @@
+/* Custom CSS for ToolUniverse documentation */
+
+/* Force primary sidebar to always be visible */
+#pst-primary-sidebar.bd-sidebar-primary {
+    display: block !important;
+}
+
+/* Remove hide-on-wide class effect */
+.bd-sidebar-primary.hide-on-wide {
+    display: block !important;
+}
+
+/* Logo and branding */
+.wy-side-nav-search .wy-dropdown > a img.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Custom colors */
+.wy-nav-top {
+    background: #2980B9;
+}
+
+.wy-side-nav-search {
+    background: #34495E;
+}
+
+.wy-menu-vertical li.current a {
+    border-right: 3px solid #2980B9;
+}
+
+/* Code blocks */
+.rst-content .highlight {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.375rem;
+}
+
+.rst-content .highlight pre {
+    background: transparent;
+    color: #495057;
+}
+
+/* API documentation styling */
+.rst-content dl.class dt,
+.rst-content dl.function dt,
+.rst-content dl.method dt {
+    background: #f8f9fa;
+    border-left: 3px solid #2980B9;
+    padding: 8px 12px;
+}
+
+.rst-content dl.class dt:target,
+.rst-content dl.function dt:target,
+.rst-content dl.method dt:target {
+    background: #e3f2fd;
+}
+
+/* Tool categories */
+.tool-category {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.tool-category h3 {
+    color: #2980B9;
+    margin-top: 0;
+}
+
+/* Examples and tutorials */
+.example-box {
+    background: #e8f5e8;
+    border: 1px solid #c3e6c3;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Navigation improvements */
+.wy-menu-vertical li.toctree-l1 > a {
+    font-weight: 600;
+}
+
+.wy-menu-vertical li.toctree-l2 > a {
+    padding-left: 1.5em;
+}
+
+.wy-menu-vertical li.toctree-l3 > a {
+    padding-left: 2.5em;
+}
+
+/* Tables */
+.rst-content table.docutils {
+    border: 1px solid #dee2e6;
+}
+
+.rst-content table.docutils th {
+    background: #f8f9fa;
+    border-bottom: 2px solid #2980B9;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+    .wy-nav-side {
+        left: -300px;
+    }
+
+    .wy-nav-content-wrap {
+        margin-left: 0;
+    }
+}
+
+/* Search styling */
+.wy-side-nav-search input[type=text] {
+    border-radius: 0.375rem;
+    border: 1px solid #bdc3c7;
+}
+
+.wy-side-nav-search input[type=text]:focus {
+    border-color: #2980B9;
+    box-shadow: 0 0 0 0.2rem rgba(41, 128, 185, 0.25);
+}
+
+/* Footer */
+.rst-footer-buttons {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Version selector */
+.rst-versions {
+    border-top: 3px solid #2980B9;
+}
+
+.rst-versions .rst-current-version {
+    background: #34495E;
+}
+
+/* Enhanced API documentation improvements */
+.py-method, .py-function, .py-class {
+    border-left: 3px solid #2980b9;
+    padding-left: 12px;
+    margin: 16px 0;
+}
+
+.py-method .sig-name, .py-function .sig-name, .py-class .sig-name {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Docstring styling */
+.docstring {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e4e5;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+/* Parameter lists */
+.field-list {
+    margin: 12px 0;
+}
+
+.field-list dt {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.field-list dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* Return type and parameter type styling */
+.sig-param .n {
+    color: #e74c3c;
+}
+
+.sig-param .o {
+    color: #7f8c8d;
+}
+
+/* Source code links */
+.viewcode-link {
+    float: right;
+    font-size: 12px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.viewcode-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Example containers */
+.example-container {
+    margin: 16px 0;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.example-title {
+    background-color: #2980b9;
+    color: white;
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.example-code {
+    background-color: #f8f9fa;
+    border: none;
+    margin: 0;
+    padding: 12px;
+}
+
+/* Function signature improvements */
+.sig {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    overflow-x: auto;
+}
+
+.sig-name {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.sig-param {
+    color: #e74c3c;
+}
+
+/* Custom badges */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin: 2px;
+}
+
+.badge-function {
+    background-color: #3498db;
+    color: white;
+}
+
+.badge-class {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.badge-module {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Print styles */
+@media print {
+    .wy-nav-side,
+    .rst-versions,
+    .wy-nav-top {
+        display: none !important;
+    }
+
+    .wy-nav-content-wrap {
+        margin-left: 0 !important;
+    }
+}

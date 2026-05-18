@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.rst:2
+#: b429ce1bad0f4e4fa048312cfd8781c0
+msgid ""
+"tooluniverse.tools.ADMETAI\\_predict\\_solubility\\_lipophilicity\\_hydration"
+" module"
+msgstr ""
+"tooluniverse.tools.ADMETAI\\_predict\\_solubility\\_lipophilicity\\_hydration"
+" 模块"
+
+#: 7cc78175260a422199ba16cd675a090a of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration:1
+msgid "ADMETAI_predict_solubility_lipophilicity_hydration"
+msgstr "ADMETAI预测溶解度、脂溶性、水合"
+
+#: 18bcb308c85c4b1ab9de192231ee20e2 9b19c40c97b147feaa06fe117391f629 of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration:3
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:1
+msgid ""
+"Predicts solubility, lipophilicity, and hydration endpoints "
+"(Solubility_AqSolDB, Lipophilicity_As..."
+msgstr "预测溶解度、脂溶性和水化终点（溶解度_AqSolDB，脂溶性_As..."
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.rst
+#: d27b9e7c6d144881ba3d0fbe6fd56471
+msgid "Parameters"
+msgstr "参数"
+
+#: a0d6e610bb614bbab82131d8c372d6c7 of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:3
+msgid "The list of SMILES strings."
+msgstr "SMILES 字符串列表"
+
+#: 3aeb79ae1c884ff5b9df87dc3d6d0b29 of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 469a8c81e4854b1ebce65e65640598a4 of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 14e56761a323425db2c42d9ab8763c42 of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.rst
+#: de7d30d466854517b8de0ca4009a7da6
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1834cb4517534c22825329d2af5d4a3f of
+#: tooluniverse.tools.ADMETAI_predict_solubility_lipophilicity_hydration.ADMETAI_predict_solubility_lipophilicity_hydration:12
+msgid ":py:class:`Any`"
+msgstr ""

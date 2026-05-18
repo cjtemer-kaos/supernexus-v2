@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.visualize_protein_structure_3d.rst:2
+#: 4f557dc705074573b8c65f36ee924005
+msgid "tooluniverse.tools.visualize\\_protein\\_structure\\_3d module"
+msgstr "tooluniverse.tools.visualize\\_protein\\_structure\\_3d 模块"
+
+#: 4d78107df2e94fffaac8b3669f818c7a of
+#: tooluniverse.tools.visualize_protein_structure_3d:1
+msgid "visualize_protein_structure_3d"
+msgstr "可视化蛋白质结构3D"
+
+#: 4c7104fb56f3458690153bfb7ef618da 77a89d2e1049423c98c102eec8529ab8 of
+#: tooluniverse.tools.visualize_protein_structure_3d:3
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:1
+msgid ""
+"Visualize 3D protein structures using py3Dmol. Supports PDB IDs, PDB file "
+"content, and various vi..."
+msgstr "使用 py3Dmol 可视化 3D 蛋白质结构。支持 PDB ID、PDB 文件内容以及多种视图选项。"
+
+#: ../../api/tooluniverse.tools.visualize_protein_structure_3d.rst
+#: ecc24818ed6e4fc288e87e3f6c69151f
+msgid "Parameters"
+msgstr "参数"
+
+#: eea2d24237d744f39e33fa081a2bd4a2 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:3
+msgid ""
+"PDB identifier (e.g., '1CRN', '7CGO'). Either pdb_id or pdb_content must be "
+"p..."
+msgstr "PDB标识符（例如：'1CRN'，'7CGO'）。必须提供pdb_id或pdb_content。"
+
+#: fff4bdcc03074a41805bd56e48259198 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:5
+msgid ""
+"Raw PDB file content as string. Either pdb_id or pdb_content must be "
+"provided."
+msgstr "原始PDB文件内容作为字符串。必须提供pdb_id或pdb_content之一。"
+
+#: 2720d9edc3a34fca85a001a65d046d50 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:7
+msgid "Visualization style"
+msgstr "可视化样式"
+
+#: 5846ff24de2941e0a22a496dad8ab9de of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:9
+msgid "Color scheme for the structure"
+msgstr "结构的配色方案"
+
+#: 0a40c53454f54e98ab5e02e877389d8a of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:11
+msgid "Width of the visualization in pixels"
+msgstr "可视化的宽度（以像素为单位）"
+
+#: fd0ceea3757942088c4730ec418a61b9 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:13
+msgid "Height of the visualization in pixels"
+msgstr "可视化的高度（以像素为单位）"
+
+#: 02a12586ff824de8b117e7b6a6987a7f of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:15
+msgid "Whether to show sidechain atoms"
+msgstr "是否显示侧链原子"
+
+#: 83c5cb0e695943b2bc5698b9b94e56a2 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:17
+msgid "Whether to show molecular surface"
+msgstr "是否显示分子表面"
+
+#: 3baaa6c5eea441438c904d34166f1ec3 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:19
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 7ad2a91f84924fc8a4876e2be487a374 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:21
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0b0a0585e95d413e83b6781372433a07 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:23
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.visualize_protein_structure_3d.rst
+#: b299e83ba726401eac9241b8e93192ba
+msgid "Return type"
+msgstr "返回类型"
+
+#: 06ea20e8e8fa4a1f8cbb23b290ba1111 of
+#: tooluniverse.tools.visualize_protein_structure_3d.visualize_protein_structure_3d:26
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

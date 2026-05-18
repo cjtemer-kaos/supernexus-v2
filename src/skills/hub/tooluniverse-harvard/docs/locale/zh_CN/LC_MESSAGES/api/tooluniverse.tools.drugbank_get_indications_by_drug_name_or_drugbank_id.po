@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.rst:2
+#: 51e5410679a74d13a4fa9f191dd9ab59
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_indications\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_indications\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" 模块"
+
+#: 17cb67577dc04228a5ad342a35ecdf3f of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id:1
+msgid "drugbank_get_indications_by_drug_name_or_drugbank_id"
+msgstr "drugbank_根据药物名称或DrugBank ID获取适应症"
+
+#: 5c2aacc9a11447068f9f8e97cb325796 f83aca5c610a4d0b8c6e1a2f603c7a7e of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id:3
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:1
+msgid "Get drug indications and therapeutic uses by drug name or DrugBank ID."
+msgstr "通过药物名称或DrugBank ID获取药物适应症和治疗用途。"
+
+#: ../../api/tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.rst
+#: c0e9798d5a2c46d8ac1571552d134c2d
+msgid "Parameters"
+msgstr "参数"
+
+#: ac15d03e6aaf45f6bb5064b40fd1fbba of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:3
+msgid "Drug name or ID to search for"
+msgstr "药品名称或ID以进行搜索"
+
+#: f62b604def0e443589d0b11e3a764d53 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择“True”以执行区分大小写的搜索"
+
+#: 83b13bc18b494ab8a6df9310b0487316 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: a5b0b394cc964c668596623067ebc6d9 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 4d4cb7c7eb3040949f7835f18f21db2b of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a66868e8ef62481eb84acb4bc465fc32 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: baeb6de403334d68811518ce2679c165 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.rst
+#: 29f38a18e17747ada88744afc51406ae
+msgid "Return type"
+msgstr "返回类型"
+
+#: 591685ea236140d6ad57227573a039a8 of
+#: tooluniverse.tools.drugbank_get_indications_by_drug_name_or_drugbank_id.drugbank_get_indications_by_drug_name_or_drugbank_id:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

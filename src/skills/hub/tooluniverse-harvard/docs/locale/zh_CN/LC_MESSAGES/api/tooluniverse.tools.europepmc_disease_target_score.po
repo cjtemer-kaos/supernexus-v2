@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.europepmc_disease_target_score.rst:2
+#: 0eba70aa732748e99116b9a1c9b292b3
+msgid "tooluniverse.tools.europepmc\\_disease\\_target\\_score module"
+msgstr "tooluniverse.tools.europepmc\\_disease\\_target\\_score 模块"
+
+#: 0b961677d3bc4b239bbca040d5f1df67 of
+#: tooluniverse.tools.europepmc_disease_target_score:1
+msgid "europepmc_disease_target_score"
+msgstr "europepmc_疾病_靶点_评分"
+
+#: 425137866bc3418d8efe6430b00fbb9e 4c7001d538b14a55b62a80a6f354791f of
+#: tooluniverse.tools.europepmc_disease_target_score:3
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:1
+msgid ""
+"Extract disease-target association scores from Europe PMC literature. This "
+"includes literature-ba..."
+msgstr "从欧洲PMC文献中提取疾病-靶点关联评分。这包括基于文献的..."
+
+#: ../../api/tooluniverse.tools.europepmc_disease_target_score.rst
+#: d6fb499479244daeacd8d98e4d29c264
+msgid "Parameters"
+msgstr "参数"
+
+#: 91ebdbbe78d64d0094754ab56839803f of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 32cde0f86de345e8beab5f8e839c7157 of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:5
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: 83a7969567a744d3b8b49da04d2dde3e of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: da3f08d78d2e4c2687449bdb922de520 of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 079647b3f5034cd1ae6b36e1edcb4883 of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.europepmc_disease_target_score.rst
+#: ed388f1dc63741eabd5585e6dca6764d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 200455dc81ea4a1392924d89f2709c0f of
+#: tooluniverse.tools.europepmc_disease_target_score.europepmc_disease_target_score:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

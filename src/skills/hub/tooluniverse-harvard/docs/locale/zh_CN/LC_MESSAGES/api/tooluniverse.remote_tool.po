@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.remote_tool.rst:2 efe2f006d2f74fc38829e86dd940d658
+msgid "tooluniverse.remote\\_tool module"
+msgstr "tooluniverse.remote_tool 模块"
+
+#: 4a008aa0414740fa844cc196bab0ec0b of tooluniverse.remote_tool:1
+msgid "Remote Tool Implementation"
+msgstr "远程工具实施"
+
+#: 56672273eb9145aeb7d536dbf6a82988 of tooluniverse.remote_tool:3
+msgid ""
+"This module provides a RemoteTool class that represents external MCP/SMCP "
+"tools that are available for listing but cannot be executed locally. These "
+"tools are stored as configuration records only."
+msgstr "该模块提供了一个 RemoteTool 类，表示可供列出但无法在本地执行的外部 MCP/SMCP 工具。这些工具仅作为配置记录存储。"
+
+#: 997b0e6c5a9f4ff9a3459ad4f2c6b9c2 of tooluniverse.remote_tool.RemoteTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 6ccfb90195e24cd2bdbf49a61a0f4ad7 of tooluniverse.remote_tool.RemoteTool:1
+msgid "A placeholder tool class for external MCP/SMCP tools."
+msgstr "用于外部 MCP/SMCP 工具的占位工具类。"
+
+#: 5773df51d4ea4b91811035b29b7bcad7 of tooluniverse.remote_tool.RemoteTool:3
+msgid ""
+"RemoteTool represents tools that are hosted on external MCP/SMCP servers and"
+" are only available for discovery and listing purposes. These tools cannot "
+"be executed locally through ToolUniverse but their configurations are "
+"preserved for reference."
+msgstr ""
+"RemoteTool 表示托管在外部 MCP/SMCP 服务器上的工具，仅用于发现和列出。这些工具无法通过 ToolUniverse "
+"本地执行，但其配置会被保留以供参考。"
+
+#: 2eca97f1cf8542aea20743896572d4d8 of tooluniverse.remote_tool.RemoteTool:10
+msgid "The tool configuration dictionary"
+msgstr "工具配置字典"
+
+#: 65db79a2368f4e72a26f58ed5fd30f05 f4362260871442a1b323760a9291b17f of
+#: tooluniverse.remote_tool.RemoteTool
+msgid "type"
+msgstr "类型"
+
+#: ac3974aa47514ae0a72971fff484fb99 d4c13955fedc4da0ae94b9d6cc9c064e of
+#: tooluniverse.remote_tool.RemoteTool:12
+#: tooluniverse.remote_tool.RemoteTool:18
+msgid ":py:class:`dict`"
+msgstr ""
+
+#: d6f7df800a4946a5af60b40d8671af56 of tooluniverse.remote_tool.RemoteTool:16
+msgid "Information about the remote server and tool"
+msgstr "有关远程服务器和工具的信息"
+
+#: 491914a65d5b4e2680d41581f76aaca5 of
+#: tooluniverse.remote_tool.RemoteTool.__init__:1
+msgid "Initialize the RemoteTool."
+msgstr "初始化 RemoteTool。"
+
+#: ../../api/tooluniverse.remote_tool.rst 6c8a482f6f98485d8ebc489b036b9a62
+#: 79da59c878f6477180e86a66f3516c13
+msgid "Parameters"
+msgstr "参数"
+
+#: b2b7022bb00046388fdff8b4deae3fbb of
+#: tooluniverse.remote_tool.RemoteTool.__init__:3
+msgid "Tool configuration dictionary"
+msgstr "工具配置字典"
+
+#: 7d4906a0e9854a318b224201033a77d3 of
+#: tooluniverse.remote_tool.RemoteTool.run:1
+msgid "Placeholder run method for remote tools."
+msgstr "用于远程工具的占位运行方法。"
+
+#: f11fc50967e2434ea2a499134d535b29 of
+#: tooluniverse.remote_tool.RemoteTool.run:3
+msgid ""
+"Remote tools cannot be executed locally. This method always returns an error"
+" message indicating that the tool is not available for local execution."
+msgstr "远程工具无法在本地执行。此方法始终返回一条错误消息，指示该工具不可用于本地执行。"
+
+#: deed9c4a71f645c2931e40f478cb2b99 of
+#: tooluniverse.remote_tool.RemoteTool.run:6
+msgid "Tool arguments (ignored)"
+msgstr "工具参数（已忽略）"
+
+#: ../../api/tooluniverse.remote_tool.rst 05746356ff77475cb686ec8a66e2cf00
+#: 2b258081f64d4ac0af7e26a24cda55b5 87ced36618c24b789725d2653ec5ce71
+#: e5ef92b90bae4efd8475eea08bb65c98
+msgid "Returns"
+msgstr "退货"
+
+#: 50d7ed46a40d4e05967ae6ae637b8ec0 of
+#: tooluniverse.remote_tool.RemoteTool.run:9
+msgid "Error message indicating the tool is not available locally"
+msgstr "错误消息指示工具在本地不可用"
+
+#: ../../api/tooluniverse.remote_tool.rst 3e9db373e2c849e1a41ea9659b9cb38e
+#: 8053f368468f4f2d832b542a90112099 b05fe5f7a4c44e33a7179bca7f7e485b
+#: ef174819361c4444b1a2ce4bc44cde11
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4d89e4e222474de4b4ff0487b832d53b of
+#: tooluniverse.remote_tool.RemoteTool.get_remote_info:1
+msgid "Get information about the remote server hosting this tool."
+msgstr "获取有关托管此工具的远程服务器的信息。"
+
+#: 0488fb62883b41abb35b5c2f2286f319 of
+#: tooluniverse.remote_tool.RemoteTool.get_remote_info:3
+msgid ""
+"Remote server information including server type, URL, and original tool type"
+msgstr "远程服务器信息，包括服务器类型、URL和原始工具类型"
+
+#: 065d1cee28ce4db98afc4e33aee794c3 of
+#: tooluniverse.remote_tool.RemoteTool.is_available_locally:1
+msgid "Check if this tool is available for local execution."
+msgstr "检查此工具是否可用于本地执行。"
+
+#: 95bdf912539c4399a2cf8801e09cdeda of
+#: tooluniverse.remote_tool.RemoteTool.is_available_locally:3
+msgid "Always False for RemoteTool instances"
+msgstr "始终为 RemoteTool 实例返回 False"
+
+#: 380259b3c9f24b18bc8040c5f102dc11 of
+#: tooluniverse.remote_tool.RemoteTool.get_server_info:1
+msgid "Get server connection information for this remote tool."
+msgstr "获取此远程工具的服务器连接信息。"
+
+#: 963ebd2156a84daca0bced25924f3df4 of
+#: tooluniverse.remote_tool.RemoteTool.get_server_info:3
+msgid "Server connection details"
+msgstr "服务器连接详情"

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.MethodologyRigorReviewer.rst:2
+#: e7ae94f82925476eb7d1a5a910db3c49
+msgid "tooluniverse.tools.MethodologyRigorReviewer module"
+msgstr "tooluniverse.tools.MethodologyRigorReviewer 模块"
+
+#: 1d093215c51548e6b1b56b0e7cf85cd2 of
+#: tooluniverse.tools.MethodologyRigorReviewer:1
+msgid "MethodologyRigorReviewer"
+msgstr "方法学严谨审查员"
+
+#: 7b9e0ce671d54647be9277cee216b1c5 b6e87e647dc141178ffe166aa2f1a863 of
+#: tooluniverse.tools.MethodologyRigorReviewer:3
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:1
+msgid ""
+"Evaluates design appropriateness, sampling, and procedural transparency."
+msgstr "评估设计适用性、抽样方法及程序透明性。"
+
+#: ../../api/tooluniverse.tools.MethodologyRigorReviewer.rst
+#: 1aa2e681e5e547ec994a14089e2c4d05
+msgid "Parameters"
+msgstr "参数"
+
+#: 66448ab96ee34e5ba1956cbad04d6b7d of
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:3
+msgid "Full Methods text"
+msgstr "完整方法文本"
+
+#: 102e92c43e2e4f42ab55106dab12c66b of
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b350a183fbe842669bfbab7721dca531 of
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 64430150c0824d59bacbeacf73b9ac41 of
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.MethodologyRigorReviewer.rst
+#: aa53d89f4ffb4e27ad1dda0bf2da19e7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1aeeec272302420c88d8d6593f990f11 of
+#: tooluniverse.tools.MethodologyRigorReviewer.MethodologyRigorReviewer:12
+msgid ":py:class:`Any`"
+msgstr ""

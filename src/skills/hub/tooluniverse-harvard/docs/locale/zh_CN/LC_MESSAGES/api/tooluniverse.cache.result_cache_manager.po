@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.cache.result_cache_manager.rst:2
+#: 984fadbfa8d74551bf287b7b0bc082d6
+msgid "tooluniverse.cache.result\\_cache\\_manager module"
+msgstr "tooluniverse.cache.result\\_cache\\_manager 模块"
+
+#: ca977240c5dc44a9b00dd3134d3eaec4 of
+#: tooluniverse.cache.result_cache_manager:1
+msgid ""
+"Result cache manager that coordinates in-memory and persistent storage."
+msgstr "结果缓存管理器，用于协调内存和持久化存储。"
+
+#: baac21c98a0243dfa6949eb99f956e5c c54b989d58cc473798da934bf3038474
+#: f1e5a9307e0542829289f4c1526e3df6 of
+#: tooluniverse.cache.result_cache_manager.CacheRecord:1
+#: tooluniverse.cache.result_cache_manager.ResultCacheManager:1
+#: tooluniverse.cache.result_cache_manager._DummyContext:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: c22cacb795c44c56a03f22966ed4d0fa of
+#: tooluniverse.cache.result_cache_manager.CacheRecord:1
+msgid ""
+"CacheRecord(value: 'Any', expires_at: 'Optional[float]', namespace: 'str', "
+"version: 'str')"
+msgstr ""
+"CacheRecord(value: '任意类型', expires_at: '可选[浮点数]', namespace: '字符串', version:"
+" '字符串')"
+
+#: a477d1172cbe4def85dd4b22f1e31ccd of
+#: tooluniverse.cache.result_cache_manager.ResultCacheManager:1
+msgid "Facade around memory + persistent cache layers."
+msgstr "围绕内存和持久化缓存层的外观模式。"
+
+#: efd54ce9cf99488cacf77942c8a3b974 of
+#: tooluniverse.cache.result_cache_manager.ResultCacheManager.bulk_get:1
+msgid "Fetch multiple cache entries at once."
+msgstr "一次性获取多个缓存条目。"
+
+#: ../../api/tooluniverse.cache.result_cache_manager.rst
+#: 8b4c9cb23133423bb173fd5467cdde82
+msgid "Parameters"
+msgstr "参数"
+
+#: 450eea6c6f6c4028994bf72a8f42405b of
+#: tooluniverse.cache.result_cache_manager.ResultCacheManager.bulk_get:3
+msgid ""
+"Iterable of dicts containing ``namespace``, ``version`` and ``cache_key``."
+msgstr "包含 ``namespace``、``version`` 和 ``cache_key`` 的字典迭代对象。"
+
+#: ../../api/tooluniverse.cache.result_cache_manager.rst
+#: f10670a1d541461c97adc78a11645b9f
+msgid "Returns"
+msgstr "退货"
+
+#: 589c24f6bfa7427fb8506ba5df7ba28e of
+#: tooluniverse.cache.result_cache_manager.ResultCacheManager.bulk_get:5
+msgid "Mapping of composed cache keys to cached values."
+msgstr "将组合缓存键映射到缓存值。"
+
+#: ../../api/tooluniverse.cache.result_cache_manager.rst
+#: aaef1ad3e1d3478ebf051620d4325727
+msgid "Return type"
+msgstr "返回类型"

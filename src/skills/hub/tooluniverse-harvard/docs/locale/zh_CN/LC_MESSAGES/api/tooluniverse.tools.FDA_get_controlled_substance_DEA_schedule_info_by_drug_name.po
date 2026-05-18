@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.rst:2
+#: 14b29b833df24813ad152c732505f2a6
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_controlled\\_substance\\_DEA\\_schedule\\_info\\_by\\_drug\\_name"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_controlled\\_substance\\_DEA\\_schedule\\_info\\_by\\_drug\\_name"
+" 模块"
+
+#: 9bc4137b3b0444289eb85aa3499e5857 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:1
+msgid "FDA_get_controlled_substance_DEA_schedule_info_by_drug_name"
+msgstr "FDA_按药品名称获取受控物质DEA分类信息"
+
+#: be256ea8dcb6400dbf95e82074baab80 c91ea569ba9a45fe9d383c7d5f4baa39 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:1
+msgid ""
+"Retrieve information about the controlled substance Drug Enforcement "
+"Administratino (DEA) schedul..."
+msgstr "检索有关受控物质药物执法管理局（DEA）分类的信息..."
+
+#: ../../api/tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.rst
+#: 1d5b564110a04d408dfe96dafe705e02
+msgid "Parameters"
+msgstr "参数"
+
+#: 1bda5389ed424b649baaf93ed70f65b0 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: bab68087928a4b1695094eac28573aee of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: bc662b65437d4bb39304471c4320cb8d of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数量。"
+
+#: dd1949fd1ceb4266921aedc97b9b69f5 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5ce123543924424794ef7b5342243dcd of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4840657846134a50953770e15f2c5852 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.rst
+#: 20f98c47f65f473a96b342b5fc1f5616
+msgid "Return type"
+msgstr "返回类型"
+
+#: edc3ea2270954c12a8c2ca065a4e3727 of
+#: tooluniverse.tools.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name.FDA_get_controlled_substance_DEA_schedule_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

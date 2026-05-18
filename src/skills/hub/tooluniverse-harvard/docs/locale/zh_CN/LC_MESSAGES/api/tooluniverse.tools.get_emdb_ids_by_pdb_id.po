@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_emdb_ids_by_pdb_id.rst:2
+#: 5e283cbbea8c421b8e074ba49b81591c
+msgid "tooluniverse.tools.get\\_emdb\\_ids\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_emdb\\_ids\\_by\\_pdb\\_id 模块"
+
+#: faa6531563f249cab603b731e6ae08b0 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id:1
+msgid "get_emdb_ids_by_pdb_id"
+msgstr "通过PDB ID获取EMDB ID"
+
+#: 8bdd0fac873a40da9855f6bf75aa284c c631940b7e1c4a998ad1b5469b55bc79 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id:3
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:1
+msgid ""
+"Retrieve Electron Microscopy Data Bank (EMDB) identifiers linked to a PDB "
+"entry."
+msgstr "检索与PDB条目关联的电子显微镜数据银行（EMDB）标识符。"
+
+#: ../../api/tooluniverse.tools.get_emdb_ids_by_pdb_id.rst
+#: ae0896585b654c1bb06cfe4b995e938b
+msgid "Parameters"
+msgstr "参数"
+
+#: 62e0d87cbe094355a68c45e503b7ca79 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:3
+msgid "4-character PDB ID"
+msgstr "4字符PDB ID"
+
+#: 78c549333490428ab78c810821a14043 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8a00992e1ba14ee896a2d7c8bebec8c1 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2be87a5e845e4a50bc5ba0510daa7512 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_emdb_ids_by_pdb_id.rst
+#: 48c8b61cce774b95a6477f52173c8e8e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 14ddbbdd61b54d21a2e1bdae59462741 of
+#: tooluniverse.tools.get_emdb_ids_by_pdb_id.get_emdb_ids_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

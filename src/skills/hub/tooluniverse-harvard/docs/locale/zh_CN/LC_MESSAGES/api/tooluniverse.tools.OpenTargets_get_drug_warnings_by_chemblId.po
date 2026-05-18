@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.rst:2
+#: c256ee3c4f094294ab95e3dc6cc79dd2
+msgid "tooluniverse.tools.OpenTargets\\_get\\_drug\\_warnings\\_by\\_chemblId module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_drug\\_warnings\\_by\\_chemblId 模块"
+
+#: ef5bfeac774a439fb2ba3c876f6fb16b of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId:1
+msgid "OpenTargets_get_drug_warnings_by_chemblId"
+msgstr ""
+"OpenTargets_get_drug_warnings_by_chemblId  \n"
+"获取药物警告信息_by_chemblId"
+
+#: 548ff0054bd24dc28ef470ee8388cc72 ce5506072f184e6fb41290bf2165ad07 of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:1
+msgid "Retrieve warnings for a specific drug using ChEMBL ID."
+msgstr "使用 ChEMBL ID 检索特定药物的警告信息。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.rst
+#: b1cef63bdd954de69e17c834d358d288
+msgid "Parameters"
+msgstr "参数"
+
+#: 8168e2f5f4454abfa62b735ed7c2df12 of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: 28b22bc181394b09b124c32fa00285e1 of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 73a57212b1b5449590bd9955c8d39804 of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5b106f5bbee9410693ba5895768c273d of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.rst
+#: b5488c0c7ed84ded9078a75daf18472e
+msgid "Return type"
+msgstr "返回类型"
+
+#: ae7c334ea01f47238fb416986323c27c of
+#: tooluniverse.tools.OpenTargets_get_drug_warnings_by_chemblId.OpenTargets_get_drug_warnings_by_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

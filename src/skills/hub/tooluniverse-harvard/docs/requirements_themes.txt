@@ -1,0 +1,34 @@
+# ToolUniverse Documentation Theme Dependencies
+# Install with: pip install -r requirements_themes.txt
+
+# Core Sphinx and documentation
+sphinx>=8.0.0
+sphinx-copybutton
+sphinx-tabs
+sphinx-design
+sphinx-notfound-page
+myst-parser
+linkify-it-py  # Required for myst linkify extension
+
+# Modern Themes
+furo>=2025.01.01                    # Modern, clean theme (recommended)
+pydata-sphinx-theme>=0.15.0        # Scientific documentation theme
+sphinx_rtd_theme>=1.3.0            # Enhanced RTD theme
+
+# Optional enhancements
+sphinx-autobuild                    # Auto-rebuild during development
+sphinx-external-toc                 # External table of contents
+sphinx-togglebutton                 # Toggle buttons for content
+sphinxext-opengraph                 # Open Graph meta tags
+sphinx-favicon                      # Custom favicon support
+sphinx-sitemap                      # Generate sitemap.xml
+
+# Theme-specific dependencies
+sphinx-basic-ng                     # Required by Furo
+beautifulsoup4                      # HTML parsing for themes
+docutils>=0.18                      # Document utilities
+
+# Development and testing
+doc8                                # Documentation style checker
+sphinx-lint                         # Sphinx linting
+pytest-sphinx                       # Testing Sphinx extensions

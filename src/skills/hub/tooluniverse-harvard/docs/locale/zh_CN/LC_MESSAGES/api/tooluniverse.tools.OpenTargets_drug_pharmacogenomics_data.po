@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.rst:2
+#: fdea156c23554149add4ddf6c53c6042
+msgid "tooluniverse.tools.OpenTargets\\_drug\\_pharmacogenomics\\_data module"
+msgstr "tooluniverse.tools.OpenTargets\\_drug\\_pharmacogenomics\\_data 模块"
+
+#: 209a398b6c5447a796dc4ecc6450f41a of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data:1
+msgid "OpenTargets_drug_pharmacogenomics_data"
+msgstr "OpenTargets_药物_药物基因组学_数据"
+
+#: 860235943c094529aa6413b5ef7be079 c08ce65348404aa8a0ff561e960ad347 of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data:3
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:1
+msgid ""
+"Retrieve pharmacogenomics data for a specific drug, including evidence "
+"levels and genotype annota..."
+msgstr "检索特定药物的药物基因组学数据，包括证据等级和基因型注释。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.rst
+#: 79fc45ef6a574530abaf7984c257cb9d
+msgid "Parameters"
+msgstr "参数"
+
+#: 5ea38e1cb03f41bfa6132ea7f5c907e8 of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: c974f7674df4484aa284bb98af00a9be of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:5
+msgid "Pagination options."
+msgstr "分页选项"
+
+#: a6248a9655414939944f6ef05d56c4de of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9b8847a4169d4648b1be8cd51f728553 of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 658f5b8aea0e437b8c2692022a64cd73 of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.rst
+#: 9808418d883a477886fbf76b10b39617
+msgid "Return type"
+msgstr "返回类型"
+
+#: d288fcc845f24fb0845c108544cd18ca of
+#: tooluniverse.tools.OpenTargets_drug_pharmacogenomics_data.OpenTargets_drug_pharmacogenomics_data:14
+msgid ":py:class:`Any`"
+msgstr ""

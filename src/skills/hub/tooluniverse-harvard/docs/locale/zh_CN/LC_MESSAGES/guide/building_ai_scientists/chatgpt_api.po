@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:2
+#: 497fab9bb9124e5e8b58631c7f2e945f
+msgid "ChatGPT API"
+msgstr "ChatGPT API"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:4
+#: a57e4dd55e714dbf8e92096cbb22154e
+msgid "**Building AI Scientists with ChatGPT API and ToolUniverse**"
+msgstr "**使用ChatGPT API和ToolUniverse构建AI科学家**"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:7
+#: c70575b2823b44acae4fdb1336380e63
+msgid "Overview"
+msgstr "概述"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:9
+#: 8f76edca5bc14ab9a3f563d1b52d4439
+msgid ""
+"ChatGPT API integration enables powerful programmatic scientific research "
+"through OpenAI's function calling capabilities. This approach provides a "
+"scalable, automatable interface for research while leveraging ChatGPT's "
+"reasoning and ToolUniverse's comprehensive scientific tools ecosystem."
+msgstr ""
+"ChatGPT API 集成通过 OpenAI 的函数调用功能，实现了强大的程序化科学研究。该方法提供了一个可扩展且可自动化的研究接口，同时充分利用了 "
+"ChatGPT 的推理能力和 ToolUniverse 全面的科学工具生态系统。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:29
+#: 5481a98401354bd9a5b2a113ce492f53
+msgid "**Benefits of ChatGPT API Integration**:"
+msgstr "**ChatGPT API 集成的优势**："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:31
+#: 7cf1ad21156649e08a1ce1919a8ff7bf
+msgid ""
+"**Function Calling**: Structured tool selection and execution with JSON "
+"arguments"
+msgstr "**函数调用**：使用 JSON 参数进行结构化工具选择和执行"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:32
+#: 4c5fda6fa9e64751bdb5bb74ff787c68
+msgid ""
+"**Iterative Reasoning**: Feedback loop using tool results to refine "
+"subsequent steps"
+msgstr "**迭代推理**：利用工具结果的反馈循环来优化后续步骤"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:33
+#: 3a146aedea80480599253dcda63a3bdf
+msgid ""
+"**Scalability**: Dynamically grow the function list with discovered tools"
+msgstr "**可扩展性**：通过发现的工具动态扩展函数列表"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:34
+#: 1fe751a56866427a8017dea377c16a0c
+msgid "**Automation**: Build research workflows and batch processing systems"
+msgstr "**自动化**：构建研究工作流程和批处理系统"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:35
+#: c43b0af36e42454fa5ec93f8a03fe7bb
+msgid ""
+"**Reusability**: Clear system prompt and minimal boilerplate for new tasks"
+msgstr "**可重用性**：针对新任务的清晰系统提示和最小化模板代码"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:38
+#: b99811f01a5346c7a5e0bbdc6fd4aafa
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:40
+#: b9f186715a90415ea9f208a3f3d493cb
+msgid "Before setting up ChatGPT API integration, ensure you have:"
+msgstr "在设置 ChatGPT API 集成之前，请确保您已具备："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:42
+#: 95481d13a60e4431b7a63b6423d03fb9
+msgid "**OpenAI API Key**: Valid API key with function calling access"
+msgstr "**OpenAI API 密钥**：具有函数调用权限的有效 API 密钥"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:43
+#: 937ce75554014410b1adcff3613a1bc7
+msgid "**ToolUniverse**: Installed"
+msgstr "**ToolUniverse**：已安装"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:44
+#: 03ee57dc5f304f3598137102e40b2347
+msgid "**Python 3.10+**: For ToolUniverse and OpenAI SDK"
+msgstr "**Python 3.10+**：适用于 ToolUniverse 和 OpenAI SDK"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:45
+#: 5d2ea67358df41dda99ace96fc8b4415
+msgid ""
+"**API Keys**: For specific tools or optional hooks (if required by your "
+"research domain)"
+msgstr "**API 密钥**：用于特定工具或可选钩子（如您的研究领域需要）"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:48
+#: 20af7e88fba64798a57b3c4287ad2711
+msgid "Installation and Setup"
+msgstr "安装与设置"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:51
+#: 2f7c2f56f6e846acbb447fd027a10bfe
+msgid "Step 1: Install Required Packages"
+msgstr "步骤 1：安装所需软件包"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:53
+#: 017e2b8fe4534ec7bfc340bc3beed7c9
+msgid "Install ToolUniverse and OpenAI SDK:"
+msgstr "安装 ToolUniverse 和 OpenAI SDK："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:59
+#: cddc9c571bcf4da096c115682a0427eb
+msgid "Verify installation:"
+msgstr "验证安装："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:66
+#: c0674783aa2947a4aa7608b14e70cf87
+msgid "Step 2: Set Up API Key"
+msgstr "步骤 2：设置 API 密钥"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:68
+#: 5249865e9fa5412bb02b82241c552ed2
+msgid "Configure your OpenAI API key:"
+msgstr "配置您的 OpenAI API 密钥："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:74
+#: 6c94aef188184f9aad9b8a70c899146b
+msgid "Or in Python:"
+msgstr "或者在 Python 中："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:82
+#: fe689e218ae245f4b808ab8310e002e0
+msgid "Step 3: Initialize ToolUniverse"
+msgstr "步骤3：初始化ToolUniverse"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:97
+#: 2a33cd0550de4cc0be575ba2223d78b2
+msgid "Step 4: Configure System Prompt"
+msgstr "步骤4：配置系统提示"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:99
+#: 651088d1b6fe4be8aeaf1041d82b463d
+msgid "Define the system prompt for iterative tool discovery and usage:"
+msgstr "定义用于迭代工具发现与使用的系统提示："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:123
+#: 99508a71f42444dda28fba9ecf77f6be
+msgid "Step 5: Set Up Dynamic Tool Discovery"
+msgstr "步骤5：设置动态工具发现"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:125
+#: aa88b9eb0e17427fb4215315ab90e0dd
+msgid "Start with the tool finder and expand functions dynamically:"
+msgstr "从工具查找器开始，动态展开功能："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:134
+#: ea54abd55dcd4c5d962207a10e26d60f
+msgid "Step 6: Implement Chat Loop"
+msgstr "第6步：实现聊天循环"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:136
+#: 1323edaac3744c76ae8fd368034fcaf8
+msgid "Create the iterative chat loop with function calling:"
+msgstr "创建带有函数调用的迭代聊天循环："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:182
+#: 8ace544ba0b5421eb5ce363ec8b4779b
+msgid "Step 7: Verify Integration"
+msgstr "第7步：验证集成"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:184
+#: 694c414c2eba4655865a656daf5fd1a4
+msgid "Test the integration with a simple research query:"
+msgstr "使用简单的研究查询测试集成："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:193
+#: 31e1da9d3e4049a6bce0d97536cd15c1
+msgid "Scientific Research Capabilities"
+msgstr "科学研究能力"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:196
+#: c87e123774e741399b569e31b5140134
+msgid "Drug Discovery and Development"
+msgstr "药物发现与开发"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:198
+#: eb7749113fed415983cf76e88b627e9c
+msgid ""
+"ChatGPT API with ToolUniverse enables comprehensive drug discovery "
+"workflows:"
+msgstr "ChatGPT API 与 ToolUniverse 集成，实现全面的药物发现工作流程："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:200
+#: d3776f49f0684af29d60c9fad3d818d9
+msgid ""
+"**Target Identification**: - Disease analysis and EFO ID lookup - Target "
+"discovery and validation - Literature-based target assessment"
+msgstr ""
+"**目标识别**：  \n"
+"- 疾病分析与EFO ID查询  \n"
+"- 靶点发现与验证  \n"
+"- 基于文献的靶点评估"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:205
+#: fcd4c6e0b0f444468d47c5df74a8a0f5
+msgid ""
+"**Drug Analysis**: - Drug information retrieval from multiple databases - "
+"Safety profile analysis - Drug interaction checking - Clinical trial data "
+"access"
+msgstr ""
+"**药物分析**：  \n"
+"- 从多个数据库检索药物信息  \n"
+"- 安全性概况分析  \n"
+"- 药物相互作用检查  \n"
+"- 临床试验数据访问"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:211
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:234
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:254
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:275
+#: 2f60032eafa04125ba4eb50089207f26 ade51412b78f4ea993e59da071d68de7
+#: dd252dc94981435684b1d780f9ea88f2 dde8b9ad48b24d0593f36dfececde94a
+msgid "**Example Workflow**:"
+msgstr "**示例工作流程**："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:218
+#: 41fcecbe5f994ba3b7ad81e3301631c0
+msgid "Genomics and Molecular Biology"
+msgstr "基因组学与分子生物学"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:220
+#: 27cd7aa194ea4d34acf2f3eb9c7d0e87
+msgid "Access comprehensive genomics tools for molecular research:"
+msgstr "获取全面的基因组学工具以支持分子研究："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:222
+#: ec9928288edd43a9a86b50630354f0bd
+msgid ""
+"**Gene Analysis**: - Gene information from UniProt - Protein structure "
+"analysis - Expression pattern analysis - Pathway involvement"
+msgstr ""
+"**基因分析**：  \n"
+"- 来自UniProt的基因信息  \n"
+"- 蛋白质结构分析  \n"
+"- 表达模式分析  \n"
+"- 通路参与分析"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:228
+#: 6cda050c894a4058ab0340f1076c76da
+msgid ""
+"**Molecular Interactions**: - Protein-protein interactions - Drug-target "
+"interactions - Pathway analysis - Functional annotation"
+msgstr ""
+"**分子相互作用**：  \n"
+"- 蛋白质-蛋白质相互作用  \n"
+"- 药物-靶点相互作用  \n"
+"- 通路分析  \n"
+"- 功能注释"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:241
+#: d6d163960b48448ca403baa66e5af4f7
+msgid "Literature Research and Analysis"
+msgstr "文献研究与分析"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:243
+#: 534b83a085b945bf964e5b26e7dabdf9
+msgid "Comprehensive literature search and analysis capabilities:"
+msgstr "全面的文献检索与分析功能："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:245
+#: 03c2fa726baf41edbefa36e463bd206f
+msgid ""
+"**Literature Search**: - PubMed, Europe PMC, and Semantic Scholar - Citation"
+" analysis and trend detection"
+msgstr ""
+"**文献检索**：  \n"
+"- PubMed、Europe PMC 和 Semantic Scholar  \n"
+"- 引文分析与趋势检测"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:249
+#: 4acfcfd54ab9430ab783a80bab2fb495
+msgid ""
+"**Content Analysis**: - Abstract summarization - Key finding extraction - "
+"Gap identification"
+msgstr ""
+"**内容分析**：  \n"
+"- 摘要概述  \n"
+"- 关键发现提取  \n"
+"- 差距识别"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:261
+#: 89c4fc32872b4a1386c4038df5f25505
+msgid "Clinical Research and Trials"
+msgstr "临床研究与试验"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:263
+#: d5c8839613ee4570873e831fcc6efb81
+msgid "Access clinical trial data and regulatory information:"
+msgstr "访问临床试验数据和监管信息："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:265
+#: 6987ee183d654c5b8749f42d70f675a2
+msgid ""
+"**Clinical Trials**: - ClinicalTrials.gov searches - Trial status and "
+"results analysis - Patient population assessment"
+msgstr ""
+"**临床试验**：  \n"
+"- ClinicalTrials.gov 搜索  \n"
+"- 试验状态和结果分析  \n"
+"- 患者群体评估"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:270
+#: 272739f096374aeeb40317a97cee387f
+msgid ""
+"**Regulatory Information**: - FDA drug approvals - Safety warnings and "
+"adverse events - Labeling information"
+msgstr "**监管信息**：- FDA 药品批准 - 安全警告和不良事件 - 标签信息"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:282
+#: 70bd225c477a4a5ab4964f6b4a8ab76e
+msgid "Multi-Step Research Workflows"
+msgstr "多步骤研究工作流程"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:284
+#: 972cf468af664ebb8c8fd1af09c81265
+msgid "ChatGPT API excels at complex, multi-step research workflows:"
+msgstr "ChatGPT API 在处理复杂的多步骤研究工作流程方面表现出色："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:286
+#: 7469d0238b8643a29571cb1911d9caed
+msgid ""
+"**Hypothesis-Driven Research**: 1. Formulate research hypothesis 2. Design "
+"experimental approach 3. Gather supporting evidence 4. Validate findings 5. "
+"Generate conclusions"
+msgstr "**假设驱动的研究**：1. 制定研究假设 2. 设计实验方案 3. 收集支持证据 4. 验证研究结果 5. 得出结论"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:293
+#: 6b208200d4da43ada5b4fd42a7cc321b
+msgid ""
+"**Comparative Analysis**: 1. Identify comparison targets 2. Gather data for "
+"each target 3. Perform comparative analysis 4. Identify differences and "
+"similarities 5. Draw conclusions"
+msgstr "**比较分析**：1. 确定比较对象 2. 收集各对象的数据 3. 进行比较分析 4. 识别差异与相似点 5. 得出结论"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:301
+#: ac946fa1d7bf4e3ebcfda0143c80ea7d
+msgid "Settings and Configuration"
+msgstr "设置与配置"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:304
+#: 2fe889b6465a412db2b41442c3229ff8
+msgid "Tool Discovery Options"
+msgstr "工具发现选项"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:306
+#: d00638c990894b10b6b2c5bf0c02e05d
+msgid "ToolUniverse offers multiple discovery methods:"
+msgstr "ToolUniverse 提供多种发现方法："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:332
+#: d4f4c09a59b74f79b3acfd53a6647fcf
+msgid "Advanced Configuration"
+msgstr "高级配置"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:334
+#: 6a4ee1171722437a92b7e55206e8e269
+msgid "**Batch Processing**: Handle multiple research tasks efficiently:"
+msgstr "**批量处理**：高效处理多个研究任务："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:345
+#: 626485effb4f4dd3bb1fcd7e39faf46e
+msgid ""
+"**Periodic Tool Discovery**: Re-run the finder on intermediate results:"
+msgstr "**周期性工具发现**：对中间结果重新运行查找器："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:359
+#: 49bef60a73cc4564891b8bbe218cf84a
+msgid "**Custom Tool Sets**: Load specific tools for focused research:"
+msgstr "**自定义工具集**：加载特定工具以进行重点研究："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:371
+#: b7ec1c703f7c449aad71e105d72cf908
+msgid "**Full Example (All Steps Combined)**:"
+msgstr "**完整示例（所有步骤合并）**："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:450
+#: 5fd4cdbb233c41239609622d26ed761c
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:453
+#: 015ab573cd444d499b19e56d8385ca7d
+msgid "Common Issues and Solutions"
+msgstr "常见问题及解决方案"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:455
+#: 516af08187c84d848a2a3294e6e8266f
+msgid ""
+"**API Key Errors**: - Ensure `OPENAI_API_KEY` is set correctly - Verify your"
+" API key has function calling access - Check your OpenAI account billing "
+"status"
+msgstr ""
+"**API 密钥错误**：  \n"
+"- 确保已正确设置 `OPENAI_API_KEY`  \n"
+"- 验证您的 API 密钥是否具有函数调用权限  \n"
+"- 检查您的 OpenAI 账户计费状态"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:460
+#: 2e107cde00214fc4bac0bcc4e003c964
+msgid ""
+"**Tool Not Found**: - Use the tool finder to discover available tools - "
+"Verify tool names match exactly - Check if tools require specific API keys"
+msgstr ""
+"**未找到工具**：  \n"
+"- 使用工具查找器发现可用工具  \n"
+"- 核实工具名称是否完全匹配  \n"
+"- 检查工具是否需要特定的API密钥"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:465
+#: f3f466aeef254c2c81ddede49e63b8e4
+msgid ""
+"**Function Call Errors**: - Inspect tool parameter schemas using "
+"`tu.tool_specification(\"tool_name\")` - Ensure JSON arguments are properly "
+"formatted - Handle missing required parameters gracefully"
+msgstr ""
+"**函数调用错误**：  \n"
+"- 使用 `tu.tool_specification(\"tool_name\")` 检查工具参数结构  \n"
+"- 确保 JSON 参数格式正确  \n"
+"- 优雅处理缺失的必填参数"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:470
+#: 10398b24583b4c43926c0b24cf78f89a
+msgid ""
+"**Performance Issues**: - Limit the number of tools added to the function "
+"list - Use `Tool_Finder_Keyword` instead of `Tool_Finder_LLM` for faster "
+"discovery - Implement timeout handling for long-running tools"
+msgstr ""
+"**性能问题**：  \n"
+"- 限制添加到功能列表中的工具数量  \n"
+"- 使用 `Tool_Finder_Keyword` 替代 `Tool_Finder_LLM` 以加快发现速度  \n"
+"- 对长时间运行的工具实现超时处理"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:475
+#: f20fbc48ab254ccb96e6e5048623a196
+msgid "**Debug Mode**:"
+msgstr "**调试模式**："
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:484
+#: 29518ba3515f4065a339b93339459678
+msgid "Tips"
+msgstr "提示"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:486
+#: b0c571eef9d04a1cbe09890782c4eb3b
+msgid ""
+"**Tool Selection**: Start with the tool finder, then add discovered tools "
+"incrementally."
+msgstr "**工具选择**：从工具查找器开始，然后逐步添加发现的工具。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:488
+#: f65ae29953e34b46b499d85d473540bc
+msgid ""
+"**Error Handling**: Always wrap tool execution in try-catch blocks for "
+"production use."
+msgstr "**错误处理**：在生产环境中，始终将工具执行代码包裹在 try-catch 块中。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:490
+#: bd53d0aa2a484d2fb36ceeda04d2a296
+msgid ""
+"**Prompt Engineering**: Customize the system prompt for domain-specific "
+"research tasks."
+msgstr "**提示工程**：为特定领域的研究任务定制系统提示。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:492
+#: 954cf41627254488b287da877b9e7ea2
+msgid ""
+"**Batch Processing**: Use the pattern for processing multiple queries "
+"efficiently."
+msgstr "**批量处理**：使用该模式高效处理多个查询。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:494
+#: c44adf8eb6624d2a8f332045c94c0a06
+msgid ""
+"**Rate Limiting**: Implement delays between API calls if you hit OpenAI rate"
+" limits."
+msgstr "**速率限制**：如果达到 OpenAI 速率限制，请在 API 调用之间实施延迟。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:497
+#: 33e54f6e9e5943e4895ecd8fe1e2fffe
+msgid ""
+"**Start Simple**: Begin with basic research queries to understand the "
+"integration, then progress to complex multi-step workflows as you become "
+"familiar with the capabilities."
+msgstr "**从简开始**：先从基础的研究查询入手，了解集成的基本情况，随着对功能的熟悉，再逐步推进到复杂的多步骤工作流程。"
+
+#: ../../guide/building_ai_scientists/chatgpt_api.rst:500
+#: 64acf2b22ba5403eb5ba4eadba869027
+msgid ""
+"**Function Calling**: ChatGPT API provides a powerful programmatic interface"
+" for scientific research, enabling both interactive exploration and "
+"automated batch processing of research tasks."
+msgstr "**函数调用**：ChatGPT API 提供了强大的编程接口，支持科学研究中的交互式探索和自动化批量处理研究任务。"

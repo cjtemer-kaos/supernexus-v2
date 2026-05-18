@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "pattern": "timeout",
+      "gem": "coder",
+      "description": "response took too long",
+      "suggestion": "Improve coder handling of timeout cases",
+      "created": "2026-05-15T03:28:39.349019",
+      "trigger_count": 1
+    },
+    {
+      "pattern": "error",
+      "gem": "coder",
+      "description": "response contained errors",
+      "suggestion": "Improve coder handling of error cases",
+      "created": "2026-05-15T03:28:39.349019",
+      "trigger_count": 1
+    }
+  ],
+  "patterns": [],
+  "metrics": {
+    "coder": {
+      "total": 2,
+      "success": 1,
+      "fail": 1,
+      "success_rate": 0.5
+    }
+  }
+}

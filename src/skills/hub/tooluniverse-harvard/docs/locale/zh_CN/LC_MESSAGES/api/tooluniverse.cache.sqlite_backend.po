@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.cache.sqlite_backend.rst:2
+#: a3fa7761c2d44dc295bc58b3cb322a9a
+msgid "tooluniverse.cache.sqlite\\_backend module"
+msgstr "tooluniverse.cache.sqlite\\_backend 模块"
+
+#: fe73eb1aec5b4fdc89a3fe2297faeac2 of tooluniverse.cache.sqlite_backend:1
+msgid "SQLite-backed persistent cache for ToolUniverse."
+msgstr "基于SQLite的ToolUniverse持久化缓存。"
+
+#: c1269d561ead4ae0b3cd4a1b39de9396 of tooluniverse.cache.sqlite_backend:3
+msgid ""
+"The cache stores serialized tool results with TTL and version metadata. "
+"Designed to be a drop-in persistent layer behind the in-memory cache."
+msgstr "缓存存储带有TTL和版本元数据的序列化工具结果。设计为内存缓存后端的可直接使用的持久化层。"
+
+#: 3957b5d62bfa4b589a5fb61c0d92ccaa 6de9053854004b5e872b2ea9f111e7a9 of
+#: tooluniverse.cache.sqlite_backend.CacheEntry:1
+#: tooluniverse.cache.sqlite_backend.PersistentCache:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: 12754b627d2e4d319577cc28ce5791a4 of
+#: tooluniverse.cache.sqlite_backend.CacheEntry:1
+msgid ""
+"CacheEntry(key: 'str', value: 'Any', namespace: 'str', version: 'str', ttl: "
+"'Optional[int]', created_at: 'float', last_accessed: 'float', hit_count: "
+"'int')"
+msgstr ""
+"CacheEntry(key: '字符串', value: '任意类型', namespace: '字符串', version: '字符串', ttl:"
+" '可选[int]', created_at: '浮点数', last_accessed: '浮点数', hit_count: '整数')"
+
+#: 14547926d76e4993aa45b30c1d9df906 of
+#: tooluniverse.cache.sqlite_backend.PersistentCache:1
+msgid "SQLite-backed cache layer with TTL support."
+msgstr "基于SQLite的缓存层，支持TTL功能。"

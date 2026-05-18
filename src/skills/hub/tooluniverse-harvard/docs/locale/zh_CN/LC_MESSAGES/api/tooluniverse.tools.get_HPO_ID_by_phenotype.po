@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_HPO_ID_by_phenotype.rst:2
+#: 27b24008b4794ef294723ddb15635979
+msgid "tooluniverse.tools.get\\_HPO\\_ID\\_by\\_phenotype module"
+msgstr "tooluniverse.tools.get\\_HPO\\_ID\\_by\\_phenotype 模块"
+
+#: 72b3c460758e452ba4f3e0fba0e9bdad of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype:1
+msgid "get_HPO_ID_by_phenotype"
+msgstr "根据表型获取HPO_ID"
+
+#: 3c1716084fe94d0a897adcfe74598103 d267d7c1912648edb1fdb94177a9ad85 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype:3
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:1
+msgid "Retrieve the HPO ID of a phenotype or symptom."
+msgstr "检索表型或症状的HPO ID。"
+
+#: ../../api/tooluniverse.tools.get_HPO_ID_by_phenotype.rst
+#: 6bf2fad5eecc4982aa889a7a29ebcd8a
+msgid "Parameters"
+msgstr "参数"
+
+#: 9c98da9f31c84438bcaecd122d6cf51c of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:3
+msgid "One query phenotype or symptom."
+msgstr "一个查询表型或症状。"
+
+#: 84c74d50677f4fb080e61ccc86515863 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:5
+msgid "Number of entries to fetch."
+msgstr "要获取的条目数量。"
+
+#: 7eb77ebaa00a443387c19fcfa9012f80 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:7
+msgid "Number of initial entries to skip."
+msgstr "初始条目跳过的数量。"
+
+#: 848b7e67a4ed420289f9a72d00bc7525 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 891703d598ea43f1995c3c874ad33d3d of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0e9d1553b04b4c66b2ff005515f08141 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_HPO_ID_by_phenotype.rst
+#: b23e415aa4a24760ae15c1dad783d53a
+msgid "Return type"
+msgstr "返回类型"
+
+#: dd970aad834049749a7abdaafac45601 of
+#: tooluniverse.tools.get_HPO_ID_by_phenotype.get_HPO_ID_by_phenotype:16
+msgid ":py:class:`Any`"
+msgstr ""

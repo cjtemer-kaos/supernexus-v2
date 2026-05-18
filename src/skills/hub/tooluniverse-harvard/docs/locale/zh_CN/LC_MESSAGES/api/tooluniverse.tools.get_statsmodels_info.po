@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_statsmodels_info.rst:2
+#: 975af546821543d0a6696af752332b2f
+msgid "tooluniverse.tools.get\\_statsmodels\\_info module"
+msgstr "tooluniverse.tools.get\\_statsmodels\\_info 模块"
+
+#: ae702094baf54e71bdc44f13ed96bc41 of
+#: tooluniverse.tools.get_statsmodels_info:1
+msgid "get_statsmodels_info"
+msgstr ""
+"get_statsmodels_info\n"
+"\n"
+"获取_statsmodels信息"
+
+#: 402df052d0c34af9ba1c966c3f1e8685 f7a88b95c2904a2888e87e4f1fae1343 of
+#: tooluniverse.tools.get_statsmodels_info:3
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:1
+msgid ""
+"Get comprehensive information about statsmodels – statistical modeling and "
+"econometrics"
+msgstr "获取有关statsmodels的全面信息——统计建模与计量经济学"
+
+#: ../../api/tooluniverse.tools.get_statsmodels_info.rst
+#: 0fdc322806f4406ea762164417da136e
+msgid "Parameters"
+msgstr "参数"
+
+#: d70d6847b0e3479089c8b9658c9a072e of
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: be43fb2214754afd8a2e9044cd147e45 of
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9116cdbbd3124d8387c739a545b43ac9 of
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: eacc2a63f386406f84ce0b545732e235 of
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_statsmodels_info.rst
+#: 051475117f7e4ca290c900e6d3764ae7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4c6b348bc9dc48bca468c53b41b97604 of
+#: tooluniverse.tools.get_statsmodels_info.get_statsmodels_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,16 @@
+{
+  "name": "opencode",
+  "version": "2.0.0",
+  "description": "Agente ejecutor interactivo CLI con aprobacion dinamica",
+  "main": "src.agents.opencode_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:cli", "onCommand:execute", "onCommand:terminal"],
+  "semanticKeywords": ["cli", "terminal", "execute", "shell", "command", "interactive", "bash", "powershell"],
+  "category": "development",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 25,
+  "timeoutSeconds": 300,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

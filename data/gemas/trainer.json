@@ -1,0 +1,16 @@
+{
+  "name": "trainer",
+  "version": "2.0.0",
+  "description": "Generador de manuales, guias y tutoriales interactivos",
+  "main": "src.agents.trainer_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:teach", "onCommand:train", "onCommand:guide"],
+  "semanticKeywords": ["teach", "train", "tutorial", "guide", "manual", "learn", "education", "course", "explain", "basics", "lesson"],
+  "category": "content",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 180,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

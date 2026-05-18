@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_sequence_lengths_by_pdb_id.rst:2
+#: 17ecbdafdc6e4263ae1ad066e6ae5812
+msgid "tooluniverse.tools.get\\_sequence\\_lengths\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_sequence\\_lengths\\_by\\_pdb\\_id 模块"
+
+#: bf85f57af4aa40618ee4f2d63b88daa8 of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id:1
+msgid "get_sequence_lengths_by_pdb_id"
+msgstr "通过PDB ID获取序列长度"
+
+#: ecd225f982bc4a51b28b1d4d4baa9eb9 fc873acaaaae4addb027dd37b753135e of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id:3
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:1
+msgid ""
+"Retrieve the sequence lengths of polymer entities for a given PDB structure."
+msgstr "检索指定PDB结构中聚合物实体的序列长度。"
+
+#: ../../api/tooluniverse.tools.get_sequence_lengths_by_pdb_id.rst
+#: 8ee8c9ef0b2447079d8c1aa9f8935b11
+msgid "Parameters"
+msgstr "参数"
+
+#: 41960ecb29044939b4feeb7b3b2d2b95 of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:3
+msgid "4-character RCSB PDB ID"
+msgstr "4字符RCSB PDB ID"
+
+#: 4b34794a64204cbda3d849c3d8f62cf9 of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ca8028f232054320b89f1140a8c1545d of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 733c20f780cb47d88ed14a57f50cd7c7 of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_sequence_lengths_by_pdb_id.rst
+#: 3f1671bbc10d483d94e6d206a596121e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5424e98797bd42ceb5c4d64ec1b5de2d of
+#: tooluniverse.tools.get_sequence_lengths_by_pdb_id.get_sequence_lengths_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,125 @@
+[
+  {
+    "type": "DBLPTool",
+    "name": "DBLP_search_publications",
+    "description": "Search DBLP Computer Science Bibliography for publications. Returns publications with title, authors, year, venue, URL, and electronic edition link.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for DBLP publications. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of publications to return. This sets the maximum number of publications retrieved from DBLP.",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "abstract": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@pid": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "year": {
+            "type": "integer"
+          },
+          "venue": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "ee": {
+            "type": "string"
+          },
+          "doi": {
+            "type": "string"
+          },
+          "citations": {
+            "type": "integer"
+          },
+          "open_access": {
+            "type": "boolean"
+          },
+          "keywords": {
+            "type": "string"
+          },
+          "article_type": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "data_quality": {
+            "type": "object",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean"
+              },
+              "has_authors": {
+                "type": "boolean"
+              },
+              "has_journal": {
+                "type": "boolean"
+              },
+              "has_year": {
+                "type": "boolean"
+              },
+              "has_doi": {
+                "type": "boolean"
+              },
+              "has_citations": {
+                "type": "boolean"
+              },
+              "has_keywords": {
+                "type": "boolean"
+              },
+              "has_url": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "computer science",
+        "limit": 2
+      },
+      {
+        "query": "machine learning",
+        "limit": 1
+      }
+    ]
+  }
+]

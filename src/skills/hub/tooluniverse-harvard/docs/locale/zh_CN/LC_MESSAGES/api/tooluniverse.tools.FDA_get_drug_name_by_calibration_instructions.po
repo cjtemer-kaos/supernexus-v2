@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.rst:2
+#: 188e682e722846549d1ff3df65e83653
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_calibration\\_instructions"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_calibration\\_instructions 模块"
+
+#: 3945e70cf0ab4a6fa6c0fe9fd2cf8f14 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions:1
+msgid "FDA_get_drug_name_by_calibration_instructions"
+msgstr "FDA_通过校准说明获取药品名称"
+
+#: 46ce38ca3455423cbc212ffb4ea28a07 907eee45bc4a4c4aac75f5b48341efa8 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions:3
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:1
+msgid "Retrieve the drug name based on the calibration instructions provided."
+msgstr "根据提供的校准说明检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.rst
+#: d6e98c236ab44f768833877fdee5fc6e
+msgid "Parameters"
+msgstr "参数"
+
+#: 7007c5729f764ac7a907b6ecdeb3e269 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:3
+msgid "Instructions used for calibration of the drug."
+msgstr "用于药物校准的说明。"
+
+#: 21b5b3c7f5334ed89b42f389968a5ac9 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 33caf6fa5ed148cfa42292eb8b0f3935 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: a58a884ed2b44aefb616088ae8744a0a of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7eff94f998ba440994b68930741c4ab6 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c448427740e04ff094fc2b736dd7289a of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.rst
+#: 530fad8c5a2b4b5493664cf8a24a4322
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9a1698b353be4ed8bb195700ba51a224 of
+#: tooluniverse.tools.FDA_get_drug_name_by_calibration_instructions.FDA_get_drug_name_by_calibration_instructions:16
+msgid ":py:class:`Any`"
+msgstr ""

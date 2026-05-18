@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../license.rst:2 5a9d4479367d4fa0a15ebc5533f56f9e
+msgid "License"
+msgstr "许可证"
+
+#: ../../license.rst:4 5a962902dd8540fd8a692e99d3fabcbc
+msgid "ToolUniverse License Information"
+msgstr "ToolUniverse许可证信息"
+
+#: ../../license.rst:7 20083f5fcb654f86ac686d985e2f3132
+msgid "MIT License"
+msgstr "MIT许可证"
+
+#: ../../license.rst:13 a0a5106121eb49749d22f32808e9514c
+msgid "Third-Party Licenses"
+msgstr "第三方许可证"
+
+#: ../../license.rst:15 6577d057c4ca4d8a8bc974ea0492db92
+msgid ""
+"ToolUniverse uses several third-party libraries, each with their own "
+"licenses:"
+msgstr "ToolUniverse使用多个第三方库，每个库都有自己的许可证："
+
+#: ../../license.rst:18 17ff0e8ec4a14f31aa59dad1b54f10e1
+msgid "Core Dependencies"
+msgstr "核心依赖"
+
+#: ../../license.rst:20 f799d13e2e9648bbb1f7ef53078b25ac
+msgid "**requests** - Apache License 2.0"
+msgstr "**requests** - Apache License 2.0"
+
+#: ../../license.rst:21 2adeb3618df149f6a952f64f54520540
+msgid "**numpy** - BSD 3-Clause License"
+msgstr "**numpy** - BSD 3-Clause许可证"
+
+#: ../../license.rst:22 f3da6d467b634c3a8843035cb9d5e4e8
+msgid "**fastapi** - MIT License"
+msgstr "**fastapi** - MIT许可证"
+
+#: ../../license.rst:23 2990f67e384f48d7aa4ca8a8f89b3f4e
+msgid "**uvicorn** - BSD 3-Clause License"
+msgstr "**uvicorn** - BSD 3-Clause许可证"
+
+#: ../../license.rst:24 5a3bfb7d72224aa6a3233b87aeba4175
+msgid "**pydantic** - MIT License"
+msgstr "**pydantic** - MIT许可证"
+
+#: ../../license.rst:25 cc683dfcf71d471fa652290503ffb406
+msgid "**graphql-core** - MIT License"
+msgstr "**graphql-core** - MIT许可证"
+
+#: ../../license.rst:28 7ee2445b35ac4f34a9ad4450fece954c
+msgid "Documentation Dependencies"
+msgstr "文档依赖"
+
+#: ../../license.rst:30 ef0ae88f67464684a04806568b31c439
+msgid "**sphinx** - BSD 2-Clause License"
+msgstr "**sphinx** - BSD 2-Clause许可证"
+
+#: ../../license.rst:31 b9ac6a08cc704806a2cd70572e272ec6
+msgid "**sphinx-rtd-theme** - MIT License"
+msgstr "**sphinx-rtd-theme** - MIT许可证"
+
+#: ../../license.rst:32 548775d870b042f1bfb711bf14def386
+msgid "**myst-parser** - MIT License"
+msgstr "**myst-parser** - MIT许可证"
+
+#: ../../license.rst:35 4298ce6850a24d9b89a7620b088640b3
+msgid "Development Dependencies"
+msgstr "开发依赖"
+
+#: ../../license.rst:37 fbe4a427ab3a4bac8c7cf44715cbb774
+msgid "**pytest** - MIT License"
+msgstr "**pytest** - MIT许可证"
+
+#: ../../license.rst:38 3decad70d489422e9e35dbff03c7c9ef
+msgid "**black** - MIT License"
+msgstr "**black** - MIT许可证"
+
+#: ../../license.rst:39 27ac8e13a688437d859b54c00a122a79
+msgid "**flake8** - MIT License"
+msgstr "**flake8** - MIT许可证"
+
+#: ../../license.rst:42 e14bf8c2b88e4e2e8afab18c687393f5
+msgid "License Compatibility"
+msgstr "许可证兼容性"
+
+#: ../../license.rst:44 938bea56d19e45d5958df41d8ceaae10
+msgid ""
+"All dependencies are compatible with the MIT License under which "
+"ToolUniverse is distributed."
+msgstr "所有依赖项都与ToolUniverse分发的MIT许可证兼容。"
+
+#: ../../license.rst:47 dbdb91ccbfbc4ebb8ac526c0090b6ab8
+msgid "Attribution Requirements"
+msgstr "归属要求"
+
+#: ../../license.rst:49 86adaa12ea0349f2bba72da144eac891
+msgid ""
+"When using ToolUniverse in your projects, please include the following "
+"attribution:"
+msgstr "在您的项目中使用ToolUniverse时，请包含以下归属："
+
+#: ../../license.rst:57 9c9d714aa1924effb3e0b3aa6874bcaf
+msgid "For Academic Use"
+msgstr "学术用途"
+
+#: ../../license.rst:59 1abfd34452bd4e86a0c2d80a0c2ccf4f
+msgid "If you use ToolUniverse in academic research, please cite:"
+msgstr "如果您在学术研究中使用ToolUniverse，请引用："
+
+#: ../../license.rst:72 5d006b75cba84f7299509a7edeaf25fe
+msgid "Data Source Licenses"
+msgstr "数据源许可证"
+
+#: ../../license.rst:74 612f8774d1b2434290f53840195adcd7
+msgid ""
+"Please also respect the licenses and terms of use for the data sources "
+"accessed through ToolUniverse:"
+msgstr "请同时尊重通过ToolUniverse访问的数据源的许可证和使用条款："
+
+#: ../../license.rst:76 31030b80a6d143e9b8c9034a70d261f9
+msgid ""
+"**OpenTargets Platform** - License: Apache License 2.0 - Attribution "
+"required for publications - Terms: "
+"https://platform.opentargets.org/licence"
+msgstr ""
+"**OpenTargets Platform** - 许可证：Apache License 2.0 - 出版物需要归属 - "
+"条款：https://platform.opentargets.org/licence"
+
+#: ../../license.rst:81 2d865e2080804c949404283442dc1e3a
+msgid ""
+"**FDA Data** - Public domain - No attribution required - Terms: "
+"https://www.fda.gov/about-fda/website-policies"
+msgstr ""
+"**FDA数据** - 公共领域 - 无需归属 - 条款：https://www.fda.gov/about-fda/website-policies"
+
+#: ../../license.rst:86 7cd96ba297764a5da8dbdac3352f188f
+msgid ""
+"**PubMed/NCBI** - Public domain - No attribution required - Terms: "
+"https://www.ncbi.nlm.nih.gov/home/about/policies/"
+msgstr ""
+"**PubMed/NCBI** - 公共领域 - 无需归属 - 条款：https://www.ncbi.nlm.nih.gov/home/about/policies/"
+
+#: ../../license.rst:91 d5403fc4efa54fbdb8757db6ef312c50
+msgid ""
+"**ChEMBL** - License: Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License - Attribution required - Terms: "
+"https://chembl.gitbook.io/chembl-interface-documentation/about"
+msgstr ""
+"**ChEMBL** - 许可证：Creative Commons Attribution-ShareAlike 3.0 Unported License - 需要归属 - "
+"条款：https://chembl.gitbook.io/chembl-interface-documentation/about"
+
+#: ../../license.rst:96 49e0665269914dd0a10e4f42d886d467
+msgid ""
+"**ClinicalTrials.gov** - Public domain - No attribution required - Terms:"
+" https://clinicaltrials.gov/ct2/about-site/terms-conditions"
+msgstr ""
+"**ClinicalTrials.gov** - 公共领域 - 无需归属 - 条款：https://clinicaltrials.gov/ct2/about-site/terms-conditions"
+
+#: ../../license.rst:101 e43968e061ab46fb8021c8321f4fce78
+msgid ""
+"**Europe PMC** - License: Creative Commons - Attribution requirements "
+"vary by source - Terms: https://europepmc.org/TermsOfUse"
+msgstr ""
+"**Europe PMC** - 许可证：Creative Commons - 归属要求因来源而异 - 条款：https://europepmc.org/TermsOfUse"
+
+#: ../../license.rst:107 61fcac8cd80f41e093046b2d46a8ae42
+msgid "Contact Information"
+msgstr "联系信息"
+
+#: ../../license.rst:109 6dbf79b231c44f7687addec96f5d42a9
+msgid ""
+"For licensing questions or permissions beyond the scope of this license, "
+"please contact:"
+msgstr "对于超出此许可证范围的许可问题或权限，请联系："
+
+#: ../../license.rst:111 1c0c56f644184950945989a168ca2a31
+msgid "**Email**: shanghuagao@gmail.com"
+msgstr "**邮箱**：shanghuagao@gmail.com"
+
+#: ../../license.rst:112 5a12ada68da34ba59c5b0ad45f875d35
+msgid "**GitHub**: https://github.com/mims-harvard/TxAgent"
+msgstr "**GitHub**：https://github.com/mims-harvard/TxAgent"
+

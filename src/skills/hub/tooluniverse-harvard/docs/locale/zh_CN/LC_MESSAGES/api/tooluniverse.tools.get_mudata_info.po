@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_mudata_info.rst:2
+#: f56dcc1e577349e79f351fef374fef60
+msgid "tooluniverse.tools.get\\_mudata\\_info module"
+msgstr "tooluniverse.tools.get\\_mudata\\_info 模块"
+
+#: b7ab994861d44d9488b92c644b87a819 of tooluniverse.tools.get_mudata_info:1
+msgid "get_mudata_info"
+msgstr "获取泥数据信息"
+
+#: d267a376147c4f51937fb17e0c4d75f0 e1a5972330a84beeb61fb7affe8c2a2c of
+#: tooluniverse.tools.get_mudata_info:3
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:1
+msgid ""
+"Get comprehensive information about MuData – multimodal annotated data for "
+"computational biology"
+msgstr "获取关于MuData的全面信息——用于计算生物学的多模态注释数据"
+
+#: ../../api/tooluniverse.tools.get_mudata_info.rst
+#: 97285508f8734f32b202324af7c0df7e
+msgid "Parameters"
+msgstr "参数"
+
+#: 922a909760e2400aa0b7e7295ab25ebf of
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 160fe28200674ed29e58fc6018be3d8b of
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5c3578b52e114884adbda781c0e0b25a of
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 37942884ef13431e9734eed36c5559c7 of
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_mudata_info.rst
+#: 37cf257a747a493cb8eee1f1a2fdcf07
+msgid "Return type"
+msgstr "返回类型"
+
+#: a13493c7f202491ebbf3474f9113c4f1 of
+#: tooluniverse.tools.get_mudata_info.get_mudata_info:12
+msgid ":py:class:`Any`"
+msgstr ""

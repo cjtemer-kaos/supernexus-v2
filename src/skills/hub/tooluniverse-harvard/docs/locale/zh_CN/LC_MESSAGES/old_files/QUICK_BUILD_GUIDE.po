@@ -1,0 +1,350 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 14:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:1 572caaf5960b4a6eba5efa8222ec94e6
+msgid "🚀 ToolUniverse 文档快速构建指南"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:3 6316c510c5164b87a7280862cecb1c20
+msgid "✨ 一键构建中英文文档"
+msgstr "✨ 一键生成中英文文档"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:5 75e9d15b44774347932c651238b40680
+msgid "现在 `quick_doc_build.sh` 和 `quick_doc_build_cn.sh` 脚本会**自动构建中英文两个版本**！"
+msgstr "现在 `quick_doc_build.sh` 和 `quick_doc_build_cn.sh` 脚本将**自动构建中英文两个版本**！"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:7 81f6c0547e8f4384947a8e960d85f1af
+msgid "📝 使用方法"
+msgstr "📝 使用说明"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:9 8ccc50a2bc2f421e9f8875170d17a445
+msgid "方法 1: 默认构建（中英文）"
+msgstr "方法 1：默认构建（中英文）"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:18 c0a5d81a85b84b3fae4accd5be79b62b
+msgid "**自动执行：**"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:19 173b2faf6cb544daa21cad01cfbba490
+msgid "✅ 生成工具配置索引"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:20 c80ede9d38464f0bbf4b1ab67fc251bc
+msgid "✅ 生成 Remote Tools 文档"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:21 e448ac4ece774a6e8d523e15aa0c5a75
+msgid "✅ 构建英文文档 → `_build/html/en/`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:22 8d4725b2ec6e466c88e0ff2c6a986cb6
+msgid "✅ 更新中文翻译"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:23 0b6b8ac1af564f91932d6b582a6323c2
+msgid "✅ 构建中文文档 → `_build/html/zh-CN/`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:24 d222655b3637432a9c0496e3035dfef8
+msgid "✅ 创建语言选择页 → `_build/html/index.html`"
+msgstr "✅ 创建语言选择页面 → `_build/html/index.html`"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:25 ec596e6a81d94f7ebe9c3f946cf5dbfb
+msgid "✅ 启动本地服务器（可选）"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:27 99dc4bf8c77b4f3a9d3763996437fa41
+msgid "方法 2: 仅构建英文"
+msgstr "方法 2：仅构建英文"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:33 3dfa5bd6221e42dfae1834729adec4b0
+msgid "方法 3: 仅构建中文"
+msgstr "方法 3：仅构建中文"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:39 f3d2ceaa57874208b7e8a1e72f99a0d8
+msgid "方法 4: 自定义语言组合"
+msgstr "方法 4：自定义语言组合"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:45 ec0f539d728847f7968eb95bf4ec848b
+msgid "📂 构建结果"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:47 8ebbe123e7104907804ae3544da7d50c
+msgid "构建完成后，文档结构如下："
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:62 f59361502593457fbb28358b6f8acc68
+msgid "🌐 访问文档"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:64 045f328b277843f39198ce5bc7040953
+msgid "浏览器访问"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:66 5b73aa8fdc9243839c116f51b6290865
+msgid "构建完成后，脚本会显示访问链接："
+msgstr "构建完成后，脚本将显示访问链接："
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:81 c39539d082b044538a873ff35a68a232
+msgid "本地服务器"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:83 1a626732d9694c96a48e2058ddbf09fb
+msgid "脚本会询问是否启动本地服务器："
+msgstr "脚本将询问是否启动本地服务器："
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:89 1cde7f687dcf42818cf3fa88a52227b2
+msgid "选择 `y` 后，访问："
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:90 3720db8f556a4977a641e74f23f1251b
+msgid "🌍 语言选择：`http://localhost:8080/index.html`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:91 b37de79970bd4b9794b2039f36ecfc61
+msgid "🇬🇧 英文：`http://localhost:8080/en/index.html`"
+msgstr "🇨🇳 中文：`http://localhost:8080/zh/index.html`"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:92 bf9432761bf748498cbd6afe8b8ad31b
+msgid "🇨🇳 中文：`http://localhost:8080/zh-CN/index.html`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:94 43684316b02747edbbb2d51d2e68e3a5
+msgid "🔧 环境变量配置"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:96 9333b32c3854436fac0e69948e28c344
+msgid "语言设置"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:112 0e035c6726b94169a1e7cf1159d68c7b
+msgid "其他选项"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:128 8bd2099f6d674adcb50ba44307cad58c
+msgid "📝 翻译工作流"
+msgstr "📝 翻译工作流程"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:130 33f6820e2c8a45848917478c46c32f63
+msgid "1. 构建时自动更新翻译文件"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:132 a835949c845c4acca4ba7b3da76f9a29
+msgid "每次运行脚本时，如果包含中文（`zh_CN`），会自动："
+msgstr "每次运行脚本时，如果包含中文（`zh_CN`），将自动："
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:133 c42a9dd81bba4d798347b89ec6c45f9f
+msgid "提取最新的可翻译文本 → `_build/gettext/`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:134 82ab6fe975794f1d93a0bddfa3d1a308
+msgid "更新翻译文件 → `locale/zh_CN/LC_MESSAGES/*.po`"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:136 cc6758f45e294244b61195420b07d019
+msgid "2. 编辑翻译"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:145 44657343946f46ac95e5c6ae15e7a591
+msgid "翻译格式："
+msgstr "请提供需要翻译的具体英文文本，我将为您提供符合要求的中文翻译。"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:154 154bd07e6a9b42269f37604df3150de4
+msgid "3. 重新构建"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:160 1e9e64741d904767aa8c37800a8d3985
+msgid "翻译会自动应用到中文版本！"
+msgstr "翻译将自动应用于中文版本！"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:162 e94bda644b5c46239210278edb579f1b
+msgid "🎨 主题特性"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:164 40afe6e061c64b8aab7417b98fbea975
+msgid "Shibuya 现代主题"
+msgstr "涩谷现代主题"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:166 878231ab0ec6441e872d011e18455d29
+msgid "✅ 美观的界面设计"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:167 0b42c9e900e94a1aaa284c71e7502e85
+msgid "✅ 完整的左侧导航栏"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:168 808b527c83ad4beb9324a5de821bc394
+msgid "✅ 深色/浅色模式切换"
+msgstr "✅ 深色模式/浅色模式切换"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:169 565c1238a5dd43b099771edf7a81b0e7
+msgid "✅ 移动端响应式"
+msgstr "✅ 移动端响应式设计"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:170 f843395d23c24071afcf05de63f4c3db
+msgid "✅ 内置搜索功能"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:172 09f63c3e769845678144892cb0d41491
+msgid "语言切换"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:174 153ef3e5bc244837996da3ee796a3a78
+msgid "🌍 多语言索引页（优雅的语言选择界面）"
+msgstr "🌍 多语言索引页（简洁优雅的语言选择界面）"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:175 6236d2b7fbdb47f0897bb5c1f45634fc
+msgid "🔄 各语言版本独立完整"
+msgstr "各语言版本独立完整"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:176 94ad7f3817ef4670bf343205eca63f03
+msgid "📱 所有设备完美适配"
+msgstr "📱 兼容所有设备，完美适配"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:178 800dc7c4f2744aea8a51f69ad84a8be5
+msgid "🚀 快速开始"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:180 c5828be0ef6741a8beede6589371b06b
+msgid "第一次使用？就这么简单："
+msgstr "首次使用？就是这么简单："
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:187 b8857edf1a8f4c41a832205f4b28ab5f
+msgid "等待构建完成后："
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:188 972e26af59474e409ab0fb332c9f49be
+msgid "选择 `y` 启动本地服务器"
+msgstr "选择 `y` 以启动本地服务器"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:189 799e265940184560af02eb3c8f4791ee
+msgid "浏览器会显示语言选择页"
+msgstr "浏览器将显示语言选择页面"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:190 f8d35545b222482cbeb09d2a3bb82bcb
+msgid "选择你想要的语言"
+msgstr "选择您想要的语言"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:191 c53f6db1565e44dfaa8a3217b5320594
+msgid "享受阅读！📖"
+msgstr "祝您阅读愉快！📖"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:193 311df92696d046c1ac8cba74209e1355
+msgid "💡 Tips"
+msgstr "💡 提示"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:195 118838cfd39c42b89313d510a9aaf5ce
+msgid "加快构建速度"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:205 e3d97202eb454ddeba61344efc665dc0
+msgid "CI/CD 集成"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:213 d8c9a58f347b4974a14cf3a35ddec7ea
+msgid "清理缓存"
+msgstr "清除缓存"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:223 0cdd1c16e02f466a8470d290c4f95221
+msgid "📚 更多文档"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:225 774f80fe836f42ef9fa41b1f71036035
+msgid "[I18N_GUIDE.md](I18N_GUIDE.md) - 详细翻译指南"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:226 9263f0e61dac42558c80e2e96a9717cb
+msgid "[MULTILANG_README.md](MULTILANG_README.md) - 多语言系统说明"
+msgstr ""
+"```markdown\n"
+"[MULTILANG_README.md](MULTILANG_README.md) - 多语言系统说明\n"
+"```"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:227 77d3994ed9b54bea8d8789593a38c239
+msgid "[build_lang.sh](build_lang.sh) - 交互式语言构建脚本"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:229 f256c4559a6548d69009da23ada84876
+msgid "❓ 常见问题"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:231 8dacd86d8ceb421287fc45ca8d5d8e7f
+msgid "Q: 为什么看不到中文翻译？"
+msgstr "问：为什么看不到中文翻译？"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:233 97aa99ac8d7c49209aee250562f157ee
+msgid "A: 检查："
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:234 fc719978f47d4a808e18f89a4c73faf1
+msgid "`locale/zh_CN/LC_MESSAGES/` 目录中的 `.po` 文件是否有翻译内容"
+msgstr "`locale/zh_CN/LC_MESSAGES/` 目录中的 `.po` 文件是否包含翻译内容"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:235 607c8cab80cb449eaa5366567684cdec
+msgid "`.po` 文件中 `msgstr` 是否填写了中文"
+msgstr "`.po` 文件中 `msgstr` 是否已填写中文"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:236 c05bf2e7b827495bbce4bbc91890ce0a
+msgid "重新运行构建脚本"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:238 3bc2166d67a84cf7a20bb5520dda0c9a
+msgid "Q: 如何只看英文或中文？"
+msgstr "问：如何仅查看英文或中文？"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:240 1d6ca63b859e4bd5beca2ee47eb1dabc
+msgid "A: 使用环境变量："
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:246 e93e3ba895064117865f8e5b26094a37
+msgid "Q: 构建很慢怎么办？"
+msgstr "问：构建速度很慢怎么办？"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:248
+#: ../../old_files/QUICK_BUILD_GUIDE.md:254 4176774ade754b14be671d9680f2f4fe
+#: a848188eb5c54594b2994f2062ce6fc4
+msgid "A:"
+msgstr "请提供具体的英文文本，我将为您翻译成符合要求的中文内容。"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:249 542ae8c1780e4351a0da6a557aec92a6
+msgid "跳过 Remote Tools：`DOC_SKIP_REMOTE=1`"
+msgstr "跳过远程工具：`DOC_SKIP_REMOTE=1`"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:250 cd2dbf4277f8418aa57a50decff03b16
+msgid "只构建一种语言：`DOC_LANGUAGES=en`"
+msgstr "仅构建一种语言：`DOC_LANGUAGES=en`"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:252 7630ce957bd24fb89dd7d6f2d5caf94b
+msgid "Q: 如何部署到服务器？"
+msgstr "问：如何部署到服务器？"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:263 227951afaab54c94afc2446f5960e270
+msgid "🎉 开始使用"
+msgstr ""
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:265 2f9f14b2096e40e6b8379950b96c5042
+msgid "现在就试试吧！"
+msgstr "现在就试用吧！"
+
+#: ../../old_files/QUICK_BUILD_GUIDE.md:272 1d11b0f8c6504682a92db9aad5c241c7
+msgid "一键生成精美的中英文文档！🚀"
+msgstr ""

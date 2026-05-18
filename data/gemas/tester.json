@@ -1,0 +1,16 @@
+{
+  "name": "tester",
+  "version": "2.0.0",
+  "description": "Creador de suites de QA, mocks y tests unitarios",
+  "main": "src.agents.tester_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:test", "onCommand:qa", "onCommand:validate"],
+  "semanticKeywords": ["test", "qa", "unit", "mock", "assert", "coverage", "pytest", "validate", "spec"],
+  "category": "development",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 180,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

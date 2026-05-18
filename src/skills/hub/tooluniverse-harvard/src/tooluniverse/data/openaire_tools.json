@@ -1,0 +1,128 @@
+[
+  {
+    "type": "OpenAIRETool",
+    "name": "OpenAIRE_search_publications",
+    "description": "Search OpenAIRE Explore for research products including publications, datasets, and software. OpenAIRE is the European open science platform that provides access to research outputs from EU-funded projects.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for OpenAIRE research products. Use keywords to search across titles, abstracts, and metadata."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return. Default is 10, maximum is 100.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of research product to search: 'publications', 'datasets', or 'software'. Default is 'publications'.",
+          "default": "publications",
+          "enum": [
+            "publications",
+            "datasets",
+            "software"
+          ]
+        }
+      },
+      "required": [
+        "query",
+        "max_results",
+        "type"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "OpenAIRE search results with metadata",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status of the search operation",
+          "enum": ["success", "error"]
+        },
+        "query": {
+          "type": "string",
+          "description": "The search query that was executed"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of research product searched",
+          "enum": ["publications", "datasets", "software"]
+        },
+        "total_results": {
+          "type": "integer",
+          "description": "Total number of results found"
+        },
+        "results": {
+          "type": "array",
+          "description": "List of OpenAIRE research products matching the search query",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": ["string", "null"],
+                "description": "Title of the research product"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of author/creator names"
+              },
+              "year": {
+                "type": ["string", "null"],
+                "description": "Publication or creation year"
+              },
+              "doi": {
+                "type": ["string", "null"],
+                "description": "Digital Object Identifier"
+              },
+              "url": {
+                "type": ["string", "null"],
+                "description": "URL to access the research product"
+              },
+              "type": {
+                "type": "string",
+                "description": "Type of research product (publications/datasets/software)"
+              },
+              "source": {
+                "type": "string",
+                "description": "Source identifier (always 'OpenAIRE')"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if status is error"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Detailed reason for the error if available"
+        }
+      },
+      "required": ["status", "query", "type", "total_results", "results"]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "max_results": 2,
+        "type": "publications"
+      },
+      {
+        "query": "climate change",
+        "max_results": 1,
+        "type": "datasets"
+      },
+      {
+        "query": "bioinformatics",
+        "max_results": 1,
+        "type": "software"
+      }
+    ]
+  }
+]

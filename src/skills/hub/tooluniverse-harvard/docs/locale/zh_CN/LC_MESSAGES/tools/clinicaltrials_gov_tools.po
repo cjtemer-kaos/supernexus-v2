@@ -1,0 +1,595 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:2 5fa2097d79d54d6db45c8a44f9de385d
+msgid "Clinicaltrials Gov Tools"
+msgstr "Clinicaltrials Gov 工具"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:4 8c737da767804a8b8722fe91b3c37286
+msgid ""
+"**Configuration File**: ``clinicaltrials_gov_tools.json`` **Tool Type**: "
+"Local **Tools Count**: 10"
+msgstr ""
+"**配置文件**：``clinicaltrials_gov_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：10"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:8 f49751c29f93473c9d8ccf55b3ff0666
+msgid ""
+"This page contains all tools defined in the "
+"``clinicaltrials_gov_tools.json`` configuration file."
+msgstr "此页面包含在 ``clinicaltrials_gov_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:11 0782054d80b24865b1835080ef1b53ef
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:14 f93364953afd417cb9aa54731fc369a7
+msgid ""
+"**extract_clinical_trial_adverse_events** (Type: "
+"ClinicalTrialsDetailsTool)"
+msgstr "**extract_clinical_trial_adverse_events**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:16 ada3c645e397479580bb51776c6915a9
+msgid ""
+"Extracts detailed adverse event results from clinicaltrials.gov, using "
+"their NCT IDs."
+msgstr "从clinicaltrials.gov提取详细的不良事件结果，使用其NCT编号。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst 2488ee47f82d4257b012f8e6d858f6fd
+msgid "extract_clinical_trial_adverse_events tool specification"
+msgstr "extract_clinical_trial_adverse_events 工具规格说明"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:20
+#: ../../tools/clinicaltrials_gov_tools.rst:57
+#: ../../tools/clinicaltrials_gov_tools.rst:91
+#: ../../tools/clinicaltrials_gov_tools.rst:126
+#: ../../tools/clinicaltrials_gov_tools.rst:161
+#: ../../tools/clinicaltrials_gov_tools.rst:196
+#: ../../tools/clinicaltrials_gov_tools.rst:231
+#: ../../tools/clinicaltrials_gov_tools.rst:265
+#: ../../tools/clinicaltrials_gov_tools.rst:300
+#: ../../tools/clinicaltrials_gov_tools.rst:335
+#: 133323455c6a49138acc2e8bd312f622 354ef34f6d354a619373ed6ccd891c87
+#: 3b497d6dd2f04f799b077fa548dd5a19 4fbec2d517fb4a778490ae5c7ee350b2
+#: 53a8be78640f477ab5dfdf8bfdce80aa 6f0d71d84919489eb6f4b6053e8905fd
+#: 854ad9f1e6fc4f96a1e0ddcdc3a6cf33 b7dbce8facdf4f21a0d1648ee1ff669f
+#: c649a2b75a584ebe9d87bb6295a47485 f912c5ea6fbb40d5a0582c6d279af12d
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:22 5ebbe900a77d4e3391172399d78de261
+msgid "**Name**: ``extract_clinical_trial_adverse_events``"
+msgstr "**名称**：``extract_clinical_trial_adverse_events``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:23
+#: ../../tools/clinicaltrials_gov_tools.rst:60
+#: ../../tools/clinicaltrials_gov_tools.rst:94
+#: ../../tools/clinicaltrials_gov_tools.rst:129
+#: ../../tools/clinicaltrials_gov_tools.rst:164
+#: ../../tools/clinicaltrials_gov_tools.rst:199
+#: ../../tools/clinicaltrials_gov_tools.rst:234
+#: ../../tools/clinicaltrials_gov_tools.rst:268
+#: ../../tools/clinicaltrials_gov_tools.rst:303
+#: 10df23dfcbcd464d8ee6aedf1d3a775e 2473c67cfddd4ac884e6408ad2231faf
+#: 29f380323bb547b0b66e5791f782bac3 5e65631fcb0c4856a4f6565b7e565a3a
+#: 647c6f8ad523408bb7fa44adbaff82f7 a4ff27991d0e426f912a0a913d62a1de
+#: b4a0df54d53340a5b467966e944e4871 c1ff0eac65bf43a59e5332315d71420b
+#: da763922955d4c198b1068da8ca8041c
+msgid "**Type**: ``ClinicalTrialsDetailsTool``"
+msgstr "**类型**：``ClinicalTrialsDetailsTool``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:24 e909d205235045958d0411b89cfa2105
+msgid ""
+"**Description**: Extracts detailed adverse event results from "
+"clinicaltrials.gov, using their NCT IDs."
+msgstr "**描述**：根据临床试验注册号（NCT ID）从 clinicaltrials.gov 提取详细的不良事件结果。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:26
+#: ../../tools/clinicaltrials_gov_tools.rst:63
+#: ../../tools/clinicaltrials_gov_tools.rst:97
+#: ../../tools/clinicaltrials_gov_tools.rst:132
+#: ../../tools/clinicaltrials_gov_tools.rst:167
+#: ../../tools/clinicaltrials_gov_tools.rst:202
+#: ../../tools/clinicaltrials_gov_tools.rst:237
+#: ../../tools/clinicaltrials_gov_tools.rst:271
+#: ../../tools/clinicaltrials_gov_tools.rst:306
+#: ../../tools/clinicaltrials_gov_tools.rst:341
+#: 0963135b26af4a1ab47cdcfd884494de 572767ea5d7147d6ac88d32af9f3a687
+#: 8a53f04bc8274f629cfa82ddd583c036 8ede242afa824df893b200410bb8547d
+#: a5f179de68754958b2750c4055414d8f a94def7f6e8f4959a95e1fd68d9d7ce0
+#: b43cc2b56eb648f0bd7a8ef33889ade5 c0ce88bbf03f41eab8af2013ed3dd637
+#: ea7e2965c5bd4ad6984c5d134cc1b49c f931b5d3c0f04aaaa3f571b81bd89ddf
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:28
+#: ../../tools/clinicaltrials_gov_tools.rst:65
+#: ../../tools/clinicaltrials_gov_tools.rst:99
+#: ../../tools/clinicaltrials_gov_tools.rst:134
+#: ../../tools/clinicaltrials_gov_tools.rst:169
+#: ../../tools/clinicaltrials_gov_tools.rst:204
+#: ../../tools/clinicaltrials_gov_tools.rst:239
+#: ../../tools/clinicaltrials_gov_tools.rst:273
+#: ../../tools/clinicaltrials_gov_tools.rst:308
+#: 158ba703aa69409ebb0969834d7585aa 2727e00096f6491fa3ed941cdba540cb
+#: 339871585c724a20a5e86bc227af52d2 786693a6726a433a9f83341d25c631e3
+#: 8e315f304b23471d90405cc35a192c07 a074fb37578340bc9afe46652937c40b
+#: bce43dcca17f44fd8e1481f0dd627d95 cd6c632bd83f4623a9d5a2594e19a38f
+#: f8221a7afa9c4ca2aaee2a1b810c9dca
+#, fuzzy
+msgid ""
+"``nct_ids`` (array) (required) List of NCT IDs of the clinical trials "
+"(e.g., ['NCT04852770', 'NCT01728545'])."
+msgstr "``nct_ids``（数组）（可选）临床试验的 NCT ID 列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:31 3ff8203057cc45a7984856091f7b13f2
+msgid ""
+"``organ_systems`` (array) (optional) List of organs or organ systems to "
+"filter adverse events (see enum for exact text). Adverse events will be "
+"matched only if the input exactly matches their terms (case agnostic). If"
+" not specified, all adverse events will be returned. By default, all "
+"adverse events will be returned."
+msgstr "``organ_systems``（数组）（可选）用于筛选不良事件的器官或器官系统列表（具体文本请参见枚举）。仅当输入与术语完全匹配（不区分大小写）时，不良事件才会被匹配。如果未指定，将返回所有不良事件。默认情况下，将返回所有不良事件。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:34 eb1a86a978144cafbe3861d58ee90212
+msgid ""
+"``adverse_event_type`` (string) (optional) Type of adverse events to "
+"extract. Options are 'serious' (serious adverse events only), 'other' "
+"(non-serious adverse events only), 'all' (all adverse events), or "
+"specific event names such as 'nausea', 'neutropenia', 'epilepsy' (from "
+"MedDRA). For specific event names, adverse events will be matched as long"
+" as the input partially matches their terms (case agnostic). Querying for"
+" specific adverse event names is recommended as there are typically many "
+"adverse events logged. If querying for specific event names does not "
+"return any results, this parameter should be set to 'serious' for sanity "
+"check. By default, the value is set to 'serious', i.e. the tool will "
+"extract all serious adverse events."
+msgstr "``adverse_event_type``（字符串）（可选）要提取的不良事件类型。选项包括“serious”（仅提取严重不良事件）、“other”（仅提取非严重不良事件）、“all”（提取所有不良事件），或特定事件名称，例如“nausea”（恶心）、“neutropenia”（中性粒细胞减少症）、“epilepsy”（癫痫）（基于MedDRA）。对于特定事件名称，只要输入与其术语部分匹配（不区分大小写），就会匹配相关的不良事件。建议查询特定的不良事件名称，因为通常记录了大量不良事件。如果查询特定事件名称未返回任何结果，应将此参数设置为“serious”以进行合理性检查。默认情况下，该值设置为“serious”，即工具将提取所有严重不良事件。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:37
+#: ../../tools/clinicaltrials_gov_tools.rst:71
+#: ../../tools/clinicaltrials_gov_tools.rst:105
+#: ../../tools/clinicaltrials_gov_tools.rst:140
+#: ../../tools/clinicaltrials_gov_tools.rst:175
+#: ../../tools/clinicaltrials_gov_tools.rst:210
+#: ../../tools/clinicaltrials_gov_tools.rst:245
+#: ../../tools/clinicaltrials_gov_tools.rst:279
+#: ../../tools/clinicaltrials_gov_tools.rst:314
+#: ../../tools/clinicaltrials_gov_tools.rst:358
+#: 06ed75d91165488597b3f63532472c62 26f90b20ddbd484b94ef95b6b1cd8c19
+#: 2bb0198d3d0e4234bfd38b630d572d84 4ceb97ddf39c41eebe36b029f8a529f2
+#: 4d380a36728044e6bfe693cd912d3d84 7a07c4aa5def45d38f40b82f2a7294a2
+#: 7b65dbc5d418441e8c623cd936da5df7 8d1ad10acbbd4a0f83ef222783c8b865
+#: cd01a375757f44b2b6188a62ca2cfe99 f2a613327ddc410c8a8de6875875c4a6
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:51 765ffbc597814df48dec5dc4091cbd61
+msgid "**extract_clinical_trial_outcomes** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**extract_clinical_trial_outcomes**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:53 17b713571b37496891d2d46df99534ac
+msgid ""
+"Extracts detailed trial outcome results (e.g., overall survival months, "
+"p-values, etc.) from clin..."
+msgstr "从临床试验中提取详细的结果数据（例如，总生存期（月）、p值等）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst a7513a067de54877b56cc8e2084b607b
+msgid "extract_clinical_trial_outcomes tool specification"
+msgstr "extract_clinical_trial_outcomes 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:59 04df2174004b4726a18c5d92ad7f77c8
+msgid "**Name**: ``extract_clinical_trial_outcomes``"
+msgstr "**名称**: ``extract_clinical_trial_outcomes``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:61 b8c1c19c6d7d47188377021e0a6e1dd9
+msgid ""
+"**Description**: Extracts detailed trial outcome results (e.g., overall "
+"survival months, p-values, etc.) from clinicaltrials.gov, using their NCT"
+" IDs."
+msgstr "**描述**：根据临床试验注册号（NCT ID）从 clinicaltrials.gov 提取详细的试验结果数据（例如，总生存期（月）、p 值等）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:68 c4889f355ed7450fa44507028d26a81e
+msgid ""
+"``outcome_measure`` (string) (optional) Outcome measure to extract. "
+"Example values include 'primary' (primary outcomes only), 'secondary' "
+"(secondary outcomes only), 'all' (all outcomes), or specific measure "
+"names such as 'survival', 'overall survival'. For specific measure names,"
+" outcome measures will be matched as long as the input partially matches "
+"their titles or descriptions (case agnostic). Querying for specific "
+"measure names is recommended after getting an overview of outcome "
+"measures ('primary'). If querying for specific measure names does not "
+"return any results, this parameter should be set to 'primary' for sanity "
+"check. By default, the value is set to 'primary', i.e. the tool will "
+"extract all primary outcome results."
+msgstr ""
+"``outcome_measure``（字符串）（可选）要提取的结果指标。示例值包括“primary”（仅主要结果）、“secondary”（仅次要结果）、“all”（所有结果），或特定指标名称，例如“survival”（生存）、“overall"
+" "
+"survival”（总体生存）。对于特定指标名称，只要输入部分匹配其标题或描述（不区分大小写），结果指标就会被匹配。建议在获取结果指标概览（“primary”）后查询特定指标名称。如果查询特定指标名称未返回任何结果，应将此参数设置为“primary”以进行检查。默认情况下，该值设置为“primary”，即工具将提取所有主要结果指标。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:85 5fd4f8b409894eb4a7bc0272ebd05786
+msgid ""
+"**get_clinical_trial_conditions_and_interventions** (Type: "
+"ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_conditions_and_interventions**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:87 a1a8141cbb4745f58095ac8eaecb6c41
+msgid ""
+"Retrieves the list of conditions or diseases and the interventions and "
+"arm groups that the clinic..."
+msgstr "检索诊所的条件或疾病列表，以及干预措施和研究组信息..."
+
+#: ../../tools/clinicaltrials_gov_tools.rst d3256cdcde1c42f7bdcb6ae6c0141ca6
+msgid "get_clinical_trial_conditions_and_interventions tool specification"
+msgstr "get_clinical_trial_conditions_and_interventions 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:93 4cb6b77b730a4a05bb2f9e22a5c2442d
+msgid "**Name**: ``get_clinical_trial_conditions_and_interventions``"
+msgstr "**名称**: ``get_clinical_trial_conditions_and_interventions``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:95 ee862731a56d47cb9564887e3f820c4c
+msgid ""
+"**Description**: Retrieves the list of conditions or diseases and the "
+"interventions and arm groups that the clinical trials are focused on, "
+"using their NCT IDs."
+msgstr "**描述**：根据临床试验的NCT编号，检索试验所关注的疾病或病症列表，以及相关的干预措施和试验组信息。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:102
+#: 9ce320deef234e6ea6576c3604f52c5f
+#, fuzzy
+msgid "``condition_and_intervention`` (string) (required) Placeholder."
+msgstr "``condition_and_intervention``（字符串）（可选）占位符。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:120
+#: 6d2cb6e92b4540a28adb337207b6ab3f
+msgid "**get_clinical_trial_descriptions** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_descriptions**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:122
+#: aad935ac399e45efb5824235a7439dbf
+msgid ""
+"Retrieves detailed identification information for trials, including "
+"titles, phases, and descripti..."
+msgstr "检索试验的详细识别信息，包括标题、阶段和描述。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst c180e76678004ee79fcf2b5564839139
+msgid "get_clinical_trial_descriptions tool specification"
+msgstr "get_clinical_trial_descriptions 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:128
+#: 6257434d1b604424a96ca2dcb6b78ad5
+msgid "**Name**: ``get_clinical_trial_descriptions``"
+msgstr "**名称**: ``get_clinical_trial_descriptions``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:130
+#: b33db146b21a42279db75d39527bff0d
+msgid ""
+"**Description**: Retrieves detailed identification information for "
+"trials, including titles, phases, and descriptions, using their NCT IDs."
+msgstr "**描述**：根据试验的 NCT ID 获取详细的识别信息，包括标题、阶段和描述。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:137
+#: 8d85216bbe4043c4b38cc370e773fdbb
+#, fuzzy
+msgid ""
+"``description_type`` (string) (required) Type of information to retrieve."
+" Options are 'brief' for brief descriptions or 'full' for full "
+"descriptions."
+msgstr ""
+"``description_type``（字符串）（可选）指定要检索的信息类型。选项包括 'brief' 表示简要描述，或 'full' "
+"表示完整描述。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:155
+#: aac53a35d3d047e388a8a71046728add
+msgid ""
+"**get_clinical_trial_eligibility_criteria** (Type: "
+"ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_eligibility_criteria**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:157
+#: 428e2f878476496f83d5f30bd21dd135
+msgid ""
+"Retrieves the eligibility criteria for the clinical trials, using their "
+"NCT IDs."
+msgstr "使用其 NCT ID 检索临床试验的资格标准。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst 84783346a2424cfba1e8247f05c9c7fc
+msgid "get_clinical_trial_eligibility_criteria tool specification"
+msgstr "get_clinical_trial_eligibility_criteria 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:163
+#: 860d7939c91246ceb242829a9e73c0bb
+msgid "**Name**: ``get_clinical_trial_eligibility_criteria``"
+msgstr "**名称**: ``get_clinical_trial_eligibility_criteria``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:165
+#: ec181e55d85b4f598c0520e2e0ee2039
+msgid ""
+"**Description**: Retrieves the eligibility criteria for the clinical "
+"trials, using their NCT IDs."
+msgstr "**描述**：根据临床试验的 NCT ID 获取其资格标准。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:172
+#: dbeb2adce2fd4fcbad17bec99337f828
+#, fuzzy
+msgid "``eligibility_criteria`` (string) (required) Placeholder."
+msgstr "``eligibility_criteria``（字符串）（可选）占位符。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:190
+#: 7f4e9c135fb54954a6754694a996c50c
+msgid "**get_clinical_trial_locations** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_locations**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:192
+#: b622d8463c984fbe85788384e885b41a
+msgid ""
+"Retrieves the locations where the clinical trials are being conducted, "
+"using their NCT IDs."
+msgstr "使用其NCT编号检索临床试验正在进行的地点。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst ff9991482ff44a6988e807cb18826152
+msgid "get_clinical_trial_locations tool specification"
+msgstr "get_clinical_trial_locations 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:198
+#: 6fba332a13764a0b9b4a8b787de39bde
+msgid "**Name**: ``get_clinical_trial_locations``"
+msgstr "**名称**: ``get_clinical_trial_locations``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:200
+#: f3e2dfe3ce3c4940a0f3b7953f06f9f1
+msgid ""
+"**Description**: Retrieves the locations where the clinical trials are "
+"being conducted, using their NCT IDs."
+msgstr "**描述**：根据NCT编号获取临床试验的开展地点。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:207
+#: 45d093aed70946c580f2a1ac91cfe127
+#, fuzzy
+msgid "``location`` (string) (required) Placeholder."
+msgstr "``location``（字符串）（可选）占位符。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:225
+#: 5c6e63d211c94635b99af478fb85c956
+msgid "**get_clinical_trial_outcome_measures** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_outcome_measures**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:227
+#: 79948708c82645229813f3d9e81e455e
+msgid ""
+"Retrieves the outcome measures for the clinical trials, using their NCT "
+"IDs."
+msgstr "使用其 NCT ID 获取临床试验的结果指标。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst 37239d7f6fa447269f0e6eafab186abf
+msgid "get_clinical_trial_outcome_measures tool specification"
+msgstr "get_clinical_trial_outcome_measures 工具规范"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:233
+#: a2a06fc95cd047729aa4781a0dad4020
+msgid "**Name**: ``get_clinical_trial_outcome_measures``"
+msgstr "**名称**: ``get_clinical_trial_outcome_measures``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:235
+#: 17995a2310a0478782a6a67bdb2c148b
+msgid ""
+"**Description**: Retrieves the outcome measures for the clinical trials, "
+"using their NCT IDs."
+msgstr "**描述**：使用临床试验的NCT编号检索其结果指标。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:242
+#: 80154e1a79304082a15139c4d062f946
+msgid ""
+"``outcome_measures`` (string) (optional) Decides whether to retrieve "
+"primary, secondary, or all outcome measures. Options are 'primary', "
+"'secondary', or 'all'. Default is 'primary'."
+msgstr ""
+"``outcome_measures``（字符串）（可选）决定是否检索主要、次要或所有结局指标。选项包括 "
+"'primary'、'secondary' 或 'all'。默认值为 'primary'。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:259
+#: bb2cd51763354a8b8891cd389d028664
+msgid "**get_clinical_trial_references** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_references**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:261
+#: 9218c7655768430aac4543dd5153f865
+msgid ""
+"Retrieves the references (if any) for the clinical trials, using their "
+"NCT IDs."
+msgstr "使用临床试验的NCT编号检索其参考文献（如有）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst 43864cc00bdb4b16b286137eea50f18e
+msgid "get_clinical_trial_references tool specification"
+msgstr "get_clinical_trial_references 工具规格说明"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:267
+#: c3070d5e33ef4137b1d0d838910bac7c
+msgid "**Name**: ``get_clinical_trial_references``"
+msgstr "**名称**：``get_clinical_trial_references``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:269
+#: 24a85753c6244335970639b70e13147d
+msgid ""
+"**Description**: Retrieves the references (if any) for the clinical "
+"trials, using their NCT IDs."
+msgstr "**描述**：使用临床试验的 NCT ID 检索其参考文献（如有）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:276
+#: e8d0476923d445cd85ddc20f2cd180d4
+#, fuzzy
+msgid "``references`` (string) (required) Placeholder."
+msgstr "``references``（字符串）（可选）占位符。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:294
+#: 7e0a56bd0d5b43ad819c6a065a228a19
+msgid "**get_clinical_trial_status_and_dates** (Type: ClinicalTrialsDetailsTool)"
+msgstr "**get_clinical_trial_status_and_dates**（类型：ClinicalTrialsDetailsTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:296
+#: 8253b36d487c4dbba559ee410f3d222a
+msgid ""
+"Retrieves trial status and start and completion dates, using their NCT "
+"IDs."
+msgstr "使用NCT编号检索试验状态及开始和完成日期。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst b419fca2944d4b3fba6bdbed83000b07
+msgid "get_clinical_trial_status_and_dates tool specification"
+msgstr "get_clinical_trial_status_and_dates 工具规格说明"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:302
+#: ad7fe8881f184749ad67822ee74bc57b
+msgid "**Name**: ``get_clinical_trial_status_and_dates``"
+msgstr "**名称**：``get_clinical_trial_status_and_dates``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:304
+#: 79d3697ce6b14f329385ced362fc9669
+msgid ""
+"**Description**: Retrieves trial status and start and completion dates, "
+"using their NCT IDs."
+msgstr "**描述**：使用其 NCT ID 检索试验状态及开始和完成日期。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:311
+#: a30b939edef144bb86b184486fb285c6
+#, fuzzy
+msgid "``status_and_date`` (string) (required) Placeholder."
+msgstr "``status_and_date``（字符串）（可选）占位符。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:329
+#: d0e992eb5cc5439da710c13955100ebf
+msgid "**search_clinical_trials** (Type: ClinicalTrialsSearchTool)"
+msgstr "**search_clinical_trials**（类型：ClinicalTrialsSearchTool）"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:331
+#: d2b49dab1f1d427ea1ef98c205ebbf41
+msgid ""
+"Search for clinical trials registered on clinicaltrials.gov based on "
+"title, conditions, intervent..."
+msgstr "根据标题、疾病、干预措施等在 clinicaltrials.gov 上搜索注册的临床试验..."
+
+#: ../../tools/clinicaltrials_gov_tools.rst 7a2b78b18f944acb938770a80c0a7e28
+msgid "search_clinical_trials tool specification"
+msgstr "search_clinical_trials 工具规格说明"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:337
+#: 2f9cf9ecfe4d44f281a978b2b5085a74
+msgid "**Name**: ``search_clinical_trials``"
+msgstr "**名称**：``search_clinical_trials``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:338
+#: 81b6160955f04f2083f3b167535450b0
+msgid "**Type**: ``ClinicalTrialsSearchTool``"
+msgstr "**类型**：``ClinicalTrialsSearchTool``"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:339
+#: 19656a167f9b4a0ea3ed27fe1085b98d
+msgid ""
+"**Description**: Search for clinical trials registered on "
+"clinicaltrials.gov based on title, conditions, interventions, outcome "
+"measures, and status. Returns a paginated list of studies, containing the"
+" NCT ID and description of each trial. You can then take the NCT IDs and "
+"use 'get_clinical_trials_*' tools to get detailed information about "
+"specific protocol fields for specific studies, or "
+"'extract_clinical_trials_efficacy/safety' tools to get efficacy or "
+"adverse events results from specific studies. If you wish to see the next"
+" page of results, you can use the 'nextPageToken' value from the previous"
+" output of this tool and input it as the 'pageToken' parameter in the "
+"next query. Note that currently the search is limited to trials beyond "
+"phase 1."
+msgstr ""
+"**描述**：根据标题、疾病状况、干预措施、结局指标和状态，在 clinicaltrials.gov 上搜索注册的临床试验。返回包含每个试验的 "
+"NCT ID 及描述的分页研究列表。您可以使用这些 NCT ID，调用 'get_clinical_trials_*' "
+"工具获取特定研究中具体方案字段的详细信息，或使用 'extract_clinical_trials_efficacy/safety' "
+"工具获取特定研究的疗效或不良事件结果。若需查看下一页结果，可将本工具上一次输出中的 'nextPageToken' 值作为下一次查询的 "
+"'pageToken' 参数输入。请注意，目前搜索仅限于超过一期的试验。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:343
+#: 010e7a4350ab40bc9d9795998261b764
+msgid ""
+"``condition`` (string) (optional) Query for condition or disease using "
+"Essie expression syntax (e.g., 'lung cancer', '(head OR neck) AND pain "
+"AND NOT \"back pain\"')."
+msgstr ""
+"``condition``（字符串）（可选） 使用 Essie 表达式语法查询病症或疾病（例如，'lung cancer'，'(head OR "
+"neck) AND pain AND NOT \"back pain\"'）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:346
+#: c660f0b4bb734bce9d70da5155f82c17
+msgid ""
+"``intervention`` (string) (optional) Query for intervention/treatment "
+"using Essie expression syntax (e.g., 'chemotherapy', 'immunotherapy', "
+"'olaparib', 'combination therapy')."
+msgstr ""
+"``intervention``（字符串）（可选） 使用 Essie "
+"表达式语法查询干预/治疗（例如，‘化疗’、‘免疫治疗’、‘奥拉帕利’、‘联合治疗’）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:349
+#: 08ad6ff350c546b082efd8b626054fb1
+#, fuzzy
+msgid ""
+"``query_term`` (string) (required) Query for 'other terms' with Essie "
+"expression syntax (e.g., 'combination', "
+"'AREA[LastUpdatePostDate]RANGE[2023-01-15,MAX]', 'Phase II'). Can be used"
+" to search for all other protocol fields, including but not limited to "
+"title, outcome measures, status, phase, location, etc."
+msgstr ""
+"``query_term``（字符串）（可选） "
+"使用Essie表达式语法查询“其他术语”（例如，'combination'、'AREA[LastUpdatePostDate]RANGE[2023-01-15,MAX]'、'Phase"
+" II'）。可用于搜索所有其他协议字段，包括但不限于标题、结果指标、状态、阶段、地点等。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:352
+#: 6cdba41827cb4b7ba577dc181852a147
+msgid ""
+"``pageSize`` (integer) (optional) Maximum number of studies to return per"
+" page (default 10, max 1000)."
+msgstr "``pageSize``（整数）（可选）每页返回的最大研究数量（默认值为10，最大值为1000）。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:355
+#: c33d6d55bfba4307b856e91365634d90
+msgid ""
+"``pageToken`` (string) (optional) Token to retrieve the next page of "
+"results, obtained from the 'nextPageToken' field of the previous "
+"response. Do not specify it for first page. When you make an initial "
+"request to the API which supports pagination, the response will include a"
+" nextPageToken. This token can then be used as a parameter in the "
+"subsequent API request to retrieve the next set of data."
+msgstr ""
+"``pageToken``（字符串）（可选）用于获取下一页结果的令牌，取自前一次响应中的 `nextPageToken` "
+"字段。首次请求时无需指定该参数。当您首次调用支持分页的 API 时，响应中会包含一个 `nextPageToken`。该令牌可作为后续 API "
+"请求的参数，用于获取下一批数据。"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:372
+#: ec62f9d2bf314c7d944a1d58c59cd731
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:374
+#: 5950d4dd42254b598c07e2d08a0f2676
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具总览"
+
+#: ../../tools/clinicaltrials_gov_tools.rst:375
+#: 52c4716e45c94617a4c94c7f4731869f
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

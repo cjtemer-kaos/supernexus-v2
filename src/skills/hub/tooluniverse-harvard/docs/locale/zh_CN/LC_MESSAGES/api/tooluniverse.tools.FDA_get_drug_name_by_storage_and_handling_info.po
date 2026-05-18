@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.rst:2
+#: 030551ebcadc4611a63728617855875f
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_storage\\_and\\_handling\\_info"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_storage\\_and\\_handling\\_info 模块"
+
+#: af140ae6475b438fba766a666121611b of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info:1
+msgid "FDA_get_drug_name_by_storage_and_handling_info"
+msgstr "FDA_根据储存和处理信息获取药品名称"
+
+#: 05c4a2f7d02b40c19f6b0e0da01a43f9 f90f6cde12254fad8a3c285c17b71461 of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info:3
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:1
+msgid "Retrieve the drug name based on storage and handling information."
+msgstr "根据储存和处理信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.rst
+#: b38aebc4ac284ea2aa8573ff62c4547f
+msgid "Parameters"
+msgstr "参数"
+
+#: 1817c838e5dd4309b07689c0c982006d of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:3
+msgid "Information about the storage and handling of the drug product."
+msgstr "关于药品的储存和处理信息。"
+
+#: 7fdb94aa5e3540f194b3c2818d2b538b of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: ed61837f37004b0b8a4ff25be9b8d28c of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 23565182e17e44ed81407ab10a0a9e4a of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 96da869c717a4d099c228bb72fb6a8aa of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: dd63f151a5db49ddbaeee174b5fd00ad of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.rst
+#: f2d854ba187747fd95a376e06c1e4f6e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 73d43a5a918b4b93947b35586a521b86 of
+#: tooluniverse.tools.FDA_get_drug_name_by_storage_and_handling_info.FDA_get_drug_name_by_storage_and_handling_info:16
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,16 @@
+{
+  "name": "creative",
+  "version": "2.0.0",
+  "description": "Generador de contenido creativo, copy y documentacion",
+  "main": "src.agents.creative_gem",
+  "model": "gemma4:latest",
+  "activationEvents": ["onCommand:creative", "onCommand:write", "onCommand:generate"],
+  "semanticKeywords": ["creative", "write", "content", "story", "idea", "name", "copy", "marketing", "blog", "article"],
+  "category": "content",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

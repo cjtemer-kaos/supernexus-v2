@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_bioavailability.rst:2
+#: 9833ade1dd2e4f0587f6d4e12aeca62b
+msgid "tooluniverse.tools.ADMETAI\\_predict\\_bioavailability module"
+msgstr "tooluniverse.tools.ADMETAI\\_predict\\_bioavailability 模块"
+
+#: 3d9e464ee60e4c778f8561eb7cee0236 of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability:1
+msgid "ADMETAI_predict_bioavailability"
+msgstr "ADMETAI_预测生物利用度"
+
+#: 34ecd08468314c1d83b1ee92e334bd76 37125f2666284793a79d478b76945ef3 of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability:3
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:1
+msgid ""
+"Predicts bioavailability endpoints (Bioavailability_Ma, HIA_Hou, "
+"PAMPA_NCATS, Caco2_Wang, Pgp_Bro..."
+msgstr ""
+"预测生物利用度终点（Bioavailability_Ma、HIA_Hou、PAMPA_NCATS、Caco2_Wang、Pgp_Bro...）"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_bioavailability.rst
+#: d22523f3498c4cb98e67e904caa6b5af
+msgid "Parameters"
+msgstr "参数"
+
+#: 3cf719c5ca4f45f4be7fe3129bae7557 of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:3
+msgid "The list of SMILES strings."
+msgstr "SMILES 字符串列表"
+
+#: 7f4cb71a39984fae9065e730b4e5c7ee of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 583fca31319d426b97e8d6c3076e1bff of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ea8050d4fd5c492d8095817005dce7e9 of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_bioavailability.rst
+#: 4feb3afbfe024e808336c6518a6cabba
+msgid "Return type"
+msgstr "返回类型"
+
+#: aa79bb2034bd4c08989b3e33df26e4ef of
+#: tooluniverse.tools.ADMETAI_predict_bioavailability.ADMETAI_predict_bioavailability:12
+msgid ":py:class:`Any`"
+msgstr ""

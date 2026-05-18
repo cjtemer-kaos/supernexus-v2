@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_chem_comp_audit_info.rst:2
+#: 0104c02a45ad427b832d8091883c92d0
+msgid "tooluniverse.tools.get\\_chem\\_comp\\_audit\\_info module"
+msgstr "tooluniverse.tools.get\\_chem\\_comp\\_audit\\_info 模块"
+
+#: a9ff3a68f72345eaa04c3a56c9776f92 of
+#: tooluniverse.tools.get_chem_comp_audit_info:1
+msgid "get_chem_comp_audit_info"
+msgstr "get_chem_comp_audit_info（获取化学组分审计信息）"
+
+#: 3c262d3073ba46cfb43225801bd8b8a5 693b43cfaae64d90a578fbc6c81fa645 of
+#: tooluniverse.tools.get_chem_comp_audit_info:3
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:1
+msgid ""
+"Fetch audit history for a chemical component: action type, date, details, "
+"ordinal, and processing..."
+msgstr "获取化学组件的审计历史：操作类型、日期、详细信息、序号和处理..."
+
+#: ../../api/tooluniverse.tools.get_chem_comp_audit_info.rst
+#: eb679c2515be42b3be81bf9f64bc25c0
+msgid "Parameters"
+msgstr "参数"
+
+#: a78ec7380ff74c5ca6d911c8148db2ee of
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:3
+msgid "Chemical component ID to retrieve audit info for"
+msgstr "用于检索审核信息的化学组件ID"
+
+#: 909d937356ef43b9b294dcc56f071238 of
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fd0d549685464aafa25eca6e0c4e7eab of
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 07ba8f38d6754f35a4722b79067aa5ec of
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_chem_comp_audit_info.rst
+#: b9102987914c470e82bccf98bb22bcbf
+msgid "Return type"
+msgstr "返回类型"
+
+#: 678f52d88c7b486699400f2e27c74e5b of
+#: tooluniverse.tools.get_chem_comp_audit_info.get_chem_comp_audit_info:12
+msgid ":py:class:`Any`"
+msgstr ""

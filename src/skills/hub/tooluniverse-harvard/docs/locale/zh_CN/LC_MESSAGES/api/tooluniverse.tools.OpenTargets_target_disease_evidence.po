@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_target_disease_evidence.rst:2
+#: b8c600a9372a42ffacf158f55b39165c
+msgid "tooluniverse.tools.OpenTargets\\_target\\_disease\\_evidence module"
+msgstr "tooluniverse.tools.OpenTargets\\_target\\_disease\\_evidence 模块"
+
+#: 19ed9a1dca90439caa39e99bfd6f9d03 of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence:1
+msgid "OpenTargets_target_disease_evidence"
+msgstr "OpenTargets_靶点_疾病_证据"
+
+#: 2c3f0d20e793422db353b91cf50e9ccf b5ae221770b44374bbf5279a25d8c376 of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence:3
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:1
+msgid ""
+"Explore evidence that supports a specific target-disease association. Input "
+"is disease efoId and ..."
+msgstr "探索支持特定靶点与疾病关联的证据。输入为疾病 efoId 和 ..."
+
+#: ../../api/tooluniverse.tools.OpenTargets_target_disease_evidence.rst
+#: 5b0c0350fe89408682f59bc5d973fcc8
+msgid "Parameters"
+msgstr "参数"
+
+#: f3b997ee1c9441fb92a5d1fdbb745023 of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:3
+msgid "The efoId of a disease or phenotype."
+msgstr "疾病或表型的efoId。"
+
+#: b0b942aa5c144547ba937fb457c7eb23 of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:5
+msgid "The ensemblId of a target."
+msgstr "目标的ensemblId。"
+
+#: 40396f5bb077452283e8e76a04cee06a of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1cd8102cf269443e89dca2242f56c90e of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e5f29edc5b264e6cbdf342911dad2008 of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_target_disease_evidence.rst
+#: 029cc93b38414667bc11230e472ba03d
+msgid "Return type"
+msgstr "返回类型"
+
+#: fc8032c1fc574a778b98901076e4c2de of
+#: tooluniverse.tools.OpenTargets_target_disease_evidence.OpenTargets_target_disease_evidence:14
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,322 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/interaction_protocol.rst:2 4baeca73fd924c1f95a6b34dbc8c6f5d
+msgid "AI-Tool Interaction Protocol"
+msgstr "AI工具交互协议"
+
+#: ../../guide/interaction_protocol.rst:4 09d42ace94b34dd781cc56a456243b37
+msgid ""
+"**The foundation that makes ToolUniverse's 1000+ tools universally accessible"
+" to any AI system**"
+msgstr "**使ToolUniverse的600多种工具可被任何AI系统普遍访问的基础**"
+
+#: ../../guide/interaction_protocol.rst:7 d912be93cc274ef5afdf7601a52417c4
+msgid "Overview"
+msgstr "概述"
+
+#: ../../guide/interaction_protocol.rst:9 ce854ac0dd714706871855e2b6a25b10
+msgid ""
+"Just as HTTP standardizes client-server communication across the web, "
+"ToolUniverse implements an **AI-Tool Interaction Protocol** that "
+"standardizes how AI models interact with scientific tools. This protocol "
+"abstracts away the complexity of 1000+ heterogeneous tools (machine learning "
+"models, databases, APIs, robotics systems) behind a unified interface."
+msgstr ""
+"正如 HTTP 标准化了整个网络中的客户端与服务器通信，ToolUniverse 实现了一种**AI工具交互协议**，标准化了 AI "
+"模型与科学工具之间的交互方式。该协议将 600 多种异构工具（包括机器学习模型、数据库、API、机器人系统）的复杂性抽象为一个统一接口。"
+
+#: ../../guide/interaction_protocol.rst:32 5dc59c4dec004aa38bf6c11962f318dd
+msgid "Protocol Components"
+msgstr "协议组件"
+
+#: ../../guide/interaction_protocol.rst:34 d6fa67e91be740b49767e22ad947253a
+msgid "The AI-Tool Interaction Protocol comprises three essential elements:"
+msgstr "AI工具交互协议包含三个基本要素："
+
+#: ../../guide/interaction_protocol.rst:36 e30a022e46ee4d22b941fce2fa8dd144
+msgid "**Specification Schema** - How tools describe themselves"
+msgstr "**规范架构** - 工具自我描述方式"
+
+#: ../../guide/interaction_protocol.rst:37 deb5a553dd9349f5aba5fdf5fdd98d0f
+msgid "**Interaction Schema** - How to request tool execution"
+msgstr "**交互模式** - 如何请求工具执行"
+
+#: ../../guide/interaction_protocol.rst:38 6733afb5887f4e2e93f486c83940768e
+msgid "**Communication Methods** - Local Python and remote MCP"
+msgstr "**通信方法** - 本地 Python 与远程 MCP"
+
+#: ../../guide/interaction_protocol.rst:41 34a997b279a849e4871986ab228f2993
+msgid "1. Tool Specification Schema"
+msgstr "1. 工具规格架构"
+
+#: ../../guide/interaction_protocol.rst:43 cd35e5a47b2d4a8e93c93ba6afcd5db8
+msgid ""
+"Every tool in ToolUniverse exposes itself through a standardized "
+"specification:"
+msgstr "ToolUniverse中的每个工具都通过标准化规范进行呈现："
+
+#: ../../guide/interaction_protocol.rst:66 a1ab7fc11b714e9d872897bf1ec4d70e
+msgid "**Schema Components:**"
+msgstr "**架构组件：**"
+
+#: ../../guide/interaction_protocol.rst:68 8f5ffcec238247ab8544f0443728b82f
+msgid ""
+"**Name**: Unique tool identifier following `Database_action_description` "
+"format"
+msgstr "**名称**：遵循 `Database_action_description` 格式的唯一工具标识符"
+
+#: ../../guide/interaction_protocol.rst:69 50ff34968cae49cfaca27989d6941019
+msgid "**Description**: Clear explanation of tool's purpose and functionality"
+msgstr "**描述**：清晰说明工具的用途和功能"
+
+#: ../../guide/interaction_protocol.rst:70 4ffe9e983e054709b83eb5950fcfdda6
+msgid ""
+"**Parameters**: Detailed argument specifications with types and requirements"
+msgstr "**参数**：详细的参数规范，包括类型和要求"
+
+#: ../../guide/interaction_protocol.rst:71 681fca5e595c4a43ac6229db7bd85662
+msgid "**Return Schema**: Structure of expected output data"
+msgstr "**返回模式**：预期输出数据的结构"
+
+#: ../../guide/interaction_protocol.rst:74 fdf5511f2afe47558f2d3f5d8d99560e
+msgid "2. Interaction Schema"
+msgstr "2. 交互架构"
+
+#: ../../guide/interaction_protocol.rst:76 a97c2054f9134b87b13074a2d0605246
+msgid "All tool interactions follow a uniform request format:"
+msgstr "所有工具交互均遵循统一的请求格式："
+
+#: ../../guide/interaction_protocol.rst:88 d1c9f39f1dfc49d980868aa794c2f3f0
+msgid "**Example Requests:**"
+msgstr "**示例请求：**"
+
+#: ../../guide/interaction_protocol.rst:118 c1dd822286234e7e9f4d31e47ea585fe
+msgid "3. Communication Methods"
+msgstr "3. 通信方式"
+
+#: ../../guide/interaction_protocol.rst:120 6f42da0f965a4615bdf3fa7e14c2c995
+msgid "**Local Communication** (Python):"
+msgstr "**本地通信**（Python）："
+
+#: ../../guide/interaction_protocol.rst:135 070cca74288c43bba90bd5fd96047106
+msgid "**Remote Communication** (MCP):"
+msgstr "**远程通信**（MCP）："
+
+#: ../../guide/interaction_protocol.rst:146 5d425075f19e43929b012a662398cf2d
+msgid "Core Operations"
+msgstr "核心操作"
+
+#: ../../guide/interaction_protocol.rst:148 1505be838b324406a2041f4d638a1b5f
+msgid ""
+"The protocol defines two fundamental operations that AI systems use to "
+"interact with ToolUniverse:"
+msgstr "该协议定义了人工智能系统用于与 ToolUniverse 交互的两项基本操作："
+
+#: ../../guide/interaction_protocol.rst:151 b495c90f652942b8b272c7c31c9e4bb3
+msgid "Find Tool Operation"
+msgstr "查找工具操作"
+
+#: ../../guide/interaction_protocol.rst:153 1157d8e0216b4949b9dd3f536a14cb3e
+msgid ""
+"**Purpose**: Discover relevant tools based on natural language descriptions"
+msgstr "**目的**：根据自然语言描述发现相关工具"
+
+#: ../../guide/interaction_protocol.rst:155 25d9b653a6714f05897de57c474710fb
+msgid "**Input**: Natural language query describing desired functionality"
+msgstr "**输入**：描述所需功能的自然语言查询"
+
+#: ../../guide/interaction_protocol.rst:157 d1fdc26b1bd34a01aabacf9384facb7b
+msgid "**Output**: List of relevant tool specifications"
+msgstr "**输出**：相关工具规格列表"
+
+#: ../../guide/interaction_protocol.rst:171 cad944317bc4415ab75335cb13531d1d
+msgid "**Implementation Methods:**"
+msgstr "**实现方法：**"
+
+#: ../../guide/interaction_protocol.rst:173 4532ae801eb344cda7dd661bb89f46cb
+msgid "**Keyword Search**: Fast TF-IDF matching with morphological processing"
+msgstr "**关键词搜索**：结合形态学处理的快速TF-IDF匹配"
+
+#: ../../guide/interaction_protocol.rst:174 cce2b37206654d3e9c4fefdb334cf5c7
+msgid "**LLM-based Search**: Contextual reasoning for complex queries"
+msgstr "**基于大型语言模型的搜索**：针对复杂查询的上下文推理"
+
+#: ../../guide/interaction_protocol.rst:175 ed1d3e27dc6342d49d42c505fea95a7d
+msgid "**Embedding Search**: Semantic similarity using fine-tuned models"
+msgstr "**嵌入式搜索**：使用微调模型进行语义相似度计算"
+
+#: ../../guide/interaction_protocol.rst:178 9da4b66ff3c44b51a3e63e547867c86b
+msgid "Call Tool Operation"
+msgstr "呼叫工具操作"
+
+#: ../../guide/interaction_protocol.rst:180 82d94bb361da49d5ab1cc0ae92599ffe
+msgid "**Purpose**: Execute a selected tool with specified arguments"
+msgstr "**目的**：使用指定参数执行选定的工具"
+
+#: ../../guide/interaction_protocol.rst:182 4d8eb561f7684ff7993544b08e801cc0
+msgid "**Input**: Tool name and structured arguments"
+msgstr "**输入**：工具名称及结构化参数"
+
+#: ../../guide/interaction_protocol.rst:184 302e01a55c7049ceab74ae619bc65e91
+msgid "**Output**: Structured results from tool execution"
+msgstr "**输出**：工具执行的结构化结果"
+
+#: ../../guide/interaction_protocol.rst:211 c531dd7b42584c8ab38e107f59a8318a
+msgid "Tool Types & Backend Abstraction"
+msgstr "工具类型与后端抽象"
+
+#: ../../guide/interaction_protocol.rst:213 cdb656d687f64c4aa6e8a66ccd7583b1
+msgid "The protocol successfully abstracts diverse tool backends:"
+msgstr "该协议成功抽象了多种工具后端："
+
+#: ../../guide/interaction_protocol.rst:216 a0aebd3b1fa44ecabb5f81eabcd73241
+msgid "Machine Learning Models"
+msgstr "机器学习模型"
+
+#: ../../guide/interaction_protocol.rst:233 6ec4ed0623ad4800aa6b380da8f2ab6f
+msgid "Database APIs"
+msgstr "数据库 API"
+
+#: ../../guide/interaction_protocol.rst:250 c62ecde8a9814e0cb838cca56d395526
+msgid "Scientific Software Packages"
+msgstr "科学软件包"
+
+#: ../../guide/interaction_protocol.rst:267 076308bbdddf45fe93e821d285ff182d
+msgid "AI Agents & Tools"
+msgstr "AI 智能体与工具"
+
+#: ../../guide/interaction_protocol.rst:284 99f4ebb9a5bc4ed88c342a734c128447
+msgid "Error Handling & Validation"
+msgstr "错误处理与验证"
+
+#: ../../guide/interaction_protocol.rst:286 fdb255e2b51640cbbc89d7f4e7b64b7c
+msgid "The protocol includes robust error handling:"
+msgstr "该协议包括完善的错误处理机制："
+
+#: ../../guide/interaction_protocol.rst:289 049532d8fa5749b7a6b48d331cc2f690
+msgid "Input Validation"
+msgstr "输入验证"
+
+#: ../../guide/interaction_protocol.rst:314 05fff9458cf842bb9fcb08148929a245
+msgid "Protocol Extensions"
+msgstr "协议扩展"
+
+#: ../../guide/interaction_protocol.rst:317 54073a032a7b4115a69513a8d7e219ee
+msgid "Tool Composition"
+msgstr "工具组成"
+
+#: ../../guide/interaction_protocol.rst:319 babb4eb8fd4f48d59442d2597fad03dc
+msgid "The protocol supports chaining tools for complex workflows:"
+msgstr "该协议支持工具链的组合，以实现复杂的工作流程："
+
+#: ../../guide/interaction_protocol.rst:338 c5e0561f358748a180d520f278d9e9fe
+msgid "Human-in-the-Loop"
+msgstr "人机交互环节"
+
+#: ../../guide/interaction_protocol.rst:340 a4d3cc905e0a466792023e96bc2f0224
+msgid "Expert feedback integration through the protocol:"
+msgstr "通过该协议整合专家反馈："
+
+#: ../../guide/interaction_protocol.rst:355 8d4766a30880489cbc6234ee512e6860
+msgid "Remote Tool Integration"
+msgstr "远程工具集成"
+
+#: ../../guide/interaction_protocol.rst:357 e33314790cd243ada567fe6870207ca2
+msgid "MCP-based remote tool registration:"
+msgstr "基于MCP的远程工具注册："
+
+#: ../../guide/interaction_protocol.rst:371 6092e27be7e94534be9dd73712beb642
+msgid "Protocol Benefits"
+msgstr "协议优势"
+
+#: ../../guide/interaction_protocol.rst:373 f10a2294d93448eebb534769f4da7d37
+msgid ""
+"**For AI Developers:** - Single interface for 1000+ diverse tools - No tool-"
+"specific integration work required - Automatic error handling and validation"
+" - Consistent response formats"
+msgstr ""
+"**针对 AI 开发者：**  \n"
+"- 单一界面，支持 600 多种多样工具  \n"
+"- 无需针对特定工具的集成工作  \n"
+"- 自动错误处理与校验  \n"
+"- 响应格式统一一致"
+
+#: ../../guide/interaction_protocol.rst:379 e91943e59dd34147920949eddbc760e9
+msgid ""
+"**For Scientists:** - Focus on research logic, not technical implementation "
+"- Reproducible workflows across different tools - Easy tool discovery and "
+"experimentation - Human expertise integration when needed"
+msgstr ""
+"**面向科学家：**  \n"
+"- 关注研究逻辑，而非技术实现  \n"
+"- 跨不同工具的可复现工作流程  \n"
+"- 便捷的工具发现与实验  \n"
+"- 需要时整合人工专业知识"
+
+#: ../../guide/interaction_protocol.rst:385 7bb1254eb44b4ddda3d59ea6c2ae244f
+msgid ""
+"**For Tool Creators:** - Standardized way to expose functionality - "
+"Automatic AI compatibility - Built-in documentation and validation - "
+"Community discoverability"
+msgstr ""
+"**针对工具创建者：**  \n"
+"- 标准化功能暴露方式  \n"
+"- 自动支持 AI 兼容性  \n"
+"- 内置文档与验证  \n"
+"- 社区可发现性"
+
+#: ../../guide/interaction_protocol.rst:392 6acb298a9b264614b018bc161eecad2b
+msgid "Implementation Details"
+msgstr "实现细节"
+
+#: ../../guide/interaction_protocol.rst:394 ce8cbd54b6634e8299bffea64e304620
+msgid "The protocol is implemented through ToolUniverse's core components:"
+msgstr "该协议通过 ToolUniverse 的核心组件实现："
+
+#: ../../guide/interaction_protocol.rst:396 126658c7eec44450937ff8398ea08c7c
+msgid "**Tool Registry**: Maps tool names to implementation classes"
+msgstr "**工具注册表**：将工具名称映射到实现类"
+
+#: ../../guide/interaction_protocol.rst:397 cdead133777b4e35bb34d483a8deec91
+msgid "**Tool Caller**: Handles protocol parsing and execution"
+msgstr "**工具调用器**：负责协议解析与执行"
+
+#: ../../guide/interaction_protocol.rst:398 caf73972a58c4078bb3f02a923be3c49
+msgid "**Tool Finder**: Implements the three discovery strategies"
+msgstr "**工具查找器**：实现三种发现策略"
+
+#: ../../guide/interaction_protocol.rst:399 b539126545a2424e84c5fc3555a17718
+msgid "**Tool Manager**: Manages local and remote tool registration"
+msgstr "**工具管理器**：管理本地和远程工具的注册"
+
+#: ../../guide/interaction_protocol.rst:400 e1f92fb4eeb4487f9d09e0bb629c0209
+msgid "**Validation Engine**: Ensures request/response compliance"
+msgstr "**验证引擎**：确保请求/响应的合规性"
+
+#: ../../guide/interaction_protocol.rst:403 586c74b16a1c44a5bf06aaf2805410b8
+msgid ""
+"**The protocol makes ToolUniverse unique**: While other frameworks provide "
+"tool orchestration, ToolUniverse creates a universal language for AI-tool "
+"interaction, similar to how HTTP enabled the modern web."
+msgstr ""
+"**该协议使ToolUniverse独树一帜**：虽然其他框架提供工具编排功能，ToolUniverse却创造了一种用于AI与工具交互的通用语言，类似于HTTP如何推动现代网络的发展。"

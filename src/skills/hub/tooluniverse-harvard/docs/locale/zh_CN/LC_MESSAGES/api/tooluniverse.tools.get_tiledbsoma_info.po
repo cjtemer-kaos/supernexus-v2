@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_tiledbsoma_info.rst:2
+#: 72a68b5c03ab41ee92cfef6d38f20962
+msgid "tooluniverse.tools.get\\_tiledbsoma\\_info module"
+msgstr "tooluniverse.tools.get\\_tiledbsoma\\_info 模块"
+
+#: 9657b1125a0a40179c5453bd332f76d9 of
+#: tooluniverse.tools.get_tiledbsoma_info:1
+msgid "get_tiledbsoma_info"
+msgstr "get_tiledbsoma_信息获取"
+
+#: 8f2497394f004a97b8e849a04dd0b2cd f84ff3f9fd2945f9a92f52cf71e3b0d1 of
+#: tooluniverse.tools.get_tiledbsoma_info:3
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:1
+msgid ""
+"Get comprehensive information about TileDB-SOMA – single-cell data storage "
+"with TileDB"
+msgstr "获取关于 TileDB-SOMA 的全面信息——使用 TileDB 进行单细胞数据存储"
+
+#: ../../api/tooluniverse.tools.get_tiledbsoma_info.rst
+#: 120acee9b10e4d659af27ddd032e5eaa
+msgid "Parameters"
+msgstr "参数"
+
+#: 84ba3cf2e68c4213afac51c848b0c891 of
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:3
+msgid "Type of information to retrieve about TileDB-SOMA"
+msgstr "关于 TileDB-SOMA 可检索的信息类型"
+
+#: 1b983d3c303243d398e09dd9e48242e5 of
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6b69d416c3ed4d22ae70566f95c78e17 of
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cd4eb5aad0dc41d8bcef39994556461b of
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_tiledbsoma_info.rst
+#: 0ca450f0551d460b9e806a3cdfc7a18e
+msgid "Return type"
+msgstr "返回类型"
+
+#: c1f2102fcedc4c4093bf3ebbad06fdea of
+#: tooluniverse.tools.get_tiledbsoma_info.get_tiledbsoma_info:12
+msgid ":py:class:`Any`"
+msgstr ""

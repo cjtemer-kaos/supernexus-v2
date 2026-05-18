@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_drugs_by_drug_event.rst:2
+#: daed191ca9664f0f839f5df8601fc607
+msgid "tooluniverse.tools.FAERS\\_count\\_drugs\\_by\\_drug\\_event module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_drugs\\_by\\_drug\\_event 模块"
+
+#: 13e5e90bd6a44b1593a5df931f364f4e of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event:1
+msgid "FAERS_count_drugs_by_drug_event"
+msgstr "FAERS_按药物事件统计药物数量"
+
+#: 2b04ac524d774f0dac230a18ae176bf8 314328876ec84729ac24cf96ea473543 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event:3
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:1
+msgid ""
+"Count the number of different drugs involved in FDA adverse event reports, "
+"filtered by patient de..."
+msgstr "统计涉及FDA不良事件报告中的不同药物数量，并根据患者进行筛选。"
+
+#: ../../api/tooluniverse.tools.FAERS_count_drugs_by_drug_event.rst
+#: 219fcf72351b4863af43e7b6d86d3346
+msgid "Parameters"
+msgstr "参数"
+
+#: c7dd5422e9bf48859c9b334ab03123d8 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:3
+msgid "Patient sex, leave it blank if you don't want to apply a filter."
+msgstr "患者性别，如果不需要应用筛选，请留空。"
+
+#: 6d414c61479043c1aa94e59b643bc820 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:5
+msgid "Patient age group."
+msgstr "患者年龄组"
+
+#: 624533f71bbd4bdbbce424f0c5e10b46 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:7
+msgid "Country where event occurred."
+msgstr "事件发生的国家。"
+
+#: c81929189e0b4bb8a814dec1ca0281bf of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:9
+msgid "Whether the event was serious."
+msgstr "事件是否严重。"
+
+#: 04edaac78ac24a42bb173da0d188f9d9 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 065ccfd142c14be7a502d2a02d7c4274 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 434b694340a943578e16ce8b54316ad9 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_drugs_by_drug_event.rst
+#: 78345d43608b489bbed9d35527549760
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5027ec0523424a6db4c441d20dc73216 of
+#: tooluniverse.tools.FAERS_count_drugs_by_drug_event.FAERS_count_drugs_by_drug_event:18
+msgid ":py:class:`Any`"
+msgstr ""

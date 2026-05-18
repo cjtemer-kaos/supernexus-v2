@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_assembly_summary.rst:2
+#: c5000e381c3b4c4f8fad30c26c9dee6e
+msgid "tooluniverse.tools.get\\_assembly\\_summary module"
+msgstr "tooluniverse.tools.get\\_assembly\\_summary 模块"
+
+#: 63e1a82dc2e04348aaa868d8093a8e7b of
+#: tooluniverse.tools.get_assembly_summary:1
+msgid "get_assembly_summary"
+msgstr "获取装配摘要"
+
+#: a738dbeaf00b4dc98371cbd6023c48a9 c5f7e9e6fb1d4c29b30676de0c6723d5 of
+#: tooluniverse.tools.get_assembly_summary:3
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:1
+msgid ""
+"Get key assembly composition and symmetry summary for an assembly associated"
+" with a PDB entry."
+msgstr "获取与PDB条目相关的装配的关键组装组成和对称性摘要。"
+
+#: ../../api/tooluniverse.tools.get_assembly_summary.rst
+#: 364fd3391f434215b2303fef3bd7a503
+msgid "Parameters"
+msgstr "参数"
+
+#: 6999c74a580a408ab516ec7f8b8cf022 of
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:3
+msgid "Assembly ID in format 'PDBID-assemblyNumber' (e.g., '1A8M-1')"
+msgstr "装配ID格式为“PDBID-assemblyNumber”（例如，“1A8M-1”）"
+
+#: bd933a449f0f43e3825741f54e9770bb of
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d377a2ef122f4b0d934d50d70b71dfd5 of
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e8f1bb3112674f67a5c7e9806d21b8bd of
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_assembly_summary.rst
+#: 041206ab94a4492aac15c28d929ffef9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7ee7cf67f42546f18b75f65a19d76192 of
+#: tooluniverse.tools.get_assembly_summary.get_assembly_summary:12
+msgid ":py:class:`Any`"
+msgstr ""

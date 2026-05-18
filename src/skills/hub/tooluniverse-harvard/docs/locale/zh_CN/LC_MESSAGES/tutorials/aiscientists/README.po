@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/aiscientists/README.md:1 845a26733e1349499e9f5ad354d6a5e3
+msgid "MCP 教程目录"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:3 18ea8b37e98542e5a94c5831f3418432
+msgid "欢迎来到 ToolUniverse 的 Model Context Protocol (MCP) 教程！"
+msgstr "欢迎使用 ToolUniverse 的模型上下文协议（MCP）教程！"
+
+#: ../../tutorials/aiscientists/README.md:5 c9b7604760174abbbb39fcb7fc8859d3
+msgid "教程列表"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:7 98868dcd8c074b1196d70e00575ed06d
+msgid "📚 基础教程"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:8 8900b9ec18fb458888f90d7a73768a42
+msgid ""
+"**[添加 MCP 工具](adding_mcp_tools.md)** - 完整指南：如何在 ToolUniverse 中集成 MCP 工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:9 59821fa36f0f4e0a9edde7e25daa0cc3
+msgid "MCP 工具类型概述（MCPClientTool、MCPAutoLoaderTool、MCPProxyTool）"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:10 4b44e81e2965421295c830168deb4853
+msgid "配置和使用指南"
+msgstr "配置与使用指南"
+
+#: ../../tutorials/aiscientists/README.md:11 56e2871dfff34913b18b85bdde029df3
+msgid "高级配置选项"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:12 e3179deb5095427f9ca720c268cc3587
+msgid "故障排除和最佳实践"
+msgstr "故障排除与最佳实践"
+
+#: ../../tutorials/aiscientists/README.md:14 47fb41e3c5d948b19511cc5d042aa82c
+msgid "🚀 高级教程"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:15 4172f344a9494e7a9ccb491f3b058b10
+msgid "**[MCP 工具注册系统](mcp_tool_registration_zh.md)** - 将本地工具注册为 MCP 工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:16 c230867c09934f239805af4567a1ce0f
+msgid "使用 `@register_mcp_tool` 装饰器"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:17 a00cd185785445a2810796b20310afb3
+msgid "自动启动 MCP 服务器"
+msgstr "自动启动MCP服务器"
+
+#: ../../tutorials/aiscientists/README.md:18 2ff467ec2ef943e993fe1bf7ffb769a7
+msgid "在其他 ToolUniverse 实例中自动加载远程工具"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:19 b1689d0410d74f07abb0e794a726b2b5
+msgid "复用 SMCP 功能实现工具分享"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:21 13adb1b92fc84dfa91be9338f093815e
+msgid "📚 English Tutorials"
+msgstr "📚 英文教程"
+
+#: ../../tutorials/aiscientists/README.md:22 a69e92c2a97249caa05395356384eb1f
+msgid ""
+"**[Adding MCP Tools](adding_mcp_tools_en.md)** - Complete Tutorial: How to "
+"integrate MCP tools in ToolUniverse"
+msgstr ""
+"**[添加 MCP 工具](adding_mcp_tools_zh.md)** - 完整教程：如何在 ToolUniverse 中集成 MCP 工具"
+
+#: ../../tutorials/aiscientists/README.md:23 62860108d57d4b94b3c1c791b2e08abd
+msgid ""
+"**[MCP Tool Registration System](mcp_tool_registration_en.md)** - Register "
+"local tools as MCP tools"
+msgstr "**[MCP工具注册系统](mcp_tool_registration_zh.md)** - 将本地工具注册为MCP工具"
+
+#: ../../tutorials/aiscientists/README.md:25 36b8509473ff484282af3330ed9a99de
+msgid "快速开始"
+msgstr "快速入门"
+
+#: ../../tutorials/aiscientists/README.md:27 e0281751e7e247da80e6bfecea0fbe5e
+msgid "如果你是首次接触 MCP 工具，建议按以下顺序学习："
+msgstr "如果您是首次接触 MCP 工具，建议按照以下顺序学习："
+
+#: ../../tutorials/aiscientists/README.md:29 a3765b76a8144aa4a18d927279e6962e
+msgid "🔰 **[添加 MCP 工具](adding_mcp_tools.md)** - 从这里开始！"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:30 b3182223d6f945618d33b5736b638aca
+msgid "🚀 **[MCP 工具注册系统](mcp_tool_registration_zh.md)** - 学习如何将本地工具暴露为 MCP 服务"
+msgstr "🚀 **[MCP 工具注册系统](mcp_tool_registration_zh.md)** - 学习如何将本地工具注册为 MCP 服务"
+
+#: ../../tutorials/aiscientists/README.md:32 f22787eb0cf94274ba4ea705bd5b0d04
+msgid "什么是 MCP？"
+msgstr "什么是MCP？"
+
+#: ../../tutorials/aiscientists/README.md:34 daf0718d815f4fa78d2bcdf7c44ab968
+msgid ""
+"Model Context Protocol (MCP) 是一个开放的协议，用于连接 AI 应用程序与外部工具和数据源。在 ToolUniverse "
+"中，MCP 工具让你能够："
+msgstr ""
+"Model Context Protocol (MCP) 是一个开放协议，用于连接 AI 应用程序与外部工具和数据源。在 ToolUniverse "
+"中，MCP 工具使您能够："
+
+#: ../../tutorials/aiscientists/README.md:36 bddb4973206c4921928dd811e2951969
+msgid "🔗 连接到远程 MCP 服务器"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:37 21ce8c6bd98246d6ae20b542b0469598
+msgid "🛠️ 自动发现和加载远程工具"
+msgstr "🛠️ 自动发现并加载远程工具"
+
+#: ../../tutorials/aiscientists/README.md:38 0cc2ace968494d78bbee8961c64afdd6
+msgid "📋 访问远程资源和提示"
+msgstr "📋 访问远程资源及提示"
+
+#: ../../tutorials/aiscientists/README.md:39 e7c7e5f121204af98a0ce2ef89021266
+msgid "🚀 快速扩展工具生态系统"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:41 36c01dcfad7948b6a9920601f8688db9
+msgid "工具类型速览"
+msgstr "工具类型概览"
+
+#: ../../tutorials/aiscientists/README.md e60a3f261f8243d0b60d7d61e081cc0c
+msgid "工具类型"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md 87f7f866967345adb36e909e16daa740
+msgid "用途"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md 17dc05051e5247c0afb187923575f694
+msgid "适用场景"
+msgstr "Applicable Scenarios"
+
+#: ../../tutorials/aiscientists/README.md 0921465e630e4b8d9ce3361e8f15452b
+msgid "**MCPClientTool**"
+msgstr "**MCP客户端工具**"
+
+#: ../../tutorials/aiscientists/README.md ae418ec9e2dd46538e0b1c01c5bc4a2a
+msgid "通用 MCP 客户端"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md d18a5386326843fd9a33ef5742b6ba34
+msgid "需要完整 MCP 功能"
+msgstr "需要完整的 MCP 功能"
+
+#: ../../tutorials/aiscientists/README.md f4e63fe07ada4e92bd1e0c143226fa7e
+msgid "**MCPAutoLoaderTool**"
+msgstr "**MCP自动加载工具**"
+
+#: ../../tutorials/aiscientists/README.md 59e931afe9c04a9e955457e5c691a158
+msgid "自动工具发现器"
+msgstr "自动工具检测器"
+
+#: ../../tutorials/aiscientists/README.md 4e8e837158824ace8212d96f7736ceb6
+msgid "批量集成工具集"
+msgstr "Batch Integration Toolkit"
+
+#: ../../tutorials/aiscientists/README.md 393b31bcbb2f49a29ddf6ce2f2a65f6d
+msgid "**MCPProxyTool**"
+msgstr "**MCP智能体工具**"
+
+#: ../../tutorials/aiscientists/README.md a55ff7842270434698c082ed34a55096
+msgid "单工具智能体"
+msgstr "Single-Tool Agent"
+
+#: ../../tutorials/aiscientists/README.md 298611781a3044ca9cb796ae9216a385
+msgid "透明工具转发"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:49 48422811ab9a478fbca04e7a086c0823
+msgid "示例配置预览"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:51 1223b5efb1064ee29a586afb2c1c3165
+msgid "快速自动加载器"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:62 ba0d7daa00f24e569eb06a6de5ef013f
+msgid "专用工具智能体"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:72 88f85a9a04d84217be71e4ce44bb3719
+msgid "相关资源"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:74 f594885751b048c8a971a5c4b0d62798
+msgid "📖 [ToolUniverse 主文档](../../README.md)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:75 514dffdadf7a4eb48dcff5f01b2c2667
+msgid "🔧 [API 参考](../../api/)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:76 0062ff04349f4d6b8edb7e98cabe2976
+msgid "💡 [配置示例](../../../src/tooluniverse/data/)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:77 aeccbecd0c444e0bba476acd533341a7
+msgid "🌐 [MCP 协议规范](https://spec.modelcontextprotocol.io/)"
+msgstr ""
+
+#: ../../tutorials/aiscientists/README.md:81 a92d8389bc7a40a3aff7b3001ff912ab
+msgid "**准备好开始了吗？** 点击 [添加 MCP 工具](adding_mcp_tools.md) 开始你的 MCP 之旅！"
+msgstr "**准备好开始了吗？** 点击 [添加 MCP 工具](adding_mcp_tools.md) 开始您的 MCP 之旅！"

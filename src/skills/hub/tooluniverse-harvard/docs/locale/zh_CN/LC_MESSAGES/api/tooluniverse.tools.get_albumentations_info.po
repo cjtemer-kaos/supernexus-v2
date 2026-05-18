@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_albumentations_info.rst:2
+#: 149c789465da4402abb26865bea4cb64
+msgid "tooluniverse.tools.get\\_albumentations\\_info module"
+msgstr "tooluniverse.tools.get\\_albumentations\\_info 模块"
+
+#: f25d0cbb7b90406593999e37a8b516fb of
+#: tooluniverse.tools.get_albumentations_info:1
+msgid "get_albumentations_info"
+msgstr ""
+
+#: 58334cd30d194bf1a7a7ef8a09d3c6c1 ca9e813a2b0c404f9e64696ad0a3cdc1 of
+#: tooluniverse.tools.get_albumentations_info:3
+#: tooluniverse.tools.get_albumentations_info.get_albumentations_info:1
+msgid ""
+"Get information about the albumentations package. Fast image augmentation "
+"library"
+msgstr "获取有关 albumentations 包的信息。快速图像增强库"
+
+#: ../../api/tooluniverse.tools.get_albumentations_info.rst
+#: 1e86805e353a41dda2f49299214f659c
+msgid "Parameters"
+msgstr "参数"
+
+#: 4ba5207682a444769191c56bae19d069 of
+#: tooluniverse.tools.get_albumentations_info.get_albumentations_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fe800f5aefd745dda5f8e7713f2727d5 of
+#: tooluniverse.tools.get_albumentations_info.get_albumentations_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0293fe0ad1f0443f89e188997c2ca682 of
+#: tooluniverse.tools.get_albumentations_info.get_albumentations_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_albumentations_info.rst
+#: 55f49d272fb94f69aeda17b864ee8939
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7c5347184adf41b186ea3d0f7f0e336c of
+#: tooluniverse.tools.get_albumentations_info.get_albumentations_info:11
+msgid ":py:class:`Any`"
+msgstr ""

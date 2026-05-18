@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerator.rst:2
+#: f2fd1deba44945d2a7077d4690287c45
+msgid "tooluniverse.tools.ToolMetadataGenerator module"
+msgstr "tooluniverse.tools.ToolMetadataGenerator 模块"
+
+#: 15a3755931994e2aa7f0917e92a56410 of
+#: tooluniverse.tools.ToolMetadataGenerator:1
+msgid "ToolMetadataGenerator"
+msgstr "工具元数据生成器"
+
+#: 02fbf9599e454eafb1bccc5a8bc8509b f597048a95ec400a867ac39edf0f4195 of
+#: tooluniverse.tools.ToolMetadataGenerator:3
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:1
+msgid ""
+"Generates a JSON structure with the metadata of a tool in ToolUniverse, "
+"given the JSON configurat..."
+msgstr "根据提供的JSON配置，生成包含ToolUniverse工具元数据的JSON结构。"
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerator.rst
+#: 2b67a4bfcb254449bb16eadaf2f21886
+msgid "Parameters"
+msgstr "参数"
+
+#: 869bec2c107a4bc69a60980cde9a9b8b of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:3
+msgid "JSON string of the tool configuration to extract metadata from"
+msgstr "用于提取元数据的工具配置的JSON字符串"
+
+#: 461888cc03dc44aaab607bc769c0f867 of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:5
+msgid ""
+"A mapping from a simplified toolType to a list of tool_config.type that fall"
+" ..."
+msgstr "从简化的 toolType 映射到包含 tool_config.type 的列表。"
+
+#: da2b5467169e4517a0c1238370beec67 of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b6536f9ce19e4d75aa1222d3c7c384bc of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0a4f811aa7b044de80cae88f8df84b0f of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerator.rst
+#: 0c6f0aa7399847a9b85f7570ed284a66
+msgid "Return type"
+msgstr "返回类型"
+
+#: a31edf89bbe24f0cb4f13936f66d54a5 of
+#: tooluniverse.tools.ToolMetadataGenerator.ToolMetadataGenerator:14
+msgid ":py:class:`Any`"
+msgstr ""

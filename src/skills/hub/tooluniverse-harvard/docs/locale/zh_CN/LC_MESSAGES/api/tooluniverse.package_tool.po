@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.package_tool.rst:2 999dbdf230974962a90806e416a5d034
+msgid "tooluniverse.package\\_tool module"
+msgstr "tooluniverse.package_tool 模块"
+
+#: 4cd1393b4a7845d785c7bfd694672d45 of tooluniverse.package_tool.PackageTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 7b07e84f91934f488306816958d96872 of tooluniverse.package_tool.PackageTool:1
+msgid ""
+"Universal tool to provide information about Python packages. Fetches real-"
+"time data from PyPI API with local fallback."
+msgstr "通用工具，用于提供有关 Python 包的信息。通过 PyPI API 获取实时数据，支持本地备份。"
+
+#: f967e8611c834b19820aa668affe0a0f of
+#: tooluniverse.package_tool.PackageTool.run:1
+msgid "Get comprehensive package information."
+msgstr "获取全面的包信息。"
+
+#: ../../api/tooluniverse.package_tool.rst 5d3f2bca56754213a9723d66accb421e
+msgid "Parameters"
+msgstr "参数"
+
+#: bd61ca7e98c4495c9d80324cd5990c97 of
+#: tooluniverse.package_tool.PackageTool.run:3
+msgid "Optional parameters for customization"
+msgstr "可选参数用于自定义设置"
+
+#: ../../api/tooluniverse.package_tool.rst 91d059685e5a4c9a8553c7b7c534cb5e
+msgid "Returns"
+msgstr "返回值"
+
+#: bb8974fc0b4a457da710edb9834416e8 of
+#: tooluniverse.package_tool.PackageTool.run:6
+msgid ""
+"Package information including name, description, installation, docs, usage"
+msgstr "包信息，包括名称、描述、安装、文档、使用说明"
+
+#: ../../api/tooluniverse.package_tool.rst 586e83e7a31c4edeb8217031f4504c55
+msgid "Return type"
+msgstr "返回类型"
+
+#: e1a69e44de3a4644b63c7cf039093c9c of
+#: tooluniverse.package_tool.PackageTool._get_pypi_info:1
+msgid "Fetch package information from PyPI API"
+msgstr "从 PyPI API 获取软件包信息"
+
+#: 00705ffeb1ee457084bed135d5e8c45b of
+#: tooluniverse.package_tool.PackageTool._get_local_info:1
+msgid "Get package information from local configuration"
+msgstr "从本地配置获取包信息"
+
+#: 918180679ef84ba397f19e18f19816c1 of
+#: tooluniverse.package_tool.PackageTool._get_installation_instructions:1
+msgid "Generate installation instructions"
+msgstr "生成安装说明"
+
+#: e6c5fd0a46e043c4bb4731e57b7160a3 of
+#: tooluniverse.package_tool.PackageTool._get_usage_example:1
+msgid "Get usage example for the package"
+msgstr "获取该软件包的使用示例"
+
+#: 865f6981ff2744b8878e6798f1224e76 of
+#: tooluniverse.package_tool.PackageTool._get_quick_start_guide:1
+msgid "Get quick start guide steps"
+msgstr "获取快速入门指南步骤"

@@ -1,0 +1,547 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 11:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../SUMMARY.md:1 6b19fdf1603f41d4b43620e6d483c2e1
+msgid "✅ ToolUniverse 中英文文档系统 - 完成总结"
+msgstr "✅ ToolUniverse 中英文文档系统 - 总结完成"
+
+#: ../../SUMMARY.md:3 fc1d3f048b41454b9a9807c83930408c
+msgid "🎉 已完成的功能"
+msgstr "🎉 Completed Features"
+
+#: ../../SUMMARY.md:5 f76b70f2ac6b4fae9e2f8a41165a0ffe
+msgid "1. **📜 一键构建脚本升级**"
+msgstr ""
+
+#: ../../SUMMARY.md:7 531f775c7f374bad884e33dbd5ea9d7e
+msgid "`quick_doc_build.sh` (English version)"
+msgstr "`quick_doc_build.sh`（中文版）"
+
+#: ../../SUMMARY.md:8 7de56f96c4ae493791e46ffebaee1358
+msgid "✅ **默认构建中英文**：`DOC_LANGUAGES=\"en,zh_CN\"`"
+msgstr "✅ **Default 构建中英文**：`DOC_LANGUAGES=\"en,zh_CN\"`"
+
+#: ../../SUMMARY.md:9 3b3c453544b249c5a0168c74b535caf8
+msgid "✅ 自动更新翻译文件"
+msgstr ""
+
+#: ../../SUMMARY.md:10 ../../SUMMARY.md:157 aabc48ba138c4a168c2491b77b002006
+#: e5200d24e9be4ef18bbcfb4d4d32df26
+msgid "✅ 创建语言选择页"
+msgstr "✅ 创建语言选择页面"
+
+#: ../../SUMMARY.md:11 9d5696ee69fb426c91f53b56e4c20d10
+msgid "✅ 支持环境变量配置"
+msgstr "✅ 支持通过环境变量进行配置"
+
+#: ../../SUMMARY.md:13 86027b9d505244379f1c0c2459f2c4c3
+msgid "`quick_doc_build_cn.sh` (中文版本)"
+msgstr "`quick_doc_build_cn.sh`（中文版本）"
+
+#: ../../SUMMARY.md:14 4bd59af99a2f41e5ada73a45278bc917
+msgid "✅ **默认构建中英文**：`DOC_LANGUAGES=\"zh_CN,en\"`"
+msgstr ""
+
+#: ../../SUMMARY.md:15 763e780fdf044e9886e1f30f9b201e74
+msgid "✅ 中文优先显示"
+msgstr ""
+
+#: ../../SUMMARY.md:16 293f8d1dbb8141c39377db656dc7873c
+msgid "✅ 完全相同功能"
+msgstr "✅ 完全相同的功能"
+
+#: ../../SUMMARY.md:18 1d5d0a26bbda4426ba30236250f492d3
+msgid "2. **🌍 语言选择页面**"
+msgstr ""
+
+#: ../../SUMMARY.md:20 e89b707879e04b82b0cb77964b1ef186
+msgid "自动生成的多语言索引页："
+msgstr "自动生成的多语言索引页面："
+
+#: ../../SUMMARY.md:21 65e19d5f69ca4411b450b9e00c06897d
+msgid "📍 位置：`_build/html/index.html`"
+msgstr ""
+
+#: ../../SUMMARY.md:22 b028ec78d851401ab3b848aed23b5c1d
+msgid "🎨 优雅的现代设计"
+msgstr ""
+
+#: ../../SUMMARY.md:23 c67e0a6e906b4b0e951ffe753e4191a3
+msgid "🎯 直观的语言选择"
+msgstr ""
+
+#: ../../SUMMARY.md:24 fa2e548d2c0f4f9da159bfdfd6230246
+msgid "📱 移动端友好"
+msgstr "📱 移动端兼容"
+
+#: ../../SUMMARY.md:26 ../../SUMMARY.md:133 5b8097c2e84d441f8b753aa845d52041
+#: 5bd63f6dfda34ed6a05f8c824e12a3f8
+msgid "特性："
+msgstr ""
+
+#: ../../SUMMARY.md:34 a06f95a2db03466099810c5eb65e42eb
+msgid "3. **📂 多语言目录结构**"
+msgstr ""
+
+#: ../../SUMMARY.md:53 219c142a333e488781d7b8dd9a993caa
+msgid "4. **🔧 翻译系统集成**"
+msgstr "4. **🔧 Translation System Integration**"
+
+#: ../../SUMMARY.md:55 0d66bbe55384413da537bbbc18bb9bc8
+msgid "自动化流程"
+msgstr ""
+
+#: ../../SUMMARY.md:56 3208fc8ae9064889b950f280e5093aad
+msgid "每次构建时："
+msgstr ""
+
+#: ../../SUMMARY.md:57 d8768743af474101947b12b6739d7018
+msgid "✅ 提取可翻译文本 → `_build/gettext/`"
+msgstr "✅ Extract translatable text → `_build/gettext/`"
+
+#: ../../SUMMARY.md:58 9b7f7b3d30f048e092d4e92a7e43df95
+msgid "✅ 更新翻译文件 → `locale/zh_CN/LC_MESSAGES/*.po`"
+msgstr ""
+
+#: ../../SUMMARY.md:59 be6ad56694e5403f8e718dc174675bf2
+msgid "✅ 应用翻译到中文版本"
+msgstr "✅ 应用翻译至中文版本"
+
+#: ../../SUMMARY.md:61 c2656c3067fc47dda7c4c83b78ae4eb7
+msgid "已翻译内容"
+msgstr ""
+
+#: ../../SUMMARY.md:62 6f390a537e244746870fa623555ab5e4
+msgid "首页导航章节："
+msgstr ""
+
+#: ../../SUMMARY.md:86 6366462bfeed40889064238907830bb9
+msgid "5. **🎨 Shibuya 主题配置**"
+msgstr ""
+
+#: ../../SUMMARY.md:88 f87703406f2f4ab68930635760f31ac6
+msgid "完美的中英文支持："
+msgstr ""
+
+#: ../../SUMMARY.md:89 586664c053124e0fa2b2dab615c4049c
+msgid "✅ 美观的左侧导航栏"
+msgstr ""
+
+#: ../../SUMMARY.md:90 6b5cb1c316ad48ac9964929caaca3630
+msgid "✅ 深色/浅色模式切换"
+msgstr "✅ 深色模式/浅色模式切换"
+
+#: ../../SUMMARY.md:91 3468deae1be744f19547a7dfe0dbb30e
+msgid "✅ 移动端响应式设计"
+msgstr ""
+
+#: ../../SUMMARY.md:92 ff5844561205414cb2032019b484fa55
+msgid "✅ 内置搜索功能"
+msgstr ""
+
+#: ../../SUMMARY.md:93 af2e2bfbe3274d78aa4f3689b4d232f9
+msgid "✅ 语言切换器配置"
+msgstr ""
+
+#: ../../SUMMARY.md:95 5dea4d3745004171a43c50c2923d2327
+msgid "配置文件：`docs/conf.py`"
+msgstr ""
+
+#: ../../SUMMARY.md:108 82c5e832831f4da0af3d61fadd77805e
+msgid "6. **📚 完整的文档系统**"
+msgstr "6. **📚 Comprehensive Documentation System**"
+
+#: ../../SUMMARY.md:110 e46167ba89e1443880e7014d46434379
+msgid "创建的文档："
+msgstr ""
+
+#: ../../SUMMARY.md:111 0f1c70089f554b81ae0325261d465998
+msgid "**QUICK_BUILD_GUIDE.md** - 快速构建指南"
+msgstr ""
+
+#: ../../SUMMARY.md:112 b18e67e827f94eb9ac0699923836a1ce
+msgid "**I18N_GUIDE.md** - 详细翻译指南"
+msgstr "**I18N_GUIDE.md** - 详细国际化指南"
+
+#: ../../SUMMARY.md:113 df66e206486745cd8f1bf1d218e06033
+msgid "**MULTILANG_README.md** - 多语言系统说明"
+msgstr ""
+
+#: ../../SUMMARY.md:114 a0757c81d35b486e8fd1fe5727895d90
+msgid "**build_lang.sh** - 交互式语言构建脚本"
+msgstr ""
+
+#: ../../SUMMARY.md:115 4aa08c95b45d4d25a1483e62b4432673
+msgid "**build_multilang.sh** - 完整双语构建脚本"
+msgstr "**build_multilang.sh** - 完整的双语构建脚本"
+
+#: ../../SUMMARY.md:116 5e4531549f374174939980659f73802b
+msgid "**quick_build_zh.sh** - 快速中文构建"
+msgstr "**quick_build_zh.sh** - 快速构建中文"
+
+#: ../../SUMMARY.md:118 bfe1422badd145fe89b4154022a54d7f
+msgid "7. **🔄 辅助脚本**"
+msgstr ""
+
+#: ../../SUMMARY.md:120 032534b4c2ef4f37af31fb4bf584b5b7
+msgid "✅ `build_lang.sh` - 交互式菜单选择"
+msgstr ""
+
+#: ../../SUMMARY.md:121 ../../SUMMARY.md:312 73e20ec535f84742b85eb6bfe2933565
+#: d455760c9ee846fda857a66af90178bd
+msgid "✅ `build_multilang.sh` - 完整双语构建"
+msgstr "✅ `build_multilang.sh` - 完整的多语言构建"
+
+#: ../../SUMMARY.md:122 576f51ca90a845bfb9aeecd5dbeeadfc
+msgid "✅ `quick_build_zh.sh` - 快速中文测试"
+msgstr "✅ `quick_build_zh.sh` - 快速中文构建测试"
+
+#: ../../SUMMARY.md:123 b30ed730104d451b99b3b805e1bdd084
+msgid "✅ `show_multilang_features.sh` - 功能演示"
+msgstr "✅ `show_multilang_features.sh` - 功能展示"
+
+#: ../../SUMMARY.md:125 025629dc1c6a40499b413a1a1e701685
+msgid "8. **📱 浮动语言切换器**"
+msgstr ""
+
+#: ../../SUMMARY.md:127 1a78694ea582438b91fab37428a4da3d
+msgid "JavaScript 组件："
+msgstr ""
+
+#: ../../SUMMARY.md:128 de9b4d573cff4f06bc9fc41ff84ea581
+msgid "📍 位置：`_static/language_switcher.js`"
+msgstr ""
+
+#: ../../SUMMARY.md:129 3850f19248b64d19850add10517c18d3
+msgid "🎨 样式：`_static/language_switcher.css`"
+msgstr ""
+
+#: ../../SUMMARY.md:130 1f320e94c39c40babd011f722834647d
+msgid "🔄 自动检测当前语言"
+msgstr ""
+
+#: ../../SUMMARY.md:131 3ac238ab3b6d48d99ea03b8c618ae73c
+msgid "📱 右下角浮动显示"
+msgstr ""
+
+#: ../../SUMMARY.md:142 a08030f791f24e00ad9072a6f74c236b
+msgid "🚀 使用方法"
+msgstr "🚀 使用说明"
+
+#: ../../SUMMARY.md:144 145783ae94694202ae7b7c4cfefb8f11
+msgid "最简单的方式"
+msgstr "最简便的方法"
+
+#: ../../SUMMARY.md:151 2ba2e8dda8464ed0b13dd88a2ebc50c1
+msgid "**自动完成：**"
+msgstr ""
+
+#: ../../SUMMARY.md:152 91231c6ca6ad4a829108d143d4231c67
+msgid "✅ 生成工具配置索引"
+msgstr ""
+
+#: ../../SUMMARY.md:153 851a99709ce94ea78f6320b0999d4a15
+msgid "✅ 生成 Remote Tools 文档"
+msgstr ""
+
+#: ../../SUMMARY.md:154 ebdbf552452340a7bbbf730bcf7d648e
+msgid "✅ 构建英文版本"
+msgstr "✅ Build English Version"
+
+#: ../../SUMMARY.md:155 0d82b2fb4156410b8211f9c4539e0953
+msgid "✅ 更新中文翻译"
+msgstr ""
+
+#: ../../SUMMARY.md:156 2e4d2feececd49829e0cdf7ce47c9a2a
+msgid "✅ 构建中文版本"
+msgstr "✅ 构建中文版"
+
+#: ../../SUMMARY.md:158 ccb16e2aa89f4c04a2a4b090f4c81fb7
+msgid "✅ 显示访问链接"
+msgstr ""
+
+#: ../../SUMMARY.md:159 38fa490da89846e2af8a17252d91c8b9
+msgid "✅ 可选启动本地服务器"
+msgstr "✅ Optional: 启动本地服务器"
+
+#: ../../SUMMARY.md:161 802c573dedc64734bcc16571f5cc9a93
+msgid "高级用法"
+msgstr ""
+
+#: ../../SUMMARY.md:180 3bf4dc51ffc847d7957e78a5500220c1
+msgid "交互式构建"
+msgstr ""
+
+#: ../../SUMMARY.md:186 0c2d230d43e24cafa9bd5fcb186e470d
+msgid "菜单选项："
+msgstr ""
+
+#: ../../SUMMARY.md:196 4fcbb08dcad7433797203fbb360a8096
+msgid "📊 构建输出"
+msgstr ""
+
+#: ../../SUMMARY.md:198 1a5eb32508514bdea88e403f923f8f3f
+msgid "终端输出示例"
+msgstr "Terminal Output 示例"
+
+#: ../../SUMMARY.md:244 eff4a742b0fc441cb392fad31b06d9e8
+msgid "🎯 关键改进"
+msgstr "🎯 关键改进点"
+
+#: ../../SUMMARY.md:246 75ffe10dc9514188a0bae3cd3c8f091c
+msgid "Before (之前)"
+msgstr "之前"
+
+#: ../../SUMMARY.md:254 f4699ae3235a441aa11bc8a07ddc4a68
+msgid "After (现在)"
+msgstr "之后 (现在)"
+
+#: ../../SUMMARY.md:263 81185fccfe2d4a0fa29fc87e852b90ed
+msgid "📝 翻译工作流"
+msgstr "📝 翻译工作流程"
+
+#: ../../SUMMARY.md:265 3818a665970542e79eea80ced1e19470
+msgid "1. 构建（自动更新翻译）"
+msgstr "1. Build（自动更新翻译）"
+
+#: ../../SUMMARY.md:270 fec8fa34af3a440789cf805173ff3d51
+msgid "2. 编辑翻译"
+msgstr ""
+
+#: ../../SUMMARY.md:277 9c81eb62720947b2a771f659537e1a35
+msgid "3. 重新构建"
+msgstr ""
+
+#: ../../SUMMARY.md:282 ff9c03cd47694f8c9c3e088aff1f90b2
+msgid "翻译立即生效！✨"
+msgstr "翻译即时生效！✨"
+
+#: ../../SUMMARY.md:284 841d47c46942484ab77976c3a3f8cdfa
+msgid "🌟 主要特点"
+msgstr "🌟 主要功能"
+
+#: ../../SUMMARY.md:286 16c90f7d932c4310be39df87b1ea6931
+msgid "✅ 自动化"
+msgstr ""
+
+#: ../../SUMMARY.md:287 41c25023a9ac4d92ae296fedfc59bec4
+msgid "一键构建中英文"
+msgstr "一键生成中英文"
+
+#: ../../SUMMARY.md:288 a0ec9c74f4f5439989f9e56929c26af4
+msgid "自动更新翻译"
+msgstr "自动更新"
+
+#: ../../SUMMARY.md:289 823a554926fa46c4a6e87dd5b92581a7
+msgid "自动创建索引页"
+msgstr "自动生成索引页"
+
+#: ../../SUMMARY.md:291 68dee7d0b62841f8a3d20d06719a1df6
+msgid "✅ 灵活性"
+msgstr "✅ Flexibility"
+
+#: ../../SUMMARY.md:292 286396fc001647638c67031116ca4994
+msgid "环境变量配置"
+msgstr ""
+
+#: ../../SUMMARY.md:293 8abbc868f9594107985b8dbbf6980b71
+msgid "按需构建"
+msgstr ""
+
+#: ../../SUMMARY.md:294 f4892c5748e84f56aad32d2e6e0f3242
+msgid "可扩展到更多语言"
+msgstr "可扩展至更多语言"
+
+#: ../../SUMMARY.md:296 47c59dccdab14c7dba53d21c0354b5cf
+msgid "✅ 用户友好"
+msgstr ""
+
+#: ../../SUMMARY.md:297 e27fc867420645c4b0e1e2f30a0054be
+msgid "清晰的输出"
+msgstr "Clear Output"
+
+#: ../../SUMMARY.md:298 ba5b8584c917421a9e437b6a62fbe5fb
+msgid "多种访问方式"
+msgstr ""
+
+#: ../../SUMMARY.md:299 fc8acff74d134f9dab8631698b64c1a4
+msgid "完整的文档"
+msgstr ""
+
+#: ../../SUMMARY.md:301 7ccc61aa19be48e2bd0394ab7af01ce0
+msgid "✅ 专业性"
+msgstr ""
+
+#: ../../SUMMARY.md:302 0402d251444e49748e61763a5c8e3ff7
+msgid "现代主题"
+msgstr ""
+
+#: ../../SUMMARY.md:303 9628554c3d7640a2b806c63c4affa1a6
+msgid "响应式设计"
+msgstr ""
+
+#: ../../SUMMARY.md:304 6a7c4f630a6746b6b5f72e82ad2e065d
+msgid "搜索功能"
+msgstr ""
+
+#: ../../SUMMARY.md:306 30ced95fae5343e99b3314f4a415b211
+msgid "📦 交付内容"
+msgstr ""
+
+#: ../../SUMMARY.md:308 388837bf50314529950d9ef5676612e1
+msgid "核心脚本"
+msgstr ""
+
+#: ../../SUMMARY.md:309 ecd838ced8554373aadc1e6135bc77f0
+msgid "✅ `quick_doc_build.sh` - 主构建脚本（默认中英文）"
+msgstr "✅ `quick_doc_build.sh` - 主构建脚本（默认支持中英文）"
+
+#: ../../SUMMARY.md:310 72c870e9192b4883aea97b7c4db6b57a
+msgid "✅ `quick_doc_build_cn.sh` - 中文版本（默认中英文）"
+msgstr ""
+
+#: ../../SUMMARY.md:311 25853b7e298545a78153b407d6ad5450
+msgid "✅ `build_lang.sh` - 交互式构建"
+msgstr ""
+
+#: ../../SUMMARY.md:314 6598b4470aa642afb9fa6db34b296fa5
+msgid "配置文件"
+msgstr ""
+
+#: ../../SUMMARY.md:315 ba61282a3e7e4284a14b3db09857fb1f
+msgid "✅ `conf.py` - Shibuya 主题配置"
+msgstr ""
+
+#: ../../SUMMARY.md:316 310c2816017448efbaf7c110966abd15
+msgid "✅ `conf_shibuya.py` - 主题配置备份"
+msgstr ""
+
+#: ../../SUMMARY.md:317 f26c249c72b542778e988787d7aab991
+msgid "✅ `locale/zh_CN/LC_MESSAGES/*.po` - 翻译文件"
+msgstr "✅ `locale/zh_CN/LC_MESSAGES/*.po` - Translation 文件"
+
+#: ../../SUMMARY.md:319 291726ddfc464e709daa7fc67e689a5a
+msgid "静态资源"
+msgstr ""
+
+#: ../../SUMMARY.md:320 00ad8c7f6bb74ac8bd414dc903a51910
+msgid "✅ `_static/language_switcher.js` - 语言切换器"
+msgstr ""
+
+#: ../../SUMMARY.md:321 6d530563e04b41029ed93a99aaf8d87a
+msgid "✅ `_static/language_switcher.css` - 切换器样式"
+msgstr "✅ `_static/language_switcher.css` - 切换器样式表"
+
+#: ../../SUMMARY.md:323 8d3e438054d34eb798c57770af7e59ca
+msgid "文档"
+msgstr ""
+
+#: ../../SUMMARY.md:324 c0d4d83d106841868f11ce088db6790b
+msgid "✅ `QUICK_BUILD_GUIDE.md` - 快速指南"
+msgstr "✅ `QUICK_BUILD_GUIDE.md` - 快速构建指南"
+
+#: ../../SUMMARY.md:325 39708ca9dc4144a7a9453ae64674f489
+msgid "✅ `I18N_GUIDE.md` - 翻译指南"
+msgstr ""
+
+#: ../../SUMMARY.md:326 6d4c7c54e9bc46ee92509d28b488247a
+msgid "✅ `MULTILANG_README.md` - 系统说明"
+msgstr ""
+
+#: ../../SUMMARY.md:327 6a8545b48f3941febd98966e1131d484
+msgid "✅ `SUMMARY.md` - 本总结"
+msgstr ""
+
+#: ../../SUMMARY.md:329 114da49492c1436abd0e89ee1b670f6b
+msgid "🎓 下一步"
+msgstr ""
+
+#: ../../SUMMARY.md:331 eea6a3f263d24fb182cf08a59df5e75d
+msgid "继续翻译"
+msgstr "请提供需要翻译的具体英文文本，我将为您翻译成符合要求的中文内容。"
+
+#: ../../SUMMARY.md:332 2adfbe6b4fa7492aa729c784b67bad50
+msgid "编辑以下文件以完善中文文档："
+msgstr ""
+
+#: ../../SUMMARY.md:333 b1f7b9f0a96642ddb15c16dfc8150540
+msgid "`locale/zh_CN/LC_MESSAGES/quickstart.po`"
+msgstr "locale/zh_CN/LC_MESSAGES/quickstart.po"
+
+#: ../../SUMMARY.md:334 8587ab04031e4483b10f8aec4cbfd043
+msgid "`locale/zh_CN/LC_MESSAGES/installation.po`"
+msgstr ""
+
+#: ../../SUMMARY.md:335 183d55ccd4a34136b1a4d3807042f6df
+msgid "`locale/zh_CN/LC_MESSAGES/getting_started.po`"
+msgstr "locale/zh_CN/LC_MESSAGES/getting_started.po"
+
+#: ../../SUMMARY.md:336 30b4af85f9204ef683d4fe218e779183
+msgid "`locale/zh_CN/LC_MESSAGES/faq.po`"
+msgstr "locale/zh_CN/LC_MESSAGES/faq.po"
+
+#: ../../SUMMARY.md:338 3ccb1f9d2879415e81d37d654818c039
+msgid "添加更多语言"
+msgstr ""
+
+#: ../../SUMMARY.md:347 ac09f66b510945b281f8990ce5c359a2
+msgid "CI/CD 集成"
+msgstr ""
+
+#: ../../SUMMARY.md:356 1a620e6440c2475ca0ab9f50e65009d2
+msgid "🎉 总结"
+msgstr ""
+
+#: ../../SUMMARY.md:358 a11b7dcfb028408c8579bf78b33e4f50
+msgid "现在 ToolUniverse 文档系统拥有："
+msgstr "现在 ToolUniverse 文档系统具备："
+
+#: ../../SUMMARY.md:360 8c583fd58a5d4060a1199ea82cd3fb16
+msgid ""
+"✅ **完整的中英文支持** ✅ **一键自动构建** ✅ **优雅的语言选择页** ✅ **现代化的 Shibuya 主题** ✅ "
+"**完整的左侧导航栏** ✅ **自动化的翻译工作流** ✅ **灵活的配置选项** ✅ **详尽的文档指南**"
+msgstr ""
+"✅ **完整的中英文支持**  \n"
+"✅ **一键自动构建**  \n"
+"✅ **优雅的语言选择页**  \n"
+"✅ **现代化的 Shibuya 主题**  \n"
+"✅ **完整的左侧导航栏**  \n"
+"✅ **自动化的翻译工作流**  \n"
+"✅ **灵活的配置选项**  \n"
+"✅ **详尽的文档指南**"
+
+#: ../../SUMMARY.md:369 27d9e79de86943e480e650140a3b752c
+msgid "**只需运行一个命令：**"
+msgstr "**只需运行以下命令：**"
+
+#: ../../SUMMARY.md:375 07d07304545844e593ed28bcf6e39233
+msgid "就能获得专业的中英文双语文档！🚀"
+msgstr "就能获得专业的中英双语文档！🚀"
+
+#: ../../SUMMARY.md:379 abeb3f3c02d24f4b8ce78422617484da
+msgid ""
+"Created: 2025-10-07 Author: GitHub Copilot Status: ✅ Complete and Ready to "
+"Use"
+msgstr ""
+"创建日期：2025-10-07  \n"
+"作者：GitHub Copilot  \n"
+"状态：✅ 已完成并可使用"

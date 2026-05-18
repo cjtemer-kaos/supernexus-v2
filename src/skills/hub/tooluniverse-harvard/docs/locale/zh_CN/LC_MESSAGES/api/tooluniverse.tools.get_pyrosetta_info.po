@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyrosetta_info.rst:2
+#: f4b5f092048c4579ba55458b6a1bf48b
+msgid "tooluniverse.tools.get\\_pyrosetta\\_info module"
+msgstr "tooluniverse.tools.get\\_pyrosetta\\_info 模块"
+
+#: 2e4421d6e18842e6b73b975c0723b082 of tooluniverse.tools.get_pyrosetta_info:1
+msgid "get_pyrosetta_info"
+msgstr "获取_pyrosetta_信息"
+
+#: 5409811a3587454ca79b436604d66a7d e868985df3704a4384ca4b7dec974635 of
+#: tooluniverse.tools.get_pyrosetta_info:3
+#: tooluniverse.tools.get_pyrosetta_info.get_pyrosetta_info:1
+msgid ""
+"Get information about the pyrosetta package. Python interface to Rosetta "
+"macromolecular modeling ..."
+msgstr "获取有关PyRosetta软件包的信息。Python接口用于Rosetta大分子建模..."
+
+#: ../../api/tooluniverse.tools.get_pyrosetta_info.rst
+#: 40f0f3b3e139484f93527a0ed1f1a618
+msgid "Parameters"
+msgstr "参数"
+
+#: 25fba77fd9014da5911660b21a96321a of
+#: tooluniverse.tools.get_pyrosetta_info.get_pyrosetta_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e9d2ccdcf1164bcabd16448221f5b418 of
+#: tooluniverse.tools.get_pyrosetta_info.get_pyrosetta_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8bea3e02856641b396b21755bdc85416 of
+#: tooluniverse.tools.get_pyrosetta_info.get_pyrosetta_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyrosetta_info.rst
+#: 7690ef71e6d442cabae5c81d3a69ab10
+msgid "Return type"
+msgstr "返回类型"
+
+#: fd3b1303a40b4aae847d99f0a3dd8611 of
+#: tooluniverse.tools.get_pyrosetta_info.get_pyrosetta_info:11
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.rst:2
+#: 04a10c62f6a54db5a9df9bcacaad106a
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_homologues\\_by\\_ensemblID "
+"module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_target\\_homologues\\_by\\_ensemblID 模块"
+
+#: 9e8460c1a69d4d238a430c6fc5c7a84a of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID:1
+msgid "OpenTargets_get_target_homologues_by_ensemblID"
+msgstr "OpenTargets_通过Ensembl ID获取靶点同源物"
+
+#: 2f64789314d8405491132ec795ccb29e 712d62a03c9c4acdb06cb17dc547250e of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:1
+msgid "Fetch homologues for a specific target by Ensembl ID."
+msgstr "根据Ensembl ID获取特定目标的同源序列。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.rst
+#: 5739e49941514173877dfe19bb7156d6
+msgid "Parameters"
+msgstr "参数"
+
+#: c4f97658fe6a43ae978a30e7f9ba00c5 of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:3
+msgid "The Ensembl ID of the target for which to retrieve homologues."
+msgstr "目标的Ensembl ID，用于检索同源基因。"
+
+#: 598f49713db94308b9257083d5718ed5 of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8bfea0a34f644216bb3e0c9f4f99edf8 of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fa291b4a3d6e4a92a447c5f620bfc1f5 of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.rst
+#: 10ae0fc27b834e65a0f4f2b7af4e6557
+msgid "Return type"
+msgstr "返回类型"
+
+#: d0e5260bc67d4c7ba3637f4574348dfe of
+#: tooluniverse.tools.OpenTargets_get_target_homologues_by_ensemblID.OpenTargets_get_target_homologues_by_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

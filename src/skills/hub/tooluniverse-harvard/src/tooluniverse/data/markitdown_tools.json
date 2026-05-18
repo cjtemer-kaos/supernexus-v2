@@ -1,0 +1,66 @@
+[
+  {
+    "type": "MarkItDownTool",
+    "name": "convert_to_markdown",
+    "description": "Convert a resource described by an http:, https:, file: or data: URI to markdown.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "uri": {
+          "type": "string",
+          "description": "URI of the resource to convert (supports http:, https:, file:, data: URIs)"
+        },
+        "output_path": {
+          "type": "string",
+          "description": "Optional output file path"
+        },
+        "enable_plugins": {
+          "type": "boolean",
+          "description": "Enable 3rd-party plugins",
+          "default": false
+        }
+      },
+      "required": [
+        "uri"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "markdown_content": {
+          "type": "string",
+          "description": "The converted Markdown content"
+        },
+        "content": {
+          "type": "string",
+          "description": "The converted Markdown content (same as markdown_content, provided for convenience when no output_path is specified)"
+        },
+        "file_info": {
+          "type": "object",
+          "properties": {
+            "original_file": {
+              "type": "string"
+            },
+            "file_type": {
+              "type": "string"
+            },
+            "output_file": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if conversion failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "uri": "https://example.com/file.txt",
+        "output_path": "./downloads/output.txt",
+        "enable_plugins": false
+      }
+    ]
+  }
+]

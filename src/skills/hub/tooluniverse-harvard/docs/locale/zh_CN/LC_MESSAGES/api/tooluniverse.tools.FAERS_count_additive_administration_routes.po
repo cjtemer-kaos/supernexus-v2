@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_administration_routes.rst:2
+#: 382686f0870b42a2be99e98f54798d4a
+msgid "tooluniverse.tools.FAERS\\_count\\_additive\\_administration\\_routes module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_additive\\_administration\\_routes 模块"
+
+#: 9db77d009de5485e96e49bc91080688a of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes:1
+msgid "FAERS_count_additive_administration_routes"
+msgstr "FAERS_count_additive_给药途径"
+
+#: 031eca962b064befa6fbe945a3fad031 8ee403a8ab754150ab334e4ca9e53601 of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes:3
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:1
+msgid ""
+"Additive multi-drug data: Enumerate and count administration routes for "
+"adverse events across spe..."
+msgstr "添加多药数据：枚举并统计不良事件的给药途径数量。"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_administration_routes.rst
+#: e43ef4191e764e8a93685a68dadf560b
+msgid "Parameters"
+msgstr "参数"
+
+#: 2b07d7904e6843e49ffaff6c08c3d1c8 of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:3
+msgid "Array of medicinal product names."
+msgstr "药品名称数组"
+
+#: 690f37d0a97e43f58efee4eb7869ceeb of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:5
+msgid "Filter by seriousness."
+msgstr "按严重程度筛选。"
+
+#: 7b4be876f2d24b41821b85b5401bf9ef of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调函数"
+
+#: 613691de1d9b437cb44f5b63a6acfcff of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a39a1408b90a4e9ea2389067d4e64e72 of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_administration_routes.rst
+#: f141017665e54bd6a1f882668e54956b
+msgid "Return type"
+msgstr "返回类型"
+
+#: 24079e38eaaf4fb6adce955ba6178f14 of
+#: tooluniverse.tools.FAERS_count_additive_administration_routes.FAERS_count_additive_administration_routes:14
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_ruptures_info.rst:2
+#: c44a97e8afb349c5a60c5da8ad7d5a4a
+msgid "tooluniverse.tools.get\\_ruptures\\_info module"
+msgstr "tooluniverse.tools.get\\_ruptures\\_info 模块"
+
+#: 45e5fa448eeb49fcb4650ab81fcb8946 of tooluniverse.tools.get_ruptures_info:1
+msgid "get_ruptures_info"
+msgstr "get_ruptures_info（获取断裂信息）"
+
+#: 4e9bfc7aafe2453fbd104974430e720a 9a1fc9e6b51d408988a5c19c6eb802e8 of
+#: tooluniverse.tools.get_ruptures_info:3
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:1
+msgid ""
+"Get comprehensive information about ruptures – change point detection "
+"library"
+msgstr "获取有关断裂点的全面信息——变点检测库"
+
+#: ../../api/tooluniverse.tools.get_ruptures_info.rst
+#: 52ee722795ed46a787b05b730ac3d24d
+msgid "Parameters"
+msgstr "参数"
+
+#: 91770a5cd822462c95ca559b4618efe5 of
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:3
+msgid "Type of information to retrieve about ruptures"
+msgstr "关于断裂信息的检索类型"
+
+#: 8afb21cfc5cc48fca5de945638db99c9 of
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5f4e03e47d3e41cda2b1b3f8aebcaf49 of
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: dc5646c8eba44e7999255a5052334ee6 of
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_ruptures_info.rst
+#: b76a1779f82e4dd098ed3db952ad1d44
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3db70cd321304c8c9b08568a24e0207a of
+#: tooluniverse.tools.get_ruptures_info.get_ruptures_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.MedlinePlus_connect_lookup_by_code.rst:2
+#: f28560c885bf4b7b81138d6f3859d415
+msgid "tooluniverse.tools.MedlinePlus\\_connect\\_lookup\\_by\\_code module"
+msgstr "tooluniverse.tools.MedlinePlus\\_connect\\_lookup\\_by\\_code 模块"
+
+#: 1b1150f0dfbd4cccbefe104ec14517d5 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code:1
+msgid "MedlinePlus_connect_lookup_by_code"
+msgstr "MedlinePlus_connect_按代码查找"
+
+#: 70119f039aa54be2a598d6954c64f117 8fe2f9535e824a8e97b1d4986369b2d9 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code:3
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:1
+msgid ""
+"Look up corresponding MedlinePlus page information through MedlinePlus "
+"Connect Web Service using ..."
+msgstr "通过使用 MedlinePlus Connect Web 服务查询对应的 MedlinePlus 页面信息..."
+
+#: ../../api/tooluniverse.tools.MedlinePlus_connect_lookup_by_code.rst
+#: 7d6d3bf82dbe449a9eb8c5a50f98de52
+msgid "Parameters"
+msgstr "参数"
+
+#: e1cc1afefc844906ab4276b2834e1e38 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:3
+msgid ""
+"Code system OID, e.g., ICD-10 CM=2.16.840.1.113883.6.90, "
+"RXCUI=2.16.840.1.113..."
+msgstr "代码系统OID，例如，ICD-10 CM=2.16.840.1.113883.6.90，RXCUI=2.16.840.1.113..."
+
+#: 1c4fb17f7b08421e9524d6bd36d7461f of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:5
+msgid ""
+"Specific code value to query, e.g., \"E11.9\" (ICD-10 CM) or \"637188\" "
+"(RXCUI)."
+msgstr "查询的特定代码值，例如 \"E11.9\"（ICD-10 CM）或 \"637188\"（RXCUI）。"
+
+#: c929d8a7207848daabf1324b98b66d16 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:7
+msgid ""
+"Optional, descriptive name (English) corresponding to the code, for drugs "
+"can..."
+msgstr "可选的描述性名称（英文），对应于代码，用于药物可以..."
+
+#: eda0ad2556e34980894e30fecfc3bb31 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:9
+msgid ""
+"Return information language, \"en\" for English, \"es\" for Spanish, default"
+" \"en\"."
+msgstr "返回信息语言，“en”表示英语，“es”表示西班牙语，默认值为“en”。"
+
+#: 09bb84a2ebab44b183288240dc5fc899 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:11
+msgid "Return format, options \"json\" or \"xml\", default \"json\"."
+msgstr "返回格式，选项为 \"json\" 或 \"xml\"，默认值为 \"json\"。"
+
+#: cef7a725490548c8a6c2982928291990 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a16f378de35c45799a2155396e129f76 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7c2d8e44f61f433f80a41b433933ccc5 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.MedlinePlus_connect_lookup_by_code.rst
+#: ab5bf34bc36d4d239b713d9a5453a298
+msgid "Return type"
+msgstr "返回类型"
+
+#: a7fd8124dd85477cbc7419e66d67a7b3 of
+#: tooluniverse.tools.MedlinePlus_connect_lookup_by_code.MedlinePlus_connect_lookup_by_code:20
+msgid ":py:class:`Any`"
+msgstr ""

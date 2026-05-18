@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Fatcat_search_scholar.rst:2
+#: ed902001a28846ff9f95e276b00b0397
+msgid "tooluniverse.tools.Fatcat\\_search\\_scholar module"
+msgstr "tooluniverse.tools.Fatcat\\_search\\_scholar 模块"
+
+#: 6aecf6d59c17480b8fb369fc24c713e6 of
+#: tooluniverse.tools.Fatcat_search_scholar:1
+msgid "Fatcat_search_scholar"
+msgstr ""
+
+#: 9dc8fb6f599c4b9ba3d660001c1afd91 dc6bb19b24244fe79695ec53be093659 of
+#: tooluniverse.tools.Fatcat_search_scholar:3
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:1
+msgid ""
+"Search Internet Archive Scholar via Fatcat releases search. Fatcat is the "
+"underlying database pow..."
+msgstr "通过Fatcat发布搜索功能搜索互联网档案学者（Internet Archive Scholar）。Fatcat是支持该功能的底层数据库。"
+
+#: ../../api/tooluniverse.tools.Fatcat_search_scholar.rst
+#: d6491419ac31433e98553b3eda0440b8
+msgid "Parameters"
+msgstr "参数"
+
+#: 07accc1002974b8fac18ae2ec498ec3d of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:3
+msgid ""
+"Search query for Fatcat releases. Use keywords to search across titles, "
+"abstr..."
+msgstr "搜索 Fatcat 发布的查询。使用关键词在标题、摘要中进行搜索。"
+
+#: 9a994039ebde4ab394b16062077b43d0 of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:5
+msgid "Maximum number of results to return. Default is 10, maximum is 100."
+msgstr "返回结果的最大数量。默认值为10，最大值为100。"
+
+#: 452d4162fdda49ef8c3f353b3f02b916 of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 82fdb8f193ff43159f2535d056f265ad of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6e798825da614960b2f3b540d549ae33 of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Fatcat_search_scholar.rst
+#: a70534d9814340daa43e01d36afb3d23
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3cc9048a56004694b2dc8494672e5814 of
+#: tooluniverse.tools.Fatcat_search_scholar.Fatcat_search_scholar:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

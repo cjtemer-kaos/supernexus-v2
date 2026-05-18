@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.rst:2
+#: 801bd930989244c2aa35ec0b94b55a28
+msgid "tooluniverse.tools.OpenTargets\\_get\\_drug\\_trade\\_names\\_by\\_chemblId module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_drug\\_trade\\_names\\_by\\_chemblId 模块"
+
+#: 651624b802344142a8233e73b7e04260 of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId:1
+msgid "OpenTargets_get_drug_trade_names_by_chemblId"
+msgstr ""
+"OpenTargets_get_drug_trade_names_by_chemblId  \n"
+"获取药物商品名通过ChemblId"
+
+#: 7a72b9e0ea7e4fbf8dc93b60ca189e28 8070da4688ef4cdc95d5881667ef7646 of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:1
+msgid "Retrieve the trade names associated with a specific drug chemblId."
+msgstr "检索与特定药物的chemblId相关联的商品名称。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.rst
+#: 643646676ed84f55b79764d5e7c8215f
+msgid "Parameters"
+msgstr "参数"
+
+#: f0ecb08986dd47e29d27d6e67863557a of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: 268410cf235b4d408a33220f0d126b13 of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b81d3a878d8a4812ab3aadccec2fd84e of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 16b05f9f82334749b66632216ebbeefc of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.rst
+#: 1411b130e40b490c8139c40985d8d95a
+msgid "Return type"
+msgstr "返回类型"
+
+#: d541710504614ec2b94f0a8a2bfe037a of
+#: tooluniverse.tools.OpenTargets_get_drug_trade_names_by_chemblId.OpenTargets_get_drug_trade_names_by_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,16 @@
+{
+  "name": "code",
+  "version": "2.0.0",
+  "description": "Escritor de codigo y refactorizador experto",
+  "main": "src.agents.code_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:code", "onCommand:refactor", "onCommand:review"],
+  "semanticKeywords": ["code", "python", "javascript", "typescript", "refactor", "programming", "function", "class", "debug", "syntax"],
+  "category": "development",
+  "maxMemoryMB": 512,
+  "maxCPUPercent": 25,
+  "timeoutSeconds": 300,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

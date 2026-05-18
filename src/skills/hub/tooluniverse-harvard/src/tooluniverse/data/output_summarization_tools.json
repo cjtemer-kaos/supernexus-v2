@@ -1,0 +1,129 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "ToolOutputSummarizer",
+    "description": "AI-powered tool for summarizing long tool outputs, focusing on key information relevant to the original query",
+    "prompt": "You are an expert at summarizing tool outputs. Your task is to analyze the provided tool output and create a concise summary that highlights the most important information relevant to the original query.\n\nTool Output to Summarize:\n{tool_output}\n\nOriginal Query Context:\n{query_context}\n\nTool Name: {tool_name}\nFocus Areas: {focus_areas}\nMaximum Summary Length: {max_length}\n\nPlease provide a well-structured summary that:\n1. Captures the key findings and results\n2. Highlights important data points and metrics\n3. Preserves critical technical details\n4. Maintains the essential structure of the original output\n5. Focuses on information most relevant to the query\n\nReturn the summary in a clear, organized format.",
+    "input_arguments": [
+      "tool_output",
+      "query_context",
+      "tool_name",
+      "focus_areas",
+      "max_length"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_output": {
+          "type": "string",
+          "description": "The original tool output to be summarized"
+        },
+        "query_context": {
+          "type": "string",
+          "description": "Context about the original query that triggered the tool"
+        },
+        "tool_name": {
+          "type": "string",
+          "description": "Name of the tool that generated the output"
+        },
+        "focus_areas": {
+          "type": "string",
+          "description": "Specific areas to focus on in the summary",
+          "default": "key_findings_and_results"
+        },
+        "max_length": {
+          "type": "integer",
+          "description": "Maximum length of the summary in characters",
+          "default": 32000
+        }
+      },
+      "required": [
+        "tool_output",
+        "query_context",
+        "tool_name"
+      ]
+    },
+    "configs": {
+      "return_json": false,
+      "return_metadata": false
+    },
+    "test_examples": [
+      {
+        "tool_output": "System profiling output: CPU usage peaked at 85%, memory usage stabilized at 2.3GB, disk I/O averaged 120MB/s.",
+        "query_context": "Identify peak resource usage during system profiling.",
+        "tool_name": "SystemProfiler",
+        "focus_areas": "performance_metrics",
+        "max_length": 500
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "OutputSummarizationComposer",
+    "description": "Composes output summarization workflow by chunking long outputs, processing each chunk with AI summarization, and merging results",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_output": {
+          "type": "string",
+          "description": "The original tool output to be summarized"
+        },
+        "query_context": {
+          "type": "string",
+          "description": "Context about the original query"
+        },
+        "tool_name": {
+          "type": "string",
+          "description": "Name of the tool that generated the output"
+        },
+        "chunk_size": {
+          "type": "integer",
+          "description": "Size of each chunk for processing",
+          "default": 30000
+        },
+        "focus_areas": {
+          "type": "string",
+          "description": "Areas to focus on in summarization",
+          "default": "key_findings_and_results"
+        },
+        "max_summary_length": {
+          "type": "integer",
+          "description": "Maximum length of final summary",
+          "default": 10000
+        }
+      },
+      "required": [
+        "tool_output",
+        "query_context",
+        "tool_name"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "ToolOutputSummarizer"
+    ],
+    "composition_file": "output_summarizer.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "tool_output": "The model produced a lengthy report on protein interactions and highlighted potential drug targets across multiple signaling pathways.",
+        "query_context": "Summarize the key findings of the model regarding protein-protein interactions.",
+        "tool_name": "ProteinInteractionTool",
+        "chunk_size": 2000,
+        "focus_areas": "key_findings_and_results",
+        "max_summary_length": 3000
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  }
+]

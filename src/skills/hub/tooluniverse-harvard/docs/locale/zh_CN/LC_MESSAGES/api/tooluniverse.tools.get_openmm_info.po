@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_openmm_info.rst:2
+#: fbaa8c1b424c456eb317180b584ea0b8
+msgid "tooluniverse.tools.get\\_openmm\\_info module"
+msgstr "tooluniverse.tools.get\\_openmm\\_info 模块"
+
+#: 509c166f5c6b4453ae649b8f1fef5b73 of tooluniverse.tools.get_openmm_info:1
+msgid "get_openmm_info"
+msgstr "get_openmm_info 获取OpenMM信息"
+
+#: 3e26bdb53510488cb2814995989a9735 70fa6e8ae9b7441c82430fb6f9b47af7 of
+#: tooluniverse.tools.get_openmm_info:3
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:1
+msgid ""
+"Get comprehensive information about OpenMM – molecular dynamics simulation "
+"toolkit"
+msgstr "获取关于 OpenMM 的全面信息——分子动力学模拟工具包"
+
+#: ../../api/tooluniverse.tools.get_openmm_info.rst
+#: 24d2c86d16cd41caa30503576e37333a
+msgid "Parameters"
+msgstr "参数"
+
+#: ca9a07f2d784468086d6d0d6f988705c of
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 59ab7ed021e5420eace93d4e03510994 of
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e228adfc8e7f411883470f21a7305e6c of
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ad69a93c3add4596852126d41d3cdaed of
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_openmm_info.rst
+#: 86536b493c0a4e1fb19f583782d83044
+msgid "Return type"
+msgstr "返回类型"
+
+#: e37de1454f99430ab95fb632da4e0607 of
+#: tooluniverse.tools.get_openmm_info.get_openmm_info:12
+msgid ":py:class:`Any`"
+msgstr ""

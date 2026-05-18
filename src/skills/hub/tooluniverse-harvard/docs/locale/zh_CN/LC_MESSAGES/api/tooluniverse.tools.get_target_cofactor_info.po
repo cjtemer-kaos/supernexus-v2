@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_target_cofactor_info.rst:2
+#: f44f597086904720a4f4cdd31136e2ee
+msgid "tooluniverse.tools.get\\_target\\_cofactor\\_info module"
+msgstr "tooluniverse.tools.get\\_target\\_cofactor\\_info 模块"
+
+#: 5bace541074b48579bb40e1edff79ce4 of
+#: tooluniverse.tools.get_target_cofactor_info:1
+msgid "get_target_cofactor_info"
+msgstr "获取目标辅因子信息"
+
+#: 9fec01416c7b407abe72af3496e4e4b5 be093347ca5e4807a74546529b2c09d0 of
+#: tooluniverse.tools.get_target_cofactor_info:3
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:1
+msgid ""
+"Retrieve essential cofactor information for a given target including "
+"cofactor IDs, mechanism of a..."
+msgstr "检索指定目标的必要辅因信息，包括辅因ID、作用机制等。"
+
+#: ../../api/tooluniverse.tools.get_target_cofactor_info.rst
+#: 6cb70ea6632a48a9988b0b69c14be7e8
+msgid "Parameters"
+msgstr "参数"
+
+#: b5a06eece13b4e838926320c4c2cf2d0 of
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:3
+msgid ""
+"Target ID or entity identifier (e.g., UniProt ID or internal target id)"
+msgstr "目标ID或实体标识符（例如，UniProt ID或内部目标ID）"
+
+#: e8aee0e0ccb04b7da7cad0cf17ba8b99 of
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 18c67f7cd6284f82b29c6ade0e32ed08 of
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: eb5e948fbd9148568203624c9d3d5465 of
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_target_cofactor_info.rst
+#: 9e9f3647ba9549b186dd7c83050c943d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3f8492e5253c48e08fe08fab823fbf29 of
+#: tooluniverse.tools.get_target_cofactor_info.get_target_cofactor_info:12
+msgid ":py:class:`Any`"
+msgstr ""

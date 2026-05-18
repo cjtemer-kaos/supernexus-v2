@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.rst:2
+#: 8e38adc43972497b89f6fc32f972f46d
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_assembly\\_installation\\_info"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_assembly\\_installation\\_info"
+" 模块"
+
+#: 6dd7278bfc714d25ad7f9c9098bf6490 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info:1
+msgid "FDA_get_drug_names_by_assembly_installation_info"
+msgstr "FDA_根据组装安装信息获取药品名称"
+
+#: c7217fe170f4433094aebcdd8e0b9c17 c76eb277549f4f1996f21610eea4c57a of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:1
+msgid ""
+"Retrieve drug names based on assembly or installation instructions. Warning:"
+" This tool only outpu..."
+msgstr "根据组装或安装说明检索药品名称。警告：此工具仅输出..."
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.rst
+#: b9765a06e4674017affecc839cd8ff17
+msgid "Parameters"
+msgstr "参数"
+
+#: 2c66b5074a9c4d3e9aa1c8f365a65180 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:3
+msgid "Information related to assembly or installation instructions."
+msgstr "与组装或安装说明相关的信息。"
+
+#: 304bc4a1a7aa4751ba7f95496aefed55 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 810d5962fdca4ab28370d64e3235b812 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: dade2341705b44a0b2f3d9c3eb7277c1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: cb8c68fda3f34e1e845f952ac143c640 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 42838fa2ebb64c8e878a8b31eae9ee22 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 960a9b9c0ab04bf1b62151feaae844f2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.rst
+#: c37ef03a633246e696c769d01ea0c0c7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 31c7fa8aa37441828b9117e1464efd53 of
+#: tooluniverse.tools.FDA_get_drug_names_by_assembly_installation_info.FDA_get_drug_names_by_assembly_installation_info:18
+msgid ":py:class:`Any`"
+msgstr ""

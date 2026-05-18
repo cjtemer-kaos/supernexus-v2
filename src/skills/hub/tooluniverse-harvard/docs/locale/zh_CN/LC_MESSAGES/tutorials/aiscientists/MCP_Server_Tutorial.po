@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:1
+#: 03fbb509c1a84df3a0f4deff6943bec3
+msgid "Converting any Tool to MCP Server and Using it with ToolUniverse"
+msgstr "将任意工具转换为 MCP 服务器并在 ToolUniverse 中使用"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:3
+#: 9261db7c16464ec9985409f5f090222d
+msgid ""
+"This tutorial will Tutorial you through the process of converting your "
+"Python program into a Model Context Protocol (MCP) server and integrating it"
+" with ToolUniverse for easy access and management."
+msgstr ""
+"本教程将引导您完成将Python程序转换为模型上下文协议（Model Context "
+"Protocol，MCP）服务器的过程，并将其与ToolUniverse集成，以实现便捷的访问和管理。"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:5
+#: bb7cba8e85f14dc59b139a2515a73c33
+msgid "Table of Contents"
+msgstr "目录"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:6
+#: 469344b21fab444a9de629a1e67e8418
+msgid "[Overview](#overview)"
+msgstr "[概述](#overview)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:7
+#: 8988522a8fa34b82b4de5d979a3d0878
+msgid "[Creating an MCP Server](#creating-an-mcp-server)"
+msgstr "[创建 MCP 服务器](#creating-an-mcp-server)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:8
+#: fd34850cc0be45a290eb6a6f461d1402
+msgid ""
+"[Configuring ToolUniverse Integration](#configuring-tooluniverse-"
+"integration)"
+msgstr "[配置 ToolUniverse 集成](#configuring-tooluniverse-integration)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:9
+#: 1b571e9fd8c046dbb4960a2263749b16
+msgid ""
+"[Using Your MCP Tool in ToolUniverse](#using-your-mcp-tool-in-tooluniverse)"
+msgstr "[在 ToolUniverse 中使用您的 MCP 工具](#using-your-mcp-tool-in-tooluniverse)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:10
+#: 2f7a0941d2df42628a1be0fb826efe9f
+msgid "[Complete Example](#complete-example)"
+msgstr "[完整示例](#complete-example)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:11
+#: 1ce3adaaaa8243da91546fe0e4c0c002
+msgid "[Troubleshooting](#troubleshooting)"
+msgstr "[故障排除](#troubleshooting)"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:13
+#: 55ffa1f713cb4beaa542f33ede9e9497
+msgid "Overview"
+msgstr "概述"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:15
+#: 620783741cdf48a2a133bc6ed63eb48d
+msgid ""
+"MCP (Model Context Protocol) servers provide a standardized way to expose "
+"your tools and functions for use by AI agents and other applications. By "
+"converting your program to an MCP server, you can:"
+msgstr ""
+"MCP（模型上下文协议）服务器提供了一种标准化的方法，将您的工具和功能暴露给AI智能体和其他应用程序使用。通过将您的程序转换为MCP服务器，您可以："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:17
+#: bd00a2e8c6134d6fbeef6f6510dbc60b
+msgid "Expose your functions through a standardized API"
+msgstr "通过标准化的API公开您的功能"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:18
+#: f653a67c1ba749498ece199a4d18b683
+msgid "Enable remote access to your tools"
+msgstr "启用工具的远程访问"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:19
+#: 0ef42925b7564b6ebdf7d71697305230
+msgid "Integrate seamlessly with ToolUniverse"
+msgstr "与ToolUniverse无缝集成"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:20
+#: f752134d1e7f41149238619cc9fede57
+msgid "Scale your tools across different environments"
+msgstr "将您的工具扩展到不同环境"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:22
+#: 8794525b3f0c4f36a063bdbb892b9741
+msgid "Creating an MCP Server"
+msgstr "创建 MCP 服务器"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:24
+#: 8e634786f27948a5a7051c1400b12b52
+msgid "Step 1: Install Required Dependencies"
+msgstr "步骤 1：安装所需依赖项"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:26
+#: cd4aa69628024a0197036bc90b793ba8
+msgid "First, install the necessary packages:"
+msgstr "首先，安装必要的软件包："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:32
+#: 41cd2336ea8d4fbcb4ce0a869269a13e
+msgid "Step 2: Convert Your Program to MCP Server"
+msgstr "步骤 2：将您的程序转换为 MCP 服务器"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:34
+#: 19565580bf4c4af2ab96bc4baf36a436
+msgid ""
+"Here's how to convert your existing program into an MCP server using "
+"FastMCP:"
+msgstr "以下是如何使用 FastMCP 将您现有的程序转换为 MCP 服务器的方法："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:79
+#: 00391d7c5fdd44ac93319fda7729d5d4
+msgid "Step 3: Example Implementation (Based on TxAgent)"
+msgstr "步骤 3：示例实现（基于 TxAgent）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:81
+#: d3636ee0b30a4211be17f91b21c20e28
+msgid "Here's the actual implementation from TxAgent as a reference:"
+msgstr "以下是 TxAgent 的实际实现代码，供参考："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:152
+#: 7ab8a35f18d74cd38e8e86b2cdd80cda
+msgid "Configuring ToolUniverse Integration"
+msgstr "配置 ToolUniverse 集成"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:154
+#: 90dcd377ecf248a8af140dcd2391b8f6
+msgid "Step 1: Create a Configuration File"
+msgstr "步骤 1：创建配置文件"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:156
+#: fdc8af6cce3e488888327fffcab7427e
+msgid ""
+"Create a JSON configuration file for your MCP server. This file should be "
+"placed in the ToolUniverse data directory:"
+msgstr "为您的MCP服务器创建一个JSON配置文件。该文件应放置在ToolUniverse数据目录中："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:192
+#: 0954f98ae8b64b7686028d79eb84b47b
+msgid "Step 2: Configuration Parameters Explained"
+msgstr "步骤 2：配置参数说明"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:194
+#: d54b835703374b898823058ddf0f58f4
+msgid "**name**: Unique identifier for your MCP loader"
+msgstr "**名称**：MCP加载器的唯一标识符"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:195
+#: d76c03cb9b7e462a9963723a2ce88940
+msgid "**server_url**: URL where your MCP server is running"
+msgstr "**server_url**：您的MCP服务器正在运行的URL"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:196
+#: d05fdc6a767242eb84fb049b24f8d8a6
+msgid "**transport**: Communication protocol (typically \"http\")"
+msgstr "**transport**：通信协议（通常为 \"http\"）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:197
+#: 3f01a533028d4a4d85944c70bb432e8c
+msgid "**auto_register**: Whether to automatically register tools"
+msgstr "**auto_register**：是否自动注册工具"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:198
+#: a2a2a0a4afdb4956ae9080c374450ab4
+msgid "**tool_prefix**: Prefix added to tool names (e.g., \"mcp_\")"
+msgstr "**tool_prefix**：添加到工具名称前的前缀（例如，“mcp_”）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:199
+#: 9dd0325084674eb3a1aaf9408e6dbb4c
+msgid "**selected_tools**: Specific tools to load (null means load all)"
+msgstr "**selected_tools**：要加载的特定工具（null 表示加载全部）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:201
+#: fc485220a67a4e67a6c535f56a89f500
+msgid "Step 3: Save Configuration"
+msgstr "步骤 3：保存配置"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:203
+#: cc12d33cfe0145619d6e0c3a279ce7f3
+msgid ""
+"Save your configuration file with a descriptive name in the ToolUniverse "
+"data directory:"
+msgstr "将配置文件以描述性名称保存在 ToolUniverse 数据目录中："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:209
+#: bc7085c7e71c49739c47c6074c7b2e40
+msgid "Using Your MCP Tool in ToolUniverse"
+msgstr "在 ToolUniverse 中使用您的 MCP 工具"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:211
+#: ba58caaa48954b4994d257db6efa8aff
+msgid "Step 1: Start Your MCP Server"
+msgstr "步骤 1：启动您的 MCP 服务器"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:213
+#: 4cfef43f2d304a4fb24b1768ff3aa88b
+msgid "First, start your MCP server:"
+msgstr "首先，启动您的 MCP 服务器："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:219
+#: a4f5dfa55d5e44b1b42af1aacd4cc3b7
+msgid "Step 2: Create a Client Script"
+msgstr "步骤 2：创建客户端脚本"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:221
+#: 7623786ef73944b1a850eefd8fe8d292
+msgid "Create a Python script to use your MCP tool through ToolUniverse:"
+msgstr "创建一个 Python 脚本，通过 ToolUniverse 使用您的 MCP 工具："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:245
+#: ec97d8ca00ef4a2f84113b44ec9b0d89
+msgid "Step 3: Example Usage (TxAgent)"
+msgstr "步骤 3：示例用法（TxAgent）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:247
+#: 644cae9e51274d99b6307ae36caf3bcf
+msgid "Here's how to use TxAgent through ToolUniverse:"
+msgstr "以下是通过 ToolUniverse 使用 TxAgent 的方法："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:267
+#: 3ace4f4a92e3432ea0718d376be2846a
+msgid "Complete Example"
+msgstr "完整示例"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:269
+#: 487d7305250d4a55af94368678f25b37
+msgid "1. MCP Server (`run_mcp.py`)"
+msgstr "1. MCP 服务器（`run_mcp.py`）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:287
+#: 84e75ceac6e647de962a19ae59ca4b96
+msgid "2. Configuration (`your_tool_config.json`)"
+msgstr "2. 配置（`your_tool_config.json`）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:302
+#: 79b4ff04b43e4b4d9d34e332c85aaec7
+msgid "3. Client Usage (`client.py`)"
+msgstr "3. 客户端使用（`client.py`）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:318
+#: ea2672fd3ca943f1bde6fea4706f10e0
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:320
+#: 16ad984998e54dcb945951eef503f523
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:322
+#: 8a732f14d50441e4b3d88d7cca79e9ab
+msgid "**Server Connection Failed**"
+msgstr "**服务器连接失败**"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:323
+#: d96764cd73554f04b06518727fc973ca
+msgid "Check if your MCP server is running"
+msgstr "检查您的 MCP 服务器是否正在运行"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:324
+#: 4d306e2334e54f0389049c7b8a5ca173
+msgid "Verify the server URL in your configuration"
+msgstr "验证配置中的服务器 URL"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:325
+#: 8989869ec65f47fe89d85d0dd0b951ca
+msgid "Ensure the port is not blocked by firewall"
+msgstr "确保端口未被防火墙阻塞"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:327
+#: 68fb8b7bdd414c4cb376226ce5e511e4
+msgid "**Tool Not Found**"
+msgstr "**未找到工具**"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:328
+#: 38f019417f5b4985ba818a97cabfbc7c
+msgid "Verify the tool name matches your function name with prefix"
+msgstr "验证工具名称是否与您的函数名称及其前缀匹配"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:329
+#: 487abc14d62f40a197891e32b4299604
+msgid "Check if auto_register is set to true"
+msgstr "检查 auto_register 是否设置为 true"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:330
+#: f85dcdf2f3bc42e8852e36ee7f4fa511
+msgid "Ensure the configuration file is in the correct location"
+msgstr "确保配置文件位于正确的位置"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:332
+#: fdd5857c01f641ad91d59baf0c326c89
+msgid "**Import Errors**"
+msgstr "**导入错误**"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:333
+#: 2c7f79851b6d4011aafe5c60353b4cef
+msgid "Make sure all dependencies are installed"
+msgstr "确保所有依赖项已安装"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:334
+#: 18df0a8b8a7f4585ba0de65f68b8bda4
+msgid "Check Python path for your modules"
+msgstr "检查您的模块的 Python 路径"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:335
+#: ffe63ee5317044498f03cd79c6417670
+msgid "Verify virtual environment activation"
+msgstr "验证虚拟环境激活情况"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:337
+#: 53df1ee65f7c4999a49ca51b01ec5666
+msgid "**Memory Issues**"
+msgstr "**内存问题**"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:338
+#: ea4048269b8f49ababfb1040a3b71eea
+msgid "Set appropriate environment variables (e.g., `MKL_THREADING_LAYER`)"
+msgstr "设置适当的环境变量（例如，`MKL_THREADING_LAYER`）"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:339
+#: 0ffde9b61b254edc8d0113307f713e10
+msgid "Configure model parameters for your hardware"
+msgstr "为您的硬件配置模型参数"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:340
+#: b7059fcdfd3144529ddddfbe838c9958
+msgid "Consider using model servers for large models"
+msgstr "考虑为大型模型使用模型服务器"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:342
+#: db165b45dc064d0287a879fb3e9049ea
+msgid "Best Practices"
+msgstr "最佳实践"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:344
+#: 76196123f65040faa079c3be6c0bb91a
+msgid ""
+"**Error Handling**: Add proper error handling in your MCP server functions"
+msgstr "**错误处理**：在您的 MCP 服务器功能中添加适当的错误处理机制"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:345
+#: 2db9fd04cf0e4c78a32ba717c4f7ab0d
+msgid "**Documentation**: Provide clear docstrings for all exposed functions"
+msgstr "**文档**：为所有公开函数提供清晰的文档字符串"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:346
+#: 20e43ebf92034118a4598a4d86fccccc
+msgid "**Logging**: Implement logging for debugging and monitoring"
+msgstr "**日志记录**：实现日志记录以便调试和监控"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:347
+#: 8675698edec34881959c005185ad2617
+msgid "**Security**: Consider authentication for production deployments"
+msgstr "**安全性**：考虑在生产环境部署中实施身份验证"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:348
+#: 29c276659d1c4cccbff2aa61662c727c
+msgid "**Performance**: Use appropriate timeouts and resource limits"
+msgstr "**性能**：使用适当的超时设置和资源限制"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:350
+#: 6072774583fc486ab3a71856f70a451f
+msgid "Getting Help"
+msgstr "获取帮助"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:352
+#: f037f1d2a61a41619e2fcc517c170136
+msgid "If you encounter issues:"
+msgstr "如果您遇到问题："
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:354
+#: a756a05485194e11838889de000f8777
+msgid "Check the server logs for error messages"
+msgstr "检查服务器日志中的错误信息"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:355
+#: 01b21403ac0f453db0e48e8f817cc3ec
+msgid "Verify network connectivity between components"
+msgstr "验证组件之间的网络连接性"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:356
+#: 30d72cdd56e64c19ac434da946b41a2d
+msgid "Test your MCP server independently before integrating"
+msgstr "在集成之前，请独立测试您的 MCP 服务器。"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:357
+#: 379adb40d5d249078352de331c67a089
+msgid ""
+"Review the ToolUniverse documentation for additional configuration options"
+msgstr "请查阅 ToolUniverse 文档以获取更多配置选项。"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:359
+#: a422eaf75a754b30880ea2807efa8d40
+msgid "Conclusion"
+msgstr "结论"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:361
+#: 5cee4e56b0504530a74124b7f674c269
+msgid ""
+"By following this tutorial, you can successfully convert your Python program"
+" into an MCP server and integrate it with ToolUniverse. This approach "
+"provides a scalable and standardized way to expose your tools for use by AI "
+"agents and other applications."
+msgstr ""
+"通过遵循本教程，您可以成功将您的 Python 程序转换为 MCP 服务器，并将其集成到 ToolUniverse "
+"中。此方法提供了一种可扩展且标准化的方式，使您的工具能够被 AI 智能体及其他应用程序使用。"
+
+#: ../../tutorials/aiscientists/MCP_Server_Tutorial.md:363
+#: 71432b48b1014793865e2155176d4f6d
+msgid ""
+"For more advanced configurations and features, refer to the FastMCP and "
+"ToolUniverse documentation."
+msgstr "有关更高级的配置和功能，请参阅 FastMCP 和 ToolUniverse 文档。"

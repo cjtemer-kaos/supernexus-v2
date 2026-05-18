@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_scikit_learn_info.rst:2
+#: bc7ac6d67cbd44088175d61cf318d8e5
+msgid "tooluniverse.tools.get\\_scikit\\_learn\\_info module"
+msgstr "tooluniverse.tools.get\\_scikit\\_learn\\_info 模块"
+
+#: 96958cc4b2ef4169985d5ff8c42c88ad of
+#: tooluniverse.tools.get_scikit_learn_info:1
+msgid "get_scikit_learn_info"
+msgstr ""
+
+#: c7914ebb4dee4083b5c28acf98efcbfb d4767ee3663541ed83528eb436f7506f of
+#: tooluniverse.tools.get_scikit_learn_info:3
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:1
+msgid ""
+"Get comprehensive information about scikit-learn – simple and efficient "
+"tools for predictive data..."
+msgstr "获取关于 scikit-learn 的全面信息——简单高效的预测数据工具..."
+
+#: ../../api/tooluniverse.tools.get_scikit_learn_info.rst
+#: aa428835737240eea08f59978d42c964
+msgid "Parameters"
+msgstr "参数"
+
+#: 03b2f0462c47421f95ea632f3f915ec9 of
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 8962a8912b184f95a0c348253fb5d1c8 of
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9a0373eb4f664fc2a84598ec70bfa5d8 of
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: faf79c13587c46fd8cae0245cedaeaf0 of
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_scikit_learn_info.rst
+#: 4775e2b935c240fe9b80f8acbc78b22a
+msgid "Return type"
+msgstr "返回类型"
+
+#: f7bed676ad1e46dd9900a0f93ad49c8f of
+#: tooluniverse.tools.get_scikit_learn_info.get_scikit_learn_info:12
+msgid ":py:class:`Any`"
+msgstr ""

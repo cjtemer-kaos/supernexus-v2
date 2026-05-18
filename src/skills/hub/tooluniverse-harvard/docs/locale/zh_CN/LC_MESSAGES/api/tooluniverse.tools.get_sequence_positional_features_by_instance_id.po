@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_sequence_positional_features_by_instance_id.rst:2
+#: e441fc582f5a49feaadfbf951970ace9
+msgid ""
+"tooluniverse.tools.get\\_sequence\\_positional\\_features\\_by\\_instance\\_id"
+" module"
+msgstr "tooluniverse.tools.get_sequence_positional_features_by_instance_id 模块"
+
+#: 393130cd057f4e12b76c1997e5e570f1 of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id:1
+msgid "get_sequence_positional_features_by_instance_id"
+msgstr "通过实例ID获取序列位置特征"
+
+#: 0724a762c45d4e78ac391bebaf2fe033 f1bb3adfabab4183a2988739c371899a of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id:3
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:1
+msgid ""
+"Retrieve sequence positional features (e.g., binding sites, motifs) for a "
+"polymer entity instance."
+msgstr "检索聚合物实体实例的序列位置特征（例如，结合位点、基序）。"
+
+#: ../../api/tooluniverse.tools.get_sequence_positional_features_by_instance_id.rst
+#: 590b54ad52cf4241aa8d4d2df5b47d19
+msgid "Parameters"
+msgstr "参数"
+
+#: 1709fb8ae0f642bbb1a6154a7bb14332 of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:3
+msgid "Polymer entity instance ID like '1NDO.A'"
+msgstr "聚合物实体实例ID，例如“1NDO.A”"
+
+#: 783b518eeb0848aabb2c0d568f08e26a of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f75a3a3f38da4ebbad9b7922662e1459 of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 484658e7060c4bc18353592fd39d1c72 of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_sequence_positional_features_by_instance_id.rst
+#: fd7425ed583d4741b78d698c79cf7e8f
+msgid "Return type"
+msgstr "返回类型"
+
+#: b44aab653b0a44daa10e0a8ba6287b56 of
+#: tooluniverse.tools.get_sequence_positional_features_by_instance_id.get_sequence_positional_features_by_instance_id:12
+msgid ":py:class:`Any`"
+msgstr ""

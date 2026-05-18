@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/openrouter_support.rst:2 ba91b32233f54585931004ff107deebe
+msgid "OpenRouter Support"
+msgstr "OpenRouter 支持"
+
+#: ../../guide/openrouter_support.rst:4 dfa0b6950d264109876e638eafbdc80d
+msgid ""
+"ToolUniverse now includes full support for OpenRouter, allowing you to "
+"access a wide variety of LLM models from multiple providers through a "
+"single, unified API."
+msgstr "ToolUniverse 现已全面支持 OpenRouter，您可以通过一个统一的 API 访问来自多个提供商的多种 LLM 模型。"
+
+#: ../../guide/openrouter_support.rst:7 9645c5e827a0462d85cd9efb30ebb4c4
+msgid "Overview"
+msgstr "概述"
+
+#: ../../guide/openrouter_support.rst:9 de32ebd4cff547c796a3bd951735c907
+msgid "OpenRouter provides access to models from:"
+msgstr "OpenRouter 提供以下模型的访问权限："
+
+#: ../../guide/openrouter_support.rst:11 9dbadbde77b7452f86c39a26ab46fd5d
+msgid "**OpenAI** (GPT-5)"
+msgstr "**OpenAI**（GPT-5）"
+
+#: ../../guide/openrouter_support.rst:12 b86691bc2bdd4f58a1a849e8f5b33abd
+msgid "**Anthropic** (Claude Sonnet 4.5)"
+msgstr "**Anthropic**（Claude Sonnet 4.5）"
+
+#: ../../guide/openrouter_support.rst:13 cebf75fe95554a2582a4e5840efc8331
+msgid "**Google** (Gemini 2.5 Flash, Gemini 2.5 Pro)"
+msgstr "**Google**（Gemini 2.5 Flash，Gemini 2.5 Pro）"
+
+#: ../../guide/openrouter_support.rst:14 15680764187a41438098b8f124999e37
+msgid "And many more!"
+msgstr "以及更多！"
+
+#: ../../guide/openrouter_support.rst:17 5baf87379bb84a8992ea731e86326e30
+msgid "Configuration"
+msgstr "配置"
+
+#: ../../guide/openrouter_support.rst:20 443a18b678ad43f3b1ceaa0188533edc
+msgid "Environment Variables"
+msgstr "环境变量"
+
+#: ../../guide/openrouter_support.rst:22 f87c05d873f9440081a032b3ebbd97bc
+msgid "To use OpenRouter, set the following environment variables:"
+msgstr "要使用 OpenRouter，请设置以下环境变量："
+
+#: ../../guide/openrouter_support.rst:34 90b187a6e1c443c9a4487d59b0b82aaf
+msgid "Getting an API Key"
+msgstr "获取 API 密钥"
+
+#: ../../guide/openrouter_support.rst:36 abfc9980925148e9a299295ddf149a06
+msgid "Visit `OpenRouter <https://openrouter.ai/>`_"
+msgstr "访问 `OpenRouter <https://openrouter.ai/>`_"
+
+#: ../../guide/openrouter_support.rst:37 9fc1a43e910746e5a9f17a9d7e338742
+msgid "Sign up for an account"
+msgstr "注册账户"
+
+#: ../../guide/openrouter_support.rst:38 d4391701c82b4d11aa6fbc759146d1c7
+msgid "Navigate to the API Keys section"
+msgstr "导航到 API 密钥部分"
+
+#: ../../guide/openrouter_support.rst:39 f33c3a69422441d49730c8e3d8434041
+msgid "Generate a new API key"
+msgstr "生成新的 API 密钥"
+
+#: ../../guide/openrouter_support.rst:40 9bef65034d5e4bd5af728727c8168523
+msgid "Copy and set it as the ``OPENROUTER_API_KEY`` environment variable"
+msgstr "将其复制并设置为 ``OPENROUTER_API_KEY`` 环境变量"
+
+#: ../../guide/openrouter_support.rst:43 d4e3436e061a43d688ddcb8972d4c7c5
+msgid "Using OpenRouter with AgenticTool"
+msgstr "使用 OpenRouter 与 AgenticTool"
+
+#: ../../guide/openrouter_support.rst:46 32c6491782564073a742ea619a0b34cb
+msgid "Basic Configuration"
+msgstr "基本配置"
+
+#: ../../guide/openrouter_support.rst:48 7657d3f9c6e8455ba72646e19de4604c
+msgid "Configure an AgenticTool to use OpenRouter:"
+msgstr "配置 AgenticTool 使用 OpenRouter："
+
+#: ../../guide/openrouter_support.rst:91 17777e4e65074011b70423eedb245fd0
+msgid "Using OpenRouter with ToolFinderLLM"
+msgstr "使用 OpenRouter 配合 ToolFinderLLM"
+
+#: ../../guide/openrouter_support.rst:93 d16cfa8eba30486c914a0125fbaaf63e
+msgid "Configure ToolFinderLLM to use OpenRouter models:"
+msgstr "配置 ToolFinderLLM 以使用 OpenRouter 模型："
+
+#: ../../guide/openrouter_support.rst:125 3be464402a2549ff820115cb2e01c40c
+msgid "Fallback Configuration"
+msgstr "备用配置"
+
+#: ../../guide/openrouter_support.rst:127 b98baf465ec146318702ef48e6f9dbab
+msgid ""
+"OpenRouter is included in the default fallback chain. If the primary API "
+"fails, the system will automatically try OpenRouter:"
+msgstr "OpenRouter 被包含在默认的回退链中。如果主 API 失败，系统将自动尝试使用 OpenRouter："
+
+#: ../../guide/openrouter_support.rst:149 e03213179f364d019e3e9312487ec601
+msgid "Advanced Configuration"
+msgstr "高级配置"
+
+#: ../../guide/openrouter_support.rst:152 7b4d19f2d9d049e7a745020f43a820ab
+msgid "Custom Model Limits"
+msgstr "自定义模型限制"
+
+#: ../../guide/openrouter_support.rst:154 5a5a2998d645442c9700de4a95ac9f12
+msgid "Override default token limits for specific models:"
+msgstr "为特定模型覆盖默认的令牌限制："

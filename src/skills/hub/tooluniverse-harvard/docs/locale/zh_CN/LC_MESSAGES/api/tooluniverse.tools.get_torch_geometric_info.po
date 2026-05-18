@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_torch_geometric_info.rst:2
+#: 315cbee2068240198d6048874b90d8ef
+msgid "tooluniverse.tools.get\\_torch\\_geometric\\_info module"
+msgstr "tooluniverse.tools.get\\_torch\\_geometric\\_info 模块"
+
+#: c757398e8dd0481abc39038fcaf51b1f of
+#: tooluniverse.tools.get_torch_geometric_info:1
+msgid "get_torch_geometric_info"
+msgstr ""
+
+#: 34d42f0b66424f159da17f5abac037d9 eb5ceb1d72fb49fabbb9b3eef7bb4ee8 of
+#: tooluniverse.tools.get_torch_geometric_info:3
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:1
+msgid ""
+"Get comprehensive information about PyTorch Geometric – a high-performance "
+"library for graph neur..."
+msgstr "获取有关 PyTorch Geometric 的全面信息——这是一个用于图神经网络的高性能库。"
+
+#: ../../api/tooluniverse.tools.get_torch_geometric_info.rst
+#: 864eec2ec584483fa148d76cf97472f6
+msgid "Parameters"
+msgstr "参数"
+
+#: 0e68994f5587474194c05db902703dff of
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 5e2e6f3e13b34af78c51583f3ac9c3fd of
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 17ad9c02f1fe4a87b3791f3ddadee963 of
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 81ad63f49b164d5e9bd8d80201a00588 of
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_torch_geometric_info.rst
+#: 1d0b52075f384ca8b525fa27cc42ef05
+msgid "Return type"
+msgstr "返回类型"
+
+#: 51b564d0d55f4d3f890b3ec1794397eb of
+#: tooluniverse.tools.get_torch_geometric_info.get_torch_geometric_info:12
+msgid ":py:class:`Any`"
+msgstr ""

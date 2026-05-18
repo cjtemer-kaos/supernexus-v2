@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.rst:2
+#: c89fb9983ad44514a2016685f7225147
+msgid "tooluniverse.tools.FDA\\_retrieve\\_drug\\_name\\_by\\_device\\_use module"
+msgstr "tooluniverse.tools.FDA\\_retrieve\\_drug\\_name\\_by\\_device\\_use 模块"
+
+#: 0f34a2c214394199b481035b85ce0b7e of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use:1
+msgid "FDA_retrieve_drug_name_by_device_use"
+msgstr "FDA_根据设备用途检索药品名称"
+
+#: 01c817832ef64c08affd805495042873 5c78e79452b84d46a683360400e322cb of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use:3
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:1
+msgid "Retrieve the drug name based on the intended use of the device."
+msgstr "根据设备的预期用途检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.rst
+#: 1194a9cead2c4916b8436fbbedd4bf07
+msgid "Parameters"
+msgstr "参数"
+
+#: a2e8642e2e6a49a9b6cec7c2da45cf23 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:3
+msgid "The intended use of the device."
+msgstr "设备的预期用途。"
+
+#: 93827d764ffd4e3f8d8a5e5479971a91 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: ce7f9aa45cbe4274a6ae27852de9b945 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c08f4fcc879a41b9adbf4463b3debd61 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2c23c8cc97d64f7581894049bb9ba9ae of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e6f3931f4fda4a12ac6d2dad9489e200 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.rst
+#: 332b2c8faf244117b3aace0cf9bb86ea
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6d599e4b3a034651825ee3ca0573eaa3 of
+#: tooluniverse.tools.FDA_retrieve_drug_name_by_device_use.FDA_retrieve_drug_name_by_device_use:16
+msgid ":py:class:`Any`"
+msgstr ""

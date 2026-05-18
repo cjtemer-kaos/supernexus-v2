@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.TRIP_Database_Guidelines_Search.rst:2
+#: 2c35558a18aa4be58afe505faffef64c
+msgid "tooluniverse.tools.TRIP\\_Database\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.TRIP\\_Database\\_Guidelines\\_Search 模块"
+
+#: 078f2a7f1429457381d6f608337e6512 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search:1
+msgid "TRIP_Database_Guidelines_Search"
+msgstr "TRIP_数据库_指南_搜索"
+
+#: ad3c6e1339ed464dad81c610b78cc1e5 f688c011ad6048a9938b3150ac8f469f of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search:3
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:1
+msgid ""
+"Search TRIP Database (Turning Research into Practice) for evidence-based "
+"clinical guidelines. TRI..."
+msgstr "搜索 TRIP 数据库（将研究转化为实践）以查找循证临床指南。TRI..."
+
+#: ../../api/tooluniverse.tools.TRIP_Database_Guidelines_Search.rst
+#: 34951dd637d34e78ba93e9844c826548
+msgid "Parameters"
+msgstr "参数"
+
+#: 562e4bfdafc44b099b6453f303b2eca1 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:3
+msgid ""
+"Medical condition, treatment, or clinical question (e.g., 'diabetes "
+"managemen..."
+msgstr "医疗状况、治疗或临床问题（例如，“糖尿病管理”）。"
+
+#: 1cb296d54f034f3c976feb11fc518630 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回指南的最大数量（默认值：10）"
+
+#: 918db7d1de584ef99f863d7d0d26b396 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:7
+msgid ""
+"Type of content to search for (default: 'guideline'). Options include "
+"'guidel..."
+msgstr "要搜索的内容类型（默认值：'guideline'）。选项包括 'guidel..."
+
+#: c15923997f1f49e5b207c4d8a9324214 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1389384afbb04e52947b5174ca770c70 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b2edceb79d15485582a20f129c52e5b3 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.TRIP_Database_Guidelines_Search.rst
+#: 0929662c0496470cabaaa41a5ebe7f2c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3f4a977b17f44f72b1e25f987f81c4c1 of
+#: tooluniverse.tools.TRIP_Database_Guidelines_Search.TRIP_Database_Guidelines_Search:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

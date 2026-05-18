@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolOutputSummarizer.rst:2
+#: 4b00afc403aa430a9b41c705be197432
+msgid "tooluniverse.tools.ToolOutputSummarizer module"
+msgstr "tooluniverse.tools.ToolOutputSummarizer 模块"
+
+#: f7cf7dacb3b444d3b312463860112000 of
+#: tooluniverse.tools.ToolOutputSummarizer:1
+msgid "ToolOutputSummarizer"
+msgstr "工具输出汇总器"
+
+#: 2a7415f8598443b3988eb3d99cff1e8b 5faddb84d4264a559aab63812bb4539f of
+#: tooluniverse.tools.ToolOutputSummarizer:3
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:1
+msgid ""
+"AI-powered tool for summarizing long tool outputs, focusing on key "
+"information relevant to the or..."
+msgstr "基于人工智能的工具，用于总结冗长的工具输出，重点提取与操作相关的关键信息。"
+
+#: ../../api/tooluniverse.tools.ToolOutputSummarizer.rst
+#: 60561e4c984c4524b52d24d637c27461
+msgid "Parameters"
+msgstr "参数"
+
+#: 80a947b8d0264a99976be71ecdd9b295 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:3
+msgid "The original tool output to be summarized"
+msgstr "原始工具输出待总结"
+
+#: f5620e48eb384644ba2f132fb2a62627 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:5
+msgid "Context about the original query that triggered the tool"
+msgstr "上下文：触发工具的原始查询相关背景"
+
+#: e205856e0294473695e4cdabe32508c8 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:7
+msgid "Name of the tool that generated the output"
+msgstr "生成输出的工具名称"
+
+#: 6ba4a2e00e2c408790e604e95cdeb07e of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:9
+msgid "Specific areas to focus on in the summary"
+msgstr "摘要中需要重点关注的具体领域"
+
+#: c4bf02d77eb4495b8a1b1c4c87357d52 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:11
+msgid "Maximum length of the summary in characters"
+msgstr "摘要的最大字符长度"
+
+#: 7141ae4453e247a18e0aee4b256a2ebf of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d04565afafdb4c61b84aad1a4dc7da80 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c0d7825b62b54460b943837f2162ad01 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolOutputSummarizer.rst
+#: 4e855273218c49d297dfe9dfbf9d3515
+msgid "Return type"
+msgstr "返回类型"
+
+#: 115e9ea18f4348bca4e07ca14550fd40 of
+#: tooluniverse.tools.ToolOutputSummarizer.ToolOutputSummarizer:20
+msgid ":py:class:`Any`"
+msgstr ""

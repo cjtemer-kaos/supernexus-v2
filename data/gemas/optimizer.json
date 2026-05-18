@@ -1,0 +1,16 @@
+{
+  "name": "optimizer",
+  "version": "2.0.0",
+  "description": "Perfilador de rendimiento, compresion de prompts y cache",
+  "main": "src.agents.optimizer_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:optimize", "onCommand:profile", "onCommand:compress"],
+  "semanticKeywords": ["optimize", "performance", "speed", "cache", "compress", "profile", "benchmark", "tune", "efficient"],
+  "category": "development",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

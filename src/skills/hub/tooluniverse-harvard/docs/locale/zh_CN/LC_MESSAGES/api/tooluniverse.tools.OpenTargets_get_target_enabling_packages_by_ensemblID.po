@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.rst:2
+#: 61b77d72bc2d41f98d662902b8d4d0b8
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_enabling\\_packages\\_by\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_enabling\\_packages\\_by\\_ensemblID"
+" 模块"
+
+#: c64ebdad233e4818aa60858c6124fb85 of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID:1
+msgid "OpenTargets_get_target_enabling_packages_by_ensemblID"
+msgstr "OpenTargets_通过EnsemblID获取靶点激活包"
+
+#: 5571b4f23a2c4f91b2839143a50f117a 6bc479548ccb4d7a9ffae7072314b287 of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:1
+msgid ""
+"Retrieve the Target Enabling Packages (TEP) associated with a specific "
+"target ensemblID."
+msgstr "检索与特定目标ensemblID关联的目标启用包（TEP）。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.rst
+#: 99d4c77e4b534b189757b0f4d97a2231
+msgid "Parameters"
+msgstr "参数"
+
+#: 24a563891f344949951fc7cd3c38a972 of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:3
+msgid "The Ensembl ID of the target."
+msgstr "目标的Ensembl ID。"
+
+#: f75fa676723b4879935144c46be6173c of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 47fab8d2d5a74384aacb2f4d285dc1f5 of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e326138b7dd042979f87735496e9fee1 of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.rst
+#: e84c30e2e0e24ea0a2268d208ce807c9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8f6136e27ea24dcd92d97d5230a3b28f of
+#: tooluniverse.tools.OpenTargets_get_target_enabling_packages_by_ensemblID.OpenTargets_get_target_enabling_packages_by_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

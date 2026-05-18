@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ChEMBL_search_similar_molecules.rst:2
+#: 140131b2c871491baf6755a7555a9bec
+msgid "tooluniverse.tools.ChEMBL\\_search\\_similar\\_molecules module"
+msgstr "tooluniverse.tools.ChEMBL\\_search\\_similar\\_molecules 模块"
+
+#: 7cead526133b4527a7ad3c8813b76cb9 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules:1
+msgid "ChEMBL_search_similar_molecules"
+msgstr "ChEMBL_搜索相似分子"
+
+#: 384f2eaba7124da1a2faa5f60873eba7 4d1e6bf76dd94b9bb401331622e35ba7 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules:3
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:1
+msgid ""
+"Search for molecules similar to a given SMILES, chembl_id, or compound or "
+"drug name, using the Ch..."
+msgstr "根据给定的SMILES、chembl_id或化合物或药物名称搜索相似的分子。"
+
+#: ../../api/tooluniverse.tools.ChEMBL_search_similar_molecules.rst
+#: a46c035cc2d7426daed8549b8f204081
+msgid "Parameters"
+msgstr "参数"
+
+#: 2eb3c24d988c4487accd75e8d625ad04 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:3
+msgid "SMILES string, chembl_id, or compound or drug name."
+msgstr "SMILES字符串、chembl_id、化合物名称或药物名称。"
+
+#: 469598adfc1845e1a16af30b1b9ef07c of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:5
+msgid "Similarity threshold (0–100)."
+msgstr "相似度阈值（0–100）。"
+
+#: 5411a25259d040daa6c113aa1fddaa41 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:7
+msgid "Maximum number of results to return."
+msgstr "返回结果的最大数量。"
+
+#: ad2966bcacbf4580bf2ebab8d88e7a8f of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5968cb63886c4e368b91584e3788d4c9 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e9fa7adc0e78485e9f924516ee95ee7d of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ChEMBL_search_similar_molecules.rst
+#: 675ce5c75f2545ca9b2df10db9be81ce
+msgid "Return type"
+msgstr "返回类型"
+
+#: 24b28db6140e42178da457b8c081feb2 of
+#: tooluniverse.tools.ChEMBL_search_similar_molecules.ChEMBL_search_similar_molecules:16
+msgid ":py:class:`Any`"
+msgstr ""

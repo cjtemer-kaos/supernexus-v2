@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_openbabel_info.rst:2
+#: 53645b5bf7624cc9b6363ff5598b20e0
+msgid "tooluniverse.tools.get\\_openbabel\\_info module"
+msgstr "tooluniverse.tools.get\\_openbabel\\_info 模块"
+
+#: 74bb10971357468ab18582d51b82e522 of tooluniverse.tools.get_openbabel_info:1
+msgid "get_openbabel_info"
+msgstr ""
+
+#: 0bc5409c27804d98a8e68a54e8d3b8d9 fc278047390e46cb829f9a7b3aa85e01 of
+#: tooluniverse.tools.get_openbabel_info:3
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:1
+msgid ""
+"Get comprehensive information about OpenBabel – chemical format conversion "
+"and analysis"
+msgstr "获取有关OpenBabel的全面信息——化学格式转换与分析"
+
+#: ../../api/tooluniverse.tools.get_openbabel_info.rst
+#: 2fc310ae807f4ce39f07cac7340ef197
+msgid "Parameters"
+msgstr "参数"
+
+#: e4fd88685f514191a683427be0fd7430 of
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 9cacbc95de244269b50352b09548f7e3 of
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2b4833a518c74bd09be2c180cb299127 of
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a1bc8ed52a7540d3ad8bad26f1b39c8f of
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_openbabel_info.rst
+#: 590d2814f74240ad92d7a63b4aac13eb
+msgid "Return type"
+msgstr "返回类型"
+
+#: cffd2d561f1e4d0ebdd2d2e38e0d89d6 of
+#: tooluniverse.tools.get_openbabel_info.get_openbabel_info:12
+msgid ":py:class:`Any`"
+msgstr ""

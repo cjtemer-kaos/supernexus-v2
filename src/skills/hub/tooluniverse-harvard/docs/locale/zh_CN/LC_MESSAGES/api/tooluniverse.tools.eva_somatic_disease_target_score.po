@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.eva_somatic_disease_target_score.rst:2
+#: 0eab50dde7434de1b392f45c52615ccf
+msgid "tooluniverse.tools.eva\\_somatic\\_disease\\_target\\_score module"
+msgstr "tooluniverse.tools.eva\\_somatic\\_disease\\_target\\_score 模块"
+
+#: 40e03f3a765d47018d898899dd71a11d of
+#: tooluniverse.tools.eva_somatic_disease_target_score:1
+msgid "eva_somatic_disease_target_score"
+msgstr "eva_体细胞疾病靶点评分"
+
+#: 80a5c55b65204d09817b2f419110bd6a dc24bef04dcf47c29f33b654f5671036 of
+#: tooluniverse.tools.eva_somatic_disease_target_score:3
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:1
+msgid ""
+"Extract disease-target association scores from EVA somatic mutations. This "
+"includes somatic varia..."
+msgstr "从EVA体细胞突变中提取疾病-靶点关联评分。这包括体细胞变异..."
+
+#: ../../api/tooluniverse.tools.eva_somatic_disease_target_score.rst
+#: 5f82702d38ea4ee98a95be2c1ff8a7ab
+msgid "Parameters"
+msgstr "参数"
+
+#: e1a8b29a83594e6ab372d4c4e17d5efa of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 0f42b487121541a0a4d60bb7271f2518 of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:5
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: ce169beb2cbd463d9b910b92e1879805 of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ed9e2337bc9946f39a035880d8812adf of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e8a45922b16848af94be37233764046c of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.eva_somatic_disease_target_score.rst
+#: fec39ad843cf4b5dad237b9741936379
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0c5e5542a2d244faad3b82edf3ef82c4 of
+#: tooluniverse.tools.eva_somatic_disease_target_score.eva_somatic_disease_target_score:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

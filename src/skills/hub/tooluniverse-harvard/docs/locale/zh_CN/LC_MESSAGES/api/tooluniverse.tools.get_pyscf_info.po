@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyscf_info.rst:2
+#: 4ea0bf95af1a41a09d4590eda602b621
+msgid "tooluniverse.tools.get\\_pyscf\\_info module"
+msgstr "tooluniverse.tools.get\\_pyscf\\_info 模块"
+
+#: de694b0977524ef7ac322c309aaeb717 of tooluniverse.tools.get_pyscf_info:1
+msgid "get_pyscf_info"
+msgstr ""
+
+#: 35437ec86465484eab700eeb0e464941 f79ef30426174911adb45960132187ff of
+#: tooluniverse.tools.get_pyscf_info:3
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:1
+msgid ""
+"Get comprehensive information about PySCF – a versatile quantum-chemistry "
+"framework in Python."
+msgstr "获取关于PySCF的全面信息——一个功能强大的Python量子化学框架。"
+
+#: ../../api/tooluniverse.tools.get_pyscf_info.rst
+#: 4859f19a68a24e8f87daf4c02fdcdce2
+msgid "Parameters"
+msgstr "参数"
+
+#: 33e62368c9e6460486325c48ff53f1d3 of
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 36c6662dc4574fd6a0a2b47660c47341 of
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fe8b4e6513fc4c32ba99f007c2231279 of
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a0bbcf4cd7364fa78947a1991b513010 of
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyscf_info.rst
+#: d054392fc88a4bdf92f177a5632e970b
+msgid "Return type"
+msgstr "返回类型"
+
+#: d0b3b1e50d734f15a4499ded993fdee2 of
+#: tooluniverse.tools.get_pyscf_info.get_pyscf_info:12
+msgid ":py:class:`Any`"
+msgstr ""

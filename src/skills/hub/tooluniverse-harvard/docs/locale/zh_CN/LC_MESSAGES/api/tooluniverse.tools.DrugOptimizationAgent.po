@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DrugOptimizationAgent.rst:2
+#: 16f9d82647b44c969947ab77c320c1bb
+msgid "tooluniverse.tools.DrugOptimizationAgent module"
+msgstr "tooluniverse.tools.DrugOptimizationAgent 模块"
+
+#: 1b2f57bcb46146749b14cb71732362cf of
+#: tooluniverse.tools.DrugOptimizationAgent:1
+msgid "DrugOptimizationAgent"
+msgstr "药物优化代理"
+
+#: 0fee4c17e45f4380ae736f072ef84819 e1513082ebc14643968e06e237c52e60 of
+#: tooluniverse.tools.DrugOptimizationAgent:3
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:1
+msgid ""
+"AI agent that analyzes drug optimization strategies based on ADMET and "
+"efficacy data"
+msgstr "基于ADMET和疗效数据分析药物优化策略的AI代理"
+
+#: ../../api/tooluniverse.tools.DrugOptimizationAgent.rst
+#: 897c318e5f8d45e59125958ec89678b7
+msgid "Parameters"
+msgstr "参数"
+
+#: 8ccf3250de6745ca876cbe3d4c86e1e2 of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:3
+msgid "List of compounds to optimize (comma-separated)"
+msgstr "需优化的化合物列表（以逗号分隔）"
+
+#: 7ae163b83f96402f8519d91fea3d3604 of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:5
+msgid "ADMET properties and issues"
+msgstr "ADMET 属性与问题"
+
+#: 3e19336046b44094b96508745b03e62c of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:7
+msgid "Efficacy and potency data"
+msgstr "效力和效价数据"
+
+#: ff93d97bf07a4936ab13655186db858f of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:9
+msgid "Target profile and requirements"
+msgstr "目标配置文件及要求"
+
+#: 2303214c6ac24154b06d212847ba16c4 of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c3a7cdafc14849479067731b6b3a3194 of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ab301c8477304f8fb5c4af3fd39e135f of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DrugOptimizationAgent.rst
+#: 943b3587b75f4bd9936c26e4f99f0bb1
+msgid "Return type"
+msgstr "返回类型"
+
+#: f37f6473b4164342b9fcd40582b6a45b of
+#: tooluniverse.tools.DrugOptimizationAgent.DrugOptimizationAgent:18
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 21:51-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.core_tool.rst:2 a5ef7bd4df6a4f49a0bab90577a19e54
+msgid "tooluniverse.core\\_tool module"
+msgstr "tooluniverse.core_tool 模块"
+
+#: 557fa2e37fe043048f261069a246b38a of tooluniverse.core_tool:1
+msgid "CORE API Tool for searching open access academic papers."
+msgstr "CORE API 工具，用于搜索开放获取的学术论文。"
+
+#: 7ef0c8d4896e451abd03de0c64829c8a of tooluniverse.core_tool:3
+msgid ""
+"CORE is the world's largest collection of open access research papers. This "
+"tool provides access to over 200 million open access papers from "
+"repositories and journals worldwide."
+msgstr "CORE 是全球最大的开放获取研究论文集合。该工具提供对来自全球各大存储库和期刊的超过2亿篇开放获取论文的访问。"
+
+#: bf396c4bf56846c7b960221eaae9c122 of tooluniverse.core_tool.CoreTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 966d46e6bd0c44e1bc000060571ca16f of tooluniverse.core_tool.CoreTool:1
+msgid "Tool for searching CORE open access academic papers."
+msgstr "用于搜索CORE开放获取学术论文的工具。"
+
+#: 2bb12bded0d0491989007aaf63abea5a of
+#: tooluniverse.core_tool.CoreTool._search:1
+msgid "Search for papers using CORE API."
+msgstr "使用 CORE API 搜索论文。"
+
+#: ../../api/tooluniverse.core_tool.rst c6fff0d1bf8f41258a44dd387beddf09
+#: eec5864043c84701b3c538b3038e1780
+msgid "Parameters"
+msgstr "参数"
+
+#: bec70fa611f64948b33d03872dc13bd6 of
+#: tooluniverse.core_tool.CoreTool._search:3
+msgid "Search query"
+msgstr "搜索查询"
+
+#: af5e969a7b404b38bb4b93a7754a5cce of
+#: tooluniverse.core_tool.CoreTool._search:4
+msgid "Maximum number of results"
+msgstr "最大结果数"
+
+#: 9b4f4f57186f4167b96bf96cf9b29d99 of
+#: tooluniverse.core_tool.CoreTool._search:5
+msgid "Start year filter"
+msgstr "起始年份筛选器"
+
+#: d9f4825513884211ab53c3962214a71b of
+#: tooluniverse.core_tool.CoreTool._search:6
+msgid "End year filter"
+msgstr "结束年份筛选器"
+
+#: 12ed885ba20f41df96a90883732b35da of
+#: tooluniverse.core_tool.CoreTool._search:7
+msgid "Language filter (e.g., 'en', 'es', 'fr')"
+msgstr "语言过滤器（例如，‘en’、‘es’、‘fr’）"
+
+#: ../../api/tooluniverse.core_tool.rst 9e5c091d330442fab5b2e3b28ef806c3
+#: f84d504700bb4b7b9eb28946b565f425
+msgid "Returns"
+msgstr "返回值"
+
+#: 2343f30c49a444e5a8118d9d5e7aaf37 65f450827a834b26b8921734917d5711 of
+#: tooluniverse.core_tool.CoreTool._search:9
+#: tooluniverse.core_tool.CoreTool.run:5
+msgid "List of paper dictionaries"
+msgstr "纸质词典列表"
+
+#: ../../api/tooluniverse.core_tool.rst 8c5a8aa76945479d9be730c3e21d2037
+#: ab4b584f684448df8112e495c33a827e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3c65d0bd392d4a4797d0c2b908f27ce2 of
+#: tooluniverse.core_tool.CoreTool._extract_authors:1
+msgid "Extract author names from CORE API response."
+msgstr "从 CORE API 响应中提取作者姓名。"
+
+#: f34d36bb8d104a1ba79cb2f708185bb9 of
+#: tooluniverse.core_tool.CoreTool._extract_year:1
+msgid "Extract year from published date."
+msgstr "从发布日期中提取年份。"
+
+#: 09c32f6c35654085b97cbbd6397e008e of tooluniverse.core_tool.CoreTool.run:1
+msgid "Execute the CORE search."
+msgstr "执行 CORE 搜索。"
+
+#: b5989b1bff61488798936c825f03ffae of tooluniverse.core_tool.CoreTool.run:3
+msgid "Dictionary containing search parameters"
+msgstr "包含搜索参数的字典"

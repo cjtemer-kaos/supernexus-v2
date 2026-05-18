@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.rst:2
+#: 7aa180732159467684c9e9250d504916
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_info\\_for\\_nursing\\_mothers"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_info\\_for\\_nursing\\_mothers 模块"
+
+#: 8eb9bc7febd44d8b98e4d97f72f9a157 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers:1
+msgid "FDA_get_drug_names_by_info_for_nursing_mothers"
+msgstr ""
+"FDA_get_drug_names_by_info_for_nursing_mothers  \n"
+"FDA_通过哺乳期母亲信息获取药物名称"
+
+#: 1cba7f96c8264a0cb061bba34fa25a6f f761c221e5884cf39640f0a70351a303 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers:3
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:1
+msgid "Retrieve drug names based on information related to nursing mothers."
+msgstr "根据与哺乳期母亲相关的信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.rst
+#: 6e1151794f8246abb7d558b9cf868a97
+msgid "Parameters"
+msgstr "参数"
+
+#: ec717311d0f34ce6a0e255f315500eed of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:3
+msgid ""
+"Information about excretion of the drug in human milk and effects on the "
+"nurs..."
+msgstr "关于药物在人体乳汁中的排泄及其对哺乳的影响的信息"
+
+#: bddabe6402cc4f8c8b7709c854303c91 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 4102dae671bc451ebd1fe1a2b80a726b of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: e9d86b9edf7149639015109ecd4246f4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 59a52774409d46679a722392fa24b433 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e3831970ef994c5582b7e1adbe428e84 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d7080baaea764dd6abf16fd69e4c7ee0 of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.rst
+#: df3a3c6412644c7bba170094899d9f1d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 678780c829b344a1bc11a5ac016909ad of
+#: tooluniverse.tools.FDA_get_drug_names_by_info_for_nursing_mothers.FDA_get_drug_names_by_info_for_nursing_mothers:18
+msgid ":py:class:`Any`"
+msgstr ""

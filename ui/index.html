@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..900&family=Geist+Mono:wght@300..700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        try {
+          const root = document.documentElement;
+          const theme = localStorage.getItem("nexus-theme") || "dark";
+          const resolved = theme === "system"
+            ? window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+            : theme;
+          root.classList.add(resolved);
+          root.style.colorScheme = resolved;
+          root.style.setProperty("--brand", "#06b6d4");
+          root.style.setProperty("--brand-foreground", "#ffffff");
+          root.style.setProperty("--color-brand", "#06b6d4");
+          root.style.setProperty("--color-brand-foreground", "#ffffff");
+          const density = localStorage.getItem("nexus-density") || "comfortable";
+          if (density !== "comfortable") root.dataset.density = density;
+        } catch {}
+      })();
+    </script>
+    <title>SuperNEXUS v2</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

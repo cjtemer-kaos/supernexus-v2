@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.generate_tools.rst:2
+#: 43bbda2144bb497eb6ecee1272aaf420
+msgid "tooluniverse.generate\\_tools module"
+msgstr "tooluniverse.generate\\_tools 模块"
+
+#: 7395a45a16e84000b42ee66b144146c7 of tooluniverse.generate_tools:1
+msgid "Minimal tools generator - one tool, one file."
+msgstr "最小化工具生成器 - 一个工具，一个文件。"
+
+#: 09c9cbfcb12d4a7e969dfdaa91e23e6b of
+#: tooluniverse.generate_tools.json_type_to_python:1
+msgid "Convert JSON type to Python type."
+msgstr "将 JSON 类型转换为 Python 类型。"
+
+#: f18f0671230b4856995390740f58e2ae of
+#: tooluniverse.generate_tools.generate_tool_file:1
+msgid "Generate one file for one tool."
+msgstr "为每个工具生成一个文件。"
+
+#: 014b04a59a5b437588aef6f384239e12 of
+#: tooluniverse.generate_tools.generate_init:1
+msgid "Generate __init__.py with all imports."
+msgstr "生成包含所有导入的 __init__.py 文件。"
+
+#: 10c23078c5d147a5b0423d12ad7db025 of
+#: tooluniverse.generate_tools._create_shared_client:1
+msgid "Create _shared_client.py if it doesn't exist."
+msgstr "如果 _shared_client.py 不存在，则创建该文件。"
+
+#: b428e2ad40654e4eab18a2767bea80e4 of tooluniverse.generate_tools._chunked:1
+msgid "Yield chunks of the sequence with up to chunk_size elements."
+msgstr "将序列分块，每块最多包含 chunk_size 个元素。"
+
+#: 2a33a1f28c034318badff8f56d6e8ea9 of
+#: tooluniverse.generate_tools._format_files:1
+msgid "Format files using pre-commit if available, else ruff/autoflake/black."
+msgstr "如果可用，请使用 pre-commit 格式化文件，否则使用 ruff/autoflake/black。"
+
+#: 99816e9ec8c14a9087978dab456e4ef5 of
+#: tooluniverse.generate_tools._format_files:3
+msgid "Honors TOOLUNIVERSE_SKIP_FORMAT=1 to skip formatting entirely."
+msgstr "Honors TOOLUNIVERSE_SKIP_FORMAT=1 完全跳过格式化。"
+
+#: c6843e8d7897444e964415037407ae9b of tooluniverse.generate_tools.main:1
+msgid "Generate tools and format the generated files if enabled."
+msgstr "生成工具并在启用时格式化生成的文件。"
+
+#: d9b2dc3589344186b8db58c013a6bb09 of tooluniverse.generate_tools.main:3
+msgid ""
+"If format_enabled is None, decide based on TOOLUNIVERSE_SKIP_FORMAT env var "
+"(skip when set to \"1\")."
+msgstr ""
+"如果 format_enabled 为 None，则根据 TOOLUNIVERSE_SKIP_FORMAT 环境变量决定（当设置为 \"1\" "
+"时跳过）。"

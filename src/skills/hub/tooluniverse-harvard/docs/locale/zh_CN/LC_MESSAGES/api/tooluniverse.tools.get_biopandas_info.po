@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_biopandas_info.rst:2
+#: b7bab602fc174425badbaee979226689
+msgid "tooluniverse.tools.get\\_biopandas\\_info module"
+msgstr "tooluniverse.tools.get\\_biopandas\\_info 模块"
+
+#: 4ead1069ad424241b03c6280f66782cd of tooluniverse.tools.get_biopandas_info:1
+msgid "get_biopandas_info"
+msgstr ""
+
+#: 0b0af3a940884dc191d394acd35244bf c2d7460fe29d4086b8b68d6d9239bec5 of
+#: tooluniverse.tools.get_biopandas_info:3
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:1
+msgid ""
+"Get comprehensive information about BioPandas – pandas-based molecular "
+"structure analysis"
+msgstr "获取关于 BioPandas 的全面信息——基于 pandas 的分子结构分析"
+
+#: ../../api/tooluniverse.tools.get_biopandas_info.rst
+#: eacfbe131050487e9fc793912ebc73c9
+msgid "Parameters"
+msgstr "参数"
+
+#: a8139fad98b64911a0ce05410fdb30e5 of
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 1f72c97e6879437d84ea04c28e09bfeb of
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d75fc4e4b3954611a2356ac08839dc18 of
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 92f78dd166f240a987a2b29559b33f20 of
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_biopandas_info.rst
+#: dbee656a1a6a4bd580315105216d737a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 52b31f2c208446abbed0e3459badbf5b of
+#: tooluniverse.tools.get_biopandas_info.get_biopandas_info:12
+msgid ":py:class:`Any`"
+msgstr ""

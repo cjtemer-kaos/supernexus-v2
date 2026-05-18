@@ -1,0 +1,17 @@
+{
+  "identity": {
+    "name": "SuperNEXUS",
+    "version": "2.0"
+  },
+  "learned_facts": [
+    {
+      "id": "fact_20260516223720",
+      "content": "No sources found.",
+      "source": "research:Aprender contenido",
+      "category": "learned",
+      "learned_at": "2026-05-16T22:37:20.587496",
+      "confidence": 0.9
+    }
+  ],
+  "preferences": {}
+}

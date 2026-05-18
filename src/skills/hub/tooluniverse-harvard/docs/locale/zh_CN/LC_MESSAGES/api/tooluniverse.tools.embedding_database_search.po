@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.embedding_database_search.rst:2
+#: a88668cc0cbf4e5c974079802a764a5a
+msgid "tooluniverse.tools.embedding\\_database\\_search module"
+msgstr "tooluniverse.tools.embedding\\_database\\_search 模块"
+
+#: 13149a13b8194497a7a484d85e822f5f of
+#: tooluniverse.tools.embedding_database_search:1
+msgid "embedding_database_search"
+msgstr "嵌入式数据库搜索"
+
+#: 41b66b4976da4310ad73a7c4f0283b04 f38d3f2006f94e6b949f90598ff69ac2 of
+#: tooluniverse.tools.embedding_database_search:3
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:1
+msgid ""
+"Search for semantically similar documents in an embedding database. Uses "
+"OpenAI embeddings to con..."
+msgstr "在嵌入式数据库中搜索语义相似的文档。使用 OpenAI 嵌入技术进行处理。"
+
+#: ../../api/tooluniverse.tools.embedding_database_search.rst
+#: cb4e736315014b968c53560667631746
+msgid "Parameters"
+msgstr "参数"
+
+#: 54cf2787677c490babf6efc8ee602e8a of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:3
+msgid "Action to search the database"
+msgstr "执行数据库搜索"
+
+#: 2c45f70f32be48dea793da6170299923 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:5
+msgid "Name of the database to search in"
+msgstr "要搜索的数据库名称"
+
+#: 01d820aee8584349aff0f4ce2953c00c of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:7
+msgid "Query text to find similar documents for"
+msgstr "查询文本以查找相似文档"
+
+#: db0f1c549dd74bfca52434039617ecd5 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:9
+msgid "Number of most similar documents to return"
+msgstr "返回最相似文档的数量"
+
+#: 8354a9e2ba8d4e48bd671fd44fd84169 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:11
+msgid "Optional metadata filters to apply to search results"
+msgstr "可选的元数据过滤器，用于应用于搜索结果"
+
+#: 20b676cca59642d0b80de44cf4cecc86 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8d363eceb07641c989b401fb334c46d2 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6429148e62b44075be5ec5509e1433d0 of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.embedding_database_search.rst
+#: fe454fb57e1546b690c3288ccecf47a1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 64bfd7b1960548599e8f1654738806ac of
+#: tooluniverse.tools.embedding_database_search.embedding_database_search:20
+msgid ":py:class:`Any`"
+msgstr ""

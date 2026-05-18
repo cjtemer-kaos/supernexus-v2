@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.rst:2
+#: b68f390ebff740c895a7b33f28fc92ee
+msgid "tooluniverse.tools.FDA\\_get\\_clinical\\_pharmacology\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_clinical\\_pharmacology\\_by\\_drug\\_name 模块"
+
+#: b42c74d45bb24d578669e332c384e6b5 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name:1
+msgid "FDA_get_clinical_pharmacology_by_drug_name"
+msgstr "FDA_按药物名称获取临床药理信息"
+
+#: c3ab99e191e74b8d85ff85c537f80723 f88dd4615a79438abf091fefe301795f of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name:3
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:1
+msgid "Retrieve clinical pharmacology information based on drug names."
+msgstr "根据药物名称检索临床药理学信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.rst
+#: 963c080db85b4dd6927fbbcb3ada48fc
+msgid "Parameters"
+msgstr "参数"
+
+#: 7d09334f43644917bb8abbc14d306f69 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: 9d1356d2965b4cea913bc244989bbf02 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: aca93d11d80e46f9aaaf03078f20830c of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: de575090749f4594b46da0d9c8a2bcb7 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4ed9e889980c42eeab38bb86db8dc8e9 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2fa2257fb8b547839ec1924ac4057cd2 of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.rst
+#: 94932d423b854754a238c8f99b491529
+msgid "Return type"
+msgstr "返回类型"
+
+#: 39d5f56c7b534ce0b576f4fecf042c0f of
+#: tooluniverse.tools.FDA_get_clinical_pharmacology_by_drug_name.FDA_get_clinical_pharmacology_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

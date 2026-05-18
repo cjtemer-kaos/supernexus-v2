@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.rst:2
+#: e2852d1809064302a882d07c288f199b
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_target\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_target\\_ensemblID"
+" 模块"
+
+#: 73e4d04358864bffb3725cfe2a2e8fbb of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID:1
+msgid "OpenTargets_get_publications_by_target_ensemblID"
+msgstr ""
+"OpenTargets_get_publications_by_target_ensemblID  \n"
+"获取目标EnsemblID相关的出版物"
+
+#: 44e47683016c49e8821c12bda83259df ba2adab190934c4db93c62ba06cb4f22 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:1
+msgid ""
+"Retrieve publications related to a target ensemblID, including PubMed IDs "
+"and publication dates."
+msgstr "检索与目标ensemblID相关的出版物，包括PubMed ID和出版日期。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.rst
+#: 6c545fedf9014496b758f441b3b5c60b
+msgid "Parameters"
+msgstr "参数"
+
+#: 10ebe087322c40fb91a66e1a4c71e529 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:3
+msgid "The ID of the entity (ensemblID)."
+msgstr "实体的ID（ensemblID）。"
+
+#: 62a5ee80e76341d89652cedbe60ef62f of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:5
+msgid "List of additional IDs to include in the search."
+msgstr "在搜索中包含的额外ID列表。"
+
+#: a526fa29cbd9430bbbfe126fb19cd390 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:7
+msgid "Year at the lower end of the filter."
+msgstr "过滤器下限的年份。"
+
+#: 4bc75869b6b24dfab378922c0c8376bb of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:9
+msgid "Month at the lower end of the filter."
+msgstr "过滤器底端的月份。"
+
+#: 682dd617e67f44b1a964aa5ae332b167 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:11
+msgid "Year at the higher end of the filter."
+msgstr "过滤器高端的年份。"
+
+#: 9afd50267f8743eab7d6d146f31109a6 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:13
+msgid "Month at the higher end of the filter."
+msgstr "过滤器高端的月份。"
+
+#: daefda30b6574c8e948ce173a9b6a9db of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 731c98e9f5f349248034721a6dce6e74 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b510fc7dea304b0c82e3668c58372a74 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.rst
+#: e61688174cfd49eb8d7ea9760dd78c0a
+msgid "Return type"
+msgstr "返回类型"
+
+#: ec3655b08c6d42079993c54887344117 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_target_ensemblID.OpenTargets_get_publications_by_target_ensemblID:22
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_dscribe_info.rst:2
+#: b83b95ab914c449a9de32c761776add2
+msgid "tooluniverse.tools.get\\_dscribe\\_info module"
+msgstr "tooluniverse.tools.get\\_dscribe\\_info 模块"
+
+#: ccc0a8ed747443e9bd76f1438824fa89 of tooluniverse.tools.get_dscribe_info:1
+msgid "get_dscribe_info"
+msgstr "get_dscribe_info 获取描述信息"
+
+#: 086b4e18c7274c6388ebccd0b1ad2865 c576ecb8d4f642e4885f4f46510d2c02 of
+#: tooluniverse.tools.get_dscribe_info:3
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:1
+msgid ""
+"Get comprehensive information about DScribe – a library for generating "
+"machine-learning descripto..."
+msgstr "获取关于DScribe的全面信息——一个用于生成机器学习描述符的库..."
+
+#: ../../api/tooluniverse.tools.get_dscribe_info.rst
+#: e05c3557599f40c8b21b4b902a69d8bf
+msgid "Parameters"
+msgstr "参数"
+
+#: ed3358ba86434d9eaa893eec0d2ebb36 of
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: a435a55bdbb144b487b47438bba40123 of
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2e00fdadd96944f5ac4b3a10b347cf05 of
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: aa5d511964fe491aa7886871a3f39b99 of
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_dscribe_info.rst
+#: d2f60cbb51424bf283725eca3195689f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 56480a343e2547478af48334223d3e33 of
+#: tooluniverse.tools.get_dscribe_info.get_dscribe_info:12
+msgid ":py:class:`Any`"
+msgstr ""

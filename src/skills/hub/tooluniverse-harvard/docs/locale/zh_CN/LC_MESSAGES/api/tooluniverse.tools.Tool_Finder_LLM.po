@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Tool_Finder_LLM.rst:2
+#: 840e81d2b0cd49638e9ee22b119164b3
+msgid "tooluniverse.tools.Tool\\_Finder\\_LLM module"
+msgstr "tooluniverse.tools.Tool\\_Finder\\_LLM 模块"
+
+#: 32662797ebc84a3880c07be957c1fd01 of tooluniverse.tools.Tool_Finder_LLM:1
+msgid "Tool_Finder_LLM"
+msgstr "工具_查找器_LLM"
+
+#: 137ee100f9b441c2a29bbba68d943a40 cc46fa2e02f446c7a4d5347890ab56c6 of
+#: tooluniverse.tools.Tool_Finder_LLM:3
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:1
+msgid ""
+"LLM-based tool finder that uses natural language processing to intelligently"
+" select relevant tool..."
+msgstr "基于LLM的工具查找器，利用自然语言处理智能选择相关工具..."
+
+#: ../../api/tooluniverse.tools.Tool_Finder_LLM.rst
+#: 19d6ee51503140129b7b98519f44d54b
+msgid "Parameters"
+msgstr "参数"
+
+#: b83ed773c7cb4fd8b2149961be515c2d of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:3
+msgid "The description of the tool capability required."
+msgstr "所需工具功能描述"
+
+#: ea8a4b3fe76e4b1db7e33ec272b857ee of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:5
+msgid "The number of tools to retrieve"
+msgstr "检索工具的数量"
+
+#: e4cb572723cd4dd8bf249a4ec63ccadc of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:7
+msgid ""
+"Pre-selected tool names to process. If provided, tool selection will skip "
+"the..."
+msgstr "预选工具名称进行处理。如果提供了工具名称，将跳过工具选择..."
+
+#: 5baf78deba0e4bc4a21d754d6529e0aa of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:9
+msgid ""
+"Whether to return both prompts and tool names. If false, returns only tool "
+"pr..."
+msgstr "是否返回提示和工具名称。如果为 false，则仅返回工具名称。"
+
+#: 84ae2462ba634071a22f70097418eb58 of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:11
+msgid "Optional list of tool categories to filter by"
+msgstr "可选工具类别列表以进行筛选"
+
+#: e0faa49963d74d5a8fc309f24f7c3972 of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 344181a238b24eafaa7cf8c5015f76e0 of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 233068048e524377a8d67e762a962580 of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Tool_Finder_LLM.rst
+#: f6792e4b56df47ddbc6bc3eeee84acda
+msgid "Return type"
+msgstr "返回类型"
+
+#: d5ef4ec6a50e4482bdcc0d5adbdf74ae of
+#: tooluniverse.tools.Tool_Finder_LLM.Tool_Finder_LLM:20
+msgid ":py:class:`Any`"
+msgstr ""

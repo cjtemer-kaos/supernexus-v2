@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.NICE_Clinical_Guidelines_Search.rst:2
+#: f1d48ab3a0a3482f8d10f7fd383499f1
+msgid "tooluniverse.tools.NICE\\_Clinical\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.NICE\\_Clinical\\_Guidelines\\_Search 模块"
+
+#: abeda15cd2894ff99b8c04391e6b6174 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search:1
+msgid "NICE_Clinical_Guidelines_Search"
+msgstr "NICE_临床指南搜索"
+
+#: 3d1414cdab704cb69b03b646925f0bd0 b364e1e7bcf14d1b945ae4e867eefee9 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search:3
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:1
+msgid ""
+"Search NICE (National Institute for Health and Care Excellence) clinical "
+"guidelines and evidence-..."
+msgstr "搜索NICE（英国国家卫生与护理优化研究所）的临床指南和证据..."
+
+#: ../../api/tooluniverse.tools.NICE_Clinical_Guidelines_Search.rst
+#: 61291c8a1cb847fdb7f57ee96bf140d4
+msgid "Parameters"
+msgstr "参数"
+
+#: a04afaf517fe4413a04da2f1f11aa984 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:3
+msgid ""
+"Medical condition, treatment, or clinical topic to search for in NICE "
+"guideli..."
+msgstr "医疗状况、治疗或临床主题以搜索NICE指南..."
+
+#: 04a94299452e4e2d81aa534ba96f3fcf of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:5
+msgid "Maximum number of clinical guidelines to return (default: 10)"
+msgstr "返回的临床指南最大数量（默认值：10）"
+
+#: 082dbd76d8aa42ebaa56c2a4cb9a9c72 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f6e5665fbdd24f19ba5cdd724dfc5375 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 416a0558f4ea464ebf52915250b1ece9 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.NICE_Clinical_Guidelines_Search.rst
+#: 80be852dc5d0424693cf8d643a2d1070
+msgid "Return type"
+msgstr "返回类型"
+
+#: a567475d185d4365a160d69b217055e3 of
+#: tooluniverse.tools.NICE_Clinical_Guidelines_Search.NICE_Clinical_Guidelines_Search:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

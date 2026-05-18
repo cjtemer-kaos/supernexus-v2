@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/remote/boltz.md:1 13b70470a8814849827ff67acc6cfa90
+msgid "Boltz2 Tool Setup"
+msgstr "Boltz2 工具设置"
+
+#: ../../tools/remote/boltz.md:3 2975813fb2384956b20ef62980c86306
+msgid ""
+"This tutorial will Tutorial you through setting up and running MCP (Model "
+"Context Protocol) server-based tools for Boltz2 molecular docking."
+msgstr "本教程将指导您设置并运行基于MCP（模型上下文协议）服务器的Boltz2分子对接工具。"
+
+#: ../../tools/remote/boltz.md:5 abd437131a2b47db9b68e7227a993137
+msgid "Overview"
+msgstr "概述"
+
+#: ../../tools/remote/boltz.md:7 3720a1351db8466db6fb3e1d8dba0a3e
+msgid "This directory contains the following MCP server implementations:"
+msgstr "该目录包含以下 MCP 服务器实现："
+
+#: ../../tools/remote/boltz.md:8 38b4f8439e3d4a8abc309fd0c80c21cf
+msgid "**boltz_MCP.py**: Provides molecular docking capabilities using Boltz2"
+msgstr "**boltz_MCP.py**：使用 Boltz2 提供分子对接功能"
+
+#: ../../tools/remote/boltz.md:10 e272080603564693a17f271c0b106865
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../tools/remote/boltz.md:12 98cbfc3284d6454b8f16f18d0724d276
+msgid "Hardware Requirements"
+msgstr "硬件要求"
+
+#: ../../tools/remote/boltz.md:13 9c89716c82b14d37af02195471d90ca8
+msgid "**GPU**: NVIDIA A100 or H100 GPU recommended"
+msgstr "**GPU**：推荐使用 NVIDIA A100 或 H100 GPU"
+
+#: ../../tools/remote/boltz.md:15 bc9e97bb8fa5420fbeff462c80903d1e
+msgid "System Requirements"
+msgstr "系统要求"
+
+#: ../../tools/remote/boltz.md:16 60b824173b9543cba3b2299448bc8191
+msgid "Linux-based system (tested on Ubuntu/CentOS)"
+msgstr "基于Linux的系统（已在Ubuntu/CentOS上测试）"
+
+#: ../../tools/remote/boltz.md:17 a336bbb2831d4c838c980bd5c005b52c
+msgid "CUDA-compatible GPU drivers"
+msgstr "CUDA 兼容的 GPU 驱动程序"
+
+#: ../../tools/remote/boltz.md:18 d200a8203c134a2384c7b1b1e008e691
+msgid "Network access for API calls"
+msgstr "API 调用的网络访问"
+
+#: ../../tools/remote/boltz.md:20 e86c2866c3124984b4acbcd07bebe405
+msgid "Setup Instructions"
+msgstr "设置说明"
+
+#: ../../tools/remote/boltz.md:22 1242c0919e154c05990da595e39e1fb7
+msgid "1. Environment Setup"
+msgstr "1. 环境设置"
+
+#: ../../tools/remote/boltz.md:36 4404b06a45e1401190e496d3cb4775d2
+msgid "2. Verify Boltz2 Installation"
+msgstr "2. 验证 Boltz2 安装"
+
+#: ../../tools/remote/boltz.md:46 95a322c727f949dbba07fdb6c7109622
+msgid "3. Install ToolUniverse and MCP Dependencies"
+msgstr "3. 安装 ToolUniverse 和 MCP 依赖项"
+
+#: ../../tools/remote/boltz.md:68 edc7c65992c643ee8c1b30f7174857f8
+msgid "4. Environment Configuration"
+msgstr "4. 环境配置"
+
+#: ../../tools/remote/boltz.md:70 1386466fd1fc42dca3e11ae34b0e4890
+msgid "Set Environment Variables"
+msgstr "设置环境变量"
+
+#: ../../tools/remote/boltz.md:71 81d2fc9180f64d3b9e37bcf894850551
+msgid ""
+"Set the required environment variables on the **client machine** where "
+"you're calling the MCP tool from ToolUniverse (not on the GPU server where "
+"the tool is running):"
+msgstr "在调用 ToolUniverse 的 MCP 工具的**客户端机器**上设置所需的环境变量（不要在运行该工具的 GPU 服务器上设置）："
+
+#: ../../tools/remote/boltz.md:78 99cebc5f645745599ea07bb1b470fccf
+msgid ""
+"**Important**: Set this variable on the machine where you're executing your "
+"ToolUniverse code, even if the MCP server is running on a different GPU "
+"machine."
+msgstr "**重要说明**：即使 MCP 服务器运行在另一台 GPU 机器上，也请在执行 ToolUniverse 代码的机器上设置此变量。"
+
+#: ../../tools/remote/boltz.md:80 2f6fdaa403714c19883c743582ccf409
+msgid "**Finding your GPU hostname:**"
+msgstr "**查找您的GPU主机名：**"
+
+#: ../../tools/remote/boltz.md:91 7d35a27233844bba9020db811536f687
+msgid "Running the MCP Server"
+msgstr "运行 MCP 服务器"
+
+#: ../../tools/remote/boltz.md:93 b9465134206c46b0adfebf4a7e37db05
+msgid "1. Start Boltz2 MCP Server"
+msgstr "1. 启动 Boltz2 MCP 服务器"
+
+#: ../../tools/remote/boltz.md:100 e83f681e4293450d8da30c25b682924b
+msgid ""
+"The server will start on `http://0.0.0.0:8080` but will be accessible via "
+"your GPU hostname (e.g., `http://your-gpu-hostname:8080`) and provide "
+"molecular docking capabilities."
+msgstr ""
+"服务器将启动于 `http://0.0.0.0:8080`，但可通过您的 GPU 主机名访问（例如：`http://your-gpu-"
+"hostname:8080`），并提供分子对接功能。"
+
+#: ../../tools/remote/boltz.md:102 8412176d32f04484b85d3cd1bf149c50
+msgid "Usage Examples"
+msgstr "使用示例"
+
+#: ../../tools/remote/boltz.md:103 371183b900784fe6a6a4ea4f5d278ba5
+msgid ""
+"For comprehensive usage examples and testing patterns, please refer to the "
+"test file:"
+msgstr "有关全面的使用示例和测试模式，请参阅测试文件："
+
+#: ../../tools/remote/boltz.md:110 3c40be061791415bb6d1885325719d8b
+msgid ""
+"This test file contains detailed examples of how to interact with the Boltz2"
+" molecular docking MCP servers, including proper API calls and parameter "
+"formatting."
+msgstr "该测试文件包含与Boltz2分子对接MCP服务器交互的详细示例，包括正确的API调用和参数格式化。"

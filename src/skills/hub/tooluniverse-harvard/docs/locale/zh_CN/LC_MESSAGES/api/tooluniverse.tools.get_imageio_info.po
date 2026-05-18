@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_imageio_info.rst:2
+#: c8e734dfbbf547c49fab1569510dd142
+msgid "tooluniverse.tools.get\\_imageio\\_info module"
+msgstr "tooluniverse.tools.get\\_imageio\\_info 模块"
+
+#: f57f85150d0b4a239158b10991b770bd of tooluniverse.tools.get_imageio_info:1
+msgid "get_imageio_info"
+msgstr ""
+
+#: 08ce4ee0722d48438afa1eef0853afd8 a84a687ab9c04ded8908821cc88bef50 of
+#: tooluniverse.tools.get_imageio_info:3
+#: tooluniverse.tools.get_imageio_info.get_imageio_info:1
+msgid ""
+"Get information about the imageio package. Python library for reading and "
+"writing image data"
+msgstr "获取有关 imageio 包的信息。Python 库，用于读取和写入图像数据。"
+
+#: ../../api/tooluniverse.tools.get_imageio_info.rst
+#: 5e419071277e4a259b4d8fcc6ca0ccf6
+msgid "Parameters"
+msgstr "参数"
+
+#: d0382dfa2bd440aa88b418e570c861dd of
+#: tooluniverse.tools.get_imageio_info.get_imageio_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1e67eda47e1240d5ae8089eb747056a7 of
+#: tooluniverse.tools.get_imageio_info.get_imageio_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c8cd487c2cd548d3ab0f76cd0be1f77b of
+#: tooluniverse.tools.get_imageio_info.get_imageio_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_imageio_info.rst
+#: 59a736971a434ea78ec38445ab64f336
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5c3af013af29445aa449d8e08db85091 of
+#: tooluniverse.tools.get_imageio_info.get_imageio_info:11
+msgid ":py:class:`Any`"
+msgstr ""

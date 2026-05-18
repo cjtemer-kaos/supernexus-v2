@@ -1,0 +1,2513 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_pysam_info",
+    "description": "Get comprehensive information about pysam \u2013 interface to SAM/BAM/CRAM files",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "pysam",
+    "local_info": {
+      "name": "pysam",
+      "description": "Python interface for reading, writing and manipulating SAM/BAM/CRAM files and other genomics file formats. Built on top of htslib and provides efficient access to sequencing data.",
+      "category": "Genomics File I/O",
+      "import_name": "pysam",
+      "popularity": 88,
+      "keywords": [
+        "SAM/BAM files",
+        "genomics",
+        "sequencing data",
+        "file I/O",
+        "htslib"
+      ],
+      "documentation": "https://pysam.readthedocs.io/",
+      "repository": "https://github.com/pysam-developers/pysam",
+      "installation": {
+        "pip": "pip install pysam",
+        "conda": "conda install -c bioconda pysam"
+      },
+      "usage_example": "import pysam\n\n# Read BAM file\nbamfile = pysam.AlignmentFile('example.bam', 'rb')\n\n# Iterate through reads\nfor read in bamfile.fetch('chr1', 1000, 2000):\n    print(f'{read.query_name}: {read.reference_start}-{read.reference_end}')\n    \n# Get coverage\nfor pileupcolumn in bamfile.pileup('chr1', 1000, 2000):\n    print(f'Position {pileupcolumn.pos}: coverage {pileupcolumn.n}')\n    \nbamfile.close()",
+      "quick_start": [
+        "Install: pip install pysam",
+        "Import: import pysam",
+        "Open file: bamfile = pysam.AlignmentFile('file.bam', 'rb')",
+        "Fetch reads: bamfile.fetch('chr1', start, end)",
+        "Analyze: get coverage, extract sequences"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyfaidx_info",
+    "description": "Get comprehensive information about pyfaidx \u2013 efficient FASTA file indexing and random access",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "pyfaidx",
+    "local_info": {
+      "name": "pyfaidx",
+      "description": "Pure Python implementation of samtools faidx FASTA indexing for efficient random access to large FASTA files. Supports sequence slicing and extraction without loading entire files into memory.",
+      "category": "Genomics File I/O",
+      "import_name": "pyfaidx",
+      "popularity": 75,
+      "keywords": [
+        "FASTA files",
+        "indexing",
+        "random access",
+        "sequence extraction",
+        "samtools"
+      ],
+      "documentation": "https://github.com/mdshw5/pyfaidx",
+      "repository": "https://github.com/mdshw5/pyfaidx",
+      "installation": {
+        "pip": "pip install pyfaidx",
+        "conda": "conda install -c bioconda pyfaidx"
+      },
+      "usage_example": "from pyfaidx import Fasta\n\n# Open FASTA file\nfa = Fasta('genome.fa')\n\n# Extract sequences\nseq = fa['chr1'][1000:2000]  # Get bases 1000-2000\nprint(seq)\n\n# Get chromosome names\nprint(list(fa.keys()))\n\n# Get sequence length\nprint(len(fa['chr1']))",
+      "quick_start": [
+        "Install: pip install pyfaidx",
+        "Open FASTA: fa = Fasta('genome.fa')",
+        "Extract sequence: fa['chr1'][start:end]",
+        "List contigs: list(fa.keys())",
+        "Command line: faidx genome.fa chr1:1000-2000"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyranges_info",
+    "description": "Get comprehensive information about PyRanges \u2013 efficient genomic interval operations",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "pyranges",
+    "local_info": {
+      "name": "PyRanges",
+      "description": "Efficient and intuitive genomic interval operations in Python. Provides fast set operations, intersection, and manipulation of genomic ranges with pandas-like syntax.",
+      "category": "Genomic Intervals",
+      "import_name": "pyranges",
+      "popularity": 78,
+      "keywords": [
+        "genomic intervals",
+        "interval operations",
+        "BED files",
+        "GTF files",
+        "set operations"
+      ],
+      "documentation": "https://pyranges.readthedocs.io/",
+      "repository": "https://github.com/pyranges/pyranges",
+      "installation": {
+        "pip": "pip install pyranges",
+        "conda": "conda install -c bioconda pyranges"
+      },
+      "usage_example": "import pyranges as pr\n\n# Read BED file\nbedfile = pr.read_bed('genes.bed')\n\n# Create intervals\nintervals = pr.PyRanges(chromosomes=['chr1', 'chr2'],\n                       starts=[100, 200],\n                       ends=[200, 300])\n\n# Intersection\noverlaps = bedfile.intersect(intervals)\nprint(overlaps)\n\n# Nearest features\nnearest = bedfile.nearest(intervals)\nprint(nearest)",
+      "quick_start": [
+        "Install: pip install pyranges",
+        "Read files: pr.read_bed('file.bed'), pr.read_gtf('file.gtf')",
+        "Create ranges: pr.PyRanges(chromosomes, starts, ends)",
+        "Operations: intersect(), subtract(), nearest()",
+        "Filter and manipulate with pandas-like syntax"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pybedtools_info",
+    "description": "Get comprehensive information about pybedtools \u2013 Python wrapper for BEDTools",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "pybedtools",
+    "local_info": {
+      "name": "pybedtools",
+      "description": "Python wrapper for Aaron Quinlan's BEDTools suite. Provides intuitive Python interface for genomic interval operations, sequence analysis, and file format conversions.",
+      "category": "Genomic Intervals",
+      "import_name": "pybedtools",
+      "popularity": 82,
+      "keywords": [
+        "BEDTools",
+        "genomic intervals",
+        "interval operations",
+        "sequence analysis",
+        "file conversion"
+      ],
+      "documentation": "https://daler.github.io/pybedtools/",
+      "repository": "https://github.com/daler/pybedtools",
+      "installation": {
+        "pip": "pip install pybedtools",
+        "conda": "conda install -c bioconda pybedtools"
+      },
+      "usage_example": "import pybedtools\n\n# Create BedTool objects\na = pybedtools.BedTool('a.bed')\nb = pybedtools.BedTool('b.bed')\n\n# Intersection\nintersection = a.intersect(b)\n\n# Subtract\nsubtracted = a.subtract(b)\n\n# Closest features\nclosest = a.closest(b)\n\n# Save results\nintersection.saveas('intersection.bed')",
+      "quick_start": [
+        "Install: pip install pybedtools",
+        "Create objects: pybedtools.BedTool('file.bed')",
+        "Operations: intersect(), subtract(), closest()",
+        "Chain operations: a.intersect(b).subtract(c)",
+        "Save results: result.saveas('output.bed')"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyliftover_info",
+    "description": "Get comprehensive information about PyLiftover \u2013 genomic coordinate conversion between assemblies",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "pyliftover",
+    "local_info": {
+      "name": "PyLiftover",
+      "description": "Pure Python implementation of UCSC liftOver for quick and easy conversion of genomic coordinates between different genome assemblies.",
+      "category": "Genomics Tools",
+      "import_name": "pyliftover",
+      "popularity": 65,
+      "keywords": [
+        "liftover",
+        "coordinate conversion",
+        "genome assemblies",
+        "UCSC",
+        "genomic coordinates"
+      ],
+      "documentation": "https://github.com/konstantint/pyliftover",
+      "repository": "https://github.com/konstantint/pyliftover",
+      "installation": {
+        "pip": "pip install pyliftover",
+        "conda": "conda install -c bioconda pyliftover"
+      },
+      "usage_example": "from pyliftover import LiftOver\n\n# Initialize liftover from hg19 to hg38\nlo = LiftOver('hg19', 'hg38')\n\n# Convert coordinates\nresult = lo.convert_coordinate('chr1', 1000000)\nif result:\n    new_chr, new_pos, new_strand = result[0]\n    print(f'hg19 chr1:1000000 -> hg38 {new_chr}:{new_pos}')\nelse:\n    print('Coordinate could not be lifted over')",
+      "quick_start": [
+        "Install: pip install pyliftover",
+        "Initialize: lo = LiftOver('hg19', 'hg38')",
+        "Convert: result = lo.convert_coordinate('chr1', pos)",
+        "Check result: if result: new_chr, new_pos = result[0]",
+        "Batch convert: Use loops for multiple coordinates"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_deeptools_info",
+    "description": "Get comprehensive information about deepTools \u2013 deep sequencing data processing",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about deepTools"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "deeptools",
+    "local_info": {
+      "name": "deepTools",
+      "description": "Tools to process and analyze deep sequencing data, particularly for ChIP-seq, RNA-seq, and ATAC-seq experiments. Provides normalization, visualization, and quality control functions.",
+      "category": "Genomics / NGS Analysis",
+      "import_name": "deeptools",
+      "popularity": 80,
+      "keywords": [
+        "ChIP-seq",
+        "RNA-seq",
+        "ATAC-seq",
+        "NGS",
+        "normalization",
+        "visualization"
+      ],
+      "documentation": "https://deeptools.readthedocs.io/",
+      "repository": "https://github.com/deeptools/deepTools",
+      "installation": {
+        "pip": "pip install deeptools",
+        "conda": "conda install -c conda-forge deeptools"
+      },
+      "usage_example": "# Command line tools:\n# Convert BAM to bigWig\nbamCoverage -b input.bam -o output.bw\n\n# Compute correlation matrix\nmultiBigwigSummary bins -b file1.bw file2.bw -o matrix.npz\nplotCorrelation -in matrix.npz -o correlation.png\n\n# Create heatmap around TSS\ncomputeMatrix reference-point -S signals.bw -R genes.bed -o matrix.gz\nplotHeatmap -m matrix.gz -o heatmap.png",
+      "quick_start": [
+        "Install: pip install deeptools",
+        "BAM to bigWig: bamCoverage -b file.bam -o file.bw",
+        "Compute matrix: computeMatrix reference-point -S file.bw -R regions.bed",
+        "Plot heatmap: plotHeatmap -m matrix.gz -o heatmap.png",
+        "Quality control: plotFingerprint -b *.bam",
+        "Correlation: plotCorrelation -in matrix.npz"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_clair3_info",
+    "description": "Get comprehensive information about Clair3 \u2013 variant calling for long-read sequencing",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about Clair3"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "clair3",
+    "local_info": {
+      "name": "Clair3",
+      "description": "Symphonizing pileup and full-alignment for high-performance long-read variant calling. Uses deep learning for accurate SNP and indel detection from PacBio and Oxford Nanopore sequencing data.",
+      "category": "Genomics / Variant Calling",
+      "import_name": "clair3",
+      "popularity": 75,
+      "keywords": [
+        "variant calling",
+        "long-read sequencing",
+        "deep learning",
+        "PacBio",
+        "Oxford Nanopore"
+      ],
+      "documentation": "https://github.com/HKU-BAL/Clair3",
+      "repository": "https://github.com/HKU-BAL/Clair3",
+      "installation": {
+        "pip": "pip install clair3",
+        "conda": "conda install -c conda-forge clair3"
+      },
+      "usage_example": "# Command line usage:\n# Run Clair3 for variant calling\nrun_clair3.sh \\\n  --bam_fn=input.bam \\\n  --ref_fn=reference.fa \\\n  --threads=8 \\\n  --platform=ont \\\n  --model_path=ont_guppy5 \\\n  --output=output_dir\n\n# For PacBio data:\nrun_clair3.sh \\\n  --bam_fn=input.bam \\\n  --ref_fn=reference.fa \\\n  --threads=8 \\\n  --platform=hifi \\\n  --model_path=hifi \\\n  --output=output_dir",
+      "quick_start": [
+        "Install: conda install -c conda-forge clair3",
+        "Prepare: BAM file, reference genome, choose platform",
+        "Run: run_clair3.sh --bam_fn input.bam --ref_fn ref.fa",
+        "Platform: --platform=ont (Nanopore) or hifi (PacBio)",
+        "Output: VCF files with variants and quality scores"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_arboreto_info",
+    "description": "Get comprehensive information about Arboreto \u2013 gene regulatory network inference",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about Arboreto"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "arboreto",
+    "local_info": {
+      "name": "Arboreto",
+      "description": "Scalable gene regulatory network inference using tree-based ensemble methods. Implements GRNBoost2 and other algorithms for inferring gene regulatory networks from expression data, designed for single-cell and bulk RNA-seq.",
+      "category": "Gene Regulatory Networks",
+      "import_name": "arboreto",
+      "popularity": 72,
+      "keywords": [
+        "gene regulatory networks",
+        "GRNBoost2",
+        "tree ensemble",
+        "transcription factors",
+        "network inference"
+      ],
+      "documentation": "https://arboreto.readthedocs.io/",
+      "repository": "https://github.com/aertslab/arboreto",
+      "installation": {
+        "pip": "pip install arboreto",
+        "conda": "conda install -c bioconda arboreto"
+      },
+      "usage_example": "import pandas as pd\nimport numpy as np\nfrom arboreto.algo import grnboost2, genie3\nfrom arboreto.utils import load_tf_names\n\n# Create sample expression data (genes x samples)\nnp.random.seed(42)\ngenes = [f'Gene_{i}' for i in range(100)]\nsamples = [f'Sample_{i}' for i in range(50)]\nexpression_data = pd.DataFrame(\n    np.random.lognormal(1, 1, (100, 50)),\n    index=genes,\n    columns=samples\n)\n\nprint(f'Expression data shape: {expression_data.shape}')\n\n# Define transcription factors (subset of genes)\ntf_names = genes[:20]  # First 20 genes as TFs\nprint(f'Number of TFs: {len(tf_names)}')\n\n# Run GRNBoost2 algorithm\nnetwork = grnboost2(\n    expression_data=expression_data,\n    tf_names=tf_names,\n    verbose=True\n)\n\nprint(f'Inferred network shape: {network.shape}')\nprint('Top 10 regulatory interactions:')\nprint(network.head(10))\n\n# Filter network by importance threshold\nthreshold = network['importance'].quantile(0.95)\nfiltered_network = network[network['importance'] >= threshold]\nprint(f'High-confidence interactions: {len(filtered_network)}')\n\n# Alternative: Use GENIE3 algorithm\n# network_genie3 = genie3(\n#     expression_data=expression_data,\n#     tf_names=tf_names\n# )",
+      "quick_start": [
+        "Install: pip install arboreto",
+        "Prepare expression matrix (genes x samples)",
+        "Define TF list: tf_names = ['TF1', 'TF2', ...]",
+        "Run GRNBoost2: grnboost2(expression_data, tf_names)",
+        "Filter by importance: network[network['importance'] > threshold]",
+        "Export for downstream analysis (e.g., pySCENIC)"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_cyvcf2_info",
+    "description": "Get comprehensive information about cyvcf2 \u2013 fast VCF/BCF file processing",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "cyvcf2",
+    "local_info": {
+      "name": "cyvcf2",
+      "description": "Fast Python library for reading and writing VCF and BCF files using Cython and htslib. Provides efficient access to variant call format data.",
+      "category": "Genomics File I/O",
+      "import_name": "cyvcf2",
+      "popularity": 75,
+      "keywords": [
+        "VCF",
+        "BCF",
+        "variant calls",
+        "genomics",
+        "file parsing"
+      ],
+      "documentation": "https://github.com/brentp/cyvcf2",
+      "repository": "https://github.com/brentp/cyvcf2",
+      "installation": {
+        "pip": "pip install cyvcf2",
+        "conda": "conda install -c bioconda cyvcf2"
+      },
+      "usage_example": "from cyvcf2 import VCF\n\n# Open VCF file\nvcf = VCF('variants.vcf.gz')\n\n# Iterate through variants\nfor variant in vcf:\n    print(f'Position: {variant.CHROM}:{variant.POS}')\n    print(f'REF: {variant.REF}, ALT: {variant.ALT}')\n    print(f'Quality: {variant.QUAL}')\n    print(f'Genotypes: {variant.gt_types}')\n    \n    # Access INFO fields\n    if 'AF' in variant.INFO:\n        print(f'Allele frequency: {variant.INFO.get(\"AF\")}')\n    \n    # Filter by quality\n    if variant.QUAL > 30:\n        print('High quality variant')\n    \n    break  # Just show first variant",
+      "quick_start": [
+        "1. Install cyvcf2: pip install cyvcf2",
+        "2. Import: from cyvcf2 import VCF",
+        "3. Open file: vcf = VCF('variants.vcf.gz')",
+        "4. Iterate: for variant in vcf:",
+        "5. Access: variant.CHROM, variant.POS, variant.gt_types"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_gseapy_info",
+    "description": "Get comprehensive information about GSEApy \u2013 Gene Set Enrichment Analysis in Python",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "gseapy",
+    "local_info": {
+      "name": "GSEApy",
+      "description": "Python implementation of Gene Set Enrichment Analysis (GSEA) and gene set analysis tools. Supports multiple databases and provides statistical testing for functional enrichment.",
+      "category": "Functional Genomics",
+      "import_name": "gseapy",
+      "popularity": 75,
+      "keywords": [
+        "gene set enrichment",
+        "GSEA",
+        "pathway analysis",
+        "functional genomics",
+        "GO terms"
+      ],
+      "documentation": "https://gseapy.readthedocs.io/",
+      "repository": "https://github.com/zqfang/GSEApy",
+      "installation": {
+        "pip": "pip install gseapy",
+        "conda": "conda install -c bioconda gseapy"
+      },
+      "usage_example": "import gseapy as gp\nimport pandas as pd\n\n# Gene list enrichment analysis\ngene_list = ['TP53', 'BRCA1', 'BRCA2', 'ATM', 'CHEK2']\nenr = gp.enrichr(gene_list=gene_list,\n                 gene_sets='GO_Biological_Process_2021',\n                 organism='Human')\nprint(enr.results.head())\n\n# GSEA preranked analysis\nranked_genes = pd.Series([3.2, 2.1, -1.5, -2.3], \n                        index=['GENE1', 'GENE2', 'GENE3', 'GENE4'])\ngsea_res = gp.prerank(rnk=ranked_genes, gene_sets='KEGG_2021_Human')",
+      "quick_start": [
+        "1. Install GSEApy: pip install gseapy",
+        "2. Import: import gseapy as gp",
+        "3. Enrichment: gp.enrichr(gene_list, gene_sets)",
+        "4. GSEA: gp.prerank(ranked_genes, gene_sets)",
+        "5. Visualize: plot enrichment results"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_jcvi_info",
+    "description": "Get comprehensive information about JCVI \u2013 genome assembly and comparative genomics",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about JCVI"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "jcvi",
+    "local_info": {
+      "name": "JCVI",
+      "description": "Python library to facilitate genome assembly, annotation, and comparative genomics. Provides tools for synteny analysis, genome visualization, and phylogenetic studies.",
+      "category": "Comparative Genomics / Assembly",
+      "import_name": "jcvi",
+      "popularity": 75,
+      "keywords": [
+        "genome assembly",
+        "comparative genomics",
+        "synteny",
+        "annotation",
+        "phylogenetics"
+      ],
+      "documentation": "https://github.com/tanghaibao/jcvi/wiki",
+      "repository": "https://github.com/tanghaibao/jcvi",
+      "installation": {
+        "pip": "pip install jcvi",
+        "conda": "conda install -c conda-forge jcvi"
+      },
+      "usage_example": "# JCVI is primarily a command-line tool suite\n# Here's how to use it programmatically\n\nimport tempfile\nimport os\nfrom jcvi.formats.fasta import Fasta\nfrom jcvi.formats.bed import Bed\nfrom jcvi.compara.synteny import quota_align\nimport subprocess\n\n# Create sample data for demonstration\nwith tempfile.TemporaryDirectory() as temp_dir:\n    print(f'Working in temporary directory: {temp_dir}')\n    \n    # Create sample FASTA files\n    fasta1_file = os.path.join(temp_dir, 'genome1.fasta')\n    fasta2_file = os.path.join(temp_dir, 'genome2.fasta')\n    \n    # Sample sequences (simplified for demo)\n    sequences1 = {\n        'chr1': 'ATCGATCGATCGATCGATCGATCGATCGAAAAATTTTTGGGGCCCCATCGATCGATCG',\n        'chr2': 'GCTAGCTAGCTAGCTAGCTAGCTAGCTTTTTAAAAACCCCGGGGCTAGCTAGCTAGCT',\n        'chr3': 'TTTTAAAACCCCGGGGTTTTAAAACCCCGGGGAAAAATTTTCCCCGGGGAAAAATTTT'\n    }\n    \n    sequences2 = {\n        'chr1': 'ATCGATCGATCGATCGATCGATCGATCGAAAAATTTTTGGGGCCCCATCGATCGATCG',\n        'chr2': 'GCTAGCTAGCTAGCTAGCTAGCTAGCTTTTTAAAAACCCCGGGGCTAGCTAGCTAGCT',\n        'chr3': 'TTTTAAAACCCCGGGGTTTTAAAACCCCGGGGAAAAATTTTCCCCGGGGAAAAATTTT'\n    }\n    \n    with open(fasta1_file, 'w') as f:\n        for name, seq in sequences1.items():\n            f.write(f'>{name}\\n{seq}\\n')\n    \n    with open(fasta2_file, 'w') as f:\n        for name, seq in sequences2.items():\n            f.write(f'>{name}\\n{seq}\\n')\n    \n    print('Created sample genome FASTA files')\n    \n    # Load FASTA files using JCVI\n    print('\\n=== FASTA Analysis ===')\n    fasta1 = Fasta(fasta1_file)\n    fasta2 = Fasta(fasta2_file)\n    \n    print(f'Genome 1: {len(fasta1)} sequences')\n    print(f'Genome 2: {len(fasta2)} sequences')\n    \n    # Analyze sequence statistics\n    for name in ['genome1', 'genome2']:\n        fasta = fasta1 if name == 'genome1' else fasta2\n        total_length = sum(len(seq) for seq in fasta.values())\n        avg_length = total_length / len(fasta) if fasta else 0\n        \n        print(f'\\n{name.capitalize()} statistics:')\n        print(f'  Total length: {total_length} bp')\n        print(f'  Average sequence length: {avg_length:.1f} bp')\n        print(f'  Sequences: {list(fasta.keys())}')\n    \n    # Create sample BED files for features\n    bed1_file = os.path.join(temp_dir, 'features1.bed')\n    bed2_file = os.path.join(temp_dir, 'features2.bed')\n    \n    # Sample features (genes/annotations)\n    features1 = [\n        ['chr1', '10', '30', 'gene1', '0', '+'],\n        ['chr1', '40', '55', 'gene2', '0', '-'],\n        ['chr2', '15', '35', 'gene3', '0', '+'],\n        ['chr3', '5', '25', 'gene4', '0', '+']\n    ]\n    \n    features2 = [\n        ['chr1', '12', '32', 'gene1_ortho', '0', '+'],\n        ['chr1', '42', '57', 'gene2_ortho', '0', '-'],\n        ['chr2', '17', '37', 'gene3_ortho', '0', '+'],\n        ['chr3', '7', '27', 'gene4_ortho', '0', '+']\n    ]\n    \n    with open(bed1_file, 'w') as f:\n        for feature in features1:\n            f.write('\\t'.join(feature) + '\\n')\n    \n    with open(bed2_file, 'w') as f:\n        for feature in features2:\n            f.write('\\t'.join(feature) + '\\n')\n    \n    print('\\n=== BED Analysis ===')\n    bed1 = Bed(bed1_file)\n    bed2 = Bed(bed2_file)\n    \n    print(f'Features in genome1: {len(bed1)}')\n    print(f'Features in genome2: {len(bed2)}')\n    \n    # Analyze feature distribution\n    for name, bed in [('genome1', bed1), ('genome2', bed2)]:\n        chr_counts = {}\n        for feature in bed:\n            chr_name = feature.seqid\n            chr_counts[chr_name] = chr_counts.get(chr_name, 0) + 1\n        \n        print(f'\\n{name.capitalize()} feature distribution:')\n        for chr_name, count in chr_counts.items():\n            print(f'  {chr_name}: {count} features')\n    \n    # Compare sequences\n    print('\\n=== Sequence Comparison ===')\n    common_sequences = set(fasta1.keys()) & set(fasta2.keys())\n    print(f'Common sequences: {len(common_sequences)}')\n    \n    for seq_name in common_sequences:\n        seq1 = fasta1[seq_name]\n        seq2 = fasta2[seq_name]\n        \n        # Simple similarity calculation\n        matches = sum(1 for a, b in zip(seq1, seq2) if a == b)\n        similarity = matches / min(len(seq1), len(seq2)) * 100\n        \n        print(f'  {seq_name}: {similarity:.1f}% similarity')\n    \n    # Feature comparison\n    print('\\n=== Feature Comparison ===')\n    total_features1 = len(bed1)\n    total_features2 = len(bed2)\n    \n    print(f'Genome1 features: {total_features1}')\n    print(f'Genome2 features: {total_features2}')\n    \n    # Check for overlapping regions (simplified)\n    overlaps = 0\n    for f1 in bed1:\n        for f2 in bed2:\n            if (f1.seqid == f2.seqid and \n                not (f1.end < f2.start or f2.end < f1.start)):\n                overlaps += 1\n                break\n    \n    print(f'Features with overlapping regions: {overlaps}')\n\nprint('\\nJCVI provides:')\nprint('- Genome assembly tools')\nprint('- Comparative genomics analysis')\nprint('- Synteny detection and visualization')\nprint('- Phylogenetic analysis')\nprint('- Format conversion utilities')\nprint('- Integration with common genomics formats')\n\nprint('\\nCommon JCVI command-line tools:')\nprint('- python -m jcvi.graphics.synteny: synteny plots')\nprint('- python -m jcvi.compara.catalog: ortholog identification')\nprint('- python -m jcvi.assembly.allmaps: genetic map integration')\nprint('- python -m jcvi.formats.fasta: FASTA utilities')",
+      "quick_start": [
+        "Install: pip install jcvi",
+        "Load FASTA: from jcvi.formats.fasta import Fasta",
+        "Load BED: from jcvi.formats.bed import Bed",
+        "Synteny analysis: jcvi.compara.synteny",
+        "Graphics: jcvi.graphics modules",
+        "Use command-line tools for complex analyses"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pydeseq2_info",
+    "description": "Get comprehensive information about PyDESeq2 \u2013 RNA-seq differential expression analysis",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about PyDESeq2"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "pydeseq2",
+    "local_info": {
+      "name": "PyDESeq2",
+      "description": "Python implementation of the DESeq2 pipeline for bulk RNA-seq differential expression analysis. Provides statistical methods for identifying differentially expressed genes between conditions.",
+      "category": "RNA-seq / Differential Expression",
+      "import_name": "pydeseq2",
+      "popularity": 70,
+      "keywords": [
+        "RNA-seq",
+        "differential expression",
+        "DESeq2",
+        "transcriptomics",
+        "statistics"
+      ],
+      "documentation": "https://pydeseq2.readthedocs.io/",
+      "repository": "https://github.com/owkin/PyDESeq2",
+      "installation": {
+        "pip": "pip install pydeseq2",
+        "conda": "conda install -c conda-forge pydeseq2"
+      },
+      "usage_example": "import pandas as pd\nimport numpy as np\nfrom pydeseq2 import DeseqDataSet\nfrom pydeseq2.dds import DeseqStats\nfrom pydeseq2.default_inference import DefaultInference\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nprint('PyDESeq2 - RNA-seq Differential Expression Analysis')\nprint('=' * 55)\n\n# Create synthetic RNA-seq count data\nprint('Creating synthetic RNA-seq count data...')\n\n# Set random seed for reproducibility\nnp.random.seed(42)\n\n# Parameters\nn_genes = 1000\nn_samples_per_condition = 6\nconditions = ['control', 'treatment']\ntotal_samples = n_samples_per_condition * len(conditions)\n\n# Generate gene names\ngene_names = [f'Gene_{i:04d}' for i in range(1, n_genes + 1)]\n\n# Generate sample names and metadata\nsample_names = []\ncondition_labels = []\nfor condition in conditions:\n    for i in range(n_samples_per_condition):\n        sample_names.append(f'{condition}_rep{i+1}')\n        condition_labels.append(condition)\n\n# Create metadata DataFrame\nmetadata = pd.DataFrame({\n    'sample_id': sample_names,\n    'condition': condition_labels\n})\nmetadata.set_index('sample_id', inplace=True)\n\nprint(f'Created metadata for {len(sample_names)} samples:')\nprint(metadata.groupby('condition').size())\n\n# Generate count matrix\nprint('\\nGenerating count matrix...')\n\n# Base expression levels (log scale)\nbase_expression = np.random.negative_binomial(n=5, p=0.3, size=n_genes)\n\n# Create count matrix\ncounts = np.zeros((n_genes, total_samples))\n\n# Generate counts for each sample\nfor i, condition in enumerate(condition_labels):\n    # Add some noise and condition-specific effects\n    if condition == 'control':\n        # Control condition - use base expression\n        sample_counts = np.random.negative_binomial(\n            n=base_expression, \n            p=0.1,  # Dispersion parameter\n            size=n_genes\n        )\n    else:\n        # Treatment condition - add differential expression\n        # Select ~10% of genes to be differentially expressed\n        de_genes = np.random.choice(n_genes, size=int(0.1 * n_genes), replace=False)\n        \n        modified_expression = base_expression.copy()\n        \n        # Half upregulated, half downregulated\n        up_genes = de_genes[:len(de_genes)//2]\n        down_genes = de_genes[len(de_genes)//2:]\n        \n        # Upregulate (2-4 fold)\n        modified_expression[up_genes] *= np.random.uniform(2, 4, len(up_genes))\n        \n        # Downregulate (0.25-0.5 fold)\n        modified_expression[down_genes] *= np.random.uniform(0.25, 0.5, len(down_genes))\n        \n        sample_counts = np.random.negative_binomial(\n            n=modified_expression.astype(int), \n            p=0.1,\n            size=n_genes\n        )\n    \n    counts[:, i] = sample_counts\n\n# Create count DataFrame\ncount_df = pd.DataFrame(counts, index=gene_names, columns=sample_names)\ncount_df = count_df.astype(int)\n\nprint(f'Count matrix shape: {count_df.shape}')\nprint(f'Total reads per sample:')\nfor sample in count_df.columns:\n    total_reads = count_df[sample].sum()\n    print(f'  {sample}: {total_reads:} reads')\n\nprint(f'\\nCount statistics:')\nprint(f'  Mean counts per gene: {count_df.mean(axis=1).mean():.1f}')\nprint(f'  Median counts per gene: {count_df.median(axis=1).median():.1f}')\nprint(f'  Genes with zero counts: {(count_df.sum(axis=1) == 0).sum()}')\n\n# Filter low-count genes\nprint('\\nFiltering low-count genes...')\nmin_count = 10\nmin_samples = 3\n\n# Keep genes with at least min_count reads in at least min_samples samples\nkeep_genes = (count_df >= min_count).sum(axis=1) >= min_samples\nfiltered_counts = count_df[keep_genes]\n\nprint(f'Genes before filtering: {len(count_df)}')\nprint(f'Genes after filtering: {len(filtered_counts)}')\nprint(f'Genes removed: {len(count_df) - len(filtered_counts)}')\n\n# Create DESeq2 dataset\nprint('\\n=== DESeq2 Analysis ===')\nprint('Creating DESeq2 dataset...')\n\n# Prepare data for PyDESeq2\ninference = DefaultInference(n_cpus=1)\n\n# Create DESeq2 dataset\ndds = DeseqDataSet(\n    counts=filtered_counts,\n    metadata=metadata,\n    design_factors=['condition'],\n    refit_cooks=True,\n    inference=inference\n)\n\nprint(f'DESeq2 dataset created with {dds.n_obs} genes and {dds.n_vars} samples')\n\n# Run DESeq2 analysis\nprint('\\nRunning DESeq2 analysis...')\nprint('1. Estimating size factors...')\ndds.fit_size_factors()\n\nprint('2. Estimating dispersions...')\ndds.fit_genewise_dispersions()\ndds.fit_dispersion_trend()\ndds.fit_dispersion_prior()\ndds.fit_MAP_dispersions()\n\nprint('3. Fitting generalized linear model...')\ndds.fit_LFC()\n\nprint('4. Running statistical tests...')\nstat_res = DeseqStats(dds, inference=inference)\nstat_res.summary()\n\n# Get results\nprint('\\n=== Results Analysis ===')\nresults_df = stat_res.results_df\n\nprint(f'Results shape: {results_df.shape}')\nprint(f'Columns: {list(results_df.columns)}')\n\n# Filter for significant genes\nalpha = 0.05\nlog2fc_threshold = 1.0\n\nsignificant = (\n    (results_df['padj'] < alpha) & \n    (np.abs(results_df['log2FoldChange']) > log2fc_threshold)\n)\n\nupregulated = (\n    (results_df['padj'] < alpha) & \n    (results_df['log2FoldChange'] > log2fc_threshold)\n)\n\ndownregulated = (\n    (results_df['padj'] < alpha) & \n    (results_df['log2FoldChange'] < -log2fc_threshold)\n)\n\nprint(f'\\nDifferential expression results:')\nprint(f'  Total genes tested: {len(results_df)}')\nprint(f'  Significant genes (padj < {alpha}, |log2FC| > {log2fc_threshold}): {significant.sum()}')\nprint(f'  Upregulated genes: {upregulated.sum()}')\nprint(f'  Downregulated genes: {downregulated.sum()}')\n\n# Show top differentially expressed genes\nprint('\\nTop 10 upregulated genes:')\ntop_up = results_df[upregulated].nlargest(10, 'log2FoldChange')\nfor gene, row in top_up.iterrows():\n    print(f'  {gene}: log2FC={row[\"log2FoldChange\"]:.2f}, padj={row[\"padj\"]:.2e}')\n\nprint('\\nTop 10 downregulated genes:')\ntop_down = results_df[downregulated].nsmallest(10, 'log2FoldChange')\nfor gene, row in top_down.iterrows():\n    print(f'  {gene}: log2FC={row[\"log2FoldChange\"]:.2f}, padj={row[\"padj\"]:.2e}')\n\n# Quality control plots\nprint('\\n=== Quality Control Plots ===')\n\nfig, axes = plt.subplots(2, 2, figsize=(12, 10))\n\n# 1. MA plot\naxes[0, 0].scatter(results_df['baseMean'], results_df['log2FoldChange'], \n                  alpha=0.5, s=1, color='gray')\naxes[0, 0].scatter(results_df.loc[significant, 'baseMean'], \n                  results_df.loc[significant, 'log2FoldChange'], \n                  alpha=0.7, s=2, color='red')\naxes[0, 0].axhline(y=0, color='blue', linestyle='--', alpha=0.7)\naxes[0, 0].axhline(y=log2fc_threshold, color='green', linestyle='--', alpha=0.7)\naxes[0, 0].axhline(y=-log2fc_threshold, color='green', linestyle='--', alpha=0.7)\naxes[0, 0].set_xlabel('Mean Expression')\naxes[0, 0].set_ylabel('Log2 Fold Change')\naxes[0, 0].set_title('MA Plot')\naxes[0, 0].set_xscale('log')\n\n# 2. Volcano plot\np_values = -np.log10(results_df['padj'].fillna(1))\naxes[0, 1].scatter(results_df['log2FoldChange'], p_values, \n                  alpha=0.5, s=1, color='gray')\naxes[0, 1].scatter(results_df.loc[significant, 'log2FoldChange'], \n                  p_values[significant], \n                  alpha=0.7, s=2, color='red')\naxes[0, 1].axhline(y=-np.log10(alpha), color='green', linestyle='--', alpha=0.7)\naxes[0, 1].axvline(x=log2fc_threshold, color='green', linestyle='--', alpha=0.7)\naxes[0, 1].axvline(x=-log2fc_threshold, color='green', linestyle='--', alpha=0.7)\naxes[0, 1].set_xlabel('Log2 Fold Change')\naxes[0, 1].set_ylabel('-Log10 Adjusted P-value')\naxes[0, 1].set_title('Volcano Plot')\n\n# 3. P-value histogram\naxes[1, 0].hist(results_df['pvalue'].dropna(), bins=50, alpha=0.7, color='skyblue')\naxes[1, 0].set_xlabel('P-value')\naxes[1, 0].set_ylabel('Frequency')\naxes[1, 0].set_title('P-value Distribution')\n\n# 4. Dispersion plot\naxes[1, 1].scatter(dds.layers['normed_counts'].mean(axis=1), \n                  dds.varm['dispersions'], \n                  alpha=0.5, s=1, color='gray')\naxes[1, 1].set_xlabel('Mean Normalized Counts')\naxes[1, 1].set_ylabel('Dispersion')\naxes[1, 1].set_title('Dispersion Estimates')\naxes[1, 1].set_xscale('log')\naxes[1, 1].set_yscale('log')\n\nplt.tight_layout()\n\n# Save plots\nimport tempfile\nwith tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp:\n    plt.savefig(tmp.name, dpi=150, bbox_inches='tight')\n    plot_file = tmp.name\n\nplt.close()\nprint(f'QC plots saved to: {plot_file}')\n\n# Summary statistics\nprint('\\n' + '=' * 55)\nprint('DIFFERENTIAL EXPRESSION ANALYSIS SUMMARY')\nprint('=' * 55)\nprint(f'Total genes analyzed: {len(results_df):}')\nprint(f'Significant DE genes: {significant.sum():} ({significant.sum()/len(results_df)*100:.1f}%)')\nprint(f'Upregulated genes: {upregulated.sum():}')\nprint(f'Downregulated genes: {downregulated.sum():}')\nprint(f'Significance threshold: padj < {alpha}')\nprint(f'Fold change threshold: |log2FC| > {log2fc_threshold}')\n\n# Effect size distribution\nif significant.sum() > 0:\n    sig_lfc = results_df.loc[significant, 'log2FoldChange']\n    print(f'\\nEffect size statistics (significant genes):')\n    print(f'  Mean |log2FC|: {np.abs(sig_lfc).mean():.2f}')\n    print(f'  Max upregulation: {sig_lfc.max():.2f} log2FC')\n    print(f'  Max downregulation: {sig_lfc.min():.2f} log2FC')\n\n# Cleanup\nimport os\nos.unlink(plot_file)\nprint('\\nDemo complete - temporary files cleaned up')\n\nprint('\\nPyDESeq2 provides:')\nprint('\u2022 Python implementation of DESeq2')\nprint('\u2022 Differential expression analysis')\nprint('\u2022 Size factor normalization')\nprint('\u2022 Dispersion estimation')\nprint('\u2022 Statistical testing with multiple correction')\nprint('\u2022 Integration with pandas and numpy')\nprint('\u2022 Visualization and quality control')",
+      "quick_start": [
+        "Install: pip install pydeseq2",
+        "Create dataset: dds = DeseqDataSet(counts, metadata, design_factors)",
+        "Fit model: dds.fit_size_factors(); dds.fit_genewise_dispersions()",
+        "Run stats: stat_res = DeseqStats(dds)",
+        "Get results: results_df = stat_res.results_df",
+        "Filter significant: results_df[results_df['padj'] < 0.05]"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_cellxgene_census_info",
+    "description": "Get comprehensive information about cellxgene-census \u2013 access to the CELLxGENE Census single-cell data",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about cellxgene-census"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "cellxgene-census",
+    "local_info": {
+      "name": "cellxgene-census",
+      "description": "Python API for querying and accessing the CELLxGENE Census, a unified collection of publicly available single-cell RNA sequencing datasets. Provides standardized access to millions of cells across thousands of datasets.",
+      "category": "Single-Cell Data Access",
+      "import_name": "cellxgene_census",
+      "popularity": 78,
+      "keywords": [
+        "single-cell",
+        "RNA-seq",
+        "census",
+        "public datasets",
+        "cell atlas"
+      ],
+      "documentation": "https://chanzuckerberg.github.io/cellxgene-census/",
+      "repository": "https://github.com/chanzuckerberg/cellxgene-census",
+      "installation": {
+        "pip": "pip install cellxgene-census",
+        "conda": "conda install -c conda-forge cellxgene-census"
+      },
+      "usage_example": "import cellxgene_census\nimport pandas as pd\n\n# Open the census\nwith cellxgene_census.open_soma() as census:\n    # Query human data\n    human = census['census_data']['homo_sapiens']\n    \n    # Get cell metadata\n    cell_metadata = human.obs.read(\n        value_filter=\"tissue == 'lung'\",\n        column_names=['dataset_id', 'cell_type', 'disease']\n    ).concat().to_pandas()\n    \n    print(f'Found {len(cell_metadata)} lung cells')\n    print(cell_metadata['cell_type'].value_counts().head())\n    \n    # Query expression data for specific genes\n    var_df = human.var.read(\n        value_filter=\"feature_name in ['GAPDH', 'ACTB']\"\n    ).concat().to_pandas()\n    \n    print(f'Gene IDs: {var_df[\"soma_joinid\"].tolist()}')",
+      "quick_start": [
+        "Install: pip install cellxgene-census",
+        "Open census: cellxgene_census.open_soma()",
+        "Query cell metadata by tissue, cell type, or disease",
+        "Access expression data for specific genes",
+        "Filter and download subsets of data",
+        "Integrate with scanpy and other analysis tools"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_viennarna_info",
+    "description": "Get comprehensive information about ViennaRNA \u2013 RNA structure prediction and analysis",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "viennarna",
+    "local_info": {
+      "name": "ViennaRNA",
+      "description": "C library with Python bindings for RNA secondary structure prediction and comparison. Includes algorithms for minimum free energy folding, partition function calculations, and more.",
+      "category": "RNA Structure",
+      "import_name": "RNA",
+      "popularity": 75,
+      "keywords": [
+        "RNA structure",
+        "secondary structure",
+        "folding",
+        "thermodynamics",
+        "bioinformatics"
+      ],
+      "documentation": "https://www.tbi.univie.ac.at/RNA/",
+      "repository": "https://github.com/ViennaRNA/ViennaRNA",
+      "installation": {
+        "pip": "pip install viennarna",
+        "conda": "conda install -c bioconda viennarna"
+      },
+      "usage_example": "import RNA\n\n# RNA sequence\nsequence = 'GGGAAAUCC'\n\n# Predict minimum free energy structure\nstructure, mfe = RNA.fold(sequence)\nprint(f'Sequence: {sequence}')\nprint(f'Structure: {structure}')\nprint(f'MFE: {mfe:.2f} kcal/mol')\n\n# Calculate partition function\npf_structure, fe = RNA.pf_fold(sequence)\nprint(f'Partition function structure: {pf_structure}')\nprint(f'Free energy: {fe:.2f} kcal/mol')\n\n# Base pair probabilities\nprobs = RNA.pf_fold(sequence)[1]\nprint(f'Base pair probabilities computed')",
+      "quick_start": [
+        "1. Install ViennaRNA: conda install -c bioconda viennarna",
+        "2. Import: import RNA",
+        "3. Fold: structure, mfe = RNA.fold(sequence)",
+        "4. Partition function: RNA.pf_fold(sequence)",
+        "5. Analyze: base pair probabilities, energy"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_reportlab_info",
+    "description": "Get comprehensive information about ReportLab \u2013 PDF generation library",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "reportlab",
+    "local_info": {
+      "name": "ReportLab",
+      "description": "Open-source Python library for generating PDF documents. Supports text, graphics, charts, and complex layouts for creating reports and documents programmatically.",
+      "category": "Document Generation",
+      "import_name": "reportlab",
+      "popularity": 80,
+      "keywords": [
+        "PDF generation",
+        "reports",
+        "documents",
+        "charts",
+        "graphics"
+      ],
+      "documentation": "https://docs.reportlab.com/",
+      "repository": "https://github.com/MrBitBucket/reportlab-mirror",
+      "installation": {
+        "pip": "pip install reportlab",
+        "conda": "conda install -c conda-forge reportlab"
+      },
+      "usage_example": "from reportlab.pdfgen import canvas\nfrom reportlab.lib.pagesizes import letter, A4\nfrom reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer\nfrom reportlab.lib.styles import getSampleStyleSheet\n\n# Simple PDF with canvas\nc = canvas.Canvas('hello.pdf', pagesize=letter)\nc.drawString(100, 750, 'Hello World!')\nc.showPage()\nc.save()\n\n# More complex document\ndoc = SimpleDocTemplate('report.pdf', pagesize=A4)\nstyles = getSampleStyleSheet()\nstory = []\n\n# Add title\ntitle = Paragraph('My Report', styles['Title'])\nstory.append(title)\nstory.append(Spacer(1, 12))\n\n# Add content\ncontent = Paragraph('This is the content of my report.', styles['Normal'])\nstory.append(content)\n\ndoc.build(story)",
+      "quick_start": [
+        "1. Install ReportLab: pip install reportlab",
+        "2. Import: from reportlab.pdfgen import canvas",
+        "3. Create: c = canvas.Canvas('output.pdf')",
+        "4. Add content: c.drawString(x, y, 'text')",
+        "5. Save: c.save()"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyvcf_info",
+    "description": "Get information about the pyvcf package. Python library for parsing and manipulating VCF files",
+    "package_name": "pyvcf",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_kipoiseq_info",
+    "description": "Get information about the kipoiseq package. Kipoi sequence utilities for genomics deep learning",
+    "package_name": "kipoiseq",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyfasta_info",
+    "description": "Get information about the pyfasta package. Python library for efficient random access to fasta subsequences",
+    "package_name": "pyfasta",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyensembl_info",
+    "description": "Get information about the pyensembl package. Python interface to Ensembl reference genome metadata",
+    "package_name": "pyensembl",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_poretools_info",
+    "description": "Get information about the poretools package. Python package: poretools",
+    "package_name": "poretools",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  }
+]

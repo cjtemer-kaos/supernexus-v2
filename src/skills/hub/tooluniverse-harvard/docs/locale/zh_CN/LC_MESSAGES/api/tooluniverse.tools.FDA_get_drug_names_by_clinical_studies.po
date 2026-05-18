@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.rst:2
+#: 6ba25e7608464152a2875fb1da26e7f3
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_clinical\\_studies module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_clinical\\_studies 模块"
+
+#: 6f6290665a30443ba9f598518e90bece of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies:1
+msgid "FDA_get_drug_names_by_clinical_studies"
+msgstr "FDA_通过临床研究获取药物名称"
+
+#: 4fa34b5fdbdb48f695f4c93da904fed9 cefc03aa61cf42fcba92342c5aab3b01 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies:3
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:1
+msgid ""
+"Retrieve drug names based on the presence of clinical studies information."
+msgstr "根据临床研究信息的存在检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.rst
+#: 400180f865d749728f4eb1968d696223
+msgid "Parameters"
+msgstr "参数"
+
+#: bda2fad11390469d97612908e323822b of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:3
+msgid ""
+"Information related to clinical studies. Use keywords split by blank space."
+msgstr "与临床研究相关的信息。使用以空格分隔的关键词。"
+
+#: 6c8c31c973e74277a9b86ababcd555fe of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: f27f3e4c0e2c4c94b313dbfc01ff9549 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 349503a9674746d18c873b2159c93c48 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 00fe7aeb36f44a7aa6b97a18a29148c0 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d0630168028047c7adbd64889fa46208 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a1909747c1034c3ba57ae7262592a381 of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.rst
+#: e2030d5c3dc54c48bf4428790fd2b366
+msgid "Return type"
+msgstr "返回类型"
+
+#: 750b81609a694c38af5536ea260cf96f of
+#: tooluniverse.tools.FDA_get_drug_names_by_clinical_studies.FDA_get_drug_names_by_clinical_studies:18
+msgid ":py:class:`Any`"
+msgstr ""

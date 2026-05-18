@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubMed_search_articles.rst:2
+#: 134b0ee73ade4fea88e2507f6fbf8329
+msgid "tooluniverse.tools.PubMed\\_search\\_articles module"
+msgstr "tooluniverse.tools.PubMed\\_search\\_articles 模块"
+
+#: 29b32a01946744c4b0b072720865ad93 of
+#: tooluniverse.tools.PubMed_search_articles:1
+msgid "PubMed_search_articles"
+msgstr "PubMed_搜索文章"
+
+#: 75597e3f57ed430b8ee1f1b4dea549a4 84d58988167147a68c45e7b041ccdca3 of
+#: tooluniverse.tools.PubMed_search_articles:3
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:1
+msgid ""
+"Search PubMed using NCBI E-utilities (esearch + esummary) and return "
+"articles. Returns articles w..."
+msgstr "使用NCBI E-utilities（esearch + esummary）在PubMed中进行搜索并返回文章。返回的文章..."
+
+#: ../../api/tooluniverse.tools.PubMed_search_articles.rst
+#: 836662aac5894309b4037d34cbb5f062
+msgid "Parameters"
+msgstr "参数"
+
+#: 906599a3994f4ec19184626873c7185d of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:3
+msgid ""
+"Search query for PubMed articles. Use keywords separated by spaces to refine"
+" ..."
+msgstr "搜索PubMed文章的查询。使用空格分隔的关键词进行筛选..."
+
+#: eb17f0d30dff44c090e8df26a78fbe16 of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:5
+msgid ""
+"Number of articles to return. This sets the maximum number of articles "
+"retrie..."
+msgstr "返回的文章数量。此设置用于定义检索文章的最大数量。"
+
+#: 1ef0ad9635e843f5950a972eb714a44c of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:7
+msgid ""
+"Optional NCBI API key for higher rate limits. Get your free key at "
+"https://ww..."
+msgstr "可选的 NCBI API 密钥以提高速率限制。您可以在 https://ww... 免费获取密钥。"
+
+#: 11b44646437e4b11816aa518893e61f9 of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3a3511feb7e74bbfbf9a572adecd1c98 of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a8b6dd77cfd74b9982ea04f6ffc02253 of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubMed_search_articles.rst
+#: efbb29f77c0e404ca68d8c76b6e0e701
+msgid "Return type"
+msgstr "返回类型"
+
+#: 819199f2743c4edcb30c2087300cf63d of
+#: tooluniverse.tools.PubMed_search_articles.PubMed_search_articles:16
+msgid ":py:class:`list[Any]`"
+msgstr ""

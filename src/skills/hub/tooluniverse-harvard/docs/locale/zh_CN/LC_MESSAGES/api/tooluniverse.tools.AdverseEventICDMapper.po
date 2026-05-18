@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.AdverseEventICDMapper.rst:2
+#: ba5119efbc6246cc9b43ca7c0514b14a
+msgid "tooluniverse.tools.AdverseEventICDMapper module"
+msgstr "tooluniverse.tools.AdverseEventICDMapper 模块"
+
+#: 719f601b1d0747db85c3cb97043b46dd of
+#: tooluniverse.tools.AdverseEventICDMapper:1
+msgid "AdverseEventICDMapper"
+msgstr "不良事件ICD映射器"
+
+#: e196d76d44e9493b9f452882f5d9078b e7b309e2f271448e8afb1fd1a5eb2d16 of
+#: tooluniverse.tools.AdverseEventICDMapper:3
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:1
+msgid ""
+"Extracts adverse events from narrative clinical or pharmacovigilance text "
+"and maps each event to ..."
+msgstr "从叙述性临床或药物警戒文本中提取不良事件，并将每个事件映射到..."
+
+#: ../../api/tooluniverse.tools.AdverseEventICDMapper.rst
+#: fab6b53c8e26471ab89458ab9c90a500
+msgid "Parameters"
+msgstr "参数"
+
+#: 631fca308ed4452d95f63c40e0bbd93b of
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:3
+msgid "Unstructured narrative text that may mention adverse events."
+msgstr "非结构化叙述文本可能提及不良事件。"
+
+#: 223fbe7272664fb2ac2db70d91190e24 of
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9d979d45d0234628a288374905c8ccaf of
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 17a223b38e2b4ed688b51ff441dbb83b of
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.AdverseEventICDMapper.rst
+#: 551a10483a074541a65cc51ae86c94f3
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9e30c9b95b8949ddb033a0cfaf06adce of
+#: tooluniverse.tools.AdverseEventICDMapper.AdverseEventICDMapper:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_disposal_info_by_drug_name.rst:2
+#: e730c41c3e724b37b1fbddf2db0e2f98
+msgid "tooluniverse.tools.FDA\\_get\\_disposal\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_disposal\\_info\\_by\\_drug\\_name 模块"
+
+#: 2cf814e4dc874f4fb7ee600ef1f1595c of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name:1
+msgid "FDA_get_disposal_info_by_drug_name"
+msgstr "FDA_按药品名称获取处置信息"
+
+#: 6018479f1d254439a3c93bc40bb08ab1 b870e0d5822145289f76cd60e1d7ac96 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:1
+msgid ""
+"Retrieve disposal and waste handling information based on the drug name."
+msgstr "根据药品名称检索处置和废弃处理信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_disposal_info_by_drug_name.rst
+#: 1a2b40756d6644559fc716b53e48234d
+msgid "Parameters"
+msgstr "参数"
+
+#: 8e8a6e86b7a3418eb082c21c9e02ca46 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: bf4537f43070487fb39d4840dd2e51a9 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 1b56a01cc173460897d7c05b76bed6c7 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 656e3eca866b4755a2c8bc1bed6e5596 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e9970da868974d3d83626338ff18a855 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e07e513aa3bd4ad0a195223f4ef956c1 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_disposal_info_by_drug_name.rst
+#: 16cb177e986744eeabc6a6473d88bb61
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9d61b11537944d7ca1eb8dce167ad525 of
+#: tooluniverse.tools.FDA_get_disposal_info_by_drug_name.FDA_get_disposal_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

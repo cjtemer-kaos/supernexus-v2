@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_drug_routes_by_event.rst:2
+#: f187cef7e796406e8797960f2dc4b620
+msgid "tooluniverse.tools.FAERS\\_count\\_drug\\_routes\\_by\\_event module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_drug\\_routes\\_by\\_event 模块"
+
+#: 0db28c2ebc5441d388096c24265c36b3 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event:1
+msgid "FAERS_count_drug_routes_by_event"
+msgstr "FAERS_按事件统计药物给药途径"
+
+#: 452f06f3f8d140b196b14be8cbc860be a67af348d5c14bf381e9ee8b5f361ab1 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event:3
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:1
+msgid ""
+"Count the most common routes of administration for drugs involved in adverse"
+" event reports. Data ..."
+msgstr "统计与不良事件报告相关药物最常见的给药途径。数据..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_drug_routes_by_event.rst
+#: d95f2d972edb4c2ea262bc56d6e31643
+msgid "Parameters"
+msgstr "参数"
+
+#: d6a0af2367084abb9bf4f0228453eb1a of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:3
+msgid "Drug name."
+msgstr "药品名称。"
+
+#: 63a8b057714f452ea81b84095ae47633 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:5
+msgid "Seriousness of event."
+msgstr "事件严重性"
+
+#: f00d0865579a416a84262282a6019653 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 19e88a40751d45cf9351b62d6e230011 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8123b2790ff14556a83b65e4e92a8047 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_drug_routes_by_event.rst
+#: 46e0e92dfcbe4aee90b798eb0dd19842
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0fa84517eeb646a588f4f2dd639b3e46 of
+#: tooluniverse.tools.FAERS_count_drug_routes_by_event.FAERS_count_drug_routes_by_event:14
+msgid ":py:class:`Any`"
+msgstr ""

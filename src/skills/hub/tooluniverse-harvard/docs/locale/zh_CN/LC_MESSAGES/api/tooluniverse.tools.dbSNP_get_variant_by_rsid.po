@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.dbSNP_get_variant_by_rsid.rst:2
+#: e9abd90d96104d78bfd6d71380ead92b
+msgid "tooluniverse.tools.dbSNP\\_get\\_variant\\_by\\_rsid module"
+msgstr "tooluniverse.tools.dbSNP\\_get\\_variant\\_by\\_rsid 模块"
+
+#: 948f52574d964f61833c09f380926f27 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid:1
+msgid "dbSNP_get_variant_by_rsid"
+msgstr "dbSNP_通过rsid获取变异信息"
+
+#: 10f399684c0d41df8213d21817b8b273 b9292e49fb6b4f58a013640cfbdbd2a6 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid:3
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:1
+msgid ""
+"Fetch dbSNP variant by rsID using NCBI Variation Services (refsnp endpoint)."
+msgstr "使用NCBI变异服务（refsnp端点）通过rsID获取dbSNP变异。"
+
+#: ../../api/tooluniverse.tools.dbSNP_get_variant_by_rsid.rst
+#: 228ca58d236e4717b8ec783226368c3b
+msgid "Parameters"
+msgstr "参数"
+
+#: 8e2a7d17c5244eb8a5bb629855cdcdda of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:3
+msgid "rsID without 'rs' prefix or with (e.g., rs699 or 699)."
+msgstr "rsID 可不带 'rs' 前缀或带有前缀（例如：rs699 或 699）。"
+
+#: 0f24dd0c9dcf47e7b1d16084a5c0ef75 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b88d93120f4b4806b78895238b20bc62 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 96c9eca5be9849df9dccb004b551cb36 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.dbSNP_get_variant_by_rsid.rst
+#: 7307f599f9a0433e84cb819fe8f29d15
+msgid "Return type"
+msgstr "返回类型"
+
+#: a9d754c594534659b1d4ac00c9ad0325 of
+#: tooluniverse.tools.dbSNP_get_variant_by_rsid.dbSNP_get_variant_by_rsid:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

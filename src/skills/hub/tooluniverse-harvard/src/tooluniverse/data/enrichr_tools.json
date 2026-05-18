@@ -1,0 +1,50 @@
+[
+  {
+    "type": "EnrichrTool",
+    "name": "enrichr_gene_enrichment_analysis",
+    "description": "Perform gene enrichment analysis using Enrichr to find biological pathways, processes, and molecular functions associated with a list of genes. Returns connectivity paths between genes and enrichment terms.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of gene names or symbols to analyze. At least 2 genes are required for path ranking analysis.",
+          "minItems": 2
+        },
+        "libs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of enrichment libraries to use for analysis.",
+          "default": [
+            "WikiPathways_2024_Human",
+            "Reactome_Pathways_2024",
+            "MSigDB_Hallmark_2020",
+            "GO_Molecular_Function_2023",
+            "GO_Biological_Process_2023"
+          ]
+        }
+      },
+      "required": [
+        "gene_list"
+      ]
+    },
+    "test_examples": [
+      {
+        "gene_list": [
+          "TP53",
+          "BRCA1",
+          "EGFR"
+        ],
+        "libs": []
+      }
+    ],
+    "return_schema": {
+      "type": "string"
+    }
+  }
+]

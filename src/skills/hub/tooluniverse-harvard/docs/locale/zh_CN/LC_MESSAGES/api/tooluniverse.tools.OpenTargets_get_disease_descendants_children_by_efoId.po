@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.rst:2
+#: 563ebc90b0fd451dad436805b4baaa49
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_disease\\_descendants\\_children\\_by\\_efoId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_disease\\_descendants\\_children\\_by\\_efoId"
+" 模块"
+
+#: 05eef39502364d81b9ac96765aa1cffc of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId:1
+msgid "OpenTargets_get_disease_descendants_children_by_efoId"
+msgstr ""
+"OpenTargets_get_disease_descendants_children_by_efoId  \n"
+"获取疾病后代子节点信息_by_efoId"
+
+#: 0d4649d060a1438dad35dd1319a664dd 0fab2702513846149c4ceb48c3e35f63 of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId:3
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:1
+msgid ""
+"Retrieve the disease descendants and children in the ontology using the "
+"disease EFO ID."
+msgstr "使用疾病的EFO ID在本体中检索疾病的后代和子节点。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.rst
+#: 7ebab18abf8c458396c64865ffa64981
+msgid "Parameters"
+msgstr "参数"
+
+#: e64b4a45b9bc4b5a982e58a4ff44e282 of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:3
+msgid "The EFO ID of the disease."
+msgstr "疾病的EFO ID。"
+
+#: d5fa41469ef048fc9cc0ac44bf7065c7 of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:5
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: a6dee16d05b44f9d9c54b5e2d759b7b6 of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 133581ce2539459e9cedd11d9d58e1ba of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.rst
+#: d71dccb0bf6748868447706fa8143346
+msgid "Return type"
+msgstr "返回类型"
+
+#: 21ffabeacd8a4248bdc75b9e02d2d5c1 of
+#: tooluniverse.tools.OpenTargets_get_disease_descendants_children_by_efoId.OpenTargets_get_disease_descendants_children_by_efoId:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.rst:2
+#: 8b62773020914accab3fb2737e7180b9
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_interactions\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_interactions\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" 模块"
+
+#: f90952bb75f045ec9dbfc02a17ee575f of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:1
+msgid "drugbank_get_drug_interactions_by_drug_name_or_drugbank_id"
+msgstr ""
+"drugbank_get_drug_interactions_by_drug_name_or_drugbank_id  \n"
+"通过药物名称或DrugBank ID获取药物相互作用"
+
+#: 47b902e19ca1475ba58faa980158a2aa 50ac395eef4348ee9143f1fdfd93b272 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:3
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:1
+msgid ""
+"Get drug interactions and contraindications by drug name or DrugBank ID."
+msgstr "通过药物名称或DrugBank ID获取药物相互作用和禁忌症。"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.rst
+#: 1b22c0b3f14940a7a40f246383213a97
+msgid "Parameters"
+msgstr "参数"
+
+#: 4a383ebec2654e78be7e7559585bd913 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:3
+msgid "Drug name to search for interactions"
+msgstr "药物名称以搜索交互作用"
+
+#: ef959b8616b042c3afbe8057e86778ef of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择 True 以执行区分大小写的搜索"
+
+#: 50ac24b3a7774f7c973534cb7c70dd20 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: 11195687c1e94f479ed80df0ba6bcdc2 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: c25b755e6fa34077b34f01d4fa3c66d0 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a73fa4d20f9b4f1eacb9920162ef8947 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e46149b2213849eab152cdcc468506d3 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.rst
+#: 9a7486943bbb45beb447f8baf29c9e54
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1ab6cb430b1545d49825259086229028 of
+#: tooluniverse.tools.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id.drugbank_get_drug_interactions_by_drug_name_or_drugbank_id:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

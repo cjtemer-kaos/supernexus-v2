@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_mordred_info.rst:2
+#: ec8caff434e643f786dbf0e4a3d1e42f
+msgid "tooluniverse.tools.get\\_mordred\\_info module"
+msgstr "tooluniverse.tools.get\\_mordred\\_info 模块"
+
+#: 674e3c193a7342c0b6608767123f0a9f of tooluniverse.tools.get_mordred_info:1
+msgid "get_mordred_info"
+msgstr ""
+
+#: 7642008e4cdc49f4949eb57595503c54 c7f9b3f8b49a44e6b88cbe84034826ad of
+#: tooluniverse.tools.get_mordred_info:3
+#: tooluniverse.tools.get_mordred_info.get_mordred_info:1
+msgid ""
+"Get information about the mordred package. Molecular descriptor calculator"
+msgstr "获取有关mordred包的信息。分子描述符计算器"
+
+#: ../../api/tooluniverse.tools.get_mordred_info.rst
+#: f05ad60a45d24eb3ad25f86383121e80
+msgid "Parameters"
+msgstr "参数"
+
+#: 0743895027f843959e7f51de3ec8d727 of
+#: tooluniverse.tools.get_mordred_info.get_mordred_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fb48550047e44ecdad9942ece8b48caf of
+#: tooluniverse.tools.get_mordred_info.get_mordred_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3ec64303b5bf429499dbd77f1b055194 of
+#: tooluniverse.tools.get_mordred_info.get_mordred_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_mordred_info.rst
+#: 1c59da8211934aeea80a1b641a035c7d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 716eda14e98b497394d436f05fed9ca4 of
+#: tooluniverse.tools.get_mordred_info.get_mordred_info:11
+msgid ":py:class:`Any`"
+msgstr ""

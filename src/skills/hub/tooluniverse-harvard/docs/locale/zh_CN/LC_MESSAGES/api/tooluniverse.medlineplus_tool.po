@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.medlineplus_tool.rst:2
+#: 86e70802b2d447e6be91c799c642cedc
+msgid "tooluniverse.medlineplus\\_tool module"
+msgstr "tooluniverse.medlineplus_tool 模块"
+
+#: f335259ecb674ea49c6ac5ccfe516a1c of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 4cad3603215b41518af4ceea1421200b of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool:1
+msgid ""
+"MedlinePlus REST API tool class. Supports health topic search, code lookup, "
+"genetics information retrieval, etc."
+msgstr "MedlinePlus REST API 工具类。支持健康主题搜索、代码查询、遗传信息检索等功能。"
+
+#: ca358b31f7fb4c2c8a73f52e59e9ec3f of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool._build_url:1
+msgid "Build complete URL"
+msgstr "构建完整的 URL"
+
+#: 5f8b9d0909f9465bae101b64f9c23ca9 of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool._extract_text_content:1
+msgid "Extract content from text item"
+msgstr "从文本项中提取内容"
+
+#: 67f2cd00f8f14d4e9ab1f293095763e9 of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool._format_response:1
+msgid "Format response content"
+msgstr "格式化响应内容"
+
+#: a0c6bf6274e648ea885e0cbfd4546283 of
+#: tooluniverse.medlineplus_tool.MedlinePlusRESTTool.run:1
+msgid "Execute tool call"
+msgstr "执行工具调用"

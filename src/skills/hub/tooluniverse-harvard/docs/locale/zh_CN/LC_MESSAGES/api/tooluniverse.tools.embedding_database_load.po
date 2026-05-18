@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.embedding_database_load.rst:2
+#: 50580e03a93a4f0a9892619a7232ba05
+msgid "tooluniverse.tools.embedding\\_database\\_load module"
+msgstr "tooluniverse.tools.embedding\\_database\\_load 模块"
+
+#: 13173afb8410497dade78bad7363e3bd of
+#: tooluniverse.tools.embedding_database_load:1
+msgid "embedding_database_load"
+msgstr "嵌入式数据库加载"
+
+#: 76c31fdc0e9d45fd8ad6a7812be20068 bf1499bc549241739774cbc92c58e19a of
+#: tooluniverse.tools.embedding_database_load:3
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:1
+msgid ""
+"Load an existing embedding database from a local path or external source. "
+"Allows importing databa..."
+msgstr "从本地路径或外部来源加载现有的嵌入式数据库。支持导入数据库..."
+
+#: ../../api/tooluniverse.tools.embedding_database_load.rst
+#: 0d1eb6ac021340e0950fac42370f3221
+msgid "Parameters"
+msgstr "参数"
+
+#: a425f21c1f2b4887b350a2719174831c of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:3
+msgid "Action to load database from external source"
+msgstr "从外部来源加载数据库的操作"
+
+#: 61516d7eed9a42a5874f98ee9d6f175f of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:5
+msgid "Path to the existing database directory or file"
+msgstr "现有数据库目录或文件的路径"
+
+#: c1e7ef49861f4cf48a948238cf7ff454 of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:7
+msgid "Local name to assign to the loaded database"
+msgstr "加载数据库分配的本地名称"
+
+#: 6679d25717ca4ccabd5592131abbe0b5 of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:9
+msgid "Whether to overwrite existing database with same name"
+msgstr "是否覆盖具有相同名称的现有数据库"
+
+#: 7a71826420ee47b0ba921d195e582a26 of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9dc6f0778e3641cdb823df2b3e4dfd92 of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5ede029c8ed046d69fd0f0f246c7fdad of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.embedding_database_load.rst
+#: 6a1832d5d3634b528709f7d809a4f4d4
+msgid "Return type"
+msgstr "返回类型"
+
+#: 71f5ffe0c96340569056b3379bb69a41 of
+#: tooluniverse.tools.embedding_database_load.embedding_database_load:18
+msgid ":py:class:`Any`"
+msgstr ""

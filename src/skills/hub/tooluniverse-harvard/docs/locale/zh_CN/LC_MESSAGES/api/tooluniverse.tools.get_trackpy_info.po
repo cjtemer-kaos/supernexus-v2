@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_trackpy_info.rst:2
+#: 719e1ad4b6f64a7f9b788c8b26fdfed2
+msgid "tooluniverse.tools.get\\_trackpy\\_info module"
+msgstr "tooluniverse.tools.get\\_trackpy\\_info 模块"
+
+#: 0368e671650f42d59b023c9d0b708e47 of tooluniverse.tools.get_trackpy_info:1
+msgid "get_trackpy_info"
+msgstr "获取_trackpy_信息"
+
+#: 806c5c51b90148899c122c831b49cc41 8bdd70a7f8f14d5c88047e8bc629dbca of
+#: tooluniverse.tools.get_trackpy_info:3
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:1
+msgid ""
+"Get comprehensive information about trackpy – particle tracking toolkit for "
+"Python"
+msgstr "获取关于 trackpy 的全面信息 —— 用于 Python 的粒子追踪工具包"
+
+#: ../../api/tooluniverse.tools.get_trackpy_info.rst
+#: df9ef17e066e4d05b946d5414811281c
+msgid "Parameters"
+msgstr "参数"
+
+#: 6ae52c5109e1477bb9bb80c69e799e12 of
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:3
+msgid "Type of information to retrieve about trackpy"
+msgstr "关于trackpy可检索的信息类型"
+
+#: 5ef8384665bd47b5b21062f204375c4d of
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: cd180a99202949f4a3d1481a44232d43 of
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e2814aa060f94d67879d603ccef930ae of
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_trackpy_info.rst
+#: d23013338fcb4428a562147cf69fa250
+msgid "Return type"
+msgstr "返回类型"
+
+#: 52edc34d0bd24db9814572611b178180 of
+#: tooluniverse.tools.get_trackpy_info.get_trackpy_info:12
+msgid ":py:class:`Any`"
+msgstr ""

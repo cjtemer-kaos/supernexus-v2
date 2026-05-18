@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.dataset_tool.rst:2 3ca2972c726b4d4e8f6f088309afa566
+msgid "tooluniverse.dataset\\_tool module"
+msgstr "tooluniverse.dataset_tool 模块"
+
+#: 924de1580d8a48fa84dd77dc29aeb02b of tooluniverse.dataset_tool.DatasetTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 6a94dd78e0c849878b57b26822708820 of tooluniverse.dataset_tool.DatasetTool:1
+msgid ""
+"Tool to search and filter the DrugBank vocabulary dataset. Provides "
+"functionality to search drugs by name, ID, synonyms and filter by various "
+"criteria."
+msgstr "用于搜索和筛选DrugBank词汇数据集的工具。提供按名称、ID、同义词搜索药物及按多种条件筛选的功能。"
+
+#: b890aa14907b4c838e99754b9dd74a6a of
+#: tooluniverse.dataset_tool.DatasetTool._load_dataset:1
+msgid "Load the drugbank vocabulary CSV dataset."
+msgstr "加载 drugbank 词汇表 CSV 数据集。"
+
+#: 71303c3f2927404592ef4e4193007d16 of
+#: tooluniverse.dataset_tool.DatasetTool.run:1
+msgid "Main entry point for the tool."
+msgstr "工具的主要入口点。"
+
+#: aae90726545c48e6897601ebc510877f of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_search:1
+msgid ""
+"Search drugs by name, ID, synonyms, or other fields using text-based "
+"queries."
+msgstr "通过名称、ID、同义词或其他字段使用基于文本的查询搜索药物。"
+
+#: 5f3b0851c6654d6d997465c8dadc91a1 of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_search:3
+msgid ""
+"This function is dedicated to text-based searching across specified fields. "
+"It performs substring or exact matching based on user preferences."
+msgstr "此功能专用于在指定字段中进行基于文本的搜索。它根据用户偏好执行子字符串匹配或精确匹配。"
+
+#: ../../api/tooluniverse.dataset_tool.rst 690645a5c09e407ab97b90afe5cb8d0e
+#: e4bd3cf1668749bfbb6cea9154fa5ba4
+msgid "Parameters"
+msgstr "参数"
+
+#: 9aae73578c4f4883bbf437903de0327d of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_search:6
+msgid ""
+"Search parameters including: - query (str): Text to search for - "
+"search_fields (list): Fields to search in - case_sensitive (bool): Whether "
+"search is case sensitive - exact_match (bool): Whether to perform exact "
+"matching - limit (int): Maximum number of results"
+msgstr ""
+"搜索参数包括：  \n"
+"- query (str)：搜索文本  \n"
+"- search_fields (list)：搜索字段  \n"
+"- case_sensitive (bool)：是否区分大小写  \n"
+"- exact_match (bool)：是否进行精确匹配  \n"
+"- limit (int)：最大结果数量"
+
+#: ../../api/tooluniverse.dataset_tool.rst 001f15710a704ce9a9a904ff6a049fd6
+#: 9c0a15c140494b5b8131204d64f045b8
+msgid "Returns"
+msgstr "返回值"
+
+#: 2f1c6f23e35d4e358f444cc3f89a5044 of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_search:14
+msgid "Search results with matched records and metadata"
+msgstr "搜索结果包含匹配的记录和元数据"
+
+#: ../../api/tooluniverse.dataset_tool.rst 39fc8b9a5b7643e7aaf95bf2766fc4fa
+#: 7fad5a3244a24d5f9fba580efaba809d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7c13304e612a426891deb2433bf509ec of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_filter:1
+msgid "Filter drugs based on specific criteria and field-based conditions."
+msgstr "根据特定条件和字段条件筛选药物。"
+
+#: 50af0f2350e3431fb304f2765a1d7993 of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_filter:3
+msgid ""
+"This function is dedicated to criteria-based filtering using simple field-"
+"condition-value parameters. It supports filter types like contains, "
+"starts_with, ends_with, exact, not_empty."
+msgstr ""
+"此功能专用于基于条件的筛选，使用简单的字段-条件-"
+"值参数。支持的筛选类型包括：包含（contains）、以...开头（starts_with）、以...结尾（ends_with）、精确匹配（exact）、非空（not_empty）。"
+
+#: 5d9d7a62acc2435b827a3aa9ec4f6c89 of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_filter:6
+msgid ""
+"Filter parameters including: - field (str): Field name to filter on - "
+"condition (str): Type of condition (contains, starts_with, ends_with, exact,"
+" not_empty) - value (str): Value to filter by (optional for not_empty "
+"condition) - limit (int): Maximum number of results"
+msgstr ""
+"过滤参数包括：  \n"
+"- field (str)：用于过滤的字段名称  \n"
+"- condition (str)：条件类型（包含 contains、以...开头 starts_with、以...结尾 ends_with、精确匹配 exact、非空 not_empty）  \n"
+"- value (str)：用于过滤的值（对于非空 not_empty 条件可选）  \n"
+"- limit (int)：结果的最大数量"
+
+#: 9755d82f4e5a4f04ba0b6c83a87fa100 of
+#: tooluniverse.dataset_tool.DatasetTool._drugbank_filter:13
+msgid "Filtered results with matched records and applied filters"
+msgstr "筛选结果包含匹配的记录和已应用的筛选条件"
+
+#: c456f1b9a0d84573b93d98e49792e017 of
+#: tooluniverse.dataset_tool.DatasetTool.get_dataset_info:1
+msgid "Get information about the loaded dataset."
+msgstr "获取有关已加载数据集的信息。"

@@ -1,0 +1,323 @@
+[
+    {
+        "name": "mcp_auto_loader_human_expert",
+        "description": "Automatically discover and load all tools from Human Expert MCP Server. Can register discovered tools as individual ToolUniverse tools for expert consultation in complex scientific decisions requiring human judgment.",
+        "type": "MCPAutoLoaderTool",
+        "server_url": "http://localhost:9876/mcp",
+        "tool_prefix": "expert_"
+    },
+    {
+        "name": "consult_human_expert",
+        "description": "Consult a human expert for complex scientific questions requiring human judgment. This tool submits questions to human experts who can provide clinical decision support, analysis validation, treatment recommendations, and specialized opinions.",
+        "type": "MCPClientTool",
+        "server_url": "http://localhost:9876",
+        "transport": "http",
+        "mcp_tool_name": "consult_human_expert",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "question": {
+                    "type": "string",
+                    "description": "The scientific question or case requiring expert consultation"
+                },
+                "specialty": {
+                    "type": "string",
+                    "description": "Area of expertise needed (e.g., 'cardiology', 'oncology', 'pharmacology', 'neurology', 'emergency', 'general')",
+                    "default": "general"
+                },
+                "priority": {
+                    "type": "string",
+                    "enum": ["low", "normal", "high", "urgent"],
+                    "description": "Request priority level",
+                    "default": "normal"
+                },
+                "context": {
+                    "type": "string",
+                    "description": "Additional context or background information about the case",
+                    "default": ""
+                },
+                "timeout_minutes": {
+                    "type": "integer",
+                    "description": "How long to wait for expert response (default: 5 minutes)",
+                    "default": 5,
+                    "minimum": 1,
+                    "maximum": 60
+                }
+            },
+            "required": ["question"]
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "Expert consultation response with clinical recommendations",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["completed", "timeout", "error"],
+                    "description": "Status of the expert consultation"
+                },
+                "expert_response": {
+                    "type": "string",
+                    "description": "The expert's clinical response and recommendations"
+                },
+                "expert_name": {
+                    "type": "string",
+                    "description": "Name of the responding expert"
+                },
+                "response_time": {
+                    "type": "string",
+                    "description": "Timestamp when the expert responded"
+                },
+                "request_id": {
+                    "type": "string",
+                    "description": "Unique identifier for the consultation request"
+                },
+                "specialty": {
+                    "type": "string",
+                    "description": "Medical specialty area of the consultation"
+                },
+                "priority": {
+                    "type": "string",
+                    "description": "Priority level of the request"
+                }
+            }
+        }
+    },
+    {
+        "name": "get_expert_response",
+        "description": "Check if an expert response is available for a previous consultation request. Use this to retrieve responses when the initial consultation is complete.",
+        "type": "MCPClientTool",
+        "server_url": "http://localhost:9876",
+        "transport": "http",
+        "mcp_tool_name": "get_expert_response",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "request_id": {
+                    "type": "string",
+                    "description": "The ID of the expert consultation request to check"
+                }
+            },
+            "required": ["request_id"]
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "Expert response status and content if available",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["completed", "pending", "not_found", "error"],
+                    "description": "Status of the consultation request"
+                },
+                "expert_response": {
+                    "type": "string",
+                    "description": "The expert's response (if completed)"
+                },
+                "expert_name": {
+                    "type": "string",
+                    "description": "Name of the responding expert (if completed)"
+                },
+                "response_time": {
+                    "type": "string",
+                    "description": "Timestamp of expert response (if completed)"
+                },
+                "request_id": {
+                    "type": "string",
+                    "description": "The consultation request ID"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Status message or error description"
+                }
+            }
+        }
+    },
+    {
+        "name": "get_expert_status",
+        "description": "Get current status of the human expert system including availability, pending requests, and system statistics.",
+        "type": "MCPClientTool",
+        "server_url": "http://localhost:9876",
+        "transport": "http",
+        "mcp_tool_name": "get_expert_status",
+        "parameter": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "Current expert system status and statistics",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["active", "error"],
+                    "description": "Overall system status"
+                },
+                "expert_info": {
+                    "type": "object",
+                    "description": "Information about the available expert",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "Expert name"
+                        },
+                        "specialties": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Expert's areas of specialization"
+                        },
+                        "availability": {
+                            "type": "boolean",
+                            "description": "Whether the expert is currently available"
+                        }
+                    }
+                },
+                "statistics": {
+                    "type": "object",
+                    "description": "System usage statistics",
+                    "properties": {
+                        "pending_requests": {
+                            "type": "integer",
+                            "description": "Number of requests awaiting expert response"
+                        },
+                        "total_requests": {
+                            "type": "integer",
+                            "description": "Total number of consultation requests"
+                        },
+                        "completed_responses": {
+                            "type": "integer",
+                            "description": "Number of completed expert responses"
+                        },
+                        "response_rate": {
+                            "type": "number",
+                            "description": "Percentage of requests that received responses"
+                        }
+                    }
+                },
+                "system_time": {
+                    "type": "string",
+                    "description": "Current system timestamp"
+                },
+                "mcp_server_port": {
+                    "type": "integer",
+                    "description": "Port number of the MCP server"
+                }
+            }
+        }
+    },
+    {
+        "name": "list_pending_expert_requests",
+        "description": "List all pending expert consultation requests (for expert use to see waiting questions).",
+        "type": "MCPClientTool",
+        "server_url": "http://localhost:9876",
+        "transport": "http",
+        "mcp_tool_name": "list_pending_expert_requests",
+        "parameter": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "List of pending consultation requests",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["success", "no_requests", "error"],
+                    "description": "Status of the request listing"
+                },
+                "pending_requests": {
+                    "type": "array",
+                    "description": "Array of pending consultation requests",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "request_id": {
+                                "type": "string",
+                                "description": "Unique request identifier"
+                            },
+                            "question": {
+                                "type": "string",
+                                "description": "The consultation question"
+                            },
+                            "specialty": {
+                                "type": "string",
+                                "description": "Required medical specialty"
+                            },
+                            "priority": {
+                                "type": "string",
+                                "description": "Request priority level"
+                            },
+                            "age_minutes": {
+                                "type": "number",
+                                "description": "How long the request has been waiting (in minutes)"
+                            },
+                            "timestamp": {
+                                "type": "string",
+                                "description": "When the request was submitted"
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "type": "integer",
+                    "description": "Number of pending requests"
+                },
+                "expert_info": {
+                    "type": "object",
+                    "description": "Information about the expert system"
+                }
+            }
+        }
+    },
+    {
+        "name": "submit_expert_response",
+        "description": "Submit expert response to a consultation request (for use by human experts through the expert interface).",
+        "type": "MCPClientTool",
+        "server_url": "http://localhost:9876",
+        "transport": "http",
+        "mcp_tool_name": "submit_expert_response",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "request_id": {
+                    "type": "string",
+                    "description": "The ID of the consultation request to respond to"
+                },
+                "response": {
+                    "type": "string",
+                    "description": "The expert's response and recommendations"
+                }
+            },
+            "required": ["request_id", "response"]
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "Confirmation of expert response submission",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["success", "failed", "error"],
+                    "description": "Status of response submission"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Confirmation or error message"
+                },
+                "request_id": {
+                    "type": "string",
+                    "description": "The consultation request ID"
+                },
+                "expert": {
+                    "type": "string",
+                    "description": "Name of the responding expert"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "description": "When the response was submitted"
+                }
+            }
+        }
+    }
+]

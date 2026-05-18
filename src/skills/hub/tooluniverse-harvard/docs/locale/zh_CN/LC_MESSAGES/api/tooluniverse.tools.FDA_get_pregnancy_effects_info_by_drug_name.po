@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.rst:2
+#: be7a59d832fa4fb290e13c9aa3729018
+msgid "tooluniverse.tools.FDA\\_get\\_pregnancy\\_effects\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_pregnancy\\_effects\\_info\\_by\\_drug\\_name 模块"
+
+#: 233c8cfaad344c24b950943099f44e09 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name:1
+msgid "FDA_get_pregnancy_effects_info_by_drug_name"
+msgstr "FDA_按药品名称获取妊娠影响信息"
+
+#: bee333cfffa1412190ee075765583be7 cfbdefaafa1b4ba38d410e3b5d0e7bf9 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:1
+msgid ""
+"Retrieve information about the effects on pregnancy for a specific drug."
+msgstr "检索有关特定药物对妊娠影响的信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.rst
+#: 9133087a6af34996a29db8a75cfcf810
+msgid "Parameters"
+msgstr "参数"
+
+#: 8ba28e4f97b94841bfcee9bfb347166c of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: 2aa9e987efd342009173478560c8ed54 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 4a723a380aca4148a759f6660a8b01b5 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: f38d47cbe4764ac2a86dac8cd1008078 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9bfdf87be4f14ca0bde727c39b1e29e0 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 29d0644133064757b8685697a7b861e2 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.rst
+#: 01717eaa16e24263b94a4e6f7449e5d3
+msgid "Return type"
+msgstr "返回类型"
+
+#: 20d6c9c21c724ba5b72756b71faba061 of
+#: tooluniverse.tools.FDA_get_pregnancy_effects_info_by_drug_name.FDA_get_pregnancy_effects_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

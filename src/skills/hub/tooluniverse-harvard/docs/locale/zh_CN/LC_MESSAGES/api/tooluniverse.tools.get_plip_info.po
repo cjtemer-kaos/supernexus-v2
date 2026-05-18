@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_plip_info.rst:2
+#: ab1b96b5127d40bd8470dc8c2a16d088
+msgid "tooluniverse.tools.get\\_plip\\_info module"
+msgstr "tooluniverse.tools.get\\_plip\\_info 模块"
+
+#: d6b3ab6f97d14d69ae57c31b73b18242 of tooluniverse.tools.get_plip_info:1
+msgid "get_plip_info"
+msgstr "get_plip_info 获取PLIP信息"
+
+#: bf5f9c6aa774477fab9e3df540f5efd5 d2adf324cf5146e68540934801bc47a9 of
+#: tooluniverse.tools.get_plip_info:3
+#: tooluniverse.tools.get_plip_info.get_plip_info:1
+msgid ""
+"Get comprehensive information about PLIP – protein-ligand interaction "
+"profiler"
+msgstr "获取关于PLIP（蛋白质-配体相互作用分析器）的全面信息"
+
+#: ../../api/tooluniverse.tools.get_plip_info.rst
+#: 0cfa65a018cc4170af332b70e8d464d2
+msgid "Parameters"
+msgstr "参数"
+
+#: e147e7c24bad46f596c08cc0d2932f34 of
+#: tooluniverse.tools.get_plip_info.get_plip_info:3
+msgid "Type of information to retrieve about PLIP"
+msgstr "关于PLIP的信息类型"
+
+#: dc61ab4139be464b992b7362a7ff35e2 of
+#: tooluniverse.tools.get_plip_info.get_plip_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f3bbf8b29ecb400ea92b32bf538a035c of
+#: tooluniverse.tools.get_plip_info.get_plip_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f9370361b97d4d2a871bb28eeaa0e0bb of
+#: tooluniverse.tools.get_plip_info.get_plip_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_plip_info.rst
+#: 4f5b7f30f5314bdab570ffa59bf80b29
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6338f97d67684052bbeb6570a46ab0c9 of
+#: tooluniverse.tools.get_plip_info.get_plip_info:12
+msgid ":py:class:`Any`"
+msgstr ""

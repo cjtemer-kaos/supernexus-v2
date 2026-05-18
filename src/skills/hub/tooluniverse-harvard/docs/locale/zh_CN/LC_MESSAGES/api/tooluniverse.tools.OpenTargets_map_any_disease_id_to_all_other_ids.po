@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.rst:2
+#: f798f21c9b7d4f9497ef18b55ff48172
+msgid ""
+"tooluniverse.tools.OpenTargets\\_map\\_any\\_disease\\_id\\_to\\_all\\_other\\_ids"
+" module"
+msgstr "tooluniverse.tools.OpenTargets\\_map\\_any\\_disease\\_id\\_to\\_all\\_other\\_ids 模块"
+
+#: 397be0e5564c41c790f27f64eef52d78 of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids:1
+msgid "OpenTargets_map_any_disease_id_to_all_other_ids"
+msgstr ""
+"OpenTargets_map_any_disease_id_to_all_other_ids  \n"
+"OpenTargets_映射任意疾病ID到所有其他ID"
+
+#: 74925ea6cf834227a2acce8287a6e0eb 813698b922df40b8b1c7e49135236fa5 of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids:3
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:1
+msgid ""
+"Given any known disease or phenotype ID (EFO, OMIM, MONDO, UMLS, ICD10, "
+"MedDRA, etc.), return all..."
+msgstr "根据任何已知的疾病或表型ID（如EFO、OMIM、MONDO、UMLS、ICD10、MedDRA等），返回所有..."
+
+#: ../../api/tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.rst
+#: 9ea67027cee042a99943a52a3ad4e484
+msgid "Parameters"
+msgstr "参数"
+
+#: e2063347218145d0a26f91c94822b19b of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:3
+msgid ""
+"Any known disease ID (e.g. OMIM:604302, UMLS:C0003873, ICD10:M05, "
+"EFO_0000685..."
+msgstr "任何已知的疾病ID（例如：OMIM:604302、UMLS:C0003873、ICD10:M05、EFO_0000685...）"
+
+#: eda97c75d4cc4a91a721a0c91e697408 of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d12480cc8c7743d78e326ab769886deb of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c783601123a64002b9c2c4ed5ce7709d of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.rst
+#: ed8393146c3744f78edaf7ee7a482ae2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 38767c2373954ad9b405a7af40fd5874 of
+#: tooluniverse.tools.OpenTargets_map_any_disease_id_to_all_other_ids.OpenTargets_map_any_disease_id_to_all_other_ids:12
+msgid ":py:class:`Any`"
+msgstr ""

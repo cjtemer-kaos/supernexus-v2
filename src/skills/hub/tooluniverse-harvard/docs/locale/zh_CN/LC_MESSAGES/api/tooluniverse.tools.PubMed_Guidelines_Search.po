@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubMed_Guidelines_Search.rst:2
+#: 1ddfa4f458e44712ac7488e33cdec8e1
+msgid "tooluniverse.tools.PubMed\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.PubMed\\_Guidelines\\_Search 模块"
+
+#: 41ed420d59494a9c9b5cb5bcce526116 of
+#: tooluniverse.tools.PubMed_Guidelines_Search:1
+msgid "PubMed_Guidelines_Search"
+msgstr "PubMed_指南_搜索"
+
+#: 776420428f65474995a480025821b3c4 a86be76dd4244b5783d626b82e0eaa1b of
+#: tooluniverse.tools.PubMed_Guidelines_Search:3
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:1
+msgid ""
+"Search PubMed for peer-reviewed clinical practice guidelines using NCBI "
+"E-utilities. Filters resu..."
+msgstr "使用NCBI E-utilities在PubMed中搜索同行评审的临床实践指南。应用筛选条件筛选结果..."
+
+#: ../../api/tooluniverse.tools.PubMed_Guidelines_Search.rst
+#: 68f1289657c3440884d48fcd0e1181e0
+msgid "Parameters"
+msgstr "参数"
+
+#: c4b4e92c8c41423080edc9143166dd69 of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:3
+msgid ""
+"Medical condition, treatment, or clinical topic to search for (e.g., "
+"'diabete..."
+msgstr "医疗状况、治疗或临床主题以供搜索（例如，“糖尿病”...）"
+
+#: 4656ed630b154ac0a4aee64ef4df437f of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回的指南最大数量（默认值：10）"
+
+#: 8e9de0037755414cbedb2f19d7f4b13f of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:7
+msgid ""
+"Optional NCBI API key for higher rate limits. Get your free key at "
+"https://ww..."
+msgstr "可选的 NCBI API 密钥以提高速率限制。您可以在 https://ww... 免费获取您的密钥。"
+
+#: 3148c06485d846b5a04c260fe80a0e90 of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1457e82c997c46f7ae2be1a31845e13e of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f743bc418b5e4f34a09b44e13a116c9e of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubMed_Guidelines_Search.rst
+#: 90bab62f50e647588023549c9d58d34e
+msgid "Return type"
+msgstr "返回类型"
+
+#: b97e3c9595db4fb684e9115ed81cc4e4 of
+#: tooluniverse.tools.PubMed_Guidelines_Search.PubMed_Guidelines_Search:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

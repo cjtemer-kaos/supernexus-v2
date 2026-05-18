@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_biological_processes_by_gene.rst:2
+#: 5986ad7c0bfa45e4b46fa414ab3ae926
+msgid "tooluniverse.tools.HPA\\_get\\_biological\\_processes\\_by\\_gene module"
+msgstr "tooluniverse.tools.HPA\\_get\\_biological\\_processes\\_by\\_gene 模块"
+
+#: 63fa84caae6246679b8595993037e6bf of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene:1
+msgid "HPA_get_biological_processes_by_gene"
+msgstr "HPA_按基因获取生物过程"
+
+#: c347035caae041e793d79088e17d4d15 c464529d532b49c6a26bc325910605cd of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene:3
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:1
+msgid ""
+"Get biological process information for a gene, with special focus on key "
+"processes like apoptosis..."
+msgstr "获取基因的生物学过程信息，重点关注诸如细胞凋亡等关键过程..."
+
+#: ../../api/tooluniverse.tools.HPA_get_biological_processes_by_gene.rst
+#: 66bad42d20d04482902cd4dc1c5e2ae6
+msgid "Parameters"
+msgstr "参数"
+
+#: dfedd42f862d466587ddeca44cef5bff of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:3
+msgid "Gene name or gene symbol, e.g., 'TP53', 'CDK1', 'CASP3', etc."
+msgstr "基因名称或基因符号，例如“TP53”、“CDK1”、“CASP3”等。"
+
+#: 2ce2911c35aa4d96ab2a33610abdfef4 of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:5
+msgid ""
+"Whether to filter and focus on specific biological processes (apoptosis, "
+"cell..."
+msgstr "是否过滤并专注于特定的生物过程（如细胞凋亡、细胞..."
+
+#: 7a201164319c49ea99b9904729a9a749 of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:7
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 85453ffc57ed40bdb1f7b78543406056 of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b498dcf347644a47aed28fbef7fd1cfd of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_biological_processes_by_gene.rst
+#: 80e40382f48940e6846a4dafbce0f7e1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0f05db8e01ed46cfbc5808110dd1ad6a of
+#: tooluniverse.tools.HPA_get_biological_processes_by_gene.HPA_get_biological_processes_by_gene:14
+msgid ":py:class:`Any`"
+msgstr ""

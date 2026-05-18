@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/reactome_tools.rst:2 d4320f42b2a7423c948993d5b08f5c8e
+msgid "Reactome Tools"
+msgstr "Reactome 工具"
+
+#: ../../tools/reactome_tools.rst:4 541e58310e2140c68c6059be28fb4101
+msgid ""
+"**Configuration File**: ``reactome_tools.json`` **Tool Type**: Local **Tools"
+" Count**: 1"
+msgstr ""
+"**配置文件**：``reactome_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/reactome_tools.rst:8 ccc0761f1aa249d786f703edaec7fd87
+msgid ""
+"This page contains all tools defined in the ``reactome_tools.json`` "
+"configuration file."
+msgstr "此页面包含在 ``reactome_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/reactome_tools.rst:11 9b46556ab9084b7a9c5ab08dacd8085b
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/reactome_tools.rst:14 b95bedbd26414fa4877575ec4f2543ec
+msgid "**Reactome_get_pathway_reactions** (Type: ReactomeRESTTool)"
+msgstr "**Reactome_get_pathway_reactions**（类型：ReactomeRESTTool）"
+
+#: ../../tools/reactome_tools.rst:16 20429dd30cc1492ab574f6f6d634a6e0
+msgid ""
+"Query all Reactions contained under a Pathway using Pathway Stable ID. This "
+"is currently the only..."
+msgstr "使用通路稳定ID查询通路下包含的所有反应。目前这是唯一的..."
+
+#: ../../tools/reactome_tools.rst 10d45def62f94fe3a5bd819f1f01627f
+msgid "Reactome_get_pathway_reactions tool specification"
+msgstr "Reactome_get_pathway_reactions 工具规范"
+
+#: ../../tools/reactome_tools.rst:20 78ce850fb24c4330bd118b3c0a2eb324
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/reactome_tools.rst:22 bf1f5c66f6b747239e1aae6708da003d
+msgid "**Name**: ``Reactome_get_pathway_reactions``"
+msgstr "**名称**：``Reactome_get_pathway_reactions``"
+
+#: ../../tools/reactome_tools.rst:23 3422f1a46e4f41b78146fc07f19aa942
+msgid "**Type**: ``ReactomeRESTTool``"
+msgstr "**类型**：``ReactomeRESTTool``"
+
+#: ../../tools/reactome_tools.rst:24 e2fcb5c985974f9db7a40fe9e0d8f49d
+msgid ""
+"**Description**: Query all Reactions contained under a Pathway using Pathway"
+" Stable ID. This is currently the only working Reactome tool."
+msgstr ""
+"**描述**：使用 Pathway Stable ID 查询 Pathway 下包含的所有反应。这是目前唯一可用的 Reactome 工具。"
+
+#: ../../tools/reactome_tools.rst:26 95ca3d47fcce43d8bf77e6c483722b99
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/reactome_tools.rst:28 e8a25c6f771e458b8c3ed36ef3536502
+msgid ""
+"``stId`` (string) (required) Pathway Stable ID, e.g., 'R-HSA-73817' "
+"(verified valid)."
+msgstr "``stId``（字符串）（必填）路径稳定标识符，例如：'R-HSA-73817'（已验证有效）。"
+
+#: ../../tools/reactome_tools.rst:31 784e147764f5477797b6f490d3da437f
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/reactome_tools.rst:45 0709e655c93043879176d5546d2a088b
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/reactome_tools.rst:47 f2e0e40f117346dea4ccc2ea9fc3ac40
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/reactome_tools.rst:48 fe7bd7e30d3943e1a78eac61484e4e0b
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

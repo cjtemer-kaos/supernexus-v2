@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.visualization_tool.rst:2
+#: d4ee75a7008d43ca874fd7fff1bc5435
+msgid "tooluniverse.visualization\\_tool module"
+msgstr "tooluniverse.visualization\\_tool 模块"
+
+#: a60646d682c04574bce438756fc3b0dc of tooluniverse.visualization_tool:2
+msgid "Visualization Tool Base Class for ToolUniverse"
+msgstr "可视化工具基类 - ToolUniverse"
+
+#: 142b7f85b9d3470fbd854be2e7896ae4 of tooluniverse.visualization_tool:4
+msgid ""
+"This module provides the base VisualizationTool class that all visualization"
+" tools inherit from. It provides common functionality for HTML generation, "
+"image conversion, error handling, and output formatting."
+msgstr ""
+"此模块提供了所有可视化工具继承的基础类 VisualizationTool。该类提供了用于生成 HTML、图像转换、错误处理以及输出格式化的通用功能。"
+
+#: 92c01bdea19e4215bfa51198f22e6a4f of
+#: tooluniverse.visualization_tool.VisualizationTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: a3cecef5c9b34c11a5cc59d2319f54da of
+#: tooluniverse.visualization_tool.VisualizationTool:1
+msgid "Base class for all visualization tools in ToolUniverse."
+msgstr "用于ToolUniverse中所有可视化工具的基类。"
+
+#: 9d828b463b7640929110cdb5ae670be2 of
+#: tooluniverse.visualization_tool.VisualizationTool:3
+msgid ""
+"Provides common functionality for: - HTML generation and embedding - Static "
+"image conversion - Error handling - Output formatting"
+msgstr ""
+"提供以下常用功能：  \n"
+"- HTML生成与嵌入  \n"
+"- 静态图像转换  \n"
+"- 错误处理  \n"
+"- 输出格式化"
+
+#: f64531a3adf2442bafc0331a6783e973 of
+#: tooluniverse.visualization_tool.VisualizationTool.create_visualization_response:1
+msgid "Create a standardized visualization response."
+msgstr "创建标准化的可视化响应。"
+
+#: c2e9a4d27e9145b9956b6186e02e3ce4 of
+#: tooluniverse.visualization_tool.VisualizationTool.create_error_response:1
+msgid "Create a standardized error response."
+msgstr "创建标准化错误响应。"
+
+#: b527335c630d40dd804e77fe8ca6ab36 of
+#: tooluniverse.visualization_tool.VisualizationTool.convert_to_base64_image:1
+msgid "Convert image data to base64 string."
+msgstr "将图像数据转换为Base64字符串。"
+
+#: 4de876349c1343f98f6776fce9838959 of
+#: tooluniverse.visualization_tool.VisualizationTool.create_plotly_html:1
+msgid "Create HTML from Plotly figure."
+msgstr "从 Plotly 图形生成 HTML。"
+
+#: 172a3b284eb047afb79d8e09b7cb8aa6 of
+#: tooluniverse.visualization_tool.VisualizationTool.create_py3dmol_html:1
+msgid "Create modern HTML wrapper for py3Dmol viewer."
+msgstr "为 py3Dmol 查看器创建现代 HTML 包装器。"
+
+#: cff6ad3a134a41de80bf693d70c24bc2 of
+#: tooluniverse.visualization_tool.VisualizationTool.add_3d_controls_script:1
+msgid "Add JavaScript for 3D viewer controls."
+msgstr "添加 JavaScript 以实现 3D 查看器控件。"
+
+#: 06ed2c12aabb489aad96370ac6436cd3 of
+#: tooluniverse.visualization_tool.VisualizationTool.create_molecule_2d_html:1
+msgid "Create modern HTML for 2D molecule visualization."
+msgstr "创建用于二维分子可视化的现代HTML。"

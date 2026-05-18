@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pysam_info.rst:2
+#: 4162213d465c4e658865ae7720f8433e
+msgid "tooluniverse.tools.get\\_pysam\\_info module"
+msgstr "tooluniverse.tools.get\\_pysam\\_info 模块"
+
+#: 71917dbf51dc4d4e9decdaf94d9b6ad3 of tooluniverse.tools.get_pysam_info:1
+msgid "get_pysam_info"
+msgstr ""
+
+#: 462a1ec662d94c3092274ffa941cd86a d01dbfda9ff44ae9a3fa9e8af81d13a6 of
+#: tooluniverse.tools.get_pysam_info:3
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:1
+msgid ""
+"Get comprehensive information about pysam – interface to SAM/BAM/CRAM files"
+msgstr "获取有关pysam的全面信息——用于操作SAM/BAM/CRAM文件的接口"
+
+#: ../../api/tooluniverse.tools.get_pysam_info.rst
+#: 96c187d6d14e4fd599d66064f1aae0fe
+msgid "Parameters"
+msgstr "参数"
+
+#: 60ef8a04254642e195e5ea22d9816245 of
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 45e5b4394cf7471e9096d538a20e3623 of
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f0d87a2742484cdea5506bd70091eef1 of
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 54c74537f73b4bccb600b342fbc3b0c8 of
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pysam_info.rst
+#: 9090ee5dc4d64282a8feff12d5994696
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2bab22154a264c3d83a689bca105a3a6 of
+#: tooluniverse.tools.get_pysam_info.get_pysam_info:12
+msgid ":py:class:`Any`"
+msgstr ""

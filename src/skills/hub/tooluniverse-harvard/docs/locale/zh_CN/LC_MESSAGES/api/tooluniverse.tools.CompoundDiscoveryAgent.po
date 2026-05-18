@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.CompoundDiscoveryAgent.rst:2
+#: 1d77fe24e171489198350faede4d1965
+msgid "tooluniverse.tools.CompoundDiscoveryAgent module"
+msgstr "tooluniverse.tools.CompoundDiscoveryAgent 模块"
+
+#: efd7225097134bbe82cd55cf32890aaa of
+#: tooluniverse.tools.CompoundDiscoveryAgent:1
+msgid "CompoundDiscoveryAgent"
+msgstr "化合物发现代理"
+
+#: 440d74d2a05d4316a5fb27df2248bf75 baec19f6ca00437da55c7c92db0bf267 of
+#: tooluniverse.tools.CompoundDiscoveryAgent:3
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:1
+msgid ""
+"AI agent that analyzes potential drug compounds using multiple strategies "
+"and LLM reasoning"
+msgstr "使用多种策略和大型语言模型推理分析潜在药物化合物的人工智能代理"
+
+#: ../../api/tooluniverse.tools.CompoundDiscoveryAgent.rst
+#: 85035a62ef54417f9d72744e32de9e2f
+msgid "Parameters"
+msgstr "参数"
+
+#: 6fb921ad63c944eaa34ce420c702c441 of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:3
+msgid "Name of the disease"
+msgstr "疾病名称"
+
+#: d6a3ae62fee84b1caed57ba5afea2fef of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:5
+msgid "List of therapeutic targets (comma-separated)"
+msgstr "治疗靶点列表（以逗号分隔）"
+
+#: 7ac9c2b80c9d4253b2f3bd3aee559c6f of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:7
+msgid "Additional context or specific requirements"
+msgstr "附加上下文或具体要求"
+
+#: 1eb8f2c94f0b44b4a651e6414fd7dc63 of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2dcbf3693d134ab69b00a11836f896e0 of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d18afca5ff384dca97df51eada3fa4de of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.CompoundDiscoveryAgent.rst
+#: 3a08525093094a3a82009d0d05990729
+msgid "Return type"
+msgstr "返回类型"
+
+#: ce68c32dce0d4732a737effea59c20ea of
+#: tooluniverse.tools.CompoundDiscoveryAgent.CompoundDiscoveryAgent:16
+msgid ":py:class:`Any`"
+msgstr ""

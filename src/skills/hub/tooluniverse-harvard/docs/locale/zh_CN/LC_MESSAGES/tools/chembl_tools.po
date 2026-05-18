@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/chembl_tools.rst:2 ba2f731655e541ff801485ad058358e1
+msgid "Chembl Tools"
+msgstr "Chembl 工具"
+
+#: ../../tools/chembl_tools.rst:4 d8dd7c2b4d814c4d9bc575e221d76786
+msgid ""
+"**Configuration File**: ``chembl_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 1"
+msgstr ""
+"**配置文件**：``chembl_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/chembl_tools.rst:8 dcd696d53774477c9f6c3cd9d4bc5be9
+msgid ""
+"This page contains all tools defined in the ``chembl_tools.json`` "
+"configuration file."
+msgstr "此页面包含在 ``chembl_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/chembl_tools.rst:11 e13c5f6b020a4c06b364edcd31f96458
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/chembl_tools.rst:14 584c857d34964a20a3e85fa9c687d587
+msgid "**ChEMBL_search_similar_molecules** (Type: ChEMBLTool)"
+msgstr "**ChEMBL_search_similar_molecules**（类型：ChEMBL工具）"
+
+#: ../../tools/chembl_tools.rst:16 1df4e17c5dcf46deb45d2b957c4ac792
+msgid ""
+"Search for molecules similar to a given SMILES, chembl_id, or compound or"
+" drug name, using the Ch..."
+msgstr "使用 Ch... 搜索与给定的 SMILES、chembl_id 或化合物/药物名称相似的分子。"
+
+#: ../../tools/chembl_tools.rst d01818ebcf444082957fb809a692259c
+msgid "ChEMBL_search_similar_molecules tool specification"
+msgstr "ChEMBL_search_similar_molecules 工具规格说明"
+
+#: ../../tools/chembl_tools.rst:20 04ddec08d857477f953cc2085ccd3814
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/chembl_tools.rst:22 788b871da0ca408db6224ddb58034ea8
+msgid "**Name**: ``ChEMBL_search_similar_molecules``"
+msgstr "**名称**：``ChEMBL_search_similar_molecules``"
+
+#: ../../tools/chembl_tools.rst:23 f47da4da1853408486bd6e30b555e3f3
+msgid "**Type**: ``ChEMBLTool``"
+msgstr "**类型**：``ChEMBLTool``"
+
+#: ../../tools/chembl_tools.rst:24 2ab8588897ed49d7b1e82d2c656803d8
+msgid ""
+"**Description**: Search for molecules similar to a given SMILES, "
+"chembl_id, or compound or drug name, using the ChEMBL Web Services."
+msgstr "**描述**：使用ChEMBL Web服务，根据给定的SMILES、chembl_id或化合物或药物名称搜索相似的分子。"
+
+#: ../../tools/chembl_tools.rst:26 f7d62d9948e14c15b87cddedf955d229
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/chembl_tools.rst:28 2f30ce0347374d509e2facb2d40c75f3
+msgid ""
+"``query`` (string) (required) SMILES string, chembl_id, or compound or "
+"drug name."
+msgstr "``query``（字符串）（必填）SMILES字符串、chembl_id、化合物名称或药物名称。"
+
+#: ../../tools/chembl_tools.rst:31 460d793dce0340c7bd7f6f11c367aac1
+#, fuzzy
+msgid ""
+"``similarity_threshold`` (integer) (required) Similarity threshold "
+"(0–100)."
+msgstr "``similarity_threshold``（整数）（可选）相似度阈值（0–100）。"
+
+#: ../../tools/chembl_tools.rst:34 16cf87174cf04faa867a5388693609b1
+#, fuzzy
+msgid "``max_results`` (integer) (required) Maximum number of results to return."
+msgstr "``max_results``（整数）（可选）返回结果的最大数量。"
+
+#: ../../tools/chembl_tools.rst:37 fed6ac2622924502bc81fa6e05506f9f
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/chembl_tools.rst:53 62f1e86c0715437c9267972c8437c5a5
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/chembl_tools.rst:55 3351457adb394c3288fbcbc26c8e628f
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/chembl_tools.rst:56 269a4dd44d1c4dddabd9e42e9cc53972
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

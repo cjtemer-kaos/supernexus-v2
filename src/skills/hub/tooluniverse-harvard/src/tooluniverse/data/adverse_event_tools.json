@@ -1,0 +1,122 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "AdverseEventPredictionQuestionGenerator",
+    "description": "Generates a set of personalized adverse‐event prediction questions for a given disease and drug, across multiple patient subgroups.",
+    "prompt": "You are a clinical pharmacology and epidemiology expert. Given the following inputs:\n\n- Disease: {disease_name}  \n- Drug: {drug_name}  \n\nYour task is to generate a hierarchy of personalized adverse-event prediction questions at two levels:\n\n1. **General Safety Check**  \n   - Identify one broad safety question that asks for as many potential adverse effects as possible beyond the known label, and include only the disease term in the population description.\n\n2. **Population-Specific Extensions**  \n   - For at least five distinct patient subgroups, build on the general question by adding one or more clinical details unique to that subgroup (e.g., age, sex, comorbidities, organ function, genetic variants, concomitant meds).  \n   - Each subgroup’s question must:  \n     - Ask for as many potential adverse effects as possible  \n     - Include the description of that specific population in the question  \n     - Specify any relevant time frame and lab or clinical thresholds  \n\n**Output structure**: return only a JSON object with two keys:\n\n- `\"general\"`:  \n  - `\"population\"`: a list containing only the disease term (e.g. `[\"{disease_name}\"]`)  \n  - `\"question\"`: the broad safety question that asks for as many adverse effects as possible and incorporates the disease description only  \n\n- `\"specific\"`: an array of objects, each with:  \n  - `\"population\"`: a list of terms describing the subgroup (e.g. `[\"72-year-old\", \"female\", \"atrial fibrillation\", \"chronic warfarin\"]`)  \n  - `\"question\"`: the extended adverse-event prediction question that:  \n    - asks for as many adverse effects as possible  \n    - includes the description of that subgroup  \n    - specifies the time frame and any lab/clinical thresholds  \n\n**Example**:\n\n```json\n{\n  \"general\": {\n    \"population\": [\"mild Alzheimer’s disease\"],\n    \"question\": \"In a patient with mild Alzheimer’s disease planning to start Kisunla therapy, what additional safety concerns or adverse effects—beyond those listed in the FDA label—should be monitored?\"\n  },\n  \"specific\": [\n    {\n      \"population\": [\"72-year-old\", \"female\", \"atrial fibrillation\", \"chronic warfarin\"],\n      \"question\": \"In a 72-year-old female with atrial fibrillation on chronic warfarin therapy, what potential bleeding events or other adverse effects—beyond the FDA label—should be anticipated within 30 days of initiating Kisunla?\"\n    },\n    {\n      \"population\": [\"79-year-old\", \"female\", \">5 cerebral microhemorrhages\", \"baseline MRI\"],\n      \"question\": \"In a 79-year-old female with more than five cerebral microhemorrhages on baseline MRI and no prior intracerebral hemorrhage, what non-label adverse intracranial bleeding events or other safety concerns should be discussed before starting Kisunla?\"\n    },\n    {\n      \"population\": [\"70-year-old\", \"male\", \"well-controlled focal epilepsy\", \"seizure-free 5 years\"],\n      \"question\": \"In a 70-year-old male with well-controlled focal epilepsy (seizure-free for 5 years), what seizure-related adverse events or other off-label safety issues should be part of counseling within 60 days of Kisunla therapy?\"\n    }\n    // …at least two more…\n  ]\n}\n```",
+    "input_arguments": [
+      "disease_name",
+      "drug_name"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_name": {
+          "type": "string",
+          "description": "The name of the disease or condition"
+        },
+        "drug_name": {
+          "type": "string",
+          "description": "The name of the drug"
+        }
+      },
+      "required": [
+        "disease_name",
+        "drug_name"
+      ]
+    },
+    "configs": {
+      "return_json": true,
+      "return_metadata": false
+    },
+    "test_examples": [
+      {
+        "disease_name": "mild Alzheimer's disease",
+        "drug_name": "Kisunla"
+      }
+    ],
+    "return_schema": {
+      "type": "string"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "AdverseEventICDMapper",
+    "description": "Extracts adverse events from narrative clinical or pharmacovigilance text and maps each event to the most specific ICD-10-CM code.",
+    "prompt": "You are a clinically-oriented NLP assistant trained in pharmacovigilance and ICD-10-CM medical coding.\\n\\n**Your task:**\\n1. Read the *Input Text* below.\\n2. Identify every distinct **adverse event** explicitly stated or unambiguously implied.\\n3. For each adverse event, select the **single most specific ICD-10-CM code** that would ordinarily be assigned by a professional coder in the United States.\\n   • If several codes are plausible, choose the one that best matches the wording and context (e.g., \"upper-GI haemorrhage\" ⇒ K92.0 rather than the generic K92.2).\\n   • If no precise code exists, return the closest valid proxy and append the flag \"≈ (closest match)\".\\n4. Output the results **exactly** in the following JSON array format (no additional keys or commentary):\\n```json\\n[\\n  {\\n    \"adverse_event\": \"<event term>\",\\n    \"icd10cm_code\": \"<code>\",\\n    \"code_description\": \"<official ICD-10-CM description>\"\\n  }\\n]\\n```\\n5. Preserve the order in which events first appear in the text.\\n6. Do **not** invent adverse events that are absent from the text.\\n7. If the input text contains no adverse events, reply with the empty list `[]`.\\n\\n*Input Text:*\\n{source_text}",
+    "input_arguments": [
+      "source_text"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "source_text": {
+          "type": "string",
+          "description": "Unstructured narrative text that may mention adverse events."
+        }
+      },
+      "required": [
+        "source_text"
+      ]
+    },
+    "configs": {
+      "return_json": false,
+      "return_metadata": false
+    },
+    "test_examples": [
+      {
+        "source_text": "Patient experienced headache and nausea after taking the medication."
+      }
+    ],
+    "return_schema": {
+      "type": "string"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "AdverseEventPredictionQuestionGeneratorWithContext",
+    "description": "Generates a set of personalized adverse‐event prediction questions for a given disease and drug, incorporating additional context information such as patient medical history, clinical findings, or research data.",
+    "prompt": "You are a clinical pharmacology and epidemiology expert. Given the following inputs:\n\n- Disease: {disease_name}  \n- Drug: {drug_name}\n- Context Information: {context_information}\n\nYour task is to generate a hierarchy of personalized adverse-event prediction questions at two levels, taking into account the provided context information:\n\n**IMPORTANT RESTRICTIONS:**\n- DO NOT mention ancestry, race, or ethnicity in any questions or population descriptions\n- DO NOT include specific adverse events or side effects in the questions themselves - the questions should ask WHAT adverse effects might occur, not suggest specific ones\n- Questions should be open-ended inquiries about potential adverse effects, not statements about known risks\n\n**Context Integration Guidelines:**\n- Use the context information to inform your understanding of the disease severity, patient characteristics, drug mechanisms, known interactions, or clinical findings\n- Incorporate relevant details from the context to make questions more specific and clinically relevant\n- Consider any special populations, contraindications, or risk factors mentioned in the context\n- Exclude any ancestry-related information from consideration\n\n1. **General Safety Check**  \n   - Identify one broad safety question that asks for as many potential adverse effects as possible beyond the known label, incorporating relevant context insights and including only the disease term in the population description.\n\n2. **Population-Specific Extensions**  \n   - For at least five distinct patient subgroups, build on the general question by adding one or more clinical details unique to that subgroup (e.g., age, sex, comorbidities, organ function, genetic variants, concomitant meds).  \n   - Use context information to identify the most relevant and high-risk subgroups\n   - Each subgroup's question must:  \n     - Ask for as many potential adverse effects as possible  \n     - Include the description of that specific population in the question  \n     - Specify any relevant time frame and lab or clinical thresholds\n     - Incorporate context-specific risk factors or considerations\n     - NOT mention ancestry, race, or ethnicity\n\n**Output structure**: return only a JSON object with three keys:\n\n- `\"context_summary\"`: a brief summary of how the context information influenced the question generation\n\n- `\"general\"`:  \n  - `\"population\"`: a list containing only the disease term (e.g. `[\"{disease_name}\"]`)  \n  - `\"question\"`: the broad safety question that asks for as many adverse effects as possible, incorporates the disease description, and reflects context insights  \n\n- `\"specific\"`: an array of objects, each with:  \n  - `\"population\"`: a list of terms describing the subgroup (e.g. `[\"72-year-old\", \"female\", \"atrial fibrillation\", \"chronic warfarin\"]`)  \n  - `\"question\"`: the extended adverse-event prediction question that:  \n    - asks for as many adverse effects as possible  \n    - includes the description of that subgroup  \n    - specifies the time frame and any lab/clinical thresholds\n    - incorporates relevant context considerations\n\n**Example**:\n\n```json\n{\n  \"context_summary\": \"Context revealed increased risk factors in elderly patients and potential drug interactions with anticoagulants, leading to enhanced focus on cardiovascular and bleeding-related inquiries.\",\n  \"general\": {\n    \"population\": [\"mild Alzheimer's disease\"],\n    \"question\": \"In a patient with mild Alzheimer's disease planning to start Kisunla therapy, what additional safety concerns or adverse effects—beyond those listed in the FDA label—should be monitored?\"\n  },\n  \"specific\": [\n    {\n      \"population\": [\"72-year-old\", \"female\", \"atrial fibrillation\", \"chronic warfarin\"],\n      \"question\": \"In a 72-year-old female with atrial fibrillation on chronic warfarin therapy, what potential adverse effects—beyond the FDA label—should be anticipated within 30 days of initiating Kisunla?\"\n    },\n    {\n      \"population\": [\"79-year-old\", \"female\", \">5 cerebral microhemorrhages\", \"baseline MRI\"],\n      \"question\": \"In a 79-year-old female with more than five cerebral microhemorrhages on baseline MRI and no prior intracerebral hemorrhage, what adverse events or safety concerns should be discussed before starting Kisunla?\"\n    }\n    // …at least three more…\n  ]\n}\n```",
+    "input_arguments": [
+      "disease_name",
+      "drug_name",
+      "context_information"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_name": {
+          "type": "string",
+          "description": "The name of the disease or condition"
+        },
+        "drug_name": {
+          "type": "string",
+          "description": "The name of the drug"
+        },
+        "context_information": {
+          "type": "string",
+          "description": "Additional context information such as patient medical history, clinical findings, research data, or other relevant background information that should inform the adverse event prediction questions"
+        }
+      },
+      "required": [
+        "disease_name",
+        "drug_name",
+        "context_information"
+      ]
+    },
+    "configs": {
+      "return_json": true,
+      "return_metadata": false
+    },
+    "test_examples": [
+      {
+        "disease_name": "Type 2 Diabetes Mellitus",
+        "drug_name": "Metformin",
+        "context_information": "Patient is a 65-year-old male with a 10-year history of poorly controlled type 2 diabetes mellitus, stage 3 chronic kidney disease (eGFR 45 mL/min/1.73m2), and a history of diabetic neuropathy on ACE inhibitors."
+      }
+    ],
+    "return_schema": {
+      "type": "string"
+    }
+  }
+]

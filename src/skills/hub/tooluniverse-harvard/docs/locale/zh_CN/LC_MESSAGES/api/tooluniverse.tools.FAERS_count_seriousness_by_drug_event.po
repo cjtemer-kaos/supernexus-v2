@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_seriousness_by_drug_event.rst:2
+#: f57a32ab9b9e42b7a4867e35832d0fe0
+msgid "tooluniverse.tools.FAERS\\_count\\_seriousness\\_by\\_drug\\_event module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_seriousness\\_by\\_drug\\_event 模块"
+
+#: de6de68c4079463cbe1d782da39a0f10 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event:1
+msgid "FAERS_count_seriousness_by_drug_event"
+msgstr "FAERS_按药物事件严重程度计数"
+
+#: 034d8c09c67b4541b29ff41d8b7037ed d0e43c64e3d94f8bb8b78169ac98bc6c of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event:3
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:1
+msgid ""
+"Count the number of adverse event reports classified as serious or non-"
+"serious, filtered by drug ..."
+msgstr "统计按药物筛选的严重或非严重分类的不良事件报告数量..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_seriousness_by_drug_event.rst
+#: 6374fa56771e4f19a3d5ee4cb25b0105
+msgid "Parameters"
+msgstr "参数"
+
+#: 18591b66e2c0486d97de2a4a67e05de1 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:3
+msgid "Drug name."
+msgstr "药物名称。"
+
+#: 7edfe94aa7b7494d90fe670dc755cdf1 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:5
+msgid "Patient sex, leave it blank if you don't want to apply a filter."
+msgstr "患者性别，如果不需要应用筛选，请留空。"
+
+#: 5e984917321443cfa77669760cbeb075 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:7
+msgid "Patient age group."
+msgstr "患者年龄组"
+
+#: d4d62cb066e0486f8556f2f0d1bc3f3b of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:9
+msgid "Country where event occurred."
+msgstr "事件发生的国家。"
+
+#: b7b26166b283433eb880d2e84ce5a685 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4c1dcd639e114465a1792f3932a23126 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2b357272ce434102a9720ce1b532d2a6 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_seriousness_by_drug_event.rst
+#: dec4103fd8854ee491867f7e851fbb40
+msgid "Return type"
+msgstr "返回类型"
+
+#: cc86e6f763c640b5912af6e9ca518128 of
+#: tooluniverse.tools.FAERS_count_seriousness_by_drug_event.FAERS_count_seriousness_by_drug_event:18
+msgid ":py:class:`Any`"
+msgstr ""

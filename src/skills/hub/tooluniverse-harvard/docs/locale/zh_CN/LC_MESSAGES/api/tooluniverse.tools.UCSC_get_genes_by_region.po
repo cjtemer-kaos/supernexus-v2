@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.UCSC_get_genes_by_region.rst:2
+#: f280dc6ff5ba4ccf9a23b69aba65d25b
+msgid "tooluniverse.tools.UCSC\\_get\\_genes\\_by\\_region module"
+msgstr "tooluniverse.tools.UCSC\\_get\\_genes\\_by\\_region 模块"
+
+#: cae3e556cb9e479cb79c44e26f2484fe of
+#: tooluniverse.tools.UCSC_get_genes_by_region:1
+msgid "UCSC_get_genes_by_region"
+msgstr "UCSC_按区域获取基因"
+
+#: b58c20f7f0d1483986653732734ea5ba b87b20abc7e74a65885a65d9134724f6 of
+#: tooluniverse.tools.UCSC_get_genes_by_region:3
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:1
+msgid ""
+"Query UCSC Genome Browser track API for knownGene features in a genomic "
+"window."
+msgstr "查询 UCSC Genome Browser 轨迹 API，以获取基因组窗口中的 knownGene 特征。"
+
+#: ../../api/tooluniverse.tools.UCSC_get_genes_by_region.rst
+#: 3cfc3396b4dd45489b9773f293d01312
+msgid "Parameters"
+msgstr "参数"
+
+#: dc2450f9530c4f93bbfb74d2a6485127 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:3
+msgid "Genome assembly (e.g., hg38)."
+msgstr "基因组组装（例如，hg38）。"
+
+#: 596115fa98cc4529a7bbb4048154dc36 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:5
+msgid "Chromosome (e.g., chr17)."
+msgstr "染色体（例如，chr17）。"
+
+#: 03cab52516784fb38ba1c625ced38d23 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:7
+msgid "Start position (0-based)."
+msgstr "起始位置（基于0）。"
+
+#: 7ec0cb1f73294703a498c4e6bba038c1 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:9
+msgid "End position."
+msgstr "结束位置。"
+
+#: 84c61e00146f4a15bac2ba44dc60f020 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:11
+msgid "Track name."
+msgstr "轨道名称。"
+
+#: 1c38d80794d740c9bba6afe26c928fae of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0117fdebfac04078ae6c9fda070a1597 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 87da7c84c5664d87bc66936672fac06c of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.UCSC_get_genes_by_region.rst
+#: cc4ebedb0aa8496abe1ca4db0e836183
+msgid "Return type"
+msgstr "返回类型"
+
+#: 95183d7969274d3b9c160b9ed325b5f5 of
+#: tooluniverse.tools.UCSC_get_genes_by_region.UCSC_get_genes_by_region:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

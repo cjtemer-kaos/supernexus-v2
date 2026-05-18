@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.rst:2
+#: 02682fca2ca341d993dfb9d696ffe5df
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_principal\\_display\\_panel module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_principal\\_display\\_panel 模块"
+
+#: eb92b85e6aa64c1bb888d60a3442b0eb of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel:1
+msgid "FDA_get_drug_name_by_principal_display_panel"
+msgstr ""
+"FDA_get_drug_name_by_principal_display_panel  \n"
+"获取药品名称_根据主要显示面板"
+
+#: 4f2314306c20413889fb17f45402250f a554092f95d6455ab36e9873e77a5a2a of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel:3
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:1
+msgid ""
+"Retrieve the drug name based on the content of the principal display panel "
+"of the product package."
+msgstr "根据产品包装主要展示面板的内容提取药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.rst
+#: ec00c05a535549a6ad1a0babb3caa0c5
+msgid "Parameters"
+msgstr "参数"
+
+#: 390ab360e3784ead8b1bfe882c9ed136 of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:3
+msgid "The content of the principal display panel of the product package."
+msgstr "产品包装主要展示面板的内容。"
+
+#: c59221a9f89e4f6dae2336326315482b of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: d5c51b48a5ae428c9130615eba2fcea0 of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 55fe215e12ab4cd1abcc18c1b766fe5a of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f8a90cf3345747e786c645fb6d57f625 of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7fa667438e374c7bbbbd6cedb9c4e838 of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.rst
+#: f34f3b7bbec94d7696fe6b4db66702b1
+msgid "Return type"
+msgstr "返回类型"
+
+#: d401e074ddbd430bbbdf2ddbc9be7023 of
+#: tooluniverse.tools.FDA_get_drug_name_by_principal_display_panel.FDA_get_drug_name_by_principal_display_panel:16
+msgid ":py:class:`Any`"
+msgstr ""

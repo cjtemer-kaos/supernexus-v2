@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/image_processing_tools.rst:2 c9e881510879435887f9f681a639c0ec
+msgid "Image Processing Tools"
+msgstr "图像处理工具"
+
+#: ../../tools/image_processing_tools.rst:4 7bd2f996f2994ecca02379a4160da07b
+msgid ""
+"**Configuration File**: ``packages/image_processing_tools.json`` **Tool "
+"Type**: Local **Tools Count**: 3"
+msgstr ""
+"**配置文件**: ``packages/image_processing_tools.json`` **工具类型**: 本地 **工具数量**: 3"
+
+#: ../../tools/image_processing_tools.rst:8 90bd89caf67d4bc4887ed47043986ff0
+msgid ""
+"This page contains all tools defined in the ``image_processing_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``image_processing_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/image_processing_tools.rst:11 f42894671cb046d38a54b46145cd7af3
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/image_processing_tools.rst:14 1b11459db4a949ab89986c2f18e43a4f
+msgid "**get_albumentations_info** (Type: PackageTool)"
+msgstr "**get_albumentations_info**（类型：PackageTool）"
+
+#: ../../tools/image_processing_tools.rst:16 a04e7411a7f44faabe3522f284e2d4b8
+msgid ""
+"Get information about the albumentations package. Fast image augmentation "
+"library"
+msgstr "获取有关 albumentations 包的信息。快速图像增强库"
+
+#: ../../tools/image_processing_tools.rst 38d4193b1f3b4a3e83c24951d92d350a
+msgid "get_albumentations_info tool specification"
+msgstr "get_albumentations_info 工具规范"
+
+#: ../../tools/image_processing_tools.rst:20
+#: ../../tools/image_processing_tools.rst:49
+#: ../../tools/image_processing_tools.rst:78 5d509d34febd4740baf81fa6f6606e5f
+#: 721ef32cb59f4dc48e83f86f9b2d5d35 df2ca257334c4aa683239587c3c7ff30
+msgid "**Tool Information:**"
+msgstr ""
+"**工具信息：**\n"
+"\n"
+"Context: 文档"
+
+#: ../../tools/image_processing_tools.rst:22 1e5f318820954e868b0d3ea9a0e76657
+msgid "**Name**: ``get_albumentations_info``"
+msgstr "**名称**: ``get_albumentations_info``"
+
+#: ../../tools/image_processing_tools.rst:23
+#: ../../tools/image_processing_tools.rst:52
+#: ../../tools/image_processing_tools.rst:81 091b4fc767b9435a9a86b0769057894d
+#: a6da8153e70e487ea6499ee56559c582 c9837e804f0c40eabac5aca024d323df
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**: ``PackageTool``"
+
+#: ../../tools/image_processing_tools.rst:24 a303019ea20749c283ed0582bd5e0df4
+msgid ""
+"**Description**: Get information about the albumentations package. Fast "
+"image augmentation library"
+msgstr "**描述**：获取有关 albumentations 包的信息。高效的图像增强库"
+
+#: ../../tools/image_processing_tools.rst:26
+#: ../../tools/image_processing_tools.rst:55
+#: ../../tools/image_processing_tools.rst:84 6989a0c3a6884b8097f5b27147372904
+#: 730ee180ea2a4e27bcfbea111c659fec 77711ee6514c4788bcd254d4167e1960
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/image_processing_tools.rst:28
+#: ../../tools/image_processing_tools.rst:57
+#: ../../tools/image_processing_tools.rst:86 292880cdf5a44c769c855627fc8023e5
+#: 63a2867c6aeb4e93b29955852e0f1cfa 8dc554277eb6404c8b3d26580ee639a0
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/image_processing_tools.rst:30
+#: ../../tools/image_processing_tools.rst:59
+#: ../../tools/image_processing_tools.rst:88 2674279470a446ad8351a1a2abfa3f9d
+#: 72908bdf8d6a471fa860132b8b77c91d c9f0a586453244389d393b191f7fef9d
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/image_processing_tools.rst:43 b1fb67823f41473594f42ebe25e47af4
+msgid "**get_imageio_info** (Type: PackageTool)"
+msgstr "**get_imageio_info**（类型：PackageTool）"
+
+#: ../../tools/image_processing_tools.rst:45 2c43517783304b5aa9df2a60884e9bc4
+msgid ""
+"Get information about the imageio package. Python library for reading and "
+"writing image data"
+msgstr "获取有关 imageio 软件包的信息。Python 库，用于读取和写入图像数据。"
+
+#: ../../tools/image_processing_tools.rst 103375ded10144348a5174c5da92ad9b
+msgid "get_imageio_info tool specification"
+msgstr "get_imageio_info 工具规范"
+
+#: ../../tools/image_processing_tools.rst:51 b52f2364f9bb4e658378226c9aadab65
+msgid "**Name**: ``get_imageio_info``"
+msgstr "**名称**: ``get_imageio_info``"
+
+#: ../../tools/image_processing_tools.rst:53 76593f912c844c9e8bfc858f26c95a47
+msgid ""
+"**Description**: Get information about the imageio package. Python library "
+"for reading and writing image data"
+msgstr "**描述**：获取有关 imageio 包的信息。Python 库用于读取和写入图像数据"
+
+#: ../../tools/image_processing_tools.rst:72 fdb7b61e04454ef0980949150e2fb11b
+msgid "**get_pillow_info** (Type: PackageTool)"
+msgstr "**get_pillow_info**（类型：PackageTool）"
+
+#: ../../tools/image_processing_tools.rst:74 3a8821c183814eb389682d15a66102c9
+msgid "Get information about the pillow package. Python Imaging Library fork"
+msgstr "获取有关 Pillow 包的信息。Python Imaging Library 的分支版本"
+
+#: ../../tools/image_processing_tools.rst a5266c0fc57d43a4b26f0bff3b81a477
+msgid "get_pillow_info tool specification"
+msgstr "get_pillow_info 工具规格说明"
+
+#: ../../tools/image_processing_tools.rst:80 c742e4a329654a488c3853782a9f897d
+msgid "**Name**: ``get_pillow_info``"
+msgstr "**名称**：``get_pillow_info``"
+
+#: ../../tools/image_processing_tools.rst:82 1bb3c4cde79849e9b8bb0f38bf8c1a99
+msgid ""
+"**Description**: Get information about the pillow package. Python Imaging "
+"Library fork"
+msgstr "**描述**：获取有关 Pillow 包的信息。Python Imaging Library 的分支版本"
+
+#: ../../tools/image_processing_tools.rst:101 6a1a9cc1f2c24da2bfb896be262cd02b
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/image_processing_tools.rst:103 f47ec2db07ed4943b4c7158aeefe0b4f
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具总览"
+
+#: ../../tools/image_processing_tools.rst:104 a4a9096cb02748519f49bc916a9910dc
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

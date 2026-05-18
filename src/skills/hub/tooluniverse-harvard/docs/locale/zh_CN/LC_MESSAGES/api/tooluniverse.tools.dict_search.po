@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.dict_search.rst:2
+#: a5eca3f1b6d6409b848f8c4762684c86
+msgid "tooluniverse.tools.dict\\_search module"
+msgstr "tooluniverse.tools.dict_search 模块"
+
+#: afc6ddecdce8469f9c7a22983ebd5b2a of tooluniverse.tools.dict_search:1
+msgid "dict_search"
+msgstr ""
+
+#: 061fe3cde6484b3eb774859f6c3516f9 d6c5215489a64fe2af355ea50551a965 of
+#: tooluniverse.tools.dict_search:3
+#: tooluniverse.tools.dict_search.dict_search:1
+msgid ""
+"Search the DICTrank dataset for drug-induced cardiotoxicity (DICT) risk "
+"information by trade name..."
+msgstr "通过商品名称搜索DICTrank数据集以获取药物诱发心脏毒性（DICT）风险信息..."
+
+#: ../../api/tooluniverse.tools.dict_search.rst
+#: 2aa0299543db43bfb758278713cb40d1
+msgid "Parameters"
+msgstr "参数"
+
+#: beb37d87bbdf49ada5e5e8f327ae4341 of
+#: tooluniverse.tools.dict_search.dict_search:3
+msgid "Free-text query (e.g. 'ZYPREXA', 'Olanzapine')."
+msgstr "自由文本查询（例如“ZYPREXA”、“奥氮平”）。"
+
+#: ce5254331145411baa9c8cd2ea5a73fa of
+#: tooluniverse.tools.dict_search.dict_search:5
+msgid ""
+"Columns to search. Choose from: 'Trade Name', 'Generic/Proper Name(s)', "
+"'Acti..."
+msgstr "搜索的列。可选择：‘商品名’，‘通用名/规范名称’，‘活性成分’..."
+
+#: 4f48d98f4d7f4215b0f53257a31abbf4 of
+#: tooluniverse.tools.dict_search.dict_search:7
+msgid "Match text with exact case if true."
+msgstr "如果为真，则匹配文本时需严格区分大小写。"
+
+#: d7faf2d9c7c24ad183f897ca46bad3e5 of
+#: tooluniverse.tools.dict_search.dict_search:9
+msgid ""
+"Field value must equal query exactly if true; otherwise substring match."
+msgstr "字段值必须与查询完全匹配（如果为 true）；否则为子字符串匹配。"
+
+#: c532efff3369498dacf585dcc3446632 of
+#: tooluniverse.tools.dict_search.dict_search:11
+msgid "Maximum number of rows to return."
+msgstr "返回的最大行数。"
+
+#: 9d7b34417e874830a3e240b6d76fb12f of
+#: tooluniverse.tools.dict_search.dict_search:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9f258e07f4e548018769cab1c7e719c0 of
+#: tooluniverse.tools.dict_search.dict_search:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0c9d3e7ead814c26b2be8054877de88d of
+#: tooluniverse.tools.dict_search.dict_search:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.dict_search.rst
+#: 8265a00a60e14b4999b62b98e6830303
+msgid "Return type"
+msgstr "返回类型"
+
+#: a6cdab1ea559434a8ba0202e46c27a07 of
+#: tooluniverse.tools.dict_search.dict_search:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

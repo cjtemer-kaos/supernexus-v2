@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.base_tool.rst:2 50379fc7beb3400a88fef8f31ff4f584
+#, fuzzy
+msgid "tooluniverse.base\\_tool module"
+msgstr "tooluniverse.base_tool 模块"
+
+#: d5b44dccbb234d538d123874bbfbf430 of tooluniverse.base_tool.BaseTool:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: e22746e2515f4c098718e4d1c3e33d64 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:1
+msgid "Get the path to the default configuration file for this tool type."
+msgstr "获取此工具类型的默认配置文件路径。"
+
+#: ccbd067681814d0a8ed2789dfb20ec41 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:3
+msgid ""
+"This method uses a robust path resolution strategy that works across "
+"different installation scenarios:"
+msgstr "该方法采用了一种稳健的路径解析策略，适用于不同的安装场景："
+
+#: 27364b6327b64e98a1a3904353272f16 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:6
+msgid ""
+"Installed packages: Uses importlib.resources for proper package resource "
+"access"
+msgstr "已安装的软件包：使用 importlib.resources 以实现正确的软件包资源访问"
+
+#: 46d47f53ced84d78b48e604ac6576421 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:8
+msgid "Development mode: Falls back to file-based path resolution"
+msgstr "开发模式：回退到基于文件的路径解析"
+
+#: d869767e625044b495d9538a08f0afb1 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:9
+msgid "Legacy Python: Handles importlib.resources and importlib_resources"
+msgstr "遗留版 Python：处理 importlib.resources 和 importlib_resources"
+
+#: a538cb3143884ad3b1ab80b8be56636e of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:11
+msgid "Override this method in subclasses to specify a custom defaults file."
+msgstr "在子类中重写此方法以指定自定义默认值文件。"
+
+#: ../../api/tooluniverse.base_tool.rst 2cfa9a8471104a738e4fc2ecb4a78c3b
+#: 538c0a7c5c674341a75b1aaf3249aec0 9119eeb9d0684d6894a23c6c79c8cd93
+#: b0541d15e0b540fab247b559ba6222cc b4627883431743cd9388da6a72a50809
+#: d3cf0b6ddb634d25871ea46c9e9247ec d92ce2fcb9944d0aa5cf570132665217
+msgid "Returns"
+msgstr "退货"
+
+#: 63b7e08bcce947b5bc54e3bc436eeaf1 of
+#: tooluniverse.base_tool.BaseTool.get_default_config_file:13
+msgid "Path or resource object pointing to the defaults file"
+msgstr "指向默认文件的路径或资源对象"
+
+#: ed766c16322b44f98a47f3174ca326e6 of
+#: tooluniverse.base_tool.BaseTool.load_defaults_from_file:1
+msgid "Load defaults from the configuration file"
+msgstr "从配置文件加载默认设置"
+
+#: 579ac7abe4fa47ae81945509fe7ce910 of
+#: tooluniverse.base_tool.BaseTool._apply_defaults:1
+#, fuzzy
+msgid "Apply default configuration to the tool config"
+msgstr "获取此工具类型的默认配置文件路径。"
+
+#: 49d6adfa7a504e03a767177f85efc8ee of tooluniverse.base_tool.BaseTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: c4ddb4098116487c974c8937c6e2cb25 of tooluniverse.base_tool.BaseTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些工具通常期望输入为字典形式。"
+
+#: ../../api/tooluniverse.base_tool.rst 18ad90a07df44acba6864f45449062b6
+#: 4a753d8b467f434cb278994176d5e02f e61899f942574f68a7234a865a77e102
+#: ff99c6cf59304b36ab8adf680aa7aafc
+msgid "Parameters"
+msgstr "参数"
+
+#: aec910ac8a9a408ea378272b9790e31d of tooluniverse.base_tool.BaseTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 58638c5ab7d648138be77b2c3cc61b6c of tooluniverse.base_tool.BaseTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: ab1b596e060a46b4b60b35178675a578 of tooluniverse.base_tool.BaseTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 7ce75d9aedb34bf59453e7bac78f6db6 of tooluniverse.base_tool.BaseTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 071ce5e934dc42528b4d83d5f649a852 of tooluniverse.base_tool.BaseTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 5a16c0c453be4df3bff697eae51f2fd9 of tooluniverse.base_tool.BaseTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"
+
+#: 1afadc9735af408696df2527b0373360 of
+#: tooluniverse.base_tool.BaseTool.get_required_parameters:1
+msgid ""
+"Retrieve required parameters from the endpoint definition. Returns: list: "
+"List of required parameters for the given endpoint."
+msgstr ""
+"从端点定义中获取所需参数。  \n"
+"返回值：  \n"
+"list：给定端点所需参数的列表。"
+
+#: 0fb2c23794164448b32c32c0fb4a933b of
+#: tooluniverse.base_tool.BaseTool.validate_parameters:1
+msgid "Validate parameters against tool schema."
+msgstr "根据工具架构验证参数。"
+
+#: 7db20ca264bd43c9a24b8c4476597767 of
+#: tooluniverse.base_tool.BaseTool.validate_parameters:3
+msgid ""
+"This method provides standard parameter validation using jsonschema. "
+"Subclasses can override this method to implement custom validation logic."
+msgstr "此方法使用 jsonschema 提供标准参数验证。子类可以重写此方法以实现自定义验证逻辑。"
+
+#: 84a3a4400e244b1e8d3e998dda598468 of
+#: tooluniverse.base_tool.BaseTool.validate_parameters:7
+msgid "Dictionary of arguments to validate"
+msgstr "参数验证字典"
+
+#: 83f8358394634b7a85968b69a4ebee03 of
+#: tooluniverse.base_tool.BaseTool.validate_parameters:9
+msgid "ToolError if validation fails, None if validation passes"
+msgstr "验证失败时返回 ToolError，验证通过时返回 None"
+
+#: ../../api/tooluniverse.base_tool.rst 27f109b75c9742ee9389f34e72462f3b
+#: 5c1234abe66d474089c800cb5f36b1ae 5fc9feaec0d648f09f2179ab8ed5ed1f
+#: 91b45620152b408d9294fe207282e38f 92c903e0a7144d6aaca3a097ed4b8b33
+#: a7696e6ff1b542039e380f9ab23f6caf
+#, fuzzy
+msgid "Return type"
+msgstr "退货"
+
+#: 64dfe9b862cf4891bc04e9d6a9cbd817 of
+#: tooluniverse.base_tool.BaseTool.handle_error:1
+msgid "Classify a raw exception into a structured ToolError."
+msgstr "将原始异常分类为结构化的 ToolError。"
+
+#: 800a0b0cb8144f35be3636f8fe57699f of
+#: tooluniverse.base_tool.BaseTool.handle_error:3
+msgid ""
+"This method provides standard error classification. Subclasses can override "
+"this method to implement custom error handling logic."
+msgstr "此方法提供标准错误分类。子类可以重写此方法以实现自定义错误处理逻辑。"
+
+#: 537024fa220642ac91f0425e7ecf0df8 of
+#: tooluniverse.base_tool.BaseTool.handle_error:6
+msgid "The raw exception to classify"
+msgstr "用于分类的原始异常"
+
+#: 37fc43640251481a8f3c206762a04180 of
+#: tooluniverse.base_tool.BaseTool.handle_error:8
+msgid "Structured ToolError instance"
+msgstr "结构化 ToolError 实例"
+
+#: 1a827d0ccff842ee894ec93b3bb93798 of
+#: tooluniverse.base_tool.BaseTool.get_cache_key:1
+msgid "Generate a cache key for this tool call."
+msgstr "为此工具调用生成缓存键。"
+
+#: 6f9a70dc90ca4c2a8250bebf6133d1cd of
+#: tooluniverse.base_tool.BaseTool.get_cache_key:3
+msgid ""
+"This method provides standard cache key generation. Subclasses can override "
+"this method to implement custom caching logic."
+msgstr "此方法提供标准的缓存键生成。子类可以重写此方法以实现自定义的缓存逻辑。"
+
+#: 8389224ad9eb43bdb5b1ddfeec301f8d of
+#: tooluniverse.base_tool.BaseTool.get_cache_key:6
+msgid "Dictionary of arguments for the tool call"
+msgstr "工具调用参数字典"
+
+#: fb366528f6e74aa586c68152c27296e9 of
+#: tooluniverse.base_tool.BaseTool.get_cache_key:8
+msgid "String cache key"
+msgstr "字符串缓存键"
+
+#: 40c99567c57c4bc790d6f6f2fe0f8ecc of
+#: tooluniverse.base_tool.BaseTool.supports_streaming:1
+msgid "Check if this tool supports streaming responses."
+msgstr "检查此工具是否支持流式响应。"
+
+#: 7f284038df074c1582c32c09fe49ef4b of
+#: tooluniverse.base_tool.BaseTool.supports_streaming:3
+msgid "True if tool supports streaming, False otherwise"
+msgstr "如果工具支持流式处理，则为 True，否则为 False"
+
+#: d11048d7f1194388a4f313cf4db439c8 of
+#: tooluniverse.base_tool.BaseTool.supports_caching:1
+msgid "Check if this tool's results can be cached."
+msgstr "检查此工具的结果是否可以缓存。"
+
+#: 3601f06d4c7c4c18a3663eb33c97b8bf of
+#: tooluniverse.base_tool.BaseTool.supports_caching:3
+msgid "True if tool results can be cached, False otherwise"
+msgstr "如果工具结果可以被缓存，则为 True，否则为 False"
+
+#: f409ba04c7b04047849a238cb647ab1a of
+#: tooluniverse.base_tool.BaseTool.get_batch_concurrency_limit:1
+msgid ""
+"Return maximum concurrent executions allowed during batch runs (0 = "
+"unlimited)."
+msgstr "返回批处理运行期间允许的最大并发执行数（0 = 不限）。"
+
+#: bbddee6477f94947b72b9c396ceffbad of
+#: tooluniverse.base_tool.BaseTool.get_cache_namespace:1
+msgid "Return cache namespace identifier for this tool."
+msgstr "返回此工具的缓存命名空间标识符。"
+
+#: 7b1e1135a30b419c827583dbfd379908 of
+#: tooluniverse.base_tool.BaseTool.get_cache_version:1
+msgid "Return a stable cache version fingerprint for this tool."
+msgstr "为此工具返回稳定的缓存版本指纹。"
+
+#: a7cfb79312d04e858409bfc56a0d7fd2 of
+#: tooluniverse.base_tool.BaseTool.get_cache_ttl:1
+msgid "Return TTL (seconds) for cached results; None means no expiration."
+msgstr "返回缓存结果的TTL（秒）；None表示没有过期时间。"
+
+#: 27307ebfe885403098dd930946214046 of
+#: tooluniverse.base_tool.BaseTool.get_tool_info:1
+msgid "Get comprehensive information about this tool."
+msgstr "获取有关此工具的全面信息。"
+
+#: 5220f97e36ae4323ac4780656706791b of
+#: tooluniverse.base_tool.BaseTool.get_tool_info:3
+msgid "Dictionary containing tool metadata"
+msgstr "包含工具元数据的字典"
+
+#~ msgid "Bases: :py:class:`Exception`"
+#~ msgstr "基类：:py:class:`Exception`"
+
+#~ msgid "Base exception for tool execution errors."
+#~ msgstr "工具执行错误的基础异常。"
+
+#~ msgid "Exception raised when input validation fails."
+#~ msgstr "输入验证失败时引发的异常。"
+
+#~ msgid "Exception raised when authentication fails."
+#~ msgstr "认证失败时引发的异常。"
+
+#~ msgid "Exception raised when API rate limit is exceeded."
+#~ msgstr "当超过API速率限制时引发的异常。"
+
+#~ msgid "Apply default configuration to the tool config"
+#~ msgstr "将默认配置应用于工具配置"
+
+#~ msgid ""
+#~ "The BaseTool class provides the foundation for all ToolUniverse tools with "
+#~ "enhanced capabilities for validation, error handling, and caching."
+#~ msgstr "BaseTool 类为所有 ToolUniverse 工具提供了基础，具备增强的验证、错误处理和缓存功能。"
+
+#~ msgid "Base Tool Class"
+#~ msgstr "基础工具类"
+
+#~ msgid ""
+#~ "The base class for all ToolUniverse tools. Provides standard capabilities "
+#~ "that can be overridden by custom tool implementations."
+#~ msgstr "所有 ToolUniverse 工具的基类。提供可由自定义工具实现覆盖的标准功能。"
+
+#~ msgid "**New Capabilities (v1.1+):**"
+#~ msgstr "**新功能（v1.1+）：**"
+
+#~ msgid ":meth:`validate_parameters` - Parameter validation with schema support"
+#~ msgstr ":meth:`validate_parameters` - 使用模式支持进行参数验证"
+
+#~ msgid ":meth:`handle_error` - Structured error classification"
+#~ msgstr ":meth:`handle_error` - 结构化错误分类"
+
+#~ msgid ":meth:`get_cache_key` - Custom cache key generation"
+#~ msgstr ":meth:`get_cache_key` - 自定义缓存键生成"
+
+#~ msgid ":meth:`supports_streaming` - Declare streaming support"
+#~ msgstr ":meth:`supports_streaming` - 声明流媒体支持"
+
+#~ msgid ":meth:`supports_caching` - Declare caching support"
+#~ msgstr ":meth:`supports_caching` - 声明缓存支持"
+
+#~ msgid ":meth:`get_tool_info` - Comprehensive tool metadata"
+#~ msgstr ":meth:`get_tool_info` - 全面的工具元数据"
+
+#~ msgid "**Example:**"
+#~ msgstr "请提供您需要翻译的具体英文文本内容，我将为您进行翻译。"
+
+#~ msgid ""
+#~ "For more information about the exception system, see "
+#~ ":mod:`tooluniverse.exceptions`."
+#~ msgstr "有关异常系统的更多信息，请参阅 :mod:`tooluniverse.exceptions`。"

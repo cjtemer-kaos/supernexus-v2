@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../quickstart.rst:2 8cf83dfcd47f4d20af5dcce04f885634
+msgid "Quick Start"
+msgstr "快速开始"
+
+#: ../../quickstart.rst:4 bfc5a4c9ebf54bf4ad006fcc55fa1464
+msgid ""
+"**Build your first AI scientist in 5 minutes with ToolUniverse's 1000+ "
+"scientific tools**"
+msgstr ""
+"**使用 ToolUniverse 的 1000+ 科学工具在 5 分钟内构建您的第一个 AI 科学家**"
+
+#: ../../quickstart.rst:6 12536d5e78a94a42b73728f2aed06176
+msgid ""
+"This Tutorial gets you from zero to your first successful query in 5 "
+"minutes. For detailed tutorials, see :doc:`getting_started`."
+msgstr ""
+"本教程让您在 5 分钟内从零开始进行第一次成功查询。有关详细教程，请参阅 :doc:`getting_started`。"
+
+#: ../../quickstart.rst:9 dac8dd07d69e4fffb6b0f4b7f403d45a
+msgid "🚀 Quick Start"
+msgstr "🚀 快速开始"
+
+#: ../../quickstart.rst:11 589aa78f66074a73963d4035d12da184
+msgid "**Get your first ToolUniverse running in 2 minutes:**"
+msgstr "**在 2 分钟内启动您的第一个 ToolUniverse：**"
+
+#: ../../quickstart.rst:30 bd615aa8311a4274bd8c4ffa42cfe3ab
+msgid "**Success!** You now have access to 1000+ scientific tools."
+msgstr "**成功！** 您现在可以访问 1000+ 科学工具。"
+
+#: ../../quickstart.rst:33 6d2112e7f42743149263794ff71e25e9
+msgid "Building AI Scientists"
+msgstr "构建 AI 科学家"
+
+#: ../../quickstart.rst:35 4cd6474d3ec246d6b16d2af882b54f0c
+msgid "**ToolUniverse + LLMs/Reasoning Models/Agents = AI Scientists**"
+msgstr "**ToolUniverse + LLM/推理模型/智能体 = AI 科学家**"
+
+#: ../../quickstart.rst:37 092b9c38f7af45388996a04be328d684
+msgid "How you want to use ToolUniverse:"
+msgstr "您希望如何使用 ToolUniverse："
+
+#: ../../quickstart.rst:42 cc1a93bfde4a47a48d6e6bd11dbccbd9
+msgid "Python Integration"
+msgstr "Python 集成"
+
+#: ../../quickstart.rst:46 80fd404f6d14460a9abc90a426c7ff22
+msgid "Use ToolUniverse directly in Python for custom applications"
+msgstr "在 Python 中直接使用 ToolUniverse 进行自定义应用程序"
+
+#: ../../quickstart.rst:48 0b1719e1c8b54751abc6dd64f656952b
+msgid "**Best for**: Custom workflows, Jupyter notebooks"
+msgstr "**最适合**：自定义工作流、Jupyter 笔记本"
+
+#: ../../quickstart.rst:50 ../../quickstart.rst:64 ../../quickstart.rst:77
+#: a7e7280e784a48c69ce00c856c7b5260 ead6024b3a984a2faf352907156b6743
+#: faa047dfa06244538e9ebb20c56c247e
+msgid "**Tutorials**:"
+msgstr "**教程**："
+
+#: ../../quickstart.rst:52 0368b94042464316ad8fbea28047aa0d
+msgid ":doc:`guide/tool_caller`"
+msgstr ":doc:`guide/tool_caller`"
+
+#: ../../quickstart.rst:53 26af470069784f66a1e92dad0b218081
+msgid ":doc:`tutorials/finding_tools`"
+msgstr ":doc:`tutorials/finding_tools`"
+
+#: ../../quickstart.rst:54 cf0ba6339a7c420e8f36305d0b288e4a
+msgid ":doc:`guide/scientific_workflows`"
+msgstr ":doc:`guide/scientific_workflows`"
+
+#: ../../quickstart.rst:56 3b61f9d7fd174ff4b36c06485c8094da
+msgid "LLM Integration"
+msgstr "LLM 集成"
+
+#: ../../quickstart.rst:60 5fcc440f0e5c4ce78ee32f0b4af45bda
+msgid "Connect ToolUniverse to Claude Desktop, ChatGPT, or other AI assistants"
+msgstr "将 ToolUniverse 连接到 Claude Desktop、ChatGPT 或其他 AI 助手"
+
+#: ../../quickstart.rst:62 66f1947207cf426c9977e049a741c541
+msgid "**Best for**: General research, quick experiments"
+msgstr "**最适合**：一般研究、快速实验"
+
+#: ../../quickstart.rst:66 5f6416ca062a463481da3a1d475a3290
+msgid ":doc:`guide/building_ai_scientists/claude_desktop`"
+msgstr ":doc:`guide/building_ai_scientists/claude_desktop`"
+
+#: ../../quickstart.rst:67 46c487721a144803abf0e7e95e7e48d8
+msgid ":doc:`guide/building_ai_scientists/chatgpt_api`"
+msgstr ":doc:`guide/building_ai_scientists/chatgpt_api`"
+
+#: ../../quickstart.rst:69 f30d4af9dc2845d19d97cc06bed6f194
+msgid "Agent Integration"
+msgstr "智能体集成"
+
+#: ../../quickstart.rst:73 2d068f580b024bb5acdb62e438ac9403
+msgid "Connect ToolUniverse to sophisticated AI agents with tool access"
+msgstr "将 ToolUniverse 连接到具有工具访问权限的复杂 AI 智能体"
+
+#: ../../quickstart.rst:75 a1276a5367ab4cb1920a0a3daba6e148
+msgid "**Best for**: Complex workflows, autonomous systems"
+msgstr "**最适合**：复杂工作流、自主系统"
+
+#: ../../quickstart.rst:79 3ae82a908a2342cf82d8af7b78d99d8a
+msgid ":doc:`guide/building_ai_scientists/codex_cli`"
+msgstr ":doc:`guide/building_ai_scientists/codex_cli`"
+
+#: ../../quickstart.rst:80 938dac2cd39e4cbea1548810dfdef389
+msgid ":doc:`guide/building_ai_scientists/gemini_cli`"
+msgstr ":doc:`guide/building_ai_scientists/gemini_cli`"
+
+#: ../../quickstart.rst:81 929a5bb6f9444b32b7c9520630511604
+msgid ":doc:`guide/building_ai_scientists/claude_code`"
+msgstr ":doc:`guide/building_ai_scientists/claude_code`"
+
+#: ../../quickstart.rst:82 1db5ce22c0e34cd6982525e7926ff363
+msgid ":doc:`guide/building_ai_scientists/qwen_code`"
+msgstr ":doc:`guide/building_ai_scientists/qwen_code`"
+
+#: ../../quickstart.rst:84 b3dccffdc5734fbebb93a1a62127d99e
+msgid "📖 **Complete Tutorial**: :doc:`guide/building_ai_scientists/index`"
+msgstr "📖 **完整教程**：:doc:`guide/building_ai_scientists/index`"
+
+#: ../../quickstart.rst:88 a3120055ecba480484a9ae97c3a9238a
+msgid "Next Steps"
+msgstr "后续步骤"
+
+#: ../../quickstart.rst:90 d3c7098fa55d42799f5e455ee5ae7e7d
+msgid "**You're ready!** Now explore:"
+msgstr "**您准备好了！** 现在探索："
+
+#: ../../quickstart.rst:92 6a2622179af144268b54f7914516731f
+msgid ":doc:`installation` - Complete installation options"
+msgstr ":doc:`installation` - 完整的安装选项"
+
+#: ../../quickstart.rst:93 16a6ced244b4460883dc0b93b3db37b5
+msgid ":doc:`getting_started` - Complete step-by-step tutorial"
+msgstr ":doc:`getting_started` - 完整的分步教程"
+
+#: ../../quickstart.rst:94 8c031873fe0c4d80834fde474d80f111
+msgid ":doc:`guide/index` - Comprehensive user tutorial"
+msgstr ":doc:`guide/index` - 全面的用户教程"
+
+#: ../../quickstart.rst:96 fc0282de9c1945fbb8f9f4b773c9003d
+msgid "**🎉 Welcome to ToolUniverse!**"
+msgstr "**🎉 欢迎来到 ToolUniverse！**"
+

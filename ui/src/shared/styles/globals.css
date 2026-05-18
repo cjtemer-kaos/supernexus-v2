@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-*: initial;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-sans: 'Geist', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', 'Fira Code', monospace;
+
+  --color-nexus-bg: #09090b;
+  --color-nexus-surface: #18181b;
+  --color-nexus-surface-2: #27272a;
+  --color-nexus-border: #3f3f46;
+  --color-nexus-muted: #71717a;
+  --color-nexus-text: #fafafa;
+  --color-nexus-text-sub: #a1a1aa;
+
+  --color-nexus-accent: #06b6d4;
+  --color-nexus-accent-dim: #0891b2;
+  --color-nexus-accent-bg: #083344;
+
+  --color-nexus-online: #22c55e;
+  --color-nexus-busy: #eab308;
+  --color-nexus-error: #ef4444;
+  --color-nexus-idle: #6b7280;
+
+  --color-gema-director: #06b6d4;
+  --color-gema-code: #3b82f6;
+  --color-gema-security: #ef4444;
+  --color-gema-creative: #f97316;
+  --color-gema-sage: #10b981;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+
+  --color-brand: var(--color-nexus-accent);
+  --color-brand-foreground: var(--color-white);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--color-nexus-bg);
+  color: var(--color-nexus-text);
+}
+
+.light {
+  --color-nexus-bg: #f8fafc;
+  --color-nexus-surface: #ffffff;
+  --color-nexus-surface-2: #f1f5f9;
+  --color-nexus-border: #e2e8f0;
+  --color-nexus-muted: #94a3b8;
+  --color-nexus-text: #0f172a;
+  --color-nexus-text-sub: #64748b;
+  --color-nexus-accent: #0891b2;
+  --color-nexus-accent-dim: #0e7490;
+  --color-nexus-accent-bg: #ecfeff;
+}
+
+@keyframes nexus-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes nexus-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes nexus-spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-nexus-in {
+  animation: nexus-fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-nexus-pulse {
+  animation: nexus-pulse 2s ease-in-out infinite;
+}
+
+.animate-nexus-spin {
+  animation: nexus-spin 1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-nexus-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nexus-muted);
+}

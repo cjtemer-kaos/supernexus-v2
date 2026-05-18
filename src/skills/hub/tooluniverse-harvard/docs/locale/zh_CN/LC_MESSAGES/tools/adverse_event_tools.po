@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/adverse_event_tools.rst:2 fe8608e740814deab49075655056d9f8
+msgid "Adverse Event Tools"
+msgstr "不良事件工具"
+
+#: ../../tools/adverse_event_tools.rst:4 40bc4272d2284585aa8e0a9ab777a8b9
+msgid ""
+"**Configuration File**: ``adverse_event_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 3"
+msgstr ""
+"**配置文件**：``adverse_event_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：3"
+
+#: ../../tools/adverse_event_tools.rst:8 30488457e9a84077b766043e05a97897
+msgid ""
+"This page contains all tools defined in the ``adverse_event_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``adverse_event_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/adverse_event_tools.rst:11 75034b16ad3e4b17b8734b49437eb499
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/adverse_event_tools.rst:14 f6637054d018424cbc342f70091cd7d3
+msgid "**AdverseEventICDMapper** (Type: AgenticTool)"
+msgstr "**AdverseEventICDMapper**（类型：AgenticTool）"
+
+#: ../../tools/adverse_event_tools.rst:16 70041a6fd42842e6b212f9b7b72f7327
+msgid ""
+"Extracts adverse events from narrative clinical or pharmacovigilance text "
+"and maps each event to ..."
+msgstr "从叙述性临床或药物警戒文本中提取不良事件，并将每个事件映射到..."
+
+#: ../../tools/adverse_event_tools.rst 52bf4acdffc24231909daf74469175f5
+msgid "AdverseEventICDMapper tool specification"
+msgstr "AdverseEventICDMapper 工具规格说明"
+
+#: ../../tools/adverse_event_tools.rst:20
+#: ../../tools/adverse_event_tools.rst:51
+#: ../../tools/adverse_event_tools.rst:86 05f47e963498453cba3288f26334ca83
+#: 71607fe4d6ef4c0b81169a7b21e8abb4 82e51acc854146baa464ae4dd59f3d66
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/adverse_event_tools.rst:22 6054bca77a44456b9af61012b00d5e9c
+msgid "**Name**: ``AdverseEventICDMapper``"
+msgstr "**名称**：``AdverseEventICDMapper``"
+
+#: ../../tools/adverse_event_tools.rst:23
+#: ../../tools/adverse_event_tools.rst:54
+#: ../../tools/adverse_event_tools.rst:89 3b36f5922cc94cb7b431b0c9db4524ae
+#: d4bfa3b091944b758c99e6a0b7a1c2f2 da7e3ce2e17a45e1a7769743c94d251d
+msgid "**Type**: ``AgenticTool``"
+msgstr "**类型**：``AgenticTool``"
+
+#: ../../tools/adverse_event_tools.rst:24 0f271deee7e14c628ddeb5d7db82da28
+msgid ""
+"**Description**: Extracts adverse events from narrative clinical or "
+"pharmacovigilance text and maps each event to the most specific ICD-10-CM "
+"code."
+msgstr "**描述**：从叙述性临床或药物警戒文本中提取不良事件，并将每个事件映射到最具体的ICD-10-CM代码。"
+
+#: ../../tools/adverse_event_tools.rst:26
+#: ../../tools/adverse_event_tools.rst:57
+#: ../../tools/adverse_event_tools.rst:92 281ee483a4a24eb0bb0395461a5f1a90
+#: 489575a9a6534aa5a3de64ab005682f7 63222566720c42f493da52cde85c8b91
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/adverse_event_tools.rst:28 465ae45e75d54241b288442d4ba9c99d
+msgid ""
+"``source_text`` (string) (required) Unstructured narrative text that may "
+"mention adverse events."
+msgstr "``source_text``（字符串）（必填）可能提及不良事件的非结构化叙述文本。"
+
+#: ../../tools/adverse_event_tools.rst:31
+#: ../../tools/adverse_event_tools.rst:65
+#: ../../tools/adverse_event_tools.rst:103 3a11de628aa3473ebdf4ed0cec54fbb8
+#: 4e9f77f8762a4589b333ee9bdb5b5465 8ff7ccc74223443b9b1af8cd4bbddad5
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/adverse_event_tools.rst:45 88fac750107d45729187d75877e51222
+msgid "**AdverseEventPredictionQuestionGenerator** (Type: AgenticTool)"
+msgstr "**AdverseEventPredictionQuestionGenerator**（类型：AgenticTool）"
+
+#: ../../tools/adverse_event_tools.rst:47
+#: ../../tools/adverse_event_tools.rst:82 0fe1aa906ebc41d1ad4ac1db5efce2dc
+#: 5ab4542994ad4be1a75f17f27c91429f
+msgid ""
+"Generates a set of personalized adverse‐event prediction questions for a "
+"given disease and drug, ..."
+msgstr "生成一组针对特定疾病和药物的个性化不良事件预测问题，..."
+
+#: ../../tools/adverse_event_tools.rst 32a96f10f65a4aadad55254ddee14e6b
+msgid "AdverseEventPredictionQuestionGenerator tool specification"
+msgstr "不良事件预测问题生成器工具规范"
+
+#: ../../tools/adverse_event_tools.rst:53 7665299cc28c42b1b160063a3a60c00c
+msgid "**Name**: ``AdverseEventPredictionQuestionGenerator``"
+msgstr "**名称**: ``AdverseEventPredictionQuestionGenerator``"
+
+#: ../../tools/adverse_event_tools.rst:55 37d61c633aa64098bdbe4f6715c3b75d
+msgid ""
+"**Description**: Generates a set of personalized adverse‐event prediction "
+"questions for a given disease and drug, across multiple patient subgroups."
+msgstr "**描述**：生成针对特定疾病和药物的个性化不良事件预测问题集，覆盖多个患者子群。"
+
+#: ../../tools/adverse_event_tools.rst:59
+#: ../../tools/adverse_event_tools.rst:94 23e6928b7ac649f08033409211356cb8
+#: c12fa821a90142f6b96fb28f90071e2f
+msgid ""
+"``disease_name`` (string) (required) The name of the disease or condition"
+msgstr "``disease_name``（字符串）（必填）疾病或病症的名称"
+
+#: ../../tools/adverse_event_tools.rst:62
+#: ../../tools/adverse_event_tools.rst:97 256098e522d6442baf9b949ba30517d5
+#: 58d10aa541234960a86cb69cbc09be11
+msgid "``drug_name`` (string) (required) The name of the drug"
+msgstr "``drug_name``（字符串）（必填）药物名称"
+
+#: ../../tools/adverse_event_tools.rst:80 23774ae8b9534ae1b0bb9e250d46feaa
+msgid ""
+"**AdverseEventPredictionQuestionGeneratorWithContext** (Type: AgenticTool)"
+msgstr ""
+"**AdverseEventPredictionQuestionGeneratorWithContext**（类型：AgenticTool）"
+
+#: ../../tools/adverse_event_tools.rst 6566fb732e104ba4b15fcec5551948ab
+msgid "AdverseEventPredictionQuestionGeneratorWithContext tool specification"
+msgstr "AdverseEventPredictionQuestionGeneratorWithContext 工具规范"
+
+#: ../../tools/adverse_event_tools.rst:88 262753bc7f1f46118c868bc7aff52554
+msgid "**Name**: ``AdverseEventPredictionQuestionGeneratorWithContext``"
+msgstr "**名称**: ``AdverseEventPredictionQuestionGeneratorWithContext``"
+
+#: ../../tools/adverse_event_tools.rst:90 50a1dc479b024360bda60c9b1cfb944f
+msgid ""
+"**Description**: Generates a set of personalized adverse‐event prediction "
+"questions for a given disease and drug, incorporating additional context "
+"information such as patient medical history, clinical findings, or research "
+"data."
+msgstr "**描述**：生成一组针对特定疾病和药物的个性化不良事件预测问题，并结合患者病史、临床发现或研究数据等附加上下文信息。"
+
+#: ../../tools/adverse_event_tools.rst:100 7260dcf6305d48158028f3b0c6a731b1
+msgid ""
+"``context_information`` (string) (required) Additional context information "
+"such as patient medical history, clinical findings, research data, or other "
+"relevant background information that should inform the adverse event "
+"prediction questions"
+msgstr ""
+"``context_information``（字符串）（必填）额外的上下文信息，例如患者病史、临床发现、研究数据或其他相关背景信息，这些信息应为不良事件预测问题提供参考。"
+
+#: ../../tools/adverse_event_tools.rst:119 796456a4e6a74aebaf96dd39aa1c1b29
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/adverse_event_tools.rst:121 d35bf923b7f6469781b8bb31d106d054
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/adverse_event_tools.rst:122 8729a7bf47504d8d8ede7712a30393ce
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

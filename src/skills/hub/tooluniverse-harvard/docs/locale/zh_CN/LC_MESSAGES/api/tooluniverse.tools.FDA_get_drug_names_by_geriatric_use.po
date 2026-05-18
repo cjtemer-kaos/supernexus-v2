@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.rst:2
+#: 9d543a7769134f25a2b67dbd9888666a
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_geriatric\\_use module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_geriatric\\_use 模块"
+
+#: 686b02167d424a03a55c037a39109f2d of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use:1
+msgid "FDA_get_drug_names_by_geriatric_use"
+msgstr "FDA_get_drug_names_by_geriatric_use（根据老年人使用情况获取药物名称）"
+
+#: 170e08f25c3d4d7a92316689c8f62c38 2939d783fb5f4f839ba211778b9c0135 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use:3
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:1
+msgid ""
+"Retrieve drug names that have specific information about geriatric use."
+msgstr "检索包含特定老年人使用信息的药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.rst
+#: a1b03df1fc0045c99648e7a923c8a600
+msgid "Parameters"
+msgstr "参数"
+
+#: 05cef91ac03642d09d8d4a071627e11d of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:3
+msgid ""
+"Information about any limitations on any geriatric indications, needs for "
+"spe..."
+msgstr "关于任何老年适应症的限制、需求或特殊注意事项的信息。"
+
+#: dc0be013367e44ed9e92db29af8462f3 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 9090ff8f61f24907ba49d8fd5123902e of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: d8eefef1ef3445068f8937e0fe3b0d84 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: bd18be5ce21941c4a9736b2d4aa25140 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4bc7d1237fb44ca2a684c06dc6a03438 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7c96d48356b242bca2f86c02984aa6a1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.rst
+#: 8a6e2069bd284684a38455f213b25ca0
+msgid "Return type"
+msgstr "返回类型"
+
+#: ff02e8d9697e496f976a5aebc0bc78dc of
+#: tooluniverse.tools.FDA_get_drug_names_by_geriatric_use.FDA_get_drug_names_by_geriatric_use:18
+msgid ":py:class:`Any`"
+msgstr ""

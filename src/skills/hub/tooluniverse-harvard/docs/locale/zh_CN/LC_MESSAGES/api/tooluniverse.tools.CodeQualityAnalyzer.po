@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.CodeQualityAnalyzer.rst:2
+#: beaa23cd1e7c4c2b8ada438ec71f2cf1
+msgid "tooluniverse.tools.CodeQualityAnalyzer module"
+msgstr "tooluniverse.tools.CodeQualityAnalyzer 模块"
+
+#: 3ba19e2b1a634a06a44d226b97aad44e of
+#: tooluniverse.tools.CodeQualityAnalyzer:1
+msgid "CodeQualityAnalyzer"
+msgstr "代码质量分析器"
+
+#: 7bb8288792a346d19f21e6ef11f1761e f0d479ccb33444b39abdb89eb1c8ab36 of
+#: tooluniverse.tools.CodeQualityAnalyzer:3
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:1
+msgid ""
+"Analyzes code quality from multiple dimensions including algorithmic "
+"correctness, functional impl..."
+msgstr "从多个维度分析代码质量，包括算法正确性、功能实现、性能优化和可维护性等。"
+
+#: ../../api/tooluniverse.tools.CodeQualityAnalyzer.rst
+#: afbcfd6b435446e9a17352200870f6e6
+msgid "Parameters"
+msgstr "参数"
+
+#: f2da035b0336403d9b749706eda514c1 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:3
+msgid "Name of the tool being analyzed"
+msgstr "正在分析的工具名称"
+
+#: e8ab74e779f14e3cb50d4e1411b0eefa of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:5
+msgid "Description of what the tool is supposed to do"
+msgstr "工具的功能描述"
+
+#: 7432f2fe56694a0882d0e9ab75c9174f of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:7
+msgid "JSON string of tool parameters and their types"
+msgstr "工具参数及其类型的JSON字符串"
+
+#: ea388eb333e34b869f40cec592d2cbf8 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:9
+msgid "The actual implementation code to analyze"
+msgstr "实际用于分析的实现代码"
+
+#: 3ef8155263bc45d6977615f25b7f6eb4 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:11
+msgid "JSON string of test cases for the tool"
+msgstr "工具测试用例的JSON字符串"
+
+#: e89bc90e267a47058421f02bd720fa77 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:13
+msgid ""
+"JSON string of test execution results including pass/fail status and actual "
+"o..."
+msgstr "JSON字符串包含测试执行结果，包括通过/失败状态以及实际输出。"
+
+#: 13d46b63b92045ac8bdfd6d5344d60ce of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 065e3b3907e8445497446cb1fda0b8bb of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 949c3bad81fa4767a4fe7eb928554675 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.CodeQualityAnalyzer.rst
+#: cf36d08840ac4576bae9b810b506864e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3ff6d713f25f47c5ac9e14d147950408 of
+#: tooluniverse.tools.CodeQualityAnalyzer.CodeQualityAnalyzer:22
+msgid ":py:class:`Any`"
+msgstr ""

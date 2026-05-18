@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DomainExpertValidator.rst:2
+#: fcdb71e97ca444f084188bbdc0c759d3
+msgid "tooluniverse.tools.DomainExpertValidator module"
+msgstr "tooluniverse.tools.DomainExpertValidator 模块"
+
+#: 20f3e045fbca4ff0b9aa33206dcea27b of
+#: tooluniverse.tools.DomainExpertValidator:1
+msgid "DomainExpertValidator"
+msgstr "域专家验证器"
+
+#: 645ef2c7943647e1a3ede8521a6671ce 94233586fa2d4ed7a98f5c6556afbaa5 of
+#: tooluniverse.tools.DomainExpertValidator:3
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:1
+msgid ""
+"Provides domain-specific validation and expert recommendations for tools "
+"with deep expertise acro..."
+msgstr "提供领域特定的验证和专家建议，并针对工具提供深入专业知识的支持。"
+
+#: ../../api/tooluniverse.tools.DomainExpertValidator.rst
+#: 96d7916cee8d4160b8fd6006949b3e74
+msgid "Parameters"
+msgstr "参数"
+
+#: f6c06a155c8e476588651fb68b553660 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:3
+msgid "JSON string of tool configuration to validate"
+msgstr "用于验证的工具配置的JSON字符串"
+
+#: 77a8540257b94153aa56066464aea455 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:5
+msgid "Domain expertise area for validation"
+msgstr "领域专业知识验证区域"
+
+#: b6cd0faf7664464fba329eb79492c632 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:7
+msgid "JSON array string of specific aspects to validate"
+msgstr "用于验证的特定方面的JSON数组字符串"
+
+#: 7cafe7a5beed4753a4a419b8c76c71ee of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:9
+msgid "Implementation code to validate (optional)"
+msgstr "用于验证的实现代码（可选）"
+
+#: b4e14f9101c34edfafef1f7f5d5bdd80 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 529f32283ec34fd19cf3fe02a550b811 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2daf48d41a674344bbba20380f4d8d71 of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DomainExpertValidator.rst
+#: 1124fe1c31e449eb964e7ce7e2f58f7c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8cc59ff1aa89463587d348aa794d6f5a of
+#: tooluniverse.tools.DomainExpertValidator.DomainExpertValidator:18
+msgid ":py:class:`Any`"
+msgstr ""

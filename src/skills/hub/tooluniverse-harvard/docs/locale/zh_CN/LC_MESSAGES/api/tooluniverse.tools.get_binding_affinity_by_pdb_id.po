@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_binding_affinity_by_pdb_id.rst:2
+#: 05ea23b51aff409d9de65224926ff626
+msgid "tooluniverse.tools.get\\_binding\\_affinity\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_binding\\_affinity\\_by\\_pdb\\_id 模块"
+
+#: 643d03de083041abbbd2db08368d7f65 of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id:1
+msgid "get_binding_affinity_by_pdb_id"
+msgstr "通过PDB ID获取结合亲和力"
+
+#: d05f929735f144718ff3be2bca99814b ea7682c6f5e34789aec355977978fcfd of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id:3
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:1
+msgid ""
+"Retrieve binding affinity constants (Kd, Ki, IC50) associated with ligands "
+"in a PDB entry."
+msgstr "检索与配体相关的结合亲和力常数（Kd、Ki、IC50）在PDB条目中的数据。"
+
+#: ../../api/tooluniverse.tools.get_binding_affinity_by_pdb_id.rst
+#: 93bef322a35645018a11f8986bb6f7ed
+msgid "Parameters"
+msgstr "参数"
+
+#: 9f502037146e4f22a3f9c1e04e52262a of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:3
+msgid "RCSB PDB ID (e.g., 1A8M)"
+msgstr "RCSB PDB编号（例如：1A8M）"
+
+#: 5e68cd54f7814733aa597c8c5a38187c of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: cfc09abf84514b92966461554b07a4d8 of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f6beb9635c0247ab874fdd65454e292a of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_binding_affinity_by_pdb_id.rst
+#: 00afc34cf5c3494cb74d75f80829d794
+msgid "Return type"
+msgstr "返回类型"
+
+#: 379065ce7173447db983d00a4c4cadc8 of
+#: tooluniverse.tools.get_binding_affinity_by_pdb_id.get_binding_affinity_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

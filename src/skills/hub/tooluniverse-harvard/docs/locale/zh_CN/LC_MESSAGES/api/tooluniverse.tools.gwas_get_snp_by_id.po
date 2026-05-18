@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_get_snp_by_id.rst:2
+#: b9eb852647e342af93f6f6e27236ff16
+msgid "tooluniverse.tools.gwas\\_get\\_snp\\_by\\_id module"
+msgstr "tooluniverse.tools.gwas\\_get\\_snp\\_by\\_id 模块"
+
+#: c9f8e75386a348718466547c6b452d6f of tooluniverse.tools.gwas_get_snp_by_id:1
+msgid "gwas_get_snp_by_id"
+msgstr ""
+
+#: 5848058211cd4998b2c0a4180e1bc0d9 75493f85d5b34ad8a79a901791d5d1b1 of
+#: tooluniverse.tools.gwas_get_snp_by_id:3
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:1
+msgid "Get a specific GWAS SNP by its rs ID."
+msgstr "通过其 rs ID 获取特定的 GWAS SNP。"
+
+#: ../../api/tooluniverse.tools.gwas_get_snp_by_id.rst
+#: 66a14f8b7b20400bad2e184286cbe923
+msgid "Parameters"
+msgstr "参数"
+
+#: 40ba837069274e578a26c8f90461d807 of
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:3
+msgid "dbSNP rs identifier"
+msgstr "dbSNP rs标识符"
+
+#: 941016e99ff943c58369ab91a30265cc of
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9de13089f5c24b36b1c03bf09d9bc70c of
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8a4914843d77430d81f8a527d2a677c8 of
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_get_snp_by_id.rst
+#: 4103da8db38e4f21a55b18a77583ac85
+msgid "Return type"
+msgstr "返回类型"
+
+#: 42e3b855e4814af2a058363b982d262c of
+#: tooluniverse.tools.gwas_get_snp_by_id.gwas_get_snp_by_id:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

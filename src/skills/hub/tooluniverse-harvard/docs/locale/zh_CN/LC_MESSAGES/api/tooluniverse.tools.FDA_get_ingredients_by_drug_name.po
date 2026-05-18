@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_ingredients_by_drug_name.rst:2
+#: b4ad938fcd894673a73c5dee7ff4aa77
+msgid "tooluniverse.tools.FDA\\_get\\_ingredients\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_ingredients\\_by\\_drug\\_name 模块"
+
+#: d60b271878534b5fb3bb0256d85031fe of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name:1
+msgid "FDA_get_ingredients_by_drug_name"
+msgstr "FDA_按药品名称获取成分"
+
+#: 05002fcda8704cacb94dab93194be330 f3cee3deba0744f5a14468edb5662894 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name:3
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:1
+msgid "Retrieve a list of drug ingredients based on the drug name."
+msgstr "根据药品名称检索药物成分列表。"
+
+#: ../../api/tooluniverse.tools.FDA_get_ingredients_by_drug_name.rst
+#: 04de3f10817c497c8587cbc8c98b4ff1
+msgid "Parameters"
+msgstr "参数"
+
+#: d7af521b42b64ff0be9b16327cd53194 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: d68726238a004769911043eaea4e4490 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 93783bf124194f06950f9c3440ec9785 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: f2eb149a40254c6ebbb1d73145689a4d of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a6ca9ba12a284b82861eada9aa583bfc of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 531a2675fc5c45a088f208d6d6281883 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_ingredients_by_drug_name.rst
+#: d97fd2db32ce4f20af77e05af783c3b7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 70badfedf89548be8f49fcd45629bb00 of
+#: tooluniverse.tools.FDA_get_ingredients_by_drug_name.FDA_get_ingredients_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

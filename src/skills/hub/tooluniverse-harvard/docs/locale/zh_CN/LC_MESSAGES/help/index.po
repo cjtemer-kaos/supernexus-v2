@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/index.rst:2 f3f7201d778e4502ba0524e5e10fbc78
+msgid "Help & Support"
+msgstr "帮助与支持"
+
+#: ../../help/index.rst:4 3d22d8b02ed34c6796b2b8f6524ffa85
+msgid "Get help and find answers for ToolUniverse."
+msgstr "获取帮助并查找 ToolUniverse 的解决方案。"
+
+#: ../../help/index.rst:12 f0770742ffaa4715b50cfde03b6488ff
+msgid "**Quick Links:**"
+msgstr "**快速链接：**"
+
+#: ../../help/index.rst:14 2eba5b3070b44ea4be0f28175afd2618
+msgid ":doc:`faq` - Frequently asked questions"
+msgstr ":doc:`faq` - 常见问题解答"
+
+#: ../../help/index.rst:15 cd98b3bf6f67405889fce60d78bfbbf3
+msgid ":doc:`troubleshooting` - Common problems and solutions"
+msgstr ":doc:`故障排除` - 常见问题及解决方案"
+
+#: ../../help/index.rst:17 65c98084a60b4c7fb391871aa3368a73
+msgid "**Need Help?**"
+msgstr "**需要帮助？**"
+
+#: ../../help/index.rst:19 a76810af715f4657b4d2a2d5985c0e03
+msgid ""
+"**GitHub Issues**: `Report bugs <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+msgstr ""
+"**GitHub 问题反馈**：`报告错误 <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+
+#: ../../help/index.rst:20 3b1269696c3640b9ad7f93b9650edbfa
+msgid ""
+"**GitHub Discussions**: `Ask questions <https://github.com/mims-"
+"harvard/ToolUniverse/discussions>`_"
+msgstr ""
+"**GitHub 讨论区**：`提问 <https://github.com/mims-"
+"harvard/ToolUniverse/discussions>`_"

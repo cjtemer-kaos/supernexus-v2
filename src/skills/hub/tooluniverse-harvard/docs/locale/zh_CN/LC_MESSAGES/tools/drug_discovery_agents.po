@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/drug_discovery_agents.rst:2 0438392161a147bba07afb9de9224c85
+msgid "Drug Discovery Agents"
+msgstr "药物发现剂"
+
+#: ../../tools/drug_discovery_agents.rst:4 dfd79d880954431b96aaaef3524a68c6
+msgid ""
+"**Configuration File**: ``drug_discovery_agents.json`` **Tool Type**: Local "
+"**Tools Count**: 7"
+msgstr "**配置文件**: ``drug_discovery_agents.json`` **工具类型**: 本地 **工具数量**: 7"
+
+#: ../../tools/drug_discovery_agents.rst:8 6832e5f27f1e4669a475b597426f7d7d
+msgid ""
+"This page contains all tools defined in the ``drug_discovery_agents.json`` "
+"configuration file."
+msgstr "本页面包含在``drug_discovery_agents.json``配置文件中定义的所有工具。"
+
+#: ../../tools/drug_discovery_agents.rst:11 6a9506bdc03f4cb98d1ce6a1192313d1
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/drug_discovery_agents.rst:14 801638d5c10b49f49912bee4b354dfd0
+msgid "**ADMETAnalyzerAgent** (Type: AgenticTool)"
+msgstr "**ADMETAnalyzerAgent**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:16 469646b1b36b4eb2bddfe060604bd0df
+msgid ""
+"AI agent that analyzes ADMET data and provides insights on drug-likeness and"
+" safety profiles"
+msgstr "AI代理用于分析ADMET数据并提供药物相似性及安全性概况的洞察"
+
+#: ../../tools/drug_discovery_agents.rst c19239a19e9c466c92aec6e74ac3c991
+msgid "ADMETAnalyzerAgent tool specification"
+msgstr "ADMETAnalyzerAgent 工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:20
+#: ../../tools/drug_discovery_agents.rst:58
+#: ../../tools/drug_discovery_agents.rst:99
+#: ../../tools/drug_discovery_agents.rst:137
+#: ../../tools/drug_discovery_agents.rst:171
+#: ../../tools/drug_discovery_agents.rst:205
+#: ../../tools/drug_discovery_agents.rst:245 1576f6db82394b518e87a1c2a0fb9dc9
+#: 7a2d9d6469684a3c9c82717939fc9bce 8e0db0d9ff3a4854ad3e593ed0d90528
+#: 981558355efb4abd9b430c6bd1957b0f a6a90348cfe643989a431cabd5f0f546
+#: b8a3cab5e33948a382be338b7eb94b2f f300b04f7c3f4f45ad62841ea9adc3ac
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/drug_discovery_agents.rst:22 7990eea8e50d40538a058d37c6cd43aa
+msgid "**Name**: ``ADMETAnalyzerAgent``"
+msgstr "**名称**: ``ADMETAnalyzerAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:23
+#: ../../tools/drug_discovery_agents.rst:61
+#: ../../tools/drug_discovery_agents.rst:102
+#: ../../tools/drug_discovery_agents.rst:140
+#: ../../tools/drug_discovery_agents.rst:174
+#: ../../tools/drug_discovery_agents.rst:208
+#: ../../tools/drug_discovery_agents.rst:248 129cec5c2a744969a39aeef6d88a4e09
+#: 3cf8b0c0318848a0a8727bdc325ed9a0 6e35f759fd9f4fba95662bf30cd77be4
+#: 72425c4792754115911a8c8aefae2df6 b6a1616746874b8bb7287cb67e6543eb
+#: cfb5d9d8cc374f5ca883c5197ebbffdf d9c9ede7eafd42cfaecb60692628e2aa
+msgid "**Type**: ``AgenticTool``"
+msgstr "**类型**: ``AgenticTool``"
+
+#: ../../tools/drug_discovery_agents.rst:24 4aa6d49b756c4c7d9a314bbf79aaf8e8
+msgid ""
+"**Description**: AI agent that analyzes ADMET data and provides insights on "
+"drug-likeness and safety profiles"
+msgstr "**描述**：AI代理分析ADMET数据，并提供药物相似性和安全性概况的洞察"
+
+#: ../../tools/drug_discovery_agents.rst:26
+#: ../../tools/drug_discovery_agents.rst:64
+#: ../../tools/drug_discovery_agents.rst:105
+#: ../../tools/drug_discovery_agents.rst:143
+#: ../../tools/drug_discovery_agents.rst:177
+#: ../../tools/drug_discovery_agents.rst:211
+#: ../../tools/drug_discovery_agents.rst:251 05f520bce8ab41d0a6632ee064ac62db
+#: 0762bc3984a248b78e42b2fe65ab7aa8 12f856b62ea14bee8099989c78b97008
+#: 3ab94b20afc24373aabe9498a28d069c 3da4ce2fe24f4120898be8ed019e9ecd
+#: 82f587d829864f73af0c921cf8b6323e e828af2b40294b329e3e08d599ad95e3
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/drug_discovery_agents.rst:28 2a8ce3dbb9d945f7910fe8e95892f804
+msgid ""
+"``compounds`` (string) (required) List of compounds to analyze (comma-"
+"separated)"
+msgstr "``compounds``（字符串）（必填）要分析的化合物列表（以逗号分隔）"
+
+#: ../../tools/drug_discovery_agents.rst:31 b9ef8d0b5d094a0c85ae921e8e97859f
+msgid ""
+"``admet_data`` (string) (required) ADMET data from computational tools to "
+"analyze"
+msgstr "``admet_data``（字符串）（必需）来自计算工具的ADMET数据用于分析"
+
+#: ../../tools/drug_discovery_agents.rst:34 7114b053df8f438cbbc4276675a15b29
+msgid ""
+"``disease_context`` (string) (optional) Disease context for ADMET evaluation"
+msgstr "``disease_context``（字符串）（可选）用于ADMET评估的疾病背景"
+
+#: ../../tools/drug_discovery_agents.rst:37
+#: ../../tools/drug_discovery_agents.rst:78
+#: ../../tools/drug_discovery_agents.rst:116
+#: ../../tools/drug_discovery_agents.rst:151
+#: ../../tools/drug_discovery_agents.rst:185
+#: ../../tools/drug_discovery_agents.rst:225
+#: ../../tools/drug_discovery_agents.rst:262 0e2e7449df6f45a7be4a47556e230ec9
+#: 56c6120e41d845b99cf4314e2ff4401b 65813ebf96524611803699d1e6b3eb9d
+#: 74afedd6e9c445868476a56596b2e7f1 b5529e046cce4cde95609c39b2e4eead
+#: bdd83b6523c84431ba93a2bca49c162d fb3909b925d94a6bb56acbab92c1a80f
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/drug_discovery_agents.rst:52 f3c465b102b2470c9e3ca6495fd949f6
+msgid "**ClinicalTrialDesignAgent** (Type: AgenticTool)"
+msgstr "**临床试验设计代理**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:54 d0ca3ba754d8440483dc34c8d332a028
+msgid ""
+"AI agent that designs clinical trial protocols based on preclinical data and"
+" regulatory requirements"
+msgstr "基于临床前数据和监管要求设计临床试验方案的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst ba823873658d42c6a6f39a356208ef10
+msgid "ClinicalTrialDesignAgent tool specification"
+msgstr "ClinicalTrialDesignAgent工具规格"
+
+#: ../../tools/drug_discovery_agents.rst:60 bc38b93941d14e8dbe19eec98a77d779
+msgid "**Name**: ``ClinicalTrialDesignAgent``"
+msgstr "**名称**: ``ClinicalTrialDesignAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:62 912d475590f843c3a6fc2cbd65abbbf9
+msgid ""
+"**Description**: AI agent that designs clinical trial protocols based on "
+"preclinical data and regulatory requirements"
+msgstr "**描述**：基于临床前数据和监管要求设计临床试验方案的人工智能代理"
+
+#: ../../tools/drug_discovery_agents.rst:66 5970c1d138be4c18b2ee40668b51962c
+msgid "``drug_name`` (string) (required) Name of the drug candidate"
+msgstr "``drug_name``（字符串）（必填）药物候选名称"
+
+#: ../../tools/drug_discovery_agents.rst:69 53d34b001b8e42e0ad3871cab135e4a8
+msgid "``indication`` (string) (required) Disease indication"
+msgstr "``indication``（字符串）（必填）疾病适应症"
+
+#: ../../tools/drug_discovery_agents.rst:72 f1fae89aaa7b42f294995fffc274940b
+msgid ""
+"``preclinical_data`` (string) (optional) Preclinical efficacy and safety "
+"data"
+msgstr "``preclinical_data``（字符串）（可选）临床前疗效和安全性数据"
+
+#: ../../tools/drug_discovery_agents.rst:75 cea0bb850d7347029b396690674a9e04
+msgid "``target_population`` (string) (optional) Target patient population"
+msgstr "``target_population``（字符串）（可选）目标患者群体"
+
+#: ../../tools/drug_discovery_agents.rst:93 45adeaeed81e4e57994621d9a709d1b6
+msgid "**CompoundDiscoveryAgent** (Type: AgenticTool)"
+msgstr "**化合物发现代理**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:95 07c335bace894c35842f1236fd101b48
+msgid ""
+"AI agent that analyzes potential drug compounds using multiple strategies "
+"and LLM reasoning"
+msgstr "使用多种策略和大型语言模型推理分析潜在药物化合物的人工智能代理"
+
+#: ../../tools/drug_discovery_agents.rst 679ef49b70df415d88a50203829a4ed3
+msgid "CompoundDiscoveryAgent tool specification"
+msgstr "CompoundDiscoveryAgent工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:101 40ff0f9029cb42c68105007018739395
+msgid "**Name**: ``CompoundDiscoveryAgent``"
+msgstr "**名称**: ``CompoundDiscoveryAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:103 459cff7e22db4d8c907705c90f194f3e
+msgid ""
+"**Description**: AI agent that analyzes potential drug compounds using "
+"multiple strategies and LLM reasoning"
+msgstr "**描述**：使用多种策略和大型语言模型推理分析潜在药物化合物的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst:107 67c36c99f0534ec0955bd47dceb5935b
+msgid "``disease_name`` (string) (required) Name of the disease"
+msgstr "``disease_name``（字符串）（必填）疾病名称"
+
+#: ../../tools/drug_discovery_agents.rst:110 1a67e8903c074c4596dab554ae449f2d
+msgid ""
+"``targets`` (string) (required) List of therapeutic targets (comma-"
+"separated)"
+msgstr "``targets``（字符串）（必填）治疗靶点列表（逗号分隔）"
+
+#: ../../tools/drug_discovery_agents.rst:113 dfb5c2961d3340069bc37df7fea1d58b
+msgid ""
+"``context`` (string) (optional) Additional context or specific requirements"
+msgstr "``context``（字符串）（可选）附加上下文或具体要求"
+
+#: ../../tools/drug_discovery_agents.rst:131 b08bd54e7abe4661a4602cbb104bdda9
+msgid "**DiseaseAnalyzerAgent** (Type: AgenticTool)"
+msgstr "**疾病分析代理**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:133 290fadd2eebf4547a15bcdf583e03a99
+msgid ""
+"AI agent that analyzes disease characteristics and identifies potential "
+"therapeutic targets using..."
+msgstr "用于分析疾病特征并识别潜在治疗靶点的AI代理..."
+
+#: ../../tools/drug_discovery_agents.rst ff7f5392be3446dab1863deff9894c0e
+msgid "DiseaseAnalyzerAgent tool specification"
+msgstr "DiseaseAnalyzerAgent工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:139 101069920cae48f9b2a626b8285ea870
+msgid "**Name**: ``DiseaseAnalyzerAgent``"
+msgstr "**名称**: ``DiseaseAnalyzerAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:141 50849ae023644fb3bc9e7c5e55f34c0b
+msgid ""
+"**Description**: AI agent that analyzes disease characteristics and "
+"identifies potential therapeutic targets using LLM reasoning"
+msgstr "**描述**：利用大型语言模型推理分析疾病特征并识别潜在治疗靶点的人工智能代理"
+
+#: ../../tools/drug_discovery_agents.rst:145 2c7c4b2d443f41e19c167a1342684f4e
+msgid "``disease_name`` (string) (required) Name of the disease to analyze"
+msgstr "``disease_name``（字符串）（必填）要分析的疾病名称"
+
+#: ../../tools/drug_discovery_agents.rst:148 3e83b44cbf0c429c8c953563a0a628d2
+msgid ""
+"``context`` (string) (optional) Additional context or specific focus areas"
+msgstr "``context``（字符串）（可选）附加上下文或具体关注领域"
+
+#: ../../tools/drug_discovery_agents.rst:165 68bd94e887eb4944aa3515c1d1c29179
+msgid "**DrugInteractionAnalyzerAgent** (Type: AgenticTool)"
+msgstr "**药物交互分析代理**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:167 b3d903cd1bae4b6b82be4c7b3cd95d17
+msgid ""
+"AI agent that analyzes drug-drug interactions and provides clinical "
+"recommendations"
+msgstr "用于分析药物相互作用并提供临床建议的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst b4cd478016f14e089781cac2f9f82df6
+msgid "DrugInteractionAnalyzerAgent tool specification"
+msgstr "DrugInteractionAnalyzerAgent工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:173 4d317c7d7d3e4ad8b8673db0d6664a62
+msgid "**Name**: ``DrugInteractionAnalyzerAgent``"
+msgstr "**名称**: ``DrugInteractionAnalyzerAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:175 b508d275ec6f4b599bfb2b8056443dab
+msgid ""
+"**Description**: AI agent that analyzes drug-drug interactions and provides "
+"clinical recommendations"
+msgstr "**描述**：分析药物相互作用并提供临床建议的人工智能代理"
+
+#: ../../tools/drug_discovery_agents.rst:179 ffd380716d644c0896f6ea9ddfe633b7
+msgid ""
+"``compounds`` (string) (required) List of compounds to analyze for "
+"interactions (comma-separated)"
+msgstr "``compounds``（字符串）（必填项）用于分析相互作用的化合物列表（以逗号分隔）"
+
+#: ../../tools/drug_discovery_agents.rst:182 912b0ff9f67d458290e9e55d8ff62f06
+msgid ""
+"``patient_context`` (string) (optional) Patient context (age, comorbidities,"
+" medications, etc.)"
+msgstr "``patient_context``（字符串）（可选）患者背景（年龄、合并症、药物等）"
+
+#: ../../tools/drug_discovery_agents.rst:199 64f1e02205b147efbefa170bbf44f769
+msgid "**DrugOptimizationAgent** (Type: AgenticTool)"
+msgstr "**药物优化代理**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:201 0222f259ce344194b7f067cf6ec9af33
+msgid ""
+"AI agent that analyzes drug optimization strategies based on ADMET and "
+"efficacy data"
+msgstr "基于ADMET和疗效数据分析药物优化策略的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst a616c241b342475ab1238183b691c3c2
+msgid "DrugOptimizationAgent tool specification"
+msgstr "药物优化代理工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:207 e327538fa9134494b29c83e17bf30e80
+msgid "**Name**: ``DrugOptimizationAgent``"
+msgstr "**名称**: ``DrugOptimizationAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:209 2216308751ff4e3da1a6cc57966abca5
+msgid ""
+"**Description**: AI agent that analyzes drug optimization strategies based "
+"on ADMET and efficacy data"
+msgstr "**描述**：基于ADMET和疗效数据分析药物优化策略的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst:213 995975cc458b44d3b1baf90cee1dcd92
+msgid ""
+"``compounds`` (string) (required) List of compounds to optimize (comma-"
+"separated)"
+msgstr "``compounds``（字符串）（必需）要优化的化合物列表（以逗号分隔）"
+
+#: ../../tools/drug_discovery_agents.rst:216 9ec4d8c396e34c3b9398173e1b691dce
+msgid "``admet_data`` (string) (optional) ADMET properties and issues"
+msgstr "``admet_data``（字符串）（可选）ADMET属性和问题"
+
+#: ../../tools/drug_discovery_agents.rst:219 1669554595984aa7ba7c0f327636a915
+msgid "``efficacy_data`` (string) (optional) Efficacy and potency data"
+msgstr "``efficacy_data``（字符串）（可选）效力和效能数据"
+
+#: ../../tools/drug_discovery_agents.rst:222 f66e4049f6c344938512d6552b5d02cd
+msgid "``target_profile`` (string) (optional) Target profile and requirements"
+msgstr "``target_profile``（字符串）（可选）目标配置文件及要求"
+
+#: ../../tools/drug_discovery_agents.rst:239 ba1781b8e9ce40669170a0507ee52681
+msgid "**LiteratureSynthesisAgent** (Type: AgenticTool)"
+msgstr "**LiteratureSynthesisAgent**（类型：AgenticTool）"
+
+#: ../../tools/drug_discovery_agents.rst:241 2a36b90f1e8142feb4845230c5fde890
+msgid ""
+"AI agent that synthesizes literature findings and provides evidence-based "
+"insights"
+msgstr "能够综合文献研究成果并提供基于证据的洞察的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst 914fde9eb18f4baab75f2997f5d09d0f
+msgid "LiteratureSynthesisAgent tool specification"
+msgstr "LiteratureSynthesisAgent工具规范"
+
+#: ../../tools/drug_discovery_agents.rst:247 b7555a99a36741c7844a01615564e66d
+msgid "**Name**: ``LiteratureSynthesisAgent``"
+msgstr "**名称**: ``LiteratureSynthesisAgent``"
+
+#: ../../tools/drug_discovery_agents.rst:249 e6b1cbc4fd114da3ae6aed1bc37e10b3
+msgid ""
+"**Description**: AI agent that synthesizes literature findings and provides "
+"evidence-based insights"
+msgstr "**描述**：合成文献研究并提供基于证据的洞察的AI代理"
+
+#: ../../tools/drug_discovery_agents.rst:253 e34ca24826c84acea1df100f13754c8a
+msgid "``topic`` (string) (required) Research topic or question"
+msgstr "``topic``（字符串）（必填）研究主题或问题"
+
+#: ../../tools/drug_discovery_agents.rst:256 671f4fac52ee4004bd3b17a145fec634
+msgid ""
+"``literature_data`` (string) (required) Literature findings or abstracts to "
+"synthesize"
+msgstr "``literature_data``（字符串）（必需）用于综合的文献发现或摘要"
+
+#: ../../tools/drug_discovery_agents.rst:259 4572e897b9ba4818a4e29e1a9854bd28
+msgid "``focus_area`` (string) (optional) Specific focus area for synthesis"
+msgstr "``focus_area``（字符串）（可选）合成的特定关注区域"
+
+#: ../../tools/drug_discovery_agents.rst:277 80e9953d9f234c3f8f31e6d4390a4889
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/drug_discovery_agents.rst:279 5238f36b252242ba8eff10337fa8816e
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/drug_discovery_agents.rst:280 978f6e30f75e449eade90c6e13700266
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.rst:2
+#: 79e9bcdb5b654465ba720e19ce0aaf3c
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_diseases\\_phenotypes\\_by\\_target\\_ensembl"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_diseases\\_phenotypes\\_by\\_target\\_ensembl"
+" 模块"
+
+#: 39752bcbf83943288e55cb2bd9035481 of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl:1
+msgid "OpenTargets_get_diseases_phenotypes_by_target_ensembl"
+msgstr ""
+"OpenTargets_get_diseases_phenotypes_by_target_ensembl  \n"
+"获取与目标Ensembl相关的疾病和表型"
+
+#: b73914969eed49a3bac1ea8e11e5fdd5 c8e949c129734b428d7cd722f4e9b394 of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl:3
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:1
+msgid ""
+"Find diseases or phenotypes associated with a specific target using "
+"ensemblId."
+msgstr "使用 ensemblId 查找与特定靶点相关的疾病或表型。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.rst
+#: bc47acb1210f45d7934a0a56b5fb4301
+msgid "Parameters"
+msgstr "参数"
+
+#: 65427ec12363477aaafb368fa7abc27d of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:3
+msgid "The ensemblId of a target."
+msgstr "目标的ensemblId。"
+
+#: 2f25ff2888fd49ddaf16bfbbecb32b78 of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: dc5f15529da544c48bd6a03f20b959ae of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c7ce441767624ffa802bd9f693397fc4 of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.rst
+#: 97f614c8f23e4a4d952ad033cd03de17
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8dbcb992fdb645909f94771e53dea358 of
+#: tooluniverse.tools.OpenTargets_get_diseases_phenotypes_by_target_ensembl.OpenTargets_get_diseases_phenotypes_by_target_ensembl:12
+msgid ":py:class:`Any`"
+msgstr ""

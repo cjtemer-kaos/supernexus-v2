@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/expert_feedback_tools.rst:2 ba3d2536e4cc4214b19559d28d817028
+msgid "Expert Feedback Tools"
+msgstr "专家反馈工具"
+
+#: ../../tools/expert_feedback_tools.rst:4 ac4abf811aec4511a43d6f6422962800
+msgid ""
+"**Configuration File**: ``remote_tools/expert_feedback_tools.json`` "
+"**Tool Type**: Remote **Tools Count**: 6"
+msgstr ""
+"**配置文件**: ``remote_tools/expert_feedback_tools.json`` **工具类型**: 远程 "
+"**工具数量**: 6"
+
+#: ../../tools/expert_feedback_tools.rst:8 5f278562b140486e9fe7c8c23de24b63
+msgid ""
+"This page contains all tools defined in the "
+"``expert_feedback_tools.json`` configuration file."
+msgstr "此页面包含在``expert_feedback_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/expert_feedback_tools.rst:11 89511b5eeddc4a27b894c59e78ab85b2
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/expert_feedback_tools.rst:14 46905c9d984c47af9b0c03f64a154110
+msgid "**consult_human_expert** (Type: RemoteTool)"
+msgstr "**consult_human_expert**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:16 2e33fbe2e88948449743a5e04e19924c
+msgid ""
+"Consult a human expert for complex scientific questions requiring human "
+"judgment. This tool submi..."
+msgstr "请咨询专业人士处理需要人类判断的复杂科学问题。本工具提交..."
+
+#: ../../tools/expert_feedback_tools.rst 70e51a17ce3b49d0834c7884aaa02f51
+msgid "consult_human_expert tool specification"
+msgstr "consult_human_expert 工具规范"
+
+#: ../../tools/expert_feedback_tools.rst:20
+#: ../../tools/expert_feedback_tools.rst:67
+#: ../../tools/expert_feedback_tools.rst:98
+#: ../../tools/expert_feedback_tools.rst:127
+#: ../../tools/expert_feedback_tools.rst:156
+#: ../../tools/expert_feedback_tools.rst:185 30b911e2bec94477963d58a33b0968b3
+#: 6da1fe9ab70c4bdeafaf2886f12199b2 74fac9e92e37459c8405a3f36b56f787
+#: 9d95f74d7ba949c49af5661337fb9630 a47b2a33c9894803a7ddab2da3dbcbee
+#: b232159246e84c0ba37d37b115cf8159
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/expert_feedback_tools.rst:22 038624bd946342f0a3c517644ff2b67a
+msgid "**Name**: ``consult_human_expert``"
+msgstr "**名称**: ``consult_human_expert``"
+
+#: ../../tools/expert_feedback_tools.rst:23
+#: ../../tools/expert_feedback_tools.rst:70
+#: ../../tools/expert_feedback_tools.rst:101
+#: ../../tools/expert_feedback_tools.rst:130
+#: ../../tools/expert_feedback_tools.rst:159
+#: ../../tools/expert_feedback_tools.rst:188 26530d1d2bfc47c7a03be95e649142a8
+#: 5bc7b8205a9b4701896dbe69023eda9d a1c9615f75b6456ebe79b37b36948cab
+#: b5c2198195ed410eac12bfd775328d2e b7f4067a43c243aaa34bfc28fb88e78a
+#: fcb28ee8f2aa43a8b9c683a65f75a440
+msgid "**Type**: ``RemoteTool``"
+msgstr "**类型**: ``RemoteTool``"
+
+#: ../../tools/expert_feedback_tools.rst:24 ffddd7fcba1c4057adc399735ce3da3a
+msgid ""
+"**Description**: Consult a human expert for complex scientific questions "
+"requiring human judgment. This tool submits questions to human experts "
+"who can provide clinical decision support, analysis validation, treatment"
+" recommendations, and specialized opinions."
+msgstr "**描述**：对于需要人类判断的复杂科学问题，请咨询人类专家。此工具将问题提交给人类专家，他们可以提供临床决策支持、分析验证、治疗建议以及专业意见。"
+
+#: ../../tools/expert_feedback_tools.rst:26
+#: ../../tools/expert_feedback_tools.rst:73
+#: ../../tools/expert_feedback_tools.rst:104
+#: ../../tools/expert_feedback_tools.rst:133
+#: ../../tools/expert_feedback_tools.rst:162
+#: ../../tools/expert_feedback_tools.rst:191 4425956e3c9445b29b19fb31dd43c92a
+#: 47e4013049a54c0fa83203d48a6c77bb ea0f53b2221240debe7f5dd264fc8991
+#: f363ad1e23fc41388071b77df4bc8616 f921b4ad9025467487ce43599ff0052f
+#: fe3c0c83636441dd8eaf2cca5b177060
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/expert_feedback_tools.rst:28 4c37efaba3f340e3a6cd450fee4ca377
+msgid ""
+"``question`` (string) (required) The scientific question or case "
+"requiring expert consultation"
+msgstr "``question``（字符串）（必填）需要专家咨询的科学问题或案例"
+
+#: ../../tools/expert_feedback_tools.rst:31 d555e20405844b04bd6dc0b723a218dc
+#, fuzzy
+msgid ""
+"``specialty`` (string) (required) Area of expertise needed (e.g., "
+"'cardiology', 'oncology', 'pharmacology', 'neurology', 'emergency', "
+"'general')"
+msgstr "``specialty``（字符串）（可选）所需的专业领域（例如：“心脏病学”、“肿瘤学”、“药理学”、“神经病学”、“急诊医学”、“普通医学”）"
+
+#: ../../tools/expert_feedback_tools.rst:34 2c4a68dcbe09406c84b1eed435866864
+#, fuzzy
+msgid "``priority`` (string) (required) Request priority level"
+msgstr "``priority``（字符串）（可选）请求优先级"
+
+#: ../../tools/expert_feedback_tools.rst:37 9fbd086b55714d9fb8f66f4e5371f48f
+#, fuzzy
+msgid ""
+"``context`` (string) (required) Additional context or background "
+"information about the case"
+msgstr "``context``（字符串）（可选）有关该案例的附加上下文或背景信息"
+
+#: ../../tools/expert_feedback_tools.rst:40 3a74236037f64cc686528922efb2fc5b
+#, fuzzy
+msgid ""
+"``timeout_minutes`` (integer) (required) How long to wait for expert "
+"response (default: 5 minutes)"
+msgstr "``timeout_minutes``（整数）（可选）等待专家响应的时间长度（默认值：5分钟）"
+
+#: ../../tools/expert_feedback_tools.rst:43
+#: ../../tools/expert_feedback_tools.rst:78
+#: ../../tools/expert_feedback_tools.rst:108
+#: ../../tools/expert_feedback_tools.rst:137
+#: ../../tools/expert_feedback_tools.rst:166
+#: ../../tools/expert_feedback_tools.rst:199 03cce0592ef741c9851410faed6e772b
+#: 0f9d8d7cccd04fb7889404842db478e2 554beb1adec242239dfc2451146f9a80
+#: 9810504180564f479075cc4e53a7be56 e56fd1f7cdfc40d98ab5945c295f2531
+#: ea32080561a641178a73d91434f9a71f
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/expert_feedback_tools.rst:61 9abc2af08b634e9f963a278244652241
+msgid "**get_expert_response** (Type: RemoteTool)"
+msgstr "**get_expert_response**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:63 9fe38568370b461b9a9f7139a30026eb
+msgid ""
+"Check if an expert response is available for a previous consultation "
+"request. Use this to retriev..."
+msgstr "检查是否有针对先前咨询请求的专家回复可用。使用此功能以检索..."
+
+#: ../../tools/expert_feedback_tools.rst 03d475f50d704072bc29ad2b660b0c8d
+msgid "get_expert_response tool specification"
+msgstr "get_expert_response 工具规格说明"
+
+#: ../../tools/expert_feedback_tools.rst:69 ae6add9e725e47d291f0cdf42091ab80
+msgid "**Name**: ``get_expert_response``"
+msgstr "**名称**：``get_expert_response``"
+
+#: ../../tools/expert_feedback_tools.rst:71 44ceb98a4c2b40e59573ab726a1691c1
+msgid ""
+"**Description**: Check if an expert response is available for a previous "
+"consultation request. Use this to retrieve responses when the initial "
+"consultation is complete."
+msgstr "**描述**：检查是否有针对先前咨询请求的专家回复。完成初次咨询后，可使用此功能检索回复内容。"
+
+#: ../../tools/expert_feedback_tools.rst:75 60168e034ba6488db83e028369de3bd3
+msgid ""
+"``request_id`` (string) (required) The ID of the expert consultation "
+"request to check"
+msgstr "``request_id``（字符串）（必填）待查询的专家咨询请求的ID"
+
+#: ../../tools/expert_feedback_tools.rst:92 08aee33a4cdd4ec4a190fc792630bc90
+msgid "**get_expert_status** (Type: RemoteTool)"
+msgstr "**get_expert_status**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:94 b1bfd16a4d4e4232896892336aec4e77
+msgid ""
+"Get current status of the human expert system including availability, "
+"pending requests, and syste..."
+msgstr "获取人类专家系统的当前状态，包括可用性、待处理请求及系统..."
+
+#: ../../tools/expert_feedback_tools.rst 0c22a2241f6f41aab9498ef4cb35d34c
+msgid "get_expert_status tool specification"
+msgstr "get_expert_status 工具规格说明"
+
+#: ../../tools/expert_feedback_tools.rst:100 909664a9d68a4a25bdcc134ba9e88d0a
+msgid "**Name**: ``get_expert_status``"
+msgstr "**名称**：``get_expert_status``"
+
+#: ../../tools/expert_feedback_tools.rst:102 a0eff87d4a44449aa34308943c5121ef
+msgid ""
+"**Description**: Get current status of the human expert system including "
+"availability, pending requests, and system statistics."
+msgstr "**描述**：获取人工专家系统的当前状态，包括可用性、待处理请求和系统统计信息。"
+
+#: ../../tools/expert_feedback_tools.rst:106
+#: ../../tools/expert_feedback_tools.rst:135
+#: ../../tools/expert_feedback_tools.rst:164 023be883b8c848d78527cd721a966c7a
+#: 37b88df4dfc54b599c1c7ed4512ddd0a 3e71e805e38c4f86b85b1951150b4c81
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/expert_feedback_tools.rst:121 6d9ce854f46f4bb8b14ac1577dff8bbb
+msgid "**list_pending_expert_requests** (Type: RemoteTool)"
+msgstr "**list_pending_expert_requests**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:123 bb75789bcbe6471e97900c5dc475be38
+msgid ""
+"List all pending expert consultation requests (for expert use to see "
+"waiting questions)."
+msgstr "列出所有待处理的专家咨询请求（供专家查看未解决的问题）。"
+
+#: ../../tools/expert_feedback_tools.rst 8415bb0a0d3a4d529f1b4c6c15218826
+msgid "list_pending_expert_requests tool specification"
+msgstr "list_pending_expert_requests 工具规范"
+
+#: ../../tools/expert_feedback_tools.rst:129 36ef901f36a04af088b4f3f9b1496716
+msgid "**Name**: ``list_pending_expert_requests``"
+msgstr "**名称**: ``list_pending_expert_requests``"
+
+#: ../../tools/expert_feedback_tools.rst:131 8cd18fd32f4a46759f3e7d895c8ce0d3
+msgid ""
+"**Description**: List all pending expert consultation requests (for "
+"expert use to see waiting questions)."
+msgstr "**描述**：列出所有待处理的专家咨询请求（供专家查看未解决的问题）。"
+
+#: ../../tools/expert_feedback_tools.rst:150 e7cc8b3e2a0b47b7b9da7f2d0cbeea89
+msgid "**mcp_auto_loader_human_expert** (Type: RemoteTool)"
+msgstr "**mcp_auto_loader_human_expert**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:152 3ed4d1827820494899c536df0c7c5f11
+msgid ""
+"Automatically discover and load all tools from Human Expert MCP Server. "
+"Can register discovered t..."
+msgstr "自动发现并加载来自Human Expert MCP服务器的所有工具。可注册已发现的工具..."
+
+#: ../../tools/expert_feedback_tools.rst b094771a2238451c9fd5f6e1ac5efcc6
+msgid "mcp_auto_loader_human_expert tool specification"
+msgstr "mcp_auto_loader_human_expert 工具规范"
+
+#: ../../tools/expert_feedback_tools.rst:158 0c476366893646f4b33a76496b53c8e6
+msgid "**Name**: ``mcp_auto_loader_human_expert``"
+msgstr "**名称**: ``mcp_auto_loader_human_expert``"
+
+#: ../../tools/expert_feedback_tools.rst:160 b7dc81fed129486a8eacf0420d7daaa7
+msgid ""
+"**Description**: Automatically discover and load all tools from Human "
+"Expert MCP Server. Can register discovered tools as individual "
+"ToolUniverse tools for expert consultation in complex scientific "
+"decisions requiring human judgment."
+msgstr ""
+"**描述**：自动发现并加载来自 Human Expert MCP 服务器的所有工具。可将发现的工具注册为独立的 ToolUniverse "
+"工具，用于在需要人类判断的复杂科学决策中提供专家咨询。"
+
+#: ../../tools/expert_feedback_tools.rst:179 18bdcb0a9f0c4f9bbb8a148c74575bfb
+msgid "**submit_expert_response** (Type: RemoteTool)"
+msgstr "**submit_expert_response**（类型：RemoteTool）"
+
+#: ../../tools/expert_feedback_tools.rst:181 2ee8b5d37d1e4fadbd5cf87e2643a4c9
+msgid ""
+"Submit expert response to a consultation request (for use by human "
+"experts through the expert int..."
+msgstr "提交专家对咨询请求的响应（供人类专家通过专家界面使用）"
+
+#: ../../tools/expert_feedback_tools.rst 600222a0270d4fef9ed865d97376415b
+msgid "submit_expert_response tool specification"
+msgstr "提交专家响应工具规范"
+
+#: ../../tools/expert_feedback_tools.rst:187 d1cb6b66839943b7b952609e3efb5d46
+msgid "**Name**: ``submit_expert_response``"
+msgstr "**名称**: ``submit_expert_response``"
+
+#: ../../tools/expert_feedback_tools.rst:189 7d1e59743b204e4892bcf13c6b2a0cce
+msgid ""
+"**Description**: Submit expert response to a consultation request (for "
+"use by human experts through the expert interface)."
+msgstr "**描述**：提交专家对咨询请求的回复（供人类专家通过专家界面使用）。"
+
+#: ../../tools/expert_feedback_tools.rst:193 8aeed4d4d53d4bb28e34084422919541
+msgid ""
+"``request_id`` (string) (required) The ID of the consultation request to "
+"respond to"
+msgstr "``request_id``（字符串）（必填）要响应的咨询请求的 ID"
+
+#: ../../tools/expert_feedback_tools.rst:196 2cf3f3a512d94a468a9323b15fdeab24
+msgid "``response`` (string) (required) The expert's response and recommendations"
+msgstr "``response``（字符串）（必填）专家的回复与建议"
+
+#: ../../tools/expert_feedback_tools.rst:214 5bee7f1b26c9485195369e19f2c2cc82
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/expert_feedback_tools.rst:216 0a0122401a8c4500b85dd3b6cc91e7da
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/expert_feedback_tools.rst:217 a779b18184e844ae9ec0ba6b611ed5a6
+msgid ":doc:`remote_tools` - Remote Tools Setup"
+msgstr ":doc:`remote_tools` - 远程工具设置"
+

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.GO_get_term_details.rst:2
+#: 5130c7ce06974fe7b1b3a191b8f93055
+msgid "tooluniverse.tools.GO\\_get\\_term\\_details module"
+msgstr "tooluniverse.tools.GO\\_get\\_term\\_details 模块"
+
+#: 84140d7071d949d3b3c1a121e7fa0d75 of
+#: tooluniverse.tools.GO_get_term_details:1
+msgid "GO_get_term_details"
+msgstr "GO_get_term_details 获取术语详细信息"
+
+#: ba950e9a4bf24d40805a770fab2db7fe e10686bdbbc047c2b6fd9ba371000628 of
+#: tooluniverse.tools.GO_get_term_details:3
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:1
+msgid ""
+"Retrieves detailed information for a specific GO ID using the Biolink API, "
+"including definition, ..."
+msgstr "使用 Biolink API 检索特定 GO ID 的详细信息，包括定义，..."
+
+#: ../../api/tooluniverse.tools.GO_get_term_details.rst
+#: fac7aeea67fc430eb28a7181147dd7af
+msgid "Parameters"
+msgstr "参数"
+
+#: c26e2236c34f4dd8b69720371d3c81c7 of
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:3
+msgid "The standard GO term ID, e.g., 'GO:0006915' for apoptotic process."
+msgstr "标准的GO术语ID，例如“GO:0006915”，用于描述凋亡过程。"
+
+#: c7e7722036d94bcb97c40535be58b8a2 of
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ef2ba4d8147344b7aec69e9c8d47c54d of
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e165c0457beb42729ab9d8cde03219a6 of
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.GO_get_term_details.rst
+#: f1b99de31da74599987865d8072a46cc
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5c0211b3905240d7b83c36a31776d023 of
+#: tooluniverse.tools.GO_get_term_details.GO_get_term_details:12
+msgid ":py:class:`Any`"
+msgstr ""

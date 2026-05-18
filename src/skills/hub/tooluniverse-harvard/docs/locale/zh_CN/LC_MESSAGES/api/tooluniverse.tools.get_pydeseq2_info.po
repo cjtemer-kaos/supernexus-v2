@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pydeseq2_info.rst:2
+#: ba429309aa0644dfb4240e8159909417
+msgid "tooluniverse.tools.get\\_pydeseq2\\_info module"
+msgstr "tooluniverse.tools.get\\_pydeseq2\\_info 模块"
+
+#: a8d0e9bec3e74fd9a771d66e6d603163 of tooluniverse.tools.get_pydeseq2_info:1
+msgid "get_pydeseq2_info"
+msgstr ""
+
+#: 078b0ccecaf94c08a90f24c22a2c432c 85489c46e80c4f4ea9d030c51b10c013 of
+#: tooluniverse.tools.get_pydeseq2_info:3
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:1
+msgid ""
+"Get comprehensive information about PyDESeq2 – RNA-seq differential "
+"expression analysis"
+msgstr "获取关于 PyDESeq2 的全面信息——RNA-seq 差异表达分析"
+
+#: ../../api/tooluniverse.tools.get_pydeseq2_info.rst
+#: 26d5f7f32d3342bdad1c75b783d44afa
+msgid "Parameters"
+msgstr "参数"
+
+#: 605feb58004f4c21b53f556d97730580 of
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:3
+msgid "Type of information to retrieve about PyDESeq2"
+msgstr "关于 PyDESeq2 可检索的信息类型"
+
+#: fbdb57155294432e9fecf4b9d6d6023c of
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e5903bd47b3d4fc78e57b31e142c6961 of
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 35985819d1554b9f91b098a8e281b934 of
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pydeseq2_info.rst
+#: c33a87dc975d47cab346cb20fcd8ce91
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8c818bea8e904bcdaf1904864e54f96d of
+#: tooluniverse.tools.get_pydeseq2_info.get_pydeseq2_info:12
+msgid ":py:class:`Any`"
+msgstr ""

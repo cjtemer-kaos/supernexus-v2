@@ -1,0 +1,16 @@
+{
+  "name": "sage",
+  "version": "2.0.0",
+  "description": "Guardian de la memoria asociativa y engramas cognitivos",
+  "main": "src.agents.sage_gem",
+  "model": "deepseek-r1:8b",
+  "activationEvents": ["onCommand:memory", "onCommand:recall", "onCommand:persist"],
+  "semanticKeywords": ["memory", "recall", "remember", "persist", "knowledge", "engram", "history", "learn", "forget"],
+  "category": "core",
+  "maxMemoryMB": 512,
+  "maxCPUPercent": 10,
+  "timeoutSeconds": 60,
+  "autoRestart": true,
+  "maxRestarts": 10,
+  "parallelCapable": false
+}

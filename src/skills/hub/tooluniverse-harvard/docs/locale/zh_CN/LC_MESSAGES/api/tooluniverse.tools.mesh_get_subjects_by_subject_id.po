@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_subject_id.rst:2
+#: e490327edd5e415a81d2e47742dc4fa0
+msgid "tooluniverse.tools.mesh\\_get\\_subjects\\_by\\_subject\\_id module"
+msgstr "tooluniverse.tools.mesh\\_get\\_subjects\\_by\\_subject\\_id 模块"
+
+#: f6c38f64698b4d308fa91b7ea428d2ba of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id:1
+msgid "mesh_get_subjects_by_subject_id"
+msgstr ""
+"mesh_get_subjects_by_subject_id  \n"
+"根据主题ID获取主题"
+
+#: 42a3aac309df4588b50287a7c10b7223 b84f58b469c24652b2a51a0ecae3dcb7 of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id:3
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:1
+msgid ""
+"Find MeSH (Medical Subject Heading) subjects with a matching subject ID "
+"(also called Descriptor UI)."
+msgstr "查找与主题ID（也称为描述符UI）匹配的MeSH（医学主题词）主题。"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_subject_id.rst
+#: f50a5e8866cb4ac3848ed4d04fe1094d
+msgid "Parameters"
+msgstr "参数"
+
+#: f7d9704b314049d49d957d4f313df418 of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:3
+msgid "Query ID to search for among the MeSH subject IDs"
+msgstr "用于在 MeSH 主题 ID 中搜索的查询 ID"
+
+#: fe43673dc3884b4f9d391526619e410b of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:5
+msgid "Select True to perform a case-sensitive search for the query"
+msgstr "选择“True”以执行区分大小写的查询搜索"
+
+#: 4294120638244f468cc1bbbb7e090ee0 of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:7
+msgid "Select True to require an exact match for the query"
+msgstr "选择“True”以要求查询完全匹配"
+
+#: e0ba09c1282243a581b2d2eed27ece18 of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: e82701bef0dc48319f79a4e82b20d39e of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6f3a1a05180f423dbbba727ac504e460 of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 156120654a9a42278c3f7c5762b1f6ba of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_subject_id.rst
+#: 0d6cf39b3b644673b006d028db18946b
+msgid "Return type"
+msgstr "返回类型"
+
+#: f59672c9756a4350b3f595524c0e1eab of
+#: tooluniverse.tools.mesh_get_subjects_by_subject_id.mesh_get_subjects_by_subject_id:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

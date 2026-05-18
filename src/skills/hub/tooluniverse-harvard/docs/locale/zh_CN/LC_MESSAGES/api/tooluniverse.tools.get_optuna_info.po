@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_optuna_info.rst:2
+#: 55b25370b9634d3c9f4168f1986b9ab2
+msgid "tooluniverse.tools.get\\_optuna\\_info module"
+msgstr "tooluniverse.tools.get\\_optuna\\_info 模块"
+
+#: 17c4e024ad7e42f888233f07a29f9203 of tooluniverse.tools.get_optuna_info:1
+msgid "get_optuna_info"
+msgstr "获取_optuna_信息"
+
+#: 756c9c4ff2dc493388eeba97423e935c ab19ade36a8f45c19097818960da464f of
+#: tooluniverse.tools.get_optuna_info:3
+#: tooluniverse.tools.get_optuna_info.get_optuna_info:1
+msgid ""
+"Get information about the optuna package. Hyperparameter optimization "
+"framework"
+msgstr "获取有关 optuna 包的信息。超参数优化框架"
+
+#: ../../api/tooluniverse.tools.get_optuna_info.rst
+#: 6ebd6c0a07c140b38b94864f11cb8dd8
+msgid "Parameters"
+msgstr "参数"
+
+#: 307064fbcbb742618ea00d019109069c of
+#: tooluniverse.tools.get_optuna_info.get_optuna_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 61a29b48b6494c29ba449fe5fd9f0a28 of
+#: tooluniverse.tools.get_optuna_info.get_optuna_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0f1c69469ed94092b22cf2f70e832b45 of
+#: tooluniverse.tools.get_optuna_info.get_optuna_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_optuna_info.rst
+#: f5e4a074209a4ed093ebc216d9284155
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1993f9a4c10a47f5a870fc7e56f1bd4b of
+#: tooluniverse.tools.get_optuna_info.get_optuna_info:11
+msgid ":py:class:`Any`"
+msgstr ""

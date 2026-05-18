@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.build_optimizer.rst:2
+#: 59709547fd154c13ba6bf1a1dbcb583f
+msgid "tooluniverse.build\\_optimizer module"
+msgstr "tooluniverse.build\\_optimizer 模块"
+
+#: 9da8c9b667a94af1ad47c4a241942559 of tooluniverse.build_optimizer:1
+msgid "Build optimization utilities for ToolUniverse tools."
+msgstr "为ToolUniverse工具构建优化实用程序。"
+
+#: 8d65c46552d043c8932af3f985af4a1f of
+#: tooluniverse.build_optimizer.calculate_tool_hash:1
+msgid "Calculate a hash for tool configuration to detect changes."
+msgstr "计算工具配置的哈希值以检测更改。"
+
+#: ef02c3cae6634baaa863bfc6b5ad6e00 of
+#: tooluniverse.build_optimizer.load_metadata:1
+msgid "Load tool metadata from file."
+msgstr "从文件加载工具元数据。"
+
+#: 3b0f4654a648496fad47ff791a8d0b05 of
+#: tooluniverse.build_optimizer.save_metadata:1
+msgid "Save tool metadata to file."
+msgstr "将工具元数据保存到文件中。"
+
+#: b39cbc3e9e42456380118c9cd19709e4 of
+#: tooluniverse.build_optimizer.cleanup_orphaned_files:1
+msgid "Remove files for tools that no longer exist."
+msgstr "删除已不存在工具的文件。"
+
+#: 0d5dff7ed2824b9b8051a891819c2a28 of
+#: tooluniverse.build_optimizer.get_changed_tools:1
+msgid "Get lists of new, changed, and unchanged tools."
+msgstr "获取新增、已更改和未更改工具的列表。"

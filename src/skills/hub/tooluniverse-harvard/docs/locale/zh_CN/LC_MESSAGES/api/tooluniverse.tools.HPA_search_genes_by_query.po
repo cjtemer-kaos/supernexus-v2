@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_search_genes_by_query.rst:2
+#: a26739eeaac848b0a5f3c31e1fdd4e70
+msgid "tooluniverse.tools.HPA\\_search\\_genes\\_by\\_query module"
+msgstr "tooluniverse.tools.HPA\\_search\\_genes\\_by\\_query 模块"
+
+#: fd607c96a8554108a8875550e003b69f of
+#: tooluniverse.tools.HPA_search_genes_by_query:1
+msgid "HPA_search_genes_by_query"
+msgstr "HPA_按查询搜索基因"
+
+#: a551478650e54faeb0bfd062c6b7a847 a8603263b528463ba4bc2f18394c76d2 of
+#: tooluniverse.tools.HPA_search_genes_by_query:3
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:1
+msgid ""
+"Search for matching genes by gene name, keywords, or cell line names and "
+"return Ensembl ID list. ..."
+msgstr "通过基因名称、关键词或细胞系名称搜索匹配的基因，并返回Ensembl ID列表。"
+
+#: ../../api/tooluniverse.tools.HPA_search_genes_by_query.rst
+#: 72f3c2ec05144cf6b0337f622ce0f481
+msgid "Parameters"
+msgstr "参数"
+
+#: 3205ce774cf84ff8ad75bcd76f1d906c of
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:3
+msgid ""
+"Gene name, alias, keyword, or cell line name to search for, e.g., 'EGFR', "
+"'TP..."
+msgstr "基因名称、别名、关键词或细胞系名称进行搜索，例如“EGFR”、“TP...”。"
+
+#: eaa0b5d99bed4b32bcd2cf1d0541eea6 of
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:5
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 95e377cc19ec4c4fb1503bf45762d046 of
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fc40dab76964469daaba9afb59429033 of
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_search_genes_by_query.rst
+#: e464ca302f4e4420bf261338a1183d38
+msgid "Return type"
+msgstr "返回类型"
+
+#: bd826f062375419c898a3489aae1f503 of
+#: tooluniverse.tools.HPA_search_genes_by_query.HPA_search_genes_by_query:12
+msgid ":py:class:`Any`"
+msgstr ""

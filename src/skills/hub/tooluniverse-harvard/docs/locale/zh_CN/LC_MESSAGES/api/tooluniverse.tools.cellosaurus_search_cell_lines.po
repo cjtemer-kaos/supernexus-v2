@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.cellosaurus_search_cell_lines.rst:2
+#: 4175f77532a04c9f85ef0d9c7d8b837a
+msgid "tooluniverse.tools.cellosaurus\\_search\\_cell\\_lines module"
+msgstr "tooluniverse.tools.cellosaurus\\_search\\_cell\\_lines 模块"
+
+#: d795ad5da1f844d08aa06152fc992161 of
+#: tooluniverse.tools.cellosaurus_search_cell_lines:1
+msgid "cellosaurus_search_cell_lines"
+msgstr "cellosaurus_细胞系搜索"
+
+#: 700f121354a94e13aa10695740883ff8 c46bb9fd00be45e9a33081565272a4b9 of
+#: tooluniverse.tools.cellosaurus_search_cell_lines:3
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:1
+msgid ""
+"Search Cellosaurus cell lines using the /search/cell-line endpoint. Supports"
+" Solr query syntax fo..."
+msgstr "使用 /search/cell-line 端点搜索 Cellosaurus 细胞系。支持 Solr 查询语法。"
+
+#: ../../api/tooluniverse.tools.cellosaurus_search_cell_lines.rst
+#: 3a14d4e4fb164052b29ae510d55249e6
+msgid "Parameters"
+msgstr "参数"
+
+#: cdfd0ab4c5bd4d4d9025a541e629ff67 of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:3
+msgid ""
+"Search query. Supports Solr syntax for field-specific searches (e.g., "
+"'id:HeL..."
+msgstr "搜索查询。支持Solr语法进行字段特定搜索（例如：'id:HeL...）。"
+
+#: c18bd534315446e3835d782f964b0b92 of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:5
+msgid "Number of results to skip (for pagination)"
+msgstr "要跳过的结果数量（用于分页）"
+
+#: 09cc3ecf81bf4846818e7d4d3aea0ded of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:7
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 7691706e75994142b4b5216b8446e7dc of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f7059cca6a5348c2b87f07472fcebcc5 of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e7851d6ce88d4475a6cb812e3df8885e of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.cellosaurus_search_cell_lines.rst
+#: 753195e2e9fa4e838c80a564e9abce8a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 382f3bd27490413a9bd9c7c8d060b77c of
+#: tooluniverse.tools.cellosaurus_search_cell_lines.cellosaurus_search_cell_lines:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

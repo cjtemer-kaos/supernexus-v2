@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_disposal_info.rst:2
+#: 49e16d5d31484aeebc598058b70c64b1
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_disposal\\_info module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_disposal\\_info 模块"
+
+#: 8424a721a5af4e0384c19aba834ef426 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info:1
+msgid "FDA_get_drug_names_by_disposal_info"
+msgstr "FDA_根据处置信息获取药品名称"
+
+#: 1086c1576d154de3adcd7f94027fccdd 45eb5c6919d2416989c2231608b1228f of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:1
+msgid "Retrieve drug names based on disposal and waste handling information."
+msgstr "根据处置和废弃物处理信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_disposal_info.rst
+#: 71e2b77260c2479d9749160064b5cf5b
+msgid "Parameters"
+msgstr "参数"
+
+#: b9ced5e551674cf0a94585cd276838a5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:3
+msgid "Information related to the disposal and waste handling of the drug."
+msgstr "与药物处置和废弃物处理相关的信息。"
+
+#: 4f068fc23fb349b88bc0395c5af80c3f of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: debc990d54e84215b2ee1d3031559774 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 732569d9635645a7b6607902548d9c22 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: bb3524b11a08494fa9c7d7c610acb088 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c1e489dea84742b6ba501449b804fe2f of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c6c3169ca4dc420a9ef840a54012f59d of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_disposal_info.rst
+#: 85d9678d57114fcaa6c4c6d26908200f
+msgid "Return type"
+msgstr "返回类型"
+
+#: a1fb240ca5cd4eee806f77fae0b4d715 of
+#: tooluniverse.tools.FDA_get_drug_names_by_disposal_info.FDA_get_drug_names_by_disposal_info:18
+msgid ":py:class:`Any`"
+msgstr ""

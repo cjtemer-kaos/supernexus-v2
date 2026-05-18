@@ -1,0 +1,447 @@
+/* ToolUniverse Documentation - Enhanced Custom Styles */
+
+/* Enhanced color scheme */
+:root {
+    --primary-color: #2980B9;
+    --secondary-color: #27AE60;
+    --accent-color: #E74C3C;
+    --warning-color: #F39C12;
+    --info-color: #3498DB;
+    --success-color: #27AE60;
+    --dark-bg: #2C3E50;
+    --light-bg: #ECF0F1;
+}
+
+/* Logo and branding */
+.wy-side-nav-search .wy-dropdown > a img.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Custom colors */
+.wy-nav-top {
+    background: linear-gradient(135deg, var(--primary-color), #3498DB);
+}
+
+.wy-side-nav-search {
+    background: linear-gradient(180deg, var(--dark-bg), #34495E);
+}
+
+.wy-menu-vertical li.current a {
+    background: linear-gradient(90deg, var(--primary-color), #3498DB);
+    border-right: 4px solid var(--secondary-color);
+}
+
+.wy-menu-vertical li.toctree-l2.current a {
+    background: rgba(52, 152, 219, 0.2);
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Copy button styling */
+.copybtn {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 4px 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.copybtn:hover {
+    background-color: var(--dark-bg) !important;
+}
+
+/* Accessibility improvements */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--dark-bg);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+    top: 6px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000080;
+        --secondary-color: #006400;
+        --accent-color: #DC143C;
+    }
+
+    .wy-nav-content {
+        border: 2px solid var(--primary-color);
+    }
+}
+
+/* Dark mode improvements */
+@media (prefers-color-scheme: dark) {
+    .wy-nav-content-wrap {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .rst-content {
+        color: #e0e0e0;
+    }
+
+    .highlight {
+        background: #2d2d2d;
+        border: 1px solid #444;
+    }
+}
+
+/* Print styles */
+@media print {
+    .wy-nav-side,
+    .wy-nav-top,
+    .rst-versions {
+        display: none !important;
+    }
+
+    .wy-nav-content-wrap {
+        margin-left: 0 !important;
+    }
+
+    .copybtn {
+        display: none !important;
+    }
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+    .wy-table-responsive table {
+        font-size: 14px;
+    }
+
+    .rst-content .highlight {
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+
+    .sd-tab-set {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Enhanced code blocks */
+.rst-content .highlight,
+.highlight {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 1em 0;
+}
+
+.rst-content .highlight:hover,
+.highlight:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.rst-content .highlight pre {
+    background: transparent;
+    color: #495057;
+    padding: 16px;
+}
+
+/* Improved tables */
+.rst-content table.docutils,
+.docutils {
+    border-collapse: collapse;
+    border: 1px solid #E1E4E8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.rst-content table.docutils th,
+.docutils th {
+    background: linear-gradient(135deg, var(--primary-color), #3498DB);
+    color: white;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-align: left;
+    border: none;
+}
+
+.rst-content table.docutils td,
+.docutils td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #E1E4E8;
+    transition: background-color 0.3s ease;
+    border-left: none;
+    border-right: none;
+}
+
+.rst-content table.docutils tbody tr:hover,
+.docutils tbody tr:hover {
+    background-color: #F8F9FA;
+}
+
+/* Enhanced tabs styling */
+.sphinx-tabs-tab {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 1px solid #DEE2E6;
+    border-radius: 8px 8px 0 0;
+    margin-right: 4px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sphinx-tabs-tab[aria-selected="true"] {
+    background: linear-gradient(135deg, var(--primary-color), #3498DB);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+}
+
+.sphinx-tabs-panel {
+    border: 1px solid #DEE2E6;
+    border-radius: 0 8px 8px 8px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* API documentation styling */
+.rst-content dl.class dt,
+.rst-content dl.function dt,
+.rst-content dl.method dt {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-left: 4px solid var(--primary-color);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.rst-content dl.class dt:target,
+.rst-content dl.function dt:target,
+.rst-content dl.method dt:target {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+/* Enhanced admonitions */
+.rst-content .admonition,
+.admonition {
+    border-radius: 8px;
+    border-left: 4px solid;
+    padding: 16px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rst-content .admonition:hover,
+.admonition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.rst-content .admonition.note,
+.admonition.note {
+    border-left-color: var(--info-color);
+    background: linear-gradient(135deg, #EBF7FF, #F0F9FF);
+}
+
+.rst-content .admonition.warning,
+.admonition.warning {
+    border-left-color: var(--warning-color);
+    background: linear-gradient(135deg, #FFF8E1, #FFFBF0);
+}
+
+.rst-content .admonition.danger,
+.admonition.danger {
+    border-left-color: var(--accent-color);
+    background: linear-gradient(135deg, #FFEBEE, #FFF5F5);
+}
+
+.rst-content .admonition.tip,
+.admonition.tip {
+    border-left-color: var(--success-color);
+    background: linear-gradient(135deg, #E8F5E8, #F0FFF0);
+}
+
+/* Improved search box */
+.wy-side-nav-search input[type=text] {
+    border-radius: 25px;
+    border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.wy-side-nav-search input[type=text]:focus {
+    border-color: var(--secondary-color);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.3);
+}
+
+/* Enhanced headings */
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6,
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-bg);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.rst-content h1,
+h1 {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.rst-content h2,
+h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Code inline styling */
+.rst-content code,
+code {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: 1px solid #DEE2E6;
+    font-family: 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--dark-bg);
+}
+
+/* Tool categories */
+.tool-category {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Enhanced buttons */
+.btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #3498DB);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2471A3, #2E86AB);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .wy-nav-content {
+        padding: 1rem;
+    }
+
+    .rst-content table.docutils th,
+    .rst-content table.docutils td,
+    .docutils th,
+    .docutils td {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .sphinx-tabs-tab {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .rst-content .admonition,
+    .admonition {
+        padding: 12px 16px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced links */
+.rst-content a,
+a {
+    transition: color 0.3s ease;
+}
+
+.rst-content a:hover,
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Footer improvements */
+.rst-footer-buttons {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #E1E4E8;
+}
+
+/* Loading animation for better UX */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(41, 128, 185, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Enhanced focus styles for accessibility */
+*:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Improved version badge */
+.version {
+    background: linear-gradient(135deg, var(--secondary-color), #2ECC71);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 500;
+}

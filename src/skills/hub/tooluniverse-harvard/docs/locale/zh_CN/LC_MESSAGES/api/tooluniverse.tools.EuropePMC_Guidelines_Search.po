@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.EuropePMC_Guidelines_Search.rst:2
+#: 1621a97c42fd46bb908e3cde4f01efa6
+msgid "tooluniverse.tools.EuropePMC\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.EuropePMC\\_Guidelines\\_Search 模块"
+
+#: 2b698d7b52864bab9aa5aad6bb50c551 of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search:1
+msgid "EuropePMC_Guidelines_Search"
+msgstr "EuropePMC_指南_搜索"
+
+#: 45c71c34f4da4301aa53aa395fd2a103 b7b32b54e53d484abb353b50a2e7e17f of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search:3
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:1
+msgid ""
+"Search Europe PMC for clinical guidelines and evidence-based "
+"recommendations. Europe PMC provides..."
+msgstr "在欧洲PMC中搜索临床指南和循证推荐。欧洲PMC提供..."
+
+#: ../../api/tooluniverse.tools.EuropePMC_Guidelines_Search.rst
+#: 8ff0b8fe65b2477381a5625d9ffd277a
+msgid "Parameters"
+msgstr "参数"
+
+#: 36973ea5555244528374ec645ce6c45d of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:3
+msgid ""
+"Medical condition, treatment, or clinical topic to search for (e.g., "
+"'diabete..."
+msgstr "医疗状况、治疗方法或临床主题搜索（例如，“糖尿病”...）"
+
+#: 4184a8cacb014451bcaadeb0661305ff of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回的指南最大数量（默认值：10）"
+
+#: 418508a488d845448ab6a5780f430853 of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fafa57edd7f34887a20481b52bb2c0d5 of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 967910bef0ee4dc98e81fd2532fa1e36 of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.EuropePMC_Guidelines_Search.rst
+#: ab9a32298f70478b889274cff2d9101e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 79bbf57fb076452cae20896d5c9d2d25 of
+#: tooluniverse.tools.EuropePMC_Guidelines_Search.EuropePMC_Guidelines_Search:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

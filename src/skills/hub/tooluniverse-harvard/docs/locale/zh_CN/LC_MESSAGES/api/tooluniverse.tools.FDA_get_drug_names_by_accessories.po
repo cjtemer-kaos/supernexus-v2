@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_accessories.rst:2
+#: 329e16bedbee4ee2887dd827549bc070
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_accessories module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_accessories 模块"
+
+#: 3a78852cf9e248b081b4a91336169182 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories:1
+msgid "FDA_get_drug_names_by_accessories"
+msgstr ""
+
+#: 8bc90be927d94afa956d91308cc78ead cbb144cc01074f599958aec02ef3fded of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories:3
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:1
+msgid "Retrieve drug names based on the accessories field information."
+msgstr "根据附属字段信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_accessories.rst
+#: 6a1e8b52989a4a5e8ffcbbbc361f4fbb
+msgid "Parameters"
+msgstr "参数"
+
+#: 5d5e9782b46543b58a2a66eda759cc63 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:3
+msgid "The name or part of the name of the accessory."
+msgstr "附件的名称或名称的一部分。"
+
+#: f64d2314071c43fb849b00ffcb7e2a0a of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 1d740f7b2ce0476093d3b5f3400d5ed2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 2883a084822245f8b07257c789303fcf of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: e3bcddd4b56342c7a616c2cb317f315b of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 33b8e869968947678f0c36ca01565571 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a9fd072e379446a2a488c9ce17a4e8f8 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_accessories.rst
+#: 6152ea05cbb74b77909776c7ed174779
+msgid "Return type"
+msgstr "返回类型"
+
+#: 320215c4c385478cb2ed7adaff602a50 of
+#: tooluniverse.tools.FDA_get_drug_names_by_accessories.FDA_get_drug_names_by_accessories:18
+msgid ":py:class:`Any`"
+msgstr ""

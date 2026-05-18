@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_gene_name_by_entity_id.rst:2
+#: 45445a113b2f4331ad6ff3bb9e6cdd1e
+msgid "tooluniverse.tools.get\\_gene\\_name\\_by\\_entity\\_id module"
+msgstr "tooluniverse.tools.get_gene_name_by_entity_id 模块"
+
+#: ceadfb1f021b4d6fb81e6a4c75a4c2aa of
+#: tooluniverse.tools.get_gene_name_by_entity_id:1
+msgid "get_gene_name_by_entity_id"
+msgstr "通过实体ID获取基因名称"
+
+#: 0e6fcb4d908f4bd88fa635de4552d816 8436dc9eec7f4a06befb1fc68c6c1f65 of
+#: tooluniverse.tools.get_gene_name_by_entity_id:3
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:1
+msgid "Retrieve gene name(s) associated with a polymer entity."
+msgstr "检索与聚合物实体相关的基因名称。"
+
+#: ../../api/tooluniverse.tools.get_gene_name_by_entity_id.rst
+#: 2c45b2ff6a3b430d8b0cd8fd15988f9b
+msgid "Parameters"
+msgstr "参数"
+
+#: 311b178607df48f3b721fa87125c4b02 of
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:3
+msgid "Entity ID like '1A8M_1'"
+msgstr "实体 ID 如 '1A8M_1'"
+
+#: 3a1c7aa456ef434a9dad6b820a11c33e of
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f2b347de4bd346dea83c9e0b5115e51c of
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4b7c19dadd1b4253ae978ab2c2a18452 of
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_gene_name_by_entity_id.rst
+#: d1fd33041c584075a89e101fe75156d4
+msgid "Return type"
+msgstr "返回类型"
+
+#: fe423d5d4eb24fb782f790c8fbe86e09 of
+#: tooluniverse.tools.get_gene_name_by_entity_id.get_gene_name_by_entity_id:12
+msgid ":py:class:`Any`"
+msgstr ""

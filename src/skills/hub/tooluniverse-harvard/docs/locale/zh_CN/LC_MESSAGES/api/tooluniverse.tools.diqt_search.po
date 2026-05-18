@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.diqt_search.rst:2
+#: 394cd353009e4ec5b60dc1fc8286f929
+msgid "tooluniverse.tools.diqt\\_search module"
+msgstr "tooluniverse.tools.diqt\\_search 模块"
+
+#: f59540baa026433fb3fa15f0521300a2 of tooluniverse.tools.diqt_search:1
+msgid "diqt_search"
+msgstr ""
+
+#: 3bec588ecabd49dcb3d185dad80afa05 5b1891d2e8464cfdbad25a289dd1f930 of
+#: tooluniverse.tools.diqt_search:3
+#: tooluniverse.tools.diqt_search.diqt_search:1
+msgid ""
+"Search the DIQTA dataset for drug-induced QT-interval prolongation risk "
+"information by generic na..."
+msgstr "搜索 DIQTA 数据集以获取基于通用名称的药物诱导 QT 间期延长风险信息。"
+
+#: ../../api/tooluniverse.tools.diqt_search.rst
+#: f4a5a71d120843f0b49fd33401a59e93
+msgid "Parameters"
+msgstr "参数"
+
+#: 765ea6688ad444a3970d911fd91c8858 of
+#: tooluniverse.tools.diqt_search.diqt_search:3
+msgid "Free-text query (e.g. 'Astemizole', 'DB00637')."
+msgstr "自由文本查询（例如“Astemizole”、“DB00637”）。"
+
+#: b7b39c23a05d4f57a21ec4b8cee0152a of
+#: tooluniverse.tools.diqt_search.diqt_search:5
+msgid ""
+"Columns to search. Choose from: 'Generic/Proper Name(s)', 'DrugBank ID'."
+msgstr "搜索列。可选项：‘通用名/专有名’，‘DrugBank ID’。"
+
+#: 648979fbb7dc4c0a8ec21bf9f1d40046 of
+#: tooluniverse.tools.diqt_search.diqt_search:7
+msgid "Match text with exact case if true."
+msgstr "如果为真，则匹配文本时需严格区分大小写。"
+
+#: 0c512f784ce049e580470d3acfccf8ba of
+#: tooluniverse.tools.diqt_search.diqt_search:9
+msgid ""
+"Field value must equal query exactly if true; otherwise substring match."
+msgstr "字段值必须与查询完全匹配（如果为 true）；否则为子字符串匹配。"
+
+#: 8705b0c2000f46deaf6e2e51a9d0eb03 of
+#: tooluniverse.tools.diqt_search.diqt_search:11
+msgid "Maximum number of rows to return."
+msgstr "返回的最大行数。"
+
+#: b6177b467f2c4883bb717dce4fcdfd7d of
+#: tooluniverse.tools.diqt_search.diqt_search:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7fe24b98f0f444d69ae1e79ba920c3d9 of
+#: tooluniverse.tools.diqt_search.diqt_search:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ddd9ecdeca254e8ea715b14f3b58c642 of
+#: tooluniverse.tools.diqt_search.diqt_search:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.diqt_search.rst
+#: d379a4c3a637432e900f84ee40722456
+msgid "Return type"
+msgstr "返回类型"
+
+#: c679c4e6768a45368e5f7ad510269195 of
+#: tooluniverse.tools.diqt_search.diqt_search:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

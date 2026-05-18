@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 21:51-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.web_tools.rst:2 617373759b124a42914fbd38c64e486e
+msgid "tooluniverse.web\\_tools package"
+msgstr "tooluniverse.web_tools 包"
+
+#: 1eb23d67fcd54cc5b994fe619a6cd0e7 of tooluniverse.web_tools:1
+msgid ""
+"Web Tools for ToolUniverse Collection of web-based tools and interfaces"
+msgstr "ToolUniverse 网络工具 集合基于网页的工具和界面"
+
+#: ../../api/tooluniverse.web_tools.rst:11 d53fa5644ec84f6aafe3dfb009bad5a4
+msgid "Subpackages"
+msgstr "子包"

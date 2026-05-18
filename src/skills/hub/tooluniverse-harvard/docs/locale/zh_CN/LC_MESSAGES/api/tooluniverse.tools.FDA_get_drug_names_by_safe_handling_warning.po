@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.rst:2
+#: be32957fb4fc4cc59f68ae56b1df20c1
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_safe\\_handling\\_warning module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_safe\\_handling\\_warning 模块"
+
+#: 90c2aab6201f4e1e9633d577d052045e of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning:1
+msgid "FDA_get_drug_names_by_safe_handling_warning"
+msgstr "FDA_按安全处理警告获取药品名称"
+
+#: 04936127ea4f44ef970ea799cce1ceb4 ce833c35ea674e59ade0cd28676733ca of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning:3
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:1
+msgid "Retrieve drug names that have specific safe handling warnings."
+msgstr "检索具有特定安全处理警告的药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.rst
+#: 3bbc6858566542498df3b19ce07ee8d5
+msgid "Parameters"
+msgstr "参数"
+
+#: 0061d6b32f764da9bb3e9a82aba6e547 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:3
+msgid "The specific safe handling warning to search for."
+msgstr "需查找的具体安全处理警告。"
+
+#: f45487cc37c04494a2f9ce6f7b3cd5b0 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: f2b2ee1ad56645198a917ddcee415f04 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: e19363197ddb40c899dc0222055dd39f of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c3c0da9e875e4adba175a8a07009a945 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 43befae2c5cd44288d99a14b556c0fa1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 816235963278442c8039faa2f36780f8 of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.rst
+#: 971fffb506424efd993b95dc2ae155b1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 090316777ff34c5199a1fdf0b517ae5e of
+#: tooluniverse.tools.FDA_get_drug_names_by_safe_handling_warning.FDA_get_drug_names_by_safe_handling_warning:18
+msgid ":py:class:`Any`"
+msgstr ""

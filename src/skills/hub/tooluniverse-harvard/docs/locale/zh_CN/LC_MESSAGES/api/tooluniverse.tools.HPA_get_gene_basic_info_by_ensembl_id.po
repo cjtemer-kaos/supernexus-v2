@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.rst:2
+#: 83382a25427e4a7aa18233534bb2f6f1
+msgid "tooluniverse.tools.HPA\\_get\\_gene\\_basic\\_info\\_by\\_ensembl\\_id module"
+msgstr "tooluniverse.tools.HPA\\_get\\_gene\\_basic\\_info\\_by\\_ensembl\\_id 模块"
+
+#: 9bb9ed203aae462ca3979d4e25d8aa33 of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id:1
+msgid "HPA_get_gene_basic_info_by_ensembl_id"
+msgstr "HPA_通过Ensembl ID获取基因基本信息"
+
+#: 153ae4432a174d95a8e5c5b18576c475 c2b458bd7e8a4a93af54785be54ffc89 of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id:3
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:1
+msgid ""
+"Get gene basic information and expression data from Human Protein Atlas "
+"using Ensembl Gene ID. En..."
+msgstr "通过使用Ensembl基因ID从Human Protein Atlas获取基因基本信息和表达数据。"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.rst
+#: c90495a46d7c47b3aef4d044717c4529
+msgid "Parameters"
+msgstr "参数"
+
+#: 43ed0624ddf34b1b8ab06d37b7927261 of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:3
+msgid "Ensembl Gene ID, e.g., 'ENSG00000134057', 'ENSG00000141510', etc."
+msgstr "Ensembl基因ID，例如“ENSG00000134057”、“ENSG00000141510”等。"
+
+#: f8e0190790eb4f6cb3d1567678ac9f2b of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: acc1ffb88b254a608f5b707c4c975169 of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1de0507f01cb4a448ad22ef96fd9cee5 of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.rst
+#: 124a36c6814949f2a84610d3e4312324
+msgid "Return type"
+msgstr "返回类型"
+
+#: 13660e11ae2d4d5aafa3434b21b7b0df of
+#: tooluniverse.tools.HPA_get_gene_basic_info_by_ensembl_id.HPA_get_gene_basic_info_by_ensembl_id:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.rst:2
+#: 43ea99076db94326832088da768fd487
+msgid "tooluniverse.tools.get\\_ligand\\_smiles\\_by\\_chem\\_comp\\_id module"
+msgstr "tooluniverse.tools.get\\_ligand\\_smiles\\_by\\_chem\\_comp\\_id 模块"
+
+#: a5ee93185899478c83b12794d11fbf5e of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id:1
+msgid "get_ligand_smiles_by_chem_comp_id"
+msgstr "get_ligand_smiles_by_chem_comp_id（通过化学组分ID获取配体SMILES）"
+
+#: 27ffc69c7d784c54b4097d53d49f4372 89b95271730b45e4b53f4192d62f5e0e of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id:3
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:1
+msgid ""
+"Retrieve the SMILES chemical structure string for a given chemical component"
+" (ligand) ID."
+msgstr "检索给定化学成分（配体）ID的SMILES化学结构字符串。"
+
+#: ../../api/tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.rst
+#: d3311faa754b4403b66fd609992d58f7
+msgid "Parameters"
+msgstr "参数"
+
+#: 7b884961eff5428c84fbe4ee8c51318c of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:3
+msgid "Chemical component ID (e.g., 'ATP')"
+msgstr "化学成分标识（例如：'ATP'）"
+
+#: 4b5df18a3de24b82a6eff6667610a04a of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 231bad45d1e54effb8f702eca4a12713 of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5c9dc85e609547d9b4ffb9d27ad09fe8 of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.rst
+#: fc76045c3ee941f6b0029e9e17b6a651
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3441a85717624bd7919487edf24cd410 of
+#: tooluniverse.tools.get_ligand_smiles_by_chem_comp_id.get_ligand_smiles_by_chem_comp_id:12
+msgid ":py:class:`Any`"
+msgstr ""

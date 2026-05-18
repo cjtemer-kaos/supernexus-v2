@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.rst:2
+#: 3cd39b039108438db6fa2d071b2aa3f1
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_parent\\_child\\_molecules\\_by\\_drug\\_chembl\\_ID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_parent\\_child\\_molecules\\_by\\_drug\\_chembl\\_ID"
+" 模块"
+
+#: 38828a41ea01433a9f30f0b9c2462edb of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:1
+msgid "OpenTargets_get_parent_child_molecules_by_drug_chembl_ID"
+msgstr ""
+"OpenTargets_get_parent_child_molecules_by_drug_chembl_ID\n"
+"\n"
+"获取药物Chembl ID的父分子和子分子"
+
+#: 283294749b384257b250b41d2f0d8b83 55e8b93dcee94c10bfee98ca64268359 of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:3
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:1
+msgid "Get parent and child molecules of specified drug chemblId."
+msgstr "获取指定药物 chemblId 的父分子和子分子。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.rst
+#: 221e4f2c695142d687c55407cafbbccb
+msgid "Parameters"
+msgstr "参数"
+
+#: 9ec543d91a0d4d099cbf813e77bff10e of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: 682d3270b2bf455d9a201d878ecfb5b5 of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1208735fb3ed436f8eb7d679fa02c215 of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8241a10b1995429ba5ff53e502ead93c of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.rst
+#: 7775319f027c4d67a5088cbbcb60da82
+msgid "Return type"
+msgstr "返回类型"
+
+#: 629369b954f54c62baaedf18ee2e7086 of
+#: tooluniverse.tools.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID.OpenTargets_get_parent_child_molecules_by_drug_chembl_ID:12
+msgid ":py:class:`Any`"
+msgstr ""

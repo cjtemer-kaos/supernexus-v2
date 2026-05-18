@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.rst:2
+#: 001f76e1d27a426b82b3b0d49a68ed53
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_spl\\_indexing\\_data\\_elements\\_by\\_drug\\_name"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_spl\\_indexing\\_data\\_elements\\_by\\_drug\\_name 模块"
+
+#: 4b918e5d25fe4b489a7f7d9af31acb55 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name:1
+msgid "FDA_get_spl_indexing_data_elements_by_drug_name"
+msgstr "FDA_按药品名称获取SPL索引数据元素"
+
+#: b1db6ca93b314ad9b87c921a4f897f49 e6d8529e768f41ab8f78ba65c64845ac of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name:3
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:1
+msgid ""
+"Retrieve Structured Product Labeling (SPL) indexing data elements based on "
+"drug names."
+msgstr "根据药品名称检索结构化产品标签（SPL）索引数据元素。"
+
+#: ../../api/tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.rst
+#: 95eb8b50f1ed40c0b274fa29bd3f1234
+msgid "Parameters"
+msgstr "参数"
+
+#: 4dfad5d51f544dea999cd5a6a7a057d1 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 06de065cae0a4fe4a47965f23c8329d1 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: d8fd774459dc41bebf51ad1b5df6e6f6 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数量。"
+
+#: cbcf748bd89b4ea1a61b74de1a93ba39 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 96fbcd9c3b4d457ea7c89c8527d56a37 of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7bf3fa42be9a4d9daeda16fbf0e406dd of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.rst
+#: 6855b24dc3b2437cb5e0e6dfd0230cb2
+msgid "Return type"
+msgstr "返回类型"
+
+#: c40b489005784df8973f5494a612343f of
+#: tooluniverse.tools.FDA_get_spl_indexing_data_elements_by_drug_name.FDA_get_spl_indexing_data_elements_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

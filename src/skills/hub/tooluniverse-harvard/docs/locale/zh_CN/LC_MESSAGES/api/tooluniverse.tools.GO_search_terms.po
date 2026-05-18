@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.GO_search_terms.rst:2
+#: 77fdf22721b449599f7a07286817c2d8
+msgid "tooluniverse.tools.GO\\_search\\_terms module"
+msgstr "tooluniverse.tools.GO\\_search\\_terms 模块"
+
+#: 0ad3d5f164234f7e8c0d0160b08b00f4 of tooluniverse.tools.GO_search_terms:1
+msgid "GO_search_terms"
+msgstr ""
+
+#: d67b6bf1aff24f4c894b4b813b6267d4 d6b37c2a9819486fbee08f68e288c12b of
+#: tooluniverse.tools.GO_search_terms:3
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:1
+msgid ""
+"Searches for Gene Ontology (GO) terms by a keyword using the GOlr search "
+"engine. Returns GO terms..."
+msgstr "使用GOlr搜索引擎通过关键词搜索基因本体（GO）术语。返回GO术语..."
+
+#: ../../api/tooluniverse.tools.GO_search_terms.rst
+#: 37f529fb8d3747c78f002f9130953d9c
+msgid "Parameters"
+msgstr "参数"
+
+#: 6b57126ddbe744f0adbe75131a5123f2 of
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:3
+msgid "The keyword to search for, e.g., 'apoptosis' or 'kinase activity'."
+msgstr "用于搜索的关键词，例如“凋亡”或“激酶活性”。"
+
+#: d493f67d0f854edcb831fa2af9b1c51e of
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0af4baa279a3484fbc015e7e919ec494 of
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c68bdef237c643e4b1e0fd3b4834dfcc of
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.GO_search_terms.rst
+#: d4281ee0bee647029260e0f4a6f19176
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6624411fb80544399d32ff7bd122f262 of
+#: tooluniverse.tools.GO_search_terms.GO_search_terms:12
+msgid ":py:class:`Any`"
+msgstr ""

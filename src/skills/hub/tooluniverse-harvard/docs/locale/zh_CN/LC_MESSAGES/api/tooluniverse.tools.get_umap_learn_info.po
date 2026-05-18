@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_umap_learn_info.rst:2
+#: 1ed83b1e35f248aa81c16fdec6967ebc
+msgid "tooluniverse.tools.get\\_umap\\_learn\\_info module"
+msgstr "tooluniverse.tools.get\\_umap\\_learn\\_info 模块"
+
+#: 3e20d65105f240e98002936cc5319020 of
+#: tooluniverse.tools.get_umap_learn_info:1
+msgid "get_umap_learn_info"
+msgstr "get_umap_learn_info 获取 UMAP 学习信息"
+
+#: 85ebfc810ae54c29a8ef181fd162bf04 ef61b8836f4c4c4ea01a8db5caf91ae6 of
+#: tooluniverse.tools.get_umap_learn_info:3
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:1
+msgid ""
+"Get comprehensive information about UMAP-learn – dimensionality reduction "
+"technique"
+msgstr "获取关于UMAP-learn——降维技术的全面信息"
+
+#: ../../api/tooluniverse.tools.get_umap_learn_info.rst
+#: f6d2a7172dd14c71969549304b930c58
+msgid "Parameters"
+msgstr "参数"
+
+#: e3a25c57eda341ce87a0093c417e4d6b of
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: a81092443c4f4742a5a7f1c97b6a9947 of
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d96c7349be31442a97f18c2a431283ab of
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: be74ecbef349415299d757c65f6a6328 of
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_umap_learn_info.rst
+#: 64b3b54cb4a845f48f3669191298c7e5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9559dd7286bc49a3878d6caffb3c4f5c of
+#: tooluniverse.tools.get_umap_learn_info.get_umap_learn_info:12
+msgid ":py:class:`Any`"
+msgstr ""

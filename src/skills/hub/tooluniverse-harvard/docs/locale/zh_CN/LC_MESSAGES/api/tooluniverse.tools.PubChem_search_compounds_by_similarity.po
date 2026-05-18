@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_similarity.rst:2
+#: 9110dc23342d480b9021a3377c9c4496
+msgid "tooluniverse.tools.PubChem\\_search\\_compounds\\_by\\_similarity module"
+msgstr "tooluniverse.tools.PubChem\\_search\\_compounds\\_by\\_similarity 模块"
+
+#: 58d3fd9830a740479f1bf42b8037dabf of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity:1
+msgid "PubChem_search_compounds_by_similarity"
+msgstr "PubChem_通过相似性搜索化合物"
+
+#: 9de2477f8107454ea55d3adf29d15b7c f5af66d33fba41da942b727b9b6ae1b7 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity:3
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:1
+msgid ""
+"Search by similarity (Tanimoto coefficient), returns CID list of compounds "
+"with similarity above ..."
+msgstr "根据相似性（Tanimoto系数）进行搜索，返回相似度高于...的化合物CID列表。"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_similarity.rst
+#: 210ee1726b5d4430a72aaab1600ca69b
+msgid "Parameters"
+msgstr "参数"
+
+#: 71464bcbd105409a90d7cb0451c99b33 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:3
+msgid "SMILES expression of target molecule."
+msgstr "目标分子的SMILES表达式。"
+
+#: 8f9338298a26485ba63fc54cc7ec7076 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:5
+#, python-format
+msgid ""
+"Similarity threshold (between 0 and 1), e.g., 0.9 means 90% similarity."
+msgstr "相似度阈值（介于0到1之间），例如，0.9表示90%的相似度。"
+
+#: 7c68a3603a3c4e289e2b21b1818483e8 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 482d2b10d1ea4e1d8a77130784ee8aa4 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 9b9d31143b75491390234f13b58e7f3d of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_similarity.rst
+#: 5be3f712c63745d4b95a7f7e93110da3
+msgid "Return type"
+msgstr "返回类型"
+
+#: c25b471ba3f648c4b1e834ff4c19c3d5 of
+#: tooluniverse.tools.PubChem_search_compounds_by_similarity.PubChem_search_compounds_by_similarity:14
+msgid ":py:class:`Any`"
+msgstr ""

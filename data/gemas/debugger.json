@@ -1,0 +1,16 @@
+{
+  "name": "debugger",
+  "version": "2.0.0",
+  "description": "Analista de trazas de error y excepciones",
+  "main": "src.agents.debugger_gem",
+  "model": "deepseek-r1:8b",
+  "activationEvents": ["onCommand:debug", "onCommand:fix", "onCommand:trace"],
+  "semanticKeywords": ["debug", "error", "bug", "fix", "exception", "trace", "stack", "crash", "fail"],
+  "category": "development",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

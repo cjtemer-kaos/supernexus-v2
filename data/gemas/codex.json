@@ -1,0 +1,16 @@
+{
+  "name": "codex",
+  "version": "2.0.0",
+  "description": "Ejecutor de codigo en sandboxes locales y compilacion",
+  "main": "src.agents.codex_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:codex", "onCommand:compile", "onCommand:sandbox"],
+  "semanticKeywords": ["codex", "compile", "sandbox", "handoff", "delegation", "run", "execute", "build"],
+  "category": "development",
+  "maxMemoryMB": 384,
+  "maxCPUPercent": 25,
+  "timeoutSeconds": 600,
+  "autoRestart": true,
+  "maxRestarts": 3,
+  "parallelCapable": true
+}

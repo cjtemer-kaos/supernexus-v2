@@ -1,0 +1,16 @@
+{
+  "name": "architect",
+  "version": "2.0.0",
+  "description": "Disenador de sistemas, grafos de dependencias y UML",
+  "main": "src.agents.architect_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:design", "onCommand:architecture", "onCommand:uml"],
+  "semanticKeywords": ["architecture", "design", "system", "infrastructure", "uml", "diagram", "dependency", "pattern", "microservice"],
+  "category": "development",
+  "maxMemoryMB": 384,
+  "maxCPUPercent": 20,
+  "timeoutSeconds": 240,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Tool_Finder.rst:2
+#: f51c4041d7cf4b9fa05846de894a0264
+msgid "tooluniverse.tools.Tool\\_Finder module"
+msgstr "tooluniverse.tools.Tool\\_Finder 模块"
+
+#: d44482ecabf9493081d49618c6dbe132 of tooluniverse.tools.Tool_Finder:1
+msgid "Tool_Finder"
+msgstr "工具查找器"
+
+#: 0cf80bc9acd64ff08b0e625f34baa10e 6d4bbcf47d604162bf49a25dac84cb07 of
+#: tooluniverse.tools.Tool_Finder:3
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:1
+msgid ""
+"Retrieve related tools from the toolbox based on the provided description, "
+"advanced version with ..."
+msgstr "根据提供的描述，从工具箱中检索相关工具，高级版本包含..."
+
+#: ../../api/tooluniverse.tools.Tool_Finder.rst
+#: f6d63c7f5b6149c081205556b0d5c620
+msgid "Parameters"
+msgstr "参数"
+
+#: 848c2aa465604818b0ea652a80ba9285 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:3
+msgid "The description of the tool capability required."
+msgstr "所需工具功能的描述"
+
+#: 6dd88bb18830492bb304798c9e34321f of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:5
+msgid "The number of tools to retrieve"
+msgstr "检索工具的数量"
+
+#: 35c0ca67895b488ab81c7c296f4a86e7 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:7
+msgid ""
+"Pre-selected tool names to process. If provided, tool selection will skip "
+"the..."
+msgstr "预选的工具名称用于处理。如果提供了工具名称，工具选择将跳过..."
+
+#: aec28884185f401e914f09ee07533fb4 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:9
+msgid ""
+"Whether to return both prompts and tool names. If false, returns only tool "
+"pr..."
+msgstr "是否同时返回提示和工具名称。如果为 false，则仅返回工具名称。"
+
+#: de6c6e3cd51340b0a21192d8c07e4c04 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:11
+msgid "Optional list of tool categories to filter by"
+msgstr "可选工具类别列表以进行筛选"
+
+#: 4ccd99e4d32545e993a4c9d2dd6c1960 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ed374fed3bba45b6aed8699b1ea40b9d of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1b2d20501c0e433fbba4319dc319e9d8 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Tool_Finder.rst
+#: 6a91f1f610c244af9906578914b8e5a4
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7f5933d4856d483cbd4ff20bb8f9dca2 of
+#: tooluniverse.tools.Tool_Finder.Tool_Finder:20
+msgid ":py:class:`Any`"
+msgstr ""

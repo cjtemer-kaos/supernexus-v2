@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.odphp_topicsearch.rst:2
+#: ff99f02ac5384aa7ab35afdaa23eb49f
+msgid "tooluniverse.tools.odphp\\_topicsearch module"
+msgstr "tooluniverse.tools.odphp\\_topicsearch 模块"
+
+#: a6c7e3fc5bab4314ac99885e0ad12b7e of tooluniverse.tools.odphp_topicsearch:1
+msgid "odphp_topicsearch"
+msgstr "odphp_主题搜索"
+
+#: 91ca84253b53438e963ac1d33174b0a8 e847668a28dc4391b2437a9f535df0d8 of
+#: tooluniverse.tools.odphp_topicsearch:3
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:1
+msgid ""
+"Find specific health topics and get their full content. Use when the user "
+"mentions a keyword (e.g..."
+msgstr "查找特定健康主题并获取其完整内容。当用户提到关键词时使用（例如...）。"
+
+#: ../../api/tooluniverse.tools.odphp_topicsearch.rst
+#: 734cae4c3d3847208d115570954d1ba3
+msgid "Parameters"
+msgstr "参数"
+
+#: 81707ff2bd6d414bb52ba7ebc5540746 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:3
+msgid "Language code (en or es)"
+msgstr "语言代码（en 或 es）"
+
+#: 2715033219ab4941b64816205b1fec23 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:5
+msgid "Comma-separated topic IDs"
+msgstr "逗号分隔的主题ID"
+
+#: fc0a3249354748c284e508075b4c98f8 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:7
+msgid "Comma-separated category IDs"
+msgstr "逗号分隔的类别ID"
+
+#: 715c6d5f2c3946d2aa117b4fa64a7bcb of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:9
+msgid "Keyword search for topics"
+msgstr "关键词搜索主题"
+
+#: b9d1c4541cc047159667d53077c5cfae of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:11
+msgid "If true, also return PlainSections[] with HTML removed for each topic"
+msgstr "如果为真，还将返回去除每个主题中HTML的PlainSections[]"
+
+#: c5d2dd21cb6a4e68951e1a19722f997c of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8010133f8bd84946a2686e30aad8bc84 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 06af2e09867a4ddc9879ff5eecb739a6 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.odphp_topicsearch.rst
+#: 0eda60f822524c3fb25871a48f96f619
+msgid "Return type"
+msgstr "返回类型"
+
+#: d48dcd854ebe457c9837d16de37ba956 of
+#: tooluniverse.tools.odphp_topicsearch.odphp_topicsearch:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

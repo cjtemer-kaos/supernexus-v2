@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.eva_disease_target_score.rst:2
+#: 2b5408ba09b2462aa137de539b3d1a3f
+msgid "tooluniverse.tools.eva\\_disease\\_target\\_score module"
+msgstr "tooluniverse.tools.eva\\_disease\\_target\\_score 模块"
+
+#: cfeabc47ca614b128558cd350d89beb1 of
+#: tooluniverse.tools.eva_disease_target_score:1
+msgid "eva_disease_target_score"
+msgstr "eva_疾病_靶点_评分"
+
+#: 431895fd3afb4815a6185f34e737daa0 bc8b46c5b6974e94841b869465426dc9 of
+#: tooluniverse.tools.eva_disease_target_score:3
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:1
+msgid ""
+"Extract disease-target association scores from EVA (European Variation "
+"Archive). EVA provides gen..."
+msgstr "从EVA（欧洲变异档案）提取疾病-靶点关联评分。EVA提供基因变异相关数据..."
+
+#: ../../api/tooluniverse.tools.eva_disease_target_score.rst
+#: 00e00fd7c9944a0abb26aebde45e2e01
+msgid "Parameters"
+msgstr "参数"
+
+#: 7b94c3ada3904fef92bff5738f3e818d of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 8753e373e29a4616a61eb4a6406d98b9 of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:5
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: 5bb0f6b68823442590edba214a0f22f7 of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: efbbd8039b8b49e2ae713896f0fc1778 of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3ef5ebcf7cdc476eb8400a2e30f98582 of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.eva_disease_target_score.rst
+#: 0e0d22c8d33345689c4c41f08aeac208
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0ac0fce8a905496b829be96d69b79d43 of
+#: tooluniverse.tools.eva_disease_target_score.eva_disease_target_score:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

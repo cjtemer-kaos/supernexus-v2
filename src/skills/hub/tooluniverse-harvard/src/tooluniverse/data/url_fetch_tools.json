@@ -1,0 +1,85 @@
+[
+  {
+    "type": "URLHTMLTagTool",
+    "name": "get_webpage_title",
+    "description": "Fetch a webpage and return the content of its <title> tag.",
+    "fields": {
+      "tag": "title",
+      "return_key": "title"
+    },
+    "parameter": {
+      "type": "object",
+      "required": [
+        "url",
+        "timeout"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "HTTP or HTTPS URL to fetch (e.g. https://www.example.com)",
+          "format": "uri",
+          "minLength": 10
+        },
+        "timeout": {
+          "type": "integer",
+          "description": "Request timeout in seconds",
+          "minimum": 1,
+          "maximum": 300,
+          "default": 20
+        }
+      }
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    },
+    "test_examples": [
+      {
+        "url": "https://www.wikipedia.org",
+        "timeout": 20
+      }
+    ]
+  },
+  {
+    "type": "URLToPDFTextTool",
+    "name": "get_webpage_text_from_url",
+    "description": "Render a URL as PDF and extract its text (JavaScript supported).",
+    "fields": {
+      "return_key": "text"
+    },
+    "parameter": {
+      "type": "object",
+      "required": [
+        "url",
+        "timeout"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Webpage URL to fetch and render",
+          "format": "uri"
+        },
+        "timeout": {
+          "type": "integer",
+          "description": "Request timeout in seconds",
+          "minimum": 5,
+          "maximum": 120,
+          "default": 30
+        }
+      }
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    },
+    "test_examples": [
+      {
+        "url": "https://www.wikipedia.org",
+        "timeout": 30
+      }
+    ]
+  }
+]

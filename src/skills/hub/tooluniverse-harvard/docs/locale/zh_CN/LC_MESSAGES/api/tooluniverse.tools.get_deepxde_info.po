@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_deepxde_info.rst:2
+#: 12d07078dbd042d5a16c004196a929e1
+msgid "tooluniverse.tools.get\\_deepxde\\_info module"
+msgstr "tooluniverse.tools.get\\_deepxde\\_info 模块"
+
+#: 03f81b848d10449697e99b7cd4c4d465 of tooluniverse.tools.get_deepxde_info:1
+msgid "get_deepxde_info"
+msgstr "获取_deepxde_信息"
+
+#: 119c90bb84a540529bee0dd8eb9c6c51 16219f6f38fe4bff89467a82b9945f55 of
+#: tooluniverse.tools.get_deepxde_info:3
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:1
+msgid ""
+"Get comprehensive information about DeepXDE – a library for physics-informed"
+" neural networks (PIN..."
+msgstr "获取关于DeepXDE的全面信息——一个用于物理驱动神经网络（PIN）的库..."
+
+#: ../../api/tooluniverse.tools.get_deepxde_info.rst
+#: 326aaec23c9644faa6520b1c057d96a2
+msgid "Parameters"
+msgstr "参数"
+
+#: ffb7cf64c2484b418178be3e3ac52812 of
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:3
+msgid "Whether to include usage examples and a quick-start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 9d6343a831d34e4bb22bb1580e8efa00 of
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1b9f3e4ffd0f41119f154ca948a64d9b of
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6839313d1795484fbeb56e77a76d9486 of
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_deepxde_info.rst
+#: 89250277f71e4563a56f6ec3983834b6
+msgid "Return type"
+msgstr "返回类型"
+
+#: c91553d269a24d5ebebe9c27fc76a9eb of
+#: tooluniverse.tools.get_deepxde_info.get_deepxde_info:12
+msgid ":py:class:`Any`"
+msgstr ""

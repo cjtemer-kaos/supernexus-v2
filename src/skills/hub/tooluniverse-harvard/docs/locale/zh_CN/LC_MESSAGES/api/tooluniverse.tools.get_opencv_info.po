@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_opencv_info.rst:2
+#: 9763d80640854eec871c8117174af378
+msgid "tooluniverse.tools.get\\_opencv\\_info module"
+msgstr "tooluniverse.tools.get\\_opencv\\_info 模块"
+
+#: 6328e84233844f4884b631f393dea43d of tooluniverse.tools.get_opencv_info:1
+msgid "get_opencv_info"
+msgstr ""
+
+#: 8ec17ce57dce41828837787225685884 9c908d5b9b41484489d4f966c9d023d3 of
+#: tooluniverse.tools.get_opencv_info:3
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:1
+msgid ""
+"Get comprehensive information about OpenCV-Python – computer vision library"
+msgstr "获取关于 OpenCV-Python 的全面信息——计算机视觉库"
+
+#: ../../api/tooluniverse.tools.get_opencv_info.rst
+#: 6591416c587343869d9495db07d761b7
+msgid "Parameters"
+msgstr "参数"
+
+#: 85f8afa1d87d495abf8ab0a208e94071 of
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 4f31a536db0f400b9047abdc73712597 of
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7703dffcccf3403f93c784e6621b0004 of
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fe491b7b335b4271bd6c0e9f45a980c6 of
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_opencv_info.rst
+#: 112a6038e67b450282ae9f37677008e2
+msgid "Return type"
+msgstr "返回类型"
+
+#: bad0567973ea455dab2ca77192d1439b of
+#: tooluniverse.tools.get_opencv_info.get_opencv_info:12
+msgid ":py:class:`Any`"
+msgstr ""

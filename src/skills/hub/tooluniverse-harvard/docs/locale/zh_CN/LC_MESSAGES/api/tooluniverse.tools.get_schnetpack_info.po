@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_schnetpack_info.rst:2
+#: 0b39f7d54bca4723990a307fac0f1279
+msgid "tooluniverse.tools.get\\_schnetpack\\_info module"
+msgstr "tooluniverse.tools.get\\_schnetpack\\_info 模块"
+
+#: c5c36a496de14383a142ff58a5408141 of
+#: tooluniverse.tools.get_schnetpack_info:1
+msgid "get_schnetpack_info"
+msgstr "get_schnetpack_信息"
+
+#: 1a02e832fc0142b494bc8d3f53dc4070 3ca3754293c84608ab9cf82d9d78928a of
+#: tooluniverse.tools.get_schnetpack_info:3
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:1
+msgid ""
+"Get comprehensive information about SchNetPack – a deep-learning toolbox for"
+" molecules and materi..."
+msgstr "获取关于SchNetPack的全面信息——一个用于分子和材料的深度学习工具箱。"
+
+#: ../../api/tooluniverse.tools.get_schnetpack_info.rst
+#: 8e1f5c0114c54cae9003914eb00d145d
+msgid "Parameters"
+msgstr "参数"
+
+#: 8fd44efc6d1c4386a679c46f03e0dccd of
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:3
+msgid "Whether to include usage examples and a quick-start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 0dd578d4953c4d59b881b32bf1743957 of
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f31bf42578764291895d6bba529ba3c6 of
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 75fb0845469a40378e57642a6cdd4c31 of
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_schnetpack_info.rst
+#: d4ec2da5ba854c2787ab9d6327dd1413
+msgid "Return type"
+msgstr "返回类型"
+
+#: 074d3edf54134ae18426778e5cdc9beb of
+#: tooluniverse.tools.get_schnetpack_info.get_schnetpack_info:12
+msgid ":py:class:`Any`"
+msgstr ""

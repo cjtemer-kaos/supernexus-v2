@@ -1,0 +1,16 @@
+{
+  "name": "design",
+  "version": "2.0.0",
+  "description": "Maquetador de interfaces web y componentes multimedia",
+  "main": "src.agents.design_gem",
+  "model": "qwen2.5-coder:7b",
+  "activationEvents": ["onCommand:design", "onCommand:ui", "onCommand:multimedia"],
+  "semanticKeywords": ["design", "ui", "ux", "css", "html", "component", "layout", "multimedia", "video", "veo", "scene"],
+  "category": "multimedia",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 180,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

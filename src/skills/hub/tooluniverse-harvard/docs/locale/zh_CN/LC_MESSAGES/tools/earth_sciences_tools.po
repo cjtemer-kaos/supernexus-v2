@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/earth_sciences_tools.rst:2 f5ac9b46b88941958f3b4028412e0289
+msgid "Earth Sciences Tools"
+msgstr "地球科学工具"
+
+#: ../../tools/earth_sciences_tools.rst:4 69f171035542414dbd2c9d4d634a6450
+msgid ""
+"**Configuration File**: ``packages/earth_sciences_tools.json`` **Tool "
+"Type**: Local **Tools Count**: 6"
+msgstr ""
+"**配置文件**: ``packages/earth_sciences_tools.json`` **工具类型**: 本地 **工具数量**: 6"
+
+#: ../../tools/earth_sciences_tools.rst:8 5250889c2e2449da827e1a15ae6ebb78
+msgid ""
+"This page contains all tools defined in the ``earth_sciences_tools.json`` "
+"configuration file."
+msgstr "本页面包含在 ``earth_sciences_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/earth_sciences_tools.rst:11 6707269df1ac40e99727640436c5312e
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/earth_sciences_tools.rst:14 3830865e5a5b4fa1ba8cbb33d5c3a7f3
+msgid "**get_cartopy_info** (Type: PackageTool)"
+msgstr "**get_cartopy_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:16 dcdb0c991bb54b57b0434d6791d1bcb0
+msgid ""
+"Get information about the cartopy package. Cartographic projections and "
+"geospatial data processing"
+msgstr "获取有关cartopy软件包的信息。地图投影和地理空间数据处理"
+
+#: ../../tools/earth_sciences_tools.rst fa7e0b8afad8482f94237eb503aa275f
+msgid "get_cartopy_info tool specification"
+msgstr "get_cartopy_info 工具规范"
+
+#: ../../tools/earth_sciences_tools.rst:20
+#: ../../tools/earth_sciences_tools.rst:49
+#: ../../tools/earth_sciences_tools.rst:78
+#: ../../tools/earth_sciences_tools.rst:107
+#: ../../tools/earth_sciences_tools.rst:136
+#: ../../tools/earth_sciences_tools.rst:165 049dbbbd78b34802a13bb40b7db7b7fb
+#: 27a06c8aa31844a38e58b6eb98e00cfe 586eb7c9e5dc4017b5d0768f2f80e0fd
+#: 5a4c779a0cb44a5bb1de3ae186adf3d0 cc6638c0a9254acfb95914dfbb364a55
+#: f70424ca042d4e90a3be8cda7d02a839
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/earth_sciences_tools.rst:22 d04d19819b584a1fbfc50072cf844a4a
+msgid "**Name**: ``get_cartopy_info``"
+msgstr "**名称**: ``get_cartopy_info``"
+
+#: ../../tools/earth_sciences_tools.rst:23
+#: ../../tools/earth_sciences_tools.rst:52
+#: ../../tools/earth_sciences_tools.rst:81
+#: ../../tools/earth_sciences_tools.rst:110
+#: ../../tools/earth_sciences_tools.rst:139
+#: ../../tools/earth_sciences_tools.rst:168 232d37097d854a679b926369069ba39e
+#: 2391f95a149f48be807ebc811d6005a2 266d0f48d16849b9b1286cc72f6d9280
+#: 30e258ae659e4a0bbb032fb0bb4ead01 757e588b086f46d2915d57d3bb2d3721
+#: 9e932b7467fb4ee08bfbc1f315c74d78
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**: ``PackageTool``"
+
+#: ../../tools/earth_sciences_tools.rst:24 fde5bd48fa904dc3a35505ddfe5a1879
+msgid ""
+"**Description**: Get information about the cartopy package. Cartographic "
+"projections and geospatial data processing"
+msgstr "**描述**：获取有关 cartopy 包的信息。地图投影和地理空间数据处理"
+
+#: ../../tools/earth_sciences_tools.rst:26
+#: ../../tools/earth_sciences_tools.rst:55
+#: ../../tools/earth_sciences_tools.rst:84
+#: ../../tools/earth_sciences_tools.rst:113
+#: ../../tools/earth_sciences_tools.rst:142
+#: ../../tools/earth_sciences_tools.rst:171 2c6584cc1ff44af5b34667affbc774a7
+#: 57e2c49571f74ae4a821b179a941df3a 78c90b45c2624dc8bf264d5666030cb5
+#: 7b2c70d6a3214b168db6b741f740b2c5 8f9649660825463ab7a2c8037922040d
+#: db9c380f3d174f4a9c1569edfe35e50b
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/earth_sciences_tools.rst:28
+#: ../../tools/earth_sciences_tools.rst:57
+#: ../../tools/earth_sciences_tools.rst:86
+#: ../../tools/earth_sciences_tools.rst:115
+#: ../../tools/earth_sciences_tools.rst:144
+#: ../../tools/earth_sciences_tools.rst:173 198f901526694b758063029a91b88384
+#: 27ab8396a40146cabaf77383b755a2d6 4b53d574d4084e61b349633f95247a9f
+#: 90922224881e4d1983a418877b21e6c9 b636d5dce2984250bc38c30c24068b95
+#: ff59e795497e4e069b90f1403ef2b29f
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/earth_sciences_tools.rst:30
+#: ../../tools/earth_sciences_tools.rst:59
+#: ../../tools/earth_sciences_tools.rst:88
+#: ../../tools/earth_sciences_tools.rst:117
+#: ../../tools/earth_sciences_tools.rst:146
+#: ../../tools/earth_sciences_tools.rst:175 2e68c059ebec4c9c83845eae99890cf3
+#: 3936a5057e3b4f0aa75db3a4bb916002 5b5ad0cd37ce495aa4ea373a2a35f3e5
+#: 68eb6b19eb474a148ad9b568290dea53 896d3d45106f4421a97262f0fad3c8c9
+#: c29f3c40dbeb4032ace61452bd9a1a61
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/earth_sciences_tools.rst:43 66621ce4d04548e28a641dffcbae1e91
+msgid "**get_cftime_info** (Type: PackageTool)"
+msgstr "**get_cftime_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:45 0ca670e25be84e09b98efc00d2bd5768
+msgid ""
+"Get information about the cftime package. Time-handling functionality from "
+"netcdf4-python"
+msgstr "获取有关 cftime 软件包的信息。来自 netcdf4-python 的时间处理功能"
+
+#: ../../tools/earth_sciences_tools.rst 08a469e0b0784bbb85f61299f2f69367
+msgid "get_cftime_info tool specification"
+msgstr "get_cftime_info 工具规范"
+
+#: ../../tools/earth_sciences_tools.rst:51 43f3cb865f1c464eba368815002efad7
+msgid "**Name**: ``get_cftime_info``"
+msgstr "**名称**: ``get_cftime_info``"
+
+#: ../../tools/earth_sciences_tools.rst:53 661f8c942d84446fa77b86a359a055fa
+msgid ""
+"**Description**: Get information about the cftime package. Time-handling "
+"functionality from netcdf4-python"
+msgstr "**描述**：获取有关 cftime 包的信息。提供来自 netcdf4-python 的时间处理功能"
+
+#: ../../tools/earth_sciences_tools.rst:72 64c658b3ce4e49abaf0d2710ef6109d0
+msgid "**get_geopandas_info** (Type: PackageTool)"
+msgstr "**get_geopandas_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:74 711bb14f83894920b21675e428f206d4
+msgid ""
+"Get information about the geopandas package. Geospatial data manipulation "
+"and analysis"
+msgstr "获取有关 geopandas 包的信息。地理空间数据的操作与分析"
+
+#: ../../tools/earth_sciences_tools.rst 792d61d685694a2384e5c29a50f9fcb7
+msgid "get_geopandas_info tool specification"
+msgstr "get_geopandas_info 工具规格说明"
+
+#: ../../tools/earth_sciences_tools.rst:80 8dec90d81df94024bf8581d9ce3877d7
+msgid "**Name**: ``get_geopandas_info``"
+msgstr "**名称**：``get_geopandas_info``"
+
+#: ../../tools/earth_sciences_tools.rst:82 d4258283a2724ca08f26d77fdd7a9ec9
+msgid ""
+"**Description**: Get information about the geopandas package. Geospatial "
+"data manipulation and analysis"
+msgstr "**描述**：获取有关 geopandas 包的信息。地理空间数据的操作与分析"
+
+#: ../../tools/earth_sciences_tools.rst:101 a5592bfb37824ab6bc9b23aa08f12707
+msgid "**get_netcdf4_info** (Type: PackageTool)"
+msgstr "**get_netcdf4_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:103 4f2a57adb811414f833e5fbfd700c7f7
+msgid ""
+"Get information about the netcdf4 package. Python interface to netCDF C "
+"library"
+msgstr "获取有关 netcdf4 包的信息。Python 接口，连接 netCDF C 库。"
+
+#: ../../tools/earth_sciences_tools.rst 41d9c7f8f6b84e0e98fde21ea25ffe8e
+msgid "get_netcdf4_info tool specification"
+msgstr "get_netcdf4_info 工具规格说明"
+
+#: ../../tools/earth_sciences_tools.rst:109 e3c63cf32dbe4d3f85fc3007937f8b40
+msgid "**Name**: ``get_netcdf4_info``"
+msgstr "**名称**：``get_netcdf4_info``"
+
+#: ../../tools/earth_sciences_tools.rst:111 a940801b3db74b73a3516b48c2e87bb7
+msgid ""
+"**Description**: Get information about the netcdf4 package. Python interface"
+" to netCDF C library"
+msgstr "**描述**：获取有关 netcdf4 包的信息。Python 接口，用于访问 netCDF C 库。"
+
+#: ../../tools/earth_sciences_tools.rst:130 b4993dd5b6854a38902ce502730f7338
+msgid "**get_rasterio_info** (Type: PackageTool)"
+msgstr "**get_rasterio_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:132 626c885d10154f209a15d37278b3216d
+msgid ""
+"Get information about the rasterio package. Access to geospatial raster data"
+msgstr "获取有关 rasterio 包的信息。访问地理空间栅格数据"
+
+#: ../../tools/earth_sciences_tools.rst 74ffd401403a4ed2b74ea4aaaea9f120
+msgid "get_rasterio_info tool specification"
+msgstr "get_rasterio_info 工具规范"
+
+#: ../../tools/earth_sciences_tools.rst:138 9d30586022d840a2812d8a67e1b4492f
+msgid "**Name**: ``get_rasterio_info``"
+msgstr "**名称**: ``get_rasterio_info``"
+
+#: ../../tools/earth_sciences_tools.rst:140 a2d1825a4db243a6add3ebde2a07fa52
+msgid ""
+"**Description**: Get information about the rasterio package. Access to "
+"geospatial raster data"
+msgstr "**描述**：获取有关 rasterio 软件包的信息。用于访问地理空间栅格数据"
+
+#: ../../tools/earth_sciences_tools.rst:159 af1705ab3d884a16831eef31931c23ae
+msgid "**get_xesmf_info** (Type: PackageTool)"
+msgstr "**get_xesmf_info**（类型：PackageTool）"
+
+#: ../../tools/earth_sciences_tools.rst:161 796b1755f30b418f89bb7aaa4b6a81c5
+msgid ""
+"Get information about the xesmf package. Universal regridder for geospatial "
+"data"
+msgstr "获取有关 xesmf 软件包的信息。用于地理空间数据的通用重网格工具。"
+
+#: ../../tools/earth_sciences_tools.rst 3569cdb8ee8846559f449d0cd61413d2
+msgid "get_xesmf_info tool specification"
+msgstr "get_xesmf_info 工具规范"
+
+#: ../../tools/earth_sciences_tools.rst:167 7e7909f3cfea4de98f888c319f07319a
+msgid "**Name**: ``get_xesmf_info``"
+msgstr "**名称**: ``get_xesmf_info``"
+
+#: ../../tools/earth_sciences_tools.rst:169 99e0583e2c4c438fb8352db65f6aa225
+msgid ""
+"**Description**: Get information about the xesmf package. Universal "
+"regridder for geospatial data"
+msgstr "**描述**：获取有关 xesmf 包的信息。用于地理空间数据的通用重网格工具"
+
+#: ../../tools/earth_sciences_tools.rst:188 8850662bca514cb493e66fa247c2e6c8
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/earth_sciences_tools.rst:190 b06b47f4d52d46d79c7097400249c5fe
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/earth_sciences_tools.rst:191 5069645b80cc490183135b52ba01c31e
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

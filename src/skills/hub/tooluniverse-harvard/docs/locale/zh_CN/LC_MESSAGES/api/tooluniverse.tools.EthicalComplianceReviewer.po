@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.EthicalComplianceReviewer.rst:2
+#: c9b08f50d3254fd3bf39423280ca2a39
+msgid "tooluniverse.tools.EthicalComplianceReviewer module"
+msgstr "tooluniverse.tools.EthicalComplianceReviewer 模块"
+
+#: 4ab5a371adc14fc98706d9c613553d9f of
+#: tooluniverse.tools.EthicalComplianceReviewer:1
+msgid "EthicalComplianceReviewer"
+msgstr "伦理合规审查器"
+
+#: 1f6b8e610c45457584c1a1ef9d0376f0 7cf23624c72440428761322d66656623 of
+#: tooluniverse.tools.EthicalComplianceReviewer:3
+#: tooluniverse.tools.EthicalComplianceReviewer.EthicalComplianceReviewer:1
+msgid "Checks adherence to ethical standards and disclosure practices."
+msgstr "检查对伦理标准和信息披露规范的遵守情况。"
+
+#: ../../api/tooluniverse.tools.EthicalComplianceReviewer.rst
+#: 175998089cf74c9397d900f63317e942
+msgid "Parameters"
+msgstr "参数"
+
+#: 4e7317f4237b4d558aea171f87c0a51c of
+#: tooluniverse.tools.EthicalComplianceReviewer.EthicalComplianceReviewer:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a0f06e0fd1eb46c1a135d27d6521d97e of
+#: tooluniverse.tools.EthicalComplianceReviewer.EthicalComplianceReviewer:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fd97275b391646bca502d357034abc35 of
+#: tooluniverse.tools.EthicalComplianceReviewer.EthicalComplianceReviewer:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.EthicalComplianceReviewer.rst
+#: de11735f8bbe46e88cc39f532d7c07a0
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8d10b3d708d7469c91faa2a4fe25fb4d of
+#: tooluniverse.tools.EthicalComplianceReviewer.EthicalComplianceReviewer:12
+msgid ":py:class:`Any`"
+msgstr ""

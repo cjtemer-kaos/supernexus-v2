@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.default_config.rst:2
+#: 48bec18071b9497f875511d52cbc4532
+msgid "tooluniverse.default\\_config module"
+msgstr "tooluniverse.default_config 模块"
+
+#: a797e46076c147759626baa3ba59c345 of tooluniverse.default_config:1
+msgid "Default tool configuration files mapping."
+msgstr "默认工具配置文件映射。"
+
+#: b3178883ae41436b871668dfd816fa64 of tooluniverse.default_config:3
+msgid ""
+"This module contains the default mapping of tool categories to their JSON "
+"configuration files. It's separated from __init__.py to avoid circular "
+"imports."
+msgstr "该模块包含工具类别到其 JSON 配置文件的默认映射。为了避免循环导入，该映射被独立于 __init__.py 文件。"
+
+#: 5d905d9a5f09410c9b3e4937a60e2e2d of
+#: tooluniverse.default_config.get_default_hook_config:1
+msgid "Get default hook configuration."
+msgstr "获取默认钩子配置。"
+
+#: ../../api/tooluniverse.default_config.rst 8dffed1ecc4b4eb9b7945aeaf6356415
+msgid "Returns"
+msgstr "返回值"
+
+#: 0df19dcfcef94f75ab8fbb62393b502c of
+#: tooluniverse.default_config.get_default_hook_config:3
+msgid "Default hook configuration with basic settings"
+msgstr "默认钩子配置及基本设置"
+
+#: ../../api/tooluniverse.default_config.rst ad2d9dee897d4287835ba4c3489cbaf6
+msgid "Return type"
+msgstr "返回类型"

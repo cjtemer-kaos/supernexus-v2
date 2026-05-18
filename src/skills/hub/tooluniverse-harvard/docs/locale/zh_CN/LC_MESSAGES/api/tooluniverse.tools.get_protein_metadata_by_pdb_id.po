@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_protein_metadata_by_pdb_id.rst:2
+#: 2ae0994a928042a280544558c914e5ad
+msgid "tooluniverse.tools.get\\_protein\\_metadata\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_protein\\_metadata\\_by\\_pdb\\_id 模块"
+
+#: 30e19992d55844e9bd8dc615c34f4964 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id:1
+msgid "get_protein_metadata_by_pdb_id"
+msgstr "get_protein_metadata_by_pdb_id 获取蛋白质元数据（通过PDB ID）"
+
+#: 9a6c2bee0903432eb6a09351262f6821 d45abd597226400d830a3625769332c3 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id:3
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:1
+msgid ""
+"Retrieve basic protein structure metadata, including structure title, "
+"experimental method, resolu..."
+msgstr "检索基本蛋白质结构元数据，包括结构标题、实验方法、分辨率..."
+
+#: ../../api/tooluniverse.tools.get_protein_metadata_by_pdb_id.rst
+#: bb9958a247524e708d867ba8b9e4f017
+msgid "Parameters"
+msgstr "参数"
+
+#: d9dc15a6515c401ab5b82f63eeb360c3 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:3
+msgid "4-character RCSB PDB ID of the protein"
+msgstr "蛋白质的4字符RCSB PDB ID"
+
+#: a6d02aa657374ef6bb5eb5e3f94f3de0 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 975dd1d519a3428eb145d3c710368d77 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 52b2eebda86f442fac8a4ea7d4b558c4 of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_protein_metadata_by_pdb_id.rst
+#: 88b453ac66db484fb1082f57cb5b08bc
+msgid "Return type"
+msgstr "返回类型"
+
+#: e0ab43c640cc40c8be882eb44dbae24b of
+#: tooluniverse.tools.get_protein_metadata_by_pdb_id.get_protein_metadata_by_pdb_id:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 14:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../old_files/MULTILANG_README.md:1 8c58ce2d84444173844c3412a87ce670
+msgid "🌍 ToolUniverse 中英文文档系统"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:3 8a100cf95a1f49659eab455067585125
+msgid "✨ 功能特性"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:5 b0b0557c41c240c68d90730a2345bf5f
+msgid "✅ **完整的中英文支持** - 使用 Sphinx i18n 系统"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:6 c6575370117a4b51bdcd55384193ca15
+msgid "✅ **Shibuya 现代主题** - 美观的界面，完美的侧边栏导航"
+msgstr "✅ **涩谷现代主题** - 美观的界面，完美的侧边栏导航"
+
+#: ../../old_files/MULTILANG_README.md:7 2cd94a6dc5a7430b98e1612b329b15c7
+msgid "✅ **浮动语言切换器** - 页面右下角，随时切换语言"
+msgstr "✅ **浮动语言切换器** - 位于页面右下角，随时切换语言"
+
+#: ../../old_files/MULTILANG_README.md:8 802443474d6b41e28b6d0249a941f336
+msgid "✅ **独立语言选择页** - 优雅的语言选择界面"
+msgstr "✅ **独立语言选择页** - 提供优雅的语言选择界面"
+
+#: ../../old_files/MULTILANG_README.md:9 d84545e9fb2147edbe7feba2ac8fc50f
+msgid "✅ **深色/浅色模式** - 自动适配系统主题"
+msgstr "✅ **深色/浅色模式** - 自动适应系统主题"
+
+#: ../../old_files/MULTILANG_README.md:10 8f63ea8f5b8f440885ede1afab213f3b
+msgid "✅ **移动端优化** - 响应式设计"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:12
+#: ../../old_files/MULTILANG_README.md:163 1a8a74a5f9464cccae5b2d50faa54210
+#: d3a0dad763154ac39ad54a988861c3c2
+msgid "🚀 快速开始"
+msgstr "🚀 快速入门"
+
+#: ../../old_files/MULTILANG_README.md:14 d48a5ff96e6f47b9afe785ecb35d6591
+msgid "方法 1: 使用交互式脚本（推荐）"
+msgstr "方法 1：使用交互式脚本（推荐）"
+
+#: ../../old_files/MULTILANG_README.md:21 7695f20bb9444287844f0cada850c9f2
+msgid "然后选择："
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:22 fc51d47993d04ab5953c12662bb6b6d8
+msgid "构建英文文档"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:23 abeb2d9e992244bf8ddb8554ccaeda61
+msgid "构建中文文档"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:24 f3a5fbe324b64db3814177813485774c
+msgid "构建双语文档（推荐）"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:25 46406a01e3e74a28af4e7028e364e44e
+msgid "更新翻译文件"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:26 7565eab0828e4feabf6f5631f46e1fff
+msgid "打开语言选择页"
+msgstr "打开语言选择页面"
+
+#: ../../old_files/MULTILANG_README.md:28 f361a1cca9f440e7bdc073371d5fd337
+msgid "方法 2: 直接命令"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:42 d8971f6ea1be44cc971840a52aab06b8
+msgid "📝 如何翻译"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:44 a6b335495288404bb3601338a6a953cf
+msgid "1. 生成/更新翻译文件"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:51 152091fc76944a26b25f3172983fb8a3
+msgid "2. 编辑翻译文件"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:53 3cca93f60d1349b09e1bc17f5e820b68
+msgid "翻译文件位置：`locale/zh_CN/LC_MESSAGES/*.po`"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:55 29c79b5b97464853b9836f2800d76249
+msgid "示例（`locale/zh_CN/LC_MESSAGES/index.po`）："
+msgstr ""
+"示例（`locale/zh_CN/LC_MESSAGES/index.po`）：  \n"
+"\n"
+"上下文：文档"
+
+#: ../../old_files/MULTILANG_README.md:68 91375e57031b4216818e0f04d9e6cf63
+msgid "3. 重新构建"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:75 c4deeaaf6569423eab9dba26edad0965
+msgid "📂 文件结构"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:104 6e67721eedeb481c9e2ee60702cad01d
+msgid "🎨 主题特性"
+msgstr "🎨 主题功能"
+
+#: ../../old_files/MULTILANG_README.md:106 d3a9edd0df0f4c9fae764dc38b48c4da
+msgid "Shibuya 主题配置"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:121 9466ff4c9bad4e87aed8d753219ae7e9
+msgid "侧边栏导航"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:123 0ddb54b3bd0d4a689e2925bafed7fec1
+msgid "✅ 自动生成导航树"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:124 02b12f9c136c4eac8c10c750cab8cd15
+msgid "✅ 可折叠章节"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:125 d8cd447ad1464bf88eb6e599bd6df131
+msgid "✅ 高亮当前页面"
+msgstr "✅ 高亮显示当前页面"
+
+#: ../../old_files/MULTILANG_README.md:126 577342240ef44c049fed7592b3a37dca
+msgid "✅ 深度可配置"
+msgstr "✅ 高度可配置"
+
+#: ../../old_files/MULTILANG_README.md:128 2210338c0e8f4644a6704aef9c3c95e4
+msgid "顶部导航"
+msgstr "顶部导航栏"
+
+#: ../../old_files/MULTILANG_README.md:130 969a5be40adf49c5b21fe17b1868ffc0
+msgid "🏠 Home"
+msgstr "🏠 主页"
+
+#: ../../old_files/MULTILANG_README.md:131 bcf23d0b762040c1ade70d9c48971722
+msgid "📖 User Guide"
+msgstr "📖 用户指南"
+
+#: ../../old_files/MULTILANG_README.md:132 11fd55b1c3864ec0a15571c0230c9335
+msgid "🔧 Tools"
+msgstr "🔧 工具"
+
+#: ../../old_files/MULTILANG_README.md:133 02c9c6f91d504e05a2606f3d24d45f5c
+msgid "🎯 Tutorials"
+msgstr "🎯 教程"
+
+#: ../../old_files/MULTILANG_README.md:134 ab39ea0843cb40298eeb8078302cd6f3
+msgid "🔍 Search"
+msgstr "🔍 搜索"
+
+#: ../../old_files/MULTILANG_README.md:136 c4bf84a5fded4261b669122c641032eb
+msgid "🌐 语言切换方式"
+msgstr "🌐 语言切换方法"
+
+#: ../../old_files/MULTILANG_README.md:138 d4ea9a3a88de484597fb8ccfce3786f3
+msgid "1. 浮动切换器（所有页面）"
+msgstr "1. 浮动切换器（适用于所有页面）"
+
+#: ../../old_files/MULTILANG_README.md:140 fe7dd888c97341e0aee7612fc6a6911a
+msgid "页面右下角的下拉菜单："
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:141 3b42c31e5c654c4dae3c2455a87edb3d
+msgid "🇬🇧 English"
+msgstr "🇬🇧 英语"
+
+#: ../../old_files/MULTILANG_README.md:142 d3b9c5cb7bbd45ddb285c52cc0e68a94
+msgid "🇨🇳 简体中文"
+msgstr "请提供需要翻译的具体英文文本，我将为您提供准确、流畅的中文翻译。"
+
+#: ../../old_files/MULTILANG_README.md:144 9c87c057cc4c4a7db560e89a6a996fdb
+msgid "2. 语言选择页"
+msgstr "2. 语言选择页面"
+
+#: ../../old_files/MULTILANG_README.md:146 7fe73b5351f6407da6d784e749947d4b
+msgid "访问 `_build/html/languages.html` 或运行："
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:153 be8d032ea4284443a22e2debe6141807
+msgid "3. 直接 URL"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:155 f501a6dee35349a29f0801bed5cf5191
+msgid "英文：`/index.html`"
+msgstr "`/index.html`"
+
+#: ../../old_files/MULTILANG_README.md:156 80bc9dd7dcd347378b826bbaf28db414
+msgid "中文：`/zh_CN/index.html`"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:158 084c2e7a2bad413ca5c26c56e034937e
+msgid "📊 翻译进度"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:160 56f4a1e12ed3472aa69042c60fee73a7
+msgid "已翻译"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:162 a9cf633749334a2d9be25b90725d7efa
+msgid "✅ 首页导航章节标题："
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:164 694fbd38b97448f799ad7f3d31af4be1
+msgid "🤖 构建 AI 科学家"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:165 3021549c096046e1bbffd7253957f6c6
+msgid "🔧 工具"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:166 f891996851cd4e84ae1755dfe3437485
+msgid "💡 使用 ToolUniverse"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:167 82e3bbb7e9d34b4bab8660c4c4413fa2
+msgid "🔨 扩展 ToolUniverse"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:168 9bbbb38c378c4f7b889a3c53f0312322
+msgid "🔌 API 参考"
+msgstr "🔌 API 参考文档"
+
+#: ../../old_files/MULTILANG_README.md:169 ec4ed685dda24a8a9c8ab136953cac53
+msgid "❓ 参考资料"
+msgstr "❓ 参考文档"
+
+#: ../../old_files/MULTILANG_README.md:171 30fcf6654549424b828e95c444f99bfe
+msgid "待翻译"
+msgstr "请提供需要翻译的具体英文文本，我将为您进行翻译。"
+
+#: ../../old_files/MULTILANG_README.md:173 aa52ce5ac0454954b270092db898224e
+msgid "需要翻译的主要文件（按优先级）："
+msgstr "主要需要翻译的文件（按优先级）："
+
+#: ../../old_files/MULTILANG_README.md:175 9b726ad253014b2a9a13306e85caf3eb
+msgid "☐ `quickstart.po` - 快速开始"
+msgstr "☐ `quickstart.po` - 快速入门"
+
+#: ../../old_files/MULTILANG_README.md:176 d3732823055144029606dcf7499d42c3
+msgid "☐ `installation.po` - 安装指南"
+msgstr "☐ `installation.po` - 安装说明"
+
+#: ../../old_files/MULTILANG_README.md:177 5a81a533d9664548a5a4fd9fad9a7756
+msgid "☐ `getting_started.po` - 入门教程"
+msgstr "☐ `getting_started.po` - 入门指南"
+
+#: ../../old_files/MULTILANG_README.md:178 ee318867e6e54fd387da73b25cc7dd61
+msgid "☐ `faq.po` - 常见问题"
+msgstr "☐ `faq.po` - 常见问题解答"
+
+#: ../../old_files/MULTILANG_README.md:179 d8af5e0e683743ec955e912e93a27ffc
+msgid "☐ `guide/*.po` - 用户指南"
+msgstr "☐ `guide/*.po` - 用户手册"
+
+#: ../../old_files/MULTILANG_README.md:180 3d45fc39715043ab82a747d75f48fe23
+msgid "☐ `tools/*.po` - 工具文档"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:181 fb0da1957b534b9589f3efe416d14d40
+msgid "☐ `tutorials/*.po` - 教程"
+msgstr "☐ `tutorials/*.po` - 教程文件"
+
+#: ../../old_files/MULTILANG_README.md:182 71687d2dbfe24d0ebca984a90afeaf06
+msgid "☐ `api/*.po` - API 参考"
+msgstr "☐ `api/*.po` - API 参考文档"
+
+#: ../../old_files/MULTILANG_README.md:184 7cdadc8c54af4b0ea3ec1910fdcf1033
+msgid "🛠️ 开发工作流"
+msgstr "🛠️ 开发工作流程"
+
+#: ../../old_files/MULTILANG_README.md:186 bf238e3c5444497c8cd6b7a903724368
+msgid "添加新内容"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:188 3ea8c36b16494b0a9dad9da04330ccbe
+msgid "编辑 `.rst` 或 `.md` 文件"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:189 031749fe3c13445392ae29a992114f38
+msgid "构建英文版测试"
+msgstr "构建英文版测试环境"
+
+#: ../../old_files/MULTILANG_README.md:190 13b1c26ea51a4af4921a43b692c6c5a0
+msgid "生成翻译模板"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:191 87cefb3a38c14489b96eb267531c4e92
+msgid "翻译中文"
+msgstr "请提供需要翻译的英文文本，我将为您翻译成符合要求的中文内容。"
+
+#: ../../old_files/MULTILANG_README.md:192 2a985675f9d64223ad2c7ce589c686ad
+msgid "构建中文版测试"
+msgstr "构建测试的中文版"
+
+#: ../../old_files/MULTILANG_README.md:203 67b8c54de02c43cc979c92d585cd2ef6
+msgid "批量翻译技巧"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:205 5b21a99b556d4ebd8cce559d11d770ac
+msgid "使用 AI 辅助翻译："
+msgstr "请提供需要翻译的具体英文文本，我将为您进行翻译。"
+
+#: ../../old_files/MULTILANG_README.md:215 f2ddd1cbbf074885ae961cd59f8e5d53
+msgid "📖 相关文档"
+msgstr "📖 Related Documentation"
+
+#: ../../old_files/MULTILANG_README.md:217 fb6dbd50a49844d48f2adfb94189396d
+msgid "[I18N_GUIDE.md](I18N_GUIDE.md) - 详细翻译指南"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:218 d7f48a7f66054accb663918cef335c02
+msgid ""
+"[Sphinx i18n 文档](https://www.sphinx-"
+"doc.org/en/master/usage/advanced/intl.html)"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:219 c5dc1b660f2748f984555726b02dbbe7
+msgid "[Shibuya 主题文档](https://shibuya.lepture.com/)"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:220 26d1829de3d440de895f2ee3fe50cea8
+msgid "[sphinx-intl 文档](https://pypi.org/project/sphinx-intl/)"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:222 f7010e8f4536465fa82060059ea56006
+msgid "❓ 常见问题"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:224 6941554c39134005b0a8f7181f242db6
+msgid "Q: 翻译后看不到效果？"
+msgstr "问：翻译后看不到效果？"
+
+#: ../../old_files/MULTILANG_README.md:226 f3f30969f1544414a78f6da701b2608b
+msgid "A: 确保："
+msgstr "确保："
+
+#: ../../old_files/MULTILANG_README.md:227 caf663155130426cad39d882e5347250
+msgid "`.po` 文件已保存"
+msgstr "`.po` 文件已成功保存"
+
+#: ../../old_files/MULTILANG_README.md:228 c830ba864b5e4790a66b91aff9aa33dc
+msgid "运行 `make clean`"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:229 b89bce514b504ce5a027096adfd052a6
+msgid "重新构建对应语言版本"
+msgstr "重新构建相应的语言版本"
+
+#: ../../old_files/MULTILANG_README.md:231 6326ec139b124a90a9f354f0131966c5
+msgid "Q: 如何只翻译部分页面？"
+msgstr "问：如何仅翻译页面的部分内容？"
+
+#: ../../old_files/MULTILANG_README.md:233 046e6b3d4a40421399795895c9f0416d
+msgid "A: 可以！只翻译对应的 `.po` 文件，未翻译的会显示英文原文。"
+msgstr "A: 可以！只需翻译对应的 `.po` 文件，未翻译的内容将显示为英文原文。"
+
+#: ../../old_files/MULTILANG_README.md:235 1a42bb5bfe9c420ba2f2cf8c9360d0e7
+msgid "Q: 语言切换器不显示？"
+msgstr "问：语言切换器未显示？"
+
+#: ../../old_files/MULTILANG_README.md:237 66ac662acfa345abb88594e651f5836a
+msgid "A: 检查："
+msgstr "A：检查："
+
+#: ../../old_files/MULTILANG_README.md:238 9f6527f989aa4479a937e904fff76736
+msgid "`_static/language_switcher.js` 和 `.css` 文件存在"
+msgstr "`_static/language_switcher.js` 和 `.css` 文件已存在"
+
+#: ../../old_files/MULTILANG_README.md:239 95f84c3af0584a1693e91dc83ff0cf7d
+msgid "`conf.py` 中正确配置了 `html_js_files` 和 `html_css_files`"
+msgstr "在 `conf.py` 中正确配置了 `html_js_files` 和 `html_css_files`"
+
+#: ../../old_files/MULTILANG_README.md:240 91b265baa3c74066991cee564b5aa115
+msgid "浏览器控制台是否有错误"
+msgstr "浏览器控制台是否存在错误"
+
+#: ../../old_files/MULTILANG_README.md:242 ea29f2ffd7414f579a20e720aea9be13
+msgid "Q: 如何部署多语言文档？"
+msgstr "问：如何部署多语言文档？"
+
+#: ../../old_files/MULTILANG_README.md:244 904295b08cc54e779cf4cbe2ef76f47b
+msgid "A:"
+msgstr "请提供需要翻译的具体英文文本，我将为您翻译成符合要求的中文内容。"
+
+#: ../../old_files/MULTILANG_README.md:256 5643452e377a4f4693afa674867b036c
+msgid "🚀 部署"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:258 96ffc3a3bf4b4d1bbc73cfc1b119fca3
+msgid "GitHub Pages"
+msgstr "GitHub 页面"
+
+#: ../../old_files/MULTILANG_README.md:275 d4ab965046644d63bd83f3826e97b42c
+msgid "自定义服务器"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:285 d4676727738b4aaeb40726c767130974
+msgid "📝 TODO"
+msgstr "请提供需要翻译的具体英文文本，我将为您提供准确、专业的中文翻译。"
+
+#: ../../old_files/MULTILANG_README.md:287 bf49df59991b4661b7e309379de2784d
+msgid "[ ] 完成所有主要页面的中文翻译"
+msgstr "[ ] Complete the Chinese translation of all main pages"
+
+#: ../../old_files/MULTILANG_README.md:288 2cd197141f614427b079e8538a443a2f
+msgid "[ ] 添加更多语言（日语、韩语等）"
+msgstr "[ ] 添加更多语言（如日语、韩语等）"
+
+#: ../../old_files/MULTILANG_README.md:289 343ebde3fab94928a4b4c6d5d3393bfb
+msgid "[ ] 自动化翻译工作流"
+msgstr "[ ] 自动化翻译工作流程"
+
+#: ../../old_files/MULTILANG_README.md:290 4e5986cf530e46a68928213cb981838b
+msgid "[ ] CI/CD 集成"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:291 e5d437799a8d4cfc9deb5d608d9deae9
+msgid "[ ] 翻译进度追踪"
+msgstr "[ ] 翻译进度跟踪"
+
+#: ../../old_files/MULTILANG_README.md:293 4884a8c5a79b4bd5bb9c011436b24f32
+msgid "💡 贡献"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:295 f60e2d613ec748f28ebf674ed3fa88b1
+msgid "欢迎贡献翻译！"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:297 b31d651e8d494e92b032cb646a54660d
+msgid "Fork 项目"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:298 65d824299f204ccab033bab3510ff0d8
+msgid "编辑 `locale/zh_CN/LC_MESSAGES/*.po`"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:299 4972485811eb413694ff394229a741d1
+msgid "提交 Pull Request"
+msgstr "提交拉取请求"
+
+#: ../../old_files/MULTILANG_README.md:301 1c11a81bad7c443d9550fdf29ba35253
+msgid "📄 许可"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:303 35e17834dee6439ca438280cd5b2a1c8
+msgid "与 ToolUniverse 项目保持一致。"
+msgstr ""
+
+#: ../../old_files/MULTILANG_README.md:307 eb69b7a169a84d5690c9b7c8451b518e
+msgid "🌟 **现在就开始使用双语文档吧！**"
+msgstr "🌟 **现在就开始使用双语文档！**"

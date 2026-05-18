@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/depmap_tools.rst:2 2dd1625abc0d4428b897b2a7812c34fb
+msgid "Depmap Tools"
+msgstr "Depmap 工具"
+
+#: ../../tools/depmap_tools.rst:4 d179937b94d24bde98d056389986304e
+msgid ""
+"**Configuration File**: ``remote_tools/depmap_tools.json`` **Tool Type**:"
+" Remote **Tools Count**: 1"
+msgstr ""
+"**配置文件**：``remote_tools/depmap_tools.json``  \n"
+"**工具类型**：远程  \n"
+"**工具数量**：1"
+
+#: ../../tools/depmap_tools.rst:8 16e4fb575a66447caef16eaf7b823b3b
+msgid ""
+"This page contains all tools defined in the ``depmap_tools.json`` "
+"configuration file."
+msgstr "此页面包含在 ``depmap_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/depmap_tools.rst:11 899b05eef0614c34a83970e98cfda366
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/depmap_tools.rst:14 0df3a82b5fd74296b1bc06dbbd904777
+msgid "**compute_depmap24q2_gene_correlations** (Type: RemoteTool)"
+msgstr "**compute_depmap24q2_gene_correlations**（类型：远程工具）"
+
+#: ../../tools/depmap_tools.rst:16 d195265a6a9a48fbb756ee6a3aeaa578
+msgid ""
+"Analyzes gene-gene correlations from DepMap CRISPR knockout screening "
+"data. This tool validates g..."
+msgstr "分析来自DepMap CRISPR基因敲除筛选数据的基因间相关性。该工具用于验证g..."
+
+#: ../../tools/depmap_tools.rst 558de6b01de84809b0438e95fd970647
+msgid "compute_depmap24q2_gene_correlations tool specification"
+msgstr "compute_depmap24q2_gene_correlations 工具规格说明"
+
+#: ../../tools/depmap_tools.rst:20 4c0262077d8545e692c4bdae6410174a
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/depmap_tools.rst:22 059ffe51b5c74145aec82a3a78d7c50d
+msgid "**Name**: ``compute_depmap24q2_gene_correlations``"
+msgstr "**名称**：``compute_depmap24q2_gene_correlations``"
+
+#: ../../tools/depmap_tools.rst:23 e34693680dc242c995844e37df960cab
+msgid "**Type**: ``RemoteTool``"
+msgstr "**类型**：``RemoteTool``"
+
+#: ../../tools/depmap_tools.rst:24 7dc140830f1c4d6cbe84f8a3570f24ec
+msgid ""
+"**Description**: Analyzes gene-gene correlations from DepMap CRISPR "
+"knockout screening data. This tool validates genetic interactions using "
+"empirical cell viability data from 1,320+ cancer cell lines in the DepMap"
+" 24Q2 dataset. It determines if two genes have correlated knockout "
+"effects, providing insights into genetic dependencies and synthetic "
+"lethal relationships."
+msgstr ""
+"**描述**：分析来自DepMap CRISPR敲除筛选数据的基因-基因相关性。本工具使用DepMap "
+"24Q2数据集中1,320多个癌细胞系的实证细胞活力数据验证基因交互作用。它能够判断两个基因的敲除效应是否相关，从而提供关于基因依赖性和合成致死关系的见解。"
+
+#: ../../tools/depmap_tools.rst:26 6b0ac59da2bb4db7b74e13753a8cd1f5
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/depmap_tools.rst:28 5aaf8ea2719248d898f6d3ba30b645b8
+msgid ""
+"``gene_a`` (string) (required) First gene symbol for correlation analysis"
+" (e.g., 'BRAF', 'TP53'). Must use standard HUGO gene nomenclature."
+msgstr "``gene_a``（字符串）（必填）用于相关性分析的第一个基因符号（例如：'BRAF'、'TP53'）。必须使用标准的HUGO基因命名法。"
+
+#: ../../tools/depmap_tools.rst:31 122ec370b70c46019b4a18898d9bbe5b
+msgid ""
+"``gene_b`` (string) (required) Second gene symbol for correlation "
+"analysis (e.g., 'MAPK1', 'MDM2'). Must use standard HUGO gene "
+"nomenclature."
+msgstr "``gene_b``（字符串）（必填）用于相关性分析的第二个基因符号（例如：'MAPK1'、'MDM2'）。必须使用标准的HUGO基因命名法。"
+
+#: ../../tools/depmap_tools.rst:34 48342c6872084711a48df876d0075c15
+#, fuzzy
+msgid ""
+"``data_dir`` (string) (required) Path to directory containing DepMap "
+"correlation matrices. If None, uses DEPMAP_DATA_PATH/depmap_24q2."
+msgstr ""
+"``data_dir``（字符串）（可选）包含 DepMap 相关矩阵的目录路径。如果为 None，则使用 "
+"DEPMAP_DATA_PATH/depmap_24q2。"
+
+#: ../../tools/depmap_tools.rst:37 02c52c90f48b4173bc5fb22942709668
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/depmap_tools.rst:53 79ea52e0f58c4a3faa4aa7e1bf523288
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/depmap_tools.rst:55 848d69aef0f4457eb877edb590b98cd5
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/depmap_tools.rst:56 87ea7c8e87654f999e954121885fcbf3
+msgid ":doc:`remote_tools` - Remote Tools Setup"
+msgstr ":doc:`remote_tools` - 远程工具设置"
+

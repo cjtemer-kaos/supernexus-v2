@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.odphp_itemlist.rst:2
+#: 6adba48621994a5183bb8762f874ecf3
+msgid "tooluniverse.tools.odphp\\_itemlist module"
+msgstr "tooluniverse.tools.odphp\\_itemlist 模块"
+
+#: 22229bc279bc4bb693c90d7b564ff7fb of tooluniverse.tools.odphp_itemlist:1
+msgid "odphp_itemlist"
+msgstr ""
+
+#: 9559a59fa2fc4582ae1f6e79ebd6da7a b27d3a5c488f4effba5e01a11fae54e9 of
+#: tooluniverse.tools.odphp_itemlist:3
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:1
+msgid ""
+"This tools browses and returns available topics and categories and it is "
+"helpful to help narrow a..."
+msgstr "该工具可浏览并返回可用的主题和类别，有助于缩小范围并提高效率。"
+
+#: ../../api/tooluniverse.tools.odphp_itemlist.rst
+#: 401ae40fcfc34af792599d56178add5b
+msgid "Parameters"
+msgstr "参数"
+
+#: a1dcad8bb3d04041b02669a8488a3ef7 of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:3
+msgid "Language code (en or es)"
+msgstr "语言代码（en 或 es）"
+
+#: aa61ecd419e641cfa0ca473d84778e79 of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:5
+msgid "topic or category"
+msgstr "主题或类别"
+
+#: 3b3ba2b2a2d94b86a150a99bf3937e12 of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ce525fb719dd47ffa74f226eb9636ef8 of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d85de8a11787418eb9dedc45f381a89e of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.odphp_itemlist.rst
+#: 40d190bfd1a944a4aaa4335b1f2558c9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 56aaabca78ea490ab904acaeca606dac of
+#: tooluniverse.tools.odphp_itemlist.odphp_itemlist:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

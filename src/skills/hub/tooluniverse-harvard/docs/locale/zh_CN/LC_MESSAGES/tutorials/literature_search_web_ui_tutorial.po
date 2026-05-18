@@ -1,0 +1,770 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 19:38-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:2
+#: 9d95a7aad497410592557fabde174ece
+msgid "Wide Research Web UI Tutorial"
+msgstr "Wide Research Web 用户界面教程"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:4
+#: 247378018e9b44a6bdf707a4293915c5
+msgid ""
+"This tutorial demonstrates how to use the ToolUniverse Wide Research Web UI,"
+" a powerful web-based interface that provides intelligent literature search "
+"and analysis capabilities across multiple academic databases."
+msgstr ""
+"本教程演示如何使用 ToolUniverse Wide Research Web UI —— "
+"一款功能强大的基于网页的界面，提供跨多个学术数据库的智能文献检索与分析功能。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:7
+#: 7a9a6e29e8b940789efa17a56ce6e245
+msgid "Overview"
+msgstr "概述"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:9
+#: 937badb60e9f44f5812880f13c87bc86
+msgid ""
+"The Wide Research Web UI is a comprehensive web application that combines:"
+msgstr "Wide Research Web UI 是一款集成多功能的综合性网页应用，结合了："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:11
+#: f9876799a46a4c88add3a5395b347594
+msgid "**Multi-database search** across 11+ academic databases"
+msgstr "**跨11个以上学术数据库的多数据库检索**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:12
+#: 75f7f5a4cb33431287bd316e1eafd32a
+msgid "**AI-powered query expansion** for better search results"
+msgstr "**基于人工智能的查询扩展**，提升搜索结果质量"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:13
+#: ab838ff1b98e4863b68f17e1bd59fa5c
+msgid "**Intelligent summarization** with temporal and thematic analysis"
+msgstr "**基于时间和主题分析的智能摘要**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:14
+#: aa419c0a525641acaeae0ad1da7b6dda
+msgid "**Modern web interface** with paper card display"
+msgstr "**现代网页界面**，采用纸质卡片展示"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:15
+#: a1348c125b914567a4d3734195143ee1
+msgid "**Real-time search status** and tool usage tracking"
+msgstr "**实时搜索状态**及工具使用跟踪"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:18
+#: ee483ff457fa43049e045415b0999105
+msgid "Key Features"
+msgstr "主要特性"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:20
+#: 263f2dd24b2c4f6f811800a391a57c20
+msgid ""
+"**Unified Search Interface**: Search across ArXiv, PubMed, Crossref, "
+"Semantic Scholar, OpenAlex, DBLP, DOAJ, Europe PMC, HAL, MedRxiv, and "
+"Unpaywall"
+msgstr ""
+"**统一搜索界面**：可跨平台搜索 ArXiv、PubMed、Crossref、Semantic "
+"Scholar、OpenAlex、DBLP、DOAJ、Europe PMC、HAL、MedRxiv 和 Unpaywall"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:21
+#: 5c4b57d22f4a48b99cda3ddb1b32f37d
+msgid ""
+"**Smart Query Processing**: AI-powered query expansion to generate multiple "
+"search terms"
+msgstr "**智能查询处理**：基于人工智能的查询扩展，用于生成多个搜索词"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:22
+#: 845c72e8e98b4309b389f6f303e4c95a
+msgid ""
+"**Intelligent Analysis**: Comprehensive literature review generation with: -"
+" Research overview and scope analysis - Temporal analysis of research trends"
+" - Thematic analysis of research areas - Key contributions identification - "
+"Research gaps and future directions"
+msgstr ""
+"**智能分析**：生成全面的文献综述，包括：  \n"
+"- 研究概览与范围分析  \n"
+"- 研究趋势的时间分析  \n"
+"- 研究领域的主题分析  \n"
+"- 关键贡献识别  \n"
+"- 研究空白与未来方向"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:28
+#: c55c7fd3178c4b15a27b9f477299f121
+msgid ""
+"**Paper Card Display**: Modern, responsive interface showing papers with "
+"source identification"
+msgstr "**纸卡展示**：现代化、响应式界面，显示带有来源标识的论文"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:29
+#: 631f10c53dfd40a6843a0c6dcc55b701
+msgid "**Real-time Status**: Live updates on tool usage and search progress"
+msgstr "**实时状态**：工具使用情况和搜索进度的实时更新"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:32
+#: 9f71729a10ef4137ac9975e1c7bc5586
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:35
+#: 74483b1b24074898861de8ad97a3876c
+msgid "Starting the Web UI"
+msgstr "启动 Web UI"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:37
+#: c3f9fc75cebb42efbefbe80c47f84e1b
+msgid ""
+"The easiest way to start the Wide Research Web UI is using the command-line "
+"tool:"
+msgstr "启动 Wide Research Web UI 最简单的方法是使用命令行工具："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:43
+#: 2f4418c2c97449609314d5aca082132c
+msgid "This will start the web server and display:"
+msgstr "这将启动网页服务器并显示："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:56
+#: 44faea95762c418092e5026f81a95c1a
+msgid ""
+"Access the web interface by opening http://localhost:5001 in your browser."
+msgstr "在浏览器中打开 http://localhost:5001 以访问网页界面。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:59
+#: 66c65f6c6aac4b929d143d20c07aa22b
+msgid "Alternative Startup Methods"
+msgstr "替代启动方法"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:61
+#: b7436749b0f842d88b9daa46f0ebe9f9
+msgid "You can also start the web UI directly:"
+msgstr "您也可以直接启动网页用户界面："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:73
+#: 690c0089d544452297dd930c051bff84
+msgid "Using the Web Interface"
+msgstr "使用网页界面"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:76
+#: c0712792e2d24192bc066ac2dce366f9
+msgid "Basic Search"
+msgstr "基本搜索"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:78
+#: f3c498d8b8f1447fa6aeb45015af03df
+msgid "**Enter your search query** in the search box"
+msgstr "在搜索框中输入您的搜索查询"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:79
+#: 411579004a104c86a8b438e460e6711b
+msgid ""
+"**Choose search options**: - Enable \"AI Query Split\" to automatically "
+"expand your search terms - Enable \"AI Summary\" to generate intelligent "
+"literature analysis - Adjust the result limit (default: 10)"
+msgstr ""
+"**选择搜索选项**：  \n"
+"- 启用“AI 查询拆分”以自动扩展您的搜索词  \n"
+"- 启用“AI 摘要”以生成智能文献分析  \n"
+"- 调整结果限制（默认值：10）"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:83
+#: 4362b19facc244dd990ee92eee08ad8a
+msgid "**Click \"Search Literature\"** to start the search"
+msgstr "点击“搜索文献”以开始搜索"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:85
+#: 90b961dff5684e0f96e922a0a34e4d5d
+msgid ""
+"Example searches: - \"machine learning deep learning\" - \"cancer "
+"immunotherapy\" - \"quantum computing algorithms\" - \"renewable energy "
+"storage\" - \"artificial intelligence ethics\""
+msgstr ""
+"示例搜索：  \n"
+"- \"机器学习 深度学习\"  \n"
+"- \"癌症免疫疗法\"  \n"
+"- \"量子计算算法\"  \n"
+"- \"可再生能源存储\"  \n"
+"- \"人工智能伦理\""
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:93
+#: e2dd00f2cf0d407696f13a5590b33972
+msgid "Understanding the Results"
+msgstr "理解结果"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:95
+#: 90d33caad7c3489287410a3f0d852b0e
+msgid "The web interface displays results in several sections:"
+msgstr "网页界面将结果显示为多个部分："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:97
+#: d6de321a71aa41d7ac855a714e18c821
+msgid ""
+"**Search Status** - Real-time updates on which tools are being used - "
+"Success/failure status for each database - Total number of papers found"
+msgstr "**搜索状态** - 实时更新正在使用的工具 - 每个数据库的成功/失败状态 - 发现的论文总数"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:102
+#: a4ce10c11f0346618c080ac820f6a69b
+msgid ""
+"**Paper Cards** Each paper is displayed as a card showing: - **Title** and "
+"**Authors** - **Publication year** and **Source database** - **Abstract** "
+"(truncated with expand option) - **Journal/Venue** information - **DOI** and"
+" **Direct links** - **Source badge** with color-coded identification"
+msgstr ""
+"**纸质卡片** 每张纸质卡片显示以下内容：  \n"
+"- **标题** 和 **作者**  \n"
+"- **出版年份** 和 **来源数据库**  \n"
+"- **摘要**（截断显示，带展开选项）  \n"
+"- **期刊/会议** 信息  \n"
+"- **DOI** 及 **直接链接**  \n"
+"- **来源标识徽章**，采用颜色编码识别"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:111
+#: 75972d1d24ec40ba98e67f313fd49234
+msgid ""
+"**Intelligent Summary** (when enabled) - **Research Overview**: Scope, "
+"recent activity, data sources - **Research Timeline**: Temporal analysis of "
+"publication trends - **Research Themes**: Primary research areas and "
+"methodological approaches - **Key Contributions**: Notable papers and their "
+"significance - **Research Trends**: Collaboration patterns and emerging "
+"patterns - **Research Gaps**: Identified gaps and future opportunities - "
+"**Methodology**: Information about the search process"
+msgstr ""
+"**智能摘要**（启用时）  \n"
+"- **研究概览**：范围、近期活动、数据来源  \n"
+"- **研究时间线**：出版趋势的时间分析  \n"
+"- **研究主题**：主要研究领域及方法论  \n"
+"- **关键贡献**：重要论文及其意义  \n"
+"- **研究趋势**：合作模式及新兴趋势  \n"
+"- **研究空白**：已识别的空白及未来机遇  \n"
+"- **方法论**：检索过程相关信息"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:121
+#: 4b0c532c45824d76ae5ea849084673f6
+msgid "Advanced Features"
+msgstr "高级功能"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:124
+#: 2228b9c5425446f78bc045512975d5ba
+msgid "AI Query Expansion"
+msgstr "AI 查询扩展"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:126
+#: c6d2cab9688d4796b06e36352117a537
+msgid "When \"AI Query Split\" is enabled, the system automatically:"
+msgstr "当启用“AI 查询拆分”时，系统会自动："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:128
+#: 18984ee2a4834f658bccebbab13b4a2f
+msgid "**Analyzes your query** to identify key concepts"
+msgstr "**分析您的查询**以识别关键概念"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:129
+#: cc8a4a8b9e344cbb8be378bb9e5a68e5
+msgid "**Generates related terms** and synonyms"
+msgstr "**生成相关术语**及同义词"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:130
+#: f0bc42d995b34761b664a45927d4ed93
+msgid "**Creates multiple search variations** for comprehensive coverage"
+msgstr "**创建多种搜索变体**以实现全面覆盖"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:131
+#: c44d3ffedb5741e292a005994211ff35
+msgid "**Searches each variation** across all databases"
+msgstr "**在所有数据库中搜索每个变体**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:133
+#: 4d778b502e034aaebaaec3ac8f8c6095
+msgid ""
+"Example: - Input: \"machine learning\" - Expanded queries: [\"machine "
+"learning\", \"deep learning\", \"neural networks\", \"AI applications\"]"
+msgstr ""
+"示例：  \n"
+"- 输入：“machine learning”  \n"
+"- 扩展查询：[“machine learning”，“deep learning”，“neural networks”，“AI applications”]"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:138
+#: ff869c1e4f074b0b9f8e264c0c26d9a6
+msgid "Intelligent Summarization"
+msgstr "智能摘要"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:140
+#: c5a930be601d47fc836c6bafc6d0e9a3
+msgid "The AI summary provides comprehensive analysis including:"
+msgstr "AI摘要提供了包括以下内容的全面分析："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:142
+#: c6589d8a1ec9413289638e9fd2b4f65c
+msgid ""
+"**Temporal Analysis** - Recent developments (2021+) - Historical context by "
+"decade - Publication trends over time - Key papers from each period"
+msgstr "**时间分析** - 近期发展（2021年及以后） - 按十年划分的历史背景 - 发表趋势随时间变化 - 各时期的关键论文"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:148
+#: b653fdfa0dd249458d89581ae0088078
+msgid ""
+"**Thematic Analysis** - Primary research areas (Machine Learning, Computer "
+"Vision, NLP, etc.) - Methodological approaches (Deep Learning, Statistical "
+"Methods, etc.) - Research focus distribution"
+msgstr "**主题分析** - 主要研究领域（机器学习、计算机视觉、自然语言处理等） - 方法论途径（深度学习、统计方法等） - 研究重点分布"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:153
+#: 0052159f8db1476b87b6a6609b3dbbbe
+msgid ""
+"**Key Contributions** - Most important papers identified - Author "
+"collaboration patterns - Source diversity analysis"
+msgstr "**主要贡献** - 识别最重要的论文 - 作者合作模式 - 来源多样性分析"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:158
+#: e698f27f8f984e7380212b7976d3fcb4
+msgid ""
+"**Research Gaps & Future Directions** - Emerging trends and patterns - "
+"Identified research gaps - Future research opportunities"
+msgstr "**研究空白与未来方向** - 新兴趋势与模式 - 已识别的研究空白 - 未来研究机遇"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:164
+#: ce040daeef5f4ceb913d73d74f1e4eaf
+msgid "API Usage"
+msgstr "API 使用指南"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:166
+#: e387823a6a99437bbf9eda73d1bf9d1d
+msgid ""
+"The web UI also provides RESTful API endpoints for programmatic access:"
+msgstr "Web UI 同时提供用于编程访问的 RESTful API 端点："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:169
+#: e2d75dd43b0049e1b480019daedfb3ff
+msgid "Search Endpoint"
+msgstr "搜索端点"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:183
+#: 9d9eb440b7714f31b47f417bf53f044b
+msgid "Response format:"
+msgstr "响应格式："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:211
+#: 7ac19837ce73456fb2c8adda9c875e85
+msgid "Tool Information Endpoint"
+msgstr "工具信息端点"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:218
+#: b564f85e4ce04db4a8fe9c137b8cdd48
+msgid ""
+"Returns information about available search tools and their capabilities."
+msgstr "返回有关可用搜索工具及其功能的信息。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:221
+#: a46ba7f7a4e14f0d868ab4b4c5e979e5
+msgid "Search History Endpoint"
+msgstr "搜索历史端点"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:228
+#: e08a9a4ffd904ee6bfff1050e63f0d3a
+msgid "Returns the last 10 search queries and their results."
+msgstr "返回最近的10条搜索查询及其结果。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:231
+#: a73615abd3e4459ebdaa92ca2ff338af
+msgid "Configuration"
+msgstr "配置"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:234
+#: c4ce2211e97b4bcfa6f6c611b92dd740
+msgid "Environment Detection"
+msgstr "环境检测"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:236
+#: 963e975f65d64633964cd9b8ce26154b
+msgid "The web UI automatically detects your ToolUniverse environment:"
+msgstr "Web UI 会自动检测您的 ToolUniverse 环境："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:238
+#: 9bbd433d1c01437fb1f0198c66a31110
+msgid ""
+"**Full Mode**: When ToolUniverse is available, uses all integrated tools"
+msgstr "**全模式**：当 ToolUniverse 可用时，使用所有集成工具"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:239
+#: a236147e5f4b4293baf0cf3bc1c7f171
+msgid "**Demo Mode**: When ToolUniverse is not available, uses simulated data"
+msgstr "**演示模式**：当 ToolUniverse 不可用时，使用模拟数据"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:241
+#: 332541d88b4f4ea7998d61dd084d00ed
+msgid ""
+"You can check the mode in the startup messages or by calling the tools "
+"endpoint."
+msgstr "您可以通过启动信息或调用 tools 端点来检查模式。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:244
+#: eb349257929148fe94af11367b9721cf
+msgid "Customization"
+msgstr "定制化"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:246
+#: bcb97f68937544b2aa934d6eb55129a5
+msgid "The web UI can be customized by modifying:"
+msgstr "通过修改以下内容可以自定义网页用户界面："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:248
+#: 4dda2a02929a48b58d2189ef50cee96c
+msgid "**Port**: Change the default port (5001) in `simple_app.py`"
+msgstr "**端口**：在 `simple_app.py` 中更改默认端口（5001）"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:249
+#: 1e5dcf39519b4b74a3e04c2e4a3246db
+msgid "**Result limits**: Adjust default limits in the interface"
+msgstr "**结果限制**：调整界面中的默认限制"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:250
+#: 94f8e0f789f946459ae78e84d953b34f
+msgid "**Database selection**: Enable/disable specific databases"
+msgstr "**数据库选择**：启用/禁用特定数据库"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:251
+#: e8b937aca8c14c61b7580f15684ef281
+msgid "**UI styling**: Modify the HTML/CSS templates"
+msgstr "**UI 样式**：修改 HTML/CSS 模板"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:254
+#: 5c0c0e3c7cd84746b14e79bf16cbaaf1
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:257
+#: 94cc5e823eba45c98b6fc844475e4d9a
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:259
+#: 1e3cfc739b2946cb97adc4adb31cd1a5
+msgid ""
+"**Port Already in Use** - The default port 5001 is already occupied - "
+"Solution: Kill the process using the port or change the port in the code"
+msgstr "**端口已被占用** - 默认端口5001已被占用 - 解决方案：终止占用该端口的进程或在代码中更改端口号"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:263
+#: 1334fa7bc4a741b98130c4815efd2b75
+msgid ""
+"**ToolUniverse Not Found** - ToolUniverse is not properly installed or "
+"configured - Solution: Install ToolUniverse or run in demo mode"
+msgstr ""
+"**未找到 ToolUniverse** - ToolUniverse 未正确安装或配置 - 解决方案：安装 ToolUniverse 或以演示模式运行"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:267
+#: e06bc276114f432fb97e0d8442c45f59
+msgid ""
+"**No Results Found** - Search query might be too specific - Try broader "
+"terms or enable AI query expansion - Check if databases are accessible"
+msgstr "**未找到结果** - 搜索查询可能过于具体 - 尝试使用更广泛的关键词或启用 AI 查询扩展 - 检查数据库是否可访问"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:272
+#: 133fe1b9338e4df4b1cfa3e83b3b0b4f
+msgid ""
+"**Slow Performance** - Large result sets or many databases can slow down "
+"searches - Reduce the result limit - Disable some databases if not needed"
+msgstr "**性能缓慢** - 大量结果集或多个数据库可能导致搜索速度变慢 - 降低结果限制 - 如无必要，可禁用部分数据库"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:277
+#: a0cb1442bf2c458291291e745da1ffb3
+msgid ""
+"**API Errors** - Check network connectivity - Verify API endpoints are "
+"accessible - Check for rate limiting"
+msgstr ""
+"**API错误**  \n"
+"- 检查网络连接  \n"
+"- 验证API端点是否可访问  \n"
+"- 检查是否存在速率限制"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:283
+#: ec1d3397d03842b48dab8d4e11d3f618
+msgid "Best Practices"
+msgstr "最佳实践"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:286
+#: d11475ca7f1c450a9dbf581b05585108
+msgid "Search Optimization"
+msgstr "搜索优化"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:288
+#: e15b173802ef4cda93534d4f7230f0af
+msgid "**Use specific, relevant keywords**"
+msgstr "**使用具体且相关的关键词**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:289
+#: c17668b99dd74c0fa9fb132be680a752
+msgid "**Enable AI query expansion** for comprehensive coverage"
+msgstr "**启用 AI 查询扩展** 以实现全面覆盖"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:290
+#: 4f4345d932d24970bf7683650901368c
+msgid "**Start with moderate result limits** (5-10) for faster searches"
+msgstr "**从适中的结果限制开始**（5-10），以加快搜索速度"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:291
+#: b127a85e684645e5a072964f045ee17e
+msgid "**Use the intelligent summary** to understand research landscape"
+msgstr "**使用智能摘要**了解研究全景"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:294
+#: d284ea7e115b44f2aaf2e51014937c57
+msgid "Result Analysis"
+msgstr "结果分析"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:296
+#: 32b3bc21e116462682f41512f33833f7
+msgid "**Review the paper cards** for relevant publications"
+msgstr "**审查纸质卡片**以获取相关出版物信息"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:297
+#: d6e8bfd21b7b487bb3529480848223a2
+msgid "**Read the intelligent summary** for research insights"
+msgstr "**阅读智能摘要**以获取研究见解"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:298
+#: 54a0145d1d82445d8cf4917f74109dfe
+msgid "**Check source diversity** to ensure comprehensive coverage"
+msgstr "**检查来源多样性**以确保覆盖全面"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:299
+#: f82ae176d09d416998e6938ef47a95c9
+msgid "**Use the timeline analysis** to understand research evolution"
+msgstr "**使用时间线分析**以了解研究演变过程"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:302
+#: c6a4dd87b44741999a1b693a90f13f07
+msgid "Workflow Integration"
+msgstr "工作流集成"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:304
+#: b0502ce1da864034ba539b3b67c113a7
+msgid "**Start with broad searches** to understand the field"
+msgstr "**从广泛的搜索开始**，以了解该领域"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:305
+#: 5f010bb10c314cd7bff362884a055d1c
+msgid "**Refine queries** based on initial results"
+msgstr "根据初始结果**优化查询**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:306
+#: 0eb9036abe014d46b8203cf8223478af
+msgid "**Use multiple search sessions** for different aspects"
+msgstr "**为不同方面使用多个搜索会话**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:307
+#: 58dc6c76ab3d4591a2b5348f1983e774
+msgid "**Export results** for further analysis"
+msgstr "**导出结果**以便进一步分析"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:310
+#: 660a7e3c430449ddb74d36afcb334b7c
+msgid "Example Workflows"
+msgstr "示例工作流程"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:313
+#: 496959b00ecc442ab274e230975821c8
+msgid "Literature Review Preparation"
+msgstr "文献综述准备"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:315
+#: 8e2878064d884d7b8ea7817a137d9441
+msgid "**Initial broad search**: \"artificial intelligence\""
+msgstr "**初步广泛搜索**：“人工智能”"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:316
+#: 73e8cadad13e48f2a2f4de59010e8a01
+msgid "**Enable AI expansion** and summary"
+msgstr "**启用 AI 扩展** 及摘要"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:317
+#: 6dcd06cc032b40ec987320727ec6e6c1
+msgid "**Review thematic analysis** to identify key areas"
+msgstr "**审查主题分析**以识别关键领域"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:318
+#: 437d65fc13c84e99951edc6fc6c5deb5
+msgid ""
+"**Focus on specific themes**: \"computer vision\", \"natural language "
+"processing\""
+msgstr "**聚焦特定主题**：“计算机视觉”、“自然语言处理”"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:319
+#: c7a27356e27747cd91d6499cdcee37c4
+msgid "**Use temporal analysis** to understand recent developments"
+msgstr "**使用时序分析**以了解最新发展情况"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:320
+#: 9870ff4435b54cf4ac271c929c665e32
+msgid "**Identify research gaps** for your contribution"
+msgstr "**确定研究空白**以突出您的贡献"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:323
+#: d46c9b507683434dbc369fd1a21c0c1a
+msgid "Research Gap Analysis"
+msgstr "研究空白分析"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:325
+#: db16fc8c2fcf404a8fb2a99ca4f0a27a
+msgid "**Search your research area**: \"quantum machine learning\""
+msgstr "**搜索您的研究领域**：“量子机器学习”"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:326
+#: e488364d220a4c95815ebb8274a31417
+msgid "**Enable intelligent summary** to see research gaps"
+msgstr "**启用智能摘要**以识别研究空白"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:327
+#: 911562598c644223aed609374df73288
+msgid "**Review recent papers** (last 2-3 years)"
+msgstr "**审阅近期论文**（最近2-3年）"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:328
+#: 5f2267321af842629c389116883be114
+msgid "**Analyze collaboration patterns** for potential partnerships"
+msgstr "**分析协作模式**以寻找潜在合作伙伴"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:329
+#: ba516d192e134be09ce010bfaa82ac97
+msgid "**Identify future directions** mentioned in the summary"
+msgstr "**识别总结中提及的未来方向**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:332
+#: 4da2fb4b83d447b0881602d6008ec012
+msgid "Competitive Analysis"
+msgstr "竞争分析"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:334
+#: 5653d96b07d849e4816e802398fed260
+msgid "**Search for key researchers** in your field"
+msgstr "**搜索您领域内的关键研究人员**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:335
+#: e4c56e8ea70c4db79be1e9b74626b475
+msgid "**Use author names** in search queries"
+msgstr "**在搜索查询中使用作者姓名**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:336
+#: 1b40c45721f04ead967fd8eaa8d20f5e
+msgid "**Review recent publications** from competitors"
+msgstr "**审查竞争对手的最新出版物**"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:337
+#: 92111dad0bb440b3846e75191f92230c
+msgid "**Analyze research trends** to understand market direction"
+msgstr "**分析研究趋势**以了解市场方向"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:338
+#: 80b36f900ea2421591783231f1cff86a
+msgid "**Identify emerging areas** for early entry"
+msgstr "**识别新兴领域**以实现早期进入"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:341
+#: fe0f4154df6440e287909b83363081e6
+msgid "Complete Example"
+msgstr "完整示例"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:343
+#: 0a94ff0a0bbf40bda2907f92c6b20bcf
+msgid "Here's a complete example of using the Wide Research Web UI:"
+msgstr "以下是使用 Wide Research Web UI 的完整示例："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:345
+#: bb07fdbfecf54333be5df3a7a42a4ece
+msgid "**Start the web UI**:"
+msgstr "**启动网页用户界面**："
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:351
+#: 1444b646c1034d3c97240f56b33f9afd
+msgid "**Open your browser** and go to http://localhost:5001"
+msgstr "**打开您的浏览器**，访问 http://localhost:5001"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:353
+#: b23baa7cff964ba5a72d0be99a043712
+msgid ""
+"**Perform a search**: - Query: \"deep learning computer vision\" - Enable AI"
+" Query Split: ✓ - Enable AI Summary: ✓ - Limit: 5"
+msgstr ""
+"**执行搜索**：  \n"
+"- 查询：\"深度学习计算机视觉\"  \n"
+"- 启用 AI 查询拆分：✓  \n"
+"- 启用 AI 摘要：✓  \n"
+"- 限制：5"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:359
+#: b0428a6f05094496a5c70fd10b4d6956
+msgid ""
+"**Review the results**: - Check the paper cards for relevant publications - "
+"Read the intelligent summary for insights - Note the research timeline and "
+"themes"
+msgstr ""
+"**查看结果**：  \n"
+"- 检查纸质卡片中的相关出版物  \n"
+"- 阅读智能摘要以获取洞见  \n"
+"- 关注研究时间线和主题"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:364
+#: 2caa1cf1e68d4aa0b45d6403ff0213d4
+msgid ""
+"**Refine your search**: - Try more specific terms: \"object detection deep "
+"learning\" - Focus on recent papers: adjust date filters - Explore related "
+"themes from the summary"
+msgstr ""
+"**优化您的搜索**：  \n"
+"- 尝试更具体的关键词：“目标检测 深度学习”  \n"
+"- 关注最新论文：调整日期筛选条件  \n"
+"- 从摘要中探索相关主题"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:369
+#: e4b85f863b7a42ada7696ccd0e43770d
+msgid ""
+"**Export results**: - Use the API to programmatically access results - Save "
+"interesting papers for further reading - Use the summary for your literature"
+" review"
+msgstr ""
+"**导出结果**：  \n"
+"- 使用 API 编程访问结果  \n"
+"- 保存感兴趣的论文以便进一步阅读  \n"
+"- 使用摘要进行文献综述"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:374
+#: a3a0f23fa4514f20999761b0def7b7c0
+msgid ""
+"This tutorial provides a comprehensive guide to using the ToolUniverse Wide "
+"Research Web UI. The interface combines the power of multiple academic "
+"databases with intelligent analysis to provide a complete literature "
+"research solution."
+msgstr ""
+"本教程提供了使用 ToolUniverse Wide Research Web UI "
+"的全面指南。该界面结合了多个学术数据库的强大功能与智能分析，提供完整的文献研究解决方案。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:376
+#: c826b507acc74a868f692a3e145a6168
+msgid ""
+"For more information about individual tools, see the `literature search "
+"tools tutorial <literature_search_tools_tutorial.html>`_."
+msgstr "有关各个工具的详细信息，请参阅`文献检索工具教程 <literature_search_tools_tutorial.html>`_。"
+
+#: ../../tutorials/literature_search_web_ui_tutorial.rst:378
+#: d155a8f20f1542d9ae2603a91872b37f
+msgid "For API reference, see the `API documentation <../api/index.html>`_."
+msgstr "有关 API 参考，请参见 `API 文档 <../api/index.html>`_。"

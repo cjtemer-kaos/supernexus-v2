@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_substructure.rst:2
+#: ef07d87fc52c49248da4f8e05fdcefbe
+msgid "tooluniverse.tools.PubChem\\_search\\_compounds\\_by\\_substructure module"
+msgstr "tooluniverse.tools.PubChem\\_search\\_compounds\\_by\\_substructure 模块"
+
+#: fe2cf7ae47504b559c3983eb2a2d503a of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure:1
+msgid "PubChem_search_compounds_by_substructure"
+msgstr "PubChem_通过子结构搜索化合物"
+
+#: b10bc1cdcc6c4a7bb749c0e995bf4ed9 dee3f965836140afba10916a5d7c08f6 of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure:3
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:1
+msgid ""
+"Search for all CIDs in PubChem that contain the given substructure (SMILES)."
+msgstr "在PubChem中搜索包含给定子结构（SMILES）的所有CID。"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_substructure.rst
+#: d6ee09fe3e5a45299afaea7c189c4e47
+msgid "Parameters"
+msgstr "参数"
+
+#: 012d00750581409e8d073dc5ae9818ce of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:3
+msgid "SMILES of substructure (e.g., \"c1ccccc1\" corresponds to benzene ring)."
+msgstr "子结构的SMILES（例如，“c1ccccc1”对应于苯环）。"
+
+#: eff001880fe740e4bb3015b8a1351e8e of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2e8cf347513b4039b3b1d7ad71ecc185 of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e4938278bf9b4d13b9e616e2cacb14b1 of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_search_compounds_by_substructure.rst
+#: b0ec0d0e246e45828ee53376d6723870
+msgid "Return type"
+msgstr "返回类型"
+
+#: c4d238f1ebca428797761840d267c73c of
+#: tooluniverse.tools.PubChem_search_compounds_by_substructure.PubChem_search_compounds_by_substructure:12
+msgid ":py:class:`Any`"
+msgstr ""

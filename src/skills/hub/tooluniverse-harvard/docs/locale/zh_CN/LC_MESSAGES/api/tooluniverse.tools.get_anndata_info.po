@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_anndata_info.rst:2
+#: 5cd260e03ae64492ac05fe111c524be1
+msgid "tooluniverse.tools.get\\_anndata\\_info module"
+msgstr "tooluniverse.tools.get\\_anndata\\_info 模块"
+
+#: c98c7eeadf6f4119be3bafda01b3c952 of tooluniverse.tools.get_anndata_info:1
+msgid "get_anndata_info"
+msgstr "get_anndata_info 获取 AnnData 信息"
+
+#: 9601019d4dc5416d8efd3ae3fcc47d62 e96eed297cd04a0cb62145097749dfb4 of
+#: tooluniverse.tools.get_anndata_info:3
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:1
+msgid ""
+"Get comprehensive information about AnnData – annotated data for "
+"computational biology"
+msgstr "获取关于 AnnData 的全面信息——用于计算生物学的注释数据"
+
+#: ../../api/tooluniverse.tools.get_anndata_info.rst
+#: 169513193ad14366b44d6977d321c685
+msgid "Parameters"
+msgstr "参数"
+
+#: 3100ec3342814b039e2f24e26a8b8136 of
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 0c995797b0f04ebea8c34297a8095dc0 of
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 473317914832443880b1d7ace0771712 of
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b0f777588d8746218e8656ac42889a2b of
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_anndata_info.rst
+#: 1e0bad15b9b24a67ae1b3c5792460cff
+msgid "Return type"
+msgstr "返回类型"
+
+#: cb4ffc35022d4b9ab811278b46d5b121 of
+#: tooluniverse.tools.get_anndata_info.get_anndata_info:12
+msgid ":py:class:`Any`"
+msgstr ""

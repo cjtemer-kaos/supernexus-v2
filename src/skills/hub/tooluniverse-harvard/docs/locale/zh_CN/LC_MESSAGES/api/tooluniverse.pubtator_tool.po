@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.pubtator_tool.rst:2 b41fb3cf3aa64876aa5518273b83f3f7
+msgid "tooluniverse.pubtator\\_tool module"
+msgstr "tooluniverse.pubtator_tool 模块"
+
+#: 9828bce44b0d48d5b5e5063834c0a803 of
+#: tooluniverse.pubtator_tool.PubTatorTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: e662e12aa32348dc96607370cf77b3b0 of
+#: tooluniverse.pubtator_tool.PubTatorTool:1
+msgid ""
+"Generic wrapper around a single PubTator 3 endpoint supporting JSON-defined "
+"configs."
+msgstr "针对单个 PubTator 3 端点的通用包装器，支持基于 JSON 定义的配置。"
+
+#: 73fee3851a5a4742a24e2d2ee5c9b6c2 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: b0511eb5229545f18abf6b82958f58b6 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.pubtator_tool.rst 3f10c7bc0ccb414595c3d7ede0067905
+msgid "Parameters"
+msgstr "参数"
+
+#: ca71f3c3b2ad465c9fcced2fe0170147 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: e6aeed89262a423d82cc49d70c2c7f20 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 7add1b428fbc4afda8b35f4f45c46f61 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: c92d683557a64adab126262a77518cd1 of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: a70d2e6b5bcd49608824b74469c57abd of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: dd7c3fd78c304722b7e2bb5ae3a19ebf of
+#: tooluniverse.pubtator_tool.PubTatorTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"
+
+#: 302c86734b9144518dfed3f67ef89801 of
+#: tooluniverse.pubtator_tool.PubTatorTool._compose_url:1
+msgid "Substitute template vars & build full URL."
+msgstr "替换模板变量并构建完整的 URL。"
+
+#: 3c4493d15531478f87d6ee884811a961 of
+#: tooluniverse.pubtator_tool.PubTatorTool._query_params:1
+msgid ""
+"Translate caller arg names → API param names, drop Nones, serialise lists."
+msgstr "将调用者参数名转换为API参数名，去除None值，序列化列表。"
+
+#: e1c606f8a47a4c43af097a262eba2470 of
+#: tooluniverse.pubtator_tool.PubTatorTool._filter_search_results:1
+msgid ""
+"Filter PubTatorSearch results by score threshold and remove facet items that"
+" only have 'name', 'type', and 'value'."
+msgstr "通过分数阈值筛选 PubTatorSearch 结果，并移除仅包含“name”、“type”和“value”的分类项。"

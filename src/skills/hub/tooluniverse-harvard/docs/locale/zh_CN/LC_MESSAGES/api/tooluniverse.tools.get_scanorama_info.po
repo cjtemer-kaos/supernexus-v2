@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_scanorama_info.rst:2
+#: e75bd66735244f78a9b47bf9cd6d533e
+msgid "tooluniverse.tools.get\\_scanorama\\_info module"
+msgstr "tooluniverse.tools.get\\_scanorama\\_info 模块"
+
+#: 1f35d28da7314aea9d1b1985089f8895 of tooluniverse.tools.get_scanorama_info:1
+msgid "get_scanorama_info"
+msgstr "获取_scanorama_信息"
+
+#: 3143818db2ca476196159e00bbc43e7a eaa1704b375946f9a9f8f6f4887c6796 of
+#: tooluniverse.tools.get_scanorama_info:3
+#: tooluniverse.tools.get_scanorama_info.get_scanorama_info:1
+msgid ""
+"Get information about the scanorama package. Batch correction and "
+"integration of single-cell data"
+msgstr "获取有关scanorama包的信息。批量校正和整合单细胞数据"
+
+#: ../../api/tooluniverse.tools.get_scanorama_info.rst
+#: 3c9a7bd6d2eb4718ae9eb894031d5321
+msgid "Parameters"
+msgstr "参数"
+
+#: 8581ff96fa8248958fa9615bbcaf6b09 of
+#: tooluniverse.tools.get_scanorama_info.get_scanorama_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e32d2c0f51e74ba3bbdd623d8b6b4362 of
+#: tooluniverse.tools.get_scanorama_info.get_scanorama_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 94115fd137a44a44ba7c49b4e8502603 of
+#: tooluniverse.tools.get_scanorama_info.get_scanorama_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_scanorama_info.rst
+#: 554ba46057c3492d8bcf10b82ee2e56a
+msgid "Return type"
+msgstr "返回类型"
+
+#: bfb94ce72ba74c81b6f6153e2ea4cbcb of
+#: tooluniverse.tools.get_scanorama_info.get_scanorama_info:11
+msgid ":py:class:`Any`"
+msgstr ""

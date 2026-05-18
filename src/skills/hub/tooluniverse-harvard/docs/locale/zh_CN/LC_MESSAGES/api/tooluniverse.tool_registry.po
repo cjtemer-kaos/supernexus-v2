@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tool_registry.rst:2 b99a927aa64944d2a94164b64d37d496
+msgid "tooluniverse.tool\\_registry module"
+msgstr "tooluniverse.tool_registry 模块"
+
+#: 4ceecc9f4c23400a9e629bcd42428c87 of tooluniverse.tool_registry:1
+msgid ""
+"Simplified tool registry for automatic tool discovery and registration."
+msgstr "简化的工具注册表，用于自动工具发现和注册。"
+
+#: af06afc9157d4095bd8904bf3828cc74 of
+#: tooluniverse.tool_registry._extract_missing_package:1
+msgid "Extract package name from ImportError."
+msgstr "从 ImportError 中提取包名称。"
+
+#: d9482550f140496ba502a6ea64f015df of
+#: tooluniverse.tool_registry.mark_tool_unavailable:1
+msgid "Record tool failure."
+msgstr "记录工具故障。"
+
+#: dd8d841af5274b90b102e3af4954818b of
+#: tooluniverse.tool_registry.get_tool_errors:1
+msgid "Get all tool errors."
+msgstr "获取所有工具错误。"
+
+#: ddaf33f897dc4622ad04be09ea8f9182 of
+#: tooluniverse.tool_registry.register_tool:1
+msgid "Decorator to automatically register tool classes and their configs."
+msgstr "用于自动注册工具类及其配置的装饰器。"
+
+#: 51925dc7a16444c69b42f1977bd12bda of
+#: tooluniverse.tool_registry.register_tool:3
+msgid "Usage:"
+msgstr "用法："
+
+#: b885614e83b64efd878364a04b3570a4 of
+#: tooluniverse.tool_registry.register_tool:4
+#, python-brace-format
+msgid "@register_tool('CustomToolName', config={...}) class MyTool:"
+msgstr "@register_tool('CustomToolName', config={...}) class 我的工具:"
+
+#: b2e9ba36aa074579b91f29b86cbcb583 of
+#: tooluniverse.tool_registry.register_tool:6
+msgid "pass"
+msgstr "通过"
+
+#: 191ce5ea5a0947bf81fe45db581f49d2 of
+#: tooluniverse.tool_registry.register_external_tool:1
+msgid "Allow external registration of tool classes."
+msgstr "允许外部注册工具类。"
+
+#: aa703b210a0c4442a64440171f284923 of
+#: tooluniverse.tool_registry.register_config:1
+msgid "Register a config for a tool type."
+msgstr "为工具类型注册配置。"
+
+#: a2de40be5f9d4179b3b820e56c57273e of
+#: tooluniverse.tool_registry.get_tool_registry:1
+msgid "Get a copy of the current tool registry."
+msgstr "获取当前工具注册表的副本。"
+
+#: a4046f71edb146fa8eb95a82a27a6bdc of
+#: tooluniverse.tool_registry.get_config_registry:1
+msgid "Get a copy of the current config registry."
+msgstr "获取当前配置注册表的副本。"
+
+#: 6d3d78a7b8d24481bf33c4d735f42ce4 of
+#: tooluniverse.tool_registry.lazy_import_tool:1
+msgid ""
+"Lazily import a tool by name without importing all tool modules. Only "
+"imports the specific module containing the requested tool."
+msgstr "通过工具名称懒加载导入，而无需导入所有工具模块。仅导入包含所请求工具的特定模块。"
+
+#: c69805f91f6d4231a4b2119e0f869e05 of
+#: tooluniverse.tool_registry.build_lazy_registry:1
+msgid ""
+"Build a mapping of tool names to module names using config files and naming "
+"patterns. This is truly lazy - it doesn't import any modules, just creates "
+"the mapping."
+msgstr "使用配置文件和命名模式构建工具名称到模块名称的映射。这种方式非常懒惰——它不会导入任何模块，只是创建了映射。"
+
+#: f1f07d63949142678341375ed711d0c0 of
+#: tooluniverse.tool_registry._discover_from_configs:1
+msgid ""
+"Fully dynamic config file discovery - no hardcoded mappings. Automatically "
+"discovers config-to-module mappings by: 1. Finding all JSON config files 2. "
+"Finding all Python tool modules 3. Smart matching between config names and "
+"module names"
+msgstr ""
+"完全动态的配置文件发现功能——无需硬编码映射。通过以下方式自动发现配置与模块的映射关系：  \n"
+"1. 查找所有 JSON 配置文件  \n"
+"2. 查找所有 Python 工具模块  \n"
+"3. 智能匹配配置名称与模块名称"
+
+#: 441590504d464771a24a5f7b1a39c63e of
+#: tooluniverse.tool_registry._get_available_tool_modules:1
+msgid "Get all available tool modules by scanning the tooluniverse package."
+msgstr "通过扫描 tooluniverse 包获取所有可用的工具模块。"
+
+#: 6b81f92cb5e94e7d81adde6f51632552 of
+#: tooluniverse.tool_registry._smart_match_config_to_module:1
+msgid ""
+"Smart matching algorithm to find the best module for a config file. Uses "
+"multiple strategies in order of preference."
+msgstr "智能匹配算法用于为配置文件寻找最佳模块。按照优先级顺序采用多种策略。"
+
+#: 81717f3c22264b43b67e7e93ab1a61d6 of
+#: tooluniverse.tool_registry.auto_discover_tools:1
+msgid ""
+"Automatically discover and import all tool modules. If lazy=True, only "
+"builds the mapping without importing any modules. If lazy=False, imports all"
+" tool modules immediately."
+msgstr ""
+"自动发现并导入所有工具模块。如果设置为 lazy=True，则仅构建映射而不导入任何模块。如果设置为 lazy=False，则会立即导入所有工具模块。"
+
+#: b6c27c3347004fc4b9b622b655fbf9de of
+#: tooluniverse.tool_registry.get_tool_class_lazy:1
+msgid ""
+"Get a tool class by name, using lazy loading if possible. Only imports the "
+"specific module needed, not all modules."
+msgstr "通过名称获取工具类，尽可能使用延迟加载。仅导入所需的特定模块，而非所有模块。"

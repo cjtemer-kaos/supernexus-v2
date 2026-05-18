@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.rst:2
+#: e8f634f10246499ba81245d0304bfa55
+msgid "tooluniverse.tools.PubChem\\_get\\_compound\\_2D\\_image\\_by\\_CID module"
+msgstr "tooluniverse.tools.PubChem\\_get\\_compound\\_2D\\_image\\_by\\_CID 模块"
+
+#: 3854404498f24d659701d26bd937e12c of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID:1
+msgid "PubChem_get_compound_2D_image_by_CID"
+msgstr "PubChem_通过_CID_获取_化合物_2D_图像"
+
+#: a88a8b776c8448e8a623053e053212ed bcb3c2bb7c6644d7a1d7439264b58800 of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID:3
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:1
+msgid "Get 2D structure image (PNG format) of compound by CID."
+msgstr "通过CID获取化合物的二维结构图像（PNG格式）。"
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.rst
+#: b7ca09abd400402e950a59a64af87ac6
+msgid "Parameters"
+msgstr "参数"
+
+#: 4c836b7c13c943c29f3260c29d1efc13 of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:3
+msgid "Compound ID to get image for, e.g., 2244."
+msgstr "用于获取图像的化合物ID，例如2244。"
+
+#: ee0fce728533465094efbd8bf1b73013 of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:5
+msgid "Optional parameter, image size, like \"200x200\" (default)."
+msgstr "可选参数，图像尺寸，例如 \"200x200\"（默认值）。"
+
+#: 53b1f3e583f8444fb8ce25f07574eda4 of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 923bd3aaad6b4417b0d6e7b35197549d of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4ff21a20f96e47a2a407f769d808d43d of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.rst
+#: 9f14017bdb44401ea66f017a285aa4a0
+msgid "Return type"
+msgstr "返回类型"
+
+#: 05a6899e8e2745cb8fd43738154c841b of
+#: tooluniverse.tools.PubChem_get_compound_2D_image_by_CID.PubChem_get_compound_2D_image_by_CID:14
+msgid ":py:class:`Any`"
+msgstr ""

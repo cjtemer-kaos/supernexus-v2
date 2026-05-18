@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_tiledb_info.rst:2
+#: 21975aa5c3ce4b99ad60bc4daae32aab
+msgid "tooluniverse.tools.get\\_tiledb\\_info module"
+msgstr "tooluniverse.tools.get\\_tiledb\\_info 模块"
+
+#: 2fa06dead88944f2848cb6794719baff of tooluniverse.tools.get_tiledb_info:1
+msgid "get_tiledb_info"
+msgstr "get_tiledb_info 获取 TileDB 信息"
+
+#: d296ee5b67fa4d8c8eca26f2e7c96482 e5391bdb420a470e9b8741025140243c of
+#: tooluniverse.tools.get_tiledb_info:3
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:1
+msgid ""
+"Get comprehensive information about TileDB – modern database for array data"
+msgstr "获取有关TileDB的全面信息——用于数组数据的现代数据库"
+
+#: ../../api/tooluniverse.tools.get_tiledb_info.rst
+#: d9bb990001b048e29791b648116590b6
+msgid "Parameters"
+msgstr "参数"
+
+#: f21e0b24c93649058444609f30963a7a of
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:3
+msgid "Type of information to retrieve about TileDB"
+msgstr "关于TileDB检索的信息类型"
+
+#: 293c1e1d61004ea4bce6ef7074023f3b of
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8142496ebefb4f488877415edbc72174 of
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f67018c8fee14989b9b77daa581e8c3b of
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_tiledb_info.rst
+#: 937ce7e52a524b14806b4681719d2029
+msgid "Return type"
+msgstr "返回类型"
+
+#: aab62435d8664dd1902b78452533dfac of
+#: tooluniverse.tools.get_tiledb_info.get_tiledb_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.rst:2
+#: 6062c6c8cd234ed2b4bf011291e40100
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_pharmacology\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_pharmacology\\_by\\_drug\\_name\\_or\\_drugbank\\_id"
+" 模块"
+
+#: 22350948e6304a5ab5bfc03b21a4fa63 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:1
+msgid "drugbank_get_pharmacology_by_drug_name_or_drugbank_id"
+msgstr "drugbank_通过药物名称或DrugBank ID获取药理信息"
+
+#: 7625d46ced34440c9533af09b58472ed bc491e17425c4587a58dbfa65064f7a8 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:3
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:1
+msgid ""
+"Get drug pharmacodynamics, mechanism of action, and pharmacokinetics by drug"
+" name or Drugbank ID."
+msgstr "通过药物名称或Drugbank ID获取药物药效学、作用机制和药代动力学信息。"
+
+#: ../../api/tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.rst
+#: ce9aa579401648b2bf1f95e8075c8ec5
+msgid "Parameters"
+msgstr "参数"
+
+#: a8cb754a914f422383c475378bcae5b4 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:3
+msgid "Drug name or Drugbank ID to search for"
+msgstr "药物名称或Drugbank ID进行搜索"
+
+#: db795df6fa554e3791198a98bb656161 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择“True”以执行区分大小写的搜索"
+
+#: f493393e0ded4d5488f16c3879ca87c8 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: b8de129563434995bcc19bbe742798d6 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 368dc8f9aa1249da9ddf628bb3626853 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3534c565f69d454ca3ef432dd83417bb of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cef7737b7f5943ea83ab1fdb50c2044c of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.rst
+#: d479dff759364d2f901ffb1248981f54
+msgid "Return type"
+msgstr "返回类型"
+
+#: a320dc8dd2244379865c19fbceb95a23 of
+#: tooluniverse.tools.drugbank_get_pharmacology_by_drug_name_or_drugbank_id.drugbank_get_pharmacology_by_drug_name_or_drugbank_id:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""
