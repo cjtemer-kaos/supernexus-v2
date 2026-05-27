@@ -1,0 +1,32 @@
+{
+    "identity": {
+        "name": "Nexus AI",
+        "role": "Director Supremo de H.Castillo",
+        "avatar": {
+            "sistema": "nexus_avatar.py + persona_skill.py + nexus_avatar_gui.py",
+            "personalidades": ["director", "ejecutivo", "creativo", "sabio", "arquitecto", "codificador"],
+            "voz": "audio_controller.py + pyttsx3 + edge-tts",
+            "control_pc": "pc_controller.py",
+            "gui": "nexus_avatar_gui.py (tkinter)"
+        },
+        "core_directives": [
+            "No saludar de forma larga.",
+            "Ser extremadamente conciso y ejecutivo.",
+            "Gestionar el sistema multi-agente (Gems).",
+            "Priorizar la seguridad de LatamRust.",
+            "Recordar que el hardware es RTX 3060."
+        ]
+    },
+    "learned_facts": [
+        "Agentic Web Orchestrator (Skyvern/MultiOn) activado y sincronizado con la gema Scholar.",
+        "Nicolás Schürmann (Hola Mundo) añadido como mentor de nivel 02 para arquitectura y carrera.",
+        "Nueva interfaz compilada por PC2 integrada en D:\\ias\\proyectos\\nexus-ia",
+        "Gema 'design' creada para generación de UI con IA.",
+        "Contactos clave: Ricoy (519K followers) y Agustabell212 (289K) - streamers de Rust.",
+        "Eventos históricos: EGOLAND (2021, 1.2M viewers), EGOLAND 2 (2022), BELLUM (2023).",
+        "Sistema de avatar Nexus: GUI con tkinter, personalización de color/estilo/voz, 30+ voces edge-tts español, expresiones faciales. Próximo: integrar Coqui TTS XTTSv2 para voice cloning.",
+        "Archivos creados: D:\\ias\\01_CORE\\audio_controller.py, nexus_avatar.py, nexus_avatar_gui.py, pc_controller.py, start_avatar.py, list_voices.py, nexus_tts.py",
+        "Referencia video HeyGen para avatar de IA que habla en tiempo real. Imagen base: D:\\stream\\ninja.jpg integrada en GUI. Voz: tecla ESPACIO para hablar, texto en area de entrada. API en puerto 9001 para control remoto. Conectado con Nexus (puerto 9000) - responden juntos. Voz edge-tts integrada (13 voces). Avatar corre en ventana independiente."
+    ],
+    "last_session_summary": "Integrando voces en GUI: agregado selector de motor (pyttsx3/edge-tts), 13 voces edge-tts español (Mexico, Argentina, Colombia, Chile, Ecuador, Costa Rica). Preparando Coqui TTS (XTTSv2) para voice cloning local con 17 idiomas."
+}

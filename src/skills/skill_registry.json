@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "created": "2026-05-23T13:44:43.251953",
+    "version": "1.0",
+    "total_skills": 3
+  },
+  "skills": {
+    "book_to_skill_b55ca2eb": {
+      "id": "book_to_skill_b55ca2eb",
+      "name": "book-to-skill",
+      "category": "SCHOLAR",
+      "subcategory": "Research",
+      "version": "1.0",
+      "author": "Nexus Team",
+      "description": "Convierte libros, documentos PDF, EPUB, DOCX y URLs en skills estructurados para el agente Scholar. Extrae texto, analiza estructura, genera resúmenes, glossary, patterns y cheatsheet.",
+      "capabilities": [
+        "document-extraction",
+        "text-analysis",
+        "skill-generation",
+        "research",
+        "learning"
+      ],
+      "dependencies": [],
+      "tags": [
+        "pdf",
+        "epub",
+        "research",
+        "scholar",
+        "document",
+        "book"
+      ],
+      "gem_delegation": "scholar",
+      "requires_internet": false,
+      "status": "available",
+      "registered_at": "2026-05-23T13:44:43.251953"
+    },
+    "chrome_browser_d32e952f": {
+      "id": "chrome_browser_d32e952f",
+      "name": "chrome-browser",
+      "category": "SCHOLAR",
+      "subcategory": "Web Research",
+      "version": "1.0",
+      "author": "Nexus Team",
+      "description": "Controla Chrome vía CDP para investigación web. Navegación, screenshots, snapshots de accesibilidad, ejecución de JavaScript, y traces de rendimiento. Integrado con el servidor MCP chrome-devtools.",
+      "capabilities": [
+        "browser-automation",
+        "web-research",
+        "screenshot",
+        "accessibility-snapshot",
+        "performance-trace",
+        "javascript-execution"
+      ],
+      "dependencies": [],
+      "tags": [
+        "chrome",
+        "browser",
+        "cdp",
+        "web",
+        "research",
+        "snapshot"
+      ],
+      "gem_delegation": "scholar",
+      "requires_internet": false,
+      "status": "available",
+      "registered_at": "2026-05-23T13:44:43.273743"
+    },
+    "web_research_workflow_a5fe1e3a": {
+      "id": "web_research_workflow_a5fe1e3a",
+      "name": "web-research-workflow",
+      "category": "SCHOLAR",
+      "subcategory": "Research Workflow",
+      "version": "1.0",
+      "author": "Nexus Team",
+      "description": "Workflow completo de investigación web: usa Chrome CDP para navegar y capturar contenido, book-to-skill para estructurarlo en skills, y Scholar para analizar y sintetizar.",
+      "capabilities": [
+        "web-research",
+        "research-workflow",
+        "content-extraction",
+        "synthesis"
+      ],
+      "dependencies": [
+        "book-to-skill",
+        "chrome-browser"
+      ],
+      "tags": [
+        "research",
+        "workflow",
+        "scholar",
+        "synthesis"
+      ],
+      "gem_delegation": "scholar",
+      "requires_internet": false,
+      "status": "available",
+      "registered_at": "2026-05-23T13:44:43.273743"
+    }
+  },
+  "categories": {
+    "SCHOLAR": [
+      "book_to_skill_b55ca2eb",
+      "chrome_browser_d32e952f",
+      "web_research_workflow_a5fe1e3a"
+    ]
+  }
+}

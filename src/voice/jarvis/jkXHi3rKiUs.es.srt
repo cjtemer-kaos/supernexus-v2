@@ -1,0 +1,3708 @@
+1
+00:00:00,480 --> 00:00:04,240
+Cuando era niño, imaginaba máquinas
+
+2
+00:00:02,200 --> 00:00:06,279
+inteligentes, sistemas capaces de
+
+3
+00:00:04,240 --> 00:00:08,679
+entenderte, ayudarte y evolucionar
+
+4
+00:00:06,279 --> 00:00:12,040
+contigo. La mayoría crece y deja de
+
+5
+00:00:08,679 --> 00:00:16,359
+creer en esas ideas. Yo no. Con ustedes,
+
+6
+00:00:12,040 --> 00:00:18,560
+mi último gran invento, Jarvis 2.0.
+
+7
+00:00:16,359 --> 00:00:20,519
+Bienvenidos al video tutorial de cómo
+
+8
+00:00:18,560 --> 00:00:23,480
+instalar, configurar y descargar Jarvis
+
+9
+00:00:20,519 --> 00:00:25,119
+en tu computadora al 100%. En este video
+
+10
+00:00:23,480 --> 00:00:26,960
+te voy a enseñar paso a paso cómo
+
+11
+00:00:25,119 --> 00:00:29,080
+descargar Jarvis, cómo configurarlo y
+
+12
+00:00:26,960 --> 00:00:31,359
+utilizarlo al 100% con todas sus
+
+13
+00:00:29,080 --> 00:00:33,040
+herramientas. y funcionalidades. Lo
+
+14
+00:00:31,359 --> 00:00:36,079
+principal es entrar en el sitio oficial
+
+15
+00:00:33,040 --> 00:00:37,640
+de Jarvis, que es jarbis-hrz.com.
+
+16
+00:00:36,079 --> 00:00:39,680
+Una vez en este sitio oficial, nos vamos
+
+17
+00:00:37,640 --> 00:00:41,360
+a lo que es el apartado de descargas.
+
+18
+00:00:39,680 --> 00:00:43,440
+Igualmente, aquí tienes el apartado de
+
+19
+00:00:41,360 --> 00:00:44,559
+características donde podrás leer cada
+
+20
+00:00:43,440 --> 00:00:46,480
+una de las características,
+
+21
+00:00:44,559 --> 00:00:49,559
+funcionalidades nuevas que tiene Jarvis,
+
+22
+00:00:46,480 --> 00:00:52,160
+entre ellas lo que es el modo agente y
+
+23
+00:00:49,559 --> 00:00:54,199
+la oficina interactiva. Luego veremos
+
+24
+00:00:52,160 --> 00:00:55,480
+eso más adelante. Tenemos la sección de
+
+25
+00:00:54,199 --> 00:00:57,079
+precios donde podrás encontrar
+
+26
+00:00:55,480 --> 00:00:59,399
+diferentes tipos de planes como lo que
+
+27
+00:00:57,079 --> 00:01:01,840
+es el plan free, el plan premium y el
+
+28
+00:00:59,399 --> 00:01:03,680
+plan de por vida. Y aquí tendremos lo
+
+29
+00:01:01,840 --> 00:01:05,840
+que es la sección de descarga, que en
+
+30
+00:01:03,680 --> 00:01:07,479
+estos momentos solo tenemos la la
+
+31
+00:01:05,840 --> 00:01:09,560
+versión para lo que es Windows, pero
+
+32
+00:01:07,479 --> 00:01:11,640
+próximamente la versión de de Android,
+
+33
+00:01:09,560 --> 00:01:14,640
+tanto aquí en el sitio web oficial como
+
+34
+00:01:11,640 --> 00:01:19,159
+también en la Play Store. Y próximamente
+
+35
+00:01:14,640 --> 00:01:20,759
+en Linux y iOS estará disponible Jarvis.
+
+36
+00:01:19,159 --> 00:01:22,840
+Ahora en descarga le damos aquí el botón
+
+37
+00:01:20,759 --> 00:01:24,880
+de descargar, nos reenvía drive. Vamos a
+
+38
+00:01:22,840 --> 00:01:27,040
+descargar aquí también y le damos
+
+39
+00:01:24,880 --> 00:01:28,400
+guardar en el escritorio donde quieran.
+
+40
+00:01:27,040 --> 00:01:33,159
+En este caso yo lo voy a descargar en el
+
+41
+00:01:28,400 --> 00:01:34,280
+escritorio y esperemos que se descargue.
+
+42
+00:01:33,159 --> 00:01:38,479
+Y aquí, como puedes ver, se está
+
+43
+00:01:34,280 --> 00:01:38,479
+descargando. Esperamos.
+
+44
+00:01:39,680 --> 00:01:44,159
+Listo. Y se descargó. Y yo lo descargué
+
+45
+00:01:41,960 --> 00:01:45,479
+en lo que fue el escritorio. Listo.
+
+46
+00:01:44,159 --> 00:01:48,000
+Importantísimo. Ya tenemos el
+
+47
+00:01:45,479 --> 00:01:50,200
+instalador, pero nos hace falta otro
+
+48
+00:01:48,000 --> 00:01:53,600
+paso. El paso más importante aquí,
+
+49
+00:01:50,200 --> 00:01:55,320
+señores, sería el ir a iniciar sesión,
+
+50
+00:01:53,600 --> 00:01:57,759
+crearse una cuenta, ya sea una cuenta
+
+51
+00:01:55,320 --> 00:02:00,159
+con Google, con GHub o crear una cuenta
+
+52
+00:01:57,759 --> 00:02:02,439
+con contraseña, nombre y demás. En este
+
+53
+00:02:00,159 --> 00:02:04,920
+caso, para ser un poco más rápida la
+
+54
+00:02:02,439 --> 00:02:10,319
+situación, hagámoslo con Google. Voy a
+
+55
+00:02:04,920 --> 00:02:12,440
+entrar con una de mis cuentas con esta.
+
+56
+00:02:10,319 --> 00:02:13,640
+Listo. Y aquí ya me dice que tengo el
+
+57
+00:02:12,440 --> 00:02:15,200
+plan premium. Bueno, esta cuenta
+
+58
+00:02:13,640 --> 00:02:16,400
+obviamente de desarrollador, por ende
+
+59
+00:02:15,200 --> 00:02:17,800
+tengo pues el plan premium, pero
+
+60
+00:02:16,400 --> 00:02:20,640
+generalmente todos los usuarios que se
+
+61
+00:02:17,800 --> 00:02:23,519
+registren tendrán 250 créditos en el
+
+62
+00:02:20,640 --> 00:02:25,000
+plan free y algunas funciones limitadas.
+
+63
+00:02:23,519 --> 00:02:27,000
+Ahora veremos la comparación entre lo
+
+64
+00:02:25,000 --> 00:02:28,879
+que es el plan free y lo que es el plan
+
+65
+00:02:27,000 --> 00:02:30,840
+premium. Listo. Aquí ya tenemos lo que
+
+66
+00:02:28,879 --> 00:02:32,680
+es la cuenta creada. Tenemos información
+
+67
+00:02:30,840 --> 00:02:36,000
+sobre mi plan, puedo mejorar el plan de
+
+68
+00:02:32,680 --> 00:02:37,480
+por vida e ir al inicio. Listo. Así que
+
+69
+00:02:36,000 --> 00:02:39,879
+vámonos al escritorio donde tenemos el
+
+70
+00:02:37,480 --> 00:02:43,280
+instalador y le vamos a dar doble clic.
+
+71
+00:02:39,879 --> 00:02:45,800
+Vamos a darle ejecutar.
+
+72
+00:02:43,280 --> 00:02:48,120
+Y aquí me dice si quiero instalar este
+
+73
+00:02:45,800 --> 00:02:51,560
+esta aplicación para cualquier persona
+
+74
+00:02:48,120 --> 00:02:53,280
+que utilice como tal eh la computadora o
+
+75
+00:02:51,560 --> 00:02:55,159
+para el usuario actual. En este caso, yo
+
+76
+00:02:53,280 --> 00:02:58,159
+lo voy a dejar para el usuario actual.
+
+77
+00:02:55,159 --> 00:02:59,920
+siguiente. Y aquí ustedes pueden elegir
+
+78
+00:02:58,159 --> 00:03:01,200
+donde quieren que se instale Jarvis. Es
+
+79
+00:02:59,920 --> 00:03:03,959
+necesario tener una giga de
+
+80
+00:03:01,200 --> 00:03:06,440
+almacenamiento disponible. Vamos a darle
+
+81
+00:03:03,959 --> 00:03:08,799
+instalar
+
+82
+00:03:06,440 --> 00:03:10,280
+y esperamos a que se instale. El tiempo
+
+83
+00:03:08,799 --> 00:03:12,760
+de instalación dependerá mucho de tu
+
+84
+00:03:10,280 --> 00:03:14,519
+computadora, recursos y velocidad. Aquí
+
+85
+00:03:12,760 --> 00:03:16,840
+ya terminó la instalación de Jarvis.
+
+86
+00:03:14,519 --> 00:03:21,159
+Tardó un poquito, pero bueno, aquí ya
+
+87
+00:03:16,840 --> 00:03:21,159
+está. Vamos a darle lo que es finalizar
+
+88
+00:03:21,599 --> 00:03:26,159
+y comenzar a ejecutarse lo que es
+
+89
+00:03:23,400 --> 00:03:28,920
+Jarvis. La primera vez la conexión al
+
+90
+00:03:26,159 --> 00:03:30,879
+servidor puede eh fallar, así que tengan
+
+91
+00:03:28,920 --> 00:03:35,439
+paciencia y cerramos la aplicación y
+
+92
+00:03:30,879 --> 00:03:35,439
+volvemos a iniciar si esto ocurre.
+
+93
+00:03:35,480 --> 00:03:39,920
+Como pueden ver, en este caso no
+
+94
+00:03:37,080 --> 00:03:41,959
+sucedió, pero eh si de pronto les queda
+
+95
+00:03:39,920 --> 00:03:43,560
+la pantalla blanca y les dice error al
+
+96
+00:03:41,959 --> 00:03:46,080
+conectar con el servidor, lo que hacemos
+
+97
+00:03:43,560 --> 00:03:49,239
+es simplemente cerrar la aplicación y
+
+98
+00:03:46,080 --> 00:03:52,920
+volvemos a abrir. Ya no el ejecutable,
+
+99
+00:03:49,239 --> 00:03:55,840
+sino el pues el icono ya como tal de la
+
+100
+00:03:52,920 --> 00:03:55,840
+aplicación de Jarvis.
+
+101
+00:03:56,640 --> 00:04:01,680
+Y aquí tenemos vamos a iniciar sesión
+
+102
+00:03:59,159 --> 00:04:04,680
+con la cuenta anteriormente que que no
+
+103
+00:04:01,680 --> 00:04:04,680
+logueamos
+
+104
+00:04:04,920 --> 00:04:12,040
+y vamos a darle a conectar con Google.
+
+105
+00:04:08,239 --> 00:04:13,799
+Y en este caso yo seleccioné esta.
+
+106
+00:04:12,040 --> 00:04:15,560
+Listo.
+
+107
+00:04:13,799 --> 00:04:18,920
+Puedo volver a lo que es Jarvis y ya
+
+108
+00:04:15,560 --> 00:04:18,920
+está iniciando.
+
+109
+00:04:21,600 --> 00:04:25,080
+Esperamos a que inicie.
+
+110
+00:04:26,440 --> 00:04:30,960
+Y aquí está. Esta es la interfaz que
+
+111
+00:04:28,919 --> 00:04:33,960
+tendrán todos aquellos que adquieran el
+
+112
+00:04:30,960 --> 00:04:36,240
+plan premium.
+
+113
+00:04:33,960 --> 00:04:38,759
+¿Qué son las skills? Las skills son
+
+114
+00:04:36,240 --> 00:04:41,080
+habilidades, herramientas las cuales
+
+115
+00:04:38,759 --> 00:04:42,720
+Jarvis va a utilizar para poder pues
+
+116
+00:04:41,080 --> 00:04:44,120
+hacer infinidad de cosas como lo que son
+
+117
+00:04:42,720 --> 00:04:47,840
+agentes de inteligencia artificial,
+
+118
+00:04:44,120 --> 00:04:49,479
+oficina, eh Telegram Bot para utilizar
+
+119
+00:04:47,840 --> 00:04:52,039
+lo que es Jarvis con Telegram, Google
+
+120
+00:04:49,479 --> 00:04:54,280
+Tools para poder utilizar con Jarvis lo
+
+121
+00:04:52,039 --> 00:04:56,400
+que es Gmail. calendario drive y poder
+
+122
+00:04:54,280 --> 00:04:58,160
+decirle que haga cosas. Buscar en
+
+123
+00:04:56,400 --> 00:05:01,320
+internet Jarvid Visión para poder que
+
+124
+00:04:58,160 --> 00:05:03,080
+analice imágenes, eh buscar y reproducir
+
+125
+00:05:01,320 --> 00:05:06,039
+videos de YouTube, archivos,
+
+126
+00:05:03,080 --> 00:05:07,720
+aplicaciones, capturas, código, bueno, y
+
+127
+00:05:06,039 --> 00:05:09,039
+mucho más, y como tal el control del
+
+128
+00:05:07,720 --> 00:05:12,120
+sistema para lo que es apagarlo,
+
+129
+00:05:09,039 --> 00:05:14,039
+reiniciarlo, etc.
+
+130
+00:05:12,120 --> 00:05:15,919
+Ahora vamos a explicar el apartado de lo
+
+131
+00:05:14,039 --> 00:05:17,960
+que es la oficina. ¿Para qué sirve la
+
+132
+00:05:15,919 --> 00:05:20,080
+oficina y los agentes de inteligencia
+
+133
+00:05:17,960 --> 00:05:21,639
+artificial? Pues los agentes de
+
+134
+00:05:20,080 --> 00:05:23,759
+inteligencia artificial y la oficina,
+
+135
+00:05:21,639 --> 00:05:25,759
+digamos que serán un apoyo para Jarvis y
+
+136
+00:05:23,759 --> 00:05:27,720
+para ti. Vas a poder tener algunos
+
+137
+00:05:25,759 --> 00:05:30,520
+trabajadores encargados en
+
+138
+00:05:27,720 --> 00:05:33,120
+especialidades definidas como tal, roles
+
+139
+00:05:30,520 --> 00:05:35,039
+e instrucciones y expertos en ciertas
+
+140
+00:05:33,120 --> 00:05:38,080
+áreas que se encarguen de realizar
+
+141
+00:05:35,039 --> 00:05:39,840
+tareas específicas. En este caso podemos
+
+142
+00:05:38,080 --> 00:05:41,680
+crear, por ejemplo, no sé, un agente de
+
+143
+00:05:39,840 --> 00:05:45,840
+inteligencia artificial que se pueda
+
+144
+00:05:41,680 --> 00:05:49,120
+llamar, no sé, digamos, llamémoslo Juan,
+
+145
+00:05:45,840 --> 00:05:53,479
+Juan y que se especialice en medicina.
+
+146
+00:05:49,120 --> 00:05:55,840
+eres experto en medicina
+
+147
+00:05:53,479 --> 00:05:58,120
+y le damos crear a gente. Entonces, Juan
+
+148
+00:05:55,840 --> 00:06:00,160
+se especializará en medicina. Así que
+
+149
+00:05:58,120 --> 00:06:02,880
+cuando Jarvis necesite responderte
+
+150
+00:06:00,160 --> 00:06:04,919
+alguna cosa o digamos eh hacer alguna
+
+151
+00:06:02,880 --> 00:06:07,680
+tarea que tú le asignes en cuanto a la
+
+152
+00:06:04,919 --> 00:06:10,240
+medicina, pedirá ayuda a Juan, que es el
+
+153
+00:06:07,680 --> 00:06:13,400
+experto en medicina y podrá responderte
+
+154
+00:06:10,240 --> 00:06:15,639
+mucho más eh más eficiente, más rápido y
+
+155
+00:06:13,400 --> 00:06:17,840
+así podrás delegar eh también algunas
+
+156
+00:06:15,639 --> 00:06:20,599
+tareas, específicamente algunos agentes
+
+157
+00:06:17,840 --> 00:06:23,080
+de inteligencia artificial. Eh, bueno, y
+
+158
+00:06:20,599 --> 00:06:24,560
+ya en la oficina tenemos como tal nos
+
+159
+00:06:23,080 --> 00:06:27,240
+cargan los agentes. Recuerden que
+
+160
+00:06:24,560 --> 00:06:29,360
+podemos crear un máximo de cinco agentes
+
+161
+00:06:27,240 --> 00:06:32,440
+y aquí podemos como tal ya utilizarlos.
+
+162
+00:06:29,360 --> 00:06:35,759
+Tenemos en en total tres oficinas
+
+163
+00:06:32,440 --> 00:06:38,720
+para elegir. Está la primera, la segunda
+
+164
+00:06:35,759 --> 00:06:40,759
+oficina y lo que es la tercera. Y si lo
+
+165
+00:06:38,720 --> 00:06:43,599
+han notado, en algunas oficinas tenemos
+
+166
+00:06:40,759 --> 00:06:45,880
+lo que son algunos escritorios, algunos
+
+167
+00:06:43,599 --> 00:06:47,680
+lugares de trabajo y en otras no.
+
+168
+00:06:45,880 --> 00:06:49,360
+Ejemplo, en la primera no tenemos, pero
+
+169
+00:06:47,680 --> 00:06:50,880
+es porque no lo hemos configurado, pero
+
+170
+00:06:49,360 --> 00:06:53,000
+no no te preocupes que tú lo puedes
+
+171
+00:06:50,880 --> 00:06:54,520
+configurar a tu gusto. ¿Cómo puedes
+
+172
+00:06:53,000 --> 00:06:57,000
+hacer esto? Te vas aquí donde dice
+
+173
+00:06:54,520 --> 00:06:59,080
+elementos y aparecen diferentes tipos de
+
+174
+00:06:57,000 --> 00:07:01,720
+elementos de computadoras, un apartado
+
+175
+00:06:59,080 --> 00:07:04,440
+de medicina, otro de ciencia, otro de
+
+176
+00:07:01,720 --> 00:07:07,440
+planeación y otro jurídico. Esto
+
+177
+00:07:04,440 --> 00:07:09,280
+enfocado a los digamos a los cinco
+
+178
+00:07:07,440 --> 00:07:12,680
+agentes que hemos definido, al
+
+179
+00:07:09,280 --> 00:07:15,680
+programador, al doctor, al abogado, al
+
+180
+00:07:12,680 --> 00:07:17,400
+científico y al ingeniero. Entonces, ves
+
+181
+00:07:15,680 --> 00:07:19,840
+que tiene mucha relación cada uno de
+
+182
+00:07:17,400 --> 00:07:21,960
+estos puestos con cada uno de estos eh
+
+183
+00:07:19,840 --> 00:07:23,360
+agentes de inteligencia artificial.
+
+184
+00:07:21,960 --> 00:07:25,960
+Entonces, en este caso, en los
+
+185
+00:07:23,360 --> 00:07:28,120
+elementos, yo podría agregar un un lugar
+
+186
+00:07:25,960 --> 00:07:31,039
+de medicina en el cual lo podemos poner
+
+187
+00:07:28,120 --> 00:07:33,680
+por acá, podría ser. Y le damos a lo que
+
+188
+00:07:31,039 --> 00:07:35,120
+es listo. Pero no te preocupes, podemos
+
+189
+00:07:33,680 --> 00:07:37,440
+agregar mucho más. Podemos agregar
+
+190
+00:07:35,120 --> 00:07:40,520
+también un una computadora, la podemos
+
+191
+00:07:37,440 --> 00:07:42,960
+colocar por acá. También podemos
+
+192
+00:07:40,520 --> 00:07:45,720
+agregar, no sé, otro elemento, podría
+
+193
+00:07:42,960 --> 00:07:47,800
+ser uno de ciencia. Agregámoslo, lo
+
+194
+00:07:45,720 --> 00:07:49,520
+agregamos y lo ponemos por acá. O
+
+195
+00:07:47,800 --> 00:07:51,639
+también podemos agregar otra computadora
+
+196
+00:07:49,520 --> 00:07:55,400
+si queremos y la ponemos, no sé,
+
+197
+00:07:51,639 --> 00:07:58,280
+pongámosla por aquí y listo. Podemos
+
+198
+00:07:55,400 --> 00:08:00,759
+agregar diferentes tipos de elementos
+
+199
+00:07:58,280 --> 00:08:02,960
+para la oficina y podemos, obviamente,
+
+200
+00:08:00,759 --> 00:08:04,520
+agregar a lo que es nuestro agente. Pero
+
+201
+00:08:02,960 --> 00:08:06,639
+antes de agregarlo está este otro
+
+202
+00:08:04,520 --> 00:08:08,680
+apartado que dice configurar caminos.
+
+203
+00:08:06,639 --> 00:08:10,840
+¿Para qué sirve configurar caminos? Creo
+
+204
+00:08:08,680 --> 00:08:13,840
+que por default te dejé el camino ya
+
+205
+00:08:10,840 --> 00:08:15,680
+configurado del alguno algunas oficinas,
+
+206
+00:08:13,840 --> 00:08:17,000
+pero si no te va a aparecer de la
+
+207
+00:08:15,680 --> 00:08:18,919
+siguiente manera. te va a aparecer la
+
+208
+00:08:17,000 --> 00:08:20,720
+oficina limpia y lo que tú tendrás que
+
+209
+00:08:18,919 --> 00:08:22,800
+hacer es definir como tal los caminos.
+
+210
+00:08:20,720 --> 00:08:24,639
+Esto, ¿por qué lo hicimos? La idea es
+
+211
+00:08:22,800 --> 00:08:27,960
+que en la próxima actualización tú
+
+212
+00:08:24,639 --> 00:08:29,479
+puedas eh subir imágenes de oficinas
+
+213
+00:08:27,960 --> 00:08:32,279
+como tú quieras diseñarlas, como tú
+
+214
+00:08:29,479 --> 00:08:34,159
+quieras hacerlas y puedas eh pues
+
+215
+00:08:32,279 --> 00:08:35,719
+obviamente marcar los caminos por donde
+
+216
+00:08:34,159 --> 00:08:38,000
+los agentes de inteligencia artificial
+
+217
+00:08:35,719 --> 00:08:39,839
+pueden caminar y pueden moverse,
+
+218
+00:08:38,000 --> 00:08:43,080
+obviamente, ¿no? Igualmente si quieres
+
+219
+00:08:39,839 --> 00:08:45,200
+puedes eh tachar directamente o pintar
+
+220
+00:08:43,080 --> 00:08:47,560
+encima de los elementos que los agentes
+
+221
+00:08:45,200 --> 00:08:48,800
+de inteligencia artificial no los pisan,
+
+222
+00:08:47,560 --> 00:08:51,040
+¿vale? porque ellos ya saben que son
+
+223
+00:08:48,800 --> 00:08:53,720
+elementos, así que pues no pueden si no
+
+224
+00:08:51,040 --> 00:08:55,320
+interactuar con ellos. Ejemplo de esto,
+
+225
+00:08:53,720 --> 00:08:56,720
+vamos a guardar esta oficina ya con esos
+
+226
+00:08:55,320 --> 00:08:59,279
+caminos. Vamos a agregar a lo que es
+
+227
+00:08:56,720 --> 00:09:00,959
+Juan, que es nuestro experto en medicina
+
+228
+00:08:59,279 --> 00:09:03,760
+y si nos damos cuenta está caminando
+
+229
+00:09:00,959 --> 00:09:05,040
+justamente por encima de los caminos.
+
+230
+00:09:03,760 --> 00:09:07,240
+¿Listo? Perfecto. Vamos a darle aquí
+
+231
+00:09:05,040 --> 00:09:10,000
+entonces guardar y vamos a decirle algo
+
+232
+00:09:07,240 --> 00:09:13,920
+a Juan. Digámosle e
+
+233
+00:09:10,000 --> 00:09:16,320
+quién es eh Doctor H.
+
+234
+00:09:13,920 --> 00:09:19,240
+Como él es experto en medicina, tendría
+
+235
+00:09:16,320 --> 00:09:21,040
+que saber quién es Dr. House.
+
+236
+00:09:19,240 --> 00:09:22,200
+Vamos a ver por qué se desvió tanto. Ah,
+
+237
+00:09:21,040 --> 00:09:25,600
+bueno, sí, claro, porque le hicimos el
+
+238
+00:09:22,200 --> 00:09:27,560
+camino así. Okay. Bueno, vamos a esperar
+
+239
+00:09:25,600 --> 00:09:29,800
+que llegue a lo que es, digamos, uno de
+
+240
+00:09:27,560 --> 00:09:31,320
+los elementos de trabajo. Aquí no
+
+241
+00:09:29,800 --> 00:09:32,640
+importa qué elemento sea, no
+
+242
+00:09:31,320 --> 00:09:34,800
+específicamente tendría que ir al de
+
+243
+00:09:32,640 --> 00:09:37,399
+medicina, no. Él puede ir a cualquiera
+
+244
+00:09:34,800 --> 00:09:39,160
+que esté cercano a él. La idea es
+
+245
+00:09:37,399 --> 00:09:41,920
+responderte la pregunta lo más antes
+
+246
+00:09:39,160 --> 00:09:43,120
+posible y que él pueda trabajar. Eh,
+
+247
+00:09:41,920 --> 00:09:44,440
+recuerda que también puedes agregar
+
+248
+00:09:43,120 --> 00:09:45,920
+diferentes tipos de agente de
+
+249
+00:09:44,440 --> 00:09:48,279
+inteligencia artificial, no solamente
+
+250
+00:09:45,920 --> 00:09:50,560
+uno, sino más y ya digamos que te queda
+
+251
+00:09:48,279 --> 00:09:52,040
+un poco a tu libertad. Entonces, aquí
+
+252
+00:09:50,560 --> 00:09:53,800
+como tal, Juan ya se está encargando de
+
+253
+00:09:52,040 --> 00:09:55,839
+investigar quién es Drctor House y
+
+254
+00:09:53,800 --> 00:09:57,360
+responderte,
+
+255
+00:09:55,839 --> 00:09:58,440
+mientras que yo podría estar por aquí
+
+256
+00:09:57,360 --> 00:10:00,680
+creando otro agente de inteligencia
+
+257
+00:09:58,440 --> 00:10:04,800
+artificial que podría ser, no sé,
+
+258
+00:10:00,680 --> 00:10:09,200
+Mariana, Mariana, no sé,
+
+259
+00:10:04,800 --> 00:10:11,240
+Mariana que sea eh experta en la
+
+260
+00:10:09,200 --> 00:10:13,839
+ciencia.
+
+261
+00:10:11,240 --> 00:10:16,120
+Listo. Ahí tenemos a Mariana por aquí.
+
+262
+00:10:13,839 --> 00:10:18,320
+Juan no sé qué pasó. No nos respondió al
+
+263
+00:10:16,120 --> 00:10:20,760
+final. Ah, bueno, sigue todavía
+
+264
+00:10:18,320 --> 00:10:23,880
+pensando, procesando. Vamos a decirle a
+
+265
+00:10:20,760 --> 00:10:28,920
+Mariana que nos diga e
+
+266
+00:10:23,880 --> 00:10:30,959
+qué es el H2O.
+
+267
+00:10:28,920 --> 00:10:32,160
+Bueno, tener paciencia si de pronto eh
+
+268
+00:10:30,959 --> 00:10:34,519
+los agentes de inteligencia artificial
+
+269
+00:10:32,160 --> 00:10:36,920
+se muevan en responder o alguna cosa
+
+270
+00:10:34,519 --> 00:10:38,720
+sucede, tener en cuenta de que hay
+
+271
+00:10:36,920 --> 00:10:41,440
+demasiado tráfico actualmente con lo que
+
+272
+00:10:38,720 --> 00:10:44,079
+es eh los agentes, porque muchos
+
+273
+00:10:41,440 --> 00:10:45,920
+usuarios están actualmente utilizándolo,
+
+274
+00:10:44,079 --> 00:10:47,120
+están utilizando Jarvis. Entonces, vean
+
+275
+00:10:45,920 --> 00:10:48,600
+que aquí ya me respondieron los dos al
+
+276
+00:10:47,120 --> 00:10:51,880
+mismo tiempo. Entonces, excelente. Vamos
+
+277
+00:10:48,600 --> 00:10:53,760
+a a ver qué nos dijo Juan. Eh, ¿quién es
+
+278
+00:10:51,880 --> 00:10:56,519
+Doctor House? Me dijo que Dr. House es
+
+279
+00:10:53,760 --> 00:10:58,680
+un personaje ficticio. Perfecto. ¿Y
+
+280
+00:10:56,519 --> 00:11:00,519
+quién? Mariana me respondió, "El H2O es
+
+281
+00:10:58,680 --> 00:11:01,959
+conocido como el agua." Bueno, aquí ya
+
+282
+00:11:00,519 --> 00:11:03,560
+como tal cada uno se encargó de
+
+283
+00:11:01,959 --> 00:11:05,200
+responderme. No significa que me tengan
+
+284
+00:11:03,560 --> 00:11:08,120
+que responder al tiempo. Cada uno puede
+
+285
+00:11:05,200 --> 00:11:09,639
+responder diferente. Eh, dame el
+
+286
+00:11:08,120 --> 00:11:18,160
+elemento
+
+287
+00:11:09,639 --> 00:11:20,040
+del eh eh, no sé, digamos e plástico.
+
+288
+00:11:18,160 --> 00:11:27,320
+Y digámosle a Juan que haga otra cosa.
+
+289
+00:11:20,040 --> 00:11:30,320
+No sé. E dime qué es. Eh, no sé.
+
+290
+00:11:27,320 --> 00:11:30,320
+la
+
+291
+00:11:31,040 --> 00:11:34,519
+medicina,
+
+292
+00:11:33,240 --> 00:11:36,680
+que cada uno ya se encargará de
+
+293
+00:11:34,519 --> 00:11:38,480
+responderme y cada uno va a un cubículo,
+
+294
+00:11:36,680 --> 00:11:41,800
+a un lugar como tal para responder,
+
+295
+00:11:38,480 --> 00:11:43,399
+investigar y digamos que trabajan en en
+
+296
+00:11:41,800 --> 00:11:45,320
+su ritmo. Miren que aquí me contestó
+
+297
+00:11:43,399 --> 00:11:46,680
+primero Mariana.
+
+298
+00:11:45,320 --> 00:11:49,160
+María me dijo, "El elemento principal
+
+299
+00:11:46,680 --> 00:11:50,720
+del plástico es el carbono." Bueno,
+
+300
+00:11:49,160 --> 00:11:53,120
+diferentes tipos de cosas, cada uno
+
+301
+00:11:50,720 --> 00:11:54,880
+especializado en lo en lo que sabe. Y
+
+302
+00:11:53,120 --> 00:11:56,639
+mientras tanto, apenas me contestó Juan,
+
+303
+00:11:54,880 --> 00:11:58,560
+Juan me dice, "Eh, la medicina, la
+
+304
+00:11:56,639 --> 00:12:00,880
+ciencia y el arte de prevenir,
+
+305
+00:11:58,560 --> 00:12:02,440
+diagnosticar y tratar." Entonces, de
+
+306
+00:12:00,880 --> 00:12:05,720
+esta manera, chicos, funcionan los
+
+307
+00:12:02,440 --> 00:12:07,160
+agentes de inteligencia artificial.
+
+308
+00:12:05,720 --> 00:12:09,320
+Bueno, chicos, ahora veamos cómo
+
+309
+00:12:07,160 --> 00:12:10,880
+configurar Jarvis con Telegram para que
+
+310
+00:12:09,320 --> 00:12:13,079
+puedas utilizar Telegram desde tu
+
+311
+00:12:10,880 --> 00:12:15,320
+teléfono y puedas tener el control total
+
+312
+00:12:13,079 --> 00:12:17,199
+de tu computadora. Lo primero es ir aquí
+
+313
+00:12:15,320 --> 00:12:19,639
+al botoncito de Telegram y me dice como
+
+314
+00:12:17,199 --> 00:12:21,839
+tal activar bot. Esto quitémoslo por el
+
+315
+00:12:19,639 --> 00:12:25,240
+momento. Ahí te lo vamos a activar y me
+
+316
+00:12:21,839 --> 00:12:26,800
+dice aquí tu token y aquí tu ID. ¿Cómo
+
+317
+00:12:25,240 --> 00:12:28,199
+puedes crear un bot de Telegram? A
+
+318
+00:12:26,800 --> 00:12:30,839
+continuación te lo voy a explicar, pero
+
+319
+00:12:28,199 --> 00:12:32,040
+si no quieres ver la explicación o si de
+
+320
+00:12:30,839 --> 00:12:34,240
+pronto estás perdido, aquí también te
+
+321
+00:12:32,040 --> 00:12:36,120
+dejé un video de cómo crearlo, ¿vale? un
+
+322
+00:12:34,240 --> 00:12:38,199
+video muy entretenido de un canal que
+
+323
+00:12:36,120 --> 00:12:39,959
+nos puede ayudar bastante, pero vamos a
+
+324
+00:12:38,199 --> 00:12:41,800
+hacerlo paso a paso. Lo primero es que
+
+325
+00:12:39,959 --> 00:12:44,120
+vayas a tu navegador o vayas a tu
+
+326
+00:12:41,800 --> 00:12:47,399
+teléfono y en Telegram busques lo
+
+327
+00:12:44,120 --> 00:12:50,399
+siguiente. Vamos a buscar lo que es @
+
+328
+00:12:47,399 --> 00:12:50,399
+bot.
+
+329
+00:12:52,040 --> 00:12:55,959
+Este de aquí vamos a dar a lo que es
+
+330
+00:12:54,320 --> 00:12:57,839
+start
+
+331
+00:12:55,959 --> 00:13:00,160
+y aquí ya me da las diferentes tipos de
+
+332
+00:12:57,839 --> 00:13:01,880
+opciones que puedo utilizar yo. En este
+
+333
+00:13:00,160 --> 00:13:03,920
+caso voy a crear un nuevo bot. Así que
+
+334
+00:13:01,880 --> 00:13:06,040
+vamos a colocar slash y me dice, y aquí
+
+335
+00:13:03,920 --> 00:13:09,399
+ya me salen las opciones, new bot, es lo
+
+336
+00:13:06,040 --> 00:13:11,680
+que yo quiero. Listo, me dice, eh, okay,
+
+337
+00:13:09,399 --> 00:13:15,199
+para crear tu nuevo bot, eh, dame tu e
+
+338
+00:13:11,680 --> 00:13:17,199
+nombre, vamos a llamarlo Harvest
+
+339
+00:13:15,199 --> 00:13:19,519
+HRZ.
+
+340
+00:13:17,199 --> 00:13:21,959
+Listo, me dice, eh, bueno, por favor,
+
+341
+00:13:19,519 --> 00:13:25,720
+escribe el nombre seguido de gu baj bot.
+
+342
+00:13:21,959 --> 00:13:28,720
+Okay, entonces coloquémosle Jarvis
+
+343
+00:13:25,720 --> 00:13:31,240
+Harvis GU,
+
+344
+00:13:28,720 --> 00:13:32,839
+bueno, HRZ
+
+345
+00:13:31,240 --> 00:13:37,320
+bajo
+
+346
+00:13:32,839 --> 00:13:39,000
+bot y me dice sorry username ah ya ya lo
+
+347
+00:13:37,320 --> 00:13:40,959
+están utilizando. Posiblemente es uno de
+
+348
+00:13:39,000 --> 00:13:43,040
+los que tengo yo. Entonces vamos a
+
+349
+00:13:40,959 --> 00:13:44,600
+colocar aquí copiar otra vez y
+
+350
+00:13:43,040 --> 00:13:47,320
+agreguémosle algo. Agrégémosle una
+
+351
+00:13:44,600 --> 00:13:51,720
+letra, no sé, agreguémosle, bueno, un
+
+352
+00:13:47,320 --> 00:13:51,720
+número puede ser. Agreguémosle el dos.
+
+353
+00:13:52,199 --> 00:13:57,000
+1 2.
+
+354
+00:13:53,959 --> 00:13:59,079
+A ver, y ahora si ya me deja, me dice,
+
+355
+00:13:57,000 --> 00:14:00,199
+"Okay, aquí está tu token." Este token
+
+356
+00:13:59,079 --> 00:14:02,680
+de aquí, chicos, el que tenemos que
+
+357
+00:14:00,199 --> 00:14:04,880
+copiar, este de aquí. Vamos a darle
+
+358
+00:14:02,680 --> 00:14:07,160
+copiar.
+
+359
+00:14:04,880 --> 00:14:09,759
+Copiar. Vamos a irnos a Jarvis y aquí
+
+360
+00:14:07,160 --> 00:14:13,399
+donde dice aquí tu token, vamos a darle
+
+361
+00:14:09,759 --> 00:14:15,320
+pegar. Listo. Vamos a darle guardar.
+
+362
+00:14:13,399 --> 00:14:18,600
+Okay. Dejamos esto otra vez. Y aquí nos
+
+363
+00:14:15,320 --> 00:14:20,720
+faltaría entonces ya lo que es mi ID.
+
+364
+00:14:18,600 --> 00:14:22,360
+¿Cómo configuramos el ID? Vamos otra vez
+
+365
+00:14:20,720 --> 00:14:25,120
+a Telegram,
+
+366
+00:14:22,360 --> 00:14:28,480
+cerramos esto y vayámonos aquí donde
+
+367
+00:14:25,120 --> 00:14:32,519
+dice Jarvis. Hablar con Jarvis. Listo.
+
+368
+00:14:28,480 --> 00:14:34,120
+Start. Y entonces deámosle e
+
+369
+00:14:32,519 --> 00:14:36,959
+Okay, démosle start. Ya le dimos start,
+
+370
+00:14:34,120 --> 00:14:41,519
+no salió nada. Coloquémosle entonces eh
+
+371
+00:14:36,959 --> 00:14:41,519
+slash mi ID.
+
+372
+00:14:44,440 --> 00:14:50,120
+Okay, no pasó nada.
+
+373
+00:14:47,040 --> 00:14:52,360
+Démosle otra vez. ¿Qué pasó?
+
+374
+00:14:50,120 --> 00:14:53,880
+Slash
+
+375
+00:14:52,360 --> 00:14:55,199
+start.
+
+376
+00:14:53,880 --> 00:14:57,399
+Ah, claro, hay que activarlo, chicos.
+
+377
+00:14:55,199 --> 00:15:00,120
+Vamos aquí un momento, mi error. Vámonos
+
+378
+00:14:57,399 --> 00:15:03,680
+aquí y activar bot. Listo, es lo
+
+379
+00:15:00,120 --> 00:15:06,079
+principal. Okay. Vamos entonces aquí
+
+380
+00:15:03,680 --> 00:15:09,800
+donde dice
+
+381
+00:15:06,079 --> 00:15:12,279
+las start.
+
+382
+00:15:09,800 --> 00:15:14,120
+Ahora sí. Y me dice, entonces conectado
+
+383
+00:15:12,279 --> 00:15:16,920
+con Jarvis como tal. Bueno, vamos a
+
+384
+00:15:14,120 --> 00:15:19,880
+decirlo otra vez. Mi ID.
+
+385
+00:15:16,920 --> 00:15:23,040
+Y ahora ya me dice mi ID.
+
+386
+00:15:19,880 --> 00:15:25,079
+Vamos a darle copiar
+
+387
+00:15:23,040 --> 00:15:27,399
+y vamos a pegar esto por último en mi
+
+388
+00:15:25,079 --> 00:15:30,040
+ID. Entonces es importante. Configuramos
+
+389
+00:15:27,399 --> 00:15:33,160
+el token, luego activamos y luego aquí
+
+390
+00:15:30,040 --> 00:15:35,880
+colocamos mi ID.
+
+391
+00:15:33,160 --> 00:15:37,880
+Y por último, guardar. En estos momentos
+
+392
+00:15:35,880 --> 00:15:39,680
+Jarvis ya está configurado. ¿Cómo lo
+
+393
+00:15:37,880 --> 00:15:42,040
+verificamos? Pues vamos a decirle aquí,
+
+394
+00:15:39,680 --> 00:15:43,880
+hola.
+
+395
+00:15:42,040 --> 00:15:46,560
+Hola, Jarvis.
+
+396
+00:15:43,880 --> 00:15:48,279
+Y vamos a ver qué nos responde.
+
+397
+00:15:46,560 --> 00:15:50,399
+Me dice, "Buenas tardes, señor. ¿En qué
+
+398
+00:15:48,279 --> 00:15:52,720
+puedo ayudarle hoy?" Listo, perfecto.
+
+399
+00:15:50,399 --> 00:15:55,600
+Hagamos algo interesante. Digámosle que
+
+400
+00:15:52,720 --> 00:15:57,720
+nos eh no sé, posiblemente que nos tome
+
+401
+00:15:55,600 --> 00:16:01,839
+una captura en el escritorio y nos la
+
+402
+00:15:57,720 --> 00:16:05,480
+muestre. Ve al escritorio,
+
+403
+00:16:01,839 --> 00:16:09,120
+toma una captura
+
+404
+00:16:05,480 --> 00:16:09,120
+y muéstramela.
+
+405
+00:16:09,759 --> 00:16:13,040
+Listo. Entonces, él va a ir al
+
+406
+00:16:11,399 --> 00:16:16,240
+escritorio, va a tomar la captura y nos
+
+407
+00:16:13,040 --> 00:16:18,680
+la va posteriormente a enviar.
+
+408
+00:16:16,240 --> 00:16:20,639
+Esto se ve mucho más profesional si lo
+
+409
+00:16:18,680 --> 00:16:23,319
+haces desde el teléfono, porque aquí
+
+410
+00:16:20,639 --> 00:16:24,920
+pues pareciera que que directamente lo
+
+411
+00:16:23,319 --> 00:16:26,519
+hicimos desde desde Jarvis. Entonces,
+
+412
+00:16:24,920 --> 00:16:29,880
+vean que aquí lo que hizo fue ir al
+
+413
+00:16:26,519 --> 00:16:32,199
+escritorio, tomó la captura que le pedí
+
+414
+00:16:29,880 --> 00:16:34,360
+y pues me dijo, "He tomado la imagen y
+
+415
+00:16:32,199 --> 00:16:36,480
+demás." Listo, chicos. De esta manera
+
+416
+00:16:34,360 --> 00:16:39,399
+configuramos Jarvis en lo que es
+
+417
+00:16:36,480 --> 00:16:41,319
+Telegram. Eh, a continuación vamos a
+
+418
+00:16:39,399 --> 00:16:42,959
+irnos aquí lo que es Jarvis y tenemos lo
+
+419
+00:16:41,319 --> 00:16:45,519
+que son las conversaciones normales y
+
+420
+00:16:42,959 --> 00:16:47,600
+tenemos un pequeño chat especializado en
+
+421
+00:16:45,519 --> 00:16:49,440
+Telegram o lo que es directamente pues
+
+422
+00:16:47,600 --> 00:16:52,199
+digamos la memoria de Jarvis de
+
+423
+00:16:49,440 --> 00:16:54,160
+Telegram. Aquí podemos ver eh las
+
+424
+00:16:52,199 --> 00:16:58,440
+interacciones que hemos tenido de
+
+425
+00:16:54,160 --> 00:17:00,880
+Telegram eh con Jarvis desde desde el oa
+
+426
+00:16:58,440 --> 00:17:02,920
+eh que le dijimos hasta lo que es ve
+
+427
+00:17:00,880 --> 00:17:05,360
+escritorio. Bueno, prácticamente como el
+
+428
+00:17:02,920 --> 00:17:07,120
+historial en ambas partes tenemos esa
+
+429
+00:17:05,360 --> 00:17:09,160
+sincronización importante para que lo
+
+430
+00:17:07,120 --> 00:17:10,679
+tengan presente.
+
+431
+00:17:09,160 --> 00:17:12,799
+Ahora, a continuación les voy a mostrar
+
+432
+00:17:10,679 --> 00:17:15,280
+un ejemplo de cómo lo hago desde el
+
+433
+00:17:12,799 --> 00:17:17,280
+teléfono y también voy a poner aquí pues
+
+434
+00:17:15,280 --> 00:17:18,880
+voy a dejar la computadora como tal
+
+435
+00:17:17,280 --> 00:17:20,839
+grabando. Vamos a poner la comparación
+
+436
+00:17:18,880 --> 00:17:23,480
+en ambos aspectos para que ustedes
+
+437
+00:17:20,839 --> 00:17:25,120
+puedan comparar y ver cómo interactúa
+
+438
+00:17:23,480 --> 00:17:27,600
+Jarvis desde mi teléfono y la
+
+439
+00:17:25,120 --> 00:17:29,039
+computadora. Bueno,
+
+440
+00:17:27,600 --> 00:17:30,600
+bueno, chicos, ahora estoy desde mi
+
+441
+00:17:29,039 --> 00:17:32,440
+teléfono, así que vayamos aquí donde
+
+442
+00:17:30,600 --> 00:17:34,440
+dice Jarvis HRZ, que fue el bot que
+
+443
+00:17:32,440 --> 00:17:36,480
+anteriormente creamos. Aquí podemos ver
+
+444
+00:17:34,440 --> 00:17:38,400
+toda la conversación y voy a decirle
+
+445
+00:17:36,480 --> 00:17:39,400
+entonces que haga algo. Y en estos
+
+446
+00:17:38,400 --> 00:17:40,760
+momentos, pues la computadora está
+
+447
+00:17:39,400 --> 00:17:43,880
+grabando, así que ya veremos la
+
+448
+00:17:40,760 --> 00:17:46,480
+comparación. Luego vamos a decirle ve a
+
+449
+00:17:43,880 --> 00:17:50,240
+e no sé, digámosle que reproduzca,
+
+450
+00:17:46,480 --> 00:17:54,960
+reproduce en YouTube
+
+451
+00:17:50,240 --> 00:17:54,960
+e de black.
+
+452
+00:18:06,200 --> 00:18:09,120
+Listo. Y en estos momentos tendría que
+
+453
+00:18:07,600 --> 00:18:11,320
+estar reproduciendo en YouTube de Black
+
+454
+00:18:09,120 --> 00:18:15,080
+in Black. De hecho lo está haciendo.
+
+455
+00:18:11,320 --> 00:18:15,080
+Vamos a decirle que lo pause.
+
+456
+00:18:21,960 --> 00:18:26,640
+Ahí ya pausó la canción y vamos a
+
+457
+00:18:23,960 --> 00:18:27,960
+decirle que tome captura. Toma captura
+
+458
+00:18:26,640 --> 00:18:30,200
+porque aquí es del teléfono no están
+
+459
+00:18:27,960 --> 00:18:31,520
+viendo nada ustedes, pero desde allá sí.
+
+460
+00:18:30,200 --> 00:18:34,159
+Pero yo quiero que aquí en el teléfono
+
+461
+00:18:31,520 --> 00:18:39,400
+también tener como una evidencia eh de
+
+462
+00:18:34,159 --> 00:18:39,400
+la pantalla y muéstramela.
+
+463
+00:18:40,039 --> 00:18:45,120
+Ahí está. Toma captura de pantalla y
+
+464
+00:18:42,120 --> 00:18:45,120
+muéstrame.
+
+465
+00:18:45,799 --> 00:18:50,559
+Miren que ahí me está enviando una foto
+
+466
+00:18:47,760 --> 00:18:52,240
+y es justamente eh la de YouTube
+
+467
+00:18:50,559 --> 00:18:54,039
+reproduciendo la canción de Black in
+
+468
+00:18:52,240 --> 00:18:56,720
+Black y que en esos momentos obviamente
+
+469
+00:18:54,039 --> 00:18:58,559
+está pausada. Entonces, chicos, ya vimos
+
+470
+00:18:56,720 --> 00:19:00,760
+una una pequeña demostración de cómo
+
+471
+00:18:58,559 --> 00:19:02,679
+configurar Telegram en el teléfono, cómo
+
+472
+00:19:00,760 --> 00:19:04,240
+poder interactuar con Jarvis. Desde aquí
+
+473
+00:19:02,679 --> 00:19:06,679
+yo podría decirle que abra aplicaciones,
+
+474
+00:19:04,240 --> 00:19:09,159
+que cree documentos.
+
+475
+00:19:06,679 --> 00:19:11,320
+Ahora veamos cómo configurar lo que son
+
+476
+00:19:09,159 --> 00:19:13,440
+los Google Tools o las herramientas de
+
+477
+00:19:11,320 --> 00:19:15,799
+Google en Jarvis. Para esto
+
+478
+00:19:13,440 --> 00:19:18,880
+importantísimo tener habilitada la skill
+
+479
+00:19:15,799 --> 00:19:21,559
+de Google Tools. Y vámonos entonces a lo
+
+480
+00:19:18,880 --> 00:19:23,280
+que es el iconito de Google. Y aquí
+
+481
+00:19:21,559 --> 00:19:25,200
+tenemos los pasos. Primero que todo es
+
+482
+00:19:23,280 --> 00:19:27,080
+ir a Google Console, luego crear un
+
+483
+00:19:25,200 --> 00:19:29,280
+nuevo proyecto o utilizar un proyecto
+
+484
+00:19:27,080 --> 00:19:32,039
+existente, dar a lo que es eh crear
+
+485
+00:19:29,280 --> 00:19:35,240
+credenciales y como tal eh tipo de
+
+486
+00:19:32,039 --> 00:19:37,960
+aplicación web y ya como tal pues darle
+
+487
+00:19:35,240 --> 00:19:40,679
+esta URL a lo que es digamos los
+
+488
+00:19:37,960 --> 00:19:42,200
+permisos y copiar lo que es el client y
+
+489
+00:19:40,679 --> 00:19:43,720
+lo que es el client secret. Vamos a
+
+490
+00:19:42,200 --> 00:19:47,919
+hacerlo. Entonces vamos a darle aquí a
+
+491
+00:19:43,720 --> 00:19:49,480
+lo que es Google Tool eh Google Console.
+
+492
+00:19:47,919 --> 00:19:51,720
+Es importante que esta configuración la
+
+493
+00:19:49,480 --> 00:19:54,600
+hagamos con el correo electrónico con el
+
+494
+00:19:51,720 --> 00:19:56,559
+que queremos enviar correos, ¿vale? O
+
+495
+00:19:54,600 --> 00:19:58,159
+queramos utilizar Google Drive o lo que
+
+496
+00:19:56,559 --> 00:20:00,440
+es Google Calendario. En este caso, yo
+
+497
+00:19:58,159 --> 00:20:03,520
+voy a cambiar de cuenta a la cuenta
+
+498
+00:20:00,440 --> 00:20:05,520
+personal para hacer todo esto. Aquí
+
+499
+00:20:03,520 --> 00:20:07,159
+donde dice seleccionar proyecto, vamos a
+
+500
+00:20:05,520 --> 00:20:09,360
+darle seleccionar un proyecto. En este
+
+501
+00:20:07,159 --> 00:20:11,480
+caso yo tengo varios de prueba. Vamos a
+
+502
+00:20:09,360 --> 00:20:14,640
+crear uno nuevo. Este se va a llamar, no
+
+503
+00:20:11,480 --> 00:20:17,120
+sé, e video.
+
+504
+00:20:14,640 --> 00:20:19,480
+Y vamos a darle crear. Listo, ahí ya se
+
+505
+00:20:17,120 --> 00:20:21,520
+creó. Ahora yo voy a seleccionarlo por
+
+506
+00:20:19,480 --> 00:20:23,880
+aquí. Vamos a Ahí ya se está creando
+
+507
+00:20:21,520 --> 00:20:27,520
+apenas. Esperemos a que se cree. Ahí ya
+
+508
+00:20:23,880 --> 00:20:27,520
+se creó. Vamos a seleccionarlo.
+
+509
+00:20:28,200 --> 00:20:33,000
+Listo. Eh, los pasos principales es
+
+510
+00:20:31,000 --> 00:20:34,039
+primero que todo habilitar las APIs.
+
+511
+00:20:33,000 --> 00:20:37,440
+Entonces, vamos a darle aquí donde dice
+
+512
+00:20:34,039 --> 00:20:37,440
+APIs y servicios.
+
+513
+00:20:37,559 --> 00:20:42,760
+Bueno, podemos directamente buscarlo
+
+514
+00:20:39,000 --> 00:20:47,520
+desde aquí lo que es Drive,
+
+515
+00:20:42,760 --> 00:20:51,120
+lápide de Drive. Esta la habilitamos.
+
+516
+00:20:47,520 --> 00:20:51,120
+Esperamos a que se habilite.
+
+517
+00:20:56,480 --> 00:21:00,640
+Listo. Perfecto. Ahí la piedra ya se
+
+518
+00:20:58,200 --> 00:21:01,880
+habilitó. ¿Cómo sabemos que se habilitó?
+
+519
+00:21:00,640 --> 00:21:03,840
+Porque ahorita nos va a cargar aquí
+
+520
+00:21:01,880 --> 00:21:05,880
+algo. Esperemos a que cargue. Listo. Ahí
+
+521
+00:21:03,840 --> 00:21:07,600
+ya está. Me dice como tal para llamar a
+
+522
+00:21:05,880 --> 00:21:08,880
+la app y bueno, aquí ya me dice crear
+
+523
+00:21:07,600 --> 00:21:10,840
+credenciales y todo eso, pero no lo
+
+524
+00:21:08,880 --> 00:21:12,640
+necesitamos. Vamos a crear credenciales,
+
+525
+00:21:10,840 --> 00:21:15,120
+digamos, globales. Ahora vamos a lo que
+
+526
+00:21:12,640 --> 00:21:16,480
+es calendario.
+
+527
+00:21:15,120 --> 00:21:21,080
+Calendario. Vamos a configurar lo que es
+
+528
+00:21:16,480 --> 00:21:21,080
+la API de calendario. Habilitar.
+
+529
+00:21:21,320 --> 00:21:24,880
+Esperamos a que se habilite.
+
+530
+00:21:27,120 --> 00:21:33,799
+Listo, ya se habilitó. Y ahora nos falta
+
+531
+00:21:28,960 --> 00:21:35,559
+por último lo que es la de Gmail.
+
+532
+00:21:33,799 --> 00:21:37,159
+El orden lo pueden hacer como quieran,
+
+533
+00:21:35,559 --> 00:21:38,840
+no tiene que ser ese mismo orden. Pueden
+
+534
+00:21:37,159 --> 00:21:40,400
+habilitar primero la de la de Gmail, la
+
+535
+00:21:38,840 --> 00:21:44,039
+de Drive, las que quieran, pero lo
+
+536
+00:21:40,400 --> 00:21:45,240
+importante es habilitar las tres.
+
+537
+00:21:44,039 --> 00:21:47,039
+Esperemos a que se habiliten. Listo.
+
+538
+00:21:45,240 --> 00:21:50,320
+Perfecto. Aquí ya se habilitaron. Ahora
+
+539
+00:21:47,039 --> 00:21:52,320
+vámonos a lo que es credenciales
+
+540
+00:21:50,320 --> 00:21:54,799
+y vamos a darnos aquí donde dice crear
+
+541
+00:21:52,320 --> 00:21:58,240
+credenciales y vamos a dar la segunda
+
+542
+00:21:54,799 --> 00:21:59,919
+opción, ID de cliente.
+
+543
+00:21:58,240 --> 00:22:01,679
+Vamos a configurar la pantalla de
+
+544
+00:21:59,919 --> 00:22:04,480
+consentimiento.
+
+545
+00:22:01,679 --> 00:22:06,679
+Vamos a darle comenzar y aquí el nombre
+
+546
+00:22:04,480 --> 00:22:09,919
+de la app. Vamos a colocarle
+
+547
+00:22:06,679 --> 00:22:12,640
+video, no sé. Y utilizamos el correo por
+
+548
+00:22:09,919 --> 00:22:15,919
+default. Siguiente. Vamos a colocarle
+
+549
+00:22:12,640 --> 00:22:17,720
+usuarios externos. siguiente. Y aquí en
+
+550
+00:22:15,919 --> 00:22:20,400
+dirección de contacto colocan un correo,
+
+551
+00:22:17,720 --> 00:22:27,360
+no sé, puede ser uno. Ejemplo, usuario,
+
+552
+00:22:20,400 --> 00:22:27,360
+colocamos en minúscula usuario 1 @email
+
+553
+00:22:28,960 --> 00:22:33,840
+comom. Listo, lo agregamos. Vamos a
+
+554
+00:22:30,799 --> 00:22:36,440
+darle siguiente. Acepto y finalizar y
+
+555
+00:22:33,840 --> 00:22:39,039
+crear.
+
+556
+00:22:36,440 --> 00:22:42,360
+Esperamos
+
+557
+00:22:39,039 --> 00:22:42,360
+a que se cree.
+
+558
+00:22:43,720 --> 00:22:50,360
+Listo. Ah, ya se creó. Perfecto. Ahora
+
+559
+00:22:45,880 --> 00:22:51,480
+vamos a darlo a lo que es crear cliente.
+
+560
+00:22:50,360 --> 00:22:52,960
+Vamos a seleccionar el tipo de
+
+561
+00:22:51,480 --> 00:22:56,159
+aplicación. Recuerden que es aplicación
+
+562
+00:22:52,960 --> 00:22:58,440
+web y el nombre del cliente. En ese caso
+
+563
+00:22:56,159 --> 00:23:01,760
+a decir cliente web 1. Le dejamos así. Y
+
+564
+00:22:58,440 --> 00:23:04,159
+aquí la URL de redirección que fue la
+
+565
+00:23:01,760 --> 00:23:08,440
+que vamos a copiar de aquí. Vamos a
+
+566
+00:23:04,159 --> 00:23:08,440
+copiarla. Importante
+
+567
+00:23:09,000 --> 00:23:13,480
+que tengan el puerto 3000
+
+568
+00:23:11,159 --> 00:23:15,480
+disponible para que Jarvis pueda como
+
+569
+00:23:13,480 --> 00:23:17,279
+tal eh utilizar el puerto 3000. Si saben
+
+570
+00:23:15,480 --> 00:23:20,640
+que Jarvis está utilizando otro puerto,
+
+571
+00:23:17,279 --> 00:23:23,720
+pues configuran otro puerto en este caso
+
+572
+00:23:20,640 --> 00:23:26,840
+vamos a darle crear y aquí ya me suelta
+
+573
+00:23:23,720 --> 00:23:28,400
+lo que es e mi cliente ID. Vamos a
+
+574
+00:23:26,840 --> 00:23:31,880
+copiarlo.
+
+575
+00:23:28,400 --> 00:23:34,480
+Vamos por aquí, lo pegamos y por aquí
+
+576
+00:23:31,880 --> 00:23:35,919
+tenemos lo que es secreto ID, secreto
+
+577
+00:23:34,480 --> 00:23:38,480
+del cliente. Vamos a copiar aquí el
+
+578
+00:23:35,919 --> 00:23:41,480
+secreto del cliente y vamos a darle
+
+579
+00:23:38,480 --> 00:23:41,480
+conectar.
+
+580
+00:23:46,520 --> 00:23:51,039
+Vamos a seleccionar la cuenta. Listo.
+
+581
+00:23:48,840 --> 00:23:53,480
+Ahora nos va a pedir que eh como tal
+
+582
+00:23:51,039 --> 00:23:56,000
+ingresemos un usuario de prueba. Vamos a
+
+583
+00:23:53,480 --> 00:23:58,440
+irnos aquí otra vez a credenciales.
+
+584
+00:23:56,000 --> 00:24:01,360
+Esperemos que cargue. Vamos a darle más
+
+585
+00:23:58,440 --> 00:24:03,559
+opciones
+
+586
+00:24:01,360 --> 00:24:06,559
+al lapicito. Esperemos a que cargue
+
+587
+00:24:03,559 --> 00:24:06,559
+esto.
+
+588
+00:24:08,400 --> 00:24:12,360
+Listo. pantalla de consentimiento
+
+589
+00:24:13,200 --> 00:24:18,080
+y aquí en pantalla de consentimiento
+
+590
+00:24:14,679 --> 00:24:21,880
+vayámonos a lo que es público
+
+591
+00:24:18,080 --> 00:24:26,720
+y añad usuarios de prueba que en este
+
+592
+00:24:21,880 --> 00:24:26,720
+caso vamos a añadir la cuenta HRZ
+
+593
+00:24:26,840 --> 00:24:29,840
+9.
+
+594
+00:24:35,240 --> 00:24:39,320
+Agregamos el correo, importantísimo.
+
+595
+00:24:41,640 --> 00:24:44,640
+Guardémoslo
+
+596
+00:24:44,760 --> 00:24:50,760
+y verifiquemos.
+
+597
+00:24:47,000 --> 00:24:51,799
+Eh, bueno, vamos a a darle aquí a
+
+598
+00:24:50,760 --> 00:24:55,120
+también a lo que es publicar la
+
+599
+00:24:51,799 --> 00:24:56,799
+aplicación, confirmar,
+
+600
+00:24:55,120 --> 00:24:59,080
+para que pasemos de modo prueba a modo
+
+601
+00:24:56,799 --> 00:25:02,120
+producción. Y importante pues que
+
+602
+00:24:59,080 --> 00:25:03,399
+anteriormente pues tengamos esta opción.
+
+603
+00:25:02,120 --> 00:25:05,520
+Anteriormente lo hicimos como modo
+
+604
+00:25:03,399 --> 00:25:07,480
+prueba. Cuando creamos la aplicación se
+
+605
+00:25:05,520 --> 00:25:09,520
+crea como modo prueba, por ende nos
+
+606
+00:25:07,480 --> 00:25:11,679
+permitía conectarnos. Vamos a darle
+
+607
+00:25:09,520 --> 00:25:15,559
+conectar a Google.
+
+608
+00:25:11,679 --> 00:25:15,559
+Colocamos el correo, obviamente,
+
+609
+00:25:18,399 --> 00:25:22,480
+esperamos a que cargue. Y en este caso
+
+610
+00:25:20,480 --> 00:25:26,360
+me dice Google, verificó que esta app.
+
+611
+00:25:22,480 --> 00:25:28,960
+Vamos a darle eh configuración avanzada.
+
+612
+00:25:26,360 --> 00:25:31,600
+Continúa solo si tienes eh bueno, vamos
+
+613
+00:25:28,960 --> 00:25:34,559
+a darle ir a
+
+614
+00:25:31,600 --> 00:25:36,720
+aquí, continuar
+
+615
+00:25:34,559 --> 00:25:40,240
+y aquí vamos a permitir todas las
+
+616
+00:25:36,720 --> 00:25:43,279
+opciones de lo que es eh Google
+
+617
+00:25:40,240 --> 00:25:45,960
+Calendario, Gmail y demás. Vamos a
+
+618
+00:25:43,279 --> 00:25:48,960
+seleccionar todas y vamos a dar
+
+619
+00:25:45,960 --> 00:25:48,960
+continuar.
+
+620
+00:25:58,600 --> 00:26:01,720
+Bueno, eso puede tomar un tiempo.
+
+621
+00:25:59,840 --> 00:26:05,399
+Esperamos a que nos dé como tal los
+
+622
+00:26:01,720 --> 00:26:05,399
+permisos, los accesos.
+
+623
+00:26:07,679 --> 00:26:11,039
+Como Jarvis no es una aplicación eh
+
+624
+00:26:09,440 --> 00:26:13,399
+digamos verificada, pues nos salía esos
+
+625
+00:26:11,039 --> 00:26:15,279
+errores de de peligroso y demás, pero
+
+626
+00:26:13,399 --> 00:26:17,799
+realmente no hay ningún riesgo. Aquí ya
+
+627
+00:26:15,279 --> 00:26:20,559
+quedó conectado y por ende si volvemos a
+
+628
+00:26:17,799 --> 00:26:21,799
+lo que es Jarvis,
+
+629
+00:26:20,559 --> 00:26:23,919
+bueno, todavía aquí aparece como si no
+
+630
+00:26:21,799 --> 00:26:25,600
+se hubiera conectado. Ah, bueno, ya
+
+631
+00:26:23,919 --> 00:26:27,520
+ahora sí refrescó. Ya tenemos
+
+632
+00:26:25,600 --> 00:26:30,440
+configurado lo que es Gmail, calendario
+
+633
+00:26:27,520 --> 00:26:32,640
+y Drive. ¿Cómo verificamos esto?
+
+634
+00:26:30,440 --> 00:26:35,440
+Pues hagamos una prueba. Vámonos a lo
+
+635
+00:26:32,640 --> 00:26:39,000
+que es calendario.
+
+636
+00:26:35,440 --> 00:26:39,000
+Calendario de Google
+
+637
+00:26:45,240 --> 00:26:51,120
+y aquí en el calendario de Google voy a
+
+638
+00:26:47,039 --> 00:26:51,120
+seleccionar entonces mi cuenta.
+
+639
+00:26:55,039 --> 00:26:58,320
+esta de aquí.
+
+640
+00:26:58,720 --> 00:27:02,360
+Listo. En el calendario de Google vamos
+
+641
+00:27:00,600 --> 00:27:04,960
+a irnos entonces al mes actual. que
+
+642
+00:27:02,360 --> 00:27:07,880
+estamos en estos momentos a mayo, mayo
+
+643
+00:27:04,960 --> 00:27:10,480
+4. Y vamos entonces a decirle a Jarvis
+
+644
+00:27:07,880 --> 00:27:16,200
+que cree un recordatorio.
+
+645
+00:27:10,480 --> 00:27:16,200
+crea e un recordatorio.
+
+646
+00:27:16,760 --> 00:27:19,760
+recordatorio
+
+647
+00:27:20,960 --> 00:27:26,880
+calendario de
+
+648
+00:27:23,440 --> 00:27:26,880
+gole que
+
+649
+00:27:27,399 --> 00:27:33,960
+para el día de hoy
+
+650
+00:27:30,559 --> 00:27:38,919
+que diga em
+
+651
+00:27:33,960 --> 00:27:42,320
+subir video tutorial
+
+652
+00:27:38,919 --> 00:27:44,240
+a las 11 pm.
+
+653
+00:27:42,320 --> 00:27:46,640
+Listo.
+
+654
+00:27:44,240 --> 00:27:50,320
+Aquí ya le asignamos esa tarea a Jarvis.
+
+655
+00:27:46,640 --> 00:27:52,320
+Y por ende él tendrá que utilizar los
+
+656
+00:27:50,320 --> 00:27:54,919
+tools, utilizar las herramientas, ir a
+
+657
+00:27:52,320 --> 00:27:57,399
+Google Calendario, crearnos este
+
+658
+00:27:54,919 --> 00:27:58,640
+recordatorio. Esto lo hará internamente.
+
+659
+00:27:57,399 --> 00:28:01,080
+No es necesario que se salga
+
+660
+00:27:58,640 --> 00:28:03,600
+directamente de la aplicación y abra
+
+661
+00:28:01,080 --> 00:28:05,720
+Google Calendario y lo haga, no, ya él
+
+662
+00:28:03,600 --> 00:28:08,799
+está como de tal entrenado para que
+
+663
+00:28:05,720 --> 00:28:10,600
+realice estas acciones.
+
+664
+00:28:08,799 --> 00:28:12,679
+Me ha dicho, "He creado un recordatorio
+
+665
+00:28:10,600 --> 00:28:15,000
+en tu calendario de Google para hoy a
+
+666
+00:28:12,679 --> 00:28:16,360
+las 11 pm con el título Subir video
+
+667
+00:28:15,000 --> 00:28:18,840
+tutorial.
+
+668
+00:28:16,360 --> 00:28:21,519
+Listo. Verifiquemos entonces esto y
+
+669
+00:28:18,840 --> 00:28:24,640
+vemos que es totalmente correcto. Subir
+
+670
+00:28:21,519 --> 00:28:27,360
+vide tutorial. Lunes 4 de mayo de 11 de
+
+671
+00:28:24,640 --> 00:28:29,360
+a 11 pm. Listo. Perfecto. Entonces esta
+
+672
+00:28:27,360 --> 00:28:31,279
+es una de las funciones. Si tú le dices
+
+673
+00:28:29,360 --> 00:28:32,679
+que mande un correo electrónico, Jarvis
+
+674
+00:28:31,279 --> 00:28:34,559
+también lo podrá hacer. Hagamos el
+
+675
+00:28:32,679 --> 00:28:36,919
+ejemplo.
+
+676
+00:28:34,559 --> 00:28:41,120
+Jarvis envía un correo electrónico al
+
+677
+00:28:36,919 --> 00:28:42,919
+usuario eh user@gmail.com
+
+678
+00:28:41,120 --> 00:28:46,559
+diciéndole que mañana es la prueba
+
+679
+00:28:42,919 --> 00:28:48,559
+técnica a las 8 a. de la mañana. Así que
+
+680
+00:28:46,559 --> 00:28:51,600
+que esté preparado y estudie los temas
+
+681
+00:28:48,559 --> 00:28:56,640
+de Note GS, cómo instalar paquetes, cómo
+
+682
+00:28:51,600 --> 00:28:56,640
+utilizar librerías con React y Angular.
+
+683
+00:28:59,240 --> 00:29:04,760
+Aquí como tal, yo utilicé el modo de
+
+684
+00:29:02,159 --> 00:29:07,120
+grabación para poder decirles a Jarvis.
+
+685
+00:29:04,760 --> 00:29:09,399
+Y aquí me dice user, vamos a colocar
+
+686
+00:29:07,120 --> 00:29:10,840
+aquí user@join.com.
+
+687
+00:29:09,399 --> 00:29:13,519
+es un usuario que me inventé para enviar
+
+688
+00:29:10,840 --> 00:29:16,519
+el correo. Vamos a darle enviar
+
+689
+00:29:13,519 --> 00:29:18,399
+y vamos a esperar que Jarvis como tal eh
+
+690
+00:29:16,519 --> 00:29:20,360
+proceda a realizar esta acción que le
+
+691
+00:29:18,399 --> 00:29:22,559
+pedí.
+
+692
+00:29:20,360 --> 00:29:25,120
+Listo. Aquí me dice que ya acaba de
+
+693
+00:29:22,559 --> 00:29:26,480
+enviar el correo al usuario @gmail.com.
+
+694
+00:29:25,120 --> 00:29:29,200
+Obviamente este usuario no existe, este
+
+695
+00:29:26,480 --> 00:29:32,480
+ejemplo, pero verifiquemos esto. Voy a
+
+696
+00:29:29,200 --> 00:29:35,279
+abrir en este momento lo que es mi Gmail
+
+697
+00:29:32,480 --> 00:29:38,880
+y verifiquemos en enviados que esto sea
+
+698
+00:29:35,279 --> 00:29:38,880
+obviamente verídico.
+
+699
+00:29:40,720 --> 00:29:45,960
+Y aquí en enviados,
+
+700
+00:29:44,039 --> 00:29:48,440
+ah, bueno, mira, ya está aquí
+
+701
+00:29:45,960 --> 00:29:50,760
+recordatorio
+
+702
+00:29:48,440 --> 00:29:52,600
+como tal y me dice, pues no no encontró
+
+703
+00:29:50,760 --> 00:29:54,519
+como tal la dirección de correo. Es un
+
+704
+00:29:52,600 --> 00:29:57,120
+error, obviamente, que tenía que salir,
+
+705
+00:29:54,519 --> 00:30:00,679
+pero vayámonos entonces a Enviados. En
+
+706
+00:29:57,120 --> 00:30:02,480
+enviados tenemos que, aquí está, miren,
+
+707
+00:30:00,679 --> 00:30:05,679
+dice lo siguiente. Hola, este es un
+
+708
+00:30:02,480 --> 00:30:07,440
+recordatorio eh, que mañana 5 de mayo,
+
+709
+00:30:05,679 --> 00:30:09,600
+ya miren que yo no le dije que colocara
+
+710
+00:30:07,440 --> 00:30:11,840
+la fecha ni nada de eso, pero ya la
+
+711
+00:30:09,600 --> 00:30:14,679
+puso. Estamos hoy a 4 de mayo y mañana 5
+
+712
+00:30:11,840 --> 00:30:18,840
+de mayo de 2026 tienes la prueba técnica
+
+713
+00:30:14,679 --> 00:30:22,600
+a las 8 a. temas a revisar cómo instalar
+
+714
+00:30:18,840 --> 00:30:25,360
+paquetes, cómo utilizar librerías en
+
+715
+00:30:22,600 --> 00:30:28,279
+React y Angular. Asegúrate de estar
+
+716
+00:30:25,360 --> 00:30:31,279
+preparado. Saludos. Atentamente, Jarvis
+
+717
+00:30:28,279 --> 00:30:33,760
+HRZ. Esto es un ejemplo muy básico de lo
+
+718
+00:30:31,279 --> 00:30:35,399
+que es un correo y vean que lo envió.
+
+719
+00:30:33,760 --> 00:30:37,760
+Obviamente no encontró el destinatario
+
+720
+00:30:35,399 --> 00:30:39,080
+porque este usuario no existe, pero si
+
+721
+00:30:37,760 --> 00:30:41,200
+existiera pues obviamente se habría
+
+722
+00:30:39,080 --> 00:30:44,039
+enviado el correo. Vean que no le
+
+723
+00:30:41,200 --> 00:30:45,440
+coloqué como eh digamos una plantilla
+
+724
+00:30:44,039 --> 00:30:47,000
+específica, pero si tú eres un poquito
+
+725
+00:30:45,440 --> 00:30:49,120
+más detallado, le dices cómo quieres
+
+726
+00:30:47,000 --> 00:30:51,320
+enviarlo, cómo quieres hablar, eh las
+
+727
+00:30:49,120 --> 00:30:53,799
+fechas, atentamente, quién quieres que
+
+728
+00:30:51,320 --> 00:30:55,760
+aparezca atentamente y obviamente lo va
+
+729
+00:30:53,799 --> 00:30:58,240
+a poder hacer. Entonces, chicos, de esta
+
+730
+00:30:55,760 --> 00:31:01,720
+manera se configura lo que son las tools
+
+731
+00:30:58,240 --> 00:31:03,760
+de Jarvis para lo que es Google.
+
+732
+00:31:01,720 --> 00:31:05,600
+Ahora veamos otras funcionalidades de
+
+733
+00:31:03,760 --> 00:31:08,600
+Jarvis como lo que es el modo código,
+
+734
+00:31:05,600 --> 00:31:15,200
+que es tan sencillo como decirle eh
+
+735
+00:31:08,600 --> 00:31:16,880
+Jarvis, dame un código de Python
+
+736
+00:31:15,200 --> 00:31:19,039
+básico.
+
+737
+00:31:16,880 --> 00:31:21,799
+Le digo, "Ey, Jarvis, dame un código de
+
+738
+00:31:19,039 --> 00:31:24,039
+de Python básico." Y él eh digamos que
+
+739
+00:31:21,799 --> 00:31:26,840
+tiene un buen entrenamiento sobre lo que
+
+740
+00:31:24,039 --> 00:31:29,559
+es código y me va a poder dar un pequeño
+
+741
+00:31:26,840 --> 00:31:31,240
+código de Python, lo que se les ocurra.
+
+742
+00:31:29,559 --> 00:31:34,360
+Y pueden ver de que tenemos una bonita
+
+743
+00:31:31,240 --> 00:31:37,120
+sintaxis, un bonito mensaje adecuado a
+
+744
+00:31:34,360 --> 00:31:39,159
+lo que es eh un print. Listo. Como
+
+745
+00:31:37,120 --> 00:31:41,399
+podemos ver, eh seguimos con una bonita
+
+746
+00:31:39,159 --> 00:31:43,720
+sintaxis. Eh Jarvis obviamente no lee
+
+747
+00:31:41,399 --> 00:31:45,159
+código, simplemente lee el mensaje. Eso
+
+748
+00:31:43,720 --> 00:31:47,600
+facilita que luego cuando le pidas un
+
+749
+00:31:45,159 --> 00:31:49,559
+código muy largo, pues vaya a ser eh
+
+750
+00:31:47,600 --> 00:31:52,000
+locuras. Eh, también una de las
+
+751
+00:31:49,559 --> 00:31:54,320
+funcionalidades que es muy interesante
+
+752
+00:31:52,000 --> 00:31:56,519
+de Jarvis es poder decirle que cree
+
+753
+00:31:54,320 --> 00:31:58,320
+archivos. Ejemplo, vamos a irnos en
+
+754
+00:31:56,519 --> 00:32:01,080
+estos momentos al escritorio y como
+
+755
+00:31:58,320 --> 00:32:02,919
+podemos ver eh pues no tengo gran cosa.
+
+756
+00:32:01,080 --> 00:32:06,279
+Vamos a decirle que nos cree un archivo
+
+757
+00:32:02,919 --> 00:32:09,399
+de Python y que lo ejecute.
+
+758
+00:32:06,279 --> 00:32:11,399
+Jarvis crea un script de Python que
+
+759
+00:32:09,399 --> 00:32:14,960
+imprima Hola Mundo. Eh, créalo en el
+
+760
+00:32:11,399 --> 00:32:14,960
+escritorio y ejecútalo.
+
+761
+00:32:15,440 --> 00:32:20,880
+Aquí estoy utilizando lo que es el modo
+
+762
+00:32:17,760 --> 00:32:24,600
+de e grabación de voz. Luego veremos más
+
+763
+00:32:20,880 --> 00:32:26,639
+adelante lo que es charla por voz.
+
+764
+00:32:24,600 --> 00:32:30,360
+Enviamos este mensaje y esperemos
+
+765
+00:32:26,639 --> 00:32:30,360
+entonces que lo cree.
+
+766
+00:32:31,600 --> 00:32:35,799
+Vean, como pueden ver, él creó como tal
+
+767
+00:32:33,279 --> 00:32:39,440
+el script que se llama holamundo.py y lo
+
+768
+00:32:35,799 --> 00:32:41,000
+que imprimió pues fue hola mundo. Listo.
+
+769
+00:32:39,440 --> 00:32:42,799
+Y lo ejecutó. Obviamente aquí está el
+
+770
+00:32:41,000 --> 00:32:44,200
+script. ¿Dónde está el script? Si se
+
+771
+00:32:42,799 --> 00:32:46,440
+preguntan, pues obviamente está aquí en
+
+772
+00:32:44,200 --> 00:32:49,039
+el escritorio y lo podemos ver acá.
+
+773
+00:32:46,440 --> 00:32:50,519
+Entonces, Jarvis como tal, eh pues
+
+774
+00:32:49,039 --> 00:32:53,639
+digamos que tiene esa funcionalidad de
+
+775
+00:32:50,519 --> 00:32:55,760
+poder crear código, poder crear cosas y
+
+776
+00:32:53,639 --> 00:32:58,159
+tiene la verdad muchísimos lenguajes de
+
+777
+00:32:55,760 --> 00:33:00,519
+programación. Python, C++, JavaScript,
+
+778
+00:32:58,159 --> 00:33:01,840
+Char, RAS, así que no se preocupen por
+
+779
+00:33:00,519 --> 00:33:03,799
+el lenguaje de programación que la
+
+780
+00:33:01,840 --> 00:33:05,720
+verdad que los va a los va a asumbrar
+
+781
+00:33:03,799 --> 00:33:08,840
+demasiado con las capacidades que tiene
+
+782
+00:33:05,720 --> 00:33:10,080
+en cuanto a lo que es código.
+
+783
+00:33:08,840 --> 00:33:12,639
+Ahora veamos un poco lo que es el
+
+784
+00:33:10,080 --> 00:33:14,440
+procesamiento de imágenes. ¿Cómo podemos
+
+785
+00:33:12,639 --> 00:33:16,639
+hacer esto? Podemos cargar imágenes de
+
+786
+00:33:14,440 --> 00:33:19,720
+nuestro computador directamente, ir a
+
+787
+00:33:16,639 --> 00:33:21,240
+buscarlas o también podemos pegar las
+
+788
+00:33:19,720 --> 00:33:23,080
+imágenes como lo que voy a hacer yo. En
+
+789
+00:33:21,240 --> 00:33:26,000
+este caso voy a buscar una imagen que
+
+790
+00:33:23,080 --> 00:33:27,760
+tengo por aquí de Messi y aquí voy a, no
+
+791
+00:33:26,000 --> 00:33:32,279
+sé, a preguntarle cualquier tipo de
+
+792
+00:33:27,760 --> 00:33:34,519
+cosas, digamos, dime quién es el de la
+
+793
+00:33:32,279 --> 00:33:37,440
+imagen.
+
+794
+00:33:34,519 --> 00:33:40,799
+Y como tal, Jarvis va a poder analizar
+
+795
+00:33:37,440 --> 00:33:42,639
+la imagen. Aquí vemos que es Messi, es
+
+796
+00:33:40,799 --> 00:33:45,320
+la carátula, directamente la la tarjeta
+
+797
+00:33:42,639 --> 00:33:46,559
+de Panini. Y vamos a ver qué nos dice
+
+798
+00:33:45,320 --> 00:33:48,840
+entonces Jarvis con lo que es el
+
+799
+00:33:46,559 --> 00:33:51,200
+procesamiento de imágenes.
+
+800
+00:33:48,840 --> 00:33:53,200
+Dice el jugador eh de la imagen ta
+
+801
+00:33:51,200 --> 00:33:56,080
+Lionel Messi, futbolista, centrocampista
+
+802
+00:33:53,200 --> 00:33:57,840
+y bueno, es simplemente lo que haría
+
+803
+00:33:56,080 --> 00:34:00,799
+cualquiera, poder analizar la imagen,
+
+804
+00:33:57,840 --> 00:34:02,559
+describirme, explicarme.
+
+805
+00:34:00,799 --> 00:34:04,880
+Otra de las funcionalidades que tenemos
+
+806
+00:34:02,559 --> 00:34:07,159
+es el poder escuchar los mensajes, o
+
+807
+00:34:04,880 --> 00:34:09,480
+sea, lo que me dijo esto mediante lo que
+
+808
+00:34:07,159 --> 00:34:11,720
+es las voces nativas. Vamos a irnos aquí
+
+809
+00:34:09,480 --> 00:34:13,919
+a configuraciones y vemos información
+
+810
+00:34:11,720 --> 00:34:15,720
+sobre mi cuenta, mi plan. mis créditos,
+
+811
+00:34:13,919 --> 00:34:17,159
+lo que me he gastado, lo que he usado,
+
+812
+00:34:15,720 --> 00:34:19,079
+el idioma en el que quiero utilizar
+
+813
+00:34:17,159 --> 00:34:21,480
+Jarvis. Me estaban preguntando si estaba
+
+814
+00:34:19,079 --> 00:34:24,000
+disponible en inglés, en francés, en
+
+815
+00:34:21,480 --> 00:34:25,919
+portugués. Sí, está disponible según la
+
+816
+00:34:24,000 --> 00:34:27,359
+configuración que ustedes quieran. Eh,
+
+817
+00:34:25,919 --> 00:34:29,399
+¿cómo quiero que se dirije a mí si
+
+818
+00:34:27,359 --> 00:34:31,440
+hombre, mujer? Bueno, vamos a colocar
+
+819
+00:34:29,399 --> 00:34:35,280
+aquí entonces otra voz. Pongamos la voz
+
+820
+00:34:31,440 --> 00:34:38,280
+de Jorge. Probémosla. Buenos días, señor
+
+821
+00:34:35,280 --> 00:34:40,280
+Harvis a su servicio.
+
+822
+00:34:38,280 --> 00:34:42,679
+Ahí, por ejemplo, si cambio de de género
+
+823
+00:34:40,280 --> 00:34:44,200
+a mujer y le digo, bueno, dejemos la
+
+824
+00:34:42,679 --> 00:34:47,320
+misma voz.
+
+825
+00:34:44,200 --> 00:34:48,760
+Buenos días, señora Harvis a su
+
+826
+00:34:47,320 --> 00:34:50,159
+servicio.
+
+827
+00:34:48,760 --> 00:34:52,320
+Lo que Jarvis hace es que obviamente
+
+828
+00:34:50,159 --> 00:34:54,280
+según el el género, según como quiero
+
+829
+00:34:52,320 --> 00:34:56,200
+que se dirija a mí, me va a decir señor,
+
+830
+00:34:54,280 --> 00:34:59,760
+señora y obviamente puedo utilizar otra
+
+831
+00:34:56,200 --> 00:35:00,920
+voz, por ejemplo, no sé, la de Elvira y
+
+832
+00:34:59,760 --> 00:35:01,800
+digámosle que se dirige a mí como
+
+833
+00:35:00,920 --> 00:35:06,720
+hombre. A ver,
+
+834
+00:35:01,800 --> 00:35:09,160
+buenos días, señor Harvis a su servicio.
+
+835
+00:35:06,720 --> 00:35:10,920
+Obviamente las voces cambian según la
+
+836
+00:35:09,160 --> 00:35:13,800
+naturalidad, según lo que es la
+
+837
+00:35:10,920 --> 00:35:15,880
+expresión. Esta de Jenny, esta es ya a
+
+838
+00:35:13,800 --> 00:35:16,720
+nivel de lo que es inglés, especializada
+
+839
+00:35:15,880 --> 00:35:20,720
+para inglés.
+
+840
+00:35:16,720 --> 00:35:20,720
+Buenos días, señor.
+
+841
+00:35:21,960 --> 00:35:26,040
+Obviamente pues habla un poco más tema
+
+842
+00:35:24,040 --> 00:35:29,040
+de de lo que es inglés. Tenemos la la
+
+843
+00:35:26,040 --> 00:35:33,960
+que es de España, de Álvaro.
+
+844
+00:35:29,040 --> 00:35:35,720
+Buenos días, señor Harvis a su servicio.
+
+845
+00:35:33,960 --> 00:35:38,240
+Y tenemos diferentes tipos de voces.
+
+846
+00:35:35,720 --> 00:35:40,520
+Esto también aquí les coloqué pues eh de
+
+847
+00:35:38,240 --> 00:35:42,400
+qué de qué de qué país es cada voz, de
+
+848
+00:35:40,520 --> 00:35:45,560
+México, de España, Argentina, Colombia,
+
+849
+00:35:42,400 --> 00:35:47,440
+Chile, México, bueno, diferentes países
+
+850
+00:35:45,560 --> 00:35:49,880
+que eran como las más naturales que
+
+851
+00:35:47,440 --> 00:35:52,359
+encontré que podemos utilizar. Entonces
+
+852
+00:35:49,880 --> 00:35:54,839
+ahí está. Pero no importa porque tenemos
+
+853
+00:35:52,359 --> 00:35:56,760
+también lo que son las voces eh o audios
+
+854
+00:35:54,839 --> 00:35:59,079
+de experiencia de Jarvis. Al abrir
+
+855
+00:35:56,760 --> 00:36:01,319
+aplicaciones, al hacer acciones muy
+
+856
+00:35:59,079 --> 00:36:02,839
+digamos generales, va a reproducirse un
+
+857
+00:36:01,319 --> 00:36:06,720
+audio con la voz de Jarvis. A
+
+858
+00:36:02,839 --> 00:36:06,720
+continuación haremos un ejemplo.
+
+859
+00:36:07,359 --> 00:36:11,839
+Iker Casillas Fernández es un
+
+860
+00:36:08,839 --> 00:36:13,560
+exfutbolista español que bueno, ahí como
+
+861
+00:36:11,839 --> 00:36:16,400
+tal, ya saben, me me puede contestar con
+
+862
+00:36:13,560 --> 00:36:17,680
+voz, me da también imágenes y demás,
+
+863
+00:36:16,400 --> 00:36:20,000
+pero si yo quisiera, por ejemplo,
+
+864
+00:36:17,680 --> 00:36:21,680
+utilizar eh digamos un poquito lo que es
+
+865
+00:36:20,000 --> 00:36:24,319
+la voz de Jarvis o o vivir la
+
+866
+00:36:21,680 --> 00:36:30,280
+experiencia, podría decirle cosas como
+
+867
+00:36:24,319 --> 00:36:30,280
+esta. Jarvis abre el BS Code.
+
+868
+00:36:30,440 --> 00:36:34,160
+Para los que no sepan qué es el BS Code,
+
+869
+00:36:31,920 --> 00:36:38,000
+es el Visual Studio Code. De hecho, aquí
+
+870
+00:36:34,160 --> 00:36:41,119
+me me comprendió mal. Abre el BS BSK.
+
+871
+00:36:38,000 --> 00:36:45,040
+Vamos a decirle entonces
+
+872
+00:36:41,119 --> 00:36:45,040
+Visual Studio Code,
+
+873
+00:36:46,720 --> 00:36:52,400
+Visual Studio Code. Vamos a enviarle
+
+874
+00:36:48,480 --> 00:36:56,839
+entonces. abre el Visual Studio Code
+
+875
+00:36:52,400 --> 00:36:56,839
+y proceder, obviamente, pues abrirlo
+
+876
+00:36:57,400 --> 00:37:01,319
+enseguida, señor, ejecutando el programa
+
+877
+00:36:59,400 --> 00:37:04,599
+solicitado.
+
+878
+00:37:01,319 --> 00:37:07,319
+Y como podemos escuchar eh de fondo sonó
+
+879
+00:37:04,599 --> 00:37:08,839
+un audio de de Jarvis predefinido, hay
+
+880
+00:37:07,319 --> 00:37:10,280
+diferentes tipos de audios para cada una
+
+881
+00:37:08,839 --> 00:37:11,720
+de estas acciones. No siempre va a decir
+
+882
+00:37:10,280 --> 00:37:13,359
+el mismo, sino que va a decir
+
+883
+00:37:11,720 --> 00:37:15,480
+diferentes. Pero vivimos un poco esa
+
+884
+00:37:13,359 --> 00:37:17,319
+experiencia de la voz real de Jarvis,
+
+885
+00:37:15,480 --> 00:37:19,480
+que es lo que queríamos en esta nueva
+
+886
+00:37:17,319 --> 00:37:21,920
+versión.
+
+887
+00:37:19,480 --> 00:37:26,040
+Eh, por ejemplo, vamos a decirle lo que
+
+888
+00:37:21,920 --> 00:37:29,319
+es ya utilizando el modo de voz.
+
+889
+00:37:26,040 --> 00:37:33,480
+Jarvis, busca eh un video de Black in
+
+890
+00:37:29,319 --> 00:37:33,480
+Black y dámelo, por favor.
+
+891
+00:37:37,280 --> 00:37:41,359
+Reproduciendo en YouTube, señor.
+
+892
+00:37:43,119 --> 00:37:46,480
+Listo. Ahí me dice reproduciendo en
+
+893
+00:37:44,960 --> 00:37:48,480
+YouTube y me da como tal el audio y
+
+894
+00:37:46,480 --> 00:37:50,839
+pueden ver de que sonó la voz de Jarvis,
+
+895
+00:37:48,480 --> 00:37:53,599
+un audio ya como tal predefinido y me
+
+896
+00:37:50,839 --> 00:37:55,560
+dio como tal el link. No lo reproducí en
+
+897
+00:37:53,599 --> 00:37:57,200
+YouTube porque está predefinido para que
+
+898
+00:37:55,560 --> 00:37:59,200
+todo lo haga internamente aquí, pero si
+
+899
+00:37:57,200 --> 00:38:00,599
+ustedes quisieran Yaris podría abrir
+
+900
+00:37:59,200 --> 00:38:02,000
+directamente YouTube. ¿Cómo hacemos
+
+901
+00:38:00,599 --> 00:38:05,040
+esto?
+
+902
+00:38:02,000 --> 00:38:08,200
+Jarvis eh reproduceen YouTube de Black
+
+903
+00:38:05,040 --> 00:38:08,200
+in Black.
+
+904
+00:38:13,079 --> 00:38:17,119
+Buscando contenido en YouTube
+
+905
+00:38:23,480 --> 00:38:28,119
+y
+
+906
+00:38:25,560 --> 00:38:30,319
+esto y como pueden ver, eh, Jarvis
+
+907
+00:38:28,119 --> 00:38:31,720
+reprodujo en YouTube de Black in Black
+
+908
+00:38:30,319 --> 00:38:35,400
+de ADC.
+
+909
+00:38:31,720 --> 00:38:36,800
+Y pues de esta manera podemos digamos
+
+910
+00:38:35,400 --> 00:38:39,839
+tener un poquito esa experiencia.
+
+911
+00:38:36,800 --> 00:38:41,319
+Actualmente tenemos 50 audios de Jarvis
+
+912
+00:38:39,839 --> 00:38:43,359
+como experiencia. Entonces pueden ver de
+
+913
+00:38:41,319 --> 00:38:44,720
+que cuando me dijo eh cuando me dio el
+
+914
+00:38:43,359 --> 00:38:47,319
+video aquí me dijo reproduciendo
+
+915
+00:38:44,720 --> 00:38:49,319
+YouTube, luego me dijo eh buscando
+
+916
+00:38:47,319 --> 00:38:50,640
+contenido en YouTube, diferentes tipos
+
+917
+00:38:49,319 --> 00:38:52,640
+de audios para vivir como esa
+
+918
+00:38:50,640 --> 00:38:54,160
+experiencia de lo que es Jarvis.
+
+919
+00:38:52,640 --> 00:38:56,880
+Actualmente no tiene la capacidad de
+
+920
+00:38:54,160 --> 00:38:58,119
+poder leerme mensajes o darme
+
+921
+00:38:56,880 --> 00:38:59,480
+información de diferentes tipos de
+
+922
+00:38:58,119 --> 00:39:00,560
+cosas, como lo que hizo con Iker
+
+923
+00:38:59,480 --> 00:39:03,119
+Casillas. no puede leer esto,
+
+924
+00:39:00,560 --> 00:39:06,359
+obviamente, pero estamos trabajando para
+
+925
+00:39:03,119 --> 00:39:08,920
+traerles eh una voz muy similar, sino la
+
+926
+00:39:06,359 --> 00:39:13,960
+misma de Jarvis, para que veamos esa
+
+927
+00:39:08,920 --> 00:39:13,960
+experiencia de ser Tony Stark.
+

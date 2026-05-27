@@ -1,0 +1,8 @@
+[project]
+name = "supernexus"
+version = "2.0.0"
+description = "SuperNEXUS v2 — Sovereign AI Agent Platform"
+requires-python = ">=3.11"
+
+[project.scripts]
+nexus = "src.cli.main:main"

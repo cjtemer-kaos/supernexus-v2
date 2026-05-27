@@ -1,0 +1,25 @@
+{
+  "system": "nexus-ia",
+  "persona_default": "director",
+  "gems_enabled": [
+    "auto",
+    "architect",
+    "developer",
+    "creative",
+    "scholar",
+    "prompter",
+    "producer",
+    "sage",
+    "vision",
+    "opencode",
+    "codex",
+    "design",
+    "music",
+    "qwen"
+  ],
+  "default_models": {
+    "developer": "qwen2.5-coder:7b",
+    "creative": "qwen2.5-coder:7b",
+    "sage": "nexus-ia"
+  }
+}

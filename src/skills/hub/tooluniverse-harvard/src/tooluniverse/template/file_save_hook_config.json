@@ -1,0 +1,132 @@
+{
+  "global_settings": {
+    "default_timeout": 30,
+    "max_hook_depth": 3,
+    "enable_hook_caching": true,
+    "hook_execution_order": "priority_desc"
+  },
+  "hook_type_defaults": {
+    "SummarizationHook": {
+      "default_output_length_threshold": 5000,
+      "default_chunk_size": 32000,
+      "default_focus_areas": "key_findings_and_results",
+      "default_max_summary_length": 3000
+    },
+    "FileSaveHook": {
+      "default_temp_dir": null,
+      "default_file_prefix": "tool_output",
+      "default_include_metadata": true,
+      "default_auto_cleanup": false,
+      "default_cleanup_age_hours": 24
+    }
+  },
+  "hooks": [
+    {
+      "name": "file_save_hook",
+      "type": "FileSaveHook",
+      "enabled": true,
+      "priority": 1,
+      "conditions": {
+        "output_length": {
+          "operator": ">",
+          "threshold": 1000
+        }
+      },
+      "hook_config": {
+        "temp_dir": "/tmp/tooluniverse_outputs",
+        "file_prefix": "tool_output",
+        "include_metadata": true,
+        "auto_cleanup": true,
+        "cleanup_age_hours": 24
+      }
+    }
+  ],
+  "tool_specific_hooks": {
+    "UniProt_get_entry_by_accession": [
+      {
+        "name": "uniprot_file_save_hook",
+        "type": "FileSaveHook",
+        "enabled": true,
+        "priority": 2,
+        "conditions": {
+          "output_length": {
+            "operator": ">",
+            "threshold": 500
+          }
+        },
+        "hook_config": {
+          "temp_dir": "/tmp/uniprot_outputs",
+          "file_prefix": "uniprot_entry",
+          "include_metadata": true,
+          "auto_cleanup": true,
+          "cleanup_age_hours": 48
+        }
+      }
+    ],
+    "ChEMBL_get_compound_by_chembl_id": [
+      {
+        "name": "chembl_file_save_hook",
+        "type": "FileSaveHook",
+        "enabled": true,
+        "priority": 2,
+        "conditions": {
+          "output_length": {
+            "operator": ">",
+            "threshold": 2000
+          }
+        },
+        "hook_config": {
+          "temp_dir": "/tmp/chembl_outputs",
+          "file_prefix": "chembl_compound",
+          "include_metadata": true,
+          "auto_cleanup": false,
+          "cleanup_age_hours": 72
+        }
+      }
+    ]
+  },
+  "category_hooks": {
+    "database_tools": [
+      {
+        "name": "database_file_save_hook",
+        "type": "FileSaveHook",
+        "enabled": true,
+        "priority": 3,
+        "conditions": {
+          "output_length": {
+            "operator": ">",
+            "threshold": 3000
+          }
+        },
+        "hook_config": {
+          "temp_dir": "/tmp/database_outputs",
+          "file_prefix": "db_query",
+          "include_metadata": true,
+          "auto_cleanup": true,
+          "cleanup_age_hours": 12
+        }
+      }
+    ],
+    "analysis_tools": [
+      {
+        "name": "analysis_file_save_hook",
+        "type": "FileSaveHook",
+        "enabled": true,
+        "priority": 3,
+        "conditions": {
+          "output_length": {
+            "operator": ">",
+            "threshold": 5000
+          }
+        },
+        "hook_config": {
+          "temp_dir": "/tmp/analysis_outputs",
+          "file_prefix": "analysis_result",
+          "include_metadata": true,
+          "auto_cleanup": false,
+          "cleanup_age_hours": 168
+        }
+      }
+    ]
+  }
+}

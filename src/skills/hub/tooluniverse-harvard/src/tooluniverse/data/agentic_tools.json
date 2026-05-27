@@ -1,0 +1,1167 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "ScientificTextSummarizer",
+    "description": "Summarizes biomedical research texts, abstracts, or papers with specified length and focus areas. Uses AI to extract key findings, methodology, and conclusions from complex biomedical literature.",
+    "prompt": "You are a biomedical expert. Please summarize the following biomedical text in {summary_length} words, focusing on {focus_area}:\n\n{text}\n\nProvide a clear, concise summary that captures the most important information.",
+    "input_arguments": [
+      "text",
+      "summary_length",
+      "focus_area"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The biomedical text, abstract, or paper content to be summarized."
+        },
+        "summary_length": {
+          "type": "string",
+          "description": "Desired length of summary (e.g., '50', '100', '200 words')."
+        },
+        "focus_area": {
+          "type": "string",
+          "description": "What to focus on in the summary (e.g., 'methodology', 'results', 'clinical implications', 'drug interactions')."
+        }
+      },
+      "required": [
+        "text",
+        "summary_length",
+        "focus_area"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "text": "This study investigates the efficacy of a new drug in treating Alzheimer's disease by conducting a double-blind, placebo-controlled trial involving 200 participants over a 12-month period. The methodology includes patient selection criteria, dosing schedules, and outcome measures.",
+        "summary_length": "100",
+        "focus_area": "methodology"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "MedicalLiteratureReviewer",
+    "description": "Conducts systematic reviews of medical literature on specific topics. Synthesizes findings from multiple studies and provides evidence-based conclusions with structured analysis and quality assessment.",
+    "prompt": "You are an expert medical researcher conducting a comprehensive systematic literature review.\n\n## REVIEW PARAMETERS\nResearch Topic: {research_topic}\nFocus Area: {focus_area}\nStudy Types to Prioritize: {study_types}\nEvidence Quality Level: {quality_level}\nReview Scope: {review_scope}\n\n## LITERATURE TO REVIEW\n{literature_content}\n\n## SYSTEMATIC REVIEW INSTRUCTIONS\nConduct a thorough evidence-based systematic review following PRISMA guidelines. Provide a structured analysis with the following sections:\n\n### 1. EXECUTIVE SUMMARY\n- Brief overview of research question and key findings\n- Overall strength of evidence and confidence level\n\n### 2. STUDY CHARACTERISTICS\n- Number and types of studies reviewed\n- Study populations and sample sizes\n- Geographic distribution and time periods\n- Quality assessment of included studies\n\n### 3. SYNTHESIS OF EVIDENCE\n- Key findings across studies with effect sizes where available\n- Consistency/inconsistency of results\n- Dose-response relationships (if applicable)\n- Subgroup analyses and population-specific findings\n\n### 4. QUALITY OF EVIDENCE ASSESSMENT\n- Risk of bias assessment\n- Heterogeneity between studies\n- Publication bias considerations\n- GRADE evidence assessment (High/Moderate/Low/Very Low)\n\n### 5. CLINICAL IMPLICATIONS\n- Practical implications for clinical practice\n- Patient safety considerations\n- Cost-effectiveness insights (if available)\n- Applicability to different patient populations\n\n### 6. RESEARCH GAPS AND LIMITATIONS\n- Identified knowledge gaps\n- Methodological limitations across studies\n- Areas requiring further investigation\n\n### 7. RECOMMENDATIONS\n- Evidence-based clinical recommendations with confidence levels\n- Suggestions for future research priorities\n- Implementation considerations\n\n### 8. CONCLUSION\n- Summary of evidence strength\n- Final recommendations with qualification statements\n\nEnsure all conclusions are proportionate to the evidence quality and explicitly state limitations.",
+    "input_arguments": [
+      "research_topic",
+      "literature_content",
+      "focus_area",
+      "study_types",
+      "quality_level",
+      "review_scope"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "research_topic": {
+          "type": "string",
+          "description": "The specific medical/research topic for literature review (e.g., 'efficacy of drug X in treating condition Y')."
+        },
+        "literature_content": {
+          "type": "string",
+          "description": "The literature content, abstracts, full studies, or research papers to review and synthesize."
+        },
+        "focus_area": {
+          "type": "string",
+          "description": "Primary focus area for the review (e.g., 'therapeutic efficacy', 'safety profile', 'diagnostic accuracy', 'biomarker validation')."
+        },
+        "study_types": {
+          "type": "string",
+          "description": "Types of studies to prioritize in the analysis (e.g., 'randomized controlled trials', 'meta-analyses', 'cohort studies', 'case-control studies')."
+        },
+        "quality_level": {
+          "type": "string",
+          "description": "Minimum evidence quality level to include (e.g., 'high quality only', 'moderate and above', 'all available evidence')."
+        },
+        "review_scope": {
+          "type": "string",
+          "description": "Scope of the review (e.g., 'comprehensive systematic review', 'rapid review', 'scoping review', 'narrative review')."
+        }
+      },
+      "required": [
+        "research_topic",
+        "literature_content",
+        "focus_area",
+        "study_types",
+        "quality_level",
+        "review_scope"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "research_topic": "efficacy of drug X in treating condition Y",
+        "literature_content": "Abstracts and full-texts of relevant randomized controlled trials and cohort studies on drug X.",
+        "focus_area": "therapeutic efficacy",
+        "study_types": "randomized controlled trials",
+        "quality_level": "high quality only",
+        "review_scope": "comprehensive systematic review"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "HypothesisGenerator",
+    "description": "Generates research hypotheses based on provided background context, domain, and desired format. Uses AI to propose novel, testable hypotheses for scientific exploration.",
+    "prompt": "You are an expert researcher in {domain}. Based on the following background context, generate {number_of_hypotheses} clear, focused, and testable research hypotheses.\n\nContext:\n{context}\n\nFormat (optional): {hypothesis_format}\n\nProvide each hypothesis as a concise statement that could be empirically investigated.",
+    "input_arguments": [
+      "context",
+      "domain",
+      "number_of_hypotheses",
+      "hypothesis_format"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "context": {
+          "type": "string",
+          "description": "Background information, observations, or data description from which to derive hypotheses."
+        },
+        "domain": {
+          "type": "string",
+          "description": "Field of study or research area (e.g., 'neuroscience', 'ecology', 'materials science')."
+        },
+        "number_of_hypotheses": {
+          "type": "string",
+          "description": "Number of hypotheses to generate (e.g., '3', '5')."
+        },
+        "hypothesis_format": {
+          "type": "string",
+          "description": "Optional directive on how to structure each hypothesis. Choose from one of the following formats:\n\n1. If–Then Statements: \"If [independent variable condition], then [expected outcome].\"\n2. Null and Alternative (Statistical):\n   • H₀ (Null): \"There is no difference/effect/association between X and Y.\"\n   • H₁ (Alt): \"There is a difference/effect/association between X and Y.\"\n3. Associative (Correlation-Focused): \"There is a relationship/association between [Variable A] and [Variable B].\"\n4. Directional (Non-If–Then): \"Increasing/decreasing [Variable A] will lead to [directional change] in [Variable B].\"\n5. Comparative (Group Comparison): \"Group A will show higher/lower [dependent measure] compared to Group B under [condition].\"\n6. Mechanistic: \"Because [mechanism or process], [Variable A] will cause [Variable B].\"\n7. Descriptive (Exploratory/Pattern-Oriented): \"Population X exhibits pattern Y in context Z.\"\n\nIf omitted, defaults to concise declarative sentences.",
+          "default": "concise declarative sentences"
+        }
+      },
+      "required": [
+        "context",
+        "domain",
+        "number_of_hypotheses"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "context": "Recent studies show that chronic sleep deprivation alters hippocampal synaptic plasticity in rodents.",
+        "domain": "neuroscience",
+        "number_of_hypotheses": "3",
+        "hypothesis_format": "If-Then Statements"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ExperimentalDesignScorer",
+    "description": "Assesses a proposed experimental design by assigning scores and structured feedback on hypothesis clarity, variable definitions, sample size, controls, randomization, measurement methods, statistical analysis, bias mitigation, ethical considerations, and overall feasibility.",
+    "prompt": "You are an expert in experimental design. The user has provided the following hypothesis and detailed description of their proposed experiment:\n\nHypothesis:\n{hypothesis}\n\nDesign Description:\n{design_description}\n\nFor each of the categories below, assign a score from 1 (poor) to 5 (excellent), then provide concise feedback explaining your rating and any suggestions for improvement:\n\n1. **Hypothesis Clarity & Alignment**\n   - Score and feedback on whether the hypothesis is clearly stated, testable, and directly addressed by the design.\n\n2. **Variables & Controls**\n   - Score and feedback on definition of independent, dependent, and control variables, and identification of any missing controls or confounds.\n\n3. **Sample Size & Randomization**\n   - Score and feedback on justification of sample size (power analysis or effect-size rationale) and appropriateness of randomization/allocation methods.\n\n4. **Measurement & Data Collection**\n   - Score and feedback on reliability and validity of measurement methods and clarity of data collection procedures.\n\n5. **Statistical Analysis Plan**\n   - Score and feedback on suitability of proposed statistical tests, treatment of assumptions, and alignment with the hypothesis.\n\n6. **Bias & Limitations**\n   - Score and feedback on identification and mitigation of potential biases, and discussion of key limitations.\n\n7. **Ethical & Practical Feasibility**\n   - Score and feedback on ethical considerations (e.g., consent, welfare) and feasibility within time, resources, and equipment constraints.\n\n8. **Overall Feasibility & Recommendations**\n   - Provide an overall feasibility score and 2–3 concrete recommendations to strengthen the design (e.g., additional controls, measurement improvements, blinding enhancements).",
+    "input_arguments": [
+      "hypothesis",
+      "design_description"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "hypothesis": {
+          "type": "string",
+          "description": "A clear statement of the research hypothesis to be tested."
+        },
+        "design_description": {
+          "type": "string",
+          "description": "A detailed description of the proposed experimental design, including variables, methods, sample details, and planned analyses."
+        }
+      },
+      "required": [
+        "hypothesis",
+        "design_description"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "hypothesis": "Increasing daily light exposure will significantly accelerate the growth rate of tomato plants.",
+        "design_description": "Two groups of tomato seedlings (n=30 each) will be grown under 6 hours vs. 12 hours of light daily. Plants will be randomized into groups, height measured weekly using a calibrated ruler, and data analyzed using repeated-measures ANOVA to test for growth rate differences."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "MedicalTermNormalizer",
+    "description": "Identifies and corrects misspelled drug or disease names, returning a list of plausible standardized terms.",
+    "prompt": "You are an expert in biomedical terminology. The user has given you one or more drug or disease names that may be misspelled or incomplete:\\n\\nInput:\\n{raw_terms}\\n\\nReturn **only** a JSON array (list) of all plausible standardized names—ordered from most to least likely. If you cannot identify any plausible terms, return an empty array.\\n\\nExample Input:\\n'aspirin'\\n\\nExample Output:\\n['Aspirin']\\n\\nDo not include any explanations or additional text in your response.",
+    "input_arguments": [
+      "raw_terms"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "raw_terms": {
+          "type": "string",
+          "description": "A comma- or whitespace-separated string containing one misspelled drug or disease name."
+        }
+      },
+      "required": [
+        "raw_terms"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "raw_terms": "hypertension, diabetes"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "NoveltySignificanceReviewer",
+    "description": "Provides a structured peer-review of the work's originality and potential impact.",
+    "prompt": "You are a journal peer reviewer with deep knowledge of the field. The user has supplied the manuscript below.\\n\\nTitle:\\n{paper_title}\\n\\nAbstract:\\n{abstract}\\n\\nFull Manuscript:\\n{manuscript_text}\\n\\nWrite a structured review that, for each criterion, first assigns a rating from 1 (very weak) to 5 (excellent) **followed by 2–3 sentences** justifying the rating and giving specific improvement advice.\\n\\n1. **Originality of Research Question**\\n2. **Contribution to the Field**\\n3. **Incremental vs. Ground-breaking Nature**\\n\\nEnd with 2-3 overarching recommendations to strengthen the manuscript's contribution.",
+    "input_arguments": [
+      "paper_title",
+      "abstract",
+      "manuscript_text"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "paper_title": {
+          "type": "string",
+          "description": "Manuscript title"
+        },
+        "abstract": {
+          "type": "string",
+          "description": "Manuscript abstract"
+        },
+        "manuscript_text": {
+          "type": "string",
+          "description": "Full manuscript text"
+        }
+      },
+      "required": [
+        "paper_title",
+        "abstract",
+        "manuscript_text"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "paper_title": "Deep Learning for Protein Structure Prediction",
+        "abstract": "We propose a novel deep learning method to predict protein tertiary structures with high accuracy.",
+        "manuscript_text": "Introduction:\nProtein structure prediction remains a key challenge...\nMethods:\nWe developed a convolutional neural network...\nResults:\nOur approach achieves state-of-the-art performance..."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "LiteratureContextReviewer",
+    "description": "Reviews coverage, relevance, and critical synthesis of prior scholarship.",
+    "prompt": "You are a journal peer reviewer. Assess the literature-review section below.\\n\\nTitle:\\n{paper_title}\\n\\nLiterature Review Section:\\n{literature_review}\\n\\nFor each item, give a 1-5 rating and 2–3 sentences of feedback plus missing-citation suggestions.\\n\\n1. **Comprehensiveness of Sources**\\n2. **Relevance & Accuracy of Summaries**\\n3. **Critical Synthesis & Gap Identification**",
+    "input_arguments": [
+      "paper_title",
+      "literature_review"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "paper_title": {
+          "type": "string"
+        },
+        "literature_review": {
+          "type": "string",
+          "description": "Full literature-review text"
+        }
+      },
+      "required": [
+        "paper_title",
+        "literature_review"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "paper_title": "Deep Learning for Bioinformatics",
+        "literature_review": "This literature review covers deep learning applications in genomics and proteomics, highlighting key studies, summarizing methodologies, and identifying research gaps."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "MethodologyRigorReviewer",
+    "description": "Evaluates design appropriateness, sampling, and procedural transparency.",
+    "prompt": "You are a methodology peer reviewer. Critically appraise the Methods section below.\\n\\nMethods Section:\\n{methods_section}\\n\\nRate 1–5, then justify in 2–3 sentences for each:\\n\\n1. **Design Appropriateness to Research Question**\\n2. **Variable Definition & Operationalization Clarity**\\n3. **Sampling Strategy & Randomization Adequacy**\\n4. **Procedural Transparency (replicability)**\\n\\nConclude with the two most important methodological revisions you recommend.",
+    "input_arguments": [
+      "methods_section"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "methods_section": {
+          "type": "string",
+          "description": "Full Methods text"
+        }
+      },
+      "required": [
+        "methods_section"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "methods_section": "In this study, we conducted a randomized controlled trial with 200 participants to evaluate the effect of intervention X on outcome Y. Participants were randomly assigned to control or treatment groups, and all procedures were standardized and fully documented to ensure replicability."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "DataAnalysisValidityReviewer",
+    "description": "Checks statistical choices, assumption testing, and reporting transparency.",
+    "prompt": "You are the statistical reviewer for a journal. Examine the analysis plan and results below.\\n\\nStatistical Analysis Section:\\n{analysis_section}\\n\\nProvide a 1-5 rating and 2–3 sentences of critique for each criterion:\\n\\n1. **Appropriateness of Tests/Models**\\n2. **Assumption Verification & Remedies**\\n3. **Reporting Completeness (effect sizes, CIs, exact p-values)**\\n4. **Reproducibility (code/data availability)**\\n\\nSuggest any corrective analyses or transparency improvements.",
+    "input_arguments": [
+      "analysis_section"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "analysis_section": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "analysis_section"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "analysis_section": "We performed t-tests with p<0.05 significance level"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ResultsInterpretationReviewer",
+    "description": "Judges whether conclusions are data-justified and limitations addressed.",
+    "prompt": "You are a peer reviewer focusing on interpretation. Review the sections below.\\n\\nResults:\\n{results_section}\\n\\nDiscussion:\\n{discussion_section}\\n\\nFor each item, assign 1–5 and write 2–3 sentences of review:\\n\\n1. **Alignment of Claims with Data**\\n2. **Consideration of Alternative Explanations**\\n3. **Limitations & Future-Work Discussion**\\n\\nFinish with recommendations for improving interpretive balance and acknowledging uncertainties.",
+    "input_arguments": [
+      "results_section",
+      "discussion_section"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "results_section": {
+          "type": "string"
+        },
+        "discussion_section": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "results_section",
+        "discussion_section"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "results_section": "In the treated group, the average response increased by 15% (p=0.02) compared to baseline, with confidence intervals showing robustness.",
+        "discussion_section": "These findings support the hypothesis that compound X enhances performance; however, variability across subjects suggests alternative factors may also contribute."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "WritingPresentationReviewer",
+    "description": "Assesses clarity, organization, grammar, and visual presentation quality.",
+    "prompt": "You are a scientific writing reviewer. Evaluate the manuscript text below.\\n\\nManuscript:\\n{manuscript_text}\\n\\nRate 1–5 and give 2–3 sentences of feedback for:\\n\\n1. **Clarity & Conciseness of Writing**\\n2. **Logical Flow & Section Organization**\\n3. **Grammar, Style & Terminology Consistency**\\n4. **Figure/Table Quality & Caption Adequacy**\\n\\nProvide concrete examples of unclear sentences or formatting issues and suggest fixes.",
+    "input_arguments": [
+      "manuscript_text"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "manuscript_text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "manuscript_text"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "manuscript_text": "In this study, we investigate the effects of X on Y. The methodology section outlines the experimental design and analysis."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ReproducibilityTransparencyReviewer",
+    "description": "Evaluates data, code, and protocol availability for replication.",
+    "prompt": "You are a reproducibility reviewer. Analyze the statement below.\\n\\nData & Materials Availability Statement:\\n{availability_statement}\\n\\nFor each category, provide a 1-5 rating and 2–3 sentences of critique:\\n\\n1. **Data Accessibility & Documentation**\\n2. **Code/Software Availability & Licensing**\\n3. **Protocol & Materials Detail for Replication**\\n\\nNote embargoes or missing links and recommend steps to achieve full transparency.",
+    "input_arguments": [
+      "availability_statement"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "availability_statement": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "availability_statement"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "availability_statement": "Data available upon request from corresponding author"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "EthicalComplianceReviewer",
+    "description": "Checks adherence to ethical standards and disclosure practices.",
+    "prompt": "You are an ethics peer reviewer. Examine the statements below.\\n\\nEthics & Compliance Section:\\n{ethics_section}\\n\\nRate 1–5 with 2–3 sentences of feedback for each:\\n\\n1. **Approvals & Informed Consent**\\n2. **Participant/Subject Welfare Measures**\\n3. **Conflict of Interest & Funding Disclosure**\\n4. **Data Privacy & Security Protections**\\n\\nIdentify any deficiencies and specify actions required for compliance.",
+    "input_arguments": [
+      "ethics_section"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ethics_section": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ethics_section"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "ethics_section": "The study received approval from the Institutional Review Board at XYZ University. Participants provided written informed consent. No conflicts of interest were reported. Data were stored securely with encryption."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "QuestionRephraser",
+    "description": "Generates three distinct paraphrases of a given question while ensuring answer options remain valid and applicable.",
+    "prompt": "You are an expert academic editor. Given the *question* text below, rewrite the question in three different ways that preserve the original meaning and difficulty. \n\n**Important requirements:**\n- **Do not** include any answer options (e.g., choices labeled A), B), C), etc.) in your rephrased questions\n- Ensure that the provided answer options will still be valid and applicable to each rephrased version\n- Maintain the same level of difficulty and specificity as the original question\n- Return *only* a JSON array containing the three re-phrased versions, in the order you create them\n\nQuestion:\n{question}\n\nAnswer Options (if provided):\n{options}",
+    "input_arguments": [
+      "question",
+      "options"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "The original question text to be rephrased"
+        },
+        "options": {
+          "type": "string",
+          "description": "Answer options (e.g., multiple choice options) that should remain valid for the rephrased questions. Leave empty if no options are provided."
+        }
+      },
+      "required": [
+        "question"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "question": "What is the capital of France?",
+        "options": "A) Paris B) London C) Rome D) Berlin"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ProtocolOptimizer",
+    "description": "Reviews an initial protocol and delivers targeted revisions that improve clarity, feasibility, risk-management, and evaluation rigor.",
+    "prompt": "You are a protocol-optimization specialist. Examine the initial protocol below.\\n\\nInitial Protocol:\\n{initial_protocol}\\n\\nFor each criterion, give a 1-to-5 rating followed by 2–3 sentences of feedback that include concrete revision suggestions:\\n\\n1. **Clarity & Completeness**\\n2. **Feasibility & Resource Efficiency**\\n3. **Risk Mitigation & Contingency Plans**\\n4. **Measurement & Evaluation Metrics**\\n\\nFinish with a prioritized action-item checklist that the author can follow to strengthen the protocol.",
+    "input_arguments": [
+      "initial_protocol"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "initial_protocol": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "initial_protocol"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "initial_protocol": "This study aims to test the efficacy of drug X in reducing blood pressure. We will recruit 100 participants, administer varying doses over 8 weeks, and measure systolic and diastolic pressure weekly."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "AdvancedCodeQualityAnalyzer",
+    "description": "Performs deep analysis of code quality including complexity, security, performance, and maintainability metrics with domain-specific expertise",
+    "prompt": "You are an expert code quality analyzer with deep knowledge in software engineering best practices. Analyze the provided source code and return a comprehensive quality assessment.\n\n## CODE TO ANALYZE\nLanguage: {language}\nAnalysis Depth: {analysis_depth}\nDomain Context: {domain_context}\n\nSource Code:\n```{language}\n{source_code}\n```\n\n## ANALYSIS FRAMEWORK\nAssess the code across these dimensions:\n\n### 1. CODE STRUCTURE (25%)\n- Function organization and modularity\n- Separation of concerns\n- Code architecture and design patterns\n- Logical flow and readability\n\n### 2. ERROR HANDLING (20%)\n- Exception handling completeness\n- Input validation robustness\n- Edge case coverage\n- Error message quality\n\n### 3. PERFORMANCE (15%)\n- Algorithm efficiency and complexity\n- Resource usage optimization\n- Scalability considerations\n- Memory management\n\n### 4. SECURITY (15%)\n- Input sanitization\n- Security vulnerability assessment\n- Data handling safety\n- Access control considerations\n\n### 5. MAINTAINABILITY (15%)\n- Code readability and clarity\n- Documentation quality\n- Naming conventions\n- Code reusability\n\n### 6. DOMAIN APPROPRIATENESS (10%)\n- Use of domain-specific algorithms\n- Adherence to field best practices\n- Appropriate library usage\n- Scientific/technical accuracy\n\n## RESPONSE FORMAT\nReturn a JSON object with detailed analysis:\n\n```json\n{\n    \"overall_score\": <0-10>,\n    \"category_scores\": {\n        \"structure\": <0-10>,\n        \"error_handling\": <0-10>,\n        \"performance\": <0-10>,\n        \"security\": <0-10>,\n        \"maintainability\": <0-10>,\n        \"domain_appropriateness\": <0-10>\n    },\n    \"issues\": [\n        {\n            \"category\": \"<category>\",\n            \"severity\": \"low|medium|high|critical\",\n            \"description\": \"<issue description>\",\n            \"line_range\": \"<start-end if applicable>\",\n            \"suggestion\": \"<improvement suggestion>\"\n        }\n    ],\n    \"best_practices\": [\"<list of followed best practices>\"],\n    \"recommendations\": [\n        {\n            \"priority\": \"high|medium|low\",\n            \"action\": \"<specific recommendation>\",\n            \"rationale\": \"<why this improvement is needed>\",\n            \"estimated_impact\": \"<expected improvement>\"\n        }\n    ],\n    \"metrics\": {\n        \"lines_of_code\": <number>,\n        \"cyclomatic_complexity\": \"<estimated>\",\n        \"function_count\": <number>,\n        \"comment_ratio\": \"<percentage>\"\n    }\n}\n```",
+    "input_arguments": [
+      "source_code",
+      "language",
+      "analysis_depth",
+      "domain_context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "source_code": {
+          "type": "string",
+          "description": "The source code to analyze for quality assessment"
+        },
+        "language": {
+          "type": "string",
+          "description": "Programming language (python, javascript, etc.)",
+          "default": "python"
+        },
+        "analysis_depth": {
+          "type": "string",
+          "enum": [
+            "basic",
+            "comprehensive",
+            "security-focused"
+          ],
+          "description": "Level of analysis depth to perform",
+          "default": "comprehensive"
+        },
+        "domain_context": {
+          "type": "string",
+          "description": "Domain context for specialized analysis (e.g., bioinformatics, web development)"
+        }
+      },
+      "required": [
+        "source_code"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "source_code": "def add(a, b):\n    return a + b",
+        "language": "python",
+        "analysis_depth": "comprehensive",
+        "domain_context": "web development"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "DomainExpertValidator",
+    "description": "Provides domain-specific validation and expert recommendations for tools with deep expertise across scientific and technical domains",
+    "prompt": "You are a domain expert with deep knowledge in {domain}. Validate the tool from a domain-specific perspective and provide expert recommendations.\n\n## TOOL TO VALIDATE\nTool Configuration:\n{tool_config}\n\nValidation Aspects: {validation_aspects}\n\nImplementation Code (if available):\n```python\n{implementation_code}\n```\n\n## DOMAIN EXPERTISE VALIDATION FRAMEWORK\n\n### 1. SCIENTIFIC ACCURACY\n- Verify methods and algorithms are scientifically sound\n- Check mathematical/statistical correctness\n- Validate against established standards\n- Assess theoretical foundations\n\n### 2. BEST PRACTICES COMPLIANCE\n- Domain-specific best practices adherence\n- Industry standard compliance\n- Professional guidelines following\n- Ethical considerations\n\n### 3. STANDARDS COMPLIANCE\n- Relevant format standards (e.g., FASTA, JSON, XML)\n- API standards and protocols\n- Data interchange formats\n- Certification requirements\n\n### 4. METHODOLOGY ASSESSMENT\n- Algorithm selection appropriateness\n- Computational approach evaluation\n- Scalability and efficiency\n- Error handling robustness\n\n### 5. SAFETY AND ETHICS\n- Safety considerations and risk assessment\n- Ethical implications\n- Privacy and security concerns\n- Regulatory compliance\n\n### 6. PERFORMANCE EVALUATION\n- Computational efficiency for domain\n- Resource requirements assessment\n- Accuracy and precision expectations\n- Scalability considerations\n\n## DOMAIN-SPECIFIC VALIDATION CRITERIA\n\n### Bioinformatics/Computational Biology\n- Sequence format handling (FASTA, GenBank, etc.)\n- Algorithm complexity for biological data\n- Database integration standards\n- Biological validity of results\n\n### Data Science/Machine Learning\n- Statistical method validity\n- Data preprocessing requirements\n- Model validation approaches\n- Performance metric appropriateness\n\n### Mathematics/Physics\n- Numerical stability and precision\n- Mathematical correctness\n- Physical law compliance\n- Convergence criteria\n\n### Chemistry\n- Molecular representation standards\n- Chemical safety considerations\n- Reaction mechanism validity\n- Thermodynamic consistency\n\n### Web Development\n- Security best practices\n- API design standards\n- Scalability requirements\n- Performance optimization\n\n## RESPONSE FORMAT\nProvide comprehensive domain expert analysis:\n\n```json\n{\n    \"validation_results\": {\n        \"overall_validity\": \"<0-10>\",\n        \"domain_appropriateness\": \"<0-10>\",\n        \"methodology_score\": \"<0-10>\",\n        \"standards_compliance\": \"<0-10>\"\n    },\n    \"expert_analysis\": {\n        \"strengths\": [\"<domain-specific strengths>\"],\n        \"concerns\": [\n            {\n                \"severity\": \"low|medium|high|critical\",\n                \"area\": \"<concern area>\",\n                \"description\": \"<detailed concern>\",\n                \"impact\": \"<potential impact>\",\n                \"recommendation\": \"<how to address>\"\n            }\n        ],\n        \"missing_considerations\": [\"<important missing aspects>\"]\n    },\n    \"domain_recommendations\": [\n        {\n            \"type\": \"algorithm|library|approach|validation|standard\",\n            \"recommendation\": \"<specific recommendation>\",\n            \"rationale\": \"<domain expertise rationale>\",\n            \"priority\": \"high|medium|low\",\n            \"implementation_hint\": \"<how to implement>\"\n        }\n    ],\n    \"compliance_check\": {\n        \"standards_followed\": [\"<relevant standards>\"],\n        \"standards_violations\": [\"<violations found>\"],\n        \"certification_notes\": \"<certification/validation notes>\"\n    }\n}\n```",
+    "input_arguments": [
+      "tool_config",
+      "domain",
+      "validation_aspects",
+      "implementation_code"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_config": {
+          "type": "string",
+          "description": "JSON string of tool configuration to validate"
+        },
+        "domain": {
+          "type": "string",
+          "description": "Domain expertise area for validation",
+          "enum": [
+            "bioinformatics",
+            "computational-biology",
+            "data-science",
+            "machine-learning",
+            "web-development",
+            "mathematics",
+            "chemistry",
+            "physics",
+            "general"
+          ]
+        },
+        "validation_aspects": {
+          "type": "string",
+          "description": "JSON array string of specific aspects to validate",
+          "default": "[\"accuracy\", \"methodology\", \"best-practices\"]"
+        },
+        "implementation_code": {
+          "type": "string",
+          "description": "Implementation code to validate (optional)"
+        }
+      },
+      "required": [
+        "tool_config",
+        "domain"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "tool_config": "{\"type\":\"XMLTool\",\"name\":\"SampleXMLParser\",\"description\":\"Parses XML data\"}",
+        "domain": "data-science",
+        "validation_aspects": "[\"accuracy\",\"methodology\",\"best-practices\"]",
+        "implementation_code": "def validate_tool(config):\n    pass"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "validation_results": {
+          "type": "object",
+          "properties": {
+            "overall_validity": {
+              "type": "string"
+            },
+            "domain_appropriateness": {
+              "type": "string"
+            },
+            "methodology_score": {
+              "type": "string"
+            },
+            "standards_compliance": {
+              "type": "string"
+            }
+          }
+        },
+        "expert_analysis": {
+          "type": "object",
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "concerns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "severity": {
+                    "type": "string"
+                  },
+                  "area": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "impact": {
+                    "type": "string"
+                  },
+                  "recommendation": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "missing_considerations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "domain_recommendations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "recommendation": {
+                "type": "string"
+              },
+              "rationale": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "string"
+              },
+              "implementation_hint": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "compliance_check": {
+          "type": "object",
+          "properties": {
+            "standards_followed": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "standards_violations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "certification_notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ToolQualityEvaluator",
+    "description": "Evaluates the quality of tool configurations and implementations. Provides detailed scoring and feedback for improvement.",
+    "prompt": "You are a senior software architect. Evaluate this tool for quality and completeness:\n\nTool Configuration: {tool_config}\nTest Cases: {test_cases}\nEvaluation Aspects: {evaluation_aspects}\n\nProvide a comprehensive evaluation in this JSON format:\n{\n  \"overall_score\": 8.5,\n  \"scores\": {\n    \"functionality\": 9.0,\n    \"usability\": 8.0,\n    \"completeness\": 8.5,\n    \"best_practices\": 8.0\n  },\n  \"feedback\": {\n    \"strengths\": [\"Clear parameter definitions\", \"Good error handling\"],\n    \"weaknesses\": [\"Missing input validation\", \"Limited test coverage\"],\n    \"suggestions\": [\"Add parameter validation\", \"Include more edge case tests\"]\n  },\n  \"quality_rating\": \"Excellent|Good|Fair|Poor\"\n}\n\nEvaluate based on:\n1. Parameter design quality\n2. Implementation robustness\n3. Error handling completeness\n4. Documentation clarity\n5. Test coverage adequacy\n6. Code quality and best practices\n7. Usability and user experience\n\nProvide specific, actionable feedback.",
+    "input_arguments": [
+      "tool_config",
+      "test_cases",
+      "evaluation_aspects"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_config": {
+          "type": "string",
+          "description": "JSON string of the tool configuration"
+        },
+        "test_cases": {
+          "type": "string",
+          "description": "JSON string of test cases"
+        },
+        "evaluation_aspects": {
+          "type": "array",
+          "description": "Aspects to evaluate (functionality, usability, completeness, best_practices)"
+        }
+      },
+      "required": [
+        "tool_config",
+        "test_cases",
+        "evaluation_aspects"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "tool_config": "{\"type\":\"ExampleTool\",\"name\":\"SampleTool\",\"description\":\"A sample tool for demonstration.\"}",
+        "test_cases": "[{\"input\":{},\"expected_output\":{}}]",
+        "evaluation_aspects": [
+          "functionality",
+          "usability",
+          "completeness",
+          "best_practices"
+        ]
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "LabelGenerator",
+    "description": "Generates relevant keyword labels for tools based on their name, description, parameters, and category. Creates a comprehensive list of tags for tool discovery and categorization.",
+    "prompt": "You are an expert in tool categorization and keyword generation. Your task is to generate relevant, descriptive labels/keywords for a tool that will help with discovery and organization.\n\n## TOOL INFORMATION\n- **Tool Name**: {tool_name}\n- **Description**: {tool_description}\n- **Parameters**: {tool_parameters}\n- **Category**: {category}\n\n## EXISTING LABELS\n{existing_labels}\n\n## LABEL GENERATION INSTRUCTIONS\nAnalyze the tool information and generate a comprehensive list of relevant labels/keywords that:\n\n1. **Capture Tool Functionality**: What the tool does, its purpose\n2. **Describe Input/Output Types**: Data types, formats, domains\n3. **Indicate Use Cases**: When and where this tool would be useful\n4. **Reference Technical Domains**: Scientific fields, technologies, methodologies\n5. **Include Semantic Variations**: Synonyms, related terms, alternative descriptions\n\n## LABELING GUIDELINES\n- Generate 8-15 relevant labels\n- Use lowercase, hyphenated format (e.g., 'protein-analysis', 'molecular-weight')\n- Reuse existing labels (if provided) when the existing labels are a good fit. It is okay to generate new labels if the existing ones are not suitable, or if there is another label you think is fitting that is not in the existing labels set.\n- Include both specific and general terms\n- Avoid overly generic terms like 'tool', 'utility', 'helper'\n- Include domain-specific terminology when applicable\n- Consider both technical and user-friendly terms\n\n## EXAMPLES\nFor a protein sequence analyzer:\n- Technical: ['protein-analysis', 'sequence-processing', 'bioinformatics', 'amino-acid-composition']\n- Functional: ['molecular-biology', 'protein-characterization', 'structural-analysis']\n- Use-case: ['research-tool', 'computational-biology', 'biochemistry']\n\nReturn a JSON object with the following structure:\n```json\n{\n  \"labels\": [\"keyword1\", \"keyword2\", \"keyword3\", ...],\n  \"rationale\": \"Brief explanation of label selection strategy\"\n}\n```",
+    "input_arguments": [
+      "tool_name",
+      "tool_description",
+      "tool_parameters",
+      "category",
+      "existing_labels"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_name": {
+          "type": "string",
+          "description": "The name of the tool"
+        },
+        "tool_description": {
+          "type": "string",
+          "description": "Detailed description of what the tool does"
+        },
+        "tool_parameters": {
+          "type": "string",
+          "description": "JSON string describing the tool's input parameters and their types"
+        },
+        "category": {
+          "type": "string",
+          "description": "The general category or domain the tool belongs to"
+        },
+        "existing_labels": {
+          "type": "string",
+          "description": "JSON array string of existing labels to consider reusing (optional)"
+        }
+      },
+      "required": [
+        "tool_name",
+        "tool_description",
+        "tool_parameters",
+        "category"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "tool_name": "MoleculeAnalyzer",
+        "tool_description": "Analyzes molecular structures for bioinformatics research",
+        "tool_parameters": "{\"molecule_sequence\": \"string\", \"analysis_type\": \"string\"}",
+        "category": "bioinformatics"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "call_agentic_human",
+    "description": "Produces a concise, practical answer that emulates how a well-informed human would respond to the question.",
+    "prompt": "You are not an AI. You are a knowledgeable human expert speaking naturally. Read the user's question carefully and respond as a thoughtful person would, giving a clear, direct, and context-aware answer. Do not mention AI, ChatGPT, or models. If the question involves uncertainty or opinion, share a reasoned perspective in a human tone.\n\nQuestion: {question}\n\nAnswer:",
+    "input_arguments": [
+      "question"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "The user's question to be answered in a human-like manner."
+        }
+      },
+      "required": [
+        "question"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "question": "What are the benefits of meditation?"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ToolMetadataGenerator",
+    "description": "Generates a JSON structure with the metadata of a tool in ToolUniverse, given the JSON configuration of the tool.",
+    "prompt": "You are an expert in processing ToolUniverse tool configurations. Your task is to extract and generate key metadata from a given tool's JSON configuration and return it as a new, structured JSON object.\n\n**Input Tool Configuration:**\n```json\n{tool_config}\n```\n\n**Tool Type Mappings (for simplifying toolType):**\n```json\n{tool_type_mappings}\n```\n\n**Instructions:**\nFrom the input configuration, generate a new JSON object with the specified structure. All fields enclosed in '<','>' are placeholders for instructions; you should generate a specific value for the tool based on its configuration. Fields not in brackets should use the default values provided.\n\n**Output JSON Structure:**\n```json\n{\n    \"id\": \"<generate a new uuid>\",\n    \"name\": \"<extract from tool_config.name>\",\n    \"description\": \"<extract and tool_config.description and slightly summarize it if it is too long>\",\n    \"detailed_description\": \"<extract from tool_config.description>\",\n    \"toolType\": \"<if tool_config.type or tool_config.name appears in tool_type_mappings dict in one of the lists (among the dict's values), extract the corresponding key and set it as the simplified toolType. otherwise, set toolType to be 'API' (the default)>\",\n    \"tags\": [],\n    \"category\": \"<extract from tool_config.type>\",\n    \"lab\": \"Zitnik Lab\",\n    \"source\": \"<extract the name of the database, package, model, or write 'Agentic'>\",\n    \"version\": \"v1.0.0\",\n    \"reviewed\": true,\n    \"isValidated\": true,\n    \"usageStats\": \"100+ uses\",\n    \"capabilities\": [\n      \"<list capabilities strictly derivable from tool_config>\"\n    ],\n    \"limitations\": [\n      \"None for now\"\n    ],\n    \"parameters\": {<for each parameter key include an object with type and description>},\n    \"inputSchema\": <echo tool_config.parameter exactly>,\n    \"exampleInput\": {},\n    \"apiEndpoints\": [\n      {\n        \"method\": \"MCP\",\n        \"url\": \"https://tooluniversemcpserver.onrender.com/mcp/\"\n      }\n    ]\n}\n```\n\nReturn ONLY the final JSON object with no extra commentary.",
+    "input_arguments": [
+      "tool_config",
+      "tool_type_mappings"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_config": {
+          "type": "string",
+          "description": "JSON string of the tool configuration to extract metadata from"
+        },
+        "tool_type_mappings": {
+          "type": "object",
+          "description": "A mapping from a simplified toolType to a list of tool_config.type that fall under the toolType (e.g., {'Databases': ['XMLTool']})"
+        }
+      },
+      "required": [
+        "tool_config"
+      ]
+    },
+    "configs": {
+      "return_json": true,
+      "return_metadata": false
+    },
+    "test_examples": [
+      {
+        "tool_config": "{ \"type\": \"AgenticTool\", \"name\": \"ExampleTool\", \"description\": \"Example description\" }",
+        "tool_type_mappings": {
+          "Embedding Store": [
+            "EmbeddingDatabase"
+          ],
+          "Database": [
+            "XMLTool",
+            "DatasetTool"
+          ],
+          "Scientific Software Package": [
+            "PackageTool"
+          ],
+          "AI Agent": [
+            "AgenticTool"
+          ],
+          "ML Model": [
+            "ADMETAITool",
+            "AlphaFoldRESTTool",
+            "boltz2_docking",
+            "compute_depmap24q2_gene_correlations",
+            "run_compass_prediction",
+            "run_pinnacle_ppi_retrieval",
+            "run_transcriptformer_embedding_retrieval",
+            "get_abstract_from_patent_app_number",
+            "get_claims_from_patent_app_number",
+            "get_full_text_from_patent_app_number"
+          ],
+          "Human Expert Feedback": [
+            "mcp_auto_loader_human_expert",
+            "consult_human_expert",
+            "get_expert_response",
+            "get_expert_status",
+            "list_pending_expert_requests",
+            "submit_expert_response"
+          ],
+          "MCP": [
+            "MCPAutoLoaderTool"
+          ],
+          "Compositional Tool": [
+            "ComposeTool"
+          ],
+          "Tool Finder Tool": [
+            "ToolFinderEmbedding",
+            "ToolFinderLLM",
+            "ToolFinderKeyword"
+          ],
+          "Special Tool": [
+            "Finish",
+            "CallAgent"
+          ]
+        }
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ToolMetadataStandardizer",
+    "description": "Standardizes and groups semantically equivalent metadata strings (e.g., sources, tags) into canonical forms for consistent downstream usage.",
+    "prompt": "You are an expert in metadata normalization and canonicalization. Given a list of raw metadata strings (sources, tags, categories, etc.), produce a JSON object that maps a SINGLE canonical (standardized) string to the list of ALL raw variants from the input that correspond to that canonical form.\n\nINPUT LIST (raw values):\n{metadata_list}\n\nOPTIONAL LIMIT:\n{limit}\n\nTASK:\nReturn ONLY a JSON object (no markdown, no explanations) of the form:\n{\n  \"canonical_value_1\": [\"variant_a\", \"variant_b\"],\n  \"canonical_value_2\": [\"variant_c\"],\n  ...\n}\n\n**LIMIT CONSTRAINT:**\nIf a `limit` is provided, you MUST group terms more aggressively to ensure the number of canonical keys in the output JSON does not exceed the limit. Every raw string must still be mapped to one of the canonical strings. **However, this aggressive grouping must be balanced. Avoid creating overly broad, uninformative categories (e.g., 'data', 'science', 'metadata'). The canonical labels must still clearly distinguish between different technical capabilities and scientific fields.**\n\n**STANDARDIZATION RULES (apply in order):**\n\n**Part 1: Grammatical & Syntactic Normalization**\n1. Trim whitespace; collapse internal repeated whitespace to a single space.\n2. Case fold (lowercase) for comparison, but canonical output SHOULD use a clean, title or widely-recognized uppercase style for well-known acronyms (retain ALLCAPS for <=5 letter well-known biomedical / data acronyms like NCBI, FDA, NIH, EMA, WHO, API). For general words use lowercase-hyphen style (e.g., \"gene-expression\").\n3. Remove surrounding quotes and trailing punctuation (periods, commas, semicolons).\n4. Replace underscores, spaces, and consecutive separators with a single hyphen (e.g., 'Gene  Expression', 'gene_expression' -> 'gene-expression').\n5. Treat hyphen and space variants as equivalent (protein-analysis == protein analysis).\n6. Singular vs plural: treat plural forms as the same (e.g., \"dataset\" and \"datasets\"). Use singular in canonical unless plural is the widely accepted form (e.g., 'omics').\n7. Common stop punctuation (&, /, :) removed unless they encode a standard acronym combination. For constructs like 'R&D' keep as 'R-and-d'.\n8. Strip leading articles (the, a, an) unless part of proper noun (e.g., 'The Cancer Genome Atlas' -> keep).\n9. Collapse obvious expansions to standard acronyms when unambiguous (\"national center for biotechnology information\" -> NCBI, \"food and drug administration\" -> FDA).\n10. If a term is already a concise, recognized proper noun or database name (e.g., 'DrugBank', 'ChEMBL', 'PubChem'), keep its conventional casing as canonical and group all variants to it.\n\n**Part 2: Semantic & Hierarchical Grouping (MOST IMPORTANT)**\n*After applying grammatical normalization, perform the following semantic groupings to create more general, reusable labels.*\n11. **Generalize Specific Terms:** This is the most critical rule. Collapse specific sub-topics into a broader, more general parent category. The goal is to make labels applicable across multiple tools. For example, group 'bioinformatics-ontology' and 'bioinformatics-library-overview' under the single canonical label 'bioinformatics'. **Crucially, do not over-generalize to the point of losing meaning. A category like 'bioinformatics' is good, but a category like 'science' is too broad and uninformative.**\n12. **Hierarchy Collapse:** If terms represent a clear parent-child relationship (e.g., 'genomics' and 'gene-expression-analysis'), group them under the more general parent term ('genomics').\n13. **Synonym & Function Grouping:** Group clear synonyms or terms describing the same function (e.g., 'visualization', 'plotting', 'charting') under a single canonical term (e.g., 'data-visualization').\n14. **Prioritize Broad Concepts:** When choosing a canonical key for a semantic group, always select the most general and widely understood term. For example, prefer 'protein-analysis' over 'protein-folding-simulation'.\n\n**Part 3: Final Output Formatting**\n15. Always include the original raw variants EXACTLY as they appeared in the input list (before any normalization) inside the variant arrays (deduplicate within each list, preserving original order of first appearance).\n16. The canonical key MUST be a clean, user-presentable string (no surrounding whitespace, no trailing punctuation).\n17. Every input value must appear in exactly one array in the output.\n\n**CANONICAL KEY SELECTION HEURISTICS (when multiple variants map to same group):\n- Prefer the most general, high-level concept (e.g., 'bioinformatics' over 'sequence-alignment').\n- Prefer widely recognized product / database / organization name with correct branding (DrugBank, PubChem, UniProt, Ensembl).\n- Else prefer the shortest unambiguous normalized form.\n- Else use hyphenated lowercase normalized form.\n\nOUTPUT REQUIREMENTS:\n- Pure JSON object.\n- Keys: canonical strings.\n- Values: arrays of raw variants (length >=1).\n- Do NOT return commentary, explanations, or fields other than the mapping.\n\nIf input list is empty, return {}.",
+    "input_arguments": [
+      "metadata_list",
+      "limit"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "metadata_list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of raw metadata strings (e.g., sources, tags) to standardize and group."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "If provided, the maximum number of canonical strings to return. The LLM will group terms more aggressively to meet this limit, ensuring all raw strings are mapped."
+        }
+      },
+      "required": [
+        "metadata_list"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "metadata_list": [
+          "Gene Expression",
+          "gene_expression",
+          "Gene-Expression",
+          "protein analysis",
+          "Protein-Analysis",
+          "NCBI",
+          "national center for biotechnology information"
+        ]
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ToolRelationshipDetector",
+    "description": "Analyzes a primary tool against a list of other tools to identify meaningful, directional data flow compatibilities for scientific workflows. Returns a list of compatible pairs with direction and rationale.",
+    "prompt": "You are an expert in tool composition and scientific workflow design. Your task is to determine the directional data flow compatibility between a primary tool (Tool A) and each tool in a provided list of other tools. Directional compatibility means that the output of one tool can be meaningfully and frequently used as an input to another tool as part of a logical scientific discovery process.\n\n**Your Task:**\n1.  For each tool in the list of 'Other Tools', independently evaluate its pairwise relationship with Tool A.\n2.  Identify only the pairs where the output of one tool is **frequently and logically** used as input to the other and could feasibly be part of a scientific workflow.\n3.  For each such meaningful pair found, determine the data flow direction (`A->B`, `B->A`, or `both`) and provide a 10-15 word rationale for your choice referencing the inputs and outputs of the tools. \n\n**Primary Tool (Tool A):**\n{tool_a}\n\n**List of Other Tools:**\n{other_tools}\n\n**Output Format:**\nReturn ONLY a valid JSON object containing a single key, `relationships`, which holds a list of JSON objects. Each object in the list represents a meaningful relationship. If no meaningful relationships are found, return an empty list.\n\n```json\n{\n  \"relationships\": [\n    {\n      \"tool_b_name\": \"<Name of the tool from the list>\",\n      \"direction\": \"<'A->B'|'B->A'|'both'>\"\n    \"rationale\": \"<10-15 word rationale>\"\n  ]\n}\n```",
+    "input_arguments": [
+      "tool_a",
+      "other_tools"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_a": {
+          "type": "string",
+          "description": "JSON string for the primary tool configuration (Tool A)."
+        },
+        "other_tools": {
+          "type": "string",
+          "description": "JSON string of a list of other tool configurations to compare against Tool A."
+        }
+      },
+      "required": [
+        "tool_a",
+        "other_tools"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "tool_a": "{\"name\": \"SequenceAligner\", \"type\": \"PackageTool\", \"description\": \"Aligns DNA or protein sequences based on optimal scoring.\"}",
+        "other_tools": "[{\"name\": \"PhyloTreeBuilder\", \"type\": \"PackageTool\", \"description\": \"Constructs phylogenetic trees from sequence alignments.\"}, {\"name\": \"StructureVisualizer\", \"type\": \"PackageTool\", \"description\": \"Visualizes 3D molecular structures from coordinate data.\"}]"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  }
+]

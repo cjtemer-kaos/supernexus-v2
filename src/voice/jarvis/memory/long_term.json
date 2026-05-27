@@ -1,0 +1,27 @@
+{
+  "identity": {},
+  "preferences": {
+    "food": {
+      "value": "pizza",
+      "updated": "2026-05-24"
+    },
+    "color": {
+      "value": "blue",
+      "updated": "2026-05-24"
+    }
+  },
+  "projects": {
+    "nexus_sync": {
+      "value": "Testing JARVIS-NEXUS memory bridge",
+      "updated": "2026-05-24"
+    }
+  },
+  "relationships": {},
+  "wishes": {},
+  "notes": {
+    "test_key": {
+      "value": "JARVIS NEXUS sync test - funcionando OK",
+      "updated": "2026-05-24"
+    }
+  }
+}

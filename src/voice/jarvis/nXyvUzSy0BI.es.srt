@@ -1,0 +1,1260 @@
+1
+00:00:00,120 --> 00:00:04,400
+Como viste en el título del video y en
+
+2
+00:00:02,040 --> 00:00:06,919
+la miniatura, he creado un agente que se
+
+3
+00:00:04,400 --> 00:00:10,400
+puede utilizar sin internet de manera
+
+4
+00:00:06,919 --> 00:00:12,840
+local, gratuito e ilimitado. Tan liviano
+
+5
+00:00:10,400 --> 00:00:14,839
+que lo puedes llevar en una USB o
+
+6
+00:00:12,840 --> 00:00:17,600
+incluso mandarlo por WhatsApp para
+
+7
+00:00:14,839 --> 00:00:20,800
+usarlo en tu PC o laptop con solo dar un
+
+8
+00:00:17,600 --> 00:00:23,279
+clic. Este agente te permitirá utilizar
+
+9
+00:00:20,800 --> 00:00:26,439
+casi cualquier modelo de lenguaje como
+
+10
+00:00:23,279 --> 00:00:30,119
+las diferentes versiones de QN, Gemini,
+
+11
+00:00:26,439 --> 00:00:32,599
+Cloud, Openi, entre otros. Es decir,
+
+12
+00:00:30,119 --> 00:00:35,520
+puedes chatear, generar programas,
+
+13
+00:00:32,599 --> 00:00:37,559
+juegos y documentos de manera local.
+
+14
+00:00:35,520 --> 00:00:40,000
+Solo deberás de seleccionar el modelo
+
+15
+00:00:37,559 --> 00:00:42,160
+que quieres usar. La instalación y
+
+16
+00:00:40,000 --> 00:00:45,039
+descarga del modelo se hace de manera
+
+17
+00:00:42,160 --> 00:00:48,840
+automática. Solo piensa, puedes
+
+18
+00:00:45,039 --> 00:00:51,719
+seleccionar el modelo Qwen 3.5.8B
+
+19
+00:00:48,840 --> 00:00:53,680
+8B que apenas mide 1 GB, que
+
+20
+00:00:51,719 --> 00:00:55,920
+prácticamente lo puedes correr en
+
+21
+00:00:53,680 --> 00:00:58,600
+cualquier computadora, incluso sin
+
+22
+00:00:55,920 --> 00:01:00,760
+tarjeta de video, ya que si prefieres
+
+23
+00:00:58,600 --> 00:01:05,040
+usar todo el poder de los modelos más
+
+24
+00:01:00,760 --> 00:01:08,520
+avanzados como G Mini 3, GLM5, Mini Max
+
+25
+00:01:05,040 --> 00:01:10,240
+M2.5 C o similares, lo puedes hacer, ya
+
+26
+00:01:08,520 --> 00:01:12,759
+que cuenta con la posibilidad de
+
+27
+00:01:10,240 --> 00:01:15,560
+conectarse a la nube sin necesidad de
+
+28
+00:01:12,759 --> 00:01:17,920
+crear tus appiss, ya que usé o llama en
+
+29
+00:01:15,560 --> 00:01:20,280
+segundo plano para hacer este agente,
+
+30
+00:01:17,920 --> 00:01:22,840
+por lo cual usa sus propias appis
+
+31
+00:01:20,280 --> 00:01:25,000
+gratis. Así que si quieres ver cómo
+
+32
+00:01:22,840 --> 00:01:29,135
+funciona y qué puedes hacer con él,
+
+33
+00:01:25,000 --> 00:01:29,135
+quédate porque empezamos. [música]
+
+34
+00:01:30,000 --> 00:01:34,560
+Okay, para no hacer muy largo este
+
+35
+00:01:32,000 --> 00:01:37,079
+video, vamos a ir al grano. Primero te
+
+36
+00:01:34,560 --> 00:01:39,000
+voy a mostrar cómo funciona este agente
+
+37
+00:01:37,079 --> 00:01:41,079
+y después te voy a enseñar cómo
+
+38
+00:01:39,000 --> 00:01:43,040
+instalarlo y cómo puedes usar los
+
+39
+00:01:41,079 --> 00:01:45,840
+diferentes modelos dentro de esta
+
+40
+00:01:43,040 --> 00:01:48,439
+interfaz. Primero que nada, al entrar a
+
+41
+00:01:45,840 --> 00:01:50,840
+la interfaz vemos que del lado izquierdo
+
+42
+00:01:48,439 --> 00:01:52,799
+de estas tres rayas podemos abrir el
+
+43
+00:01:50,840 --> 00:01:55,360
+menú de historial como cualquier otro
+
+44
+00:01:52,799 --> 00:01:58,119
+chat, en donde se va a ir guardando todo
+
+45
+00:01:55,360 --> 00:01:59,880
+lo que hagamos. Podemos regresar a ellos
+
+46
+00:01:58,119 --> 00:02:01,920
+en cualquier momento, al igual que
+
+47
+00:01:59,880 --> 00:02:04,920
+eliminarlos con el botón del bote de
+
+48
+00:02:01,920 --> 00:02:04,920
+basura.
+
+49
+00:02:05,280 --> 00:02:09,479
+En la parte de abajo del lado izquierdo
+
+50
+00:02:07,560 --> 00:02:12,000
+tenemos un cuadro de texto, como en
+
+51
+00:02:09,479 --> 00:02:13,760
+cualquier chat. También tenemos un botón
+
+52
+00:02:12,000 --> 00:02:16,400
+para poder adjuntar imágenes o
+
+53
+00:02:13,760 --> 00:02:18,959
+documentos. Y del lado derecho tenemos
+
+54
+00:02:16,400 --> 00:02:21,080
+el sandbox, que es en donde se mostrará
+
+55
+00:02:18,959 --> 00:02:23,599
+una previsualización de lo que estamos
+
+56
+00:02:21,080 --> 00:02:25,800
+haciendo. En la parte de arriba tenemos
+
+57
+00:02:23,599 --> 00:02:27,840
+un menú desplegable con los modelos que
+
+58
+00:02:25,800 --> 00:02:30,519
+ya tenemos instalados o que ya
+
+59
+00:02:27,840 --> 00:02:32,840
+conectamos por medio de la nube. También
+
+60
+00:02:30,519 --> 00:02:34,879
+el botón de buscar modelos, instalar
+
+61
+00:02:32,840 --> 00:02:37,319
+modelos, que más adelante te explico
+
+62
+00:02:34,879 --> 00:02:39,200
+cómo funcionan. También está un botón
+
+63
+00:02:37,319 --> 00:02:41,599
+para descargar el código de nuestro
+
+64
+00:02:39,200 --> 00:02:44,040
+proyecto y el botón para abrir en una
+
+65
+00:02:41,599 --> 00:02:46,480
+ventana nueva nuestro proyecto, ya que
+
+66
+00:02:44,040 --> 00:02:50,040
+este agente está enfocado principalmente
+
+67
+00:02:46,480 --> 00:02:51,959
+en crear proyectos HTML, los cuales se
+
+68
+00:02:50,040 --> 00:02:54,599
+van a descargar como una página de
+
+69
+00:02:51,959 --> 00:02:57,360
+internet. Te voy a mostrar rápidamente
+
+70
+00:02:54,599 --> 00:03:00,000
+cómo funciona. Primero que nada, vamos a
+
+71
+00:02:57,360 --> 00:03:03,080
+pedir algo sencillo. Usaremos el modelo
+
+72
+00:03:00,000 --> 00:03:05,560
+de QN 3.508B,
+
+73
+00:03:03,080 --> 00:03:08,319
+que es un modelo que solamente necesita
+
+74
+00:03:05,560 --> 00:03:10,599
+4 GB de RAM sin necesidad usar una
+
+75
+00:03:08,319 --> 00:03:12,640
+tarjeta gráfica, lo cual nos permite
+
+76
+00:03:10,599 --> 00:03:15,519
+usarlo en prácticamente cualquier
+
+77
+00:03:12,640 --> 00:03:17,920
+computadora con solo que prenda. Y este
+
+78
+00:03:15,519 --> 00:03:19,879
+modelo al ser local, no necesitamos
+
+79
+00:03:17,920 --> 00:03:22,560
+estar conectados a internet para que
+
+80
+00:03:19,879 --> 00:03:26,879
+funcione. Para probarlo, vamos a pedirle
+
+81
+00:03:22,560 --> 00:03:26,879
+que haga una página de internet.
+
+82
+00:03:26,959 --> 00:03:31,280
+Una vez que terminamos de escribir el
+
+83
+00:03:28,840 --> 00:03:33,400
+prompt, le damos en enviar o puedes
+
+84
+00:03:31,280 --> 00:03:35,959
+presionar enter para que se ejecute lo
+
+85
+00:03:33,400 --> 00:03:38,159
+que le hemos pedido. Depende del modelo
+
+86
+00:03:35,959 --> 00:03:40,439
+que estás utilizando, será la rapidez
+
+87
+00:03:38,159 --> 00:03:42,519
+con la que obtengamos nuestra respuesta,
+
+88
+00:03:40,439 --> 00:03:44,519
+al igual que las capacidades de cada
+
+89
+00:03:42,519 --> 00:03:46,439
+modelo para la complejidad de lo que
+
+90
+00:03:44,519 --> 00:03:48,319
+puede realizar.
+
+91
+00:03:46,439 --> 00:03:50,400
+Si por alguna razón ves que no se
+
+92
+00:03:48,319 --> 00:03:52,840
+ejecuta la preview del proyecto en el
+
+93
+00:03:50,400 --> 00:03:56,079
+sandbox, pídele que te lo haga, como en
+
+94
+00:03:52,840 --> 00:03:56,079
+este caso.
+
+95
+00:03:56,840 --> 00:04:01,200
+Muy bien, aquí ya tenemos nuestra página
+
+96
+00:03:59,360 --> 00:04:02,920
+terminada.
+
+97
+00:04:01,200 --> 00:04:05,200
+Vemos que aquí están todas las
+
+98
+00:04:02,920 --> 00:04:07,680
+secciones. La verdad, para ser un modelo
+
+99
+00:04:05,200 --> 00:04:09,280
+que apenas pesa 1 gig hizo muy buen
+
+100
+00:04:07,680 --> 00:04:11,319
+trabajo.
+
+101
+00:04:09,280 --> 00:04:13,400
+Si queremos ver la página completa, le
+
+102
+00:04:11,319 --> 00:04:15,680
+damos al botón de abrir en una nueva
+
+103
+00:04:13,400 --> 00:04:18,440
+pestaña, lo cual ya nos muestra una
+
+104
+00:04:15,680 --> 00:04:20,639
+versión completa de esta página.
+
+105
+00:04:18,440 --> 00:04:24,479
+Si estamos conformes con el resultado,
+
+106
+00:04:20,639 --> 00:04:26,520
+podemos descargar el proyecto.
+
+107
+00:04:24,479 --> 00:04:28,479
+Como ves, aquí tenemos la página que
+
+108
+00:04:26,520 --> 00:04:31,000
+podemos subir sin ningún problema a
+
+109
+00:04:28,479 --> 00:04:33,160
+nuestro servidor.
+
+110
+00:04:31,000 --> 00:04:35,680
+Ahora vamos a hacer una nueva sesión de
+
+111
+00:04:33,160 --> 00:04:39,000
+chat. Esta vez vamos a usar el modelo
+
+112
+00:04:35,680 --> 00:04:40,960
+completo GLM5 desde la nube, ya que mi
+
+113
+00:04:39,000 --> 00:04:43,160
+computadora ni de broma lo podría
+
+114
+00:04:40,960 --> 00:04:45,400
+correr. Como te mencioné hace un
+
+115
+00:04:43,160 --> 00:04:47,880
+momento, más adelante te voy a enseñar
+
+116
+00:04:45,400 --> 00:04:50,720
+cómo puedes instalar cualquier modelo,
+
+117
+00:04:47,880 --> 00:04:52,960
+ya sea en local o desde la nube. Para el
+
+118
+00:04:50,720 --> 00:04:55,520
+próximo proyecto vamos a pedir algo un
+
+119
+00:04:52,960 --> 00:04:58,639
+poco más complejo. Pediremos texto
+
+120
+00:04:55,520 --> 00:05:00,720
+interactivo con el cursor del ratón.
+
+121
+00:04:58,639 --> 00:05:03,199
+Ya que terminamos, damos enter y
+
+122
+00:05:00,720 --> 00:05:05,280
+esperamos un poco. Algo que tengo que
+
+123
+00:05:03,199 --> 00:05:07,479
+aclarar es que dado que esta es la
+
+124
+00:05:05,280 --> 00:05:09,520
+primera versión de este agente, no
+
+125
+00:05:07,479 --> 00:05:11,960
+tenemos acceso para interactuar con
+
+126
+00:05:09,520 --> 00:05:14,080
+internet en el chat, pero como te digo,
+
+127
+00:05:11,960 --> 00:05:16,320
+depende del modelo, tendrá la capacidad
+
+128
+00:05:14,080 --> 00:05:19,000
+de analizar archivos de imagen o de
+
+129
+00:05:16,320 --> 00:05:22,520
+texto, que más adelante te enseñaré cómo
+
+130
+00:05:19,000 --> 00:05:24,639
+funciona eso. Muy bien, aquí ya tenemos
+
+131
+00:05:22,520 --> 00:05:26,960
+nuestro proyecto.
+
+132
+00:05:24,639 --> 00:05:29,080
+Y vemos cuando pasamos el cursor, las
+
+133
+00:05:26,960 --> 00:05:31,280
+partículas se mueven y regresan a su
+
+134
+00:05:29,080 --> 00:05:33,520
+estado original. Así que podemos
+
+135
+00:05:31,280 --> 00:05:36,479
+comprobar que funciona correctamente lo
+
+136
+00:05:33,520 --> 00:05:38,680
+que pedimos.
+
+137
+00:05:36,479 --> 00:05:41,319
+Ahora vamos a hacer otro proyecto más
+
+138
+00:05:38,680 --> 00:05:43,840
+complejo y completo aún. Esta vez vamos
+
+139
+00:05:41,319 --> 00:05:47,080
+a pedir que haga un sistema operativo en
+
+140
+00:05:43,840 --> 00:05:49,560
+HTML y que tenga algunas aplicaciones y
+
+141
+00:05:47,080 --> 00:05:52,160
+juegos preinstalados, ya que este modelo
+
+142
+00:05:49,560 --> 00:05:54,880
+es muy poderoso y estoy seguro que lo va
+
+143
+00:05:52,160 --> 00:05:57,080
+a poder hacer fácilmente.
+
+144
+00:05:54,880 --> 00:05:59,720
+Así que esperamos un poco a que se cree
+
+145
+00:05:57,080 --> 00:06:02,319
+nuestro nuevo proyecto y no te preocupes
+
+146
+00:05:59,720 --> 00:06:04,759
+si solo ves el cuadro de pensando, no se
+
+147
+00:06:02,319 --> 00:06:06,960
+quedó trabado. Solo ten paciencia y en
+
+148
+00:06:04,759 --> 00:06:09,039
+un momento se va a mostrar el resultado
+
+149
+00:06:06,960 --> 00:06:11,759
+de lo que pediste.
+
+150
+00:06:09,039 --> 00:06:14,720
+Okay, ya tenemos el proyecto terminado.
+
+151
+00:06:11,759 --> 00:06:16,960
+Vamos a abrirlo en una página nueva. Y
+
+152
+00:06:14,720 --> 00:06:19,639
+aquí tenemos nuestro sistema operativo
+
+153
+00:06:16,960 --> 00:06:22,639
+falso. Tenemos los diferentes programas
+
+154
+00:06:19,639 --> 00:06:25,479
+preinstalados que le pedimos. Tenemos el
+
+155
+00:06:22,639 --> 00:06:27,759
+bloque de notas. Comprobamos que podemos
+
+156
+00:06:25,479 --> 00:06:31,360
+escribir. También están los botones de
+
+157
+00:06:27,759 --> 00:06:33,199
+guardar, crear uno nuevo o abrir.
+
+158
+00:06:31,360 --> 00:06:36,319
+También tenemos una calculadora
+
+159
+00:06:33,199 --> 00:06:38,960
+totalmente funcional y el juego de la
+
+160
+00:06:36,319 --> 00:06:40,960
+serpiente. Como ves, nuestro proyecto
+
+161
+00:06:38,960 --> 00:06:45,160
+fue hecho tal y como si lo hubiéramos
+
+162
+00:06:40,960 --> 00:06:47,240
+pedido a Gémini o alguna página similar.
+
+163
+00:06:45,160 --> 00:06:49,960
+Ahora vamos a comprobar que funcione la
+
+164
+00:06:47,240 --> 00:06:51,960
+opción de adjuntar imágenes. Para eso,
+
+165
+00:06:49,960 --> 00:06:54,360
+primero que nada, tienes que asegurarte
+
+166
+00:06:51,960 --> 00:06:56,759
+de que el modelo que estás usando sea
+
+167
+00:06:54,360 --> 00:07:00,240
+capaz de analizar imágenes, que en este
+
+168
+00:06:56,759 --> 00:07:02,560
+caso el modelo de QN 3.5 puede hacerlo
+
+169
+00:07:00,240 --> 00:07:05,000
+sin ningún problema. Ahora, desde el
+
+170
+00:07:02,560 --> 00:07:07,120
+motón con el clip vamos a adjuntar una
+
+171
+00:07:05,000 --> 00:07:09,400
+imagen que en este caso usaré una
+
+172
+00:07:07,120 --> 00:07:12,240
+miniatura. Le voy a pedir que me la
+
+173
+00:07:09,400 --> 00:07:14,520
+describa. Damos enter y esperamos un
+
+174
+00:07:12,240 --> 00:07:16,280
+poco. Mientras esperamos, te quiero
+
+175
+00:07:14,520 --> 00:07:18,560
+contar que tengo pensado seguir
+
+176
+00:07:16,280 --> 00:07:20,199
+desarrollando proyectos como este que
+
+177
+00:07:18,560 --> 00:07:22,639
+nos permitan a todos usar las
+
+178
+00:07:20,199 --> 00:07:25,440
+herramientas de IA de una forma más
+
+179
+00:07:22,639 --> 00:07:27,720
+fácil y gratis, por lo cual me he puesto
+
+180
+00:07:25,440 --> 00:07:29,599
+la meta de mejorar la PC para que me
+
+181
+00:07:27,720 --> 00:07:32,319
+permita realizar proyectos más
+
+182
+00:07:29,599 --> 00:07:34,879
+ambiciosos, entrenar modelos y demás
+
+183
+00:07:32,319 --> 00:07:36,879
+cosas que tengo pensadas para futuro.
+
+184
+00:07:34,879 --> 00:07:38,919
+Así que si quieres ayudarme a lograrlo,
+
+185
+00:07:36,879 --> 00:07:41,560
+lo puedes hacer apoyándonos desde el
+
+186
+00:07:38,919 --> 00:07:43,680
+link que dejé en la descripción. Créeme
+
+187
+00:07:41,560 --> 00:07:46,199
+que cualquier aporte que puedas hacer es
+
+188
+00:07:43,680 --> 00:07:48,199
+de gran ayuda. Y si no puedes hacerlo,
+
+189
+00:07:46,199 --> 00:07:50,680
+te aseguro que compartiendo nuestros
+
+190
+00:07:48,199 --> 00:07:53,240
+videos y suscribiéndote al canal también
+
+191
+00:07:50,680 --> 00:07:55,520
+nos ayuda muchísimo y de igual forma te
+
+192
+00:07:53,240 --> 00:07:57,840
+lo agradeceré infinitamente.
+
+193
+00:07:55,520 --> 00:08:00,319
+Muy bien, aquí tenemos el resultado de
+
+194
+00:07:57,840 --> 00:08:02,720
+la descripción que nos dio de la imagen.
+
+195
+00:08:00,319 --> 00:08:04,800
+Como vemos lo hizo correctamente, con lo
+
+196
+00:08:02,720 --> 00:08:07,759
+cual nos aseguramos que la visión de
+
+197
+00:08:04,800 --> 00:08:10,039
+este modelo funciona bien.
+
+198
+00:08:07,759 --> 00:08:12,680
+Ahora sí, te voy a explicar cómo vas a
+
+199
+00:08:10,039 --> 00:08:14,639
+instalar este agente. En la descripción
+
+200
+00:08:12,680 --> 00:08:17,120
+te voy a dejar un link para que puedas
+
+201
+00:08:14,639 --> 00:08:20,360
+descargar esta carpeta comprimida.
+
+202
+00:08:17,120 --> 00:08:22,159
+Simplemente la vas a descomprimir.
+
+203
+00:08:20,360 --> 00:08:24,039
+Una vez que ya tengas la carpeta
+
+204
+00:08:22,159 --> 00:08:26,919
+descomprimida, vas a entrar y
+
+205
+00:08:24,039 --> 00:08:30,280
+encontrarás estos archivos. Lo único que
+
+206
+00:08:26,919 --> 00:08:32,200
+debes hacer es ejecutar este archivo.
+
+207
+00:08:30,280 --> 00:08:35,080
+Una vez que lo ejecutas, te va a abrir
+
+208
+00:08:32,200 --> 00:08:37,080
+el programa.
+
+209
+00:08:35,080 --> 00:08:39,680
+Como te lo mencioné hace rato, este
+
+210
+00:08:37,080 --> 00:08:41,919
+agente funciona por medio de Oyama, que
+
+211
+00:08:39,680 --> 00:08:43,719
+corre en segundo plano, por lo cual si
+
+212
+00:08:41,919 --> 00:08:46,279
+no lo tienes, lo va a instalar
+
+213
+00:08:43,719 --> 00:08:48,240
+automáticamente. Así que ten paciencia
+
+214
+00:08:46,279 --> 00:08:50,399
+porque la primera vez va a tardar en
+
+215
+00:08:48,240 --> 00:08:53,440
+instalarlo, pero ya después se va a
+
+216
+00:08:50,399 --> 00:08:55,519
+abrir sin necesidad de instalar nada. Ya
+
+217
+00:08:53,440 --> 00:08:58,160
+que termina la instalación, te pide que
+
+218
+00:08:55,519 --> 00:09:00,440
+presiones una tecla, lo haces y se va a
+
+219
+00:08:58,160 --> 00:09:02,480
+cerrar la ventana. En caso que por
+
+220
+00:09:00,440 --> 00:09:04,720
+alguna razón el instalador te marca
+
+221
+00:09:02,480 --> 00:09:07,440
+algún error o no funciona bien, en la
+
+222
+00:09:04,720 --> 00:09:09,160
+descripción te dejé el link de Oyama.
+
+223
+00:09:07,440 --> 00:09:11,600
+Una vez que entras en la página,
+
+224
+00:09:09,160 --> 00:09:13,880
+seleccionas tu sistema operativo, que la
+
+225
+00:09:11,600 --> 00:09:16,240
+verdad no lo he intentado usar ni en Mac
+
+226
+00:09:13,880 --> 00:09:18,839
+ni en Linux, pero en teoría debería de
+
+227
+00:09:16,240 --> 00:09:21,200
+funcionar. Entonces, simplemente vas a
+
+228
+00:09:18,839 --> 00:09:23,720
+dar en descargar y ya que se descargue,
+
+229
+00:09:21,200 --> 00:09:25,839
+lo vas a instalar y así ya no deberías
+
+230
+00:09:23,720 --> 00:09:28,720
+de tener ningún problema para abrir el
+
+231
+00:09:25,839 --> 00:09:30,560
+agente. Una vez que ya está funcionando,
+
+232
+00:09:28,720 --> 00:09:33,040
+te va a quedar abierta esta otra
+
+233
+00:09:30,560 --> 00:09:35,640
+ventana, la cual no debes de cerrar para
+
+234
+00:09:33,040 --> 00:09:37,680
+que no deje de funcionar el agente. Y
+
+235
+00:09:35,640 --> 00:09:40,399
+cada vez que quieras abrir el agente,
+
+236
+00:09:37,680 --> 00:09:42,839
+vas a ejecutar este archivo, del cual si
+
+237
+00:09:40,399 --> 00:09:44,959
+quieres puedes hacer un acceso directo y
+
+238
+00:09:42,839 --> 00:09:47,000
+este acceso directo lo puedes poner en
+
+239
+00:09:44,959 --> 00:09:49,240
+el escritorio o donde creas que mejor
+
+240
+00:09:47,000 --> 00:09:51,440
+para ti.
+
+241
+00:09:49,240 --> 00:09:54,279
+Ahora, para instalar los modelos vas a
+
+242
+00:09:51,440 --> 00:09:57,079
+dar clic en donde dice buscar modelos y
+
+243
+00:09:54,279 --> 00:09:59,079
+te abrirá una nueva página. Aquí vas a
+
+244
+00:09:57,079 --> 00:10:02,279
+tener todos los modelos que podemos
+
+245
+00:09:59,079 --> 00:10:04,720
+correr dentro de nuestro agente.
+
+246
+00:10:02,279 --> 00:10:07,279
+Los que dicen vision son los modelos que
+
+247
+00:10:04,720 --> 00:10:09,079
+pueden analizar imágenes. Los que dicen
+
+248
+00:10:07,279 --> 00:10:11,600
+thinking son los modelos más
+
+249
+00:10:09,079 --> 00:10:14,000
+inteligentes. Y los que dicen cloud son
+
+250
+00:10:11,600 --> 00:10:16,160
+los modelos que no necesitas instalar,
+
+251
+00:10:14,000 --> 00:10:18,839
+pero que necesitas tener internet para
+
+252
+00:10:16,160 --> 00:10:21,200
+usarlos. Ahora, en caso de que quieras
+
+253
+00:10:18,839 --> 00:10:23,440
+instalar un modelo, por ejemplo, este,
+
+254
+00:10:21,200 --> 00:10:27,600
+lo único que vas a hacer es dar clic en
+
+255
+00:10:23,440 --> 00:10:29,600
+copiar e irte a la gente.
+
+256
+00:10:27,600 --> 00:10:32,079
+Después, en ese cuadro, vas a pegar el
+
+257
+00:10:29,600 --> 00:10:34,880
+texto que acabas de copiar, le das
+
+258
+00:10:32,079 --> 00:10:37,079
+instalar y esperas. Esto va a tardar
+
+259
+00:10:34,880 --> 00:10:39,360
+dependiendo de tu conexión a internet y
+
+260
+00:10:37,079 --> 00:10:42,639
+del tamaño del archivo, que como ves
+
+261
+00:10:39,360 --> 00:10:45,000
+este pesa 81 GB que ni en sueños puedo
+
+262
+00:10:42,639 --> 00:10:47,839
+correr. Así que voy a actualizar para
+
+263
+00:10:45,000 --> 00:10:50,000
+que se corte el proceso. Ahora, si
+
+264
+00:10:47,839 --> 00:10:52,600
+queremos usar un modelo desde la nube,
+
+265
+00:10:50,000 --> 00:10:54,839
+vamos a dar en la opción de cloud, por
+
+266
+00:10:52,600 --> 00:10:56,920
+ejemplo, vamos a activar el modelo de
+
+267
+00:10:54,839 --> 00:10:59,279
+incógnito, que como ves, en el nombre
+
+268
+00:10:56,920 --> 00:11:02,079
+dice cloud, que indica que está en la
+
+269
+00:10:59,279 --> 00:11:03,920
+nube. Para eso vamos a hacer exactamente
+
+270
+00:11:02,079 --> 00:11:06,040
+lo mismo que con los modelos que se
+
+271
+00:11:03,920 --> 00:11:08,560
+descargan e instalan. Los vamos a
+
+272
+00:11:06,040 --> 00:11:11,800
+copiar, nos vamos a la gente y pegamos
+
+273
+00:11:08,560 --> 00:11:14,000
+el texto que recién acabamos de copiar.
+
+274
+00:11:11,800 --> 00:11:16,040
+Le damos instalar y cuando termine la
+
+275
+00:11:14,000 --> 00:11:17,639
+instalación nos va a aparecer este
+
+276
+00:11:16,040 --> 00:11:19,480
+mensaje.
+
+277
+00:11:17,639 --> 00:11:21,800
+Así de fácil ya le podemos hacer
+
+278
+00:11:19,480 --> 00:11:24,600
+cualquier petición.
+
+279
+00:11:21,800 --> 00:11:26,600
+Como ves, funciona perfectamente. Así
+
+280
+00:11:24,600 --> 00:11:28,959
+puedes ir agregando cada uno de los
+
+281
+00:11:26,600 --> 00:11:31,160
+modelos que quieras.
+
+282
+00:11:28,959 --> 00:11:33,440
+Ahora, si abres esta gente en otra
+
+283
+00:11:31,160 --> 00:11:35,600
+computadora, recuerda que la primera vez
+
+284
+00:11:33,440 --> 00:11:38,200
+que ejecutes este archivo se va a
+
+285
+00:11:35,600 --> 00:11:40,760
+instalar Olama. Y si no quieres instalar
+
+286
+00:11:38,200 --> 00:11:43,040
+más cosas en esa computadora o no tiene
+
+287
+00:11:40,760 --> 00:11:45,720
+buenos requerimientos, puedes utilizar
+
+288
+00:11:43,040 --> 00:11:47,560
+únicamente los modelos que vicen cloud,
+
+289
+00:11:45,720 --> 00:11:49,959
+ya que como ves, no necesitas
+
+290
+00:11:47,560 --> 00:11:52,320
+descargarlos, pero vas a necesitar que
+
+291
+00:11:49,959 --> 00:11:54,440
+esté conectado a internet. Por otro
+
+292
+00:11:52,320 --> 00:11:56,959
+lado, si lo que quieres es trabajar de
+
+293
+00:11:54,440 --> 00:11:59,320
+manera local y privado, puedes descargar
+
+294
+00:11:56,959 --> 00:12:01,880
+los archivos en tu computadora, siempre
+
+295
+00:11:59,320 --> 00:12:03,839
+y cuando los pueda correr. Así que
+
+296
+00:12:01,880 --> 00:12:06,800
+tienes la opción de usar modelos desde
+
+297
+00:12:03,839 --> 00:12:08,560
+la nube o de forma local. Así de
+
+298
+00:12:06,800 --> 00:12:11,560
+sencillo vas a poder utilizar este
+
+299
+00:12:08,560 --> 00:12:13,880
+agente que he hecho para todos ustedes.
+
+300
+00:12:11,560 --> 00:12:15,880
+Cuando actualice el agente e integre más
+
+301
+00:12:13,880 --> 00:12:18,639
+funciones, voy a hacer otro video
+
+302
+00:12:15,880 --> 00:12:20,160
+explicando qué hay de nuevo en él. Así
+
+303
+00:12:18,639 --> 00:12:22,279
+que te agradecería mucho que te
+
+304
+00:12:20,160 --> 00:12:24,160
+suscribas al canal. y que actives la
+
+305
+00:12:22,279 --> 00:12:25,800
+campana para que te enteres de estas
+
+306
+00:12:24,160 --> 00:12:27,399
+actualizaciones.
+
+307
+00:12:25,800 --> 00:12:29,720
+También te recuerdo que si quieres
+
+308
+00:12:27,399 --> 00:12:32,399
+apoyarme lo puedes hacer desde el link
+
+309
+00:12:29,720 --> 00:12:34,839
+que dejé en la descripción. Si te quedó
+
+310
+00:12:32,399 --> 00:12:37,240
+alguna duda o tienes alguna sugerencia,
+
+311
+00:12:34,839 --> 00:12:39,760
+me la dejas en los comentarios. Yo por
+
+312
+00:12:37,240 --> 00:12:41,959
+el momento me despido. Espero que estés
+
+313
+00:12:39,760 --> 00:12:45,758
+muy bien y nos vemos en el próximo
+
+314
+00:12:41,959 --> 00:12:45,758
+video. Hasta pronto. [música]
+
+315
+00:12:51,598 --> 00:12:53,618
+[música]
+

@@ -1,0 +1,79 @@
+[
+  {
+    "type": "OSFPreprintsTool",
+    "name": "OSF_search_preprints",
+    "description": "Search OSF (Open Science Framework) Preprints for research preprints and working papers. OSF Preprints aggregates preprints from multiple providers including OSF, PsyArXiv, and others.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for OSF preprints. Use keywords to search across titles and abstracts."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return. Default is 10, maximum is 100.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "provider": {
+          "type": "string",
+          "description": "Optional preprint provider filter (e.g., 'osf', 'psyarxiv', 'socarxiv'). If not specified, searches all providers."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of OSF preprints matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the preprint"
+          },
+          "date_published": {
+            "type": "string",
+            "description": "Publication date of the preprint"
+          },
+          "published": {
+            "type": "boolean",
+            "description": "Whether the preprint is published"
+          },
+          "doi": {
+            "type": ["string", "null"],
+            "description": "Digital Object Identifier (may be null if not assigned)"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the preprint on OSF"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'OSF Preprints')"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "psychology",
+        "max_results": 2
+      },
+      {
+        "query": "social science",
+        "max_results": 1,
+        "provider": "socarxiv"
+      },
+      {
+        "query": "neuroscience",
+        "max_results": 1,
+        "provider": "psyarxiv"
+      }
+    ]
+  }
+]

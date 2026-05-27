@@ -1,0 +1,67 @@
+{
+  "by_name": {
+    "book-to-skill": "book_to_skill_b55ca2eb",
+    "chrome-browser": "chrome_browser_d32e952f",
+    "web-research-workflow": "web_research_workflow_a5fe1e3a"
+  },
+  "by_category": {
+    "SCHOLAR": [
+      "book_to_skill_b55ca2eb",
+      "chrome_browser_d32e952f",
+      "web_research_workflow_a5fe1e3a"
+    ]
+  },
+  "by_capability": {
+    "document-extraction": [
+      "book_to_skill_b55ca2eb"
+    ],
+    "text-analysis": [
+      "book_to_skill_b55ca2eb"
+    ],
+    "skill-generation": [
+      "book_to_skill_b55ca2eb"
+    ],
+    "research": [
+      "book_to_skill_b55ca2eb"
+    ],
+    "learning": [
+      "book_to_skill_b55ca2eb"
+    ],
+    "browser-automation": [
+      "chrome_browser_d32e952f"
+    ],
+    "web-research": [
+      "chrome_browser_d32e952f",
+      "web_research_workflow_a5fe1e3a"
+    ],
+    "screenshot": [
+      "chrome_browser_d32e952f"
+    ],
+    "accessibility-snapshot": [
+      "chrome_browser_d32e952f"
+    ],
+    "performance-trace": [
+      "chrome_browser_d32e952f"
+    ],
+    "javascript-execution": [
+      "chrome_browser_d32e952f"
+    ],
+    "research-workflow": [
+      "web_research_workflow_a5fe1e3a"
+    ],
+    "content-extraction": [
+      "web_research_workflow_a5fe1e3a"
+    ],
+    "synthesis": [
+      "web_research_workflow_a5fe1e3a"
+    ]
+  },
+  "by_gem": {
+    "scholar": [
+      "book_to_skill_b55ca2eb",
+      "chrome_browser_d32e952f",
+      "web_research_workflow_a5fe1e3a"
+    ]
+  },
+  "search": {}
+}

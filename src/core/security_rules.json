@@ -1,0 +1,129 @@
+{
+  "description": "Security patterns extracted from claude-code security-guidance plugin",
+  "source": "https://github.com/anthropics/claude-code/tree/main/plugins/security-guidance",
+  "version": 1,
+  "patterns": [
+    {
+      "id": "cmd-injection",
+      "name": "Command Injection",
+      "severity": "critical",
+      "patterns": [
+        "subprocess.*shell=True",
+        "os\\.system",
+        "os\\.popen",
+        "`.*\\$",
+        "exec.*bash",
+        "Popen.*shell=True"
+      ],
+      "message": "Potential command injection via shell=True or os.system"
+    },
+    {
+      "id": "xss",
+      "name": "Cross-Site Scripting (XSS)",
+      "severity": "high",
+      "patterns": [
+        "innerHTML\\s*=",
+        "outerHTML\\s*=",
+        "dangerouslySetInnerHTML",
+        "v-html",
+        "document\\.write"
+      ],
+      "message": "Potential XSS via raw HTML injection"
+    },
+    {
+      "id": "eval-usage",
+      "name": "Eval/Exec Usage",
+      "severity": "high",
+      "patterns": [
+        "\\beval\\s*\\(",
+        "\\bexec\\s*\\(",
+        "Function\\s*\\(.*\\)",
+        "setTimeout\\s*\\([\"']",
+        "setInterval\\s*\\([\"']"
+      ],
+      "message": "Dynamic code execution detected (eval/exec)"
+    },
+    {
+      "id": "dangerous-html",
+      "name": "Dangerous HTML/XML",
+      "severity": "high",
+      "patterns": [
+        "<script>",
+        "<iframe\\s+src",
+        "<object\\s+data",
+        "<embed\\s+src",
+        "<applet\\s+code"
+      ],
+      "message": "Dangerous HTML tag detected in generated content"
+    },
+    {
+      "id": "pickle-deserialization",
+      "name": "Pickle Deserialization",
+      "severity": "critical",
+      "patterns": [
+        "pickle\\.loads",
+        "pickle\\.load",
+        "cPickle\\.loads",
+        "joblib\\.load",
+        "dill\\.loads"
+      ],
+      "message": "Unsafe deserialization via pickle/cPickle/dill/joblib"
+    },
+    {
+      "id": "sql-injection",
+      "name": "SQL Injection",
+      "severity": "critical",
+      "patterns": [
+        "SELECT.*\\+",
+        "WHERE.*f[\"'].*\\{",
+        "cursor\\.execute\\([\"'].*\\+",
+        "cursor\\.execute\\(f[\"']"
+      ],
+      "message": "Potential SQL injection via string concatenation in query"
+    },
+    {
+      "id": "path-traversal",
+      "name": "Path Traversal",
+      "severity": "high",
+      "patterns": [
+        "\\.\\./",
+        "\\.\\.\\\\",
+        "__dirname\\s*\\+\\s*[\"']/\\.\\.",
+        "process\\.cwd\\(\\)\\s*\\+\\s*[\"']/\\.\\."
+      ],
+      "message": "Path traversal detected (../)"
+    },
+    {
+      "id": "unsafe-exec",
+      "name": "Unsafe exec/run",
+      "severity": "critical",
+      "patterns": [
+        "sudo\\s+",
+        "chmod\\s+\\d{3,4}\\s+/",
+        "rm\\s+-rf\\s+/",
+        "del\\s+/[sfq]",
+        "format\\s+[a-z]:",
+        "shutdown\\s+",
+        "reboot\\s+"
+      ],
+      "message": "Dangerous system command detected"
+    },
+    {
+      "id": "ssrf",
+      "name": "SSRF (Server-Side Request Forgery)",
+      "severity": "high",
+      "patterns": [
+        "169\\.254\\.169\\.254",
+        "metadata\\.google\\.internal",
+        "metadata\\.amazonaws\\.com",
+        "100\\.100\\.100\\.200"
+      ],
+      "message": "Potential SSRF targeting cloud metadata endpoint"
+    }
+  ],
+  "actions": {
+    "critical": "BLOCK",
+    "high": "WARN",
+    "medium": "NOTIFY"
+  }
+}

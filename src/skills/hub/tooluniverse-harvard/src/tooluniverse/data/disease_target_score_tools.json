@@ -1,0 +1,783 @@
+[
+  {
+    "name": "disease_target_score",
+    "description": "Extract disease-target association scores from a specific data source using GraphQL API. This tool retrieves all targets associated with a disease and their scores from a specified datasource (e.g., chembl, eva, cancer_gene_census, etc.).",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "datasourceId": {
+          "type": "string",
+          "description": "The datasource ID to extract scores from. Available options: 'chembl', 'eva', 'eva_somatic', 'cancer_gene_census', 'cancer_biomarkers', 'europepmc', 'expression_atlas', 'genomics_england', 'impc', 'reactome', 'uniprot_literature', 'uniprot_variants'"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "datasourceId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Disease-target association scores with metadata",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "description": "Information about the queried disease",
+          "properties": {
+            "disease_id": {
+              "type": "string",
+              "description": "EFO disease ID (e.g., 'EFO_0000339')"
+            },
+            "disease_name": {
+              "type": "string",
+              "description": "Human-readable disease name (e.g., 'chronic myelogenous leukemia')"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "The data source that was queried (e.g., 'chembl', 'eva')"
+        },
+        "total_targets_with_scores": {
+          "type": "integer",
+          "description": "Total number of targets that have scores from this data source"
+        },
+        "target_scores": {
+          "type": "array",
+          "description": "Array of target-score pairs",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string",
+                "description": "Gene symbol (e.g., 'ABL1', 'BCR')"
+              },
+              "target_id": {
+                "type": "string",
+                "description": "Ensembl gene ID (e.g., 'ENSG00000097007')"
+              },
+              "datasource": {
+                "type": "string",
+                "description": "Data source for this score"
+              },
+              "score": {
+                "type": "number",
+                "description": "Association score between 0 and 1"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "datasourceId": "chembl",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "chembl_disease_target_score",
+    "description": "Extract disease-target association scores specifically from ChEMBL database. ChEMBL provides bioactivity data for drug-target interactions.",
+    "datasource_id": "chembl",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "ChEMBL disease-target association scores with metadata",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "description": "Information about the queried disease",
+          "properties": {
+            "disease_id": {
+              "type": "string",
+              "description": "EFO disease ID"
+            },
+            "disease_name": {
+              "type": "string",
+              "description": "Human-readable disease name"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'chembl' for this tool"
+        },
+        "total_targets_with_scores": {
+          "type": "integer",
+          "description": "Total number of targets with ChEMBL bioactivity scores"
+        },
+        "target_scores": {
+          "type": "array",
+          "description": "Array of target-ChEMBL score pairs",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string",
+                "description": "Gene symbol"
+              },
+              "target_id": {
+                "type": "string",
+                "description": "Ensembl gene ID"
+              },
+              "datasource": {
+                "type": "string",
+                "description": "Always 'chembl'"
+              },
+              "score": {
+                "type": "number",
+                "description": "ChEMBL bioactivity score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "eva_disease_target_score",
+    "description": "Extract disease-target association scores from EVA (European Variation Archive). EVA provides genetic variant data.",
+    "datasource_id": "eva",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "EVA genetic variant disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'eva'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "EVA genetic variant score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "eva_somatic_disease_target_score",
+    "description": "Extract disease-target association scores from EVA somatic mutations. This includes somatic variant data.",
+    "datasource_id": "eva_somatic",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "EVA somatic mutation disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'eva_somatic'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "EVA somatic mutation score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "cancer_gene_census_disease_target_score",
+    "description": "Extract disease-target association scores from Cancer Gene Census. This provides curated cancer gene data.",
+    "datasource_id": "cancer_gene_census",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Cancer Gene Census disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'cancer_gene_census'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Cancer Gene Census score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "cancer_biomarkers_disease_target_score",
+    "description": "Extract disease-target association scores from cancer biomarkers data. This includes known cancer biomarkers.",
+    "datasource_id": "cancer_biomarkers",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Cancer biomarkers disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'cancer_biomarkers'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Cancer biomarkers score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "europepmc_disease_target_score",
+    "description": "Extract disease-target association scores from Europe PMC literature. This includes literature-based evidence.",
+    "datasource_id": "europepmc",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Europe PMC literature disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'europepmc'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Europe PMC literature score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "expression_atlas_disease_target_score",
+    "description": "Extract disease-target association scores from Expression Atlas. This provides gene expression data.",
+    "datasource_id": "expression_atlas",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Expression Atlas gene expression disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'expression_atlas'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Expression Atlas score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "genomics_england_disease_target_score",
+    "description": "Extract disease-target association scores from Genomics England data. This includes clinical genomics evidence.",
+    "datasource_id": "genomics_england",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Genomics England clinical genomics disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'genomics_england'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Genomics England score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  },
+  {
+    "name": "reactome_disease_target_score",
+    "description": "Extract disease-target association scores from Reactome pathway data. This includes pathway-based evidence.",
+    "datasource_id": "reactome",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efoId": {
+          "type": "string",
+          "description": "The EFO (Experimental Factor Ontology) ID of the disease, e.g., 'EFO_0000339' for chronic myelogenous leukemia"
+        },
+        "pageSize": {
+          "type": "integer",
+          "description": "Number of results per page (default: 100, max: 100)",
+          "default": 100
+        }
+      },
+      "required": [
+        "efoId",
+        "pageSize"
+      ]
+    },
+    "query_schema": "query getTargets($efoId: String!, $index: Int!, $size: Int!) { disease(efoId: $efoId) { id name associatedTargets(page: { index: $index, size: $size }) { count rows { target { approvedSymbol id } datasourceScores { id score } } } } }",
+    "return_schema": {
+      "type": "object",
+      "description": "Reactome pathway disease-target association scores",
+      "properties": {
+        "disease_info": {
+          "type": "object",
+          "properties": {
+            "disease_id": {
+              "type": "string"
+            },
+            "disease_name": {
+              "type": "string"
+            }
+          }
+        },
+        "datasource": {
+          "type": "string",
+          "description": "Always 'reactome'"
+        },
+        "total_targets_with_scores": {
+          "type": "integer"
+        },
+        "target_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "target_symbol": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "datasource": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number",
+                "description": "Reactome pathway score (0-1)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "DiseaseTargetScoreTool",
+    "test_examples": [
+      {
+        "efoId": "EFO_0000339",
+        "pageSize": 100
+      }
+    ]
+  }
+]
