@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_citation_info_by_pdb_id.rst:2
+#: 702499049c8f4abfa296c04494a570ab
+msgid "tooluniverse.tools.get\\_citation\\_info\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get_citation_info_by_pdb_id 模块"
+
+#: ce08ad3f56a646b0bc5a3a219bc20850 of
+#: tooluniverse.tools.get_citation_info_by_pdb_id:1
+msgid "get_citation_info_by_pdb_id"
+msgstr "get_citation_info_by_pdb_id 获取PDB ID对应的引用信息"
+
+#: f95a14bab9c245eb9bc44ae16b443599 fe4105d6ac2e448ea2d345cc86e6e76a of
+#: tooluniverse.tools.get_citation_info_by_pdb_id:3
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:1
+msgid ""
+"Retrieve citation information (authors, journal, year) for a given PDB "
+"structure."
+msgstr "检索指定PDB结构的引用信息（作者、期刊、年份）。"
+
+#: ../../api/tooluniverse.tools.get_citation_info_by_pdb_id.rst
+#: 0037e67b0b904f00ae74e561d6bbc539
+msgid "Parameters"
+msgstr "参数"
+
+#: 0ec7777b952e472b90893c67e0b8b5bf of
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:3
+msgid "4-character RCSB PDB ID"
+msgstr "4字符RCSB PDB ID"
+
+#: 5343878965b54587a45380ddfd7c5b9c of
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 14fd46b76e504909a7433294ef8c0b5a of
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7571c88c6c28418d9efa11f56a29525e of
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_citation_info_by_pdb_id.rst
+#: c311e98934c9441aa5d35689098d2936
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3e46ec0a7383433f913bf84f9fb24831 of
+#: tooluniverse.tools.get_citation_info_by_pdb_id.get_citation_info_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

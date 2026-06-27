@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_core_refinement_statistics.rst:2
+#: eb8bf28d1dce4455a070105545b35a63
+msgid "tooluniverse.tools.get\\_core\\_refinement\\_statistics module"
+msgstr "tooluniverse.tools.get\\_core\\_refinement\\_statistics 模块"
+
+#: da0e392146464aac89d5447f9eade2fc of
+#: tooluniverse.tools.get_core_refinement_statistics:1
+msgid "get_core_refinement_statistics"
+msgstr "get_core_refinement_statistics 获取核心优化统计数据"
+
+#: b5f99df727c6460e86000d9e8e705338 b7506cc2fd524993bd3e343642d1df3c of
+#: tooluniverse.tools.get_core_refinement_statistics:3
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:1
+msgid ""
+"Retrieve essential refinement statistics for a given PDB structure including"
+" R-factors, occupancy..."
+msgstr "检索给定PDB结构的关键精炼统计数据，包括R因子、占有率..."
+
+#: ../../api/tooluniverse.tools.get_core_refinement_statistics.rst
+#: 346d66e0047043fc828b97fbc2f96100
+msgid "Parameters"
+msgstr "参数"
+
+#: c731827071504ece9b63975d5f122d43 of
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:3
+msgid "PDB entry ID (e.g., '1ABC')"
+msgstr "PDB条目ID（例如：'1ABC'）"
+
+#: a65a1ea7ba0d48179017757a085bcdb3 of
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bdf3f006caec4ae1ac4956913e005886 of
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7109dd2516c14931af5e13879c36741d of
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_core_refinement_statistics.rst
+#: 6ccf1ecaf01347078abd53035a62d883
+msgid "Return type"
+msgstr "返回类型"
+
+#: a5198cc741284d5da8bb58545d3d9489 of
+#: tooluniverse.tools.get_core_refinement_statistics.get_core_refinement_statistics:12
+msgid ":py:class:`Any`"
+msgstr ""

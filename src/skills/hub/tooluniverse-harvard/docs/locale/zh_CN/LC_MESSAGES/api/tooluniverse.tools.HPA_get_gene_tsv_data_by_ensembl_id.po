@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.rst:2
+#: f5484d3c4f8046948e8826e5c2352a7e
+msgid "tooluniverse.tools.HPA\\_get\\_gene\\_tsv\\_data\\_by\\_ensembl\\_id module"
+msgstr "tooluniverse.tools.HPA\\_get\\_gene\\_tsv\\_data\\_by\\_ensembl\\_id 模块"
+
+#: 2c811880f0bb40378bd7aa787bc28fc7 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id:1
+msgid "HPA_get_gene_tsv_data_by_ensembl_id"
+msgstr ""
+
+#: 46a4928a3dac4832889255dbc69d663e cca907896f944e2aaeaeb0989f545a10 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id:3
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:1
+msgid ""
+"Get detailed gene data in TSV format from Human Protein Atlas using Ensembl "
+"Gene ID (backward com..."
+msgstr "使用Ensembl基因ID从Human Protein Atlas获取详细的基因数据，格式为TSV。"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.rst
+#: 882062b3437e40c5993f18270d7bba9d
+msgid "Parameters"
+msgstr "参数"
+
+#: cdae2f3c0d594daeade7f6eb9f55c5a3 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:3
+msgid "Ensembl Gene ID, e.g., 'ENSG00000134057', 'ENSG00000141510', etc."
+msgstr "Ensembl基因ID，例如“ENSG00000134057”、“ENSG00000141510”等。"
+
+#: 09ba776e74b84cdeba27747c9a188037 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1e58361ffe59450a882303fa9dc33ea0 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f399cd68579d418c96b206b261924ddf of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.rst
+#: d3ca36f1a0974f34ab56064a70258442
+msgid "Return type"
+msgstr "返回类型"
+
+#: d8957c1c419444ec8ef1a7cfa00ab6a2 of
+#: tooluniverse.tools.HPA_get_gene_tsv_data_by_ensembl_id.HPA_get_gene_tsv_data_by_ensembl_id:12
+msgid ":py:class:`Any`"
+msgstr ""

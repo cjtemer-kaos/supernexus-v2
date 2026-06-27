@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/geo_tools.rst:2 704b0a0f7d8d4782afe9ba2c23b87360
+msgid "Geo Tools"
+msgstr "地理工具"
+
+#: ../../tools/geo_tools.rst:4 695f151742da427c89b5bed5543ea55b
+msgid ""
+"**Configuration File**: ``geo_tools.json`` **Tool Type**: Local **Tools "
+"Count**: 1"
+msgstr "**配置文件**: ``geo_tools.json`` **工具类型**: 本地 **工具数量**: 1"
+
+#: ../../tools/geo_tools.rst:8 6d83c1af95ec46e39f73b5e80e032ce4
+msgid ""
+"This page contains all tools defined in the ``geo_tools.json`` configuration"
+" file."
+msgstr "此页面包含在 ``geo_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/geo_tools.rst:11 17da41bf33dd4a8f85e0300cffab86bc
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/geo_tools.rst:14 cc24ecdd9f96402e84ae5bad8339c701
+msgid "**GEO_search_expression_data** (Type: GEORESTTool)"
+msgstr "**GEO_search_expression_data**（类型：GEORESTTool）"
+
+#: ../../tools/geo_tools.rst:16 82337e2cf7ce4be2b4450941466b8d1a
+msgid ""
+"Search gene expression data from the GEO database. GEO is a public "
+"repository that archives and f..."
+msgstr "从GEO数据库中搜索基因表达数据。GEO是一个公共存储库，用于存档和分享基因组学相关数据。"
+
+#: ../../tools/geo_tools.rst 31682e77eacc4188b6b5e82c9c61be75
+msgid "GEO_search_expression_data tool specification"
+msgstr "GEO_search_expression_data 工具规范"
+
+#: ../../tools/geo_tools.rst:20 18169fb1d19d4f47b543cbbc07fa6665
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/geo_tools.rst:22 b872461faed545cea7082090cf10a87e
+msgid "**Name**: ``GEO_search_expression_data``"
+msgstr "**名称**: ``GEO_search_expression_data``"
+
+#: ../../tools/geo_tools.rst:23 0c013dd70165453eb56771b6448aceb1
+msgid "**Type**: ``GEORESTTool``"
+msgstr "**类型**: ``GEORESTTool``"
+
+#: ../../tools/geo_tools.rst:24 7db7971dca1f44c18e827e69eb6f574e
+msgid ""
+"**Description**: Search gene expression data from the GEO database. GEO is a"
+" public repository that archives and freely distributes microarray, next-"
+"generation sequencing, and other forms of high-throughput functional "
+"genomics data."
+msgstr ""
+"**描述**：从GEO数据库中搜索基因表达数据。GEO是一个公共存储库，用于存档并免费分发微阵列、下一代测序以及其他形式的高通量功能基因组数据。"
+
+#: ../../tools/geo_tools.rst:26 7cc94224ee6c4328bf9dba3876d1ac5e
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/geo_tools.rst:28 522dab14d44b49b2881d5b5bd8e27e43
+msgid ""
+"``query`` (string) (required) Search query (e.g., 'cancer', 'diabetes', "
+"'microarray')"
+msgstr "``query``（字符串）（必填）搜索查询（例如：'癌症'、'糖尿病'、'微阵列'）"
+
+#: ../../tools/geo_tools.rst:31 ef8cc98d5fab4661ae53e399f44a9206
+msgid ""
+"``organism`` (string) (optional) Organism name (e.g., 'Homo sapiens', 'Mus "
+"musculus')"
+msgstr "``organism``（字符串）（可选）生物名称（例如：'Homo sapiens'，'Mus musculus'）"
+
+#: ../../tools/geo_tools.rst:34 68087b62a8b4436db3aa4ef1baa4492a
+msgid ""
+"``study_type`` (string) (optional) Type of study (e.g., 'expression', "
+"'methylation', 'genome')"
+msgstr "``study_type``（字符串）（可选）研究类型（例如：'expression'、'methylation'、'genome'）"
+
+#: ../../tools/geo_tools.rst:37 f27b9e4a70734b92957d5f5583ec550e
+msgid ""
+"``platform`` (string) (optional) Platform used (e.g., 'GPL96', 'GPL570')"
+msgstr "``platform``（字符串）（可选）使用的平台（例如：'GPL96'，'GPL570'）"
+
+#: ../../tools/geo_tools.rst:40 7f340cada510440b851302afd43efd53
+msgid ""
+"``date_range`` (string) (optional) Date range in format 'YYYY:YYYY' (e.g., "
+"'2020:2023')"
+msgstr "``date_range``（字符串）（可选）日期范围格式为“YYYY:YYYY”（例如，“2020:2023”）"
+
+#: ../../tools/geo_tools.rst:43 ba27024e55af46a58da7529142b45b1d
+msgid ""
+"``limit`` (integer) (optional) Maximum number of results to return (default:"
+" 50)"
+msgstr "``limit``（整数）（可选）返回结果的最大数量（默认值：50）"
+
+#: ../../tools/geo_tools.rst:46 9c7a600903554acb80204bf8e32fce73
+msgid "``sort`` (string) (optional) Sort order ('relevance', 'date', 'title')"
+msgstr "``sort``（字符串）（可选）排序顺序（“相关性”、“日期”、“标题”）"
+
+#: ../../tools/geo_tools.rst:49 e7d01793d1994328b7112846f996c3b1
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/geo_tools.rst:63 9df4099287fc4e8c92ab10e1111511c9
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/geo_tools.rst:65 feca7c6f04d947109dc109fdf326fd69
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/geo_tools.rst:66 003d479ef1ae44c3ae38b904e1df09e9
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

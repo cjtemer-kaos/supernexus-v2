@@ -1,0 +1,10 @@
+[
+    {
+        "name": "mcp_auto_loader_expert_feedback",
+        "description": "Automatically discover and load expert feedback tools from MCP Server",
+        "type": "MCPAutoLoaderTool",
+        "tool_prefix": "expert_",
+        "server_url": "http://localhost:9876/mcp",
+        "required_api_keys": []
+    }
+]

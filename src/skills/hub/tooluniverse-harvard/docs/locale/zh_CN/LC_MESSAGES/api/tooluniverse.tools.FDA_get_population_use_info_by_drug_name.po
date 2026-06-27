@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_population_use_info_by_drug_name.rst:2
+#: 568709c271394ee1848b648a9b987270
+msgid "tooluniverse.tools.FDA\\_get\\_population\\_use\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_population\\_use\\_info\\_by\\_drug\\_name 模块"
+
+#: 75e0d9418e1241269d533a852beba12b of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name:1
+msgid "FDA_get_population_use_info_by_drug_name"
+msgstr "FDA_按药品名称获取人口使用信息"
+
+#: 58438038aedd4a36a97c150fa5ffdf0f c83a061a1e684ced8bda18f194521278 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:1
+msgid ""
+"Retrieve information about the use of a drug in specific populations based "
+"on the drug name."
+msgstr "根据药物名称检索特定人群中药物使用的信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_population_use_info_by_drug_name.rst
+#: 65ac232a5ea74b5ebebe60b0e4cad8a0
+msgid "Parameters"
+msgstr "参数"
+
+#: 3e08b569ff6c4372852ac16f5b9554b9 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 324448a9c80f44eb87ec1fee5d850097 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 42dded5c3dd84cef8d79368bed75f4d7 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 11d3a3bb03784db289dc1ecd0f89d4c0 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8bb12f4f223e4ebdbe780b63477157da of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 57f9792c8bb04836b845c00c695dae2e of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_population_use_info_by_drug_name.rst
+#: afdba0bde72f465892ac38f50978bf04
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9d84d0163b31447f9e3a8c7b09d57005 of
+#: tooluniverse.tools.FDA_get_population_use_info_by_drug_name.FDA_get_population_use_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

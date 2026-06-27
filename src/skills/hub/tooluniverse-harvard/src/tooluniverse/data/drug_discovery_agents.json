@@ -1,0 +1,338 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "DiseaseAnalyzerAgent",
+    "description": "AI agent that analyzes disease characteristics and identifies potential therapeutic targets using LLM reasoning",
+    "prompt": "You are a biomedical expert specializing in disease analysis and target identification. Analyze the following disease and provide comprehensive insights:\n\nDisease: {disease_name}\nContext: {context}\n\nPlease provide:\n1. Disease Overview: Key characteristics, pathophysiology, and clinical manifestations\n2. Molecular Mechanisms: Underlying biological processes and pathways\n3. Target Identification: Potential therapeutic targets with rationale\n4. Target Prioritization: Rank targets by druggability and therapeutic potential\n5. Research Gaps: Areas needing further investigation\n\nReturn as structured JSON:\n{\n  \"disease_overview\": {\n    \"characteristics\": \"...\",\n    \"pathophysiology\": \"...\",\n    \"clinical_manifestations\": \"...\"\n  },\n  \"molecular_mechanisms\": [\n    {\n      \"pathway\": \"...\",\n      \"description\": \"...\",\n      \"relevance\": \"...\"\n    }\n  ],\n  \"therapeutic_targets\": [\n    {\n      \"target_name\": \"...\",\n      \"target_type\": \"...\",\n      \"rationale\": \"...\",\n      \"druggability_score\": 1-10,\n      \"therapeutic_potential\": 1-10\n    }\n  ],\n  \"research_gaps\": [\"...\", \"...\"]\n}",
+    "input_arguments": [
+      "disease_name",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_name": {
+          "type": "string",
+          "description": "Name of the disease to analyze"
+        },
+        "context": {
+          "type": "string",
+          "description": "Additional context or specific focus areas",
+          "default": ""
+        }
+      },
+      "required": [
+        "disease_name"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "disease_name": "Diabetes Mellitus",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "CompoundDiscoveryAgent",
+    "description": "AI agent that analyzes potential drug compounds using multiple strategies and LLM reasoning",
+    "prompt": "You are a drug discovery expert. Based on the disease and targets provided, discover potential therapeutic compounds using multiple strategies:\n\nDisease: {disease_name}\nTargets: {targets}\nDiscovery Context: {context}\n\nPlease provide:\n1. Target-Based Discovery: Compounds that interact with specific targets\n2. Mechanism-Based Discovery: Compounds affecting disease mechanisms\n3. Repurposing Candidates: Existing drugs that could be repurposed\n4. Natural Products: Plant-derived or natural compounds\n5. Novel Compounds: Recently discovered or experimental compounds\n6. Discovery Rationale: Why each compound might be effective\n\nReturn as structured JSON:\n{\n  \"target_based_compounds\": [\n    {\n      \"compound_name\": \"...\",\n      \"target\": \"...\",\n      \"mechanism\": \"...\",\n      \"rationale\": \"...\",\n      \"confidence_score\": 1-10\n    }\n  ],\n  \"mechanism_based_compounds\": [\n    {\n      \"compound_name\": \"...\",\n      \"mechanism\": \"...\",\n      \"rationale\": \"...\",\n      \"confidence_score\": 1-10\n    }\n  ],\n  \"repurposing_candidates\": [\n    {\n      \"compound_name\": \"...\",\n      \"current_use\": \"...\",\n      \"repurposing_rationale\": \"...\",\n      \"confidence_score\": 1-10\n    }\n  ],\n  \"natural_products\": [\n    {\n      \"compound_name\": \"...\",\n      \"source\": \"...\",\n      \"mechanism\": \"...\",\n      \"rationale\": \"...\",\n      \"confidence_score\": 1-10\n    }\n  ],\n  \"novel_compounds\": [\n    {\n      \"compound_name\": \"...\",\n      \"discovery_status\": \"...\",\n      \"mechanism\": \"...\",\n      \"rationale\": \"...\",\n      \"confidence_score\": 1-10\n    }\n  ]\n}",
+    "input_arguments": [
+      "disease_name",
+      "targets",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_name": {
+          "type": "string",
+          "description": "Name of the disease"
+        },
+        "targets": {
+          "type": "string",
+          "description": "List of therapeutic targets (comma-separated)"
+        },
+        "context": {
+          "type": "string",
+          "description": "Additional context or specific requirements",
+          "default": ""
+        }
+      },
+      "required": [
+        "disease_name",
+        "targets"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "disease_name": "Diabetes Mellitus",
+        "targets": "EGFR, BRAF, ALK",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ADMETAnalyzerAgent",
+    "description": "AI agent that analyzes ADMET data and provides insights on drug-likeness and safety profiles",
+    "prompt": "You are a pharmaceutical expert specializing in ADMET (Absorption, Distribution, Metabolism, Excretion, Toxicity) analysis. Analyze the following ADMET data and provide insights:\n\nCompounds: {compounds}\nADMET Data: {admet_data}\nDisease Context: {disease_context}\n\nFor each compound, provide:\n1. Data Interpretation: What the ADMET data tells us\n2. Strengths: Positive ADMET characteristics\n3. Concerns: Potential ADMET issues or red flags\n4. Drug-likeness Assessment: Compliance with drug-like properties\n5. Safety Profile Analysis: Overall safety assessment based on data\n6. Comparative Analysis: How compounds compare to each other\n7. Clinical Implications: What this means for clinical development\n8. Optimization Opportunities: Areas for improvement based on data\n\nReturn as structured JSON:\n{\n  \"admet_analysis\": [\n    {\n      \"compound_name\": \"...\",\n      \"data_interpretation\": {\n        \"absorption_insights\": \"...\",\n        \"distribution_insights\": \"...\",\n        \"metabolism_insights\": \"...\",\n        \"excretion_insights\": \"...\",\n        \"toxicity_insights\": \"...\"\n      },\n      \"strengths\": [\"...\", \"...\"],\n      \"concerns\": [\"...\", \"...\"],\n      \"drug_likeness_assessment\": {\n        \"overall_compliance\": \"good/moderate/poor\",\n        \"specific_issues\": [\"...\", \"...\"],\n        \"recommendations\": [\"...\", \"...\"]\n      },\n      \"safety_profile\": {\n        \"overall_assessment\": \"safe/moderate_risk/high_risk\",\n        \"key_concerns\": [\"...\", \"...\"],\n        \"monitoring_needs\": [\"...\", \"...\"]\n      },\n      \"clinical_implications\": [\"...\", \"...\"],\n      \"optimization_opportunities\": [\"...\", \"...\"]\n    }\n  ],\n  \"comparative_analysis\": {\n    \"best_performing\": \"...\",\n    \"ranking_rationale\": \"...\",\n    \"overall_recommendations\": [\"...\", \"...\"]\n  }\n}",
+    "input_arguments": [
+      "compounds",
+      "admet_data",
+      "disease_context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "compounds": {
+          "type": "string",
+          "description": "List of compounds to analyze (comma-separated)"
+        },
+        "admet_data": {
+          "type": "string",
+          "description": "ADMET data from computational tools to analyze"
+        },
+        "disease_context": {
+          "type": "string",
+          "description": "Disease context for ADMET evaluation",
+          "default": ""
+        }
+      },
+      "required": [
+        "compounds",
+        "admet_data"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "compounds": "Aspirin",
+        "admet_data": "{\"compound\": \"aspirin\", \"solubility\": \"high\", \"toxicity\": \"low\"}",
+        "disease_context": "Diabetes Mellitus"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "DrugInteractionAnalyzerAgent",
+    "description": "AI agent that analyzes drug-drug interactions and provides clinical recommendations",
+    "prompt": "You are a clinical pharmacology expert. Analyze potential drug-drug interactions for the following compounds:\n\nCompounds: {compounds}\nPatient Context: {patient_context}\n\nFor each compound pair, provide:\n1. Interaction Type: Pharmacokinetic, pharmacodynamic, or both\n2. Mechanism: How the interaction occurs\n3. Severity: Minor, moderate, major, or contraindicated\n4. Clinical Significance: Impact on patient care\n5. Management Strategy: How to handle the interaction\n6. Monitoring Requirements: What to monitor\n7. Alternative Options: Safer alternatives if needed\n\nReturn as structured JSON:\n{\n  \"interaction_analysis\": [\n    {\n      \"compound_pair\": \"compound1 + compound2\",\n      \"interaction_type\": \"pharmacokinetic/pharmacodynamic/both\",\n      \"mechanism\": \"...\",\n      \"severity\": \"minor/moderate/major/contraindicated\",\n      \"clinical_significance\": \"...\",\n      \"management_strategy\": \"...\",\n      \"monitoring_requirements\": [\"...\", \"...\"],\n      \"alternative_options\": [\"...\", \"...\"]\n    }\n  ],\n  \"overall_risk_assessment\": {\n    \"risk_level\": \"low/medium/high\",\n    \"recommendations\": [\"...\", \"...\"],\n    \"monitoring_plan\": \"...\"\n  }\n}",
+    "input_arguments": [
+      "compounds",
+      "patient_context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "compounds": {
+          "type": "string",
+          "description": "List of compounds to analyze for interactions (comma-separated)"
+        },
+        "patient_context": {
+          "type": "string",
+          "description": "Patient context (age, comorbidities, medications, etc.)",
+          "default": "General adult population"
+        }
+      },
+      "required": [
+        "compounds"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "compounds": "Aspirin",
+        "patient_context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "LiteratureSynthesisAgent",
+    "description": "AI agent that synthesizes literature findings and provides evidence-based insights",
+    "prompt": "You are a biomedical literature expert. Synthesize the following research findings and provide evidence-based insights:\n\nResearch Topic: {topic}\nLiterature Findings: {literature_data}\nFocus Area: {focus_area}\n\nPlease provide:\n1. Key Findings: Most important discoveries\n2. Evidence Quality: Assessment of evidence strength\n3. Consensus: Areas of agreement in the field\n4. Controversies: Areas of disagreement or uncertainty\n5. Gaps: Research gaps and future directions\n6. Clinical Relevance: Translation to clinical practice\n7. Recommendations: Evidence-based recommendations\n\nReturn as structured JSON:\n{\n  \"key_findings\": [\n    {\n      \"finding\": \"...\",\n      \"evidence_strength\": \"strong/moderate/weak\",\n      \"source_count\": number,\n      \"clinical_relevance\": \"high/medium/low\"\n    }\n  ],\n  \"evidence_quality\": {\n    \"overall_strength\": \"strong/moderate/weak\",\n    \"study_types\": [\"...\", \"...\"],\n    \"sample_sizes\": \"...\",\n    \"methodology_quality\": \"...\"\n  },\n  \"consensus_areas\": [\"...\", \"...\"],\n  \"controversies\": [\n    {\n      \"issue\": \"...\",\n      \"perspectives\": [\"...\", \"...\"],\n      \"resolution_status\": \"resolved/unresolved/ongoing\"\n    }\n  ],\n  \"research_gaps\": [\"...\", \"...\"],\n  \"clinical_relevance\": {\n    \"translation_potential\": \"high/medium/low\",\n    \"clinical_implications\": [\"...\", \"...\"],\n    \"implementation_barriers\": [\"...\", \"...\"]\n  },\n  \"recommendations\": [\n    {\n      \"recommendation\": \"...\",\n      \"evidence_level\": \"A/B/C/D\",\n      \"priority\": \"high/medium/low\"\n    }\n  ]\n}",
+    "input_arguments": [
+      "topic",
+      "literature_data",
+      "focus_area"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "Research topic or question"
+        },
+        "literature_data": {
+          "type": "string",
+          "description": "Literature findings or abstracts to synthesize"
+        },
+        "focus_area": {
+          "type": "string",
+          "description": "Specific focus area for synthesis",
+          "default": "General"
+        }
+      },
+      "required": [
+        "topic",
+        "literature_data"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "topic": "BRCA1 mutations and breast cancer treatment",
+        "literature_data": "{\"pmids\": [12345678], \"summary\": \"Review of cancer treatments\"}",
+        "focus_area": "targeted therapy"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "DrugOptimizationAgent",
+    "description": "AI agent that analyzes drug optimization strategies based on ADMET and efficacy data",
+    "prompt": "You are a medicinal chemistry expert. Based on the provided data, analyze optimization strategies for the following compounds:\n\nCompounds: {compounds}\nADMET Data: {admet_data}\nEfficacy Data: {efficacy_data}\nTarget Profile: {target_profile}\n\nFor each compound, provide:\n1. Current Strengths: What works well\n2. Current Weaknesses: What needs improvement\n3. Optimization Strategies: Specific modifications to consider\n4. Synthetic Feasibility: How difficult to implement\n5. Expected Improvements: Potential outcomes based on data\n6. Risk Assessment: Potential risks of modifications\n7. Priority Ranking: Which optimizations to pursue first\n\nReturn as structured JSON:\n{\n  \"optimization_analysis\": [\n    {\n      \"compound_name\": \"...\",\n      \"current_strengths\": [\"...\", \"...\"],\n      \"current_weaknesses\": [\"...\", \"...\"],\n      \"optimization_strategies\": [\n        {\n          \"strategy\": \"...\",\n          \"modification\": \"...\",\n          \"rationale\": \"...\",\n          \"synthetic_feasibility\": \"easy/moderate/difficult\",\n          \"expected_improvement\": \"...\",\n          \"risk_level\": \"low/medium/high\",\n          \"priority\": 1-5\n        }\n      ]\n    }\n  ],\n  \"overall_recommendations\": {\n    \"top_priorities\": [\"...\", \"...\"],\n    \"synthesis_roadmap\": \"...\",\n    \"success_probability\": \"high/medium/low\"\n  }\n}",
+    "input_arguments": [
+      "compounds",
+      "admet_data",
+      "efficacy_data",
+      "target_profile"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "compounds": {
+          "type": "string",
+          "description": "List of compounds to optimize (comma-separated)"
+        },
+        "admet_data": {
+          "type": "string",
+          "description": "ADMET properties and issues",
+          "default": ""
+        },
+        "efficacy_data": {
+          "type": "string",
+          "description": "Efficacy and potency data",
+          "default": ""
+        },
+        "target_profile": {
+          "type": "string",
+          "description": "Target profile and requirements",
+          "default": ""
+        }
+      },
+      "required": [
+        "compounds"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "compounds": "Aspirin",
+        "admet_data": "{\"compound\": \"aspirin\", \"solubility\": \"high\", \"toxicity\": \"low\"}",
+        "efficacy_data": "{\"IC50\": 25, \"selectivity\": 100}",
+        "target_profile": "{\"selectivity\": \"high\", \"potency\": \"nanomolar\"}"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ClinicalTrialDesignAgent",
+    "description": "AI agent that designs clinical trial protocols based on preclinical data and regulatory requirements",
+    "prompt": "You are a clinical trial design expert. Design a clinical trial protocol based on the following information:\n\nDrug: {drug_name}\nIndication: {indication}\nPreclinical Data: {preclinical_data}\nTarget Population: {target_population}\n\nPlease provide:\n1. Study Design: Phase, design type, duration\n2. Primary Endpoints: Main efficacy endpoints\n3. Secondary Endpoints: Additional endpoints\n4. Inclusion/Exclusion Criteria: Patient selection criteria\n5. Dosing Strategy: Dose selection and escalation\n6. Safety Monitoring: Safety endpoints and monitoring plan\n7. Statistical Plan: Sample size, power, analysis plan\n8. Regulatory Considerations: FDA/EMA requirements\n9. Timeline: Study duration and milestones\n10. Risk Mitigation: Strategies to address potential risks\n\nReturn as structured JSON:\n{\n  \"study_design\": {\n    \"phase\": \"I/II/III/IV\",\n    \"design_type\": \"...\",\n    \"duration\": \"...\",\n    \"randomization\": \"...\",\n    \"blinding\": \"...\"\n  },\n  \"endpoints\": {\n    \"primary\": [\n      {\n        \"endpoint\": \"...\",\n        \"measurement\": \"...\",\n        \"timeline\": \"...\"\n      }\n    ],\n    \"secondary\": [\n      {\n        \"endpoint\": \"...\",\n        \"measurement\": \"...\",\n        \"timeline\": \"...\"\n      }\n    ]\n  },\n  \"patient_criteria\": {\n    \"inclusion\": [\"...\", \"...\"],\n    \"exclusion\": [\"...\", \"...\"]\n  },\n  \"dosing_strategy\": {\n    \"starting_dose\": \"...\",\n    \"dose_escalation\": \"...\",\n    \"max_dose\": \"...\",\n    \"administration\": \"...\"\n  },\n  \"safety_monitoring\": {\n    \"safety_endpoints\": [\"...\", \"...\"],\n    \"monitoring_plan\": \"...\",\n    \"stopping_rules\": [\"...\", \"...\"]\n  },\n  \"statistical_plan\": {\n    \"sample_size\": \"...\",\n    \"power_calculation\": \"...\",\n    \"analysis_plan\": \"...\"\n  },\n  \"regulatory_considerations\": [\"...\", \"...\"],\n  \"timeline\": {\n    \"total_duration\": \"...\",\n    \"milestones\": [\"...\", \"...\"]\n  },\n  \"risk_mitigation\": [\"...\", \"...\"]\n}",
+    "input_arguments": [
+      "drug_name",
+      "indication",
+      "preclinical_data",
+      "target_population"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "drug_name": {
+          "type": "string",
+          "description": "Name of the drug candidate"
+        },
+        "indication": {
+          "type": "string",
+          "description": "Disease indication"
+        },
+        "preclinical_data": {
+          "type": "string",
+          "description": "Preclinical efficacy and safety data",
+          "default": ""
+        },
+        "target_population": {
+          "type": "string",
+          "description": "Target patient population",
+          "default": "General adult population"
+        }
+      },
+      "required": [
+        "drug_name",
+        "indication"
+      ]
+    },
+    "configs": {
+      "return_json": true
+    },
+    "test_examples": [
+      {
+        "drug_name": "Aspirin",
+        "indication": "type 2 diabetes",
+        "preclinical_data": "{\"efficacy\": \"positive\", \"safety\": \"acceptable\"}",
+        "target_population": "adults with advanced solid tumors"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  }
+]

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_microbiology.rst:2
+#: 7cd27a4ad762420fba74ea6bbed2c070
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_microbiology module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_microbiology 模块"
+
+#: 925d116052c44170b88e66de25f9d512 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology:1
+msgid "FDA_get_drug_name_by_microbiology"
+msgstr ""
+"FDA_get_drug_name_by_microbiology  \n"
+"获取药物名称_通过微生物学"
+
+#: 3f02c762b2ad4670b142bb8d555200ed 78663d42ddab422eb971474fe5cfdb22 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology:3
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:1
+msgid "Retrieve the drug name based on microbiology field information."
+msgstr "根据微生物学领域信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_microbiology.rst
+#: 59971f2ebe0d4b1e8d2c437f5847c624
+msgid "Parameters"
+msgstr "参数"
+
+#: 8fb94cc4e6ed4a5baa5bdf98d6f32a99 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:3
+msgid "Information related to the microbiology field."
+msgstr "与微生物学领域相关的信息。"
+
+#: 5afdb187d5eb4892965ab8a730daefcc of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 79a69cd3da5c405f9855f05b781f61d1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: 65694c2844584a70b063dd05056a7a62 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a8f6186e021b485da5b863b993c55868 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5fbb979fffb345ed826ba27d4246359b of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_microbiology.rst
+#: 7d99ce78a9ee4d4dabd5d51110ae6d98
+msgid "Return type"
+msgstr "返回类型"
+
+#: 711f56bca6254c478fdedecddc1e48d5 of
+#: tooluniverse.tools.FDA_get_drug_name_by_microbiology.FDA_get_drug_name_by_microbiology:16
+msgid ":py:class:`Any`"
+msgstr ""

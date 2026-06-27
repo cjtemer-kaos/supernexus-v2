@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.humanbase_tool.rst:2
+#: 3da2553f44284a1ba938e773fce2bf08
+msgid "tooluniverse.humanbase\\_tool module"
+msgstr "tooluniverse.humanbase_tool 模块"
+
+#: 0980aa02e71e4c79af1992c48eabac72 of
+#: tooluniverse.humanbase_tool.HumanBaseTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 9371b9ffc4824fdc8fb0340ad02843be of
+#: tooluniverse.humanbase_tool.HumanBaseTool:1
+msgid ""
+"Tool to retrieve protein-protein interactions and biological processes from "
+"HumanBase."
+msgstr "用于从 HumanBase 检索蛋白质-蛋白质相互作用及生物过程的工具。"
+
+#: ef9faf781ade4a369056fc346bd2884c of
+#: tooluniverse.humanbase_tool.HumanBaseTool.run:1
+msgid "Main entry point for the tool."
+msgstr "工具的主要入口点。"
+
+#: 3d7885308718433fabb5507b1adf6800 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_official_gene_name:1
+msgid "Retrieve the official gene symbol (same as EnrichrTool method)"
+msgstr "检索官方基因符号（与 EnrichrTool 方法相同）"
+
+#: ../../api/tooluniverse.humanbase_tool.rst 09db38c5af7a4269b4e8c4d6a6da8bfd
+#: 1640720791364316be679cb2448066bb ca92f4b5f85841aa88f65aea7e42a27b
+#: d831b32c366f4eb2bdff137cc95ec5c3
+msgid "Parameters"
+msgstr "参数"
+
+#: 066466fd2c0245cca346a9d6793893ab of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_official_gene_name:3
+msgid "The gene name or synonym to query."
+msgstr "要查询的基因名称或同义词。"
+
+#: ../../api/tooluniverse.humanbase_tool.rst 19611aaaa2394ad1ad432c342bdd1493
+#: 19c62450b0ba4724abfc1610391e95d6 49ce1b395390410e87ca0371021d02fd
+#: b960682049f24e39b8ef5c59e4082efc
+msgid "Returns"
+msgstr "返回值"
+
+#: 4922376cc14347878cd628ef5d24dd62 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_official_gene_name:6
+msgid "The official gene symbol."
+msgstr "官方基因符号。"
+
+#: ../../api/tooluniverse.humanbase_tool.rst 164c611a666b484ba17779ae56a5f596
+#: 9b5704b696ae486abd4f1ea4349edb10 b0cc1876b11940e2a8ec7fad1f4ded0b
+#: ff1512fe5ae545ac9dae38225eb18ca3
+msgid "Return type"
+msgstr "返回类型"
+
+#: c208379635064fa2b79605190b9a07d1 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_entrez_ids:1
+msgid "Convert gene names to Entrez IDs using NCBI Entrez API."
+msgstr "使用NCBI Entrez API将基因名称转换为Entrez ID。"
+
+#: 1d5634374181434fb870f9fe92517ddc of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_entrez_ids:3
+msgid "List of gene names to convert."
+msgstr "基因名称转换列表。"
+
+#: bd3abf16c2f24f0d9ae8d40f55b47428 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.get_entrez_ids:6
+msgid "List of Entrez IDs corresponding to the gene names."
+msgstr "与基因名称对应的Entrez ID列表。"
+
+#: 4e03ba3a7cdd4ab89a0db108ba3d850b of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:1
+msgid ""
+"Retrieve protein-protein interactions and biological processes from "
+"HumanBase."
+msgstr "从HumanBase中检索蛋白质-蛋白质相互作用和生物过程。"
+
+#: dceada57972b4416b4f5aa4dc1f263ed of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:3
+msgid "List of gene names to analyze."
+msgstr "要分析的基因名称列表。"
+
+#: 963358b7c0714e3d91999068d500a52e of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:5
+msgid "Tissue type for tissue-specific interactions."
+msgstr "用于组织特异性交互的组织类型。"
+
+#: 36f91182f46b4385a3eb2c0c9b688224 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:7
+msgid "Maximum number of nodes to retrieve."
+msgstr "要检索的节点最大数量。"
+
+#: ed80f538ef0240a88d280ac43ad8b8e8 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:9
+msgid "Specific interaction type to filter by."
+msgstr "要筛选的特定交互类型。"
+
+#: 5c95bd3e955d4d598ffb97c2382da511 of
+#: tooluniverse.humanbase_tool.HumanBaseTool.humanbase_ppi_retrieve:12
+msgid "(NetworkX Graph of interactions, list of biological processes)"
+msgstr "（交互的NetworkX图，生物过程列表）"
+
+#: e832771558674a68bac6572305f9ef81 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:1
+msgid ""
+"Convert NetworkX graph and biological processes to string representation."
+msgstr "将 NetworkX 图和生物过程转换为字符串表示形式。"
+
+#: e3803b599d0441b0a32f60368b195164 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:3
+msgid "The network graph."
+msgstr "网络图。"
+
+#: fdd150e5ea7a4167a4eed597513f83f6 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:5
+msgid "List of biological processes."
+msgstr "生物过程列表"
+
+#: 88c023f405be41e4b6e7540eadf16831 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:7
+msgid "Original gene list provided by user."
+msgstr "用户提供的原始基因列表。"
+
+#: 366de4002eda46e8907dc00e741617f0 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:9
+msgid "Tissue type used for analysis."
+msgstr "用于分析的组织类型。"
+
+#: 99b084599d8142da864d6487726a5713 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._convert_to_string:12
+msgid "Comprehensive string representation of the network data."
+msgstr "网络数据的全面字符串表示。"
+
+#: 7239d57994d14e86bdb3077fa4fabbd7 of
+#: tooluniverse.humanbase_tool.HumanBaseTool._get_current_timestamp:1
+msgid "Get current timestamp for the report."
+msgstr "获取报告的当前时间戳。"

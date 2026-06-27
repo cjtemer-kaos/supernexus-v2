@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_nilearn_info.rst:2
+#: f85fe651a3b64c9eb3be4b024e8b004a
+msgid "tooluniverse.tools.get\\_nilearn\\_info module"
+msgstr "tooluniverse.tools.get\\_nilearn\\_info 模块"
+
+#: beff897975ac4aa29bbed0c3210505f4 of tooluniverse.tools.get_nilearn_info:1
+msgid "get_nilearn_info"
+msgstr ""
+
+#: 05b8d05eac0e483ab35c201481663bca e17a64e710524bb1b20e59f0f5fb2170 of
+#: tooluniverse.tools.get_nilearn_info:3
+#: tooluniverse.tools.get_nilearn_info.get_nilearn_info:1
+msgid ""
+"Get information about the nilearn package. Machine learning for neuroimaging"
+msgstr "获取有关 nilearn 软件包的信息。用于神经影像的机器学习"
+
+#: ../../api/tooluniverse.tools.get_nilearn_info.rst
+#: 3c87c87bc2704685826e909c27ad9ab0
+msgid "Parameters"
+msgstr "参数"
+
+#: 07be52c7450141638c1e5216c145826d of
+#: tooluniverse.tools.get_nilearn_info.get_nilearn_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 56f79c51535e4d419778df1340067ba4 of
+#: tooluniverse.tools.get_nilearn_info.get_nilearn_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2774fd4fc1dd4506b34d3ec9ab13eae0 of
+#: tooluniverse.tools.get_nilearn_info.get_nilearn_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_nilearn_info.rst
+#: fe5f29454538403bafa9095325ae7e12
+msgid "Return type"
+msgstr "返回类型"
+
+#: 652a5990109546e58193dc7014a8fec2 of
+#: tooluniverse.tools.get_nilearn_info.get_nilearn_info:11
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_ete3_info.rst:2
+#: a3ca6c032e374e4ca5b19a68fd8d9d5b
+msgid "tooluniverse.tools.get\\_ete3\\_info module"
+msgstr "tooluniverse.tools.get\\_ete3\\_info 模块"
+
+#: 11928df2d3254f628d0b964e2950e304 of tooluniverse.tools.get_ete3_info:1
+msgid "get_ete3_info"
+msgstr "get_ete3_信息"
+
+#: aa7dc6639cf24f1684e9024ca1955c23 d49536bc11a24e3494572312b6e3cd44 of
+#: tooluniverse.tools.get_ete3_info:3
+#: tooluniverse.tools.get_ete3_info.get_ete3_info:1
+msgid "Get information about the ete3 package. Python package: ete3"
+msgstr "获取有关 ete3 软件包的信息。Python 软件包：ete3"
+
+#: ../../api/tooluniverse.tools.get_ete3_info.rst
+#: 174dd84771cb44a0b5f73640360f7e1f
+msgid "Parameters"
+msgstr "参数"
+
+#: bc256cd7634e454b89de05ef3f8abf08 of
+#: tooluniverse.tools.get_ete3_info.get_ete3_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bf92eed03b0e4fb89df2b47eacbee157 of
+#: tooluniverse.tools.get_ete3_info.get_ete3_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3128d390227b4a4a941d3cfa3c03dd34 of
+#: tooluniverse.tools.get_ete3_info.get_ete3_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_ete3_info.rst
+#: 02ba0472ec074b11a4c7ed17741d4790
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4af600ea050c4d90ae1c0d9405d0b4be of
+#: tooluniverse.tools.get_ete3_info.get_ete3_info:11
+msgid ":py:class:`Any`"
+msgstr ""

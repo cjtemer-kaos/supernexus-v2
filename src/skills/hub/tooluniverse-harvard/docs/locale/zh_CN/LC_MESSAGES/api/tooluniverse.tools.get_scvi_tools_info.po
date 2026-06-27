@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_scvi_tools_info.rst:2
+#: 9d992ef244674b2e9a1c38cb798148b9
+msgid "tooluniverse.tools.get\\_scvi\\_tools\\_info module"
+msgstr "tooluniverse.tools.get\\_scvi\\_tools\\_info 模块"
+
+#: c475010ea1c64fddab5cf9fea0a4a914 of
+#: tooluniverse.tools.get_scvi_tools_info:1
+msgid "get_scvi_tools_info"
+msgstr "获取_scvi_tools_信息"
+
+#: 4472967479dd431d93c5c9032ce682a0 b0a906339b2b4249b4c35edf224bdcd0 of
+#: tooluniverse.tools.get_scvi_tools_info:3
+#: tooluniverse.tools.get_scvi_tools_info.get_scvi_tools_info:1
+msgid ""
+"Get information about the scvi-tools package. Deep probabilistic analysis of"
+" single-cell omics data"
+msgstr "获取有关 scvi-tools 软件包的信息。单细胞组学数据的深度概率分析"
+
+#: ../../api/tooluniverse.tools.get_scvi_tools_info.rst
+#: 34f2b5fd5a6c46b2a0f7295d3005e753
+msgid "Parameters"
+msgstr "参数"
+
+#: 41021d9025314f1c96fbd8125b61b24f of
+#: tooluniverse.tools.get_scvi_tools_info.get_scvi_tools_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 61185924dae04a59965e7804305a5b17 of
+#: tooluniverse.tools.get_scvi_tools_info.get_scvi_tools_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ea416daeacb0421198e6e63ee0f5000a of
+#: tooluniverse.tools.get_scvi_tools_info.get_scvi_tools_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_scvi_tools_info.rst
+#: 8202ed0658774eb9bb2711bd1c6cb80b
+msgid "Return type"
+msgstr "返回类型"
+
+#: 534124f49eee4a4d9ff381952f6c7d3b of
+#: tooluniverse.tools.get_scvi_tools_info.get_scvi_tools_info:11
+msgid ":py:class:`Any`"
+msgstr ""

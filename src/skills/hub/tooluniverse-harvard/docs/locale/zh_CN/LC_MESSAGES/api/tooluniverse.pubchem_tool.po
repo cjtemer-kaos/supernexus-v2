@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.pubchem_tool.rst:2 620a92cd20c0498bb4aa51bc61c20dfb
+msgid "tooluniverse.pubchem\\_tool module"
+msgstr "tooluniverse.pubchem_tool 模块"
+
+#: 4b2435a130d348fa951b05f5bc5c7935 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 73951e5f30814405bc8798a6d9f0e191 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool:1
+msgid ""
+"Generic PubChem PUG-REST tool class. Directly concatenates URL from the "
+"fields.endpoint template and sends requests to PubChem PUG-REST."
+msgstr ""
+"通用 PubChem PUG-REST 工具类。直接从 fields.endpoint 模板拼接 URL 并发送请求至 PubChem PUG-"
+"REST。"
+
+#: 2203622408a94c4fa9dfe10aea718372 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool._build_url:1
+#, python-brace-format
+msgid ""
+"Use regex to replace all {placeholder} in endpoint_template to generate "
+"complete URL path. For example "
+"endpoint_template=\"/compound/cid/{cid}/property/{property_list}/JSON\" "
+"arguments={\"cid\":2244}, property_list=[\"MolecularWeight\",\"IUPACName\"] "
+"→ \"/compound/cid/2244/property/MolecularWeight,IUPACName/JSON\" Finally "
+"returns \"https://pubchem.ncbi.nlm.nih.gov/rest/pug\" + concatenated path."
+msgstr ""
+"使用正则表达式替换 endpoint_template 中的所有 {placeholder} 以生成完整的 URL "
+"路径。例如，endpoint_template=\"/compound/cid/{cid}/property/{property_list}/JSON\"，参数"
+" arguments={\"cid\":2244}，property_list=[\"MolecularWeight\",\"IUPACName\"] "
+"→ \"/compound/cid/2244/property/MolecularWeight,IUPACName/JSON\"。最终返回 "
+"\"https://pubchem.ncbi.nlm.nih.gov/rest/pug\" + 拼接后的路径。"
+
+#: 72ab4547fde143c8b08a97890b10b629 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 0ae5f2f161ec4ddca6d2fa17a3c91dee of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.pubchem_tool.rst a1b5c846281d40af8d57f37d8743c9bd
+msgid "Parameters"
+msgstr "参数"
+
+#: 9f4135d8f35444a2a7537e83f6fcac00 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 8ce4531a302342f88db0cac1cb6e52d7 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: dcbf61b236c84e068bcadffb747e0476 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用结果缓存"
+
+#: 276fbd57427b40cd9d4dc95f379fb6a0 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: b31ce16dcc9c4ee78a9018f5e43434b6 of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供执行上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 724bebcd0e3a431890dcb24aa28cef3e of
+#: tooluniverse.pubchem_tool.PubChemRESTTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

@@ -1,0 +1,216 @@
+.sidebar {
+  width: 260px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  background: var(--gradient-nexus);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.status.online .status-dot {
+  background: var(--accent-green);
+  box-shadow: 0 0 8px var(--accent-green);
+}
+
+.sidebar-section {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-section h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.project-select {
+  width: 100%;
+  padding: 8px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.new-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.new-project-form input {
+  padding: 8px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.btn-small {
+  width: 100%;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-small:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.gem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gem-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.gem-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.gem-item.active {
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--accent-purple);
+}
+
+.gem-icon {
+  font-size: 16px;
+}
+
+.gem-name {
+  flex: 1;
+}
+
+.gem-stats {
+  font-size: 10px;
+  color: var(--accent-green);
+  background: rgba(34, 197, 94, 0.1);
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.gem-search {
+  width: 100%;
+  padding: 6px 10px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.gem-search:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+
+.gem-search::placeholder {
+  color: var(--text-secondary);
+}
+
+.model-select {
+  width: 100%;
+  padding: 8px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.model-select:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  border-bottom: none;
+  padding: 16px;
+}
+
+.settings-btn {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.settings-btn:hover {
+  border-color: var(--accent-purple);
+  background: rgba(139, 92, 246, 0.1);
+}

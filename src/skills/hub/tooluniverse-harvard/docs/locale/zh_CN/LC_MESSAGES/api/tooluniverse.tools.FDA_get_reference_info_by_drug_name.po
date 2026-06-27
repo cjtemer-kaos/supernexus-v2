@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_reference_info_by_drug_name.rst:2
+#: a301d48be9d740d1894d62f08d61a4a3
+msgid "tooluniverse.tools.FDA\\_get\\_reference\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_reference\\_info\\_by\\_drug\\_name 模块"
+
+#: 71bebefcbe7a40a399f154decc23247e of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name:1
+msgid "FDA_get_reference_info_by_drug_name"
+msgstr "FDA_按药品名称获取参考信息"
+
+#: 8d5379d2bd4443b8a3b09a63797eb03f 8ff451d03a0b4f3ca9cd8cce101dfd15 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:1
+msgid "Retrieve reference information based on the drug name provided."
+msgstr "根据提供的药物名称检索参考信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_reference_info_by_drug_name.rst
+#: 69144c46bc4f47359f86113e9eb8bb38
+msgid "Parameters"
+msgstr "参数"
+
+#: 5c8ef9df11a741b99efc335319e6612c of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 56c7066b60294c52931c5c67c20dc2ca of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 7d5d41706e534de39336996d6ff22691 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c635e4d55fd348d1929de156a7765383 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 982fcab92b904cadbc3e89d23c72c8f3 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e25ebf4728144ccf83f67f60eefccfd6 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_reference_info_by_drug_name.rst
+#: 4a5519f4542d4256acd28abb17cbb547
+msgid "Return type"
+msgstr "返回类型"
+
+#: af49c14451754066845b29dfcd30faa4 of
+#: tooluniverse.tools.FDA_get_reference_info_by_drug_name.FDA_get_reference_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

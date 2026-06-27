@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/monarch_tools.rst:2 dcbd5ca047f4455297974ff17e45504b
+msgid "Monarch Tools"
+msgstr "Monarch 工具"
+
+#: ../../tools/monarch_tools.rst:4 27bd23460513406f814084b8793a45ab
+msgid ""
+"**Configuration File**: ``monarch_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 3"
+msgstr ""
+"**配置文件**：``monarch_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：3"
+
+#: ../../tools/monarch_tools.rst:8 96e057245bb74ccb93ebc9a31ac69147
+msgid ""
+"This page contains all tools defined in the ``monarch_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``monarch_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/monarch_tools.rst:11 8da709a0663b44a2b698bdbe05b98019
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/monarch_tools.rst:14 495d238d98b741329ee546be2da6e54b
+msgid "**get_HPO_ID_by_phenotype** (Type: Monarch)"
+msgstr "**get_HPO_ID_by_phenotype**（类型：Monarch）"
+
+#: ../../tools/monarch_tools.rst:16 a074ea985a254cf8a68ace03b243a039
+msgid "Retrieve the HPO ID of a phenotype or symptom."
+msgstr "检索表型或症状的HPO ID。"
+
+#: ../../tools/monarch_tools.rst 4cdbd688255349e2bdd8065833af568d
+msgid "get_HPO_ID_by_phenotype tool specification"
+msgstr "get_HPO_ID_by_phenotype 工具规格说明"
+
+#: ../../tools/monarch_tools.rst:20 ../../tools/monarch_tools.rst:57
+#: ../../tools/monarch_tools.rst:94 c621b24c2ffe47f38f0befdd76f6177d
+#: ece858a976fb49228e02dce55e9cdfa1 fe202f612b474ab9a0b3b77c7f68a8f7
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/monarch_tools.rst:22 ef9a8f62c97a4bbcaf2edd1f2c854bfc
+msgid "**Name**: ``get_HPO_ID_by_phenotype``"
+msgstr "**名称**：``get_HPO_ID_by_phenotype``"
+
+#: ../../tools/monarch_tools.rst:23 ../../tools/monarch_tools.rst:97
+#: ab9e96f1e81e4a3ba083ca7e3d3a8fde edc5bac9ebab4a389c462a9426c498ad
+msgid "**Type**: ``Monarch``"
+msgstr "**类型**：``Monarch``"
+
+#: ../../tools/monarch_tools.rst:24 5c66a43f37d149dd97ac69602f42b425
+msgid "**Description**: Retrieve the HPO ID of a phenotype or symptom."
+msgstr "**描述**：检索表型或症状的HPO ID。"
+
+#: ../../tools/monarch_tools.rst:26 ../../tools/monarch_tools.rst:63
+#: ../../tools/monarch_tools.rst:100 44274367d1f042419e75b7aa1939c61f
+#: 4d72f14058cb400ebec30cac07b2ccd0 a40598d4b1424a43a69630b79734a39e
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/monarch_tools.rst:28 1990ebb91a2e49e58c27cdb4f09c1cf1
+#, fuzzy
+msgid "``query`` (string) (required) One query phenotype or symptom."
+msgstr "``query``（字符串）（可选）一个查询表型或症状。"
+
+#: ../../tools/monarch_tools.rst:31 ../../tools/monarch_tools.rst:68
+#: 766534c9479840e899714bffa0002ca3 96bc73d06b7c48b7aa9f819dd31b2039
+msgid "``limit`` (integer) (optional) Number of entries to fetch."
+msgstr "``limit``（整数）（可选）要获取的条目数量。"
+
+#: ../../tools/monarch_tools.rst:34 ../../tools/monarch_tools.rst:71
+#: 0e340062e379486092e9a19c4ef07d19 4812c9ea561d4b229a4c5af82b485be3
+msgid "``offset`` (integer) (optional) Number of initial entries to skip."
+msgstr "``offset``（整数）（可选）要跳过的初始条目数。"
+
+#: ../../tools/monarch_tools.rst:37 ../../tools/monarch_tools.rst:74
+#: ../../tools/monarch_tools.rst:105 156affaca28d42869c12c92e83cddcc6
+#: 258c0732f4ea4f83a5b3f7f9be352b8c 4dde5f11b0d04c82979bf8f29e45423a
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/monarch_tools.rst:51 91be82c2c1014ad8841bf4e0456c1903
+msgid ""
+"**get_joint_associated_diseases_by_HPO_ID_list** (Type: "
+"MonarchDiseasesForMultiplePheno)"
+msgstr "**get_joint_associated_diseases_by_HPO_ID_list**（类型：MonarchDiseasesForMultiplePheno）"
+
+#: ../../tools/monarch_tools.rst:53 81a8ce24277c46fc894977e183837190
+msgid ""
+"Retrieve diseases associated with a list of phenotypes or symptoms by a "
+"list of HPO IDs."
+msgstr "通过一组HPO ID检索与一组表型或症状相关的疾病。"
+
+#: ../../tools/monarch_tools.rst cc7fa1953a6c40748e2765047d2c23ab
+msgid "get_joint_associated_diseases_by_HPO_ID_list tool specification"
+msgstr "get_joint_associated_diseases_by_HPO_ID_list 工具规范"
+
+#: ../../tools/monarch_tools.rst:59 bcb1b84e6f854ae683cfcefb409a968b
+msgid "**Name**: ``get_joint_associated_diseases_by_HPO_ID_list``"
+msgstr "**名称**: ``get_joint_associated_diseases_by_HPO_ID_list``"
+
+#: ../../tools/monarch_tools.rst:60 b36886bf33824173aa554532123dab5b
+msgid "**Type**: ``MonarchDiseasesForMultiplePheno``"
+msgstr "**类型**: ``MonarchDiseasesForMultiplePheno``"
+
+#: ../../tools/monarch_tools.rst:61 821239dd08f54d329c51ef2c4fcea489
+msgid ""
+"**Description**: Retrieve diseases associated with a list of phenotypes "
+"or symptoms by a list of HPO IDs."
+msgstr "**描述**：通过一组HPO ID检索与一组表型或症状相关的疾病。"
+
+#: ../../tools/monarch_tools.rst:65 ced01e3deb3b449e9533ff938d29228f
+#, fuzzy
+msgid "``HPO_ID_list`` (array) (required) List of phenotypes or symptoms"
+msgstr "``HPO_ID_list``（数组）（可选）表型或症状列表"
+
+#: ../../tools/monarch_tools.rst:88 788a2114882746eca1c79619234a8e7f
+msgid "**get_phenotype_by_HPO_ID** (Type: Monarch)"
+msgstr "**get_phenotype_by_HPO_ID**（类型：Monarch）"
+
+#: ../../tools/monarch_tools.rst:90 929639636ef3441792f73a26d6d5c6c4
+msgid "Retrieve a phenotype or symptom by its HPO ID."
+msgstr "通过其HPO ID检索表型或症状。"
+
+#: ../../tools/monarch_tools.rst b324c7dfb14b466ca94a1d3515a50c12
+msgid "get_phenotype_by_HPO_ID tool specification"
+msgstr "get_phenotype_by_HPO_ID 工具规范"
+
+#: ../../tools/monarch_tools.rst:96 257eae6caf6f4553a664ec5b087486c7
+msgid "**Name**: ``get_phenotype_by_HPO_ID``"
+msgstr "**名称**: ``get_phenotype_by_HPO_ID``"
+
+#: ../../tools/monarch_tools.rst:98 d8c5141b215044b09d94933ae34d9f7d
+msgid "**Description**: Retrieve a phenotype or symptom by its HPO ID."
+msgstr "**描述**：通过其 HPO ID 检索表型或症状。"
+
+#: ../../tools/monarch_tools.rst:102 e51de6af2a174cfeac958bb68d836965
+#, fuzzy
+msgid "``id`` (string) (required) The HPO ID of the phenotype or symptom."
+msgstr "``id``（字符串）（可选）表型或症状的 HPO ID。"
+
+#: ../../tools/monarch_tools.rst:119 bc93b861bf184d11911999cff9b4e0d3
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/monarch_tools.rst:121 e1fcca9090ac4c5494b498b544bce2d0
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/monarch_tools.rst:122 cb03ab155010424e885fcd485e57acc7
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_sequence_by_pdb_id.rst:2
+#: 676d7a026b084e70a90a12b03901c753
+msgid "tooluniverse.tools.get\\_sequence\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_sequence\\_by\\_pdb\\_id 模块"
+
+#: a7eeaef04c104fb390f4146cb6139f37 of
+#: tooluniverse.tools.get_sequence_by_pdb_id:1
+msgid "get_sequence_by_pdb_id"
+msgstr "通过PDB ID获取序列"
+
+#: 5dddbd903e8148aab6a369dc1f492256 9ee5a67f698045608c4a58fd3b207487 of
+#: tooluniverse.tools.get_sequence_by_pdb_id:3
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:1
+msgid ""
+"Retrieve amino acid or nucleotide sequence of polymer entities for a given "
+"PDB structure."
+msgstr "检索指定PDB结构中聚合物实体的氨基酸或核苷酸序列。"
+
+#: ../../api/tooluniverse.tools.get_sequence_by_pdb_id.rst
+#: ba5e4798506e4bf2bb613dd28bcf26e7
+msgid "Parameters"
+msgstr "参数"
+
+#: f8dcaa73ce944c02b36728c5a9d19a65 of
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:3
+msgid "4-character RCSB PDB ID"
+msgstr "4字符RCSB PDB ID"
+
+#: d37b1c082a434bf7af9445d69807abb2 of
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 24aad9b991db4c629100b53c32c4d88a of
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 292e85bed0d44a2eaf771a1e800f450c of
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_sequence_by_pdb_id.rst
+#: 479f43ecbca84f92b7bdbc594ee8e2ba
+msgid "Return type"
+msgstr "返回类型"
+
+#: 356d13586b7b49dc895029b17f96ad8a of
+#: tooluniverse.tools.get_sequence_by_pdb_id.get_sequence_by_pdb_id:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

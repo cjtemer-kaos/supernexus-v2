@@ -1,0 +1,735 @@
+/* ToolUniverse Documentation - Enhanced Furo Theme Customization */
+
+/* ============================================================================
+   Enhanced Color Scheme and Branding
+   ============================================================================ */
+
+/* Light mode enhancements */
+[data-theme="light"] {
+    --color-brand-primary: #2980B9;
+    --color-brand-content: #2980B9;
+    --color-accent-primary: #27AE60;
+    --color-accent-secondary: #E74C3C;
+    --color-warning: #F39C12;
+    --color-success: #27AE60;
+    --color-info: #3498DB;
+
+    /* Enhanced backgrounds */
+    --color-background-secondary: #f8f9fa;
+    --color-background-hover: #e9ecef;
+    --color-background-border: #dee2e6;
+
+    /* Improved text colors */
+    --color-foreground-primary: #2c3e50;
+    --color-foreground-secondary: #34495e;
+    --color-foreground-muted: #6c757d;
+
+    /* Enhanced shadows for depth */
+    --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --box-shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --box-shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Dark mode enhancements */
+[data-theme="dark"] {
+    --color-brand-primary: #3498DB;
+    --color-brand-content: #3498DB;
+    --color-accent-primary: #2ECC71;
+    --color-accent-secondary: #E67E22;
+    --color-warning: #F1C40F;
+    --color-success: #2ECC71;
+    --color-info: #5DADE2;
+
+    /* Enhanced dark backgrounds */
+    --color-background-secondary: #1a1a1a;
+    --color-background-hover: #2d2d2d;
+    --color-background-border: #404040;
+
+    /* Dark mode shadows */
+    --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --box-shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --box-shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================================================
+   Enhanced Typography and Readability
+   ============================================================================ */
+
+/* Improved font stack */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+/* Enhanced headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--color-brand-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--color-accent-primary);
+    padding-bottom: 0.3rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-brand-primary);
+}
+
+/* Better code typography */
+code, pre {
+    font-family: "SF Mono", Monaco, Inconsolata, "Roboto Mono", Consolas, "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+/* Inline code styling */
+code {
+    background: var(--color-background-secondary);
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    border: 1px solid var(--color-background-border);
+    font-weight: 500;
+}
+
+/* ============================================================================
+   Enhanced Code Blocks and Syntax Highlighting
+   ============================================================================ */
+
+.highlight {
+    background: var(--color-background-secondary) !important;
+    border: 1px solid var(--color-background-border);
+    border-left: 4px solid var(--color-brand-primary);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-light);
+    margin: 1.5em 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+    box-shadow: var(--box-shadow-medium);
+}
+
+.highlight pre {
+    padding: 1.5rem;
+    margin: 0;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Copy button enhancements */
+.copybtn {
+    background: var(--color-brand-primary) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 0.5rem 0.8rem !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    opacity: 0.8 !important;
+}
+
+.copybtn:hover {
+    opacity: 1 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: var(--box-shadow-light) !important;
+}
+
+/* ============================================================================
+   Enhanced Tables and Data Display
+   ============================================================================ */
+
+table.docutils {
+    border-collapse: collapse;
+    border: 1px solid var(--color-background-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-light);
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+table.docutils th {
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-info));
+    color: white;
+    font-weight: 600;
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border: none;
+    position: relative;
+}
+
+table.docutils td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--color-background-border);
+    transition: background-color 0.3s ease;
+    border-left: none;
+    border-right: none;
+}
+
+table.docutils tbody tr:hover {
+    background-color: var(--color-background-hover);
+}
+
+table.docutils tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive table improvements */
+@media (max-width: 768px) {
+    table.docutils {
+        font-size: 0.85rem;
+    }
+
+    table.docutils th,
+    table.docutils td {
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* ============================================================================
+   Enhanced Admonitions and Callout Boxes
+   ============================================================================ */
+
+.admonition {
+    border-radius: 8px;
+    border-left: 4px solid;
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow-light);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.admonition:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.admonition.note {
+    border-left-color: var(--color-info);
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.05));
+}
+
+.admonition.warning {
+    border-left-color: var(--color-warning);
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.1), rgba(243, 156, 18, 0.05));
+}
+
+.admonition.danger,
+.admonition.error {
+    border-left-color: var(--color-accent-secondary);
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(231, 76, 60, 0.05));
+}
+
+.admonition.tip,
+.admonition.hint {
+    border-left-color: var(--color-success);
+    background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(39, 174, 96, 0.05));
+}
+
+.admonition-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Add icons to admonition titles */
+.admonition.note .admonition-title::before {
+    content: "ℹ️";
+    font-size: 1.2rem;
+}
+
+.admonition.warning .admonition-title::before {
+    content: "⚠️";
+    font-size: 1.2rem;
+}
+
+.admonition.danger .admonition-title::before,
+.admonition.error .admonition-title::before {
+    content: "🚨";
+    font-size: 1.2rem;
+}
+
+.admonition.tip .admonition-title::before,
+.admonition.hint .admonition-title::before {
+    content: "💡";
+    font-size: 1.2rem;
+}
+
+/* ============================================================================
+   Enhanced Navigation and Sidebar
+   ============================================================================ */
+
+/* Sidebar improvements */
+.sidebar-drawer {
+    border-right: 1px solid var(--color-background-border);
+    background: var(--color-sidebar-background);
+}
+
+.sidebar-tree .reference {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: var(--color-foreground-primary) !important;
+}
+
+.sidebar-tree .reference:hover {
+    background: var(--color-background-hover);
+    transform: translateX(4px);
+    color: var(--color-brand-primary) !important;
+}
+
+.sidebar-tree .current > .reference {
+    background: linear-gradient(90deg, var(--color-brand-primary), var(--color-info));
+    color: white !important;
+    font-weight: 600;
+    box-shadow: var(--box-shadow-light);
+}
+
+/* 修复点击后的目录项样式 */
+.sidebar-tree .reference:visited,
+.sidebar-tree .reference:active {
+    color: var(--color-foreground-primary) !important;
+}
+
+.sidebar-tree .current > .reference:visited,
+.sidebar-tree .current > .reference:active {
+    color: white !important;
+}
+
+
+/* Table of contents improvements */
+.toc-tree .reference {
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: var(--color-foreground-primary) !important;
+}
+
+.toc-tree .reference:hover {
+    background: var(--color-background-hover);
+    color: var(--color-brand-primary) !important;
+}
+
+/* 修复表格目录点击后的样式 */
+.toc-tree .reference:visited,
+.toc-tree .reference:active {
+    color: var(--color-foreground-primary) !important;
+}
+
+.toc-tree .current > .reference,
+.toc-tree .reference.current {
+    color: var(--color-brand-primary) !important;
+    font-weight: 600;
+}
+
+.toc-tree .current > .reference:visited,
+.toc-tree .current > .reference:active,
+.toc-tree .reference.current:visited,
+.toc-tree .reference.current:active {
+    color: var(--color-brand-primary) !important;
+}
+
+/* ============================================================================
+   Enhanced Buttons and Interactive Elements
+   ============================================================================ */
+
+/* Primary buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-info));
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow-light);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-medium);
+    color: white;
+    text-decoration: none;
+}
+
+/* Secondary buttons */
+.btn-secondary {
+    background: var(--color-background-secondary);
+    color: var(--color-foreground-primary);
+    border: 2px solid var(--color-background-border);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary);
+    text-decoration: none;
+}
+
+/* ============================================================================
+   Enhanced Links and References
+   ============================================================================ */
+
+/* External links styling */
+.external::after {
+    content: " 🔗";
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* Internal reference links */
+.internal {
+    color: var(--color-brand-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.internal:hover {
+    color: var(--color-brand-content);
+    border-bottom-color: var(--color-brand-primary);
+}
+
+/* ============================================================================
+   Enhanced Search and Navigation
+   ============================================================================ */
+
+/* Search box improvements */
+.search-wrapper {
+    margin: 1rem 0;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--color-background-border);
+    border-radius: 25px;
+    background: var(--color-background-secondary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-wrapper input:focus {
+    outline: none;
+    border-color: var(--color-brand-primary);
+    box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.2);
+}
+
+/* ============================================================================
+   Enhanced Content Layout and Spacing
+   ============================================================================ */
+
+/* Article content improvements */
+.content article {
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+/* List improvements */
+ul, ol {
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 1.2rem;
+}
+
+/* ============================================================================
+   Enhanced Footer and Meta Information
+   ============================================================================ */
+
+/* Footer styling */
+.footer {
+    border-top: 2px solid var(--color-background-border);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    background: var(--color-background-secondary);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--color-foreground-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-brand-primary);
+}
+
+/* ============================================================================
+   Responsive Design Enhancements
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    /* Mobile typography adjustments */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .content article {
+        padding: 1rem;
+    }
+
+    /* Mobile admonitions */
+    .admonition {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* Mobile buttons */
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================================================
+   Accessibility Enhancements
+   ============================================================================ */
+
+/* Focus indicators */
+*:focus {
+    outline: 2px solid var(--color-brand-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-brand-primary);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+    font-weight: 600;
+}
+
+.skip-to-content:focus {
+    top: 6px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .admonition {
+        border-width: 2px;
+    }
+
+    .highlight {
+        border-width: 2px;
+    }
+
+    table.docutils {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================================================
+   Print Styles
+   ============================================================================ */
+
+@media print {
+    .sidebar-drawer,
+    .mobile-header,
+    .theme-toggle-container,
+    .copybtn {
+        display: none !important;
+    }
+
+    .content {
+        margin-left: 0 !important;
+        max-width: none !important;
+    }
+
+    .admonition {
+        border: 2px solid #000;
+        background: #fff !important;
+    }
+
+    .highlight {
+        border: 1px solid #000;
+        background: #f9f9f9 !important;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* ============================================================================
+   Custom Animations and Effects
+   ============================================================================ */
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+/* Fade in animation for content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content article {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* ============================================================================
+   Special ToolUniverse Customizations
+   ============================================================================ */
+
+/* Tool category cards */
+.tool-category {
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-background-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--color-brand-primary);
+    box-shadow: var(--box-shadow-light);
+    transition: all 0.3s ease;
+}
+
+.tool-category:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.tool-category h3 {
+    color: var(--color-brand-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* API documentation enhancements */
+.py-method,
+.py-function,
+.py-class {
+    border-left: 4px solid var(--color-brand-primary);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    background: var(--color-background-secondary);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.py-method .sig-name,
+.py-function .sig-name,
+.py-class .sig-name {
+    font-weight: 600;
+    color: var(--color-brand-primary);
+}
+
+/* Enhanced version badge */
+.version-badge {
+    background: linear-gradient(135deg, var(--color-success), #2ECC71);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/* Sidebar logo size (Furo) */
+.sidebar-drawer .sidebar-logo img,
+.sidebar-drawer .brand img,
+.sidebar-drawer .sidebar-brand img,
+.sidebar-drawer img.logo,
+.sidebar-drawer img[alt][src*="logo"] {
+    max-height: 64px !important;
+    width: auto !important;
+}

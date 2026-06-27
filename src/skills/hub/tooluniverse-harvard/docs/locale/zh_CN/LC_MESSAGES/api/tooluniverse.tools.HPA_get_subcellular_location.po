@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_subcellular_location.rst:2
+#: b6534ac26c1f41faa325f68ea7a9eb21
+msgid "tooluniverse.tools.HPA\\_get\\_subcellular\\_location module"
+msgstr "tooluniverse.tools.HPA\\_get\\_subcellular\\_location 模块"
+
+#: 23d02558708c48b8b349b50bd2f3d013 of
+#: tooluniverse.tools.HPA_get_subcellular_location:1
+msgid "HPA_get_subcellular_location"
+msgstr "HPA_获取亚细胞定位"
+
+#: 11dc5e64f69c4bcca64ebe688038e6a1 fc4f3e806a774a7ba4c293a3e0eddce0 of
+#: tooluniverse.tools.HPA_get_subcellular_location:3
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:1
+msgid ""
+"Get annotated subcellular locations for a protein using optimized columns "
+"parameter. Retrieves bo..."
+msgstr "使用优化的列参数获取蛋白质的注释亚细胞位置。"
+
+#: ../../api/tooluniverse.tools.HPA_get_subcellular_location.rst
+#: 6d8f2c645ab6474e88212147591c9f92
+msgid "Parameters"
+msgstr "参数"
+
+#: ad442921cdc5455993749b449451951d of
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:3
+msgid "Gene name or gene symbol, e.g., 'CCNB1', 'TP53', 'EGFR', etc."
+msgstr "基因名称或基因符号，例如“CCNB1”、“TP53”、“EGFR”等。"
+
+#: 69f0d81b510f4ca98ff60c5d55e2b983 of
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e083d358329642839984f0f1f07a6380 of
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4e8746393f744f5fb9de0925617b1f8c of
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_subcellular_location.rst
+#: b144567747c84dfdb95601e423ab3b10
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8d9d5fa67fae432d872d50b8dd44133a of
+#: tooluniverse.tools.HPA_get_subcellular_location.HPA_get_subcellular_location:12
+msgid ":py:class:`Any`"
+msgstr ""

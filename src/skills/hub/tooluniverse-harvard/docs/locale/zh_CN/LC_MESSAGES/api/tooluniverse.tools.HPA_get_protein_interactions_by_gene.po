@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_protein_interactions_by_gene.rst:2
+#: 3de59caefe624abfbe9fec03368f35fc
+msgid "tooluniverse.tools.HPA\\_get\\_protein\\_interactions\\_by\\_gene module"
+msgstr "tooluniverse.tools.HPA\\_get\\_protein\\_interactions\\_by\\_gene 模块"
+
+#: 172130a0607d49009db3c57ef8cb3d0e of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene:1
+msgid "HPA_get_protein_interactions_by_gene"
+msgstr "HPA_通过基因获取蛋白质相互作用"
+
+#: d842ba5ad02f4a8380e9dede2aaf6e1b ffa68a03c273460ea6917031e189ab5a of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene:3
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:1
+msgid ""
+"Fetch known protein-protein interaction partners for a given gene from Human"
+" Protein Atlas database."
+msgstr "从人类蛋白质图谱数据库中获取指定基因的已知蛋白质-蛋白质相互作用伙伴。"
+
+#: ../../api/tooluniverse.tools.HPA_get_protein_interactions_by_gene.rst
+#: 25a4c30cef23466288c84b1fb5b32fa9
+msgid "Parameters"
+msgstr "参数"
+
+#: e4701c13d0404ab59c1d4594dadb800c of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:3
+msgid "Official gene symbol, e.g., 'EGFR', 'TP53', 'BRCA1', etc."
+msgstr "官方基因符号，例如“EGFR”、“TP53”、“BRCA1”等。"
+
+#: 0f75f50657324c5893320553f6eb0c50 of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7c32d5882657477ba18ec31a4756275f of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: bf164c95496c4f7aacbfcbd5922f7739 of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_protein_interactions_by_gene.rst
+#: 06b32b3f9dd648e8800cba374648f0d4
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2164e7b4d5de4a86ba3d531de643b9f1 of
+#: tooluniverse.tools.HPA_get_protein_interactions_by_gene.HPA_get_protein_interactions_by_gene:12
+msgid ":py:class:`Any`"
+msgstr ""

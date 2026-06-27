@@ -1,0 +1,150 @@
+[
+  {
+    "name": "visualize_molecule_2d",
+    "description": "Visualize 2D molecular structures using RDKit. Supports SMILES, InChI, molecule names, and various output formats including PNG, SVG, and interactive HTML. Prerequisites: Requires 'rdkit' package (install: pip install tooluniverse[visualization]).",
+    "type": "Molecule2DTool",
+    "required_packages": [
+      "rdkit"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "smiles": {
+          "type": "string",
+          "description": "SMILES string representation of the molecule"
+        },
+        "inchi": {
+          "type": "string",
+          "description": "InChI string representation of the molecule"
+        },
+        "molecule_name": {
+          "type": "string",
+          "description": "Common name of the molecule (will be resolved to SMILES via PubChem)"
+        },
+        "width": {
+          "type": "integer",
+          "default": 400,
+          "description": "Width of the visualization in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "default": 400,
+          "description": "Height of the visualization in pixels"
+        },
+        "output_format": {
+          "type": "string",
+          "enum": [
+            "png",
+            "svg"
+          ],
+          "default": "png",
+          "description": "Output format"
+        },
+        "show_atom_numbers": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show atom numbers"
+        },
+        "show_bond_numbers": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show bond numbers"
+        },
+        "include_stereo": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to include stereochemistry information"
+        }
+      },
+      "required": [
+        "smiles",
+        "inchi",
+        "molecule_name"
+      ]
+    },
+    "default_width": 400,
+    "default_height": 400,
+    "default_style": {
+      "output_format": "png",
+      "show_atom_numbers": false,
+      "show_bond_numbers": false
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the visualization was created successfully"
+        },
+        "visualization": {
+          "type": "object",
+          "properties": {
+            "html": {
+              "type": "string",
+              "description": "Complete HTML content for the 2D molecule visualization"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of visualization (molecule_2d)"
+            },
+            "data": {
+              "type": "object",
+              "description": "Molecular data including SMILES and properties"
+            },
+            "static_image": {
+              "type": "string",
+              "description": "Base64 encoded PNG/SVG image of the molecule"
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "output_format": {
+                  "type": "string"
+                },
+                "input_type": {
+                  "type": "string"
+                },
+                "show_atom_numbers": {
+                  "type": "boolean"
+                },
+                "show_bond_numbers": {
+                  "type": "boolean"
+                },
+                "molecular_properties": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if visualization failed"
+        },
+        "error_type": {
+          "type": "string",
+          "description": "Type of error if visualization failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+        "molecule_name": "aspirin",
+        "width": 400,
+        "height": 400,
+        "output_format": "png",
+        "show_atom_numbers": false,
+        "show_bond_numbers": false,
+        "include_stereo": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_phenotype_by_HPO_ID.rst:2
+#: 8a83fe9bc1c646d48e41d2dea36a1845
+msgid "tooluniverse.tools.get\\_phenotype\\_by\\_HPO\\_ID module"
+msgstr "tooluniverse.tools.get\\_phenotype\\_by\\_HPO\\_ID 模块"
+
+#: 81c3d0a16be24e1980cd05f15c3fc524 of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID:1
+msgid "get_phenotype_by_HPO_ID"
+msgstr "通过HPO_ID获取表型"
+
+#: a8192c0068ca4afd87582adbf46d8081 e9a3ee3a1ebf49158c2895de76dc8367 of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID:3
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:1
+msgid "Retrieve a phenotype or symptom by its HPO ID."
+msgstr "通过其 HPO ID 检索表型或症状。"
+
+#: ../../api/tooluniverse.tools.get_phenotype_by_HPO_ID.rst
+#: 854983e738a64628ba64e5a5ef3e0b41
+msgid "Parameters"
+msgstr "参数"
+
+#: 803d097295984b819b76cdcf06f32c7d of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:3
+msgid "The HPO ID of the phenotype or symptom."
+msgstr "表型或症状的HPO ID。"
+
+#: 0758f3eacde6441592b186ef12317844 of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 24d9a041e8a042e2b4bb4d5a4fa3c04d of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a0559eef02c941299e972200029e3c8a of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_phenotype_by_HPO_ID.rst
+#: a9ef65ab02b64a22a59a2254def4d3f5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2aafcd68eeb44765aa22d9f0cec420eb of
+#: tooluniverse.tools.get_phenotype_by_HPO_ID.get_phenotype_by_HPO_ID:12
+msgid ":py:class:`Any`"
+msgstr ""

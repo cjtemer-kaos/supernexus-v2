@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.rst:2
+#: 09213845023f4df8a7d61de7e74b0482
+msgid "tooluniverse.tools.MedlinePlus\\_get\\_genetics\\_condition\\_by\\_name module"
+msgstr "tooluniverse.tools.MedlinePlus\\_get\\_genetics\\_condition\\_by\\_name 模块"
+
+#: f7da3f27da0941ed95898d20e3764f8b of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name:1
+msgid "MedlinePlus_get_genetics_condition_by_name"
+msgstr "MedlinePlus_按名称获取遗传病状况"
+
+#: cb8451fc44a34543a6d689e8172b77f8 ddf9f44f7e2f41c78b259caa05eab83d of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name:3
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:1
+msgid ""
+"Get detailed information from MedlinePlus Genetics corresponding to genetic "
+"condition name, suppo..."
+msgstr "从 MedlinePlus Genetics 获取与遗传疾病名称相关的详细信息，支持..."
+
+#: ../../api/tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.rst
+#: 45bb10e563084ebd85fe025a338f201d
+msgid "Parameters"
+msgstr "参数"
+
+#: 992d96e574254a1ea6cb6638ccec2d7e of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:3
+msgid ""
+"URL slug of genetic condition, e.g., \"alzheimer-disease\", must match "
+"MedlineP..."
+msgstr "URL slug（例如“alzheimer-disease”）必须与MedlineP保持一致。"
+
+#: eac3e5d40b6749a09addb0a976613ef4 of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:5
+msgid "Return format, options \"json\" or \"xml\", default \"json\"."
+msgstr "返回格式，选项为“json”或“xml”，默认值为“json”。"
+
+#: a5ed09b99bdd40009e2361afb3998eba of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 40a32660cec04e8abf1edc4ff1c86368 of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6f8b64ca140b41d79a0d5226b0349194 of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.rst
+#: b43f536506f4457a89bb455e9d09a8a9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 95a3b3b3142b49ec88a8cdf5841ed45f of
+#: tooluniverse.tools.MedlinePlus_get_genetics_condition_by_name.MedlinePlus_get_genetics_condition_by_name:14
+msgid ":py:class:`Any`"
+msgstr ""

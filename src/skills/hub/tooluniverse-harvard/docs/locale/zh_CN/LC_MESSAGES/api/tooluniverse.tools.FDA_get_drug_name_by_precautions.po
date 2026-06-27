@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_precautions.rst:2
+#: ef7cb24b9af24d26bf267812faff7cfb
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_precautions module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_precautions 模块"
+
+#: 6cea69f12c444755b9c812fe7b2f4cfd of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions:1
+msgid "FDA_get_drug_name_by_precautions"
+msgstr "FDA_根据注意事项获取药品名称"
+
+#: 1cbbc74f69d44331ae5e4cde8c2c4fe0 fcb5c48d391747e9bf4bb1162ee28097 of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions:3
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:1
+msgid "Retrieve the drug name based on the precautions field information."
+msgstr "根据注意事项字段信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_precautions.rst
+#: 47aa37a295ba4642a0a0b0a58edab25b
+msgid "Parameters"
+msgstr "参数"
+
+#: b00f2162c4014ba8913e94268512e71b of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:3
+msgid ""
+"Information about any special care to be exercised for safe and effective "
+"use..."
+msgstr "关于安全有效使用需特别注意的事项信息..."
+
+#: dfc2e24296c340d79e8bf835c00a896a of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 4aedf5599d2b4358b7698e6c5274bb2e of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c1f11f4ee8424bac913ea6661a4516cb of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4630a921bd7d44468d2763b94474806c of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 585ffdd8560f4c7bb63f660c393dc9d3 of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_precautions.rst
+#: e2b255dee537474da05cbf26cbb85e82
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2ccbf050ec87421a9f8b1edfd5c958a5 of
+#: tooluniverse.tools.FDA_get_drug_name_by_precautions.FDA_get_drug_name_by_precautions:16
+msgid ":py:class:`Any`"
+msgstr ""

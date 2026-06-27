@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_get_association_by_id.rst:2
+#: 1518af2da4dd4afab8182620eea90148
+msgid "tooluniverse.tools.gwas\\_get\\_association\\_by\\_id module"
+msgstr "tooluniverse.tools.gwas\\_get\\_association\\_by\\_id 模块"
+
+#: f1d2edb92b244cca9f523b34a4bf9df5 of
+#: tooluniverse.tools.gwas_get_association_by_id:1
+msgid "gwas_get_association_by_id"
+msgstr "gwas_get_association_by_id 获取关联信息（通过ID）"
+
+#: d0d20d39957d45c1af2157d6fc3500d3 f3673db652014da98a9e29c45137a25d of
+#: tooluniverse.tools.gwas_get_association_by_id:3
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:1
+msgid "Get a specific GWAS association by its unique identifier."
+msgstr "通过其唯一标识符获取特定的GWAS关联。"
+
+#: ../../api/tooluniverse.tools.gwas_get_association_by_id.rst
+#: 219aca69e53c4a9fbb39a72f27322d62
+msgid "Parameters"
+msgstr "参数"
+
+#: f9adb2996960439cac2c6e68b12abb59 of
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:3
+msgid "GWAS association identifier"
+msgstr "GWAS关联标识符"
+
+#: 43372d05039b4afc868c5799452e05c4 of
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 97f04c1d24694821bebd9a3e15ad400b of
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 010c524122db4ba08313fcce9e08d593 of
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_get_association_by_id.rst
+#: 9c23167672424d20994b8fd0838a1a6d
+msgid "Return type"
+msgstr "返回类型"
+
+#: a33dd14e3eb54b3b89af5290d7993c5c of
+#: tooluniverse.tools.gwas_get_association_by_id.gwas_get_association_by_id:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

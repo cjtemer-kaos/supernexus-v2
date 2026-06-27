@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.odphp_myhealthfinder.rst:2
+#: 953e3ca3a7664681a77002850494946f
+msgid "tooluniverse.tools.odphp\\_myhealthfinder module"
+msgstr "tooluniverse.tools.odphp\\_myhealthfinder 模块"
+
+#: 2cb75cbde2874e098363bd68a0547fe1 of
+#: tooluniverse.tools.odphp_myhealthfinder:1
+msgid "odphp_myhealthfinder"
+msgstr ""
+
+#: bc859b2087584e1799f6a444d2ac83e4 dd13115c853d4df59a21f999e02ee9a8 of
+#: tooluniverse.tools.odphp_myhealthfinder:3
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:1
+msgid ""
+"This tool provides personalized preventive-care recommendations and it is "
+"helpful for different a..."
+msgstr "该工具提供个性化的预防护理建议，并适用于不同的需求。"
+
+#: ../../api/tooluniverse.tools.odphp_myhealthfinder.rst
+#: dd8348c85fb448e9b8fc294c94c017ef
+msgid "Parameters"
+msgstr "参数"
+
+#: 8ee4c4900169430397e42c4d67b2904e of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:3
+msgid "Language code (en or es)"
+msgstr "语言代码（en 或 es）"
+
+#: 3e867f098ffa49d09fc7cdc041a580f9 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:5
+msgid "Age in years (0–120)"
+msgstr "年龄（0–120岁）"
+
+#: 91b4a61303ea440da20f7e08111eed99 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:7
+msgid "Male or Female"
+msgstr "男性或女性"
+
+#: af151934cebc4202a13cb2fd0fba5afd of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:9
+msgid "\"Yes\" or \"No\""
+msgstr "“是”或“否”"
+
+#: fb6e50c1a70c432c88c9f465300bf658 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:11
+msgid "If true, also return PlainSections[] with HTML removed for each topic"
+msgstr "如果为真，还将返回去除每个主题中HTML的PlainSections[]"
+
+#: 7e2b6a64feac4d409c91dcd2c2708ab0 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c0149a108edc482da267dfc10b202c53 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 69e36de727a948498d129a6e79008a3e of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.odphp_myhealthfinder.rst
+#: 77083477beb64ec6a5ef4b722ecb873e
+msgid "Return type"
+msgstr "返回类型"
+
+#: cbb080e57c954f08a64ff02159cd8089 of
+#: tooluniverse.tools.odphp_myhealthfinder.odphp_myhealthfinder:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

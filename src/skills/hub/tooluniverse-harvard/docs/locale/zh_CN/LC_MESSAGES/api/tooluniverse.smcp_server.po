@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.smcp_server.rst:2 9d8d1011020647ef82a775209106deb6
+msgid "tooluniverse.smcp\\_server module"
+msgstr "tooluniverse.smcp_server 模块"
+
+#: 2bdf99872235459d8bde9aeb6275cebb of tooluniverse.smcp_server:1
+msgid "SMCP Server Entry Point"
+msgstr "SMCP 服务器入口点"
+
+#: 5951460ce7ab48f49b395dfdf7c1becb of tooluniverse.smcp_server:3
+msgid ""
+"This module provides the command-line entry point for running the SMCP "
+"(Scientific Model Context Protocol) server. It creates a minimal SMCP server"
+" that exposes all ToolUniverse tools as MCP tools."
+msgstr ""
+"该模块提供了用于运行 SMCP（科学模型上下文协议）服务器的命令行入口。它创建了一个最简化的 SMCP 服务器，将所有 ToolUniverse "
+"工具作为 MCP 工具进行暴露。"
+
+#: c5542f3ed60a4244ad4a787d5751e09b of
+#: tooluniverse.smcp_server.run_http_server:1
+msgid "Run SMCP server with streamable-http transport on localhost:8000"
+msgstr "在本地主机的8000端口使用streamable-http传输运行SMCP服务器"
+
+#: e5d9b462dbb643069a22313b46cb6d57 of
+#: tooluniverse.smcp_server.run_http_server:3
+msgid ""
+"This function provides compatibility with the original MCP server's "
+"run_server function."
+msgstr "此功能提供与原始 MCP 服务器 run_server 函数的兼容性。"
+
+#: 882fe730179c411e8e882e3ac808cc85 of
+#: tooluniverse.smcp_server.run_stdio_server:1
+msgid "Run SMCP server with stdio transport for Claude Desktop integration"
+msgstr "使用 stdio 传输运行 SMCP 服务器以集成 Claude Desktop"
+
+#: 287b8f937a314b72b93724d8a7680eee of
+#: tooluniverse.smcp_server.run_stdio_server:3
+msgid ""
+"This function provides compatibility with the original MCP server's "
+"run_claude_desktop function. It accepts the same arguments as "
+"run_smcp_server but forces transport='stdio'."
+msgstr ""
+"此函数兼容原始 MCP 服务器的 run_claude_desktop 函数。它接受与 run_smcp_server 相同的参数，但强制将 "
+"transport 设置为 'stdio'。"
+
+#: 049d26cd9192458b8e5fedc6b1f8060b of
+#: tooluniverse.smcp_server.run_smcp_server:1
+msgid "Main entry point for the SMCP server command."
+msgstr "SMCP 服务器命令的主入口。"
+
+#: dd6dfb9930bc44eaa69a4f61ebb27a61 of
+#: tooluniverse.smcp_server.run_smcp_server:3
+msgid ""
+"This function is called when running `tooluniverse-smcp` from the command "
+"line."
+msgstr "当从命令行运行 `tooluniverse-smcp` 时，将调用此函数。"

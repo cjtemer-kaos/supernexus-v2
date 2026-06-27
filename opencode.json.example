@@ -1,0 +1,106 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "~/.config/opencode/AGENTS.md"
+  ],
+  "provider": {
+    "nexus": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "SuperNEXUS v2 (base)",
+      "options": {
+        "baseURL": "http://127.0.0.1:9400/v1",
+        "apiKey": "nexus-local"
+      },
+      "models": {
+        "auto": { "name": "Nexus Director (auto)", "limit": { "context": 200000, "output": 8192 } },
+        "qwen-coder": { "name": "Nexus Code (qwen2.5-coder:7b)", "limit": { "context": 131072, "output": 8192 } },
+        "deepseek-reason": { "name": "Nexus Sage (deepseek-r1:8b)", "limit": { "context": 32768, "output": 8192 } },
+        "nemotron": { "name": "Nexus Director (nemotron)", "limit": { "context": 32768, "output": 4096 } },
+        "vision": { "name": "Nexus Vision (qwen2.5vl:7b)", "limit": { "context": 32768, "output": 4096 }, "attachment": true, "modalities": { "input": ["text","image"], "output": ["text"] } }
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": { "baseURL": "http://localhost:11434/v1" },
+      "models": {
+        "deepseek-r1:8b": { "name": "DeepSeek R1 8B", "limit": { "context": 32768, "output": 8192 } },
+        "gemma4:latest": { "name": "Gemma 4 (128K ctx)", "limit": { "context": 131072, "output": 8192 } },
+        "nemotron-3-nano:4b": { "name": "Nemotron 3 Nano 4B", "limit": { "context": 32768, "output": 4096 } },
+        "nexus-director-v6:latest": { "name": "Director v6", "limit": { "context": 16384, "output": 2048 } },
+        "nomic-embed-text:latest": { "name": "Nomic Embed Text", "limit": { "context": 8192, "output": 2048 } },
+        "qwen2.5:0.5b": { "name": "Qwen 2.5 0.5B", "limit": { "context": 32768, "output": 4096 } },
+        "qwen2.5-coder:7b": { "name": "Qwen Coder 7B", "limit": { "context": 131072, "output": 8192 } },
+        "qwen2.5vl:7b": { "name": "Qwen 2.5 VL 7B", "limit": { "context": 32768, "output": 4096 } },
+        "qwen3.5:9b": { "name": "Qwen 3.5 9B", "limit": { "context": 131072, "output": 8192 } },
+        "omnicoder-2-9b:q4_k_m": { "name": "OmniCoder 2 9B", "limit": { "context": 32768, "output": 8192 } }
+      }
+    },
+    "zen": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "OpenCode Zen (free)",
+      "options": { "baseURL": "https://opencode.ai/zen", "apiKey": "${OPENCODE_API_KEY}" },
+      "models": {
+        "deepseek-v4-flash-free": { "name": "DeepSeek V4 Flash Free", "limit": { "context": 131072, "output": 8192 } },
+        "nemotron-3-super-free": { "name": "Nemotron 3 Super Free", "limit": { "context": 32768, "output": 4096 } },
+        "big-pickle": { "name": "Big Pickle", "limit": { "context": 32768, "output": 4096 } }
+      }
+    }
+  },
+  "model": "nexus/auto",
+  "mcp": {
+    "nexus-sovereign": {
+      "description": "38 tools: memoria, brain, agentes, clasificacion, skills, orquestacion",
+      "type": "local",
+      "command": ["python3", "-u", "${NEXUS_PROJECT_DIR}/src/bridges/mcp_bridge_server.py"],
+      "environment": {
+        "NEXUS_HOME": "${NEXUS_PROJECT_DIR}",
+        "NEXUS_PORT": "9400",
+        "NEXUS_BRAIN": "${NEXUS_PROJECT_DIR}/brain",
+        "PYTHONPATH": "${NEXUS_PROJECT_DIR}",
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUNBUFFERED": "1"
+      },
+      "enabled": true
+    },
+    "chrome-devtools": {
+      "description": "Automacion de navegador Chrome via CDP (38 tools)",
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest", "--browserUrl", "http://127.0.0.1:9222"],
+      "enabled": false
+    },
+    "playwright": {
+      "description": "Browser automation via Playwright",
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest"],
+      "enabled": false
+    },
+    "context7": {
+      "description": "Documentacion live de librerias/frameworks",
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "enabled": true
+    },
+    "brave-search": {
+      "description": "Busqueda web via Brave Search API",
+      "type": "local",
+      "command": ["npx", "-y", "@brave/brave-search-mcp-server"],
+      "environment": { "BRAVE_API_KEY": "${BRAVE_API_KEY}" },
+      "enabled": true
+    },
+    "github": {
+      "description": "API GitHub para PRs, issues, repos",
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": { "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}" },
+      "enabled": true
+    },
+    "agent-browser": {
+      "description": "Navegador ligero para busquedas rapidas",
+      "type": "local",
+      "command": ["python3", "-u", "${NEXUS_PROJECT_DIR}/src/bridges/agent_browser_mcp.py"],
+      "environment": { "PYTHONIOENCODING": "utf-8" },
+      "enabled": true
+    }
+  }
+}

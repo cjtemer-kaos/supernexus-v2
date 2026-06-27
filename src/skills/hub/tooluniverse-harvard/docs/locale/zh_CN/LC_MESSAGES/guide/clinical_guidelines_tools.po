@@ -1,0 +1,751 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-09 01:15-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../guide/clinical_guidelines_tools.rst:2
+#: fae467715ea0410d9f6e792b83697824
+msgid "Clinical Guidelines Tools"
+msgstr "临床指南工具"
+
+#: ../../guide/clinical_guidelines_tools.rst:4
+#: d1586e51bdbb4730ba5c1b21fc6848ca
+msgid ""
+"ToolUniverse provides 8 clinical guideline tools for searching and "
+"extracting authoritative medical guidelines."
+msgstr "ToolUniverse 提供 8 款临床指南工具，用于搜索和提取权威医学指南。"
+
+#: ../../guide/clinical_guidelines_tools.rst:7
+#: 6401f012965d425aa220df80189e2410
+msgid "Tool List"
+msgstr "工具清单"
+
+#: ../../guide/clinical_guidelines_tools.rst:9
+#: 37efb12b3be9401da80d8e2d96d988bc
+msgid "**Search Tools (6):**"
+msgstr "**搜索工具（6）：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:11
+#: 526618de812346d59bc30ef93676831c
+msgid "``NICE_Clinical_Guidelines_Search`` - UK NICE official guidelines"
+msgstr "``NICE_Clinical_Guidelines_Search`` - 英国NICE官方指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:12
+#: fb156eaa9d514b3288ea3c8fc596899d
+msgid "``WHO_Guidelines_Search`` - WHO international guidelines"
+msgstr "``WHO_Guidelines_Search`` - WHO国际指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:13
+#: c4ebe043fc7a4a7fa9cc6aa3a8cbb057
+msgid "``PubMed_Guidelines_Search`` - PubMed peer-reviewed guidelines"
+msgstr "``PubMed_Guidelines_Search`` - PubMed 同行评审指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:14
+#: 94185a99840a4821b41916543c8e50ee
+msgid "``EuropePMC_Guidelines_Search`` - Europe PMC guidelines"
+msgstr "``EuropePMC_Guidelines_Search`` - Europe PMC 指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:15
+#: e146acce974542f4acffddb1cfbcf888
+msgid "``TRIP_Database_Guidelines_Search`` - TRIP evidence-based database"
+msgstr "``TRIP_Database_Guidelines_Search`` - TRIP 证据数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:16
+#: 80abdee4e4394f1588d8f8feaf610c6e
+msgid "``OpenAlex_Guidelines_Search`` - OpenAlex scholarly database"
+msgstr "``OpenAlex_Guidelines_Search`` - OpenAlex 学术数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:18
+#: 21f58bbae757408c8235558590114597
+msgid "**Full-Text Extraction (2):**"
+msgstr ""
+"**全文提取 (2)：**\n"
+"\n"
+"Context: 文档"
+
+#: ../../guide/clinical_guidelines_tools.rst:20
+#: 0e80af5de54f4dcbbb76f8a6d8f8a68f
+msgid ""
+"``NICE_Guideline_Full_Text`` - Extract complete NICE guidelines "
+"(5,000-20,000+ chars)"
+msgstr "``NICE_Guideline_Full_Text`` - 提取完整的NICE指南（5,000-20,000+字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:21
+#: 0e58f78fb6d2499e918ad5989f3effb3
+msgid ""
+"``WHO_Guideline_Full_Text`` - Extract WHO content + PDF links (1,500+ chars)"
+msgstr "``WHO_Guideline_Full_Text`` - 提取WHO内容 + PDF链接（超过1,500字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:24
+#: 8b1ffd0aa0c64799ba2669111e5b4bbb
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../guide/clinical_guidelines_tools.rst:51
+#: d0265be6b59e47b385ab83d39c43c9c8
+msgid "Tool Comparison"
+msgstr "工具比较"
+
+#: ../../guide/clinical_guidelines_tools.rst:54
+#: 415d0617f43a4f41a374b05157f5d204
+msgid "Tool"
+msgstr "工具"
+
+#: ../../guide/clinical_guidelines_tools.rst:54
+#: 6b517c3cd4ef4b2d9f98119df6eae2f1
+msgid "Data Source"
+msgstr "数据源"
+
+#: ../../guide/clinical_guidelines_tools.rst:54
+#: 1bc25719e74c4ab1b413aafa03d58412
+msgid "Features"
+msgstr "功能"
+
+#: ../../guide/clinical_guidelines_tools.rst:56
+#: 87580ee8b6f04d64956974d54668621f
+msgid "NICE_Clinical_Guidelines"
+msgstr "NICE_临床指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:56
+#: 3f2228cd14cb4351bb8058a491bb34e3
+msgid "UK NICE official website"
+msgstr "英国国家健康与护理卓越研究所（NICE）官方网站"
+
+#: ../../guide/clinical_guidelines_tools.rst:56
+#: 69c6dc7e5c834faaaf1af5f80213dd90
+msgid "Official UK guidelines with summaries"
+msgstr "英国官方指南及摘要"
+
+#: ../../guide/clinical_guidelines_tools.rst:58
+#: 3ba9e57dc80c4f968b288bab8140b992
+msgid "WHO_Guidelines"
+msgstr "WHO_指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:58
+#: 22978259b80740dbb75a8888392bc7da
+msgid "WHO publications database"
+msgstr "世卫组织出版物数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:58
+#: ea7f97c730614da2ae669d425f236e74
+msgid "International health guidelines"
+msgstr "国际健康指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:60
+#: 9e551e7962bb42a3a230c25a41ccdd69
+msgid "PubMed_Guidelines"
+msgstr "PubMed_指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:60
+#: 69433891739e4b9cb090d2a61c54a4d9
+msgid "NCBI PubMed database"
+msgstr "NCBI PubMed 数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:60
+#: 3c70c6566e964257ac76ae140eab7cbc
+msgid "Peer-reviewed with abstracts & PMIDs"
+msgstr "经过同行评审，附摘要和PMID"
+
+#: ../../guide/clinical_guidelines_tools.rst:62
+#: 5fd94c5120e844bd8e094c0530f216e7
+msgid "EuropePMC_Guidelines"
+msgstr "欧洲PMC_指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:62
+#: 42d3c42b9f894c14a978843cb3d36613
+msgid "Europe PMC database"
+msgstr "欧洲PMC数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:62
+#: 5612189390b94b008ad4190343ee0adb
+msgid "European & international research"
+msgstr "欧洲及国际研究"
+
+#: ../../guide/clinical_guidelines_tools.rst:64
+#: 2244816cbea14e69b87c7a2d271ccdcb
+msgid "TRIP_Database"
+msgstr "TRIP_数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:64
+#: f680227761924dd4af635dd53ea786dd
+msgid "TRIP evidence database"
+msgstr "TRIP 证据数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:64
+#: 4ca13ffcfcd64afe9cc34e29e47d1259
+msgid "Evidence-based medicine focus"
+msgstr "循证医学重点"
+
+#: ../../guide/clinical_guidelines_tools.rst:66
+#: 2ad442b1c9194bd59bc4e499ff260cf5
+msgid "OpenAlex_Guidelines"
+msgstr "OpenAlex_指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:66
+#: 425b2edda9d94f5fbd034b1a4866aa80
+msgid "OpenAlex scholarly database"
+msgstr "OpenAlex 学术数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:66
+#: afb0de2699034e729256b4843727b283
+msgid "Comprehensive with citation counts"
+msgstr "全面且包含引用次数"
+
+#: ../../guide/clinical_guidelines_tools.rst:70
+#: 6f7af0ebe472473e8960142ff69f1967
+msgid "Usage Examples"
+msgstr "使用示例"
+
+#: ../../guide/clinical_guidelines_tools.rst:73
+#: dd2e93c6539842268c5ae1f422fbdf39
+msgid "Search NICE Guidelines"
+msgstr "搜索 NICE 指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:91
+#: 5530cc66a280450eb125021d1c93ba8c
+msgid "Search Multiple Sources"
+msgstr "搜索多个来源"
+
+#: ../../guide/clinical_guidelines_tools.rst:118
+#: dfd552025b4a4a309ddd6cdbe2bf2937
+msgid "Extract NICE Full Text"
+msgstr "提取 NICE 全文"
+
+#: ../../guide/clinical_guidelines_tools.rst:140
+#: dad6eb168b01439cb0577173d6a883a0
+msgid "Extract WHO Content + PDF"
+msgstr "提取 WHO 内容 + PDF"
+
+#: ../../guide/clinical_guidelines_tools.rst:162
+#: f39a9920d2804681a27c40f70fc086d1
+msgid "Complete Example"
+msgstr "完整示例"
+
+#: ../../guide/clinical_guidelines_tools.rst:164
+#: 344b1f47e0234e72aae2a2d8faaa7c2f
+msgid ""
+"See ``examples/clinical_guidelines_demo.py`` for a complete demonstration:"
+msgstr "请参阅 ``examples/clinical_guidelines_demo.py`` 以获取完整演示："
+
+#: ../../guide/clinical_guidelines_tools.rst:171
+#: 0ff566806f8142acabd9672a244a37d7
+msgid "FAQ"
+msgstr "常见问题 (FAQ)"
+
+#: ../../guide/clinical_guidelines_tools.rst:173
+#: 4d39216c2c574fb9a179e570e7fb07e6
+msgid "**Q: What's the difference between search tools and full-text tools?**"
+msgstr "**问：搜索工具和全文工具有什么区别？**"
+
+#: ../../guide/clinical_guidelines_tools.rst:175
+#: 2a34c33dd7eb458eb11e2883db82fcb6
+msgid ""
+"**Search tools**: Return multiple results with title, URL, summary "
+"(200-2,500 chars each)"
+msgstr "**搜索工具**：返回多个结果，包括标题、URL、摘要（每个摘要 200-2500 字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:176
+#: b38f0033cdde476ba747ef0a91235680
+msgid ""
+"**Full-text tools**: Extract complete guideline content (5,000-20,000+ "
+"chars) from a single URL"
+msgstr "**全文工具**：从单个URL中提取完整的指南内容（5,000至20,000+字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:178
+#: b1749b74c19f4838946887257c632066
+msgid "**Q: When should I use full-text tools?**"
+msgstr "**问：我应该在何时使用全文工具？**"
+
+#: ../../guide/clinical_guidelines_tools.rst:180
+#: 55544a3ef2c14a57b23f34693b1014a4
+msgid "Use full-text tools when you need:"
+msgstr "当您需要时，请使用全文工具："
+
+#: ../../guide/clinical_guidelines_tools.rst:182
+#: ef112efbb19f465ea4a93dd46ccd8e5a
+msgid "Complete guideline content for detailed analysis"
+msgstr "完整指南内容用于详细分析"
+
+#: ../../guide/clinical_guidelines_tools.rst:183
+#: f31e90dfd6624794adcf34b894e21220
+msgid "All clinical recommendations extracted"
+msgstr "提取的所有临床建议"
+
+#: ../../guide/clinical_guidelines_tools.rst:184
+#: 2eba96b4019b4e48aee55cd5076d46d0
+msgid "Content to feed into LLMs"
+msgstr "用于为大型语言模型（LLMs）提供内容"
+
+#: ../../guide/clinical_guidelines_tools.rst:185
+#: cddef611238b4ca6abb43173233a0da0
+msgid "PDF download links for offline reading"
+msgstr "PDF 下载链接，用于离线阅读"
+
+#: ../../guide/clinical_guidelines_tools.rst:187
+#: a733fbf35662426aa51f880f400f856a
+msgid "**Q: Which tools return the most complete content?**"
+msgstr "**问：哪些工具返回的内容最完整？**"
+
+#: ../../guide/clinical_guidelines_tools.rst:189
+#: 3f1c490ac73c4c0db4a07127d390fe2c
+msgid "**NICE search**: 300-2,500 char summaries"
+msgstr "**NICE 搜索**：300-2,500 字符摘要"
+
+#: ../../guide/clinical_guidelines_tools.rst:190
+#: 32ba58cb051641f9a561212081515354
+msgid "**NICE full-text**: 5,000-20,000+ char complete guidelines"
+msgstr "**NICE 全文**：5,000-20,000+ 字完整指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:191
+#: c55314429d334035890657e6fe2c1fd2
+msgid "**PubMed**: 200-2,000 char abstracts"
+msgstr "**PubMed**：200-2,000 字摘要"
+
+#: ../../guide/clinical_guidelines_tools.rst:192
+#: 0a8f1389ab3944f786a4eaee21d2dcb1
+msgid "**WHO full-text**: 1,500+ chars + PDF links"
+msgstr "**WHO全文**：1,500+ 字符 + PDF链接"
+
+#: ../../guide/clinical_guidelines_tools.rst:194
+#: 27b09908339441fea240cd1190ca4abb
+msgid "**Q: How to filter by year?**"
+msgstr "**问：如何按年份筛选？**"
+
+#: ../../guide/clinical_guidelines_tools.rst:209
+#: daa7cc100f054606a87f282d74a7be64
+msgid "Return Fields"
+msgstr "返回字段"
+
+#: ../../guide/clinical_guidelines_tools.rst:211
+#: 2c9ff8851ff84e2a8b62c56dcaf1628a
+msgid "**Search Tools Return:**"
+msgstr "**搜索工具返回：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:213
+#: 098dd85fad084aba9f9b62bfedb6e4d1
+msgid "``title``: Guideline title"
+msgstr "``title``: 指南标题"
+
+#: ../../guide/clinical_guidelines_tools.rst:214
+#: b8555a58a7fa469bb1a91faf3b04b018
+msgid "``url``: Direct link to guideline"
+msgstr "``url``：指南的直接链接"
+
+#: ../../guide/clinical_guidelines_tools.rst:215
+#: 49cf8689bc154d5fbf56dcef303ba953
+msgid ""
+"``summary``/``abstract``/``description``: Content summary (200-2,500 chars)"
+msgstr "``summary``/``abstract``/``description``: 内容摘要（200-2500字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:216
+#: c134d121053342ff8d66a3a321795dbc
+msgid ""
+"Tool-specific: ``pmid``, ``doi``, ``authors``, ``date``, ``cited_by_count``,"
+" etc."
+msgstr "工具特定：``pmid``、``doi``、``authors``、``date``、``cited_by_count``等。"
+
+#: ../../guide/clinical_guidelines_tools.rst:218
+#: 520a5ba7689d4432a03dbc5eac65e8c2
+msgid "**NICE Full-Text Returns:**"
+msgstr "**NICE 全文返回：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:220
+#: 40cf6043c5f940d6a9a9a318b08bc04d
+msgid "``full_text``: Complete guideline (5,000-20,000+ chars)"
+msgstr "``full_text``: 完整指南（5,000-20,000+ 字符）"
+
+#: ../../guide/clinical_guidelines_tools.rst:221
+#: 99f3ded2ee6e408ea5364c43049d2be5
+msgid "``full_text_length``: Character count"
+msgstr "``full_text_length``：字符计数"
+
+#: ../../guide/clinical_guidelines_tools.rst:222
+#: eba02f03a2f3458392cdf19e4fa3c378
+msgid "``sections_count``: Number of sections"
+msgstr "``sections_count``：章节数"
+
+#: ../../guide/clinical_guidelines_tools.rst:223
+#: 0753e925c2464f4b8244e16935f03afa
+msgid "``recommendations``: List of recommendations"
+msgstr "``recommendations``：建议列表"
+
+#: ../../guide/clinical_guidelines_tools.rst:224
+#: fb71385b8457417abc9311fe3f266cb9
+msgid "``recommendations_count``: Count"
+msgstr "``recommendations_count``：计数"
+
+#: ../../guide/clinical_guidelines_tools.rst:225
+#: ../../guide/clinical_guidelines_tools.rst:236
+#: 5acc403d9cdb4bcdaeadc4c3c01dd440 d5f495c6aae3496dbe2202a15d1f7b65
+msgid "``metadata``: Publication info"
+msgstr "``metadata``: 出版信息"
+
+#: ../../guide/clinical_guidelines_tools.rst:226
+#: ../../guide/clinical_guidelines_tools.rst:237
+#: 396ee080633844a1bfa4443029706b1a 6732e58575d14e838712dd9e07b0548d
+msgid "``success``: Boolean status"
+msgstr "``success``：布尔值状态"
+
+#: ../../guide/clinical_guidelines_tools.rst:228
+#: 70efbf9d3d7941adb218a62d5484a1a2
+msgid "**WHO Full-Text Returns:**"
+msgstr "**WHO 全文返回：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:230
+#: ffa534ab5da64b699617d5f5311635b8
+msgid "``overview``: Overview section"
+msgstr "``overview``：概述部分"
+
+#: ../../guide/clinical_guidelines_tools.rst:231
+#: eb94eed7545f42d1a125edb8dc7e4586
+msgid "``main_content``: Main content"
+msgstr "``main_content``: 主内容"
+
+#: ../../guide/clinical_guidelines_tools.rst:232
+#: 3b05c69e056a43d1a393e92e43fb6237
+msgid "``content_length``: Character count"
+msgstr "``content_length``：字符计数"
+
+#: ../../guide/clinical_guidelines_tools.rst:233
+#: e258bebb8293421ca5159f1e2233965d
+msgid "``has_pdf``: Boolean"
+msgstr "``has_pdf``：布尔值"
+
+#: ../../guide/clinical_guidelines_tools.rst:234
+#: 23fd9104110041adadc6092802fa9621
+msgid "``pdf_download_url``: PDF link (if available)"
+msgstr "``pdf_download_url``：PDF 链接（如果可用）"
+
+#: ../../guide/clinical_guidelines_tools.rst:235
+#: 128b569ab3ad4204b0f878af8444c803
+msgid "``key_facts``: List of key facts"
+msgstr "``key_facts``：关键事实列表"
+
+#: ../../guide/clinical_guidelines_tools.rst:240
+#: ef6d748b9ee74661bdcba6eb32fd4cb8
+msgid "Summary"
+msgstr "摘要"
+
+#: ../../guide/clinical_guidelines_tools.rst:242
+#: e3cbb5a2daa74bb7826f54f4138f853a
+msgid "**8 Tools Covering:**"
+msgstr "**涵盖的8种工具：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:244
+#: 68a225924f6b4f8eb75a1c8efcee7364
+msgid "✅ 6 search tools - Quick search across multiple sources"
+msgstr "✅ 6 个搜索工具 - 跨多个来源快速搜索"
+
+#: ../../guide/clinical_guidelines_tools.rst:245
+#: 3fb7e29969e14c5092cedd00a9e25e40
+msgid "✅ 2 full-text tools - Deep content extraction"
+msgstr "✅ 2 个全文工具 - 深度内容提取"
+
+#: ../../guide/clinical_guidelines_tools.rst:246
+#: 9d523e12a01140f89fcfdf593b984407
+msgid "✅ Official sources - NICE (UK), WHO (International)"
+msgstr "✅ 官方来源 - NICE（英国）、WHO（国际）"
+
+#: ../../guide/clinical_guidelines_tools.rst:247
+#: 2f9b7de617de43b29bf57a441978ef7b
+msgid "✅ Academic databases - PubMed, Europe PMC, OpenAlex"
+msgstr "✅ 学术数据库 - PubMed、Europe PMC、OpenAlex"
+
+#: ../../guide/clinical_guidelines_tools.rst:248
+#: e33c4d164b55442bbcbbefc54b899407
+msgid "✅ Evidence-based - TRIP Database"
+msgstr "✅ 基于证据 - TRIP 数据库"
+
+#: ../../guide/clinical_guidelines_tools.rst:249
+#: 35fc102c293045978fcf586eb764506f
+msgid "✅ Complete extraction - 5,000-20,000+ characters"
+msgstr "✅ 完整提取 - 5,000-20,000+ 字符"
+
+#: ../../guide/clinical_guidelines_tools.rst:250
+#: 2faa505b7dcb4459baa5b38bbf39edf6
+msgid "✅ PDF downloads - WHO guidelines"
+msgstr "✅ PDF 下载 - WHO 指南"
+
+#: ../../guide/clinical_guidelines_tools.rst:251
+#: e37f189478724301a2a789b02f97ef62
+msgid "✅ 100% test coverage - 23/23 tests passing"
+msgstr "✅ 100% 测试覆盖率 - 23/23 项测试全部通过"
+
+#: ../../guide/clinical_guidelines_tools.rst:253
+#: ea5864c48b9d443981e8a47b57b28d54
+msgid "**For More Information:**"
+msgstr "**更多信息：**"
+
+#: ../../guide/clinical_guidelines_tools.rst:255
+#: 57c27c9793e44033ae7c4ae60267b8bf
+msgid "Complete demo: ``examples/clinical_guidelines_demo.py``"
+msgstr "完整演示：``examples/clinical_guidelines_demo.py``"
+
+#: ../../guide/clinical_guidelines_tools.rst:256
+#: cf9ac9af1b0d4000b5bebaffb5afb9e3
+msgid "Source code: ``src/tooluniverse/unified_guideline_tools.py``"
+msgstr "源代码：``src/tooluniverse/unified_guideline_tools.py``"
+
+#: ../../guide/clinical_guidelines_tools.rst:257
+#: e07d9ad37bd442b881d34254d4f0f508
+msgid "Tests: ``tests/test_guideline_tools.py``"
+msgstr "测试：``tests/test_guideline_tools.py``"
+
+#~ msgid "**Search Tools (6 tools):**"
+#~ msgstr "**搜索工具（6 个工具）：**"
+
+#~ msgid ""
+#~ "``NICE_Clinical_Guidelines_Search`` - UK NICE official guidelines (with "
+#~ "summaries)"
+#~ msgstr "``NICE_Clinical_Guidelines_Search`` - 英国NICE官方指南（含摘要）"
+
+#~ msgid ""
+#~ "``WHO_Guidelines_Search`` - WHO World Health Organization guidelines (with "
+#~ "descriptions)"
+#~ msgstr "``WHO_Guidelines_Search`` - WHO 世界卫生组织指南（含描述）"
+
+#~ msgid "``PubMed_Guideline_Search`` - PubMed guidelines (with full abstracts)"
+#~ msgstr "``PubMed_Guideline_Search`` - PubMed 指南（包含完整摘要）"
+
+#~ msgid "``EuropePMC_Guideline_Search`` - Europe PMC guidelines"
+#~ msgstr "``EuropePMC_Guideline_Search`` - Europe PMC 指南"
+
+#~ msgid "``TRIP_Database_Search`` - TRIP evidence-based medicine database"
+#~ msgstr "``TRIP_Database_Search`` - TRIP 循证医学数据库"
+
+#~ msgid ""
+#~ "``OpenAlex_Guidelines_Search`` - OpenAlex scholarly guidelines (with "
+#~ "citation counts)"
+#~ msgstr "``OpenAlex_Guidelines_Search`` - OpenAlex 学术指南（含引用次数）"
+
+#~ msgid "**Full-Text Extraction Tools (2 tools):**"
+#~ msgstr "**全文提取工具（2种工具）：**"
+
+#~ msgid ""
+#~ "``NICEGuidelineFullTextTool`` - Extract complete NICE guideline content "
+#~ "(5000-20000+ chars)"
+#~ msgstr "``NICEGuidelineFullTextTool`` - 提取完整的NICE指南内容（5000-20000+字符）"
+
+#~ msgid ""
+#~ "``WHOGuidelineFullTextTool`` - Extract WHO content and get PDF download "
+#~ "links"
+#~ msgstr "``WHOGuidelineFullTextTool`` - 提取WHO内容并获取PDF下载链接"
+
+#~ msgid "Content Features"
+#~ msgstr "内容功能"
+
+#~ msgid "NICE Search"
+#~ msgstr "NICE 搜索"
+
+#~ msgid "UK National Institute for Health and Care Excellence"
+#~ msgstr "英国国家健康与护理卓越研究所"
+
+#~ msgid "Official UK clinical guidelines, evidence-based recommendations"
+#~ msgstr "英国官方临床指南，循证推荐"
+
+#~ msgid "WHO Search"
+#~ msgstr "WHO 搜索"
+
+#~ msgid "World Health Organization"
+#~ msgstr "世界卫生组织"
+
+#~ msgid "International health guidelines, global health policies"
+#~ msgstr "国际健康指南、全球健康政策"
+
+#~ msgid "PubMed"
+#~ msgstr ""
+
+#~ msgid "NCBI PubMed Central"
+#~ msgstr "NCBI PubMed 中央库"
+
+#~ msgid "Peer-reviewed published guidelines, filtered by \"Guideline\" type"
+#~ msgstr "经过同行评审的已发布指南，按“指南”类型筛选"
+
+#~ msgid "Europe PMC"
+#~ msgstr "欧洲PMC"
+
+#~ msgid "Europe PMC Database"
+#~ msgstr "欧洲PMC数据库"
+
+#~ msgid "European biomedical literature, open access publications"
+#~ msgstr "欧洲生物医学文献，开放获取出版物"
+
+#~ msgid "TRIP"
+#~ msgstr "行程"
+
+#~ msgid "TRIP Evidence-Based Medicine Database"
+#~ msgstr "TRIP 循证医学数据库"
+
+#~ msgid "Curated evidence-based medicine resources, systematic reviews"
+#~ msgstr "精选的循证医学资源，系统评价"
+
+#~ msgid "OpenAlex"
+#~ msgstr ""
+
+#~ msgid "OpenAlex Scholarly Database"
+#~ msgstr "OpenAlex 学术数据库"
+
+#~ msgid "Comprehensive scholarly works, citation metrics, institution info"
+#~ msgstr "综合学术著作、引用指标、机构信息"
+
+#~ msgid "**NICE Full-Text**"
+#~ msgstr "请提供需要翻译的具体英文文本内容，我将为您提供准确、流畅的中文翻译。"
+
+#~ msgid "**NICE Website**"
+#~ msgstr "**NICE 网站**"
+
+#~ msgid "**Complete guideline extraction,** **all sections & recommendations**"
+#~ msgstr "**完整指南提取，** **所有章节与建议**"
+
+#~ msgid "**WHO Full-Text**"
+#~ msgstr "请提供具体的英文文本内容，我将为您翻译成符合要求的中文。"
+
+#~ msgid "**WHO Publications**"
+#~ msgstr "**世卫组织出版物**"
+
+#~ msgid "**Web content extraction,** **PDF download links**"
+#~ msgstr "**网页内容提取，** **PDF下载链接**"
+
+#~ msgid "1. Search NICE Guidelines"
+#~ msgstr "1. 搜索 NICE 指南"
+
+#~ msgid "**Return fields**: title, url, summary, date, type, category"
+#~ msgstr "**返回字段**：title、url、summary、date、type、category"
+
+#~ msgid "2. Search WHO Guidelines"
+#~ msgstr "2. 搜索 WHO 指南"
+
+#~ msgid "**Return fields**: title, url, description, organization, official"
+#~ msgstr "**返回字段**：title、url、description、organization、official"
+
+#~ msgid "3. Search PubMed Guidelines"
+#~ msgstr "3. 搜索 PubMed 指南"
+
+#~ msgid ""
+#~ "**Return fields**: pmid, title, abstract, authors, journal, "
+#~ "publication_date, doi, url"
+#~ msgstr "**返回字段**：pmid、title、abstract、authors、journal、publication_date、doi、url"
+
+#~ msgid "4. Multi-Source Search"
+#~ msgstr "4. 多源搜索"
+
+#~ msgid "Full-Text Extraction"
+#~ msgstr "全文提取"
+
+#~ msgid "Extract Complete NICE Guidelines"
+#~ msgstr "提取完整的NICE指南"
+
+#~ msgid ""
+#~ "**Return fields**: - ``full_text``: Complete guideline content (5000-20000+ "
+#~ "characters) - ``sections_count``: Number of sections - ``recommendations``: "
+#~ "List of clinical recommendations - ``metadata``: Publication date, guideline"
+#~ " code, etc."
+#~ msgstr ""
+#~ "**返回字段**：  \n"
+#~ "- ``full_text``：完整的指南内容（5000-20000+字符）  \n"
+#~ "- ``sections_count``：章节数量  \n"
+#~ "- ``recommendations``：临床建议列表  \n"
+#~ "- ``metadata``：发布日期、指南代码等"
+
+#~ msgid "Extract WHO Content and PDF"
+#~ msgstr "提取 WHO 内容和 PDF"
+
+#~ msgid ""
+#~ "**Return fields**: - ``overview``: Overview content - ``main_content``: Main"
+#~ " content - ``pdf_download_url``: PDF download link (if available) - "
+#~ "``key_facts``: List of key facts"
+#~ msgstr ""
+#~ "**返回字段**：  \n"
+#~ "- ``overview``：概览内容  \n"
+#~ "- ``main_content``：主要内容  \n"
+#~ "- ``pdf_download_url``：PDF 下载链接（如果可用）  \n"
+#~ "- ``key_facts``：关键事实列表"
+
+#~ msgid "Complete Workflow"
+#~ msgstr "完整工作流程"
+
+#~ msgid "Search → Extract → Analyze:"
+#~ msgstr "搜索 → 提取 → 分析："
+
+#~ msgid ""
+#~ "Search tools: Return multiple results, each with title, URL, summary "
+#~ "(200-2500 chars)"
+#~ msgstr "搜索工具：返回多个结果，每个结果包含标题、URL、摘要（200-2500字符）"
+
+#~ msgid ""
+#~ "Full-text tools: Take a single URL, return complete content (5000-20000+ "
+#~ "chars)"
+#~ msgstr "全文工具：输入单个URL，返回完整内容（5000-20000+字符）"
+
+#~ msgid "Need complete guideline content for detailed analysis"
+#~ msgstr "需要完整的指南内容以进行详细分析"
+
+#~ msgid "Want to extract all clinical recommendations"
+#~ msgstr "要提取所有临床建议"
+
+#~ msgid "Need to download PDF for offline reading"
+#~ msgstr "需要下载PDF以便离线阅读"
+
+#~ msgid "Want to feed complete content into LLMs for processing"
+#~ msgstr "希望将完整内容输入到LLM进行处理"
+
+#~ msgid "**Q: Why don't some tools have abstracts?**"
+#~ msgstr "**问：为什么某些工具没有摘要？**"
+
+#~ msgid ""
+#~ "Europe PMC and TRIP may have empty abstracts for some results (depends on "
+#~ "source data). Use PubMed or NICE for guaranteed abstracts."
+#~ msgstr "Europe PMC 和 TRIP 的某些结果可能没有摘要（取决于源数据）。请使用 PubMed 或 NICE 以确保获取摘要。"
+
+#~ msgid "**Q: How to get the latest guidelines?**"
+#~ msgstr "**问：如何获取最新指南？**"
+
+#~ msgid "**8 tools covering:**"
+#~ msgstr "**涵盖的8种工具：**"
+
+#~ msgid "✅ 6 search tools - Quick search, returns URL + summary"
+#~ msgstr "✅ 6 个搜索工具 - 快速搜索，返回 URL + 摘要"
+
+#~ msgid "✅ 2 full-text tools - Deep extraction, returns complete content"
+#~ msgstr "✅ 2 个全文工具 - 深度提取，返回完整内容"
+
+#~ msgid "✅ Official sources - NICE, WHO"
+#~ msgstr "✅ 官方来源 - NICE，WHO"
+
+#~ msgid "✅ Academic databases - PubMed, Europe PMC, TRIP, OpenAlex"
+#~ msgstr "✅ 学术数据库 - PubMed、Europe PMC、TRIP、OpenAlex"
+
+#~ msgid "✅ Full-text extraction - NICE 5000+ chars, WHO content + PDF"
+#~ msgstr "✅ 全文提取 - 支持5000+字符，NICE内容、WHO内容 + PDF"
+
+#~ msgid "✅ 100% test coverage"
+#~ msgstr "✅ 100% 测试覆盖率"
+
+#~ msgid "**Recommended usage:**"
+#~ msgstr "**推荐使用：**"
+
+#~ msgid "Use search tools to quickly browse multiple sources"
+#~ msgstr "使用搜索工具快速浏览多个来源"
+
+#~ msgid "Use full-text tools to extract complete content of interest"
+#~ msgstr "使用全文工具提取感兴趣的完整内容"
+
+#~ msgid "Combine multiple sources for comprehensive literature review"
+#~ msgstr "结合多个来源以完成全面的文献综述"

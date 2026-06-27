@@ -1,0 +1,360 @@
+{
+  "entries": [
+    {
+      "title": "Analisis: medium.com",
+      "category": "Research",
+      "tags": [
+        "github",
+        "open-source",
+        "analisis",
+        "estrategia",
+        "research"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\research\\analisis:_medium.com.md",
+      "created": "2026-05-25T00:41:12.763996"
+    },
+    {
+      "title": "Analisis: www.reddit.com",
+      "category": "Research",
+      "tags": [
+        "github",
+        "open-source",
+        "analisis",
+        "estrategia",
+        "research"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\research\\analisis:_www.reddit.com.md",
+      "created": "2026-05-25T00:41:12.765522"
+    },
+    {
+      "title": "Analisis: www.hostinger.com",
+      "category": "Research",
+      "tags": [
+        "github",
+        "open-source",
+        "analisis",
+        "estrategia",
+        "research"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\research\\analisis:_www.hostinger.com.md",
+      "created": "2026-05-25T00:41:12.767605"
+    },
+    {
+      "title": "Analisis: codeeasy-io.translate.goog",
+      "category": "Research",
+      "tags": [
+        "github",
+        "open-source",
+        "analisis",
+        "python",
+        "basico"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\research\\analisis:_codeeasy-io.translate.goog.md",
+      "created": "2026-05-25T00:43:43.380988"
+    },
+    {
+      "title": "Autopsia: 6 repos clonados (Mayo 2026)",
+      "category": "Analysis",
+      "tags": [
+        "github",
+        "autopsia",
+        "analisis",
+        "open-source",
+        "agentes",
+        "clonados"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\analysis\\autopsia:_6_repos_clonados_(mayo_2026).md",
+      "created": "2026-05-25T00:51:02.561597"
+    },
+    {
+      "title": "Analisis Exhaustivo: 6 Repos Clonados",
+      "category": "Analysis",
+      "tags": [
+        "github",
+        "autopsia",
+        "analisis",
+        "nanobot",
+        "openharness",
+        "openfang",
+        "openakita",
+        "pincer",
+        "lethe"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\analysis\\analisis_exhaustivo:_6_repos_clonados.md",
+      "created": "2026-05-25T01:06:19.267641"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web:github.com.md",
+      "created": "2026-06-09T21:01:06.719256"
+    },
+    {
+      "title": "test:react.dev",
+      "category": "Web",
+      "tags": [
+        "test"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\test:react.dev.md",
+      "created": "2026-06-09T21:11:02.179119"
+    },
+    {
+      "title": "test2:direct",
+      "category": "Web",
+      "tags": [
+        "test"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\test2:direct.md",
+      "created": "2026-06-09T21:20:19.055040"
+    },
+    {
+      "title": "url:https://example.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___example.com.md",
+      "created": "2026-06-09T21:23:21.797008"
+    },
+    {
+      "title": "url:https://kotlinlang.org",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___kotlinlang.org.md",
+      "created": "2026-06-09T21:23:58.967217"
+    },
+    {
+      "title": "url:https://github.com/midudev/curso-python",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_midudev_curso-python.md",
+      "created": "2026-06-09T22:21:42.555839"
+    },
+    {
+      "title": "url:https://github.com/midudev/curso-python",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_midudev_curso-python.md",
+      "created": "2026-06-09T22:38:21.234111"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:43:49.650584"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:44:46.986080"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:46:28.625696"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:47:57.646902"
+    },
+    {
+      "title": "url:https://www.salesforce.com/es/agentforce/ai-agent-course/",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___www.salesforce.com_es_agentforce_ai-ag.md",
+      "created": "2026-06-09T22:47:58.888954"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:48:39.698842"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:49:54.367046"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:51:26.217645"
+    },
+    {
+      "title": "url:https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/es/01-intro-to-ai-agents/README.md",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___github.com_microsoft_ai-agents-for-beg.md",
+      "created": "2026-06-09T22:55:50.376044"
+    },
+    {
+      "title": "url:https://www.salesforce.com/es/agentforce/ai-agent-course/",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\url_https___www.salesforce.com_es_agentforce_ai-ag.md",
+      "created": "2026-06-09T22:55:51.821431"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-09T23:50:20.987137"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:04:54.032185"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:05:20.246406"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:11:42.561339"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:11:44.355693"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:11:46.221675"
+    },
+    {
+      "title": "web:github.com",
+      "category": "Web",
+      "tags": [
+        "auto-ingested",
+        "web",
+        "web:github.com"
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\web\\web_github.com.md",
+      "created": "2026-06-10T00:11:48.135698"
+    },
+    {
+      "title": "Learned: ",
+      "category": "Learned",
+      "tags": [
+        "auto-learned",
+        ""
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\learned\\learned__.md",
+      "created": "2026-06-10T00:16:46.644355"
+    },
+    {
+      "title": "Learned: ",
+      "category": "Learned",
+      "tags": [
+        "auto-learned",
+        ""
+      ],
+      "path": "D:\\ias\\proyectos\\supernexus-v2\\data\\knowledge\\learned\\learned__.md",
+      "created": "2026-06-10T00:18:21.291691"
+    }
+  ],
+  "categories": [
+    "People",
+    "Organizations",
+    "Projects",
+    "Topics"
+  ],
+  "updated": "2026-06-10T00:18:21.291691"
+}

@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/special_tools.rst:2 3bb871e7205d43449bf4c3307c7eb747
+msgid "Special Tools"
+msgstr "专用工具"
+
+#: ../../tools/special_tools.rst:4 aabf0fb4f4624b03a0e5f23313ec6837
+msgid ""
+"**Configuration File**: ``special_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 2"
+msgstr ""
+"**配置文件**：``special_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：2"
+
+#: ../../tools/special_tools.rst:8 c5d15fddab9a479bb79e9e3319208714
+msgid ""
+"This page contains all tools defined in the ``special_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``special_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/special_tools.rst:11 33f4e6df76e5421fa806d96bc91bc655
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/special_tools.rst:14 3a316b6f44e4440ea7348e5416d993b1
+msgid "**CallAgent** (Type: SpecialTool)"
+msgstr "**CallAgent**（类型：SpecialTool）"
+
+#: ../../tools/special_tools.rst:16 a8d310e6e51a4263b8f17112157f2477
+msgid ""
+"Give a solution plan to the agent and let it solve the problem. Solution "
+"plan should reflect a di..."
+msgstr "向智能体提供解决方案计划，并让其解决问题。解决方案计划应反映一个 di..."
+
+#: ../../tools/special_tools.rst f56fa559deb84c03b6daacb318823a35
+msgid "CallAgent tool specification"
+msgstr "CallAgent 工具规范"
+
+#: ../../tools/special_tools.rst:20 ../../tools/special_tools.rst:51
+#: 192415b148744b7eb9ab1968705a222c 598faa18f5eb48fd800bf5103056da15
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/special_tools.rst:22 c46d30c9db5c491db75e963afaf8f0d4
+msgid "**Name**: ``CallAgent``"
+msgstr "**名称**：``CallAgent``"
+
+#: ../../tools/special_tools.rst:23 ../../tools/special_tools.rst:54
+#: 0d9e81640b7c4e43a393a2ba48a3ac58 d5cdac9f192349eda54f452093d9901d
+msgid "**Type**: ``SpecialTool``"
+msgstr "**类型**：``SpecialTool``"
+
+#: ../../tools/special_tools.rst:24 05cde51b56864fe78e309218a399e998
+msgid ""
+"**Description**: Give a solution plan to the agent and let it solve the "
+"problem. Solution plan should reflect a distinct method, approach, or "
+"viewpoint to solve the given question. Call these function multiple "
+"times, and each solution plan should start with different aspects of the "
+"question, for example, genes, phenotypes, diseases, or drugs, etc. The "
+"CallAgent will achieve the task based on the plan, so only give the plan "
+"instead of unverified information."
+msgstr "**描述**：提供一个解决方案计划给智能体，让其解决问题。解决方案计划应体现出一种独特的方法、途径或观点来解决所提出的问题。多次调用这些函数，每个解决方案计划应从问题的不同方面开始，例如基因、表型、疾病或药物等。CallAgent将根据计划完成任务，因此只需提供计划，而不要提供未经验证的信息。"
+
+#: ../../tools/special_tools.rst:26 ../../tools/special_tools.rst:57
+#: 9a7c98e0a41d42cc80c742e018671b44 fbc0f3a3ba4a438988d88d5652b0ce72
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/special_tools.rst:28 2f8f604dadd546f699773b9cab6988c9
+#, fuzzy
+msgid ""
+"``solution`` (string) (required) A feasible and concise solution plan "
+"that address the question."
+msgstr "``solution``（字符串）（可选）一个可行且简洁的解决方案，用于解决该问题。"
+
+#: ../../tools/special_tools.rst:31 ../../tools/special_tools.rst:61
+#: 7c50d7a938cf4de09b2682175b35ca9f f8752c3abf284ce0aa6c6201d2fa9f12
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/special_tools.rst:45 5a0d8049794f4399b6689be48546eae3
+msgid "**Finish** (Type: SpecialTool)"
+msgstr "**完成**（类型：SpecialTool）"
+
+#: ../../tools/special_tools.rst:47 5bd2b90a50994a568c44126140bb2139
+msgid "Indicate the end of multi-step reasoning."
+msgstr "指明多步骤推理的结束。"
+
+#: ../../tools/special_tools.rst 51e1a211ce8241b3ba2b39f0626abb52
+msgid "Finish tool specification"
+msgstr "完成工具规格"
+
+#: ../../tools/special_tools.rst:53 47abf661cad54da6af07c24457d7a101
+msgid "**Name**: ``Finish``"
+msgstr "**名称**: ``完成``"
+
+#: ../../tools/special_tools.rst:55 b631d2ae4a0e42e88225cdd77534bf76
+msgid "**Description**: Indicate the end of multi-step reasoning."
+msgstr "**描述**：指示多步骤推理的结束。"
+
+#: ../../tools/special_tools.rst:59 a1a16051ee3c4836903cfd4a783c1b3d
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/special_tools.rst:74 250a446400ac463c85d316f3899c08be
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/special_tools.rst:76 b2886753997949c8a1260a0be007754a
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/special_tools.rst:77 bfa8aaa7e3564e3ea816f3ccf54e0c9a
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_when_using_info.rst:2
+#: 8b4d814198df46a18197d211caa9009a
+msgid "tooluniverse.tools.FDA\\_get\\_when\\_using\\_info module"
+msgstr "tooluniverse.tools.FDA\\_get\\_when\\_using\\_info 模块"
+
+#: 277152629ef64fac88b0a1c2bef62629 of
+#: tooluniverse.tools.FDA_get_when_using_info:1
+msgid "FDA_get_when_using_info"
+msgstr "FDA_使用信息时获取"
+
+#: 9a984848039c42ccb68279fb2262f966 a691036420554a1492c1d2f35948d0ae of
+#: tooluniverse.tools.FDA_get_when_using_info:3
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:1
+msgid ""
+"Retrieve information about side effects and substances or activities to "
+"avoid while using a speci..."
+msgstr "获取有关使用特定药物时可能出现的副作用以及应避免的物质或活动的信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_when_using_info.rst
+#: 8379f36c6e2740e4b73f06f8e07a1a06
+msgid "Parameters"
+msgstr "参数"
+
+#: 4c0f54809d1b445992db64aa5159a11a of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 31910e2849964b2ca29ca894babf0203 of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 9d4482cbb1334b03bb6a0684c21e56db of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: a7eee14880ba49fbb6b15e7f66d2e7d6 of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bfec2f95c4ce4d3c8494ea59af9111a1 of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 26f51a0bc92f4c848e5758fa2a13da80 of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_when_using_info.rst
+#: 46084b5b516e4649b56382900b8c9901
+msgid "Return type"
+msgstr "返回类型"
+
+#: ca78026e61bb43618efa9ac336fe0ece of
+#: tooluniverse.tools.FDA_get_when_using_info.FDA_get_when_using_info:16
+msgid ":py:class:`Any`"
+msgstr ""

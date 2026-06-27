@@ -1,0 +1,176 @@
+# RUFUS / claude-flow v3 → SuperNEXUS gemas_core — Port Analysis
+
+**Source:** `D:\ias\autopsia\ruflo\` (read-only)
+**Target:** `D:\ias\proyectos\supernexus-v2\src\gemas_core\` (v1.3.0)
+**Status:** analysis-only, no files modified
+
+---
+
+## 1. Top Port-Worthy Patterns (ranked by value × portability)
+
+| # | Pattern | Source | Portability | Effort | Value | Target |
+|---|---------|--------|-------------|--------|-------|--------|
+| 1 | `SmartRetrieval` pipeline (RRF + recency + MMR + session diversity) | `v3\@claude-flow\memory\src\smart-retrieval.ts` | **algorithm** | medium | **high** | `gemas_core/core/smart_retrieval.py` (pluggable `SearchFn` → rewrap `brain_recall`/`retrieval_search` from the MCP bridge) |
+| 2 | `MemoryConsolidator` (sweep / dedup / compact) | `v3\@claude-flow\memory\src\consolidator.ts` | **algorithm** | medium | **high** | `gemas_core/core/memory_consolidator.py` (operates on `nexus_memory.db` from MCP) |
+| 3 | `MemoryType` taxonomy + `AccessLevel` + `MemoryEntry` | `v3\@claude-flow\memory\src\types.ts` | **protocol-contract** | small | **high** | `gemas_core/core/memory_types.py` (dataclasses; align with `hierarchical_memory` tiers) |
+| 4 | 19-event `HookEvent` enum + 5-level `HookPriority` | `v3\@claude-flow\hooks\src\types.ts` | **protocol-contract** | small | **high** | `gemas_core/core/hook_events.py` (Python `StrEnum` + `IntEnum`); back the existing `plan_mode` blocklist |
+| 5 | Worker MCP allowlist + Zod-style input validation | `v3\@claude-flow\hooks\src\workers\mcp-tools.ts` | **algorithm** | small | medium | `gemas_core/core/mcp_input_validation.py` (Python `pydantic` model for `nexus-sovereign` tool args) |
+| 6 | `Agent` aggregate root (DDD) with `AgentRole` + `AgentStatus` | `v3\@claude-flow\swarm\src\domain\entities\agent.ts` | **algorithm** | small | medium | `gemas_core/core/agent_model.py` (reusable for any new gemas in `gemas_client_overrides/`) |
+| 7 | `Task` entity with dependency graph + `TaskPriority` | `v3\@claude-flow\swarm\src\domain\entities\task.ts` | **protocol-contract** | small | medium | `gemas_core/core/task_model.py` (lets `dispatch.py` grow DAG-style dispatch) |
+| 8 | `TeammateBridge` mailbox/plan-approval handshake | `v3\plugins\teammate-plugin\src\teammate-bridge.ts` | **protocol-contract** | medium | medium | New MCP tools: `delegate_to_peer`, `approve_plan`, `sync_session` (additive, do not replace `send_message`/`read_messages`) |
+| 9 | `SemanticRouter` (BMSSP topology optimization) | `v3\plugins\teammate-plugin\src\semantic-router.ts` | **algorithm** | medium | medium | `gemas_core/core/semantic_router.py` (wraps existing `classify_task` MCP tool) |
+| 10 | `BoundedSet<T>` + circuit-breaker + rate-limiter + retry | `v3\plugins\teammate-plugin\src\utils\*.ts` | **algorithm** | small | low-medium | Sit alongside existing `core/rate_limiter.py`; circuit-breaker/retries are additive utilities |
+| 11 | `safeNum` defensive coercion (regression #1686) | `v3\@claude-flow\cli\src\commands\hooks.ts` | **algorithm** | trivial | low | Tiny `gemas_core/core/safe_num.py` — drop-in JSON-parse hardening |
+| 12 | Hybrid backend routing strategy (`auto`/`sqlite-first`/`agentdb-first` + `dualWrite`) | `v3\@claude-flow\memory\src\hybrid-backend.ts` | **protocol-contract only** (impl is Node.js) | small | medium | `gemas_core/core/hybrid_routing.py` (configures `multi_signal_retrieval` + `brain_recall` behind one knob) |
+
+**Anti-port** (port not recommended — listed in §6): the `HybridBackend` *implementation* (sql.js + native HNSW binding), `RaftConsensus`, `GossipConsensus`, `EventEmitter`-based `MessageBus`, the TypeScript-specific `deque` circular buffer, and the full `@claude-flow/hooks` runtime.
+
+---
+
+## 2. Agent Type Comparison
+
+| Dimension | RUFUS v3 `@claude-flow/swarm` | SuperNEXUS `gemas_core` |
+|-----------|-------------------------------|-------------------------|
+| **Total roles** | 15 `AgentRole` enum members | 5 dedicated + 18 role-LLM = 23 |
+| **Dedicated workers** | Conceptually 1 (the swarm) + 1 `queen-coordinator` | 5 hard-coded: `ayuda`, `scholar`, `sage`, `biblioteca`, `prompter` |
+| **Role-LLM count** | n/a — all 15 are first-class `Agent` instances | 18 manifests (`code`, `architect`, `debugger`, `tester`, `security`, `devops`, etc.) |
+| **Lifecycle states** | `idle / active / busy / paused / terminated / error` | Implicit in `dispatch_gema` return codes; not explicit field on `GemaBase` |
+| **Identity** | `AgentId` (ULID), `SwarmId` | `gema.name` (string from manifest `name` field) |
+| **Specialization source** | In-code `AgentRole` union + capabilities array | `GemaManifest.system_prompt` (declarative JSON) |
+| **Topology** | `mesh / hierarchical / centralized / hybrid` (`TopologyType`) | None — flat dict `{gema_id: GemaBase}` |
+| **DDD pattern** | Aggregate root, domain/infrastructure separation | `GemaBase` ABC + dataclass manifest (light DDD) |
+| **Persistence** | Live `Agent` instances in `UnifiedSwarmCoordinator` | Disk: `data/gemas/*.json`; runtime: in-memory dict |
+| **Cross-agent comms** | `MessageBus` (1000+ msg/s) with acks | `message_board.db` via `send_message` / `read_messages` MCP |
+| **Roles missing in gemas_core** | `queen-coordinator`, `swarm-specialist`, `integration-architect`, `performance-engineer`, `core-architect`, `test-architect`, `project-coordinator`, `planner`, `researcher` | (Most overlap with existing `director`, `architect`, `code`, `tester`, `scholar`; `planner` and `integration-architect` are net-new) |
+| **Roles unique to gemas_core** | — | `ayuda`, `scholar`, `sage`, `biblioteca`, `prompter` (dedicated Python workers), `music`, `vision` (Ollama-vision) |
+| **Adding a new role** | TS class with `AgentRole` enum membership + `IAgentRegistry.register()` | Drop `data/gemas/<name>.json` + (optional) `workers/<name>.py` extending `GemaBase` |
+| **Hot reload** | n/a (long-running Node process) | n/a (re-instantiate via `build_standard_gemas()` on restart) |
+
+**Key insight:** RUFUS models agents as runtime objects inside a long-lived Node coordinator; gemas_core models them as **declarative + stateless + restart-safe**. The RUFUS `Agent` aggregate can be ported as a *runtime-side data structure* (e.g. an in-memory `GemaInstance` with `status`, `last_used_at`, `active_task_count`) without changing the public manifest/dispatch contract.
+
+---
+
+## 3. Memory Architecture Comparison
+
+| Layer | RUFUS v3 `@claude-flow/memory` | SuperNEXUS (existing modules) | Match / Gap |
+|-------|--------------------------------|-------------------------------|-------------|
+| **Type taxonomy** | `episodic / semantic / procedural / working / cache` | `hierarchical_memory` 3 tiers: `working / episodic / semantic` | ✅ Match (only `procedural` + `cache` are extra) |
+| **Access control** | `private / team / swarm / public / system` | Implicit in `metadata.privacy` (FTS5 `nexus_memory.db`) | ⚠️ Add named levels (cheap enum) |
+| **Consistency** | `strong / eventual / causal` | Single SQLite (strong) | OK for local-only use case |
+| **Vector store** | AgentDB HNSW (native) | `nomic-embed-text` via Ollama + RAG engine in MCP | ✅ Same goal, different impl |
+| **Structured store** | sql.js in-memory | `nexus_memory.db` SQLite + FTS5 | ✅ Same goal, different impl |
+| **Backend composition** | `HybridBackend` (ADR-009) with `routingStrategy: 'auto' \| 'sqlite-first' \| 'agentdb-first'` + `dualWrite` | `multi_signal_retrieval` (semantic + keyword + entities) + `brain_recall` | ✅ Conceptually equivalent — the routing strategy is the *missing unified knob* |
+| **Retrieval pipeline** | `SmartRetrieval` (ADR-090): query expansion → multi-query fan-out → RRF → recency boost → MMR diversity → session round-robin | `retrieval_search` MCP tool (hybrid) | ⚠️ RUFUS is more sophisticated — 5-phase vs 3-signal |
+| **Consolidation** | `MemoryConsolidator` (ADR-125 Phase 4): `sweepExpired` / `dedup` (3 strategies) / `compactHnsw` / `runAll` | `self_learning_loop` runs continuously; no explicit maintenance API | ⚠️ Missing explicit sweep/dedup/compact contract |
+| **Self-learning** | `ReasoningBank` (vector patterns) + `MemoryConsolidator` + `HooksLearningDaemon` | `self_learning_loop` + `hierarchical_memory` + `multi_signal_retrieval` | ✅ Conceptually equivalent, 3-layer |
+| **Episode pattern** | `addEpisode(what/why/where/learned)` engram | `add_episode` MCP tool (identical shape) | ✅ Exact match |
+| **Topic-key upsert** | Implicit (memory-entry) | `add_observation(topic_key=...)` (ADR-style upsert) | ✅ Match |
+| **Search interface** | `SearchFn = (req) => Promise<{results: SearchCandidate[]}>` | `brain_recall(query, topic, limit)` + `retrieval_search(query, top_k)` | ✅ Both async, similar return shape |
+
+**Port recommendation (memory):** ship `core/smart_retrieval.py` as a thin async wrapper over the existing `brain_recall` MCP tool, then add `core/memory_consolidator.py` to give SuperNEXUS the explicit 3-operation maintenance contract. Both can be invoked from `self_learning_loop.py` as additional scheduled jobs.
+
+---
+
+## 4. Teammate-Bridge Contract (portable / not portable)
+
+**Source:** `D:\ias\autopsia\ruflo\v3\plugins\teammate-plugin\src\teammate-bridge.ts`
+
+**Portable (the protocol, not the impl):**
+- Team management (peer list, peer status, peer capabilities) → `list_nodes` MCP
+- Mailbox (per-peer message queue with TTL) → additive over `message_board.db` (add `message_board_inbox` table; do **not** modify existing protocol)
+- Plan approval (propose / approve / reject with checklist) → additive `approve_plan` / `reject_plan` MCP tools
+- Teleport / session resume (move in-progress task between peers) → additive `teleport_session(session_id, target_peer)` tool
+- Remote sync (per-peer state diff with version vector) → additive `sync_with_peer(peer_id)` tool
+
+**Not portable (Node.js-specific or already present):**
+- Claude Code `TeammateTool` binding (>= 2.1.19) — the *target* of the bridge, not the bridge itself
+- `BoundedSet<T>` FIFO (port to Python `collections.OrderedDict` bounded)
+- `CircuitBreaker` with sliding-window time tracking → port to Python but sit alongside existing `RateLimiter`
+- `RateLimiter` already exists in `gemas_core/core/rate_limiter.py` — **do not duplicate**
+
+**Constraint compliance check:** the bridge is purely additive. It does not propose replacing `send_message` / `read_messages` (the existing NexusHive primitive), nor modifying `message_board.db` schema in a breaking way. The `inbox` table can be a new table; the existing tables stay untouched.
+
+**Add the bridge as new MCP tools, not as a replacement for the message board.** Example target surface:
+
+```python
+# gemas_core/teammate/contract.py
+class PeerStatus(StrEnum): HEALTHY = "healthy"; DEGRADED = "degraded"; OFFLINE = "offline"
+class MailboxMessage: peer_id: str; payload: dict; ttl_s: int; enqueued_at: datetime
+class PlanProposal: id: str; steps: list[str]; requires: list[str]; approvals: dict[str, bool]
+```
+
+---
+
+## 5. Prioritized Ports — v1.5 / v1.6 / v1.7 Roadmap
+
+### v1.5 (low-risk utility layer — additive only)
+
+1. **`gemas_core/core/memory_types.py`** — port `MemoryType` + `AccessLevel` + `DistanceMetric` enums as Python `StrEnum`/`IntEnum`. Add 297 tests pattern. *Effort: small, Value: high*
+2. **`gemas_core/core/hook_events.py`** — port the 19-event `HookEvent` + 5-level `HookPriority`. Wire existing `plan_mode.py` to consume the priority levels. *Effort: small, Value: high*
+3. **`gemas_core/core/safe_num.py`** — port the `safeNum` regression-#1686 pattern. 30 lines, one decorator. *Effort: trivial, Value: low (but free)*
+4. **`gemas_core/core/mcp_input_validation.py`** — wrap `nexus-sovereign` tool args in `pydantic` models. Use the worker allowlist from `mcp-tools.ts` as the template. *Effort: small, Value: medium*
+5. **`gemas_core/core/agent_model.py`** — port the `Agent` aggregate root fields (`AgentId`, `AgentStatus`, `AgentRole` lite, `last_used_at`, `active_task_count`) as runtime state over `GemaBase`. *Effort: small, Value: medium*
+6. **`gemas_core/core/task_model.py`** — port the `Task` dataclass with `TaskStatus`, `TaskPriority`, `dependencies: set[str]`. *Effort: small, Value: medium*
+
+### v1.6 (memory consolidation layer — algorithm ports)
+
+7. **`gemas_core/core/smart_retrieval.py`** — port the 5-phase `SmartRetrieval` pipeline. Pluggable `SearchFn` that defaults to the existing `brain_recall` MCP tool. Toggle each phase via `SmartSearchOptions` (multiQuery, recencyBoost, diversityMMR, sessionDiversity). *Effort: medium, Value: high*
+8. **`gemas_core/core/memory_consolidator.py`** — port `MemoryConsolidator` with 3 operations: `sweepExpired` (operates on FTS5 `nexus_memory.db`), `dedup(strategy)` (keep-newest / keep-oldest / merge-tags by content_hash), `compactIndex` (NOP for SQLite — explicit "no-op" return for vector index since SQLite is already compact). *Effort: medium, Value: high*
+9. **`gemas_core/core/hybrid_routing.py`** — port the `routingStrategy: 'auto' | 'sqlite-first' | 'agentdb-first'` + `dualWrite` knob as a thin config wrapper around `multi_signal_retrieval`. *Effort: small, Value: medium*
+10. **Wire `self_learning_loop.py`** to call `MemoryConsolidator.runAll()` on a daily schedule (currently relies on the loop's own continuous processing). *Effort: small, Value: medium*
+
+### v1.7 (teammate / coordination layer — protocol contracts)
+
+11. **New `gemas_core/teammate/contract.py`** — port the `TeammateBridge` portable subset: `PeerStatus`, `MailboxMessage`, `PlanProposal`, `TeleportRequest` (data classes only — no transport). *Effort: medium, Value: medium*
+12. **New MCP tools in `nexus-sovereign`:** `delegate_to_peer`, `approve_plan`, `reject_plan`, `sync_with_peer`, `teleport_session`. **All additive** — do not modify existing `send_message` / `read_messages` semantics. *Effort: medium, Value: medium*
+13. **`gemas_core/core/semantic_router.py`** — port the `SemanticRouter` BMSSP topology optimization. Use the existing `classify_task` MCP tool as the underlying scorer. *Effort: medium, Value: medium*
+14. **New `gemas_client_overrides/` examples** (in `latamrust-nexus`): demo a `CoordinatorGem` that uses the new `TaskModel` DAG and `dispatch_gema`'s `inspect.signature` to drive a real multi-step pipeline. *Effort: small, Value: low (reference impl)*
+15. **`gemas_core/core/circuit_breaker.py`** — port the `CircuitBreaker` (closed/open/half-open) with sliding-window failure tracking. Companion to existing `RateLimiter`. *Effort: small, Value: low-medium*
+
+### Cross-version constraints (apply to every release)
+
+- **Never replace** the 5 dedicated workers (`ayuda`, `scholar`, `sage`, `biblioteca`, `prompter`).
+- **Never replace** `dispatch_gema` — extend it via the new `TaskModel` DAG (additive kwarg only).
+- **Never replace** existing `nexus-sovereign` MCP tools — add new ones.
+- **Never modify** `message_board.db` schema in a breaking way — add new tables alongside.
+- **Always preserve** the `gemas_client_overrides/` directory in vendor-sync script.
+- **Always run** `python -m pytest src/gemas_core/tests/ -v` and target the 297+1 test pattern.
+
+---
+
+## 6. Anti-Port List (do NOT port these)
+
+| Source | Reason |
+|--------|--------|
+| `HybridBackend` implementation (sql.js + native HNSW binding) | Node.js-specific. SuperNEXUS already has `nexus_memory.db` (SQLite/FTS5) and `nomic-embed-text` (Ollama) — port the **routing strategy contract**, not the backend. |
+| `RaftConsensus` (full impl) | Heavy ceremony, 3 timers (election/heartbeat/replicate), pluggable transport. SuperNEXUS already has NexusHive as a service-based coordination layer; Raft would be a second, competing system. **Port the *idea* of pluggable transport as a `Protocol` ABC if needed, not the full impl.** |
+| `GossipConsensus` (full impl) | Bounded-set gossip with version propagation is useful in 100+ peer swarms. SuperNEXUS has 7 peers in a star topology; gossip is overkill. The pattern is already represented by `message_board.db` polling. |
+| `MessageBus` + `Deque` circular buffer (1000+ msg/s target) | The 7-peer NexusHive is not throughput-bound; 1000 msg/s is irrelevant. The `Deque` data structure exists in Python's `collections.deque` — if needed, just use that. |
+| The full `@claude-flow/hooks` runtime | TypeScript `EventEmitter`-based hook executor with 19 events + 5 priorities + 4 daemons. SuperNEXUS has `plan_mode` and 1 priority level. Port the *enums* (small win) and the *idea* of priority levels, but do not port the runtime. |
+| `ReasoningBank` (full impl) | Vector-based pattern learning is conceptually already in `self_learning_loop.py`. Adding ReasoningBank as a second pattern-learner would create a parallel pipeline that drift over time. |
+| `queen-coordinator` / `TopologyManager` role-based caches | The queen pattern is for 100+ agent swarms. SuperNEXUS has 23 gemas in a flat dict — `O(1)` role-based indexes are a YAGNI optimization. |
+| `SwarmHub` → `UnifiedSwarmCoordinator` facade | ADR-003 marks it deprecated. Port the deprecated pattern is a net negative. |
+| `safeNum` cross-language port | Python's `decimal.Decimal` + `pydantic` validation is the idiomatic equivalent. Don't port the TS coercion; just use stdlib. |
+| Any TypeScript decorator or `Reflect.metadata` | Python has its own `functools.wraps` / `pydantic` model_validator idioms; copying TS-specific reflection patterns is a transliteration anti-pattern. |
+| The full `teammate-plugin` package | Same Claude Code version coupling. The *contract* (PeerStatus, MailboxMessage, PlanProposal) is the only thing with cross-language value. |
+| `GNN` integration (`ruvector/gnn.ts`) | Requires `ruvector` native binding. SuperNEXUS has no equivalent vector DB beyond Ollama embeddings. |
+| `ruvector/self-learning.ts` | Same native-binding constraint. |
+| `memory-initializer.ts` + `memory-bridge.ts` | Bootstrap code for the AgentDB CLI runtime — N/A in SuperNEXUS. |
+
+**Rule of thumb:** port the **enums**, the **contracts**, and the **algorithms** (pluggable functions). Never port the **runtime plumbing** that holds those contracts together — every language has its own idioms, and SuperNEXUS already has a runtime.
+
+---
+
+## Appendix: Constraint Compliance Audit
+
+- ✅ 5 dedicated workers (`ayuda`, `scholar`, `sage`, `biblioteca`, `prompter`) — **not** proposed for replacement
+- ✅ `dispatch_gema` — only extended, never replaced
+- ✅ `nexus-sovereign` MCP tools — all proposals are additive new tools, never replacements
+- ✅ `message_board.db` — all proposals are additive new tables, never schema-breaking changes
+- ✅ All proposed modules target `gemas_core/core/`, `gemas_core/teammate/`, or `gemas_client_overrides/` (valid extension points)
+- ✅ All proposed gemas target `gemas_core/workers/` or `gemas_client_overrides/`
+- ✅ Existing modules `hierarchical_memory`, `multi_signal_retrieval`, `self_learning_loop` are **integrated with**, not replaced by, the new ports
+
+**Total files read in RUFUS v3 for this analysis:** 17
+**Total lines of source read:** ~3,100
+**Files NOT read (would be next round for v1.8+ roadmap):** `v3\@claude-flow\guidance\src\analyzer.ts`, `v3\@claude-flow\plugins\src\integrations\ruvector\{gnn,self-learning}.ts`, `v3\@claude-flow\hooks\src\reasoningbank\index.ts` (33KB), `v3\@claude-flow\hooks\src\workers\index.ts` (65KB), `v3\@claude-flow\swarm\src\queen-coordinator.ts` (59KB), `v3\@claude-flow\cli\src\commands\analyze.ts` (87KB), `v3\@claude-flow\cli\src\commands\hooks.ts` (200KB)

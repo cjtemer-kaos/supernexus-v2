@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_abuse_info_by_drug_name.rst:2
+#: b3a1219d348347b4981490c7417f6047
+msgid "tooluniverse.tools.FDA\\_get\\_abuse\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_abuse\\_info\\_by\\_drug\\_name 模块"
+
+#: bf9823e644ab4edba3b8aca9f1a49405 of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name:1
+msgid "FDA_get_abuse_info_by_drug_name"
+msgstr "FDA_get_abuse_info_by_drug_name（根据药品名称获取滥用信息）"
+
+#: 1b70309eaea64a0aaaae6384ac36fd28 f6792e23f4ba432196bb7f18985df6bf of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:1
+msgid "Retrieve information about types of abuse based on the drug name."
+msgstr "根据药物名称检索有关滥用类型的信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_abuse_info_by_drug_name.rst
+#: bccb7dea8e144c9d99be5232224da02d
+msgid "Parameters"
+msgstr "参数"
+
+#: c06352b2ac1642b8b023468389b8002b of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: 57c2f0efb4c74aaf937ef5a8c3094a5d of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 88d47ad7a463474eb8bca0cb5ef87b81 of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: e1be9ce842054bbf8707e987b3220782 of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ff755556809a4f7ebbf7d616eaead215 of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ba380c3adc9949eeb6b2c790afc0181f of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_abuse_info_by_drug_name.rst
+#: 0643a43aa8b2477ba0f2f035804a7007
+msgid "Return type"
+msgstr "返回类型"
+
+#: aa624581182442d597c0ca848d6b981a of
+#: tooluniverse.tools.FDA_get_abuse_info_by_drug_name.FDA_get_abuse_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

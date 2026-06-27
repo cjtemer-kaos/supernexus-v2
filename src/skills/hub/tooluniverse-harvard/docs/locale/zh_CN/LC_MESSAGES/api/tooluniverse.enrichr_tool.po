@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.enrichr_tool.rst:2 d07a26fd28814098beed674c2867d479
+msgid "tooluniverse.enrichr\\_tool module"
+msgstr "tooluniverse.enrichr_tool 模块"
+
+#: 91a4215653ff4bf48db94a5025cd8f20 of tooluniverse.enrichr_tool.EnrichrTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: e0454f4359394138a3ab48c3264023a6 of tooluniverse.enrichr_tool.EnrichrTool:1
+msgid "Tool to perform gene enrichment analysis using Enrichr."
+msgstr "用于使用 Enrichr 进行基因富集分析的工具。"
+
+#: 76bd77b68168475ba6939947508d3f1d of
+#: tooluniverse.enrichr_tool.EnrichrTool.run:1
+msgid "Main entry point for the tool."
+msgstr "工具的主要入口点。"
+
+#: c3366eb8d3d2456ca0670d4c4925eb57 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_official_gene_name:1
+msgid ""
+"Retrieve the official gene symbol for a given gene name or synonym using the"
+" MyGene.info API."
+msgstr "使用 MyGene.info API 根据给定的基因名称或同义词检索官方基因符号。"
+
+#: ../../api/tooluniverse.enrichr_tool.rst 19f479629cce44bba6952613c097c3c7
+#: 40c503b21ad34496adc22db6590a30d5 417654bb4f5c493cb21c11ca173ca034
+#: 7a0aebf50e7a4966acc3a3131dabb84f aeb16f91084841639801e1b1545d4683
+#: d85417b134c44128b6ad973352f66854 fb24db884b974a5c85e65dc09f23477c
+msgid "Parameters"
+msgstr "参数"
+
+#: 6090c1c6659d45ee9a5e74f41bb2245d of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_official_gene_name:3
+msgid "The gene name or synonym to query."
+msgstr "要查询的基因名称或同义词。"
+
+#: ../../api/tooluniverse.enrichr_tool.rst 1511b72c2d7e4a0c8370d657c545f977
+#: 34fbe2690626409faa6590a2f70764e9 5407b7388e3c468e8f27e881fc4844a5
+#: 72c2981444a3493da249b42bc37953db 9750068482624038b0b13128d6b1aae2
+#: bd7abd53a03d4f30954b961462ec63c8 eb68011958e24fbe8aee104513ab8dcb
+msgid "Returns"
+msgstr "返回值"
+
+#: b53b674cca1c4295ae80826d31611f65 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_official_gene_name:6
+msgid "The official gene symbol if found; otherwise, raises an Exception."
+msgstr "如果找到官方基因符号；否则，抛出异常。"
+
+#: ../../api/tooluniverse.enrichr_tool.rst 2db3aac62f4e46f5b1d90646943977d0
+#: 2fd9941bc3874624a3ac82129d80a9d5 bb73cffefac04d6db423e47e132b2c66
+#: ca8cb926f1dd4a9a8b9492979cffc8c5 ccfcf02a4c3440aca1a233f8e3955721
+#: d7c781cb371547eca7e598c71fad9b5e fcd86807a12145adaa100431d17b296d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8744f7d3f79d440587e96043672509e8 of
+#: tooluniverse.enrichr_tool.EnrichrTool.submit_gene_list:1
+msgid "Submit the gene list to Enrichr and return the user list ID."
+msgstr "将基因列表提交至 Enrichr，并返回用户列表 ID。"
+
+#: 7814270ad5e84f4fb3432658319b23ee of
+#: tooluniverse.enrichr_tool.EnrichrTool.submit_gene_list:3
+msgid "Newline-separated string of gene names."
+msgstr "以换行符分隔的基因名称字符串。"
+
+#: 6c1f08a8f09c434dbf595fc22442a1a3 ef4cc81b7f6f4d8185047883815af274 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_enrichment_results:3
+#: tooluniverse.enrichr_tool.EnrichrTool.submit_gene_list:6
+msgid "The user list ID from Enrichr."
+msgstr "来自 Enrichr 的用户列表 ID。"
+
+#: 39a2a4e71b7a43688545c7247fa85b05 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_enrichment_results:1
+msgid "Fetch enrichment results for a specific library."
+msgstr "获取特定库的扩展结果。"
+
+#: 8365e31db05d49df85daa843d4aef6f1 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_enrichment_results:5
+msgid "The name of the enrichment library."
+msgstr "富集库的名称。"
+
+#: a66df06338ae4ccdaa73f6875616b563 of
+#: tooluniverse.enrichr_tool.EnrichrTool.get_enrichment_results:8
+msgid "The enrichment results."
+msgstr "富集结果。"
+
+#: 032732465baa434c935591b321236a52 of
+#: tooluniverse.enrichr_tool.EnrichrTool.build_graph:1
+msgid "Initialize and build the graph with gene nodes and enriched terms."
+msgstr "初始化并构建包含基因节点和富集术语的图表。"
+
+#: 2c3972be4ce141988dc3a783b1357b9d 3dcd46ea4678458296977b8d20de25f6 of
+#: tooluniverse.enrichr_tool.EnrichrTool.build_graph:3
+#: tooluniverse.enrichr_tool.EnrichrTool.enrichr_api:3
+msgid "List of gene names."
+msgstr "基因名称列表"
+
+#: be930ee12fc2413cab3024eda9920aa5 of
+#: tooluniverse.enrichr_tool.EnrichrTool.build_graph:5
+msgid "Dictionary of enrichment results by library."
+msgstr "文库富集结果字典。"
+
+#: 1a5b9fc66ae943a79b276f1e41857565 of
+#: tooluniverse.enrichr_tool.EnrichrTool.build_graph:8
+msgid "The constructed graph."
+msgstr "构建的图表。"
+
+#: eb449e23853a41859891fda8d392b0f3 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_by_weight:1
+msgid ""
+"Find and rank paths between source and target based on total edge weight."
+msgstr "在源节点和目标节点之间查找路径，并根据总边权重进行排序。"
+
+#: 9f2e8ddaae35470c9bd756bde4f69c73 cb7fd1a5058840d3b6b0bdd102398e0f of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_by_weight:3
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_to_term:3
+msgid "The graph to search."
+msgstr "要搜索的图表。"
+
+#: 1e025ce85a1f4a13851d41e6e8688855 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_by_weight:5
+msgid "The source node."
+msgstr "源节点。"
+
+#: ba435f72c60d4a838d8d0e6644ebb1c8 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_by_weight:7
+msgid "The target node."
+msgstr "目标节点。"
+
+#: 0c6dc92bb4d3482ebac3e05549e5c1f1 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_by_weight:10
+msgid "List of tuples (path, weight) sorted by weight descending."
+msgstr "按权重降序排序的元组列表（路径, 权重）。"
+
+#: df286e2ab26d4fb082ba5074f7970cc2 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_to_term:1
+msgid ""
+"Find and rank paths from each gene to a specified term based on total edge "
+"weight."
+msgstr "从每个基因到指定术语的路径中，根据总边权重进行查找和排序。"
+
+#: 6f487dfe6c2049b081e5955f4a42c848 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_to_term:5
+msgid "The source gene."
+msgstr "源基因"
+
+#: e8fb501dc22a4f74b234a1df9b8382d3 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_to_term:7
+msgid "The target term."
+msgstr "目标术语"
+
+#: e09c62de865f455d95acb777478f7ac0 of
+#: tooluniverse.enrichr_tool.EnrichrTool.rank_paths_to_term:10
+msgid ""
+"List of tuples (path, weight) sorted by weight descending, or None if no "
+"paths."
+msgstr "按权重降序排序的元组列表（路径, 权重），如果没有路径则为 None。"
+
+#: e298302837a742ac9684745a894f4efc of
+#: tooluniverse.enrichr_tool.EnrichrTool.enrichr_api:1
+msgid "Main API function to perform gene enrichment analysis."
+msgstr "主要 API 功能用于执行基因富集分析。"
+
+#: 527480b0d68340129301371055bd22d6 of
+#: tooluniverse.enrichr_tool.EnrichrTool.enrichr_api:5
+msgid "List of enrichment libraries to use."
+msgstr "要使用的富集库列表。"
+
+#: d10c09313a9343a5aeb9b4bd327c862e of
+#: tooluniverse.enrichr_tool.EnrichrTool.enrichr_api:8
+msgid "(connected_path, connections) dictionaries."
+msgstr "(connected_path，connections) 字典。"

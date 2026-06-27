@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ClinicalTrialDesignAgent.rst:2
+#: 3552b16a7e8543d4948f68509f8bc203
+msgid "tooluniverse.tools.ClinicalTrialDesignAgent module"
+msgstr "tooluniverse.tools.ClinicalTrialDesignAgent 模块"
+
+#: 7b236afefe1c475aa9e9460586e2432f of
+#: tooluniverse.tools.ClinicalTrialDesignAgent:1
+msgid "ClinicalTrialDesignAgent"
+msgstr "临床试验设计代理"
+
+#: bfcdd398e8034c9abf59e31fa09acfcc e953085015cc43de8cd492c5380e080b of
+#: tooluniverse.tools.ClinicalTrialDesignAgent:3
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:1
+msgid ""
+"AI agent that designs clinical trial protocols based on preclinical data and"
+" regulatory requirements"
+msgstr "基于临床前数据和监管要求设计临床试验方案的AI代理"
+
+#: ../../api/tooluniverse.tools.ClinicalTrialDesignAgent.rst
+#: 067fd12ea67c4eedaab47e8e89d8b9cf
+msgid "Parameters"
+msgstr "参数"
+
+#: 1fcb2d1b57b343f09813d9cd68b805a0 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:3
+msgid "Name of the drug candidate"
+msgstr "药物候选名称"
+
+#: e08972cda74b4c089501f930029f969b of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:5
+msgid "Disease indication"
+msgstr "疾病适应症"
+
+#: 86eda25e452547f38e54eb3dd677c802 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:7
+msgid "Preclinical efficacy and safety data"
+msgstr "临床前疗效和安全性数据"
+
+#: 2f0a3bd833044322885caf7b03b61706 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:9
+msgid "Target patient population"
+msgstr "目标患者群体"
+
+#: 3beb96db20f7440f9fa94135941bced0 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 40b475c2043941b49bdd3ccb531bed2e of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 18065aa20ef6491ba980a02236e93017 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ClinicalTrialDesignAgent.rst
+#: df0424d465c3457eb92d094a61004014
+msgid "Return type"
+msgstr "返回类型"
+
+#: 72c6d5736abc486baacec4007ee5ce22 of
+#: tooluniverse.tools.ClinicalTrialDesignAgent.ClinicalTrialDesignAgent:18
+msgid ":py:class:`Any`"
+msgstr ""

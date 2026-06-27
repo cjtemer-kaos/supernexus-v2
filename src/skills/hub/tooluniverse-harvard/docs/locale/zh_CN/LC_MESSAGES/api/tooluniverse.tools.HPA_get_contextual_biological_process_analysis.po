@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.HPA_get_contextual_biological_process_analysis.rst:2
+#: cce9b62c77a24a6a900f995e97cf39b6
+msgid ""
+"tooluniverse.tools.HPA\\_get\\_contextual\\_biological\\_process\\_analysis "
+"module"
+msgstr "tooluniverse.tools.HPA\\_get\\_contextual\\_biological\\_process\\_analysis 模块"
+
+#: 7996eb0dcc8e445e8aec65ed5be6b72b of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis:1
+msgid "HPA_get_contextual_biological_process_analysis"
+msgstr "HPA_获取上下文生物过程分析"
+
+#: 474fca47e4ea497a9acce816430ef413 5c2e84403dc0476d8c5d15e1ccbaa034 of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis:3
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:1
+msgid ""
+"Analyze a gene's biological processes in the context of a specific tissue or"
+" cell line by integra..."
+msgstr "在特定组织或细胞系的背景下，通过整合分析基因的生物学过程。"
+
+#: ../../api/tooluniverse.tools.HPA_get_contextual_biological_process_analysis.rst
+#: 0dbe751b21f14a5ca6180ae077f3375a
+msgid "Parameters"
+msgstr "参数"
+
+#: c4cd4a4f560b4bfbade1b0dd741b702e of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:3
+msgid "Gene name or symbol, e.g., 'TP53', 'EGFR', 'BRCA1'."
+msgstr "基因名称或符号，例如“TP53”、“EGFR”、“BRCA1”。"
+
+#: d2a3a98b22fe4e61aac75d0daa3b957d of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:5
+msgid ""
+"Name of the tissue or cell line to provide context, e.g., 'brain', 'liver', "
+"'..."
+msgstr "组织或细胞系的名称以提供上下文，例如“脑”、“肝”、“...”。"
+
+#: d67904b1f67f46d9b44e6b87370a38a4 of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: dd25bf6902dd4b2f9c7d7c9d7b6c6bc1 of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cafe44e76e2d4a0a95f5133941e73dc8 of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.HPA_get_contextual_biological_process_analysis.rst
+#: fd2e4ca3656b41dc9b32d3cd813f6f9a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 892e5994d82144db9a2d4da73659308f of
+#: tooluniverse.tools.HPA_get_contextual_biological_process_analysis.HPA_get_contextual_biological_process_analysis:14
+msgid ":py:class:`Any`"
+msgstr ""

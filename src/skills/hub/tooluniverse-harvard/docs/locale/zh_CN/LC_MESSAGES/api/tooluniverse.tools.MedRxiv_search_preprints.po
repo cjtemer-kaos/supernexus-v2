@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.MedRxiv_search_preprints.rst:2
+#: 8e0b921a88cc44fe8a3a3c9e11c7af2b
+msgid "tooluniverse.tools.MedRxiv\\_search\\_preprints module"
+msgstr "tooluniverse.tools.MedRxiv\\_search\\_preprints 模块"
+
+#: b513624539274c70a48623f23284e6ab of
+#: tooluniverse.tools.MedRxiv_search_preprints:1
+msgid "MedRxiv_search_preprints"
+msgstr "MedRxiv_预印本搜索"
+
+#: 56e2be44d3224b63b219ebe95835b94f bf3fdb562dfa4089802bd588af02637a of
+#: tooluniverse.tools.MedRxiv_search_preprints:3
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:1
+msgid ""
+"Search medRxiv preprints using the public medRxiv API. Returns preprints "
+"with title, authors, yea..."
+msgstr "使用公共 medRxiv API 搜索 medRxiv 预印本。返回包含标题、作者、年份的预印本信息..."
+
+#: ../../api/tooluniverse.tools.MedRxiv_search_preprints.rst
+#: 58d09420b3af45ac8e87abbae8e21805
+msgid "Parameters"
+msgstr "参数"
+
+#: 57495d49b1a3490fb7d924ba63359eda of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:3
+msgid ""
+"Search query for medRxiv preprints. Use keywords separated by spaces to "
+"refin..."
+msgstr "搜索 medRxiv 预印本的查询。使用以空格分隔的关键词进行搜索。"
+
+#: 187f546d141f460cab4fc1b1e6b04187 of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:5
+msgid "Maximum number of preprints to return. Default is 10, maximum is 200."
+msgstr "返回的预印本最大数量。默认值为10，最大值为200。"
+
+#: ff981aba4d43452494330794291b114a of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 835eb1c526834e5c91ba1a48f7830f37 of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1dfc5d4eeddb4a0494bb24e3b70761eb of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.MedRxiv_search_preprints.rst
+#: 5253a2efb632461fbee2117ac0d72ffc
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1b814a99d8194e53b270c9543fde07ff of
+#: tooluniverse.tools.MedRxiv_search_preprints.MedRxiv_search_preprints:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

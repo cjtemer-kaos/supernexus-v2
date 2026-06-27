@@ -1,0 +1,177 @@
+[
+  {
+    "name": "visualize_molecule_3d",
+    "description": "Visualize 3D molecular structures using RDKit and py3Dmol. Supports SMILES, MOL files, SDF content, and various visualization styles with interactive 3D viewing capabilities.",
+    "type": "Molecule3DTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "smiles": {
+          "type": "string",
+          "description": "SMILES string representation of the molecule"
+        },
+        "mol_content": {
+          "type": "string",
+          "description": "MOL file content as string"
+        },
+        "sdf_content": {
+          "type": "string",
+          "description": "SDF file content as string"
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "stick",
+            "sphere",
+            "cartoon",
+            "line",
+            "spacefill"
+          ],
+          "default": "stick",
+          "description": "Visualization style"
+        },
+        "color_scheme": {
+          "type": "string",
+          "enum": [
+            "default",
+            "spectrum",
+            "rainbow",
+            "ssPyMOL",
+            "ssJmol",
+            "Jmol",
+            "amino",
+            "shapely",
+            "nucleic",
+            "chain"
+          ],
+          "default": "default",
+          "description": "Color scheme for the molecule"
+        },
+        "width": {
+          "type": "integer",
+          "default": 800,
+          "description": "Width of the visualization in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "default": 600,
+          "description": "Height of the visualization in pixels"
+        },
+        "show_hydrogens": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to show hydrogen atoms"
+        },
+        "show_surface": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show molecular surface"
+        },
+        "generate_conformers": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to generate multiple conformers"
+        },
+        "conformer_count": {
+          "type": "integer",
+          "default": 1,
+          "description": "Number of conformers to generate"
+        }
+      },
+      "anyOf": [
+        {"required": ["smiles"]},
+        {"required": ["mol_content"]},
+        {"required": ["sdf_content"]}
+      ]
+    },
+    "default_width": 800,
+    "default_height": 600,
+    "default_style": {
+      "style": "stick",
+      "color_scheme": "default",
+      "show_hydrogens": true
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the visualization was created successfully"
+        },
+        "visualization": {
+          "type": "object",
+          "properties": {
+            "html": {
+              "type": "string",
+              "description": "Complete HTML content for the 3D molecule visualization"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of visualization (molecule_3d)"
+            },
+            "data": {
+              "type": "object",
+              "description": "Molecular data including SMILES and properties"
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "style": {
+                  "type": "string"
+                },
+                "color_scheme": {
+                  "type": "string"
+                },
+                "input_type": {
+                  "type": "string"
+                },
+                "show_hydrogens": {
+                  "type": "boolean"
+                },
+                "show_surface": {
+                  "type": "boolean"
+                },
+                "generate_conformers": {
+                  "type": "boolean"
+                },
+                "conformer_count": {
+                  "type": "integer"
+                },
+                "molecular_properties": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if visualization failed"
+        },
+        "error_type": {
+          "type": "string",
+          "description": "Type of error if visualization failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "style": "stick",
+        "color_scheme": "default",
+        "width": 800,
+        "height": 600,
+        "show_hydrogens": true,
+        "show_surface": false,
+        "generate_conformers": true,
+        "conformer_count": 1
+      }
+    ]
+  }
+]

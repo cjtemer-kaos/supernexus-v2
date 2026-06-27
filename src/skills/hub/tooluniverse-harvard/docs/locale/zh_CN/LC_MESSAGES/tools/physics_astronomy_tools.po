@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/physics_astronomy_tools.rst:2 6c0281caf7f5434d816d16dc00358759
+msgid "Physics Astronomy Tools"
+msgstr "物理天文工具"
+
+#: ../../tools/physics_astronomy_tools.rst:4 ed8826cb5aea414aaf5a37294527eede
+msgid ""
+"**Configuration File**: ``packages/physics_astronomy_tools.json`` **Tool "
+"Type**: Local **Tools Count**: 5"
+msgstr ""
+"**配置文件**：``packages/physics_astronomy_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：5"
+
+#: ../../tools/physics_astronomy_tools.rst:8 3353332d7c2c4c2a90b78929bcdfae8d
+msgid ""
+"This page contains all tools defined in the ``physics_astronomy_tools.json``"
+" configuration file."
+msgstr "此页面包含在 ``physics_astronomy_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/physics_astronomy_tools.rst:11 c547199d85b54a44970d1329196ffd94
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/physics_astronomy_tools.rst:14 2bdd5ca509fc41bd94793045aa00dfa7
+msgid "**get_astropy_info** (Type: PackageTool)"
+msgstr "**get_astropy_info**（类型：PackageTool）"
+
+#: ../../tools/physics_astronomy_tools.rst:16 e8b4f8b0db714ca298e726ff5afebe6f
+msgid ""
+"Get information about the astropy package. Astronomy and astrophysics "
+"library"
+msgstr "获取有关 astropy 包的信息。天文学与天体物理学库"
+
+#: ../../tools/physics_astronomy_tools.rst a9164d03ce5d4be7b08cdfde041d2fb7
+msgid "get_astropy_info tool specification"
+msgstr "get_astropy_info 工具规格说明"
+
+#: ../../tools/physics_astronomy_tools.rst:20
+#: ../../tools/physics_astronomy_tools.rst:49
+#: ../../tools/physics_astronomy_tools.rst:78
+#: ../../tools/physics_astronomy_tools.rst:107
+#: ../../tools/physics_astronomy_tools.rst:136
+#: 45bcacf52532420391d9e280d6ae606b 51e40812c60f4a20a9582eca98fabb3d
+#: 7b847fffb122430f88c6ea6bff1134b6 b55c48658da94337bc7dacf4f9bf7ebb
+#: d869145da00d47b0988f3d0edff1ef88
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/physics_astronomy_tools.rst:22 3fa37ee641454993adfd6d15ca24c951
+msgid "**Name**: ``get_astropy_info``"
+msgstr "**名称**：``get_astropy_info``"
+
+#: ../../tools/physics_astronomy_tools.rst:23
+#: ../../tools/physics_astronomy_tools.rst:52
+#: ../../tools/physics_astronomy_tools.rst:81
+#: ../../tools/physics_astronomy_tools.rst:110
+#: ../../tools/physics_astronomy_tools.rst:139
+#: 1b1354d7f23c4853a47795a4836e3cef 4a6c986b24ab46a3b4a4182c323cc650
+#: d37a6c4b79fe4e4b80b9fd9390a56b82 d92a824b91114d09ab0298d388b8eea0
+#: e76dd0f80a924dc895be5d95beb51ce7
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**：``PackageTool``"
+
+#: ../../tools/physics_astronomy_tools.rst:24 2263595f9c534d2cb45a140438a00b71
+msgid ""
+"**Description**: Get information about the astropy package. Astronomy and "
+"astrophysics library"
+msgstr "**描述**：获取有关 astropy 软件包的信息。天文学和天体物理学库"
+
+#: ../../tools/physics_astronomy_tools.rst:26
+#: ../../tools/physics_astronomy_tools.rst:55
+#: ../../tools/physics_astronomy_tools.rst:84
+#: ../../tools/physics_astronomy_tools.rst:113
+#: ../../tools/physics_astronomy_tools.rst:142
+#: 1813427291014f2480e1c715458f6186 226bcc54ec164b40861fab93b63f95ba
+#: 5c3b305c261046929197315ee2bc59bf 8a6c627bd46e47b2bb46a0acd4930c7f
+#: e661c0bf16ec4d209202cae8519755f0
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/physics_astronomy_tools.rst:28
+#: ../../tools/physics_astronomy_tools.rst:57
+#: ../../tools/physics_astronomy_tools.rst:86
+#: ../../tools/physics_astronomy_tools.rst:115
+#: ../../tools/physics_astronomy_tools.rst:144
+#: 0a22a00ff4b446f8bc362ced8d762c73 22a7e99a6179423387bdd5af0a8e476a
+#: 508c31f3fe5e4de78d5dbde2e0ec5852 68b032c0de314ac597bf1e268c3afb3a
+#: 7ae4e0c1b2de436a8cecfcba5a248dff
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/physics_astronomy_tools.rst:30
+#: ../../tools/physics_astronomy_tools.rst:59
+#: ../../tools/physics_astronomy_tools.rst:88
+#: ../../tools/physics_astronomy_tools.rst:117
+#: ../../tools/physics_astronomy_tools.rst:146
+#: 4c30b116f4c74af780d39baa35ab9674 576ab7f4858746e2828dd2f274961470
+#: 8034fded3eab4d9d83aa856278e515e9 d14c8c160168406ca545d02af2f02d42
+#: eb7133d6f55942f58a71280ee57838d0
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/physics_astronomy_tools.rst:43 ac2f86877a2c43e7b536873a9c222f2a
+msgid "**get_galpy_info** (Type: PackageTool)"
+msgstr "**get_galpy_info**（类型：PackageTool）"
+
+#: ../../tools/physics_astronomy_tools.rst:45 0fd8b8f71af44af9ad848d61241d2da9
+msgid "Get information about the galpy package. Galactic dynamics library"
+msgstr "获取有关galpy软件包的信息。银河动力学库"
+
+#: ../../tools/physics_astronomy_tools.rst 79e8cd84543f48ac828cc1b9caf69e5a
+msgid "get_galpy_info tool specification"
+msgstr "get_galpy_info 工具规范"
+
+#: ../../tools/physics_astronomy_tools.rst:51 3e2b12bb8869447489d3a7df3f00b0ab
+msgid "**Name**: ``get_galpy_info``"
+msgstr "**名称**: ``get_galpy_info``"
+
+#: ../../tools/physics_astronomy_tools.rst:53 795104e233ea411a9e728a7620544579
+msgid ""
+"**Description**: Get information about the galpy package. Galactic dynamics "
+"library"
+msgstr "**描述**：获取有关 galpy 软件包的信息。银河动力学库"
+
+#: ../../tools/physics_astronomy_tools.rst:72 f59dbfc645eb43c895788cf2a05b1bc4
+msgid "**get_pyephem_info** (Type: PackageTool)"
+msgstr "**get_pyephem_info**（类型：PackageTool）"
+
+#: ../../tools/physics_astronomy_tools.rst:74 6d9ca415eca74b9b82ba1efe862afcd2
+msgid ""
+"Get information about the pyephem package. Astronomical computations for "
+"Python"
+msgstr "获取有关 pyephem 软件包的信息。用于 Python 的天文计算"
+
+#: ../../tools/physics_astronomy_tools.rst b6b9f008402e430fb0ce510a83400f94
+msgid "get_pyephem_info tool specification"
+msgstr "get_pyephem_info 工具规范"
+
+#: ../../tools/physics_astronomy_tools.rst:80 e53eba98f2814be6a6b0626cb1516ba6
+msgid "**Name**: ``get_pyephem_info``"
+msgstr "**名称**: ``get_pyephem_info``"
+
+#: ../../tools/physics_astronomy_tools.rst:82 1dff778ec420475da780548c3bbe1428
+msgid ""
+"**Description**: Get information about the pyephem package. Astronomical "
+"computations for Python"
+msgstr "**描述**：获取有关 pyephem 包的信息。用于 Python 的天文计算"
+
+#: ../../tools/physics_astronomy_tools.rst:101
+#: 891d8ed0807848b9adf0dff5d69a1eb5
+msgid "**get_qutip_info** (Type: PackageTool)"
+msgstr "**get_qutip_info**（类型：PackageTool）"
+
+#: ../../tools/physics_astronomy_tools.rst:103
+#: 70eef32e8e494a649b0f8cd6eee8d195
+msgid "Get information about the qutip package. Quantum toolbox in Python"
+msgstr "获取有关 qutip 软件包的信息。Python 中的量子工具箱"
+
+#: ../../tools/physics_astronomy_tools.rst 57556f2bb123442885136720a02a1dfa
+msgid "get_qutip_info tool specification"
+msgstr "get_qutip_info 工具规范"
+
+#: ../../tools/physics_astronomy_tools.rst:109
+#: 97f1e26975be4b20977c5807073e8ebf
+msgid "**Name**: ``get_qutip_info``"
+msgstr "**名称**: ``get_qutip_info``"
+
+#: ../../tools/physics_astronomy_tools.rst:111
+#: ece1d1056cd740018e661050becf5b76
+msgid ""
+"**Description**: Get information about the qutip package. Quantum toolbox in"
+" Python"
+msgstr "**描述**：获取有关qutip软件包的信息。Python中的量子工具箱"
+
+#: ../../tools/physics_astronomy_tools.rst:130
+#: a8e794aacad04252b6dd11d0fcc80290
+msgid "**get_sunpy_info** (Type: PackageTool)"
+msgstr "**get_sunpy_info**（类型：PackageTool）"
+
+#: ../../tools/physics_astronomy_tools.rst:132
+#: f613c9baba434cf89131a88e861fd056
+msgid "Get information about the sunpy package. Solar data analysis library"
+msgstr "获取关于 sunpy 包的信息。太阳数据分析库"
+
+#: ../../tools/physics_astronomy_tools.rst 14a827fa353244eda62452d262c50482
+msgid "get_sunpy_info tool specification"
+msgstr "get_sunpy_info 工具规格说明"
+
+#: ../../tools/physics_astronomy_tools.rst:138
+#: b014fdd9589b4421bb4168dc51eeb963
+msgid "**Name**: ``get_sunpy_info``"
+msgstr "**名称**：``get_sunpy_info``"
+
+#: ../../tools/physics_astronomy_tools.rst:140
+#: 52ff35a6ed054aeba3129ce76fea8891
+msgid ""
+"**Description**: Get information about the sunpy package. Solar data "
+"analysis library"
+msgstr "**描述**：获取有关 sunpy 包的信息。太阳数据分析库"
+
+#: ../../tools/physics_astronomy_tools.rst:159
+#: d167379f928943ed8e14d47c3e935f63
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/physics_astronomy_tools.rst:161
+#: cc2a2f3d3fa74817b9507a1c6395d8cb
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/physics_astronomy_tools.rst:162
+#: c6d189086a0d401c91ac0fa23d1c086b
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

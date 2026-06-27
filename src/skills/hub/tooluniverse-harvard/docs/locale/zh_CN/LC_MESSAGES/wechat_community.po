@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../wechat_community.rst:2 ffde9467697f4ff48641e92a4e7f710b
+msgid "WeChat Community"
+msgstr "微信社区"
+
+#: ../../wechat_community.rst:4 4dc7ee4497a744da812fc763188fe8e9
+msgid ""
+"Join our WeChat community to connect with other ToolUniverse users, get "
+"help, and share your experiences!"
+msgstr "加入我们的微信社区，与其他ToolUniverse用户交流，获取帮助，并分享您的经验！"
+
+#: ../../wechat_community.rst:6 f88415659e5045e5813f48a952c7322d
+msgid ""
+"**WeChat QR Code**: Visit `https://aiscientist.tools/wechat "
+"<https://aiscientist.tools/wechat>`_ to get the latest WeChat QR code for"
+" joining our community."
+msgstr ""
+"**微信二维码**：访问 `https://aiscientist.tools/wechat "
+"<https://aiscientist.tools/wechat>`_ 获取最新的微信二维码加入我们的社区。"
+
+#: ../../wechat_community.rst:9 46fa4a47445c4751a6ecf7ba22b810b2
+msgid "Alternative Ways to Connect"
+msgstr "其他连接方式"
+
+#: ../../wechat_community.rst:11 11894317ca474b968c0ab24819c8da9d
+msgid "If you prefer other communication channels:"
+msgstr "如果您更喜欢其他沟通渠道："
+
+#: ../../wechat_community.rst:13 b28b123a9da64926803a07096cba35f9
+msgid ""
+"**Slack**: `Join our Slack community "
+"<https://join.slack.com/t/tooluniversehq/shared_invite/zt-3dic3eoio-"
+"5xxoJch7TLNibNQn5_AREQ>`_"
+msgstr ""
+"**Slack**：`加入我们的Slack社区 "
+"<https://join.slack.com/t/tooluniversehq/shared_invite/zt-3dic3eoio-"
+"5xxoJch7TLNibNQn5_AREQ>`_"
+
+#: ../../wechat_community.rst:14 ccba65c808ee4681a4fc16997efc1dc0
+msgid ""
+"**GitHub Discussions**: `GitHub Discussions <https://github.com/mims-"
+"harvard/ToolUniverse/discussions>`_"
+msgstr ""
+"**GitHub讨论**：`GitHub讨论 <https://github.com/mims-"
+"harvard/ToolUniverse/discussions>`_"
+
+#: ../../wechat_community.rst:15 57c2198d7b8146388ab81c69667a8a9f
+msgid ""
+"**LinkedIn**: `Follow us on LinkedIn <https://www.linkedin.com/in"
+"/tooluniverse-at-harvard-b9aa88385/>`_"
+msgstr ""
+"**LinkedIn**：`在LinkedIn上关注我们 <https://www.linkedin.com/in"
+"/tooluniverse-at-harvard-b9aa88385/>`_"
+
+#: ../../wechat_community.rst:16 bcc56791b6d7452eb82ebd49dc9b09fe
+msgid "**X (Twitter)**: `Follow us on X <https://x.com/ScientistTools>`_"
+msgstr "**X (Twitter)**：`在X上关注我们 <https://x.com/ScientistTools>`_"
+
+#: ../../wechat_community.rst:18 0a513401b1eb4b4088fb926705f04c51
+msgid "We look forward to welcoming you to our community!"
+msgstr "我们期待欢迎您加入我们的社区！"
+

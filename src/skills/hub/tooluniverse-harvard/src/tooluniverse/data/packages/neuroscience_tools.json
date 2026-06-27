@@ -1,0 +1,482 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_mne_info",
+    "description": "Get information about the mne package. MEG and EEG data analysis",
+    "package_name": "mne",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": ["string", "null"],
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": ["string", "null"],
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_nilearn_info",
+    "description": "Get information about the nilearn package. Machine learning for neuroimaging",
+    "package_name": "nilearn",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": ["string", "null"],
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": ["string", "null"],
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_brian2_info",
+    "description": "Get information about the brian2 package. Spiking neural network simulator",
+    "package_name": "brian2",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": ["string", "null"],
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": ["string", "null"],
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_elephant_info",
+    "description": "Get information about the elephant package. Electrophysiology analysis toolkit",
+    "package_name": "elephant",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": ["string", "null"],
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": ["string", "null"],
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_neo_info",
+    "description": "Get information about the neo package. Representation of electrophysiology data",
+    "package_name": "neo",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": ["string", "null"],
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": ["string", "null"],
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  }
+]

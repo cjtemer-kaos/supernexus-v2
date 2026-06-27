@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/protein_structure_3d_tools.rst:2
+#: 1cb819ff89ce4aecb077e2be0ce7a6cb
+msgid "Protein Structure 3D Tools"
+msgstr "蛋白质结构3D工具"
+
+#: ../../tools/protein_structure_3d_tools.rst:4
+#: e9e6d0b6da1f4ab69c7d32463c5d8dde
+msgid ""
+"**Configuration File**: ``protein_structure_3d_tools.json`` **Tool Type**: "
+"Local **Tools Count**: 1"
+msgstr ""
+"**配置文件**: ``protein_structure_3d_tools.json`` **工具类型**: 本地 **工具数量**: 1"
+
+#: ../../tools/protein_structure_3d_tools.rst:8
+#: ac2022f543d84f75b5a36334a4726987
+msgid ""
+"This page contains all tools defined in the "
+"``protein_structure_3d_tools.json`` configuration file."
+msgstr "此页面包含在``protein_structure_3d_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/protein_structure_3d_tools.rst:11
+#: a0458df81b834cbebbb70067742cb597
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/protein_structure_3d_tools.rst:14
+#: ac7b87dbcc3b49139767908f8286bb1c
+msgid "**visualize_protein_structure_3d** (Type: ProteinStructure3DTool)"
+msgstr "**visualize_protein_structure_3d**（类型：ProteinStructure3DTool）"
+
+#: ../../tools/protein_structure_3d_tools.rst:16
+#: ea7cd8abbdc1448ea31447c06a377c27
+msgid ""
+"Visualize 3D protein structures using py3Dmol. Supports PDB IDs, PDB file "
+"content, and various vi..."
+msgstr "使用 py3Dmol 可视化 3D 蛋白质结构。支持 PDB ID、PDB 文件内容以及多种视图选项。"
+
+#: ../../tools/protein_structure_3d_tools.rst ec4063c8ec5849a79365a05735c2fe4b
+msgid "visualize_protein_structure_3d tool specification"
+msgstr "visualize_protein_structure_3d 工具规范"
+
+#: ../../tools/protein_structure_3d_tools.rst:20
+#: f4411f8b638a48f5859aee34bd1dcaaa
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/protein_structure_3d_tools.rst:22
+#: ed22a74d1b914f11b5d09587cadf222f
+msgid "**Name**: ``visualize_protein_structure_3d``"
+msgstr "**名称**: ``visualize_protein_structure_3d``"
+
+#: ../../tools/protein_structure_3d_tools.rst:23
+#: f971f6c6abe3402198e8beee3a246ed2
+msgid "**Type**: ``ProteinStructure3DTool``"
+msgstr "**类型**: ``ProteinStructure3DTool``"
+
+#: ../../tools/protein_structure_3d_tools.rst:24
+#: b9c5015f146840f7aca9f6f574d5ab4b
+msgid ""
+"**Description**: Visualize 3D protein structures using py3Dmol. Supports PDB"
+" IDs, PDB file content, and various visualization styles including cartoon, "
+"surface, and stick representations."
+msgstr ""
+"**描述**：使用 py3Dmol 可视化 3D 蛋白质结构。支持 PDB ID、PDB 文件内容以及多种可视化样式，包括卡通、表面和棒状表示。"
+
+#: ../../tools/protein_structure_3d_tools.rst:26
+#: 3775ecfd6e75410cad38e2f05852c838
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/protein_structure_3d_tools.rst:28
+#: fe69f5413a0547e7814b0ea948a35692
+msgid ""
+"``pdb_id`` (string) (required) PDB identifier (e.g., '1CRN', '7CGO'). Either"
+" pdb_id or pdb_content must be provided."
+msgstr "``pdb_id``（字符串）（必填）PDB标识符（例如：'1CRN'，'7CGO'）。必须提供pdb_id或pdb_content之一。"
+
+#: ../../tools/protein_structure_3d_tools.rst:31
+#: b8dc136065dc4473a220f21489aadb38
+msgid ""
+"``pdb_content`` (string) (required) Raw PDB file content as string. Either "
+"pdb_id or pdb_content must be provided."
+msgstr ""
+"``pdb_content``（字符串）（必填）作为字符串的原始 PDB 文件内容。必须提供 pdb_id 或 pdb_content 之一。"
+
+#: ../../tools/protein_structure_3d_tools.rst:34
+#: c0e3593808444ba3a0c737a170a40a79
+msgid "``style`` (string) (optional) Visualization style"
+msgstr "``style``（字符串）（可选）可视化样式"
+
+#: ../../tools/protein_structure_3d_tools.rst:37
+#: d010d4cd53824021b5e24bb160fc4c9b
+msgid "``color_scheme`` (string) (optional) Color scheme for the structure"
+msgstr "``color_scheme``（字符串）（可选）结构的配色方案"
+
+#: ../../tools/protein_structure_3d_tools.rst:40
+#: 8e0df1155ba9416291935dfb0c412b27
+msgid "``width`` (integer) (optional) Width of the visualization in pixels"
+msgstr "``width``（整数）（可选）可视化的宽度，单位为像素"
+
+#: ../../tools/protein_structure_3d_tools.rst:43
+#: 02b3c064affa435f84129a7e410f9e31
+msgid "``height`` (integer) (optional) Height of the visualization in pixels"
+msgstr "``height``（整数）（可选）可视化的高度，单位为像素"
+
+#: ../../tools/protein_structure_3d_tools.rst:46
+#: 91395e607236448e94a4fa4fbaa04eab
+msgid ""
+"``show_sidechains`` (boolean) (optional) Whether to show sidechain atoms"
+msgstr "``show_sidechains``（布尔值）（可选）是否显示侧链原子"
+
+#: ../../tools/protein_structure_3d_tools.rst:49
+#: ee3c8f82ee3546f6aa6ef3395d45ccaa
+msgid ""
+"``show_surface`` (boolean) (optional) Whether to show molecular surface"
+msgstr "``show_surface``（布尔值）（可选）是否显示分子表面"
+
+#: ../../tools/protein_structure_3d_tools.rst:52
+#: 2a72e40b10ee4810bb67d4c848ed914d
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/protein_structure_3d_tools.rst:67
+#: 2b59d647700c4c58848e7d0d262f76f6
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/protein_structure_3d_tools.rst:69
+#: 3ec99cc0fa81492a9d8348ea30eb99d8
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/protein_structure_3d_tools.rst:70
+#: 1a4816b08c944f9dba443d30f98e3d0a
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

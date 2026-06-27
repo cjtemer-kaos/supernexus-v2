@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/clait_tools.rst:2 881b868b0c1e4ccaa60cef624f0d5baa
+msgid "Clait Tools"
+msgstr "Clait 工具"
+
+#: ../../tools/clait_tools.rst:4 2570241c23414bff90ec8d2f2d490725
+msgid ""
+"**Configuration File**: ``clait_tools.json`` **Tool Type**: Local **Tools "
+"Count**: 3"
+msgstr ""
+"**配置文件**：``clait_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：3"
+
+#: ../../tools/clait_tools.rst:8 f35672d092e345d2bc4fcf720cb10139
+msgid ""
+"This page contains all tools defined in the ``clait_tools.json`` "
+"configuration file."
+msgstr "此页面包含在``clait_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/clait_tools.rst:11 3f85c385145f427f8a9514ea2a47a8bf
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/clait_tools.rst:14 419b52ebe47942f192189fb01ab92e12
+msgid "**AdverseEventICDMapper** (Type: AgenticTool)"
+msgstr "**AdverseEventICDMapper**（类型：AgenticTool）"
+
+#: ../../tools/clait_tools.rst:16 6d7811f3e5204265a92b604d0f2de33d
+msgid ""
+"Extracts adverse events from narrative clinical or pharmacovigilance text "
+"and maps each event to ..."
+msgstr "从叙述性临床或药物警戒文本中提取不良事件，并将每个事件映射到..."
+
+#: ../../tools/clait_tools.rst 033705375b1b49ce8084008c9b348bd7
+msgid "AdverseEventICDMapper tool specification"
+msgstr "AdverseEventICDMapper 工具规范"
+
+#: ../../tools/clait_tools.rst:20 ../../tools/clait_tools.rst:51
+#: ../../tools/clait_tools.rst:86 228c333a479e4ff3a7ada1da1b648fe0
+#: 866e2dd10a8c44fdad722ae77a302415 f7a8f013f1b84382b62c886bdbbe6416
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/clait_tools.rst:22 cd0f8c65df554c4791f5cd003906ade3
+msgid "**Name**: ``AdverseEventICDMapper``"
+msgstr "**名称**：``AdverseEventICDMapper``"
+
+#: ../../tools/clait_tools.rst:23 ../../tools/clait_tools.rst:54
+#: ../../tools/clait_tools.rst:89 1806fc70d5574ed39b7880cd234fe568
+#: 7cd8ff4bc27141d38d244aa1a65583b7 eb7282c205c440f196499015ffedc915
+msgid "**Type**: ``AgenticTool``"
+msgstr "**类型**：``AgenticTool``"
+
+#: ../../tools/clait_tools.rst:24 0c89897d166246bb8c622929314f6a4a
+msgid ""
+"**Description**: Extracts adverse events from narrative clinical or "
+"pharmacovigilance text and maps each event to the most specific ICD-10-CM "
+"code."
+msgstr "**描述**：从叙述性临床或药物警戒文本中提取不良事件，并将每个事件映射到最具体的ICD-10-CM代码。"
+
+#: ../../tools/clait_tools.rst:26 ../../tools/clait_tools.rst:57
+#: ../../tools/clait_tools.rst:92 1f33c423c26748cdabe3694523f319e7
+#: 3e32c7bafd7a428c8d482872f01b86f6 40dfcea7944e4e1590da9e194910a947
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/clait_tools.rst:28 f6357e73ca97439b8cde9391fce6f39b
+msgid ""
+"``source_text`` (string) (required) Unstructured narrative text that may "
+"mention adverse events."
+msgstr "``source_text``（字符串）（必填）可能提及不良事件的非结构化叙述文本。"
+
+#: ../../tools/clait_tools.rst:31 ../../tools/clait_tools.rst:65
+#: ../../tools/clait_tools.rst:103 10e8ab2534134b0a9918306adb515d6a
+#: 96d7f3442fae4e53983e0475667c80a1 bee37ecddd954e96ad1f2d47e2d960ff
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/clait_tools.rst:45 b0f1d0cdd9cb4990988be06f248dccdd
+msgid "**AdverseEventPredictionQuestionGenerator** (Type: AgenticTool)"
+msgstr "**AdverseEventPredictionQuestionGenerator**（类型：AgenticTool）"
+
+#: ../../tools/clait_tools.rst:47 ../../tools/clait_tools.rst:82
+#: 116b4d61616f45d883b63b1719500bdb 3401b2e25d424d58bdf3cd6a691764cb
+msgid ""
+"Generates a set of personalized adverse‐event prediction questions for a "
+"given disease and drug, ..."
+msgstr "生成一组针对特定疾病和药物的个性化不良事件预测问题，..."
+
+#: ../../tools/clait_tools.rst 614c884b921e46ad937caba36b0d893f
+msgid "AdverseEventPredictionQuestionGenerator tool specification"
+msgstr "不良事件预测问题生成器工具规范"
+
+#: ../../tools/clait_tools.rst:53 eab00b041871416f856fd8d53e8a4857
+msgid "**Name**: ``AdverseEventPredictionQuestionGenerator``"
+msgstr "**名称**: ``AdverseEventPredictionQuestionGenerator``"
+
+#: ../../tools/clait_tools.rst:55 6c3079ad71d24c3086ad149325b73ffc
+msgid ""
+"**Description**: Generates a set of personalized adverse‐event prediction "
+"questions for a given disease and drug, across multiple patient subgroups."
+msgstr "**描述**：生成针对特定疾病和药物的个性化不良事件预测问题集，覆盖多个患者子群。"
+
+#: ../../tools/clait_tools.rst:59 ../../tools/clait_tools.rst:94
+#: 088d52b377834a44b896a55ab5f8f1ab ee8f8698d33d4e31b97946e68203c89c
+msgid ""
+"``disease_name`` (string) (required) The name of the disease or condition"
+msgstr "``disease_name``（字符串）（必填）疾病或病症的名称"
+
+#: ../../tools/clait_tools.rst:62 ../../tools/clait_tools.rst:97
+#: a611049fd8a6495bbbfd216228e15ff7 cc9e244df237497d914588fff63bb862
+msgid "``drug_name`` (string) (required) The name of the drug"
+msgstr "``drug_name``（字符串）（必填）药物名称"
+
+#: ../../tools/clait_tools.rst:80 56da75a2a74e4bc4a6f76849c5c0b126
+msgid ""
+"**AdverseEventPredictionQuestionGeneratorWithContext** (Type: AgenticTool)"
+msgstr ""
+"**AdverseEventPredictionQuestionGeneratorWithContext**（类型：AgenticTool）"
+
+#: ../../tools/clait_tools.rst 84305f89964a48f99269a8e5bd2577df
+msgid "AdverseEventPredictionQuestionGeneratorWithContext tool specification"
+msgstr "具有上下文的AdverseEventPredictionQuestionGenerator工具规范"
+
+#: ../../tools/clait_tools.rst:88 271dafb9c26a4abea0c1933319b3e178
+msgid "**Name**: ``AdverseEventPredictionQuestionGeneratorWithContext``"
+msgstr "**名称**: ``AdverseEventPredictionQuestionGeneratorWithContext``"
+
+#: ../../tools/clait_tools.rst:90 683855bca45747f7bf66fe7c04d9b384
+msgid ""
+"**Description**: Generates a set of personalized adverse‐event prediction "
+"questions for a given disease and drug, incorporating additional context "
+"information such as patient medical history, clinical findings, or research "
+"data."
+msgstr "**描述**：生成一组针对特定疾病和药物的个性化不良事件预测问题，同时结合患者病史、临床发现或研究数据等额外的上下文信息。"
+
+#: ../../tools/clait_tools.rst:100 eb18a8361006473db257bdf6f6d01937
+msgid ""
+"``context_information`` (string) (required) Additional context information "
+"such as patient medical history, clinical findings, research data, or other "
+"relevant background information that should inform the adverse event "
+"prediction questions"
+msgstr ""
+"``context_information``（字符串）（必填）附加的上下文信息，例如患者病史、临床发现、研究数据或其他与不良事件预测问题相关的背景信息。"
+
+#: ../../tools/clait_tools.rst:119 72e0fd9d8dd64fa7879d75c4b2b366e3
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/clait_tools.rst:121 b0283667a68343539cca729a4ef5f298
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/clait_tools.rst:122 b4fbbea54e544498975def55e1452d5c
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

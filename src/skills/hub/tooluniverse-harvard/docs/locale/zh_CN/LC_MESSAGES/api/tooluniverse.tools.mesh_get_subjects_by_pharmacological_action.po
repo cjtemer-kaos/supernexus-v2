@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.rst:2
+#: e53cc8d046a34f41bca896601cef1afe
+msgid "tooluniverse.tools.mesh\\_get\\_subjects\\_by\\_pharmacological\\_action module"
+msgstr "tooluniverse.tools.mesh\\_get\\_subjects\\_by\\_pharmacological\\_action 模块"
+
+#: a990bc89928146588d1a08e60e0e43fc of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action:1
+msgid "mesh_get_subjects_by_pharmacological_action"
+msgstr ""
+"mesh_get_subjects_by_pharmacological_action  \n"
+"获取具有药理作用的主题"
+
+#: 878d0fa26102441493f1eaa38952e185 ded87fc819424b6f8119dc5dc0c06348 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action:3
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:1
+msgid ""
+"Find MeSH (Medical Subject Heading) subjects with matching pharmacological "
+"actions."
+msgstr "查找具有匹配药理作用的MeSH（医学主题词）主题。"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.rst
+#: 905aad2e40114bd8babbdce124a0b116
+msgid "Parameters"
+msgstr "参数"
+
+#: b2b8998bd6224a6db98a297aa88a12e8 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:3
+msgid "Pharmacological action to search for in MeSH subjects"
+msgstr "在MeSH主题中搜索药理作用"
+
+#: 8a59d29b60434afe8707a970a66e6a27 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:5
+msgid ""
+"Select True to perform a case-sensitive search for the pharmacological "
+"action..."
+msgstr "选择“True”以执行针对药理作用的区分大小写搜索..."
+
+#: 5797523c0898482eb1b456b82657bc36 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:7
+msgid ""
+"Select True to require an exact match for the pharmacological action query"
+msgstr "选择“True”以要求药理作用查询的精确匹配"
+
+#: cf05c7b494604cc5988a3db1144de85b of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 694ed792cfed4aaeb7e169611ed618c2 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6cdb447f93934db7abd1eda6accc28e4 of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 403b2a4f3c2c435ea2325cc9692fcc2c of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.rst
+#: 3ad4a1b69a4f4615aa408b49c1744f84
+msgid "Return type"
+msgstr "返回类型"
+
+#: bf23378a04214f4e9fc8e8378c95518e of
+#: tooluniverse.tools.mesh_get_subjects_by_pharmacological_action.mesh_get_subjects_by_pharmacological_action:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

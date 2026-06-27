@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.url_tool.rst:2 a3fd1d44ebe348bc9ee1e5fd97b2c742
+msgid "tooluniverse.url\\_tool module"
+msgstr "tooluniverse.url_tool 模块"
+
+#: 5121085d8b7541e694797d5a4b40c181 c359617ca1504cf08f8390616ac903ae of
+#: tooluniverse.url_tool.URLHTMLTagTool:1
+#: tooluniverse.url_tool.URLToPDFTextTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 04f176b8b48e4cc3ad4ec5a85519da14 of tooluniverse.url_tool.URLHTMLTagTool:1
+#, python-brace-format
+msgid ""
+"Fetches a webpage and extracts the content of a specified HTML tag. Expects:"
+" {\"url\": \"https://...\"} The tag to extract is specified in the tool's "
+"configuration. The tag to extract is specified in the tool's configuration. "
+"Optional: {\"timeout\": <seconds>} (default 20) Returns: {\"content\": "
+"\"<extracted content>\"} or {\"error\": \"...\"}"
+msgstr ""
+"获取网页并提取指定HTML标签的内容。期望输入：{\"url\": \"https://...\"} "
+"要提取的标签在工具配置中指定。可选参数：{\"timeout\": <秒>}（默认20秒） 返回：{\"content\": \"<提取的内容>\"} "
+"或 {\"error\": \"...\"}"
+
+#: 4fa30eb0a1f04a46ad2909b7a349fa62 aeb869a090094f2f8cfac6cd074b580f of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:1
+#: tooluniverse.url_tool.URLToPDFTextTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 1f03088e5d2b41908e74c27a1b5096a1 e4a8a3aeb90b4e2ca4737bd86d846c6f of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:3
+#: tooluniverse.url_tool.URLToPDFTextTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.url_tool.rst 56440481898b4884b4d1b96743b372c9
+#: 949b55a801c54b78b541401346856751
+msgid "Parameters"
+msgstr "参数"
+
+#: 29311a56935c4f90aa395b48649af74b f27c4cfe77114b6b9a124061372a5b70 of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:7
+#: tooluniverse.url_tool.URLToPDFTextTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 05ffe901554846fe8bcb1a6a0eeab32c a12e0f002d764fa4b120069c1d85c579 of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:9
+#: tooluniverse.url_tool.URLToPDFTextTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于处理流式响应的回调"
+
+#: 4405c0f11b4f4f509506c21908352715 a1b655c06880430a8a5dcd92ed652b64 of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:11
+#: tooluniverse.url_tool.URLToPDFTextTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 286a73c7d6164c0cb6249a3cd1764016 9d783801a8a545538f2d9bd84d28e962 of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:13
+#: tooluniverse.url_tool.URLToPDFTextTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: ae8524c905ac47c9a5ec34b7e5effb44 f26ddc67f09c4d8ebc10a8aead073f34 of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:18
+#: tooluniverse.url_tool.URLToPDFTextTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 7fcae89ce4654e2598c159661b4ea6a2 93fdba2f04b7484b9d8b170a8de61ece of
+#: tooluniverse.url_tool.URLHTMLTagTool.run:22
+#: tooluniverse.url_tool.URLToPDFTextTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"
+
+#: e7d64cc520604d93b642d55d881771bc of
+#: tooluniverse.url_tool.URLToPDFTextTool:1
+#, python-brace-format
+msgid ""
+"Loads a webpage (with JavaScript), exports it as a PDF, and extracts text. "
+"Expects: {\"url\": \"https://...\"} Optional: {\"timeout\": <seconds>} "
+"(default 30) Returns: {\"text\": \"<extracted text>\"} or {\"error\": "
+"\"...\"}"
+msgstr ""
+"加载网页（含JavaScript），导出为PDF，并提取文本。必填参数：{\"url\": \"https://...\"} "
+"可选参数：{\"timeout\": <秒>}（默认30秒） 返回：{\"text\": \"<提取的文本>\"} 或 {\"error\": "
+"\"...\"}"
+
+#: 2549055c33814be986b862e90f36cb86 of
+#: tooluniverse.url_tool.URLToPDFTextTool._ensure_playwright_browsers:1
+msgid "Ensure Playwright browser binaries are installed."
+msgstr "确保已安装 Playwright 浏览器二进制文件。"
+
+#: ../../api/tooluniverse.url_tool.rst 3c88816483e54247b45e31f457837351
+msgid "Returns"
+msgstr "返回值"
+
+#: 82d77fb5366f4f18a37be0b85e0f5f82 of
+#: tooluniverse.url_tool.URLToPDFTextTool._ensure_playwright_browsers:3
+msgid "None on success, or an error string on failure."
+msgstr "成功时返回无，失败时返回错误字符串。"

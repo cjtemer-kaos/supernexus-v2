@@ -1,0 +1,20 @@
+{
+  "conversations": 71,
+  "commands_executed": 0,
+  "tools_used": [
+    "opencode",
+    "code",
+    "design",
+    "director",
+    "sage"
+  ],
+  "preferred_gem": "general",
+  "preferred_model": "auto",
+  "topics_interests": {
+    "linux": 4,
+    "docker": 4,
+    "hardware": 4
+  },
+  "complexity_level": 1,
+  "last_consolidation": "2026-06-13T18:29:51.790437"
+}

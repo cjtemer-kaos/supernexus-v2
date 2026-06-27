@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.fatcat_tool.rst:2 219e34b2e2444fd49a3698370f8aa1ef
+msgid "tooluniverse.fatcat\\_tool module"
+msgstr "tooluniverse.fatcat_tool 模块"
+
+#: f8848345b3b64d76ab4ad11817596401 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 3a7937078b7b486699a2597148bbb1fb of
+#: tooluniverse.fatcat_tool.FatcatScholarTool:1
+msgid "Search Internet Archive Scholar via Fatcat releases search."
+msgstr "通过 Fatcat 发布搜索功能检索 Internet Archive Scholar。"
+
+#: a4be17f3f9ef445f9b8867b42d8fa6f0 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool:3
+msgid "Parameters (arguments):"
+msgstr "参数（参数列表）："
+
+#: 731de226839c41348883671e1e688bc4 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool:4
+msgid ""
+"query (str): Query string max_results (int): Max results (default 10, max "
+"100)"
+msgstr ""
+"query (str)：查询字符串  \n"
+"max_results (int)：最大结果数（默认值 10，最大值 100）"
+
+#: 85e8778440e94f079fdce0c762772e05 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 081007ea320b4524b2dd87e93f2f7d91 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.fatcat_tool.rst f761e036c55b4e5ab9c9af9629849cda
+#, fuzzy
+msgid "Parameters"
+msgstr "参数（参数列表）："
+
+#: b08d27ca2b8742d19be42aa7047cc49f of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 29d82289e7b24ce784250b43ead52d25 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: fa338c1801924d0aab58b696b67d65fe of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 9c9268a5bc5247118a901aa1a209c858 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 218c6d8c73e64bfba73cd59486660b1d of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文信息。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 8c344d204a72458b990b931cab8623e4 of
+#: tooluniverse.fatcat_tool.FatcatScholarTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

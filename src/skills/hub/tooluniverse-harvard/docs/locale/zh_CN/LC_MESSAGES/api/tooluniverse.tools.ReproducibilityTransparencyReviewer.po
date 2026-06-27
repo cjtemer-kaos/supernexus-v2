@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ReproducibilityTransparencyReviewer.rst:2
+#: 7250cdfcea9344d785423c0f7825c7bf
+msgid "tooluniverse.tools.ReproducibilityTransparencyReviewer module"
+msgstr "tooluniverse.tools.ReproducibilityTransparencyReviewer 模块"
+
+#: 0cedfb2db26d48158664083d2fa979c8 of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer:1
+msgid "ReproducibilityTransparencyReviewer"
+msgstr "可重复性透明性审阅者"
+
+#: 30a992e774764601aaf875488db097c9 531a940572e441108b1a31c353aa43ec of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer:3
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer.ReproducibilityTransparencyReviewer:1
+msgid "Evaluates data, code, and protocol availability for replication."
+msgstr "评估数据、代码和协议的可用性以进行复现。"
+
+#: ../../api/tooluniverse.tools.ReproducibilityTransparencyReviewer.rst
+#: 2d78ff3631494d62bfde2a1c69c4e62b
+msgid "Parameters"
+msgstr "参数"
+
+#: d47eca5864654d47ac0b21432a2227f3 of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer.ReproducibilityTransparencyReviewer:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e91bea62420449b586f854724b7d8ee5 of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer.ReproducibilityTransparencyReviewer:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 40115148558340d188caa34786c0b1dc of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer.ReproducibilityTransparencyReviewer:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ReproducibilityTransparencyReviewer.rst
+#: d79ec53fcdb143d288f397b74c3af7bf
+msgid "Return type"
+msgstr "返回类型"
+
+#: cbe512a7dfd54e71aaef94380df480a5 of
+#: tooluniverse.tools.ReproducibilityTransparencyReviewer.ReproducibilityTransparencyReviewer:12
+msgid ":py:class:`Any`"
+msgstr ""

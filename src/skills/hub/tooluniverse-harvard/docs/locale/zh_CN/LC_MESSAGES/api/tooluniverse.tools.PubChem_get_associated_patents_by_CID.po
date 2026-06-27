@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_get_associated_patents_by_CID.rst:2
+#: 21a9eebb2c17458d8ede092e67439a79
+msgid "tooluniverse.tools.PubChem\\_get\\_associated\\_patents\\_by\\_CID module"
+msgstr "tooluniverse.tools.PubChem\\_get\\_associated\\_patents\\_by\\_CID 模块"
+
+#: 5a838152e16047138faa0c8ce7b3c5bb of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID:1
+msgid "PubChem_get_associated_patents_by_CID"
+msgstr "PubChem_通过CID获取相关专利"
+
+#: 7dfa0e4ab3fb4e268af4389408001dad 8fe70b739bd446ccb7efdcc0ad6b7761 of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID:3
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:1
+msgid "Get a list of patents associated with a specific compound CID."
+msgstr "获取与特定化合物CID相关的专利列表。"
+
+#: ../../api/tooluniverse.tools.PubChem_get_associated_patents_by_CID.rst
+#: 1d770c099234482d8c78e355dda2e90d
+msgid "Parameters"
+msgstr "参数"
+
+#: d61aee9dea40459db07145224091484d of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:3
+msgid "PubChem compound ID to query, e.g., 2244 (Aspirin)."
+msgstr "用于查询的PubChem化合物ID，例如2244（阿司匹林）。"
+
+#: d84841aab2f04f9c8fee402a337556e6 of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5dd5febd72fa464c89c8a8d1ee160e36 of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2a897d8e2351426a962b6ffd4ef3d9e2 of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_get_associated_patents_by_CID.rst
+#: ce8ffc767d394161a598c43d8e3af666
+msgid "Return type"
+msgstr "返回类型"
+
+#: a84a611ecc66454baf4f8265445b829e of
+#: tooluniverse.tools.PubChem_get_associated_patents_by_CID.PubChem_get_associated_patents_by_CID:12
+msgid ":py:class:`Any`"
+msgstr ""

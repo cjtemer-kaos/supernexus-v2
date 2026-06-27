@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_eligibility_criteria.rst:2
+#: b0e3e48e99df45b2be6c676b6cb023a2
+msgid "tooluniverse.tools.get\\_clinical\\_trial\\_eligibility\\_criteria module"
+msgstr "tooluniverse.tools.get\\_clinical\\_trial\\_eligibility\\_criteria 模块"
+
+#: a3a17f24faf04e2097d58a6004be2fcb of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria:1
+msgid "get_clinical_trial_eligibility_criteria"
+msgstr ""
+"get_clinical_trial_eligibility_criteria  \n"
+"获取临床试验资格标准"
+
+#: 662b862c55494005a7541865588b986e a5f413a5c02f4790aedb29baf08ad755 of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria:3
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:1
+msgid ""
+"Retrieves the eligibility criteria for the clinical trials, using their NCT "
+"IDs."
+msgstr "使用其 NCT ID 检索临床试验的资格标准。"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_eligibility_criteria.rst
+#: 06478b30107f4ae1837fa9c918166dbe
+msgid "Parameters"
+msgstr "参数"
+
+#: 731dd09d475145ec93144560bf2a17e3 of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:3
+msgid ""
+"List of NCT IDs of the clinical trials (e.g., ['NCT04852770', "
+"'NCT01728545'])."
+msgstr "临床试验的NCT编号列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: e2c1d23e54384c8dad4a9a9b0ffaca40 of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:5
+msgid "Placeholder."
+msgstr "占位符"
+
+#: c46f545b41594bd9a42aa47708931c7f of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 25e44259fd634e0fa168fdb099eef284 of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 14aa05f6173e4939bd0a15412725c47e of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_eligibility_criteria.rst
+#: 0bfdff59e0814cbe9165b35024c776f3
+msgid "Return type"
+msgstr "返回类型"
+
+#: fdc31271fedb4a5d971ff619e8f21afa of
+#: tooluniverse.tools.get_clinical_trial_eligibility_criteria.get_clinical_trial_eligibility_criteria:14
+msgid ":py:class:`Any`"
+msgstr ""

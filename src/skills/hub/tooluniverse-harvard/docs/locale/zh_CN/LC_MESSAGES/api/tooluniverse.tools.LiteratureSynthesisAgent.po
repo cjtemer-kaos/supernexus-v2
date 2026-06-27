@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.LiteratureSynthesisAgent.rst:2
+#: 7ce6829839a442258deb3d7724a37020
+msgid "tooluniverse.tools.LiteratureSynthesisAgent module"
+msgstr "tooluniverse.tools.LiteratureSynthesisAgent 模块"
+
+#: 81f641c2fd134e8889c54e609d18da17 of
+#: tooluniverse.tools.LiteratureSynthesisAgent:1
+msgid "LiteratureSynthesisAgent"
+msgstr "文献综合代理"
+
+#: a11118303e514021a7f5b3fd9db0539f c0713c705799411d9a0ec449895e810f of
+#: tooluniverse.tools.LiteratureSynthesisAgent:3
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:1
+msgid ""
+"AI agent that synthesizes literature findings and provides evidence-based "
+"insights"
+msgstr "AI代理可综合文献研究成果并提供基于证据的洞察"
+
+#: ../../api/tooluniverse.tools.LiteratureSynthesisAgent.rst
+#: 7e715ad9a9a644258eaf8979eb7f8a34
+msgid "Parameters"
+msgstr "参数"
+
+#: 4dabb744c7f240e4bb0d578ff03b6570 of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:3
+msgid "Research topic or question"
+msgstr "研究主题或问题"
+
+#: 8cc75caaa3964ce396306ad46219ca1f of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:5
+msgid "Literature findings or abstracts to synthesize"
+msgstr "文献发现或摘要的综合分析"
+
+#: 11760ec42a2643998b527e8709e8100e of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:7
+msgid "Specific focus area for synthesis"
+msgstr "合成的具体关注领域"
+
+#: 1ebdc79d15a54dee9edd63db97a370fd of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ab55e58788234f42b1efee8d2f9498cd of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: db080bfc00ba4448b746627731af973c of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.LiteratureSynthesisAgent.rst
+#: b35e9904dcab4e5fb591639421499025
+msgid "Return type"
+msgstr "返回类型"
+
+#: 53f6934ee8fb470ca32f001ebf0d1875 of
+#: tooluniverse.tools.LiteratureSynthesisAgent.LiteratureSynthesisAgent:16
+msgid ":py:class:`Any`"
+msgstr ":py:class:`任意`"

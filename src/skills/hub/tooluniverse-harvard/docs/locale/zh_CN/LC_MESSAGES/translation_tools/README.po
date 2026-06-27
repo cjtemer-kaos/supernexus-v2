@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 21:40-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../translation_tools/README.md:1 aae0455bbba04691876dcaca29266588
+msgid "Translation Tools"
+msgstr "翻译工具"
+
+#: ../../translation_tools/README.md:3 79b7d03f8f6041c9b7270da631a6c1bd
+msgid "这个文件夹包含了基于 ToolUniverse AgenticTool 的翻译工具，用于批量翻译 .po 文件。"
+msgstr "该文件夹包含基于 ToolUniverse AgenticTool 的翻译工具，用于批量翻译 .po 文件。"
+
+#: ../../translation_tools/README.md:5 e21214102b914ceabb5d41d4ff5afec4
+msgid "文件说明"
+msgstr ""
+
+#: ../../translation_tools/README.md:7 fac04b358a884725ba140d3ce4829690
+msgid "核心文件"
+msgstr "核心文档"
+
+#: ../../translation_tools/README.md:9 910f7852269042a28c49bc9aa993da50
+msgid "**`batch_translate_po.py`** - 主要的批量翻译脚本"
+msgstr ""
+
+#: ../../translation_tools/README.md:10 ccc5f65b6c42412aa5e36e4fa11a2789
+msgid "命令行界面，易于使用"
+msgstr "命令行界面，操作简便"
+
+#: ../../translation_tools/README.md:11 3dc15af8e99e4cb98978e9d8be931339
+msgid "支持单个文件和批量翻译"
+msgstr "支持单个文件及批量翻译"
+
+#: ../../translation_tools/README.md:12 c2431316c35841529f01f1d2b6e5d416
+msgid "翻译状态查看和统计"
+msgstr "翻译状态查看与统计"
+
+#: ../../translation_tools/README.md:13 9eb84bb755314512b5579dc753218850
+msgid "可配置的翻译参数"
+msgstr ""
+
+#: ../../translation_tools/README.md:15 e529f0fcfc7a402db8e43e51bf22448f
+msgid "**`translation_agentic_tool.py`** - 完整的演示脚本"
+msgstr "**`translation_agentic_tool.py`** - 完整演示脚本"
+
+#: ../../translation_tools/README.md:16 81c2c104b3fa497d81907420c0e8772d
+msgid "展示如何使用 AgenticTool"
+msgstr ""
+
+#: ../../translation_tools/README.md:17 613b701977a14c7e86a63c13a35ed572
+msgid "包含完整的类实现示例"
+msgstr ""
+
+#: ../../translation_tools/README.md:18 12fee845b8c4447a9b62037a024a2789
+msgid "适合学习和理解 AgenticTool 用法"
+msgstr "适合学习和理解 AgenticTool 的用法"
+
+#: ../../translation_tools/README.md:20 b09fe2dbb75b48fe8d0a251304a5cf88
+msgid "**`AGENTIC_TRANSLATION_TOOL_SUMMARY.md`** - 完整的实现总结"
+msgstr "**`AGENTIC_TRANSLATION_TOOL_SUMMARY.md`** - 实现总结"
+
+#: ../../translation_tools/README.md:21 ee422de1c56641b1ab71536185f93199
+msgid "详细的技术实现说明"
+msgstr "Detailed Technical Implementation Description"
+
+#: ../../translation_tools/README.md:22 cb14ee9c7c0d4fb892c29ef6797deab6
+msgid "使用方法和示例"
+msgstr "使用方法与示例"
+
+#: ../../translation_tools/README.md:23 61058b480f01407198465b98ada10d66
+msgid "测试结果和性能分析"
+msgstr "测试结果与性能分析"
+
+#: ../../translation_tools/README.md:25 f43c0c13dd344f549f55108feeae1841
+msgid "快速开始"
+msgstr "快速入门"
+
+#: ../../translation_tools/README.md:27 8f55417e9a354eefa2e260303c370580
+msgid "安装依赖"
+msgstr "安装依赖项"
+
+#: ../../translation_tools/README.md:33 7336895948754407b9d618a40db6eafc
+msgid "基本使用"
+msgstr ""
+
+#: ../../translation_tools/README.md:46 284797505fb54c3e83502a1c6aa872d3
+msgid "高级选项"
+msgstr ""
+
+#: ../../translation_tools/README.md:57 57c8851f604d41e495694c7fd1a8c780
+msgid "特点"
+msgstr "Features"
+
+#: ../../translation_tools/README.md:59 b85a89edfdaf4d73958829bd755d9d8a
+msgid "✅ 无需修改源代码，完全在 docs 目录下实现"
+msgstr "✅ 无需修改源代码，全部在 docs 目录下实现"
+
+#: ../../translation_tools/README.md:60 9af751a5c3fc4c44ac366ecf96e16c99
+msgid "✅ 基于 ToolUniverse AgenticTool 框架"
+msgstr ""
+
+#: ../../translation_tools/README.md:61 41e141e2448b44b9ad0fcb44298c4a7c
+msgid "✅ 智能翻译，保持技术术语一致性"
+msgstr "✅ 智能翻译，确保技术术语一致性"
+
+#: ../../translation_tools/README.md:62 bbc82e7602af4568bf1d09c6b0a58179
+msgid "✅ 支持大规模批量处理"
+msgstr ""
+
+#: ../../translation_tools/README.md:63 45bdf81ac6364dce9d42796c0ceae074
+msgid "✅ 详细的错误处理和日志记录"
+msgstr "✅ 详细的错误处理与日志记录"
+
+#: ../../translation_tools/README.md:64 7d635dd24dda48e299123321ff44ffe9
+msgid "✅ 用户友好的命令行界面"
+msgstr ""
+
+#: ../../translation_tools/README.md:66 c306b42fa2cd470fae7b23d7ae98ce07
+msgid "技术实现"
+msgstr ""
+
+#: ../../translation_tools/README.md:68 8be52cb5d1d6409eb9875f6afa46e6bf
+msgid ""
+"这个翻译工具展示了如何在不修改 ToolUniverse 源代码的情况下，利用其 AgenticTool 功能来构建强大的翻译工具。它使用 LLM "
+"进行高质量的翻译，并提供了完整的批量处理功能。"
+msgstr ""
+"这个翻译工具展示了如何在不修改 ToolUniverse 源代码的情况下，利用其 AgenticTool "
+"功能构建强大的翻译工具。它采用大型语言模型（LLM）实现高质量翻译，并提供完整的批量处理功能。"

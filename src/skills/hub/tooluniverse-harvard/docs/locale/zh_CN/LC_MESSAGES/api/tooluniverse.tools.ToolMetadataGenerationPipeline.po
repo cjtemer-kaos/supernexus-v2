@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerationPipeline.rst:2
+#: 6c37d0c6223e49dd9c638f5f8120a8da
+msgid "tooluniverse.tools.ToolMetadataGenerationPipeline module"
+msgstr "tooluniverse.tools.ToolMetadataGenerationPipeline 模块"
+
+#: a920d09a3fa54bb7bba72980be02cb2f of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline:1
+msgid "ToolMetadataGenerationPipeline"
+msgstr "工具元数据生成管道"
+
+#: 206de519a7df45cf889a551f4cacbf7f a625a2671a104f26aece8b636fc39ced of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline:3
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:1
+msgid ""
+"Generates standardized metadata for a batch of ToolUniverse tool "
+"configurations by calling ToolMe..."
+msgstr "生成标准化元数据，用于一批ToolUniverse工具配置，通过调用ToolMe..."
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerationPipeline.rst
+#: e813fb2c1e0a44e9a31aca3b7181b910
+msgid "Parameters"
+msgstr "参数"
+
+#: aa429d5d392646aa9ac4f889a53d9293 of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:3
+msgid ""
+"List of raw tool configuration JSON objects to extract and standardize "
+"metada..."
+msgstr "原始工具配置JSON对象列表，用于提取和标准化元数据..."
+
+#: 8318ee34d1b2403aa768f1dfcc43164c of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:5
+msgid ""
+"Mapping of simplified toolType (keys) to lists of tool 'type' values "
+"belongin..."
+msgstr "简化工具类型（键）与属于工具“类型”值列表的映射"
+
+#: 3c404411aa324ae6b6716ec1eb4e54d0 of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:7
+msgid ""
+"Whether to include labels from existing ToolUniverse tools when labeling the"
+" ..."
+msgstr "是否在标记时包含来自现有 ToolUniverse 工具的标签..."
+
+#: c4c6515193f74ac881142d9770d728ba of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:9
+msgid ""
+"The maximum number of new ToolUniverse labels to use in the metadata configs"
+" ..."
+msgstr "元数据配置中可使用的ToolUniverse新标签的最大数量..."
+
+#: 78bd7786371c4fa49acd9c907d540c55 of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7b2c84a269894ccca3a15c846eeb1faa of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2b1502a64aaa41638a8307363ba8216f of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolMetadataGenerationPipeline.rst
+#: 1a160e17d15f4106a403b6bfb742a921
+msgid "Return type"
+msgstr "返回类型"
+
+#: 679224b3f19b47c79975e5c9f3e3d7ae of
+#: tooluniverse.tools.ToolMetadataGenerationPipeline.ToolMetadataGenerationPipeline:18
+msgid ":py:class:`Any`"
+msgstr ""

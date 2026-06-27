@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_outcome_measures.rst:2
+#: 11e961cc19f1442f82f0219223a34795
+msgid "tooluniverse.tools.get\\_clinical\\_trial\\_outcome\\_measures module"
+msgstr "tooluniverse.tools.get\\_clinical\\_trial\\_outcome\\_measures 模块"
+
+#: b63a6bcee9d148048ee8bcdf6614653e of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures:1
+msgid "get_clinical_trial_outcome_measures"
+msgstr "get_clinical_trial_outcome_measures（获取临床试验结局指标）"
+
+#: 01993987c61c4882b47203482c78c5c4 87f3ba15ff44460c8f4b84273744991e of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures:3
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:1
+msgid ""
+"Retrieves the outcome measures for the clinical trials, using their NCT IDs."
+msgstr "使用其 NCT ID 检索临床试验的结果指标。"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_outcome_measures.rst
+#: bc10213efaca44d5a69cea4934524c69
+msgid "Parameters"
+msgstr "参数"
+
+#: f12fe1d4f8a348a3b9cc4fb08b256e0d of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:3
+msgid ""
+"List of NCT IDs of the clinical trials (e.g., ['NCT04852770', "
+"'NCT01728545'])."
+msgstr "临床试验的NCT编号列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: 815fcc1820674d6ab89b3ee6e770bccb of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:5
+msgid ""
+"Decides whether to retrieve primary, secondary, or all outcome measures. "
+"Opti..."
+msgstr "决定是否检索主要、次要或所有结果指标。"
+
+#: a4cec38e14ea4261acc8efdc184339ff of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e753e8b7fe244a12ac24899508c4bc8b of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c9f34613da26439fadeb60faaceb53fa of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_outcome_measures.rst
+#: 9ca549bf08004c4e9ee01095a495635e
+msgid "Return type"
+msgstr "返回类型"
+
+#: d7123284b45e4687bc9d265d4bcb7c3d of
+#: tooluniverse.tools.get_clinical_trial_outcome_measures.get_clinical_trial_outcome_measures:14
+msgid ":py:class:`Any`"
+msgstr ""

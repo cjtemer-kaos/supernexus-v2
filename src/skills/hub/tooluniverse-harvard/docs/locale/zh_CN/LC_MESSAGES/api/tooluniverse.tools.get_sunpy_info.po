@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_sunpy_info.rst:2
+#: e8d4fa77ff9f4c33aed76da1852789f8
+msgid "tooluniverse.tools.get\\_sunpy\\_info module"
+msgstr "tooluniverse.tools.get\\_sunpy\\_info 模块"
+
+#: 42b536e583c149cf807d80d5972b94c2 of tooluniverse.tools.get_sunpy_info:1
+msgid "get_sunpy_info"
+msgstr ""
+
+#: 7981ff774ea043d992618fbdb3fc1a64 7e51ab47612249188db9734dcc64a2de of
+#: tooluniverse.tools.get_sunpy_info:3
+#: tooluniverse.tools.get_sunpy_info.get_sunpy_info:1
+msgid "Get information about the sunpy package. Solar data analysis library"
+msgstr "获取有关 sunpy 软件包的信息。太阳数据分析库"
+
+#: ../../api/tooluniverse.tools.get_sunpy_info.rst
+#: 404db8566adc43e9a27af4bdc01250dc
+msgid "Parameters"
+msgstr "参数"
+
+#: 09f3715feb9f4b4b8fb110028a6abb14 of
+#: tooluniverse.tools.get_sunpy_info.get_sunpy_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 942e744815224a9388231c77b3bfadd8 of
+#: tooluniverse.tools.get_sunpy_info.get_sunpy_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3999323763a84b5a94e859ff339e016b of
+#: tooluniverse.tools.get_sunpy_info.get_sunpy_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_sunpy_info.rst
+#: 79350f17f9ca406ab6b68c20ad0936a0
+msgid "Return type"
+msgstr "返回类型"
+
+#: 241ab7d6088d4fc3b166ba7e48d42422 of
+#: tooluniverse.tools.get_sunpy_info.get_sunpy_info:11
+msgid ":py:class:`Any`"
+msgstr ""

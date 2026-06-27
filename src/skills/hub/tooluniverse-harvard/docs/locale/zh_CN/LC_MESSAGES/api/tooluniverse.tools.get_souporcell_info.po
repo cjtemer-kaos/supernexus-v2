@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_souporcell_info.rst:2
+#: 5fbae6e391d4429db0742a0c976661e4
+msgid "tooluniverse.tools.get\\_souporcell\\_info module"
+msgstr "tooluniverse.tools.get\\_souporcell\\_info 模块"
+
+#: 7124f7440a3946f3b049b1f0d90aa0e0 of
+#: tooluniverse.tools.get_souporcell_info:1
+msgid "get_souporcell_info"
+msgstr "get_souporcell_info 获取souporcell信息"
+
+#: 75e847473b434e67a86c9f364e0f758c e8a3db76420d4711a5e598b64e6065e4 of
+#: tooluniverse.tools.get_souporcell_info:3
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:1
+msgid ""
+"Get comprehensive information about souporcell – scRNA-seq genotype "
+"clustering"
+msgstr "获取关于souporcell的全面信息——scRNA-seq基因型聚类"
+
+#: ../../api/tooluniverse.tools.get_souporcell_info.rst
+#: 716b671766314818a8aae158db3807a8
+msgid "Parameters"
+msgstr "参数"
+
+#: b9907265fad44c31bc10ffd3180396f3 of
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:3
+msgid "Type of information to retrieve about souporcell"
+msgstr "关于souporcell可检索的信息类型"
+
+#: d626d4bad66b40f2aa7fab30e6105b66 of
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: afeabf9046634687ac80e88487685d55 of
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e7ddaa10549f4306951ac03b728b1c2b of
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_souporcell_info.rst
+#: 13fd6ef4764c4acf835c6b58f75c656d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7af3e6c0787f4919ad36f6573decdcfd of
+#: tooluniverse.tools.get_souporcell_info.get_souporcell_info:12
+msgid ":py:class:`Any`"
+msgstr ""

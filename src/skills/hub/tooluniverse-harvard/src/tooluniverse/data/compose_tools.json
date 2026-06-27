@@ -1,0 +1,307 @@
+[
+  {
+    "type": "ComposeTool",
+    "name": "DrugSafetyAnalyzer",
+    "description": "Comprehensive drug safety analysis combining adverse event data, literature review, and molecular information",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "drug_name": {
+          "type": "string",
+          "description": "Name of the drug to analyze"
+        },
+        "patient_sex": {
+          "type": "string",
+          "enum": [
+            "Male",
+            "Female"
+          ],
+          "description": "Filter by patient sex (optional)"
+        },
+        "serious_events_only": {
+          "type": "boolean",
+          "description": "Focus only on serious adverse events",
+          "default": false
+        }
+      },
+      "required": [
+        "drug_name",
+        "patient_sex",
+        "serious_events_only"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "PubChem_get_CID_by_compound_name",
+      "PubChem_get_compound_properties_by_CID",
+      "EuropePMC_search_articles"
+    ],
+    "composition_file": "drug_safety_analyzer.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "drug_name": "Aspirin",
+        "patient_sex": "Female",
+        "serious_events_only": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "LiteratureSearchTool",
+    "description": "Comprehensive literature search and summary tool that searches multiple databases (EuropePMC, OpenAlex, PubTator) and generates AI-powered summaries of research findings",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "research_topic": {
+          "type": "string",
+          "description": "The research topic or query to search for in the literature"
+        }
+      },
+      "required": [
+        "research_topic"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "EuropePMC_search_articles",
+      "openalex_literature_search",
+      "PubTator3_LiteratureSearch",
+      "MedicalLiteratureReviewer"
+    ],
+    "composition_file": "literature_tool.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "research_topic": "cancer immunotherapy"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "ComprehensiveDrugDiscoveryPipeline",
+    "description": "Complete end-to-end drug discovery workflow from disease to optimized candidates. Identifies targets, discovers lead compounds, screens for ADMET properties, assesses safety, and validates with literature.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_efo_id": {
+          "type": "string",
+          "description": "The EFO ID of the disease for drug discovery (e.g., 'EFO_0001074' for Alzheimer's disease)"
+        }
+      },
+      "required": [
+        "disease_efo_id"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "OpenTargets_get_associated_targets_by_disease_efoId",
+      "OpenTargets_get_associated_drugs_by_disease_efoId",
+      "ADMETAI_predict_BBB_penetrance",
+      "ADMETAI_predict_bioavailability",
+      "ADMETAI_predict_toxicity",
+      "PubChem_get_CID_by_compound_name",
+      "PubChem_get_compound_properties_by_CID",
+      "LiteratureSearchTool"
+    ],
+    "composition_file": "comprehensive_drug_discovery.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "disease_efo_id": "EFO_0001074"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "BiomarkerDiscoveryWorkflow",
+    "description": "Discover and validate biomarkers for a specific disease condition using literature analysis, expression data, pathway enrichment, and clinical validation.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "disease_condition": {
+          "type": "string",
+          "description": "The disease condition to discover biomarkers for (e.g., 'breast cancer', 'Alzheimer's disease')"
+        },
+        "sample_type": {
+          "type": "string",
+          "description": "The type of sample to analyze (e.g., 'blood', 'tissue', 'plasma')",
+          "default": "blood"
+        }
+      },
+      "required": [
+        "disease_condition",
+        "sample_type"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "LiteratureSearchTool",
+      "HPA_search_genes_by_query",
+      "HPA_get_comprehensive_gene_details_by_ensembl_id",
+      "HPA_get_biological_processes_by_gene",
+      "HPA_get_contextual_biological_process_analysis",
+      "HPA_get_protein_interactions_by_gene",
+      "HPA_get_cancer_prognostics_by_gene",
+      "FDA_get_drug_names_by_clinical_pharmacology"
+    ],
+    "composition_file": "biomarker_discovery.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "disease_condition": "breast cancer",
+        "sample_type": "tissue"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "ToolMetadataGenerationPipeline",
+    "description": "Generates standardized metadata for a batch of ToolUniverse tool configurations by calling ToolMetadataGenerator, LabelGenerator, and ToolMetadataStandardizer for sources and tags.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_configs": {
+          "type": "array",
+          "description": "List of raw tool configuration JSON objects to extract and standardize metadata for",
+          "items": {
+            "type": "object"
+          }
+        },
+        "tool_type_mappings": {
+          "type": "object",
+          "description": "Mapping of simplified toolType (keys) to lists of tool 'type' values belonging to each simplified category (e.g., {'Databases': ['XMLTool']})",
+          "default": {}
+        },
+        "add_existing_tooluniverse_labels": {
+          "type": "boolean",
+          "description": "Whether to include labels from existing ToolUniverse tools when labeling the metadata configs of the new tools. It is strongly recommended that this is set to true to minimize the number of new labels created and the possibility of redundant labels.",
+          "default": true
+        },
+        "max_new_tooluniverse_labels": {
+          "type": "integer",
+          "description": "The maximum number of new ToolUniverse labels to use in the metadata configs of the new tools. The existing ToolUniverse labels will be used first, and then new labels will be created as needed up to this limit. If the limit is reached, the least relevant new labels will be discarded. Please try to use as few new labels as possible to avoid excessive labels.",
+          "default": 0
+        }
+      },
+      "required": [
+        "tool_configs"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "ToolMetadataGenerator",
+      "LabelGenerator",
+      "ToolMetadataStandardizer"
+    ],
+    "composition_file": "tool_metadata_generator.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "tool_configs": [
+          {
+            "type": "XMLTool",
+            "name": "ExampleXMLTool",
+            "description": "Parses XML files",
+            "parameter": {}
+          }
+        ],
+        "tool_type_mappings": {
+          "Database": [
+            "XMLTool"
+          ]
+        }
+      }
+    ],
+    "return_schema": {
+      "type": ["object", "array"],
+      "description": "Output of the tool execution - can be object or array of tool metadata configs",
+      "properties": {}
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "ToolGraphGenerationPipeline",
+    "description": "Generates a directed tool relationship graph among provided tool configs using ToolRelationshipDetector to infer data-flow compatibility.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "tool_configs": {
+          "type": "array",
+          "description": "List of tool configuration objects",
+          "items": {
+            "type": "object"
+          }
+        },
+        "max_tools": {
+          "type": "integer",
+          "description": "Optional max number of tools to process (debug)"
+        },
+        "output_path": {
+          "type": "string",
+          "description": "Path for output graph JSON",
+          "default": "./tool_relationship_graph.json"
+        },
+        "save_intermediate_every": {
+          "type": "integer",
+          "description": "Checkpoint every N processed pairs",
+          "default": 5000
+        }
+      },
+      "required": [
+        "tool_configs"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "ToolRelationshipDetector"
+    ],
+    "composition_file": "tool_graph_generation.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "tool_configs": [
+          {
+            "type": "SampleTool",
+            "name": "ExampleTool",
+            "description": "A sample tool configuration"
+          }
+        ],
+        "max_tools": 10,
+        "output_path": "./tool_relationship_graph.json",
+        "save_intermediate_every": 5000
+      }
+    ],
+    "return_schema": {
+      "type": ["object", "null"],
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  }
+]

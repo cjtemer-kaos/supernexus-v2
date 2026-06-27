@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/boltz_tools.rst:2 5463bcb2772a4023a7770904ff567d04
+msgid "Boltz Tools"
+msgstr "Boltz 工具"
+
+#: ../../tools/boltz_tools.rst:4 e652dcc8aa5c426683bcd6226b89e4d9
+msgid ""
+"**Configuration File**: ``remote_tools/boltz_tools.json`` **Tool Type**: "
+"Remote **Tools Count**: 1"
+msgstr ""
+"**配置文件**：``remote_tools/boltz_tools.json``  \n"
+"**工具类型**：远程  \n"
+"**工具数量**：1"
+
+#: ../../tools/boltz_tools.rst:8 f2dafd4c8f9a4fbe9f1343c7b4a7fd0e
+msgid ""
+"This page contains all tools defined in the ``boltz_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``boltz_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/boltz_tools.rst:11 f14627adf4684b3d89e7759312fec859
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/boltz_tools.rst:14 688074aaeeee4df18bd73b936678aff2
+msgid "**boltz2_docking** (Type: RemoteTool)"
+msgstr "**boltz2_docking**（类型：RemoteTool）"
+
+#: ../../tools/boltz_tools.rst:16 11fee46b11d443b0b1debfc4c3dd2cb3
+msgid ""
+"Perform protein-ligand docking via Boltz-2: input a protein sequence plus"
+" one or more ligands (SM..."
+msgstr "通过 Boltz-2 执行蛋白质-配体对接：输入蛋白质序列及一个或多个配体（SM..."
+
+#: ../../tools/boltz_tools.rst decf8723c5274b2b90dd93684ad73951
+msgid "boltz2_docking tool specification"
+msgstr "boltz2_docking 工具规格说明"
+
+#: ../../tools/boltz_tools.rst:20 ea2257eb65814d959e0bc42c1625d83c
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/boltz_tools.rst:22 67d851e239da4b75bde376a3733d2662
+msgid "**Name**: ``boltz2_docking``"
+msgstr "**名称**：``boltz2_docking``"
+
+#: ../../tools/boltz_tools.rst:23 16572ae8875b4d8b996e836d1a562864
+msgid "**Type**: ``RemoteTool``"
+msgstr "**类型**：``RemoteTool``"
+
+#: ../../tools/boltz_tools.rst:24 4929244122014aecb1b1ff84c487dca3
+msgid ""
+"**Description**: Perform protein-ligand docking via Boltz-2: input a "
+"protein sequence plus one or more ligands (SMILES), get back predicted "
+"structures and confidence scores."
+msgstr "**描述**：通过 Boltz-2 执行蛋白质-配体对接：输入一个蛋白质序列以及一个或多个配体（SMILES），即可获得预测结构和置信评分。"
+
+#: ../../tools/boltz_tools.rst:26 0912b3ca160a4d618a982412d121fa15
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/boltz_tools.rst:28 c395a02c2f564d87b4872e84afb65c2b
+msgid ""
+"``sequence`` (string) (required) One-letter amino acid sequence of the "
+"target protein (FASTA format, without header)."
+msgstr "``sequence``（字符串）（必填）目标蛋白的一字母氨基酸序列（FASTA格式，无标题）。"
+
+#: ../../tools/boltz_tools.rst:31 28cb5eb2938343f0941b15689e867b1e
+msgid ""
+"``ligands`` (array) (required) List of ligand definitions to dock against"
+" the protein."
+msgstr "``ligands``（数组）（必需）用于与蛋白质对接的配体定义列表。"
+
+#: ../../tools/boltz_tools.rst:34 5ab8f26e54274effa3fa98dd88510849
+#, fuzzy
+msgid ""
+"``recycling_steps`` (integer) (required) Number of recycling steps "
+"(overfold iterations)."
+msgstr "``recycling_steps``（整数）（可选）回收步骤的数量（叠加迭代次数）。"
+
+#: ../../tools/boltz_tools.rst:37 e37d561279144253a63ff9b3c424588f
+#, fuzzy
+msgid ""
+"``sampling_steps`` (integer) (required) Number of sampling steps for "
+"diffusion process."
+msgstr "``sampling_steps``（整数）（可选）扩散过程的采样步数。"
+
+#: ../../tools/boltz_tools.rst:40 86e86140078742aba0b1f64e03e686cc
+#, fuzzy
+msgid ""
+"``diffusion_samples`` (integer) (required) How many diffusion-sampled "
+"structures to generate."
+msgstr "``diffusion_samples``（整数）（可选）生成多少个扩散采样的结构。"
+
+#: ../../tools/boltz_tools.rst:43 c4111b01214e490580a7bab972b6a151
+#, fuzzy
+msgid "``step_scale`` (number) (required) Scaling factor for diffusion step size."
+msgstr "``step_scale``（数字）（可选）扩散步长的缩放因子。"
+
+#: ../../tools/boltz_tools.rst:46 2fe92e91a6eb4ab4bd28d077582ab79f
+#, fuzzy
+msgid ""
+"``use_potentials`` (boolean) (required) If true, omit external force-"
+"field potentials from the diffusion process."
+msgstr "``use_potentials``（布尔值）（可选）如果为 true，则在扩散过程中忽略外部力场势能。"
+
+#: ../../tools/boltz_tools.rst:49 cb241f9567674d5ab3041d129cf47148
+#, fuzzy
+msgid ""
+"``return_structure`` (boolean) (required) If false, the predicted "
+"structure will not be read or returned. Defaults to false."
+msgstr "``return_structure``（布尔值）（可选）如果为 false，则不会读取或返回预测的结构。默认值为 false。"
+
+#: ../../tools/boltz_tools.rst:52 ff7aa74f3b8141c798b18e2eec297304
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/boltz_tools.rst:73 11bc2982e90e49889d4617ee9c5a8a14
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/boltz_tools.rst:75 e4e93ab5bf884d49bd9f498dab31b5dc
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/boltz_tools.rst:76 da2c569794bb470e8830a6870b8bfb16
+msgid ":doc:`remote_tools` - Remote Tools Setup"
+msgstr ":doc:`remote_tools` - 远程工具设置"
+

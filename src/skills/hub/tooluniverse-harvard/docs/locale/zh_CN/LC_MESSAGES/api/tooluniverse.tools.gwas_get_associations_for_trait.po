@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_trait.rst:2
+#: 1515ec620c954d98a01e232c02bbd2dc
+msgid "tooluniverse.tools.gwas\\_get\\_associations\\_for\\_trait module"
+msgstr "tooluniverse.tools.gwas\\_get\\_associations\\_for\\_trait 模块"
+
+#: 3f85516eaeb244be9377346f71bb830a of
+#: tooluniverse.tools.gwas_get_associations_for_trait:1
+msgid "gwas_get_associations_for_trait"
+msgstr "gwas_get_associations_for_trait（获取特定性状的关联信息）"
+
+#: 7283460196514b99b290e1ba228291de 926e9ee9d14d4bf6b96e51a841b6748d of
+#: tooluniverse.tools.gwas_get_associations_for_trait:3
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:1
+msgid ""
+"Get all associations for a specific trait, sorted by p-value (most "
+"significant first)."
+msgstr "获取特定性状的所有关联，并按p值排序（最显著的优先）。"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_trait.rst
+#: 96c29a84a24647b295004c0e28a04af6
+msgid "Parameters"
+msgstr "参数"
+
+#: 1768c9079dfd48a99c59cbdb8d1b107a of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:3
+msgid "EFO trait identifier or name"
+msgstr "EFO 特征标识符或名称"
+
+#: 646457fbb8514b7cafaa210738052756 of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:5
+msgid "Number of results to return per page"
+msgstr "每页返回结果的数量"
+
+#: 1fac4a4884fa476391499e27b3c82c05 of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:7
+msgid "Page number for pagination"
+msgstr "分页页码"
+
+#: 282f62af6a844971aeabbf721e2dd123 of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 653b98d70f744cdcb8bd12fb22341f23 of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b86b71269cfa4768ac8159d2b99f047d of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_get_associations_for_trait.rst
+#: 82a5baf2075c4170b667e14a20b15149
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7d3f16426a07488ab156c50c4436ce86 of
+#: tooluniverse.tools.gwas_get_associations_for_trait.gwas_get_associations_for_trait:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

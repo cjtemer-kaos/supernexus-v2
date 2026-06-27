@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Wikidata_SPARQL_query.rst:2
+#: af1ba210517d40ae8831d3b905421141
+msgid "tooluniverse.tools.Wikidata\\_SPARQL\\_query module"
+msgstr "tooluniverse.tools.Wikidata\\_SPARQL\\_query 模块"
+
+#: 19c1370b4f6043d88e21cd23404403d1 of
+#: tooluniverse.tools.Wikidata_SPARQL_query:1
+msgid "Wikidata_SPARQL_query"
+msgstr "Wikidata_SPARQL查询"
+
+#: 0606fa67b7964af1afc9aca9a728ae26 e40d510e97ad490fb035f96f64c37e17 of
+#: tooluniverse.tools.Wikidata_SPARQL_query:3
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:1
+msgid ""
+"Execute SPARQL queries against Wikidata to retrieve structured data. This "
+"tool powers Scholia-sty..."
+msgstr "对Wikidata执行SPARQL查询以检索结构化数据。此工具支持类似Scholia的功能。"
+
+#: ../../api/tooluniverse.tools.Wikidata_SPARQL_query.rst
+#: d0769f6eb38c48088be64262685a00ac
+msgid "Parameters"
+msgstr "参数"
+
+#: 228e9e5636c5446a860f17c2a8de44dd of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:3
+msgid ""
+"SPARQL query string to execute against Wikidata. Use SPARQL syntax to query "
+"a..."
+msgstr "用于针对维基数据执行的SPARQL查询字符串。使用SPARQL语法进行查询..."
+
+#: e88d4dbee43f4797b124a596885c0e21 of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:5
+msgid ""
+"Optional result limit override. If not specified, uses the LIMIT clause in "
+"th..."
+msgstr "可选结果限制覆盖。如果未指定，将使用查询中的LIMIT子句。"
+
+#: 9252c7ff4bf6418993f2a2a3e86ec00c of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调函数"
+
+#: 97e394dff1584df2ab7e231ea9f46764 of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8305401027c54e67b6add5d7c0e11c9e of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Wikidata_SPARQL_query.rst
+#: d3f0312ec57f46e29c4a1371c50538d7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4677d4b332eb43d19e737eae966c8647 of
+#: tooluniverse.tools.Wikidata_SPARQL_query.Wikidata_SPARQL_query:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

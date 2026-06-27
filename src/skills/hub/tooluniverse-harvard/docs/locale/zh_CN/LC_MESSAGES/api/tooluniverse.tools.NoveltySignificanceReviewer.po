@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.NoveltySignificanceReviewer.rst:2
+#: 01abb06f2f0143358bb3f5e024dcc8d5
+msgid "tooluniverse.tools.NoveltySignificanceReviewer module"
+msgstr "tooluniverse.tools.NoveltySignificanceReviewer 模块"
+
+#: a1d6a6ee12c744f991edf0dc8697dac2 of
+#: tooluniverse.tools.NoveltySignificanceReviewer:1
+msgid "NoveltySignificanceReviewer"
+msgstr "新颖性重要性审阅者"
+
+#: 32bfe240a5184b8aaf60e8b48349e9d3 bfa35fb39b7c417d9efe0e9cb3cb04fa of
+#: tooluniverse.tools.NoveltySignificanceReviewer:3
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:1
+msgid ""
+"Provides a structured peer-review of the work's originality and potential "
+"impact."
+msgstr "提供对作品原创性和潜在影响的结构化同行评审。"
+
+#: ../../api/tooluniverse.tools.NoveltySignificanceReviewer.rst
+#: f04cd8de2a0d4b78840c94dbf560e14b
+msgid "Parameters"
+msgstr "参数"
+
+#: 0692db32f7d746699e7a914992eb1e6d of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:3
+msgid "Manuscript title"
+msgstr "文稿标题"
+
+#: 9ae794a4c09d4e7f9a0f70933abb6914 of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:5
+msgid "Manuscript abstract"
+msgstr "手稿摘要"
+
+#: ba11f37a02534a88913ea30014e685ce of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:7
+msgid "Full manuscript text"
+msgstr "请提供完整的英文文稿内容，我将为您进行翻译。"
+
+#: 64bf04cd301a4ff195918d00fb5e8616 of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: fd3ca09423ca4835a36ed30c9f5caf64 of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 9fd600657a4c4a2ba6e55ccd5ac7af0b of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.NoveltySignificanceReviewer.rst
+#: 69489d5b3d9a44e2973af4d8885af1e7
+msgid "Return type"
+msgstr "返回类型"
+
+#: ed4ba5793d7c421ca1f7242e87476b7a of
+#: tooluniverse.tools.NoveltySignificanceReviewer.NoveltySignificanceReviewer:16
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DescriptionAnalyzer.rst:2
+#: 951480bbf39145adbdf8f6be22932f10
+msgid "tooluniverse.tools.DescriptionAnalyzer module"
+msgstr "tooluniverse.tools.DescriptionAnalyzer 模块"
+
+#: 083ef97578db4e20b361f5a38de122d7 of
+#: tooluniverse.tools.DescriptionAnalyzer:1
+msgid "DescriptionAnalyzer"
+msgstr "描述分析器"
+
+#: 2374e376c3eb4213bc32a20b376240da 8f2023db138945fcb486cf9181530b51 of
+#: tooluniverse.tools.DescriptionAnalyzer:3
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:1
+msgid ""
+"Analyzes a tool's original description and the results of multiple test "
+"cases, then suggests an i..."
+msgstr "分析工具的原始描述以及多个测试用例的结果，然后建议一个优化方案。"
+
+#: ../../api/tooluniverse.tools.DescriptionAnalyzer.rst
+#: fdc2913dfdbf4fbcacfdd84ecb867445
+msgid "Parameters"
+msgstr "参数"
+
+#: 463423792c1342fc8ce51a8914434a17 of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:3
+msgid "The original description of the tool."
+msgstr "工具的原始描述"
+
+#: 930ae48ebc1043c3996c3c1915902c7a of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:5
+msgid "A JSON string containing a list of test case input/output pairs."
+msgstr "一个包含测试用例输入/输出对列表的JSON字符串。"
+
+#: af40597c78d3401db5fb2144e866e066 of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0a24af2a2f91426da7a57c9c16a0edfa of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6f4ad8f357ed4d22b5170b467942a826 of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DescriptionAnalyzer.rst
+#: 4dfc8c03f737439d82834cfac5fd5ca3
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1608b712e773491aaf29bf59597ab59d of
+#: tooluniverse.tools.DescriptionAnalyzer.DescriptionAnalyzer:14
+msgid ":py:class:`Any`"
+msgstr ""

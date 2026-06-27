@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.MedicalLiteratureReviewer.rst:2
+#: 380e52d2c85e433e91a5f399141672cb
+msgid "tooluniverse.tools.MedicalLiteratureReviewer module"
+msgstr "tooluniverse.tools.MedicalLiteratureReviewer 模块"
+
+#: 2ce7916b8b774e45a152eba273482dcb of
+#: tooluniverse.tools.MedicalLiteratureReviewer:1
+msgid "MedicalLiteratureReviewer"
+msgstr "医学文献审阅器"
+
+#: 158377bc172d4aefbe3c43ec20917ea7 cc8e1813f49243e79e08a5d17c3a13f6 of
+#: tooluniverse.tools.MedicalLiteratureReviewer:3
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:1
+msgid ""
+"Conducts systematic reviews of medical literature on specific topics. "
+"Synthesizes findings from m..."
+msgstr "对特定主题的医学文献进行系统性综述。综合分析研究结果并从中提取关键信息。"
+
+#: ../../api/tooluniverse.tools.MedicalLiteratureReviewer.rst
+#: 1caca76a950840e3b345a2d70f79070f
+msgid "Parameters"
+msgstr "参数"
+
+#: eba469434367408f844c84256e0e1ab0 of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:3
+msgid ""
+"The specific medical/research topic for literature review (e.g., 'efficacy "
+"of..."
+msgstr "具体的医学/研究主题文献综述（例如，“...的疗效”）。"
+
+#: d43d278c8eec4c2797e8addd15e81829 of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:5
+msgid ""
+"The literature content, abstracts, full studies, or research papers to "
+"review..."
+msgstr "文献内容、摘要、完整研究或论文以供审阅..."
+
+#: 688103e7414a44a78a61236664e4df34 of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:7
+msgid ""
+"Primary focus area for the review (e.g., 'therapeutic efficacy', 'safety "
+"prof..."
+msgstr "主要审查重点领域（例如，“治疗效果”、“安全性”等）"
+
+#: 61d0efc0ad004c93879735228d650daa of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:9
+msgid ""
+"Types of studies to prioritize in the analysis (e.g., 'randomized controlled"
+" ..."
+msgstr "优先分析的研究类型（例如，“随机对照试验”..."
+
+#: def4f5ef93b94e598056748972c48b1b of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:11
+msgid ""
+"Minimum evidence quality level to include (e.g., 'high quality only', "
+"'modera..."
+msgstr "最低证据质量水平要求（例如，“仅限高质量”，“中等质量”）。"
+
+#: 036d519e019744beb91f5a14e3232066 of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:13
+msgid ""
+"Scope of the review (e.g., 'comprehensive systematic review', 'rapid "
+"review',..."
+msgstr "审查范围（例如，“全面系统审查”、“快速审查”、..."
+
+#: 5089a702cd1f4782af2a3172618f8259 of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5372965b5b4f488ca3c700424e5cd5cf of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cf00ee2521ed43e1b2725d46c97e0f6f of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.MedicalLiteratureReviewer.rst
+#: 003d9c4abbb7401fbe05d858770fcf61
+msgid "Return type"
+msgstr "返回类型"
+
+#: d3748940c97b4658894a58389e810c6e of
+#: tooluniverse.tools.MedicalLiteratureReviewer.MedicalLiteratureReviewer:22
+msgid ":py:class:`Any`"
+msgstr ""

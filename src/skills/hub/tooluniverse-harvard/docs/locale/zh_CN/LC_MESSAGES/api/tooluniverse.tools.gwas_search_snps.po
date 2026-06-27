@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_search_snps.rst:2
+#: 91849f495b5f449e85995a268e43429e
+msgid "tooluniverse.tools.gwas\\_search\\_snps module"
+msgstr "tooluniverse.tools.gwas\\_search\\_snps 模块"
+
+#: e6d104d0f3c84537a619945f926f86e0 of tooluniverse.tools.gwas_search_snps:1
+msgid "gwas_search_snps"
+msgstr "gwas_search_snps（全基因组关联研究搜索单核苷酸多态性）"
+
+#: d0fac550561e414183e3a705e2ef5c6c d3a5cc2f6a894af48f56d9cd1f331d2f of
+#: tooluniverse.tools.gwas_search_snps:3
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:1
+msgid ""
+"Search for GWAS single nucleotide polymorphisms (SNPs) by rs ID or mapped "
+"gene."
+msgstr "通过 rs ID 或映射基因搜索 GWAS 单核苷酸多态性（SNPs）。"
+
+#: ../../api/tooluniverse.tools.gwas_search_snps.rst
+#: dfd4d91f9a28439dada04905c75c5d88
+msgid "Parameters"
+msgstr "参数"
+
+#: da7f29ef19ae46f18102758b9a1ce4b1 of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:3
+msgid "dbSNP rs identifier"
+msgstr "dbSNP rs标识符"
+
+#: 0a3ffb20e281496a95d6758938784219 of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:5
+msgid "Gene name or symbol"
+msgstr "基因名称或符号"
+
+#: 604ea9ebc3fd46edac55959b38ab78f5 of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:7
+msgid "Number of results to return"
+msgstr "返回结果数量"
+
+#: b06e890e6acb4420b1a13e9978d5bf3d of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:9
+msgid "Page number for pagination"
+msgstr "分页页码"
+
+#: a1f9f12107d140208e0728dd94e0bc88 of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c2326371515c4870be788f424d9664b1 of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2707bd8282754207835de4b0550c738f of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_search_snps.rst
+#: a0f441e10a944b28b2b5e0b11f8b46ec
+msgid "Return type"
+msgstr "返回类型"
+
+#: 27dcbae7425749ac8a5a30187d9b2eec of
+#: tooluniverse.tools.gwas_search_snps.gwas_search_snps:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

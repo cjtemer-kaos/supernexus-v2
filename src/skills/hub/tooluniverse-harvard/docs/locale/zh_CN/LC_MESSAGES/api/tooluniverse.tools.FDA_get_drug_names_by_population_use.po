@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_population_use.rst:2
+#: 713b76cf545142f491b8900df1123aaf
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_population\\_use module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_population\\_use 模块"
+
+#: d5832327e499463ca020df985ab7d477 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use:1
+msgid "FDA_get_drug_names_by_population_use"
+msgstr "FDA_按人群使用获取药品名称"
+
+#: 2748da7dd2fc4192b23789ba7359695a a8a1568fa40d4adf90413b3e92692367 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use:3
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:1
+msgid ""
+"Retrieve drug names based on their use in specific populations, such as "
+"pregnant women, nursing m..."
+msgstr "根据特定人群（如孕妇、哺乳期女性等）的用途检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_population_use.rst
+#: 4adfafab20b043458e9862c79d359e0b
+msgid "Parameters"
+msgstr "参数"
+
+#: 39ee713cf84e4ba996f1225ff408a792 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:3
+msgid ""
+"The specific population use to search for (e.g., pregnant women, nursing "
+"moth..."
+msgstr "特定人群用于搜索（例如，孕妇、哺乳期母亲...）"
+
+#: 621649e92735490095abf0936440cd31 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 5ad0e5432a2d40b29dc60a5326a16b56 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 32a15da0677c40008e7ffb349909feb2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 6dbe156a9b264baa9ff5e871bcb51d22 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 54f0ce7aa4ac4683a1bcb3a93f6fe892 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: edc15879692c4823bc9500bb74d16dc9 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_population_use.rst
+#: aa062b9a0b404d799be57c84e96c7cf2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 943dad98c9ea4c838c45f4a28a74da19 of
+#: tooluniverse.tools.FDA_get_drug_names_by_population_use.FDA_get_drug_names_by_population_use:18
+msgid ":py:class:`Any`"
+msgstr ""

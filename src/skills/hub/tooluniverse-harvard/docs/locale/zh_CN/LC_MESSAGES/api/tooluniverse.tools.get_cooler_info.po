@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_cooler_info.rst:2
+#: 4e18e5bdadf84e0c95fd2476519bd34d
+msgid "tooluniverse.tools.get\\_cooler\\_info module"
+msgstr "tooluniverse.tools.get\\_cooler\\_info 模块"
+
+#: 6e7f1128b04e44f6a067ee597b581439 of tooluniverse.tools.get_cooler_info:1
+msgid "get_cooler_info"
+msgstr "获取冷却器信息"
+
+#: d217edcd803f4e339548991e01b7b3ad f6bad4c51b8c430eaacae87a96f70d0b of
+#: tooluniverse.tools.get_cooler_info:3
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:1
+msgid ""
+"Get comprehensive information about Cooler – sparse Hi-C contact matrix "
+"storage"
+msgstr "获取有关Cooler的全面信息——稀疏Hi-C接触矩阵存储"
+
+#: ../../api/tooluniverse.tools.get_cooler_info.rst
+#: 0646e6a64e8b40cf937c0997a76b745c
+msgid "Parameters"
+msgstr "参数"
+
+#: f385033ef7a249b4bec4979dc49921fc of
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 78c025aa0e484ff48f36ccd62db435ad of
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c4ec1a3feb6843a5967e70ccf08cae5c of
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 00fd51c3dce04feba1a235fb3e4204e5 of
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_cooler_info.rst
+#: d350491ae13046e5a15c9242f2f88a0a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3c50e6dcac2c41dfa9031ae0f50346c6 of
+#: tooluniverse.tools.get_cooler_info.get_cooler_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.chembl_disease_target_score.rst:2
+#: 60ec2a197c2b45b49310477f92e85104
+msgid "tooluniverse.tools.chembl\\_disease\\_target\\_score module"
+msgstr "tooluniverse.tools.chembl\\_disease\\_target\\_score 模块"
+
+#: a423bf930005440db78a98a2c9bf52c3 of
+#: tooluniverse.tools.chembl_disease_target_score:1
+msgid "chembl_disease_target_score"
+msgstr "chembl_疾病_靶点_评分"
+
+#: 76f1a8f6cc2e49d1a5a0f65f40e362a1 9ff4b721c2f44ae2a198d32724ef267c of
+#: tooluniverse.tools.chembl_disease_target_score:3
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:1
+msgid ""
+"Extract disease-target association scores specifically from ChEMBL database."
+" ChEMBL provides bioa..."
+msgstr "从ChEMBL数据库中提取疾病-靶点关联评分。ChEMBL提供生物活性数据..."
+
+#: ../../api/tooluniverse.tools.chembl_disease_target_score.rst
+#: d985ab88c24c470a8e081e4ef8b04faf
+msgid "Parameters"
+msgstr "参数"
+
+#: 9ef646ff768b49ef89ad8858047bb15a of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 1226f538d0f94cf499377585c1fe7ca9 of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:5
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: e891c873ac2444cda7bab7f50df9efa0 of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0aea7415647c43269b6cfd8057b4a500 of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ee4301572ae64f30bee73171175eed2d of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.chembl_disease_target_score.rst
+#: 39289ec27fa44a878209efb2732c2e6d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 58b65a034e7541b4b9a8332fb910fead of
+#: tooluniverse.tools.chembl_disease_target_score.chembl_disease_target_score:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

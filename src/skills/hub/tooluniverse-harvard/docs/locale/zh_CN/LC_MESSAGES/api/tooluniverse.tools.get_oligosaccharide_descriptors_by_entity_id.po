@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.rst:2
+#: dbfaf4c3a0f7453eaff1853642c838a3
+msgid "tooluniverse.tools.get\\_oligosaccharide\\_descriptors\\_by\\_entity\\_id module"
+msgstr "tooluniverse.tools.get\\_oligosaccharide\\_descriptors\\_by\\_entity\\_id 模块"
+
+#: 2b7ebd7db6e04d0c945169733e8c971e of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id:1
+msgid "get_oligosaccharide_descriptors_by_entity_id"
+msgstr "get_oligosaccharide_descriptors_by_entity_id（通过实体ID获取低聚糖描述符）"
+
+#: 0bcbc54aeb6a411a910ed6b6af751425 c75caad0bfa3412690c06708521a9476 of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id:3
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:1
+msgid ""
+"Retrieve structural descriptors for branched entities (e.g., "
+"oligosaccharides) in a PDB entry."
+msgstr "从 PDB 条目中检索分支实体（例如，寡糖）的结构描述符。"
+
+#: ../../api/tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.rst
+#: 46d1359f9d3f474dbf62b2661a7cd64d
+msgid "Parameters"
+msgstr "参数"
+
+#: 6923de2d6b014771aa23dedbf3339211 of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:3
+msgid "Branched entity ID like '5FMB_2'"
+msgstr "分支实体ID，例如“5FMB_2”"
+
+#: eca1b72b87af4cf5853d6ef74dc488b0 of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c6db189bf7224134a9119aab2710b743 of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: cd9ff439200f453f9ee84ee52947dccf of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.rst
+#: 877043be24e446cda7eabc75828700c8
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3a6ae44f507a4d2b934f502e1357d89b of
+#: tooluniverse.tools.get_oligosaccharide_descriptors_by_entity_id.get_oligosaccharide_descriptors_by_entity_id:12
+msgid ":py:class:`Any`"
+msgstr ""

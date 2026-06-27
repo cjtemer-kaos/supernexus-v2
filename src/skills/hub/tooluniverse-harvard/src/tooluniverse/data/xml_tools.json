@@ -1,0 +1,3602 @@
+[
+  {
+    "type": "XMLTool",
+    "name": "mesh_get_subjects_by_pharmacological_action",
+    "description": "Find MeSH (Medical Subject Heading) subjects with matching pharmacological actions.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/MeSH2025",
+        "path_in_repo": "MeSH_desc2025.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "record_xpath": "DescriptorRecord",
+      "search_fields": [
+        "pharmacological_actions"
+      ],
+      "field_mappings": {
+        "subject_name": "DescriptorName/String",
+        "subject_id": "DescriptorUI",
+        "pharmacological_actions": ".//PharmacologicalAction/DescriptorReferredTo/DescriptorName/String",
+        "key_concepts": ".//Concept/ConceptName/String",
+        "concept_synonyms": ".//Term/String",
+        "subject_scope": ".//ScopeNote",
+        "subject_hierarchy_tree_numbers": ".//TreeNumber",
+        "entry_creation_date": "DateCreated/Year",
+        "entry_last_revised_date": "DateRevised/Year",
+        "related_subjects": ".//SeeRelatedDescriptor/DescriptorReferredTo/DescriptorName/String"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Pharmacological action to search for in MeSH subjects",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search for the pharmacological action query",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match for the pharmacological action query",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 50,
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "subject_name": {
+                "type": "string",
+                "description": "Name of the MeSH subject"
+              },
+              "subject_id": {
+                "type": "string",
+                "description": "MeSH subject ID (Descriptor UI)"
+              },
+              "pharmacological_actions": {
+                "type": "string",
+                "description": "Pharmacological actions associated with the subject, separated by ' | '"
+              },
+              "key_concepts": {
+                "type": "string",
+                "description": "Key concepts related to the subject, separated by ' | '"
+              },
+              "concept_synonyms": {
+                "type": "string",
+                "description": "Synonyms for the subject concepts, separated by ' | '"
+              },
+              "subject_scope": {
+                "type": "string",
+                "description": "Scope note or definition of the subject. If multiple, they are separated by ' | '"
+              },
+              "subject_hierarchy_tree_numbers": {
+                "type": "string",
+                "description": "MeSH tree numbers indicating hierarchical classification. Parents have a prefix of the tree number, up to the last '.' character. If multiple tree numbers present, they are separated by ' | '"
+              },
+              "entry_creation_date": {
+                "type": "string",
+                "description": "Year the entry was created"
+              },
+              "entry_last_revised_date": {
+                "type": "string",
+                "description": "Year the entry was last revised"
+              },
+              "related_subjects": {
+                "type": "string",
+                "description": "Related MeSH subjects, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Analgesic",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "mesh_get_subjects_by_subject_scope_or_definition",
+    "description": "Find MeSH (Medical Subject Heading) subjects with matching scopes (definitions).",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/MeSH2025",
+        "path_in_repo": "MeSH_desc2025.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "record_xpath": "DescriptorRecord",
+      "search_fields": [
+        "subject_scope"
+      ],
+      "field_mappings": {
+        "subject_name": "DescriptorName/String",
+        "subject_id": "DescriptorUI",
+        "pharmacological_actions": ".//PharmacologicalAction/DescriptorReferredTo/DescriptorName/String",
+        "key_concepts": ".//Concept/ConceptName/String",
+        "concept_synonyms": ".//Term/String",
+        "subject_scope": ".//ScopeNote",
+        "subject_hierarchy_tree_numbers": ".//TreeNumber",
+        "entry_creation_date": "DateCreated/Year",
+        "entry_last_revised_date": "DateRevised/Year",
+        "related_subjects": ".//SeeRelatedDescriptor/DescriptorReferredTo/DescriptorName/String"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Query string to search for in the scope notes of MeSH subjects",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search for the query",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match for the query",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 50,
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "subject_name": {
+                "type": "string",
+                "description": "Name of the MeSH subject"
+              },
+              "subject_id": {
+                "type": "string",
+                "description": "MeSH subject ID (Descriptor UI)"
+              },
+              "pharmacological_actions": {
+                "type": "string",
+                "description": "Pharmacological actions associated with the subject, separated by ' | '"
+              },
+              "key_concepts": {
+                "type": "string",
+                "description": "Key concepts related to the subject, separated by ' | '"
+              },
+              "concept_synonyms": {
+                "type": "string",
+                "description": "Synonyms for the subject concepts, separated by ' | '"
+              },
+              "subject_scope": {
+                "type": "string",
+                "description": "Scope note or definition of the subject. If multiple, they are separated by ' | '"
+              },
+              "subject_hierarchy_tree_numbers": {
+                "type": "string",
+                "description": "MeSH tree numbers indicating hierarchical classification. Parents have a prefix of the tree number, up to the last '.' character. If multiple tree numbers present, they are separated by ' | '"
+              },
+              "entry_creation_date": {
+                "type": "string",
+                "description": "Year the entry was created"
+              },
+              "entry_last_revised_date": {
+                "type": "string",
+                "description": "Year the entry was last revised"
+              },
+              "related_subjects": {
+                "type": "string",
+                "description": "Related MeSH subjects, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "cancer",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "mesh_get_subjects_by_subject_name",
+    "description": "Find MeSH (Medical Subject Heading) subjects with matching names.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/MeSH2025",
+        "path_in_repo": "MeSH_desc2025.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "record_xpath": "DescriptorRecord",
+      "search_fields": [
+        "subject_name",
+        "key_concepts",
+        "concept_synonyms"
+      ],
+      "field_mappings": {
+        "subject_name": "DescriptorName/String",
+        "subject_id": "DescriptorUI",
+        "pharmacological_actions": ".//PharmacologicalAction/DescriptorReferredTo/DescriptorName/String",
+        "key_concepts": ".//Concept/ConceptName/String",
+        "concept_synonyms": ".//Term/String",
+        "subject_scope": ".//ScopeNote",
+        "subject_hierarchy_tree_numbers": ".//TreeNumber",
+        "entry_creation_date": "DateCreated/Year",
+        "entry_last_revised_date": "DateRevised/Year",
+        "related_subjects": ".//SeeRelatedDescriptor/DescriptorReferredTo/DescriptorName/String"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Query string to search for in the name of each MeSH subject and the names of the subject's key concepts and concept synonyms.",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search for the query",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match for the query",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 50,
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "subject_name": {
+                "type": "string",
+                "description": "Name of the MeSH subject"
+              },
+              "subject_id": {
+                "type": "string",
+                "description": "MeSH subject ID (Descriptor UI)"
+              },
+              "pharmacological_actions": {
+                "type": "string",
+                "description": "Pharmacological actions associated with the subject, separated by ' | '"
+              },
+              "key_concepts": {
+                "type": "string",
+                "description": "Key concepts related to the subject, separated by ' | '"
+              },
+              "concept_synonyms": {
+                "type": "string",
+                "description": "Synonyms for the subject concepts, separated by ' | '"
+              },
+              "subject_scope": {
+                "type": "string",
+                "description": "Scope note or definition of the subject. If multiple, they are separated by ' | '"
+              },
+              "subject_hierarchy_tree_numbers": {
+                "type": "string",
+                "description": "MeSH tree numbers indicating hierarchical classification. Parents have a prefix of the tree number, up to the last '.' character. If multiple tree numbers present, they are separated by ' | '"
+              },
+              "entry_creation_date": {
+                "type": "string",
+                "description": "Year the entry was created"
+              },
+              "entry_last_revised_date": {
+                "type": "string",
+                "description": "Year the entry was last revised"
+              },
+              "related_subjects": {
+                "type": "string",
+                "description": "Related MeSH subjects, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "cancer",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "mesh_get_subjects_by_subject_id",
+    "description": "Find MeSH (Medical Subject Heading) subjects with a matching subject ID (also called Descriptor UI).",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/MeSH2025",
+        "path_in_repo": "MeSH_desc2025.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "record_xpath": "DescriptorRecord",
+      "search_fields": [
+        "subject_id"
+      ],
+      "field_mappings": {
+        "subject_name": "DescriptorName/String",
+        "subject_id": "DescriptorUI",
+        "pharmacological_actions": ".//PharmacologicalAction/DescriptorReferredTo/DescriptorName/String",
+        "key_concepts": ".//Concept/ConceptName/String",
+        "concept_synonyms": ".//Term/String",
+        "subject_scope": ".//ScopeNote",
+        "subject_hierarchy_tree_numbers": ".//TreeNumber",
+        "entry_creation_date": "DateCreated/Year",
+        "entry_last_revised_date": "DateRevised/Year",
+        "related_subjects": ".//SeeRelatedDescriptor/DescriptorReferredTo/DescriptorName/String"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Query ID to search for among the MeSH subject IDs",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search for the query",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match for the query",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 50,
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "subject_name": {
+                "type": "string",
+                "description": "Name of the MeSH subject"
+              },
+              "subject_id": {
+                "type": "string",
+                "description": "MeSH subject ID (Descriptor UI)"
+              },
+              "pharmacological_actions": {
+                "type": "string",
+                "description": "Pharmacological actions associated with the subject, separated by ' | '"
+              },
+              "key_concepts": {
+                "type": "string",
+                "description": "Key concepts related to the subject, separated by ' | '"
+              },
+              "concept_synonyms": {
+                "type": "string",
+                "description": "Synonyms for the subject concepts, separated by ' | '"
+              },
+              "subject_scope": {
+                "type": "string",
+                "description": "Scope note or definition of the subject. If multiple, they are separated by ' | '"
+              },
+              "subject_hierarchy_tree_numbers": {
+                "type": "string",
+                "description": "MeSH tree numbers indicating hierarchical classification. Parents have a prefix of the tree number, up to the last '.' character. If multiple tree numbers present, they are separated by ' | '"
+              },
+              "entry_creation_date": {
+                "type": "string",
+                "description": "Year the entry was created"
+              },
+              "entry_last_revised_date": {
+                "type": "string",
+                "description": "Year the entry was last revised"
+              },
+              "related_subjects": {
+                "type": "string",
+                "description": "Related MeSH subjects, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "D012345",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_basic_info_by_drug_name_or_id",
+    "aliases": [
+      "drugbank_get_drug_basic_info_by_drug_name_or_drugbank_id"
+    ],
+    "description": "Get basic drug information including name, description, CAS number, and approval status by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "secondary_ids": "db:drugbank-id[not(@primary='true')]",
+        "description": "db:description",
+        "cas_number": "db:cas-number",
+        "unii": "db:unii",
+        "state": "db:state",
+        "drug_type": "@type",
+        "approval_groups": "db:groups/db:group",
+        "synonyms": "db:synonyms/db:synonym",
+        "entry_creation_date": "@created",
+        "entry_last_updated": "@updated"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or DrugBank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match with the queried name or ID",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "secondary_ids": {
+                "type": "string",
+                "description": "Secondary DrugBank IDs, separated by ' | '"
+              },
+              "description": {
+                "type": "string",
+                "description": "Drug description"
+              },
+              "cas_number": {
+                "type": "string",
+                "description": "Chemical Abstracts Service registry number"
+              },
+              "unii": {
+                "type": "string",
+                "description": "Unique Ingredient Identifier"
+              },
+              "state": {
+                "type": "string",
+                "description": "Physical state of the drug"
+              },
+              "drug_type": {
+                "type": "string",
+                "description": "Type of drug (e.g., small molecule, biotech)"
+              },
+              "approval_groups": {
+                "type": "string",
+                "description": "Drug approval status groups, separated by ' | '"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "entry_creation_date": {
+                "type": "string",
+                "description": "Date when the entry was created"
+              },
+              "entry_last_updated": {
+                "type": "string",
+                "description": "Date when the entry was last updated"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_indications_by_drug_name_or_drugbank_id",
+    "description": "Get drug indications and therapeutic uses by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "indication": "db:indication",
+        "categories": "db:categories/db:category/db:category",
+        "atc_codes": {
+          "parent_path": "db:atc-codes/db:atc-code",
+          "subfields": {
+            "code": "@code",
+            "children_names": "db:level",
+            "children_codes": "db:level/@code"
+          }
+        },
+        "synonyms": "db:synonyms/db:synonym"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "indication": {
+                "type": "string",
+                "description": "Drug indication and therapeutic uses"
+              },
+              "categories": {
+                "type": "string",
+                "description": "Categories the drug belongs to, separated by ' | '"
+              },
+              "atc_codes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "description": "ATC code"
+                    },
+                    "children_names": {
+                      "type": "string",
+                      "description": "Child level names in the ATC hierarchy, separated by ' | '"
+                    },
+                    "children_codes": {
+                      "type": "string",
+                      "description": "Child level codes in the ATC hierarchy, separated by ' | '"
+                    }
+                  }
+                },
+                "description": "ATC (Anatomical Therapeutic Chemical) codes and hierarchy"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_name_and_description_by_indication",
+    "description": "Get drug name, Drugbank ID, and description by its indication.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "indication"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "indication": "db:indication",
+        "description": "db:description"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug indication to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "indication": {
+                "type": "string",
+                "description": "Drug indication and therapeutic uses"
+              },
+              "description": {
+                "type": "string",
+                "description": "Drug description"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "hypertension",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_pharmacology_by_drug_name_or_drugbank_id",
+    "description": "Get drug pharmacodynamics, mechanism of action, and pharmacokinetics by drug name or Drugbank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "pharmacodynamics": "db:pharmacodynamics",
+        "mechanism_of_action": "db:mechanism-of-action",
+        "absorption": "db:absorption",
+        "metabolism": "db:metabolism",
+        "half_life": "db:half-life",
+        "protein_binding": "db:protein-binding",
+        "route_of_elimination": "db:route-of-elimination",
+        "volume_of_distribution": "db:volume-of-distribution",
+        "clearance": "db:clearance"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "pharmacodynamics": {
+                "type": "string",
+                "description": "Pharmacodynamics information describing the drug's effects on the body"
+              },
+              "mechanism_of_action": {
+                "type": "string",
+                "description": "Mechanism of action describing how the drug works at the molecular level"
+              },
+              "absorption": {
+                "type": "string",
+                "description": "Information about drug absorption and bioavailability"
+              },
+              "metabolism": {
+                "type": "string",
+                "description": "Information about drug metabolism and metabolic pathways"
+              },
+              "half_life": {
+                "type": "string",
+                "description": "Plasma elimination half-life of the drug"
+              },
+              "protein_binding": {
+                "type": "string",
+                "description": "Information about protein binding properties"
+              },
+              "route_of_elimination": {
+                "type": "string",
+                "description": "Information about how the drug is eliminated from the body"
+              },
+              "volume_of_distribution": {
+                "type": "string",
+                "description": "Volume of distribution of the drug"
+              },
+              "clearance": {
+                "type": "string",
+                "description": "Information about drug clearance"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_desc_pharmacology_by_moa",
+    "aliases": [
+      "drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action"
+    ],
+    "description": "Get drug name, ID, description, pharmacodynamics, mechanism of action, and pharmacokinetics by drug mechanism of action.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "mechanism_of_action"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "description": "db:description",
+        "pharmacodynamics": "db:pharmacodynamics",
+        "mechanism_of_action": "db:mechanism-of-action",
+        "absorption": "db:absorption",
+        "metabolism": "db:metabolism",
+        "half_life": "db:half-life",
+        "protein_binding": "db:protein-binding",
+        "route_of_elimination": "db:route-of-elimination",
+        "volume_of_distribution": "db:volume-of-distribution",
+        "clearance": "db:clearance"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Query string to search for in mechanism of action descriptions",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "description": {
+                "type": "string",
+                "description": "Drug description"
+              },
+              "pharmacodynamics": {
+                "type": "string",
+                "description": "Pharmacodynamics information describing the drug's effects on the body"
+              },
+              "mechanism_of_action": {
+                "type": "string",
+                "description": "Mechanism of action describing how the drug works at the molecular level"
+              },
+              "absorption": {
+                "type": "string",
+                "description": "Information about drug absorption and bioavailability"
+              },
+              "metabolism": {
+                "type": "string",
+                "description": "Information about drug metabolism and metabolic pathways"
+              },
+              "half_life": {
+                "type": "string",
+                "description": "Plasma elimination half-life of the drug"
+              },
+              "protein_binding": {
+                "type": "string",
+                "description": "Information about protein binding properties"
+              },
+              "route_of_elimination": {
+                "type": "string",
+                "description": "Information about how the drug is eliminated from the body"
+              },
+              "volume_of_distribution": {
+                "type": "string",
+                "description": "Volume of distribution of the drug"
+              },
+              "clearance": {
+                "type": "string",
+                "description": "Information about drug clearance"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_interactions_by_drug_name_or_id",
+    "aliases": [
+      "drugbank_get_drug_interactions_by_drug_name_or_drugbank_id"
+    ],
+    "description": "Get drug interactions and contraindications by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "interacting_drugs": {
+          "parent_path": "db:drug-interactions/db:drug-interaction",
+          "subfields": {
+            "id": "db:drugbank-id",
+            "name": "db:name",
+            "description": "db:description"
+          }
+        },
+        "food_interactions": "db:food-interactions/db:food-interaction"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name to search for interactions",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "interacting_drugs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "DrugBank ID of the interacting drug"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Name of the interacting drug"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of the drug interaction"
+                    }
+                  }
+                },
+                "description": "List of drugs that interact with the queried drug"
+              },
+              "food_interactions": {
+                "type": "string",
+                "description": "Food interactions and dietary considerations, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_targets_by_drug_name_or_drugbank_id",
+    "description": "Get drug targets, enzymes, carriers, and transporters by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "targets": {
+          "parent_path": "db:targets/db:target",
+          "subfields": {
+            "id": "db:id",
+            "name": "db:name",
+            "organism": "db:organism",
+            "actions": "db:actions/db:action"
+          }
+        },
+        "enzymes": {
+          "parent_path": "db:enzymes/db:enzyme",
+          "subfields": {
+            "id": "db:id",
+            "name": "db:name",
+            "organism": "db:organism",
+            "actions": "db:actions/db:action"
+          }
+        },
+        "carriers": {
+          "parent_path": "db:carriers/db:carrier",
+          "subfields": {
+            "id": "db:id",
+            "name": "db:name",
+            "organism": "db:organism",
+            "actions": "db:actions/db:action"
+          }
+        },
+        "transporters": {
+          "parent_path": "db:transporters/db:transporter",
+          "subfields": {
+            "id": "db:id",
+            "name": "db:name",
+            "organism": "db:organism",
+            "actions": "db:actions/db:action"
+          }
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "targets": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Target ID"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Target name"
+                    },
+                    "organism": {
+                      "type": "string",
+                      "description": "Target organism"
+                    },
+                    "actions": {
+                      "type": "string",
+                      "description": "Target actions, separated by ' | '"
+                    }
+                  }
+                },
+                "description": "Drug targets"
+              },
+              "enzymes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Enzyme ID"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Enzyme name"
+                    },
+                    "organism": {
+                      "type": "string",
+                      "description": "Enzyme organism"
+                    },
+                    "actions": {
+                      "type": "string",
+                      "description": "Enzyme actions, separated by ' | '"
+                    }
+                  }
+                },
+                "description": "Drug enzymes"
+              },
+              "carriers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Carrier ID"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Carrier name"
+                    },
+                    "organism": {
+                      "type": "string",
+                      "description": "Carrier organism"
+                    },
+                    "actions": {
+                      "type": "string",
+                      "description": "Carrier actions, separated by ' | '"
+                    }
+                  }
+                },
+                "description": "Drug carriers"
+              },
+              "transporters": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Transporter ID"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Transporter name"
+                    },
+                    "organism": {
+                      "type": "string",
+                      "description": "Transporter organism"
+                    },
+                    "actions": {
+                      "type": "string",
+                      "description": "Transporter actions, separated by ' | '"
+                    }
+                  }
+                },
+                "description": "Drug transporters"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_name_and_description_by_target_name",
+    "description": "Get associated drug names and descriptions for a particular target, enzyme, carrier, or transporter protein.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "target_names",
+        "enzyme_names",
+        "carrier_names",
+        "transporter_names"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "description": "db:description",
+        "target_names": "db:targets/db:target/db:name",
+        "enzyme_names": "db:enzymes/db:enzyme/db:name",
+        "carrier_names": "db:carriers/db:carrier/db:name",
+        "transporter_names": "db:transporters/db:transporter/db:name"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Target, enzyme, carrier, or transporter name to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "description": {
+                "type": "string",
+                "description": "Drug description"
+              },
+              "target_names": {
+                "type": "string",
+                "description": "Names of targets associated with the drug, separated by ' | '"
+              },
+              "enzyme_names": {
+                "type": "string",
+                "description": "Names of enzymes associated with the drug, separated by ' | '"
+              },
+              "carrier_names": {
+                "type": "string",
+                "description": "Names of carriers associated with the drug, separated by ' | '"
+              },
+              "transporter_names": {
+                "type": "string",
+                "description": "Names of transporters associated with the drug, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "EGFR",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_products_by_name_or_drugbank_id",
+    "description": "Get commercial drug products, dosage forms, and pricing informatiomon by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "products": {
+          "parent_path": "db:products/db:product",
+          "subfields": {
+            "name": "db:name",
+            "labeller": "db:labeller",
+            "dosage_form": "db:dosage-form",
+            "strength": "db:strength",
+            "route": "db:route",
+            "ndc_product_code": "db:ndc-product-code",
+            "marketing_start": "db:started-marketing-on",
+            "marketing_end": "db:ended-marketing-on",
+            "country": "db:country",
+            "approval_status": "db:approved",
+            "generic_status": "db:generic"
+          }
+        },
+        "prices": {
+          "parent_path": "db:prices/db:price",
+          "subfields": {
+            "cost": "db:cost",
+            "currency": "db:cost/@currency",
+            "unit": "db:unit"
+          }
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Product name"
+                    },
+                    "labeller": {
+                      "type": "string",
+                      "description": "Product labeller/manufacturer"
+                    },
+                    "dosage_form": {
+                      "type": "string",
+                      "description": "Dosage form (e.g., Tablet, Kit, Capsule)"
+                    },
+                    "strength": {
+                      "type": "string",
+                      "description": "Drug strength/concentration"
+                    },
+                    "route": {
+                      "type": "string",
+                      "description": "Route of administration (e.g., Oral, Topical)"
+                    },
+                    "ndc_product_code": {
+                      "type": "string",
+                      "description": "National Drug Code (NDC) product identifier"
+                    },
+                    "marketing_start": {
+                      "type": "string",
+                      "description": "Marketing start date"
+                    },
+                    "marketing_end": {
+                      "type": "string",
+                      "description": "Marketing end date"
+                    },
+                    "country": {
+                      "type": "string",
+                      "description": "Country where the product is marketed"
+                    },
+                    "approval_status": {
+                      "type": "string",
+                      "description": "Product approval status (true/false)"
+                    },
+                    "generic_status": {
+                      "type": "string",
+                      "description": "Generic product status (true/false)"
+                    }
+                  }
+                },
+                "description": "Commercial drug products and formulations"
+              },
+              "prices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "cost": {
+                      "type": "string",
+                      "description": "Cost/price amount"
+                    },
+                    "currency": {
+                      "type": "string",
+                      "description": "Currency type"
+                    },
+                    "unit": {
+                      "type": "string",
+                      "description": "Unit of measurement for pricing (e.g., patch, g, ml)"
+                    }
+                  }
+                },
+                "description": "Pricing information for the drug"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_safety_by_drug_name_or_drugbank_id",
+    "description": "Get drug toxicity, contraindications, and safety information by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "toxicity": "db:toxicity",
+        "affected_organisms": "db:affected-organisms/db:affected-organism",
+        "food_interactions": "db:food-interactions/db:food-interaction"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "toxicity": {
+                "type": "string",
+                "description": "Toxicity information and safety warnings"
+              },
+              "affected_organisms": {
+                "type": "string",
+                "description": "Organisms affected by the drug, separated by ' | '"
+              },
+              "food_interactions": {
+                "type": "string",
+                "description": "Food interactions and dietary considerations, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": true,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_chemistry_by_drug_name_or_drugbank_id",
+    "description": "Get drug chemical properties including molecular formula, weight, and structure by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": null
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "cas_number": "db:cas-number",
+        "unii": "db:unii",
+        "molecular_formula": "db:experimental-properties/db:property[db:kind='Molecular Formula']/db:value",
+        "molecular_weight": "db:experimental-properties/db:property[db:kind='Molecular Weight']/db:value",
+        "melting_point": "db:experimental-properties/db:property[db:kind='Melting Point']/db:value",
+        "water_solubility": "db:experimental-properties/db:property[db:kind='Water Solubility']/db:value",
+        "isoelectric_point": "db:experimental-properties/db:property[db:kind='Isoelectric Point']/db:value",
+        "classification": "db:classification",
+        "kingdom": "db:classification/db:kingdom",
+        "superclass": "db:classification/db:superclass",
+        "class": "db:classification/db:class",
+        "subclass": "db:classification/db:subclass",
+        "sequences": "db:sequences/db:sequence"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "cas_number": {
+                "type": "string",
+                "description": "Chemical Abstracts Service registry number"
+              },
+              "unii": {
+                "type": "string",
+                "description": "Unique Ingredient Identifier"
+              },
+              "molecular_formula": {
+                "type": "string",
+                "description": "Molecular formula of the drug"
+              },
+              "molecular_weight": {
+                "type": "string",
+                "description": "Molecular weight of the drug"
+              },
+              "melting_point": {
+                "type": "string",
+                "description": "Melting point of the drug"
+              },
+              "water_solubility": {
+                "type": "string",
+                "description": "Water solubility properties of the drug"
+              },
+              "isoelectric_point": {
+                "type": "string",
+                "description": "Isoelectric point of the drug"
+              },
+              "classification": {
+                "type": "string",
+                "description": "Chemical classification information"
+              },
+              "kingdom": {
+                "type": "string",
+                "description": "Chemical classification kingdom"
+              },
+              "superclass": {
+                "type": "string",
+                "description": "Chemical classification superclass"
+              },
+              "class": {
+                "type": "string",
+                "description": "Chemical classification class"
+              },
+              "subclass": {
+                "type": "string",
+                "description": "Chemical classification subclass"
+              },
+              "sequences": {
+                "type": "string",
+                "description": "Sequence information for the drug, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_references_by_drug_name_or_id",
+    "aliases": [
+      "drugbank_get_drug_references_by_drug_name_or_drugbank_id"
+    ],
+    "description": "Get drug literature references, patents, and external links by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": "src/tooluniverse/test"
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "articles": {
+          "parent_path": "db:general-references/db:articles/db:article",
+          "subfields": {
+            "pubmed_id": "db:pubmed-id",
+            "citations": "db:citation"
+          }
+        },
+        "patents": {
+          "parent_path": "db:general-references/db:patents/db:patent",
+          "subfields": {
+            "number": "db:number",
+            "country": "db:country",
+            "approved": "db:approved",
+            "expires": "db:expires"
+          }
+        },
+        "external_identifiers": "db:external-identifiers/db:external-identifier",
+        "external_links": "db:external-links/db:external-link"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for references",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "articles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "pubmed_id": {
+                      "type": "string",
+                      "description": "PubMed ID of the article"
+                    },
+                    "citations": {
+                      "type": "string",
+                      "description": "Article citation information"
+                    }
+                  }
+                },
+                "description": "Literature references and articles related to the drug"
+              },
+              "patents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "string",
+                      "description": "Patent number"
+                    },
+                    "country": {
+                      "type": "string",
+                      "description": "Country where patent is filed"
+                    },
+                    "approved": {
+                      "type": "string",
+                      "description": "Patent approval date"
+                    },
+                    "expires": {
+                      "type": "string",
+                      "description": "Patent expiration date"
+                    }
+                  }
+                },
+                "description": "Patents associated with the drug"
+              },
+              "external_identifiers": {
+                "type": "string",
+                "description": "External database identifiers, separated by ' | '"
+              },
+              "external_links": {
+                "type": "string",
+                "description": "External links and resources, separated by ' | '"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "aspirin",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_pathways_reactions_by_drug_or_id",
+    "aliases": [
+      "drugbank_get_drug_pathways_and_reactions_by_drug_name_or_drugbank_id"
+    ],
+    "description": "Get drug pathways and metabolic reactions by drug name or DrugBank ID.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": "src/tooluniverse/test"
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "drug_name",
+        "drugbank_id",
+        "synonyms"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "synonyms": "db:synonyms/db:synonym",
+        "pathways": {
+          "parent_path": "db:pathways/db:pathway",
+          "subfields": {
+            "id": "db:smpdb-id",
+            "name": "db:name",
+            "category": "db:category"
+          }
+        },
+        "reactions": {
+          "parent_path": "db:reactions/db:reaction",
+          "subfields": {
+            "reaction_sequence": "db:sequence",
+            "reaction_left_element": "db:left-element/db:name",
+            "reaction_right_element": "db:right-element/db:name"
+          }
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Drug name or Drugbank ID to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "synonyms": {
+                "type": "string",
+                "description": "Drug synonyms, separated by ' | '"
+              },
+              "pathways": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "SMPDB ID of the pathway"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Name of the pathway"
+                    },
+                    "category": {
+                      "type": "string",
+                      "description": "Category of the pathway (e.g., metabolic, disease)"
+                    }
+                  }
+                },
+                "description": "Drug pathways and metabolic pathways"
+              },
+              "reactions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "reaction_sequence": {
+                      "type": "string",
+                      "description": "Sequence identifier of the reaction"
+                    },
+                    "reaction_left_element": {
+                      "type": "string",
+                      "description": "Left side element(s) of the reaction"
+                    },
+                    "reaction_right_element": {
+                      "type": "string",
+                      "description": "Right side element(s) of the reaction"
+                    }
+                  }
+                },
+                "description": "Drug metabolic reactions"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_get_drug_name_and_description_by_pathway_name",
+    "description": "Get drug names and descriptions by pathway name.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": "src/tooluniverse/test"
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "search_fields": [
+        "pathways_name"
+      ],
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "pathways": {
+          "parent_path": "db:pathways/db:pathway",
+          "subfields": {
+            "id": "db:smpdb-id",
+            "name": "db:name",
+            "category": "db:category"
+          }
+        },
+        "reactions": {
+          "parent_path": "db:reactions/db:reaction",
+          "subfields": {
+            "reaction_sequence": "db:sequence",
+            "reaction_left_element": "db:left-element/db:name",
+            "reaction_right_element": "db:right-element/db:name"
+          }
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Pathway name to search for",
+          "minLength": 1
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Select True to perform a case-sensitive search",
+          "default": false
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Select True to require an exact match",
+          "default": false
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The original search query"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "pathways": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "SMPDB ID of the pathway"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Name of the pathway"
+                    },
+                    "category": {
+                      "type": "string",
+                      "description": "Category of the pathway (e.g., metabolic, disease)"
+                    }
+                  }
+                },
+                "description": "Drug pathways and metabolic pathways"
+              },
+              "reactions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "reaction_sequence": {
+                      "type": "string",
+                      "description": "Sequence identifier of the reaction"
+                    },
+                    "reaction_left_element": {
+                      "type": "string",
+                      "description": "Left side element(s) of the reaction"
+                    },
+                    "reaction_right_element": {
+                      "type": "string",
+                      "description": "Right side element(s) of the reaction"
+                    }
+                  }
+                },
+                "description": "Drug metabolic reactions"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of fields that matched the search query"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "case_sensitive": {
+              "type": "boolean",
+              "description": "Whether the search was case-sensitive"
+            },
+            "exact_match": {
+              "type": "boolean",
+              "description": "Whether exact matching was used"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Glycolysis",
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "XMLTool",
+    "name": "drugbank_filter_drugs_by_name",
+    "description": "Filter DrugBank records based on conditions applied to drug names. For example, find drugs whose names end with 'cillin' (penicillin antibiotics), contain 'mab', or are exactly 'Insulin'.",
+    "settings": {
+      "hf_dataset_path": {
+        "repo_id": "agenticx/DrugBank",
+        "path_in_repo": "drugbank_full_database.xml",
+        "token": null,
+        "save_to_local_dir": "src/tooluniverse/test"
+      },
+      "namespaces": {
+        "db": "http://www.drugbank.ca"
+      },
+      "record_xpath": "db:drug",
+      "filter_field": "drug_name",
+      "field_mappings": {
+        "drug_name": "db:name",
+        "drugbank_id": "db:drugbank-id[@primary='true']",
+        "description": "db:description"
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "type": "string",
+          "description": "The condition to apply for filtering.",
+          "enum": [
+            "contains",
+            "starts_with",
+            "ends_with",
+            "exact",
+            "not_empty",
+            "has_attribute"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "description": "The value to use with the condition (e.g., 'Aspirin' for 'starts_with'). Required for 'contains', 'starts_with', 'ends_with', and 'exact' conditions.",
+          "minLength": 1
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "condition",
+        "value",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message (if any)"
+        },
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of matching records found"
+        },
+        "total_returned_results": {
+          "type": "integer",
+          "description": "Number of results returned in this response"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_tag": {
+                "type": "string",
+                "description": "XML tag name of the record element"
+              },
+              "_text": {
+                "type": "string",
+                "description": "Text content of the record element"
+              },
+              "_attributes": {
+                "type": "object",
+                "description": "Attributes of the record element"
+              },
+              "drug_name": {
+                "type": "string",
+                "description": "Name of the drug"
+              },
+              "drugbank_id": {
+                "type": "string",
+                "description": "Primary DrugBank ID"
+              },
+              "description": {
+                "type": "string",
+                "description": "Drug description"
+              }
+            }
+          }
+        },
+        "applied_filter": {
+          "type": "string",
+          "description": "Human-readable description of the filter that was applied"
+        },
+        "filter_parameters": {
+          "type": "object",
+          "properties": {
+            "field": {
+              "type": "string",
+              "description": "The field that was filtered on"
+            },
+            "condition": {
+              "type": "string",
+              "description": "The filter condition that was applied"
+            },
+            "value": {
+              "type": "string",
+              "description": "The value used for filtering (null for 'not_empty' and 'has_attribute' conditions)"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of results requested"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "condition": "ends_with",
+        "value": "cillin",
+        "limit": 10
+      }
+    ]
+  }
+]

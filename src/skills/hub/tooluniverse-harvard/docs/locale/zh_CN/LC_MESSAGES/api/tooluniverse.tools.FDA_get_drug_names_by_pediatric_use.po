@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.rst:2
+#: 8f54691494a04448a9893b3d03c997e6
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_pediatric\\_use module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_pediatric\\_use 模块"
+
+#: d4f41d7d303f4c2fa78579b66091d419 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use:1
+msgid "FDA_get_drug_names_by_pediatric_use"
+msgstr "FDA_get_drug_names_by_pediatric_use（按儿科用途获取药品名称）"
+
+#: 10862326ab02422cadc347fecad055d3 597a3e37797744ea9d27fd386b36c8b9 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use:3
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:1
+msgid "Retrieve drug names based on pediatric use information."
+msgstr "根据儿童使用信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.rst
+#: a6ed8eff3b4f4918ba67a9e142efbba0
+msgid "Parameters"
+msgstr "参数"
+
+#: 3c14cc66b8bc432baf005f18c486bb41 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:3
+msgid ""
+"Information related to the safe and effective pediatric use of the drug."
+msgstr "与药物安全有效的儿童使用相关的信息。"
+
+#: 0069c42f43384b548100e5eb8f806e27 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或使用方法。"
+
+#: d7d195c1c7d34018b85f85a5d8c5a2e4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: a24ccee99b2943f69272e43d0a1d0c4b of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: cce0a9d5ba7e45dda3df737c1992a662 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 925d412f0fbe4be6ba38b6a29474b1e0 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 353339c95845409fb51c74a31ded5474 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.rst
+#: 7a5f5525d3f24ad58e6127fa8f4eaa8c
+msgid "Return type"
+msgstr "返回类型"
+
+#: db37f50c3dd64715b4af0a8f8ed77e18 of
+#: tooluniverse.tools.FDA_get_drug_names_by_pediatric_use.FDA_get_drug_names_by_pediatric_use:18
+msgid ":py:class:`Any`"
+msgstr ""

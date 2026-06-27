@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.cellosaurus_tool.rst:2
+#: 102fbe869d8044938c5ce8df98d42944
+msgid "tooluniverse.cellosaurus\\_tool module"
+msgstr "tooluniverse.cellosaurus\\_tool 模块"
+
+#: 30038d1828cf4f5d8855e85e11553740 64817bdd5ecf4ca58d0de9887fa96e61
+#: f5d1e8f22fb548bfac2f938fa7b4a33e of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool:1
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool:1
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: b868067f253346ac94907e62af171198 of
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool:1
+msgid "Tool to search Cellosaurus cell lines using the official API."
+msgstr "使用官方API搜索Cellosaurus细胞系的工具。"
+
+#: 8383568dcbef41419829f82c94e85ede 9b1c8171728044fbbb4c5d6d1c97e46a
+#: 9c4794a159bd4100925d84043ac27cdd of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:1
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:1
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 12f6c1d9730f41118472acbc518a2976 b8fd85813eeb4154923dcc599110d92a
+#: fc1d23f147c74f4784d9544cfec602f9 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:3
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:3
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些工具通常需要一个输入字典。"
+
+#: ../../api/tooluniverse.cellosaurus_tool.rst
+#: 6370f3bfa00a4110bb794ba52b8b68d6 91c023038970477ebf48f0440b94483b
+#: bba1f90bca244e93914defa83846ab94
+msgid "Parameters"
+msgstr "参数"
+
+#: bb0140124c57439faabcf2143cc850f7 da842724951e485985e21f5543594b15
+#: e65179a6c989465c88138e49d19d45e5 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:7
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:7
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具特定参数"
+
+#: 8eff6ba4767648168a6b81722703c632 a575059bd06040a190796264c4444853
+#: d8b2e1ca013e4f608b82a9bc08d05591 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:9
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:9
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 1197f4340f594dd69db0995c02607167 7a6c76000c5f4435be04d7a66feb97a1
+#: a7cf06ffa64f43b98d3e5f0d50a1b46e of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:11
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:11
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 2cc4dd50ef1a454fa34e4568cabda22c 4b1e44e52b0740ebbfcbfdfd9f5b3cc7
+#: 9b7f33d8ba2c451aae9b506cd5241971 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:13
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:13
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 15b6b39dd8e6462a87b9dcd8b5fc027a ba47522d212b432db5f85d1a3aadb9d5
+#: d54709e742404f13aab906998157332a of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:18
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:18
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文信息。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 0264e81a75754974af325188034bf9fc 2bac9ed7ad064223b6be4411efa22620
+#: ca70951efbf24349a71de0efea4bf7f9 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool.run:22
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool.run:22
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不支持这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"
+
+#: 3c75c1b2ee444d8dbdf4c6c84700e48b of
+#: tooluniverse.cellosaurus_tool.CellosaurusSearchTool._search_cell_lines:1
+msgid "Search Cellosaurus cell lines using the /search/cell-line endpoint."
+msgstr "使用 /search/cell-line 端点搜索 Cellosaurus 细胞系。"
+
+#: 92f047c1525d4c0b8595fae2db788672 of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool:1
+msgid ""
+"Tool to convert natural language queries to Solr syntax for Cellosaurus API."
+msgstr "用于将自然语言查询转换为适用于Cellosaurus API的Solr语法的工具。"
+
+#: c84fab3f957844aea173469177067792 of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._calculate_similarity:1
+msgid "Calculate similarity between a term and text using SequenceMatcher."
+msgstr "使用SequenceMatcher计算术语与文本之间的相似度。"
+
+#: 3fe543d074694b51978e96ce49f8d79e of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._map_term_to_field:1
+msgid ""
+"Map a natural language term to Cellosaurus fields based on semantic "
+"similarity."
+msgstr "根据语义相似性将自然语言术语映射到Cellosaurus字段。"
+
+#: 9aca2f28421f40309ec6c89d455e59dd of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._extract_field_terms:1
+msgid "Extract field-specific terms from the query using semantic mapping."
+msgstr "从查询中使用语义映射提取领域特定术语。"
+
+#: 3579ed979d51498780a003b46a55bfaa of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._apply_boolean_operators:1
+msgid "Convert natural language boolean operators to Solr syntax."
+msgstr "将自然语言布尔运算符转换为Solr语法。"
+
+#: ef4b6cc7d4fe452982c4ea19598b56d6 of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._apply_range_queries:1
+msgid "Convert natural language ranges to Solr range syntax."
+msgstr "将自然语言范围转换为Solr范围语法。"
+
+#: 510322706a3143b6940b93e164aa157d of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._apply_wildcards:1
+msgid "Convert natural language wildcard patterns to Solr syntax."
+msgstr "将自然语言通配符模式转换为Solr语法。"
+
+#: 5ae925c668e7459089fc8be07aae22da of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._construct_solr_query:1
+msgid "Construct the final Solr query from extracted terms."
+msgstr "从提取的术语构建最终的 Solr 查询。"
+
+#: c06701c4900c44f3b21ce2de40a56bc0 of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._validate_solr_query:1
+msgid "Basic validation of Solr query syntax."
+msgstr "Solr 查询语法的基本验证。"
+
+#: 7efad136d4e546db95f96b987bfa7369 of
+#: tooluniverse.cellosaurus_tool.CellosaurusQueryConverterTool._convert_query:1
+msgid ""
+"Convert natural language query to Solr syntax using systematic field "
+"mapping."
+msgstr "将自然语言查询通过系统化字段映射转换为Solr语法。"
+
+#: 41ce8bf72f3b49c38026cc31366ca7e6 of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool:1
+msgid ""
+"Tool to get detailed information about a specific cell line using its "
+"accession number."
+msgstr "用于通过细胞系的登录号获取详细信息的工具。"
+
+#: 3c962ed9a8e44793a6b1d0ddd96df82a of
+#: tooluniverse.cellosaurus_tool.CellosaurusGetCellLineInfoTool._get_cell_line_info:1
+msgid "Get detailed cell line information by accession number."
+msgstr "通过登录号获取详细的细胞系信息。"

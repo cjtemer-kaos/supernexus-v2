@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_lab_tests_by_drug_name.rst:2
+#: ecc8581d0cd943d5a771d143e9919670
+msgid "tooluniverse.tools.FDA\\_get\\_lab\\_tests\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_lab\\_tests\\_by\\_drug\\_name 模块"
+
+#: 323141bf9eff479882486a85e72d016d of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name:1
+msgid "FDA_get_lab_tests_by_drug_name"
+msgstr ""
+"FDA_get_lab_tests_by_drug_name  \n"
+"获取药物名称相关的实验室测试"
+
+#: 97799e37a87748dcb320d6f0ef991cce e9772a69c3af40a49808ed26b458377b of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name:3
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:1
+msgid "Retrieve laboratory tests information based on drug names."
+msgstr "根据药物名称检索实验室测试信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_lab_tests_by_drug_name.rst
+#: 8e16f6be45964b7a841ef8548c857b15
+msgid "Parameters"
+msgstr "参数"
+
+#: ffa96b3b33964ac9a25a26bd1dbd5855 of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: 412fecedb2c1405a9513f7204b550fc0 of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: d5d69d07b1f3498db8dd9eed87918b57 of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: a139de0b40134b7b91fc67c6d3bf91e9 of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4900528fbaaf49cb99fb5f0ef53c0baa of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f223396c78704e2e8f25a54e777bb719 of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_lab_tests_by_drug_name.rst
+#: 8f74a4b485a2491d9e9378b5ee422239
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9c857a250ba642969f08d3cec1817afd of
+#: tooluniverse.tools.FDA_get_lab_tests_by_drug_name.FDA_get_lab_tests_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

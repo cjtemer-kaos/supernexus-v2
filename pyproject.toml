@@ -1,0 +1,77 @@
+[project]
+name = "supernexus"
+version = "2.0.0"
+description = "SuperNEXUS v2 — Sovereign AI Agent Platform"
+requires-python = ">=3.11"
+
+[project.scripts]
+nexus = "src.cli.main:main"
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_ignores = false
+ignore_missing_imports = true
+follow_imports = "skip"
+exclude = [
+    "deploy/",
+    "skills/",
+    "legacy/",
+    "tests/",
+    "tools/",
+    "mcp_servers/",
+    "integrations/",
+    "scripts/",
+]
+
+disable_error_code = [
+    "assignment",
+    "arg-type",
+    "attr-defined",
+    "annotation-unchecked",
+    "no-redef",
+    "union-attr",
+    "operator",
+    "index",
+    "return-value",
+    "valid-type",
+    "has-type",
+    "truthy-function",
+    "type-var",
+    "misc",
+    "call-overload",
+    "var-annotated",
+    "dict-item",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src/gemas_core/tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+addopts = [
+    "--ignore=deploy",
+    "--ignore=scripts/test_regex.py",
+    "--ignore=security/scanners",
+]
+
+[tool.ruff]
+src = ["src"]
+
+[tool.ruff.lint]
+ignore = [
+    "E401",    # multiple-imports-on-one-line
+    "E402",    # module-import-not-at-top (latam conditional imports)
+    "E701",    # multiple-statements-on-one-line-colon
+    "E702",    # multiple-statements-on-one-line-semicolon
+    "E722",    # bare-except
+    "E731",    # lambda-assignment
+    "E741",    # ambiguous-variable-name (l/I/O)
+    "F401",    # unused-import
+    "F541",    # f-string-missing-placeholders
+    "F811",    # redefined-while-unused
+    "F841",    # unused-variable
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/skills/*" = ["ALL"]
+"src/legacy/*" = ["ALL"]
+"src/tools/*" = ["ALL"]

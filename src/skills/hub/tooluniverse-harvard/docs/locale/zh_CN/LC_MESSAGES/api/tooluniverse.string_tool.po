@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.string_tool.rst:2 8a42c8afa4524ef6a905016960913bdd
+msgid "tooluniverse.string\\_tool module"
+msgstr "tooluniverse.string\\_tool 模块"
+
+#: eff6e2daafd042f2b6c390aa3dbb2506 of tooluniverse.string_tool:1
+msgid "STRING Database REST API Tool"
+msgstr "STRING 数据库 REST API 工具"
+
+#: 5598a5a435fa49b4b13972079cfa2181 of tooluniverse.string_tool:3
+msgid ""
+"This tool provides access to protein-protein interaction data from the "
+"STRING database. STRING is a database of known and predicted protein-protein"
+" interactions."
+msgstr "该工具提供从STRING数据库获取蛋白质-蛋白质相互作用数据的功能。STRING是一个包含已知和预测蛋白质-蛋白质相互作用的数据库。"
+
+#: aed26bd474964e648df559fe96eddb64 of
+#: tooluniverse.string_tool.STRINGRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 71bc58a9222b4a0298b52e42b90992aa of
+#: tooluniverse.string_tool.STRINGRESTTool:1
+msgid ""
+"STRING Database REST API tool. Generic wrapper for STRING API endpoints "
+"defined in ppi_tools.json."
+msgstr "STRING数据库REST API工具。通用封装器，用于调用定义在ppi_tools.json中的STRING API端点。"
+
+#: 3595d8500d28495893e8a406d9c82425 of
+#: tooluniverse.string_tool.STRINGRESTTool._build_url:1
+msgid "Build URL for STRING API request."
+msgstr "构建用于STRING API请求的URL。"
+
+#: 3ad614e490134e10a5d7baedbd874ff2 of
+#: tooluniverse.string_tool.STRINGRESTTool._build_params:1
+msgid "Build parameters for STRING API request."
+msgstr "构建STRING API请求的参数。"
+
+#: 61b03f798f68418b82b3533a7acf215f of
+#: tooluniverse.string_tool.STRINGRESTTool._make_request:1
+msgid "Perform a GET request and handle common errors."
+msgstr "执行 GET 请求并处理常见错误。"
+
+#: b3eee8a1b54749c3b69468a57a91ddea of
+#: tooluniverse.string_tool.STRINGRESTTool._parse_tsv_response:1
+msgid "Parse TSV response from STRING API."
+msgstr "从STRING API解析TSV响应。"
+
+#: c956d0f16be14347b57cbc28ffa1c8a7 of
+#: tooluniverse.string_tool.STRINGRESTTool.run:1
+msgid "Execute the tool with given arguments."
+msgstr "使用指定的参数执行工具。"

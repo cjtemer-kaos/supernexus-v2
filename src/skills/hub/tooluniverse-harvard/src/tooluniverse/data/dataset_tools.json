@@ -1,0 +1,1168 @@
+[
+  {
+    "type": "DatasetTool",
+    "name": "drugbank_vocab_search",
+    "description": "Search the DrugBank vocabulary dataset for drugs by name, ID, synonyms, or other fields using text-based queries. Returns detailed drug information including DrugBank ID, common name, CAS number, UNII, and synonyms.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DrugbankVocabulary",
+      "path_in_repo": "drugbank_vocabulary.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query string. Can be drug name, synonym, DrugBank ID, or any text to search for.",
+          "minLength": 1
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Fields to search in. Available fields: 'DrugBank ID', 'Accession Numbers', 'Common name', 'CAS', 'UNII', 'Synonyms', 'Standard InChI Key'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Whether the search should be case sensitive."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Whether to perform exact matching instead of substring matching."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "Common name",
+        "Synonyms",
+        "DrugBank ID"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results with matched drug records and search metadata",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The original search query string"
+        },
+        "total_results": {
+          "type": "integer",
+          "description": "Total number of matching results found"
+        },
+        "results": {
+          "type": "array",
+          "description": "Array of matching drug records",
+          "items": {
+            "type": "object",
+            "properties": {
+              "DrugBank ID": {
+                "type": "string",
+                "description": "Drug identifier (e.g., 'DB00945')"
+              },
+              "Accession Numbers": {
+                "type": "string",
+                "description": "Alternative drug identifiers"
+              },
+              "Common name": {
+                "type": "string",
+                "description": "Drug common name (e.g., 'Acetylsalicylic acid')"
+              },
+              "CAS": {
+                "type": "string",
+                "description": "Chemical Abstracts Service number"
+              },
+              "UNII": {
+                "type": "string",
+                "description": "Unique Ingredient Identifier"
+              },
+              "Synonyms": {
+                "type": "string",
+                "description": "Alternative drug names and synonyms"
+              },
+              "Standard InChI Key": {
+                "type": "string",
+                "description": "International Chemical Identifier key"
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Fields that matched the search query (e.g., ['Synonyms', 'Common name'])"
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "description": "Parameters used for the search",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "aspirin",
+        "search_fields": [
+          "Common name",
+          "Synonyms"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "drugbank_vocab_filter",
+    "description": "Filter the DrugBank vocabulary dataset based on specific field criteria. Use simple field-value pairs to filter drugs by properties like names, IDs, and chemical identifiers.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DrugbankVocabulary",
+      "path_in_repo": "drugbank_vocabulary.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string",
+          "description": "The field to filter on",
+          "enum": [
+            "DrugBank ID",
+            "Accession Numbers",
+            "Common name",
+            "CAS",
+            "UNII",
+            "Synonyms",
+            "Standard InChI Key"
+          ]
+        },
+        "condition": {
+          "type": "string",
+          "description": "The type of filtering condition to apply. Filter is case-insensitive.",
+          "enum": [
+            "contains",
+            "starts_with",
+            "ends_with",
+            "exact",
+            "not_empty"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "description": "The value to filter by. Not required when condition is 'not_empty'. Examples: 'insulin' (for contains), 'DB00' (for starts_with), 'acid' (for ends_with), 'Aspirin' (for exact)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "field",
+        "condition",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "field": "Common name",
+      "condition": "contains",
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Filter results with matched drug records and filter metadata",
+      "properties": {
+        "total_matches": {
+          "type": "integer",
+          "description": "Total number of records matching the filter criteria"
+        },
+        "returned_results": {
+          "type": "integer",
+          "description": "Number of results actually returned (limited by 'limit' parameter)"
+        },
+        "results": {
+          "type": "array",
+          "description": "Array of filtered drug records",
+          "items": {
+            "type": "object",
+            "properties": {
+              "DrugBank ID": {
+                "type": "string",
+                "description": "Drug identifier (e.g., 'DB00001')"
+              },
+              "Accession Numbers": {
+                "type": "string",
+                "description": "Alternative drug identifiers"
+              },
+              "Common name": {
+                "type": "string",
+                "description": "Drug common name (e.g., 'Lepirudin')"
+              },
+              "CAS": {
+                "type": "string",
+                "description": "Chemical Abstracts Service number"
+              },
+              "UNII": {
+                "type": "string",
+                "description": "Unique Ingredient Identifier"
+              },
+              "Synonyms": {
+                "type": "string",
+                "description": "Alternative drug names and synonyms"
+              },
+              "Standard InChI Key": {
+                "type": "string",
+                "description": "International Chemical Identifier key"
+              }
+            }
+          }
+        },
+        "applied_filter": {
+          "type": "string",
+          "description": "Human-readable description of the applied filter (e.g., 'Common name contains insulin')"
+        },
+        "filter_parameters": {
+          "type": "object",
+          "description": "Parameters used for filtering",
+          "properties": {
+            "field": {
+              "type": "string"
+            },
+            "condition": {
+              "type": "string"
+            },
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "field": "Common name",
+        "condition": "contains",
+        "value": "insulin",
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "drugbank_full_search",
+    "description": "Search the cleaned DrugBank dataframe (one row per drug) by ID, common name, or synonym. Returns identifiers, ATC, main pharmacology text fields, and protein partners. For best results, it is recommended that one uses `drugbank_vocab_search` to obtain DrugBank ID from other keywords first, and use this tool with DrugBank ID.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DrugbankRawParquet",
+      "path_in_repo": "drugbank_raw.parquet",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query (e.g. 'DB00945', 'acetylsalicylic', 'Acarbosa')."
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Columns to search in. Choose from: 'drugbank_id', 'name', 'synonyms'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Match text with exact case if true."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Field value must equal query exactly if true; otherwise substring match."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Max number of rows to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "name",
+        "synonyms",
+        "drugbank_id"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results plus metadata.",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "total_results": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "description": "Each element is one DrugBank hit with core info only.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "drugbank_id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "groups": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "atc_codes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "indication": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pharmacodynamics": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "moa": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "absorption": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "metabolism": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "toxicity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "half_life": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "targets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "enzymes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "carriers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "transporters": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "matched_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Subset of search_fields that contained the match."
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "DB00945",
+        "search_fields": [
+          "name",
+          "synonyms",
+          "drugbank_id"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "drugbank_links_search",
+    "description": "Search the cross-reference table linking DrugBank IDs to external identifiers (CAS, KEGG, PubChem, ChEBI, PharmGKB, UniProt, etc.) and web resources.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DrugLinks",
+      "path_in_repo": "drug_links.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query (e.g. 'DB00002', 'Cetuximab')."
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Columns to search. Choose from: 'DrugBank ID', 'Name', 'CAS Number', 'Drug Type', 'KEGG Compound ID', 'KEGG Drug ID', 'PubChem Compound ID', 'PubChem Substance ID', 'ChEBI ID', 'PharmGKB ID', 'HET ID', 'UniProt ID', 'Wikipedia ID', 'Drugs.com Link', 'NDC ID', 'ChemSpider ID', 'BindingDB ID', 'TTD ID'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Match text with exact case if true."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Field value must equal query exactly if true; otherwise substring match."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of rows to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "DrugBank ID",
+        "Name"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results plus metadata.",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "total_results": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "DrugBank ID": {
+                "type": "string"
+              },
+              "Name": {
+                "type": "string"
+              },
+              "CAS Number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Drug Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "KEGG Compound ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "KEGG Drug ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "PubChem Compound ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "PubChem Substance ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ChEBI ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "PharmGKB ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "HET ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "UniProt ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "UniProt Title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "GenBank ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DPD ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "RxList Link": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Pdrhealth Link": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Wikipedia ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Drugs.com Link": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "NDC ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ChemSpider ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "BindingDB ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "TTD ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "matched_fields": {
+                "type": "array",
+                "description": "Subset of search_fields that contained the match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "DB00002",
+        "search_fields": [
+          "DrugBank ID",
+          "Name"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "dict_search",
+    "description": "Search the DICTrank dataset for drug-induced cardiotoxicity (DICT) risk information by trade name, generic name, or active ingredient. Searching with exact match is not recommeded.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DICTrank",
+      "path_in_repo": "DICTrank.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query (e.g. 'ZYPREXA', 'Olanzapine')."
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Columns to search. Choose from: 'Trade Name', 'Generic/Proper Name(s)', 'Active Ingredient(s)'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Match text with exact case if true."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Field value must equal query exactly if true; otherwise substring match."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of rows to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "Trade Name",
+        "Generic/Proper Name(s)",
+        "Active Ingredient(s)"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results plus metadata.",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "total_results": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Trade Name": {
+                "type": "string"
+              },
+              "Generic/Proper Name(s)": {
+                "type": "string"
+              },
+              "Active Ingredient(s)": {
+                "type": "string"
+              },
+              "Cardiotoxicity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DICT Concern": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Keywords": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DIC Severity Level": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "matched_fields": {
+                "type": "array",
+                "description": "Subset of search_fields that contained the match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Olanzapine",
+        "search_fields": [
+          "Trade Name",
+          "Generic/Proper Name(s)"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "dili_search",
+    "description": "Search the DILIrank dataset for drug-induced liver-injury (DILI) risk information by compound name. Searching with exact match is not recommeded.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DILIrank",
+      "path_in_repo": "DILIrank.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query (e.g. 'acetaminophen')."
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Columns to search. Choose from: 'Compound Name'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Match text with exact case if true."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Field value must equal query exactly if true; otherwise substring match."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of rows to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "Compound Name"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 10
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results plus metadata.",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "total_results": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Compound Name": {
+                "type": "string"
+              },
+              "Severity Class": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "DILI Concern": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "matched_fields": {
+                "type": "array",
+                "description": "Subset of search_fields that contained the match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "acetaminophen",
+        "search_fields": [
+          "Compound Name"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "DatasetTool",
+    "name": "diqt_search",
+    "description": "Search the DIQTA dataset for drug-induced QT-interval prolongation risk information by generic name or DrugBank ID. Searching with exact match is not recommeded for generic name.",
+    "hf_dataset_path": {
+      "repo_id": "agenticx/DIQTA",
+      "path_in_repo": "DIQTA.csv",
+      "token": null,
+      "save_to_local_dir": null
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query (e.g. 'Astemizole', 'DB00637')."
+        },
+        "search_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Columns to search. Choose from: 'Generic/Proper Name(s)', 'DrugBank ID'."
+        },
+        "case_sensitive": {
+          "type": "boolean",
+          "description": "Match text with exact case if true."
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Field value must equal query exactly if true; otherwise substring match."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of rows to return.",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "query",
+        "search_fields",
+        "case_sensitive",
+        "exact_match",
+        "limit"
+      ]
+    },
+    "query_schema": {
+      "search_fields": [
+        "Generic/Proper Name(s)",
+        "DrugBank ID"
+      ],
+      "case_sensitive": false,
+      "exact_match": false,
+      "limit": 100
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Search results plus metadata.",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "total_results": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Generic/Proper Name(s)": {
+                "type": "string"
+              },
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DrugBank ID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DIQT Concern": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Severity Score": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "matched_fields": {
+                "type": "array",
+                "description": "Subset of search_fields that contained the match.",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "search_parameters": {
+          "type": "object",
+          "properties": {
+            "search_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "exact_match": {
+              "type": "boolean"
+            },
+            "limit": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "Astemizole",
+        "search_fields": [
+          "Generic/Proper Name(s)"
+        ],
+        "case_sensitive": false,
+        "exact_match": false,
+        "limit": 10
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.CORE_search_papers.rst:2
+#: 6082b58799e44efd90b7072366077ff9
+msgid "tooluniverse.tools.CORE\\_search\\_papers module"
+msgstr "tooluniverse.tools.CORE\\_search\\_papers 模块"
+
+#: 333942a17a7046aba5b6972bcba58262 of tooluniverse.tools.CORE_search_papers:1
+msgid "CORE_search_papers"
+msgstr ""
+
+#: 37c44057c3e244cfad421b2be4ecaff5 99de44cc71f14ef5a1918bcc78236777 of
+#: tooluniverse.tools.CORE_search_papers:3
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:1
+msgid ""
+"Search for open access academic papers using CORE API. CORE is the world's "
+"largest collection of ..."
+msgstr "使用 CORE API 搜索开放获取的学术论文。CORE 是全球最大的..."
+
+#: ../../api/tooluniverse.tools.CORE_search_papers.rst
+#: 06452dd5e5cb4f12b7c190dd21b97f78
+msgid "Parameters"
+msgstr "参数"
+
+#: 781d34c70552438e93d20ea384ab427b of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:3
+msgid ""
+"Search query for CORE papers. Use keywords separated by spaces to refine "
+"your..."
+msgstr "搜索 CORE 论文的查询。使用以空格分隔的关键词来优化您的搜索..."
+
+#: 12ed1de9426141c9bdba697962bc931b of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:5
+msgid ""
+"Maximum number of papers to return. This sets the maximum number of papers "
+"re..."
+msgstr "返回的论文最大数量。此设置定义了返回论文的最大数量。"
+
+#: 7c181dada25e4a85967d1af3e43e2f8c of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:7
+msgid ""
+"Start year for publication date filter (e.g., 2020). Optional parameter to "
+"li..."
+msgstr "出版日期筛选的起始年份（例如：2020）。可选参数，用于限制..."
+
+#: df392c33bf7d456c959b67e6d8e52002 of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:9
+msgid ""
+"End year for publication date filter (e.g., 2024). Optional parameter to "
+"limi..."
+msgstr "出版日期筛选的结束年份（例如：2024）。可选参数，用于限制..."
+
+#: 9f2fa18746b84aea890fd58c46216a6e of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:11
+msgid ""
+"Language filter for papers (e.g., 'en', 'es', 'fr'). Optional parameter to "
+"li..."
+msgstr "语言筛选器用于论文（例如：'en'、'es'、'fr'）。可选参数用于列出..."
+
+#: 76455c3e95c34e9093558177dc9d09f8 of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3e9e20371f6d407a9c401d3c6fa4b3db of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 71e03de6e61441c2aec17d051f230a75 of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.CORE_search_papers.rst
+#: ab6386a6e8014c5aa73ffb8fb2c4270a
+msgid "Return type"
+msgstr "返回类型"
+
+#: c8f47d8c5f5b4495a0841b91d520f948 of
+#: tooluniverse.tools.CORE_search_papers.CORE_search_papers:20
+msgid ":py:class:`list[Any]`"
+msgstr ""

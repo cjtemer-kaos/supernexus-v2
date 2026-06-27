@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/europe_pmc_tools.rst:2 0315b6d352854e518e3714bc2482ed08
+msgid "Europe Pmc Tools"
+msgstr "欧洲 PMC 工具"
+
+#: ../../tools/europe_pmc_tools.rst:4 8f4e797a54e043b8bbfec25fa469973a
+msgid ""
+"**Configuration File**: ``europe_pmc_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 1"
+msgstr ""
+"**配置文件**：``europe_pmc_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/europe_pmc_tools.rst:8 34f09a74daef4205ba68d6cc16137c18
+msgid ""
+"This page contains all tools defined in the ``europe_pmc_tools.json`` "
+"configuration file."
+msgstr "本页面包含 ``europe_pmc_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/europe_pmc_tools.rst:11 8a54c5e643d141e1b506272364f9b872
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/europe_pmc_tools.rst:14 81c7f1cd5c8d492bbbdb559f02a7ee7a
+msgid "**EuropePMC_search_articles** (Type: EuropePMCTool)"
+msgstr "**EuropePMC_search_articles**（类型：EuropePMCTool）"
+
+#: ../../tools/europe_pmc_tools.rst:16 259574efd19a454ea3933b9194c6d6ee
+msgid ""
+"Search for articles on Europe PMC including abstracts. The tool queries the "
+"Europe PMC web servic..."
+msgstr "搜索包含摘要的Europe PMC文章。该工具查询Europe PMC网络服务..."
+
+#: ../../tools/europe_pmc_tools.rst bd5f7c69eb444a07b91b9714c0127b81
+msgid "EuropePMC_search_articles tool specification"
+msgstr "EuropePMC_search_articles 工具规范"
+
+#: ../../tools/europe_pmc_tools.rst:20 d0c5d8aeec184f3dbf1484b09c4e66d5
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/europe_pmc_tools.rst:22 b08630bacf714a1a938d2d16b9292f69
+msgid "**Name**: ``EuropePMC_search_articles``"
+msgstr "**名称**：``EuropePMC_search_articles``"
+
+#: ../../tools/europe_pmc_tools.rst:23 020c5a3255ab4cd3ada6e1ca59f0ae8f
+msgid "**Type**: ``EuropePMCTool``"
+msgstr "**类型**：``EuropePMCTool``"
+
+#: ../../tools/europe_pmc_tools.rst:24 0125857874d8458181db815f6c358c54
+msgid ""
+"**Description**: Search for articles on Europe PMC including abstracts. The "
+"tool queries the Europe PMC web service using provided keywords and returns "
+"articles with details such as title, abstract, journal, publication year, "
+"and a URL to the full article."
+msgstr ""
+"**描述**：搜索 Europe PMC 上的文章，包括摘要。该工具使用提供的关键词查询 Europe PMC "
+"网络服务，并返回包含标题、摘要、期刊、出版年份以及完整文章链接等详细信息的文章。"
+
+#: ../../tools/europe_pmc_tools.rst:26 18b3e018872c4496ac215aaf6810af26
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/europe_pmc_tools.rst:28 633e3170cc0c480ba59dfcf68ef7577b
+msgid ""
+"``query`` (string) (required) Search query for Europe PMC. Use keywords "
+"separated by spaces to refine your search."
+msgstr "``query``（字符串）（必填）用于欧洲PMC的搜索查询。使用空格分隔的关键词来优化搜索结果。"
+
+#: ../../tools/europe_pmc_tools.rst:31 1e5750f4697948d9860fef1150ee1346
+msgid ""
+"``limit`` (integer) (optional) Number of articles to return. This sets the "
+"maximum number of articles retrieved from Europe PMC."
+msgstr "``limit``（整数）（可选）返回的文章数量。此参数设置从 Europe PMC 检索的文章最大数量。"
+
+#: ../../tools/europe_pmc_tools.rst:34 7fa05d0ff5844755ba30c250bad52a7a
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/europe_pmc_tools.rst:48 2430c7173c31475ebcc35949c729105e
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/europe_pmc_tools.rst:50 dfccd7a2cfbb47b68cfa6d12e031578f
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/europe_pmc_tools.rst:51 ae0653511f5c4d0c81cd7f7482becfc8
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

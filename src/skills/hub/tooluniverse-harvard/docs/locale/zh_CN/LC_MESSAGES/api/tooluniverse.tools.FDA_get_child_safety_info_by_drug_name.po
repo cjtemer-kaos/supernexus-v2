@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.rst:2
+#: f04ff19adff049c796c56a5077c23e90
+msgid "tooluniverse.tools.FDA\\_get\\_child\\_safety\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_child\\_safety\\_info\\_by\\_drug\\_name 模块"
+
+#: 424ea42821314d9780b2476b715c0ff5 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name:1
+msgid "FDA_get_child_safety_info_by_drug_name"
+msgstr "FDA_按药品名称获取儿童安全信息"
+
+#: 34dae95ebd7c4323ae6ad8074fe6c83e f5b74d53c9db4e599a56b7c4d17c95a0 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:1
+msgid ""
+"Retrieve child safety information for a specific drug based on its name."
+msgstr "根据药物名称检索特定药物的儿童安全信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.rst
+#: 7e2fb9eda87f402db07310ff0f668894
+msgid "Parameters"
+msgstr "参数"
+
+#: 18caf701e97a4be2b5b2f79af2875561 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: ab22222ff5bb4eb88829689ff389d937 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: d01ad27a362048799f41e448dc15d474 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 14b6381dec99411b825e4fefe7a5ab84 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9117345d80da4bbcbda9622fe07c0ec3 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6d1739e1c8204ee29c76d353a74e27ab of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.rst
+#: 3010e30e8ca04c269c0ecc9162dc4be7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 283d29f1437c4451b4c7bd43271bb507 of
+#: tooluniverse.tools.FDA_get_child_safety_info_by_drug_name.FDA_get_child_safety_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

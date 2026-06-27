@@ -1,0 +1,1381 @@
+[
+  {
+    "id": "prompt-inj-001",
+    "severity": "high",
+    "category": "prompt-injection",
+    "regex": "ignore.*(all|previous).*instructions",
+    "description": "instruction override directive"
+  },
+  {
+    "id": "prompt-inj-002",
+    "severity": "high",
+    "category": "prompt-injection",
+    "regex": "you are now.*(DAN|jailbreak|evil|unethical|without.*restrictions)",
+    "description": "jailbreak role-switch"
+  },
+  {
+    "id": "prompt-inj-003",
+    "severity": "high",
+    "category": "prompt-injection",
+    "regex": "system:.*(forget|ignore|override).*prompt",
+    "description": "system prompt override"
+  },
+  {
+    "id": "prompt-inj-004",
+    "severity": "high",
+    "category": "prompt-injection",
+    "regex": "\\\\[\\\\[system\\\\]\\\\]|<<SYS>>|\\\\<\\\\|im_start\\\\|\\\\>",
+    "description": "injected system tokens"
+  },
+  {
+    "id": "prompt-inj-005",
+    "severity": "high",
+    "category": "prompt-injection",
+    "regex": "respond.*(only|exclusively).*with.*(yes|no|ok|done)",
+    "description": "coerced limited response"
+  },
+  {
+    "id": "prompt-inj-006",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "act as.*(if|though).*you.*(are|were).*(not|never).*(constrained|restricted|limited)",
+    "description": "constraint bypass"
+  },
+  {
+    "id": "prompt-inj-007",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "new.*(instructions|directives|orders|commands).*(override|replace|supersede)",
+    "description": "new directive override"
+  },
+  {
+    "id": "prompt-inj-008",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "\\\\!\\\\!\\\\!.*IMPORTANT.*\\\\!\\\\!\\\\!|\\\\*\\\\*\\\\*URGENT\\\\*\\\\*\\\\*",
+    "description": "urgency coercion"
+  },
+  {
+    "id": "prompt-inj-009",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "pretend.*(you.*are|to.*be).*(human|developer|admin|root|sysadmin)",
+    "description": "role impersonation"
+  },
+  {
+    "id": "prompt-inj-010",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "output.*(only|just).*(the|a).*(code|command|script).*(no.*(explanation|comment|description))",
+    "description": "forced code output"
+  },
+  {
+    "id": "prompt-inj-011",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "debug.*mode.*(enabled|activated|on)|verbose.*mode.*(on|enabled)",
+    "description": "debug mode coercion"
+  },
+  {
+    "id": "prompt-inj-012",
+    "severity": "medium",
+    "category": "prompt-injection",
+    "regex": "you.*(must|have to|need to|should).*(always|never).*(obey|follow|comply)",
+    "description": "forced compliance"
+  },
+  {
+    "id": "exfil-001",
+    "severity": "high",
+    "category": "data-exfiltration",
+    "regex": "(send|post|upload|transmit|forward|relay).*(to|towards).*(http|url|webhook|endpoint|server)",
+    "description": "data exfiltration trigger"
+  },
+  {
+    "id": "exfil-002",
+    "severity": "high",
+    "category": "data-exfiltration",
+    "regex": "webhook.*url.*=|hook_url.*=|callback.*url.*=|webhook_url",
+    "description": "webhook parameter exfil"
+  },
+  {
+    "id": "exfil-003",
+    "severity": "high",
+    "category": "data-exfiltration",
+    "regex": "base64.*(encode|decode).*(content|data|payload|response|result|output)",
+    "description": "base64 data exfil"
+  },
+  {
+    "id": "exfil-004",
+    "severity": "high",
+    "category": "data-exfiltration",
+    "regex": "curl.*-d.*(env|secret|key|token|password|credential)",
+    "description": "curl credential exfil"
+  },
+  {
+    "id": "exfil-005",
+    "severity": "medium",
+    "category": "data-exfiltration",
+    "regex": "read.*(\\\\.env|credentials|secrets|tokens|keys|passwords)",
+    "description": "credential file read"
+  },
+  {
+    "id": "exfil-006",
+    "severity": "medium",
+    "category": "data-exfiltration",
+    "regex": "os\\\\.environ|os\\\\.getenv|getenv\\\\(.*(SECRET|KEY|TOKEN|PASS)",
+    "description": "env var exfiltration"
+  },
+  {
+    "id": "exfil-007",
+    "severity": "medium",
+    "category": "data-exfiltration",
+    "regex": "discord.*webhook.*send|slack.*webhook.*post|telegram.*bot.*send",
+    "description": "chat platform exfil"
+  },
+  {
+    "id": "exfil-008",
+    "severity": "medium",
+    "category": "data-exfiltration",
+    "regex": "requests\\\\.(post|put).*json=.*(data|content|result)",
+    "description": "HTTP POST data exfil"
+  },
+  {
+    "id": "shell-inj-001",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "os\\\\.(system|popen|execve|spawn[lp]?)\\\\s*\\\\(",
+    "description": "os shell execution"
+  },
+  {
+    "id": "shell-inj-002",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "subprocess\\\\.(call|run|Popen|check_output|check_call|getoutput|getstatusoutput)",
+    "description": "subprocess execution"
+  },
+  {
+    "id": "shell-inj-003",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "eval\\\\s*\\\\(|exec\\\\s*\\\\(|compile\\\\s*\\\\(.*exec",
+    "description": "dynamic code execution"
+  },
+  {
+    "id": "shell-inj-004",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "__import__\\\\s*\\\\(|importlib\\\\.import_module",
+    "description": "dynamic import"
+  },
+  {
+    "id": "shell-inj-005",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "pty\\\\.spawn|pexpect\\\\.spawn|os\\\\.system.*sh",
+    "description": "interactive shell spawn"
+  },
+  {
+    "id": "shell-inj-006",
+    "severity": "medium",
+    "category": "shell-injection",
+    "regex": "shlex\\\\.split.*\\\\+.*input|shlex\\\\.split.*user|shell\\\\s*=\\\\s*True",
+    "description": "unsafe shell splitting"
+  },
+  {
+    "id": "shell-inj-007",
+    "severity": "medium",
+    "category": "shell-injection",
+    "regex": "\\\\$\\\\{|\\\\$\\\\(|`[^`]+`",
+    "description": "shell interpolation"
+  },
+  {
+    "id": "shell-inj-008",
+    "severity": "medium",
+    "category": "shell-injection",
+    "regex": "\\\\|\\\\s*(sh|bash|cmd|powershell|python|perl|ruby)\\\\b",
+    "description": "piped shell command"
+  },
+  {
+    "id": "shell-inj-009",
+    "severity": "medium",
+    "category": "shell-injection",
+    "regex": "\\\\brm\\\\s+-rf\\\\b|\\\\bdel\\\\s+/[fsq]",
+    "description": "destructive file ops"
+  },
+  {
+    "id": "shell-inj-010",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "os\\\\.popen\\\\(|commands\\\\.(getoutput|getstatusoutput)",
+    "description": "legacy shell execution"
+  },
+  {
+    "id": "shell-inj-011",
+    "severity": "high",
+    "category": "shell-injection",
+    "regex": "sudo\\\\b|\\\\bsu\\\\s+-[cl]\\\\b|\\\\bchroot\\\\b",
+    "description": "privilege escalation via shell"
+  },
+  {
+    "id": "shell-inj-012",
+    "severity": "medium",
+    "category": "shell-injection",
+    "regex": "subprocess\\\\.(call|run|Popen).*shell\\\\s*=\\\\s*True",
+    "description": "shell=True subprocess"
+  },
+  {
+    "id": "path-trav-001",
+    "severity": "high",
+    "category": "path-traversal",
+    "regex": "\\\\.\\\\./\\\\.\\\\.|\\\\.\\\\.\\\\\\\\\\\\.\\\\.",
+    "description": "parent directory traversal"
+  },
+  {
+    "id": "path-trav-002",
+    "severity": "high",
+    "category": "path-traversal",
+    "regex": "os\\\\.path\\\\.join\\\\(.*\\\\.\\\\./|os\\\\.path\\\\.join\\\\(.*\\\\.\\\\.\\\\\\\\",
+    "description": "join with traversal"
+  },
+  {
+    "id": "path-trav-003",
+    "severity": "high",
+    "category": "path-traversal",
+    "regex": "pathlib.*\\\\.\\\\./|Path\\\\(.*\\\\.\\\\./\\\\)|Path\\\\(.*\\\\.\\\\.\\\\\\\\\\\\)",
+    "description": "Path with traversal"
+  },
+  {
+    "id": "path-trav-004",
+    "severity": "medium",
+    "category": "path-traversal",
+    "regex": "open\\\\s*\\\\(.*\\\\+\\\\s*(request\\\\.|input|user|arg|param)",
+    "description": "open with user path input"
+  },
+  {
+    "id": "path-trav-005",
+    "severity": "medium",
+    "category": "path-traversal",
+    "regex": "os\\\\.(listdir|scandir|walk)\\\\s*\\\\(.*(request|input|user|arg)",
+    "description": "listdir with user input"
+  },
+  {
+    "id": "path-trav-006",
+    "severity": "medium",
+    "category": "path-traversal",
+    "regex": "os\\\\.remove\\\\s*\\\\(.*(request|input|arg)|os\\\\.unlink\\\\s*\\\\(.*(request|input|arg)",
+    "description": "remove with user path"
+  },
+  {
+    "id": "path-trav-007",
+    "severity": "medium",
+    "category": "path-traversal",
+    "regex": "shutil\\\\.(rmtree|move|copy|copy2|copytree)\\\\s*\\\\(.*(request|input|arg)",
+    "description": "shutil with user path"
+  },
+  {
+    "id": "path-trav-008",
+    "severity": "medium",
+    "category": "path-traversal",
+    "regex": "open\\\\(.*\\\\+.*user|open\\\\(.*\\\\+.*input|open\\\\(.*\\\\+.*param",
+    "description": "open with user concat"
+  },
+  {
+    "id": "mcp-rce-001",
+    "severity": "high",
+    "category": "mcp-rce",
+    "regex": "MCP.*tool.*exec|mcp_tool_exec.*input|tool_name.*=.*request",
+    "description": "MCP tool exec from request"
+  },
+  {
+    "id": "mcp-rce-002",
+    "severity": "high",
+    "category": "mcp-rce",
+    "regex": "stdio.*transport.*spawn|Popen.*mcp|subprocess.*mcp.*tool",
+    "description": "MCP subprocess spawn"
+  },
+  {
+    "id": "mcp-rce-003",
+    "severity": "high",
+    "category": "mcp-rce",
+    "regex": "mcp.*server.*args.*input|args.*append.*request",
+    "description": "MCP args from request"
+  },
+  {
+    "id": "mcp-rce-004",
+    "severity": "high",
+    "category": "mcp-rce",
+    "regex": "tool_args\\\\s*\\\\[.*\\\\]\\\\s*=.*request|args\\\\s*=\\\\s*json\\\\.loads.*request",
+    "description": "MCP tool args from body"
+  },
+  {
+    "id": "mcp-rce-005",
+    "severity": "medium",
+    "category": "mcp-rce",
+    "regex": "mcp\\\\.tool\\\\(|mcp\\\\.call_tool\\\\(|execute_tool\\\\(",
+    "description": "MCP tool call"
+  },
+  {
+    "id": "mcp-rce-006",
+    "severity": "medium",
+    "category": "mcp-rce",
+    "regex": "tool\\\\.fn\\\\s*=\\\\s*lambda|tool\\\\.fn\\\\s*=\\\\s*eval",
+    "description": "MCP tool dynamic fn"
+  },
+  {
+    "id": "mcp-rce-007",
+    "severity": "medium",
+    "category": "mcp-rce",
+    "regex": "tool_description.*=.*input|tool_schema.*=.*user",
+    "description": "MCP tool schema from user"
+  },
+  {
+    "id": "pii-001",
+    "severity": "high",
+    "category": "pii-leak",
+    "regex": "\\\\b\\\\d{3}-\\\\d{2}-\\\\d{4}\\\\b|\\\\b\\\\d{13,16}\\\\b",
+    "description": "SSN or long numeric PII"
+  },
+  {
+    "id": "pii-002",
+    "severity": "high",
+    "category": "pii-leak",
+    "regex": "\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Z|a-z]{2,}\\\\b",
+    "description": "email address regex"
+  },
+  {
+    "id": "pii-003",
+    "severity": "low",
+    "category": "pii-leak",
+    "regex": "phone.*number|credit.*card|social.*security|passport.*number",
+    "description": "PII field names"
+  },
+  {
+    "id": "pii-004",
+    "severity": "medium",
+    "category": "pii-leak",
+    "regex": "log.*\\\\.(info|debug|warning|error)\\\\(.*(password|secret|key|token|credential)",
+    "description": "logging credentials"
+  },
+  {
+    "id": "unsafe-py-001",
+    "severity": "high",
+    "category": "unsafe-python",
+    "regex": "ctypes\\.(CDLL|WinDLL|PyDLL|cdll|windll|pydll)\\s*\\(.*input",
+    "description": "ctypes load from user"
+  },
+  {
+    "id": "unsafe-py-002",
+    "severity": "high",
+    "category": "unsafe-python",
+    "regex": "ctypes\\.(cast|pointer|string_at)\\s*\\(.*input",
+    "description": "ctypes cast from user"
+  },
+  {
+    "id": "unsafe-py-003",
+    "severity": "high",
+    "category": "unsafe-python",
+    "regex": "__subclasshook__|__init_subclass__|__class_getitem__",
+    "description": "metaclass hooks"
+  },
+  {
+    "id": "unsafe-py-004",
+    "severity": "high",
+    "category": "unsafe-python",
+    "regex": "getattr\\(.*__.*__\\)|setattr\\(.*__.*__\\)",
+    "description": "dunder access via getattr"
+  },
+  {
+    "id": "unsafe-py-005",
+    "severity": "medium",
+    "category": "unsafe-python",
+    "regex": "sys\\.setrecursionlimit|sys\\.setprofile|sys\\.settrace|sys\\._getframe",
+    "description": "sys introspection"
+  },
+  {
+    "id": "unsafe-py-006",
+    "severity": "medium",
+    "category": "unsafe-python",
+    "regex": "gc\\.get_objects|gc\\.get_referents|gc\\.get_referrers",
+    "description": "gc object introspection"
+  },
+  {
+    "id": "unsafe-py-007",
+    "severity": "medium",
+    "category": "unsafe-python",
+    "regex": "inspect\\.(getsource|getfile|getmodule|getsourcelines)",
+    "description": "inspect source access"
+  },
+  {
+    "id": "unsafe-py-008",
+    "severity": "medium",
+    "category": "unsafe-python",
+    "regex": "builtins\\.(open|eval|exec|compile|__import__)",
+    "description": "builtins bypass"
+  },
+  {
+    "id": "sql-inj-001",
+    "severity": "high",
+    "category": "sql-injection",
+    "regex": "execute\\s*\\(.*\\+.*(request|input|user|param|args)\\)",
+    "description": "SQL string concat"
+  },
+  {
+    "id": "sql-inj-002",
+    "severity": "high",
+    "category": "sql-injection",
+    "regex": "cursor\\.(execute|executemany)\\s*\\(\\s*[f'\"][^'\"]*\\{",
+    "description": "SQL f-string injection"
+  },
+  {
+    "id": "sql-inj-003",
+    "severity": "medium",
+    "category": "sql-injection",
+    "regex": "\\.format\\(.*\\)\\s*\\).*execute|%\\s*\\(.*\\).*execute",
+    "description": "SQL format injection"
+  },
+  {
+    "id": "xss-001",
+    "severity": "high",
+    "category": "xss",
+    "regex": "innerHTML\\s*=|outerHTML\\s*=|document\\.write\\(.*input",
+    "description": "DOM XSS insertion"
+  },
+  {
+    "id": "xss-002",
+    "severity": "high",
+    "category": "xss",
+    "regex": "dangerouslySetInnerHTML|v-html\\s*=|@html\\.raw",
+    "description": "framework unsafe HTML"
+  },
+  {
+    "id": "xss-003",
+    "severity": "medium",
+    "category": "xss",
+    "regex": "eval\\s*\\(.*input|Function\\s*\\(.*input|setTimeout\\s*\\(.*input",
+    "description": "JS eval from input"
+  },
+  {
+    "id": "ssrf-http-001",
+    "severity": "high",
+    "category": "http-ssrf",
+    "regex": "requests\\.(get|post|put|delete|head|patch)\\s*\\(.*(request|input|user|arg|param)",
+    "description": "HTTP request to user URL"
+  },
+  {
+    "id": "ssrf-http-002",
+    "severity": "high",
+    "category": "http-ssrf",
+    "regex": "httpx\\.(get|post|put|delete|head|patch)\\s*\\(.*(request|input|user|arg|param)",
+    "description": "httpx request to user URL"
+  },
+  {
+    "id": "ssrf-http-003",
+    "severity": "high",
+    "category": "http-ssrf",
+    "regex": "urllib\\.request\\.(urlopen|Request)\\s*\\(.*(request|input|user|arg|param)",
+    "description": "urllib request to user URL"
+  },
+  {
+    "id": "ssrf-http-004",
+    "severity": "high",
+    "category": "http-ssrf",
+    "regex": "aiohttp\\.ClientSession.*\\.(get|post|put)\\s*\\(.*(request|input|user|arg)",
+    "description": "aiohttp request to user URL"
+  },
+  {
+    "id": "ssrf-http-005",
+    "severity": "medium",
+    "category": "http-ssrf",
+    "regex": "fetch\\s*\\(.*(request|input|user|arg|param)\\)",
+    "description": "fetch wrapper user URL"
+  },
+  {
+    "id": "ssrf-http-006",
+    "severity": "medium",
+    "category": "http-ssrf",
+    "regex": "http://localhost|http://127\\.|http://192\\.|http://10\\.|http://172\\.",
+    "description": "internal IP URL"
+  },
+  {
+    "id": "ssrf-http-007",
+    "severity": "medium",
+    "category": "http-ssrf",
+    "regex": "169\\.254\\.169\\.254|metadata\\.google\\.internal",
+    "description": "cloud metadata endpoint"
+  },
+  {
+    "id": "ssrf-http-008",
+    "severity": "medium",
+    "category": "http-ssrf",
+    "regex": "url\\s*=\\s*.*(request|input|user|arg|param)",
+    "description": "URL assigned from user"
+  },
+  {
+    "id": "ssrf-http-009",
+    "severity": "medium",
+    "category": "http-ssrf",
+    "regex": "download_url|fetch_url|get_url|load_url|read_url",
+    "description": "suspicious URL func"
+  },
+  {
+    "id": "network-001",
+    "severity": "medium",
+    "category": "network-abuse",
+    "regex": "scapy\\.|nmap\\.|masscan|zmap|hping",
+    "description": "network scanning libs"
+  },
+  {
+    "id": "network-002",
+    "severity": "medium",
+    "category": "network-abuse",
+    "regex": "socket\\.(SOCK_RAW|IPPROTO_ICMP|IPPROTO_RAW)",
+    "description": "raw socket creation"
+  },
+  {
+    "id": "network-003",
+    "severity": "medium",
+    "category": "network-abuse",
+    "regex": "nmap\\.PortScanner",
+    "description": "port scanning"
+  },
+  {
+    "id": "mem-001",
+    "severity": "low",
+    "category": "memory-leak",
+    "regex": "global\\s+\\w+\\s*=\\s*\\{|global.*=.*dict\\(\\)|global.*=.*list\\(\\)",
+    "description": "mutable global"
+  },
+  {
+    "id": "mem-002",
+    "severity": "medium",
+    "category": "memory-leak",
+    "regex": "lru_cache|functools\\.cache|maxsize\\s*=\\s*None",
+    "description": "unbounded cache"
+  },
+  {
+    "id": "mem-003",
+    "severity": "low",
+    "category": "memory-leak",
+    "regex": "\\.append\\(.*\\)\\s*$",
+    "description": "unbounded list append"
+  },
+  {
+    "id": "log-001",
+    "severity": "high",
+    "category": "log-leak",
+    "regex": "log.*(password|secret|token|key|credential|api_key).*=|logging.*(password|secret|token|key)",
+    "description": "credential in log"
+  },
+  {
+    "id": "log-002",
+    "severity": "medium",
+    "category": "log-leak",
+    "regex": "repr\\(.*request\\)|str\\(.*request\\.body|json\\.dumps.*request\\.body",
+    "description": "request body logged"
+  },
+  {
+    "id": "log-003",
+    "severity": "medium",
+    "category": "log-leak",
+    "regex": "log.*\\.(info|debug)\\(.*request|log.*\\.(info|debug)\\(.*body",
+    "description": "request data logged"
+  },
+  {
+    "id": "crypto-001",
+    "severity": "high",
+    "category": "crypto-leak",
+    "regex": "hashlib\\.md5\\(|hashlib\\.sha1\\(|md5\\s*=|sha1\\s*=",
+    "description": "weak hash algorithm"
+  },
+  {
+    "id": "crypto-002",
+    "severity": "medium",
+    "category": "crypto-leak",
+    "regex": "random\\.(randint|random|choice)\\s*\\(|random\\.seed\\(",
+    "description": "non-crypto random"
+  },
+  {
+    "id": "crypto-003",
+    "severity": "medium",
+    "category": "crypto-leak",
+    "regex": "Crypto\\.Cipher\\.AES\\.new\\(.*ECB|MODE_ECB",
+    "description": "AES in ECB mode"
+  },
+  {
+    "id": "auth-001",
+    "severity": "high",
+    "category": "auth-bypass",
+    "regex": "auth.*disable|skip.*auth|bypass.*auth|auth\\s*=\\s*False|auth_enabled\\s*=\\s*False",
+    "description": "auth disabled"
+  },
+  {
+    "id": "auth-002",
+    "severity": "high",
+    "category": "auth-bypass",
+    "regex": "is_authenticated\\s*=\\s*True|check_auth\\s*=\\s*lambda.*True",
+    "description": "hardcoded auth bypass"
+  },
+  {
+    "id": "auth-003",
+    "severity": "medium",
+    "category": "auth-bypass",
+    "regex": "except.*:.*pass.*auth|except.*Exception.*continue.*auth",
+    "description": "silent auth exception"
+  },
+  {
+    "id": "auth-004",
+    "severity": "medium",
+    "category": "auth-bypass",
+    "regex": "token\\s*==\\s*['\"]|key\\s*==\\s*['\"]|secret\\s*==\\s*['\"]",
+    "description": "hardcoded token compare"
+  },
+  {
+    "id": "auth-005",
+    "severity": "medium",
+    "category": "auth-bypass",
+    "regex": "Bearer\\s+[\\w-]{20,}|Authorization.*[\\w-]{20,}",
+    "description": "hardcoded bearer"
+  },
+  {
+    "id": "config-001",
+    "severity": "medium",
+    "category": "config-leak",
+    "regex": "open\\s*\\(.*\\.env['\"]\\)|open\\s*\\(.*config['\"]\\\\)",
+    "description": "reading config files"
+  },
+  {
+    "id": "config-002",
+    "severity": "medium",
+    "category": "config-leak",
+    "regex": "dotenv\\.load|load_dotenv|ConfigParser",
+    "description": "config parser usage"
+  },
+  {
+    "id": "config-003",
+    "severity": "low",
+    "category": "config-leak",
+    "regex": "os\\.environ\\[|os\\.getenv\\(|environ\\.get\\(",
+    "description": "env var read"
+  },
+  {
+    "id": "config-004",
+    "severity": "low",
+    "category": "config-leak",
+    "regex": "__file__|os\\.path\\.dirname|os\\.path\\.abspath",
+    "description": "path introspection"
+  },
+  {
+    "id": "crash-001",
+    "severity": "medium",
+    "category": "crash-risk",
+    "regex": "sys\\.exit\\s*\\(|os\\._exit\\s*\\(|quit\\s*\\(",
+    "description": "process termination"
+  },
+  {
+    "id": "crash-002",
+    "severity": "medium",
+    "category": "crash-risk",
+    "regex": "os\\.kill\\s*\\(.*SIGKILL|os\\.kill\\s*\\(.*SIGTERM",
+    "description": "process kill signal"
+  },
+  {
+    "id": "crash-003",
+    "severity": "medium",
+    "category": "crash-risk",
+    "regex": "threading\\.Thread.*daemon|multiprocessing.*daemon",
+    "description": "daemon thread"
+  },
+  {
+    "id": "crash-004",
+    "severity": "medium",
+    "category": "crash-risk",
+    "regex": "sys\\.setrecursionlimit\\(|resource\\.setrlimit\\(",
+    "description": "system limit override"
+  },
+  {
+    "id": "depl-001",
+    "severity": "low",
+    "category": "deprecated",
+    "regex": "from distutils|import distutils",
+    "description": "deprecated distutils"
+  },
+  {
+    "id": "depl-002",
+    "severity": "low",
+    "category": "deprecated",
+    "regex": "from imp import|imp\\.load_source|imp\\.load_module",
+    "description": "deprecated imp module"
+  },
+  {
+    "id": "dep-001",
+    "severity": "high",
+    "category": "dependency-risk",
+    "regex": "pip install|pip3 install|easy_install",
+    "description": "dynamic pip install"
+  },
+  {
+    "id": "dep-002",
+    "severity": "medium",
+    "category": "dependency-risk",
+    "regex": "requirements\\.txt|setup\\.py|pyproject\\.toml",
+    "description": "packaging file refs"
+  },
+  {
+    "id": "dep-003",
+    "severity": "low",
+    "category": "dependency-risk",
+    "regex": "import.*from.*git|import.*from.*github",
+    "description": "remote import"
+  },
+  {
+    "id": "sbox-001",
+    "severity": "high",
+    "category": "sandbox-escape",
+    "regex": "__subclasses__\\(\\)|\\.__mro__\\[1\\]|\\.__bases__\\[0\\]",
+    "description": "subclass chain escape"
+  },
+  {
+    "id": "sbox-002",
+    "severity": "high",
+    "category": "sandbox-escape",
+    "regex": "\\.__init__\\.__globals__\\[|\\.__globals__\\[",
+    "description": "globals dictionary escape"
+  },
+  {
+    "id": "sbox-003",
+    "severity": "high",
+    "category": "sandbox-escape",
+    "regex": "\\.__class__\\.__mro__|\\.__class__\\.__bases__|\\.__class__\\.__subclasses__",
+    "description": "class chain escape"
+  },
+  {
+    "id": "sbox-004",
+    "severity": "medium",
+    "category": "sandbox-escape",
+    "regex": "type\\(.*\\(.*\\(|type\\(.*metaclass",
+    "description": "type metaclass manipulation"
+  },
+  {
+    "id": "sbox-005",
+    "severity": "medium",
+    "category": "sandbox-escape",
+    "regex": "\\.__init__\\.__globals__|\\.__class__\\.__init__",
+    "description": "init globals chain"
+  },
+  {
+    "id": "socket-001",
+    "severity": "medium",
+    "category": "socket-abuse",
+    "regex": "socket\\.socket\\(.*AF_INET|socket\\.socket\\(.*SOCK_STREAM",
+    "description": "TCP socket creation"
+  },
+  {
+    "id": "socket-002",
+    "severity": "medium",
+    "category": "socket-abuse",
+    "regex": "socket\\.socket\\(.*AF_UNIX|socket\\.socket\\(.*AF_NETLINK",
+    "description": "unix/netlink socket"
+  },
+  {
+    "id": "socket-003",
+    "severity": "medium",
+    "category": "socket-abuse",
+    "regex": "socket\\.SOCK_RAW|socket\\.IPPROTO_RAW",
+    "description": "raw socket creation"
+  },
+  {
+    "id": "temp-001",
+    "severity": "medium",
+    "category": "temp-file",
+    "regex": "tempfile\\.mktemp\\s*\\(|tempfile\\.mkdtemp\\s*\\(",
+    "description": "unsafe tmp creation"
+  },
+  {
+    "id": "temp-002",
+    "severity": "medium",
+    "category": "temp-file",
+    "regex": "/tmp/|\\\\temp\\\\|TEMP_DIR.*=|os\\.tmpnam",
+    "description": "hardcoded temp path"
+  },
+  {
+    "id": "multiproc-001",
+    "severity": "medium",
+    "category": "multiprocessing",
+    "regex": "multiprocessing\\.Process.*target.*lambda",
+    "description": "lambda target in process"
+  },
+  {
+    "id": "multiproc-002",
+    "severity": "medium",
+    "category": "multiprocessing",
+    "regex": "multiprocessing\\.Pool.*user|multiprocessing.*input",
+    "description": "user-input pool size"
+  },
+  {
+    "id": "code-inj-001",
+    "severity": "high",
+    "category": "code-injection",
+    "regex": "marshal\\.loads|pickle\\.loads|dill\\.loads|cloudpickle\\.loads",
+    "description": "untrusted deserialization"
+  },
+  {
+    "id": "code-inj-002",
+    "severity": "high",
+    "category": "code-injection",
+    "regex": "builtins\\s*\\.\\s*__dict__|builtins\\s*\\[\\s*['\"]",
+    "description": "builtins manipulation"
+  },
+  {
+    "id": "code-inj-003",
+    "severity": "high",
+    "category": "code-injection",
+    "regex": "globals\\s*\\(\\s*\\)\\s*\\[|locals\\s*\\(\\s*\\)\\s*\\[",
+    "description": "scope dict injection"
+  },
+  {
+    "id": "code-inj-004",
+    "severity": "medium",
+    "category": "code-injection",
+    "regex": "render_template_string|jinja2\\.Template\\(|mako.*Template\\(.*input",
+    "description": "template injection"
+  },
+  {
+    "id": "code-inj-005",
+    "severity": "medium",
+    "category": "code-injection",
+    "regex": "format_map|\\{.*\\}\\.format\\s*\\(|f['\"].*\\{.*\\}",
+    "description": "format string injection"
+  },
+  {
+    "id": "code-inj-006",
+    "severity": "medium",
+    "category": "code-injection",
+    "regex": "compile\\s*\\(|execfile\\s*\\(|exec\\s*\\(.*open",
+    "description": "dynamic file execution"
+  },
+  {
+    "id": "deser-001",
+    "severity": "high",
+    "category": "deserialization",
+    "regex": "pickle\\.(load|loads|Unpickler)",
+    "description": "pickle deserialization"
+  },
+  {
+    "id": "deser-002",
+    "severity": "high",
+    "category": "deserialization",
+    "regex": "dill\\.(loads|Unpickler)|cloudpickle\\.(load|loads)",
+    "description": "dill deserialization"
+  },
+  {
+    "id": "deser-003",
+    "severity": "medium",
+    "category": "deserialization",
+    "regex": "shelve\\.open|shelve\\.DbfilenameShelf",
+    "description": "shelve deserialization"
+  },
+  {
+    "id": "deser-004",
+    "severity": "medium",
+    "category": "deserialization",
+    "regex": "_pickle\\.loads|pickletools\\.genops",
+    "description": "low-level pickle"
+  },
+  {
+    "id": "xxe-001",
+    "severity": "high",
+    "category": "xml-attack",
+    "regex": "etree\\.parse.*input|fromstring.*input.*XML|xml\\.sax\\.parse",
+    "description": "XML parsing user input"
+  },
+  {
+    "id": "xxe-002",
+    "severity": "high",
+    "category": "xml-attack",
+    "regex": "lxml\\.etree\\.(parse|fromstring).*input|resolve_entities",
+    "description": "lxml with entities"
+  },
+  {
+    "id": "xxe-003",
+    "severity": "medium",
+    "category": "xml-attack",
+    "regex": "xml\\.etree\\.ElementTree.*parse|minidom\\.parse",
+    "description": "stdlib XML parsing"
+  },
+  {
+    "id": "xxe-004",
+    "severity": "medium",
+    "category": "xml-attack",
+    "regex": "defusedxml|lxml.*resolve_entities\\s*=\\s*False",
+    "description": "safe XML"
+  },
+  {
+    "id": "yaml-001",
+    "severity": "high",
+    "category": "yaml-attack",
+    "regex": "yaml\\.load\\(|yaml\\.load_all\\(|yaml\\.full_load",
+    "description": "unsafe YAML load"
+  },
+  {
+    "id": "yaml-002",
+    "severity": "high",
+    "category": "yaml-attack",
+    "regex": "PyYAML.*load|ruamel\\.yaml\\.load[^_]",
+    "description": "unsafe yaml lib"
+  },
+  {
+    "id": "yaml-003",
+    "severity": "medium",
+    "category": "yaml-attack",
+    "regex": "yaml\\.(safe_load|safe_load_all|YAML\\(typ=.safe.\\))",
+    "description": "safe YAML"
+  },
+  {
+    "id": "open-redirect-001",
+    "severity": "high",
+    "category": "open-redirect",
+    "regex": "redirect\\(.*request\\.(args|form|query|GET|POST)",
+    "description": "open redirect"
+  },
+  {
+    "id": "open-redirect-002",
+    "severity": "high",
+    "category": "open-redirect",
+    "regex": "HTTPRedirect|HTTPFound|HTTPTemporaryRedirect.*input",
+    "description": "redirect to input"
+  },
+  {
+    "id": "open-redirect-003",
+    "severity": "medium",
+    "category": "open-redirect",
+    "regex": "(redirect|next)_url\\s*=\\s*request|Location.*request\\.(args|query)",
+    "description": "dynamic redirect"
+  },
+  {
+    "id": "redis-001",
+    "severity": "high",
+    "category": "nosql-injection",
+    "regex": "redis\\.eval\\(|redis\\.evalsha\\(",
+    "description": "Lua eval via redis"
+  },
+  {
+    "id": "redis-002",
+    "severity": "medium",
+    "category": "nosql-injection",
+    "regex": "redis\\.execute_command|redis\\.pipeline.*\\.execute",
+    "description": "raw redis commands"
+  },
+  {
+    "id": "mongo-001",
+    "severity": "high",
+    "category": "nosql-injection",
+    "regex": "\\{\\$(?:where|regex|ne|gt|lt).*:.*input|\\{\\$where",
+    "description": "MongoDB injection"
+  },
+  {
+    "id": "mongo-002",
+    "severity": "medium",
+    "category": "nosql-injection",
+    "regex": "collection\\.aggregate\\(.*input|collection\\.find\\(.*\\$where",
+    "description": "Mongo aggregate"
+  },
+  {
+    "id": "ldap-001",
+    "severity": "high",
+    "category": "ldap-injection",
+    "regex": "ldap\\.(search|modify|add).*(\\*|\\||\\&)",
+    "description": "LDAP injection chars"
+  },
+  {
+    "id": "ldap-002",
+    "severity": "high",
+    "category": "ldap-injection",
+    "regex": "ldap3\\.(Connection|Reader|Writer).*filter",
+    "description": "ldap3 filter injection"
+  },
+  {
+    "id": "ldap-003",
+    "severity": "medium",
+    "category": "ldap-injection",
+    "regex": "ldap\\.filter\\.escape_filter_chars|ldap\\.dn\\.escape_dn_chars",
+    "description": "LDAP escaping"
+  },
+  {
+    "id": "cred-001",
+    "severity": "high",
+    "category": "hardcoded-credential",
+    "regex": "(password|secret|api_key|token|passwd)\\s*=\\s*['\"][^'\"]{8,}['\"]",
+    "description": "hardcoded credential"
+  },
+  {
+    "id": "cred-002",
+    "severity": "high",
+    "category": "hardcoded-credential",
+    "regex": "(API_KEY|SECRET|TOKEN|PASSWORD|PASSWD)\\s*=\\s*['\"][^'\"]{6,}",
+    "description": "hardcoded uppercase"
+  },
+  {
+    "id": "cred-003",
+    "severity": "medium",
+    "category": "hardcoded-credential",
+    "regex": "Authorization.*Bearer\\s+[A-Za-z0-9_\\-]{20,}|AUTH.*=\\s*['\"]Bearer",
+    "description": "hardcoded bearer"
+  },
+  {
+    "id": "cred-004",
+    "severity": "medium",
+    "category": "hardcoded-credential",
+    "regex": "(?:mongodb|postgres|mysql|redis)://[^@]+:[^@]+@",
+    "description": "db connection URI"
+  },
+  {
+    "id": "upload-001",
+    "severity": "high",
+    "category": "file-upload",
+    "regex": "shutil\\.move.*upload|shutil\\.copy.*upload|\\.write\\(.*request\\.files",
+    "description": "unvalidated upload write"
+  },
+  {
+    "id": "upload-002",
+    "severity": "high",
+    "category": "file-upload",
+    "regex": "mimetypes\\.guess_type|filetype.*==.*executable|\\.exe\\b|\\\\.sh\\b|\\\\.bin\\b",
+    "description": "executable detection"
+  },
+  {
+    "id": "upload-003",
+    "severity": "medium",
+    "category": "file-upload",
+    "regex": "open\\s*\\(.*request\\.files|open\\s*\\(.*upload|\\.save\\s*\\(.*upload",
+    "description": "file save from req"
+  },
+  {
+    "id": "upload-004",
+    "severity": "medium",
+    "category": "file-upload",
+    "regex": "filename.*=.*request\\.(args|form|GET)|\\.\\./.*upload",
+    "description": "path traversal upload"
+  },
+  {
+    "id": "redos-001",
+    "severity": "high",
+    "category": "redos",
+    "regex": "re\\.(match|search|fullmatch|findall).*\\(\\{[^}]*\\+\\)",
+    "description": "potential ReDoS"
+  },
+  {
+    "id": "redos-002",
+    "severity": "high",
+    "category": "redos",
+    "regex": "re\\.compile\\(.*\\(\\.\\+\\)\\+.*\\)",
+    "description": "nested greedy ReDoS"
+  },
+  {
+    "id": "redos-003",
+    "severity": "medium",
+    "category": "redos",
+    "regex": "(\\w\\+)*\\w\\+|(\\S\\+)*\\S\\+|(\\.\\+)*\\.\\+",
+    "description": "polynomial backtracking"
+  },
+  {
+    "id": "docker-001",
+    "severity": "high",
+    "category": "docker-escape",
+    "regex": "docker\\.(from_env).*'/'|docker.*privileged|mount.*docker\\.sock",
+    "description": "docker sock/priv"
+  },
+  {
+    "id": "docker-002",
+    "severity": "high",
+    "category": "docker-escape",
+    "regex": "/var/run/docker\\.sock|/run/docker\\.sock",
+    "description": "docker sock path"
+  },
+  {
+    "id": "docker-003",
+    "severity": "medium",
+    "category": "docker-escape",
+    "regex": "cap_add.*SYS_ADMIN|cap_add.*ALL|security_opt.*unconfined",
+    "description": "privileged container"
+  },
+  {
+    "id": "docker-004",
+    "severity": "medium",
+    "category": "docker-escape",
+    "regex": "network_mode.*host|pid_mode.*host|ipc_mode.*host",
+    "description": "host namespace"
+  },
+  {
+    "id": "timing-001",
+    "severity": "medium",
+    "category": "time-attack",
+    "regex": "time\\.(sleep|time)\\s*\\(.*(?:compare|check|verify)|sleep.*compare",
+    "description": "timing compare"
+  },
+  {
+    "id": "timing-002",
+    "severity": "medium",
+    "category": "time-attack",
+    "regex": "hmac\\.compare_digest|secrets\\.compare_digest",
+    "description": "safe compare"
+  },
+  {
+    "id": "deps-001",
+    "severity": "high",
+    "category": "dependency-risk",
+    "regex": "subprocess.*pip install|os\\.system.*pip install",
+    "description": "pip install at runtime"
+  },
+  {
+    "id": "deps-002",
+    "severity": "medium",
+    "category": "dependency-risk",
+    "regex": "pip\\._internal|importlib.*_find_and_load|imp\\.load_source",
+    "description": "internal pip"
+  },
+  {
+    "id": "deps-003",
+    "severity": "medium",
+    "category": "dependency-risk",
+    "regex": "__import__\\s*\\(|importlib\\.import_module",
+    "description": "dynamic import"
+  },
+  {
+    "id": "proto-001",
+    "severity": "medium",
+    "category": "protobuf-risk",
+    "regex": "ParseFromString|MergeFromString|FromString",
+    "description": "protobuf parsing"
+  },
+  {
+    "id": "proto-002",
+    "severity": "medium",
+    "category": "protobuf-risk",
+    "regex": "json_format\\.Parse|text_format\\.Parse|text_format\\.Merge",
+    "description": "protobuf from text"
+  },
+  {
+    "id": "jwt-001",
+    "severity": "high",
+    "category": "jwt-attack",
+    "regex": "jwt\\.decode.*verify\\s*=\\s*False|jwt\\.decode.*algorithms.*none",
+    "description": "JWT verify disabled"
+  },
+  {
+    "id": "jwt-002",
+    "severity": "high",
+    "category": "jwt-attack",
+    "regex": "algorithm.*none|algorithms\\s*=\\s*\\[.none.\\]",
+    "description": "JWT none algorithm"
+  },
+  {
+    "id": "jwt-003",
+    "severity": "medium",
+    "category": "jwt-attack",
+    "regex": "jwt\\.decode\\(.*verify\\s*=\\s*False",
+    "description": "JWT sig off"
+  },
+  {
+    "id": "cors-001",
+    "severity": "high",
+    "category": "cors-misconfig",
+    "regex": "Access-Control-Allow-Origin.*\\*|allow_origin\\s*=\\s*['\"]\\*['\"]",
+    "description": "CORS wildcard"
+  },
+  {
+    "id": "cors-002",
+    "severity": "high",
+    "category": "cors-misconfig",
+    "regex": "Access-Control-Allow-Credentials.*true.*Allow-Origin.*\\*",
+    "description": "CORS creds+wildcard"
+  },
+  {
+    "id": "rate-001",
+    "severity": "medium",
+    "category": "rate-limit",
+    "regex": "(while True|while 1).*(sleep|time\\.sleep)",
+    "description": "bare rate loop"
+  },
+  {
+    "id": "rate-002",
+    "severity": "medium",
+    "category": "rate-limit",
+    "regex": "asyncio\\.sleep.*for.*range\\b",
+    "description": "async rate loop"
+  },
+  {
+    "id": "encoding-001",
+    "severity": "low",
+    "category": "encoding",
+    "regex": "\\.encode\\(|\\.decode\\(|\\.encode\\(",
+    "description": "encoding operation"
+  },
+  {
+    "id": "encoding-002",
+    "severity": "low",
+    "category": "encoding",
+    "regex": "base64\\.(b64encode|b64decode|encodebytes|decodebytes)",
+    "description": "base64 encode/decode"
+  },
+  {
+    "id": "encoding-003",
+    "severity": "low",
+    "category": "encoding",
+    "regex": "binascii\\.(hexlify|unhexlify|a2b|b2a)",
+    "description": "binascii conversion"
+  },
+  {
+    "id": "perm-001",
+    "severity": "medium",
+    "category": "permission",
+    "regex": "os\\.chmod\\s*\\(.*0o777|os\\.chmod\\s*\\(.*0777",
+    "description": "world-writable chmod"
+  },
+  {
+    "id": "perm-002",
+    "severity": "medium",
+    "category": "permission",
+    "regex": "os\\.setuid\\s*\\(|os\\.setgid\\s*\\(|os\\.seteuid\\s*\\(",
+    "description": "uid/gid change"
+  },
+  {
+    "id": "web-001",
+    "severity": "medium",
+    "category": "web-security",
+    "regex": "X-Frame-Options|Content-Security-Policy|HSTS|X-Content-Type-Options",
+    "description": "security header"
+  },
+  {
+    "id": "web-002",
+    "severity": "medium",
+    "category": "web-security",
+    "regex": "__Secure-.*=|__Host-.*=|SameSite.*=.*(Lax|Strict)",
+    "description": "secure cookie"
+  },
+  {
+    "id": "web-003",
+    "severity": "medium",
+    "category": "web-security",
+    "regex": "checkOrigin\\s*=\\s*False|origins\\s*=\\s*\\[['\"]\\*['\"]\\]",
+    "description": "websocket wide open"
+  },
+  {
+    "id": "code-001",
+    "severity": "low",
+    "category": "code-quality",
+    "regex": "except\\s*:\\s*pass\\s*$|except\\s*Exception\\s*:\\s*pass\\s*$",
+    "description": "bare except pass"
+  },
+  {
+    "id": "code-002",
+    "severity": "low",
+    "category": "code-quality",
+    "regex": "print\\s*\\(|pprint\\.pprint\\(|sys\\.stdout\\.write",
+    "description": "debug print"
+  },
+  {
+    "id": "code-003",
+    "severity": "low",
+    "category": "code-quality",
+    "regex": "TODO|FIXME|HACK|XXX|WORKAROUND",
+    "description": "code marker"
+  },
+  {
+    "id": "code-004",
+    "severity": "low",
+    "category": "code-quality",
+    "regex": "assert\\s+(False|0|None)\b",
+    "description": "broken assert"
+  },
+  {
+    "id": "archive-001",
+    "severity": "medium",
+    "category": "archive-attack",
+    "regex": "tarfile\\.open\\(|zipfile\\.ZipFile\\(|shutil\\.unpack_archive\\(",
+    "description": "archive open"
+  },
+  {
+    "id": "archive-002",
+    "severity": "medium",
+    "category": "archive-attack",
+    "regex": "tarfile\\.extract|zipfile\\.extractall|shutil\\.unpack_archive",
+    "description": "archive extract"
+  },
+  {
+    "id": "archive-003",
+    "severity": "medium",
+    "category": "archive-attack",
+    "regex": "tarfile.*filter|extractall.*member|zipfile.*namelist",
+    "description": "archive handling"
+  },
+  {
+    "id": "dos-001",
+    "severity": "medium",
+    "category": "dos",
+    "regex": "timeout\\s*=\\s*None|timeout\\s*=\\s*0|timeout\\s*=\\s*-1",
+    "description": "no timeout set"
+  },
+  {
+    "id": "dos-002",
+    "severity": "medium",
+    "category": "dos",
+    "regex": "maxsize\\s*=\\s*0|maxsize\\s*=\\s*None|unlimited",
+    "description": "unlimited resource"
+  },
+  {
+    "id": "dos-003",
+    "severity": "medium",
+    "category": "dos",
+    "regex": "json\\.loads\\(.*\\)\\s*$",
+    "description": "json load no limit"
+  },
+  {
+    "id": "dos-004",
+    "severity": "medium",
+    "category": "dos",
+    "regex": "xml\\.etree\\.ElementTree\\.parse\\(|xml\\.dom\\.minidom\\.parse\\(",
+    "description": "XML parse no limit"
+  },
+  {
+    "id": "taint-001",
+    "severity": "medium",
+    "category": "taint-bypass",
+    "regex": "sanitize|sanitise|clean_input|escape_input|scrub",
+    "description": "sanitization func"
+  },
+  {
+    "id": "taint-002",
+    "severity": "medium",
+    "category": "taint-bypass",
+    "regex": "\\.strip\\(\\s*\\)|\\.lstrip\\(|\\.rstrip\\(\\s*\\)",
+    "description": "string strip only"
+  },
+  {
+    "id": "taint-003",
+    "severity": "medium",
+    "category": "taint-bypass",
+    "regex": "\\.lower\\(\\s*\\)|\\.upper\\(\\s*\\)|\\.title\\(\\s*\\)",
+    "description": "case change only"
+  },
+  {
+    "id": "race-001",
+    "severity": "high",
+    "category": "race-condition",
+    "regex": "os\\.rename\\(|os\\.replace\\(|shutil\\.move\\(",
+    "description": "atomic file rename"
+  },
+  {
+    "id": "race-002",
+    "severity": "medium",
+    "category": "race-condition",
+    "regex": "if not os\\.path\\.exists.*open|if not os\\.path\\.isfile.*open",
+    "description": "TOCTOU check-use"
+  },
+  {
+    "id": "race-003",
+    "severity": "medium",
+    "category": "race-condition",
+    "regex": "threading\\.Lock|threading\\.RLock|asyncio\\.Lock|multiprocessing\\.Lock",
+    "description": "lock usage"
+  }
+]

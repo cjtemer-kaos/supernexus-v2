@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.rst:2
+#: 8b5d7855222547acad3bb6a829f8185f
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_chemical\\_probes\\_by\\_target\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_chemical\\_probes\\_by\\_target\\_ensemblID"
+" 模块"
+
+#: a4adba540cc44a3b976d2ee2f66951d4 of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID:1
+msgid "OpenTargets_get_chemical_probes_by_target_ensemblID"
+msgstr ""
+"OpenTargets_get_chemical_probes_by_target_ensemblID  \n"
+"获取化学探针通过目标EnsemblID"
+
+#: e4f326cd215e4fffb9b87e30715a9dd8 e5c232d8d36a4f0fbbf241d3e76b8079 of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:1
+msgid ""
+"Retrieve chemical probes associated with a specific target using its "
+"ensemblID."
+msgstr "使用目标的ensemblID检索与其相关的化学探针。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.rst
+#: 7d0965c558494f5b86a6e663771c2644
+msgid "Parameters"
+msgstr "参数"
+
+#: 199f73dec6ed44bf8de12d1dc310507c of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:3
+msgid "The Ensembl ID of the target for which to retrieve chemical probes."
+msgstr "目标的Ensembl ID，用于检索化学探针。"
+
+#: 44db69fd224e476994c6671a42cf986b of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2761fb5b929848c38beabe814e3170fc of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 99bb989248b845bf9ad3d6d692e3c754 of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.rst
+#: 90761745b5d74f0aa7cd75e689f82fe9
+msgid "Return type"
+msgstr "返回类型"
+
+#: d366fdf5f0f84218b3f705ddb04e90b4 of
+#: tooluniverse.tools.OpenTargets_get_chemical_probes_by_target_ensemblID.OpenTargets_get_chemical_probes_by_target_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

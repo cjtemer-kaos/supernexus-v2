@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.GO_get_term_by_id.rst:2
+#: 06bef8c3381f47a1b1848f66c79e98c8
+msgid "tooluniverse.tools.GO\\_get\\_term\\_by\\_id module"
+msgstr "tooluniverse.tools.GO\\_get\\_term\\_by\\_id 模块"
+
+#: 8df6fdca437049db91b5302e07b77259 of tooluniverse.tools.GO_get_term_by_id:1
+msgid "GO_get_term_by_id"
+msgstr ""
+
+#: 117dd7488f4e4e648de673fd85247970 8452f49cad074b13a49bcc39ab022d9b of
+#: tooluniverse.tools.GO_get_term_by_id:3
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:1
+msgid "Retrieves basic GO term information by ID using GOlr search."
+msgstr "通过使用GOlr搜索，根据ID检索基本的GO术语信息。"
+
+#: ../../api/tooluniverse.tools.GO_get_term_by_id.rst
+#: f65f541f89104f1a97b49a87879f7d15
+msgid "Parameters"
+msgstr "参数"
+
+#: 21cb132449e74571b68732b84bb3ca51 of
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:3
+msgid "The standard GO term ID, e.g., 'GO:0006915' for apoptotic process."
+msgstr "标准的GO术语ID，例如“GO:0006915”，用于描述凋亡过程。"
+
+#: 25065676ebbf453b85f642e1ede15ef0 of
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 56120a19043c44a2828df9577554bc75 of
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e06a26e56209462f9edeb6f217f2507b of
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.GO_get_term_by_id.rst
+#: 68c321b6be824a3ea08e730be90487e5
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5a893d5256894040b9408c7282dd39ff of
+#: tooluniverse.tools.GO_get_term_by_id.GO_get_term_by_id:12
+msgid ":py:class:`Any`"
+msgstr ""

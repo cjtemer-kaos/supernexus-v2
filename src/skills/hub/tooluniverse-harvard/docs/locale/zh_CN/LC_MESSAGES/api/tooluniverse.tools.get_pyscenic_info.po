@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyscenic_info.rst:2
+#: 84087c1be6a54180b84a4a08991f025a
+msgid "tooluniverse.tools.get\\_pyscenic\\_info module"
+msgstr "tooluniverse.tools.get\\_pyscenic\\_info 模块"
+
+#: 318705ee3c51412481b6bdd4ce95b97d of tooluniverse.tools.get_pyscenic_info:1
+msgid "get_pyscenic_info"
+msgstr "get_pyscenic_信息获取"
+
+#: 1017b5af1bc04160abfeeed1ffac5392 b08bda417837461b8257fc4367f8192e of
+#: tooluniverse.tools.get_pyscenic_info:3
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:1
+msgid ""
+"Get comprehensive information about pySCENIC – single-cell regulatory "
+"network inference"
+msgstr "获取关于 pySCENIC 的全面信息——单细胞调控网络推断"
+
+#: ../../api/tooluniverse.tools.get_pyscenic_info.rst
+#: 2820e9f0123b465484a4ed578848dc7b
+msgid "Parameters"
+msgstr "参数"
+
+#: 918e5a379e034f9c977b6ebb2642ebea of
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:3
+msgid "Type of information to retrieve about pySCENIC"
+msgstr "关于 pySCENIC 可检索的信息类型"
+
+#: 9cd579716b204ef7a9a189261fb15ec3 of
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 05aca599f5234d16a1bea733bf39a15a of
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5c1ab0414b3d45c5ac50cc988304d1af of
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyscenic_info.rst
+#: a706d0b3c2924bb889884fab04dc3c5c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 58c9d82c6d3047229ff141efa0544fe2 of
+#: tooluniverse.tools.get_pyscenic_info.get_pyscenic_info:12
+msgid ":py:class:`Any`"
+msgstr ""

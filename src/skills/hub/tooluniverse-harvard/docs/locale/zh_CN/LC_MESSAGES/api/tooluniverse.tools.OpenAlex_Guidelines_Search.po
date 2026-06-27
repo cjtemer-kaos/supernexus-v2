@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenAlex_Guidelines_Search.rst:2
+#: 2b6ef9f4807446c6be035823e2280e1e
+msgid "tooluniverse.tools.OpenAlex\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.OpenAlex\\_Guidelines\\_Search 模块"
+
+#: eaa852dd9d624474aa44d6583cda2a30 of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search:1
+msgid "OpenAlex_Guidelines_Search"
+msgstr "OpenAlex_指南_搜索"
+
+#: ab6d429177e54787b2b71e5ff2c649f4 b249412749354fcfa0a1d6a173021329 of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search:3
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:1
+msgid ""
+"Search for clinical practice guidelines using OpenAlex scholarly database. "
+"Provides access to a c..."
+msgstr "使用 OpenAlex 学术数据库搜索临床实践指南。提供访问 c..."
+
+#: ../../api/tooluniverse.tools.OpenAlex_Guidelines_Search.rst
+#: 75abba3638c243acaef7b0cd55149415
+msgid "Parameters"
+msgstr "参数"
+
+#: ce51a31c081c40c2b28d3a741aa4e977 of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:3
+msgid ""
+"Medical condition or clinical topic to search for guidelines (e.g., "
+"'diabetes..."
+msgstr "医疗状况或临床主题以搜索指南（例如，“糖尿病”..."
+
+#: 295a66baf8504258bf8aaffbe1995b7f of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回的指南最大数量（默认值：10）"
+
+#: 466fcf1d66ad44d794b7f339d2fbf944 of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:7
+msgid "Filter for guidelines published from this year onwards (optional)"
+msgstr "筛选从今年起发布的指南（可选）"
+
+#: d3397c18d9664c368d5e478ede38423b of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:9
+msgid "Filter for guidelines published up to this year (optional)"
+msgstr "筛选截至今年发布的指南（可选）"
+
+#: e16514574a924dbc95c2e45ab4c7d343 of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9afb125214f54296aa4aa8bc8ec49ecc of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 1729e63f2f1947fdb96d92029cc13f7b of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenAlex_Guidelines_Search.rst
+#: 523c115226d44fdd8cccb64f4b813c82
+msgid "Return type"
+msgstr "返回类型"
+
+#: af56a80bf7e4402c900ff8b4fadc1c5a of
+#: tooluniverse.tools.OpenAlex_Guidelines_Search.OpenAlex_Guidelines_Search:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.rst:2
+#: 1d1b9bde98cf47eda505102e72755a89
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_from\\_patient\\_package\\_insert"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_from\\_patient\\_package\\_insert 模块"
+
+#: 4dcda1aa44b844309583246aae34455b of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert:1
+msgid "FDA_get_drug_name_from_patient_package_insert"
+msgstr ""
+"FDA_get_drug_name_from_patient_package_insert  \n"
+"获取药品名称_来自患者包装说明书"
+
+#: 9e420922649f49fe8c3f5649ccf0df7c ee5f3f2a984f43048630ad4139689bda of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert:3
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:1
+msgid ""
+"Retrieve the drug name based on the information provided in the patient "
+"package insert."
+msgstr "根据患者药品说明书中提供的信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.rst
+#: dc0ec85913b24e6c990ce93aa66a492e
+msgid "Parameters"
+msgstr "参数"
+
+#: b1c034129b9141a1ba7b13056011d323 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:3
+msgid ""
+"Information necessary for patients to use the drug safely and effectively."
+msgstr "为确保患者安全有效地使用该药物所需的信息。"
+
+#: 9c05e8f7ff724b2c89afe19c20de9719 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 8073d90826e84b92917e2fdff3457b8e of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 95f67b774fd74cc894d0a48f2e4e4c11 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bd4d868f5152466b932b093deb02f219 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a56e1bece15d4e7a9c4d1f964b601807 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.rst
+#: d339028f1ea94a01b2634d017fd57924
+msgid "Return type"
+msgstr "返回类型"
+
+#: 541aa7a2c71d4affb4feb3726c2bc920 of
+#: tooluniverse.tools.FDA_get_drug_name_from_patient_package_insert.FDA_get_drug_name_from_patient_package_insert:16
+msgid ":py:class:`Any`"
+msgstr ""

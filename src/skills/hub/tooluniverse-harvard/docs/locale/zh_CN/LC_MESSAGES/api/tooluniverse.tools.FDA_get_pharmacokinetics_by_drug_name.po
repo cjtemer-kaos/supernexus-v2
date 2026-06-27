@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.rst:2
+#: 75116a3ac2a74ed4b341e3d08a2a5ca5
+msgid "tooluniverse.tools.FDA\\_get\\_pharmacokinetics\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_pharmacokinetics\\_by\\_drug\\_name 模块"
+
+#: 045c3c76b36040149da2cfaeecb73df6 of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name:1
+msgid "FDA_get_pharmacokinetics_by_drug_name"
+msgstr "FDA_按药物名称获取药代动力学数据"
+
+#: 57d66af98d934e729efdf2ad20cdb8d5 d07858630658417d923c729303cb93a4 of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name:3
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:1
+msgid ""
+"Retrieve pharmacokinetics information (e.g. absorption, distribution, "
+"elimination, metabolism, dr..."
+msgstr "检索药代动力学信息（例如：吸收、分布、排除、代谢等）。"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.rst
+#: 5b90f3fff63b42628c72f9988c3382b4
+msgid "Parameters"
+msgstr "参数"
+
+#: 400953f48ade4a36a889e7ad76d7324a of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: cdd146b56ad44b37b93013244b0c3491 of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: bca594050f584b7db00ab6eedf2d24d0 of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 208b311920aa4779a906cd7697ea148a of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 731e962fd3a2432b9c57304e088fb8af of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a601c1122b0e48c6a5207de116c47d36 of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.rst
+#: 2099d200aa2d4b84bd17a6d7da5ad71b
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6cf4f89b94bc49789ace26da690c0dcc of
+#: tooluniverse.tools.FDA_get_pharmacokinetics_by_drug_name.FDA_get_pharmacokinetics_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

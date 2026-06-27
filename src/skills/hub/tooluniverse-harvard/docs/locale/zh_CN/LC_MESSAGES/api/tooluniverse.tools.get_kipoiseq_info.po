@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_kipoiseq_info.rst:2
+#: f8014e37f44748e58bb919d0fed6abff
+msgid "tooluniverse.tools.get\\_kipoiseq\\_info module"
+msgstr "tooluniverse.tools.get\\_kipoiseq\\_info 模块"
+
+#: 9d60b3a083b4430ab5251a6d04354e01 of tooluniverse.tools.get_kipoiseq_info:1
+msgid "get_kipoiseq_info"
+msgstr "get_kipoiseq_info 获取_kipoiseq_信息"
+
+#: 3bb7d4c44f9a41fcabbcc9c60dff1a62 e4f722e4d2a64f97ac279784db4c06c4 of
+#: tooluniverse.tools.get_kipoiseq_info:3
+#: tooluniverse.tools.get_kipoiseq_info.get_kipoiseq_info:1
+msgid ""
+"Get information about the kipoiseq package. Kipoi sequence utilities for "
+"genomics deep learning"
+msgstr "获取有关kipoiseq软件包的信息。kipoiseq提供基因组深度学习的序列工具。"
+
+#: ../../api/tooluniverse.tools.get_kipoiseq_info.rst
+#: 732896f1e5664760886f5392e10444c6
+msgid "Parameters"
+msgstr "参数"
+
+#: b688d84175fa4a9489bb915d3e7962fb of
+#: tooluniverse.tools.get_kipoiseq_info.get_kipoiseq_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e656657d4b2741d3a55d4f10dc7d5c41 of
+#: tooluniverse.tools.get_kipoiseq_info.get_kipoiseq_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 42ba1f27490b4b70b96ea95599bc4642 of
+#: tooluniverse.tools.get_kipoiseq_info.get_kipoiseq_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_kipoiseq_info.rst
+#: cdc37ce028ef4a13a7952ecea6cb1adc
+msgid "Return type"
+msgstr "返回类型"
+
+#: d34e753a06a044018b99c5f1d9d95b82 of
+#: tooluniverse.tools.get_kipoiseq_info.get_kipoiseq_info:11
+msgid ":py:class:`Any`"
+msgstr ""

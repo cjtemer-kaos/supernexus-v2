@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_htmd_info.rst:2
+#: 01fd2466bf5f4f7e80be30da09dc36b8
+msgid "tooluniverse.tools.get\\_htmd\\_info module"
+msgstr "tooluniverse.tools.get\\_htmd\\_info 模块"
+
+#: 81e38740449c4ab0b8759d52a1fea1a4 of tooluniverse.tools.get_htmd_info:1
+msgid "get_htmd_info"
+msgstr "获取_htmd_信息"
+
+#: 187583daa1bf40049859b58135933de2 465c5ffd367e40269dd84c0453e1982e of
+#: tooluniverse.tools.get_htmd_info:3
+#: tooluniverse.tools.get_htmd_info.get_htmd_info:1
+msgid ""
+"Get information about the htmd package. High throughput molecular dynamics "
+"platform"
+msgstr "获取有关 htmd 软件包的信息。高通量分子动力学平台"
+
+#: ../../api/tooluniverse.tools.get_htmd_info.rst
+#: 002e49df3b674cf98de09803fc56a272
+msgid "Parameters"
+msgstr "参数"
+
+#: e5bdb728a8e9486c93201d28a7b05e9a of
+#: tooluniverse.tools.get_htmd_info.get_htmd_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: cc56df6c835545cabcd4e13b044b8b5b of
+#: tooluniverse.tools.get_htmd_info.get_htmd_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ed873ced65cd4c319d86c420597592bc of
+#: tooluniverse.tools.get_htmd_info.get_htmd_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_htmd_info.rst
+#: 6cbf1267ed2145e7a53f01aeb6eecf4c
+msgid "Return type"
+msgstr "返回类型"
+
+#: ddb7368375354f3c952071044bdb6941 of
+#: tooluniverse.tools.get_htmd_info.get_htmd_info:11
+msgid ":py:class:`Any`"
+msgstr ""

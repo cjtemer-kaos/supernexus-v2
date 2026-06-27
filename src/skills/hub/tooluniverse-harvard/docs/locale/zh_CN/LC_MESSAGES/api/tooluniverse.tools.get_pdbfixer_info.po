@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pdbfixer_info.rst:2
+#: 418c17cd2da246a3b02785520b0d9058
+msgid "tooluniverse.tools.get\\_pdbfixer\\_info module"
+msgstr "tooluniverse.tools.get\\_pdbfixer\\_info 模块"
+
+#: bf4de40f526e40af8ab619d75684985f of tooluniverse.tools.get_pdbfixer_info:1
+msgid "get_pdbfixer_info"
+msgstr "get_pdbfixer_信息"
+
+#: 1947b384b79b4a2881b4f6fb7d84c831 992ddae1af0d45f995470f29dfdc4ffb of
+#: tooluniverse.tools.get_pdbfixer_info:3
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:1
+msgid ""
+"Get comprehensive information about PDBFixer – protein structure preparation"
+" tool"
+msgstr "获取有关 PDBFixer 的全面信息 —— 蛋白质结构准备工具"
+
+#: ../../api/tooluniverse.tools.get_pdbfixer_info.rst
+#: f6c5b63f09c546f4b2f7b683a2917ee5
+msgid "Parameters"
+msgstr "参数"
+
+#: 5cc161ada8a44d4f82767918a70152fc of
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:3
+msgid "Type of information to retrieve about PDBFixer"
+msgstr "关于 PDBFixer 可检索的信息类型"
+
+#: dbf02849fc5144248a18e3f0c48fe957 of
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ce795bb36a46466bb5e2a504af1fcef6 of
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4f6826f548394bbc82fd3249a268d240 of
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pdbfixer_info.rst
+#: d820198ba8dc4541b681d43c92aa14ce
+msgid "Return type"
+msgstr "返回类型"
+
+#: 66f3046e9d594a6c95c498183b0bc8d0 of
+#: tooluniverse.tools.get_pdbfixer_info.get_pdbfixer_info:12
+msgid ":py:class:`Any`"
+msgstr ""

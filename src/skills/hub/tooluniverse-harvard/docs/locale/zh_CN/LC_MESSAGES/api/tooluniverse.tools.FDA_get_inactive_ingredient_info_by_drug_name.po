@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.rst:2
+#: 510215742ac94edc843e10b2654219c6
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_inactive\\_ingredient\\_info\\_by\\_drug\\_name"
+" module"
+msgstr "tooluniverse.tools.FDA\\_get\\_inactive\\_ingredient\\_info\\_by\\_drug\\_name 模块"
+
+#: 337a280352364b7196d6e6a2a9a27de5 of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name:1
+msgid "FDA_get_inactive_ingredient_info_by_drug_name"
+msgstr "FDA_按药品名称获取非活性成分信息"
+
+#: 1378ad6ca76044fbb2d36864ae30f843 561590d85aca4a8ab77c2b07e799cc01 of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:1
+msgid ""
+"Fetch a list of inactive ingredients in a specific drug product based on the"
+" drug name."
+msgstr "根据药品名称获取特定药品中非活性成分的列表。"
+
+#: ../../api/tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.rst
+#: 7571ab0b34b34acdbd352713f922d433
+msgid "Parameters"
+msgstr "参数"
+
+#: 04d16b7cd2464721b359269d96697ccd of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称"
+
+#: 12686b2bfbca40dd94de1224b46d7f63 of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 783ce62fd6b649fea4be1a6b4e4e23ca of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: a27f4a4825384ca2b443f777958e2ed8 of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bc5d20e363d44555aec3555ef45b10dd of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2c6d558974344321b4919d10221060e9 of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.rst
+#: 42d6392a3dcd4168bff8c7f9d74c0649
+msgid "Return type"
+msgstr "返回类型"
+
+#: 70c247a01db94fc2854d6beeee5ea8db of
+#: tooluniverse.tools.FDA_get_inactive_ingredient_info_by_drug_name.FDA_get_inactive_ingredient_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

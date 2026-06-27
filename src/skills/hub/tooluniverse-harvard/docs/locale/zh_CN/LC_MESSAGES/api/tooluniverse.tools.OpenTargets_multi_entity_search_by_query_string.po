@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.rst:2
+#: 9bb299a0e6c5415b8a7e377988dfb3af
+msgid ""
+"tooluniverse.tools.OpenTargets\\_multi\\_entity\\_search\\_by\\_query\\_string"
+" module"
+msgstr "tooluniverse.tools.OpenTargets\\_multi\\_entity\\_search\\_by\\_query\\_string 模块"
+
+#: df4d8ca159ba490ea958d05ef6e9c29a of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string:1
+msgid "OpenTargets_multi_entity_search_by_query_string"
+msgstr "OpenTargets_通过查询字符串进行多实体搜索"
+
+#: 95c7e88201ba4aac8ab6b551822bcfdf cb32efa33fdd4843a80ed5d8d9589684 of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string:3
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:1
+msgid ""
+"Perform a multi-entity search based on a query string, filtering by entity "
+"names and pagination s..."
+msgstr "根据查询字符串执行多实体搜索，并通过实体名称进行过滤，同时支持分页功能。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.rst
+#: 4b7d184a22b34c76838f1b33af123815
+msgid "Parameters"
+msgstr "参数"
+
+#: d16a2c4d3a74416f9735ebed46a64533 of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:3
+msgid "The search string for querying information."
+msgstr "用于查询信息的搜索字符串。"
+
+#: ea9129643d954671a310d6f5270d656b of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:5
+msgid "List of entity names to search for (e.g., target, disease, drug)."
+msgstr "要搜索的实体名称列表（例如：目标、疾病、药物）。"
+
+#: ef4e4e163db9482ea3a6a2af15f9b090 of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:7
+msgid "Pagination settings with index and size."
+msgstr "分页设置：包含索引和大小。"
+
+#: 02846eec45ef46dfa956515a34546f6b of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0e1ebaf4f40a4d9fa788a6ee7eec209e of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a986d0bc6e8c44539a9e7b0ee1414018 of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.rst
+#: 1410b1c662cd430bacb2d9fea0629bee
+msgid "Return type"
+msgstr "返回类型"
+
+#: c5f9c28f587d40eaa735864577579558 of
+#: tooluniverse.tools.OpenTargets_multi_entity_search_by_query_string.OpenTargets_multi_entity_search_by_query_string:16
+msgid ":py:class:`Any`"
+msgstr ":py:class:`任意`"

@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Ensembl_lookup_gene_by_symbol.rst:2
+#: 19610c58902a48e98a1b681d8bc22194
+msgid "tooluniverse.tools.Ensembl\\_lookup\\_gene\\_by\\_symbol module"
+msgstr "tooluniverse.tools.Ensembl\\_lookup\\_gene\\_by\\_symbol 模块"
+
+#: bce604c996c44f349fba9ea6c9c4e2ff of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol:1
+msgid "Ensembl_lookup_gene_by_symbol"
+msgstr "Ensembl_通过基因符号查询基因"
+
+#: beadf8c5ae03451bb1b10fe72080fb26 d27edf103948480dbf317fef9e0394a5 of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol:3
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:1
+msgid ""
+"Lookup Ensembl gene by species and gene symbol, returning core metadata and "
+"coordinates (uses /xr..."
+msgstr "根据物种和基因符号查找Ensembl基因，返回核心元数据和坐标（使用 /xr...）。"
+
+#: ../../api/tooluniverse.tools.Ensembl_lookup_gene_by_symbol.rst
+#: 1708a92a99424d46a6412131dda6ba02
+msgid "Parameters"
+msgstr "参数"
+
+#: 3c990eb6a07d4adfbb6e41ac806c6f83 of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:3
+msgid "Species name (e.g., 'homo_sapiens')."
+msgstr "物种名称（例如，‘homo_sapiens’）。"
+
+#: a80068bb2f2a4fc9a0501f81ef9e501c of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:5
+msgid "Gene symbol (e.g., BRCA1)."
+msgstr "基因符号（例如，BRCA1）。"
+
+#: 87a055efb9664eb29160dd82053c9e8d of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 273cd087d9ce449994578f6c7185f1da of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ac3b96c967774d02b50362f50d54fd47 of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Ensembl_lookup_gene_by_symbol.rst
+#: 5679582876914468a85888e44631110f
+msgid "Return type"
+msgstr "返回类型"
+
+#: f72eeec060f947f49fd509f88ff6d5e7 of
+#: tooluniverse.tools.Ensembl_lookup_gene_by_symbol.Ensembl_lookup_gene_by_symbol:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

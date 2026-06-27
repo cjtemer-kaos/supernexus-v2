@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationGenerator.rst:2
+#: ecd966ddce3745eeb9194787758a3687
+msgid "tooluniverse.tools.ToolSpecificationGenerator module"
+msgstr "tooluniverse.tools.ToolSpecificationGenerator 模块"
+
+#: d4368f829b2c4f95bac957229d14a6ed of
+#: tooluniverse.tools.ToolSpecificationGenerator:1
+msgid "ToolSpecificationGenerator"
+msgstr "工具规格生成器"
+
+#: 71b7e527d5cf4ee187812a9d610b817a 891705f7cda44a6e9b3bc8734f03d25c of
+#: tooluniverse.tools.ToolSpecificationGenerator:3
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:1
+msgid ""
+"Generates complete ToolUniverse-compliant tool specifications based on a "
+"description and analysis..."
+msgstr "根据描述和分析生成符合ToolUniverse标准的完整工具规格。"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationGenerator.rst
+#: 43aec41b945545af97200f1c8f2927ce
+msgid "Parameters"
+msgstr "参数"
+
+#: 8a07201648f84009af1821f1933b09c5 of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:3
+msgid "Brief description of the desired tool functionality and purpose."
+msgstr "所需工具功能及用途的简要说明"
+
+#: 228df3fe12e14643808b0f9fc3d38b58 of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:5
+msgid ""
+"Target category for the tool (e.g., 'biomedical', 'data_analysis', "
+"'text_proc..."
+msgstr "工具的目标类别（例如：'biomedical'，'data_analysis'，'text_proc..."
+
+#: 651b9caeb945402d86f4a458002ec39a of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:7
+msgid ""
+"Specific ToolUniverse tool type (e.g., 'AgenticTool', 'RESTTool', "
+"'PythonTool')."
+msgstr "特定的 ToolUniverse 工具类型（例如：'AgenticTool'、'RESTTool'、'PythonTool'）。"
+
+#: 74d5e992c77d4cd9821d46194435b6fd of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:9
+msgid ""
+"JSON string containing configurations of similar existing tools for analysis"
+" ..."
+msgstr "包含用于分析的类似现有工具配置的JSON字符串"
+
+#: 993c542fc7524f6a987f966513784486 of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:11
+msgid ""
+"Summary of existing tools in the ecosystem to avoid duplication and identify"
+" ..."
+msgstr "现有生态系统工具的总结，以避免重复并识别..."
+
+#: e8fdb7705a7a4da087aaee8f8036f38c of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9b0bda22e6cd4295ad0dfa858719c7cb of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e8ced85e61f3443a85545cdb556c55ab of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolSpecificationGenerator.rst
+#: 555557d4ccb74e1fa89a4a10ed4a86e7
+msgid "Return type"
+msgstr "返回类型"
+
+#: d2561f824e074353bce05a80c95d62d3 of
+#: tooluniverse.tools.ToolSpecificationGenerator.ToolSpecificationGenerator:20
+msgid ":py:class:`Any`"
+msgstr ""

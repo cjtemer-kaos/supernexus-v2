@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_generic_name.rst:2
+#: 8cee5463096348f694f49356dcefa15e
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_generic\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_generic\\_name 模块"
+
+#: 99319590070c4aec84bd42e1314feb9b of
+#: tooluniverse.tools.FDA_get_drug_generic_name:1
+msgid "FDA_get_drug_generic_name"
+msgstr ""
+
+#: 005141f39335432e9bb166fb5fc4472d d862de2cbefd4b87984cf2d2400819d5 of
+#: tooluniverse.tools.FDA_get_drug_generic_name:3
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:1
+msgid "Get the drug’s generic name based on the drug's generic or brand name."
+msgstr "根据药物的通用名或品牌名获取药物的通用名。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_generic_name.rst
+#: 0ca2cd3de3364e3a997489570ccf7b29
+msgid "Parameters"
+msgstr "参数"
+
+#: 9c2b41d33d73483cbd52c74b29b73afd of
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:3
+msgid "The generic or brand name of the drug."
+msgstr "药物的通用名称或品牌名称。"
+
+#: 44f56a6c9d714723a65c9ad97dbff184 of
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f93441ddae3641e59144ecf3fdcf8dc3 of
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 33c9c953996442a690009e82569021c9 of
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_generic_name.rst
+#: 200eb0729a5b4d94badba36ded2fd376
+msgid "Return type"
+msgstr "返回类型"
+
+#: cae952edf9d046359902005e7b30bee1 of
+#: tooluniverse.tools.FDA_get_drug_generic_name.FDA_get_drug_generic_name:12
+msgid ":py:class:`Any`"
+msgstr ""

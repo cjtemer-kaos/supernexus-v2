@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.rst:2
+#: 7673a938f92b4b738c784e652613d70f
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drugs\\_by\\_carcinogenic\\_mutagenic\\_fertility"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drugs\\_by\\_carcinogenic\\_mutagenic\\_fertility"
+" 模块"
+
+#: cb3343890698412fa43a8546cf82d343 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:1
+msgid "FDA_get_drugs_by_carcinogenic_mutagenic_fertility"
+msgstr ""
+"FDA_get_drugs_by_carcinogenic_mutagenic_fertility  \n"
+"获取基于致癌性、致突变性和生育能力的药物"
+
+#: 5da04e3149fe40e6bfc9f7037aa15228 92a1c56c13514801a48749508e730e3e of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:3
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:1
+msgid ""
+"Retrieve drug names based on the presence of carcinogenic, mutagenic, or "
+"fertility impairment inf..."
+msgstr "根据是否存在致癌性、致突变性或生育能力损害，检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.rst
+#: cbec9d37478c4457817b432499a938fb
+msgid "Parameters"
+msgstr "参数"
+
+#: 1f67ddd93d6c498183859fa543ce53e1 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:3
+msgid ""
+"Information about carcinogenic, mutagenic, or fertility impairment "
+"potential."
+msgstr "关于致癌性、致突变性或生育能力损害潜在风险的信息。"
+
+#: 172e1353a52c4b8eb8cddc039569b64a of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 466936243532469e91e4a6cef73d2bc4 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 3f436b9e18e44f08b79d3d6be8e7ce0d of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 6af8808c862d49638b5fdd92e9f2e447 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 301721d60b7a4601910ee09cfcb37c04 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 76b7ce4fa35f43f49583de86a4e87694 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.rst
+#: fec7c2e6daaf4d6e8b98c829befaaabc
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1367d56aa649480b954709fb0a1bb011 of
+#: tooluniverse.tools.FDA_get_drugs_by_carcinogenic_mutagenic_fertility.FDA_get_drugs_by_carcinogenic_mutagenic_fertility:18
+msgid ":py:class:`Any`"
+msgstr ""

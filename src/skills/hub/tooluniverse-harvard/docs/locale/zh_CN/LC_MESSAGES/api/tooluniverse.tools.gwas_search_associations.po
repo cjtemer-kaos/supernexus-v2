@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_search_associations.rst:2
+#: 6860c0405d554595bcbfd59a917769f2
+msgid "tooluniverse.tools.gwas\\_search\\_associations module"
+msgstr "tooluniverse.tools.gwas\\_search\\_associations 模块"
+
+#: c11b9153e3974fbaae3b4b73f83e8e39 of
+#: tooluniverse.tools.gwas_search_associations:1
+msgid "gwas_search_associations"
+msgstr "gwas_search_associations（GWAS关联搜索）"
+
+#: 52c6e5822ffe4e72bf8895fc1864e04f ac808ccc48764f14ab0da5bcedfd504c of
+#: tooluniverse.tools.gwas_search_associations:3
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:1
+msgid ""
+"Search for GWAS associations by various criteria including EFO trait, rs ID,"
+" accession ID, with s..."
+msgstr "通过各种标准搜索GWAS关联，包括EFO性状、rs ID、登录ID等。"
+
+#: ../../api/tooluniverse.tools.gwas_search_associations.rst
+#: 2465f38826694149aeeecc44e294a2a5
+msgid "Parameters"
+msgstr "参数"
+
+#: 72eb986d26134cf7a413ec45c33078f6 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:3
+msgid "EFO trait identifier or name"
+msgstr "EFO特征标识符或名称"
+
+#: 5a3103736fe74120a95906c1d1ad26cd of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:5
+msgid "dbSNP rs identifier"
+msgstr "dbSNP rs标识符"
+
+#: e0d23d49b753498ab1ce945ffb23939d of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:7
+msgid "Study accession identifier"
+msgstr "研究访问标识符"
+
+#: a47622e3fef840f6b5f2d48b9b1b6f4d of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:9
+msgid "Sort field (e.g., 'p_value', 'or_value')"
+msgstr "排序字段（例如：'p_value'、'or_value'）"
+
+#: e84df15f49284f869aef7b9277815d90 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:11
+msgid "Sort direction ('asc' or 'desc')"
+msgstr "排序方向（“asc” 或 “desc”）"
+
+#: e5f521f664f54697bb747d5d596066a4 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:13
+msgid "Number of results to return"
+msgstr "返回结果数量"
+
+#: 836a07749d224c5b9bc78aff31cc0254 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:15
+msgid "Page number for pagination"
+msgstr "分页页码"
+
+#: 5e4fb007a4f449349e2e35f11772403a of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:17
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 94c19bd1498848f998d2426a5977f568 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:19
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 6c4353454483465fb6e223295b2033e2 of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:21
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_search_associations.rst
+#: d7607a7a57724b43b0744da0a06a16cc
+msgid "Return type"
+msgstr "返回类型"
+
+#: b3acb330bfe4493aa257ea3449f1172d of
+#: tooluniverse.tools.gwas_search_associations.gwas_search_associations:24
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

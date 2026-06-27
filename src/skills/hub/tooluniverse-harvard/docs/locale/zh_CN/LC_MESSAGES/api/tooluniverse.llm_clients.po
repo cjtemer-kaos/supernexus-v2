@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.llm_clients.rst:2 38c9f49bcf50473a9f9665415d11ed3c
+msgid "tooluniverse.llm\\_clients module"
+msgstr "tooluniverse.llm_clients 模块"
+
+#: b591993b531b4df08aec46ec44ddb7a4 of
+#: tooluniverse.llm_clients.BaseLLMClient:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: 125ca56fc7f64553b85009332bd3195e 372e794577644532bb35d8178d01d2a9
+#: ddaab26a19044881bfb80f5719ccb67c of
+#: tooluniverse.llm_clients.AzureOpenAIClient.infer_stream:1
+#: tooluniverse.llm_clients.BaseLLMClient.infer_stream:1
+#: tooluniverse.llm_clients.GeminiClient.infer_stream:1
+msgid "Default streaming implementation falls back to regular inference."
+msgstr "默认流式实现将回退到常规推理。"
+
+#: 3a742fdd459c49f7b8d8eee0c0aa6bf1 73d96eb8922c4cfdb34862e9fdf0313d
+#: eb4683ee68a24683a2bdad6c43ea68b1 of
+#: tooluniverse.llm_clients.AzureOpenAIClient:1
+#: tooluniverse.llm_clients.GeminiClient:1
+#: tooluniverse.llm_clients.OpenRouterClient:1
+msgid "Bases: :py:class:`~tooluniverse.llm_clients.BaseLLMClient`"
+msgstr "基础类：:py:class:`~tooluniverse.llm_clients.BaseLLMClient`"
+
+#: 358c55e678344a4c8355f1ffab4a1111 of
+#: tooluniverse.llm_clients.OpenRouterClient:1
+msgid ""
+"OpenRouter client using OpenAI SDK with custom base URL. Supports models "
+"from OpenAI, Anthropic, Google, Qwen, and many other providers."
+msgstr ""
+"OpenRouter 客户端，使用带有自定义基础 URL 的 OpenAI SDK。支持来自 OpenAI、Anthropic、Google、Qwen "
+"及众多其他提供商的模型。"
+
+#: 5c83902a3af544c0a06095e16c0e9f1a of
+#: tooluniverse.llm_clients.OpenRouterClient._resolve_default_max_tokens:1
+msgid "Resolve default max tokens for a model."
+msgstr "解决模型的默认最大令牌数。"
+
+#: f19e4d4dc43f4eb0a1ee65259c384a15 of
+#: tooluniverse.llm_clients.OpenRouterClient.test_api:1
+msgid "Test API connectivity with minimal token usage."
+msgstr "使用最少的令牌测试 API 连接。"
+
+#: ab99c57ae70148d39485e76b716580c5 of
+#: tooluniverse.llm_clients.OpenRouterClient.infer:1
+msgid "Execute inference using OpenRouter."
+msgstr "使用 OpenRouter 执行推理。"

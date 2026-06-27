@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_patsy_info.rst:2
+#: 338619259f6f4be5aa649ee016889676
+msgid "tooluniverse.tools.get\\_patsy\\_info module"
+msgstr "tooluniverse.tools.get\\_patsy\\_info 模块"
+
+#: d85e6a5133ed462293bd3588b31dac76 of tooluniverse.tools.get_patsy_info:1
+msgid "get_patsy_info"
+msgstr ""
+
+#: 643edd8ab94a4ced95607404be78f9c8 9c1439c10bac4f75b9e7909307466dc3 of
+#: tooluniverse.tools.get_patsy_info:3
+#: tooluniverse.tools.get_patsy_info.get_patsy_info:1
+msgid ""
+"Get information about the patsy package. Python library for describing "
+"statistical models"
+msgstr "获取有关 patsy 包的信息。Python 库用于描述统计模型"
+
+#: ../../api/tooluniverse.tools.get_patsy_info.rst
+#: 904b2fc6815d4a0e9e1f1b65c940538e
+msgid "Parameters"
+msgstr "参数"
+
+#: ea7cb069c382413e852b7714fbd7a64f of
+#: tooluniverse.tools.get_patsy_info.get_patsy_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a77a8d265f0747dd9113ee358e2f7045 of
+#: tooluniverse.tools.get_patsy_info.get_patsy_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 32d88a521deb4d40be2dc8bd88b78d04 of
+#: tooluniverse.tools.get_patsy_info.get_patsy_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_patsy_info.rst
+#: ffc2c59b43d94246baad6e8572056b7e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8e2178c2bcab42c194f1cd607aa35507 of
+#: tooluniverse.tools.get_patsy_info.get_patsy_info:11
+msgid ":py:class:`Any`"
+msgstr ""

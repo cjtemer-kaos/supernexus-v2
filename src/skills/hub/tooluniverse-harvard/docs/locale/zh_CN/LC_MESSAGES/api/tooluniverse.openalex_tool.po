@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.openalex_tool.rst:2 2d6c1598c64d498f89dd78ed421c4c2f
+msgid "tooluniverse.openalex\\_tool module"
+msgstr "tooluniverse.openalex_tool 模块"
+
+#: e134dca090534121affbd9a9503016f6 of
+#: tooluniverse.openalex_tool.OpenAlexTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 8769ebed85fd4ac68687890008b9ba9c of
+#: tooluniverse.openalex_tool.OpenAlexTool:1
+msgid "Tool to retrieve literature from OpenAlex based on search keywords."
+msgstr "基于搜索关键词从 OpenAlex 检索文献的工具。"
+
+#: ba4993ee6f6144ec98da929a9435868f of
+#: tooluniverse.openalex_tool.OpenAlexTool.run:1
+msgid "Main entry point for the tool."
+msgstr "工具的主要入口点。"
+
+#: 04a8509a9fc8443ab3589f47070f10fa of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:1
+msgid "Search for literature using OpenAlex API."
+msgstr "使用 OpenAlex API 进行文献检索。"
+
+#: ../../api/tooluniverse.openalex_tool.rst 36742b8a7b0f4dffbe9d2d4ff2e84d76
+#: 45e7c7ea63474d219e73d179839233fa 78d79275d66648e799e81b95c4402642
+#: ff6d94d5a6a9472186402419209f9049
+msgid "Parameters"
+msgstr "参数"
+
+#: 4fd59d80cff54d86b953ef2d70e57df2 of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:3
+msgid "Keywords to search for in title, abstract, and content."
+msgstr "在标题、摘要和内容中搜索的关键词。"
+
+#: 9a390862b57f4b6a8fe78cce87502185 of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:5
+msgid "Maximum number of results to return (default: 10)."
+msgstr "返回的最大结果数（默认值：10）。"
+
+#: e20cc38b2bb04cd98b2ab6b6e24b1dfc of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:7
+msgid "Start year for publication date filter (optional)."
+msgstr "出版日期筛选的起始年份（可选）。"
+
+#: d6e661e0ce44464099c2b3cc6485c965 of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:9
+msgid "End year for publication date filter (optional)."
+msgstr "出版日期筛选的结束年份（可选）。"
+
+#: 7d1f0ee181c746948321b3760fe47ab4 of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:11
+msgid "Filter for open access papers only (optional)."
+msgstr "仅筛选开放获取论文（可选）。"
+
+#: ../../api/tooluniverse.openalex_tool.rst 593be816c0774c68a1442940803ebf6d
+#: 83f729fb59fe4d88b81da4c1df1455f9 df0f8c8d2ec24b6a9c4ead8792c4c050
+#: f6c77b2965904264a497401bd0517f8b
+msgid "Returns"
+msgstr "退货"
+
+#: 9938003dfd174aa3a69be645a4c0daa4 of
+#: tooluniverse.openalex_tool.OpenAlexTool.search_literature:14
+msgid "List of dictionaries containing paper information."
+msgstr "包含论文信息的字典列表。"
+
+#: ../../api/tooluniverse.openalex_tool.rst 2bb4024b9642469e9bfe5af3b55469a7
+#: 67a9a2ccc9bd4a918c55605def29cc0b 94daf75b8399460caa4e383d70ee3ebc
+#: f5227cc6ce854aa6976d53c62402aaf6
+msgid "Return type"
+msgstr "返回类型"
+
+#: 770538adfad649bfa174b3e2b22f40cc of
+#: tooluniverse.openalex_tool.OpenAlexTool._extract_paper_info:1
+msgid ""
+"Extract relevant information from a work object returned by OpenAlex API."
+msgstr "从OpenAlex API返回的工作对象中提取相关信息。"
+
+#: f16a4434bf454f178f212cf1e4ad13c2 of
+#: tooluniverse.openalex_tool.OpenAlexTool._extract_paper_info:3
+msgid "Work object from OpenAlex API response."
+msgstr "从 OpenAlex API 响应中获取工作对象。"
+
+#: 9991ca8305f6494dbd3ed89aa8d6dc4e of
+#: tooluniverse.openalex_tool.OpenAlexTool._extract_paper_info:6
+msgid "Formatted paper information."
+msgstr "格式化纸张信息。"
+
+#: 010b58198aee42abbb6539ca479a4926 of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_paper_by_doi:1
+msgid "Retrieve a specific paper by its DOI."
+msgstr "通过其 DOI 检索特定论文。"
+
+#: 4bdd9fe4d9324d2997c8d57efee0f4e6 of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_paper_by_doi:3
+msgid "DOI of the paper to retrieve."
+msgstr "要检索的论文 DOI。"
+
+#: 311e04d5b98648f8870d9eb33e37a3fe of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_paper_by_doi:6
+msgid "Paper information or None if not found."
+msgstr "纸张信息或未找到时为无。"
+
+#: 26d5b60253b14f628ab008d304daf4b0 of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_papers_by_author:1
+msgid "Retrieve papers by a specific author."
+msgstr "检索特定作者的论文。"
+
+#: 97ab9169698f45299125d82884d2f87f of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_papers_by_author:3
+msgid "Name of the author to search for."
+msgstr "要搜索的作者名称。"
+
+#: 3fba02ef0a6a44779eeea8fcd589f9be of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_papers_by_author:5
+msgid "Maximum number of results to return."
+msgstr "返回结果的最大数量。"
+
+#: 5a35fa32af0c46aaa1be8d3dd2ebec44 of
+#: tooluniverse.openalex_tool.OpenAlexTool.get_papers_by_author:8
+msgid "List of papers by the author."
+msgstr "作者论文列表"

@@ -1,0 +1,229 @@
+{
+  "global_settings": {
+    "default_timeout": 30,
+    "max_hook_depth": 3,
+    "enable_hook_caching": true,
+    "hook_execution_order": "priority_desc"
+  },
+  "exclude_tools": [
+    "Tool_RAG",
+    "ToolFinderEmbedding",
+    "ToolFinderLLM"
+  ],
+  "hook_type_defaults": {
+    "SummarizationHook": {
+      "default_output_length_threshold": 5000,
+      "default_chunk_size": 96000,
+      "default_focus_areas": "key_findings_and_results",
+      "default_max_summary_length": 3000
+    }
+  },
+  "hooks": [
+    {
+      "name": "global_summarization_hook",
+      "type": "SummarizationHook",
+      "enabled": true,
+      "priority": 1,
+      "conditions": {
+        "output_length": {
+          "operator": ">",
+          "threshold": 5000
+        }
+      },
+      "hook_config": {
+        "composer_tool": "OutputSummarizationComposer",
+        "chunk_size": 96000,
+        "focus_areas": "key_findings_and_results",
+        "max_summary_length": 3000
+      }
+    }
+  ],
+  "tool_specific_hooks": {
+    "UniProt_get_entry_by_accession": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "protein_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 3000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "protein_function_and_structure",
+            "max_summary_length": 4000
+          }
+        }
+      ]
+    },
+    "ChEMBL_search_compounds": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "compound_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 4000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "compound_properties_and_activity",
+            "max_summary_length": 3500
+          }
+        }
+      ]
+    },
+    "EuropePMC_search_articles": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "literature_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 3000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "key_findings_and_relevance",
+            "max_summary_length": 2500
+          }
+        }
+      ]
+    },
+    "PubChem_get_compound_info": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "pubchem_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 6000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "compound_properties_and_safety",
+            "max_summary_length": 3000
+          }
+        }
+      ]
+    },
+    "OpenTargets_get_target_info": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "target_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 4000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "target_function_and_diseases",
+            "max_summary_length": 3000
+          }
+        }
+      ]
+    }
+  },
+  "category_hooks": {
+    "literature_search": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "literature_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 4000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "key_findings_and_relevance",
+            "max_summary_length": 2000
+          }
+        }
+      ]
+    },
+    "protein_analysis": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "protein_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 6000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "protein_function_and_structure",
+            "max_summary_length": 4500
+          }
+        }
+      ]
+    },
+    "compound_analysis": {
+      "enabled": true,
+      "hooks": [
+        {
+          "name": "compound_summarization",
+          "type": "SummarizationHook",
+          "enabled": true,
+          "priority": 2,
+          "conditions": {
+            "output_length": {
+              "operator": ">",
+              "threshold": 5000
+            }
+          },
+          "hook_config": {
+            "composer_tool": "OutputSummarizationComposer",
+            "chunk_size": 96000,
+            "focus_areas": "compound_properties_and_activity",
+            "max_summary_length": 4000
+          }
+        }
+      ]
+    }
+  }
+}

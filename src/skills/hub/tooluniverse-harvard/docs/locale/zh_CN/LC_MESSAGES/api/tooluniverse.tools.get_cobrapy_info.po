@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_cobrapy_info.rst:2
+#: 05342c3ad5a842e7ae9eefd050b235ca
+msgid "tooluniverse.tools.get\\_cobrapy\\_info module"
+msgstr "tooluniverse.tools.get\\_cobrapy\\_info 模块"
+
+#: 0e923085086243068ac212c961473b31 of tooluniverse.tools.get_cobrapy_info:1
+msgid "get_cobrapy_info"
+msgstr ""
+
+#: 3f29ca9f01054ccb8310bc416358b686 8cdf1722c2514007b009958a7fcde799 of
+#: tooluniverse.tools.get_cobrapy_info:3
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:1
+msgid ""
+"Get comprehensive information about COBRApy – constraint-based metabolic "
+"modeling"
+msgstr "获取关于COBRApy的全面信息——基于约束的代谢建模"
+
+#: ../../api/tooluniverse.tools.get_cobrapy_info.rst
+#: 701bd01e2a7443c08a36eb6dca152346
+msgid "Parameters"
+msgstr "参数"
+
+#: cdc9bc0a00d448aba8d4e37616caefcd of
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:3
+msgid "Type of information to retrieve about COBRApy"
+msgstr "关于COBRApy可获取的信息类型"
+
+#: 2bb0f0ae179c470d8a8548755e069ea7 of
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0e733ccd594a40c39ebd741648121169 of
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 707f32abc1f24e7aae14e7a6cd563260 of
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_cobrapy_info.rst
+#: b2ba3dfa56354ee3ba7ec285c73c7743
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4788381305614aff948d69e2c8ef6b10 of
+#: tooluniverse.tools.get_cobrapy_info.get_cobrapy_info:12
+msgid ":py:class:`Any`"
+msgstr ""

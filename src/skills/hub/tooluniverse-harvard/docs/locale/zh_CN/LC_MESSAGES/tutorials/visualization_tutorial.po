@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/visualization_tutorial.rst:2
+#: 1e12841ef5324ddba3681523d7248b79
+msgid "Scientific Visualization Tools"
+msgstr "科学可视化工具"
+
+#: ../../tutorials/visualization_tutorial.rst:4
+#: cdff5d7618d34b8496c413bdd7d16fb3
+msgid ""
+"ToolUniverse provides simple and powerful visualization tools for proteins "
+"and molecules. Generate beautiful interactive HTML visualizations with just "
+"a few lines of code."
+msgstr "ToolUniverse 提供简单且强大的蛋白质和分子可视化工具。只需几行代码即可生成精美的交互式 HTML 可视化图表。"
+
+#: ../../tutorials/visualization_tutorial.rst:7
+#: 86b1f0d991f2400699b6cdea6ee84468
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../tutorials/visualization_tutorial.rst:28
+#: 7a45b0d81a4a41809c8deb2cdae8539e
+msgid "Installation"
+msgstr "安装"
+
+#: ../../tutorials/visualization_tutorial.rst:30
+#: 82da68ee362540f9b32f73095a5434a8
+msgid "Install with visualization dependencies:"
+msgstr "安装可视化依赖项："
+
+#: ../../tutorials/visualization_tutorial.rst:37
+#: ea9221756bad4547a0a1a1a5d09ec030
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tutorials/visualization_tutorial.rst:40
+#: efcdca7fc6364f7d89f79d8d24b60694
+msgid "1. Protein 3D Visualization"
+msgstr "1. 蛋白质三维可视化"
+
+#: ../../tutorials/visualization_tutorial.rst:42
+#: df08b34a6ec9423a9933e3b62af892bc
+msgid "**Tool:** ``visualize_protein_structure_3d``"
+msgstr "**工具：** ``visualize_protein_structure_3d``"
+
+#: ../../tutorials/visualization_tutorial.rst:44
+#: 4be901b3a77a447d81d86791e50f3c3b
+msgid "Visualize 3D protein structures from PDB database."
+msgstr "从PDB数据库中可视化3D蛋白质结构。"
+
+#: ../../tutorials/visualization_tutorial.rst:46
+#: ../../tutorials/visualization_tutorial.rst:69
+#: ../../tutorials/visualization_tutorial.rst:92
+#: 22207bdc93294a968ea655096d352d61 995ccbd62ada4677899ec112148bc0aa
+#: b9ccb39489084183a2ef287e2d8d90e8
+msgid "**Basic Usage:**"
+msgstr "**基本用法：**"
+
+#: ../../tutorials/visualization_tutorial.rst:55
+#: af02c85eecc64feebaa7a76efe83f554
+msgid ""
+"**Options:** - ``pdb_id``: PDB ID (e.g., \"1CRN\", \"7CGO\") - ``style``: "
+"\"cartoon\", \"stick\", \"sphere\", \"line\" (default: \"cartoon\") - "
+"``color_scheme``: \"spectrum\", \"rainbow\", \"ssPyMOL\" (default: "
+"\"spectrum\") - ``width``: Width in pixels (default: 800) - ``height``: "
+"Height in pixels (default: 600)"
+msgstr ""
+"**选项：**  \n"
+"- ``pdb_id``：PDB ID（例如：\"1CRN\", \"7CGO\"）  \n"
+"- ``style``：\"cartoon\"（卡通）、\"stick\"（棒状）、\"sphere\"（球状）、\"line\"（线条）（默认值：\"cartoon\"）  \n"
+"- ``color_scheme``：\"spectrum\"（光谱）、\"rainbow\"（彩虹）、\"ssPyMOL\"（默认值：\"spectrum\"）  \n"
+"- ``width``：像素宽度（默认值：800）  \n"
+"- ``height``：像素高度（默认值：600）"
+
+#: ../../tutorials/visualization_tutorial.rst:63
+#: 94cda6ade9f94881b821bfa9c9044b7b
+msgid "2. Molecule 2D Visualization"
+msgstr "2. 分子二维可视化"
+
+#: ../../tutorials/visualization_tutorial.rst:65
+#: db9c7bc5e6604054a623eccd1215560d
+msgid "**Tool:** ``visualize_molecule_2d``"
+msgstr "**工具：** ``visualize_molecule_2d``"
+
+#: ../../tutorials/visualization_tutorial.rst:67
+#: b1784e03160b4a9da83084b8f7a69fca
+msgid "Generate 2D molecular structure images."
+msgstr "生成二维分子结构图像。"
+
+#: ../../tutorials/visualization_tutorial.rst:78
+#: 6a240cfdcc784c53af0c854ba79d1d4a
+msgid ""
+"**Options:** - ``smiles``: SMILES string (e.g., \"CCO\" for ethanol) - "
+"``molecule_name``: Common name (e.g., \"aspirin\", \"caffeine\") - "
+"``width``: Width in pixels (default: 400) - ``height``: Height in pixels "
+"(default: 400) - ``output_format``: \"png\" or \"svg\" (default: \"png\")"
+msgstr ""
+"**选项：**  \n"
+"- ``smiles``：SMILES字符串（例如，“CCO”表示乙醇）  \n"
+"- ``molecule_name``：通用名称（例如，“阿司匹林”、“咖啡因”）  \n"
+"- ``width``：宽度（单位：像素，默认值：400）  \n"
+"- ``height``：高度（单位：像素，默认值：400）  \n"
+"- ``output_format``：输出格式，可选值为“png”或“svg”（默认值：“png”）"
+
+#: ../../tutorials/visualization_tutorial.rst:86
+#: 0c98c6c2f736467b9ce9f73928d2474d
+msgid "3. Molecule 3D Visualization"
+msgstr "3. 分子三维可视化"
+
+#: ../../tutorials/visualization_tutorial.rst:88
+#: faba9c383a964400a2efa9703c2e655f
+msgid "**Tool:** ``visualize_molecule_3d``"
+msgstr "**工具：** ``visualize_molecule_3d``"
+
+#: ../../tutorials/visualization_tutorial.rst:90
+#: f8a7688850ff4d0cb9af092a30fd169b
+msgid "Create interactive 3D molecular structures."
+msgstr "创建交互式三维分子结构。"
+
+#: ../../tutorials/visualization_tutorial.rst:101
+#: afaf042dea6c4d358867e9258d86d36d
+msgid ""
+"**Options:** - ``smiles``: SMILES string - ``style``: \"stick\", \"sphere\","
+" \"cartoon\", \"line\", \"spacefill\" (default: \"stick\") - "
+"``color_scheme``: \"default\", \"spectrum\", \"rainbow\" (default: "
+"\"default\") - ``width``: Width in pixels (default: 800) - ``height``: "
+"Height in pixels (default: 600)"
+msgstr ""
+"**选项：**  \n"
+"- ``smiles``：SMILES 字符串  \n"
+"- ``style``：\"stick\"（棒状）、\"sphere\"（球状）、\"cartoon\"（卡通）、\"line\"（线条）、\"spacefill\"（填充空间）（默认值：\"stick\"）  \n"
+"- ``color_scheme``：\"default\"（默认）、\"spectrum\"（光谱）、\"rainbow\"（彩虹）（默认值：\"default\"）  \n"
+"- ``width``：宽度（以像素为单位）（默认值：800）  \n"
+"- ``height``：高度（以像素为单位）（默认值：600）"
+
+#: ../../tutorials/visualization_tutorial.rst:109
+#: ae93d6c584e340f9876237c1f852f4a2
+msgid "Output Format"
+msgstr "输出格式"
+
+#: ../../tutorials/visualization_tutorial.rst:111
+#: 333afdee2ba94a229a2e96490869e870
+msgid "All tools return the same format:"
+msgstr "所有工具均返回相同的格式："
+
+#: ../../tutorials/visualization_tutorial.rst:126
+#: bc208ae9dd24427cad06a28cd37a3e1d
+msgid "Examples"
+msgstr "示例"
+
+#: ../../tutorials/visualization_tutorial.rst:128
+#: 766c1dd972fc4ed98e3c2d9196fe9329
+msgid "Run the examples:"
+msgstr "运行示例："
+
+#: ../../tutorials/visualization_tutorial.rst:139
+#: 41f1f773bf484f2b805c2d6fdc35493e
+msgid "Common Examples"
+msgstr "常见示例"
+
+#: ../../tutorials/visualization_tutorial.rst:141
+#: 01bbc7e46a7142efbe4e65954171f5df
+msgid "**Visualize different proteins:**"
+msgstr "**可视化不同的蛋白质：**"
+
+#: ../../tutorials/visualization_tutorial.rst:154
+#: fabee420c52c4972be99eeab8b937de9
+msgid "**Visualize different molecules:**"
+msgstr "**可视化不同分子：**"
+
+#: ../../tutorials/visualization_tutorial.rst:168
+#: 24ea6f8658664edba3ffe27ce8aa7936
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/visualization_tutorial.rst:170
+#: 8ab25ff3d6c64981966af726d4bba48d
+msgid "**Common Issues:**"
+msgstr "**常见问题：**"
+
+#: ../../tutorials/visualization_tutorial.rst:172
+#: ed96f90b00f144d6b7a2dd098e512aa4
+msgid "**Missing dependencies:** .. code-block:: bash"
+msgstr "**缺少依赖项：** .. code-block:: bash"
+
+#: ../../tutorials/visualization_tutorial.rst:174
+#: beaeed20514b4229949cdb6080a523af
+msgid "pip install py3Dmol rdkit"
+msgstr ""
+
+#: ../../tutorials/visualization_tutorial.rst:176
+#: cbc8fdebbd8c4263b0c2030ab482c488
+msgid ""
+"**Invalid SMILES:** - Check SMILES syntax - Use valid chemical notation"
+msgstr "**无效的SMILES：** - 检查SMILES语法 - 使用有效的化学符号"
+
+#: ../../tutorials/visualization_tutorial.rst:180
+#: 1e37beda63b248c39251019ae46db834
+msgid ""
+"**PDB ID not found:** - Verify PDB ID exists at https://www.rcsb.org/ - "
+"Check spelling"
+msgstr ""
+"**未找到 PDB ID：**  \n"
+"- 请验证 PDB ID 是否存在于 https://www.rcsb.org/  \n"
+"- 检查拼写是否正确"
+
+#: ../../tutorials/visualization_tutorial.rst:184
+#: c7f08fceabac4d3498d5bd986518fb2d
+msgid ""
+"**Performance Tips:** - Use smaller dimensions for large molecules - Disable"
+" surface rendering for better performance"
+msgstr ""
+"**性能提示：**  \n"
+"- 对于大型分子，使用较小的尺寸  \n"
+"- 禁用表面渲染以提高性能"
+
+#: ../../tutorials/visualization_tutorial.rst:189
+#: 14fd485dab024181961aa95e7abd4188
+msgid "Resources"
+msgstr "资源"
+
+#: ../../tutorials/visualization_tutorial.rst:191
+#: bd6455e2ed56449284626872762afe6f
+msgid "`PDB Database <https://www.rcsb.org/>`_"
+msgstr "`PDB 数据库 <https://www.rcsb.org/>`_"
+
+#: ../../tutorials/visualization_tutorial.rst:192
+#: fb04be5d18eb4ccbade3839f05f14bcb
+msgid "`PubChem Database <https://pubchem.ncbi.nlm.nih.gov/>`_"
+msgstr "PubChem 数据库 <https://pubchem.ncbi.nlm.nih.gov/>"
+
+#: ../../tutorials/visualization_tutorial.rst:193
+#: f9c949a1063e47bab58209c11f5f6080
+msgid "`RDKit Documentation <https://www.rdkit.org/docs/>`_"
+msgstr "`RDKit 文档 <https://www.rdkit.org/docs/>`_"

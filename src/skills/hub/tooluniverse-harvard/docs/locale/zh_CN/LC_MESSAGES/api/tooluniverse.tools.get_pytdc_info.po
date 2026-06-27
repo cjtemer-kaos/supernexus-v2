@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pytdc_info.rst:2
+#: cedae648b398458f97f64289c01a7aca
+msgid "tooluniverse.tools.get\\_pytdc\\_info module"
+msgstr "tooluniverse.tools.get\\_pytdc\\_info 模块"
+
+#: 8e3f9190a9dc4c0585f88c57c49a1c9c of tooluniverse.tools.get_pytdc_info:1
+msgid "get_pytdc_info"
+msgstr "获取_pytdc_信息"
+
+#: 625ae0f902994974a0fc11703e30d5c0 d50f873910de41b48010a9096b350a4b of
+#: tooluniverse.tools.get_pytdc_info:3
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:1
+msgid ""
+"Get comprehensive information about PyTDC – Therapeutics Data Commons in "
+"Python"
+msgstr "获取关于 PyTDC – Therapeutics Data Commons in Python 的全面信息"
+
+#: ../../api/tooluniverse.tools.get_pytdc_info.rst
+#: 87140e7eb12b4f1db6224dfb1ef9205d
+msgid "Parameters"
+msgstr "参数"
+
+#: 790c179bd5c7458aa3c414c41be4f720 of
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:3
+msgid "Type of information to retrieve about PyTDC"
+msgstr "关于 PyTDC 可检索的信息类型"
+
+#: d796d612ad6d4f8fae7c204872716c08 of
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c078c55aab694c678775906ff686e6c6 of
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 2299a804a09d46eaa9b39c12169a8de2 of
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pytdc_info.rst
+#: 1630e50651f4482ab5759f3900a330dd
+msgid "Return type"
+msgstr "返回类型"
+
+#: cc3bd4caef0a4315a215136e7aeb1421 of
+#: tooluniverse.tools.get_pytdc_info.get_pytdc_info:12
+msgid ":py:class:`Any`"
+msgstr ""

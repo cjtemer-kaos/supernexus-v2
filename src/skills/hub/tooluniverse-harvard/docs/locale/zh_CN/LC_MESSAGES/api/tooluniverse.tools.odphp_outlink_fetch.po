@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.odphp_outlink_fetch.rst:2
+#: 55b1ec228e0c41b185a6c9b50569d1fd
+msgid "tooluniverse.tools.odphp\\_outlink\\_fetch module"
+msgstr "tooluniverse.tools.odphp\\_outlink\\_fetch 模块"
+
+#: 63847a70db7743ac895cb5e1d1c51194 of
+#: tooluniverse.tools.odphp_outlink_fetch:1
+msgid "odphp_outlink_fetch"
+msgstr ""
+
+#: 8f772064f3744797a58a13558f2b75ce ecc6255e9e1245099dc20c43eb9a1f49 of
+#: tooluniverse.tools.odphp_outlink_fetch:3
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:1
+msgid ""
+"This tool retrieves readable text from ODPHP article links and information "
+"sources. This is helpf..."
+msgstr "该工具从ODPHP文章链接和信息来源中提取可读文本。这对于..."
+
+#: ../../api/tooluniverse.tools.odphp_outlink_fetch.rst
+#: 8a45d1761005406e90afecdb2594c444
+msgid "Parameters"
+msgstr "参数"
+
+#: de8249b840a74efb90702765d75d49a4 of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:3
+msgid "1–3 absolute URLs from AccessibleVersion or RelatedItems.Url"
+msgstr "1–3 个绝对 URL，来源于 AccessibleVersion 或 RelatedItems.Url"
+
+#: 230b67c543dc4e6480d712bc490cb910 of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:5
+msgid "Optional hard cap on extracted text length (e.g., 5000)"
+msgstr "可选的提取文本长度上限（例如，5000）"
+
+#: fe470d7c2dd540f49363194e0f1cec6a of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:7
+msgid "If true, also return minimally cleaned HTML"
+msgstr "如果为真，则同时返回最低限度清理的HTML"
+
+#: d6de7d95d0c647a5a54d10c5a0915630 of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2b5ff8ccf7484656bf59c96c2e698bb3 of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 248ee697fdc0496b8d118f0b5c42535e of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.odphp_outlink_fetch.rst
+#: 3b16530a58cb46d6a4060e33c0fb8cc2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 53871ca2f7b0424f970548dce98413b9 of
+#: tooluniverse.tools.odphp_outlink_fetch.odphp_outlink_fetch:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

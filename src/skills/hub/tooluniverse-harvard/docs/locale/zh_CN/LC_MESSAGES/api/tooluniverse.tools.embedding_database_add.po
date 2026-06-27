@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.embedding_database_add.rst:2
+#: 7d7e8cfc158347f28c88f38621df640d
+msgid "tooluniverse.tools.embedding\\_database\\_add module"
+msgstr "tooluniverse.tools.embedding\\_database\\_add 模块"
+
+#: b402050044494960aef39db364544c5e of
+#: tooluniverse.tools.embedding_database_add:1
+msgid "embedding_database_add"
+msgstr ""
+"embedding_database_add  \n"
+"嵌入式数据库添加"
+
+#: 32576f8d84bf49d8b25640b4fd9b44b1 e11d08be22ca4ce98c4f61fb24d36564 of
+#: tooluniverse.tools.embedding_database_add:3
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:1
+msgid ""
+"Add new documents to an existing embedding database. Generates embeddings "
+"for new documents using..."
+msgstr "将新文档添加到现有的嵌入式数据库中。使用...为新文档生成嵌入。"
+
+#: ../../api/tooluniverse.tools.embedding_database_add.rst
+#: fa08ba8965344eeba9b845ec7eae0651
+msgid "Parameters"
+msgstr "参数"
+
+#: 84bee5eb2320431384495295e7d630a0 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:3
+msgid "Action to add documents to existing database"
+msgstr "将文档添加到现有数据库的操作"
+
+#: 2835a048a4824b9cae6d665640d62180 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:5
+msgid "Name of the existing database to add documents to"
+msgstr "现有数据库的名称，用于添加文档"
+
+#: 5497e1a9ff2d4a7186920a7cb3816cc5 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:7
+msgid "List of new document texts to embed and add"
+msgstr "嵌入和添加的新文档文本列表"
+
+#: 47d09ed064a84e259421fd61e22e2fca of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:9
+msgid "Optional metadata for each new document (same length as documents)"
+msgstr "每个新文档的可选元数据（与文档长度相同）"
+
+#: d0f94db89e85488f9601ea79e699f2e6 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 545133d26fc84b0485f7df10ff652f79 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: bf9dc3dbf4884539bcec327f78d59295 of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.embedding_database_add.rst
+#: 423b7ba6192340b889f3e8609b804c40
+msgid "Return type"
+msgstr "返回类型"
+
+#: 58bfca1478214010ba3e9e7ea3790b3c of
+#: tooluniverse.tools.embedding_database_add.embedding_database_add:18
+msgid ":py:class:`Any`"
+msgstr ""

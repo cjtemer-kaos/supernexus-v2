@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.rst:2
+#: aa2a358318fd4836843dab80521c8363
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_info\\_on\\_conditions\\_for\\_doctor\\_consultation"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_info\\_on\\_conditions\\_for\\_doctor\\_consultation"
+" 模块"
+
+#: 7f3a72a7984b40e3a81a41a6373288b0 of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:1
+msgid "FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation"
+msgstr ""
+"FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation  \n"
+"FDA_根据医生咨询条件信息获取药品名称"
+
+#: 25d66f2f85fb43a3b303e4981c7f90fd bc5a9741e8624a1abb98ddd4cc7edaac of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:3
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:1
+msgid ""
+"Retrieve the drug names that require asking a doctor before use due to a "
+"patient's specific condi..."
+msgstr "检索因患者特定情况需要咨询医生后才能使用的药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.rst
+#: fecf592ac22446288533644451ec4c21
+msgid "Parameters"
+msgstr "参数"
+
+#: 9d70950123084d25ba615e7d626fed89 of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:3
+msgid "The condition or symptom that requires consulting a doctor."
+msgstr "需要咨询医生的状况或症状。"
+
+#: c50bc79b931e401280e70356621cd4e1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 4fa9f79702ec4ce69dfddc995637cd7a of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: a6e41bfd3f2c48b7b1ce6ae3e59e343d of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3960efb212474b32ba9993c6f2e1a175 of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c9987090e77c47bf82c932001e29a404 of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.rst
+#: a38a55b3506d4db19a13181df19fe3a4
+msgid "Return type"
+msgstr "返回类型"
+
+#: cd4d714eea11449b91a0b0df4ba0f84a of
+#: tooluniverse.tools.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation.FDA_get_drug_name_by_info_on_conditions_for_doctor_consultation:16
+msgid ":py:class:`Any`"
+msgstr ""

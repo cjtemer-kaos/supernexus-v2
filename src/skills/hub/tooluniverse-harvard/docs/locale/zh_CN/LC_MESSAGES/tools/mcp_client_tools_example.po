@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/mcp_client_tools_example.rst:2 be1dc20692b24aad902e7d5c02e2e022
+msgid "Mcp Client Tools Example"
+msgstr "Mcp 客户端工具示例"
+
+#: ../../tools/mcp_client_tools_example.rst:4 a7aed3960bbd42f886272e02d39f8980
+msgid ""
+"**Configuration File**: ``mcp_client_tools_example.json`` **Tool Type**: "
+"Local **Tools Count**: 4"
+msgstr ""
+"**配置文件**：``mcp_client_tools_example.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：4"
+
+#: ../../tools/mcp_client_tools_example.rst:8 74136d1ff7034705ac099be9db2e5b0d
+msgid ""
+"This page contains all tools defined in the "
+"``mcp_client_tools_example.json`` configuration file."
+msgstr "此页面包含在 ``mcp_client_tools_example.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/mcp_client_tools_example.rst:11 8a589f67ea0e4186b0245a14ac7d9736
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/mcp_client_tools_example.rst:14 b94193825cf24fb9b8c970a43e4222e7
+msgid "**mcp_auto_loader_server1** (Type: MCPAutoLoaderTool)"
+msgstr "**mcp_auto_loader_server1**（类型：MCPAutoLoaderTool）"
+
+#: ../../tools/mcp_client_tools_example.rst:16 af1a908685954034bed3418cd1c28962
+msgid ""
+"Automatically discover and load all tools from MCP Server 1. Can register"
+" discovered tools as ind..."
+msgstr "自动发现并加载来自 MCP 服务器的所有工具 1。可以将发现的工具注册为 ind..."
+
+#: ../../tools/mcp_client_tools_example.rst d8f7977711b04035a75223f1c2e88cfa
+msgid "mcp_auto_loader_server1 tool specification"
+msgstr "mcp_auto_loader_server1 工具规格说明"
+
+#: ../../tools/mcp_client_tools_example.rst:20
+#: ../../tools/mcp_client_tools_example.rst:47
+#: ../../tools/mcp_client_tools_example.rst:98
+#: ../../tools/mcp_client_tools_example.rst:137
+#: 11b7be8d5c864374a111f3cbfe4789d8 4d786263292d4cd2904745aff8345085
+#: ade9fd40c5ce4a99b71f84771e2fbdca e35e7c28270f4addb2a978e1c80cb4b0
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/mcp_client_tools_example.rst:22 bac8803b4d8d432e88392c08bfe0f771
+msgid "**Name**: ``mcp_auto_loader_server1``"
+msgstr "**名称**：``mcp_auto_loader_server1``"
+
+#: ../../tools/mcp_client_tools_example.rst:23 03126902b68a4f3997cdb584e570fb98
+msgid "**Type**: ``MCPAutoLoaderTool``"
+msgstr "**类型**：``MCPAutoLoaderTool``"
+
+#: ../../tools/mcp_client_tools_example.rst:24 a453309aab70407c86c6b6c05fbf7450
+msgid ""
+"**Description**: Automatically discover and load all tools from MCP "
+"Server 1. Can register discovered tools as individual ToolUniverse tools "
+"or provide tool configurations."
+msgstr "**描述**：自动发现并加载所有来自 MCP Server 1 的工具。可将发现的工具注册为独立的 ToolUniverse 工具，或提供工具配置。"
+
+#: ../../tools/mcp_client_tools_example.rst:26 35ee7ee808cd46318f2ca3357a32f4b8
+msgid "**Parameters:** No parameters required."
+msgstr "**参数：** 无需任何参数。"
+
+#: ../../tools/mcp_client_tools_example.rst:28
+#: ../../tools/mcp_client_tools_example.rst:73
+#: ../../tools/mcp_client_tools_example.rst:115
+#: ../../tools/mcp_client_tools_example.rst:151
+#: 24600701facb485cae2cc6f936d8e55d 46ff550f592d4a739f306e603be34e21
+#: 4d8fe055ee824d99b7ca5e55ef314141 7d9668099f5a4e0085df017119b1461c
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/mcp_client_tools_example.rst:41 67d0d49942d5423db2d349f3372d4824
+msgid "**mcp_client_example** (Type: MCPClientTool)"
+msgstr "**mcp_client_example**（类型：MCPClientTool）"
+
+#: ../../tools/mcp_client_tools_example.rst:43 ee058ddcf072419986339d1f5780d412
+msgid ""
+"Example MCP client to connect to an existing MCP server. Supports all MCP"
+" operations including to..."
+msgstr "示例MCP客户端，用于连接到现有的MCP服务器。支持所有MCP操作，包括..."
+
+#: ../../tools/mcp_client_tools_example.rst 6339b5d0845a463e9b7052c3ae8b20d3
+msgid "mcp_client_example tool specification"
+msgstr "mcp_client_example 工具规范"
+
+#: ../../tools/mcp_client_tools_example.rst:49 a5b952ef299a47ef8d65ab5bc87ffe4a
+msgid "**Name**: ``mcp_client_example``"
+msgstr "**名称**: ``mcp_client_example``"
+
+#: ../../tools/mcp_client_tools_example.rst:50 c29706784431486ea3501f63c88d712a
+msgid "**Type**: ``MCPClientTool``"
+msgstr "**类型**: ``MCPClientTool``"
+
+#: ../../tools/mcp_client_tools_example.rst:51 cc7005c469724b69bbe8d0b934331c50
+msgid ""
+"**Description**: Example MCP client to connect to an existing MCP server."
+" Supports all MCP operations including tools, resources, and prompts."
+msgstr "**描述**：示例MCP客户端，用于连接到现有的MCP服务器。支持所有MCP操作，包括工具、资源和提示。"
+
+#: ../../tools/mcp_client_tools_example.rst:53
+#: ../../tools/mcp_client_tools_example.rst:104
+#: ../../tools/mcp_client_tools_example.rst:143
+#: 90c4689b32844a25a2a91f97be2acafa 9a33b0c7450644b6be3bf9b9379ff566
+#: b9f326e6f51949bfb0cc395998ecb0e4
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/mcp_client_tools_example.rst:55 ae81a7cccf65487d82e10b40d49ed5f1
+msgid "``operation`` (string) (required) The MCP operation to perform"
+msgstr "``operation``（字符串）（必填）要执行的MCP操作"
+
+#: ../../tools/mcp_client_tools_example.rst:58 a2df4f6f278a40378dc3f9b0dca4563d
+#, fuzzy
+msgid ""
+"``tool_name`` (string) (required) Name of the tool to call (required for "
+"call_tool operation)"
+msgstr "``tool_name``（字符串）（可选）调用工具的名称（对于 call_tool 操作是必需的）"
+
+#: ../../tools/mcp_client_tools_example.rst:61 567f2f00a69d452b9373e0530bb114c7
+#, fuzzy
+msgid ""
+"``tool_arguments`` (object) (required) Arguments to pass to the tool (for"
+" call_tool operation)"
+msgstr "``tool_arguments``（对象）（可选）用于传递给工具的参数（适用于 call_tool 操作）"
+
+#: ../../tools/mcp_client_tools_example.rst:64 b21d65d7defe4cdb97275a3b329f52ce
+#, fuzzy
+msgid ""
+"``uri`` (string) (required) Resource URI (required for read_resource "
+"operation)"
+msgstr "``uri``（字符串）（可选）资源 URI（在执行 read_resource 操作时必需）"
+
+#: ../../tools/mcp_client_tools_example.rst:67 dea981b6b97d41c0a007d16f30966ffe
+#, fuzzy
+msgid ""
+"``prompt_name`` (string) (required) Name of the prompt to get (required "
+"for get_prompt operation)"
+msgstr "``prompt_name``（字符串）（可选）要获取的提示名称（对于 get_prompt 操作是必需的）"
+
+#: ../../tools/mcp_client_tools_example.rst:70 149eebf46c4644d38ef7170ca3ba7390
+#, fuzzy
+msgid ""
+"``prompt_arguments`` (object) (required) Arguments to pass to the prompt "
+"(for get_prompt operation)"
+msgstr "``prompt_arguments``（对象）（可选）用于传递给提示的参数（适用于 get_prompt 操作）"
+
+#: ../../tools/mcp_client_tools_example.rst:92 778f2719744e4bbcac0509a0c09e7f91
+msgid "**mcp_mock_calculator** (Type: MCPProxyTool)"
+msgstr "**mcp_mock_calculator**（类型：MCPProxyTool）"
+
+#: ../../tools/mcp_client_tools_example.rst:94 908092a7c85d4ffa876f0f5edf36a0eb
+msgid "A simple calculator tool for testing"
+msgstr "用于测试的简单计算器工具"
+
+#: ../../tools/mcp_client_tools_example.rst 192500314513469c8925774b8572afc4
+msgid "mcp_mock_calculator tool specification"
+msgstr "mcp_mock_calculator 工具规范"
+
+#: ../../tools/mcp_client_tools_example.rst:100
+#: 8aefebeb0efc4a0db3084a8a3f48863c
+msgid "**Name**: ``mcp_mock_calculator``"
+msgstr "**名称**: ``mcp_mock_calculator``"
+
+#: ../../tools/mcp_client_tools_example.rst:101
+#: ../../tools/mcp_client_tools_example.rst:140
+#: 4d4a872ab1064f53b27eb6997a7be13a a4de9efd66e747e68e0ad63a0eeac355
+msgid "**Type**: ``MCPProxyTool``"
+msgstr "**类型**：``MCPProxyTool``"
+
+#: ../../tools/mcp_client_tools_example.rst:102
+#: 204920591f2e4a9cab300400e97456a8
+msgid "**Description**: A simple calculator tool for testing"
+msgstr "**描述**：用于测试的简单计算器工具"
+
+#: ../../tools/mcp_client_tools_example.rst:106
+#: a0cfebeaddf24784bfba59af94ec5d43
+msgid "``operation`` (string) (required) The mathematical operation to perform"
+msgstr "``operation``（字符串）（必填）要执行的数学运算"
+
+#: ../../tools/mcp_client_tools_example.rst:109
+#: 6bc83a95a16f4fa58b043737478e3382
+msgid "``a`` (number) (required) First number"
+msgstr "``a`` （数字）（必填）第一个数字"
+
+#: ../../tools/mcp_client_tools_example.rst:112
+#: 9e48c350f23845c690a717c635903714
+msgid "``b`` (number) (required) Second number"
+msgstr "``b`` （数字）（必填）第二个数字"
+
+#: ../../tools/mcp_client_tools_example.rst:131
+#: 70840eee459c42698e879e385f71330c
+msgid "**mcp_mock_greeter** (Type: MCPProxyTool)"
+msgstr "**mcp_mock_greeter**（类型：MCPProxyTool）"
+
+#: ../../tools/mcp_client_tools_example.rst:133
+#: 0f3ed207fac145dea644e304abff0ca9
+msgid "A simple greeting tool"
+msgstr "一个简单的问候工具"
+
+#: ../../tools/mcp_client_tools_example.rst ba5c81bd7bf64e348d087019d472fad1
+msgid "mcp_mock_greeter tool specification"
+msgstr "mcp_mock_greeter 工具规范"
+
+#: ../../tools/mcp_client_tools_example.rst:139
+#: 9c9c7a29f49240ec8c4813e322787d8b
+msgid "**Name**: ``mcp_mock_greeter``"
+msgstr "**名称**: ``mcp_mock_greeter``"
+
+#: ../../tools/mcp_client_tools_example.rst:141
+#: f2ab52f390574e14802006ab84483b9e
+msgid "**Description**: A simple greeting tool"
+msgstr "**描述**：一个简单的问候工具"
+
+#: ../../tools/mcp_client_tools_example.rst:145
+#: 704eb28b2953443fb7d6b93a580610e7
+msgid "``name`` (string) (required) Name to greet"
+msgstr "``name``（字符串）（必填）用于问候的名称"
+
+#: ../../tools/mcp_client_tools_example.rst:148
+#: f87ff371ede1446183ea11c1c72ca48e
+#, fuzzy
+msgid "``language`` (string) (required) Language for greeting"
+msgstr "``language``（字符串）（可选）用于问候的语言"
+
+#: ../../tools/mcp_client_tools_example.rst:166
+#: 73fee456f4fb46d6b4f5f8315e54fa91
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/mcp_client_tools_example.rst:168
+#: 5333277389f24e228ac6ac0a231de495
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/mcp_client_tools_example.rst:169
+#: b336b8362e454b14b77826fd59e3050c
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

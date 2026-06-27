@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.rst:2
+#: dbaabf9579444f3c8d912bbb87f8be68
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_drug\\_chemblId "
+"module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_publications\\_by\\_drug\\_chemblId 模块"
+
+#: 1f52d4d487a046ebab9a95fd09ab404a of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId:1
+msgid "OpenTargets_get_publications_by_drug_chemblId"
+msgstr "OpenTargets_根据药物ChemblId获取文献"
+
+#: ca346d8873c74823a2223c379617a86c d8712df1cf254885a06459213c5c1a7c of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:1
+msgid ""
+"Retrieve publications related to a drug chemblId, including PubMed IDs and "
+"publication dates."
+msgstr "检索与药物 chemblId 相关的出版物，包括 PubMed ID 和出版日期。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.rst
+#: 546adbde3f314d86afdee197571c212b
+msgid "Parameters"
+msgstr "参数"
+
+#: 1ccc1272dfdd458ca388fab4db4f23be of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:3
+msgid "The ID of the entity (chemblId)."
+msgstr "实体的ID（chemblId）。"
+
+#: 73ad9797eead48fb963b381c1aada26f of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:5
+msgid "List of additional IDs to include in the search."
+msgstr "在搜索中包含的额外ID列表。"
+
+#: 2bb6c0a804014575996dc9cbb6160f74 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:7
+msgid "Year at the lower end of the filter."
+msgstr "过滤器下限的年份。"
+
+#: 7496343d7a2646538858bf38025feab6 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:9
+msgid "Month at the lower end of the filter."
+msgstr "过滤器底端的月份。"
+
+#: 92aab8772c4a49f6a68b35aab8486cb6 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:11
+msgid "Year at the higher end of the filter."
+msgstr "过滤器高端的年份。"
+
+#: 76fb670c017c4722bbda2e875fdfe8bf of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:13
+msgid "Month at the higher end of the filter."
+msgstr "过滤器高端的月份。"
+
+#: a3bd37e839844b6a8564127e46005b04 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 92098433491546d89dd6a94815321125 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 19fead99965c4a588b29cb0855dc14ef of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.rst
+#: 3e3fa3cff00e469bad3478c53e43128d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 707926c1fc3049518d53176f166f7428 of
+#: tooluniverse.tools.OpenTargets_get_publications_by_drug_chemblId.OpenTargets_get_publications_by_drug_chemblId:22
+msgid ":py:class:`Any`"
+msgstr ""

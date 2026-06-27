@@ -1,0 +1,255 @@
+[
+  {
+    "type": "CellosaurusSearchTool",
+    "name": "cellosaurus_search_cell_lines",
+    "description": "Search Cellosaurus cell lines using the /search/cell-line endpoint. Supports Solr query syntax for precise field-based searches.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string",
+          "description": "Search query. Supports Solr syntax for field-specific searches (e.g., 'id:HeLa', 'ox:9606', 'char:cancer'). See https://api.cellosaurus.org/api-fields for available fields."
+        },
+        "offset": {
+          "type": "integer",
+          "description": "Number of results to skip (for pagination)",
+          "default": 0
+        },
+        "size": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 20
+        }
+      },
+      "required": [
+        "q"
+      ]
+    },
+    "return_schema": {
+      "type": ["object", "null"],
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the search was successful"
+        },
+        "results": {
+          "type": "object",
+          "properties": {
+            "cell_lines": {
+              "type": "array",
+              "description": "List of matching cell lines"
+            },
+            "total": {
+              "type": "integer",
+              "description": "Total number of matching cell lines"
+            },
+            "offset": {
+              "type": "integer",
+              "description": "Number of results skipped"
+            },
+            "size": {
+              "type": "integer",
+              "description": "Number of results returned"
+            }
+          }
+        },
+        "query": {
+          "type": "string",
+          "description": "The search query that was executed"
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if search failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "q": "id:HeLa",
+        "size": 1
+      },
+      {
+        "q": "ox:9606 AND char:cancer",
+        "size": 5
+      }
+    ]
+  },
+  {
+    "type": "CellosaurusQueryConverterTool",
+    "name": "cellosaurus_query_converter",
+    "description": "Convert natural language queries to Solr syntax for Cellosaurus API searches. Uses semantic similarity to map terms to appropriate fields.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Natural language query to convert to Solr syntax (e.g., 'human cancer cells', 'HeLa cells from lung tissue')"
+        },
+        "include_explanation": {
+          "type": "boolean",
+          "description": "Whether to include detailed explanation of the conversion process",
+          "default": true
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "type": ["object", "null"],
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the conversion was successful"
+        },
+        "original_query": {
+          "type": "string",
+          "description": "The original natural language query"
+        },
+        "solr_query": {
+          "type": "string",
+          "description": "The converted Solr query"
+        },
+        "is_valid": {
+          "type": "boolean",
+          "description": "Whether the generated Solr query is valid"
+        },
+        "validation_message": {
+          "type": "string",
+          "description": "Validation message for the Solr query"
+        },
+        "explanation": {
+          "type": "object",
+          "properties": {
+            "extracted_terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "field": {
+                    "type": "string",
+                    "description": "Mapped field tag"
+                  },
+                  "value": {
+                    "type": "string",
+                    "description": "Extracted value"
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "description": "Confidence score for the mapping"
+                  },
+                  "match_reason": {
+                    "type": "string",
+                    "description": "Reason for the field mapping"
+                  }
+                }
+              }
+            },
+            "transformations_applied": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of transformations applied to the query"
+            },
+            "available_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of available Cellosaurus field tags"
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if conversion failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "human cancer cells",
+        "include_explanation": true
+      },
+      {
+        "query": "HeLa cells AND lung",
+        "include_explanation": false
+      }
+    ]
+  },
+  {
+    "type": "CellosaurusGetCellLineInfoTool",
+    "name": "cellosaurus_get_cell_line_info",
+    "description": "Get detailed information about a specific cell line using its Cellosaurus accession number (CVCL_ format).",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "accession": {
+          "type": "string",
+          "description": "Cellosaurus accession number (must start with 'CVCL_')",
+          "pattern": "^CVCL_[0-9]{4}$"
+        },
+        "format": {
+          "type": "string",
+          "description": "Response format",
+          "enum": [
+            "json",
+            "xml",
+            "txt",
+            "fasta"
+          ],
+          "default": "json"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific fields to retrieve (e.g., ['id', 'ox', 'char']). If not specified, all fields are returned."
+        }
+      },
+      "required": [
+        "accession"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the request was successful"
+        },
+        "accession": {
+          "type": "string",
+          "description": "The requested accession number"
+        },
+        "data": {
+          "type": "object",
+          "description": "Cell line data (structure depends on format and fields requested)"
+        },
+        "format": {
+          "type": "string",
+          "description": "The response format"
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if request failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "accession": "CVCL_0030"
+      },
+      {
+        "accession": "CVCL_0030",
+        "fields": [
+          "id",
+          "ox",
+          "char"
+        ]
+      }
+    ]
+  }
+]

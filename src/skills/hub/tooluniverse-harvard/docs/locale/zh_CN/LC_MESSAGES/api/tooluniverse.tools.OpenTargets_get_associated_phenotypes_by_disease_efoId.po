@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.rst:2
+#: eea7909aa9de457190706337737880d8
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_phenotypes\\_by\\_disease\\_efoId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_phenotypes\\_by\\_disease\\_efoId"
+" 模块"
+
+#: 27d9507bf078480c909cd1019fc7ce15 of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId:1
+msgid "OpenTargets_get_associated_phenotypes_by_disease_efoId"
+msgstr "OpenTargets_通过疾病 EFO ID 获取相关表型"
+
+#: 3224126b2e0d4d9b891f61da2e1d8cb3 a3b2abcc3f144c8d91e95bde948765d4 of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId:3
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:1
+msgid "Find HPO phenotypes asosciated with the specified disease efoId."
+msgstr "查找与指定疾病 efoId 相关的 HPO 表型。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.rst
+#: d925a1613cba44d8811eedd81820d489
+msgid "Parameters"
+msgstr "参数"
+
+#: f88ec1a420444d5cb83893e42cf2abb7 of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:3
+msgid "The efoId of a disease or phenotype."
+msgstr "疾病或表型的efoId。"
+
+#: e6c52bd275b843f8948954a5db29a5ec of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2c81700078744ddebe236e70941dca8d of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 485dd6aa3dbc4add9391e405a09805e4 of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.rst
+#: d422c237be5a45f8a37b09d6bc8192df
+msgid "Return type"
+msgstr "返回类型"
+
+#: 548ae1a4249647868dc3ab25d13ebfd6 of
+#: tooluniverse.tools.OpenTargets_get_associated_phenotypes_by_disease_efoId.OpenTargets_get_associated_phenotypes_by_disease_efoId:12
+msgid ":py:class:`Any`"
+msgstr ""

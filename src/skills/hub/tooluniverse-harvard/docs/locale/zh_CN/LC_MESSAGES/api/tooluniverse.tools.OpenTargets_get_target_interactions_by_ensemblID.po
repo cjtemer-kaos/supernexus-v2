@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.rst:2
+#: 86590b9f965d4d8e85be3105742e1d14
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_interactions\\_by\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_interactions\\_by\\_ensemblID"
+" 模块"
+
+#: f42f1d69ffdf46e092557dd9c80cc323 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID:1
+msgid "OpenTargets_get_target_interactions_by_ensemblID"
+msgstr ""
+"OpenTargets_get_target_interactions_by_ensemblID  \n"
+"获取目标与EnsemblID之间的交互"
+
+#: 222b1d538a9543cda9f8ff9e4af6e40f 7ea188bb7ef2440f82a43c456c1cd75d of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:1
+msgid ""
+"Retrieve interaction data for a specific target ensemblID, including "
+"interaction partners and evi..."
+msgstr "检索特定目标ensemblID的交互数据，包括交互伙伴和证据..."
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.rst
+#: a7f734edc30148e7a7d6019fca439490
+msgid "Parameters"
+msgstr "参数"
+
+#: f42b9d4e76bf41ff9f13e3474593fc72 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:3
+msgid "The Ensembl ID of the target."
+msgstr "目标的Ensembl ID。"
+
+#: fc22bdc82c814272abe6c5c2e9639863 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:5
+msgid "Pagination parameters."
+msgstr "分页参数。"
+
+#: bbcb9e561b144268aefa68af97a3f0dd of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: adc4292435224321ba843f88123ab671 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 32edf047e6774878a2c900dfefac9149 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.rst
+#: b8aa1e158ad7402aaa4f69d5bc245423
+msgid "Return type"
+msgstr "返回类型"
+
+#: ae8dbe7b6d594d2f9457e87bee270567 of
+#: tooluniverse.tools.OpenTargets_get_target_interactions_by_ensemblID.OpenTargets_get_target_interactions_by_ensemblID:14
+msgid ":py:class:`Any`"
+msgstr ""

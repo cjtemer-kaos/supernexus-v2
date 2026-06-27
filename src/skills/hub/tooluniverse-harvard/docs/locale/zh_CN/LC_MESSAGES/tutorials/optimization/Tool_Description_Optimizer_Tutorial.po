@@ -1,0 +1,965 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:1
+#: be86a6240eae41aaa5efa076c47675c9
+msgid "Tool Description Optimizer - Complete Tutorial"
+msgstr "工具描述优化器 - 完整教程"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:3
+#: 3403724e7d454b9c8b6dc621acc7cea1
+msgid "Table of Contents"
+msgstr "目录"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:5
+#: a7607f0ddab9415b9319862edd41b064
+msgid "[🚀 Quick Start](#-quick-start)"
+msgstr "[🚀 快速开始](#-quick-start)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:6
+#: 97d1d698c6024dd3ae46248a886c0b64
+msgid "[Overview](#overview)"
+msgstr "[概述](#overview)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:7
+#: ae5cb14cf02f4eb99a1d6d3071f70d22
+msgid "[Key Features](#key-features)"
+msgstr "[主要特性](#key-features)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:8
+#: 8c07bd5bd4384f9e8a872c51b83d2bdb
+msgid "[Configuration Parameters](#configuration-parameters)"
+msgstr "[配置参数](#configuration-parameters)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:9
+#: bb5f94e6c28443e89e2d8ee5b66a9091
+msgid "[Understanding the Output](#understanding-the-output)"
+msgstr "[理解输出](#understanding-the-output)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:10
+#: 10189b4368da45fdaa6aba0cb94c39dc
+msgid ""
+"[Real Example: FDA Tool Optimization](#real-example-fda-tool-optimization)"
+msgstr "[真实案例：FDA工具优化](#real-example-fda-tool-optimization)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:11
+#: cd115b9c7dc04f659442cf3f63935ca9
+msgid "[Best Practices](#best-practices)"
+msgstr "[最佳实践](#best-practices)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:12
+#: f02973bffa1144f3ad4e8c55e671facb
+msgid "[Advanced Features](#advanced-features)"
+msgstr "[高级功能](#advanced-features)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:13
+#: f1fa3fe0166d444099489961df152735
+msgid "[Troubleshooting](#troubleshooting)"
+msgstr "[故障排除](#troubleshooting)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:14
+#: e0014790ed994c4e8bc4271581617227
+msgid "[Integration Tutorial](#integration-guide)"
+msgstr "[集成教程](#integration-guide)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:15
+#: 85b9733319374225a2d01f749c176c56
+msgid "[Complete Example Scripts](#complete-example-scripts)"
+msgstr "[完整示例脚本](#complete-example-scripts)"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:19
+#: fefc640738a649f4a407b8958df340c6
+msgid "🚀 Quick Start"
+msgstr "🚀 快速入门"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:21
+#: 003d9b71d8894ccf96aa46a09a052d82
+msgid "Basic Usage (3 steps)"
+msgstr "基本用法（3个步骤）"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:41
+#: f7d9bc6aa3dc43a9b49c10014bce9fde
+msgid "Example Results"
+msgstr "示例结果"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:43
+#: f86460b8b0614efe928b6740e07cf4e6
+msgid ""
+"**Before**: `\"Fetch a list of active ingredients in a specific drug "
+"product.\"`"
+msgstr "**Before**: `\"获取特定药品中活性成分的列表。\"`"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:45
+#: a6f6a49dd11d47bab4e140550f2346a3
+msgid ""
+"**After**: `\"Provides detailed information about the active ingredients in "
+"drug products, including their properties and quantities, as found in "
+"various formulations and brands.\"`"
+msgstr "**之后**：`\"提供有关药品活性成分的详细信息，包括其特性和含量，这些信息适用于各种配方和品牌。\"`"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:49
+#: b20249c9b9194cc885a453c75431903e
+msgid "Overview"
+msgstr "概述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:51
+#: 4b5f4ea29f984ca7b3a19c58734b622f
+msgid ""
+"The ToolDescriptionOptimizer is an AI-powered tool that automatically "
+"improves tool documentation through iterative optimization. It analyzes "
+"actual test results to generate more accurate, concise, and user-friendly "
+"descriptions."
+msgstr ""
+"ToolDescriptionOptimizer "
+"是一款由人工智能驱动的工具，可通过迭代优化自动改进工具文档。它通过分析实际测试结果，生成更准确、简洁且用户友好的描述。"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:53
+#: 2d7aa23ecc614a6a93d298703430fbb9
+msgid "Core Functions"
+msgstr "核心功能"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:54
+#: 59cf0c23b970458b8d5875fa04a2b6b0
+msgid ""
+"**Test Case Generation**: Creates diverse test scenarios for comprehensive "
+"analysis"
+msgstr "**测试用例生成**：创建多样化的测试场景以进行全面分析"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:55
+#: 83198001aec24a2981a07b0349021874
+msgid ""
+"**Multi-Round Optimization**: Iteratively improves through feedback-driven "
+"enhancement"
+msgstr "**多轮优化**：通过反馈驱动的增强过程进行迭代改进"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:56
+#: ac8f89648a6947bb95d8a93220816504
+msgid ""
+"**Quality Assessment**: Evaluates 6 key criteria with objective scoring"
+msgstr "**质量评估**：根据6项关键标准进行客观评分"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:57
+#: 9d0eb9b530b44036bca971a5f43132fa
+msgid "**Comprehensive Reporting**: Documents the entire optimization process"
+msgstr "**全面报告**：记录整个优化过程"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:59
+#: 6088d4b767094cdc9b054053361fb1af
+msgid "What Gets Optimized"
+msgstr "优化内容"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:60
+#: ae3db6252a1f46d399027e43d489c40c
+msgid "**Tool Description**: Overall purpose and high-level functionality"
+msgstr "**工具描述**：整体用途和高层功能"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:61
+#: 66b84cbbf77e433ba9e0b2e4e2e97c4f
+msgid ""
+"**Parameter Descriptions**: Input requirements, constraints, and examples"
+msgstr "**参数说明**：输入要求、约束条件和示例"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:62
+#: cf6a0f7ee4474632aa2713176c0c1f29
+msgid "**Language Quality**: Clarity, conciseness, and user-friendliness"
+msgstr "**语言质量**：清晰、简洁、用户友好"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:63
+#: 39c8faf3e7214883a4d5add005600260
+msgid "**Accuracy**: Alignment with actual tool behavior"
+msgstr "**准确性**：与实际工具行为保持一致"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:65
+#: f3536d31f9e24be9884934e9b952a726
+msgid "Key Features"
+msgstr "主要特性"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:67
+#: 877bcf1438774e46a2cbd9875a3c7a7d
+msgid "🎯 **Intelligent Analysis**"
+msgstr "🎯 **智能分析**"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:68
+#: 503aa85ed1f449f5b295e7c5cbd9944d
+msgid "Tests tools with real inputs to verify description accuracy"
+msgstr "使用真实输入测试工具以验证描述的准确性"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:69
+#: 304d9ec7f06447038e07c8f0017ed7a1
+msgid ""
+"Identifies and eliminates redundancy between tool and parameter descriptions"
+msgstr "识别并消除工具与参数描述之间的冗余内容"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:70
+#: 38de90309d284a2a9301bf47d1b08a88
+msgid "Removes filler language and meaningless corporate-speak"
+msgstr "去除填充词和无意义的企业套话"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:72
+#: 759f41f7844a4ec991bd4310688c41fd
+msgid "📊 **Quality Evaluation System**"
+msgstr "📊 **质量评估系统**"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:73
+#: 25b2fe83c6b54f63ba082dd79fcb4285
+msgid "Multi-criteria scoring (0-10 scale):"
+msgstr "多标准评分（0-10 分制）："
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:74
+#: 94d441ffffb64fcb8920bca1ce577f02
+msgid ""
+"**Clarity & Understandability**: How easy descriptions are to understand"
+msgstr "**清晰度与可理解性**：描述内容的易懂程度"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:75
+#: 94b18c9698634253b7464a4d4213c277
+msgid "**Accuracy**: How well descriptions match actual behavior"
+msgstr "**准确性**：描述与实际行为的匹配程度"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:76
+#: 8f416192c13d461987c05a9ca86e5569
+msgid "**Completeness**: Whether all necessary information is included"
+msgstr "**完整性**：是否包含所有必要的信息"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:77
+#: 07f744dddc784419a66bf8118574b8f0
+msgid "**Conciseness**: Absence of redundancy and filler language"
+msgstr "**简洁性**：避免冗余和填充语言"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:78
+#: e854dcf58bcb4eb085c9d3a2b0e610f6
+msgid "**User Friendliness**: How helpful descriptions are for users"
+msgstr "**用户友好性**：描述对用户的帮助程度"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:79
+#: 53f8c03c052f4ca8ad3e4e3fddd5c28a
+msgid "**Redundancy Avoidance**: Proper separation of concerns"
+msgstr "**冗余避免**：合理划分关注点"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:81
+#: ba4087a9416f46e4b35b137bfe92cddf
+msgid "🔄 **Adaptive Optimization**"
+msgstr "🔄 **自适应优化**"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:82
+#: 1167a8f3d4dd4a09a4f17ac921c7ab58
+msgid "Configurable iteration limits and quality thresholds"
+msgstr "可配置的迭代限制和质量阈值"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:83
+#: ddf077e0e7494c4bbfdf7c7167d6e956
+msgid "Feedback-driven test case generation in later rounds"
+msgstr "后期轮次中的反馈驱动测试用例生成"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:84
+#: 1ad3c988863a4055bbb11261f7f30adf
+msgid "Automatic convergence when quality targets are met"
+msgstr "当达到质量目标时自动收敛"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:86
+#: 22204b3e4dbc46009cde08097f0b61d6
+msgid "Configuration Parameters"
+msgstr "配置参数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 8b77983f32514bffa14311846a366557
+msgid "Parameter"
+msgstr "参数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: d71fc5aaec28488f803e6fd153175c1b
+msgid "Type"
+msgstr "类型"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: a6865a553f024398a389800dafa56e4d
+msgid "Default"
+msgstr "默认"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 07b61db6c8be4c9991bdeabee59b706d
+msgid "Description"
+msgstr "描述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 385299a7b600457da185de16fbec3734
+msgid "`tool_config`"
+msgstr "工具配置"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 26fe2c6d54c74af9b5d648776f21ee68
+msgid "dict"
+msgstr "字典"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 2e4aeb209b59462fbabc02e1ce718959
+msgid "Required"
+msgstr "必填"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 0687dc58f8324ca1a89e9988f55550f6
+msgid "The tool configuration to optimize"
+msgstr "工具配置优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 862ffb59f4224213a8c8afe7546778ee
+msgid "`max_iterations`"
+msgstr "最大迭代次数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 7970aca3370046e8b497c4518310837d
+msgid "int"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 41778e46541141fdb4e1a7acebf23851
+msgid "3"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ec538c6fc7d047a184846531ba621ccd
+msgid "Maximum number of optimization rounds"
+msgstr "最大优化轮数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 79b7fae0ecf44259a67816f1e0cdefb1
+msgid "`satisfaction_threshold`"
+msgstr "满意度阈值"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ce256c9e7f914b45bd5a80583cccece5
+msgid "float"
+msgstr "浮点数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: bc78f68087e54d8e8553132452fdb20b
+msgid "8.0"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 8e64fd3d4358434d84fc3b4377612593
+msgid "Quality score threshold (1-10) for satisfaction"
+msgstr "满意度的质量评分阈值（1-10）"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: c15884440cb241fd8a6dadd9b1b338c5
+msgid "`output_file`"
+msgstr "输出文件"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 29f12c47287242d9817302fe57480fb7
+msgid "string"
+msgstr "字符串"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 9fadc081c914495ab91f02b14732186a
+msgid "auto-generated"
+msgstr "自动生成"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 8add8fbd9b724c3c860f2a670cd832f3
+msgid "Custom path for the optimization report"
+msgstr "优化报告的自定义路径"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 50d13aa5ddbd40ff994bccf32a6ea8e6
+msgid "`save_to_file`"
+msgstr "保存到文件"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 5fcc5e13f2264bebb1337860d444be37
+msgid "bool"
+msgstr "布尔值"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 4b2ea6f714634218b3472259baa43686
+msgid "true"
+msgstr "真"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 97fd108de31f48b0ae74dbb5afb919f2
+msgid "Whether to save optimization results"
+msgstr "是否保存优化结果"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:96
+#: a2f375ba3e8f49f18a83ee2867365853
+msgid "Common Configuration Patterns"
+msgstr "常见配置模式"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:109
+#: 09e914fa60fe406fa06a44dc4b470479
+msgid "Understanding the Output"
+msgstr "理解输出"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:111
+#: 437453e1479d459bb27b451b7b5f7787
+msgid "Optimization Report Structure"
+msgstr "优化报告结构"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:112
+#: c315318389bf47ee87cdd89c88042b8e
+msgid ""
+"**Final Optimized Descriptions**: Improved tool and parameter descriptions"
+msgstr "**最终优化描述**：改进的工具和参数描述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:113
+#: 9cc6321533f24dbc9954d71bd7889f9b
+msgid ""
+"**Optimization History**: Round-by-round progression with scores and "
+"feedback"
+msgstr "**优化历史**：逐轮进展及评分与反馈"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:114
+#: 4bd6b5f8158a47a1ae67f6a99607316e
+msgid "**Detailed Rationale**: Explanations for each change made"
+msgstr "**详细理由**：对每项更改的解释说明"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:115
+#: 6f2d4a7c3db843ec816aaf2bdf7cb04c
+msgid "**Test Results**: Actual tool execution data used for analysis"
+msgstr "**测试结果**：用于分析的实际工具执行数据"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:116
+#: 8eadcba901c44377b5310e7864ffb927
+msgid "**Complete Configurations**: Before and after JSON configurations"
+msgstr "**完整配置**：JSON 配置的前后对比"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:118
+#: a1a88f27bd91437c801ba340848d839f
+msgid "Reading Quality Scores"
+msgstr "读取质量分数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:119
+#: 28d99cbc41ed4b99802a447531e176fa
+msgid "**7.0-7.9**: Good improvement, suitable for development"
+msgstr "**7.0-7.9**：良好改进，适合开发使用"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:120
+#: b5936801fd9e490182760321757748e2
+msgid "**8.0-8.4**: High quality, ready for production use"
+msgstr "**8.0-8.4**：高质量，适合生产环境使用"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:121
+#: 2be63087d339471ca5821a96d8a3b4fd
+msgid "**8.5-9.0**: Excellent quality, meets strict standards"
+msgstr "**8.5-9.0**：优异品质，符合严格标准"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:122
+#: 859a640783574980a1cc98e154a46283
+msgid "**9.0+**: Outstanding quality, rarely achieved"
+msgstr "**9.0+**：卓越品质，罕见达成"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:124
+#: 92a391a2d07a448698112ca1a47dc5a2
+msgid "Real Example: FDA Tool Optimization"
+msgstr "真实案例：FDA工具优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:126
+#: 3057c903fc6c4f2ba9e98b0fa87f3f55
+msgid "Step-by-Step Process"
+msgstr "逐步流程"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:128
+#: accfca08ca2642f3a0ea43dac4d7a060
+msgid "**Original Description**:"
+msgstr "**原始描述**："
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:133
+#: a376d19b161e44e78828e5597f3a93aa
+msgid ""
+"**Round 1**: Optimizer identifies description is too simplistic based on "
+"test results showing detailed ingredient information with quantities and "
+"properties."
+msgstr "**第一轮**：优化器根据测试结果识别出描述过于简化，测试结果显示了包含数量和属性的详细成分信息。"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:135
+#: 3236f14043404dc7ab8a429e535247b8
+msgid ""
+"**Round 2**: Adds detail about quantities and properties, but feedback "
+"indicates redundancy with parameter descriptions."
+msgstr "**第二轮**：增加了关于数量和属性的详细信息，但反馈指出与参数描述存在冗余。"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:137
+#: bd3fb347c2614cd5a2bb2ae360fadd4c
+msgid "**Round 3**: Eliminates redundancy and focuses on core functionality."
+msgstr "**第三轮**：消除冗余，聚焦核心功能。"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:139
+#: 40338dbf45b14a6b9412b808e261cfee
+msgid "**Final Result**:"
+msgstr "**最终结果**："
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:144
+#: aa6f842aba514dd383f778512f413765
+msgid "Key Improvements Achieved"
+msgstr "取得的主要改进成果"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:145
+#: 8a065e0007a44dc9b2a2c044aa1fa40d
+msgid "✅ More accurate representation of actual functionality"
+msgstr "✅ 更准确地反映实际功能"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:146
+#: 81f8df00989f4e97a13aa108c7ee84d3
+msgid "✅ Eliminated redundancy with parameter descriptions"
+msgstr "✅ 消除了参数描述的冗余"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:147
+#: d9662529da654149bca96d44d7e964f0
+msgid "✅ Clearer scope indication (multiple formulations and brands)"
+msgstr "✅ 更清晰的适用范围说明（多种配方和品牌）"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:148
+#: 330b747bf51143d5b8840b31abacbba5
+msgid "✅ More precise action verb (\"provides\" vs \"fetch\")"
+msgstr "✅ 更精确的动作动词（“提供” vs “获取”）"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:149
+#: c511a594bc914edbad4f349b71218d65
+msgid "✅ Quality score improved from ~5.0 to 7.5/10"
+msgstr "✅ 质量评分从约5.0提升至7.5/10"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:151
+#: b3273c3508714671a6a4af228f813cb1
+msgid "Best Practices"
+msgstr "最佳实践"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:153
+#: e0ed1fcde71e4559b8b96d9256aa35d9
+msgid "1. Tool Selection Strategy"
+msgstr "1. 工具选择策略"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:154
+#: e6a0e7ff688b44b1b7fd74f8d2b2898a
+msgid ""
+"**Prioritize**: Complex tools, frequently used tools, unclear descriptions"
+msgstr "**优先考虑**：复杂工具、常用工具、不明确的描述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:155
+#: 08878836cfa441e0b3eff8224e0fa99c
+msgid ""
+"**Avoid**: Simple tools, recently optimized tools, domain-specific jargon-"
+"heavy tools"
+msgstr "**避免使用**：简单工具、近期优化的工具、充满领域专业术语的工具"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:157
+#: 0d389d03d7e0496fb62711c521c19a9d
+msgid "2. Configuration Guidelines"
+msgstr "2. 配置指南"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 8d858de9667d4ccb8302dda28e5fcc72
+msgid "Scenario"
+msgstr "场景"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 05fc84587e4a4a6fbf2ecd4f1f607622
+msgid "max_iterations"
+msgstr "最大迭代次数"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: c4854cdc309440e183d39968e5f267f6
+msgid "satisfaction_threshold"
+msgstr "满意度阈值"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 6aaf482c009846e8a060b87edf72d54c
+msgid "Use Case"
+msgstr "用例"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 418ee1eaca6a4d99b2f66cef30834b52
+msgid "Development"
+msgstr "开发"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ec584fde489f4e3a8b4d8bf292ff4b14
+msgid "2-3"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 53ab86583bf44d1197b379c33d281221
+msgid "7.0-7.5"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ef0b0cffae7747ba83b516964161d72f
+msgid "Quick improvements"
+msgstr "快速改进"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: f237d62558d34b089babef30fe1c4c08
+msgid "Production"
+msgstr "生产"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 9600069b582e4dcc9bbcb5f88e24335d
+msgid "3-4"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 207cfa909ede4353b143376bf49700f6
+msgid "8.0-8.5"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: a6dea91db39e4750b26c2952d9daf72c
+msgid "Standard quality"
+msgstr "标准质量"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 3b9c3a8ea6cb45e8ad8edf49b1c002e5
+msgid "Critical Tools"
+msgstr "关键工具"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 77e32052e83b4fc8a83b29950475d3d5
+msgid "4-5"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 3f04a198a1694a10b49a5f7e947db7ed
+msgid "8.5-9.0"
+msgstr ""
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: b216abddf03c447da86d44b141fd7085
+msgid "Highest quality"
+msgstr "最高质量"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:164
+#: 715a02bb9433497890ef0940a49687b5
+msgid "3. Review Process"
+msgstr "3. 审核流程"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:165
+#: 56577a08ae4a4b0994c8ff8c23a85eb3
+msgid "**Always review** optimized descriptions before applying"
+msgstr "**在应用之前，务必审查** 优化后的描述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:166
+#: 1d6a391e65de4e59853316c970a8109c
+msgid "**Test functionality** with new descriptions"
+msgstr "**使用新描述测试功能**"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:167
+#: b7621eb449964f94a9053932f4ca4bf2
+msgid "**Consider domain expertise** that AI might miss"
+msgstr "**考虑 AI 可能忽略的领域专业知识**"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:168
+#: eccb9a442cd743408b828df5aa11fe22
+msgid "**Iterate if needed** with different thresholds"
+msgstr "根据需要使用不同的阈值进行迭代"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:170
+#: 4290285e596546aa9643b08174c9a344
+msgid "Advanced Features"
+msgstr "高级功能"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:172
+#: f14319b9425541afb305a457f32412b7
+msgid "Feedback-Driven Enhancement"
+msgstr "基于反馈的优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:173
+#: 9fa8c3eb1d7f4f1d941e4dd787cad1b0
+msgid "Later rounds generate targeted test cases based on previous feedback"
+msgstr "后续轮次根据先前反馈生成有针对性的测试用例"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:174
+#: 7e1d5d7166e54828b14a140d5ef3f7bc
+msgid "Ensures comprehensive coverage of edge cases and usage patterns"
+msgstr "确保全面涵盖边界情况和使用模式"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:175
+#: 5c2cb58a4bce4477ba75c980aa7f0835
+msgid "Addresses specific quality issues identified in earlier rounds"
+msgstr "解决在早期阶段中发现的特定质量问题"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:177
+#: 78d7a7e3c19f41dfb01f7fb1cdd9d597
+msgid "Robust Parsing Technology"
+msgstr "强大的解析技术"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:178
+#: c40671c015f04d09b0cdf9f3276acece
+msgid "Handles various LLM output formats with whitespace/formatting issues"
+msgstr "处理各种具有空白字符/格式问题的LLM输出格式"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:179
+#: c2a40ca3deab458690adb6b03fc0c5dc
+msgid "Uses regex patterns and fallback strategies for JSON extraction"
+msgstr "使用正则表达式模式和回退策略提取JSON"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:180
+#: ba4a57de167940cda89cdb86b191fabf
+msgid "Resolves \"No additional test cases generated\" issues automatically"
+msgstr "自动解决“未生成额外测试用例”问题"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:182
+#: 0f5e72cd2d544b53b199f32803995466
+msgid "Multi-Criteria Balancing"
+msgstr "多准则平衡"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:183
+#: b5ace4fb07a840708dce75be2096027c
+msgid "Maintains accuracy while improving conciseness"
+msgstr "在保持准确性的同时提高简洁性"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:184
+#: 13ed589dcdec4464accc41f388a3264f
+msgid "Preserves user-friendliness during clarity improvements"
+msgstr "在提升清晰度的同时保持用户友好性"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:185
+#: 4cb29b2bea3c4e20a2134d1773822c06
+msgid "Eliminates redundancy without losing important information"
+msgstr "在不丢失重要信息的情况下消除冗余"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:187
+#: 79dd50ee65f945e38d40ec34abb57e36
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:189
+#: 08b20070f66945a9a8a39a38a573de26
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: d51d3a15eb6a414eb03b7c2f092f8c3a
+msgid "Issue"
+msgstr "问题"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 69bcdc481f6f40c49e01ae01d74d7dd6
+msgid "Cause"
+msgstr "原因"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: c9a7a00e8b314f7494d60e3d630f98f9
+msgid "Solution"
+msgstr "解决方案"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 7594372a7f974d9eb82929743cfe9fe0
+msgid "Quality score plateaus"
+msgstr "质量评分平台"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: fc0d2a18fec8437496ee51045ecbf148
+msgid "Tool already well-optimized"
+msgstr "工具已高度优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 239271fb332f4967921a1c46d1bb3a38
+msgid "Lower threshold or try different tool"
+msgstr "降低阈值或尝试不同的工具"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 57a22cf610eb4c6e8821b0737058e88a
+msgid "Optimization takes too long"
+msgstr "优化过程耗时过长"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ce101893facf4a938833a286d8bda702
+msgid "Complex tool/high iterations"
+msgstr "复杂工具/高迭代"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ffed76fa2f164810bd6347db336903ca
+msgid "Reduce max_iterations to 2-3"
+msgstr "将 max_iterations 减少到 2-3"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: ea2467c12907495b97611e4942e5b06c
+msgid "Descriptions too technical"
+msgstr "描述过于技术化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 6116f73d4e58488897c2964a3c3dbec9
+msgid "Domain-specific complexity"
+msgstr "领域特定的复杂性"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 054a35a8c29e497e92cc61e78da5ef99
+msgid "Manual review and adjustment needed"
+msgstr "需要手动审核和调整"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: 84b2fe1c3bac4453ad5ba6dba99858e5
+msgid "No test cases generated"
+msgstr "未生成测试用例"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: d774328cfaec4620ac93b7d2a1f60b10
+msgid "Fixed in recent updates"
+msgstr "已在最近的更新中修复"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md
+#: a6552265d1c34d8894644c04cbeac768
+msgid "Update to latest version"
+msgstr "更新至最新版本"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:198
+#: db9fa113878b4392babc87251dff54cb
+msgid "Performance Tips"
+msgstr "性能优化提示"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:199
+#: be742391269f4f50b4192728b654fd82
+msgid "Start with lower thresholds (7.5) and iterate up"
+msgstr "从较低的阈值（7.5）开始，并逐步递增"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:200
+#: c86e839482544e5bade9b1fdbebcaeae
+msgid "Use fewer iterations for initial testing"
+msgstr "在初始测试中使用较少的迭代"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:201
+#: 5bb1d276537e459bb2cd0b71cc805ac2
+msgid "Focus on one tool at a time for detailed analysis"
+msgstr "专注于一次分析一个工具以进行详细分析"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:203
+#: bff1555a1ff849e7b18049db83a95ce2
+msgid "Integration Tutorial"
+msgstr "集成教程"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:205
+#: f05a29ed67f04af1b67a4fd5dba10ddf
+msgid "Development Workflow Integration"
+msgstr "开发工作流程集成"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:231
+#: 8194f4886dd843ef89f7e191d6f6c933
+msgid "Maintenance Strategy"
+msgstr "维护策略"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:232
+#: 2ea3e1725d494ab29621029471aaed70
+msgid "**Regular audits**: Quarterly review of tool descriptions"
+msgstr "**定期审计**：每季度审核工具描述"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:233
+#: ec508ba321b94c1581840336e189dbc2
+msgid "**Update triggers**: When tool functionality changes"
+msgstr "**更新触发器**：当工具功能发生变化时"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:234
+#: 5bb827456d5449bd966068275f3e5119
+msgid "**User feedback**: Incorporate real user confusion reports"
+msgstr "**用户反馈**：整合真实用户的困惑报告"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:235
+#: c008983e5732495fab3c6cc8a606f3eb
+msgid "**Version control**: Track optimization history for rollbacks"
+msgstr "**版本控制**：跟踪优化历史以便回滚"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:237
+#: 6cb464b9a65c45829ccd9700bcf5ce2c
+msgid "Complete Example Scripts"
+msgstr "完整示例脚本"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:239
+#: 84680f8e3bee41819e05bf9a930fb3ee
+msgid "Single Tool Optimization"
+msgstr "单工具优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:276
+#: a48c735aa9574b54a8cb5f37afe91fd0
+msgid "Batch Tool Optimization"
+msgstr "批处理工具优化"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:346
+#: 4a3605aeba3540419b3bbdeae1ab067d
+msgid "Advanced Integration Script"
+msgstr "高级集成脚本"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:418
+#: fbbea9352ca1411d8851e3663cc88a54
+msgid "Summary"
+msgstr "摘要"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:420
+#: 3b6acbcb4a2740d5845bbc6eb744afbb
+msgid ""
+"The ToolDescriptionOptimizer provides automated, AI-powered enhancement of "
+"tool documentation with:"
+msgstr "ToolDescriptionOptimizer 提供基于人工智能的自动化工具文档优化功能，具有以下特点："
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:422
+#: e28b92ab046642a88153eacddd3d9e5d
+msgid ""
+"**🎯 Precision**: Matches descriptions to actual tool behavior through "
+"testing"
+msgstr "**🎯 精确度**：通过测试将描述与工具的实际行为相匹配"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:423
+#: 1c1bb2e0004248e8a3a0c4d6c585aa3c
+msgid ""
+"**🔄 Iteration**: Multi-round improvement with feedback-driven enhancement"
+msgstr "**🔄 迭代**：基于反馈驱动的多轮改进"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:424
+#: eea5e95a8e6a41728293998b47beaadd
+msgid "**📊 Measurement**: Objective quality scoring across 6 key criteria"
+msgstr "**📊 测量**：基于六项关键标准的客观质量评分"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:425
+#: 7e52f3832c594f4b8a98fbf4ab87ae6d
+msgid ""
+"**🛠️ Flexibility**: Configurable for different quality targets and use cases"
+msgstr "**🛠️ 灵活性**：可根据不同的质量目标和使用场景进行配置"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:426
+#: d3cfe4f19f504a61a6ae403810af4af7
+msgid "**📝 Documentation**: Comprehensive reporting of optimization process"
+msgstr "**📝 文档**：优化过程的全面报告"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:428
+#: 0957ae56382a4e91853dcc3765f9cd44
+msgid "Quick Reference"
+msgstr "快速参考"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:429
+#: b4a3d77aa52941ca8ff97c1cfed4f989
+msgid "**Development**: `max_iterations=2, satisfaction_threshold=7.5`"
+msgstr "**开发**: `max_iterations=2, satisfaction_threshold=7.5`"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:430
+#: 3bed5dbf5247463a99d6d1e10292e75e
+msgid "**Production**: `max_iterations=3, satisfaction_threshold=8.0`"
+msgstr "**生产**：`max_iterations=3, satisfaction_threshold=8.0`"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:431
+#: e3eab3cb4d5545e4aecb606662c9eff3
+msgid "**Critical**: `max_iterations=5, satisfaction_threshold=8.5`"
+msgstr "**重要**：`max_iterations=5, satisfaction_threshold=8.5`"
+
+#: ../../tutorials/optimization/Tool_Description_Optimizer_Tutorial.md:433
+#: 60c8030f5a9b43ca9688a67db67686b3
+msgid ""
+"Start with the Quick Start section above, then refer to specific sections as"
+" needed for your use case."
+msgstr "请从上方的快速入门部分开始，然后根据您的使用场景查阅相关的具体章节。"

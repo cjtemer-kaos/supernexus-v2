@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.rst:2
+#: bb3ae0c675e349cda69f86d0cfff68a9
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_drug\\_approval\\_status\\_by\\_chemblId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_drug\\_approval\\_status\\_by\\_chemblId"
+" 模块"
+
+#: 21c9c397ff0d4de68f65fbc1fb232b89 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId:1
+msgid "OpenTargets_get_drug_approval_status_by_chemblId"
+msgstr "OpenTargets_根据ChEMBL ID获取药物审批状态"
+
+#: 1c526ac037bf461d9e4112b924d17fcb fbb0e6c3171b431b989b01ad863ae4a9 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:1
+msgid "Retrieve the approval status of a specific drug chemblId."
+msgstr "检索特定药物的 chemblId 的审批状态。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.rst
+#: 54470255ec7c42a9aa87dde1693eaecc
+msgid "Parameters"
+msgstr "参数"
+
+#: 5158cb52d64f4c67991ec4036afc4cc9 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: fde1fdf404454b4f96925206809f422f of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4df5ca6b939a4d3a9ca3154a3a88d992 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 08a38044b50c47aebab3481e32726263 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.rst
+#: b8225c99544b4b46a755b3c43a90d976
+msgid "Return type"
+msgstr "返回类型"
+
+#: 11c0252a44a840538b15365dfca2eaf1 of
+#: tooluniverse.tools.OpenTargets_get_drug_approval_status_by_chemblId.OpenTargets_get_drug_approval_status_by_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

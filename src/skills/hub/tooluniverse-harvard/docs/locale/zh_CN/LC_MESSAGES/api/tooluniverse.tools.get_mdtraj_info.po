@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_mdtraj_info.rst:2
+#: 367afd1a85364b0e92adfc663db8cdf3
+msgid "tooluniverse.tools.get\\_mdtraj\\_info module"
+msgstr "tooluniverse.tools.get\\_mdtraj\\_info 模块"
+
+#: 484da03229b94bc0bc2566bb13142c40 of tooluniverse.tools.get_mdtraj_info:1
+msgid "get_mdtraj_info"
+msgstr ""
+"get_mdtraj_info\n"
+"\n"
+"获取_mdtraj信息"
+
+#: 0112f10c47014a07baf68be7b8c75899 76142e0f1d6b4e3684150057928fef7f of
+#: tooluniverse.tools.get_mdtraj_info:3
+#: tooluniverse.tools.get_mdtraj_info.get_mdtraj_info:1
+msgid ""
+"Get information about the mdtraj package. Modern library for molecular "
+"dynamics trajectory analysis"
+msgstr "获取有关 mdtraj 软件包的信息。现代化的分子动力学轨迹分析库。"
+
+#: ../../api/tooluniverse.tools.get_mdtraj_info.rst
+#: 77c60dde30ff43e789dda662955a0209
+msgid "Parameters"
+msgstr "参数"
+
+#: e4119bfadaf1403f84c39c134880b0f8 of
+#: tooluniverse.tools.get_mdtraj_info.get_mdtraj_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 144028f2841945c3af8904f6ec1db675 of
+#: tooluniverse.tools.get_mdtraj_info.get_mdtraj_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7a839e332cea4ac5b0ef84d860f7b2c5 of
+#: tooluniverse.tools.get_mdtraj_info.get_mdtraj_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_mdtraj_info.rst
+#: 0f9be957dc134dd69076a05b7ed29998
+msgid "Return type"
+msgstr "返回类型"
+
+#: 821b7bc5740c4a419dcf58f69fee0d14 of
+#: tooluniverse.tools.get_mdtraj_info.get_mdtraj_info:11
+msgid ":py:class:`Any`"
+msgstr ""

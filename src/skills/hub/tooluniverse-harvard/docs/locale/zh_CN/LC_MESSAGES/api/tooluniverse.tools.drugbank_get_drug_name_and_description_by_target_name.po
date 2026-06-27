@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.rst:2
+#: 2debb29fd2a2429e92a27cfac75d255f
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_and\\_description\\_by\\_target\\_name"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_and\\_description\\_by\\_target\\_name"
+" 模块"
+
+#: ed190157a8ee4fa5949387aade5596c9 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name:1
+msgid "drugbank_get_drug_name_and_description_by_target_name"
+msgstr "drugbank_通过靶点名称获取药物名称和描述"
+
+#: a2971e0d087f46249c0952cbaa27e42c ff35c072aed54cba8a299c76062a98b2 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name:3
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:1
+msgid ""
+"Get associated drug names and descriptions for a particular target, enzyme, "
+"carrier, or transport..."
+msgstr "获取特定靶点、酶、载体或转运蛋白相关的药物名称和描述..."
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.rst
+#: 1d5414a13abb4706af0a446d765d52ae
+msgid "Parameters"
+msgstr "参数"
+
+#: eb03d356d88e42298f962baad959ba94 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:3
+msgid "Target, enzyme, carrier, or transporter name to search for"
+msgstr "目标、酶、载体或转运蛋白名称以进行搜索"
+
+#: d4d94899322a4624ac86bfc659afbb37 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择“True”以执行区分大小写的搜索"
+
+#: 93ff6ec294264e0084d8278e96fccbae of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: 5467a1f088ea48288de66ce8f52c71a2 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: 6bf5a080c9604f22b224e59bd41e5a37 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e8ae2de7d3da4c8583073b8d5d72c850 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d826dfaa05df4bcfa5f63f6f9e244a89 of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.rst
+#: ff89ff28b76f4c63860eb8cbf00af18d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 219f160c97ff40e981de29db1891569b of
+#: tooluniverse.tools.drugbank_get_drug_name_and_description_by_target_name.drugbank_get_drug_name_and_description_by_target_name:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

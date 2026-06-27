@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.crossref_tool.rst:2 78d1caa527054b20a802215b0052fa61
+msgid "tooluniverse.crossref\\_tool module"
+msgstr "tooluniverse.crossref_tool 模块"
+
+#: 9477a9f173464dd9992f95c49d737968 of
+#: tooluniverse.crossref_tool.CrossrefTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 1b78e8afa7bc403c8bdcff712fbd97c7 of
+#: tooluniverse.crossref_tool.CrossrefTool:1
+msgid "Search Crossref Works API for articles by keyword."
+msgstr "通过关键词搜索 Crossref Works API 中的文章。"
+
+#: 7d92be4f38554c5cb6a4853e2431701c of
+#: tooluniverse.crossref_tool.CrossrefTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: f4b1012ea5864ab1811b35cfa0188f0f of
+#: tooluniverse.crossref_tool.CrossrefTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现对输入字典的要求。"
+
+#: ../../api/tooluniverse.crossref_tool.rst 2e49509e358742f0b9801cda9cdf330a
+msgid "Parameters"
+msgstr "参数"
+
+#: c00dfdfb2b0347f5a322c7a6c067eb21 of
+#: tooluniverse.crossref_tool.CrossrefTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 7a3b285e729d4d96875a3c7e96fd3861 of
+#: tooluniverse.crossref_tool.CrossrefTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: e7259d6e1fe74bc9a5bfa0d1546552b8 of
+#: tooluniverse.crossref_tool.CrossrefTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 6678ebb1642547cc843b3555606d238a of
+#: tooluniverse.crossref_tool.CrossrefTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: a1b53d00f8254ea998462858eebde45f of
+#: tooluniverse.crossref_tool.CrossrefTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: de2b5b7b2b3d4db4ac76404b41cd13e8 of
+#: tooluniverse.crossref_tool.CrossrefTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

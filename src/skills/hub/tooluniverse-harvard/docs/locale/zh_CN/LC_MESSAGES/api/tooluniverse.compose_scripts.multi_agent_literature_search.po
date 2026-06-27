@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-09 00:49-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.multi_agent_literature_search.rst:2
+#: 10148de9b8ac4ba1845ebf7dd4e9ec6f
+msgid "tooluniverse.compose\\_scripts.multi\\_agent\\_literature\\_search module"
+msgstr "tooluniverse.compose\\_scripts.multi\\_agent\\_literature\\_search 模块"
+
+#: d5e6ac5d82ea4d9096d52ce3094eb49c of
+#: tooluniverse.compose_scripts.multi_agent_literature_search:2
+msgid "Multi-Agent Literature Search Compose Function"
+msgstr "多代理文献检索撰写功能"
+
+#: a416b3ae11df4793886631485b0f496f of
+#: tooluniverse.compose_scripts.multi_agent_literature_search:4
+msgid ""
+"This module implements the compose function for the multi-agent literature "
+"search system."
+msgstr "该模块实现了多代理文献检索系统的compose函数。"
+
+#: 1650016e1b8f42f78d037fe5d5f008ba of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:1
+msgid "Multi-agent literature search compose function"
+msgstr "多代理文献检索组合功能"
+
+#: ../../api/tooluniverse.compose_scripts.multi_agent_literature_search.rst
+#: 5954d1c2a6f74225bea0a429efd95d27
+msgid "Parameters"
+msgstr "参数"
+
+#: 2235f052207f4989ab607e3d1d24f737 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:3
+msgid "Input parameters from the tool call"
+msgstr "工具调用的输入参数"
+
+#: da49dc98508e444380d98b522b29a93d of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:5
+msgid "Reference to the ToolUniverse instance"
+msgstr "对 ToolUniverse 实例的引用"
+
+#: 8534439a31584a8084bb098c454a2ced of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:7
+msgid "Function to call other tools"
+msgstr "调用其他工具的功能"
+
+#: f3c8c4f49a214f22afd0a7865ee9f148 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:9
+msgid "Callback function for streaming output"
+msgstr "用于流式输出的回调函数"
+
+#: ../../api/tooluniverse.compose_scripts.multi_agent_literature_search.rst
+#: 0533dbf697054879b9604aad2c57e25b
+msgid "Returns"
+msgstr "退货"
+
+#: a1953690ed3541828d9f1320ca23b09f of
+#: tooluniverse.compose_scripts.multi_agent_literature_search.compose:12
+msgid "The result of the multi-agent search"
+msgstr "多智能体搜索的结果"
+
+#: ../../api/tooluniverse.compose_scripts.multi_agent_literature_search.rst
+#: e53243aa5d054ed9a0dac6caf1a12291
+msgid "Return type"
+msgstr "返回类型"
+
+#: bf1239fb0a0142ccbd7bca1dedb6b2b5 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._format_papers_for_summary:1
+msgid "Format papers for summary generation"
+msgstr "为摘要生成格式化文档"
+
+#: 3d8ad6f4559b447c949a462f8b5df2b6 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._calculate_quality_score:1
+msgid "Calculate quality score for a search plan"
+msgstr "计算搜索计划的质量评分"
+
+#: d086992e5fe944988225b096e13264f9 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._format_plans_for_analysis:1
+msgid "Format plans for quality analysis"
+msgstr "格式化计划以进行质量分析"
+
+#: 21ad42a517194f92a772307b86eae2fc of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._apply_improvements:1
+msgid "Apply improvements to existing plans and add new plans"
+msgstr "对现有计划进行改进并添加新计划"
+
+#: 6eb563228b144a1db68ca8a5e5432502 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._format_plan_summaries:1
+msgid "Format plan summaries for overall summary generation"
+msgstr "格式化计划摘要以生成总体摘要"
+
+#: a761fc4a88364bbf8c021f6befeb7698 of
+#: tooluniverse.compose_scripts.multi_agent_literature_search._create_plan_summaries:1
+msgid "Create structured plan summaries for return"
+msgstr "为退货创建结构化计划摘要"

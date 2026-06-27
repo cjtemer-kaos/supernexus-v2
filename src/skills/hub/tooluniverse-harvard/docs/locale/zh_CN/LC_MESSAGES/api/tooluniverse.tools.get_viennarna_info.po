@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_viennarna_info.rst:2
+#: b041b33ea4104e76aaa305c72e86eae7
+msgid "tooluniverse.tools.get\\_viennarna\\_info module"
+msgstr "tooluniverse.tools.get\\_viennarna\\_info 模块"
+
+#: efcf595813ab488489fbb8c370e53740 of tooluniverse.tools.get_viennarna_info:1
+msgid "get_viennarna_info"
+msgstr "get_viennarna_信息"
+
+#: 4704db130b06490f86308c2af386ae24 c7c8e7c8d5ea45b180fdda7fc7813b51 of
+#: tooluniverse.tools.get_viennarna_info:3
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:1
+msgid ""
+"Get comprehensive information about ViennaRNA – RNA structure prediction and"
+" analysis"
+msgstr "获取关于ViennaRNA的全面信息——RNA结构预测与分析"
+
+#: ../../api/tooluniverse.tools.get_viennarna_info.rst
+#: 9681320988e346fb96aadb2ac39ec62e
+msgid "Parameters"
+msgstr "参数"
+
+#: 8e31b851a9084df2baef68d11436e1af of
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 508ea47747a446b1af4929cb15b45ee4 of
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3e1176fcd62a4ee0ade107c7aaec81c1 of
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5d576c3289ac477b9ecbee36a4ce7bdc of
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_viennarna_info.rst
+#: 2f2a1af79f864b63a44df478120cbac0
+msgid "Return type"
+msgstr "返回类型"
+
+#: d8102a0c771b4f89acf211feb55b62f5 of
+#: tooluniverse.tools.get_viennarna_info.get_viennarna_info:12
+msgid ":py:class:`Any`"
+msgstr ""

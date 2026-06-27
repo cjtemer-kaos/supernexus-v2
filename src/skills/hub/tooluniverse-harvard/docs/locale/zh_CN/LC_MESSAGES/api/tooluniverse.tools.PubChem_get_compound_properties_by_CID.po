@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_properties_by_CID.rst:2
+#: 2951e2cb22814a15a44e0e2119aee460
+msgid "tooluniverse.tools.PubChem\\_get\\_compound\\_properties\\_by\\_CID module"
+msgstr "tooluniverse.tools.PubChem\\_get\\_compound\\_properties\\_by\\_CID 模块"
+
+#: ec46f93ceb1a4437964951a81beb2cc4 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID:1
+msgid "PubChem_get_compound_properties_by_CID"
+msgstr "PubChem_通过CID获取化合物属性"
+
+#: 62a132aa725040809f5e96986c7680ea 8975be1450c94a4ba03cf10dbd62fce8 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID:3
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:1
+msgid ""
+"Get a set of specified molecular properties through CID (Compound ID), such "
+"as molecular weight, ..."
+msgstr "通过化合物ID（CID）获取一组指定的分子属性，例如分子量，..."
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_properties_by_CID.rst
+#: c156791a0edd426990772d61a5ede2a7
+msgid "Parameters"
+msgstr "参数"
+
+#: c06a072e7730431fa7535800cf6545d7 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:3
+msgid "PubChem compound ID to query, e.g., 2244 (Aspirin)."
+msgstr "用于查询的PubChem化合物ID，例如2244（阿司匹林）。"
+
+#: b2aae6748f824c909e4dd1eb9e05261c of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c4218abf42054fc8a0c56e11a0040916 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a007ce16c4d246beace565a1f5774cd8 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.PubChem_get_compound_properties_by_CID.rst
+#: dc34cd1812b842f69d35b6f2661aac3c
+msgid "Return type"
+msgstr "返回类型"
+
+#: a05611e185d14f308f02dd6f8e9bfe29 of
+#: tooluniverse.tools.PubChem_get_compound_properties_by_CID.PubChem_get_compound_properties_by_CID:12
+msgid ":py:class:`Any`"
+msgstr ""

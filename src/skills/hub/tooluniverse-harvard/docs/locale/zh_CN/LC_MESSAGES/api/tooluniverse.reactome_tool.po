@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.reactome_tool.rst:2 3c4afd8f897c41b99f1849699a705f06
+msgid "tooluniverse.reactome\\_tool module"
+msgstr "tooluniverse.reactome_tool 模块"
+
+#: 85e3efb84d2d40d29dfadeb246b9dc4d of
+#: tooluniverse.reactome_tool.ReactomeRESTTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 58c1e187a2dc45f09d91148227ae0c4b of
+#: tooluniverse.reactome_tool.ReactomeRESTTool:1
+msgid ""
+"Generic Reactome Content Service REST tool. If there is no "
+"\"fields.extract_path\" in config or its value is empty, returns complete "
+"JSON; Otherwise, drills down according to the \"dot-separated path\" in "
+"extract_path and returns corresponding sub-node."
+msgstr ""
+"通用 Reactome 内容服务 REST 工具。若配置中不存在 \"fields.extract_path\" 或其值为空，则返回完整的 "
+"JSON；否则，根据 extract_path 中的“点分路径”逐层深入，返回对应的子节点。"
+
+#: c9fd8fb2378c4cefa2f0ecba57b6dd90 of
+#: tooluniverse.reactome_tool.ReactomeRESTTool._build_url:1
+#, python-brace-format
+msgid ""
+"Combines endpoint_template (containing {xxx}) with path parameters from "
+"arguments to generate complete URL. For example "
+"endpoint_template=\"/data/pathway/{stId}\", "
+"arguments={\"stId\":\"R-HSA-73817\"} → Returns "
+"\"https://reactome.org/ContentService/data/pathway/R-HSA-73817\""
+msgstr ""
+"将包含{xxx}的endpoint_template与参数中的路径参数结合，生成完整的URL。例如 "
+"endpoint_template=\"/data/pathway/{stId}\"，arguments={\"stId\":\"R-HSA-73817\"}"
+" → 返回 \"https://reactome.org/ContentService/data/pathway/R-HSA-73817\""
+
+#: 4c59f918219e47c6b573830762197068 of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 122ca8f0bf3042a0939649378a0d4e5b of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现对输入字典的要求。"
+
+#: ../../api/tooluniverse.reactome_tool.rst 62cdf42a109f4b78a8fba1b270799304
+msgid "Parameters"
+msgstr "参数"
+
+#: b44d18667185497b99e0d50082b8c01a of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 9c3a06cc7ed240058b97ed55a8b08d67 of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 7c19b37c5c8245b79358fcb69bc8df3a of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 89f38e45acd143b4bc3c3e5b83a993a0 of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 4a8f62924cfa466d84dcc772f19ef533 of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: b448aa4eb15a4d219f2f10d462aedc6b of
+#: tooluniverse.reactome_tool.ReactomeRESTTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.rst:2
+#: b00abefd5432414d8fc52acf7a1b8420
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_lab\\_test\\_interference module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_lab\\_test\\_interference 模块"
+
+#: 48bb175c7ac74c5c951636312c3c0406 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference:1
+msgid "FDA_get_drug_names_by_lab_test_interference"
+msgstr "FDA_按实验室检测干扰获取药物名称"
+
+#: 27a24d07eb7f462582e63caf47e428f8 8d04d966f3184326965cfb826cd5e8d2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference:3
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:1
+msgid ""
+"Retrieve drug names that have known interference with laboratory tests."
+msgstr "检索已知会干扰实验室检测的药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.rst
+#: 3bfe442a27b1404a9688260ab5ce0ebb
+msgid "Parameters"
+msgstr "参数"
+
+#: c782469e8c6f4083b8af97368e626961 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:3
+msgid ""
+"Information about any known interference by the drug with laboratory tests."
+msgstr "有关药物对实验室检测可能产生的任何已知干扰的信息。"
+
+#: 9efdd97ca8ff4336954cbcf95b6c0dcc of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: aad3cc80cf0a4085bd3f923be15bafd4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: f13f8f4501d34f33894086998fd8f9fe of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 1a091a410f074fa8b3382055636527d2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5fc8ceec193348dab7469dd808096e41 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f2a954b6671942679ec1f9acb4ad7e53 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.rst
+#: 85699ff60a19491490ef29f1b8931f47
+msgid "Return type"
+msgstr "返回类型"
+
+#: 1aa44a88aed54e9f9bdd5b3fbafff2c6 of
+#: tooluniverse.tools.FDA_get_drug_names_by_lab_test_interference.FDA_get_drug_names_by_lab_test_interference:18
+msgid ":py:class:`Any`"
+msgstr ""

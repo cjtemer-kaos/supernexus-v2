@@ -1,0 +1,51 @@
+/* 语言切换器样式 */
+.language-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+}
+
+.language-switcher select {
+    padding: 8px 12px;
+    border: 2px solid #667eea;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.language-switcher select:hover {
+    background: #f8f9fa;
+    border-color: #764ba2;
+}
+
+.language-switcher select:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+}
+
+/* 暗色模式适配 */
+@media (prefers-color-scheme: dark) {
+    .language-switcher {
+        background: #1e1e1e;
+    }
+    
+    .language-switcher select {
+        background: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #667eea;
+    }
+    
+    .language-switcher select:hover {
+        background: #3d3d3d;
+    }
+}

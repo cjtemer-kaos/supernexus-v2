@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 13:50-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/remote/pinnacle.md:1 0b6f8a17a0c54a9cafef35fb28582013
+msgid "PINNACLE Protein-Protein Interaction Tool"
+msgstr "PINNACLE 蛋白质-蛋白质相互作用工具"
+
+#: ../../tools/remote/pinnacle.md:3 94df5de25d6a4693a77eae0ce688828c
+msgid "Overview"
+msgstr "概述"
+
+#: ../../tools/remote/pinnacle.md:5 835b42f2313d42278443a3021b38d537
+msgid ""
+"The [PINNACLE](https://github.com/mims-harvard/PINNACLE) tool provides "
+"access to cell-type-specific protein-protein interaction embeddings. "
+"These embeddings capture functional relationships between proteins in "
+"different cellular contexts, enabling advanced analysis for drug "
+"discovery, disease research, and systems biology."
+msgstr ""
+"[PINNACLE](https://github.com/mims-harvard/PINNACLE) "
+"工具提供了细胞类型特异性蛋白质-蛋白质相互作用嵌入的访问。这些嵌入捕捉了不同细胞环境中蛋白质之间的功能关系，支持药物发现、疾病研究及系统生物学的高级分析。"
+
+#: ../../tools/remote/pinnacle.md:7 4c182d1f2e9f47b99b697d49fa572797
+msgid ""
+"PINNACLE generates dense vector representations of proteins that encode "
+"both direct physical interactions and functional associations within "
+"specific cell types. This contextualization allows for more accurate "
+"modeling of biological processes in tissue-specific environments."
+msgstr ""
+"PINNACLE "
+"生成蛋白质的稠密向量表示，编码了特定细胞类型内的直接物理相互作用和功能关联。此种情境化处理使得在组织特异性环境中对生物过程的建模更加准确。"
+
+#: ../../tools/remote/pinnacle.md:9 395c66251aba4668baddb085372ac4fd
+msgid "Data Acquisition"
+msgstr "数据采集"
+
+#: ../../tools/remote/pinnacle.md:11 4188a3bfc90f4ea7b3a5b3a8d402ae9d
+msgid "1. Download PINNACLE Embeddings"
+msgstr "1. 下载 PINNACLE 嵌入式组件"
+
+#: ../../tools/remote/pinnacle.md:13 f1d6233534334d37aa47cdcd03adc061
+#, fuzzy
+msgid ""
+"The PINNACLE embeddings are hosted on Hugging Face at: "
+"https://huggingface.co/datasets/mims-harvard/ToolSpace"
+msgstr ""
+"PINNACLE 嵌入模型托管于 Hugging Face，地址为：https://huggingface.co/datasets/mims-"
+"harvard/Space"
+
+#: ../../tools/remote/pinnacle.md:15 142bac966e804c6a8d8d9c3421b5d24c
+msgid ""
+"Use the following shell commands to download only the PINNACLE files from"
+" the `pinnacle_cge` directory:"
+msgstr "使用以下 shell 命令仅从 `pinnacle_cge` 目录下载 PINNACLE 文件："
+
+#: ../../tools/remote/pinnacle.md:28 239b1a8205b541d49c6eed2d8390befe
+msgid "2. Set Environment Variable"
+msgstr "2. 设置环境变量"
+
+#: ../../tools/remote/pinnacle.md:30 a4e09fd547f84a4f8fc81bd47d2bfd86
+msgid "After downloading, set the `PINNACLE_DATA_PATH` environment variable:"
+msgstr "下载完成后，设置 `PINNACLE_DATA_PATH` 环境变量："
+
+#: ../../tools/remote/pinnacle.md:36 f45712d2cfd243079a801074da4d2422
+msgid "Tool Input and Output"
+msgstr "工具输入与输出"
+
+#: ../../tools/remote/pinnacle.md:38 aaf54d1c0b964fd9a30a4f711e84627c
+msgid "Input Parameters"
+msgstr "输入参数"
+
+#: ../../tools/remote/pinnacle.md 7fce3574c82d408d84980dda12d153c8
+msgid "Parameter"
+msgstr "参数"
+
+#: ../../tools/remote/pinnacle.md 2868bacfb36844ec958783e6ec14625c
+msgid "Type"
+msgstr "类型"
+
+#: ../../tools/remote/pinnacle.md 3288c05303f2461194bec392137ea99f
+msgid "Required"
+msgstr "必需"
+
+#: ../../tools/remote/pinnacle.md ed1f9772247b42409e14be92f0add8ec
+msgid "Description"
+msgstr "描述"
+
+#: ../../tools/remote/pinnacle.md ecd8198a9ace47a2a4a1971bd3cbd9c7
+msgid "`cell_type`"
+msgstr "`单元类型`"
+
+#: ../../tools/remote/pinnacle.md 302ce601c8fb41d58ad4997b80a4acaa
+#: 448158351c1e4a98b7cd327ee7094345
+msgid "string"
+msgstr "字符串"
+
+#: ../../tools/remote/pinnacle.md 2de64ed5d8264bda9209d05a68a8ed98
+msgid "Yes"
+msgstr "是"
+
+#: ../../tools/remote/pinnacle.md 830a3544bcc4475ca3cf8847d89caac3
+msgid "Target cell type for embedding retrieval"
+msgstr "嵌入检索的目标单元类型"
+
+#: ../../tools/remote/pinnacle.md 2a99d8fd0c8d4eb880c8e78525b41c90
+msgid "`embed_path`"
+msgstr "嵌入路径"
+
+#: ../../tools/remote/pinnacle.md 83c03803777544099fdf80cb68817dfd
+msgid "No"
+msgstr "不"
+
+#: ../../tools/remote/pinnacle.md 96ee38e543af4a82bb917db850f18acf
+msgid "Custom path to embedding file (optional)"
+msgstr "自定义嵌入文件路径（可选）"
+
+#: ../../tools/remote/pinnacle.md:45 7be00bc44d1a4df69609db53a943c129
+msgid ""
+"The tool performs fuzzy matching to handle various naming conventions, "
+"spaces, hyphens, and capitalization differences."
+msgstr "该工具执行模糊匹配，以处理各种命名约定、空格、连字符和大小写差异。"
+
+#: ../../tools/remote/pinnacle.md:47 135b05f37799433988f9899fabd7dfdc
+msgid "Output Format"
+msgstr "输出格式"
+
+#: ../../tools/remote/pinnacle.md:49 91adb90cf72945f3a05c8f6ae36d1904
+msgid "The tool returns a JSON object with the following structure:"
+msgstr "该工具返回一个具有以下结构的JSON对象："
+
+#: ../../tools/remote/pinnacle.md:51 872802c8ed0a462a8b999e5a20cced09
+msgid "Successful Response"
+msgstr "成功响应"
+
+#: ../../tools/remote/pinnacle.md:69 6af59e985ca74179b44693a5ca7059f6
+msgid "Embedding Properties"
+msgstr "嵌入属性"
+
+#: ../../tools/remote/pinnacle.md:71 a40850459e2342d08c5e4962f9ff88cb
+msgid ""
+"**Dimensionality**: A 328-dimensional vector (200 structure-based protein"
+" representation + 128 contextaware/-free protein representation)"
+msgstr "**维度**：一个328维向量（200维基于结构的蛋白质表示 + 128维上下文感知/无上下文蛋白质表示）"
+
+#: ../../tools/remote/pinnacle.md:72 73e1780f7857474e8f9fda6d6963d44e
+msgid ""
+"**Coverage**: 394,760 protein representations from 156 cell type contexts"
+" across 24 tissues"
+msgstr "**覆盖范围**：来自24种组织中156种细胞类型环境的394,760个蛋白质表示"
+
+#: ../../tools/remote/pinnacle.md:73 398fca3c90114164875027f02a93db2b
+msgid "**Format**: Dense numerical vectors (list of floats)"
+msgstr "**格式**：密集数值向量（浮点数列表）"
+
+#: ../../tools/remote/pinnacle.md:75 701f8c7e92894e1d9ab1c18f6954a0e2
+msgid "MCP Server Setup"
+msgstr "MCP 服务器设置"
+
+#: ../../tools/remote/pinnacle.md:77 e49e1396c3084a73b6f82b9ff512b355
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../tools/remote/pinnacle.md:86 f31e3845c3d540b88417cceed9f00868
+msgid "Configuration"
+msgstr "配置"
+
+#: ../../tools/remote/pinnacle.md:88 dfbe5b2a0ce140d190a207f0b89d0fbf
+msgid "**Set up the environment**:"
+msgstr "**设置环境**："
+
+#: ../../tools/remote/pinnacle.md:94 9298e8563f3642c483c3bae63671ca7f
+msgid "**Verify embedding files exist**:"
+msgstr "**验证嵌入文件是否存在**："
+
+#: ../../tools/remote/pinnacle.md:100 87f012adb817450aa370893d693d1aee
+msgid "Running the MCP Server"
+msgstr "运行 MCP 服务器"
+
+#: ../../tools/remote/pinnacle.md:106 8911d207cd824842bf88c8adfcb77623
+msgid "Server Configuration"
+msgstr "服务器配置"
+
+#: ../../tools/remote/pinnacle.md:108 e6101945d480465eac03f929c4e652c1
+msgid "**Host**: `0.0.0.0` (accepts connections from any IP)"
+msgstr "**主机**：`0.0.0.0`（接受来自任何 IP 的连接）"
+
+#: ../../tools/remote/pinnacle.md:109 5d1394c59a3044e99aa9fbcb69b87153
+msgid "**Port**: `7001` (configured to avoid conflicts)"
+msgstr "**端口**：`7001`（已配置以避免冲突）"
+
+#: ../../tools/remote/pinnacle.md:110 0dc4aefbc2ba4f088a45daaa11161a3a
+msgid "**Transport**: `streamable-http`"
+msgstr "**传输**：`streamable-http`"
+
+#: ../../tools/remote/pinnacle.md:111 88670af018a04b8bb44b6b68ac68f6e0
+msgid "**Mode**: Stateless HTTP for scalability"
+msgstr "**模式**：无状态 HTTP 以实现可扩展性"
+

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "WikidataSPARQLTool",
+    "name": "Wikidata_SPARQL_query",
+    "description": "Execute SPARQL queries against Wikidata to retrieve structured data. This tool powers Scholia-style visualizations and can query academic topics, authors, institutions, and research relationships.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "sparql": {
+          "type": "string",
+          "description": "SPARQL query string to execute against Wikidata. Use SPARQL syntax to query academic entities, relationships, and properties."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Optional result limit override. If not specified, uses the LIMIT clause in the SPARQL query or returns all results.",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "sparql",
+        "max_results"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string"
+          },
+          "itemLabel": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "sparql": "SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q146 . SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],en\". } } LIMIT 5",
+        "max_results": 1
+      }
+    ]
+  }
+]

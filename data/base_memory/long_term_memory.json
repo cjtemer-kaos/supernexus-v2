@@ -1,0 +1,225 @@
+{
+  "identity": {
+    "name": "SuperNEXUS",
+    "version": "2.0"
+  },
+  "learned_facts": [
+    {
+      "id": "fact_20260516223720",
+      "content": "No sources found.",
+      "source": "research:Aprender contenido",
+      "category": "learned",
+      "learned_at": "2026-05-16T22:37:20.587496",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525004102",
+      "content": "ANALISIS: 20 Best Open Source Projects 2025 (Towards AGI)\nConclusiones para SuperNEXUS:\n1. Especializacion > Generalizacion - valida nuestras 22 gemas\n2. Context isolation como principio de diseno - valida DirectorNexus routing\n3. Rust para infraestructura (Granian, Zed, Lantern, Bun) - posible migracion futura\n4. MCP como estandar - nuestro MCP bridge alineado\n5. Marimo para notebooks reactivos - adoptar para training pipeline\n6. FastUI para backend-driven UI - adoptar para paneles admin\n7. Radix UI para componentes accesibles\n8. Debate protocol entre gemas para respuestas complejas",
+      "source": "https://medium.com/towards-agi/20-best-open-source-projects-on-github-ranked-cfa28b2bb726",
+      "category": "research",
+      "learned_at": "2026-05-25T00:41:02.749149",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525004112",
+      "content": "ANALISIS: 20 Best Open Source Projects 2025 (Towards AGI)\nConclusiones para SuperNEXUS:\n1. Especializacion > Generalizacion - valida nuestras 22 gemas\n2. Context isolation como principio de diseno - valida DirectorNexus routing\n3. Rust para infraestructura (Granian, Zed, Lantern, Bun) - posible migracion futura\n4. MCP como estandar - nuestro MCP bridge alineado\n5. Marimo para notebooks reactivos - adoptar para training pipeline\n6. FastUI para backend-driven UI - adoptar para paneles admin\n7. Radix UI para componentes accesibles\n8. Debate protocol entre gemas para respuestas complejas",
+      "source": "https://medium.com/towards-agi/20-best-open-source-projects-on-github-ranked-cfa28b2bb726",
+      "category": "research",
+      "learned_at": "2026-05-25T00:41:12.762477",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525004112",
+      "content": "ANALISIS: The most starred GitHub repos are learning resources (Reddit)\nConclusiones para SuperNEXUS:\n1. Los repos mas estrellados son educativos (freeCodeCamp 405k, free-programming-books 337k)\n2. La curacion vence a la creacion - nuestro skill registry es un activo estrategico\n3. scrcpy (111k) como outlier: herramienta que resuelve un problema PERFECTO\n4. El README es el producto - el README debe ensenar, no solo documentar\n5. Crear learning paths desde nuestro skill registry + codebase",
+      "source": "https://www.reddit.com/r/learnprogramming/comments/1gdezx8/the_most_starred_github_repos_are_learning/",
+      "category": "research",
+      "learned_at": "2026-05-25T00:41:12.763996",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525004112",
+      "content": "ANALISIS: 15 mejores repositorios GitHub (Hostinger, Mar 2026)\nConclusiones para SuperNEXUS:\n1. developer-roadmap (232k estrellas) - learning paths visuales por rol\n2. Inspiracion para gema ayuda: roadmaps dinamicos segun perfil del usuario\n3. build-your-own-x (192k) - filosofia para tutoriales de extension de Nexus\n4. public-apis (230k) - integrar mas APIs externas como tools MCP\n5. system-design-primer (213k) - inspirarse para documentar arquitectura Nexus\n6. Patron confirmado: 60% de los top repos son educativos/curacion",
+      "source": "https://www.hostinger.com/co/tutoriales/mejores-repositorios-github",
+      "category": "research",
+      "learned_at": "2026-05-25T00:41:12.766050",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525004343",
+      "content": "ANALISIS: Must-Try Open Source GitHub Projects for Python (CodeEasy, Mar 2025)\nProyectos listados: Django, TensorFlow, Flask, Scikit-Learn, Pandas, Requests, Beautiful Soup.\nConclusiones para SuperNEXUS:\n1. Articulo basico/principiante - 7 proyectos Python foundationales\n2. Nexus ya usa internamente: Requests (Scholar), Flask/Django patterns (server.py), Pandas (training), BS4 (Scholar web scraping)\n3. Unico valor agregado: seccion de como presentar contribuciones open source en CV\n4. Relevancia baja vs analisis anteriores (Towards AGI, Reddit, Hostinger)",
+      "source": "https://codeeasy-io.translate.goog/blog/must-try-open-source-github-projects-to-enhance-your-python-coding-skills",
+      "category": "research",
+      "learned_at": "2026-05-25T00:43:43.379465",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525005102",
+      "content": "RESUMEN: 6 repos clonados para autopsia (2026-05-25)\n\n1. nanobot (HKUDS, 43K\u2b50) - Ultra-liviano, Python. Core agente m\u00ednimo y legible.\n   Estructura: agent/, api/, bus/, channels/, cli/, providers/, security/, skills/, cron/\n   Similar a Nexus en filosofia pero con core mucho mas chico.\n\n2. OpenHarness/ohmo (HKUDS, 12.9K\u2b50) - Harness engineering completo.\n   Estructura: src/openharness/ con 43 tools, subagentes, skills loading (.md), MCP, plan mode, schedule/cron.\n   Competidor directo de nuestro pipeline de harness. Pub: Abril 2026.\n\n3. OpenFang (RightNow-AI, 17.6K\u2b50) - Agent OS en Rust. 13 crates.\n   Arquitectura: kernel, runtime, hands (autonomous agents), channels (40+), memory (SQLite+vector), skills, api, desktop (Tauri).\n   Unique: 7 \"Hands\" autonomos (Browser, Researcher, Social, Monitor, etc), sandbox WASM, Merkle audit trail.\n\n4. OpenAkita (liuchaoxun, nuevo) - Multi-agente todo-en-uno.\n   Estructura: apps/, channels/, plugins/, skills/, tools/, mcps/, auth_api/, identity/\n   89 tools, 30+ LLM providers, 6 IM platforms, skill marketplace, auto-evolucion diaria, 8 personas.\n\n5. Pincer (pincerhq, nuevo) - Agente seguro y auditable.\n   Codigo Python limpio (~500 files, 4.8MB). Sandbox por subprocess, AST scan skills, hard daily spending cap.\n   8 canales (WhatsApp, Telegram, Discord, Slack, Signal, Email, Voice), MCP, memoria cross-channel FTS5.\n\n6. Lethe (atemerev, 74\u2b50) - Asistente autonomo con cognicion de fondo.\n   Arquitectura Actor: Cortex (user-facing), Brainstem (supervision health), DMN (background cognition hourly), Hippocampus (recall+salience).\n   Memoria: notes/ (persistent knowledge) + LanceDB (archival). Telegram-only. Background cognition unico.",
+      "source": "github-autopsia-2026-05-25",
+      "category": "analysis",
+      "learned_at": "2026-05-25T00:51:02.550916",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260525010619",
+      "content": "# ANALISIS EXHAUSTIVO: 6 Repos Clonados\n\n## 1. nanobot (HKUDS, 43K\u2b50) \u2014 Ultra-Lightweight Agent\n### Datos\n- Files: 554, Dirs: 91, Size: 37.5MB\n- Lenguaje: Python 3.11+, Licencia: MIT\n- Tags: ai-agent, mcp, memory, chat, claude-code, openclaw\n- Release: v0.2.0 (2026-05-16), 16 releases\n- Homepage: nanobot.wiki\n\n### Arquitectura\n- Core: nanobot.py (facade) -> AgentLoop (state machine) -> AgentRunner (tool loop)\n- Provider: LLMProvider ABC (base.py) con 14 implementaciones\n  anthropic, openai, azure, bedrock, github_copilot, openai_codex, openai_compat, fallback\n- AgentLoop state machine: RESTORE->COMPACT->COMMAND->BUILD->RUN->SAVE->RESPOND->DONE\n  Con tabla de transiciones event-driven y trace logging\n- AgentRunner: loop principal de tool-calling\n  1. Context governance (snip, microcompact, budget)\n  2. Model request con streaming + retry\n  3. Tool execution (paralelo si concurrent_tools=True)\n  4. Injection draining (mid-turn messages)\n  5. Empty response recovery, length recovery\n  6. Error handling con SSRF + workspace violation classification\n- ToolRegistry: loader plugin-based, MCP servers, file state tracking\n- Memory: Consolidator (token-based), Dream (two-stage), AutoCompact\n- Security: network.py (SSRF), workspace isolation, tool-level\n- Hooks: AgentHook lifecycle (before_iteration, after_iteration, on_stream, etc.)\n\n### Lo relevante para Nexus\n- Provider trait hecho y derecho: LLMProvider ABC con chat() abstractmethod\n  + chat_stream, chat_with_retry, fallback provider\n- Agente runner reutilizable: AgentRunner es independiente del product-layer\n- State machine event-driven: patron a copiar para el Director\n- Sistema de tools plugable: ToolRegistry + ToolLoader\n- Fallback provider: el que define cadena de modelos alternativos\n\n## 2. OpenHarness/ohmo (HKUDS, 12.9K\u2b50) \u2014 Harness Engineering\n### Datos\n- Files: 476, Dirs: 100, Size: 12MB\n- Lenguaje: Python 3.10+, Licencia: MIT\n- Tags: agent-harness, tools, skills, mcp, subagents\n- Release: v0.1.9 (2026-05-07), 4 rel",
+      "source": "autopsia-6-repos-exhaustivo-2026-05-25",
+      "category": "analysis",
+      "learned_at": "2026-05-25T01:06:19.266129",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260602231250",
+      "content": "Source: https://example.com\nWords: 21\nAuto-fetched by Scholar.\n\n--- preview ---\nExample Domain\nExample Domain\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\nLearn more",
+      "source": "https://example.com",
+      "category": "web",
+      "learned_at": "2026-06-02T23:12:50.091323",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260602231858",
+      "content": "Source: https://example.com\nWords: 21\nAuto-fetched by Scholar.\n\n--- preview ---\nExample Domain\nExample Domain\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\nLearn more",
+      "source": "https://example.com",
+      "category": "web",
+      "learned_at": "2026-06-02T23:18:58.964710",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609205738",
+      "content": "Source: https://github.com/continuedev/continue\nWords: 490\nAuto-fetched by Scholar.\n\n--- preview ---\nGitHub - continuedev/continue: \u23e9 Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI \u00b7 GitHub\nSkip to content\nYou signed in with another tab or window.\nReload\nto refresh your session.\nYou signed out in another tab or window.\nReload\nto refresh your session.\nYou switched accounts on another tab or window.\nReload\nto refresh your session.\nDismiss alert\ncontinuedev\n/\ncontinue\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n4.6k\nStar\n33.6k\nmain\nBranches\nTags\nGo to file\nCode\nOpen more actions menu\nFolders and files\nName\nName\nLast commit message\nLast commit date\nLatest commit\nHistory\n21,557 Commits\n21,557 Commits\n.claude/\nskills/\ndocs-style\n.claude/\nskills/\ndocs-style\n.continue\n.continue\n.github\n.github\n.husky\n.husky\n.idea\n.idea\n.vscode\n.vscode\nactions\nactions\nbinary\nbinary\ncore\ncore\ndocs-site\ndocs-site\ndocs\ndocs\neval\neval\nextensions\nextensions\ngui\ngui\nmanual-testing-sandbox\nmanual-testing-sandbox\nmedia\nmedia\npackages\npackages",
+      "source": "https://github.com/continuedev/continue",
+      "category": "web",
+      "learned_at": "2026-06-09T20:57:38.230900",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609210032",
+      "content": "Source: https://github.com/anthropics/claude-code\nWords: 592\nAuto-fetched by Scholar.\n\n--- preview ---\nGitHub - anthropics/claude-code: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. \u00b7 GitHub\nSkip to content\nYou signed in with another tab or window.\nReload\nto refresh your session.\nYou signed out in another tab or window.\nReload\nto refresh your session.\nYou switched accounts on another tab or window.\nReload\nto refresh your session.\nDismiss alert\nanthropics\n/\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.3k\nStar\n131k\nmain\nBranches\nTags\nGo to file\nCode\nOpen more actions menu\nFolders and files\nName\nName\nLast commit message\nLast commit date\nLatest commit\nHistory\n660 Commits\n660 Commits\n.claude-plugin\n.claude-plugin\n.claude/\ncommands\n.claude/\ncommands\n.devcontainer\n.devcontainer\n.github\n.github\n.vscode\n.vscode\nScript\nScript\nexamples\nexamples\nplugins\nplug",
+      "source": "https://github.com/anthropics/claude-code",
+      "category": "web",
+      "learned_at": "2026-06-09T21:00:32.982118",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609210106",
+      "content": "Source: https://github.com/anthropics/claude-code\nWords: 592\nAuto-fetched by Scholar.\n\n--- preview ---\nGitHub - anthropics/claude-code: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. \u00b7 GitHub\nSkip to content\nYou signed in with another tab or window.\nReload\nto refresh your session.\nYou signed out in another tab or window.\nReload\nto refresh your session.\nYou switched accounts on another tab or window.\nReload\nto refresh your session.\nDismiss alert\nanthropics\n/\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.3k\nStar\n131k\nmain\nBranches\nTags\nGo to file\nCode\nOpen more actions menu\nFolders and files\nName\nName\nLast commit message\nLast commit date\nLatest commit\nHistory\n660 Commits\n660 Commits\n.claude-plugin\n.claude-plugin\n.claude/\ncommands\n.claude/\ncommands\n.devcontainer\n.devcontainer\n.github\n.github\n.vscode\n.vscode\nScript\nScript\nexamples\nexamples\nplugins\nplug",
+      "source": "https://github.com/anthropics/claude-code",
+      "category": "web",
+      "learned_at": "2026-06-09T21:01:06.678928",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609210903",
+      "content": "GitHub Copilot \u00b7 Your AI pair programmer \u00b7 GitHub\nSkip to content\nYou signed in with another tab or window.\nReload\nto refresh your session.\nYou signed out in another tab or window.\nReload\nto refresh your session.\nYou switched accounts on another tab or window.\nReload\nto refresh your session.\nDismiss alert\nGitHub Copilot\nCommand your craft\nYour AI accelerator for every workflow, from the editor to the enterprise.\nGet started\nSee plans & pricing\nPause\nCompanies using Copilot\nCoyote Logistics\nDuolingo\nGeneral Motors\nMercado Libre\nShopify\nStripe\nCocaCola\nCoyote Logistics\nDuolingo\nGeneral Motors\nMercado Libre\nShopify\nStripe\nCocaCola\nGo beyond one-size-fits-all\nChoose from leading LLMs optimized for speed, accuracy, or cost.\nUse your agents, your way\nUse GitHub Copilot, your own custom agents, or the third-party ones you already rely on.\nStay in your flow\nCopilot works where you do\u2014in GitHub, your IDE, project tools, chat apps, and custom MCP servers.\nMake your editor your most powerful acce",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:09:03.164648",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211040",
+      "content": "React\nReact\nThe library for web and native user interfaces\nLearn React\nAPI Reference\nCreate user interfaces from components\nReact lets you build user interfaces out of individual pieces called components. Create your own React components like\nThumbnail\n,\nLikeButton\n, and\nVideo\n. Then combine them into entire screens, pages, and apps.\nVideo.js\nfunction\nVideo\n(\n{\nvideo\n}\n)\n{\nreturn\n(\n<\ndiv\n>\n<\nThumbnail\nvideo\n=\n{\nvideo\n}\n/>\n<\na\nhref\n=\n{\nvideo\n.\nurl\n}\n>\n<\nh3\n>\n{\nvideo\n.\ntitle\n}\n</\nh3\n>\n<\np\n>\n{\nvideo\n.\ndescription\n}\n</\np\n>\n</\na\n>\n<\nLikeButton\nvideo\n=\n{\nvideo\n}\n/>\n</\ndiv\n>\n)\n;\n}\nMy video\nVideo description\nWhether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you seamlessly combine components written by independent people, teams, and organizations.\nWrite components with code and markup\nReact components are JavaScript functions. Want to show some content conditionally? Use an\nif\nstatement. Displaying a list? Try array\nmap()\n. Lea",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:10:40.947693",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211102",
+      "content": "React\nReact\nThe library for web and native user interfaces\nLearn React\nAPI Reference\nCreate user interfaces from components\nReact lets you build user interfaces out of individual pieces called components. Create your own React components like\nThumbnail\n,\nLikeButton\n, and\nVideo\n. Then combine them into entire screens, pages, and apps.\nVideo.js\nfunction\nVideo\n(\n{\nvideo\n}\n)\n{\nreturn\n(\n<\ndiv\n>\n<\nThumbnail\nvideo\n=\n{\nvideo\n}\n/>\n<\na\nhref\n=\n{\nvideo\n.\nurl\n}\n>\n<\nh3\n>\n{\nvideo\n.\ntitle\n}\n</\nh3\n>\n<\np\n>\n{\nvideo\n.\ndescription\n}\n</\np\n>\n</\na\n>\n<\nLikeButton\nvideo\n=\n{\nvideo\n}\n/>\n</\ndiv\n>\n)\n;\n}\nMy video\nVideo description\nWhether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you seamlessly combine components written by independent people, teams, and organizations.\nWrite components with code and markup\nReact components are JavaScript functions. Want to show some content conditionally? Use an\nif\nstatement. Displaying a list? Try array\nmap()\n. Lea",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:11:02.177068",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211157",
+      "content": "Vue.js - The Progressive JavaScript Framework | Vue.js\nSkip to content\nAre you an LLM? View /llms.txt for optimized Markdown documentation, or /llms-full.txt for full documentation bundle\nThe\nProgressive\nJavaScript Framework\nAn approachable, performant and versatile framework for building web user interfaces.\nPlay icon\nWhy Vue\nGet Started\nInstall\nGet Security Updates for Vue 2\nSpecial Sponsor slot is now vacant - Inquire now\nApproachable\nBuilds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation.\nPerformant\nTruly reactive, compiler-optimized rendering system that rarely requires manual optimization.\nVersatile\nA rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.\nPlatinum Sponsors\nBecome a Sponsor\nGold Sponsors\nBecome a Sponsor\nDocs\nQuick Start\nGuide\nTutorial\nExamples\nAPI\nGlossary\nError Reference\nVue 2 Docs\nMigration from Vue 2\nAbout\nFAQ\nTeam\nReleases\nCommunity Guide\nCode of Conduct\nPrivacy Policy\n",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:11:57.810910",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211414",
+      "content": "Svelte \u2022 Web development for the rest of us\nSkip to main content\nSvelte\nweb development for the rest of us\nget started\nattractively thin, graceful and stylish\nSvelte is a UI framework that uses a compiler to let you write breathtakingly concise\ncomponents that do minimal work in the browser, using languages you already know \u2014 HTML, CSS\nand JavaScript.\nIt\u2019s a love letter to web development.\nBut don\u2019t take our word for it. Developers consistently rank Svelte as the framework they\u2019re\nmost excited about using.\nused by companies you\u2019ve heard of\nWatch the full Svelte Origins documentary\njoin our friendly community\nOur sister organisation,\nSvelte Society\n, organises\nevents around the globe. Find your chapter and join us in\nour Discord server\n.\nPhotos by\nMarcel Cutts\nBacked by\nVercel\nand countless donors,\ndeveloped by full-time and part-time maintainers, Svelte is here to stay.\nRich-Harris\nConduitry\ndummdidumm\ntrueadm\ntanhauhau\nbenmccann\npaoloricciuti\nPuruVJ\nbaseballyama\ngtm-nayan\nOcean-OS\n7ni",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:14:14.904373",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211552",
+      "content": "Next.js by Vercel - The React Framework\nNEXT.JS NIGHTS\nSF JUN 9 \u2022 AMS JUN 11 \u2022 LDN JUN 18\nVIEW EVENTS\n\u203a\nThe React Framework\nfor the Web\nUsed by some of the world's largest companies, Next.js enables you to create\nhigh-quality web applications\nwith the power of React components.\nGet Started\nLearn Next.js\n\u25b2 ~\nnpx create-next-app@latest\nWhat's in Next.js?\nEverything you need to build great products on the web.\nData Fetching\nMake your React component async and await your data. Next.js supports both server and client data fetching.\nServer Actions\nRun server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nAdvanced Routing & Nested Layouts\nCreate routes using the file system, including support for more advanced routing patterns and UI layouts.\nCSS Support\nStyle your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nRoute Handlers\nBuild API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nMiddleware\nTake control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nReact Server Components\nAdd components without sending additional client-side JavaScript. Built on the latest React features.\nClient and Server Rendering\nFlexible rendering and caching options, including Incremental Static Regeneration (ISR), on a\nper-page level.\nReact Server Components\nAdd components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching\nMake your React component async and await your data. Next.js supports both server and client data fetching.\nServer Actions\nRun server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nAdvanced Routing & Nested Layouts\nCreate routes using the file system, including support for",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:15:52.819071",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211734",
+      "content": "Deno, the next-generation JavaScript runtime\nSkip to main content\nIntroducing Claw Patrol: an open-source security firewall for agents\nRead the post\n->\nDismiss\nUncomplicate JavaScript\nDeno is the open-source JavaScript runtime for the modern web.\nDocs\nGitHub\nInstall Deno\n2.8.2\nRelease notes\nMacOS/Linux\n(Currently selected)\nWindows\ncurl -fsSL https://deno.land/install.sh | sh\nCopy command\nDeno is the open-source JavaScript runtime for the modern web.\nBuilt on web standards with zero-config TypeScript, unmatched security, and a complete built-in toolchain.\nRating\n100k+\nStars on GitHub\nCommunity\n400k+\nActive Deno users\nEcosystem\n2M+\nCommunity modules\nEnterprise-grade JavaScript\nNow offering enterprise support for the Deno runtime\nLearn more\nAll your favorite tools, built-in and ready to go\nDeno natively supports TypeScript, JSX, and modern ECMAScript features with zero configuration.\naccount.ts\ntype\nUser\n=\n{\nname\n:\nstring\n;\nbalance\n:\nnumber\n}\n;\nfunction\ngetBalance\n(\nuser\n:\nUser\n)\n:\nstring\n{\nreturn\n`\nBalance: $\n${\nuser\n.\nbalance\n.\ntoFixed\n(\n2\n)\n}\n`\n;\n}\nconsole\n.\nlog\n(\ngetBalance\n(\n{\nname\n:\n\"Alice\"\n,\nbalance\n:\n42\n}\n)\n)\n;\n$\ndeno run account.ts\nBalance: $42.00\n$\ndeno check\nCheck account.ts\n\u2705 Type check successful\nJust run\nRun\n.ts\nfiles directly with built-in type checking and compilation\u2014no additional tooling or configuration required!\nMore about TypeScript in Deno\nSeamless\nWith first-class support for npm and Node, Deno can read your\npackage.json\nautomatically, or you can import packages from npm directly.\nNode and npm support\nUsing package.json or import maps\nimport\n{\nHono\n}\nfrom\n\"hono\"\n;\nconst\napp\n=\nnew\nHono\n(\n)\n;\napp\n.\nget\n(\n\"/\"\n,\n(\nc\n)\n=>\n{\nreturn\nc\n.\ntext\n(\n\"Hello Hono!\"\n)\n;\n}\n)\n;\nDeno\n.\nserve\n(\napp\n.\nfetch\n)\n;\nUsing inline imports\nimport\n{\nHono\n}\nfrom\n\"npm:hono@4\"\n;\nconst\napp\n=\nnew\nHono\n(\n)\n;\napp\n.\nget\n(\n\"/\"\n,\n(\nc\n)\n=>\n{\nreturn\nc\n.\ntext\n(\n\"Hello Hono!\"\n)\n;\n}\n)\n;\nDeno\n.\nserve\n(\napp\n.\nfetch\n)\n;\nBuilt on web standards\nWhenever possible, Deno implements web standard API",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:17:34.630026",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609211937",
+      "content": "Bun \u2014 A fast all-in-one JavaScript runtime\nBun is joining Anthropic & Anthropic is betting on Bun \u2192\nBun v1.3.14 is here! \u2192\nBun is a\nfast\nJavaScript\nall-in-one toolkit\n|\nBun is a fast,\nincrementally adoptable\nall-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or\nbun install in Node.js\nprojects, or adopt the complete stack with a fast JavaScript runtime, bundler,\ntest runner\n, and\npackage manager\nbuilt in. Bun aims for 100% Node.js compatibility.\nInstall Bun v1.3.14\nLinux & macOS\nWindows\nView install script\ncurl -fsSL https://bun.sh/install\n|\nbash\npowershell\n-c\n\"\nirm bun.sh/install.ps1 | iex\n\"\nUSED BY\nBundler\nExpress\nPostgres\nWebSockets\nBundling 10,000 React components\nBuild time in milliseconds (Linux x64, Hetzner)\nBun\nv1.3.0\n269.1\nms\nRolldown\nv1.0.0-beta.42\n494.9\nms\nesbuild\nv0.25.10\n571.9\nms\nFarm\nv1.0.5\n1,608\nms\nRspack\nv1.5.8\n2,137\nms\nView benchmark \u2192\nExpress.js 'hello world'\nHTTP requests per second (Linux x64)\nbun: 59,026 requests per second\n59,026\ndeno: 25,335 requests per second\n25,335\nnode: 19,039 requests per second\n19,039\nBun\nv1.2\nDeno\nv2.1.6\nNode.js\nv23.6.0\nView benchmark \u2192\nWebSocket chat server\nMessages sent per second (Linux x64, 32 clients)\nbun: 2,536,227 messages sent per second\n2,536,227\ndeno: 1,320,525 messages sent per second\n1,320,525\nnode: 435,099 messages sent per second\n435,099\nBun.serve()\nv1.2\nDeno.serve()\nv1.2.6\nws (Node.js)\nv23.6.0\nView benchmark \u2192\nLoad a huge table\nQueries per second. 100 rows x 100 parallel queries\nbun: 28,571 queries per second\n28,571\nnode: 14,522 queries per second\n14,522\ndeno: 11,169 queries per second\n11,169\nBun\nv1.2.22\nNode.js\nv24.8.0\nDeno\nv2.5.1\nView benchmark \u2192\nFour tools, one toolkit\nUse them together as an all-in-one toolkit, or adopt them incrementally.\nbun test\nworks in Node.js projects.\nbun install\ncan be used as the fastest npm client. Each tool stands on its own.\nJavaScript Runtime\nStarts 3x faster than Node.js\nA fast JavaScript runtime designed as a drop-in replacement for Node.",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:19:37.218638",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212120",
+      "content": "index | Alpine Linux\nSmall. Simple. Secure.\nAlpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox.\nAlpine News\n2026-06-09\nAlpine 3.24.0 released\n2026-04-15\nAlpine Linux stable releases 3.20.10, 3.21.7, 3.22.4, 3.23.4\n2026-01-27\nAlpine 3.20.9, 3.21.6, 3.22.3 and 3.23.3 released\n2026-01-18\nFollow-Up: New Sponsors Strengthen Alpine Linux\u2019s Infrastructure and CI Ecosystem\n2025-12-17\nAlpine 3.23.2 released\n2025-12-03\nAlpine 3.23.0 released\n2025-10-08\nAlpine 3.19.9, 3.20.8, 3.21.5 and 3.22.2 released\n2025-10-01\nImplementing /usr merge in Alpine\n2025-08-30\nNew Alpine Developers onboarding process\n2025-07-15\nAlpine 3.19.8, 3.20.7, 3.21.4 and 3.22.1 released\nRead more\nLatest development\n2026-06-09\ncommunity/libvalkey: move from testing\n2026-06-09\ntesting/libvalkey: upgrade to 0.5.0\n2026-06-09\ncommunity/py3-ldap: upgrade to 3.4.7\n2026-06-09\ncommunity/py3-ldap: build with gpep517\n2026-06-09\ntesting/nginx-mod-http-otel: new aport\n2026-06-09\ncommunity/java-jna: enable on riscv64\n2026-06-09\ncommunity/java-jna: add missing !check\n2026-06-09\ncommunity/java-jna: include jna-platform.jar\n2026-06-09\ncommunity/libheif: security upgrade to 1.23.0\n2026-06-09\ncommunity/libheif: security upgrade to 1.22.2\nRead more",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:21:20.564038",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212233",
+      "content": "Welcome to Python.org\nNotice:\nThis page displays a fallback because interactive scripts did not run. Possible causes include disabled JavaScript or failure to load scripts or stylesheets.\nGet Started\nWhether you're new to programming or an experienced developer, it's easy to learn and use Python.\nStart with our Beginner\u2019s Guide\nDownload\nPython source code and installers are available for download for all versions!\nLatest:\nPython 3.14.5\nDocs\nDocumentation for Python's standard library, along with tutorials and guides, are available online.\ndocs.python.org\nJobs\nLooking for work or have a Python related position that you're trying to hire for? Our\nrelaunched community-run job board\nis the place to go.\njobs.python.org\nLatest News\nMore\n2026-\n06-04\nPSF Strategic Plan 2026 Draft: Open for Community Feedback\n2026-\n06-02\nNo Starch Press Humble Bundle: Grab a Deal and Support the PSF!\n2026-\n06-02\nPython 3.15.0 beta 2 is here!\n2026-\n05-13\nPSF Welcomes Hudson River Trading (HRT) as a Visionary Sponsor\n2026-\n05-12\nAnnouncing PSF Community Service Award Recipients!\nUpcoming Events\nMore\n2026-\n06-18\nPython for (Almost) Everything\n2026-\n06-19\nPyCon Singapore 2026\n2026-\n07-03\nPython Norte 2026\n2026-\n07-13\nSciPy 2026\n2026-\n07-13\nEuroPython 2026\nSuccess Stories\nMore\nPython powers major aspects of Abridge\u2019s ML lifecycle, including data annotation,  research and experimentation, and ML model deployment to production.\nAbridging clinical conversations using Python\nby Nimshi Venkat and Sandeep Konam\nUse Python for\u2026\nMore\nWeb Development\n:\nDjango\n,\nPyramid\n,\nBottle\n,\nTornado\n,\nFlask\n,\nLitestar\n,\nFastAPI\nGUI Development\n:\ntkInter\n,\nPyGObject\n,\nPyQt\n,\nPySide\n,\nKivy\n,\nwxPython\n,\nDearPyGui\nAI and Machine Learning\n:\nPyTorch\n,\nTensorFlow\n,\nscikit-learn\n,\nTransformers\n,\nAnthropic\n,\nLangChain\nScientific and Numeric\n:\nSciPy\n,\nPandas\n,\nIPython\nSoftware Development\n:\nBuildbot\n,\nTrac\n,\nRoundup\nSystem Administration\n:\nAnsible\n,\nSalt\n,\nOpenStack\n,\nxonsh\n>>>\nPython Software Foundation\nThe mission of the Pyt",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:22:33.645753",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212241",
+      "content": "Rust Programming Language\nPerformance\nRust is blazingly fast and memory-efficient: with no runtime or\ngarbage collector, it can power performance-critical services, run on\nembedded devices, and easily integrate with other languages.\nReliability\nRust\u2019s rich type system and ownership model guarantee memory-safety\nand thread-safety \u2014 enabling you to eliminate many classes of\nbugs at compile-time.\nProductivity\nRust has great documentation, a friendly compiler with useful error\nmessages, and top-notch tooling \u2014 an integrated package manager\nand build tool, smart multi-editor support with auto-completion and\ntype inspections, an auto-formatter, and more.\nIn 2018, the Rust community decided to improve the programming experience\nfor a few distinct domains (see\nthe 2018\nroadmap\n). For these, you can find many high-quality crates and some\nawesome guides on how to get started.\nCommand Line\nWhip up a CLI tool quickly with Rust\u2019s robust ecosystem.\nRust helps you maintain your app with confidence and distribute it with ease.\nBuilding Tools\nWebAssembly\nUse Rust to supercharge your JavaScript, one module at a time.\nPublish to npm, bundle with webpack, and you\u2019re off to the races.\nWriting Web Apps\nNetworking\nPredictable performance. Tiny resource footprint. Rock-solid reliability.\nRust is great for network services.\nWorking On Servers\nEmbedded\nTargeting low-resource devices?\nNeed low-level control without giving up high-level conveniences?\nRust has you covered.\nStarting With Embedded\nHundreds of companies around the world are using Rust in production\ntoday for fast, low-resource, cross-platform solutions.\nFrom startups to large\ncorporations, from embedded devices to scalable web services, Rust is a great fit.\nRead Rust\nWe love documentation! Take a look at the books available online, as well as key blog posts and user guides.\nRead the book\nWatch Rust\nThe Rust community has a dedicated YouTube channel collecting a huge range of presentations and\ntutorials.\nWatch the Videos\nContribute",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:22:41.175907",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212311",
+      "content": "Example Domain\nExample Domain\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\nLearn more",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:23:11.669331",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212321",
+      "content": "Example Domain\nExample Domain\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\nLearn more",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:23:21.794495",
+      "confidence": 0.9
+    },
+    {
+      "id": "fact_20260609212358",
+      "content": "Kotlin Programming Language\nKotlin\nConcise. Multiplatform. Fun.\nDeveloped by\nMultiplatform\nGo cross\u2011platform without compromising performance, UX, or code quality.\nBackend\nAndroid\nAI\nLearn more\nLearn more\nLearn more\nLearn more\nStart Kotlin tour\nQuick Start\nKotlin\nConcise. Multiplatform. Fun.\nDeveloped by\nMultiplatform\nBackend\nAI\nAndroid\nKotlin tour\nSimple\nCode examples\nSimple\nAsynchronous\nObject-oriented\nFunctional\nIdeal for tests\nOpen in Playground\nSimple\nAsynchronous\nObject-oriented\nFunctional\nIdeal for tests\nOpen in Playground\nRun\nfun main() {\nval name = \"stranger\"        // Declare your first variable\nprintln(\"Hi, $name!\")        // ...and use it!\nprint(\"Current count:\")\nfor (i in 0..10) {           // Loop over a range from 0 to 10\nprint(\" $i\")\n}\n}\nEdit code example\nKotlin\nConcise. Multiplatform. Fun.\nDeveloped by\nMultiplatform\nAI\nBackend\nAndroid\nKotlin Tour\nQuick Start\nSimple\nCode examples\nSimple\nAsynchronous\nObject-oriented\nFunctional\nIdeal for tests\nOpen in Playground\nSimple\nAsynchronous\nObject-oriented\nFunctional\nIdeal for tests\nOpen in Playground\nRun\nfun main() {\nval name = \"stranger\"        // Declare your first variable\nprintln(\"Hi, $name!\")        // ...and use it!\nprint(\"Current count:\")\nfor (i in 0..10) {           // Loop over a range from 0 to 10\nprint(\" $i\")\n}\n}\nEdit code example\nKotlin\nConcise. Multiplatform. Fun.\nDeveloped by\nMultiplatform\nGo cross\u2011platform without compromising performance, UX, or code quality.\nAI development\nLeverage AI models tailored for Kotlin, backed by JetBrains' open data, benchmarks, and tooling built into your workflow.\nBackend\nBuild fast applications with Spring or Ktor. Kotlin's expressiveness makes backend code a pleasure to write and maintain.\nAndroid\nWrite less boilerplate, ship more features with the official language of Android development since 2019.\nKotlin Tour\nQuick Start\nSimple\nCode examples\nSimple\nAsynchronous\nObject-oriented\nFunctional\nIdeal for tests\nOpen in Playground\nSimple\nAsynchronous\nObject-oriented\nFu",
+      "source": "url",
+      "category": "learn",
+      "learned_at": "2026-06-09T21:23:58.933237",
+      "confidence": 0.9
+    }
+  ],
+  "preferences": {}
+}

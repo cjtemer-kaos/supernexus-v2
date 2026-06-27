@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ExperimentalDesignScorer.rst:2
+#: 73052e9863e541e7b0f49f9203a735e0
+msgid "tooluniverse.tools.ExperimentalDesignScorer module"
+msgstr "tooluniverse.tools.ExperimentalDesignScorer 模块"
+
+#: 2b385e18094d4f029db83f9612ba7583 of
+#: tooluniverse.tools.ExperimentalDesignScorer:1
+msgid "ExperimentalDesignScorer"
+msgstr "实验设计评分器"
+
+#: 91b4f0090fb346c7909a67e6d462cc88 927aa069e93142df8781d68396078331 of
+#: tooluniverse.tools.ExperimentalDesignScorer:3
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:1
+msgid ""
+"Assesses a proposed experimental design by assigning scores and structured "
+"feedback on hypothesis..."
+msgstr "评估拟议的实验设计，通过对假设进行评分并提供结构化反馈..."
+
+#: ../../api/tooluniverse.tools.ExperimentalDesignScorer.rst
+#: 254f72d56e7542d896e9bec3ee54514a
+msgid "Parameters"
+msgstr "参数"
+
+#: 75dfcb4024a548d7a133155e832b6ddb of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:3
+msgid "A clear statement of the research hypothesis to be tested."
+msgstr "明确的研究假设陈述以供测试。"
+
+#: a474be9fc9d34fc9be88f53f15bbe12a of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:5
+msgid ""
+"A detailed description of the proposed experimental design, including "
+"variabl..."
+msgstr "拟议实验设计的详细描述，包括变量..."
+
+#: da47116f36cb48acb3a59e829f2d33ff of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3f4f49518dfd47439a7e5caf2a7add0a of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 262fff9f9ff34239aec9d8342ebec8a3 of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ExperimentalDesignScorer.rst
+#: 78739fbe5b5f42578f6f3c63dce15f9e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 67318705ea3548b8a989515711379b0d of
+#: tooluniverse.tools.ExperimentalDesignScorer.ExperimentalDesignScorer:14
+msgid ":py:class:`Any`"
+msgstr ""

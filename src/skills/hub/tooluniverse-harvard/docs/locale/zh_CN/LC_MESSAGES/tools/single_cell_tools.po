@@ -1,0 +1,499 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/single_cell_tools.rst:2 3a93a0a7ae2647758fb7b74c4e707c23
+msgid "Single Cell Tools"
+msgstr "单细胞工具"
+
+#: ../../tools/single_cell_tools.rst:4 d94de31f51614f078ff4fd0d1aca98c6
+msgid ""
+"**Configuration File**: ``packages/single_cell_tools.json`` **Tool "
+"Type**: Local **Tools Count**: 14"
+msgstr "**配置文件**: ``packages/single_cell_tools.json`` **工具类型**: 本地 **工具数量**: 14"
+
+#: ../../tools/single_cell_tools.rst:8 45832e4786c64ac399a04b1842e75d46
+msgid ""
+"This page contains all tools defined in the ``single_cell_tools.json`` "
+"configuration file."
+msgstr "本页面包含在``single_cell_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/single_cell_tools.rst:11 fd7ea0be39f64b689544077387849970
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/single_cell_tools.rst:14 a0269ce82456402cbeff5863a0b674b1
+msgid "**get_anndata_info** (Type: PackageTool)"
+msgstr "**get_anndata_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:16 548aea486b9341a0944816273ffe6e6f
+msgid ""
+"Get comprehensive information about AnnData – annotated data for "
+"computational biology"
+msgstr "获取关于 AnnData 的全面信息——用于计算生物学的注释数据"
+
+#: ../../tools/single_cell_tools.rst f00785b20eaa4490bd2e57801aa13556
+msgid "get_anndata_info tool specification"
+msgstr "get_anndata_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:20 ../../tools/single_cell_tools.rst:51
+#: ../../tools/single_cell_tools.rst:80 ../../tools/single_cell_tools.rst:109
+#: ../../tools/single_cell_tools.rst:140 ../../tools/single_cell_tools.rst:169
+#: ../../tools/single_cell_tools.rst:200 ../../tools/single_cell_tools.rst:229
+#: ../../tools/single_cell_tools.rst:260 ../../tools/single_cell_tools.rst:291
+#: ../../tools/single_cell_tools.rst:322 ../../tools/single_cell_tools.rst:351
+#: ../../tools/single_cell_tools.rst:382 ../../tools/single_cell_tools.rst:413
+#: 0c395941afdc46a586e113a68911a274 17308a37ae9947e9a8d25122a9ff3af5
+#: 27c3908b199748b99f83e485933565af 3047176763be4aa08969d46a5e5930d1
+#: 385beec80056496f87d18c9a3ca4693f 393120791eb14d1dae5ce283737c210e
+#: 490a6454dfe44d1ab2023709c939e11f 555ebc2f88624cf38d9c1a87d49c147c
+#: 566aed70423b45bea747ed9ec554188f 74e83ace86714e2e85d2db553b3872d1
+#: 7be0273add5c431d82d0947cec3b09e0 9bbd28a5b1104f5a8fc1d34142368e57
+#: cf843bf39d014131b8f4723d8a139701 d8c80976fac14fbc9d9960097534d38b
+msgid "**Tool Information:**"
+msgstr ""
+"**工具信息：**\n"
+"\n"
+"Context: 文档"
+
+#: ../../tools/single_cell_tools.rst:22 07ff05dba1a64357bb8a386871507a55
+msgid "**Name**: ``get_anndata_info``"
+msgstr "**名称**: ``get_anndata_info``"
+
+#: ../../tools/single_cell_tools.rst:23 ../../tools/single_cell_tools.rst:54
+#: ../../tools/single_cell_tools.rst:83 ../../tools/single_cell_tools.rst:112
+#: ../../tools/single_cell_tools.rst:143 ../../tools/single_cell_tools.rst:172
+#: ../../tools/single_cell_tools.rst:203 ../../tools/single_cell_tools.rst:232
+#: ../../tools/single_cell_tools.rst:263 ../../tools/single_cell_tools.rst:294
+#: ../../tools/single_cell_tools.rst:325 ../../tools/single_cell_tools.rst:354
+#: ../../tools/single_cell_tools.rst:385 ../../tools/single_cell_tools.rst:416
+#: 03c8c60e108147c1afb91f13541898fc 33984a4795f5438fb4516153b10cf76e
+#: 36b4a5187b264c24a26d0573514d5708 40253b0fa23b438f86c149da649df834
+#: 57c134cd69df4397ac98cd290ac8922f 6b8d355fcda94cb3a0b6b83f77e57774
+#: 6dc961d20505443a8243a6b8912df41f 89420a9ef0f14823bea6ac049e76903c
+#: 8d8520ac6ea2400f8b9076b559447ee0 9b2ba6dffcbc409fb07d3964d92b378f
+#: a432f11d1b064e918d0f8dbbb1c9e6db db72530b7ec34716bca6e810df28c865
+#: dbe8db5aa6b74b398db52b0ef98b8cdd e42727f2572a46508583d2f478411dfc
+msgid "**Type**: ``PackageTool``"
+msgstr "**类型**: ``PackageTool``"
+
+#: ../../tools/single_cell_tools.rst:24 cdbbe1fe9f9248a991939fdf8664eb12
+msgid ""
+"**Description**: Get comprehensive information about AnnData – annotated "
+"data for computational biology"
+msgstr "**描述**：获取关于 AnnData 的全面信息——用于计算生物学的注释数据"
+
+#: ../../tools/single_cell_tools.rst:26 ../../tools/single_cell_tools.rst:57
+#: ../../tools/single_cell_tools.rst:86 ../../tools/single_cell_tools.rst:115
+#: ../../tools/single_cell_tools.rst:146 ../../tools/single_cell_tools.rst:175
+#: ../../tools/single_cell_tools.rst:206 ../../tools/single_cell_tools.rst:235
+#: ../../tools/single_cell_tools.rst:266 ../../tools/single_cell_tools.rst:297
+#: ../../tools/single_cell_tools.rst:328 ../../tools/single_cell_tools.rst:357
+#: ../../tools/single_cell_tools.rst:388 ../../tools/single_cell_tools.rst:419
+#: 00c6d33d4d68464eac21255abf641c59 20e2c2ee2f534a2f9535197978c6b249
+#: 4970fac7f68f45dd947859940d06fe03 4971e819c80a443595bb1ccf5481dd4b
+#: 548d14a7ffaf497aa9bb2c9faaef0155 596d2bc3b94044c48f01c47bfd84690e
+#: 75e08efdd98d4aa4a9c76d9cfd7193e2 7f45ecbf265c4a40b030da1cdbfac344
+#: 83a2cf93425c444a98582c6d6d7f191d bf74f8e9c31f4f279931a673c6557b77
+#: c31c4f050aaf477eb30a2e1cdc76838e d0c20f2fb1384cc89a581c6231f24e82
+#: dab14b2518d341dcbf93f2b814801045 f0ca08358728485189f2bad1dc726a0f
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/single_cell_tools.rst:28 ../../tools/single_cell_tools.rst:117
+#: ../../tools/single_cell_tools.rst:237 ../../tools/single_cell_tools.rst:268
+#: ../../tools/single_cell_tools.rst:299 3ff968ddf2cc4f00b993733bdbdcbc41
+#: 7959dc77f1ee431f956f6d356d42eece 97226ffaf081451e9e827a7bee56a12f
+#: 9cfccc35d7c146818f00fbe5efda1156 d1a30ac12c59435184b0a4d11bfa3bf4
+#, fuzzy
+msgid ""
+"``include_examples`` (boolean) (required) Whether to include usage "
+"examples and quick start guide"
+msgstr "``include_examples``（布尔值）（可选）是否包含使用示例和快速入门指南"
+
+#: ../../tools/single_cell_tools.rst:31 ../../tools/single_cell_tools.rst:61
+#: ../../tools/single_cell_tools.rst:90 ../../tools/single_cell_tools.rst:120
+#: ../../tools/single_cell_tools.rst:150 ../../tools/single_cell_tools.rst:180
+#: ../../tools/single_cell_tools.rst:210 ../../tools/single_cell_tools.rst:240
+#: ../../tools/single_cell_tools.rst:271 ../../tools/single_cell_tools.rst:302
+#: ../../tools/single_cell_tools.rst:332 ../../tools/single_cell_tools.rst:362
+#: ../../tools/single_cell_tools.rst:393 ../../tools/single_cell_tools.rst:423
+#: 116972cb15d446d685a1fbba4af85fe2 1de2226e167241839c71510ee22a6885
+#: 42b69eeae48a42ad8125f5d8368742d6 4a7f32386e094ff5b74bd47da6d755bb
+#: 4be5ba3045f34c128013267d1fbb3e5a 4d57d24df2074e45a38557a71209ebba
+#: 64d794b41c994a41b6398e7ebee85e85 6675334a1ade4d1c9c9b4019dcff4921
+#: aded066fa64c4aeaa8ecbcd7fd51c6c7 bf269379fa8f43f38e8040042a57e3c0
+#: cb0791cb128e4f72aac2521f67056ff3 dc8152ed0c934b9ca478f65f1a1d422e
+#: e413e0cb8f144dc89b4e9537d838df5b ee44ce4804554fe3a756e8b5d4e29da5
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/single_cell_tools.rst:45 ce0cc5c709ed4244b38aa12fa3681996
+msgid "**get_cellrank_info** (Type: PackageTool)"
+msgstr "**get_cellrank_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:47 e618585b0c294111b1c5f459b7d5e19e
+msgid ""
+"Get information about the cellrank package. Trajectory inference and cell"
+" fate mapping in single-..."
+msgstr "获取有关 cellrank 软件包的信息。用于单细胞数据中的轨迹推断和细胞命运映射。"
+
+#: ../../tools/single_cell_tools.rst 9cfa9cdd85a44fd89b6a2f88cc70856c
+msgid "get_cellrank_info tool specification"
+msgstr "get_cellrank_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:53 ca5b71f436ae4c689fa787e2f865c138
+msgid "**Name**: ``get_cellrank_info``"
+msgstr "**名称**: ``get_cellrank_info``"
+
+#: ../../tools/single_cell_tools.rst:55 43ed189f84354fe7809b3c80a87e8e21
+msgid ""
+"**Description**: Get information about the cellrank package. Trajectory "
+"inference and cell fate mapping in single-cell data"
+msgstr "**描述**：获取有关 cellrank 软件包的信息。单细胞数据中的轨迹推断和细胞命运映射"
+
+#: ../../tools/single_cell_tools.rst:59 ../../tools/single_cell_tools.rst:88
+#: ../../tools/single_cell_tools.rst:148 ../../tools/single_cell_tools.rst:208
+#: ../../tools/single_cell_tools.rst:330 ../../tools/single_cell_tools.rst:421
+#: 46cba9f62b0f4e54a7526ad0a3875874 527043e6fcbc4519840686a6ec6c8c18
+#: ab2621b181f84d6ab25cfaa0c144dab6 b7b9fcaef9ec43c7af3acb3a84d981e8
+#: c794851874894388a1a284bf2a2adc20 d869cf4d5b7e43febac77a5520e6c9b7
+msgid "No parameters required."
+msgstr "无需参数。"
+
+#: ../../tools/single_cell_tools.rst:74 81e8a329dc584adf9e6c450a0647e537
+msgid "**get_episcanpy_info** (Type: PackageTool)"
+msgstr "**get_episcanpy_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:76 898369416e99461f812ca568bcbe4d74
+msgid ""
+"Get information about the episcanpy package. Epigenomics single cell "
+"analysis in Python"
+msgstr "获取有关 episcanpy 软件包的信息。Python 中的表观基因组单细胞分析"
+
+#: ../../tools/single_cell_tools.rst 866fedcbfe7a49bd83cda584de2eed33
+msgid "get_episcanpy_info tool specification"
+msgstr "get_episcanpy_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:82 c4e8c51d16ef4ca6aed8a7f6a830f387
+msgid "**Name**: ``get_episcanpy_info``"
+msgstr "**名称**：``get_episcanpy_info``"
+
+#: ../../tools/single_cell_tools.rst:84 4948a308b88246598f0bfb1bdc97f19f
+msgid ""
+"**Description**: Get information about the episcanpy package. Epigenomics"
+" single cell analysis in Python"
+msgstr "**描述**：获取有关 episcanpy 包的信息。Python 中的表观基因组学单细胞分析"
+
+#: ../../tools/single_cell_tools.rst:103 df16b7bc7a0646228441b8d9d7220d46
+msgid "**get_mudata_info** (Type: PackageTool)"
+msgstr "**get_mudata_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:105 64aad75e6bc34e03a0afebeec3c35327
+msgid ""
+"Get comprehensive information about MuData – multimodal annotated data "
+"for computational biology"
+msgstr "获取关于MuData的全面信息——用于计算生物学的多模态注释数据"
+
+#: ../../tools/single_cell_tools.rst 9e552e058fa7455e9c2064edef6cdcf4
+msgid "get_mudata_info tool specification"
+msgstr "get_mudata_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:111 11358b4e0ace48adaf4c3f85b5075ccc
+msgid "**Name**: ``get_mudata_info``"
+msgstr "**名称**：``get_mudata_info``"
+
+#: ../../tools/single_cell_tools.rst:113 2a7447e1b0184effa2cd69cb7f4ed1f7
+msgid ""
+"**Description**: Get comprehensive information about MuData – multimodal "
+"annotated data for computational biology"
+msgstr "**描述**：获取关于MuData——用于计算生物学的多模态注释数据的全面信息"
+
+#: ../../tools/single_cell_tools.rst:134 ed89682a9b1a425b9a1b5b6ce4f748c1
+msgid "**get_palantir_info** (Type: PackageTool)"
+msgstr "**get_palantir_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:136 3650ab61a98e407a8a345235f3f55e50
+msgid ""
+"Get information about the palantir package. Algorithm for modeling "
+"continuous cell state transitions"
+msgstr "获取有关 palantir 软件包的信息。用于建模连续细胞状态转变的算法"
+
+#: ../../tools/single_cell_tools.rst c9ed4b01738c448e937ad827a3da1be4
+msgid "get_palantir_info tool specification"
+msgstr "get_palantir_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:142 3438196a253941debce50324b080a7e7
+msgid "**Name**: ``get_palantir_info``"
+msgstr "**名称**: ``get_palantir_info``"
+
+#: ../../tools/single_cell_tools.rst:144 20025b266f2a491e8af4d86668706af9
+msgid ""
+"**Description**: Get information about the palantir package. Algorithm "
+"for modeling continuous cell state transitions"
+msgstr "**描述**：获取有关 palantir 软件包的信息。用于建模连续细胞状态转换的算法"
+
+#: ../../tools/single_cell_tools.rst:163 e1ff353d853d4e93ba54263ead641992
+msgid "**get_pyscenic_info** (Type: PackageTool)"
+msgstr "**get_pyscenic_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:165 0c79eaf988c04b95a0e60b685f197d65
+msgid ""
+"Get comprehensive information about pySCENIC – single-cell regulatory "
+"network inference"
+msgstr "获取有关 pySCENIC 的全面信息 – 单细胞调控网络推断"
+
+#: ../../tools/single_cell_tools.rst 75eed5ac94184b22b510833ee039e5c0
+msgid "get_pyscenic_info tool specification"
+msgstr "get_pyscenic_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:171 c77ddd3d09e647b9b5b24cd27b04cbbf
+msgid "**Name**: ``get_pyscenic_info``"
+msgstr "**名称**: ``get_pyscenic_info``"
+
+#: ../../tools/single_cell_tools.rst:173 ee56fcef5655408fb5bafba2e07b297a
+msgid ""
+"**Description**: Get comprehensive information about pySCENIC – single-"
+"cell regulatory network inference"
+msgstr "**描述**：获取关于 pySCENIC 的全面信息——单细胞调控网络推断"
+
+#: ../../tools/single_cell_tools.rst:177 a5e97744fc4745d8b98968b86e1d15db
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"pySCENIC"
+msgstr "``info_type``（字符串）（必填）关于 pySCENIC 要检索的信息类型"
+
+#: ../../tools/single_cell_tools.rst:194 0ad54395791d41b49fc57e329ed85fea
+msgid "**get_scanorama_info** (Type: PackageTool)"
+msgstr "**get_scanorama_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:196 34cd318be2114de8aba17540734e616b
+msgid ""
+"Get information about the scanorama package. Batch correction and "
+"integration of single-cell data"
+msgstr "获取有关scanorama软件包的信息。用于单细胞数据的批次校正和整合"
+
+#: ../../tools/single_cell_tools.rst a4bc630d440849edbc493ef656231962
+msgid "get_scanorama_info tool specification"
+msgstr "get_scanorama_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:202 eabe79ae32f14efbbdff54498b1a81f6
+msgid "**Name**: ``get_scanorama_info``"
+msgstr "**名称**: ``get_scanorama_info``"
+
+#: ../../tools/single_cell_tools.rst:204 1728f5fe8f524157ad4e3574ab5d21b7
+msgid ""
+"**Description**: Get information about the scanorama package. Batch "
+"correction and integration of single-cell data"
+msgstr "**描述**：获取有关scanorama软件包的信息。用于单细胞数据的批次校正和整合"
+
+#: ../../tools/single_cell_tools.rst:223 3b7e6345572b4ba78f794f95ff249c5e
+msgid "**get_scanpy_info** (Type: PackageTool)"
+msgstr "**get_scanpy_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:225 c977548dcb5846d28ab4fc658d4a2107
+msgid ""
+"Get comprehensive information about Scanpy – scalable single-cell "
+"analysis in Python"
+msgstr "获取有关Scanpy的全面信息——基于Python的可扩展单细胞分析"
+
+#: ../../tools/single_cell_tools.rst 83679fed24394c709bc83fa8a917d5b0
+msgid "get_scanpy_info tool specification"
+msgstr "get_scanpy_info 工具规范"
+
+#: ../../tools/single_cell_tools.rst:231 dfeacf1f456b48fe8d7806f64fa51dcc
+msgid "**Name**: ``get_scanpy_info``"
+msgstr "**名称**: ``get_scanpy_info``"
+
+#: ../../tools/single_cell_tools.rst:233 333bbfdc92504c20b86942bc341b50fb
+msgid ""
+"**Description**: Get comprehensive information about Scanpy – scalable "
+"single-cell analysis in Python"
+msgstr "**描述**：获取关于 Scanpy —— Python 中可扩展的单细胞分析的全面信息"
+
+#: ../../tools/single_cell_tools.rst:254 5215034b0f5b458a9900a53e612c9902
+msgid "**get_scrublet_info** (Type: PackageTool)"
+msgstr "**get_scrublet_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:256 51d98bb604704f278e3462c0dacc6900
+msgid ""
+"Get comprehensive information about Scrublet – single-cell doublet "
+"detection"
+msgstr "获取关于 Scrublet —— 单细胞双重体检测的全面信息"
+
+#: ../../tools/single_cell_tools.rst 9c23c28e0551485d805c72ff39ec21e8
+msgid "get_scrublet_info tool specification"
+msgstr "get_scrublet_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:262 f66cb08b896140579b970b04d9953b74
+msgid "**Name**: ``get_scrublet_info``"
+msgstr "**名称**：``get_scrublet_info``"
+
+#: ../../tools/single_cell_tools.rst:264 9b47c0d99915467ab07a745634c67102
+msgid ""
+"**Description**: Get comprehensive information about Scrublet – single-"
+"cell doublet detection"
+msgstr "**描述**：获取关于 Scrublet —— 单细胞双重体检测的全面信息"
+
+#: ../../tools/single_cell_tools.rst:285 7a026f76190f4038b1e9fde6f4156382
+msgid "**get_scvelo_info** (Type: PackageTool)"
+msgstr "**get_scvelo_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:287 822b7ea0838c4191baabfeefd270c6bf
+msgid ""
+"Get comprehensive information about scVelo – RNA velocity analysis in "
+"single cells"
+msgstr "获取关于 scVelo —— 单细胞 RNA 速度分析的全面信息"
+
+#: ../../tools/single_cell_tools.rst 9ee93916aa0b4178a7a6934c2352eb29
+msgid "get_scvelo_info tool specification"
+msgstr "get_scvelo_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:293 58d4d5d922b64517936b4f8d1113542b
+msgid "**Name**: ``get_scvelo_info``"
+msgstr "**名称**：``get_scvelo_info``"
+
+#: ../../tools/single_cell_tools.rst:295 0a5811a4011542d6b34958bc3a02f7de
+msgid ""
+"**Description**: Get comprehensive information about scVelo – RNA "
+"velocity analysis in single cells"
+msgstr "**描述**：获取关于 scVelo —— 单细胞 RNA 速度分析的全面信息"
+
+#: ../../tools/single_cell_tools.rst:316 7153b7668dd6400a8bfaf758b5dac315
+msgid "**get_scvi_tools_info** (Type: PackageTool)"
+msgstr "**get_scvi_tools_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:318 a74f6776cb4b463e85b2c1e7848975e0
+msgid ""
+"Get information about the scvi-tools package. Deep probabilistic analysis"
+" of single-cell omics data"
+msgstr "获取有关 scvi-tools 软件包的信息。单细胞组学数据的深度概率分析"
+
+#: ../../tools/single_cell_tools.rst c6de5407923646c8b0fb696c621baca5
+msgid "get_scvi_tools_info tool specification"
+msgstr "get_scvi_tools_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:324 20e1591f4b7542b69e0fad4424f21b2f
+msgid "**Name**: ``get_scvi_tools_info``"
+msgstr "**名称**：``get_scvi_tools_info``"
+
+#: ../../tools/single_cell_tools.rst:326 ae0fb59833b24185a2b728d7dd64a724
+msgid ""
+"**Description**: Get information about the scvi-tools package. Deep "
+"probabilistic analysis of single-cell omics data"
+msgstr "**描述**：获取有关 scvi-tools 软件包的信息。单细胞组学数据的深度概率分析"
+
+#: ../../tools/single_cell_tools.rst:345 24bcb403f4994589a9d1fb22f436c635
+msgid "**get_souporcell_info** (Type: PackageTool)"
+msgstr "**get_souporcell_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:347 de3f40f754004e35852e4c664f6a98ec
+msgid ""
+"Get comprehensive information about souporcell – scRNA-seq genotype "
+"clustering"
+msgstr "获取关于 souporcell – scRNA-seq 基因型聚类的全面信息"
+
+#: ../../tools/single_cell_tools.rst f7f047bdd7024c83869318502a2f7bfc
+msgid "get_souporcell_info tool specification"
+msgstr "get_souporcell_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:353 0c971b489fae4f5eb15999e86bd74af1
+msgid "**Name**: ``get_souporcell_info``"
+msgstr "**名称**：``get_souporcell_info``"
+
+#: ../../tools/single_cell_tools.rst:355 00c0dd790d6d45f58abe8ca7c6cfed3b
+msgid ""
+"**Description**: Get comprehensive information about souporcell – scRNA-"
+"seq genotype clustering"
+msgstr "**描述**：获取关于 souporcell – scRNA-seq 基因型聚类的全面信息"
+
+#: ../../tools/single_cell_tools.rst:359 2637d42e828e4a6682dceb7b3db2b0e9
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"souporcell"
+msgstr "``info_type``（字符串）（必填）要检索的关于 souporcell 的信息类型"
+
+#: ../../tools/single_cell_tools.rst:376 8654efa681c442df98b6ca0a75ea26be
+msgid "**get_tiledbsoma_info** (Type: PackageTool)"
+msgstr "**get_tiledbsoma_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:378 a3be2693b34444f98efeb2fdcd08dd8e
+msgid ""
+"Get comprehensive information about TileDB-SOMA – single-cell data "
+"storage with TileDB"
+msgstr "获取关于 TileDB-SOMA —— 基于 TileDB 的单细胞数据存储的全面信息"
+
+#: ../../tools/single_cell_tools.rst b467afae58c24424b8c0b334c3116a44
+msgid "get_tiledbsoma_info tool specification"
+msgstr "get_tiledbsoma_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:384 d1d8ab6e24544cb28b4fe91bf5dd4850
+msgid "**Name**: ``get_tiledbsoma_info``"
+msgstr "**名称**：``get_tiledbsoma_info``"
+
+#: ../../tools/single_cell_tools.rst:386 e358f816548b41e7b4c5339749b7110c
+msgid ""
+"**Description**: Get comprehensive information about TileDB-SOMA – "
+"single-cell data storage with TileDB"
+msgstr "**描述**：获取有关 TileDB-SOMA 的全面信息——基于 TileDB 的单细胞数据存储方案"
+
+#: ../../tools/single_cell_tools.rst:390 fd81afeb86e140cab208b4ee521e998a
+msgid ""
+"``info_type`` (string) (required) Type of information to retrieve about "
+"TileDB-SOMA"
+msgstr "``info_type``（字符串）（必填）要检索的有关 TileDB-SOMA 的信息类型"
+
+#: ../../tools/single_cell_tools.rst:407 a81b0255b00e493392fc69472d1d1e60
+msgid "**get_velocyto_info** (Type: PackageTool)"
+msgstr "**get_velocyto_info**（类型：PackageTool）"
+
+#: ../../tools/single_cell_tools.rst:409 2e5edd7263d643e58b42a4efcb88216d
+msgid ""
+"Get information about the velocyto package. RNA velocity analysis for "
+"single cell RNA-seq data"
+msgstr "获取有关 velocyto 软件包的信息。用于单细胞 RNA 测序数据的 RNA 速度分析"
+
+#: ../../tools/single_cell_tools.rst 317fe9d890324e6c8b047f863fa4c713
+msgid "get_velocyto_info tool specification"
+msgstr "get_velocyto_info 工具规格说明"
+
+#: ../../tools/single_cell_tools.rst:415 2b5a633e22624e76b501aa6f039a2b24
+msgid "**Name**: ``get_velocyto_info``"
+msgstr "**名称**：``get_velocyto_info``"
+
+#: ../../tools/single_cell_tools.rst:417 0f56f6b926cb44ba855de3b8cb4f2a93
+msgid ""
+"**Description**: Get information about the velocyto package. RNA velocity"
+" analysis for single cell RNA-seq data"
+msgstr "**描述**：获取关于velocyto软件包的信息。用于单细胞RNA测序数据的RNA速度分析。"
+
+#: ../../tools/single_cell_tools.rst:436 9ef7fcb73a2647a280b8a9200693fcb5
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/single_cell_tools.rst:438 65c4e02c6f77455c88474019419dca56
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/single_cell_tools.rst:439 62e378fa45754166aa6973837ff398e6
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

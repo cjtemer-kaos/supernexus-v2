@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ClinVar_search_variants.rst:2
+#: a159dfe04978419db6241b2507663903
+msgid "tooluniverse.tools.ClinVar\\_search\\_variants module"
+msgstr "tooluniverse.tools.ClinVar\\_search\\_variants 模块"
+
+#: fd2ee0c7201141bd99d9a1acd33e815d of
+#: tooluniverse.tools.ClinVar_search_variants:1
+msgid "ClinVar_search_variants"
+msgstr "ClinVar_搜索变异"
+
+#: 3d65eb6890234f4aa61418a77282f0c0 b5aca6fa1c7c48bc94bc38b3e7b63668 of
+#: tooluniverse.tools.ClinVar_search_variants:3
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:1
+msgid ""
+"Search ClinVar via NCBI E-utilities (esearch→esummary) and return concise "
+"variant records for a q..."
+msgstr "通过 NCBI E-utilities（esearch→esummary）搜索 ClinVar，并返回与查询相关的简洁变异记录。"
+
+#: ../../api/tooluniverse.tools.ClinVar_search_variants.rst
+#: 77810db41035472ab32606534c420fe0
+msgid "Parameters"
+msgstr "参数"
+
+#: be9f982c68ac408783653efa92207278 of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:3
+msgid "ClinVar search term (e.g., BRCA1)."
+msgstr "ClinVar 搜索词（例如，BRCA1）。"
+
+#: 76683f3d483b420bb48bb93cba4c74c2 of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:5
+msgid "Max records."
+msgstr "最大记录数。"
+
+#: f60c1b10c8af4f6a8996942cfb14a125 of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: e5e9c95dfbab4d04a245e0c8f69cf4af of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 3948701fa76143d983305173361171f1 of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ClinVar_search_variants.rst
+#: c294f6870a3f4e2c8d48287198d51cbd
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2f2d0e11073d4ab18f9c74676e46bf60 of
+#: tooluniverse.tools.ClinVar_search_variants.ClinVar_search_variants:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

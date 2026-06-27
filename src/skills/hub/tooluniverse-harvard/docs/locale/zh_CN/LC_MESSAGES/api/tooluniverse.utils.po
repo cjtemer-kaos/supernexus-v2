@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.utils.rst:2 054d74fd428943e58ea3c7fdc2ec56ad
+msgid "tooluniverse.utils module"
+msgstr "tooluniverse.utils 模块"
+
+#: 2a0a380a69634992b74c47ebbf0e99c5 of tooluniverse.utils.get_user_cache_dir:1
+msgid "Return a cross-platform user cache directory for ToolUniverse."
+msgstr "返回一个适用于ToolUniverse的跨平台用户缓存目录。"
+
+#: ec59b192f1dd4336a1740e55714a7e93 of tooluniverse.utils.get_user_cache_dir:3
+msgid ""
+"macOS: ~/Library/Caches/ToolUniverse Linux: $XDG_CACHE_HOME or "
+"~/.cache/tooluniverse Windows: %LOCALAPPDATA%\\ToolUniverse\\Cache"
+msgstr ""
+"macOS：~/Library/Caches/ToolUniverse  \n"
+"Linux：$XDG_CACHE_HOME 或 ~/.cache/tooluniverse  \n"
+"Windows：%LOCALAPPDATA%\\ToolUniverse\\Cache"
+
+#: d7e2d21833cf49099d4b4a20d96db0b3 of tooluniverse.utils.yaml_to_dict:1
+msgid "Convert a YAML file to a dictionary."
+msgstr "将 YAML 文件转换为字典。"
+
+#: ../../api/tooluniverse.utils.rst 15b50505e2574325a6667444aed4a498
+#: 2cf0dd81b7bf4880b8d93a5f9d84a7b6 71b8ce4c68df4278bcaced91d4633f13
+#: 804fad6157c4494996e24498ec6e5a33 bd7661ba174b4d5f89314045bd1c6284
+#: e2e5f4aa039d4106ae23eb4cd3c522ce e435f619234a4d9a86ba697909bd7a01
+#: f702bf5297be425bbefacf2fc2de2451
+msgid "Parameters"
+msgstr "参数"
+
+#: d37c8f7ebdfd450aa87c91b2e8be3a17 of tooluniverse.utils.yaml_to_dict:3
+msgid "Path to the YAML file."
+msgstr "YAML 文件的路径。"
+
+#: ../../api/tooluniverse.utils.rst 01001774a3424a5c8642ae76839bbf94
+#: 0d91b5e7f56849c8a7afaa4bd8eafc77 1cb935d517df4538806a2aa5fa88d54d
+#: 6806a919e8cf4067ae7fa74af2045bc9 6dad9fc9c3fb4e7b8288682ffccb8f92
+#: abefc550308244858fd56b13fafecf27 ca0e0e991a144d778713cc6ccc8f23ee
+#: ee6755b5cfc24b8489a94eaebfd04c9b
+msgid "Returns"
+msgstr "返回值"
+
+#: 1441a61554d94f00ab220eed8ff176cf of tooluniverse.utils.yaml_to_dict:6
+msgid "Dictionary representation of the YAML file content."
+msgstr "YAML 文件内容的字典表示。"
+
+#: ../../api/tooluniverse.utils.rst 72e1e02f20eb41b894aa9c743d68b7b0
+#: 786036b21b3d43babd44a1bc8bf7e66c 7aabfccf4ff9451cbf5aa07f3f834d95
+#: 7abb3740c5b34ecbaa7f4f1dbe44b658 80e1177dc9fd4df394bf298b2f29e98b
+#: 930fcb5d3f5d4954bb43372117edb867 aa89805282014aebaea384ab3e5a1e4f
+#: dd171338625d4009a72dfdfac5783daf
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0e86e98f9c9b4f068e22c391f32377cf of tooluniverse.utils.read_json_list:1
+msgid "Reads a list of JSON objects from a file."
+msgstr "从文件中读取 JSON 对象列表。"
+
+#: 09b5d22a6b744186aa0a208f2be44849 of tooluniverse.utils.read_json_list:3
+msgid "Parameters: file_path (str): The path to the JSON file."
+msgstr "参数：file_path（字符串）：JSON 文件的路径。"
+
+#: 17bce9bc8f974d528e7c5d15b1e81756 of tooluniverse.utils.read_json_list:6
+msgid "Returns: list: A list of dictionaries containing the JSON objects."
+msgstr "返回值：list：包含 JSON 对象的字典列表。"
+
+#: a6851c49b8c2487fa4ef37151aa841bb of
+#: tooluniverse.utils.format_error_response:1
+msgid "Format error responses in a consistent structure."
+msgstr "将格式错误响应统一为一致的结构。"
+
+#: 023e087fced54533a7e41a33febfa10d of
+#: tooluniverse.utils.format_error_response:3
+msgid ""
+"This function ensures all error responses follow the same format for better "
+"error handling and debugging."
+msgstr "此功能确保所有错误响应遵循统一格式，以便更好地进行错误处理和调试。"
+
+#: 00830ea0a00a4a0c99f19878eaaa15e1 of
+#: tooluniverse.utils.format_error_response:6
+msgid "The error that occurred"
+msgstr "发生的错误"
+
+#: 46bd33b238c441b5b01d542e4a714bef of
+#: tooluniverse.utils.format_error_response:8
+msgid "Name of the tool that failed"
+msgstr "失败工具的名称"
+
+#: f5f905a8649a4525b8ea08ea96287bb5 of
+#: tooluniverse.utils.format_error_response:10
+msgid "Additional context about the error"
+msgstr "错误的附加上下文"
+
+#: d57a9ec48b514997ad02251da4dfd5ee of
+#: tooluniverse.utils.format_error_response:13
+msgid "Standardized error response"
+msgstr "标准化错误响应"
+
+#: c3c88e5ae27a4d72b622003081ba08d7 of
+#: tooluniverse.utils.get_parameter_schema:1
+msgid "Get parameter schema from tool configuration."
+msgstr "从工具配置中获取参数模式。"
+
+#: 06f70e7cd65d4bd9ab275d19bde961cd of
+#: tooluniverse.utils.get_parameter_schema:3
+#, fuzzy
+msgid "Tool configuration dictionary"
+msgstr "挂钩配置以进行验证"
+
+#: 774d90e21b5048a5a44de18f69939bc4 of
+#: tooluniverse.utils.get_parameter_schema:6
+msgid "Parameter schema dictionary"
+msgstr "参数模式字典"
+
+#: e7648a4f71e840bc8d3dbab6269f445e of tooluniverse.utils.validate_query:1
+msgid "Validate a query dictionary for required fields and structure."
+msgstr "验证查询字典的必填字段和结构。"
+
+#: 2710b7c4f7f746a2928428cab1b6edef of tooluniverse.utils.validate_query:3
+msgid "The query dictionary to validate"
+msgstr "用于验证的查询字典"
+
+#: a7b95067b2754c59bd47c2e17afc7a1d of tooluniverse.utils.validate_query:6
+msgid "True if query is valid, False otherwise"
+msgstr "如果查询有效，则返回 True，否则返回 False"
+
+#: 3bcc575efc58449086265ad79294fdef of
+#: tooluniverse.utils.normalize_gene_symbol:1
+msgid "Normalize a gene symbol to standard format."
+msgstr "将基因符号规范化为标准格式。"
+
+#: 5dabc202209d4791b836b0ff2ad53a70 of
+#: tooluniverse.utils.normalize_gene_symbol:3
+msgid "The gene symbol to normalize"
+msgstr "用于标准化的基因符号"
+
+#: b7ffaa3fc8ea4ba4a3c8312528aff86d of
+#: tooluniverse.utils.normalize_gene_symbol:6
+msgid "Normalized gene symbol"
+msgstr "标准化基因符号"
+
+#: 569a7791e99f4a67be08bbf6ed5c2fdc of
+#: tooluniverse.utils.format_api_response:1
+msgid "Format API response data into a standardized format."
+msgstr "将 API 响应数据格式化为标准化格式。"
+
+#: c8af10e2b600429981a8c5df86443288 of
+#: tooluniverse.utils.format_api_response:3
+msgid "The response data to format"
+msgstr "响应数据的格式"
+
+#: 8d69c5e60f0f4aa68e223a1e81b985f2 of
+#: tooluniverse.utils.format_api_response:5
+msgid "The desired output format ('json', 'pretty', 'minimal')"
+msgstr "所需的输出格式（'json'、'pretty'、'minimal'）"
+
+#: e442398fd385420684cd3523a1a37ce4 of
+#: tooluniverse.utils.format_api_response:8
+msgid "Formatted response"
+msgstr "请提供您需要翻译的具体英文文本，我将为您提供准确、专业的中文翻译。"
+
+#: 39c0243eb412459b985260ec4ded74ae of
+#: tooluniverse.utils.validate_hook_config:1
+msgid "Validate hook configuration for correctness and completeness."
+msgstr "验证钩子配置的正确性和完整性。"
+
+#: 94b4569a810b4e819bf4c501db4d9233 of
+#: tooluniverse.utils.validate_hook_config:3
+msgid ""
+"This function checks that the hook configuration contains all required "
+"fields and that the structure is valid for the hook system."
+msgstr "此函数检查挂钩配置是否包含所有必需字段，并确保其结构符合挂钩系统的要求。"
+
+#: cbcabaca9ebe46768be974c7fb6fda6a of
+#: tooluniverse.utils.validate_hook_config:6
+msgid "Hook configuration to validate"
+msgstr "挂钩配置以进行验证"
+
+#: 713c15d695194e2ea5f9e3daf084c005 of
+#: tooluniverse.utils.validate_hook_config:9
+msgid "True if configuration is valid, False otherwise"
+msgstr "如果配置有效，则为 True，否则为 False"
+
+#: a04cfd6c250e43cd953bfcb24f5a038b of
+#: tooluniverse.utils.validate_hook_conditions:1
+msgid "Validate hook trigger conditions."
+msgstr "验证钩子触发条件。"
+
+#: c6ad6ae1b60b43f4aa40e5e1318076f7 of
+#: tooluniverse.utils.validate_hook_conditions:3
+msgid ""
+"This function checks that the hook conditions are properly structured and "
+"contain valid operators and thresholds."
+msgstr "此函数用于检查钩子条件的结构是否正确，并确保包含有效的运算符和阈值。"
+
+#: 243928e90f8b437f9d47a5804b435f6e of
+#: tooluniverse.utils.validate_hook_conditions:6
+msgid "Hook conditions to validate"
+msgstr "挂钩条件进行验证"
+
+#: d07930a1d90e456c8d47f24e1b9b7ee1 of
+#: tooluniverse.utils.validate_hook_conditions:9
+msgid "True if conditions are valid, False otherwise"
+msgstr "如果条件有效，则为 True，否则为 False"

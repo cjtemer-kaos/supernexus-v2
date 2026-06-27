@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/openalex_tools.rst:2 e7659d51fcd243868d32e266996d2fb8
+msgid "Openalex Tools"
+msgstr "Openalex 工具"
+
+#: ../../tools/openalex_tools.rst:4 645edf36a86e489280ceb61f41134640
+msgid ""
+"**Configuration File**: ``openalex_tools.json`` **Tool Type**: Local **Tools"
+" Count**: 1"
+msgstr ""
+"**配置文件**：``openalex_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/openalex_tools.rst:8 112f0300206a47cca8b9a3fa96803108
+msgid ""
+"This page contains all tools defined in the ``openalex_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``openalex_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/openalex_tools.rst:11 4f343b68820d4e7396057a7b9bd51100
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/openalex_tools.rst:14 386cd69f8ce44ccbaa274b3558a2aaf1
+msgid "**openalex_literature_search** (Type: OpenAlexTool)"
+msgstr "**openalex_literature_search**（类型：OpenAlex工具）"
+
+#: ../../tools/openalex_tools.rst:16 932f822a292943c49f32fc8d9773275d
+msgid ""
+"Search for academic literature using OpenAlex API. Retrieves papers with "
+"title, abstract, authors..."
+msgstr "使用 OpenAlex API 搜索学术文献。检索包含标题、摘要、作者的论文信息..."
+
+#: ../../tools/openalex_tools.rst 0eea1b6231a64059bb94ada4ed224f2e
+msgid "openalex_literature_search tool specification"
+msgstr "openalex_literature_search 工具规格说明"
+
+#: ../../tools/openalex_tools.rst:20 4e1189fd4f524677b127a6304fef84e7
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/openalex_tools.rst:22 7807a413b70744e3850b9e26c47ba931
+msgid "**Name**: ``openalex_literature_search``"
+msgstr "**名称**：``openalex_literature_search``"
+
+#: ../../tools/openalex_tools.rst:23 71b1f221808f4ed4a1fc94ef97970c22
+msgid "**Type**: ``OpenAlexTool``"
+msgstr "**类型**：``OpenAlexTool``"
+
+#: ../../tools/openalex_tools.rst:24 e9400ae388694dff90497bdd6d3f12a7
+msgid ""
+"**Description**: Search for academic literature using OpenAlex API. "
+"Retrieves papers with title, abstract, authors, publication year, and "
+"organizational affiliations based on search keywords."
+msgstr "**描述**：使用 OpenAlex API 搜索学术文献。根据搜索关键词检索包含标题、摘要、作者、出版年份以及机构关联信息的论文。"
+
+#: ../../tools/openalex_tools.rst:26 3d4ada9cc39848c196283cc9b933fc70
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/openalex_tools.rst:28 e52b12b7850f428cb05ff10c796f7420
+msgid ""
+"``search_keywords`` (string) (required) Keywords to search for in paper "
+"titles, abstracts, and content. Use relevant scientific terms or phrases."
+msgstr "``search_keywords``（字符串）（必填）用于在论文标题、摘要和内容中搜索的关键词。请使用相关的科学术语或短语。"
+
+#: ../../tools/openalex_tools.rst:31 46544f7bc8084fb88d7ccc193f601d1b
+msgid ""
+"``max_results`` (integer) (optional) Maximum number of papers to retrieve "
+"(default: 10, maximum: 200)."
+msgstr "``max_results``（整数）（可选）要检索的论文最大数量（默认值：10，最大值：200）。"
+
+#: ../../tools/openalex_tools.rst:34 50485be57cab44fab3226d3713c2acde
+msgid ""
+"``year_from`` (integer) (optional) Start year for publication date filter "
+"(e.g., 2020). Optional parameter to limit search to papers published from "
+"this year onwards."
+msgstr ""
+"``year_from``（整数）（可选）用于筛选出版日期的起始年份（例如：2020）。这是一个可选参数，用于将搜索范围限制为从该年份起发布的论文。"
+
+#: ../../tools/openalex_tools.rst:37 a601c5475cc6497fbdeb6287dc76be22
+msgid ""
+"``year_to`` (integer) (optional) End year for publication date filter (e.g.,"
+" 2023). Optional parameter to limit search to papers published up to this "
+"year."
+msgstr "``year_to``（整数）（可选）用于筛选出版日期的结束年份（例如：2023）。可选参数，用于将搜索范围限制为截至该年份发表的论文。"
+
+#: ../../tools/openalex_tools.rst:40 0b731c7d788e43b58b596059b637c72c
+msgid ""
+"``open_access`` (boolean) (optional) Filter for open access papers only. Set"
+" to true for open access papers, false for non-open access, or omit for all "
+"papers."
+msgstr ""
+"``open_access``（布尔值）（可选）仅筛选开放获取的论文。设置为 true 表示仅开放获取的论文，设置为 false "
+"表示非开放获取的论文，或省略以包含所有论文。"
+
+#: ../../tools/openalex_tools.rst:43 afbd15100f1548839b883066b9889397
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/openalex_tools.rst:57 a58d61c640ca49629141d744a09f0722
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/openalex_tools.rst:59 2abe0440d0344fafa0eccc87dcd2ab19
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/openalex_tools.rst:60 648c7f73dbb349a0b3b5860cd96fbb31
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

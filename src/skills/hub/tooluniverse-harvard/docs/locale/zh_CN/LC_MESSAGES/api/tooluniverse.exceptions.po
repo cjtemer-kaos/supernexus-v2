@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.exceptions.rst:2 79f35a5593a1489482e79ffe20110b53
+msgid "tooluniverse.exceptions module"
+msgstr "tooluniverse.exceptions 模块"
+
+#: b226e86b91464710aeecbc01aed32ea8 of tooluniverse.exceptions:1
+msgid "ToolUniverse Exception Classes"
+msgstr "ToolUniverse 异常类"
+
+#: f0d81e62ff45461fa1a9d25c23a4e7ba of tooluniverse.exceptions:3
+msgid ""
+"Structured exceptions for tool execution errors with actionable recovery "
+"guidance."
+msgstr "工具执行错误的结构化异常及可操作的恢复指导。"
+
+#: adeab24ec2634641ad3b7b8e167fad57 of tooluniverse.exceptions.ToolError:1
+msgid "Bases: :py:class:`Exception`"
+msgstr "基类：:py:class:`Exception`"
+
+#: 13b237e45ba442749cae312322ea4997 of tooluniverse.exceptions.ToolError:1
+msgid "Base exception for all tool-related errors."
+msgstr "所有工具相关错误的基础异常。"
+
+#: e0371ab1e429449ba53d5d392a849296 of tooluniverse.exceptions.ToolError:5
+msgid "Type of error for classification"
+msgstr "分类错误类型"
+
+#: 12a40c4bc7344da0b4446c57f65407de 256abbed019d4f0095cfc8dbab176a81
+#: b8fc8c016c5e4986bed4ffaeb6db8bac e8cbb3f684e1429596f04defa9d9a06f of
+#: tooluniverse.exceptions.ToolError
+msgid "type"
+msgstr "类型"
+
+#: ba1715f7f30044f69dbba39cfe659eff of tooluniverse.exceptions.ToolError:7
+msgid ":py:class:`str`"
+msgstr ""
+
+#: 78345558379f41fabf3ba34597c8c743 of tooluniverse.exceptions.ToolError:11
+msgid "Whether the operation can be retried"
+msgstr "操作是否可以重试"
+
+#: d20cbf4c176343aeac02b0b716829bb6 of tooluniverse.exceptions.ToolError:13
+msgid ":py:class:`bool`"
+msgstr ":py:class:`布尔值`"
+
+#: 88e24b2f6a754c8fbb4b95e5040a1559 of tooluniverse.exceptions.ToolError:17
+msgid "Actionable steps to resolve the error"
+msgstr "解决该错误的可操作步骤"
+
+#: b4b4297a709046c6bc14bc2e6e32757a of tooluniverse.exceptions.ToolError:19
+msgid ":py:class:`list`"
+msgstr ":py:class:`列表`"
+
+#: e65149638da34ada8030dd42b069b958 of tooluniverse.exceptions.ToolError:23
+msgid "Additional context about the error"
+msgstr "关于错误的附加上下文"
+
+#: ba069e74210348b5bd998b043784951d of tooluniverse.exceptions.ToolError:25
+msgid ":py:class:`dict`"
+msgstr ""
+
+#: a2b707ffa4ce425aa82cf53db4c6eb24 of
+#: tooluniverse.exceptions.ToolError.to_dict:1
+msgid "Convert exception to structured dictionary format."
+msgstr "将异常转换为结构化字典格式。"
+
+#: 11dc25edefd34b4e93673147d020fbbb 3152c15afa084ce78f261b081183c681
+#: 58374341b1cb43b5a21a2e4df97d2a63 6e67d9351be04e02915fca216f33de69
+#: 7da493a655b84a9a82a7acb920928288 a1ccdc2347434961b83fc819286c3593
+#: ec6cbd785a8044528bda5636223d5d90 of tooluniverse.exceptions.ToolAuthError:1
+#: tooluniverse.exceptions.ToolConfigError:1
+#: tooluniverse.exceptions.ToolDependencyError:1
+#: tooluniverse.exceptions.ToolRateLimitError:1
+#: tooluniverse.exceptions.ToolServerError:1
+#: tooluniverse.exceptions.ToolUnavailableError:1
+#: tooluniverse.exceptions.ToolValidationError:1
+msgid "Bases: :py:class:`~tooluniverse.exceptions.ToolError`"
+msgstr "基础：:py:class:`~tooluniverse.exceptions.ToolError`"
+
+#: a14e4d488d4c4fba825924725abacaf2 of tooluniverse.exceptions.ToolAuthError:1
+msgid ""
+"Authentication or authorization error (missing/invalid API key, "
+"permissions)."
+msgstr "身份验证或授权错误（缺失/无效的 API 密钥，权限）。"
+
+#: 7d61cc08063c4bf9b5aa4faf2766fff7 of
+#: tooluniverse.exceptions.ToolUnavailableError:1
+msgid ""
+"Tool or service is unavailable (network issues, service down, tool not "
+"found)."
+msgstr "工具或服务不可用（网络问题、服务中断、工具未找到）。"
+
+#: ec896b8f79fb45279bf03b886aa0d8d7 of
+#: tooluniverse.exceptions.ToolRateLimitError:1
+msgid "Rate limit or quota exceeded."
+msgstr "速率限制或配额已超出。"
+
+#: 975aa6d0dbdc40cfa460573cb3655ee1 of
+#: tooluniverse.exceptions.ToolValidationError:1
+msgid "Parameter validation failed (invalid parameters, schema mismatch)."
+msgstr "参数验证失败（参数无效，架构不匹配）。"
+
+#: b56634fee73445de99ed3075dd6702fa of
+#: tooluniverse.exceptions.ToolConfigError:1
+msgid "Tool configuration error (missing config, invalid setup)."
+msgstr "工具配置错误（缺少配置，设置无效）。"
+
+#: db49741b155e4652a71b6b4f5db29858 of
+#: tooluniverse.exceptions.ToolDependencyError:1
+msgid "Missing or incompatible dependencies."
+msgstr "缺失或不兼容的依赖项。"
+
+#: f74b11cca04f4d3db092cb2fe2b4e507 of
+#: tooluniverse.exceptions.ToolServerError:1
+msgid "Server-side error (5xx responses, unexpected failures)."
+msgstr "服务器端错误（5xx响应，意外故障）。"
+
+#~ msgid ""
+#~ "The ToolUniverse exception system provides structured error handling with "
+#~ "actionable recovery guidance."
+#~ msgstr "ToolUniverse 异常系统提供结构化的错误处理，并附有可操作的恢复指导。"
+
+#~ msgid "Exception Hierarchy"
+#~ msgstr "异常层次结构"
+
+#~ msgid "Base Exception"
+#~ msgstr "基础异常"
+
+#~ msgid ""
+#~ "The base exception class for all tool-related errors. Provides structured "
+#~ "error information including retriability, recovery steps, and additional "
+#~ "details."
+#~ msgstr "用于所有工具相关错误的基础异常类。提供结构化的错误信息，包括可重试性、恢复步骤以及其他详细信息。"
+
+#~ msgid "**Example:**"
+#~ msgstr "请提供需要翻译的具体文本内容，我将为您翻译成符合要求的中文。"
+
+#~ msgid "Specific Exception Types"
+#~ msgstr "特定异常类型"
+
+#~ msgid "Authentication Errors"
+#~ msgstr "身份验证错误"
+
+#~ msgid "Raised when authentication or authorization fails."
+#~ msgstr "在身份验证或授权失败时引发。"
+
+#~ msgid "Service Availability Errors"
+#~ msgstr "服务可用性错误"
+
+#~ msgid "Raised when a tool or service is unavailable."
+#~ msgstr "当工具或服务不可用时触发。"
+
+#~ msgid "Rate Limiting Errors"
+#~ msgstr "速率限制错误"
+
+#~ msgid "Raised when API rate limits or quotas are exceeded."
+#~ msgstr "当超过 API 速率限制或配额时触发。"
+
+#~ msgid "Validation Errors"
+#~ msgstr "验证错误"
+
+#~ msgid "Raised when parameter validation fails."
+#~ msgstr "当参数验证失败时引发。"
+
+#~ msgid "Configuration Errors"
+#~ msgstr "配置错误"
+
+#~ msgid "Raised when tool configuration is invalid or missing."
+#~ msgstr "当工具配置无效或缺失时引发。"
+
+#~ msgid "Dependency Errors"
+#~ msgstr "依赖错误"
+
+#~ msgid "Raised when required dependencies are missing or incompatible."
+#~ msgstr "在必需的依赖项缺失或不兼容时引发。"
+
+#~ msgid "Server Errors"
+#~ msgstr "服务器错误"
+
+#~ msgid "Raised for server-side errors (5xx responses, unexpected failures)."
+#~ msgstr "针对服务器端错误（5xx响应，意外故障）引发。"
+
+#~ msgid "Migration from Old Exceptions"
+#~ msgstr "从旧异常迁移"
+
+#~ msgid ""
+#~ "The old exception classes in :mod:`tooluniverse.base_tool` are deprecated:"
+#~ msgstr "在 :mod:`tooluniverse.base_tool` 中的旧异常类已被弃用："
+
+#~ msgid "Old Exception"
+#~ msgstr "旧异常"
+
+#~ msgid "New Exception"
+#~ msgstr "新异常"
+
+#~ msgid "``ToolExecutionError``"
+#~ msgstr "``工具执行错误``"
+
+#~ msgid ":class:`ToolError`"
+#~ msgstr ":class:`工具错误`"
+
+#~ msgid "``ValidationError``"
+#~ msgstr "``验证错误``"
+
+#~ msgid ":class:`ToolValidationError`"
+#~ msgstr ":class:`工具验证错误`"
+
+#~ msgid "``AuthenticationError``"
+#~ msgstr "``身份验证错误``"
+
+#~ msgid ":class:`ToolAuthError`"
+#~ msgstr ":class:`工具认证错误`"
+
+#~ msgid "``RateLimitError``"
+#~ msgstr ""
+#~ "``RateLimitError``  \n"
+#~ "速率限制错误"
+
+#~ msgid ":class:`ToolRateLimitError`"
+#~ msgstr ":class:`工具速率限制错误`"
+
+#~ msgid "**Migration Example:**"
+#~ msgstr "**迁移示例：**"
+
+#~ msgid "Best Practices"
+#~ msgstr "最佳实践"
+
+#~ msgid ""
+#~ "**Use Specific Exception Types**: Choose the most specific exception type "
+#~ "for your error."
+#~ msgstr "**使用特定的异常类型**：为您的错误选择最具体的异常类型。"
+
+#~ msgid ""
+#~ "**Provide Recovery Steps**: Always include actionable `next_steps` when "
+#~ "possible."
+#~ msgstr "**提供恢复步骤**：尽可能包含可执行的`next_steps`。"
+
+#~ msgid ""
+#~ "**Include Context**: Use the `details` parameter to provide additional "
+#~ "context."
+#~ msgstr "**包含上下文**：使用 `details` 参数提供额外的上下文。"
+
+#~ msgid ""
+#~ "**Handle Gracefully**: Catch exceptions and provide user-friendly error "
+#~ "messages."
+#~ msgstr "**优雅处理**：捕获异常并提供用户友好的错误消息。"
+
+#~ msgid "**Log Appropriately**: Log structured error information for debugging."
+#~ msgstr "**适当记录日志**：记录结构化的错误信息以便调试。"
+
+#~ msgid "**Example Error Handling:**"
+#~ msgstr "**示例错误处理：**"

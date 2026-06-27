@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/hal_tools.rst:2 5dbc4e5f8d234230ac37812cbf2f39bd
+msgid "Hal Tools"
+msgstr "Hal 工具"
+
+#: ../../tools/hal_tools.rst:4 c04cbc1e501846bd9c03aa757820c314
+msgid ""
+"**Configuration File**: ``hal_tools.json`` **Tool Type**: Local **Tools "
+"Count**: 1"
+msgstr ""
+"**配置文件**：``hal_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/hal_tools.rst:8 644d5f63018f46c89c679de14317445a
+msgid ""
+"This page contains all tools defined in the ``hal_tools.json`` "
+"configuration file."
+msgstr "此页面包含在 ``hal_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/hal_tools.rst:11 5695112f560d43ca9d5a26f0f9f7faee
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/hal_tools.rst:14 66d62747243c46f1b054dcdd35face9a
+msgid "**HAL_search_archive** (Type: HALTool)"
+msgstr "**HAL_search_archive**（类型：HALTool）"
+
+#: ../../tools/hal_tools.rst:16 9aa746a373884bb2a320b37dfd5a51fa
+msgid ""
+"Search the French HAL open archive via its public API. Returns documents "
+"with title, authors, yea..."
+msgstr "通过其公共API搜索法国HAL开放档案。返回包含标题、作者、年份的文档..."
+
+#: ../../tools/hal_tools.rst cc0a33ac958b42838f2f4fa7d0e7397f
+msgid "HAL_search_archive tool specification"
+msgstr "HAL_search_archive 工具规范"
+
+#: ../../tools/hal_tools.rst:20 119976347cc04c1baf3944775f98bb2b
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/hal_tools.rst:22 24769e49f5874cb997b6423ef037787e
+msgid "**Name**: ``HAL_search_archive``"
+msgstr "**名称**：``HAL_search_archive``"
+
+#: ../../tools/hal_tools.rst:23 e003ac92b646411f8934415f3b959812
+msgid "**Type**: ``HALTool``"
+msgstr "**类型**：``HALTool``"
+
+#: ../../tools/hal_tools.rst:24 282b4d61bbbf4c259429595069417af5
+msgid ""
+"**Description**: Search the French HAL open archive via its public API. "
+"Returns documents with title, authors, year, DOI, URL, abstract, and "
+"source."
+msgstr "**描述**：通过其公共API搜索法国HAL开放档案。返回包含标题、作者、年份、DOI、URL、摘要及来源的文档。"
+
+#: ../../tools/hal_tools.rst:26 a5d0c605bcf14a3e853b4f71acb74def
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/hal_tools.rst:28 aeda4754cf5b48f99a1c2971ba9af9c0
+msgid ""
+"``query`` (string) (required) Search query for HAL archive. Supports "
+"Lucene syntax for advanced queries."
+msgstr "``query``（字符串）（必填）HAL档案的搜索查询。支持使用Lucene语法进行高级查询。"
+
+#: ../../tools/hal_tools.rst:31 cd0073cf871a46589b8e5ca59395b4ff
+#, fuzzy
+msgid ""
+"``max_results`` (integer) (required) Maximum number of documents to "
+"return. Default is 10, maximum is 100."
+msgstr "``max_results``（整数）（可选）返回的最大文档数量。默认值为10，最大值为100。"
+
+#: ../../tools/hal_tools.rst:34 40737f2dd3aa4651bc34b6a5102325c0
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/hal_tools.rst:49 c7cd0779d32e4910aca234c51f98ad21
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/hal_tools.rst:51 7183bffdcd174c5892da30632aa84688
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/hal_tools.rst:52 d679ebd6710047fdac4f8e415bf87d41
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

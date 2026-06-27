@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_name.rst:2
+#: 11d54c37679c4cd6a0112da1cdc743bf
+msgid "tooluniverse.tools.OpenTargets\\_get\\_disease\\_ids\\_by\\_name module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_disease\\_ids\\_by\\_name 模块"
+
+#: e9051e8797414936966f21c2c2cd6030 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name:1
+msgid "OpenTargets_get_disease_ids_by_name"
+msgstr ""
+"OpenTargets_get_disease_ids_by_name  \n"
+"获取疾病名称对应的ID"
+
+#: 3a7a015d8a6349c1b46a36ac63871c00 d0a592412dc94f73a867f4f0549d617c of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name:3
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:1
+msgid ""
+"Given a disease or phenotype name, find all cross-referenced external IDs "
+"(e.g., OMIM, MONDO, MeS..."
+msgstr "根据疾病或表型名称，查找所有交叉引用的外部ID（例如：OMIM、MONDO、MeSH...）。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_name.rst
+#: 3fe97425921d4da2933269c71c83f569
+msgid "Parameters"
+msgstr "参数"
+
+#: 19c0d38e641f4990ac2c068ea6b4e022 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:3
+msgid "The name of the disease or phenotype (e.g. 'rheumatoid arthritis')."
+msgstr "疾病或表型的名称（例如“类风湿性关节炎”）。"
+
+#: 57df45b00f8b41f6a24447350082ab1f of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 64444c5ba38a4db29bf45f242d2d91eb of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 37495350e53546a2a5e0f45525cebad6 of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_ids_by_name.rst
+#: 5ef93616c3204a8da942266d39701136
+msgid "Return type"
+msgstr "返回类型"
+
+#: 183b34bff8674df786d9563d3d7762ac of
+#: tooluniverse.tools.OpenTargets_get_disease_ids_by_name.OpenTargets_get_disease_ids_by_name:12
+msgid ":py:class:`Any`"
+msgstr ""

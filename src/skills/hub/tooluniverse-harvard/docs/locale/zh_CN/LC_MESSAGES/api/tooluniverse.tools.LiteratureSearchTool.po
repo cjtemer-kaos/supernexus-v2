@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.LiteratureSearchTool.rst:2
+#: d644017bf1934e89911fc74742aba498
+msgid "tooluniverse.tools.LiteratureSearchTool module"
+msgstr "tooluniverse.tools.LiteratureSearchTool 模块"
+
+#: a27fc4a279e0467fb4343ba26d3ff71e of
+#: tooluniverse.tools.LiteratureSearchTool:1
+msgid "LiteratureSearchTool"
+msgstr "文献搜索工具"
+
+#: ea83f1a719a34237b2cdaf4683d05d34 f94b0de3010d4868adc414f5c987a5e2 of
+#: tooluniverse.tools.LiteratureSearchTool:3
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:1
+msgid ""
+"Comprehensive literature search and summary tool that searches multiple "
+"databases (EuropePMC, Ope..."
+msgstr "综合文献检索与摘要工具，可同时检索多个数据库（EuropePMC、Ope...）。"
+
+#: ../../api/tooluniverse.tools.LiteratureSearchTool.rst
+#: 2adb1bba7b71495995917fc6b5929955
+msgid "Parameters"
+msgstr "参数"
+
+#: 24d70ef363634b46a168de651290b077 of
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:3
+msgid "The research topic or query to search for in the literature"
+msgstr "研究主题或文献检索查询"
+
+#: e912bb37dfe34653becbec583241569e of
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d27ef3afd62349fab1aaf641d9a41cf0 of
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 223cc67a53924773b5a70401a6d434a4 of
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.LiteratureSearchTool.rst
+#: 6580970f4ffd4f6e90245b4fb413e25d
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3878ccd1e12b4b24b50f8ec32c1ce841 of
+#: tooluniverse.tools.LiteratureSearchTool.LiteratureSearchTool:12
+msgid ":py:class:`Any`"
+msgstr ""

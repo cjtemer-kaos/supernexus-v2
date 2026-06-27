@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:1
+#: 2ea1f937d67e48e199530780c69bdf2b
+msgid "ToolUniverse MCP Integration with Claude Desktop App"
+msgstr "ToolUniverse MCP 与 Claude 桌面应用集成"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:3
+#: 26d0f3c175da42bb91901205c977a901
+msgid ""
+"This tutorial will Tutorial you through setting up ToolUniverse as an MCP "
+"(Model Context Protocol) server for Claude Desktop App."
+msgstr "本教程将指导您将 ToolUniverse 设置为 Claude 桌面应用的 MCP（模型上下文协议）服务器。"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:5
+#: e35c1c2e439549aaaf433b85d8c2c073
+msgid "Example Integration"
+msgstr "示例集成"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:7
+#: f1aa7fa736314781baa6559dfc365fcb
+msgid ""
+"For a practical example of using ToolUniverse-MCP with Claude, see the "
+"following shared chat log:"
+msgstr "有关使用 ToolUniverse-MCP 与 Claude 的实际示例，请参见以下共享聊天记录："
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:9
+#: 8de4bfe176504f2f9cb1d9bd8af02ba9
+msgid ""
+"[Claude MCP Integration "
+"Example](https://claude.ai/share/ab797b7f-6e6b-46f6-b1d5-5a790b90f42d)"
+msgstr ""
+"[Claude MCP "
+"集成示例](https://claude.ai/share/ab797b7f-6e6b-46f6-b1d5-5a790b90f42d)"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:11
+#: 5804ee88b2504e19aad16fe86e073ccf
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:13
+#: c727ee47d12d4f049e82722e866a47b0
+msgid "Claude Desktop App installed on your system"
+msgstr "已在您的系统上安装 Claude 桌面应用程序"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:14
+#: debb6c2918ca4417af6e6a8d8f1c542b
+msgid "ToolUniverse>=0.2.0 installed"
+msgstr "已安装 ToolUniverse>=0.2.0"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:15
+#: 69a62c75cc9640768454546718d58303
+msgid "UV package manager installed"
+msgstr "UV 包管理器已安装"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:17
+#: b8863fc99bd844928e4008de3941e359
+msgid "Configuration Steps"
+msgstr "配置步骤"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:19
+#: 53998cb476604abe9cb08d156640fc34
+msgid "1. Locate Claude Desktop Configuration"
+msgstr "1. 定位 Claude 桌面配置"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:21
+#: d73a72fe782f4ae29093d84b32322670
+msgid ""
+"To access the configuration file, open the Claude Desktop App and navigate "
+"to **Settings → Developer → Edit Config**. This will allow you to directly "
+"edit Claude configuration file."
+msgstr "要访问配置文件，请打开Claude桌面应用，依次进入**设置 → 开发者 → 编辑配置**。这样您就可以直接编辑Claude配置文件。"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:23
+#: 8e79e5c4b48446deae27723636012d37
+msgid "2. Add ToolUniverse MCP Server"
+msgstr "2. 添加 ToolUniverse MCP 服务器"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:25
+#: d7d45fd5d0ff47a0bd1d815df75e345f
+msgid ""
+"Open the configuration file and add the ToolUniverse MCP server "
+"configuration:"
+msgstr "打开配置文件，添加 ToolUniverse MCP 服务器配置："
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:43
+#: d2267686066e4d99b7340111254b2bfd
+msgid ""
+"**Important**: Replace `Change_this_to_your_path_to_ToolUniverse` with your "
+"actual ToolUniverse project path."
+msgstr ""
+"**重要说明**：将 `Change_this_to_your_path_to_ToolUniverse` 替换为您实际的 ToolUniverse "
+"项目路径。"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:45
+#: ca22d6002fa44790844df4eea44705a2
+msgid "3. Configuration Explanation"
+msgstr "3. 配置说明"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:47
+#: 7d7930d05ef240b2a72a8fb44203e5e4
+msgid "**mcpServers**: The main container for all MCP server configurations"
+msgstr "**mcpServers**：所有MCP服务器配置的主要容器"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:48
+#: 092ddf72d1184c689e7b25d6e201828e
+msgid "**tooluniverse**: The name identifier for your ToolUniverse MCP server"
+msgstr "**tooluniverse**：您ToolUniverse MCP服务器的名称标识符"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:49
+#: a0812d482dc4448db9bb9dba90cbaf2b
+msgid "**command**: Uses `uv` package manager to run the MCP server"
+msgstr "**command**：使用 `uv` 包管理器运行 MCP 服务器"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:50
+#: bbffcf462a9e4022adc6ed08480392e2
+msgid "**args**: Command line arguments passed to uv:"
+msgstr "**args**：传递给 uv 的命令行参数："
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:51
+#: 91119b8c435a49dbb4bfadfbbeaf17db
+msgid ""
+"`--directory`: Specifies the working directory for the ToolUniverse project"
+msgstr "`--directory`：指定 ToolUniverse 项目的工作目录"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:52
+#: 0db88b6b6e2f466cbcaeaa812e40ff17
+msgid "`run`: Tells uv to run a command"
+msgstr "`run`：用于指示 uv 执行一条命令"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:53
+#: 8288e9736597435da56c84c50cd90ec8
+msgid "`tooluniverse-smcp-stdio`: The specific MCP command to execute"
+msgstr "`tooluniverse-smcp-stdio`：用于执行的特定MCP命令"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:55
+#: 93b4bf53081641979a53d43d2e7022b8
+msgid "4. Restart Claude Desktop"
+msgstr "4. 重新启动Claude桌面"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:57
+#: 1d95add9a23f416d80837b9737e22e86
+msgid ""
+"After saving the configuration file, completely quit and restart the Claude "
+"Desktop App to load the new MCP server configuration."
+msgstr "保存配置文件后，请完全退出并重新启动 Claude 桌面应用程序，以加载新的 MCP 服务器配置。"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:59
+#: ece99048961644fea3dae0f8269694a6
+msgid "5. Verify Integration"
+msgstr "5. 验证集成"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:61
+#: b534fe349d6f434e895fcc299b2a196d
+msgid ""
+"Once Claude Desktop restarts, you should be able to access ToolUniverse "
+"tools and capabilities through the MCP integration. The tools will be "
+"available in your conversations with Claude."
+msgstr ""
+"一旦Claude Desktop重新启动，您即可通过MCP集成访问ToolUniverse工具和功能。这些工具将在您与Claude的对话中可用。"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:63
+#: 2ae63b114ed94bd78be5b72dd68f2ae4
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../tutorials/aiscientists/MCP_for_Claude.md:65
+#: 49f15c6269a24cd7bd3ead21fd8b6056
+msgid ""
+"**Too Many Tools Loaded**: If you enable too many tools in ToolUniverse, "
+"Claude may exceed its context window limit, which can cause errors. To avoid"
+" this, only enable a subset of essential tools in your Claude."
+msgstr ""
+"**加载工具过多**：如果在 ToolUniverse 中启用了过多工具，Claude 可能会超出其上下文窗口限制，从而导致错误。为避免此问题，请仅在 "
+"Claude 中启用必要工具的子集。"

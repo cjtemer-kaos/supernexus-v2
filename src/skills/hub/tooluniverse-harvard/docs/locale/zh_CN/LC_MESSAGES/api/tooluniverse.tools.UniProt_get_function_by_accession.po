@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.UniProt_get_function_by_accession.rst:2
+#: 9247abedad7d4332955e0adf2f03ba5c
+msgid "tooluniverse.tools.UniProt\\_get\\_function\\_by\\_accession module"
+msgstr "tooluniverse.tools.UniProt\\_get\\_function\\_by\\_accession 模块"
+
+#: 516f90078bc54cc3a0003afb4cbb208b of
+#: tooluniverse.tools.UniProt_get_function_by_accession:1
+msgid "UniProt_get_function_by_accession"
+msgstr "UniProt_通过登录号获取功能"
+
+#: 464b5a56fc90440e82b790007c169ef2 876b052e16524dce87c3c420b392ee82 of
+#: tooluniverse.tools.UniProt_get_function_by_accession:3
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:1
+msgid ""
+"Extract functional annotations from UniProtKB entry (Comment type = "
+"FUNCTION)."
+msgstr "从UniProtKB条目中提取功能注释（注释类型 = FUNCTION）。"
+
+#: ../../api/tooluniverse.tools.UniProt_get_function_by_accession.rst
+#: c9a27b04fd6f409da86233c060a33449
+msgid "Parameters"
+msgstr "参数"
+
+#: d2764fb03c454a78b87c30b65c6b3128 of
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:3
+msgid "UniProtKB accession, e.g., P05067."
+msgstr "UniProtKB登录号，例如P05067。"
+
+#: 3dcd7502ec0143ee92a5e65a9db1e0a2 of
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ac937e812d29445fbc081c81582d3f7f of
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0a72e55f19f04f30a1eb74321c69b740 of
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.UniProt_get_function_by_accession.rst
+#: 95c2c91abc1444b799706e3be3528e8f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 05a75731be5a498f88e137b3af2074aa of
+#: tooluniverse.tools.UniProt_get_function_by_accession.UniProt_get_function_by_accession:12
+msgid ":py:class:`Any`"
+msgstr ""

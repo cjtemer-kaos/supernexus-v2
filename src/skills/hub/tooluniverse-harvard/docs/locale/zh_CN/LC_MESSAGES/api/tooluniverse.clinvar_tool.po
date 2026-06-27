@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.clinvar_tool.rst:2 9bffddde025843d8a2b826a9089a31e6
+msgid "tooluniverse.clinvar\\_tool module"
+msgstr "tooluniverse.clinvar\\_tool 模块"
+
+#: b6d62909d5f54741b09b894734842aff of tooluniverse.clinvar_tool.ClinVarTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 5cbb79366e444798a52ad6abc8f084d7 of tooluniverse.clinvar_tool.ClinVarTool:1
+msgid ""
+"Local tool wrapper for ClinVar via NCBI E-utilities. Uses esearch + esummary"
+" to fetch variant records."
+msgstr "本地工具封装，用于通过NCBI E-utilities访问ClinVar。使用esearch和esummary获取变异记录。"
+
+#: 94cfd25869534341b74667ba5c5aed54 of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: a92f399722e34938b4cb10a86f07d144 of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些实现通常需要一个输入字典。"
+
+#: ../../api/tooluniverse.clinvar_tool.rst e497f240f1434d578aeaf1dbbd00e6bc
+msgid "Parameters"
+msgstr "参数"
+
+#: a2424da2932c4956bb943f5a114455ec of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 8d9f45b08ec6448ea5402722e19a0c0b of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 878ad8acaec840938937fceccad3be1c of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 8e2ccaac6f60427884100b1796732fcb of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 010b01ffd2e4492dbbc6f066529c0b3e of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: e9b3dcdbb3fa40a18f719812f0463012 of
+#: tooluniverse.clinvar_tool.ClinVarTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

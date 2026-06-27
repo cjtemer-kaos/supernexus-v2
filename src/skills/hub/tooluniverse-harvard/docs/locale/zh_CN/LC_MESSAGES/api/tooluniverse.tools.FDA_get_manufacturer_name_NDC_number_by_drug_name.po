@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.rst:2
+#: 9059f8756c6240c392b9bbd0927bd45e
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_manufacturer\\_name\\_NDC\\_number\\_by\\_drug\\_name"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_manufacturer\\_name\\_NDC\\_number\\_by\\_drug\\_name"
+" 模块"
+
+#: b3772bdb43e14b5da3d119f589a56ba8 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name:1
+msgid "FDA_get_manufacturer_name_NDC_number_by_drug_name"
+msgstr "FDA_根据药品名称获取制造商名称和NDC编号"
+
+#: 13122e6180184d7aa897a9592da44d05 b910864ea3fa409dbfaf55d70dda9526 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name:3
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:1
+msgid ""
+"Retrieve detailed information about a drug's active ingredient, FDA "
+"application number, manufactu..."
+msgstr "获取有关药物活性成分、FDA申请编号、制造商等详细信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.rst
+#: d4804a0a43e94f5eb7af70c9a3acd81e
+msgid "Parameters"
+msgstr "参数"
+
+#: 8ddf3265c40447e992afe457cd24e2a5 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药品名称"
+
+#: 5d60e5fb94d7467b8e75cc27c9291e77 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 920a42a323694a6b9503e157c75a205c of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 9f6e5a2e7ab84f309e29782bc9804f29 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: eb69fb0ed34d4fc4bb8e0b6b3829fe50 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a4c20a0613464a2a8adac4d98bd05c6b of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.rst
+#: 5865d266c1d743caa04ed1fe8b844407
+msgid "Return type"
+msgstr "返回类型"
+
+#: 367a1152d01544c5b10aaa52803490b8 of
+#: tooluniverse.tools.FDA_get_manufacturer_name_NDC_number_by_drug_name.FDA_get_manufacturer_name_NDC_number_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

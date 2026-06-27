@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.tool_graph_composer.rst:2
+#: 101aa3ee6e694a4ab3ceb1a86c2acc89
+msgid "tooluniverse.compose\\_scripts.tool\\_graph\\_composer module"
+msgstr "tooluniverse.compose_scripts.tool_graph_composer 模块"
+
+#: edb775c640934f4cbda1d2d90ef32864 of
+#: tooluniverse.compose_scripts.tool_graph_composer:1
+msgid ""
+"Simplified and fixed tool_graph_composer.py This version includes better "
+"error handling and avoids the 'unhashable type' issue."
+msgstr "简化并修复了 tool_graph_composer.py。本版本增强了错误处理能力，避免了“不可哈希类型”问题。"
+
+#: eb700c0223d14499ac2568c022e78b99 of
+#: tooluniverse.compose_scripts.tool_graph_composer.compose:1
+msgid "Compose function for building tool compatibility graphs."
+msgstr "用于构建工具兼容性图的 Compose 函数。"
+
+#: ../../api/tooluniverse.compose_scripts.tool_graph_composer.rst
+#: bfc40cf99f5a4c52a21f5f79d1b49b84
+msgid "Parameters"
+msgstr "参数"
+
+#: fbfeceae79524df8bb7a9f2fe7bce357 of
+#: tooluniverse.compose_scripts.tool_graph_composer.compose:3
+msgid "Dictionary with composition parameters"
+msgstr "具有组成参数的字典"
+
+#: 655e8275069e4f058c9277cc153316c5 of
+#: tooluniverse.compose_scripts.tool_graph_composer.compose:4
+msgid "ToolUniverse instance"
+msgstr "ToolUniverse 实例"
+
+#: d10411938f0948b5be5773434ac2d96b of
+#: tooluniverse.compose_scripts.tool_graph_composer.compose:5
+msgid "Function to call other tools"
+msgstr "调用其他工具的功能"
+
+#: ../../api/tooluniverse.compose_scripts.tool_graph_composer.rst
+#: d19dc83783f2430aa28aa490ef74dd41
+msgid "Returns"
+msgstr "返回值"
+
+#: ddc4aa2b734a41de9e4f4de53e4f1c94 of
+#: tooluniverse.compose_scripts.tool_graph_composer.compose:7
+msgid "Dictionary with results and file paths"
+msgstr "包含结果和文件路径的字典"
+
+#: 5c6022e043124dc3bafc5422c4a24b2a of
+#: tooluniverse.compose_scripts.tool_graph_composer._load_all_tools:1
+msgid "Load all available tools from ToolUniverse."
+msgstr "从 ToolUniverse 加载所有可用工具。"
+
+#: f0cb82aacdd9448a908a4ab2c38d0fcf of
+#: tooluniverse.compose_scripts.tool_graph_composer._build_compatibility_graph:1
+msgid "Build the compatibility graph by analyzing tool pairs."
+msgstr "通过分析工具对来构建兼容性图。"
+
+#: 23ab3825e4924f3c994aefcf960ee941 of
+#: tooluniverse.compose_scripts.tool_graph_composer._extract_compatibility_info:1
+msgid "Extract structured compatibility information from analysis result."
+msgstr "从分析结果中提取结构化的兼容性信息。"
+
+#: 2db53d5b44f54c02988eca1739ffe0be of
+#: tooluniverse.compose_scripts.tool_graph_composer._save_graph:1
+msgid "Save the graph in multiple formats."
+msgstr "将图表保存为多种格式。"
+
+#: 88a2a8769e3441f783bfa1ae5cacfbcb of
+#: tooluniverse.compose_scripts.tool_graph_composer._generate_graph_stats:1
+msgid "Generate statistics about the graph."
+msgstr "生成有关图表的统计数据。"
+
+#: 4a05ebeeaa454a6d97e0def8fcde5d92 of
+#: tooluniverse.compose_scripts.tool_graph_composer._load_cached_graph:1
+msgid "Load a previously cached graph."
+msgstr "加载先前缓存的图表。"

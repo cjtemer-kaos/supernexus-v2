@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.rst:2
+#: 3b271d8b0bf446379fb2abef73f407f8
+msgid "tooluniverse.tools.FDA\\_get\\_teratogenic\\_effects\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_teratogenic\\_effects\\_by\\_drug\\_name 模块"
+
+#: 1277a11b577c4a50a8f4dc2d2e9bc0b5 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name:1
+msgid "FDA_get_teratogenic_effects_by_drug_name"
+msgstr "FDA_按药物名称获取致畸作用"
+
+#: c12acd5ed39c4212af5bd2f9b4b248ac c35931e1a0264dd39a2eb49994aaedc4 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name:3
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:1
+msgid "Retrieve teratogenic effects information based on the drug name."
+msgstr "根据药物名称检索致畸作用信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.rst
+#: f6501e7b0ca248cc8b3729f9e1aa3afe
+msgid "Parameters"
+msgstr "参数"
+
+#: c5009ec2bed54637b95dccc4ae417dc1 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:3
+msgid "The name of the drug (either brand name or generic name)."
+msgstr "药品名称（包括品牌名称或通用名称）。"
+
+#: f8c9281afd7942c28c44fc39b0e52001 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 107d3323ef7345258c6723a2ccbe4529 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: b124d4c2a73b415b80d92425b2ece616 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 54c91fb22c374b02904f7267607c9202 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f9cdcebf183e4d319fb05f2f71951800 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.rst
+#: f5fa7733515d4525b53db7398c3a9600
+msgid "Return type"
+msgstr "返回类型"
+
+#: 81bbb925358a4a8d9ed70d37036db0c9 of
+#: tooluniverse.tools.FDA_get_teratogenic_effects_by_drug_name.FDA_get_teratogenic_effects_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

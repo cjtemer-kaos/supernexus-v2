@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-09 00:49-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.enhanced_multi_agent_literature_search.rst:2
+#: 8b8e49a2b8414ff380498fa0652444d3
+msgid ""
+"tooluniverse.compose\\_scripts.enhanced\\_multi\\_agent\\_literature\\_search"
+" module"
+msgstr ""
+"tooluniverse.compose\\_scripts.enhanced\\_multi\\_agent\\_literature\\_search"
+" 模块"
+
+#: 6e86cc74ed9b46b4ab35ad35b20f5569 of
+#: tooluniverse.compose_scripts.enhanced_multi_agent_literature_search:1
+msgid ""
+"Enhanced Multi-Agent Literature Search System Uses MemoryManager for "
+"session-based memory management"
+msgstr "增强型多代理文献检索系统使用MemoryManager进行基于会话的内存管理"
+
+#: d4ac2c8e6bb64cbca0fdbb2b0a9d62c3 of
+#: tooluniverse.compose_scripts.enhanced_multi_agent_literature_search.compose:1
+msgid "使用MemoryManager的enhanced multi-agent系统"
+msgstr "使用MemoryManager的增强型多代理系统"
+
+#: 9e08b391c97344c28bf37a0541f2f03f of
+#: tooluniverse.compose_scripts.enhanced_multi_agent_literature_search._parse_result:1
+msgid "解析工具结果，确保返回字典格式"
+msgstr "解析工具的结果，确保返回字典格式"
+
+#: b15f906a12e4486aa5cafa6b9d394207 of
+#: tooluniverse.compose_scripts.enhanced_multi_agent_literature_search._format_papers_for_summary:1
+msgid "格式化论文用于总结"
+msgstr "用于总结的论文格式化"

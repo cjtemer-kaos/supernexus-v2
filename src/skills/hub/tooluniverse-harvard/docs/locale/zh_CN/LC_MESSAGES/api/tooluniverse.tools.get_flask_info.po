@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_flask_info.rst:2
+#: 721063933ad947fd91879c8e31fe89fb
+msgid "tooluniverse.tools.get\\_flask\\_info module"
+msgstr "tooluniverse.tools.get\\_flask\\_info 模块"
+
+#: 142b58916445423baa01eac09e96043a of tooluniverse.tools.get_flask_info:1
+msgid "get_flask_info"
+msgstr ""
+
+#: 1075e8c4eab742418d3a3a6c22372e39 68796f39623a4360b977adb77c427169 of
+#: tooluniverse.tools.get_flask_info:3
+#: tooluniverse.tools.get_flask_info.get_flask_info:1
+msgid ""
+"Get comprehensive information about Flask - a lightweight WSGI web "
+"application framework"
+msgstr "获取关于 Flask 的全面信息——一种轻量级的 WSGI Web 应用框架"
+
+#: ../../api/tooluniverse.tools.get_flask_info.rst
+#: e607f44dc86346c4a624d96b9664c362
+msgid "Parameters"
+msgstr "参数"
+
+#: 1f0a5f098d404bc8877f56dc38eaed8c of
+#: tooluniverse.tools.get_flask_info.get_flask_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 5524f4fb42b14364b8891f0b380dea82 of
+#: tooluniverse.tools.get_flask_info.get_flask_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 52630eb2767a40fcba16016bb648045b of
+#: tooluniverse.tools.get_flask_info.get_flask_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7646750897f341a09f989a7b5736b9aa of
+#: tooluniverse.tools.get_flask_info.get_flask_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_flask_info.rst
+#: 45fa3e817fdd4f63b4bf02ddfcf2a40e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 972248c28e5d4c12b247ebaee28a9b4c of
+#: tooluniverse.tools.get_flask_info.get_flask_info:12
+msgid ":py:class:`Any`"
+msgstr ""

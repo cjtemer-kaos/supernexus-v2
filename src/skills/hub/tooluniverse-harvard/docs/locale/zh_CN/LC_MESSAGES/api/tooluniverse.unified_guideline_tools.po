@@ -1,0 +1,401 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.unified_guideline_tools.rst:2
+#: da14a72381be41fab1a5628dd8c1f5c5
+msgid "tooluniverse.unified\\_guideline\\_tools module"
+msgstr "tooluniverse.unified\\_guideline\\_tools 模块"
+
+#: 694cfa5eb68f4ff5859c44ce45ac8c89 of tooluniverse.unified_guideline_tools:1
+msgid ""
+"Unified Guideline Tools Consolidated clinical guidelines search tools from "
+"multiple sources."
+msgstr ""
+"统一指南工具  \n"
+"整合来自多个来源的临床指南搜索工具。"
+
+#: d92f80f104ab4e479f961655b9f08d22 of
+#: tooluniverse.unified_guideline_tools._extract_meaningful_terms:1
+msgid "Return significant query terms for relevance filtering."
+msgstr "返回用于相关性过滤的重要查询词。"
+
+#: 1910b2c42158465a9da75c3b64297dc0 1f15c62a3e89402fa1a0edd4516caaac
+#: 4c528ce2d9cf464face803e094559b32 5d1f92072c0c496781605c3696845817
+#: 6b539efab16f4ddbbae6108d916ad405 948053ee6fac4e668cf1497e515d248e
+#: b866fb74a5f04858b1c5955a78e7b64f d33874a6ab0a4b638b6365524d47f695
+#: f341f0382a7e428ebc3539a1ae9a159e f3b58da83d6e49bc9ffd140abff63557 of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool:1
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool:1
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool:1
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool:1
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool:1
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool:1
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool:1
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool:1
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool:1
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: df4fce602008494fae75d289a8da1c4f of
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool:1
+msgid ""
+"Real NICE guidelines search using web scraping. Makes actual HTTP requests "
+"to NICE website and parses HTML responses."
+msgstr "通过网页抓取实现对NICE指南的真实搜索。向NICE网站发出实际的HTTP请求，并解析HTML响应。"
+
+#: 004b5343e06a4608b81bed8046c9367c 031acb21f31c410089a6d2ca023f1e14
+#: 3171ce2706304a669b46f40a7beadfe6 31afc43a27504895b45308739e47ace1
+#: 56f10823f1fd443389cbcf146fdb1fea 5feab42e94aa4aa7851ad95a2c79afb4
+#: 9d0ba78d4b784f82921d5f8d36746ac0 a557098fff354c699bd7c443f7c87dd7
+#: a6f852a076fe4dd1ab8a0e1368f0515d ee4990899e454f628d7bfb9c944dfc71 of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:1
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:1
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:1
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:1
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:1
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:1
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:1
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:1
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:1
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 17e6e26440864425b7eadb42038eabf8 5674ffac0e6f455da2242bd3e5b9f59a
+#: 676ed4505f9c4ceaa3ded53823b11653 822701181b8f4031964ebb06c2b4adc7
+#: 957a684052984b5d8904e51582a23969 b58d47bd1f6b4931a1f1de4dd5f846f7
+#: b94156aca6774440b4453cfe8548e282 ba314716c1254b0ea5df2dc0b19030fd
+#: eb1d012c646845aab9b86163ec418d45 ffedb562ddac4875aad9561c3a3c07de of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:3
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:3
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:3
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:3
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:3
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:3
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:3
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:3
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:3
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些工具通常期望输入为一个字典。"
+
+#: ../../api/tooluniverse.unified_guideline_tools.rst
+#: 0ad71245d298424fa60f04a37eb8ad58 2cb983cf58b54e6ab89981bb3da51eae
+#: 340dc3c368d54e679b059c9c39156cde 413daed48d4e489bbc02978df87de25c
+#: 665d6a33745f424a844b1d03a37bfc2f 6eee9441ef724f808bca1cd8e083e884
+#: 9728bca88bba4edfaaed975bb98cca9f c04ff9bca8a94069925f63ceb6e2685b
+#: c3057aed35bf4004ad311b3c45916a5d f5b7d114e2d44a6196a2ecb634d64062
+msgid "Parameters"
+msgstr "参数"
+
+#: 1c9ed9ac2056419da0de8cb433ac8c34 1dde470cd8ff452b83633709a950a656
+#: 2c5b9c6fa8104ac3b89c872740d978f5 46ebd2efb070413ab8c622f6660d6817
+#: 64cb675866ca4e16bc9151c5d7067d8b 7368fb82b66a4f2f9fa6292a5dea7285
+#: 745b48fbd9014d42bf1f2b7ca3557c46 a4868422a7454675b51323a0e6e322bb
+#: c54f301a68ef4df79586db17b90c0f62 ed89aa92d1414de98f559a0d580ddc9b of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:7
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:7
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:7
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:7
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:7
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:7
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:7
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:7
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:7
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 0e2fe12aa77443e4bd8df1732d42eaa3 2e3614a74ff84d2eaaed2581e6ce7f44
+#: 3e9b55b80fd546e3959590735c1e8acf 4d84e8ca30174ec2a9d323e03851d5f6
+#: 5be05c3b6c784983b4a50c270bc514f1 776693ecf3b34e9fae92158fba332641
+#: 869672f477954f0f9734659ab81fe9c4 bbc82b9498654e9387049f34a7fce2c0
+#: e2ccb96a9de647ee8e0a5f50734a4475 f732681a5f604a319f9578d31c85c828 of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:9
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:9
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:9
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:9
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:9
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:9
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:9
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:9
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:9
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 103f790318bd4ee097fdc40e69468422 8242c95e2aeb4b8797875f1bbd5f82da
+#: 848d75e2136f473ea9538ef2d4aebef4 86ae54847d294965acc832b7966f6699
+#: a3e44cccec674a3080c15f5aad9fef21 ad95dcca26fd4a4aa7e12bd0736eb659
+#: c92b7f93ba7044c09e5ae6a102046844 ef63633098fb4a8998f58bc2f8509a0a
+#: ff51f744b964439c8a0dfc3271abc7aa fff7f443fd094da1b600800787e5b1ef of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:11
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:11
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:11
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:11
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:11
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:11
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:11
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:11
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:11
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 12dc44e2e21144fbbb133816c6d76174 342fb032d7a7457c96cff094b9577a17
+#: 39445dfc05364bb5b90650d347e4f0a7 5e167fe6ad1b43598af60b030de01e67
+#: 7bd9645fdfd547c4993970ae12f1c3e5 9020d5a7f33b4e2a97b71037dff9df24
+#: 9388c6d73423449dad5d4902d27f1163 b1b605e78b3848dba0e7f82d153eebc9
+#: b34e2e47c4f947d0a3fdfa1e32faf590 d16beb1d648a421883de9c955262432c of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:13
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:13
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:13
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:13
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:13
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:13
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:13
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:13
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:13
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 04c86727014649e0833dff64c145030f 0542666546f84086b11eeb7052b7004b
+#: 31f2a57dd5a4480bb4dae8f83bde6c14 551432998ee1477d9db0e2bb1cc7973d
+#: 65e4d5dc8d8541e48d656f5eb743d36c 6e71aae90efc4cc1abfb1ee9181787ff
+#: 913aea6830a240a2b6c20d0fe0383993 a51550c311ab4c0f92daf8226e952645
+#: ece243f063234cee99a559d813f9b23d f6bd4a75246e428982ca88100ea7bf33 of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:18
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:18
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:18
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:18
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:18
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:18
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:18
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:18
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:18
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 0c3f682d2e06435c8ea61456fb7a2a09 12091c7e1eea45aa963d81e95faf9751
+#: 14c89f5778344fb388dba33695857786 40468edc7da04ecc9571b0c8cc36a417
+#: 6dabeafc019e47e4bbe74b5a81500784 75eea81fcf8847ea9aa8c045550c985f
+#: 9a54f1ca3fc74237824b9aab217da9a1 a0b81b5288e3499b94591e6cddb58217
+#: b1a98fd7f732436e8c7e36113489f815 c2083fd379ad441aad0bce37633fb28a of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool.run:22
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool.run:22
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool.run:22
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool.run:22
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool.run:22
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool.run:22
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool.run:22
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool.run:22
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool.run:22
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收参数参数。"
+
+#: 0734dbb4bb024fefa4f1d311bb5c4dbf of
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool._fetch_guideline_summary:1
+msgid "Fetch summary from a guideline detail page."
+msgstr "从指南详情页面获取摘要。"
+
+#: c7aa5f7f04464408afffaa15f86bf278 of
+#: tooluniverse.unified_guideline_tools.NICEWebScrapingTool._search_nice_guidelines_real:1
+msgid "Search NICE guidelines using real web scraping."
+msgstr "使用真实的网页抓取功能搜索NICE指南。"
+
+#: cf4d06d147334a3f85db5891e36e51af of
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool:1
+msgid ""
+"Search PubMed for clinical practice guidelines. Uses NCBI E-utilities with "
+"guideline publication type filter."
+msgstr "在PubMed中搜索临床实践指南。使用NCBI E-utilities并应用指南出版类型过滤器。"
+
+#: c03b424b3fce450a977c907526e1370c of
+#: tooluniverse.unified_guideline_tools.PubMedGuidelinesTool._search_pubmed_guidelines:1
+msgid "Search PubMed for guideline publications."
+msgstr "在PubMed中搜索指南类出版物。"
+
+#: 2f650f89c35d4a1ba14bec2f1ceccb6e of
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool:1
+msgid ""
+"Search Europe PMC for clinical guidelines. Europe PMC provides access to "
+"life science literature including guidelines."
+msgstr "在 Europe PMC 中搜索临床指南。Europe PMC 提供获取生命科学文献（包括指南）的途径。"
+
+#: 45927c19eeff48229c5e97e29f1ec725 of
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool._search_europepmc_guidelines:1
+msgid "Search Europe PMC for guideline publications."
+msgstr "在 Europe PMC 中搜索指南出版物。"
+
+#: a651528db98c490c965eec7767bfad1d of
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool._get_europepmc_abstract:1
+msgid "Get abstract for a specific PMID using PubMed API."
+msgstr "使用 PubMed API 获取特定 PMID 的摘要。"
+
+#: fd30075b99134b4e986d87e8b9191ffe of
+#: tooluniverse.unified_guideline_tools.EuropePMCGuidelinesTool._get_europepmc_full_content:1
+msgid "Get more detailed content from Europe PMC."
+msgstr "从欧洲PMC获取更详细的内容。"
+
+#: e8d093f7962248a6aba3fabc30e777f0 of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool:1
+msgid ""
+"Search TRIP Database (Turning Research into Practice). Specialized evidence-"
+"based medicine database with clinical guidelines filter."
+msgstr "搜索 TRIP 数据库（将研究转化为实践）。这是一个专门的循证医学数据库，带有临床指南筛选功能。"
+
+#: 04720bddc0dc471ba9fbe21b315a86b3 of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool._search_trip_database:1
+msgid "Search TRIP Database for clinical guidelines."
+msgstr "在 TRIP 数据库中搜索临床指南。"
+
+#: 30dbb8766b9b4fa59b7d8d6cdd526ddb of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool._fetch_guideline_content:1
+msgid ""
+"Extract content from a guideline URL using targeted parsers when available."
+msgstr "从指南 URL 提取内容时，优先使用可用的目标解析器。"
+
+#: 56330394ae264816b41fc1062f40d2ff of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool._clean_generic_content:1
+msgid "Clean generic text content to emphasise clinical lines."
+msgstr "清理通用文本内容以突出简洁的线条。"
+
+#: cdf7b7a2e50a401f8c957c6ff12b19d2 of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool._extract_bmj_guideline_content:1
+msgid "Fetch BMJ Rapid Recommendation content with key recommendations."
+msgstr "获取 BMJ 快速推荐内容及关键推荐。"
+
+#: 79451d2ba4b84d8085943a1351464b55 of
+#: tooluniverse.unified_guideline_tools.TRIPDatabaseTool._extract_dmj_guideline_content:1
+msgid ""
+"Fetch Diabetes & Metabolism Journal guideline content and GRADE statements."
+msgstr "获取《糖尿病与代谢期刊》指南内容及GRADE声明。"
+
+#: 21c96eea8bec42a7b33192423a4c2ff1 of
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool:1
+msgid ""
+"WHO (World Health Organization) Guidelines Search Tool. Searches WHO "
+"official guidelines from their publications website."
+msgstr "WHO（世界卫生组织）指南搜索工具。用于从其官方网站的出版物页面搜索WHO官方指南。"
+
+#: 0f2866a19c20457e9bcb5a12c1401bdc of
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool._fetch_guideline_description:1
+msgid "Fetch description from a WHO guideline detail page."
+msgstr "从WHO指南详情页获取描述。"
+
+#: e2923e8d1d044f03809eb430275e8e17 of
+#: tooluniverse.unified_guideline_tools.WHOGuidelinesTool._search_who_guidelines:1
+msgid "Search WHO guidelines by scraping their official website."
+msgstr "通过抓取WHO官方网站来搜索其指南。"
+
+#: 4b77bc42501b4036a05eff6678592895 of
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool:1
+msgid ""
+"OpenAlex Guidelines Search Tool. Specialized tool for searching clinical "
+"practice guidelines using OpenAlex API."
+msgstr "OpenAlex 指南搜索工具。使用 OpenAlex API 搜索临床实践指南的专业工具。"
+
+#: 56eac4060bb044f7bdc70339c8897d4e of
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool._search_openalex_guidelines:1
+msgid "Search for clinical guidelines using OpenAlex API."
+msgstr "使用 OpenAlex API 搜索临床指南。"
+
+#: 8da428bf21b54e32af4ae32d9efa5b24 of
+#: tooluniverse.unified_guideline_tools.OpenAlexGuidelinesTool._reconstruct_abstract:1
+msgid "Reconstruct abstract from inverted index."
+msgstr "从倒排索引重建摘要。"
+
+#: 6508e5eab4244f469fe9be0b49b957bf of
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool:1
+msgid ""
+"Fetch full text content from NICE guideline pages. Takes a NICE guideline "
+"URL and extracts the complete guideline content."
+msgstr "从NICE指南页面获取完整文本内容。输入NICE指南的URL，提取完整的指南内容。"
+
+#: bdc13c4ca7674f86a9c3cc3484466b52 of
+#: tooluniverse.unified_guideline_tools.NICEGuidelineFullTextTool._fetch_full_guideline:1
+msgid "Fetch complete guideline content from NICE page."
+msgstr "从NICE页面获取完整的指南内容。"
+
+#: 308f0162f4b442babff4b8e02a1debb8 of
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool:1
+msgid ""
+"Fetch full text content from WHO guideline pages. Takes a WHO publication "
+"URL and extracts content or PDF download link."
+msgstr "从WHO指南页面获取全文内容。输入WHO出版物的URL，提取内容或PDF下载链接。"
+
+#: f324d4d5e7714ceb8c25bfc7651128d0 of
+#: tooluniverse.unified_guideline_tools.WHOGuidelineFullTextTool._fetch_who_guideline:1
+msgid "Fetch WHO guideline content and PDF link."
+msgstr "获取WHO指南内容及PDF链接。"
+
+#: ffe19ff7479e48a5919fcca1b821044a of
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool:1
+msgid ""
+"Guidelines International Network (GIN) Guidelines Search Tool. Searches the "
+"global guidelines database with 6400+ guidelines from various organizations."
+msgstr "指南国际网络 (GIN) 指南搜索工具。可搜索全球指南数据库，包含来自各组织的6400+份指南。"
+
+#: eae41704719e4a29ab562b82c27b1ff8 of
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool._search_gin_guidelines:1
+#, fuzzy
+msgid "Search GIN guidelines using web scraping."
+msgstr "使用真实的网页抓取功能搜索NICE指南。"
+
+#: 2182fb5630934ab8ac7164398b9506d5 ae4b16702eb7431f94e622c767d52a1d of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool._get_fallback_cma_guidelines:1
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool._get_fallback_gin_guidelines:1
+msgid "Provide fallback guidelines when direct access fails."
+msgstr "在直接访问失败时提供备用指南。"
+
+#: 0bc6a35008414343839118f1bf559b1d 4d57bd1289af490b847d28995791657f of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool._extract_guideline_content:1
+#: tooluniverse.unified_guideline_tools.GINGuidelinesTool._extract_guideline_content:1
+msgid "Extract actual content from a guideline URL."
+msgstr "从指南 URL 中提取实际内容。"
+
+#: be720d9236c9427da1d178451c776334 of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool:1
+msgid ""
+"Canadian Medical Association (CMA) Infobase Guidelines Search Tool. Searches"
+" the CMA Infobase with 1200+ Canadian clinical practice guidelines."
+msgstr "加拿大医学协会 (CMA) Infobase 指南搜索工具。可搜索 CMA Infobase 中的 1200 多份加拿大临床实践指南。"
+
+#: 4c798674f3e24cc4827675549bc1015b of
+#: tooluniverse.unified_guideline_tools.CMAGuidelinesTool._search_cma_guidelines:1
+#, fuzzy
+msgid "Search CMA Infobase guidelines using web scraping."
+msgstr "使用真实的网页抓取功能搜索NICE指南。"

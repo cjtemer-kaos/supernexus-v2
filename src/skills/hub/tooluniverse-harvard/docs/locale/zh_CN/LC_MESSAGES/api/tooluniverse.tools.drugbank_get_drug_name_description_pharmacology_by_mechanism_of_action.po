@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.rst:2
+#: 8b63a3617f814290b2c2f8368e480e61
+msgid ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_description\\_pharmacology\\_by\\_mechanism\\_of\\_action"
+" module"
+msgstr ""
+"tooluniverse.tools.drugbank\\_get\\_drug\\_name\\_description\\_pharmacology\\_by\\_mechanism\\_of\\_action"
+" 模块"
+
+#: e103af74defd44009d08a3863b7e8bd9 of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:1
+msgid "drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action"
+msgstr "drugbank_根据作用机制获取药物名称、描述及药理信息"
+
+#: 1b6a7aa172e44dc3a07bdba534ce47a3 1f81de86b5be4174a41304e21ef9ca63 of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:3
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:1
+msgid ""
+"Get drug name, ID, description, pharmacodynamics, mechanism of action, and "
+"pharmacokinetics by dr..."
+msgstr "获取药物名称、ID、描述、药效学、作用机制以及药代动力学信息，通过 dr..."
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.rst
+#: 26cb5e7bb7e7440facf833e8a0a1817b
+msgid "Parameters"
+msgstr "参数"
+
+#: cd7a40e527a84bef819138752dc1659f of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:3
+msgid "Query string to search for in mechanism of action descriptions"
+msgstr "用于在作用机制描述中搜索的查询字符串"
+
+#: 88badcafdea44da3a0e608261b20856b of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:5
+msgid "Select True to perform a case-sensitive search"
+msgstr "选择“True”以执行区分大小写的搜索"
+
+#: cab158332b874176b43139d7e2dcab78 of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:7
+msgid "Select True to require an exact match"
+msgstr "选择“True”以要求精确匹配"
+
+#: 85610a98f0a746199b20e667282db4ce of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:9
+msgid "Maximum number of results to return"
+msgstr "返回结果的最大数量"
+
+#: daa2109f81d5404392866b587f7f84e7 of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:11
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: c70c82c811294289845e02f8dbe1086b of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 9057b72df8b34104a977673608132d0d of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.rst
+#: 8445ea61b9794670ab48ca07c36df8dc
+msgid "Return type"
+msgstr "返回类型"
+
+#: b81c4345471d4b2bb88bb4c52054c038 of
+#: tooluniverse.tools.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action.drugbank_get_drug_name_description_pharmacology_by_mechanism_of_action:18
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

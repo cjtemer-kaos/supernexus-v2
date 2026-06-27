@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_networkx_info.rst:2
+#: cce4b240c2c14065ba207f787fbd6d40
+msgid "tooluniverse.tools.get\\_networkx\\_info module"
+msgstr "tooluniverse.tools.get\\_networkx\\_info 模块"
+
+#: dd3dd9ad69914c06a41a4d8f679736ee of tooluniverse.tools.get_networkx_info:1
+msgid "get_networkx_info"
+msgstr "获取_networkx_信息"
+
+#: 3af73eabf50e4ea382b14840c08ba63d 5c9a84fcbf7945be914fd6f268034daa of
+#: tooluniverse.tools.get_networkx_info:3
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:1
+msgid ""
+"Get comprehensive information about NetworkX – network analysis library"
+msgstr "获取有关 NetworkX——网络分析库的全面信息"
+
+#: ../../api/tooluniverse.tools.get_networkx_info.rst
+#: 02412e06953944a4b333e5af953e0f03
+msgid "Parameters"
+msgstr "参数"
+
+#: 6469efcc311a4ff09014f8e764bc2764 of
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:3
+msgid "Type of information to retrieve about NetworkX"
+msgstr "关于 NetworkX 可检索的信息类型"
+
+#: cf81b70b8cb14a23a5173df5795d36d8 of
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 164b770e284c48fe9dce07e8d7fb00c7 of
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ea101264a8bc4cd48e6e9f48c63d133d of
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_networkx_info.rst
+#: 5c111b5b0e3a465b81f4e1e604dd16c6
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5745891cac364d1e98771798400040bf of
+#: tooluniverse.tools.get_networkx_info.get_networkx_info:12
+msgid ":py:class:`Any`"
+msgstr ""

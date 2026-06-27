@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.protein_structure_3d_tool.rst:2
+#: dc4fb59863a0499e8a089a2cbdc1f0e6
+msgid "tooluniverse.protein\\_structure\\_3d\\_tool module"
+msgstr "tooluniverse.protein\\_structure\\_3d\\_tool 模块"
+
+#: 375e194dbd054eb3ae71186be65c9290 of
+#: tooluniverse.protein_structure_3d_tool:2
+msgid "Protein Structure 3D Visualization Tool"
+msgstr "蛋白质结构三维可视化工具"
+
+#: e9821afd87634670afe4a4b9f71f4dbb of
+#: tooluniverse.protein_structure_3d_tool:4
+msgid ""
+"Tool for visualizing 3D protein structures using py3Dmol. Supports PDB IDs, "
+"PDB file content, and various visualization styles."
+msgstr "用于使用 py3Dmol 可视化 3D 蛋白质结构的工具。支持 PDB ID、PDB 文件内容以及多种可视化样式。"
+
+#: c4bd8dddc80c4d53ad87678540830bee of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool:1
+msgid "Bases: :py:class:`~tooluniverse.visualization_tool.VisualizationTool`"
+msgstr "基础：:py:class:`~tooluniverse.visualization_tool.VisualizationTool`"
+
+#: 782608004f58452d881383794bd4dc98 of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool:1
+msgid "Tool for visualizing 3D protein structures using py3Dmol."
+msgstr "用于使用 py3Dmol 可视化 3D 蛋白质结构的工具。"
+
+#: 572161a7a6474058a4a0fbb5ebc17c59 of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool.run:1
+msgid "Generate 3D protein structure visualization."
+msgstr "生成3D蛋白质结构可视化。"
+
+#: 862da783853244b094164760cd9b6a75 of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool._fetch_pdb_content:1
+msgid "Fetch PDB content from RCSB PDB database."
+msgstr "从RCSB PDB数据库获取PDB内容。"
+
+#: 5ae9c1b0cc3a419199fe3bd189334cf1 of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool._create_control_panel:1
+msgid "Create floating control panel HTML."
+msgstr "创建浮动控制面板 HTML。"
+
+#: f412711fee9540958747396b1d48586c of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool._create_toolbar:1
+msgid "Create bottom toolbar HTML."
+msgstr "创建底部工具栏HTML。"
+
+#: a948ea4ae80d41278ca16b02eb0bc6f2 of
+#: tooluniverse.protein_structure_3d_tool.ProteinStructure3DTool._create_protein_info_cards:1
+msgid "Create protein information cards."
+msgstr "创建蛋白质信息卡。"

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.rst:2
+#: d443ffbb31694348a359b2f7a8b410d6
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_tractability\\_by\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_tractability\\_by\\_ensemblID"
+" 模块"
+
+#: 389ab25169a14968a53f0e37b3c88c7c of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID:1
+msgid "OpenTargets_get_target_tractability_by_ensemblID"
+msgstr "OpenTargets_通过EnsemblID获取靶点可操作性"
+
+#: 31645dbc2ae843f29b54d130fabd3bf1 3738cfcc25c74a8b96513913a0ecb088 of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:1
+msgid ""
+"Retrieve tractability assessments, including modality and values, for a "
+"specific target ensembl ID."
+msgstr "检索特定目标Ensembl ID的可追溯性评估，包括模式和数值。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.rst
+#: 1396a09420d8424bb52dc9c118730379
+msgid "Parameters"
+msgstr "参数"
+
+#: 7e34b85639bb47da8d8569fcf5692fc6 of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:3
+msgid "The Ensembl ID of the target."
+msgstr "目标的Ensembl ID。"
+
+#: a898fd5b837a4d4c836bf758fbbfdcc2 of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2d09f2036e2644edbb9f5a57fb9b059c of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: e6baa01c56744997a0ea70005011bfa6 of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.rst
+#: 23d08d1caf9945988c75ab803280ab83
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0f606dfad9e746a1a5c72e8602f97c58 of
+#: tooluniverse.tools.OpenTargets_get_target_tractability_by_ensemblID.OpenTargets_get_target_tractability_by_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

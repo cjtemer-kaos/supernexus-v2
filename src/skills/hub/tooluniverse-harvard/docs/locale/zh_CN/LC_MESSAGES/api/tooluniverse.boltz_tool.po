@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.boltz_tool.rst:2 86b5b7481c694528b5d42d3695fc6bff
+msgid "tooluniverse.boltz\\_tool module"
+msgstr "tooluniverse.boltz_tool 模块"
+
+#: dc99111e203044adaedc4deb18d21107 of
+#: tooluniverse.boltz_tool.Boltz2DockingTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 2ff6ada8f2d34d1894b33ed42820feac of
+#: tooluniverse.boltz_tool.Boltz2DockingTool:1
+msgid ""
+"Tool to perform protein-ligand docking and affinity prediction using the "
+"local Boltz-2 model. This tool constructs a YAML input file, runs the `boltz"
+" predict` command, and parses the output to return the predicted structure "
+"and affinity."
+msgstr ""
+"用于蛋白质-配体对接及亲和力预测的工具，基于本地 Boltz-2 模型。该工具构建 YAML 输入文件，执行 `boltz predict` "
+"命令，并解析输出以返回预测的结构和亲和力。"
+
+#: 1b6f8858f3e2461c835c226f7002f52d of
+#: tooluniverse.boltz_tool.Boltz2DockingTool.__init__:1
+msgid ""
+"Initializes the BoltzDockingTool. Checks if the 'boltz' command is available"
+" in the system's PATH."
+msgstr "初始化 BoltzDockingTool。检查系统 PATH 中是否存在“boltz”命令。"
+
+#: 91f22b9ec02e401283fda9d95cbe740b of
+#: tooluniverse.boltz_tool.Boltz2DockingTool._build_yaml_input:1
+msgid "Constructs the YAML data structure for the Boltz input."
+msgstr "构建 Boltz 输入的 YAML 数据结构。"
+
+#: 3dd6be5c6d994991bffbaa7ab1c5e983 of
+#: tooluniverse.boltz_tool.Boltz2DockingTool.run:1
+msgid "Executes the Boltz prediction."
+msgstr "执行Boltz预测。"
+
+#: ../../api/tooluniverse.boltz_tool.rst 7410279fdb954a66b09c9dbe5dd5446d
+msgid "Parameters"
+msgstr "参数"
+
+#: 28aeb02e3c0e4d0f9ba30196998954ad of
+#: tooluniverse.boltz_tool.Boltz2DockingTool.run:3
+msgid ""
+"A dictionary containing the necessary inputs. - protein_sequence (str): The "
+"amino acid sequence of the protein. - ligands (list[dict]): A list of "
+"ligands, each with a 'smiles' or 'ccd' key. - constraints (list[dict], "
+"optional): Covalent bonds or other constraints. - templates (list[dict], "
+"optional): Structural templates. - other optional boltz CLI flags (e.g., "
+"'recycling_steps')."
+msgstr ""
+"包含必要输入的字典。  \n"
+"- protein_sequence (str)：蛋白质的氨基酸序列。  \n"
+"- ligands (list[dict])：配体列表，每个配体包含 'smiles' 或 'ccd' 键。  \n"
+"- constraints (list[dict], 可选)：共价键或其他约束条件。  \n"
+"- templates (list[dict], 可选)：结构模板。  \n"
+"- 其他可选的 boltz CLI 标志（例如，'recycling_steps'）。"
+
+#: 1a331b2d450640c3ba385e773da1076d of
+#: tooluniverse.boltz_tool.Boltz2DockingTool.run:10
+msgid "The maximum time in seconds to wait for the Boltz command to complete."
+msgstr "等待 Boltz 命令完成的最长时间（秒）。"
+
+#: ../../api/tooluniverse.boltz_tool.rst 87a33333499b4bcc84c7f7a08e0566b5
+msgid "Returns"
+msgstr "返回值"
+
+#: c03fc0860a624fd4ba0301e69db7a0ca of
+#: tooluniverse.boltz_tool.Boltz2DockingTool.run:13
+msgid ""
+"A dictionary containing the path to the predicted structure and affinity "
+"data, or an error."
+msgstr "一个字典，其中包含预测结构和亲和力数据的路径，或错误信息。"
+
+#: ../../api/tooluniverse.boltz_tool.rst 613a37ee663649aebcdf8529634487c1
+msgid "Return type"
+msgstr "返回类型"

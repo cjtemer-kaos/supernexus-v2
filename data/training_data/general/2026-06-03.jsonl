@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "Responde SOLO con OK si el HIVE HUB funciona correctamente."}, {"role": "assistant", "content": "OK"}], "gem_used": "director", "project": "default", "timestamp": "2026-06-03T16:33:43.964155", "quality_score": 0.8, "tags": ["general"], "user_feedback": null}

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.rst:2
+#: aec4b48498dc4554924275f10a1bcb5a
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_subcellular\\_locations\\_by\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_target\\_subcellular\\_locations\\_by\\_ensemblID"
+" 模块"
+
+#: 5252617adf0047a4952fe5e820b5fd63 of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID:1
+msgid "OpenTargets_get_target_subcellular_locations_by_ensemblID"
+msgstr "OpenTargets_通过Ensembl ID获取靶点亚细胞定位"
+
+#: 6aa63fa129004f9fbec259b69825140b f77d0d34c76d40718dec7c45f1dd84e3 of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:1
+msgid ""
+"Retrieve information about subcellular locations for a specific target "
+"ensemblID."
+msgstr "获取有关特定目标ensemblID的亚细胞位置信息。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.rst
+#: baca449b9b214fac9d2a18b9a547b918
+msgid "Parameters"
+msgstr "参数"
+
+#: affcf578edc64dc2ba5697218e1ceae3 of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:3
+msgid "The ensemblId of a target."
+msgstr "目标的ensemblId。"
+
+#: e13cbe0c7bf94f2d9a6b3640cb29fe34 of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b2b756cb53444bb1b3cdb5c4cb5710cf of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 77bb7c1eef9a46589b7cf75ef899c0e5 of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.rst
+#: da763cfdcce0447caa6986dcbabe24d7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2c665cd6891f423ca3740dab21adf03c of
+#: tooluniverse.tools.OpenTargets_get_target_subcellular_locations_by_ensemblID.OpenTargets_get_target_subcellular_locations_by_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

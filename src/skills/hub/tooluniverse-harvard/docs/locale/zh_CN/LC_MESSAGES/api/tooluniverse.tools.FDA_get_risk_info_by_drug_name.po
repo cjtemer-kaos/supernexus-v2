@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_risk_info_by_drug_name.rst:2
+#: 64ddf3813711492e917b7f407208d5d4
+msgid "tooluniverse.tools.FDA\\_get\\_risk\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_risk\\_info\\_by\\_drug\\_name 模块"
+
+#: a0f06414d2664e138ec2f8c1127b62e9 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name:1
+msgid "FDA_get_risk_info_by_drug_name"
+msgstr "FDA_按药品名称获取风险信息"
+
+#: 40a61b34b594493ab4d93d99d91d29c7 84dfa610749b4d7288e960b5f43da2d1 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:1
+msgid ""
+"Retrieve risk information (especially regarding pregnancy or breastfeeding) "
+"based on the drug name."
+msgstr "根据药物名称检索风险信息（特别是关于怀孕或哺乳相关的风险）。"
+
+#: ../../api/tooluniverse.tools.FDA_get_risk_info_by_drug_name.rst
+#: 9c2b4cb784e84507b6c1550eec7c1677
+msgid "Parameters"
+msgstr "参数"
+
+#: 607a1b3c2adf4da994a09a578d9432a0 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: c105a194ad8341a48d791fff44a69c49 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 1a25647de82d43608025200d14efd3f8 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: e3fcbd294ed94da99138863040f7d09b of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8f275ddf0c674376aee8c74fefb29dbc of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 03f409b39c024f328a74109acdf7ba2f of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_risk_info_by_drug_name.rst
+#: 59816367249f439389bda7190ca9722a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 23f0d18daeca4786ab1e78d2dccb6e79 of
+#: tooluniverse.tools.FDA_get_risk_info_by_drug_name.FDA_get_risk_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

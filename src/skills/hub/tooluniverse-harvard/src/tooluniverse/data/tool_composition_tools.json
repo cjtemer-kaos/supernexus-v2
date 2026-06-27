@@ -1,0 +1,178 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "ToolCompatibilityAnalyzer",
+    "description": "Analyzes two tool specifications to determine if one tool's output can be used as input for another tool. Returns compatibility information and suggested parameter mappings.",
+    "prompt": "You are an expert in API design and workflow automation. Your task is to analyze two tool specifications and determine if the output of the first tool (source) can be used as input for the second tool (target).\n\n## ANALYSIS PARAMETERS\nSource Tool: {source_tool}\nTarget Tool: {target_tool}\nAnalysis Depth: {analysis_depth}\n\n## ANALYSIS INSTRUCTIONS\n\nPerform a comprehensive compatibility analysis between these two tools with the following structure:\n\n### 1. BASIC COMPATIBILITY ASSESSMENT\n- Can the source tool's output format be used by the target tool?\n- Are there any obvious format mismatches (e.g., text vs structured data)?\n- Overall compatibility score (0-100)\n\n### 2. PARAMETER MAPPING ANALYSIS\nFor each required parameter in the target tool:\n- Can it be satisfied by the source tool's output?\n- What is the mapping path (direct field, derived value, transformation needed)?\n- Confidence level for each mapping (high/medium/low)\n\n### 3. DATA TYPE COMPATIBILITY\n- String/text compatibility\n- Numerical data compatibility\n- Array/list compatibility\n- Object/structured data compatibility\n- Special format requirements (URLs, IDs, dates, etc.)\n\n### 4. SEMANTIC COMPATIBILITY\n- Do the tools operate in compatible domains?\n- Are the data semantics aligned (e.g., gene symbols, drug names, disease IDs)?\n- Any domain-specific considerations?\n\n### 5. COMPOSITION VIABILITY\n- Is this a viable composition for automated workflows?\n- What preprocessing/transformation would be needed?\n- Risk assessment for automated composition\n\n### 6. PARAMETER MAPPING SUGGESTIONS\nProvide specific mapping suggestions in JSON format:\n```json\n{\n  \"direct_mappings\": {\n    \"target_param1\": \"source_output.field1\",\n    \"target_param2\": \"source_output.field2\"\n  },\n  \"derived_mappings\": {\n    \"target_param3\": \"transform(source_output.field3)\",\n    \"target_param4\": \"extract_from(source_output.field4)\"\n  },\n  \"missing_parameters\": [\"param5\", \"param6\"],\n  \"default_values\": {\n    \"param7\": \"default_value\"\n  }\n}\n```\n\n### 7. FINAL ASSESSMENT\n- Overall compatibility: Compatible/Partially Compatible/Incompatible\n- Automation readiness: Ready/Needs Development/Not Feasible\n- Confidence score: 0-100\n- Key limitations or requirements\n\nReturn your analysis in structured format with clear actionable recommendations.",
+    "input_arguments": [
+      "source_tool",
+      "target_tool",
+      "analysis_depth"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "source_tool": {
+          "type": "string",
+          "description": "The source tool specification (JSON string with name, description, parameter schema, and example outputs)"
+        },
+        "target_tool": {
+          "type": "string",
+          "description": "The target tool specification (JSON string with name, description, parameter schema)"
+        },
+        "analysis_depth": {
+          "type": "string",
+          "enum": [
+            "quick",
+            "detailed",
+            "comprehensive"
+          ],
+          "description": "Level of analysis depth - quick for basic compatibility, detailed for parameter mapping, comprehensive for semantic analysis",
+          "default": "detailed"
+        }
+      },
+      "required": [
+        "source_tool",
+        "target_tool",
+        "analysis_depth"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "source_tool": "{\"name\": \"get_gene_info\", \"output\": \"gene_data\"}",
+        "target_tool": "{\"name\": \"analyze_mutations\", \"input\": \"gene_data\"}",
+        "analysis_depth": "quick"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "direct_mappings": {
+          "type": "object",
+          "properties": {
+            "target_param1": {
+              "type": "string"
+            },
+            "target_param2": {
+              "type": "string"
+            }
+          }
+        },
+        "derived_mappings": {
+          "type": "object",
+          "properties": {
+            "target_param3": {
+              "type": "string"
+            },
+            "target_param4": {
+              "type": "string"
+            }
+          }
+        },
+        "missing_parameters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "default_values": {
+          "type": "object",
+          "properties": {
+            "param7": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "ToolGraphComposer",
+    "description": "Builds a comprehensive graph of tool compatibility relationships in ToolUniverse. Analyzes all available tools and creates a directed graph showing which tools can be composed together.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "output_path": {
+          "type": "string",
+          "description": "Path to save the generated graph files (JSON and pickle formats)",
+          "default": "./tool_composition_graph"
+        },
+        "analysis_depth": {
+          "type": "string",
+          "enum": [
+            "quick",
+            "detailed",
+            "comprehensive"
+          ],
+          "description": "Level of compatibility analysis to perform",
+          "default": "detailed"
+        },
+        "min_compatibility_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Minimum compatibility score to create an edge in the graph",
+          "default": 60
+        },
+        "exclude_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Tool categories to exclude from analysis (e.g., ['tool_finder', 'special_tools'])",
+          "default": [
+            "tool_finder",
+            "special_tools"
+          ]
+        },
+        "max_tools_per_category": {
+          "type": "integer",
+          "description": "Maximum number of tools to analyze per category (for performance)",
+          "default": 50
+        },
+        "force_rebuild": {
+          "type": "boolean",
+          "description": "Whether to force rebuild even if cached graph exists",
+          "default": false
+        }
+      },
+      "required": [
+        "output_path",
+        "analysis_depth",
+        "min_compatibility_score",
+        "exclude_categories",
+        "max_tools_per_category",
+        "force_rebuild"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "ToolCompatibilityAnalyzer"
+    ],
+    "composition_file": "tool_graph_composer.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "output_path": "./tool_composition_graph",
+        "analysis_depth": "detailed",
+        "min_compatibility_score": 60,
+        "exclude_categories": [
+          "tool_finder",
+          "special_tools"
+        ],
+        "max_tools_per_category": 50,
+        "force_rebuild": false
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Output of the tool execution.",
+      "properties": {}
+    }
+  }
+]

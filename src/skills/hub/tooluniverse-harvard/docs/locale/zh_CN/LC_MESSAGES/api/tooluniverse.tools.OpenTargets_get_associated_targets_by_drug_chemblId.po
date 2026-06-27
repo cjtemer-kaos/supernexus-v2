@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.rst:2
+#: 23b5ad9c71654746912cfed24b373a8e
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_targets\\_by\\_drug\\_chemblId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_associated\\_targets\\_by\\_drug\\_chemblId"
+" 模块"
+
+#: 6ec43f24de584212a1bd85fdc77bee96 of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId:1
+msgid "OpenTargets_get_associated_targets_by_drug_chemblId"
+msgstr "OpenTargets_通过_drug_chemblId_获取相关靶点"
+
+#: d594b20e46594858b2b8a8448e142786 e36b8c2d1eb842e49db248147d29adff of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:1
+msgid ""
+"Retrieve the list of targets linked to a specific drug chemblId based on its"
+" mechanism of action."
+msgstr "根据药物的作用机制，检索与特定药物chemblId相关联的靶点列表。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.rst
+#: d991ac6ada9649a484b4c9053880733e
+msgid "Parameters"
+msgstr "参数"
+
+#: 24888eb9706a48c8a6a9f5b94a6bcfe5 of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的 ChEMBL ID。"
+
+#: 7b5da28fee84475d95803a4a988a2155 of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: bb1aa486a7c540008bd8d26a1b24cadb of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 29a7207bf05a40fba7e954955c5df348 of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.rst
+#: a9a90496d7a446a980f5218834dd913a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 510fe79c364041a984d45d957d1b965c of
+#: tooluniverse.tools.OpenTargets_get_associated_targets_by_drug_chemblId.OpenTargets_get_associated_targets_by_drug_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

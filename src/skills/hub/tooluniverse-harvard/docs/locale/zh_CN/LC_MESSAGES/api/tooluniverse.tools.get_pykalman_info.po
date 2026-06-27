@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pykalman_info.rst:2
+#: c2ebd6591c784d49827ac3b513384719
+msgid "tooluniverse.tools.get\\_pykalman\\_info module"
+msgstr "tooluniverse.tools.get\\_pykalman\\_info 模块"
+
+#: 471b5a449ede4847874df5db82166547 of tooluniverse.tools.get_pykalman_info:1
+msgid "get_pykalman_info"
+msgstr "get_pykalman_info 获取信息"
+
+#: 828f15b4843840dd9634ad2f9d305e86 b47ffbac785e423db733af5258145bb8 of
+#: tooluniverse.tools.get_pykalman_info:3
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:1
+msgid ""
+"Get comprehensive information about PyKalman – Kalman filtering and "
+"smoothing"
+msgstr "获取关于 PyKalman 的全面信息——卡尔曼滤波与平滑"
+
+#: ../../api/tooluniverse.tools.get_pykalman_info.rst
+#: 06a61352184e4773b8617e61ecaa96d2
+msgid "Parameters"
+msgstr "参数"
+
+#: a688710eba594ea6b661f980c12dd757 of
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:3
+msgid "Type of information to retrieve about PyKalman"
+msgstr "关于 PyKalman 可检索的信息类型"
+
+#: b72026aa678c46639d340d1163eb472c of
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2ab09e240d2743d6bf1ea051fabeb094 of
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ea7a43730c77464f96f5ce0adf851afd of
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pykalman_info.rst
+#: f979ca749cf9495fa32b7c49b35ea3f6
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0efdc660f33e4e4d95f4689c4b502d30 of
+#: tooluniverse.tools.get_pykalman_info.get_pykalman_info:12
+msgid ":py:class:`Any`"
+msgstr ""

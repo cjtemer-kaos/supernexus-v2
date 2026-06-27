@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Nexus runtime data (anchored = top-level only)
+.nexus/
+/screenshots/
+/voice_models/
+*.log
+*.log.*
+
+# Include brain, data, memory (seed knowledge for fresh installs)
+!/brain/
+!/data/
+!/memory/
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Node
+node_modules/
+
+# Codegraph
+.codegraph/
+
+# Scratch
+scratch/
+scripts/
+
+# Large model binaries (use Ollama pull instead, see INSTALL.md)
+/models/nexus-director-v6/nexus-director-v6-Q8_0.gguf
+
+# Built UI (excluded from general dist/ rule)
+!ui/dist/
+!ui/dist/**
+
+# Git
+.git/

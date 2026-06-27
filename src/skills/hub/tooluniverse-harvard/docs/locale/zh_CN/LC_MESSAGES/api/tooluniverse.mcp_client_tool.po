@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.mcp_client_tool.rst:2
+#: 610f621641054f31bc005497547f7d2a
+msgid "tooluniverse.mcp\\_client\\_tool module"
+msgstr "tooluniverse.mcp_client_tool 模块"
+
+#: 974de04a6a0d4007ac9fa015171afe59 of tooluniverse.mcp_client_tool:1
+msgid "MCP Client Tool for ToolUniverse"
+msgstr "ToolUniverse 的 MCP 客户端工具"
+
+#: 9dd85c3074d14b8fb54210b62f9977d4 of tooluniverse.mcp_client_tool:3
+msgid ""
+"This module provides a tool that acts as a client to connect to an existing "
+"MCP server, supporting all MCP functionality including tools, resources, and"
+" prompts."
+msgstr "该模块提供了一个工具，作为客户端连接到现有的 MCP 服务器，支持包括工具、资源和提示在内的所有 MCP 功能。"
+
+#: 1070345e6a7f4c88955389a9c36f2fb4 aa6ae118426448b3b26cc1e3ec6b9b0b of
+#: tooluniverse.mcp_client_tool.BaseMCPClient:1
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery:1
+msgid "Bases: :py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: 7fc1421d3467478dad38f06b32d5d680 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient:1
+msgid ""
+"Base MCP client with common functionality shared between MCPClientTool and "
+"MCPAutoLoaderTool. Provides session management, request handling, and async "
+"cleanup patterns."
+msgstr ""
+"基于 MCP 的客户端，包含 MCPClientTool 和 MCPAutoLoaderTool 共享的通用功能。提供会话管理、请求处理及异步清理模式。"
+
+#: f160bfed010a41bb83bf52b96bd95cc9 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._ensure_session:1
+msgid "Ensure HTTP session is available for HTTP transport"
+msgstr "确保 HTTP 会话可用于 HTTP 传输"
+
+#: 7c38356327da4d79afaff87971aac774 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._close_session:1
+msgid "Close HTTP session if exists"
+msgstr "如果存在，则关闭 HTTP 会话"
+
+#: 7bdde8c8fc5840f19b6f171e20c1ccd2 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._get_mcp_endpoint:1
+msgid "Get the full MCP endpoint URL"
+msgstr "获取完整的 MCP 端点 URL"
+
+#: 640634fba66f41d4a0058b43a20ae3d6 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._initialize_mcp_session:1
+msgid ""
+"Initialize MCP session if needed (for compatibility with different MCP "
+"servers)"
+msgstr "如有必要，初始化 MCP 会话（以兼容不同的 MCP 服务器）"
+
+#: d20fae7b5c814b5885fe934722403f91 of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._make_mcp_request:1
+msgid "Make an MCP JSON-RPC request"
+msgstr "发起 MCP JSON-RPC 请求"
+
+#: 84c8c53b2f4044489c9827f7f2b5193d of
+#: tooluniverse.mcp_client_tool.BaseMCPClient._run_with_cleanup:1
+msgid "Common async execution pattern with proper cleanup"
+msgstr "常见的异步执行模式及正确的清理方式"
+
+#: 8070bcc8fb9347d8afafe5295649a41a d5594a37c58d401faeaf19962f8f0984 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool:1
+#: tooluniverse.mcp_client_tool.MCPClientTool:1
+msgid ""
+"Bases: :py:class:`~tooluniverse.base_tool.BaseTool`, "
+":py:class:`~tooluniverse.mcp_client_tool.BaseMCPClient`"
+msgstr ""
+"基础类：:py:class:`~tooluniverse.base_tool.BaseTool`，:py:class:`~tooluniverse.mcp_client_tool.BaseMCPClient`"
+
+#: 0c12e0d282eb4a748a2f7fa2b5ec593d of
+#: tooluniverse.mcp_client_tool.MCPClientTool:1
+msgid ""
+"A tool that acts as an MCP client to connect to existing MCP servers. "
+"Supports both HTTP and WebSocket transports."
+msgstr "一种用作MCP客户端以连接到现有MCP服务器的工具。支持HTTP和WebSocket传输。"
+
+#: 8277aa533b194749b3b63f556810215d of
+#: tooluniverse.mcp_client_tool.MCPClientTool.list_tools:1
+msgid "List available tools from the MCP server"
+msgstr "从MCP服务器列出可用工具"
+
+#: b2e181ed34a64eac9cf6534948f8b67b of
+#: tooluniverse.mcp_client_tool.MCPClientTool.call_tool:1
+msgid "Call a tool on the MCP server"
+msgstr "在MCP服务器上调用工具"
+
+#: 267118f3ed9045fbaaec9c1d57cfb654 of
+#: tooluniverse.mcp_client_tool.MCPClientTool.list_resources:1
+msgid "List available resources from the MCP server"
+msgstr "从MCP服务器列出可用资源"
+
+#: 81894ad913434da4a4a0c5f5555ed917 of
+#: tooluniverse.mcp_client_tool.MCPClientTool.read_resource:1
+msgid "Read a resource from the MCP server"
+msgstr "从MCP服务器读取资源"
+
+#: 504fe1c993d84f7e80d0348e23f0423f of
+#: tooluniverse.mcp_client_tool.MCPClientTool.list_prompts:1
+msgid "List available prompts from the MCP server"
+msgstr "列出MCP服务器的可用提示"
+
+#: b46e39c66814498092017125f761ca81 of
+#: tooluniverse.mcp_client_tool.MCPClientTool.get_prompt:1
+msgid "Get a prompt from the MCP server"
+msgstr "从MCP服务器获取提示"
+
+#: 564e4352dcbe45dfa41cbed93c839aab of
+#: tooluniverse.mcp_client_tool.MCPClientTool.run:1
+msgid ""
+"Main run method for the tool. Supports different operations based on the "
+"'operation' argument."
+msgstr "工具的主运行方法。根据“operation”参数支持不同的操作。"
+
+#: 2136cd2bb47b457ba628ac100fb09e28 of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_list_tools:1
+msgid "Run list_tools operation"
+msgstr "运行 list_tools 操作"
+
+#: 3d44bc9ea1c64737afc47c34638efbf4 of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_call_tool:1
+msgid "Run call_tool operation"
+msgstr "运行 call_tool 操作"
+
+#: ac150b7645904c21bc2da9428cf6277f of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_list_resources:1
+msgid "Run list_resources operation"
+msgstr "运行 list_resources 操作"
+
+#: 644f41cd12934a03b6e7427e5fa9fa24 of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_read_resource:1
+msgid "Run read_resource operation"
+msgstr "运行 read_resource 操作"
+
+#: b3e1c44b04e24283b533e10682340888 of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_list_prompts:1
+msgid "Run list_prompts operation"
+msgstr "运行 list_prompts 操作"
+
+#: 081a5b24169f44a3ad47e9014aa66099 of
+#: tooluniverse.mcp_client_tool.MCPClientTool._run_get_prompt:1
+msgid "Run get_prompt operation"
+msgstr "运行 get_prompt 操作"
+
+#: 1aca6654540b45af92efc6997c0209ad of
+#: tooluniverse.mcp_client_tool.MCPProxyTool:1
+msgid "Bases: :py:class:`~tooluniverse.mcp_client_tool.MCPClientTool`"
+msgstr "基础：:py:class:`~tooluniverse.mcp_client_tool.MCPClientTool`"
+
+#: a3ea904dac614371be966295d94b60b9 of
+#: tooluniverse.mcp_client_tool.MCPProxyTool:1
+msgid ""
+"A proxy tool that automatically forwards tool calls to an MCP server. This "
+"creates individual tools for each tool available on the MCP server."
+msgstr "一种智能体工具，可自动将工具调用转发到MCP服务器。这将为MCP服务器上可用的每个工具创建单独的工具。"
+
+#: 7499efc92174452e9aeef0adceab6bcd of
+#: tooluniverse.mcp_client_tool.MCPProxyTool.run:1
+msgid "Forward the call directly to the target tool on the MCP server"
+msgstr "将呼叫直接转发到MCP服务器上的目标工具"
+
+#: bdba10e60a784f42a0ebb4901d1a17e5 of
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery:1
+msgid ""
+"Helper class to discover and create tool configurations for MCP servers."
+msgstr "用于发现和创建MCP服务器工具配置的辅助类。"
+
+#: f4ef51a9a772484bb0f45c9fb37260e2 of
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery.discover_server_tools:1
+msgid ""
+"Discover all tools available on an MCP server and return tool "
+"configurations."
+msgstr "发现MCP服务器上所有可用的工具并返回工具配置。"
+
+#: b934821e38e34077ab5585fc15d27f30 of
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery.create_mcp_tools_config:1
+msgid "Create tool configurations for multiple MCP servers."
+msgstr "为多个 MCP 服务器创建工具配置。"
+
+#: ../../api/tooluniverse.mcp_client_tool.rst 127da0b7e8884349821908f5466c5b76
+msgid "Parameters"
+msgstr "参数"
+
+#: 73b0195557174c58aa7ed11f5a189c4e of
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery.create_mcp_tools_config:3
+msgid ""
+"List of server configurations, each containing: - server_url: URL of the MCP"
+" server - transport: 'http' or 'websocket' (optional, defaults to 'http') - "
+"server_name: Name prefix for tools (optional)"
+msgstr ""
+"服务器配置列表，每项包含：  \n"
+"- server_url：MCP 服务器的 URL  \n"
+"- transport：“http” 或 “websocket”（可选，默认为 “http”）  \n"
+"- server_name：工具名称前缀（可选）"
+
+#: ../../api/tooluniverse.mcp_client_tool.rst 9fcfacd096b84a2b8afb5390e96e743e
+msgid "Returns"
+msgstr "返回值"
+
+#: 990ae035561b41398ac2e458ab40ca0e of
+#: tooluniverse.mcp_client_tool.MCPServerDiscovery.create_mcp_tools_config:8
+msgid "List of tool configurations that can be loaded into ToolUniverse"
+msgstr "可加载到 ToolUniverse 的工具配置列表"
+
+#: ../../api/tooluniverse.mcp_client_tool.rst 6397a87280ed4507ab13415ac5788a75
+msgid "Return type"
+msgstr "返回类型"
+
+#: 28721938cf8b4e80b8fd29c4cbf2eb9d of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool:1
+msgid ""
+"An advanced MCP tool that automatically discovers and loads all tools from "
+"an MCP server. It can register discovered tools as individual ToolUniverse "
+"tools for seamless usage."
+msgstr ""
+"一款先进的 MCP 工具，能够自动发现并加载来自 MCP 服务器的所有工具。它可以将发现的工具注册为独立的 ToolUniverse "
+"工具，实现无缝使用。"
+
+#: 1767d75692f5465da789b32c369dabe2 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.discover_tools:1
+msgid "Discover all available tools from the MCP server"
+msgstr "发现 MCP 服务器提供的所有可用工具"
+
+#: df524e6dec214a308af4c562457a4d2d of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.call_tool:1
+msgid "Directly call an MCP tool by name"
+msgstr "直接按名称调用 MCP 工具"
+
+#: cfd12c29da844532a5dc82159f6194fa of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.generate_proxy_tool_configs:1
+msgid "Generate proxy tool configurations for discovered tools"
+msgstr "为已发现的工具生成智能体工具配置"
+
+#: 27dc715d304b4b5db80755fdcccbbc40 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.register_tools_in_engine:1
+msgid "Register discovered tools directly in the ToolUniverse engine"
+msgstr "直接在 ToolUniverse 引擎中注册已发现的工具"
+
+#: ad7aa103344f451d810f4af2067de275 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.auto_load_and_register:1
+msgid "Automatically discover, load and register all MCP tools"
+msgstr "自动发现、加载并注册所有 MCP 工具"
+
+#: 1ca4d6a4c1884950999bbf711f5ff9b0 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.run:1
+msgid "Main run method for the auto-loader tool"
+msgstr "自动加载工具的主运行方法"
+
+#: 079dd056ac6c4b6f8a970b7a315afa05 of
+#: tooluniverse.mcp_client_tool.MCPAutoLoaderTool.__del__:1
+msgid "Cleanup when object is destroyed"
+msgstr "对象销毁时的清理操作"

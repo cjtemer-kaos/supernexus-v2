@@ -1,0 +1,974 @@
+[
+  {
+    "type": "NICEWebScrapingTool",
+    "name": "NICE_Clinical_Guidelines_Search",
+    "description": "Search NICE (National Institute for Health and Care Excellence) clinical guidelines and evidence-based recommendations. Provides access to official NICE guidelines covering diagnosis, treatment, and care pathways for various medical conditions.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical topic to search for in NICE guidelines (e.g., 'diabetes', 'hypertension', 'cancer screening')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of clinical guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "List of NICE guidelines"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "PubMedGuidelinesTool",
+    "name": "PubMed_Guidelines_Search",
+    "description": "Search PubMed for peer-reviewed clinical practice guidelines using NCBI E-utilities. Filters results specifically for guideline and practice guideline publication types. Provides access to high-quality, evidence-based clinical guidelines from medical journals worldwide.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical topic to search for (e.g., 'diabetes', 'hypertension management', 'cancer treatment')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        },
+        "api_key": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional NCBI API key for higher rate limits. Get your free key at https://www.ncbi.nlm.nih.gov/account/ (optional, leave empty or null for anonymous access)"
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of guidelines from PubMed_Guidelines_Search",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1,
+        "api_key": ""
+      }
+    ]
+  },
+  {
+    "type": "EuropePMCGuidelinesTool",
+    "name": "EuropePMC_Guidelines_Search",
+    "description": "Search Europe PMC for clinical guidelines and evidence-based recommendations. Europe PMC provides free access to a comprehensive archive of life sciences literature, including clinical practice guidelines from international sources.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical topic to search for (e.g., 'diabetes', 'cardiovascular disease', 'mental health')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of guidelines from EuropePMC_Guidelines_Search",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "TRIPDatabaseTool",
+    "name": "TRIP_Database_Guidelines_Search",
+    "description": "Search TRIP Database (Turning Research into Practice) for evidence-based clinical guidelines. TRIP is a specialized clinical search engine that focuses on high-quality evidence-based content, particularly clinical guidelines from reputable sources worldwide.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical question (e.g., 'diabetes management', 'stroke prevention', 'antibiotic therapy')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        },
+        "search_type": {
+          "type": "string",
+          "description": "Type of content to search for (default: 'guideline'). Options include 'guideline', 'systematic-review', 'evidence-based-synopses'",
+          "default": "guideline"
+        }
+      },
+      "required": [
+        "query",
+        "limit",
+        "search_type"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of guidelines from TRIP_Database_Guidelines_Search",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1,
+        "search_type": "guidelines"
+      }
+    ]
+  },
+  {
+    "type": "WHOGuidelinesTool",
+    "name": "WHO_Guidelines_Search",
+    "description": "Search WHO (World Health Organization) official clinical guidelines and health recommendations. Provides access to authoritative global health guidelines published by WHO.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, disease, or health topic to search for in WHO guidelines (e.g., 'malaria', 'HIV', 'diabetes', 'tuberculosis')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of guidelines from WHO_Guidelines_Search",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "tuberculosis",
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "type": "OpenAlexGuidelinesTool",
+    "name": "OpenAlex_Guidelines_Search",
+    "description": "Search for clinical practice guidelines using OpenAlex scholarly database. Provides access to a comprehensive collection of guidelines from various sources worldwide, with citation metrics and institutional affiliations.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition or clinical topic to search for guidelines (e.g., 'diabetes management', 'hypertension treatment', 'cancer screening')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        },
+        "year_from": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Filter for guidelines published from this year onwards (optional) (optional, default: 5 years ago)"
+        },
+        "year_to": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Filter for guidelines published up to this year (optional) (optional, default: current year)"
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of guidelines from OpenAlex_Guidelines_Search",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "antibiotic guidelines",
+        "limit": 3,
+        "year_from": 2020,
+        "year_to": 2024
+      }
+    ]
+  },
+  {
+    "type": "NICEGuidelineFullTextTool",
+    "name": "NICE_Guideline_Full_Text",
+    "description": "Fetch complete full text content from a NICE clinical guideline page. Takes a NICE guideline URL and extracts all sections, recommendations, and complete guideline text. Use this after finding a guideline with NICE_Clinical_Guidelines_Search to get the full content.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Full URL of the NICE guideline page (e.g., 'https://www.nice.org.uk/guidance/ng28'). Must be a valid NICE guideline URL."
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "object",
+          "description": "Complete NICE guideline content with full text, sections, and recommendations",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "URL of the NICE guideline"
+            },
+            "title": {
+              "type": "string",
+              "description": "Full title of the guideline"
+            },
+            "metadata": {
+              "type": "object",
+              "description": "Guideline metadata including publication date and guideline code",
+              "properties": {
+                "published_date": {
+                  "type": "string",
+                  "description": "Publication or last updated date"
+                },
+                "guideline_code": {
+                  "type": "string",
+                  "description": "NICE guideline code (e.g., NG28, TA123)"
+                }
+              }
+            },
+            "full_text": {
+              "type": "string",
+              "description": "Complete guideline text with all sections and content"
+            },
+            "full_text_length": {
+              "type": "integer",
+              "description": "Length of full text in characters"
+            },
+            "sections_count": {
+              "type": "integer",
+              "description": "Number of content sections extracted"
+            },
+            "recommendations": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "description": "List of specific clinical recommendations (up to 20)",
+              "items": {
+                "type": "string"
+              }
+            },
+            "recommendations_count": {
+              "type": "integer",
+              "description": "Total number of recommendations found"
+            },
+            "source": {
+              "type": "string",
+              "description": "Source (NICE)"
+            },
+            "content_type": {
+              "type": "string",
+              "description": "Type of content (full_guideline)"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "url": "https://www.nice.org.uk/guidance/ng28"
+      }
+    ]
+  },
+  {
+    "type": "WHOGuidelineFullTextTool",
+    "name": "WHO_Guideline_Full_Text",
+    "description": "Fetch full text content from a WHO (World Health Organization) guideline publication page. Extracts available web content and finds PDF download links. Use this after finding a guideline with WHO_Guidelines_Search to get the full content or PDF link.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Full URL of the WHO publication page (e.g., 'https://www.who.int/publications/i/item/9789240113879'). Must be a valid WHO publication URL."
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "object",
+          "description": "WHO guideline content including overview, main content, and PDF download link",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "URL of the WHO publication page"
+            },
+            "title": {
+              "type": "string",
+              "description": "Full title of the guideline"
+            },
+            "metadata": {
+              "type": "object",
+              "description": "Publication metadata including date and ISBN",
+              "properties": {
+                "published_date": {
+                  "type": "string",
+                  "description": "Publication date"
+                },
+                "isbn": {
+                  "type": "string",
+                  "description": "ISBN number if available"
+                }
+              }
+            },
+            "overview": {
+              "type": "string",
+              "description": "Overview and description of the guideline"
+            },
+            "main_content": {
+              "type": "string",
+              "description": "Main content text extracted from the web page"
+            },
+            "content_length": {
+              "type": "integer",
+              "description": "Length of content in characters"
+            },
+            "key_facts": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "description": "Key facts or highlights",
+              "items": {
+                "type": "string"
+              }
+            },
+            "pdf_download_url": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Direct URL to download the full guideline PDF (if available)"
+            },
+            "has_pdf": {
+              "type": "boolean",
+              "description": "Whether a PDF download is available"
+            },
+            "source": {
+              "type": "string",
+              "description": "Source (WHO)"
+            },
+            "content_type": {
+              "type": "string",
+              "description": "Type of content (guideline_page)"
+            },
+            "note": {
+              "type": "string",
+              "description": "Additional notes about content availability"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "url": "https://www.who.int/news-room/fact-sheets/detail/tuberculosis"
+      }
+    ]
+  },
+  {
+    "type": "GINGuidelinesTool",
+    "name": "GIN_Guidelines_Search",
+    "description": "Search Guidelines International Network (GIN) guidelines database. GIN maintains the world's largest database of clinical guidelines with over 6400 guidelines from various organizations worldwide.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical topic to search for in GIN guidelines (e.g., 'diabetes management', 'hypertension treatment', 'cancer screening')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "List of GIN guidelines"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "CMAGuidelinesTool",
+    "name": "CMA_Guidelines_Search",
+    "description": "Search Canadian Medical Association (CMA) Infobase guidelines. Contains over 1200 evidence-based clinical practice guidelines developed or endorsed by Canadian healthcare organizations.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Medical condition, treatment, or clinical topic to search for in CMA guidelines (e.g., 'diabetes management', 'hypertension treatment', 'cancer screening')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of CMA Infobase clinical practice guidelines",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the guideline"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to access the guideline"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description or summary of the guideline"
+          },
+          "date": {
+            "type": "string",
+            "description": "Publication or update date"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source organization (CMA)"
+          },
+          "organization": {
+            "type": "string",
+            "description": "Canadian healthcare organization that developed the guideline"
+          },
+          "is_guideline": {
+            "type": "boolean",
+            "description": "Indicates this is a clinical guideline"
+          },
+          "official": {
+            "type": "boolean",
+            "description": "Indicates this is an official publication"
+          },
+          "content": {
+            "type": "string",
+            "description": "Full content of the guideline"
+          },
+          "note": {
+            "type": "string",
+            "description": "Additional notes about content availability"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "type": "SIGNSearchGuidelinesTool",
+    "name": "SIGN_search_guidelines",
+    "description": "Search SIGN (Scottish Intercollegiate Guidelines Network) clinical guidelines by keyword. Fetches the complete SIGN guidelines table (84 evidence-based guidelines) and filters by keyword match in title or clinical topic. Returns guideline number, title, topic, publication year, and URL.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword to search in guideline title or clinical topic (e.g., 'cardiac', 'diabetes', 'cancer', 'mental health')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of matching SIGN guidelines",
+          "items": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "integer",
+                "description": "Official SIGN guideline number (e.g., 148)"
+              },
+              "title": {
+                "type": "string",
+                "description": "Full title of the SIGN guideline"
+              },
+              "topic": {
+                "type": "string",
+                "description": "Clinical topic or specialty (e.g., 'Cardiovascular', 'Infectious disease')"
+              },
+              "published": {
+                "type": "string",
+                "description": "Year the guideline was published"
+              },
+              "url": {
+                "type": "string",
+                "description": "Full URL to the guideline on sign.ac.uk"
+              }
+            },
+            "required": [
+              "number",
+              "title",
+              "topic",
+              "published",
+              "url"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string",
+              "description": "Error message if the request failed"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "cardiac",
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "SIGNListGuidelinesTool",
+    "name": "SIGN_list_guidelines",
+    "description": "List all SIGN (Scottish Intercollegiate Guidelines Network) clinical guidelines, optionally filtered by clinical topic/specialty. Returns up to `limit` guidelines from the full SIGN table covering cardiovascular, oncology, mental health, and other specialties.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "Optional clinical topic/specialty to filter by (e.g., 'Cardiovascular', 'Cancer', 'Mental health'). Leave empty to return all guidelines."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 20)",
+          "default": 20
+        }
+      },
+      "required": []
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of SIGN guidelines (optionally filtered by topic)",
+          "items": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "integer",
+                "description": "Official SIGN guideline number"
+              },
+              "title": {
+                "type": "string",
+                "description": "Full title of the SIGN guideline"
+              },
+              "topic": {
+                "type": "string",
+                "description": "Clinical topic or specialty"
+              },
+              "published": {
+                "type": "string",
+                "description": "Year the guideline was published"
+              },
+              "url": {
+                "type": "string",
+                "description": "Full URL to the guideline on sign.ac.uk"
+              }
+            },
+            "required": [
+              "number",
+              "title",
+              "topic",
+              "published",
+              "url"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string",
+              "description": "Error message if the request failed"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "topic": "Cardiovascular",
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "type": "CTFPHCListGuidelinesTool",
+    "name": "CTFPHC_list_guidelines",
+    "description": "List all published guidelines from the Canadian Task Force on Preventive Health Care (CTFPHC). Fetches the official index of 27 published preventive health guidelines covering cancer screening, cardiovascular risk, diabetes, mental health, and other primary care topics.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 30)",
+          "default": 30
+        }
+      },
+      "required": []
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of CTFPHC published guidelines",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Full title of the guideline including year in parentheses (e.g., 'Breast Cancer (2018)')"
+              },
+              "url": {
+                "type": "string",
+                "description": "URL to the guideline page on canadiantaskforce.ca"
+              },
+              "year": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Publication year extracted from the title (e.g., '2024'), or null if not present"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "year"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string",
+              "description": "Error message if the request failed"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "type": "CTFPHCSearchGuidelinesTool",
+    "name": "CTFPHC_search_guidelines",
+    "description": "Search published guidelines from the Canadian Task Force on Preventive Health Care (CTFPHC) by keyword. Covers preventive health topics including breast cancer, colorectal cancer, diabetes, depression, cognitive impairment, thyroid dysfunction, and more.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword to search in guideline titles (e.g., 'cancer', 'diabetes', 'depression', 'thyroid')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of guidelines to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "array",
+          "description": "List of matching CTFPHC guidelines",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Full title of the guideline including year in parentheses"
+              },
+              "url": {
+                "type": "string",
+                "description": "URL to the guideline page on canadiantaskforce.ca"
+              },
+              "year": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Publication year extracted from the title, or null if not present"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "year"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string",
+              "description": "Error message if the request failed"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "cancer",
+        "limit": 5
+      }
+    ]
+  }
+]

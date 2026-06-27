@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.unpaywall_tool.rst:2
+#: 31c5b12dd4434a88863ab7b269660d10
+msgid "tooluniverse.unpaywall\\_tool module"
+msgstr "tooluniverse.unpaywall_tool 模块"
+
+#: 33856fd1183742d7bfd0c67331ed1be5 of
+#: tooluniverse.unpaywall_tool.UnpaywallTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 63cc85c061a24f5289476949ffcd7637 of
+#: tooluniverse.unpaywall_tool.UnpaywallTool:1
+msgid ""
+"Query Unpaywall by DOI to check open-access status and OA locations. "
+"Requires a contact email."
+msgstr "通过 DOI 查询 Unpaywall 以检查开放获取状态及开放获取位置。需要提供联系邮箱。"
+
+#: 1caff2ec78b14c06817853ede1d4d71f of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: b4537f10ba794c4eb575c26a9a0845f1 of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.unpaywall_tool.rst 7f4d466650bb44e19e6bbc4bce3f4e52
+msgid "Parameters"
+msgstr "参数"
+
+#: ecfaf7dfe91e44ddad6cb87c1c29ec65 of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 1b3efd7fc76647e8934841af1c88262f of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 6f57a468f9e1473a9196ec1fc5489b5d of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: be245c0fdf8e444eb0c57ee30073e0ec of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: c71fadc83c6541eaa65e455e1c68f216 of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文信息。工具可以利用这些参数进行优化或特殊处理。"
+
+#: b34b569af84f4540a99fadac376cc56a of
+#: tooluniverse.unpaywall_tool.UnpaywallTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

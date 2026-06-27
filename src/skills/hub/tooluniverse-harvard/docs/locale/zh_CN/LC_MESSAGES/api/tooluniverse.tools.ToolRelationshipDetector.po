@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ToolRelationshipDetector.rst:2
+#: 5a2e23c758dd4864bd9709295fd72139
+msgid "tooluniverse.tools.ToolRelationshipDetector module"
+msgstr "tooluniverse.tools.ToolRelationshipDetector 模块"
+
+#: c5aaa51f633f41e4bd38ceaea076e7b1 of
+#: tooluniverse.tools.ToolRelationshipDetector:1
+msgid "ToolRelationshipDetector"
+msgstr "工具关系检测器"
+
+#: 47990abe01094680b38e6da71d41f362 7a61b1eb023f4f509204b4a2bec74d0b of
+#: tooluniverse.tools.ToolRelationshipDetector:3
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:1
+msgid ""
+"Analyzes a primary tool against a list of other tools to identify "
+"meaningful, directional data fl..."
+msgstr "分析主要工具与其他工具列表之间的对比，以识别有意义的方向性数据。"
+
+#: ../../api/tooluniverse.tools.ToolRelationshipDetector.rst
+#: 083caab0e3e14678aeb25b921f454687
+msgid "Parameters"
+msgstr "参数"
+
+#: c445136420c445b1aa9ba70171dacd6e of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:3
+msgid "JSON string for the primary tool configuration (Tool A)."
+msgstr "用于主要工具配置（工具A）的JSON字符串。"
+
+#: c2cd81748be4418cbda5645ecef8f6e9 of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:5
+msgid ""
+"JSON string of a list of other tool configurations to compare against Tool "
+"A."
+msgstr "用于与工具A进行比较的其他工具配置列表的JSON字符串。"
+
+#: 446d849cc9c745c19c2719ef08b483ad of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1e0561209274443e9ae425e3ce0df9e0 of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 11e2b06b17014938a77b28b4504740a0 of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ToolRelationshipDetector.rst
+#: cff4f96dac7f4d1996cdb14d8cf3fe49
+msgid "Return type"
+msgstr "返回类型"
+
+#: 15c823109fad44f784689c5ce2b5473f of
+#: tooluniverse.tools.ToolRelationshipDetector.ToolRelationshipDetector:14
+msgid ":py:class:`Any`"
+msgstr ""

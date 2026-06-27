@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.drugbank_links_search.rst:2
+#: 05f5c2972dda42dcaabc4d7e29663e0e
+msgid "tooluniverse.tools.drugbank\\_links\\_search module"
+msgstr "tooluniverse.tools.drugbank\\_links\\_search 模块"
+
+#: 9eb022ce8880409aa5b2e2473c1012c5 of
+#: tooluniverse.tools.drugbank_links_search:1
+msgid "drugbank_links_search"
+msgstr "drugbank_链接_搜索"
+
+#: a8a36f127e0148d48b9727cf7461e54b c2ac408198fc456b9805eb8fdf5c1f3f of
+#: tooluniverse.tools.drugbank_links_search:3
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:1
+msgid ""
+"Search the cross-reference table linking DrugBank IDs to external "
+"identifiers (CAS, KEGG, PubChem..."
+msgstr "搜索链接DrugBank ID与外部标识符（CAS、KEGG、PubChem等）的交叉参考表。"
+
+#: ../../api/tooluniverse.tools.drugbank_links_search.rst
+#: d11d4e2876eb45a6b9c9838717a8192c
+msgid "Parameters"
+msgstr "参数"
+
+#: 0c0aa4722eb5464fa2d96b3cb83246e3 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:3
+msgid "Free-text query (e.g. 'DB00002', 'Cetuximab')."
+msgstr "自由文本查询（例如：'DB00002'，'Cetuximab'）。"
+
+#: 7a46022d6d3942bb8e3d68c399b0c049 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:5
+msgid ""
+"Columns to search. Choose from: 'DrugBank ID', 'Name', 'CAS Number', 'Drug "
+"Ty..."
+msgstr "搜索列。可选择以下选项：'DrugBank ID'、'名称'、'CAS编号'、'药物类型'..."
+
+#: 9705af46a02f4d718a665897f6780bc1 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:7
+msgid "Match text with exact case if true."
+msgstr "如果为真，则匹配文本的确切大小写。"
+
+#: c8ea3e60ce01418a8ef35e5b3f6175f6 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:9
+msgid ""
+"Field value must equal query exactly if true; otherwise substring match."
+msgstr "字段值必须完全匹配查询（如果为 true）；否则进行子字符串匹配。"
+
+#: 0bf8f647808943c68fc0f5f6d9924ebe of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:11
+msgid "Maximum number of rows to return."
+msgstr "返回的最大行数。"
+
+#: c6a7ba5902ad45e4846b26ba0da52007 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 800edc731bb74dfd973c96db2417fd91 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 80a5fe5a347b4381add60f8c3059832c of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.drugbank_links_search.rst
+#: 85554cf08b8a4897aec9ed63ee1d3768
+msgid "Return type"
+msgstr "返回类型"
+
+#: cccc0b3d8a674333a9828a56e665dbb6 of
+#: tooluniverse.tools.drugbank_links_search.drugbank_links_search:20
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

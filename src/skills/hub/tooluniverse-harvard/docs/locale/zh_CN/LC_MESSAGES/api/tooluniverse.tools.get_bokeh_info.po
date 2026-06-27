@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_bokeh_info.rst:2
+#: c12a80fe2e6f42c1959e1b6a2bf5474b
+msgid "tooluniverse.tools.get\\_bokeh\\_info module"
+msgstr "tooluniverse.tools.get\\_bokeh\\_info 模块"
+
+#: bc0b90685e414c06b97b112a5150371a of tooluniverse.tools.get_bokeh_info:1
+msgid "get_bokeh_info"
+msgstr "获取_bokeh_信息"
+
+#: 5825e2b6e3ca414b9dcbdce119524189 c3338059294646a99e17c22cd87df357 of
+#: tooluniverse.tools.get_bokeh_info:3
+#: tooluniverse.tools.get_bokeh_info.get_bokeh_info:1
+msgid ""
+"Get information about the bokeh package. Interactive visualization library "
+"for modern web browsers"
+msgstr "获取有关 bokeh 包的信息。适用于现代网页浏览器的交互式可视化库"
+
+#: ../../api/tooluniverse.tools.get_bokeh_info.rst
+#: e93eca44fbdb419f899ead1c1e606218
+msgid "Parameters"
+msgstr "参数"
+
+#: ced84f34833c4331b60a76c7317d6461 of
+#: tooluniverse.tools.get_bokeh_info.get_bokeh_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3409f9f038a44367af76dadd0a57e03d of
+#: tooluniverse.tools.get_bokeh_info.get_bokeh_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 85cf9e8b4c2d41a08c0321eadc5a3c50 of
+#: tooluniverse.tools.get_bokeh_info.get_bokeh_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_bokeh_info.rst
+#: 68964a7861c340eb9693886c317bfe02
+msgid "Return type"
+msgstr "返回类型"
+
+#: f8a4d196129842a18fb4693501c5db2c of
+#: tooluniverse.tools.get_bokeh_info.get_bokeh_info:11
+msgid ":py:class:`Any`"
+msgstr ""

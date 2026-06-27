@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../installation.rst:2 c252c3280eab4c87a604df2b8b7c80d0
+msgid "Installation"
+msgstr "安装"
+
+#: ../../installation.rst:4 18f0241bec8a4f3cbd945d52f8e5c54f
+msgid "**Complete installation options for ToolUniverse**"
+msgstr "**ToolUniverse 的完整安装选项**"
+
+#: ../../installation.rst:6 35b13648aa5b4beaa1bfc164b70a4276
+msgid ""
+"This Tutorial covers all installation methods and environment setup options."
+msgstr "本教程涵盖所有安装方法和环境设置选项。"
+
+#: ../../installation.rst:9 e03861f667644a2c861ebaf2e9508ff3
+msgid "System Requirements"
+msgstr "系统要求"
+
+#: ../../installation.rst:11 8c9f67ef7172479fae1f5a14df6bccf3
+msgid "Python 3.10 or higher"
+msgstr "Python 3.10 或更高版本"
+
+#: ../../installation.rst:12 cbb55debfed740acb95347d55a39143b
+msgid "uv package manager (recommended) or pip"
+msgstr "uv 包管理器（推荐）或 pip"
+
+#: ../../installation.rst:13 d87607f19ec84fd1b322115543b47614
+msgid "Internet connection for API access"
+msgstr "用于 API 访问的互联网连接"
+
+#: ../../installation.rst:14 9bc0e95c416047b0b77a33724b278af3
+msgid "GPU for machine learning models (optional)"
+msgstr "用于机器学习模型的 GPU（可选）"
+
+#: ../../installation.rst:15 aaa3b36e75d64f10ad32a62a5046cc44
+msgid "API keys for external services (optional)"
+msgstr "外部服务的 API 密钥（可选）"
+
+#: ../../installation.rst:18 4c92cdc8bb8c4edd9b4843a89f85a6f4
+#: ../../installation.rst:18 4c92cdc8bb8c4edd9b4843a89f85a6f4
+msgid "Installation Methods"
+msgstr "安装方法"
+
+#: ../../installation.rst:20 bc7488fbef4147918487f910c7fd3755
+msgid "Choose the installation method that best fits your needs:"
+msgstr "选择最适合您需求的方法："
+
+#: ../../installation.rst:24 abc29caec55347669c0dacd8fa0b11b8
+msgid "📦 PyPI Installation"
+msgstr "📦 PyPI 安装"
+
+#: ../../installation.rst:26 81c6e5799079457e930205a4d8c04964
+msgid "Install ToolUniverse using pip:"
+msgstr "使用 pip 安装 ToolUniverse："
+
+#: ../../installation.rst:32 2f3260a0df424712b508f6624ec16064
+msgid "**Install with Optional Dependencies (pip)**"
+msgstr "**使用可选依赖项安装（pip）**"
+
+#: ../../installation.rst:34 8ed478390bd54c7aa59e5f2362ff6457
+msgid "For enhanced functionality:"
+msgstr "为了增强功能："
+
+#: ../../installation.rst:42 6d4b2b083d2e4165bc7726d875e713eb
+msgid "**Verify Installation**"
+msgstr "**验证安装**"
+
+#: ../../installation.rst:50 2e840367c76f44559ce3474929087796
+msgid "**Test MCP Server**"
+msgstr "**测试 MCP 服务器**"
+
+#: ../../installation.rst:56 e920cf8b56334f53b00560dff4837ac5
+msgid "🔧 Development Installation"
+msgstr "🔧 开发安装"
+
+#: ../../installation.rst:58 6073f6d619af4a7d8f64fca8995d0d00
+msgid "**Best for**: Contributors, custom modifications"
+msgstr "**最适合**：贡献者、自定义修改"
+
+#: ../../installation.rst:60 cff1c18bf825444b9187f28228fbf289
+msgid "**Clone and Install from Source (Recommended with uv)**"
+msgstr "**从源码克隆和安装（推荐使用 uv）**"
+
+#: ../../installation.rst:62 ../../installation.rst:74
+#: 0af5214a36484c3597aec7cb8bff0507 389d05176a0148fd8e78b1f2a14554df
+msgid "For development or custom modifications:"
+msgstr "用于开发或自定义修改："
+
+#: ../../installation.rst:72 2321a67ebce54494aacf459311b85447
+msgid "**Alternative: Clone and Install from Source (pip)**"
+msgstr "**替代方案：从源码克隆和安装（pip）**"
+
+#: ../../installation.rst:90 d8218cb23a9c4b039dda1799fb11652b
+msgid "**Alternative: Development Setup with Virtual Environment (pip)**"
+msgstr "**替代方案：使用虚拟环境进行开发设置（pip）**"
+
+#: ../../installation.rst:104 d08356b6e0e24b5396460dc4c6431065
+msgid "🐳 Container Installation"
+msgstr "🐳 容器安装"
+
+#: ../../installation.rst:106 09ae55ca5e334423930ecd257d829b89
+msgid "**Best for**: Isolated environments, CI/CD"
+msgstr "**最适合**：隔离环境、CI/CD"
+
+#: ../../installation.rst:108 74433fe0a8e940d5a648712b5e56ffde
+msgid "**Docker Installation**"
+msgstr "**Docker 安装**"
+
+#: ../../installation.rst:110 a98a4fb5f49147b4b68dbc8dbbcf9485
+msgid "Create a Dockerfile:"
+msgstr "创建 Dockerfile："
+
+#: ../../installation.rst:123 01363a7a62274965b44b05d14b5c42fc
+msgid "**Docker Compose**"
+msgstr "**Docker Compose**"
+
+#: ../../installation.rst:140 d89a52da162646b0af20f5154954cd2f
+msgid "Environment Configuration"
+msgstr "环境配置"
+
+#: ../../installation.rst:142 b4e9de221f7442b7a5ca722d64191240
+msgid "**Environment Variables**"
+msgstr "**环境变量**"
+
+#: ../../installation.rst:144 e62bbacc66ae4286a4bc46c7a8d401f3
+msgid "Set up API keys for enhanced functionality:"
+msgstr "设置 API 密钥以增强功能："
+
+#: ../../installation.rst:176 11f1df16339949308ec119d272aecb59
+msgid "Dependencies"
+msgstr "依赖项"
+
+#: ../../installation.rst:180 be15f14c1023462d82dc7e846a760dba
+msgid "ToolUniverse automatically installs core dependencies."
+msgstr "ToolUniverse 会自动安装核心依赖项。"
+
+#: ../../installation.rst:182 4150a795ca6242cc8c2494a521848b7d
+msgid "Install additional features:"
+msgstr "安装额外功能："
+
+#: ../../installation.rst:202 473fc03d24d440f1bfc1f12d232461e7
+msgid "Verification"
+msgstr "验证"
+
+#: ../../installation.rst:204 19a52cac365f4b7cb784355be5aad92b
+msgid "Verify your installation:"
+msgstr "验证您的安装："
+
+#: ../../installation.rst:212 b505c22f298b4c37a03cb51e05c886f9
+msgid "Test MCP Server:"
+msgstr "测试 MCP 服务器："
+
+#: ../../installation.rst:222 5234caa5bfbf4b96abe8c1afcc3a1776
+msgid "Test Basic Functionality:"
+msgstr "测试基本功能："
+
+#: ../../installation.rst:234 9bc6e84dc5974aa7ab9bb586db8f6ef7
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../installation.rst:236 5fbe8a91a8204c509393edd4553545e6
+msgid "ImportError: No module named 'tooluniverse':"
+msgstr "ImportError: 没有名为 'tooluniverse' 的模块："
+
+#: ../../installation.rst:248 cb889c17f07145d0900c90e13954009c
+msgid "Permission Denied Errors:"
+msgstr "权限被拒绝错误："
+
+#: ../../installation.rst:263 1dddf098c1b44435837168412cc645c8
+msgid "**Getting Help**"
+msgstr "**获取帮助**"
+
+#: ../../installation.rst:265 d389958c806943aab13b79b7c315363c
+msgid "If you encounter issues:"
+msgstr "如果您遇到问题："
+
+#: ../../installation.rst:267 119bf6eab57643f69647190f4f9e8a5a
+msgid ""
+"Check the `GitHub Issues <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+msgstr ""
+"检查 `GitHub Issues <https://github.com/mims-harvard/ToolUniverse/issues>`_"
+
+#: ../../installation.rst:268 0882fae62aa54e51b6121c0b1cc2a3e1
+msgid "Review the documentation"
+msgstr "查看文档"
+
+#: ../../installation.rst:269 d47ea2e0825b4453bab70e3974406b8d
+msgid "Create a new issue with detailed error information"
+msgstr "创建包含详细错误信息的新问题"
+
+#: ../../installation.rst:270 52031fa5064242d58acfb707cca3e0b8
+msgid "Include system information and error logs"
+msgstr "包含系统信息和错误日志"
+
+#: ../../installation.rst:20 bc7488fbef4147918487f910c7fd3755
+msgid "Choose the installation method that best fits your needs:"
+msgstr "选择最适合您需求的方法："
+
+#: ../../installation.rst:24 abc29caec55347669c0dacd8fa0b11b8
+msgid "📦 PyPI Installation"
+msgstr "📦 PyPI 安装"
+
+#: ../../installation.rst:26 81c6e5799079457e930205a4d8c04964
+msgid "Install ToolUniverse using pip:"
+msgstr "使用 pip 安装 ToolUniverse："
+
+#: ../../installation.rst:32 2f3260a0df424712b508f6624ec16064
+msgid "**Install with Optional Dependencies (pip)**"
+msgstr "**使用可选依赖项安装（pip）**"
+
+#: ../../installation.rst:34 8ed478390bd54c7aa59e5f2362ff6457
+msgid "For enhanced functionality:"
+msgstr "为了增强功能："
+
+#: ../../installation.rst:42 6d4b2b083d2e4165bc7726d875e713eb
+msgid "**Verify Installation**"
+msgstr "**验证安装**"
+
+#: ../../installation.rst:50 2e840367c76f44559ce3474929087796
+msgid "**Test MCP Server**"
+msgstr "**测试 MCP 服务器**"
+
+#: ../../installation.rst:56 e920cf8b56334f53b00560dff4837ac5
+msgid "🔧 Development Installation"
+msgstr "🔧 开发安装"
+
+#: ../../installation.rst:58 6073f6d619af4a7d8f64fca8995d0d00
+msgid "**Best for**: Contributors, custom modifications"
+msgstr "**最适合**：贡献者、自定义修改"
+
+#: ../../installation.rst:60 cff1c18bf825444b9187f28228fbf289
+msgid "**Clone and Install from Source (Recommended with uv)**"
+msgstr "**从源码克隆并安装（推荐使用 uv）**"
+
+#: ../../installation.rst:62 ../../installation.rst:74
+#: 0af5214a36484c3597aec7cb8bff0507 389d05176a0148fd8e78b1f2a14554df
+msgid "For development or custom modifications:"
+msgstr "用于开发或定制修改："
+
+#: ../../installation.rst:72 2321a67ebce54494aacf459311b85447
+msgid "**Alternative: Clone and Install from Source (pip)**"
+msgstr "**替代方法：从源代码克隆并安装（pip）**"
+
+#: ../../installation.rst:90 d8218cb23a9c4b039dda1799fb11652b
+msgid "**Alternative: Development Setup with Virtual Environment (pip)**"
+msgstr "**替代方案：使用虚拟环境（pip）进行开发设置**"
+
+#: ../../installation.rst:104 d08356b6e0e24b5396460dc4c6431065
+msgid "🐳 Container Installation"
+msgstr "🐳 容器安装"
+
+#: ../../installation.rst:106 09ae55ca5e334423930ecd257d829b89
+msgid "**Best for**: Isolated environments, CI/CD"
+msgstr "**最佳用途**：隔离环境，CI/CD"
+
+#: ../../installation.rst:108 74433fe0a8e940d5a648712b5e56ffde
+msgid "**Docker Installation**"
+msgstr "**Docker 安装**"
+
+#: ../../installation.rst:110 a98a4fb5f49147b4b68dbc8dbbcf9485
+msgid "Create a Dockerfile:"
+msgstr "创建一个 Dockerfile："
+
+#: ../../installation.rst:123 01363a7a62274965b44b05d14b5c42fc
+msgid "**Docker Compose**"
+msgstr ""
+"**Docker Compose**\n"
+"\n"
+"**Docker Compose**"
+
+#: ../../installation.rst:140 d89a52da162646b0af20f5154954cd2f
+msgid "Environment Configuration"
+msgstr "环境配置"
+
+#: ../../installation.rst:142 b4e9de221f7442b7a5ca722d64191240
+msgid "**Environment Variables**"
+msgstr "**环境变量**"
+
+#: ../../installation.rst:144 e62bbacc66ae4286a4bc46c7a8d401f3
+msgid "Set up API keys for enhanced functionality:"
+msgstr "设置 API 密钥以增强功能："
+
+#: ../../installation.rst:176 11f1df16339949308ec119d272aecb59
+msgid "Dependencies"
+msgstr "依赖项"
+
+#: ../../installation.rst:180 be15f14c1023462d82dc7e846a760dba
+msgid "ToolUniverse automatically installs core dependencies."
+msgstr "ToolUniverse 会自动安装核心依赖项。"
+
+#: ../../installation.rst:182 4150a795ca6242cc8c2494a521848b7d
+msgid "Install additional features:"
+msgstr "安装其他功能："
+
+#: ../../installation.rst:202 473fc03d24d440f1bfc1f12d232461e7
+msgid "Verification"
+msgstr "验证"
+
+#: ../../installation.rst:204 19a52cac365f4b7cb784355be5aad92b
+msgid "Verify your installation:"
+msgstr "验证您的安装："
+
+#: ../../installation.rst:212 b505c22f298b4c37a03cb51e05c886f9
+msgid "Test MCP Server:"
+msgstr "测试 MCP 服务器："
+
+#: ../../installation.rst:222 5234caa5bfbf4b96abe8c1afcc3a1776
+msgid "Test Basic Functionality:"
+msgstr "测试基本功能："
+
+#: ../../installation.rst:234 9bc6e84dc5974aa7ab9bb586db8f6ef7
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../installation.rst:236 5fbe8a91a8204c509393edd4553545e6
+msgid "ImportError: No module named 'tooluniverse':"
+msgstr "ImportError: 未找到名为“tooluniverse”的模块"
+
+#: ../../installation.rst:248 cb889c17f07145d0900c90e13954009c
+msgid "Permission Denied Errors:"
+msgstr "权限被拒绝错误："
+
+#: ../../installation.rst:263 1dddf098c1b44435837168412cc645c8
+msgid "**Getting Help**"
+msgstr "**获取帮助**"
+
+#: ../../installation.rst:265 d389958c806943aab13b79b7c315363c
+msgid "If you encounter issues:"
+msgstr "如果您遇到问题："
+
+#: ../../installation.rst:267 119bf6eab57643f69647190f4f9e8a5a
+msgid ""
+"Check the `GitHub Issues <https://github.com/mims-"
+"harvard/ToolUniverse/issues>`_"
+msgstr "请检查 `GitHub问题 <https://github.com/mims-harvard/ToolUniverse/issues>`_"
+
+#: ../../installation.rst:268 0882fae62aa54e51b6121c0b1cc2a3e1
+msgid "Review the documentation"
+msgstr "查看文档"
+
+#: ../../installation.rst:269 d47ea2e0825b4453bab70e3974406b8d
+msgid "Create a new issue with detailed error information"
+msgstr "创建一个包含详细错误信息的新问题"
+
+#: ../../installation.rst:270 52031fa5064242d58acfb707cca3e0b8
+msgid "Include system information and error logs"
+msgstr "包含系统信息和错误日志"

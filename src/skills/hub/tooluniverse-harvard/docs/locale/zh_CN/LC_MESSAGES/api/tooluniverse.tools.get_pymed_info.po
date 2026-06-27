@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pymed_info.rst:2
+#: 1b8404df021a4e6884d0f840aa14f7f1
+msgid "tooluniverse.tools.get\\_pymed\\_info module"
+msgstr "tooluniverse.tools.get\\_pymed\\_info 模块"
+
+#: a42c0f13141f47afac61347062d81650 of tooluniverse.tools.get_pymed_info:1
+msgid "get_pymed_info"
+msgstr ""
+
+#: 05a6783e4fbb4cfaaa39ff8d109b08ac 9d9c4d742c7f438994ce0ee91e017b61 of
+#: tooluniverse.tools.get_pymed_info:3
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:1
+msgid "Get comprehensive information about PyMed – PubMed access in Python"
+msgstr "获取有关 PyMed 的全面信息 – 在 Python 中访问 PubMed"
+
+#: ../../api/tooluniverse.tools.get_pymed_info.rst
+#: b6229aad6aa44603a6c82795a1c88a87
+msgid "Parameters"
+msgstr "参数"
+
+#: 9cb72e91b5c245feb4ab6eadc63c2ad6 of
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 333c87b590b34850918fcd9bdad57973 of
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3c6a207b06b1449a8c2ad28e7127e63b of
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d802a1680543414dbb0e38fbe4cffb51 of
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pymed_info.rst
+#: 615ec614a559429ea8b35c585fc95f9a
+msgid "Return type"
+msgstr "返回类型"
+
+#: b5b9fff707ad4b65b431b502d5cca0ab of
+#: tooluniverse.tools.get_pymed_info.get_pymed_info:12
+msgid ":py:class:`Any`"
+msgstr ""

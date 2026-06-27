@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../contributing.rst:2 1f0376fd85244764b6e99137bb98e8ec
+msgid "Contributing to ToolUniverse"
+msgstr "为ToolUniverse做贡献"
+
+#: ../../contributing.rst:4 8e8a6d3be9d94532ba009a05a8d180b5
+msgid ""
+"We welcome contributions to ToolUniverse! This guide covers both general "
+"contributions and specialized tool contributions."
+msgstr "我们欢迎为ToolUniverse做贡献！本指南涵盖一般贡献和专门的工具贡献。"
+
+#: ../../contributing.rst:7 432150917bac42dda78a15ec11388737
+msgid "Quick Start"
+msgstr "快速开始"
+
+#: ../../contributing.rst:9 a64f2c6ebcad44f7b852fbc963c8a85c
+msgid "Fork and clone the repository"
+msgstr "Fork并克隆仓库"
+
+#: ../../contributing.rst:10 9e429db06e1a45739959619ffdd2738a
+msgid "Set up development environment:"
+msgstr "设置开发环境："
+
+#: ../../contributing.rst:19 ddd1c9f60d91418e9d13d7b757befe60
+msgid "Make your changes and test:"
+msgstr "进行修改并测试："
+
+#: ../../contributing.rst:27 b2ae6cc01da0487187aa6e4773b9f600
+msgid "Submit a pull request"
+msgstr "提交拉取请求"
+
+#: ../../contributing.rst:30 8fb4401c2cd2478bbdb7329f3f4bf924
+msgid "Development Standards"
+msgstr "开发标准"
+
+#: ../../contributing.rst:33 a8deb8241d0c4a9fad508d3870bd438c
+msgid "Code Style"
+msgstr "代码风格"
+
+#: ../../contributing.rst:35 49231bf440cb479883babf0fbe525908
+msgid "Use Black for formatting: ``black src/tooluniverse/``"
+msgstr "使用Black进行格式化：``black src/tooluniverse/``"
+
+#: ../../contributing.rst:36 8674d6b22bd44b438cf60653b1cd3a28
+msgid "Follow PEP 8 guidelines"
+msgstr "遵循PEP 8指南"
+
+#: ../../contributing.rst:37 f1d66ade63664c43941d81f71c7fa87e
+msgid "Include type hints for all new code"
+msgstr "为所有新代码包含类型提示"
+
+#: ../../contributing.rst:38 e4b5506e20874702b82f5008af3dae3c
+msgid "Write comprehensive docstrings"
+msgstr "编写全面的文档字符串"
+
+#: ../../contributing.rst:41 e32c0b69fa3142708f618c51b83e501d
+msgid "Testing"
+msgstr "测试"
+
+#: ../../contributing.rst:43 ab83c386c2df4f1c8fc2b2f1918feee0
+msgid "Write tests for all new functionality"
+msgstr "为所有新功能编写测试"
+
+#: ../../contributing.rst:44 65f7a3c78c6d427880ed7f1d425b915b
+msgid "Aim for >90% test coverage"
+msgstr "目标测试覆盖率>90%"
+
+#: ../../contributing.rst:45 1d76c862923348ecbe3b5892af833af0
+msgid "Run tests with: ``pytest --cov=tooluniverse``"
+msgstr "使用以下命令运行测试：``pytest --cov=tooluniverse``"
+
+#: ../../contributing.rst:48 ../../contributing.rst:286
+#: 9962ab904ebd4738b67a7a3f47c5d9dc e3c5c93fe3bb4f8a89ee77686c786f14
+msgid "Documentation"
+msgstr "文档"
+
+#: ../../contributing.rst:50 8e05f93949d24ec0926ae4aaec8b69e2
+msgid "Document all public APIs"
+msgstr "记录所有公共API"
+
+#: ../../contributing.rst:51 63965a78ed314defa5c6e226ba4d6b39
+msgid "Include usage examples"
+msgstr "包含使用示例"
+
+#: ../../contributing.rst:52 10fb4c2f7dd947f0b59989f52ae319d0
+msgid "Update guides for new features"
+msgstr "为新功能更新指南"
+
+#: ../../contributing.rst:53 91ad55e196454a61b3a282d83adce40a
+msgid "Use Google-style docstrings"
+msgstr "使用Google风格的文档字符串"
+
+#: ../../contributing.rst:56 6a6ce221194e460bac37e2282e8303a0
+msgid "Tool Contributions"
+msgstr "工具贡献"
+
+#: ../../contributing.rst:59 50682a199feb4c6eaafb1fa768f66088
+msgid "Adding New Tools"
+msgstr "添加新工具"
+
+#: ../../contributing.rst:61 35941d6ab9a045a0bb0b4a95e2dc4b27
+msgid ""
+"ToolUniverse supports both local and remote tools. Here's how to add a new "
+"tool:"
+msgstr "ToolUniverse支持本地和远程工具。以下是如何添加新工具："
+
+#: ../../contributing.rst:63 1f987c4eb0f94e6982f217c707e17ece
+msgid ""
+"**Important**: When adding a new tool, you must modify "
+"``src/tooluniverse/__init__.py`` in four specific locations to ensure the "
+"tool is properly exposed and importable. This step is critical and often "
+"overlooked by contributors."
+msgstr ""
+"**重要说明**：在添加新工具时，您必须在 ``src/tooluniverse/__init__.py`` "
+"文件中的四个特定位置进行修改，以确保该工具能够正确暴露并可被导入。这一步至关重要，且经常被贡献者忽视。"
+
+#: ../../contributing.rst:66 888bcc8ee9414315a15d6f3e823c5bfd
+msgid "Required __init__.py Modifications"
+msgstr "必需的 __init__.py 修改"
+
+#: ../../contributing.rst:68 5d0487b404f74497bd85994680581f31
+msgid ""
+"For every new tool class you add, you must update "
+"``src/tooluniverse/__init__.py`` in these four locations:"
+msgstr "对于每新增一个工具类，您必须在以下四个位置更新 ``src/tooluniverse/__init__.py``："
+
+#: ../../contributing.rst:70 a8fd4ed8f6574d1eb3a9ddb688f7aa9f
+msgid ""
+"**Add tool class declarations** (around lines 105-165): Add type annotations"
+" for your tool class"
+msgstr "**添加工具类声明**（大约在第105-165行）：为您的工具类添加类型注解"
+
+#: ../../contributing.rst:71 b4cbd5b39ce246f9988f01682e4e24ba
+msgid ""
+"**Add import statements** (around lines 173-258): Import your tool class in "
+"the non-lazy loading section"
+msgstr "**添加导入语句**（大约在第173-258行）：在非惰性加载部分导入您的工具类"
+
+#: ../../contributing.rst:72 1930c3fb721f4fdcb208fbbeb530b349
+msgid ""
+"**Add lazy import proxies** (around lines 260-360): Create lazy import proxy"
+" for your tool class"
+msgstr "**添加惰性导入代理**（约第260-360行）：为您的工具类创建惰性导入代理"
+
+#: ../../contributing.rst:73 3266c033c27f472cae7d0acca936111c
+msgid ""
+"**Add tool names to __all__ list** (around lines 362-449): Add your tool "
+"class name to the ``__all__`` list"
+msgstr "**将工具名称添加到 __all__ 列表**（大约在第 362-449 行）：将您的工具类名称添加到 ``__all__`` 列表中"
+
+#: ../../contributing.rst:75 ba0aafab30c64372aea06d05faf76635
+msgid "Example: Adding a new tool called ``MyNewTool``"
+msgstr "示例：添加一个名为 ``MyNewTool`` 的新工具"
+
+#: ../../contributing.rst:94 96c2bb8e0dc244e583a06a8886fed5a6
+msgid ""
+"**Validation Steps**: After making these changes, verify your tool is "
+"properly exposed by testing:"
+msgstr "**验证步骤**：完成这些更改后，通过测试验证您的工具是否已正确启用。"
+
+#: ../../contributing.rst:102 8e22dfb6fe254b2289f8de036a221bd6
+msgid "Local Tool Example"
+msgstr "本地工具示例"
+
+#: ../../contributing.rst:155 cad0002f8c314cfab75899748934c279
+msgid "Remote Tool Example"
+msgstr "远程工具示例"
+
+#: ../../contributing.rst:157 fcbb11eae2e641ada12c0af78e9cb91e
+msgid "For remote tools, create an MCP server:"
+msgstr "对于远程工具，创建MCP服务器："
+
+#: ../../contributing.rst:190 245e40ea6060459b9077fd147926700f
+msgid "Then create a client configuration file:"
+msgstr "然后创建客户端配置文件："
+
+#: ../../contributing.rst:224 21c68de6fc854d109e03f74f2af0a786
+msgid "Complete Tool Development Workflow"
+msgstr "完整的工具开发工作流程"
+
+#: ../../contributing.rst:226 1458ab8245a84a2fa3bc339f33ab3a73
+msgid ""
+"When adding a new tool, follow this complete workflow to ensure proper "
+"integration:"
+msgstr "在添加新工具时，请遵循以下完整工作流程以确保正确集成："
+
+#: ../../contributing.rst:228 a47ad3adf1fd4692be150694e7138824
+msgid ""
+"**Create your tool file** in ``src/tooluniverse/tools/`` (e.g., "
+"``my_new_tool.py``)"
+msgstr ""
+"**创建您的工具文件**，放置在``src/tooluniverse/tools/``目录中（例如，``my_new_tool.py``）。"
+
+#: ../../contributing.rst:229 30ec0b5fe9174765b8c4c04780e84ddc
+msgid "**Implement your tool class** following the BaseTool interface"
+msgstr "**按照 BaseTool 接口实现您的工具类**"
+
+#: ../../contributing.rst:230 088998965e6644ac836fca18d5691e2d
+msgid ""
+"**Modify __init__.py** (critical step - see Required __init__.py "
+"Modifications above)"
+msgstr "**修改 __init__.py**（关键步骤 - 请参阅上方的“必需的 __init__.py 修改”）"
+
+#: ../../contributing.rst:231 dc64e2013888468b8d871bc765a90a08
+msgid ""
+"**Create comprehensive tests** in ``tests/unit/`` or ``tests/integration/``"
+msgstr "**在``tests/unit/``或``tests/integration/``中创建全面的测试**"
+
+#: ../../contributing.rst:232 2153efc001a3429eaf0e4e85ee96d7bb
+msgid "**Add documentation** in ``docs/tools/``"
+msgstr "**在``docs/tools/``中添加文档**"
+
+#: ../../contributing.rst:233 b06efae6a32b49868953689d93345aa8
+msgid "**Update tool registry** if using custom registration"
+msgstr "**如果使用自定义注册，请更新工具注册表**"
+
+#: ../../contributing.rst:234 e211402908994aa19fb919209eebf86a
+msgid ""
+"**Test the complete integration** to ensure your tool is properly exposed"
+msgstr "**测试完整的集成**以确保您的工具已正确公开"
+
+#: ../../contributing.rst:236 e8d1580e7c1d4e19848c70c2ea66f713
+msgid "**Step-by-step __init__.py modification checklist**:"
+msgstr "**逐步修改 __init__.py 的检查清单**:"
+
+#: ../../contributing.rst:252 e5587cadc524420781aef73a06b80969
+msgid ""
+"**Common mistakes to avoid**: - Forgetting to add the tool to all four "
+"locations - Adding the import in the wrong section (lazy vs non-lazy) - "
+"Incorrect module name in the lazy import proxy - Missing quotes around the "
+"tool name in the __all__ list - Not testing the import after making changes"
+msgstr ""
+"**常见错误避免**：  \n"
+"- 忘记将工具添加到所有四个位置  \n"
+"- 在错误的部分添加导入（懒加载 vs 非懒加载）  \n"
+"- 在懒加载代理中使用了错误的模块名称  \n"
+"- 在 `__all__` 列表中遗漏工具名称的引号  \n"
+"- 修改后未测试导入"
+
+#: ../../contributing.rst:260 0f8603b9e45e434595d57b1ba34843ef
+msgid "Testing Your Tool"
+msgstr "测试您的工具"
+
+#: ../../contributing.rst:262 03ce7ab6b0b0455298b91f7800a5ba86
+msgid "Create tests for your tool:"
+msgstr "为您的工具创建测试："
+
+#: ../../contributing.rst:288 9aa6b4df5b2e461584fae3b1f6ddc008
+msgid "Create documentation for your tool:"
+msgstr "为您的工具创建文档："
+
+#: ../../contributing.rst:318 b80b1b0f36354efcb9d6ec499b005a22
+msgid "Contributing Workflow"
+msgstr "贡献工作流程"
+
+#: ../../contributing.rst:320 10fa174485a14272ab73b351e8f86842
+msgid "Create a feature branch:"
+msgstr "创建功能分支："
+
+#: ../../contributing.rst:326 e9bb5d88c1f94e08a68dd85c2d491152
+msgid "Make your changes and commit:"
+msgstr "进行修改并提交："
+
+#: ../../contributing.rst:337 94510af9adeb490bb4be20a78726ea99
+msgid "Push and create a pull request:"
+msgstr "推送并创建拉取请求："
+
+#: ../../contributing.rst:344 48d3705fd1e4497e860ed1e27142218e
+msgid "Commit Types"
+msgstr "提交类型"
+
+#: ../../contributing.rst:346 63b36abcfa56499f87bcb91b1a7fc6e8
+msgid "``feat``: New features"
+msgstr "``feat``: 新功能"
+
+#: ../../contributing.rst:347 47e6d49186e34b3c933f91864a3cc422
+msgid "``fix``: Bug fixes"
+msgstr "``fix``: 错误修复"
+
+#: ../../contributing.rst:348 4fa110b1ce3549659873418ba64aa073
+msgid "``docs``: Documentation updates"
+msgstr "``docs``: 文档更新"
+
+#: ../../contributing.rst:349 cdb4546098124409a899544a9598b58a
+msgid "``test``: Test additions or modifications"
+msgstr "``test``: 测试添加或修改"
+
+#: ../../contributing.rst:350 02e718598f35476e8ce6c3ab81923aeb
+msgid "``refactor``: Code refactoring"
+msgstr "``refactor``: 代码重构"
+
+#: ../../contributing.rst:351 5295ef69831443a88b3e8e72dbf55232
+msgid "``style``: Code style changes"
+msgstr "``style``: 代码风格更改"
+
+#: ../../contributing.rst:352 97660dbaa8c5409db47af948c686fa18
+msgid "``chore``: Build/maintenance tasks"
+msgstr "``chore``: 构建/维护任务"
+
+#: ../../contributing.rst:355 7372aaf2ae6c481eb870c99dc5cc3b7d
+msgid "Review Process"
+msgstr "审查流程"
+
+#: ../../contributing.rst:357 3287c5a5d45b45e9944b330225061481
+msgid "All contributions go through:"
+msgstr "所有贡献都要经过："
+
+#: ../../contributing.rst:359 c96f4a4b90224cefac9eed11c59d6093
+msgid "**Automated Checks**: CI runs tests, linting, and type checking"
+msgstr "**自动化检查**：CI运行测试、代码检查和类型检查"
+
+#: ../../contributing.rst:360 9c57f8e14e0b4019b4138477bb1a2e98
+msgid "**Manual Review**: Maintainers review code quality and design"
+msgstr "**手动审查**：维护者审查代码质量和设计"
+
+#: ../../contributing.rst:361 806982e1c12449f38b231cecf915b0de
+msgid "**Documentation Review**: Ensure docs are clear and complete"
+msgstr "**文档审查**：确保文档清晰完整"
+
+#: ../../contributing.rst:362 c89af139e127407fae4995370b312fb1
+msgid "**Testing**: Verify functionality works as expected"
+msgstr "**测试**：验证功能按预期工作"
+
+#: ../../contributing.rst:365 755d8151523e491fa65ab03c4b1eec16
+msgid "Troubleshooting Tool Integration"
+msgstr "故障排除工具集成"
+
+#: ../../contributing.rst:367 bdd8bed2acaf49dabaa5e373a6271562
+msgid ""
+"If your tool is not being imported correctly, check these common issues:"
+msgstr "如果您的工具未正确导入，请检查以下常见问题："
+
+#: ../../contributing.rst:369 4cdd295c1b854f5d92ecbcc0d10345a4
+msgid ""
+"**ImportError: cannot import name 'MyTool'** - Verify you added the tool to "
+"all four locations in ``__init__.py`` - Check that the module name in the "
+"import statement matches your file name - Ensure the class name matches "
+"exactly (case-sensitive)"
+msgstr ""
+"**ImportError: 无法导入名称 'MyTool'** - 请确认您已将工具添加到``__init__.py``中的所有四个位置 - "
+"检查导入语句中的模块名称是否与文件名一致 - 确保类名完全匹配（区分大小写）"
+
+#: ../../contributing.rst:374 f87b83064ad148f19ad653ca6f90519b
+msgid ""
+"**AttributeError: module 'tooluniverse' has no attribute 'MyTool'** - Verify"
+" the tool name is added to the ``__all__`` list - Check that the tool name "
+"in ``__all__`` matches the class name exactly - Ensure you're importing from"
+" the correct module"
+msgstr ""
+"**AttributeError: 模块 'tooluniverse' 没有属性 'MyTool'** - 请确认工具名称已添加到 "
+"``__all__`` 列表中 - 检查 ``__all__`` 中的工具名称是否与类名完全匹配 - 确保您从正确的模块导入"
+
+#: ../../contributing.rst:379 a5b1f3265e4d400db012e312f25b5af7
+msgid ""
+"**LazyImportProxy issues** - Verify the module name in "
+"``_LazyImportProxy(\"module_name\", \"ClassName\")`` matches your file name "
+"- Check that the class name in the proxy matches your actual class name - "
+"Ensure the module is in the correct location (``src/tooluniverse/tools/``)"
+msgstr ""
+"**LazyImportProxy 问题** - 请确认 ``_LazyImportProxy(\"module_name\", "
+"\"ClassName\")`` 中的模块名称与您的文件名一致 - 检查代理中的类名是否与实际类名匹配 - "
+"确保模块位于正确的位置（``src/tooluniverse/tools/``）"
+
+#: ../../contributing.rst:384 e30c1c01bfb2483bb0c44be835495089
+#, fuzzy
+msgid "**Testing your integration**:"
+msgstr "测试您的工具"
+
+#: ../../contributing.rst:401 a62ba85cf29f4748a9459d9792ae9974
+msgid "Getting Help"
+msgstr "获取帮助"
+
+#: ../../contributing.rst:403 b2b8ac408bfa4c47b946b154829ec367
+msgid "**GitHub Issues**: Bug reports and feature requests"
+msgstr "**GitHub Issues**：错误报告和功能请求"
+
+#: ../../contributing.rst:404 4cfc3beb1216446e8c0e46544b8ad24e
+msgid "**GitHub Discussions**: General questions and ideas"
+msgstr "**GitHub Discussions**：一般问题和想法"
+
+#: ../../contributing.rst:405 b3898adb0fc34570b7e50915c1a51513
+msgid "**Email**: shanghuagao@gmail.com"
+msgstr "**邮箱**：shanghuagao@gmail.com"
+
+#: ../../contributing.rst:408 6828db4640f54f0d84eb925267d75dc4
+msgid "Types of Contributions"
+msgstr "贡献类型"
+
+#: ../../contributing.rst:411 bb273ccfab8b4c448783195b90ef6050
+msgid "Bug Reports"
+msgstr "错误报告"
+
+#: ../../contributing.rst:413 1b8b2c3cdf7448f183c49d3e09043225
+msgid ""
+"Include: - Python version and OS - ToolUniverse version - Minimal code to "
+"reproduce - Full error traceback - Expected vs actual behavior"
+msgstr "包含：- Python版本和操作系统 - ToolUniverse版本 - 重现的最小代码 - 完整的错误回溯 - 预期与实际行为"
+
+#: ../../contributing.rst:421 64e0e31557334249a379de8efe8f4a07
+msgid "Feature Requests"
+msgstr "功能请求"
+
+#: ../../contributing.rst:423 3f5938678dce45e086435b68484f7f44
+msgid ""
+"Provide: - Clear use case description - Proposed API design - Implementation"
+" suggestions - Impact on existing code"
+msgstr "提供：- 清晰的用例描述 - 提议的API设计 - 实现建议 - 对现有代码的影响"
+
+#: ../../contributing.rst:430 8d2108796d2e4814aad20ac33f46851e
+msgid "Documentation Improvements"
+msgstr "文档改进"
+
+#: ../../contributing.rst:432 7c650dc45c3c428c98f89ee8b25b6773
+msgid ""
+"Help by: - Fixing typos and grammar - Adding missing examples - Clarifying "
+"confusing sections - Translating to other languages"
+msgstr "帮助：- 修复拼写和语法错误 - 添加缺失的示例 - 澄清令人困惑的部分 - 翻译成其他语言"
+
+#: ../../contributing.rst:438 6422dfb6e80e403da6680d489e767cad
+msgid "Thank you for contributing to ToolUniverse! 🧬🔬"
+msgstr "感谢您为ToolUniverse做贡献！🧬🔬"

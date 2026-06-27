@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.embedding_database.rst:2
+#: 6ddb5d5b0e2c4826b87957b97b383458
+msgid "tooluniverse.embedding\\_database module"
+msgstr "tooluniverse.embedding_database 模块"
+
+#: cff5ea48142d4b1da2c42bc891444ebd of tooluniverse.embedding_database:1
+msgid "Embedding Database Tool for ToolUniverse"
+msgstr "ToolUniverse 嵌入式数据库工具"
+
+#: 9c4a7c7a049a4f81a994454d5a40a66d of tooluniverse.embedding_database:3
+msgid ""
+"A unified tool for managing embedding databases with FAISS vector search and"
+" SQLite metadata storage. Supports creating databases from documents, adding"
+" documents, searching, and loading existing databases. Uses OpenAI's "
+"embedding models for text-to-vector conversion, with support for Azure "
+"OpenAI."
+msgstr ""
+"一个用于管理嵌入数据库的统一工具，结合了FAISS向量搜索和SQLite元数据存储。支持从文档创建数据库、添加文档、搜索以及加载现有数据库。采用OpenAI的嵌入模型进行文本到向量的转换，支持Azure"
+" OpenAI。"
+
+#: 5824c51e4fbf460a8e2a8925748b3da0 of
+#: tooluniverse.embedding_database.EmbeddingDatabase:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 51734e04a90b48d184e18fe4120703fa of
+#: tooluniverse.embedding_database.EmbeddingDatabase:1
+msgid ""
+"Unified embedding database tool supporting multiple operations: - "
+"create_from_docs: Create new database from documents - add_docs: Add "
+"documents to existing database - search: Search for similar documents - "
+"load_database: Load existing database from path"
+msgstr ""
+"统一嵌入数据库工具，支持多种操作：  \n"
+"- create_from_docs：从文档创建新数据库  \n"
+"- add_docs：向现有数据库添加文档  \n"
+"- search：搜索相似文档  \n"
+"- load_database：从路径加载现有数据库"
+
+#: 9222d7d8ff274776880eeb4214ff3fab of
+#: tooluniverse.embedding_database.EmbeddingDatabase._init_openai_client:1
+msgid "Initialize OpenAI client with configuration"
+msgstr "使用配置初始化 OpenAI 客户端"
+
+#: e19c2d5df0c649ed90c7ffbb245e2cd0 of
+#: tooluniverse.embedding_database.EmbeddingDatabase._substitute_env_vars:1
+msgid "Substitute environment variables in configuration values"
+msgstr "在配置值中替换环境变量"
+
+#: 20192943bd974ee0b5968f45490ebd37 of
+#: tooluniverse.embedding_database.EmbeddingDatabase._init_azure_client:1
+msgid "Initialize Azure OpenAI client with configuration"
+msgstr "使用配置初始化 Azure OpenAI 客户端"
+
+#: ab19a877445e45e9af58070d1ede278d of
+#: tooluniverse.embedding_database.EmbeddingDatabase._init_database:1
+msgid "Initialize SQLite database with required tables"
+msgstr "初始化包含所需表的 SQLite 数据库"
+
+#: e8277a08685e4e459ef1a8c6c917d143 of
+#: tooluniverse.embedding_database.EmbeddingDatabase.run:1
+msgid "Main entry point for the tool"
+msgstr "工具的主入口点"
+
+#: 966c9c9050c3422facd662ade6eec52d of
+#: tooluniverse.embedding_database.EmbeddingDatabase._create_from_documents:1
+msgid "Create new embedding database from documents"
+msgstr "从文档创建新的嵌入式数据库"
+
+#: 34527998998546fb83fe9a591496c08a of
+#: tooluniverse.embedding_database.EmbeddingDatabase._add_documents:1
+msgid "Add documents to existing database"
+msgstr "将文档添加到现有数据库"
+
+#: 3e78c955103c45ed8ad0f63a2d7a0d37 of
+#: tooluniverse.embedding_database.EmbeddingDatabase._search:1
+msgid "Search for similar documents in database"
+msgstr "在数据库中搜索相似文档"
+
+#: ef76de34a6604e759049a1544055e7bf of
+#: tooluniverse.embedding_database.EmbeddingDatabase._load_database:1
+msgid "Load existing database from path"
+msgstr "从路径加载现有数据库"
+
+#: 0c2c28f8b9a14b9d84e4ebc2c962649b of
+#: tooluniverse.embedding_database.EmbeddingDatabase._generate_embeddings:1
+msgid "Generate embeddings using OpenAI or Azure OpenAI API"
+msgstr "使用 OpenAI 或 Azure OpenAI API 生成嵌入"
+
+#: d02f91c7b46c467bade5ac579d870b52 of
+#: tooluniverse.embedding_database.EmbeddingDatabase._database_exists:1
+msgid "Check if database exists"
+msgstr "检查数据库是否存在"
+
+#: 946d4713bd73432b9a0db00c2b290b6f of
+#: tooluniverse.embedding_database.EmbeddingDatabase._get_database_info:1
+msgid "Get database information"
+msgstr "获取数据库信息"
+
+#: f2dbcda9c0804e2c8b5cd89f57886ad6 of
+#: tooluniverse.embedding_database.EmbeddingDatabase._matches_filters:1
+msgid "Check if metadata matches the given filters"
+msgstr "检查元数据是否符合指定的筛选条件"

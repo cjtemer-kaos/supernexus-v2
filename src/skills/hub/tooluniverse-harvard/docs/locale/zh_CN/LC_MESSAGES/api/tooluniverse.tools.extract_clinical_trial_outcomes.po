@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.extract_clinical_trial_outcomes.rst:2
+#: e5fd480d3c804bf2af3cc289f631131f
+msgid "tooluniverse.tools.extract\\_clinical\\_trial\\_outcomes module"
+msgstr "tooluniverse.tools.extract_clinical_trial_outcomes 模块"
+
+#: 6570a4d583cc42459c5f480d4fbd102f of
+#: tooluniverse.tools.extract_clinical_trial_outcomes:1
+msgid "extract_clinical_trial_outcomes"
+msgstr "提取临床试验结果"
+
+#: 49dcf4fb2285414d9e8ec2e6c4367507 a3b7d5351aaf413e873eb931bf9cd9f0 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes:3
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:1
+msgid ""
+"Extracts detailed trial outcome results (e.g., overall survival months, "
+"p-values, etc.) from clin..."
+msgstr "从临床试验中提取详细的结果数据（例如，总生存期（月）、p值等）。"
+
+#: ../../api/tooluniverse.tools.extract_clinical_trial_outcomes.rst
+#: f6385f4d659c4949bfa0e5c77064a702
+msgid "Parameters"
+msgstr "参数"
+
+#: e56d3b1dabfa4da7ae035df4b7568d55 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:3
+msgid ""
+"List of NCT IDs of the clinical trials (e.g., ['NCT04852770', "
+"'NCT01728545'])."
+msgstr "临床试验的NCT编号列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: 7566859eef7448cc88f0755529f76b34 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:5
+msgid ""
+"Outcome measure to extract. Example values include 'primary' (primary "
+"outcome..."
+msgstr "提取结果指标。示例值包括“主要”（主要结果..."
+
+#: e567518d77d44efc9091495f9f1580eb of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ee6a4e24b4dc4d1abcb11e8284960ce3 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 044f3c6fbd33484988c5ae004394bac7 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.extract_clinical_trial_outcomes.rst
+#: 0a9fe29fd1984d16b95983184ae7d227
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7ece562894c1471c83846d52379dcac0 of
+#: tooluniverse.tools.extract_clinical_trial_outcomes.extract_clinical_trial_outcomes:14
+msgid ":py:class:`Any`"
+msgstr ""

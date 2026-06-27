@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.CallAgent.rst:2
+#: 728b363b2366482684f393c0d5b4264c
+msgid "tooluniverse.tools.CallAgent module"
+msgstr "tooluniverse.tools.CallAgent 模块"
+
+#: c7459ac3528e4ebba56691bfbfc47819 of tooluniverse.tools.CallAgent:1
+msgid "CallAgent"
+msgstr "呼叫代理"
+
+#: 3c0b245441064a5eaff480ea69d99ec7 8265946e4bae4b21bd93d9e2c86dede7 of
+#: tooluniverse.tools.CallAgent:3 tooluniverse.tools.CallAgent.CallAgent:1
+msgid ""
+"Give a solution plan to the agent and let it solve the problem. Solution "
+"plan should reflect a di..."
+msgstr "为代理提供解决方案计划，并让其解决问题。解决方案计划应体现一个明确的方向和步骤，以确保问题能够有效解决。"
+
+#: ../../api/tooluniverse.tools.CallAgent.rst 7c5b470941774d56aa08a4de2a753ed7
+msgid "Parameters"
+msgstr "参数"
+
+#: e5a113f12ff9471b8eb6f72e3525220c of
+#: tooluniverse.tools.CallAgent.CallAgent:3
+msgid "A feasible and concise solution plan that address the question."
+msgstr "一个可行且简洁的解决方案，能够解决该问题。"
+
+#: 53a1434c09f143be87791fdb8e96543f of
+#: tooluniverse.tools.CallAgent.CallAgent:5
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 5a4539eac47a474ead94118386da4ac0 of
+#: tooluniverse.tools.CallAgent.CallAgent:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: bf7bbb71f2704df88463f9a45be4088d of
+#: tooluniverse.tools.CallAgent.CallAgent:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.CallAgent.rst 32ca48d372164386a9e87b21eb6dcd3e
+msgid "Return type"
+msgstr "返回类型"
+
+#: f9ccdbc76fcf4ec98ba9e74d1b091ba4 of
+#: tooluniverse.tools.CallAgent.CallAgent:12
+msgid ":py:class:`Any`"
+msgstr ""

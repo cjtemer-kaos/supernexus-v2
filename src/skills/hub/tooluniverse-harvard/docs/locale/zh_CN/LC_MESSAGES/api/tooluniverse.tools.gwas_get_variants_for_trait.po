@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.gwas_get_variants_for_trait.rst:2
+#: 2d6d547dde2d4f5f94c908d9c15913b2
+msgid "tooluniverse.tools.gwas\\_get\\_variants\\_for\\_trait module"
+msgstr "tooluniverse.tools.gwas\\_get\\_variants\\_for\\_trait 模块"
+
+#: 1b36926e0e2e43468064c0a9fe704a75 of
+#: tooluniverse.tools.gwas_get_variants_for_trait:1
+msgid "gwas_get_variants_for_trait"
+msgstr "gwas_get_variants_for_trait（获取特定性状的GWAS变异）"
+
+#: 616b9511616e46b9ae5697f7dbe112ad 7204b46b10dd4e53a522b16148e3e523 of
+#: tooluniverse.tools.gwas_get_variants_for_trait:3
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:1
+msgid ""
+"Get all variants associated with a specific trait with pagination support."
+msgstr "获取与特定特性相关的所有变体，并支持分页功能。"
+
+#: ../../api/tooluniverse.tools.gwas_get_variants_for_trait.rst
+#: 9c83305afb5c4fbdac67f89bd7369d8a
+msgid "Parameters"
+msgstr "参数"
+
+#: f04577c892964ba49610e313ceb2c551 of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:3
+msgid "EFO trait identifier or name"
+msgstr "EFO 特征标识符或名称"
+
+#: ccfd30200f4e4058bfeb0b1d6c0293db of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:5
+msgid "Number of results to return per page"
+msgstr "每页返回结果数量"
+
+#: 430ced32abb04af38a49faae725450ad of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:7
+msgid "Page number for pagination"
+msgstr "分页页码"
+
+#: fe7ed295dbd7427889a40491f8be710c of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:9
+msgid "Callback for streaming output"
+msgstr "流式输出的回调"
+
+#: 7a9711847e184cd8a8b6366e305920f7 of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8544ec0b5a0049ca8ce4f45d0e5ee572 of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.gwas_get_variants_for_trait.rst
+#: 5bd47de63c1644eb8febc7315318ab50
+msgid "Return type"
+msgstr "返回类型"
+
+#: 17b5dd80d8194beab8b7457a331dc2a1 of
+#: tooluniverse.tools.gwas_get_variants_for_trait.gwas_get_variants_for_trait:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

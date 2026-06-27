@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_fanc_info.rst:2
+#: 906c224734fe43b2ab1be04597755a6a
+msgid "tooluniverse.tools.get\\_fanc\\_info module"
+msgstr "tooluniverse.tools.get_fanc_info 模块"
+
+#: 27ce62d47dd94c67bc2de12ab29c3b7d of tooluniverse.tools.get_fanc_info:1
+msgid "get_fanc_info"
+msgstr "获取_fanc_信息"
+
+#: 01d5fcd2e4164497946fe3355183026a bf5463b609924e4191a6a23497dcd572 of
+#: tooluniverse.tools.get_fanc_info:3
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:1
+msgid ""
+"Get comprehensive information about FAN-C – framework for analyzing nuclear "
+"contacts"
+msgstr "获取关于FAN-C——用于分析核接触的框架的全面信息"
+
+#: ../../api/tooluniverse.tools.get_fanc_info.rst
+#: f4808c64d505477795292f4e91457b9b
+msgid "Parameters"
+msgstr "参数"
+
+#: 6b386c00c97c4366ac052731613c29cd of
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:3
+msgid "Type of information to retrieve about FAN-C"
+msgstr "关于FAN-C可获取的信息类型"
+
+#: e2f07493f1e94f6e83671e1f857ff19f of
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 67e2eb5857594e508b7f655d42785b4b of
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8639aa6f2fd4408797fadf2a3995b06d of
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_fanc_info.rst
+#: 8022119cb5114d43a6026059f5f3b9f3
+msgid "Return type"
+msgstr "返回类型"
+
+#: 3e4a70508f6a48c2aacddce330c75036 of
+#: tooluniverse.tools.get_fanc_info.get_fanc_info:12
+msgid ":py:class:`Any`"
+msgstr ""

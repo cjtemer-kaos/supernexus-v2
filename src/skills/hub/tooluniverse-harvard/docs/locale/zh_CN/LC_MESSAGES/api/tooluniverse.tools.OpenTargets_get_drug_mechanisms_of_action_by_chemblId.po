@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.rst:2
+#: 193e2f31c6d8494b9a06b45415e44a9e
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_drug\\_mechanisms\\_of\\_action\\_by\\_chemblId"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_drug\\_mechanisms\\_of\\_action\\_by\\_chemblId"
+" 模块"
+
+#: 9b2d0a9f36554587ab3c0abcab00b217 of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:1
+msgid "OpenTargets_get_drug_mechanisms_of_action_by_chemblId"
+msgstr "OpenTargets_通过ChemblId获取药物作用机制"
+
+#: 061741431d4e4ccc8f7312719d352c85 91560543f00a4af2b6f12d9ddf7f45a5 of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:1
+msgid ""
+"Retrieve the mechanisms of action associated with a specific drug using "
+"chemblId."
+msgstr "使用 chemblId 检索与特定药物相关的作用机制。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.rst
+#: ab3a9b789a6a4ab0970a18d2b6d4a5b7
+msgid "Parameters"
+msgstr "参数"
+
+#: fb00c5a048414c188903bd168b0bf039 of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: dc58d46e881847d094aa141dc75f9581 of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c5c07f4412404c21a3879e56cb388913 of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4a2481815301400c9bc03ce2b109b7ad of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.rst
+#: 208c12a40f8c4d5a8cdd659cb4e3e4e2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 058b4873dd124595a99211d0d7f205df of
+#: tooluniverse.tools.OpenTargets_get_drug_mechanisms_of_action_by_chemblId.OpenTargets_get_drug_mechanisms_of_action_by_chemblId:12
+msgid ":py:class:`Any`"
+msgstr ""

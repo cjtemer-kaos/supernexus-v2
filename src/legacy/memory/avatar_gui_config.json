@@ -1,0 +1,9 @@
+{
+  "theme": "tactical",
+  "interface": "terminal",
+  "port": 9001,
+  "style": "industrial-brutalist",
+  "features": ["console", "microphone"],
+  "rejected": ["glassmorphism", "cyberpunk", "threejs"],
+  "director_node": "localhost:9000"
+}

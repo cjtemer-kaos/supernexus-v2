@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.rst:2
+#: bf5ee317e160492a8f043006a6a41b22
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_active\\_ingredient module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_active\\_ingredient 模块"
+
+#: 6400a6677a684ddd83ba9a1c4104fffa of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient:1
+msgid "FDA_get_drug_names_by_active_ingredient"
+msgstr ""
+"FDA_get_drug_names_by_active_ingredient  \n"
+"获取药物活性成分名称"
+
+#: 64a41c07698f4dddb0c70a6297031305 fc090e9d41034ff28acfb0a90adbe27f of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient:3
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:1
+msgid "Retrieve drug names based on the active ingredient information."
+msgstr "根据活性成分信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.rst
+#: a15651c53cf94072a5701a826ba2d909
+msgid "Parameters"
+msgstr "参数"
+
+#: e231ef433ab3438f8de1f061aa9c1464 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:3
+msgid "The active ingredient in the drug product."
+msgstr "药品中的活性成分。"
+
+#: 45b6ff5b894e40a6af2b07bf44dc369e of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 3145bab8bba24ea3a0b8c2b8b5023438 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 88029ffca1bd481da2c43d300e90a5cf of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:9
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: d61d32b7721c4a3681da6eb008244761 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f162db21e3d64261a96476000d89cad7 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a9efcf63e317422f8cb4a55c65dc12e4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.rst
+#: 7d322f10b3bf47ec8b0394eca913ec1c
+msgid "Return type"
+msgstr "返回类型"
+
+#: bcfdc8ddde254ef8b66fb5d458a10c77 of
+#: tooluniverse.tools.FDA_get_drug_names_by_active_ingredient.FDA_get_drug_names_by_active_ingredient:18
+msgid ":py:class:`Any`"
+msgstr ""

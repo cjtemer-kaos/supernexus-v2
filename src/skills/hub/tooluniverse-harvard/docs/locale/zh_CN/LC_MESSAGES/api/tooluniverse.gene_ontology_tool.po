@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.gene_ontology_tool.rst:2
+#: 526081b4978a4c84841208cb7f4abf5c
+msgid "tooluniverse.gene\\_ontology\\_tool module"
+msgstr "tooluniverse.gene_ontology_tool 模块"
+
+#: 63117a3dd9144d5cb7c310b13e68cd74 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: e61732114ec2418495d1e08010496f28 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool:1
+msgid ""
+"A general-purpose tool for calling the Gene Ontology (GO) API. It is "
+"configured via a dictionary that defines the specific API endpoint."
+msgstr "一个通用工具，用于调用基因本体论（Gene Ontology，GO）API。通过字典配置，定义具体的API端点。"
+
+#: adc347562b8e4c0e864f766d04a4e0d5 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool.__init__:1
+msgid "Initializes the tool with a configuration."
+msgstr "使用配置初始化该工具。"
+
+#: ../../api/tooluniverse.gene_ontology_tool.rst
+#: a8e598f0e3dc4ee29982706c1c5b612f cd36dc2158c74008999cde6922d7c4d9
+msgid "Parameters"
+msgstr "参数"
+
+#: 9ec632dc2b91460088c5f6254af6c7ce of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool.__init__:3
+msgid "A dictionary containing 'fields' with an 'endpoint'."
+msgstr "包含带有“endpoint”的“fields”的字典。"
+
+#: 8006911159994cf6b2f80bcb34b9e0f6 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool._build_url:1
+msgid "Builds the request URL from arguments."
+msgstr "根据参数构建请求 URL。"
+
+#: a1745079dea14856b070da29b64ac868 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool._extract_data:1
+msgid "Extract specific data from the GO API response using custom paths."
+msgstr "使用自定义路径从 GO API 响应中提取特定数据。"
+
+#: 6f511a0341704711a760548ef3ae0b79 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool.run:1
+msgid "Executes the API call and returns the data."
+msgstr "执行API调用并返回数据。"
+
+#: 160a10d4fc48457aa5fb07899df6c6c4 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool.run:3
+msgid "Parameters for the API call."
+msgstr "API 调用参数。"
+
+#: ../../api/tooluniverse.gene_ontology_tool.rst
+#: 984b70b6a99f413f9112b38f66a72edb
+msgid "Returns"
+msgstr "退货"
+
+#: 43991804c49e429b8c12c753178f90a4 of
+#: tooluniverse.gene_ontology_tool.GeneOntologyTool.run:6
+msgid "The JSON data from the API or an error dictionary."
+msgstr "从API获取的JSON数据或错误字典。"
+
+#: ../../api/tooluniverse.gene_ontology_tool.rst
+#: 3eb3059cd9454115b1ea9b42ee6e432a
+msgid "Return type"
+msgstr "返回类型"

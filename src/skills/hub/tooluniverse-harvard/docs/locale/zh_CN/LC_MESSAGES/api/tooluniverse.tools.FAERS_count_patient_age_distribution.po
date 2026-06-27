@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_patient_age_distribution.rst:2
+#: 31c51e8311184fb295a9d8087819dcf3
+msgid "tooluniverse.tools.FAERS\\_count\\_patient\\_age\\_distribution module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_patient\\_age\\_distribution 模块"
+
+#: 2702347c39644a0ab04cd5793f1f82fe of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution:1
+msgid "FAERS_count_patient_age_distribution"
+msgstr "FAERS_患者年龄分布统计"
+
+#: ec8340447f04415b96a7e60234840763 f53224c4da664e829a916223288b480b of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution:3
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:1
+msgid ""
+"Analyze the age distribution of patients experiencing adverse events for a "
+"specific drug. The age..."
+msgstr "分析某种药物的不良事件患者的年龄分布。年龄..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_patient_age_distribution.rst
+#: 2b0ef9da557740ca985810a2b4257f26
+msgid "Parameters"
+msgstr "参数"
+
+#: 78f6b943020f4607a5cd1c835eec1fcd of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:3
+msgid "Drug name."
+msgstr "药物名称。"
+
+#: f7a89afdcaf04f00b50f0a1f633e9900 of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1c72a634b970451585bada4870ae120c of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4705806e976742019aae42971236413e of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_patient_age_distribution.rst
+#: 1c8a9aeb338249098873a7234b94475a
+msgid "Return type"
+msgstr "返回类型"
+
+#: fb07d7988b5240d48f65b13ce2a92dd5 of
+#: tooluniverse.tools.FAERS_count_patient_age_distribution.FAERS_count_patient_age_distribution:12
+msgid ":py:class:`Any`"
+msgstr ""

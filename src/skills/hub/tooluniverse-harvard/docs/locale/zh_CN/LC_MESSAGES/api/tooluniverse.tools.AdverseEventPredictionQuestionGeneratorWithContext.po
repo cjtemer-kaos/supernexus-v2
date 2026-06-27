@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.rst:2
+#: d1c5c10b3e2b48a1a5c1bdbee23fc88c
+msgid ""
+"tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext module"
+msgstr ""
+"tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext 模块"
+
+#: de1cc5811e404cbf959c8d8da423a318 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext:1
+msgid "AdverseEventPredictionQuestionGeneratorWithContext"
+msgstr ""
+"AdverseEventPredictionQuestionGeneratorWithContext  \n"
+"不良事件预测问题生成器（含上下文）"
+
+#: be063d661d844199acd4f8542c9bce3e fb4afba813984da08ce42df0261de123 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext:3
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:1
+msgid ""
+"Generates a set of personalized adverse‐event prediction questions for a "
+"given disease and drug, ..."
+msgstr "生成针对特定疾病和药物的一组个性化不良事件预测问题，..."
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.rst
+#: 1cd0e8849a7142ab83596dc02b8be7b1
+msgid "Parameters"
+msgstr "参数"
+
+#: bb53339c0a334158a17c55ed05deda43 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:3
+msgid "The name of the disease or condition"
+msgstr "疾病或病症的名称"
+
+#: 93b9aa785aa14cf7b2d4ab83202ebfa8 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:5
+msgid "The name of the drug"
+msgstr "药物名称"
+
+#: a7d802da1cbe4cf3ae8a681d6d256b25 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:7
+msgid ""
+"Additional context information such as patient medical history, clinical "
+"find..."
+msgstr "附加上下文信息，例如患者病史、临床发现..."
+
+#: cfcfe40f7d394281ac3c85efd612fe53 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a9818c10e791432bbac43feb80694032 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8e7a43b9988b4d17a37c226f1de056a9 of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.rst
+#: 5879a2d2fcdd49b087ce9f524bcb67c7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9bdc84ac344d4413ad482fd7e563b9fa of
+#: tooluniverse.tools.AdverseEventPredictionQuestionGeneratorWithContext.AdverseEventPredictionQuestionGeneratorWithContext:16
+msgid ":py:class:`Any`"
+msgstr ""

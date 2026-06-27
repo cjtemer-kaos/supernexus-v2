@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_dask_info.rst:2
+#: 8ae430902d2846009defd845ab5e9daa
+msgid "tooluniverse.tools.get\\_dask\\_info module"
+msgstr "tooluniverse.tools.get\\_dask\\_info 模块"
+
+#: a7e25ae40ac54c168279d7fb47e57dbe of tooluniverse.tools.get_dask_info:1
+msgid "get_dask_info"
+msgstr ""
+
+#: 15276352b42a4948bb06cc51371f3d94 16d6cc476f9d43ae9e4881133238b666 of
+#: tooluniverse.tools.get_dask_info:3
+#: tooluniverse.tools.get_dask_info.get_dask_info:1
+msgid ""
+"Get information about the dask package. Parallel computing with task "
+"scheduling"
+msgstr "获取有关 dask 软件包的信息。使用任务调度进行并行计算"
+
+#: ../../api/tooluniverse.tools.get_dask_info.rst
+#: 82bda8891edf46d7bac7b255cfec6f1c
+msgid "Parameters"
+msgstr "参数"
+
+#: 80ba0cb5f3ea443aa09edf1f95a7a49f of
+#: tooluniverse.tools.get_dask_info.get_dask_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1396aa809b284688802b7b875b4e145b of
+#: tooluniverse.tools.get_dask_info.get_dask_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a0377e60c98c48c082831f4f30f31cdb of
+#: tooluniverse.tools.get_dask_info.get_dask_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_dask_info.rst
+#: 828279efeb5c4e60b385aaa4a995f1e7
+msgid "Return type"
+msgstr "返回类型"
+
+#: c61e23502ccd40a4a704812747848b40 of
+#: tooluniverse.tools.get_dask_info.get_dask_info:11
+msgid ":py:class:`Any`"
+msgstr ""

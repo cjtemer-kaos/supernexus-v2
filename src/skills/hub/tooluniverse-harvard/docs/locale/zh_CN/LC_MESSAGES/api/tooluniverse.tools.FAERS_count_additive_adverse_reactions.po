@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_adverse_reactions.rst:2
+#: febc9b043ad04a1bab8fa0027ab647bb
+msgid "tooluniverse.tools.FAERS\\_count\\_additive\\_adverse\\_reactions module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_additive\\_adverse\\_reactions 模块"
+
+#: 03e70fda1b1042c89d529745d32377aa of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions:1
+msgid "FAERS_count_additive_adverse_reactions"
+msgstr "FAERS_计数_加成不良反应"
+
+#: 0d9662986b5647278f1ff500bae11c4f fd73cf2f79ed45cda5cd0f66910e3cab of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions:3
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:1
+msgid ""
+"Additive multi-drug data: Aggregate adverse reaction counts across specified"
+" medicinal products, ..."
+msgstr "添加多药数据：汇总指定药品的不良反应计数，..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_adverse_reactions.rst
+#: c2e9ece480f340ad8765bcef5f4ec8bb
+msgid "Parameters"
+msgstr "参数"
+
+#: 4da737a1d0ed48bab1db9ac303a6de14 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:3
+msgid "Array of medicinal product names."
+msgstr "药品名称数组"
+
+#: 27d9682665114a29ab8d6c6ec6e01c28 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:5
+msgid "Filter by patient sex."
+msgstr "根据患者性别筛选。"
+
+#: 29878e1061ef4526837e4d8a728f4524 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:7
+msgid "Filter by patient age group."
+msgstr "按患者年龄组筛选。"
+
+#: 3595b37162ea4545a0c8a5b366267b77 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:9
+msgid "Filter by ISO2 country code of occurrence."
+msgstr "根据发生地的ISO2国家代码进行筛选。"
+
+#: dcb88c64ec8c45258181b7b86b907a87 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:11
+msgid "Filter by seriousness classification."
+msgstr "根据严重程度分类筛选。"
+
+#: 4c73e167df60420cb9d3d911e410daf8 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:13
+msgid "Filter for fatal outcomes."
+msgstr "筛选致命结果。"
+
+#: 145bc7f3812841be876d4a78af1eb67b of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 274db9418a7946509ccf8355bc4d742f of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f9cdf7a109394cc49676c08ad163e2b9 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_adverse_reactions.rst
+#: 8f646f85c70746c29e2fc91d4430a1e9
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7330d6a6ca184421b794b8c3676a9ca3 of
+#: tooluniverse.tools.FAERS_count_additive_adverse_reactions.FAERS_count_additive_adverse_reactions:22
+msgid ":py:class:`Any`"
+msgstr ""

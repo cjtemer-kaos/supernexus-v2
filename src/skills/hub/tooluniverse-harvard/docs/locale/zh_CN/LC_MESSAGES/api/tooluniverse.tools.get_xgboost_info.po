@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_xgboost_info.rst:2
+#: 262e882f9c6f4d56acfaae25c1347516
+msgid "tooluniverse.tools.get\\_xgboost\\_info module"
+msgstr "tooluniverse.tools.get\\_xgboost\\_info 模块"
+
+#: 58026250c198441a896cbe51e498028e of tooluniverse.tools.get_xgboost_info:1
+msgid "get_xgboost_info"
+msgstr "get_xgboost_info 获取XGBoost信息"
+
+#: 78d7e5c2d45e4fd7a3039687330dd3c2 f6acee8650454602a8127d906cf80f65 of
+#: tooluniverse.tools.get_xgboost_info:3
+#: tooluniverse.tools.get_xgboost_info.get_xgboost_info:1
+msgid ""
+"Get information about the xgboost package. Optimized gradient boosting "
+"framework"
+msgstr "获取有关 xgboost 软件包的信息。优化的梯度提升框架"
+
+#: ../../api/tooluniverse.tools.get_xgboost_info.rst
+#: eaeaf55581334b279f51535019554dab
+msgid "Parameters"
+msgstr "参数"
+
+#: 2cf0bbf39cd94781828f5f24dcbd7e3a of
+#: tooluniverse.tools.get_xgboost_info.get_xgboost_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a31b639aa8034f1ea93d0a8e9b8f2036 of
+#: tooluniverse.tools.get_xgboost_info.get_xgboost_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 79d9b81c5b0e4cefb0c14106733d93e7 of
+#: tooluniverse.tools.get_xgboost_info.get_xgboost_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_xgboost_info.rst
+#: ddb3703b1a674b0d87ba0fcf226d6065
+msgid "Return type"
+msgstr "返回类型"
+
+#: fccba5e6be5747b6831a6cbe273159fd of
+#: tooluniverse.tools.get_xgboost_info.get_xgboost_info:11
+msgid ":py:class:`Any`"
+msgstr ""

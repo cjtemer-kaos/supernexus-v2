@@ -1,0 +1,1660 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_scanpy_info",
+    "description": "Get comprehensive information about Scanpy \u2013 scalable single-cell analysis in Python",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "scanpy",
+    "local_info": {
+      "name": "Scanpy",
+      "description": "Scalable toolkit for analyzing single-cell gene expression data. Includes preprocessing, visualization, clustering, trajectory inference and differential expression testing for datasets of more than one million cells.",
+      "category": "Single-Cell Genomics",
+      "import_name": "scanpy",
+      "popularity": 90,
+      "keywords": [
+        "single-cell",
+        "RNA-seq",
+        "clustering",
+        "trajectory inference",
+        "differential expression"
+      ],
+      "documentation": "https://scanpy.readthedocs.io/",
+      "repository": "https://github.com/scverse/scanpy",
+      "installation": {
+        "pip": "pip install scanpy",
+        "conda": "conda install -c conda-forge scanpy"
+      },
+      "usage_example": "import scanpy as sc\nimport pandas as pd\n\n# Read 10X data\nadata = sc.read_10x_mtx('filtered_feature_bc_matrix/')\nadata.var_names_unique()\n\n# Basic preprocessing\nsc.pp.filter_cells(adata, min_genes=200)\nsc.pp.filter_genes(adata, min_cells=3)\nsc.pp.normalize_total(adata, target_sum=1e4)\nsc.pp.log1p(adata)\n\n# Find highly variable genes and cluster\nsc.pp.highly_variable_genes(adata)\nsc.pp.pca(adata)\nsc.pp.neighbors(adata)\nsc.tl.umap(adata)\nsc.tl.leiden(adata)",
+      "quick_start": [
+        "Install: pip install scanpy",
+        "Read data: sc.read_10x_mtx() or sc.read_h5ad()",
+        "Preprocess: filter cells/genes, normalize, log transform",
+        "Analyze: PCA, neighbors, UMAP, clustering",
+        "Visualize: sc.pl.umap(), sc.pl.violin()"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_anndata_info",
+    "description": "Get comprehensive information about AnnData \u2013 annotated data for computational biology",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "anndata",
+    "local_info": {
+      "name": "AnnData",
+      "description": "Annotated data matrix for handling large-scale biological data. Positioned between pandas and xarray, offers sparse data support, lazy operations, and PyTorch interface for computational biology applications.",
+      "category": "Data Structures",
+      "import_name": "anndata",
+      "popularity": 88,
+      "keywords": [
+        "annotated data",
+        "single-cell",
+        "sparse matrices",
+        "data structure",
+        "computational biology"
+      ],
+      "documentation": "https://anndata.readthedocs.io/",
+      "repository": "https://github.com/scverse/anndata",
+      "installation": {
+        "pip": "pip install anndata",
+        "conda": "conda install -c conda-forge anndata"
+      },
+      "usage_example": "import anndata as ad\nimport numpy as np\nimport pandas as pd\n\n# Create AnnData object\nX = np.random.randn(100, 50)  # 100 cells, 50 genes\nobs = pd.DataFrame({'cell_type': ['A']*50 + ['B']*50})\nvar = pd.DataFrame({'gene_name': [f'Gene_{i}' for i in range(50)]})\n\nadata = ad.AnnData(X=X, obs=obs, var=var)\nprint(adata)\n\n# Access data\nprint(adata.X.shape)\nprint(adata.obs.head())\nprint(adata.var.head())",
+      "quick_start": [
+        "Install: pip install anndata",
+        "Create: ad.AnnData(X=matrix, obs=cell_meta, var=gene_meta)",
+        "Access: adata.X (data), adata.obs (cells), adata.var (genes)",
+        "Save/load: adata.write('data.h5ad'), ad.read_h5ad('data.h5ad')",
+        "Subset: adata[cells, genes] for slicing"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_mudata_info",
+    "description": "Get comprehensive information about MuData \u2013 multimodal annotated data for computational biology",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "mudata",
+    "local_info": {
+      "name": "MuData",
+      "description": "Multimodal data structure that can store multiple AnnData objects representing different data modalities (e.g., RNA-seq, ATAC-seq, protein) from the same samples in a unified container.",
+      "category": "Multimodal Data",
+      "import_name": "mudata",
+      "popularity": 75,
+      "keywords": [
+        "multimodal data",
+        "single-cell",
+        "ATAC-seq",
+        "RNA-seq",
+        "protein data"
+      ],
+      "documentation": "https://mudata.readthedocs.io/",
+      "repository": "https://github.com/scverse/mudata",
+      "installation": {
+        "pip": "pip install mudata",
+        "conda": "conda install -c conda-forge mudata"
+      },
+      "usage_example": "import mudata as mu\nimport anndata as ad\nimport numpy as np\n\n# Create separate AnnData objects for different modalities\nrna_data = ad.AnnData(np.random.randn(100, 2000))\natac_data = ad.AnnData(np.random.randn(100, 10000))\n\n# Combine into MuData object\nmdata = mu.MuData({'rna': rna_data, 'atac': atac_data})\nprint(mdata)\n\n# Access modalities\nprint(mdata['rna'].shape)\nprint(mdata['atac'].shape)\n\n# Save multimodal data\nmdata.write('multimodal_data.h5mu')",
+      "quick_start": [
+        "Install: pip install mudata",
+        "Create: mu.MuData({'rna': rna_adata, 'atac': atac_adata})",
+        "Access: mdata['rna'], mdata['atac']",
+        "Save/load: mdata.write('data.h5mu'), mu.read('data.h5mu')",
+        "Integrate: Use with scanpy/muon for analysis"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_scvelo_info",
+    "description": "Get comprehensive information about scVelo \u2013 RNA velocity analysis in single cells",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "scvelo",
+    "local_info": {
+      "name": "scVelo",
+      "description": "Python library for RNA velocity analysis to study cellular dynamics and trajectory inference in single-cell RNA sequencing data. Estimates future cell states based on spliced/unspliced mRNA ratios.",
+      "category": "Single-Cell Dynamics",
+      "import_name": "scvelo",
+      "popularity": 82,
+      "keywords": [
+        "RNA velocity",
+        "single-cell dynamics",
+        "trajectory inference",
+        "cellular dynamics",
+        "gene expression"
+      ],
+      "documentation": "https://scvelo.readthedocs.io/",
+      "repository": "https://github.com/theislab/scvelo",
+      "installation": {
+        "pip": "pip install scvelo",
+        "conda": "conda install -c conda-forge scvelo"
+      },
+      "usage_example": "import scvelo as scv\nimport scanpy as sc\n\n# Load data with spliced/unspliced information\nadata = scv.datasets.pancreatic_endocrinogenesis()\n\n# Preprocess data\nscv.pp.filter_and_normalize(adata, min_shared_counts=20, n_top_genes=2000)\nscv.pp.moments(adata, n_pcs=30, n_neighbors=30)\n\n# Compute velocity and velocity graph\nscv.tl.velocity(adata)\nscv.tl.velocity_graph(adata)\n\n# Plot velocity field\nscv.pl.velocity_embedding_stream(adata, basis='umap')",
+      "quick_start": [
+        "Install: pip install scvelo",
+        "Import: import scvelo as scv",
+        "Load data: adata = scv.datasets.pancreatic_endocrinogenesis()",
+        "Preprocess: scv.pp.filter_and_normalize(adata)",
+        "Analyze: scv.tl.velocity(); scv.pl.velocity_embedding()"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_scrublet_info",
+    "description": "Get comprehensive information about Scrublet \u2013 single-cell doublet detection",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "include_examples": {
+          "type": "boolean",
+          "description": "Whether to include usage examples and quick start guide",
+          "default": true
+        }
+      },
+      "required": [
+        "include_examples"
+      ]
+    },
+    "package_name": "scrublet",
+    "local_info": {
+      "name": "Scrublet",
+      "description": "Python library for detecting doublets in single-cell RNA-seq data. Uses simulated doublets and k-nearest neighbor classifier to identify likely doublets in experimental data.",
+      "category": "Single-Cell Quality Control",
+      "import_name": "scrublet",
+      "popularity": 72,
+      "keywords": [
+        "doublet detection",
+        "single-cell quality control",
+        "RNA-seq",
+        "cell filtering",
+        "data quality"
+      ],
+      "documentation": "https://github.com/AllonKleinLab/scrublet",
+      "repository": "https://github.com/AllonKleinLab/scrublet",
+      "installation": {
+        "pip": "pip install scrublet",
+        "conda": "conda install -c bioconda scrublet"
+      },
+      "usage_example": "import scrublet as scr\nimport scipy.io\nimport matplotlib.pyplot as plt\n\n# Load count matrix (cells x genes)\ncounts_matrix = scipy.sparse.load_npz('counts.npz')\n\n# Initialize Scrublet object\nscrub = scr.Scrublet(counts_matrix, expected_doublet_rate=0.06)\n\n# Run doublet detection\ndoublet_scores, predicted_doublets = scrub.scrub_doublets()\n\n# Plot histogram of doublet scores\nscrub.plot_histogram()\nplt.show()\n\nprint(f'Detected {predicted_doublets.sum()} doublets')",
+      "quick_start": [
+        "Install: pip install scrublet",
+        "Initialize: scrub = scr.Scrublet(counts_matrix)",
+        "Detect: scores, doublets = scrub.scrub_doublets()",
+        "Plot: scrub.plot_histogram()",
+        "Filter: Remove predicted doublets from dataset"
+      ]
+    },
+    "test_examples": [
+      {
+        "include_examples": true
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_souporcell_info",
+    "description": "Get comprehensive information about souporcell \u2013 scRNA-seq genotype clustering",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about souporcell"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "souporcell",
+    "local_info": {
+      "name": "souporcell",
+      "description": "Clustering single-cell RNA-seq data by genotype. Deconvolutes multiplexed scRNA-seq samples by identifying genetic variants and assigning cells to individuals based on their genotype profiles.",
+      "category": "Single-Cell Genomics / Demultiplexing",
+      "import_name": "souporcell",
+      "popularity": 70,
+      "keywords": [
+        "single-cell",
+        "genotype clustering",
+        "demultiplexing",
+        "scRNA-seq",
+        "variant calling"
+      ],
+      "documentation": "https://github.com/wheaton5/souporcell",
+      "repository": "https://github.com/wheaton5/souporcell",
+      "installation": {
+        "pip": "pip install souporcell",
+        "conda": "conda install -c conda-forge souporcell"
+      },
+      "usage_example": "# souporcell is primarily a command-line tool\n# Here we demonstrate the concepts and analysis workflow\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.cluster import KMeans\nfrom sklearn.decomposition import PCA\nfrom sklearn.metrics import adjusted_rand_score\nimport tempfile\nimport os\n\nprint('souporcell - Single-cell Genotype Clustering')\nprint('=' * 45)\n\n# Overview of souporcell workflow\nprint('souporcell Workflow:')\nprint('1. Variant calling from scRNA-seq reads')\nprint('2. Genotype matrix construction')\nprint('3. Clustering cells by genotype similarity')\nprint('4. Assignment of cells to individuals')\nprint('5. Quality control and validation')\n\nprint('\\nKey Features:')\nprint('\u2022 Handles multiplexed scRNA-seq samples')\nprint('\u2022 No prior genotype information required')\nprint('\u2022 Identifies ambient RNA contamination')\nprint('\u2022 Provides cluster assignments and QC metrics')\nprint('\u2022 Compatible with 10x Genomics data')\n\n# Simulate multiplexed single-cell data\nprint('\\n=== Simulating Multiplexed scRNA-seq Data ===')\n\nnp.random.seed(42)\n\n# Simulation parameters\nn_individuals = 4\nn_cells_per_individual = 500\nn_variants = 1000\nn_genes = 2000\n\ntotal_cells = n_individuals * n_cells_per_individual\nprint(f'Simulating {total_cells} cells from {n_individuals} individuals')\nprint(f'Using {n_variants} genetic variants and {n_genes} genes')\n\n# Generate individual genotypes\nprint('\\nGenerating individual genotypes...')\nindividual_genotypes = {}\n\nfor ind_id in range(n_individuals):\n    # Each individual has different allele frequencies\n    genotype = np.random.choice([0, 1, 2], size=n_variants, p=[0.6, 0.3, 0.1])\n    individual_genotypes[f'Individual_{ind_id}'] = genotype\n\nprint(f'Generated genotypes for {len(individual_genotypes)} individuals')\n\n# Calculate genotype differences between individuals\ngenotype_matrix = np.array([geno for geno in individual_genotypes.values()])\nprint(f'Genotype matrix shape: {genotype_matrix.shape}')\n\n# Pairwise differences\nprint('\\nPairwise genotype differences:')\nfor i in range(n_individuals):\n    for j in range(i+1, n_individuals):\n        diff = np.sum(genotype_matrix[i] != genotype_matrix[j])\n        similarity = 1 - (diff / n_variants)\n        print(f'  Individual_{i} vs Individual_{j}: {diff} differences ({similarity:.3f} similarity)')\n\n# Generate cell-level data\nprint('\\nGenerating cell-level genotype data...')\n\ncell_genotypes = []\ncell_labels = []\ncell_ids = []\n\nfor ind_id in range(n_individuals):\n    individual_geno = individual_genotypes[f'Individual_{ind_id}']\n    \n    for cell_id in range(n_cells_per_individual):\n        # Add noise to simulate technical variation and allelic dropout\n        cell_geno = individual_geno.copy()\n        \n        # Simulate allelic dropout (some variants not detected)\n        dropout_rate = 0.1\n        dropout_mask = np.random.random(n_variants) < dropout_rate\n        cell_geno[dropout_mask] = 0  # Set to homozygous reference\n        \n        # Add some random noise (technical errors)\n        noise_rate = 0.02\n        noise_mask = np.random.random(n_variants) < noise_rate\n        cell_geno[noise_mask] = np.random.choice([0, 1, 2], size=np.sum(noise_mask))\n        \n        cell_genotypes.append(cell_geno)\n        cell_labels.append(ind_id)\n        cell_ids.append(f'Cell_{ind_id}_{cell_id}')\n\ncell_genotype_matrix = np.array(cell_genotypes)\nprint(f'Cell genotype matrix shape: {cell_genotype_matrix.shape}')\nprint(f'Cells per individual: {[cell_labels.count(i) for i in range(n_individuals)]}')\n\n# Add ambient RNA contamination (doublets)\nprint('\\nSimulating ambient RNA contamination (doublets)...')\nn_doublets = 100\n\nfor doublet_id in range(n_doublets):\n    # Mix genotypes from two random individuals\n    ind1, ind2 = np.random.choice(n_individuals, size=2, replace=False)\n    \n    geno1 = individual_genotypes[f'Individual_{ind1}']\n    geno2 = individual_genotypes[f'Individual_{ind2}']\n    \n    # Create mixed genotype (roughly 50:50 mix)\n    mixed_geno = np.where(np.random.random(n_variants) < 0.5, geno1, geno2)\n    \n    # Add to cell data\n    cell_genotypes.append(mixed_geno)\n    cell_labels.append(-1)  # Doublet label\n    cell_ids.append(f'Doublet_{doublet_id}')\n\n# Update matrices\ncell_genotype_matrix = np.array(cell_genotypes)\ntotal_cells_with_doublets = len(cell_genotypes)\n\nprint(f'Total cells (including doublets): {total_cells_with_doublets}')\nprint(f'Doublets added: {n_doublets}')\nprint(f'Singlets: {total_cells_with_doublets - n_doublets}')\n\n# Dimensionality reduction for visualization\nprint('\\n=== Genotype-based Clustering Analysis ===')\n\n# PCA on genotype data\nprint('Performing PCA on genotype matrix...')\npca = PCA(n_components=10)\npca_result = pca.fit_transform(cell_genotype_matrix)\n\nprint(f'PCA explained variance ratio (first 5 components): {pca.explained_variance_ratio_[:5]}')\nprint(f'Cumulative explained variance (first 5): {np.cumsum(pca.explained_variance_ratio_[:5])}')\n\n# K-means clustering\nprint('\\nPerforming K-means clustering...')\n\n# Try different numbers of clusters\ncluster_range = range(2, 8)\ninertias = []\nari_scores = []\n\nfor k in cluster_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n    cluster_labels = kmeans.fit_predict(pca_result[:, :5])  # Use first 5 PCs\n    \n    inertias.append(kmeans.inertia_)\n    \n    # Calculate ARI against true labels (excluding doublets)\n    true_labels_clean = [label for label in cell_labels if label != -1]\n    cluster_labels_clean = cluster_labels[:len(true_labels_clean)]\n    \n    if len(set(true_labels_clean)) > 1 and len(set(cluster_labels_clean)) > 1:\n        ari = adjusted_rand_score(true_labels_clean, cluster_labels_clean)\n        ari_scores.append(ari)\n    else:\n        ari_scores.append(0)\n\nprint(f'Inertias for k=2 to 7: {[f\"{inertia:.0f}\" for inertia in inertias]}')\nprint(f'ARI scores for k=2 to 7: {[f\"{ari:.3f}\" for ari in ari_scores]}')\n\n# Choose optimal k (highest ARI)\nbest_k = cluster_range[np.argmax(ari_scores)]\nprint(f'\\nOptimal number of clusters: {best_k} (ARI: {max(ari_scores):.3f})')\n\n# Final clustering with optimal k\nfinal_kmeans = KMeans(n_clusters=best_k, random_state=42, n_init=10)\nfinal_clusters = final_kmeans.fit_predict(pca_result[:, :5])\n\n# Analyze cluster assignments\nprint('\\n=== Cluster Assignment Analysis ===')\n\n# Create assignment matrix\ncluster_assignment = pd.DataFrame({\n    'cell_id': cell_ids,\n    'true_individual': cell_labels,\n    'predicted_cluster': final_clusters,\n    'is_doublet': [label == -1 for label in cell_labels]\n})\n\nprint(f'Cluster assignment summary:')\nprint(cluster_assignment.groupby(['true_individual', 'predicted_cluster']).size().unstack(fill_value=0))\n\n# Calculate cluster purity\nprint('\\nCluster purity analysis:')\nfor cluster_id in range(best_k):\n    cluster_cells = cluster_assignment[cluster_assignment['predicted_cluster'] == cluster_id]\n    \n    if len(cluster_cells) > 0:\n        # Exclude doublets from purity calculation\n        singlets_in_cluster = cluster_cells[~cluster_cells['is_doublet']]\n        \n        if len(singlets_in_cluster) > 0:\n            most_common_individual = singlets_in_cluster['true_individual'].mode()\n            if len(most_common_individual) > 0:\n                purity = (singlets_in_cluster['true_individual'] == most_common_individual.iloc[0]).mean()\n                print(f'  Cluster {cluster_id}: {len(cluster_cells)} cells, '\n                      f'purity = {purity:.3f}, '\n                      f'doublets = {cluster_cells[\"is_doublet\"].sum()}')\n\n# Doublet detection analysis\nprint('\\n=== Doublet Detection Analysis ===')\n\n# Cells in clusters with mixed individuals are potential doublets\ndoublet_scores = []\n\nfor idx, row in cluster_assignment.iterrows():\n    cluster_id = row['predicted_cluster']\n    cluster_cells = cluster_assignment[cluster_assignment['predicted_cluster'] == cluster_id]\n    \n    # Calculate heterogeneity score for this cluster\n    singlets_in_cluster = cluster_cells[~cluster_cells['is_doublet']]\n    \n    if len(singlets_in_cluster) > 1:\n        individual_counts = singlets_in_cluster['true_individual'].value_counts()\n        heterogeneity = 1 - (individual_counts.max() / len(singlets_in_cluster))\n    else:\n        heterogeneity = 0\n    \n    doublet_scores.append(heterogeneity)\n\ncluster_assignment['doublet_score'] = doublet_scores\n\n# Set threshold for doublet detection\ndoublet_threshold = 0.3\npredicted_doublets = cluster_assignment['doublet_score'] > doublet_threshold\n\n# Evaluate doublet detection\ntrue_doublets = cluster_assignment['is_doublet']\ndoublet_tp = sum(predicted_doublets & true_doublets)\ndoublet_fp = sum(predicted_doublets & ~true_doublets)\ndoublet_fn = sum(~predicted_doublets & true_doublets)\ndoublet_tn = sum(~predicted_doublets & ~true_doublets)\n\ndoublet_precision = doublet_tp / (doublet_tp + doublet_fp) if (doublet_tp + doublet_fp) > 0 else 0\ndoublet_recall = doublet_tp / (doublet_tp + doublet_fn) if (doublet_tp + doublet_fn) > 0 else 0\n\nprint(f'Doublet detection performance:')\nprint(f'  True doublets: {sum(true_doublets)}')\nprint(f'  Predicted doublets: {sum(predicted_doublets)}')\nprint(f'  Precision: {doublet_precision:.3f}')\nprint(f'  Recall: {doublet_recall:.3f}')\n\n# Quality control metrics\nprint('\\n=== Quality Control Metrics ===')\n\n# Calculate per-cell variant detection rate\nvariant_detection_rates = []\nfor cell_geno in cell_genotype_matrix:\n    non_zero_variants = np.sum(cell_geno > 0)\n    detection_rate = non_zero_variants / n_variants\n    variant_detection_rates.append(detection_rate)\n\ncluster_assignment['variant_detection_rate'] = variant_detection_rates\n\nprint(f'Variant detection rates:')\nprint(f'  Mean: {np.mean(variant_detection_rates):.3f}')\nprint(f'  Median: {np.median(variant_detection_rates):.3f}')\nprint(f'  Range: {np.min(variant_detection_rates):.3f} - {np.max(variant_detection_rates):.3f}')\n\n# Per-individual statistics\nprint(f'\\nPer-individual assignment accuracy:')\nfor ind_id in range(n_individuals):\n    individual_cells = cluster_assignment[cluster_assignment['true_individual'] == ind_id]\n    \n    if len(individual_cells) > 0:\n        # Most common cluster assignment\n        most_common_cluster = individual_cells['predicted_cluster'].mode()\n        if len(most_common_cluster) > 0:\n            accuracy = (individual_cells['predicted_cluster'] == most_common_cluster.iloc[0]).mean()\n            print(f'  Individual {ind_id}: {accuracy:.3f} ({len(individual_cells)} cells)')\n\n# Visualization\nprint('\\n=== Visualization ===')\n\nfig, axes = plt.subplots(2, 2, figsize=(15, 12))\n\n# 1. PCA plot colored by true individual\nscatter1 = axes[0, 0].scatter(pca_result[:, 0], pca_result[:, 1], \n                             c=cell_labels, cmap='tab10', alpha=0.6, s=20)\naxes[0, 0].set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')\naxes[0, 0].set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')\naxes[0, 0].set_title('PCA - True Individuals')\n\n# 2. PCA plot colored by predicted cluster\nscatter2 = axes[0, 1].scatter(pca_result[:, 0], pca_result[:, 1], \n                             c=final_clusters, cmap='tab10', alpha=0.6, s=20)\naxes[0, 1].set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')\naxes[0, 1].set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')\naxes[0, 1].set_title('PCA - Predicted Clusters')\n\n# 3. Clustering evaluation metrics\nmetrics = ['Elbow Method', 'ARI Score']\naxes[1, 0].plot(cluster_range, inertias, 'bo-', label='Inertia')\naxes[1, 0].set_xlabel('Number of Clusters')\naxes[1, 0].set_ylabel('Inertia', color='blue')\naxes[1, 0].set_title('Clustering Evaluation')\naxes[1, 0].tick_params(axis='y', labelcolor='blue')\n\n# Secondary y-axis for ARI\nax_twin = axes[1, 0].twinx()\nax_twin.plot(cluster_range, ari_scores, 'ro-', label='ARI')\nax_twin.set_ylabel('Adjusted Rand Index', color='red')\nax_twin.tick_params(axis='y', labelcolor='red')\nax_twin.axvline(x=best_k, color='green', linestyle='--', alpha=0.7, label=f'Optimal k={best_k}')\n\n# 4. Doublet score distribution\naxes[1, 1].hist(cluster_assignment[cluster_assignment['is_doublet']]['doublet_score'], \n               alpha=0.7, label='True doublets', bins=20, color='red')\naxes[1, 1].hist(cluster_assignment[~cluster_assignment['is_doublet']]['doublet_score'], \n               alpha=0.7, label='Singlets', bins=20, color='blue')\naxes[1, 1].axvline(x=doublet_threshold, color='green', linestyle='--', \n                  label=f'Threshold ({doublet_threshold})')\naxes[1, 1].set_xlabel('Doublet Score')\naxes[1, 1].set_ylabel('Count')\naxes[1, 1].set_title('Doublet Score Distribution')\naxes[1, 1].legend()\n\nplt.tight_layout()\n\n# Save visualization\nwith tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp:\n    plt.savefig(tmp.name, dpi=150, bbox_inches='tight')\n    viz_file = tmp.name\n\nplt.close()\nprint(f'Analysis visualization saved to: {viz_file}')\n\n# Summary report\nprint('\\n' + '=' * 45)\nprint('SOUPORCELL ANALYSIS SUMMARY')\nprint('=' * 45)\nprint(f'Total cells analyzed: {total_cells_with_doublets:}')\nprint(f'True individuals: {n_individuals}')\nprint(f'Predicted clusters: {best_k}')\nprint(f'Clustering accuracy (ARI): {max(ari_scores):.3f}')\nprint(f'\\nDoublet detection:')\nprint(f'  True doublets: {sum(true_doublets)}')\nprint(f'  Detected doublets: {sum(predicted_doublets)}')\nprint(f'  Precision: {doublet_precision:.3f}')\nprint(f'  Recall: {doublet_recall:.3f}')\nprint(f'\\nQuality metrics:')\nprint(f'  Mean variant detection rate: {np.mean(variant_detection_rates):.3f}')\nprint(f'  Genetic variants used: {n_variants:}')\n\n# Cleanup\nos.unlink(viz_file)\nprint('\\nDemo complete - temporary files cleaned up')\n\nprint('\\nsouporcell provides:')\nprint('\u2022 Genotype-based cell clustering')\nprint('\u2022 Multiplexed sample demultiplexing')\nprint('\u2022 Doublet detection and removal')\nprint('\u2022 Quality control metrics')\nprint('\u2022 Integration with standard scRNA-seq pipelines')\nprint('\u2022 Support for 10x Genomics data')\nprint('\u2022 Ambient RNA contamination detection')\n\nprint('\\nTypical souporcell command:')\nprint('souporcell_pipeline.py -i possorted_genome_bam.bam \\\\')\nprint('  -b filtered_feature_bc_matrix -f reference.fasta \\\\')\nprint('  -t 8 -o souporcell_output -k 4')",
+      "quick_start": [
+        "Install: pip install souporcell",
+        "Run: souporcell_pipeline.py -i input.bam -b barcodes",
+        "Reference: -f reference.fasta",
+        "Clusters: -k number_of_individuals",
+        "Output: -o output_directory",
+        "Check cluster assignments in output files"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyscenic_info",
+    "description": "Get comprehensive information about pySCENIC \u2013 single-cell regulatory network inference",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about pySCENIC"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "pyscenic",
+    "local_info": {
+      "name": "pySCENIC",
+      "description": "Python implementation of SCENIC (Single-CEll regulatory Network Inference and Clustering) for inferring gene regulatory networks from single-cell RNA-seq data and identifying cell states.",
+      "category": "Single-Cell Regulatory Networks",
+      "import_name": "pyscenic",
+      "popularity": 75,
+      "keywords": [
+        "regulatory networks",
+        "transcription factors",
+        "single-cell",
+        "gene regulation",
+        "SCENIC"
+      ],
+      "documentation": "https://pyscenic.readthedocs.io/",
+      "repository": "https://github.com/aertslab/pySCENIC",
+      "installation": {
+        "pip": "pip install pyscenic",
+        "conda": "conda install -c bioconda pyscenic"
+      },
+      "usage_example": "import pandas as pd\nfrom pyscenic.utils import modules_from_adjacencies\nfrom pyscenic.prune import prune2df, df2regulons\nfrom pyscenic.aucell import aucell\n\n# Load expression data (genes x cells)\nex_matrix = pd.read_csv('expression_matrix.csv', index_col=0)\n\n# Step 1: Infer co-expression modules\n# This step requires GRNBoost2 or GENIE3\n# adjacencies = grnboost2(ex_matrix, tf_names=tf_names)\n\n# Step 2: Prune modules for targets with cis-regulatory footprints\n# Requires motif databases and cis-regulatory regions\n# df = prune2df(dbs, modules, motif_annotations)\n# regulons = df2regulons(df)\n\n# Step 3: Calculate cellular enrichment (AUCell)\n# auc_matrix = aucell(ex_matrix, regulons)\n\nprint('pySCENIC workflow:')\nprint('1. Infer co-expression modules with GRNBoost2')\nprint('2. Prune modules using motif enrichment')\nprint('3. Score regulon activity with AUCell')\nprint('4. Identify cell states and types')\n\n# Note: Full workflow requires additional data files:\n# - Transcription factor list\n# - Motif databases (e.g., JASPAR)\n# - Cis-regulatory regions (e.g., from ENCODE)",
+      "quick_start": [
+        "Install: pip install pyscenic",
+        "Prepare expression matrix (genes x cells)",
+        "Download motif databases and TF annotations",
+        "Run GRNBoost2: infer co-expression modules",
+        "Prune modules: prune2df() with motif data",
+        "Score activity: aucell() for regulon enrichment"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_tiledbsoma_info",
+    "description": "Get comprehensive information about TileDB-SOMA \u2013 single-cell data storage with TileDB",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "info_type": {
+          "type": "string",
+          "enum": [
+            "overview",
+            "installation",
+            "usage",
+            "documentation"
+          ],
+          "description": "Type of information to retrieve about TileDB-SOMA"
+        }
+      },
+      "required": [
+        "info_type"
+      ]
+    },
+    "package_name": "tiledbsoma",
+    "local_info": {
+      "name": "TileDB-SOMA",
+      "description": "Single-cell Observation Matrix API (SOMA) implementation using TileDB for efficient storage and retrieval of single-cell genomics data. Provides scalable access to large single-cell datasets.",
+      "category": "Single-Cell Data Storage",
+      "import_name": "tiledbsoma",
+      "popularity": 60,
+      "keywords": [
+        "single-cell",
+        "SOMA",
+        "TileDB",
+        "genomics storage",
+        "scalable data access"
+      ],
+      "documentation": "https://github.com/single-cell-data/TileDB-SOMA",
+      "repository": "https://github.com/single-cell-data/TileDB-SOMA",
+      "installation": {
+        "pip": "pip install tiledbsoma",
+        "conda": "conda install -c conda-forge tiledbsoma"
+      },
+      "usage_example": "import tiledbsoma as soma\nimport numpy as np\nimport pandas as pd\nimport tempfile\nimport os\n\n# Create temporary directory for demo\ntemp_dir = tempfile.mkdtemp()\nsoma_uri = os.path.join(temp_dir, 'demo_soma')\n\nprint(f'Creating SOMA experiment at: {soma_uri}')\n\n# Create sample single-cell data\nn_obs = 1000  # cells\nn_var = 2000  # genes\n\n# Create observation (cell) metadata\nobs_data = pd.DataFrame({\n    'cell_id': [f'cell_{i}' for i in range(n_obs)],\n    'cell_type': np.random.choice(['TypeA', 'TypeB', 'TypeC'], n_obs),\n    'batch': np.random.choice(['batch1', 'batch2'], n_obs),\n    'n_genes': np.random.poisson(1500, n_obs)\n})\nobs_data.set_index('cell_id', inplace=True)\n\n# Create variable (gene) metadata\nvar_data = pd.DataFrame({\n    'gene_id': [f'gene_{i}' for i in range(n_var)],\n    'gene_name': [f'Gene_{i}' for i in range(n_var)],\n    'highly_variable': np.random.choice([True, False], n_var, p=[0.2, 0.8])\n})\nvar_data.set_index('gene_id', inplace=True)\n\nprint(f'Created metadata: {n_obs} cells, {n_var} genes')\n\n# Create sparse expression matrix\nfrom scipy.sparse import random as sparse_random\nX_sparse = sparse_random(n_obs, n_var, density=0.1, format='csr', \n                        random_state=42) * 100\nX_sparse = X_sparse.astype(np.float32)\n\nprint(f'Created sparse matrix: {X_sparse.shape}, density: {X_sparse.nnz / X_sparse.size:.3f}')\n\n# Create SOMA experiment\nwith soma.Experiment.create(soma_uri) as exp:\n    # Add observation metadata\n    exp.obs = soma.DataFrame.create(\n        os.path.join(soma_uri, 'obs'),\n        schema=soma.DataFrame._build_schema_from_pandas(obs_data)\n    )\n    exp.obs.write(obs_data)\n    \n    # Add variable metadata\n    exp.var = soma.DataFrame.create(\n        os.path.join(soma_uri, 'var'),\n        schema=soma.DataFrame._build_schema_from_pandas(var_data)\n    )\n    exp.var.write(var_data)\n    \n    print('Written metadata to SOMA experiment')\n\n# Read data back\nprint('\\nReading data from SOMA experiment:')\nwith soma.Experiment.open(soma_uri) as exp:\n    # Read observation metadata\n    obs_df = exp.obs.read().concat().to_pandas()\n    print(f'Observations: {obs_df.shape}')\n    print(f'Cell types: {obs_df[\"cell_type\"].value_counts().to_dict()}')\n    \n    # Read variable metadata\n    var_df = exp.var.read().concat().to_pandas()\n    print(f'Variables: {var_df.shape}')\n    print(f'Highly variable genes: {var_df[\"highly_variable\"].sum()}')\n\n# Cleanup\nimport shutil\nshutil.rmtree(temp_dir)\nprint('\\nDemo complete - temporary files cleaned up')\n\nprint('\\nTileDB-SOMA provides:')\nprint('- Efficient storage for large single-cell datasets')\nprint('- SOMA API compatibility')\nprint('- Integration with scanpy and other tools')\nprint('- Cloud-native storage capabilities')",
+      "quick_start": [
+        "Install: pip install tiledbsoma",
+        "Create experiment: soma.Experiment.create(uri)",
+        "Add metadata: exp.obs/var = soma.DataFrame.create()",
+        "Write data: dataframe.write(pandas_df)",
+        "Read data: dataframe.read().concat().to_pandas()",
+        "Integrate with single-cell analysis workflows"
+      ]
+    },
+    "test_examples": [
+      {
+        "info_type": "overview"
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_scvi_tools_info",
+    "description": "Get information about the scvi-tools package. Deep probabilistic analysis of single-cell omics data",
+    "package_name": "scvi-tools",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_cellrank_info",
+    "description": "Get information about the cellrank package. Trajectory inference and cell fate mapping in single-cell data",
+    "package_name": "cellrank",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_velocyto_info",
+    "description": "Get information about the velocyto package. RNA velocity analysis for single cell RNA-seq data",
+    "package_name": "velocyto",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_scanorama_info",
+    "description": "Get information about the scanorama package. Batch correction and integration of single-cell data",
+    "package_name": "scanorama",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_palantir_info",
+    "description": "Get information about the palantir package. Algorithm for modeling continuous cell state transitions",
+    "package_name": "palantir",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_episcanpy_info",
+    "description": "Get information about the episcanpy package. Epigenomics single cell analysis in Python",
+    "package_name": "episcanpy",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": [],
+    "test_examples": [
+      {}
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "package_name": {
+          "type": "string",
+          "description": "Name of the package"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief summary of the package"
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest version number"
+        },
+        "author": {
+          "type": ["string", "null"],
+          "description": "Author or maintainer"
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License type"
+        },
+        "home_page": {
+          "type": ["string", "null"],
+          "description": "Home page URL"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "Documentation URL"
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository"
+        },
+        "python_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported Python versions (classifiers)"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords associated with the package"
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "pip": {
+              "type": "string"
+            },
+            "conda": {
+              "type": "string"
+            },
+            "pip_upgrade": {
+              "type": "string"
+            }
+          },
+          "description": "Installation commands"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of information (pypi or local)"
+        },
+        "usage_example": {
+          "type": "string",
+          "description": "Code snippet demonstrating basic usage"
+        },
+        "quick_start": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Step-by-step guide to get started"
+        }
+      }
+    }
+  }
+]

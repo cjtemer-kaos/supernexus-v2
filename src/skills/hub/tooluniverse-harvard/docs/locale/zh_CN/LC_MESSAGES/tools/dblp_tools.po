@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/dblp_tools.rst:2 e89c46a4bcc848fb8ffe0ae06060aab4
+msgid "Dblp Tools"
+msgstr "Dblp 工具"
+
+#: ../../tools/dblp_tools.rst:4 f21e2ec3f51c4832a5ca594847bca001
+msgid ""
+"**Configuration File**: ``dblp_tools.json`` **Tool Type**: Local **Tools "
+"Count**: 1"
+msgstr ""
+"**配置文件**：``dblp_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/dblp_tools.rst:8 dfcc6b11118b488ab54a7b45d2019972
+msgid ""
+"This page contains all tools defined in the ``dblp_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``dblp_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/dblp_tools.rst:11 d8beb35354da4db5b938e29408b6f3a0
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/dblp_tools.rst:14 eeb81ae11cfe4580847cd10911ff92ae
+msgid "**DBLP_search_publications** (Type: DBLPTool)"
+msgstr "**DBLP_search_publications**（类型：DBLP工具）"
+
+#: ../../tools/dblp_tools.rst:16 692c5a7f18c54cf991d22658a1146bcb
+msgid ""
+"Search DBLP Computer Science Bibliography for publications. Returns "
+"publications with title, auth..."
+msgstr "在 DBLP 计算机科学文献数据库中搜索出版物。返回包含标题、作者的出版物信息..."
+
+#: ../../tools/dblp_tools.rst ba1163202c50428792d48bc3e97c4b1d
+msgid "DBLP_search_publications tool specification"
+msgstr "DBLP_search_publications 工具规格说明"
+
+#: ../../tools/dblp_tools.rst:20 81396563835d4613a62de04950dc59b3
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/dblp_tools.rst:22 c545c607f9ce499e978c6634be0ef0d3
+msgid "**Name**: ``DBLP_search_publications``"
+msgstr "**名称**：``DBLP_search_publications``"
+
+#: ../../tools/dblp_tools.rst:23 21ec147b245a49ad8a3bb50bb908c4d8
+msgid "**Type**: ``DBLPTool``"
+msgstr "**类型**：``DBLPTool``"
+
+#: ../../tools/dblp_tools.rst:24 4de4ae80af1941fe8a19839ab30d9cf2
+msgid ""
+"**Description**: Search DBLP Computer Science Bibliography for "
+"publications. Returns publications with title, authors, year, venue, URL,"
+" and electronic edition link."
+msgstr "**描述**：搜索 DBLP 计算机科学文献数据库中的出版物。返回包含标题、作者、年份、发表地点、URL 及电子版链接的出版物信息。"
+
+#: ../../tools/dblp_tools.rst:26 6eede9248e1d4664a28923a05143e86b
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/dblp_tools.rst:28 989de9bb2aa0473f9583362d09292407
+msgid ""
+"``query`` (string) (required) Search query for DBLP publications. Use "
+"keywords separated by spaces to refine your search."
+msgstr "``query``（字符串）（必填）用于搜索DBLP出版物的查询。使用空格分隔的关键词以细化搜索。"
+
+#: ../../tools/dblp_tools.rst:31 80b03b4e28c148a4b93a2e9fdb705e6a
+#, fuzzy
+msgid ""
+"``limit`` (integer) (required) Number of publications to return. This "
+"sets the maximum number of publications retrieved from DBLP."
+msgstr "``limit``（整数）（可选）返回的出版物数量。此参数设置从 DBLP 检索的最大出版物数量。"
+
+#: ../../tools/dblp_tools.rst:34 efa9ef021e5d41d78eaec4b6741ba606
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/dblp_tools.rst:49 df664b6ef90342759f19dfef61daa201
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/dblp_tools.rst:51 397b4f33f410435997d0a96f41251423
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具总览"
+
+#: ../../tools/dblp_tools.rst:52 aefbe6b181c14b23ae0baf9fd2625949
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"
+

@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:2
+#: b972772ca7164dd8ae2e4bdd83bdefe4
+msgid "Advanced Remote Tool Patterns"
+msgstr "高级远程工具模式"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:4
+#: cf5de1fa78764ffe8570ad5a7e3e4a89
+msgid ""
+"Learn advanced patterns for building robust, scalable remote tools and MCP "
+"servers."
+msgstr "学习构建强大且可扩展的远程工具和MCP服务器的高级模式。"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:7
+#: 09d8b8f66b5948a3ab3a03d54df1fb76
+msgid "Circuit Breaker Pattern"
+msgstr "断路器模式"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:9
+#: 6c5f135f499c4ad399457fb48547b316
+msgid "Implement circuit breaker for resilient remote calls:"
+msgstr "为实现弹性远程调用，实施断路器机制："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:79
+#: fba6cca387e4458ea72cfe8e3d3dd5ad
+msgid "Load Balancing"
+msgstr "负载均衡"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:81
+#: 68f7e519c34a43628003452441de1544
+msgid "Implement load balancing for multiple service instances:"
+msgstr "为多个服务实例实施负载均衡："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:152
+#: 4844b2f67c664801be95e8616940296e
+msgid "Retry with Exponential Backoff"
+msgstr "指数退避重试"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:154
+#: 429394938dfa45b69fe9855f7266ab5c
+msgid "Implement retry logic with exponential backoff:"
+msgstr "实现带有指数退避的重试逻辑："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:212
+#: 2c87a49d53fa4d44a5241e754fb974fe
+msgid "Caching Strategies"
+msgstr "缓存策略"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:214
+#: 7228b3199203441ab200c967ed03c4af
+msgid "Implement various caching strategies:"
+msgstr "实施多种缓存策略："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:292
+#: daaa4c9be5464f5687bc82c61583e597
+msgid "Rate Limiting"
+msgstr "速率限制"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:294
+#: f620bc3f990f408099620a14e55931aa
+msgid "Implement rate limiting for API protection:"
+msgstr "为API保护实施速率限制："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:352
+#: d9b062c2d2cf4a89b86ffff00f8c60f8
+msgid "Health Checks and Monitoring"
+msgstr "健康检查与监控"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:354
+#: b1082c6a0bee483fb891142955e5d10d
+msgid "Implement comprehensive health checks:"
+msgstr "实施全面健康检查："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:439
+#: 14d98f4b18474d3b8c570179a02a7ddc
+msgid "Async Operations"
+msgstr "异步操作"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:441
+#: 8decf6cc14704cb697fb675e14ecebb6
+msgid "Implement async operations for better performance:"
+msgstr "实现异步操作以提升性能："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:502
+#: f373f8ab0b144cb0815874323ade9be0
+msgid "Testing Advanced Patterns"
+msgstr "测试高级模式"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:504
+#: e558d3f6368c438ca1d68ba3a7c41f85
+msgid "Test your advanced patterns:"
+msgstr "测试您的高级模式："
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:598
+#: 01e710fdcb724d2c8ef662a9103d1605
+msgid "Best Practices Summary"
+msgstr "最佳实践摘要"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:600
+#: c17b9c6696ae47aba6f024b9d627d92b
+msgid ""
+"**1. Error Handling** - Use circuit breakers for external dependencies - "
+"Implement retry with exponential backoff - Provide meaningful error messages"
+msgstr "**1. 错误处理** - 对外部依赖使用断路器 - 实现带有指数退避的重试机制 - 提供有意义的错误信息"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:605
+#: 3e0753bb54ab4a8dbd73a02c428c8759
+msgid ""
+"**2. Performance** - Use caching for expensive operations - Implement load "
+"balancing for scalability - Use async operations for I/O bound tasks"
+msgstr "**2. 性能** - 对耗时操作使用缓存 - 实现负载均衡以提高可扩展性 - 对 I/O 密集型任务使用异步操作"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:610
+#: 158d520757814ef2a3526bd8d4ffde2a
+msgid ""
+"**3. Reliability** - Add comprehensive health checks - Implement rate "
+"limiting - Monitor system resources"
+msgstr "**3. 可靠性** - 添加全面的健康检查 - 实施速率限制 - 监控系统资源"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:615
+#: 2604b0d59d2f4ee88a40e69991a46d77
+msgid ""
+"**4. Testing** - Test all failure scenarios - Use mocks for external "
+"dependencies - Test under load conditions"
+msgstr "**4. 测试** - 测试所有故障场景 - 使用模拟对象替代外部依赖 - 在负载条件下进行测试"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:620
+#: 46498cd6195140b799f3e048077fd106
+msgid ""
+"**5. Monitoring** - Log important operations - Track performance metrics - "
+"Set up alerts for failures"
+msgstr "**5. 监控** - 记录重要操作 - 跟踪性能指标 - 设置故障警报"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:626
+#: 39f61f37eddc49628988ec5d8ae98ff4
+msgid "Next Steps"
+msgstr "下一步"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:628
+#: c7e5ab6fcb89452690a6d4b14a08bc1c
+msgid ""
+"🚀 **Contributing**: :doc:`../contributing/remote_tools` - Submit your "
+"advanced MCP server"
+msgstr "🚀 **贡献**：:doc:`../contributing/remote_tools` - 提交您的高级MCP服务器"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:629
+#: e55e45f467494ec9bcc8e0bb4628a7bd
+msgid "📚 **Tutorial**: :doc:`tutorial` - Learn basic remote tool integration"
+msgstr "📚 **教程**: :doc:`tutorial` - 学习基本的远程工具集成"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:630
+#: fb01774efc8046d8a427a15f3aa2e35e
+msgid "🔧 **MCP Server**: :doc:`mcp_server` - Learn MCP server development"
+msgstr "🔧 **MCP服务器**：:doc:`mcp_server` - 了解MCP服务器开发"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:631
+#: ca214f6ef2f545fb8d84e99ba1c8d261
+msgid ""
+"🔍 **Architecture**: :doc:`../reference/architecture` - Understand "
+"ToolUniverse internals"
+msgstr "🔍 **架构**: :doc:`../reference/architecture` - 了解 ToolUniverse 的内部结构"
+
+#: ../../expand_tooluniverse/remote_tools/advanced_patterns.rst:634
+#: 4929743044f2447690b69d858e68717d
+msgid ""
+"**Advanced tip**: Start with basic patterns and gradually add complexity. "
+"Always test thoroughly and monitor performance in production!"
+msgstr "**高级提示**：从基本模式开始，逐步增加复杂性。始终进行全面测试，并在生产环境中监控性能！"

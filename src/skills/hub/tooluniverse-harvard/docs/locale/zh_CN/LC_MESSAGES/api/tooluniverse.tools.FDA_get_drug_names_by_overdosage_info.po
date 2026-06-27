@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.rst:2
+#: aa1ba457cac54aeb91bfdf5532d2986a
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_overdosage\\_info module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_overdosage\\_info 模块"
+
+#: 168a9e3eb61b4689aa2479d5e5f82e4c of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info:1
+msgid "FDA_get_drug_names_by_overdosage_info"
+msgstr ""
+"FDA_get_drug_names_by_overdosage_info  \n"
+"获取药物过量信息的药物名称"
+
+#: ae562e7e5acf4023ae0484e2716cec3f ec5b84888fac4a8e83642cd5a7b43ee1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:1
+msgid ""
+"Retrieve drug names based on information about signs, symptoms, and "
+"laboratory findings of acute ..."
+msgstr "根据急性症状、体征和实验室检查结果的信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.rst
+#: 80a857a3203a46849acbfc5ef869bfdc
+msgid "Parameters"
+msgstr "参数"
+
+#: bfe5ab8e2bc54132ab6e729f3e7c8120 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:3
+msgid ""
+"Information about signs, symptoms, and laboratory findings of acute "
+"overdosage."
+msgstr "关于急性过量的体征、症状和实验室检查结果的信息。"
+
+#: e2664629f3094a048260e5a1fac7b0e6 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 49c0c21b99bd4e65afee7655ee4f2842 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 057e024f94e944f89f3db8ded89938f3 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: 1fc115b5987d41a683085a2f188ce443 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 8ea571a179fb4962ba17289cff079a47 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a4b415eb407b46b09111112420c125c8 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.rst
+#: d21d4e10211b4b81a419b6489e92c2c6
+msgid "Return type"
+msgstr "返回类型"
+
+#: 4d79e4f0cee146769063076c735e15d5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_overdosage_info.FDA_get_drug_names_by_overdosage_info:18
+msgid ":py:class:`Any`"
+msgstr ""

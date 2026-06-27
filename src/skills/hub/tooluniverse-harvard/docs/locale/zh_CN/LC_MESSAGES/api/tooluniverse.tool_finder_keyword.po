@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tool_finder_keyword.rst:2
+#: db114ba73c7b4da293bd50e50db2e960
+msgid "tooluniverse.tool\\_finder\\_keyword module"
+msgstr "tooluniverse.tool_finder_keyword 模块"
+
+#: 19c25ee889944c9e819055b60f1a9505 of tooluniverse.tool_finder_keyword:1
+msgid ""
+"Keyword-based Tool Finder - An advanced keyword search tool for finding "
+"relevant tools."
+msgstr "基于关键词的工具查找器 - 一款用于查找相关工具的高级关键词搜索工具。"
+
+#: 07714c4fc8c44e838e2c0cc8d839fbb1 of tooluniverse.tool_finder_keyword:3
+msgid ""
+"This tool provides sophisticated keyword matching functionality using "
+"natural language processing techniques including tokenization, stop word "
+"removal, stemming, and TF-IDF scoring for improved relevance ranking. It "
+"serves as a robust search method when AI-powered search methods are "
+"unavailable."
+msgstr ""
+"该工具利用自然语言处理技术提供高级关键词匹配功能，包括分词、停用词去除、词干提取及TF-"
+"IDF评分，以提升相关性排序效果。当无法使用人工智能驱动的搜索方法时，该工具作为一种强大的搜索手段。"
+
+#: 8533cbf4b1594092b593206b9516065e of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 5dbdcb5520374c5a887e56d41abf9122 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword:1
+msgid ""
+"Advanced keyword-based tool finder that uses sophisticated text processing "
+"and TF-IDF scoring."
+msgstr "基于高级关键词的工具查找器，采用复杂的文本处理和TF-IDF评分技术。"
+
+#: 87dac5ce144f4c53ad000514686e21a8 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword:3
+msgid ""
+"This class implements natural language processing techniques for tool "
+"discovery including: - Tokenization and normalization - Stop word removal - "
+"Basic stemming - TF-IDF relevance scoring - Semantic phrase matching"
+msgstr ""
+"本类实现了用于工具发现的自然语言处理技术，包括：  \n"
+"- 分词与规范化  \n"
+"- 停用词去除  \n"
+"- 基础词干提取  \n"
+"- TF-IDF 相关性评分  \n"
+"- 语义短语匹配"
+
+#: 3481fff9948c4a088ab7cb9f6f9fb40b of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword:10
+msgid ""
+"The search operates by parsing user queries to extract key terms, processing"
+" them through NLP pipelines, and matching against pre-built indices of tool "
+"metadata for efficient and relevant tool discovery."
+msgstr ""
+"搜索通过解析用户查询以提取关键术语，利用自然语言处理（NLP）管道进行处理，并与预先构建的工具元数据索引进行匹配，从而实现高效且相关的工具发现。"
+
+#: 48176bdab1e8471c8b8480b96bedc22f of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.__init__:1
+msgid "Initialize the Advanced Keyword-based Tool Finder."
+msgstr "初始化高级基于关键词的工具查找器。"
+
+#: ../../api/tooluniverse.tool_finder_keyword.rst
+#: 0bd009f5c71140beaf700c0fae1ba470 1488584df6d34694a9ae9b844d2d1f63
+#: 1b29ebd8d7974d468cf43de1373c36c5 3095516a583549cc851b6421bbe6c624
+#: 4f7ddfc31f814c13b4d338c8c1e2ebc0 b2497717975a4fa6aeb20de9be369362
+#: b5bdffcea01045eb8884fda47864ab40 c09efdc210b84b439ad59a2e05b83f34
+#: cfae5da26ebe4e30a295965e7e12d8f8 f52570cf2e7147ad8f59e465bae4e20a
+#: f56a35e5e8f141ec8401e1d6b1e73ec7
+msgid "Parameters"
+msgstr "参数"
+
+#: 65d71927929d4b3494780d03852b900f of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.__init__:3
+msgid "Configuration dictionary for the tool"
+msgstr "工具的配置字典"
+
+#: 1be0dd69af53408ea88290ae80655187 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.__init__:5
+msgid "Reference to the ToolUniverse instance containing all tools"
+msgstr "引用包含所有工具的 ToolUniverse 实例"
+
+#: 9dbd215af8ba49c890f80a0c93b5a547 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._tokenize_and_normalize:1
+msgid ""
+"Tokenize text and apply normalization including stop word removal and "
+"stemming."
+msgstr "对文本进行分词，并应用规范化处理，包括停用词移除和词干提取。"
+
+#: cfb47b98d6cc406d9bc7b4e10a17d83d of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._tokenize_and_normalize:3
+msgid "Input text to tokenize"
+msgstr "输入文本进行分词"
+
+#: ../../api/tooluniverse.tool_finder_keyword.rst
+#: 077e93e829c84cf9ac3024e257eb751e 43674cc800044d22a16e59580386007b
+#: 476ab9201e6f4c0ebd0b2a41d47c98ec 5827ea63347e4c4fa82cbaeb59c85905
+#: 695d0d92ae38413880c30f49a0be5b9f 971badaa8d4a4afc9d65e6b7dd6ff548
+#: 9eccebc134dc4090b73dd079e19ee31f b79a6d32e7394e6d97173bd5125cf0c2
+#: e85d3806387f4551a4c1f308413c76c6
+msgid "Returns"
+msgstr "退货"
+
+#: 794c79b527fc44db9aae089a26263ccb of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._tokenize_and_normalize:6
+msgid "List of processed tokens"
+msgstr "处理后的标记列表"
+
+#: ../../api/tooluniverse.tool_finder_keyword.rst
+#: 100ced789f1042798aa92f2488274f5e 19127b103538409da4d22419fce42bd9
+#: 1a630bde59e04c1ba10eec8645a9b4d3 847b400529974e0b9df35b8119f341f1
+#: 935c86a52b8c4a1b9728ba2b323d4049 b43ae470f56a40cfa815891c7cd831e0
+#: b4a8562a11f54bb9ac81ef057673ce83 da6ec770c7c8413892ee98185402599a
+#: e840a698625b4332a31f7320f69b31f4
+msgid "Return type"
+msgstr "返回类型"
+
+#: abde4d322178437dbca3d05bf04adda6 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._apply_stemming:1
+msgid "Apply basic stemming rules to reduce words to their root form."
+msgstr "应用基本的词干提取规则，将单词还原为其词根形式。"
+
+#: 26ee455814ae4a5f893a73e59debbb39 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._apply_stemming:3
+msgid "Word to stem"
+msgstr "词干提取"
+
+#: 31da282e76984fbe8f8df69a3cc80349 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._apply_stemming:6
+msgid "Stemmed word"
+msgstr "词干词"
+
+#: 18134bdb597d4ebc8b9d8b0dbc58d1ca of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_phrases:1
+msgid "Extract meaningful phrases from tokens for better semantic matching."
+msgstr "从标记中提取有意义的短语以实现更好的语义匹配。"
+
+#: 63ea073a90c041ac8098609ec8122952 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_phrases:3
+msgid "Tokenized words"
+msgstr "分词"
+
+#: 4a21facd20af491d8f9dc3adec834d60 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_phrases:5
+msgid "Maximum length of phrases to extract"
+msgstr "可提取短语的最大长度"
+
+#: a4558ca748334476be5eee874d85bee1 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_phrases:8
+msgid "List of phrases and individual tokens"
+msgstr "短语和单个标记列表"
+
+#: 086adabbef0042c2bf4115542c1f9ec9 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._build_tool_index:1
+msgid ""
+"Build TF-IDF index for all tools to enable efficient relevance scoring."
+msgstr "为所有工具构建TF-IDF索引，以实现高效的相关性评分。"
+
+#: 8ea762380ed446e6a722aa5b73272248 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._build_tool_index:3
+msgid "List of tool configurations"
+msgstr "工具配置列表"
+
+#: 686daf41924441279b9621e2c9f67c6f of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_parameter_text:1
+msgid "Extract searchable text from parameter schema."
+msgstr "从参数模式中提取可搜索文本。"
+
+#: 020af6fbc73746d8aca98672352c0ad3 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_parameter_text:3
+msgid "Tool parameter schema"
+msgstr "工具参数模式"
+
+#: 72e8e4e7cf12425488e0d7b379058467 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._extract_parameter_text:6
+msgid "List of text elements from parameters"
+msgstr "从参数中提取文本元素列表"
+
+#: 82fdf00c21c04b7199b75da1e68a0676 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_tfidf_score:1
+msgid "Calculate TF-IDF relevance score for a tool given query terms."
+msgstr "计算工具针对查询词的TF-IDF相关性得分。"
+
+#: 5a0c5b1720b24396adf095e7085b65cb of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_tfidf_score:3
+msgid "Processed query terms and phrases"
+msgstr "已处理的查询术语和短语"
+
+#: 0fc49ff150864cbdac8f3892a751b95c of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_tfidf_score:5
+msgid "Name of the tool to score"
+msgstr "评分工具名称"
+
+#: 9fbb64e467b14419a3979b48b1ec7ace of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_tfidf_score:8
+msgid "TF-IDF relevance score"
+msgstr "TF-IDF 相关性得分"
+
+#: ba2880fdccb246379742e35e9aac1ebf of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_exact_match_bonus:1
+msgid "Calculate bonus score for exact matches in tool name or key phrases."
+msgstr "计算工具名称或关键短语完全匹配的奖励分数。"
+
+#: 766ca48ec75b41948708c85c6181a309 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_exact_match_bonus:3
+msgid "Original query string"
+msgstr "原始查询字符串"
+
+#: 325cc56a9f674a4d818c1f32a9e00580 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_exact_match_bonus:5
+msgid "Tool configuration"
+msgstr "工具配置"
+
+#: 166b8b5be2d94e78b8341fb34dd73d84 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._calculate_exact_match_bonus:8
+msgid "Exact match bonus score"
+msgstr "完全匹配奖励分数"
+
+#: 610a624a714844008f553d339edddefa of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:1
+msgid "Find relevant tools based on a message or pre-selected tool names."
+msgstr "根据消息或预先选择的工具名称查找相关工具。"
+
+#: ffe6922592cd493f8f293270e7decb24 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:3
+msgid ""
+"This method matches the interface of other tool finders to ensure seamless "
+"replacement. It uses keyword-based search instead of embedding similarity."
+msgstr "该方法与其他工具查找器的接口保持一致，以确保无缝替换。它采用基于关键词的搜索，而非嵌入相似度。"
+
+#: d95ef54e84af490caada395f6f650472 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:6
+msgid ""
+"Query message to find tools for. Required if picked_tool_names is None."
+msgstr "查询消息以查找工具。若 picked_tool_names 为 None，则为必填项。"
+
+#: 48d8d17ccd60463a87621ecfbabd17de of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:8
+msgid "Pre-selected tool names to process. Required if message is None."
+msgstr "预先选择的工具名称以进行处理。如果消息为 None，则为必填项。"
+
+#: 7f2ef34683d34871bc2f4e4cb45cab13 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:10
+msgid "Number of tools to return after filtering. Defaults to 5."
+msgstr "过滤后返回的工具数量。默认值为5。"
+
+#: 8d6bb4f162344c8fabe74bf60b6a603d of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:12
+msgid "If True, returns both prompts and tool names. Defaults to False."
+msgstr "如果为 True，则返回提示词和工具名称。默认值为 False。"
+
+#: ca87aa79278b471b8212884ffcf07924 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:14
+msgid "List of tool categories to filter by."
+msgstr "按工具类别筛选的列表。"
+
+#: 2aa36e599d5f45a4a9dda6cff33f71e5 7dad86c0c5434ac98064e2e7d2cfb18e of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:17
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:13
+msgid ""
+"- If return_call_result is False: Tool prompts as a formatted string - If "
+"return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr ""
+"- 如果 return_call_result 为 False：工具提示为格式化字符串  \n"
+"- 如果 return_call_result 为 True：返回 (tool_prompts, tool_names) 元组"
+
+#: 252e2017fd624b1a8b843dda7c4db29f bf2f25cc14f34aee8e4bcceb2f758d61 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:17
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:13
+msgid "If return_call_result is False: Tool prompts as a formatted string"
+msgstr "如果 return_call_result 为 False：工具以格式化字符串形式提示"
+
+#: 3a7eaf3f3cb94ce0a0696d8faa3e5cd8 a98c6c602eb94730936a3575f9c56b1d of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:18
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:14
+msgid "If return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr "如果 return_call_result 为 True：返回 (tool_prompts, tool_names) 元组"
+
+#: ../../api/tooluniverse.tool_finder_keyword.rst
+#: 6eb4025c42b84be0a68f1eebeb0baae5
+msgid "Raises"
+msgstr "引发"
+
+#: 6c8db57c1a7a4fe18673190606838c18 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.find_tools:21
+msgid "If both message and picked_tool_names are None"
+msgstr "如果 message 和 picked_tool_names 均为 None"
+
+#: 41b5ef84da454afaac4b8015e844e148 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:1
+msgid ""
+"Find tools using advanced keyword-based search with NLP processing and TF-"
+"IDF scoring."
+msgstr "使用基于高级关键词的搜索，结合自然语言处理（NLP）和TF-IDF评分，查找工具。"
+
+#: 0d03d26ec01545a191c3c72c2a66c5d5 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:3
+msgid ""
+"This method provides a unified interface compatible with other tool finders."
+msgstr "该方法提供了一个与其他工具查找器兼容的统一接口。"
+
+#: 0b80b6a9bbf84ea3b6d2b29b41ae389d of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword.run:5
+msgid ""
+"Dictionary containing: - description (str): Search query string (unified "
+"parameter name) - categories (list, optional): List of categories to filter "
+"by - limit (int, optional): Maximum number of results to return (default: "
+"10) - picked_tool_names (list, optional): Pre-selected tool names to process"
+" - return_call_result (bool, optional): Whether to return both prompts and "
+"names. Defaults to False."
+msgstr ""
+"包含以下内容的字典：  \n"
+"- description（字符串）：搜索查询字符串（统一参数名称）  \n"
+"- categories（列表，可选）：用于筛选的类别列表  \n"
+"- limit（整数，可选）：返回结果的最大数量（默认值：10）  \n"
+"- picked_tool_names（列表，可选）：预先选择的工具名称列表，用于处理  \n"
+"- return_call_result（布尔值，可选）：是否返回提示和名称，默认为 False。"
+
+#: e767a2ccd10e45efbcb8a31dd7c9fee8 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._run_json_search:1
+msgid "Original JSON-based search implementation for backward compatibility."
+msgstr "基于原始 JSON 的搜索实现以保证向后兼容性。"
+
+#: e7b7ce6618dc4ed0b63fb8de2b9237da of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._run_json_search:3
+msgid "Search arguments"
+msgstr "搜索参数"
+
+#: fa18d847da904f9b95a1546fd01f73b8 of
+#: tooluniverse.tool_finder_keyword.ToolFinderKeyword._run_json_search:6
+msgid "JSON string containing search results with relevance scores"
+msgstr "包含相关性评分的搜索结果的 JSON 字符串"

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pytorch_info.rst:2
+#: 95551d7cf7724b53897b2a2d48980df4
+msgid "tooluniverse.tools.get\\_pytorch\\_info module"
+msgstr "tooluniverse.tools.get\\_pytorch\\_info 模块"
+
+#: 99e011ed02a442ccae9aecdef37e128d of tooluniverse.tools.get_pytorch_info:1
+msgid "get_pytorch_info"
+msgstr "get_pytorch_信息"
+
+#: 8b23450a68ed4d9dbc83b6bdb824d88f 96d341ca15ba4aa4bd77a73cb4639812 of
+#: tooluniverse.tools.get_pytorch_info:3
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:1
+msgid ""
+"Get comprehensive information about PyTorch – an open source machine "
+"learning framework"
+msgstr "获取有关 PyTorch 的全面信息——一个开源的机器学习框架"
+
+#: ../../api/tooluniverse.tools.get_pytorch_info.rst
+#: 7157671966b5460b833d226dd1087270
+msgid "Parameters"
+msgstr "参数"
+
+#: e1563fd8927a4c329fd363566d9aec47 of
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 84c321a027514f5a92fb6d6f3c405a42 of
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ce95b87ccfb448a79efdbdff710b5b61 of
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 4edf90af191f43488d041652d624ead4 of
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pytorch_info.rst
+#: d77beceb1fac44079d26e0b0a5db44e1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 48d1352db3194afb9df1d5aa4ae83dcf of
+#: tooluniverse.tools.get_pytorch_info.get_pytorch_info:12
+msgid ":py:class:`Any`"
+msgstr ""

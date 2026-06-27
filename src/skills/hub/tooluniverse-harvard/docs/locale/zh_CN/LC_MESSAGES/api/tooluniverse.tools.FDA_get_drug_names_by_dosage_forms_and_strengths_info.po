@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.rst:2
+#: ff1688500cab4580b9a74233deb8271b
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_dosage\\_forms\\_and\\_strengths\\_info"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_dosage\\_forms\\_and\\_strengths\\_info"
+" 模块"
+
+#: 2bcc3a4ac7d54b9dbb0eb7771e2b2be7 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info:1
+msgid "FDA_get_drug_names_by_dosage_forms_and_strengths_info"
+msgstr "FDA_按剂型和规格获取药品名称信息"
+
+#: 22f6a66a35ef46e68adf6569d812ecef ca39b2857d594cd6a1ffc58c0e822c75 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:1
+msgid ""
+"Retrieve drug names based on specific dosage forms and strengths "
+"information."
+msgstr "根据特定的剂型和规格信息检索药品名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.rst
+#: 68f0c228de7948c7976178d26f7902a8
+msgid "Parameters"
+msgstr "参数"
+
+#: d5ce4d6d0b7c46fd931291601dbf570b of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:3
+msgid "Information about the dosage forms and strengths of the drug."
+msgstr "关于药物的剂型和剂量强度的信息。"
+
+#: f9ef58c006984faebc0c02ba31c3068d of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 11796eb121f146aeb4c7d34e85f0913a of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 093fc07dfddc4f77a30633c39909013c of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: e5333a33fa564a1c88d5d708487afd78 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2e73d05cfed044a0a6e6eb039c13f62f of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5def9a73044e4e14a8540d260f21fcc4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.rst
+#: 6afc1e49e81e4864b781cfcab9524a9f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7d00d0c7c21e44aab563cc6ba4743ada of
+#: tooluniverse.tools.FDA_get_drug_names_by_dosage_forms_and_strengths_info.FDA_get_drug_names_by_dosage_forms_and_strengths_info:18
+msgid ":py:class:`Any`"
+msgstr ""

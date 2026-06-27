@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  # Agent Zero — Sandbox Python para ejecucion segura de codigo
+  agent-zero:
+    image: agent0ai/agent-zero:latest
+    container_name: supernexus-agent-zero
+    ports:
+      - "50080:50080"
+    volumes:
+      - agent-zero-workspace:/app/workspace
+    restart: unless-stopped
+    environment:
+      - ZERO_MODE=api
+    networks:
+      - supernexus-net
+
+  # Redis — Cache distribuido para NexusHive
+  redis:
+    image: redis:alpine
+    container_name: supernexus-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    networks:
+      - supernexus-net
+
+  # n8n — Automatizacion low-code
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: supernexus-n8n
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n-data:/home/node/.n8n
+    restart: unless-stopped
+    environment:
+      - N8N_SECURE_COOKIE=false
+    networks:
+      - supernexus-net
+
+volumes:
+  agent-zero-workspace:
+  redis-data:
+  n8n-data:
+
+networks:
+  supernexus-net:
+    driver: bridge

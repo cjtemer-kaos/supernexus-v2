@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.BiomarkerDiscoveryWorkflow.rst:2
+#: 5d01b316968f400aa087f7e29b72a578
+msgid "tooluniverse.tools.BiomarkerDiscoveryWorkflow module"
+msgstr "tooluniverse.tools.BiomarkerDiscoveryWorkflow 模块"
+
+#: 5ee7da88471f447eb19cf055822490df of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow:1
+msgid "BiomarkerDiscoveryWorkflow"
+msgstr "生物标志物发现工作流程"
+
+#: 5b269fa25c914bdd8b293b45b9e0cbf2 f08c79847e4c45cdbd6316b87b968e84 of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow:3
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:1
+msgid ""
+"Discover and validate biomarkers for a specific disease condition using "
+"literature analysis, expr..."
+msgstr "通过文献分析发现并验证特定疾病状态的生物标志物，实验..."
+
+#: ../../api/tooluniverse.tools.BiomarkerDiscoveryWorkflow.rst
+#: 4e46e585b5a84b0d8c2d2c44fdd6a398
+msgid "Parameters"
+msgstr "参数"
+
+#: 42f5c9eda6324dd9a444bdc086c433ef of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:3
+msgid ""
+"The disease condition to discover biomarkers for (e.g., 'breast cancer', "
+"'Alz..."
+msgstr "用于发现生物标志物的疾病状态（例如，“乳腺癌”、“阿尔茨海默症”）。"
+
+#: 5402abe2894e46f8873c247b46cf73fd of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:5
+msgid "The type of sample to analyze (e.g., 'blood', 'tissue', 'plasma')"
+msgstr "分析样本类型（例如：‘血液’、‘组织’、‘血浆’）"
+
+#: 189547dd540e4dd3bedfc27e723c899c of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6439509071aa43b4887baaaf372d977c of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 91c7c5bcb43e46b29ca2b7e32b659caa of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.BiomarkerDiscoveryWorkflow.rst
+#: f0704014dd9148fe9f9d8f5762ef26e2
+msgid "Return type"
+msgstr "返回类型"
+
+#: 89627e10ef0846cda881414513cd907c of
+#: tooluniverse.tools.BiomarkerDiscoveryWorkflow.BiomarkerDiscoveryWorkflow:14
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tool_finder_llm.rst:2
+#: 2048372d88b549518a159b5b269805e9
+msgid "tooluniverse.tool\\_finder\\_llm module"
+msgstr "tooluniverse.tool_finder_llm 模块"
+
+#: 711cadc70b1c4b9e8e6c8c31d1ad5d97 of tooluniverse.tool_finder_llm:1
+msgid ""
+"LLM-based Tool Finder - A tool that uses LLM to find relevant tools based on"
+" descriptions."
+msgstr "基于大型语言模型的工具查找器 —— 一款利用大型语言模型根据描述查找相关工具的工具。"
+
+#: bf11238cc2424ad685a4715955dcb7ca of tooluniverse.tool_finder_llm:3
+msgid ""
+"This tool leverages AgenticTool's LLM functionality to create an intelligent"
+" tool finder that puts only essential tool information (name and "
+"description) in the prompt to minimize context window cost while letting the"
+" LLM decide which tools to return based on the query."
+msgstr ""
+"该工具利用 AgenticTool "
+"的大型语言模型（LLM）功能，创建了一个智能工具查找器，仅在提示中包含必要的工具信息（名称和描述），以最大限度地降低上下文窗口成本，同时让 LLM "
+"根据查询决定返回哪些工具。"
+
+#: 47f6eeab081342f2abf774f1d92f3615 of tooluniverse.tool_finder_llm:7
+msgid ""
+"Key optimizations: - Only sends tool name and description to LLM (no "
+"parameters, configs, etc.) - Uses compact formatting to reduce token count -"
+" Caches tool descriptions to avoid repeated processing - Excludes irrelevant"
+" tools from prompt"
+msgstr ""
+"关键优化：  \n"
+"- 仅向大型语言模型发送工具名称和描述（不包含参数、配置等）  \n"
+"- 使用紧凑格式以减少令牌数量  \n"
+"- 缓存工具描述以避免重复处理  \n"
+"- 从提示中排除无关工具"
+
+#: b74db1e458304f1a9120842cd7a3f7e3 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: ec551bb35caa4c98a20d388be41cedd1 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM:1
+msgid ""
+"LLM-based tool finder that uses natural language processing to select "
+"relevant tools."
+msgstr "基于大型语言模型的工具查找器，利用自然语言处理技术选择相关工具。"
+
+#: e0b04252f3da4a7fba0bb1ccb4441c0b of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM:3
+msgid ""
+"This class leverages AgenticTool's LLM capabilities to analyze tool "
+"descriptions and match them with user queries. It's optimized for minimal "
+"context window cost by only sending essential information (tool name and "
+"description) to the LLM, providing an intelligent alternative to embedding-"
+"based similarity search."
+msgstr ""
+"该类利用 AgenticTool 的大型语言模型（LLM）能力，分析工具描述并将其与用户查询进行匹配。通过仅向 LLM "
+"发送必要的信息（工具名称和描述），实现了最小化上下文窗口成本的优化，提供了一种智能替代基于嵌入的相似度搜索的方法。"
+
+#: ccd90e36a7994263b4749d50de586354 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM:8
+msgid ""
+"Cost optimizations: - Only includes tool name and description in LLM prompt "
+"- Uses compact formatting to minimize token usage - Excludes unnecessary "
+"tool metadata and parameters - Implements caching to avoid repeated tool "
+"processing"
+msgstr ""
+"成本优化：  \n"
+"- 仅在大型语言模型提示中包含工具名称和描述  \n"
+"- 使用紧凑格式以最小化令牌使用量  \n"
+"- 排除不必要的工具元数据和参数  \n"
+"- 实施缓存以避免重复处理工具"
+
+#: d4f2f9904b6749f7ac9e3fdec6e334b0 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.__init__:1
+msgid "Initialize the LLM-based Tool Finder."
+msgstr "初始化基于大型语言模型的工具查找器。"
+
+#: ../../api/tooluniverse.tool_finder_llm.rst 0a1696579cf74b6288ce8743544430f4
+#: 0c1314d48db0438cbecccecb5eacb8a1 4980387ca62445a6ae596a3ec674e30f
+#: 5451329be86c4f06a828196faa6e8545 7bfbd9e9b7d64a78ac8117e492759f00
+#: 89c09b7ed5ad4f0695847c310c11b5df f1340850904b4399a7de993998ca1871
+#: f6c1f83bb71c46c080fa24e1d170e64b
+msgid "Parameters"
+msgstr "参数"
+
+#: 5752865d388342d7a4c16afafe0bc1a7 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.__init__:3
+msgid "Configuration dictionary containing LLM settings and prompts"
+msgstr "包含LLM设置和提示的配置字典"
+
+#: 74f77a90bcbd40929f46fef48e982e6f of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.__init__:5
+msgid "Reference to the ToolUniverse instance containing all tools"
+msgstr "引用包含所有工具的 ToolUniverse 实例"
+
+#: 1850167648f549d4adaeafba269892c9 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._init_agentic_tool:1
+msgid "Initialize the underlying AgenticTool for LLM operations."
+msgstr "初始化用于LLM操作的底层AgenticTool。"
+
+#: de87ee710b00476a9be792542acc7f78 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._get_tool_selection_prompt:1
+msgid ""
+"Get the prompt template for tool selection. Optimized for minimal token "
+"usage."
+msgstr "获取工具选择的提示模板。已针对最小化令牌使用进行了优化。"
+
+#: 12df5465b1b445a9842202af449aeffa of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._get_available_tools:1
+msgid "Get available tools with their descriptions, with caching."
+msgstr "获取可用工具及其描述，并启用缓存。"
+
+#: cd7ea5061fd34664ba4e89379314ad2a of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._get_available_tools:3
+msgid "Whether to force refresh the cache"
+msgstr "是否强制刷新缓存"
+
+#: ../../api/tooluniverse.tool_finder_llm.rst 19f549967de54e86ad08e12aa2f59cb4
+#: 38cddbab350148fb8f9149bd6ca8dde4 4a59c131cafd4034b5d9a4f4f4d4cdcd
+#: 504a197af34d4697b3b044b15e869f59 646ae583dfaf4cdd9ae64a0a68b6229a
+#: b069eec5dcd549b6a80b293c617cde54
+msgid "Returns"
+msgstr "退货"
+
+#: add2cca94db846f399029760a0325086 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._get_available_tools:6
+msgid "List of tool dictionaries with names and descriptions"
+msgstr "工具字典列表及其名称和描述"
+
+#: ../../api/tooluniverse.tool_finder_llm.rst 03c4dc21e4684844a626777b68a3e02d
+#: 114a43764d5942aab1e7126d71e81405 402cec786fc84c019fca3c213b004e09
+#: 41cf5b44cc6342b09eae563055c9f832 d0b8a8639f564badb41dbe557b206ee4
+#: f8220223b71348f992dc5dadbd4bef24
+msgid "Return type"
+msgstr "返回类型"
+
+#: f9bf142abc784c9981c09f05dbc66130 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._prefilter_tools_by_keywords:1
+msgid ""
+"Pre-filter tools using keyword matching to reduce context size before LLM "
+"processing."
+msgstr "在LLM处理之前，使用关键词匹配的预过滤工具来缩小上下文规模。"
+
+#: 67d43a4cb3e1476388f388d32a2928c9 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._prefilter_tools_by_keywords:3
+msgid "All available tools"
+msgstr "所有可用工具"
+
+#: aad44958a56f4ed08fb1e9bbf149574a of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._prefilter_tools_by_keywords:5
+msgid "User query"
+msgstr "用户查询"
+
+#: d2e5cfb0b26c474fad08a5945980a348 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._prefilter_tools_by_keywords:7
+msgid "Maximum number of tools to send to LLM"
+msgstr "可发送至LLM的工具最大数量"
+
+#: b0cc97b6283649329349a431d4f937cf of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._prefilter_tools_by_keywords:10
+msgid "Filtered list of tools"
+msgstr "筛选后的工具列表"
+
+#: bf9836a6a5194f7f9d51c443a063fbe7 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_tools_for_prompt:1
+msgid ""
+"Format tools for inclusion in the LLM prompt with minimal information to "
+"reduce context cost. Only includes name and description to minimize token "
+"usage."
+msgstr "在LLM提示中包含格式工具时，尽量减少信息量以降低上下文成本。仅包含名称和描述，以最小化标记使用量。"
+
+#: 4cce14709b8f4f098d2664bddba44a06 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_tools_for_prompt:4
+msgid "List of tool dictionaries"
+msgstr "工具词典列表"
+
+#: c4c7321a44374511a67ab842e37e02f3 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_tools_for_prompt:7
+msgid "Compact formatted tool descriptions for the prompt"
+msgstr "紧凑格式的工具描述用于提示"
+
+#: 5382ed9af04d456f9c1ed58d6137915e of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:1
+msgid "Find relevant tools using LLM-based selection."
+msgstr "使用基于LLM的选择功能查找相关工具。"
+
+#: f2f14234123240a5b816c1aa6e200521 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:3
+msgid "User query describing needed functionality"
+msgstr "用户查询描述所需功能"
+
+#: ca0c6e549fae4bc6acc2aacadaafe4f8 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:5
+msgid "Maximum number of tools to return"
+msgstr "返回的工具最大数量"
+
+#: 46b6c47364a74e3fb61d1dc784bc80a8 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:7
+msgid "Whether to include selection reasoning"
+msgstr "是否包含选择理由"
+
+#: 163c3421f8bc4366a59fa563859afadc of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:9
+msgid "List of tool categories to filter by"
+msgstr "工具类别筛选列表"
+
+#: c13f84a20e8d4ab3b3c04f6b307a1525 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_llm:12
+msgid "Dictionary containing selected tools and metadata"
+msgstr "包含已选工具和元数据的字典"
+
+#: 95903d91428d4084aea109c8ec2b1b1d of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:1
+msgid "Find relevant tools based on a message or pre-selected tool names."
+msgstr "根据消息或预先选择的工具名称查找相关工具。"
+
+#: c1e008abda66491083e8a3b2028ea80b of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:3
+msgid ""
+"This method matches the interface of the original ToolFinderEmbedding to "
+"ensure seamless replacement. It uses LLM-based selection instead of "
+"embedding similarity."
+msgstr "此方法与原始的 ToolFinderEmbedding 接口保持一致，以确保无缝替换。它使用基于 LLM 的选择方式，而非嵌入相似性。"
+
+#: f4b02c8927864bb28f81f45c5fc1b14e of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:6
+msgid ""
+"Query message to find tools for. Required if picked_tool_names is None."
+msgstr "查询消息以查找工具。如果 picked_tool_names 为 None，则此项为必填。"
+
+#: 90e4376b4e3342a5be666634f3dc4e18 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:8
+msgid "Pre-selected tool names to process. Required if message is None."
+msgstr "预先选择的工具名称以进行处理。如果消息为 None，则此项为必填。"
+
+#: 0cd26d82f88a498c9ca33f16bf2e7870 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:10
+msgid "Number of tools to return after filtering. Defaults to 5."
+msgstr "过滤后返回的工具数量。默认为 5。"
+
+#: 23fcc34be5394240a1b038f8eb7a17a7 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:12
+msgid "If True, returns both prompts and tool names. Defaults to False."
+msgstr "如果为 True，则返回提示和工具名称。默认为 False。"
+
+#: 91e852abc1b243b8821cdfbf9f1c07c5 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:14
+msgid "List of tool categories to filter by. Applied before LLM selection."
+msgstr "工具类别筛选列表。在选择LLM之前应用。"
+
+#: 64882bc441d744d483bc6967470f6175 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:16
+msgid ""
+"If True, returns only a list of tool specifications. Overrides other return "
+"options."
+msgstr "如果为 True，则仅返回工具规格列表。此设置会覆盖其他返回选项。"
+
+#: b150e1077f3f49228b6388ffd6bc6015 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:19
+msgid ""
+"- If return_list_only is True: List of tool specifications - If "
+"return_call_result is False: Tool prompts as a formatted string - If "
+"return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr ""
+"- 如果 `return_list_only` 为 True：工具规格的列表  \n"
+"- 如果 `return_call_result` 为 False：格式化字符串形式的工具提示  \n"
+"- 如果 `return_call_result` 为 True：包含 (tool_prompts, tool_names) 的元组"
+
+#: dc10de6a77f845c99ac6e3349a27978e of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:19
+msgid "If return_list_only is True: List of tool specifications"
+msgstr "如果 return_list_only 为 True：工具规格列表"
+
+#: 312592d04520405f80209fdbb4b21925 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:20
+msgid "If return_call_result is False: Tool prompts as a formatted string"
+msgstr "如果 return_call_result 为 False：工具将以格式化字符串的形式提示"
+
+#: 420c494fd19c4727a2516642a0b886ef of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:21
+msgid "If return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr "如果 return_call_result 为 True：返回一个元组 (tool_prompts, tool_names)"
+
+#: ../../api/tooluniverse.tool_finder_llm.rst e886955efeeb4ddb8567ae89c7a7e688
+msgid "Raises"
+msgstr "提升"
+
+#: 7d96db91fb6e475895a83d03fd080706 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools:24
+msgid "If both message and picked_tool_names are None"
+msgstr "如果 message 和 picked_tool_names 均为 None"
+
+#: e6dfa49615c546e0ac4635776871c107 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.get_tool_stats:1
+msgid "Get statistics about available tools."
+msgstr "获取有关可用工具的统计信息。"
+
+#: 2a3edddfe2ce4238817ece7f015b2fc9 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:1
+msgid "Format the find_tools result as a standardized JSON string."
+msgstr "将 find_tools 的结果格式化为标准化的 JSON 字符串。"
+
+#: 22c30ef175774963bd3f93802abd36dd of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:3
+msgid "Result from find_tools method (either string, list, or tuple)"
+msgstr "find_tools 方法的结果（可以是字符串、列表或元组）"
+
+#: 2f52118765f840ff9776a1c420585797 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:4
+msgid "Original search query"
+msgstr "原始搜索查询"
+
+#: 34dae61fb3eb45d5895a59491c20f91f of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:5
+msgid "Requested number of tools"
+msgstr "请求的工具数量"
+
+#: ee351649b23b4105b7310d13b105b3af of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:6
+msgid "Requested categories filter"
+msgstr "请求的类别筛选器"
+
+#: 45d86d18d7134bd08cbefb94475ab9e4 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:7
+msgid "Whether return_call_result was True"
+msgstr "无论 return_call_result 是否为 True"
+
+#: 9a43f4ec31084d13864ad91b7405a771 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM._format_as_json:9
+msgid "JSON formatted search results"
+msgstr "JSON 格式的搜索结果"
+
+#: 473f7397068b4256bef62a42a89c2d15 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.clear_cache:1
+msgid "Clear the tool cache to force refresh on next access."
+msgstr "清除工具缓存，以便在下次访问时强制刷新。"
+
+#: 566295961cb74ef196436d2c1be622f7 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.run:1
+msgid ""
+"Run the tool finder with given arguments following the standard tool "
+"interface."
+msgstr "按照标准工具接口，使用给定参数运行工具查找器。"
+
+#: f3a05ff1e65e4d89bdb126e9b1db2223 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.run:3
+msgid ""
+"This method now returns JSON format by default to ensure consistency with "
+"other search tools and simplify integration with SMCP."
+msgstr "此方法现默认返回 JSON 格式，以确保与其他搜索工具的一致性并简化与 SMCP 的集成。"
+
+#: dc1379ccc4524a9cae4b3a46470d3f92 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.run:6
+msgid ""
+"Dictionary containing: - description (str, optional): Query message to find "
+"tools for (maps to 'message') - limit (int, optional): Number of tools to "
+"return (maps to 'rag_num'). Defaults to 5. - picked_tool_names (list, "
+"optional): Pre-selected tool names to process - return_call_result (bool, "
+"optional): Whether to return both prompts and names. Defaults to False. - "
+"return_format (str, optional): 'json' (default) or 'legacy' for old format -"
+" return_list_only (bool, optional): Whether to return only tool "
+"specifications as a list - categories (list, optional): List of tool "
+"categories to filter by"
+msgstr ""
+"包含字典：  \n"
+"- description（字符串，可选）：用于查找工具的查询消息（对应 'message'）  \n"
+"- limit（整数，可选）：返回的工具数量（对应 'rag_num'），默认值为5  \n"
+"- picked_tool_names（列表，可选）：预先选择的工具名称列表以供处理  \n"
+"- return_call_result（布尔值，可选）：是否返回提示和名称，默认值为False  \n"
+"- return_format（字符串，可选）：'json'（默认）或用于旧格式的 'legacy'  \n"
+"- return_list_only（布尔值，可选）：是否仅以列表形式返回工具规格  \n"
+"- categories（列表，可选）：用于筛选的工具类别列表"
+
+#: ed08c913f1d24d55932a60828d6ee94a of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_legacy:1
+msgid "Legacy method for finding tools with different parameter names."
+msgstr "用于查找具有不同参数名称的工具的传统方法。"
+
+#: 1b5c39c3d5354cbfab218d0c62fc3ba5 of
+#: tooluniverse.tool_finder_llm.ToolFinderLLM.find_tools_legacy:3
+msgid ""
+"This provides backward compatibility for any code that might use 'query' "
+"instead of 'description'."
+msgstr "这为可能使用“query”而非“description”的任何代码提供了向后兼容性。"

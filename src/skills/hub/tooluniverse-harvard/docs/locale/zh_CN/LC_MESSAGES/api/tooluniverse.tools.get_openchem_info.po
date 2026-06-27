@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_openchem_info.rst:2
+#: 00ad6d7ce9324ecabe2eff014f7009c7
+msgid "tooluniverse.tools.get\\_openchem\\_info module"
+msgstr "tooluniverse.tools.get\\_openchem\\_info 模块"
+
+#: 685d543392004ba095cd9ddcddac52f7 of tooluniverse.tools.get_openchem_info:1
+msgid "get_openchem_info"
+msgstr ""
+"get_openchem_info\n"
+"\n"
+"获取_openchem_信息"
+
+#: 727e9bd8fea74534b90c162f5a9d94d2 93af4dcf61824dd882640873e9605752 of
+#: tooluniverse.tools.get_openchem_info:3
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:1
+msgid ""
+"Get comprehensive information about OpenChem – deep learning toolkit for "
+"drug discovery"
+msgstr "获取关于 OpenChem 的全面信息——用于药物研发的深度学习工具包"
+
+#: ../../api/tooluniverse.tools.get_openchem_info.rst
+#: af5039a632bb430490057e2ef15cc65d
+msgid "Parameters"
+msgstr "参数"
+
+#: 446864fd4a6f4620b3f82acad962f381 of
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:3
+msgid "Type of information to retrieve about OpenChem"
+msgstr "关于 OpenChem 可检索的信息类型"
+
+#: 05dc5a822831414dbdf8dabece46ac2d of
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: cdda8d5b5b444a8a850a9e5189ed612a of
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: d420dc98636e43d584c985ca817a1c4e of
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_openchem_info.rst
+#: 1f13d49abfdf4ed09fb531872245ba1a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 97cf95dc07b944068bcdf7220aa55b15 of
+#: tooluniverse.tools.get_openchem_info.get_openchem_info:12
+msgid ":py:class:`Any`"
+msgstr ":py:class:`任意`"

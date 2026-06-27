@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_release_deposit_dates_by_pdb_id.rst:2
+#: a3badd4517da4cacbcb401f11afdf2fd
+msgid "tooluniverse.tools.get\\_release\\_deposit\\_dates\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get_release_deposit_dates_by_pdb_id 模块"
+
+#: 5a195a6bc61e48dcaca250cd578fcfee of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id:1
+msgid "get_release_deposit_dates_by_pdb_id"
+msgstr "通过PDB ID获取释放押金日期"
+
+#: 748e678274f046ef80336429ad177954 76769b1e688e4ea8a3480ea09d448034 of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id:3
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:1
+msgid "Get the release and deposition dates for a PDB entry."
+msgstr "获取 PDB 条目的发布日期和提交日期。"
+
+#: ../../api/tooluniverse.tools.get_release_deposit_dates_by_pdb_id.rst
+#: 69d5b44acb8e41beae287c1ef078b83f
+msgid "Parameters"
+msgstr "参数"
+
+#: d7e695f3f2934bcbbad4ace6b8c6e169 of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:3
+msgid "4-character RCSB PDB ID"
+msgstr "4字符RCSB PDB ID"
+
+#: bfeead53967e47e8a94f5262869a7d6a of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9c5c916255e34be8902381961f316dd0 of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f9bb16ab5e4349c6a24352f25e6aa065 of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_release_deposit_dates_by_pdb_id.rst
+#: c9f0cf626ad942b687c6c77dae276520
+msgid "Return type"
+msgstr "返回类型"
+
+#: 26512f1e5ef1402ab975e376af6fed52 of
+#: tooluniverse.tools.get_release_deposit_dates_by_pdb_id.get_release_deposit_dates_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

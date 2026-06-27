@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.rst:2
+#: d675573e262f436a8240ab63b9e7c52c
+msgid "tooluniverse.tools.get\\_crystal\\_growth\\_conditions\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id 模块"
+
+#: 1b5b5495a0ce4bfea54eb8e39565fd5c of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id:1
+msgid "get_crystal_growth_conditions_by_pdb_id"
+msgstr "通过PDB ID获取晶体生长条件"
+
+#: 76c0c16dd99544b3be7da87ec893bc31 9e85d2cfe5474633b3e1902b8b6976d0 of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id:3
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:1
+msgid ""
+"Get information about the crystallization method and conditions for a "
+"structure."
+msgstr "获取有关结构的结晶方法和条件的信息。"
+
+#: ../../api/tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.rst
+#: b227bab5442c407592e4cb58aec2bccd
+msgid "Parameters"
+msgstr "参数"
+
+#: f41b0afdd696435bb856b8d4ca2ad6aa of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:3
+msgid "PDB ID of the structure"
+msgstr "结构的 PDB ID"
+
+#: 7e726aac41b449f1999eb7ee7c53bfbd of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3648197a405e469e9f9f3e98bb44a5ad of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0b9f81dd4e4c4d0587158532ca0f694e of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.rst
+#: db1ce27a30d844b9a00a967e814bad99
+msgid "Return type"
+msgstr "返回类型"
+
+#: 9e541f4e38444382bd6bff2a206a93fd of
+#: tooluniverse.tools.get_crystal_growth_conditions_by_pdb_id.get_crystal_growth_conditions_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

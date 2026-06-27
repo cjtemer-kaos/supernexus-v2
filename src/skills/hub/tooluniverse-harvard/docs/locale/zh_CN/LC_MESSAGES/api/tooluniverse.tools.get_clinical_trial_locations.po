@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_locations.rst:2
+#: a508be80f72645d99f6cf9a2e8860cb4
+msgid "tooluniverse.tools.get\\_clinical\\_trial\\_locations module"
+msgstr "tooluniverse.tools.get\\_clinical\\_trial\\_locations 模块"
+
+#: 5ad06a2a31354ea5b7ceae9408882d4a of
+#: tooluniverse.tools.get_clinical_trial_locations:1
+msgid "get_clinical_trial_locations"
+msgstr ""
+"get_clinical_trial_locations\n"
+"\n"
+"获取临床试验地点"
+
+#: 599864ec5ad246dbbf2699b459d42cf0 5d27435dd9b04e4d96cb51b92d629871 of
+#: tooluniverse.tools.get_clinical_trial_locations:3
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:1
+msgid ""
+"Retrieves the locations where the clinical trials are being conducted, using"
+" their NCT IDs."
+msgstr "检索使用其NCT编号进行临床试验的地点。"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_locations.rst
+#: 8f8e2983d8a842f6b64c8023ce17347d
+msgid "Parameters"
+msgstr "参数"
+
+#: 0f84132a9f3e4e78a5bd0052b28174e0 of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:3
+msgid ""
+"List of NCT IDs of the clinical trials (e.g., ['NCT04852770', "
+"'NCT01728545'])."
+msgstr "临床试验的NCT编号列表（例如：['NCT04852770', 'NCT01728545']）。"
+
+#: 746a59263f1a4e1892298ee68410cd90 of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:5
+msgid "Placeholder."
+msgstr "占位符"
+
+#: 3ae2dbe315794ca49895e92bdc56e493 of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0ab28ca22f2443d393d3e0724450c93b of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 5b3ee4f8ca8f4d258b2bf81ac81335c7 of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_clinical_trial_locations.rst
+#: 46a53ed92e634d56be463e65b3e5caed
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5076f17c96634b47849df4b65b463af6 of
+#: tooluniverse.tools.get_clinical_trial_locations.get_clinical_trial_locations:14
+msgid ":py:class:`Any`"
+msgstr ""

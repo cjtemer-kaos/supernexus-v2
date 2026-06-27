@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_optlang_info.rst:2
+#: 57c971f9bf49402fb304563389eeba5c
+msgid "tooluniverse.tools.get\\_optlang\\_info module"
+msgstr "tooluniverse.tools.get\\_optlang\\_info 模块"
+
+#: d3610de3dc9d4be8b81fd78145f1e470 of tooluniverse.tools.get_optlang_info:1
+msgid "get_optlang_info"
+msgstr ""
+"get_optlang_info\n"
+"\n"
+"获取_optlang_信息"
+
+#: 1dfeed8a956a4f38ac68cc714626c962 5c6774c7605e4062b0bacbc90d1f3ebe of
+#: tooluniverse.tools.get_optlang_info:3
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:1
+msgid ""
+"Get comprehensive information about optlang – optimization language for "
+"mathematical programming"
+msgstr "获取关于 Optlang 的全面信息——用于数学规划的优化语言"
+
+#: ../../api/tooluniverse.tools.get_optlang_info.rst
+#: 65d14597a35c4ac08ca9a58fe639e455
+msgid "Parameters"
+msgstr "参数"
+
+#: a20eb81757d642358635de68e1beee55 of
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:3
+msgid "Type of information to retrieve about optlang"
+msgstr "关于 optlang 可检索的信息类型"
+
+#: 5a7919a4817040e4b8b4561dcd72cd18 of
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f5910f48714b4d11b428ec5c9fda0952 of
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 57619d4412d64e72a4a230df6e33a111 of
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_optlang_info.rst
+#: 96943541090940f19643f3ee1ebb9173
+msgid "Return type"
+msgstr "返回类型"
+
+#: 33c477caf3284e4084277272fa9ce7d0 of
+#: tooluniverse.tools.get_optlang_info.get_optlang_info:12
+msgid ":py:class:`Any`"
+msgstr ""

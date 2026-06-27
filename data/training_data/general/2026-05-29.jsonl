@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "responde solo OK si funciono"}, {"role": "assistant", "content": "OK"}], "gem_used": "opencode", "project": "default", "timestamp": "2026-05-29T08:44:02.535168", "quality_score": 0.8, "tags": ["general"], "user_feedback": null}

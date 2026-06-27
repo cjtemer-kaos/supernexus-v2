@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DrugInteractionAnalyzerAgent.rst:2
+#: f531a31e79444c9a9d5df1b6032dc7a9
+msgid "tooluniverse.tools.DrugInteractionAnalyzerAgent module"
+msgstr "tooluniverse.tools.DrugInteractionAnalyzerAgent 模块"
+
+#: 3b883918271344b9903dbeb69d24a8ec of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent:1
+msgid "DrugInteractionAnalyzerAgent"
+msgstr "药物相互作用分析代理"
+
+#: 943bbc9ea4e547cd9e2f8697dd512655 d10e6c36d631437c87d6bbf4d833d35b of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent:3
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:1
+msgid ""
+"AI agent that analyzes drug-drug interactions and provides clinical "
+"recommendations"
+msgstr "AI代理，用于分析药物-药物相互作用并提供临床建议"
+
+#: ../../api/tooluniverse.tools.DrugInteractionAnalyzerAgent.rst
+#: dc30a807ab8848b3ab7b84f40cd94aab
+msgid "Parameters"
+msgstr "参数"
+
+#: 61129a2bde3d45639d8719d10e4042f8 of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:3
+msgid "List of compounds to analyze for interactions (comma-separated)"
+msgstr "分析相互作用的化合物列表（以逗号分隔）"
+
+#: e3592ea1991b4129a1154aa4684a9564 of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:5
+msgid "Patient context (age, comorbidities, medications, etc.)"
+msgstr "患者背景（年龄、合并症、药物等）"
+
+#: 733cfb7290a245889c43251996f7d855 of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: dafd6469d2c54493b89e7a2a8fd2884b of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 61e3f25b72fb426f94ee343e77856ff9 of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DrugInteractionAnalyzerAgent.rst
+#: 40783e85d8a34c84a185fd0793c7a335
+msgid "Return type"
+msgstr "返回类型"
+
+#: f80185405b9f47889806e945a73b43b2 of
+#: tooluniverse.tools.DrugInteractionAnalyzerAgent.DrugInteractionAnalyzerAgent:14
+msgid ":py:class:`Any`"
+msgstr ""

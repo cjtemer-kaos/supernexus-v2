@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_chem_comp_charge_and_ambiguity.rst:2
+#: 23497f7dadd64a87811243054b8306d1
+msgid "tooluniverse.tools.get\\_chem\\_comp\\_charge\\_and\\_ambiguity module"
+msgstr "tooluniverse.tools.get\\_chem\\_comp\\_charge\\_and\\_ambiguity 模块"
+
+#: 2050ed84f91f423786fafc9e3560f2f3 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity:1
+msgid "get_chem_comp_charge_and_ambiguity"
+msgstr "get_chem_comp_charge_and_ambiguity 获取化学组分电荷及其不确定性"
+
+#: 04a0b86be7b04da689e79459e48d7541 d4850dab70a6422fad29feca289c7458 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity:3
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:1
+msgid "Retrieve the formal charge and ambiguity flag of a chemical component."
+msgstr "检索化学组分的形式电荷和模糊标志。"
+
+#: ../../api/tooluniverse.tools.get_chem_comp_charge_and_ambiguity.rst
+#: 28304bc24f9649a08ab3b8079a8e6efe
+msgid "Parameters"
+msgstr "参数"
+
+#: 2abe16816b524ec38cfe16dfbae1586e of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:3
+msgid "Chemical component ID to query charge and ambiguity"
+msgstr "化学成分ID用于查询电荷和不确定性"
+
+#: ada0ea74ac214981b5028b0d431bcce7 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1f3907618d834ddc9310fd30f05b1d43 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: dff884f951984e0bac9edf18f49a42e8 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_chem_comp_charge_and_ambiguity.rst
+#: 567e72069aa045fc88ad0d3b191b7587
+msgid "Return type"
+msgstr "返回类型"
+
+#: aa8062bdfd0e4a6d96fdd023c0777122 of
+#: tooluniverse.tools.get_chem_comp_charge_and_ambiguity.get_chem_comp_charge_and_ambiguity:12
+msgid ":py:class:`Any`"
+msgstr ""

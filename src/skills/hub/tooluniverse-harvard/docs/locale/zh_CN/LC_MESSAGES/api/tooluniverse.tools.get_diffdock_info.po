@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_diffdock_info.rst:2
+#: f429e72bee684ea5a8f34bf2c433a2a5
+msgid "tooluniverse.tools.get\\_diffdock\\_info module"
+msgstr "tooluniverse.tools.get\\_diffdock\\_info 模块"
+
+#: d431e77133664f43979d1a3dbcf1b3fd of tooluniverse.tools.get_diffdock_info:1
+msgid "get_diffdock_info"
+msgstr ""
+"get_diffdock_info  \n"
+"获取_diffdock信息"
+
+#: 33d739f8e7c4407fa05878101d5e5eec 82ced7e3dc5d4f2fb10b6cda06be07b1 of
+#: tooluniverse.tools.get_diffdock_info:3
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:1
+msgid ""
+"Get comprehensive information about DiffDock – diffusion model for molecular"
+" docking"
+msgstr "获取有关 DiffDock 的全面信息——一种用于分子对接的扩散模型"
+
+#: ../../api/tooluniverse.tools.get_diffdock_info.rst
+#: b0ba5004d133497388d6b2b222591ff5
+msgid "Parameters"
+msgstr "参数"
+
+#: d56d9b783b2042889d6374bd640736e8 of
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:3
+msgid "Type of information to retrieve about DiffDock"
+msgstr "关于 DiffDock 可检索的信息类型"
+
+#: 6ffc23951598426e97f9e233bea6b7b5 of
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9db12ffc9cf34a6bbf80f5e9fccdbac7 of
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: b815f22979894933ac80cd5b6c5f7724 of
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_diffdock_info.rst
+#: e6f2fca6be044dab8ac2e7c257eb4798
+msgid "Return type"
+msgstr "返回类型"
+
+#: 81f1e5d2168942e891f7f357cbe25038 of
+#: tooluniverse.tools.get_diffdock_info.get_diffdock_info:12
+msgid ":py:class:`Any`"
+msgstr ""

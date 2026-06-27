@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_deeppurpose_info.rst:2
+#: b6ddfbe287b940d28c7d3181a378ff85
+msgid "tooluniverse.tools.get\\_deeppurpose\\_info module"
+msgstr "tooluniverse.tools.get_deeppurpose_info 模块"
+
+#: 4a8f74eb235844d2be2d86e6adafd8dc of
+#: tooluniverse.tools.get_deeppurpose_info:1
+msgid "get_deeppurpose_info"
+msgstr "get_deeppurpose_info 获取深度用途信息"
+
+#: 09c71efb045d4f87a52552b0abd8e463 9f6fd69339bb41fa8935367640965c02 of
+#: tooluniverse.tools.get_deeppurpose_info:3
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:1
+msgid ""
+"Get comprehensive information about DeepPurpose – deep learning toolkit for "
+"drug discovery"
+msgstr "获取关于DeepPurpose的全面信息——用于药物研发的深度学习工具包"
+
+#: ../../api/tooluniverse.tools.get_deeppurpose_info.rst
+#: 17340d8d874144a89f7feae51b2f710d
+msgid "Parameters"
+msgstr "参数"
+
+#: 09f420d51ce84779b8ef4c4097b4ea4b of
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:3
+msgid "Type of information to retrieve about DeepPurpose"
+msgstr "关于DeepPurpose可检索的信息类型"
+
+#: 9347588a94994fa8864e230a7b7312b6 of
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 26246c7e719a4bc9944884d15ba9aab0 of
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 42c3b114328a4e7781da8654af677b14 of
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_deeppurpose_info.rst
+#: edda8fbb5600449cba75e35fcfdee257
+msgid "Return type"
+msgstr "返回类型"
+
+#: 913b792572c346a09e4dc495adef25bc of
+#: tooluniverse.tools.get_deeppurpose_info.get_deeppurpose_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.rst:2
+#: 0a67c9d36ca74d9285aa937605bb58bd
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_drug\\_interactions module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_drug\\_interactions 模块"
+
+#: 5b88d89def7d46f3904b200764815052 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions:1
+msgid "FDA_get_drug_names_by_drug_interactions"
+msgstr "FDA_通过药物相互作用获取药物名称"
+
+#: 37291917cf6142adb9c0ad14e796c52b e2d687ca01b243ebaefdd31273fc4307 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions:3
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:1
+msgid ""
+"Retrieve a list of drug names that have the specified drug interactions."
+msgstr "检索具有指定药物相互作用的药物名称列表。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.rst
+#: 26092c018f4c4507b73d165c19690cec
+msgid "Parameters"
+msgstr "参数"
+
+#: 00579227abe04539bb0b46b2b9623836 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:3
+msgid "The term to search for in drug interactions."
+msgstr "用于药物相互作用查询的术语。"
+
+#: 072ad17e539648ea98fc208661729492 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 7ab231e585f64f54a5b11b1492efe969 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 8243bda160864f249bae11a6cb5277db of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 21f1ecfe5f1d4174ba11447459d721d5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 20bd2109de184643abdf176e282bd52b of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 94faa24848ba45b18f7b709e06d453f2 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.rst
+#: e2375b82522b47218052f46140b76604
+msgid "Return type"
+msgstr "返回类型"
+
+#: a64e69bbda404250b8bfc6241f696747 of
+#: tooluniverse.tools.FDA_get_drug_names_by_drug_interactions.FDA_get_drug_names_by_drug_interactions:18
+msgid ":py:class:`Any`"
+msgstr ""

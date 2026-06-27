@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_death_related_by_drug.rst:2
+#: b382a9f259d94a8a9a3aeb908235e3c0
+msgid "tooluniverse.tools.FAERS\\_count\\_death\\_related\\_by\\_drug module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_death\\_related\\_by\\_drug 模块"
+
+#: 8591a6b1d050472d8abb7e24f7908d15 of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug:1
+msgid "FAERS_count_death_related_by_drug"
+msgstr "FAERS_按药物统计与死亡相关的数量"
+
+#: 8012d3b861124c6c9993e70c76905ac0 88863214d0454a51bacfd6eafb3c0b0f of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug:3
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:1
+msgid ""
+"Count adverse events associated with patient death for a given drug. Data "
+"source: FDA Adverse Eve..."
+msgstr "统计与患者死亡相关的药物不良事件。数据来源：FDA不良事件数据库。"
+
+#: ../../api/tooluniverse.tools.FAERS_count_death_related_by_drug.rst
+#: 9f8e5845442f4ee4bdc361877752f954
+msgid "Parameters"
+msgstr "参数"
+
+#: 56f60ecd242f490aa4a3be8c43f25544 of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:3
+msgid "Drug name."
+msgstr "药品名称。"
+
+#: 81951d61373e43bd8d96184d3a37941b of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3b3c0be012f741af9249d2cd653008de of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 11fc6e084924480d810a785c9b02d9c0 of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_death_related_by_drug.rst
+#: 46a062e37d4843b6a204bd2b8cc8a7c1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 78ebdc4478b842d9b7a952ada92c250f of
+#: tooluniverse.tools.FAERS_count_death_related_by_drug.FAERS_count_death_related_by_drug:12
+msgid ":py:class:`Any`"
+msgstr ""

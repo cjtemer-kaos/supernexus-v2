@@ -1,0 +1,355 @@
+[
+  {
+    "type": "AgenticTool",
+    "name": "IntentAnalyzerAgent",
+    "description": "AI agent that analyzes user research intent and creates comprehensive search plans",
+    "prompt": "Analyze this research query and create a comprehensive search strategy:\n\nQuery: \"{user_query}\"\n\nContext: {context}\n\nPlease provide:\n1. User Intent: What is the user really looking for?\n2. Search Plans: Create 3-5 specific search plans that would comprehensively cover this topic\n\nFor each search plan, provide:\n- Title: A clear, specific title\n- Description: What this plan aims to find\n- Keywords: 3-5 specific keywords for this plan\n- Priority: 1-5 (5 being highest priority)\n\nReturn as JSON format:\n{\n  \"user_intent\": \"...\",\n  \"search_plans\": [\n    {\n      \"title\": \"...\",\n      \"description\": \"...\",\n      \"keywords\": [\"...\", \"...\", \"...\"],\n      \"priority\": 5\n    }\n  ]\n}",
+    "input_arguments": [
+      "user_query",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "user_query": {
+          "type": "string",
+          "description": "The research query to analyze"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context information from previous steps",
+          "default": ""
+        }
+      },
+      "required": [
+        "user_query"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "user_query": "machine learning optimization",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "LLM-generated response containing intent analysis and search plans"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "KeywordExtractorAgent",
+    "description": "AI agent that extracts and refines search keywords for research plans",
+    "prompt": "Extract and refine search keywords for this research plan:\n\nPlan Title: {plan_title}\nPlan Description: {plan_description}\nCurrent Keywords: {current_keywords}\nContext: {context}\n\nPlease provide 5-8 specific, academic search keywords that would be most effective for finding relevant papers.\nConsider:\n- Synonyms and related terms\n- Technical terminology\n- Academic language\n- Different aspects of the topic\n- Previous search results and insights from context\n\nReturn as JSON:\n{\n  \"refined_keywords\": [\"keyword1\", \"keyword2\", \"keyword3\", \"keyword4\", \"keyword5\"]\n}",
+    "input_arguments": [
+      "plan_title",
+      "plan_description",
+      "current_keywords",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "plan_title": {
+          "type": "string",
+          "description": "The title of the search plan"
+        },
+        "plan_description": {
+          "type": "string",
+          "description": "The description of the search plan"
+        },
+        "current_keywords": {
+          "type": "string",
+          "description": "Current keywords for the plan (comma-separated)"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context information from previous steps",
+          "default": ""
+        }
+      },
+      "required": [
+        "plan_title",
+        "plan_description",
+        "current_keywords"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "plan_title": "Literature review on COVID-19 treatments",
+        "plan_description": "Systematic review of antiviral therapies",
+        "current_keywords": "COVID-19, antiviral, treatment",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "LLM-generated response containing refined search keywords"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "ResultSummarizerAgent",
+    "description": "AI agent that summarizes search results for research plans",
+    "prompt": "Summarize the search results for this research plan:\n\nPlan Title: {plan_title}\nPlan Description: {plan_description}\nNumber of Papers: {paper_count}\nContext: {context}\n\nPapers:\n{papers_text}\n\nPlease provide a comprehensive summary that includes:\n1. Key findings and insights\n2. Main themes and trends\n3. Important papers and their contributions\n4. Research gaps or opportunities\n5. Overall assessment of the search results\n\nKeep the summary concise but informative (300-500 words).",
+    "input_arguments": [
+      "plan_title",
+      "plan_description",
+      "paper_count",
+      "papers_text",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "plan_title": {
+          "type": "string",
+          "description": "The title of the search plan"
+        },
+        "plan_description": {
+          "type": "string",
+          "description": "The description of the search plan"
+        },
+        "paper_count": {
+          "type": "string",
+          "description": "Number of papers found"
+        },
+        "papers_text": {
+          "type": "string",
+          "description": "Formatted text of the papers to summarize"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context information from previous steps",
+          "default": ""
+        }
+      },
+      "required": [
+        "plan_title",
+        "plan_description",
+        "paper_count",
+        "papers_text"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "plan_title": "Literature review on COVID-19 treatments",
+        "plan_description": "Systematic review of antiviral therapies",
+        "paper_count": "1",
+        "papers_text": "The quick brown fox jumps over the lazy dog.",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "LLM-generated response containing comprehensive summary of search results"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "QualityCheckerAgent",
+    "description": "AI agent that checks search result quality and suggests improvements",
+    "prompt": "Based on the current search results quality assessment, suggest improvements for the next iteration:\n\nCurrent Plans and Quality Scores:\n{plans_analysis}\nContext: {context}\n\nPlease suggest:\n1. Which plans need improvement\n2. New search strategies or keywords\n3. Additional search plans if needed\n\nReturn as JSON:\n{\n  \"improvements\": [\n    {\n      \"plan_id\": \"plan_1\",\n      \"suggestions\": [\"suggestion1\", \"suggestion2\"]\n    }\n  ],\n  \"new_plans\": [\n    {\n      \"title\": \"New Plan Title\",\n      \"description\": \"Description\",\n      \"keywords\": [\"keyword1\", \"keyword2\"],\n      \"priority\": 3\n    }\n  ]\n}",
+    "input_arguments": [
+      "plans_analysis",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "plans_analysis": {
+          "type": "string",
+          "description": "Analysis of current search plans and their quality scores"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context information from previous steps",
+          "default": ""
+        }
+      },
+      "required": [
+        "plans_analysis"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "plans_analysis": "{\"coverage\": 0.85, \"quality\": \"high\"}",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "LLM-generated response containing quality assessment and improvement suggestions"
+    }
+  },
+  {
+    "type": "AgenticTool",
+    "name": "OverallSummaryAgent",
+    "description": "AI agent that generates comprehensive overall summary of multi-agent search results",
+    "prompt": "Generate a comprehensive overall summary of the multi-agent literature search results:\n\nResearch Query: {user_query}\nUser Intent: {user_intent}\nTotal Papers Found: {total_papers}\nSearch Plans Executed: {total_plans}\nIterations: {iterations}\nContext: {context}\n\nPlan Summaries:\n{plan_summaries}\n\nPlease provide a comprehensive summary that includes:\n1. Executive summary of findings\n2. Key research themes and trends\n3. Most important papers and their contributions\n4. Research gaps and opportunities\n5. Overall assessment and recommendations\n\nFormat as markdown with clear sections and bullet points.",
+    "input_arguments": [
+      "user_query",
+      "user_intent",
+      "total_papers",
+      "total_plans",
+      "iterations",
+      "plan_summaries",
+      "context"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "user_query": {
+          "type": "string",
+          "description": "The original research query"
+        },
+        "user_intent": {
+          "type": "string",
+          "description": "The analyzed user intent"
+        },
+        "total_papers": {
+          "type": "string",
+          "description": "Total number of papers found"
+        },
+        "total_plans": {
+          "type": "string",
+          "description": "Total number of search plans executed"
+        },
+        "iterations": {
+          "type": "string",
+          "description": "Number of iterations performed"
+        },
+        "plan_summaries": {
+          "type": "string",
+          "description": "Summaries of all search plans"
+        },
+        "context": {
+          "type": "string",
+          "description": "Context information from previous steps",
+          "default": ""
+        }
+      },
+      "required": [
+        "user_query",
+        "user_intent",
+        "total_papers",
+        "total_plans",
+        "iterations",
+        "plan_summaries"
+      ]
+    },
+    "configs": {
+      "return_json": false
+    },
+    "test_examples": [
+      {
+        "user_query": "machine learning optimization",
+        "user_intent": "Find recent advances in cancer immunotherapy",
+        "total_papers": "150",
+        "total_plans": "3",
+        "iterations": "2",
+        "plan_summaries": "Key findings on immunotherapy efficacy",
+        "context": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "LLM-generated comprehensive summary of all literature search results in markdown format"
+    }
+  },
+  {
+    "type": "ComposeTool",
+    "name": "MultiAgentLiteratureSearch",
+    "description": "Multi-agent literature search system that uses AI agents to analyze intent, extract keywords, execute parallel searches, summarize results, and check quality iteratively",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The research query to search for"
+        },
+        "max_iterations": {
+          "type": "integer",
+          "description": "Maximum number of iterations (default: 3)",
+          "default": 3
+        },
+        "quality_threshold": {
+          "type": "number",
+          "description": "Quality threshold for completion (default: 0.7)",
+          "default": 0.7
+        }
+      },
+      "required": [
+        "query",
+        "max_iterations",
+        "quality_threshold"
+      ]
+    },
+    "auto_load_dependencies": true,
+    "fail_on_missing_tools": false,
+    "required_tools": [
+      "IntentAnalyzerAgent",
+      "KeywordExtractorAgent",
+      "ResultSummarizerAgent",
+      "QualityCheckerAgent",
+      "OverallSummaryAgent",
+      "ArXiv_search_papers",
+      "BioRxiv_search_preprints",
+      "MedRxiv_search_preprints",
+      "HAL_search_archive",
+      "Crossref_search_works",
+      "PubMed_search_articles",
+      "EuropePMC_search_articles",
+      "SemanticScholar_search_papers",
+      "openalex_literature_search",
+      "DBLP_search_publications",
+      "DOAJ_search_articles",
+      "CORE_search_papers",
+      "PMC_search_papers",
+      "Zenodo_search_records"
+    ],
+    "composition_file": "enhanced_multi_agent_literature_search.py",
+    "composition_function": "compose",
+    "test_examples": [
+      {
+        "query": "machine learning optimization",
+        "max_iterations": 3,
+        "quality_threshold": 0.7
+      }
+    ],
+    "return_schema": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Multi-agent search results with session_id and results summary"
+    }
+  }
+]

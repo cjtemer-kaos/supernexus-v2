@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_reaction_outcomes.rst:2
+#: 4bf59afb8aad45deaca9d64f3528b71b
+msgid "tooluniverse.tools.FAERS\\_count\\_additive\\_reaction\\_outcomes module"
+msgstr "tooluniverse.tools.FAERS\\_count\\_additive\\_reaction\\_outcomes 模块"
+
+#: 21773b596a794b0c8f4db1f3793993c2 of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes:1
+msgid "FAERS_count_additive_reaction_outcomes"
+msgstr "FAERS_计数_加成反应结果"
+
+#: 0ce1ff62029c441798fc870938e0b8b9 77b1bf001b8749c7a2fd1b45899b29b6 of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes:3
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:1
+msgid ""
+"Additive multi-drug data: Determine reaction outcome counts (e.g., "
+"recovered, resolving, fatal) a..."
+msgstr "添加多药数据：确定反应结果计数（例如，已恢复、正在缓解、致命）..."
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_reaction_outcomes.rst
+#: 62f8a8d89eb548b28cbd57741a4fef44
+msgid "Parameters"
+msgstr "参数"
+
+#: 765b003b895a4c1ea33561e0d0a1aa96 of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:3
+msgid "Array of medicinal product names."
+msgstr "药品名称数组"
+
+#: 9e584fe8542c49798f512572d0043af4 of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: f1e70d0d8c2f4cf5b83abe66af8f4a4d of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c70023dd415e4d53bf008e2033a83b6c of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FAERS_count_additive_reaction_outcomes.rst
+#: 670b9f2e96164c11bf20f8cfd998bc3b
+msgid "Return type"
+msgstr "返回类型"
+
+#: b4043cc97ab842c4a3103a6b6b81aa21 of
+#: tooluniverse.tools.FAERS_count_additive_reaction_outcomes.FAERS_count_additive_reaction_outcomes:18
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_biopython_info.rst:2
+#: 6ded222465d340a9acd727019143ca0a
+msgid "tooluniverse.tools.get\\_biopython\\_info module"
+msgstr "tooluniverse.tools.get\\_biopython\\_info 模块"
+
+#: 426e6ba2e9834bc3a8b98ce9f678280a of tooluniverse.tools.get_biopython_info:1
+msgid "get_biopython_info"
+msgstr "get_biopython_info 获取Biopython信息"
+
+#: 987371caaabb419288d806008783cec1 f1419ccbcbd440de8a6195e09a75a818 of
+#: tooluniverse.tools.get_biopython_info:3
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:1
+msgid ""
+"Get comprehensive information about Biopython – powerful tools for "
+"computational molecular biolog..."
+msgstr "获取关于 Biopython 的全面信息——强大的计算分子生物学工具..."
+
+#: ../../api/tooluniverse.tools.get_biopython_info.rst
+#: a88c68308bd346a399ff5dc050dc60a6
+msgid "Parameters"
+msgstr "参数"
+
+#: a77e2249cf0246e8b887fa1bc4d38d03 of
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 2f2ec264b4a94f4496cc269f9818e233 of
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3642e497521547be9644d66b31bd83a8 of
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 0e28060f40be4ca7a8d7017150d27889 of
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_biopython_info.rst
+#: 624e7f6735424e54824112318ff153e4
+msgid "Return type"
+msgstr "返回类型"
+
+#: ce0b9c57c66042e6a289f47c493c46f1 of
+#: tooluniverse.tools.get_biopython_info.get_biopython_info:12
+msgid ":py:class:`Any`"
+msgstr ""

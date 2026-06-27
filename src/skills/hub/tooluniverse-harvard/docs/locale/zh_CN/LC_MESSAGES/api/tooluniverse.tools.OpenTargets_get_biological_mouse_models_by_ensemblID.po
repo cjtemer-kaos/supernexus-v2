@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.rst:2
+#: dadfd5c61a0841f39bc23a2d4c249c24
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_biological\\_mouse\\_models\\_by\\_ensemblID"
+" module"
+msgstr ""
+"tooluniverse.tools.OpenTargets\\_get\\_biological\\_mouse\\_models\\_by\\_ensemblID"
+" 模块"
+
+#: b6287394499346e6bdc8e21872307720 of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID:1
+msgid "OpenTargets_get_biological_mouse_models_by_ensemblID"
+msgstr ""
+"OpenTargets_get_biological_mouse_models_by_ensemblID  \n"
+"获取基于EnsemblID的生物学小鼠模型"
+
+#: 61fa894d75224c05ba5d6bce0f590430 66bb57cc991e47ca9c22b1e8b5600455 of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID:3
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:1
+msgid ""
+"Retrieve biological mouse models, including allelic compositions and genetic"
+" backgrounds, for a s..."
+msgstr "检索生物小鼠模型，包括等位基因组成和遗传背景，适用于..."
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.rst
+#: 2180299907964e64a6b395433010425d
+msgid "Parameters"
+msgstr "参数"
+
+#: ba07f54919a34b1f95d62653e1ca00a6 of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:3
+msgid "The Ensembl ID of the target."
+msgstr "目标的 Ensembl ID"
+
+#: 4ce2fce180da4d2c8b2fe2252c4b30cb of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0a03259ef2aa4670b1dfeb1e96420990 of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: eae6264060c143649e86f3642e36fc49 of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.rst
+#: cf663a2acbe444389633bfc83a052273
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7934441b0a66486788601ab42701591f of
+#: tooluniverse.tools.OpenTargets_get_biological_mouse_models_by_ensemblID.OpenTargets_get_biological_mouse_models_by_ensemblID:12
+msgid ":py:class:`Any`"
+msgstr ""

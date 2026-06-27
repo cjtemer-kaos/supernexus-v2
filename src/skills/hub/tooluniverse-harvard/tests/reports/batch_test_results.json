@@ -1,0 +1,325 @@
+{
+  "examples": {
+    "passed": [
+      {
+        "file": "humanbase_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: humanbase_ppi_analysis with arguments: {'gene_list': ['TP53', 'USP7'], 'tissue': 'brain'}\n[humanbase_tool] Using the official gene name: 'TP5"
+      },
+      {
+        "file": "hpa_example.py",
+        "status": "PASSED",
+        "output": "🧪 Comprehensive HPA Tools Testing\n================================================================================\nTesting all HPA tools with complete input/output display for agent reasoning\n================================================================================\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: EXPERT_FEEDBACK_MCP_SERVER_URL, BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missin"
+      },
+      {
+        "file": "software_tools_example.py",
+        "status": "PASSED",
+        "output": "🧪 Testing ToolUniverse Software Package Tools\n============================================================\n⚠️  Tool category 'software' not found in available tool files\nℹ️  Number of tools after load tools: 0\n📦 Found 0 software package tools:\n\n============================================================\n\n[1] Testing numpy...\n    Tool: get_numpy_info\n    Args: {'include_examples': True}\n--------------------------------------------------\n❌ FAILED\n   Unexpected result type: <class 'str'>\n\n[2] Test"
+      },
+      {
+        "file": "tool_finder_example.py",
+        "status": "PASSED",
+        "output": "🔍 Tool Finder Example\n==================================================\nInitializing ToolUniverse...\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n✅ ToolUniverse initialized successfully\n\nRunning 2 example"
+      },
+      {
+        "file": "rcsb_pdb_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY, EXPERT_FEEDBACK_MCP_SERVER_URL, BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\nQuery: {'name': 'get_sequence_by_pdb_id', 'arguments': {'pdb_id': '1XYZ'}}\n----------------------------------------\nResult: {'data': {'entries': [{'rcsb_id': '1"
+      },
+      {
+        "file": "fda_adv_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: FAERS_count_additive_adverse_reactions with arguments: {'medicinalproducts': ['Antara'], 'patient.patientsex': 'Male', 'patient.patientagegro"
+      },
+      {
+        "file": "openrouter_client_example.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33, typeguard-4.3.0\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 11 items\n\nexamples/openrouter_client_example.py .F\n\n==============================="
+      },
+      {
+        "file": "cellosaurus_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: cellosaurus_search_cell_lines with arguments: {'q': 'ox:9606 AND char:cancer', 'size': 3}\n✅ Success. Output snippet:\n{'success': True, 'resul"
+      },
+      {
+        "file": "agentic_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: ExperimentalDesignScorer with arguments: ['hypothesis', 'design_description']\n⚠️  Model o4-mini-0416 does not support 'temperature'; ignoring"
+      },
+      {
+        "file": "openalex_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: openalex_literature_search with arguments: {'search_keywords': 'cancer', 'max_results': 10, 'year_from': 2020, 'year_to': 2023, 'open_access'"
+      },
+      {
+        "file": "list_built_in_tools_example.py",
+        "status": "PASSED",
+        "output": "predefined tool names: 675\nℹ️  Scanned 84 JSON files, found 685 tools\nall tool names (scan_all): 684\nℹ️  Scanned 84 JSON files, found 685 tools\nall tool specs (scan_all): 684\nℹ️  Scanned 84 JSON files, found 685 tools\n============================================================\n🔧 ToolUniverse Built-in Tools Overview (Tool Types)\n============================================================\n📊 Total Categories: 103\n🛠️  Total Unique Tools: 684\n📋 Organization Mode: type\n\n📂 Tool Types Breakdown:\n-----"
+      },
+      {
+        "file": "idmap_tools_example.py",
+        "status": "PASSED",
+        "output": "🔧 Initializing ToolUniverse...\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n✅ Tools loaded successfully\n\n🧪 Starting ID Mapping tools tests:\n\n[1] Get disease IDs by name\n    Tool: OpenTargets_get_disease_id"
+      },
+      {
+        "file": "azure_openai_models_example.py",
+        "status": "PASSED",
+        "output": "Listing Azure OpenAI deployments for resource:\n - Endpoint : https://azure-ai.hms.edu\n - Versions : 2024-10-21\n\nNo deployments found via REST or REST not available.\n\nREST attempt details (for debugging):\n - 2024-10-21 /openai/deployments: 404 Client Error: ResponseError for url: https://azure-ai.hms.edu/openai/deployments?api-version=2024-10-21 (url: https://azure-ai.hms.edu/openai/deployments?api-version=2024-10-21)\n - 2024-10-21 /deployments: 404 Client Error: Resource Not Found for url: https"
+      },
+      {
+        "file": "stdio_hooks_example.py",
+        "status": "PASSED",
+        "output": "MCP stdio 模式 hooks 测试\n测试工具: OpenTargets_get_target_gene_ontology_by_ensemblID\n测试参数: ensemblId=ENSG00000012048\n\n============================================================\n测试模式: 关闭 hooks\n============================================================\n启动命令: /Users/shgao/miniconda3/bin/python -c \nimport sys\nsys.path.insert(0, 'src')\nfrom tooluniverse.smcp_server import run_stdio_server\nsys.argv = ['tooluniverse-stdio'] + (['--hooks'] if False else [])\nrun_stdio_server()\n ...\n读取启动日志...\n启动日志: 🚀 Startin"
+      },
+      {
+        "file": "fda_drug_labeling_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, USPTO_API_KEY, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: FDA_get_drug_names_by_clinical_studies with arguments: {'clinical_studies': 'NSCLC hepatic impairment', 'indication': 'cardiovascular'}\nhttps"
+      },
+      {
+        "file": "literature_search_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n🔍 Literature Search Tools Example\n==================================================\nTesting 3 literature search tools...\n\n📚 Testing ArXiv_search_papers (ArXiv "
+      },
+      {
+        "file": "chem_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: ChEMBL_search_similar_molecules with arguments: {'query': 'Gadavist', 'similarity_threshold': 70, 'max_results': 20}\n✅ Success. Example outpu"
+      },
+      {
+        "file": "gene_ontology_tools_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 5\n--- Starting Gene Ontology (GO) Tool Test ---\n\n================================================================================\n[1] GO_search_terms(query=cell cycle)\nDict (5778 chars): {'responseHeader': {'status': 0, 'QTime': 0, 'params': {'q': '*:*', 'fq': ['document_category:\"ontology_class\"', 'annotation_class_label:\"cell cycle\"'], 'rows': '10', 'wt': 'json'}}, 'response': {'numFound': 1, 'start': 0, 'docs': [{'document_category': 'ontology_class', 'id"
+      },
+      {
+        "file": "pubtator_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY, EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: PubTator3_EntityAutocomplete with arguments: {'text': 'BRAF', 'entity_type': 'GENE', 'max_results': 5}\n❌ Failed running PubTator3_EntityAutoc"
+      },
+      {
+        "file": "pubchem_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: PubChem_get_compound_properties_by_CID with arguments: {'cid': 1983}\n✅ Success. Example output snippet:\nReturned JSON, example first 3 key-va"
+      },
+      {
+        "file": "gwas_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n================================================================================\n[1] Running tool: gwas_search_associations with arguments: {'efo_trait': 'type"
+      },
+      {
+        "file": "claude_sdk_example.py",
+        "status": "PASSED",
+        "output": "\n--- Message Type: SystemMessage ---\nMessage: SystemMessage(subtype='init', data={'type': 'system', 'subtype': 'init', 'cwd': '/Users/shgao/logs/25.05.28tooluniverse/ToolUniverse/examples/sandbox', 'session_id': '086d54ba-2ccb-400a-b217-4afb0c1e37da', 'tools': ['Task', 'Bash', 'Glob', 'Grep', 'ExitPlanMode', 'Read', 'Edit', 'Write', 'NotebookEdit', 'WebFetch', 'TodoWrite', 'WebSearch', 'BashOutput', 'KillShell', 'SlashCommand', 'mcp__tooluniverse__find_tools', 'mcp__tooluniverse__get_server_info"
+      },
+      {
+        "file": "medlineplus_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n================================================================================\n[1] Running tool: MedlinePlus_search_topics_by_keyword\nArguments: {'term': 'he"
+      },
+      {
+        "file": "mcp_tool_example.py",
+        "status": "PASSED",
+        "output": "🔧 Initializing ToolUniverse...\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n✅ ToolUniverse initialized successfully\n📊 Total tools loaded: 651\n🔍 Found 0 MCP-related tools: []\n\n🧪 Running 3 MCP tool tests...\n"
+      },
+      {
+        "file": "enrichr_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: enrichr_gene_enrichment_analysis with arguments: {'gene_list': ['TP53', 'USP7']}\n[enrichr_api] Using the official gene name: 'TP53' instead o"
+      },
+      {
+        "file": "reactome_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: Reactome_get_pathway_reactions with arguments: {'stId': 'R-HSA-73817'}\n✅ Success. Example output snippet:\nList with 17 items, example first i"
+      },
+      {
+        "file": "mcp_server_example.py",
+        "status": "PASSED",
+        "output": "🧪 FastMCP Server Test Tool\n==================================================\n🚀 Starting MCP server...\n🚀 Starting FastMCP server test...\n⏳ Waiting for server to start...\n\n📋 Test 1: Get available tool list\n❌ Failed to connect to server: Cannot connect to host 127.0.0.1:8000 ssl:default [Connect call failed ('127.0.0.1', 8000)]\n\n❌ Some tests failed, please check server configuration.\n\n🧹 Cleanup: closing server...\n✅ Server closed\n"
+      },
+      {
+        "file": "agentic_streaming_example.py",
+        "status": "PASSED",
+        "output": "🚀 Starting AgenticTool streaming demo\n\nAPI Type: GEMINI\nModel: gemini-2.0-flash\nℹ️  Including only specific tools: 1 tools specified\nℹ️  Included 1 tools by name filter\nℹ️  Number of tools after load tools: 1\n\n📨 Prompt:\nSuggest productivity techniques for a research scientist who wants to keep up\nwith literature while managing experiments.\n\n📡 Streaming chunks:\n\n\n\n✅ Final assembled response:\n\nInvalid function call: Invalid parameters provided: ['_tooluniverse_stream']\n"
+      },
+      {
+        "file": "efo_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY, TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: OSL_get_efo_id_by_disease_name with arguments: {'disease': 'Bardet Biedl syndrome'}\n✅ Success. Example output snippet:\n{'efo_id': 'EFO_000902"
+      },
+      {
+        "file": "disease_target_score_example.py",
+        "status": "PASSED",
+        "output": "Testing Disease-Target Score Tools...\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\nTesting generic tool...\n\u001b[92m{'disease_info': {'disease_id': 'EFO_0000339', 'disease_name': 'chronic myelogenous leukemia'"
+      },
+      {
+        "file": "drugbank_filter_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n=== DrugBank Filter Tool Usage Examples ===\n\n[1] Example 1: Find all insulin-related drugs\nFilter Arguments:\n{\n  \"filters\": {\n    \"Common name\": {\n      \"contai"
+      },
+      {
+        "file": "opentargets_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: Tool_Finder with arguments: {'diseaseName': 'Bardet-Biedl syndrome'}\n✅ Success. Example output snippet:\nInvalid function call: Missing requir"
+      },
+      {
+        "file": "admetai_tool_example.py",
+        "status": "PASSED",
+        "output": "🧪 ADMETAI Tool Usage Example\n==================================================\nInitializing ToolUniverse...\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n✅ ToolUniverse initialized successfully\n\nRunning 9 "
+      },
+      {
+        "file": "literature_review_example.py",
+        "status": "PASSED",
+        "output": "🔬 LiteratureReviewAgent Tool Demo\n========================================\nℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, USPTO_API_KEY, TXAGENT_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\nTotal tools loaded: 651\nCompose tools available: ['PubTator3_LiteratureSearch', 'Medi"
+      },
+      {
+        "file": "dataset_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_MCP_SERVER_HOST, USPTO_API_KEY, TXAGENT_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: drugbank_vocab_search with arguments: {'query': 'aspirin'}\nLoaded dataset with 17430 records\n✅ Success. Example output snippet:\nFound 3 resul"
+      },
+      {
+        "file": "uniprot_tools_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n================================================================================\n[1] UniProt_get_entry_by_accession(P05067)\nDict (487838 chars): {'entryType': "
+      },
+      {
+        "file": "hooks_direct_example.py",
+        "status": "PASSED",
+        "output": "MCP stdio 模式 hooks 直接测试\n测试工具: OpenTargets_get_target_gene_ontology_by_ensemblID\n测试参数: ensemblId=ENSG00000012048\n\n============================================================\n测试模式: 关闭 hooks\n超时设置: 20秒\n============================================================\n启动命令: /Users/shgao/miniconda3/bin/python -c \nimport sys\nimport time\nsys.path.insert(0, 'src')\nfrom tooluniverse.execute_function import ToolUniverse\n\n# 创建 ToolUniverse 实例\ntooluniverse = ToolUniverse()\n\n# 配置 hooks\nif False:\n    print(\"启用 hoo"
+      },
+      {
+        "file": "global_fallback_example.py",
+        "status": "PASSED",
+        "output": "=== Test 1: Default Global Fallback Chain ===\n\n⚠️  Failed to initialize GEMINI model gemini-2.0-flash: GEMINI_API_KEY not found\nℹ️  Primary API GEMINI failed, trying global fallback chain\nℹ️  Trying global fallback: CHATGPT (gpt-4o-1120)\nℹ️  Using fallback API: CHATGPT with model gpt-4o-1120 (originally configured: GEMINI with gemini-2.0-flash)\nTool available: True\nCurrent API: CHATGPT\nCurrent model: gpt-4o-1120\nOriginal config: GEMINI with gemini-2.0-flash\nGlobal fallback enabled: True\nGlobal f"
+      },
+      {
+        "file": "semantic_scholar_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: TXAGENT_MCP_SERVER_HOST, USPTO_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, USPTO_API_KEY, BOLTZ_MCP_SERVER_HOST\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: SemanticScholar_search_papers with arguments: {'query': 'cancer immunotherapy', 'limit': 3}\n✅ Success. Example output snippet:\n[{'title': 'Ca"
+      },
+      {
+        "file": "uspto_tool_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: BOLTZ_MCP_SERVER_HOST, USPTO_API_KEY, USPTO_MCP_SERVER_HOST, TXAGENT_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: get_patent_overview_by_text_query with arguments: {'query': 'iron oxide', 'exact_match': True, 'sort': 'filingDate desc', 'limit': 5, 'rangeF"
+      },
+      {
+        "file": "paper_search_example.py",
+        "status": "PASSED",
+        "output": "Loading paper search tools...\nℹ️  Number of tools after load tools: 12\nLoaded 12 tools\n\nSearching for: 'machine learning'\n============================================================\n\n--- ArXiv ---\nFound 2 papers\nTitle: Lecture Notes: Optimization for Machine Learning...\nAuthors: ['Elad Hazan']\n\n--- Europe PMC ---\nFound 2 papers\nTitle: Machine learning in chemistry....\nAvailable fields: has_authors, has_journal, has_year, has_doi, has_url\nAuthors: ['Debenedetti PG', 'de Pablo JJ']...\nYear: 2025\n"
+      },
+      {
+        "file": "openrouter_example.py",
+        "status": "PASSED",
+        "output": "======================================================================\nOpenRouter Integration Examples for ToolUniverse\n======================================================================\n\n✅ OpenRouter configured successfully!\n\nRunning examples...\n\n======================================================================\nExample 1: Using OpenAI GPT-4o via OpenRouter\n======================================================================\n\n❌ Error running examples: 'ToolUniverse' object has no attr"
+      },
+      {
+        "file": "dailymed_example.py",
+        "status": "PASSED",
+        "output": "ℹ️  Number of tools after load tools: 651\n⚠️  \nMissing API keys: USPTO_MCP_SERVER_HOST, BOLTZ_MCP_SERVER_HOST, EXPERT_FEEDBACK_MCP_SERVER_URL, TXAGENT_MCP_SERVER_HOST, USPTO_API_KEY\nℹ️  Generating .env.template file with missing API keys...\nℹ️  Generated API key template: .env.template\nℹ️  Copy this file to .env and fill in your API keys\n\n[1] Running tool: DailyMed_search_spls with arguments: {'drug_name': 'TAMSULOSIN HYDROCHLORIDE'}\n✅ Success. Result snippet (first 500 chars):\n{'data': [{'spl_v"
+      }
+    ],
+    "failed": [
+      {
+        "file": "tool_description_optimizer_example.py",
+        "status": "TIMEOUT",
+        "error": "Test timed out after 60 seconds"
+      },
+      {
+        "file": "europe_pmc_tool_example.py",
+        "status": "FAILED",
+        "error": "<frozen importlib._bootstrap>:488: RuntimeWarning: to-Python converter for boost::shared_ptr<RDKit::FilterHierarchyMatcher> already registered; second conversion method ignored.",
+        "returncode": 1
+      },
+      {
+        "file": "tool_finder_llm_example.py",
+        "status": "TIMEOUT",
+        "error": "Test timed out after 60 seconds"
+      },
+      {
+        "file": "tools_find_example.py",
+        "status": "FAILED",
+        "error": "/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\n  declare_namespace(pkg)\n/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: Deprecatio",
+        "returncode": 1
+      },
+      {
+        "file": "odphp_tool_example.py",
+        "status": "FAILED",
+        "error": "/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\n  declare_namespace(pkg)\n/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: Deprecatio",
+        "returncode": 1
+      },
+      {
+        "file": "xml_tool_example.py",
+        "status": "TIMEOUT",
+        "error": "Test timed out after 60 seconds"
+      },
+      {
+        "file": "alphafold_tool_example.py",
+        "status": "FAILED",
+        "error": "/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\n  declare_namespace(pkg)\n/Users/shgao/miniconda3/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: Deprecatio",
+        "returncode": 1
+      }
+    ],
+    "skipped": []
+  },
+  "tests": {
+    "passed": [
+      {
+        "file": "test_agentic_tool_azure_models.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 8 items\n\ntests/test_agentic_tool_azure_models.py ........                         [100%]\n\n=========="
+      },
+      {
+        "file": "test_agentic_streaming_integration.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 3 items\n\ntests/test_agentic_streaming_integration.py ..s                          [100%]\n\n=========="
+      },
+      {
+        "file": "test_api_key_validation.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 1 item\n\ntests/test_api_key_validation.py .                                       [100%]\n\n==========="
+      },
+      {
+        "file": "test_nice_guidelines_tool.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 10 items\n\ntests/test_nice_guidelines_tool.py ..........                            [100%]\n\n========="
+      },
+      {
+        "file": "test_literature_tools.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 21 items\n\ntests/test_literature_tools.py .....................                     [100%]\n\n========="
+      },
+      {
+        "file": "test_streaming_support.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 3 items\n\ntests/test_streaming_support.py ...                                      [100%]\n\n=========="
+      },
+      {
+        "file": "test_paper_search_tools.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 10 items\n\ntests/test_paper_search_tools.py ..........                              [100%]\n\n========="
+      },
+      {
+        "file": "test_guideline_tools.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 23 items\n\ntests/test_guideline_tools.py .......................                    [100%]\n\n========="
+      },
+      {
+        "file": "test_compose_tool.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 5 items\n\ntests/test_compose_tool.py .....                                         [100%]\n\n=========="
+      },
+      {
+        "file": "test_cellosaurus_tool.py",
+        "status": "PASSED",
+        "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.12.3, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/shgao/logs/25.05.28tooluniverse/ToolUniverse\nconfigfile: pytest.ini\nplugins: anyio-4.11.0, mock-3.15.0, timeout-2.4.0, requests-mock-1.12.1, cov-7.0.0, langsmith-0.4.33\ntimeout: 30.0s\ntimeout method: signal\ntimeout func_only: False\ncollected 6 items\n\ntests/test_cellosaurus_tool.py ......                                    [100%]\n\n=========="
+      }
+    ],
+    "failed": [],
+    "skipped": []
+  },
+  "summary": {
+    "total_examples": 50,
+    "total_tests": 10,
+    "start_time": "2025-10-10 01:34:37",
+    "end_time": "2025-10-10 10:13:08"
+  }
+}

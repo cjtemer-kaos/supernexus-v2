@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.rst:2
+#: d2e8a02c15c049bda79fe6d2ae403b19
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_environmental\\_warning module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_environmental\\_warning 模块"
+
+#: 5be26bc782ff49b59b9f1cd9b2f72985 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning:1
+msgid "FDA_get_drug_name_by_environmental_warning"
+msgstr "FDA_根据环境警告获取药品名称"
+
+#: 20f29e67085142009ce49ac237e8d6e2 61125461b1bf4e4b893a84c2df92642c of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning:3
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:1
+msgid "Retrieve the drug name based on the specified environmental warnings."
+msgstr "根据指定的环境警告检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.rst
+#: 8e3742e3a3fb42bcae1a0b9bb906f561
+msgid "Parameters"
+msgstr "参数"
+
+#: 2c174e1eb83746bd9b86c5f8f1ce4055 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:3
+msgid "The environmental warning text to search for."
+msgstr "需搜索的环境警告文本。"
+
+#: ffacea48568c43e7911d45114ef5c474 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 6441cc7afc7c4b39964743695059aa00 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数量。"
+
+#: 008f4413704f4651b46cb49b2e8af368 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 7829ea96c107491189ecce3032c24d51 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ccc5cb4b70fa431291f9bd4bf0ca3000 of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.rst
+#: e91d6b901d15452c9dca36b219da1ccf
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0e57a7e1fdf74e27a1da3f7a2c75a05d of
+#: tooluniverse.tools.FDA_get_drug_name_by_environmental_warning.FDA_get_drug_name_by_environmental_warning:16
+msgid ":py:class:`Any`"
+msgstr ""

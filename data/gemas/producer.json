@@ -1,0 +1,30 @@
+{
+  "name": "producer",
+  "version": "2.0.0",
+  "description": "Automatizacion via RCON y agendamiento de tareas async",
+  "main": "src.agents.producer_gem",
+  "model": "deepseek-v4-flash-free",
+  "activationEvents": [
+    "onCommand:schedule",
+    "onCommand:rcon",
+    "onCommand:cron"
+  ],
+  "semanticKeywords": [
+    "schedule",
+    "automation",
+    "rcon",
+    "cron",
+    "task",
+    "server",
+    "rust",
+    "agendar",
+    "programar"
+  ],
+  "category": "infrastructure",
+  "maxMemoryMB": 256,
+  "maxCPUPercent": 15,
+  "timeoutSeconds": 120,
+  "autoRestart": true,
+  "maxRestarts": 5,
+  "parallelCapable": true
+}

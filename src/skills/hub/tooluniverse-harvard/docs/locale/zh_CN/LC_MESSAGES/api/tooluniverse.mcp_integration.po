@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.mcp_integration.rst:2
+#: 56c24bacf8e34811b4b8a002b8b56fc6
+msgid "tooluniverse.mcp\\_integration module"
+msgstr "tooluniverse.mcp_integration 模块"
+
+#: 79e013652d9c42f4919fde6d37eb6dbb of tooluniverse.mcp_integration:1
+msgid "ToolUniverse MCP Integration Extensions"
+msgstr "ToolUniverse MCP 集成扩展"
+
+#: 293c0ff14b364842aa2651a731c8cfd1 of tooluniverse.mcp_integration:3
+msgid ""
+"This module extends ToolUniverse with methods to automatically discover and "
+"load MCP tools from remote servers, providing seamless integration between "
+"local tools and remote MCP services."
+msgstr ""
+"该模块通过方法扩展了 ToolUniverse，能够自动发现并加载来自远程服务器的 MCP 工具，实现本地工具与远程 MCP 服务的无缝集成。"
+
+#: cf71f19f71ce468f9d283942dde1277a of
+#: tooluniverse.mcp_integration.load_mcp_tools:1
+msgid "Load MCP tools from remote servers into this ToolUniverse instance."
+msgstr "将 MCP 工具从远程服务器加载到此 ToolUniverse 实例中。"
+
+#: c8a6cf98cc4b43c1a32d3f4308c5debf of
+#: tooluniverse.mcp_integration.load_mcp_tools:3
+msgid ""
+"This method automatically discovers tools from MCP servers and registers "
+"them as ToolUniverse tools, enabling seamless usage of remote capabilities."
+msgstr "该方法自动从 MCP 服务器发现工具，并将其注册为 ToolUniverse 工具，实现远程功能的无缝使用。"
+
+#: dfaae214f1b74ef0a038808cc0946fd9 f5b07e33ef2a47e98f67cd3a54b17892 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:8
+#: tooluniverse.mcp_integration.load_mcp_tools:7
+msgid "Parameters:"
+msgstr "参数："
+
+#: 0b0db29326b8458196a1e12aa10db9ee e93281ec9c6646b48107e2b385432497 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:9
+#: tooluniverse.mcp_integration.load_mcp_tools:8
+msgid "server_urls"
+msgstr "服务器网址"
+
+#: 0ea367375ee74da7a2727f382182c5af bf9e15afae5347e8bd746a4f73a7a6f6 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:-1
+#: tooluniverse.mcp_integration.load_mcp_tools:-1
+msgid "list of str, optional"
+msgstr "字符串列表，可选"
+
+#: b218fe48bc494b5e899b08788bd78e31 of
+#: tooluniverse.mcp_integration.load_mcp_tools:9
+msgid "List of MCP server URLs to load tools from. Examples:"
+msgstr "用于加载工具的 MCP 服务器 URL 列表。示例："
+
+#: 59ddf8ebd4484c80808b8b2c784954ba of
+#: tooluniverse.mcp_integration.load_mcp_tools:11
+msgid "[\"http://localhost:8001\", \"http://analysis-server:8002\"]"
+msgstr ""
+
+#: 13ad472e7ebb44539e0e003ca45884e5 of
+#: tooluniverse.mcp_integration.load_mcp_tools:12
+msgid "[\"ws://localhost:9000\"]  # WebSocket MCP servers"
+msgstr "[\"ws://localhost:9000\"]  # WebSocket MCP 服务器"
+
+#: 55e47d98f35b4f06ab898d819c668359 of
+#: tooluniverse.mcp_integration.load_mcp_tools:14
+msgid "If None, attempts to discover from local MCP tool registry."
+msgstr "如果为 None，则尝试从本地 MCP 工具注册表中发现。"
+
+#: 9c45b99b93da487881169fc5f753f8de e61fe122a4e84906ae4c180c7f90efee of
+#: tooluniverse.mcp_integration.discover_mcp_tools:11
+#: tooluniverse.mcp_integration.load_mcp_tools:16
+msgid "**kwargs"
+msgstr "**kwargs（关键字参数）"
+
+#: d78b2934956e4067a3fb5d311ced95da of
+#: tooluniverse.mcp_integration.load_mcp_tools:17
+msgid "Additional configuration options:"
+msgstr "附加配置选项："
+
+#: e1d8ec0e662c42b9a324ab6cf6b60a54 of
+#: tooluniverse.mcp_integration.load_mcp_tools:19
+msgid "tool_prefix (str): Prefix for loaded tool names (default: \"mcp_\")"
+msgstr "tool_prefix (str)：加载工具名称的前缀（默认值：\"mcp_\"）"
+
+#: e27fe8d7993b4e1aac012a086475fc63 of
+#: tooluniverse.mcp_integration.load_mcp_tools:20
+msgid "timeout (int): Connection timeout in seconds (default: 30)"
+msgstr "timeout（整数）：连接超时时间（单位：秒，默认值：30）"
+
+#: 53a4ec97078d4a88b213c0714e399cfd of
+#: tooluniverse.mcp_integration.load_mcp_tools:21
+msgid ""
+"auto_register (bool): Whether to auto-register discovered tools (default: "
+"True)"
+msgstr "auto_register（布尔值）：是否自动注册发现的工具（默认值：True）"
+
+#: d654c6b27ee1438cbe6877d06b856598 of
+#: tooluniverse.mcp_integration.load_mcp_tools:22
+msgid "selected_tools (list): Specific tools to load from each server"
+msgstr "`selected_tools (list): 从每个服务器加载的特定工具`"
+
+#: f74002a7baea4374bff41e982eb7778c of
+#: tooluniverse.mcp_integration.load_mcp_tools:23
+msgid "categories (list): Tool categories to filter by"
+msgstr "类别（列表）：用于筛选的工具类别"
+
+#: 1392ac259367413dab9d78cf3bcdf93b a74f251cc7a94bfc8c2f074b7b4fed9d
+#: edb863866a9a45c2a4aefd9b0ccdeee9 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:17
+#: tooluniverse.mcp_integration.list_mcp_connections:4
+#: tooluniverse.mcp_integration.load_mcp_tools:26
+msgid "Returns:"
+msgstr "返回："
+
+#: 6622b6463454407b9f4a23d30da7b229 cc567407c03e4474bf777e0d78b28b0c
+#: dc98f5db2e384f9c8dc45c4b4b2cc011 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:18
+#: tooluniverse.mcp_integration.list_mcp_connections:5
+#: tooluniverse.mcp_integration.load_mcp_tools:27
+msgid "dict"
+msgstr "字典"
+
+#: e51487dc32e04503a0a6167781c9bc12 of
+#: tooluniverse.mcp_integration.load_mcp_tools:28
+msgid "Summary of loaded tools with counts and any errors encountered."
+msgstr "已加载工具的摘要，包括数量及遇到的任何错误。"
+
+#: 350da7a2e1c345c4bbf6c7ae6621b3e3 4de890b5dacc457eb453d42aa66a21ce
+#: df01ac9c7e0541b68af98cd408940b7d of
+#: tooluniverse.mcp_integration.discover_mcp_tools:22
+#: tooluniverse.mcp_integration.list_mcp_connections:9
+#: tooluniverse.mcp_integration.load_mcp_tools:31
+msgid "Examples:"
+msgstr ""
+"示例：\n"
+"\n"
+"上下文：文档"
+
+#: 46382ee2c8e74436aee77251d0ffeff5 of
+#: tooluniverse.mcp_integration.load_mcp_tools:33
+msgid "Load from specific servers: ```python tu = ToolUniverse()"
+msgstr "从特定服务器加载：```python tu = ToolUniverse()"
+
+#: ba3e4dc6387c41fabd26fdfe39fab0ca of
+#: tooluniverse.mcp_integration.load_mcp_tools:37
+msgid "# Load tools from multiple MCP servers result = tu.load_mcp_tools(["
+msgstr ""
+"# 从多个MCP服务器加载工具  \n"
+"result = tu.load_mcp_tools(["
+
+#: 976ec0271e364ffe862c2bf86b2c7226 of
+#: tooluniverse.mcp_integration.load_mcp_tools:39
+msgid ""
+"\"http://localhost:8001\",  # Local analysis server \"http://ml-"
+"server:8002\",  # Remote ML server \"ws://realtime:9000\"      # WebSocket "
+"server"
+msgstr ""
+"\"http://localhost:8001\",  # 本地分析服务器  \n"
+"\"http://ml-server:8002\",  # 远程机器学习服务器  \n"
+"\"ws://realtime:9000\"      # WebSocket服务器"
+
+#: 3ed5061d8f634715a3192ca0ccd4095b dec28109e7bb4392976545508a6ef79a of
+#: tooluniverse.mcp_integration.discover_mcp_tools:30
+#: tooluniverse.mcp_integration.load_mcp_tools:42
+msgid "])"
+msgstr "请提供具体的英文文本以便翻译。"
+
+#: 2ca2540c1cdf4071a17e84f9296e9e53 of
+#: tooluniverse.mcp_integration.load_mcp_tools:44
+#, python-brace-format
+msgid ""
+"print(f\"Loaded {result['total_tools']} tools from "
+"{result['servers_connected']} servers\") ```"
+msgstr ""
+"```python\n"
+"print(f\"已从{result['servers_connected']}台服务器加载了{result['total_tools']}个工具\")\n"
+"```"
+
+#: 4346f926f37c4f31a728a2700ef3ad4d of
+#: tooluniverse.mcp_integration.load_mcp_tools:47
+msgid "Load with custom configuration: ```python tu.load_mcp_tools("
+msgstr "使用自定义配置加载：```python tu.load_mcp_tools("
+
+#: 74c93797dc904d3782843c268ed51d72 of
+#: tooluniverse.mcp_integration.load_mcp_tools:50
+msgid ""
+"server_urls=[\"http://localhost:8001\"], tool_prefix=\"analysis\\_\", "
+"timeout=60, selected_tools=[\"protein_analysis\", \"drug_interaction\"]"
+msgstr ""
+
+#: bd87907452204e4e9e8d895eb09d4a46 of
+#: tooluniverse.mcp_integration.load_mcp_tools:55
+msgid ")"
+msgstr "请提供需要翻译的英文文本，我将为您提供符合要求的中文翻译。"
+
+#: 6ee5ecf082cc4e87ada5845256c987ea of
+#: tooluniverse.mcp_integration.load_mcp_tools:57
+msgid ""
+"Auto-discovery from local registry: ```python # If you have registered MCP "
+"tools locally, auto-discover their servers tu.load_mcp_tools()  # Uses "
+"servers from mcp_tool_registry ```"
+msgstr ""
+"本地注册表自动发现：```python # 如果您已在本地注册 MCP 工具，自动发现其服务器 tu.load_mcp_tools()  # 使用 "
+"mcp_tool_registry 中的服务器 ```"
+
+#: 273dac1ad3314ceaa4281771ddb3c8b8 of
+#: tooluniverse.mcp_integration._load_tools_from_mcp_server:1
+msgid "Load tools from a specific MCP server."
+msgstr "从特定的 MCP 服务器加载工具。"
+
+#: bb6e8bd50d9549de854b9a8e3bb77503 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:1
+msgid "Discover available tools from MCP servers without loading them."
+msgstr "无需加载即可发现 MCP 服务器上的可用工具。"
+
+#: 93f7a5d5a2d8490ab3dcec1e4e2270e3 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:3
+msgid ""
+"This method connects to MCP servers to discover what tools are available "
+"without actually registering them in ToolUniverse. Useful for exploration "
+"and selective tool loading."
+msgstr "此方法连接到 MCP 服务器，以发现可用的工具，而无需实际将其注册到 ToolUniverse 中。适用于工具的探索和选择性加载。"
+
+#: 6195ffc4fc3742a6bf27c6c2ef3fd7e9 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:10
+msgid "List of MCP server URLs to discover from"
+msgstr "用于发现的 MCP 服务器 URL 列表"
+
+#: d8c0b9ee7fc549e8a3b3688bafbe700c of
+#: tooluniverse.mcp_integration.discover_mcp_tools:12
+msgid ""
+"Additional options: - timeout (int): Connection timeout (default: 30) - "
+"include_schemas (bool): Include tool parameter schemas (default: True)"
+msgstr ""
+"附加选项：  \n"
+"- timeout (int)：连接超时（默认值：30）  \n"
+"- include_schemas (bool)：是否包含工具参数架构（默认值：True）"
+
+#: 896c3b2b84294170951293f6c3a94684 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:19
+msgid "Discovery results with tools organized by server"
+msgstr "按服务器组织的工具发现结果"
+
+#: df6e52917ea04cffa288a38552b10154 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:23
+msgid "```python tu = ToolUniverse()"
+msgstr ""
+"```python\n"
+"tu = ToolUniverse()\n"
+"```"
+
+#: e647df144cc34de79a8891bc3fb79349 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:26
+msgid "# Discover what's available discovery = tu.discover_mcp_tools(["
+msgstr ""
+"# 发现可用资源  \n"
+"discovery = tu.discover_mcp_tools(["
+
+#: f68f0073c1574eb69a5a25095bb76ea0 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:28
+msgid "\"http://localhost:8001\", \"http://ml-server:8002\""
+msgstr "http://localhost:8001\", \"http://ml-server:8002"
+
+#: 5344ff643661443a8f12abbcc8cf4f2e of
+#: tooluniverse.mcp_integration.discover_mcp_tools:32
+msgid "# Show available tools for server, info in discovery[\"servers\"].items():"
+msgstr "# 显示 discovery[\"servers\"].items() 中服务器的可用工具信息："
+
+#: 0baff1ab12014cf1abce20471a7f00f0 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:34
+#, python-brace-format
+msgid "print(f\"\\n{server}:\") for tool in info.get(\"tools\", []):"
+msgstr "print(f\"\\n{server}:\") 对 info.get(\"tools\", []) 中的每个工具执行："
+
+#: d79e005e3d9a465b9da8d067e679ac71 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:36
+#, python-brace-format
+msgid "print(f\"  - {tool['name']}: {tool['description']}\")"
+msgstr "print(f\"  - {tool['name']}：{tool['description']}\")"
+
+#: 8385e92691b941f5ad4639a30b1ea2a6 of
+#: tooluniverse.mcp_integration.discover_mcp_tools:37
+msgid "```"
+msgstr ""
+"```  \n"
+"上下文：文档  \n"
+"```"
+
+#: 7e22eb23f9984702972f39b868eccffc of
+#: tooluniverse.mcp_integration.list_mcp_connections:1
+msgid "List all active MCP connections and loaded tools."
+msgstr "列出所有活动的 MCP 连接及已加载的工具。"
+
+#: cb56f59cfe6946c9bd1b2434dc9e22c2 of
+#: tooluniverse.mcp_integration.list_mcp_connections:6
+msgid "Information about MCP connections, auto-loaders, and loaded tools"
+msgstr "关于MCP连接、自动装载器及已装载工具的信息"
+
+#: af61b7af05404fd999faed982b8e0d10 of
+#: tooluniverse.mcp_integration.list_mcp_connections:10
+msgid ""
+"```python tu = ToolUniverse() tu.load_mcp_tools([\"http://localhost:8001\"])"
+msgstr ""
+"```python\n"
+"tu = ToolUniverse()\n"
+"tu.load_mcp_tools([\"http://localhost:8001\"])\n"
+"```"
+
+#: bfc22de546fd4023b42fe0ec93224428 of
+#: tooluniverse.mcp_integration.list_mcp_connections:14
+#, python-brace-format
+msgid ""
+"connections = tu.list_mcp_connections() print(f\"Active MCP connections: "
+"{len(connections['connections'])}\") ```"
+msgstr ""
+"connections = tu.list_mcp_connections()  \n"
+"print(f\"活动的 MCP 连接数：{len(connections['connections'])}\")"
+
+#: 586f3452dd2b48639b75e5beceed1a69 of
+#: tooluniverse.mcp_integration._patch_tooluniverse:1
+msgid "Add MCP integration methods to ToolUniverse class."
+msgstr "将 MCP 集成方法添加到 ToolUniverse 类中。"

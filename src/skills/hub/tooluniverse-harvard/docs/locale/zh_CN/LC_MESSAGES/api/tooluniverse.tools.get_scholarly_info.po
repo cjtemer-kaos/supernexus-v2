@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_scholarly_info.rst:2
+#: abd3c3410e8045268a5887fef66f6390
+msgid "tooluniverse.tools.get\\_scholarly\\_info module"
+msgstr "tooluniverse.tools.get\\_scholarly\\_info 模块"
+
+#: 2dbdf874d8b34f90a529981cffb9fe8e of tooluniverse.tools.get_scholarly_info:1
+msgid "get_scholarly_info"
+msgstr "获取学术信息"
+
+#: 17ee1755d6574e358010adae926a4bad 75cc6bcbade348db99600f9488d3bbb6 of
+#: tooluniverse.tools.get_scholarly_info:3
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:1
+msgid ""
+"Get comprehensive information about scholarly – Google Scholar data "
+"retrieval"
+msgstr "获取有关学术信息的全面资料——Google Scholar 数据检索"
+
+#: ../../api/tooluniverse.tools.get_scholarly_info.rst
+#: 5fcd65f97728424fae38d465813d8eca
+msgid "Parameters"
+msgstr "参数"
+
+#: fde7be2a925d4e0a9a1a8353125b09f7 of
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:3
+msgid "Type of information to retrieve about scholarly"
+msgstr "关于学术信息的检索类型"
+
+#: a5f16446babb4f9687fcb758b03ada24 of
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2a0379f49590491d97b645933dafa9cb of
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c4c6721800db4edc9247a3a5f9ff5be9 of
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_scholarly_info.rst
+#: 07d461a2b229447a8f208efb937d68b1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5dc3514834ea4a77b1f74c53144baa26 of
+#: tooluniverse.tools.get_scholarly_info.get_scholarly_info:12
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_taxonomy_by_pdb_id.rst:2
+#: eededb94bc2c414fab556ebd4d5417f0
+msgid "tooluniverse.tools.get\\_taxonomy\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_taxonomy\\_by\\_pdb\\_id 模块"
+
+#: 8f2d5cefe9154357b88d4e6f0b29d75d of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id:1
+msgid "get_taxonomy_by_pdb_id"
+msgstr "通过PDB ID获取分类信息"
+
+#: 8f74ffa17ae34c0b9b3bcd9e4da44a32 c6956395dc86443aa2e9c68d7a0d43f5 of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id:3
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:1
+msgid ""
+"Get the scientific name and taxonomy of the organism(s) associated with a "
+"PDB entry."
+msgstr "获取与 PDB 条目相关的生物体的科学名称和分类信息。"
+
+#: ../../api/tooluniverse.tools.get_taxonomy_by_pdb_id.rst
+#: 3c63a76375c8422d8918ee804457fc7a
+msgid "Parameters"
+msgstr "参数"
+
+#: e70e76f7e2144312a0ce5a793a2a6a05 of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:3
+msgid "4-character RCSB PDB ID"
+msgstr "4字符RCSB PDB ID"
+
+#: 03334ad4d7e54f748386acd475184c53 of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: b95662044efb40f787b48fd195271607 of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 51e1096012ce463993e90b8609579acf of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_taxonomy_by_pdb_id.rst
+#: 5e1917e9391e4facabdf0f30bd192a19
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8b28922caf9346f89da03889c144f49c of
+#: tooluniverse.tools.get_taxonomy_by_pdb_id.get_taxonomy_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

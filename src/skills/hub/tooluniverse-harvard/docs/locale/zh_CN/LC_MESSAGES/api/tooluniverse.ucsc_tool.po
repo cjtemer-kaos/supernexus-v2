@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.ucsc_tool.rst:2 4e3c729dad854e05a4007ba94da8acba
+msgid "tooluniverse.ucsc\\_tool module"
+msgstr "tooluniverse.ucsc\\_tool 模块"
+
+#: 1d5b4d1626714742a5955243a358eb81 of tooluniverse.ucsc_tool.UCSCTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 9529e9770cab4165b9f878a85ecd14cb of tooluniverse.ucsc_tool.UCSCTool:1
+msgid ""
+"Local tool wrapper for UCSC Genome Browser track API. Queries knownGene "
+"track for genomic regions."
+msgstr "本地工具封装用于UCSC基因组浏览器轨迹API。查询knownGene轨迹以获取基因组区域。"
+
+#: e4a107aa65a240aaaf10524c64ad7ac5 of tooluniverse.ucsc_tool.UCSCTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: eb8f6721894249fcadfc1a5d08f940da of tooluniverse.ucsc_tool.UCSCTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以便与大多数具体工具实现保持一致，这些实现通常需要一个输入字典。"
+
+#: ../../api/tooluniverse.ucsc_tool.rst f91bef2ce3ad4bfd8ec1ca3f00e6879a
+msgid "Parameters"
+msgstr "参数"
+
+#: 4237c7b4ed83459c9b80b8c21698b57f of tooluniverse.ucsc_tool.UCSCTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: da4c661a93894af99cd479b814b0fef7 of tooluniverse.ucsc_tool.UCSCTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: af2556706bf04589b05037a92073ebee of tooluniverse.ucsc_tool.UCSCTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 6f1aaab80c054748bba07837cdd77276 of tooluniverse.ucsc_tool.UCSCTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: c1da5251476641029341a122bb7b2928 of tooluniverse.ucsc_tool.UCSCTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: b87016a175094ef1b3440b61d4f11c5d of tooluniverse.ucsc_tool.UCSCTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不支持这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

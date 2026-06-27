@@ -1,0 +1,612 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:2
+#: 46480adfdc5a46958b6d42054e92f0e4
+msgid "Tool Types and Usage Scenarios Comparison"
+msgstr "工具类型及使用场景对比"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:4
+#: 9f6d6e586c7d4069bc8a9a187105a21b
+msgid ""
+"This document provides clear comparisons between different tool types and "
+"usage scenarios to help you choose the right approach."
+msgstr "本文档清晰地比较了不同工具类型及其使用场景，以帮助您选择合适的方法。"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:7
+#: 2353f1a29a7e4e19bed279c4b25727a1
+msgid "Tool Types: Local vs Remote"
+msgstr "工具类型：本地与远程"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:9
+#: f76e7b9ef1544151a54a6baaa2df1a6f
+msgid "Dimension | Local Tools | Remote Tools |"
+msgstr "维度 | 本地工具 | 远程工具 |"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:10
+#: d8f0b24a6dd547018c20a1f88162b242
+msgid ""
+"|-----------|-------------|--------------| | **Implementation** | Python "
+"class (BaseTool) | MCP server + JSON config | | **File Location** | "
+"``src/tooluniverse/xxx_tool.py`` | ``data/remote_tools/xxx_tools.json`` | | "
+"**Registration** | ``@register_tool`` + modify ``__init__.py`` | JSON "
+"configuration file | | **Runtime Environment** | ToolUniverse process | "
+"Independent server process | | **Communication** | Direct function calls | "
+"HTTP/stdio protocol | | **Dependencies** | Python package dependencies | "
+"Independent deployment | | **Use Cases** | API wrappers, data processing, "
+"lightweight computation | Microservice integration, heavy computation, "
+"cross-language tools |"
+msgstr ""
+"|-----------|-------------|--------------|  \n"
+"| **实现方式** | Python 类 (BaseTool) | MCP 服务器 + JSON 配置 |  \n"
+"| **文件位置** | ``src/tooluniverse/xxx_tool.py`` | ``data/remote_tools/xxx_tools.json`` |  \n"
+"| **注册方式** | ``@register_tool`` + 修改 ``__init__.py`` | JSON 配置文件 |  \n"
+"| **运行环境** | ToolUniverse 进程 | 独立服务器进程 |  \n"
+"| **通信方式** | 直接函数调用 | HTTP/stdio 协议 |  \n"
+"| **依赖项** | Python 包依赖 | 独立部署 |  \n"
+"| **使用场景** | API 封装、数据处理、轻量计算 | 微服务集成、重型计算、跨语言工具 |"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:20
+#: e6a0e10c48be49adabeef32680b0f1d8
+msgid "Local Tools: Self-Use vs Contribution"
+msgstr "本地工具：自用与贡献"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:22
+#: ../../expand_tooluniverse/reference/comparison.rst:36
+#: cf35dc2ea59848c199b951fa4e7b0b65 d06645f168af4420a7b74c4f63a6fc2a
+msgid "Dimension | Self-Use | Contribution to Repository |"
+msgstr "维度 | 自用 | 对存储库的贡献 |"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:23
+#: 698280a376b54d17bc0d91e9b098525f
+#, python-brace-format, python-format
+msgid ""
+"|-----------|----------|---------------------------| | **File Location** | "
+"Anywhere in your project | ``src/tooluniverse/xxx_tool.py`` | | **Config "
+"Definition** | ``@register_tool('Type', config={...})`` | "
+"``data/xxx_tools.json`` | | **Modify __init__.py** | ❌ Not required | ✅ "
+"**Must modify 4 locations** | | **Tool Loading** | ``import`` or "
+"``register_custom_tool()`` | Automatic loading | | **Testing** | Optional | "
+"Required (>90% coverage) | | **Documentation** | Optional | Required "
+"(docstrings + examples) | | **Examples** | Optional | Required (in "
+"``examples/``) | | **Code Quality** | Optional | Required (pre-commit "
+"checks) |"
+msgstr ""
+"|-----------|----------|---------------------------|  \n"
+"| **文件位置** | 项目中的任意位置 | ``src/tooluniverse/xxx_tool.py`` |  \n"
+"| **配置定义** | ``@register_tool('Type', config={...})`` | ``data/xxx_tools.json`` |  \n"
+"| **修改 __init__.py** | ❌ 不需要修改 | ✅ **必须修改 4 处** |  \n"
+"| **工具加载** | ``import`` 或 ``register_custom_tool()`` | 自动加载 |  \n"
+"| **测试** | 可选 | 必须（覆盖率 >90%） |  \n"
+"| **文档** | 可选 | 必须（包括文档字符串和示例） |  \n"
+"| **示例** | 可选 | 必须（位于 ``examples/`` 中） |  \n"
+"| **代码质量** | 可选 | 必须（预提交检查） |"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:34
+#: abd907a2036a4ddc90d79133de82b7c3
+msgid "Remote Tools: Self-Use vs Contribution"
+msgstr "远程工具：自用与贡献"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:37
+#: 3f7295382c6d4f23876fd3fb4b286d7c
+msgid ""
+"|-----------|----------|---------------------------| | **Config Location** |"
+" Anywhere in your project | ``data/remote_tools/`` | | **Config Loading** | "
+"Manual specification | Automatic loading | | **Server Deployment** | Local "
+"or private | Public access or detailed deployment docs | | **Server Code** |"
+" Can be private | Should be in ``remote/`` directory | | **Modify "
+"__init__.py** | ❌ Not required | ❌ Not required | | **Testing** | Optional |"
+" Required (integration tests) | | **Documentation** | Optional | Required "
+"(server README + API docs) | | **Examples** | Optional | Required (in "
+"``examples/``) |"
+msgstr ""
+"|-----------|----------|---------------------------|  \n"
+"| **配置位置** | 项目中的任意位置 | ``data/remote_tools/`` |  \n"
+"| **配置加载** | 手动指定 | 自动加载 |  \n"
+"| **服务器部署** | 本地或私有 | 公共访问或详细部署文档 |  \n"
+"| **服务器代码** | 可以是私有的 | 应位于 ``remote/`` 目录中 |  \n"
+"| **修改 __init__.py** | ❌ 不需要 | ❌ 不需要 |  \n"
+"| **测试** | 可选 | 必须（集成测试） |  \n"
+"| **文档** | 可选 | 必须（服务器 README + API 文档） |  \n"
+"| **示例** | 可选 | 必须（位于 ``examples/`` 中） |"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:48
+#: b797bed4b3c247629f00acc0fe1c4cad
+msgid "Self-Use Tool Loading Methods"
+msgstr "自用工具加载方法"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:50
+#: 9becd3ad1ed445218bc544d5ed82af4d
+msgid "**Local Tools - Self-Use Loading:**"
+msgstr "**本地工具 - 自用加载：**"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:52
+#: f178103bff8e42648e5225e35173ec99
+msgid "**Method 1: Decorator with Config (Simplest)** .. code-block:: python"
+msgstr "**方法一：带配置的装饰器（最简单）** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:55
+#: a22eadc00d4b4dfd9d93d4b91d469790
+msgid ""
+"from tooluniverse.tool_registry import register_tool from "
+"tooluniverse.base_tool import BaseTool"
+msgstr ""
+"从 tooluniverse.tool_registry 导入 register_tool  \n"
+"从 tooluniverse.base_tool 导入 BaseTool"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:58
+#: 4698366ed865418b873752add291322a
+msgid "@register_tool('MyTool', config={"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:59
+#: ../../expand_tooluniverse/reference/comparison.rst:103
+#: ../../expand_tooluniverse/reference/comparison.rst:127
+#: 9308232d803742179bcc8c8d61438726 ece4d023955845caba11c4b2d59d99a7
+#: f058b1ae08374299bd097b0893feae63
+msgid "\"name\": \"my_tool\", \"type\": \"MyTool\", \"description\": \"My custom tool\", \"parameter\": {"
+msgstr "\"name\": \"我的工具\", \"type\": \"MyTool\", \"description\": \"我的自定义工具\", \"parameter\": {"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:63
+#: ../../expand_tooluniverse/reference/comparison.rst:107
+#: ../../expand_tooluniverse/reference/comparison.rst:131
+#: ../../expand_tooluniverse/reference/comparison.rst:190
+#: 1a8784e710f44cbf95c6386ac03eaf93 49ee979fb8834588839d672eb3cbb4b3
+#: 97667e4238b94b48a7c72867827b2a18 9d31175b9b5241d0919ca60b423c3822
+msgid "\"type\": \"object\", \"properties\": {"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:65
+#: ../../expand_tooluniverse/reference/comparison.rst:109
+#: ../../expand_tooluniverse/reference/comparison.rst:133
+#: ../../expand_tooluniverse/reference/comparison.rst:192
+#: 19f445e4b9284eb09c1801f538c3598a 8df720c061ee486bb45a11c5336b1b24
+#: ab4f408858b942caa74a0a4674c49803 c6d6c450231c4023a8520f3bdd0a131c
+#, python-brace-format
+msgid "\"input\": {\"type\": \"string\"}"
+msgstr "\"input\": {\"type\": \"字符串\"}"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:66
+#: ../../expand_tooluniverse/reference/comparison.rst:110
+#: ../../expand_tooluniverse/reference/comparison.rst:134
+#: ../../expand_tooluniverse/reference/comparison.rst:193
+#: 415a5d0df33a4f998670bee9e1d80943 7f66b95c1aef483e992caf2dc5c0a133
+#: b6a5821288a543159a99102e7fe31467 b80617b709524426bc3a0a2c79385452
+msgid "}, \"required\": [\"input\"]"
+msgstr "}, \"required\": [\"输入\"]"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:68
+#: ../../expand_tooluniverse/reference/comparison.rst:112
+#: ../../expand_tooluniverse/reference/comparison.rst:113
+#: ../../expand_tooluniverse/reference/comparison.rst:136
+#: ../../expand_tooluniverse/reference/comparison.rst:200
+#: ../../expand_tooluniverse/reference/comparison.rst:225
+#: 3c2df6be3f29437f930acee64698ab2a 8c60fd8e78ea4f7aab4b97acae6cad83
+#: 9307604d2a2e4e9cb882346b0bc70493 a0f7e52a002f4939b962e93d8f21c1ca
+#: c4592da851d94ceaa9698e3d07fc0250 e5b912ba5b8840609328eac9286153f3
+msgid "}"
+msgstr "请提供需要翻译的具体文本内容，我将为您翻译成自然、流畅且专业的中文。"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:69
+#: 988c6d29e7b54fb98839f3e647582983
+msgid "}) class MyTool(BaseTool):"
+msgstr "}) 类 MyTool(BaseTool):"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:71
+#: ../../expand_tooluniverse/reference/comparison.rst:93
+#: ../../expand_tooluniverse/reference/comparison.rst:145
+#: ec0af7f7704c46968acc092d9c4e4fb0 f18c64678b2440c7b0f1bc072cf423f6
+#: fb4d6b5313bb479e9efe5328c9b1b3a8
+msgid "def run(self, arguments):"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:72
+#: ../../expand_tooluniverse/reference/comparison.rst:94
+#: ../../expand_tooluniverse/reference/comparison.rst:146
+#: 13d1c2e9081c42abab74bb5cc0f37a53 ac3fadc1f8854fa791e2b2689c1d18e3
+#: fd9fa0993fb245e88ac67caff9a6bd6c
+#, python-brace-format
+msgid "return {\"result\": arguments[\"input\"].upper()}"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:74
+#: d7b9fbbccf0e472a9a4d25fe55c70a3e
+msgid "# Import to register from my_tool import MyTool"
+msgstr ""
+"# 导入以注册  \n"
+"从 my_tool 导入 MyTool"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:77
+#: 24988bee22a74a4aa07cc6a048b093ca
+msgid ""
+"# Use with ToolUniverse from tooluniverse import ToolUniverse tu = "
+"ToolUniverse() tu.load_tools() result = tu.run_one_function({"
+msgstr ""
+"# 与 ToolUniverse 一起使用  \n"
+"from tooluniverse import ToolUniverse  \n"
+"tu = ToolUniverse()  \n"
+"tu.load_tools()  \n"
+"result = tu.run_one_function({"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:82
+#: ../../expand_tooluniverse/reference/comparison.rst:118
+#: 02be3991171e411aa01d3fcd0ffd15c7 d5bd7ab9411e4e43baf2d5858ea12337
+#, python-brace-format
+msgid "\"name\": \"my_tool\", \"arguments\": {\"input\": \"hello\"}"
+msgstr "\"name\": \"my_tool\", \"arguments\": {\"input\": \"你好\"}"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:84
+#: ../../expand_tooluniverse/reference/comparison.rst:120
+#: ../../expand_tooluniverse/reference/comparison.rst:179
+#: ../../expand_tooluniverse/reference/comparison.rst:213
+#: a4e79de22dcf4b999923f8d299c0f0a0 dec2b903ba57433ebdae67633fc6eeae
+#: e70b9865301f483e8733ffceb0483dba f8a6f8a86e354177b5e36c51cf0b204b
+msgid "})"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:86
+#: a1a0b5301bbf41f985b15cdd74887c79
+msgid ""
+"**Method 2: Runtime Registration (More Flexible)** .. code-block:: python"
+msgstr "**方法二：运行时注册（更灵活）** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:89
+#: 5623675bb9d946cc9ac64a7e5d280869
+msgid ""
+"from tooluniverse import ToolUniverse from tooluniverse.base_tool import "
+"BaseTool"
+msgstr ""
+"从 tooluniverse 导入 ToolUniverse  \n"
+"从 tooluniverse.base_tool 导入 BaseTool"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:92
+#: 721a3d11773c4679aaa06f0cd7cff466
+msgid "class MyTool(BaseTool):"
+msgstr "class MyTool(BaseTool)："
+
+#: ../../expand_tooluniverse/reference/comparison.rst:96
+#: a3241ab492f84699b50f72fa89c8b399
+msgid "tu = ToolUniverse()"
+msgstr "tu = 工具宇宙()"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:98
+#: ec72200107e24f1dbc693208c7711e39
+msgid "# Register at runtime tu.register_custom_tool("
+msgstr "# 在运行时注册 tu.register_custom_tool("
+
+#: ../../expand_tooluniverse/reference/comparison.rst:100
+#: 54b22d2438ab423bb8b20b833451c04c
+msgid "tool_class=MyTool, tool_name=\"MyTool\", tool_config={"
+msgstr "工具类=MyTool，工具名称=\"MyTool\"，工具配置={"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:114
+#: d35a0d6d2d6641419155008b812ee869
+msgid ")"
+msgstr "请提供具体的英文文本内容，我将为您进行翻译。"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:116
+#: ab52ad14683b4a84b5835ad8e9b37331
+msgid "# Use immediately result = tu.run_one_function({"
+msgstr "# 立即使用 result = tu.run_one_function({"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:122
+#: 6dfe0b4cd384420e82b51fbe9a0ee9ca
+msgid "**Method 3: Configuration File** .. code-block:: python"
+msgstr "**方法三：配置文件** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:125
+#: 9545b7c2a20e434f86987bc680b886d3
+msgid "# my_tools.json [{"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:137
+#: ../../expand_tooluniverse/reference/comparison.rst:201
+#: 24b59deae78a4581a8a2186344406be2 e4617f824d7443a784eae4211070e10e
+msgid "}]"
+msgstr ""
+"It seems the English text provided is incomplete or unclear. Could you "
+"please provide the full text for translation?"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:139
+#: 78813b5a2b614172b281916f834cd8fe
+msgid ""
+"# my_tool.py from tooluniverse.tool_registry import register_tool from "
+"tooluniverse.base_tool import BaseTool"
+msgstr ""
+"# my_tool.py  \n"
+"from tooluniverse.tool_registry import register_tool  \n"
+"from tooluniverse.base_tool import BaseTool"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:143
+#: d34cf59d63b149f1b66df445ae868cc2
+msgid "@register_tool('MyTool')  # No config here class MyTool(BaseTool):"
+msgstr "@register_tool('MyTool')  # 此处无需配置 class MyTool(BaseTool):"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:148
+#: e212f5966ed0461ea90ff9bfa9708e26
+msgid ""
+"# main.py from tooluniverse import ToolUniverse from my_tool import MyTool"
+msgstr ""
+"# main.py  \n"
+"从 tooluniverse 导入 ToolUniverse  \n"
+"从 my_tool 导入 MyTool"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:152
+#: d57e30cc1937432cabe174b1cd2e34d2
+msgid "# Load custom config tu = ToolUniverse(tool_files={"
+msgstr "# 加载自定义配置 tu = ToolUniverse(tool_files={"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:154
+#: 32de74890d154aa88cc89130c9e149cf
+msgid "\"my_tools\": \"path/to/my_tools.json\""
+msgstr "my_tools\": \"path/to/my_tools.json"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:155
+#: ../../expand_tooluniverse/reference/comparison.rst:207
+#: 0dddff2dcb96497bb5dc6e06a7332caf 62da61ca3e5641c7b7b37a05e518105c
+msgid "}) tu.load_tools()"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:158
+#: 79b8504f6ce34c8a80e05c8df9141302
+msgid "**Remote Tools - Self-Use Loading:**"
+msgstr "**远程工具 - 自助加载：**"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:160
+#: c00a22a31e274179af0c873325c3b237
+msgid "**Method 1: MCP Auto-Loader** .. code-block:: python"
+msgstr "**方法一：MCP自动加载器** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:163
+#: 76d2fc694a8f41c99adedc413a970628
+msgid ""
+"from tooluniverse import ToolUniverse from tooluniverse.mcp_tool_registry "
+"import load_mcp_tools_to_tooluniverse"
+msgstr ""
+"从 tooluniverse 导入 ToolUniverse  \n"
+"从 tooluniverse.mcp_tool_registry 导入 load_mcp_tools_to_tooluniverse"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:166
+#: d3e3594345c8438cb246d1ae9113e090
+msgid "tu = ToolUniverse() tu.load_tools()"
+msgstr ""
+"tu = ToolUniverse()  \n"
+"tu.load_tools()"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:169
+#: 97499a140bb14a8986fac2f5f90c50c0
+msgid ""
+"# Auto-discover and load tools from MCP server "
+"load_mcp_tools_to_tooluniverse(tu, server_urls=["
+msgstr "# 自动发现并从MCP服务器加载工具 load_mcp_tools_to_tooluniverse(tu, server_urls=["
+
+#: ../../expand_tooluniverse/reference/comparison.rst:171
+#: 0c19fa015dbd4c0fbca531ca13bf558d
+msgid "\"http://localhost:8000\", \"http://my-server.com:8001\""
+msgstr "http://localhost:8000\", \"http://my-server.com:8001"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:173
+#: 73c661da6b8747deb8b8bbd400956303
+msgid "])"
+msgstr "请提供需要翻译的具体文本内容，我将为您进行翻译。"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:175
+#: ba9c58132b044cb7a1396de0fc49ca63
+msgid "# Use discovered tools result = tu.run_one_function({"
+msgstr ""
+"# 使用发现的工具  \n"
+"result = tu.run_one_function({"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:177
+#: 0ec0338dbcc8458387528be5a83df5cf
+#, python-brace-format
+msgid "\"name\": \"mcp_discovered_tool\", \"arguments\": {\"param\": \"value\"}"
+msgstr "\"name\": \"mcp_discovered_tool\", \"arguments\": {\"param\": \"值\"}"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:181
+#: b82218568ca949f183183631f531e398
+msgid "**Method 2: Custom Configuration File** .. code-block:: python"
+msgstr "**方法二：自定义配置文件** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:184
+#: 49c9261b441c4c49843a4680f4f690f8
+msgid "# my_remote_tools.json [{"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:186
+#: b09ae3178f4046b9b1939907da93ca06
+msgid ""
+"\"type\": \"RemoteTool\", \"name\": \"my_remote_tool\", \"description\": "
+"\"My remote tool\", \"parameter\": {"
+msgstr "\"type\": \"远程工具\", \"name\": \"我的远程工具\", \"description\": \"我的远程工具\", \"parameter\": {"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:195
+#: c6d798dc49df4631a3d68d6e9b5872da
+msgid "}, \"remote_info\": {"
+msgstr "}, \"远程信息\": {"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:197
+#: fb7b863f22844d9192684b4d3a9c4763
+msgid "\"server_type\": \"MCP\", \"transport\": \"http\", \"url\": \"http://localhost:8000/mcp\""
+msgstr "server_type\": \"MCP\", \"transport\": \"http\", \"url\": \"http://localhost:8000/mcp"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:203
+#: 8bebb824f7ed40409c3e47647c03f898
+msgid ""
+"# Load custom remote tools from tooluniverse import ToolUniverse tu = "
+"ToolUniverse(tool_files={"
+msgstr ""
+"# 加载自定义远程工具  \n"
+"from tooluniverse import ToolUniverse  \n"
+"tu = ToolUniverse(tool_files={"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:206
+#: 40cb7cc029a94386ae66683eae2ca9be
+msgid "\"my_remote_tools\": \"path/to/my_remote_tools.json\""
+msgstr "my_remote_tools\": \"path/to/my_remote_tools.json"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:210
+#: 58827112ab7b4596a2acd67ead9f9664
+msgid "result = tu.run_one_function({"
+msgstr ""
+
+#: ../../expand_tooluniverse/reference/comparison.rst:211
+#: 035da58d1f3c4a7d9f5166daf01e3a0f
+#, python-brace-format
+msgid "\"name\": \"my_remote_tool\", \"arguments\": {\"input\": \"hello\"}"
+msgstr "\"name\": \"我的远程工具\", \"arguments\": {\"input\": \"你好\"}"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:215
+#: f451cb6c979244a4bd55b0ece9176436
+msgid "**Method 3: MCPAutoLoaderTool Configuration** .. code-block:: python"
+msgstr "**方法三：MCPAutoLoaderTool 配置** .. code-block:: python"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:218
+#: 254749dc1c564dccb89aecae2c44749e
+msgid "# In your config file {"
+msgstr "# 在您的配置文件中 {"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:220
+#: 079afd858b4f4531932ba73097ae70d7
+msgid ""
+"\"name\": \"my_mcp_loader\", \"type\": \"MCPAutoLoaderTool\", "
+"\"server_url\": \"http://localhost:8000\", \"tool_prefix\": \"my_\", "
+"\"auto_register\": true"
+msgstr ""
+"\"name\": \"my_mcp_loader\", \"type\": \"MCP自动加载工具\", \"server_url\": "
+"\"http://localhost:8000\", \"tool_prefix\": \"my_\", \"auto_register\": true"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:228
+#: 4494c8e465564405a6bd8c970f3fd639
+msgid "Decision Tree"
+msgstr "决策树"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:230
+#: 4a3e70d37cf04810b1d8361e729f950c
+msgid "**I want to...**"
+msgstr "我想要..."
+
+#: ../../expand_tooluniverse/reference/comparison.rst:232
+#: e6fb2df8438f427c97f0e7c3279ebd40
+msgid ""
+"**🚀 Quickly test a tool idea** → Use :doc:`../quick_start` (Local tool with "
+"decorator)"
+msgstr "**🚀 快速测试工具创意** → 使用 :doc:`../quick_start`（带装饰器的本地工具）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:235
+#: c14c943c298849e997b0be89ed19bfaf
+msgid ""
+"**📚 Learn tool development systematically** → Choose based on your needs:"
+msgstr "**📚 系统学习工具开发** → 根据您的需求进行选择："
+
+#: ../../expand_tooluniverse/reference/comparison.rst:237
+#: 21e6eb99763346f5b27b34e6e429dddb
+msgid ""
+"**Local tools**: :doc:`../local_tools/tutorial` (API wrappers, data "
+"processing)"
+msgstr "**本地工具**: :doc:`../local_tools/tutorial` （API封装器，数据处理）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:238
+#: ada9f3ea1f0f455bbbeccf9dc8f7fd6d
+msgid ""
+"**Remote tools**: :doc:`../remote_tools/tutorial` (microservices, heavy "
+"computation)"
+msgstr "**远程工具**: :doc:`../remote_tools/tutorial` （微服务，重度计算）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:240
+#: 6941dc97953f4427ac1caf29af5dd3c2
+msgid "**🎁 Contribute tools to the community** → Choose based on tool type:"
+msgstr "**🎁 向社区贡献工具** → 根据工具类型选择："
+
+#: ../../expand_tooluniverse/reference/comparison.rst:242
+#: ea971ebe45c04a90abd886a2d43dc001
+msgid ""
+"**Local tools**: :doc:`../contributing/local_tools` (must modify "
+"``__init__.py``)"
+msgstr "**本地工具**: :doc:`../contributing/local_tools`（必须修改``__init__.py``）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:243
+#: e3664a635c1c4848be4337d3b3ad3c31
+msgid ""
+"**Remote tools**: :doc:`../contributing/remote_tools` (must deploy server)"
+msgstr "**远程工具**：:doc:`../contributing/remote_tools`（必须部署服务器）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:245
+#: f87402278b4c4c7ebead11f109b6fbb3
+msgid ""
+"**🔍 Understand the architecture** → See :doc:`architecture` (system design "
+"and internals)"
+msgstr "**🔍 了解架构** → 请参阅 :doc:`architecture`（系统设计和内部结构）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:249
+#: 11033629ba4a46f298db0ff4a6d76af4
+msgid "Key Takeaways"
+msgstr "关键要点"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:251
+#: 4f5330b4e28b4b7d995d0cab1fcce964
+msgid ""
+"**For Self-Use:** - **Local tools**: Flexible loading, no core code changes "
+"needed - **Remote tools**: Need running server, config file specifies "
+"connection"
+msgstr ""
+"**自用：**  \n"
+"- **本地工具**：灵活加载，无需更改核心代码  \n"
+"- **远程工具**：需要运行服务器，配置文件指定连接"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:255
+#: 5888efd1ffc24015afe53ecbb22d29e0
+msgid ""
+"**For Contribution:** - **Local tools**: Must modify ``__init__.py`` in 4 "
+"locations (critical!) - **Remote tools**: Must provide public server or "
+"deployment docs"
+msgstr ""
+"**贡献说明：**  \n"
+"- **本地工具**：必须在4个位置修改``__init__.py``（至关重要！）  \n"
+"- **远程工具**：必须提供公共服务器或部署文档"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:259
+#: edb33b0f74634590a8db3c27405618c8
+msgid ""
+"**Common Mistakes:** - Trying to contribute without modifying "
+"``__init__.py`` (Local tools) - Forgetting to deploy server publicly (Remote"
+" tools) - Putting config in wrong location (``data/`` vs "
+"``data/remote_tools/``)"
+msgstr ""
+"**常见错误：**  \n"
+"- 尝试贡献但未修改``__init__.py``（本地工具）  \n"
+"- 忘记将服务器公开部署（远程工具）  \n"
+"- 将配置文件放置在错误的位置（``data/``与``data/remote_tools/``）"
+
+#: ../../expand_tooluniverse/reference/comparison.rst:264
+#: b2d5875e2e324ce0bcddeedf0da2b87e
+msgid ""
+"**Quick Reference:** - **Self-use Local**: Decorator + config in same file -"
+" **Contribute Local**: Separate files + modify ``__init__.py`` - **Self-use "
+"Remote**: Config file + local server - **Contribute Remote**: Config in "
+"``remote_tools/`` + public server"
+msgstr ""
+"**快速参考：**  \n"
+"- **本地自用**：装饰器 + 配置文件在同一文件中  \n"
+"- **本地贡献**：分离文件 + 修改``__init__.py``  \n"
+"- **远程自用**：配置文件 + 本地服务器  \n"
+"- **远程贡献**：配置文件位于``remote_tools/`` + 公共服务器"

@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.Zenodo_search_records.rst:2
+#: 4ea9b9cfab5c42fbbd148b86513e92ad
+msgid "tooluniverse.tools.Zenodo\\_search\\_records module"
+msgstr "tooluniverse.tools.Zenodo\\_search\\_records 模块"
+
+#: 606192f674a648349309c47cbf5ffeae of
+#: tooluniverse.tools.Zenodo_search_records:1
+msgid "Zenodo_search_records"
+msgstr "Zenodo_搜索记录"
+
+#: 636483e3568445d28bbf9dd59b8fca1f 7e65f712184f4f0582f820cb2d6a3cd8 of
+#: tooluniverse.tools.Zenodo_search_records:3
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:1
+msgid ""
+"Search Zenodo for research data, publications, and datasets. Zenodo is an "
+"open-access repository ..."
+msgstr "在Zenodo上搜索研究数据、出版物和数据集。Zenodo是一个开放获取的存储库..."
+
+#: ../../api/tooluniverse.tools.Zenodo_search_records.rst
+#: 5655d8994c88420eaf23813140452f6a
+msgid "Parameters"
+msgstr "参数"
+
+#: 717d558a2ba1498e8a84c4888a8f00d2 of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:3
+msgid ""
+"Free text search query for Zenodo records. Use keywords to search across "
+"titl..."
+msgstr "自由文本搜索查询，用于Zenodo记录。使用关键词在标题、描述和其他元数据中进行搜索。"
+
+#: 116212ad3a694584874bdc72d1776605 of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:5
+msgid "Maximum number of results to return. Must be between 1 and 200."
+msgstr "最大返回结果数量。必须介于 1 到 200 之间。"
+
+#: beab284389a54872991b076998acf9d3 of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:7
+msgid ""
+"Optional community slug to filter results by specific research community "
+"(e.g..."
+msgstr "可选的社区标识，用于按特定研究社区筛选结果（例如...）"
+
+#: d0a2ead9d79c489cb5387eae6b4ab1ae of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6e9c0add6f784cc6acba5fe9bb58d306 of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 956ff06ce56c412987e3fe1b9f179b1b of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.Zenodo_search_records.rst
+#: 6cdc687c64ed4e54b2d256c467bfa1dc
+msgid "Return type"
+msgstr "返回类型"
+
+#: 45dbc864589d49aa8c3071a05948440d of
+#: tooluniverse.tools.Zenodo_search_records.Zenodo_search_records:16
+msgid ":py:class:`list[Any]`"
+msgstr ""

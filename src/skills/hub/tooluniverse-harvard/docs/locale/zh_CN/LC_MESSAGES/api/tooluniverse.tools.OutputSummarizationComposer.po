@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OutputSummarizationComposer.rst:2
+#: a4a10c7b90784c74ae66284c86e28b6a
+msgid "tooluniverse.tools.OutputSummarizationComposer module"
+msgstr "tooluniverse.tools.OutputSummarizationComposer 模块"
+
+#: cc9345836d934d7abfe5943bceb22b27 of
+#: tooluniverse.tools.OutputSummarizationComposer:1
+msgid "OutputSummarizationComposer"
+msgstr "输出摘要生成器"
+
+#: 0ed37b75973e462685349e81f97710d0 b182de558ecb43c08977121a518d651b of
+#: tooluniverse.tools.OutputSummarizationComposer:3
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:1
+msgid ""
+"Composes output summarization workflow by chunking long outputs, processing "
+"each chunk with AI su..."
+msgstr "将长输出分块，使用人工智能处理每个分块，从而构建输出摘要工作流程。"
+
+#: ../../api/tooluniverse.tools.OutputSummarizationComposer.rst
+#: 66cbb5767d404f5f81bc96f3c4212276
+msgid "Parameters"
+msgstr "参数"
+
+#: 641f6389d4ab4a269ba9367fd41e1c95 of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:3
+msgid "The original tool output to be summarized"
+msgstr "原始工具输出需进行总结"
+
+#: 69586fd05d6d4c93be97baef6a2164f4 of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:5
+msgid "Context about the original query"
+msgstr "上下文：文档"
+
+#: ee2d3bdf8ae54ef495d7cac1dcc973be of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:7
+msgid "Name of the tool that generated the output"
+msgstr "生成输出的工具名称"
+
+#: 7a08f85b7dac49de87a3d6dd7a643d9f of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:9
+msgid "Size of each chunk for processing"
+msgstr "每个处理块的大小"
+
+#: 77284a57fb4e4d228ea767d9bec6857b of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:11
+msgid "Areas to focus on in summarization"
+msgstr "总结中的重点领域"
+
+#: 4cb16dc3a863435bac12d7fc2b7c273a of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:13
+msgid "Maximum length of final summary"
+msgstr "最终摘要的最大长度"
+
+#: f8fafb95c89948f2aa83d72f48cf9a1d of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:15
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ef71e5097b094ed6887c10a39e883202 of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:17
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ba1455ab2bd94b989b788d25decf3c7a of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:19
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OutputSummarizationComposer.rst
+#: 1150fc21299549ec94cbf6fe13e66c1a
+msgid "Return type"
+msgstr "返回类型"
+
+#: b33d2ba5554846c0b88974deaf0dca03 of
+#: tooluniverse.tools.OutputSummarizationComposer.OutputSummarizationComposer:22
+msgid ":py:class:`Any`"
+msgstr ""

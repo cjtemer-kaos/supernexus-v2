@@ -1,0 +1,24 @@
+{
+  "sprint": "2.2",
+  "date": "2026-05-25",
+  "completed": [
+    "Sprint 1: ProviderBase, AgentRunner, Orchestrator, API",
+    "Sprint 2: Actor Model (Actor ABC, GemaActor, ActorSystem, SupervisorActor)",
+    "Sprint 2: DMN BackgroundCognition (scheduler + review fusion)",
+    "Sprint 2.2: MessageIntent routing (classify_intent, route_by_content, RouterActor)"
+  ],
+  "files": {
+    "src/core/actor_base.py": "Actor ABC, GemaActor, ActorSystem, BackgroundCognition, SupervisorActor, RouterActor, MessageIntent",
+    "src/core/director.py": "_init_actor_system() con 9 actores",
+    "src/api/server.py": "start_all/stop_all en initialize/close"
+  },
+  "commits": [
+    "a3e14fd - Sprint 2: Actor Model + DMN (+502 lines)",
+    "c5fd48d - Sprint 2.2: MessageIntent routing + RouterActor (+135 lines)"
+  ],
+  "todo_next": {
+    "Sprint 3": ["task_focus_state (ohmo)", "RalphLoop + StopHook"],
+    "Sprint 4": ["ModelCatalog", "IntelligentRouter"],
+    "Sprint 5": ["Actor persistente en memoria", "UI de estado de actores"]
+  }
+}

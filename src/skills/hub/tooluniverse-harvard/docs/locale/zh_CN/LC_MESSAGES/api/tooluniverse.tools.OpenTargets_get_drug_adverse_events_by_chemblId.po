@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.rst:2
+#: d29924e1ceb24891bfcbf054d0d60313
+msgid ""
+"tooluniverse.tools.OpenTargets\\_get\\_drug\\_adverse\\_events\\_by\\_chemblId"
+" module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_drug\\_adverse\\_events\\_by\\_chemblId 模块"
+
+#: 26381ea632b14b2bb0f06022e859050a of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId:1
+msgid "OpenTargets_get_drug_adverse_events_by_chemblId"
+msgstr ""
+"OpenTargets_get_drug_adverse_events_by_chemblId  \n"
+"获取药物不良事件数据通过ChemblId"
+
+#: 131710e2f0a3411c8bec12fdafeb8441 afec1dc3d5b94f25b97413cdc88bc516 of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId:3
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:1
+msgid ""
+"Retrieve significant adverse events reported for a specific drug chemblId."
+msgstr "检索针对特定药物 chemblId 报告的重大不良事件。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.rst
+#: 430efaf523054fc4b2c8da08e68b5931
+msgid "Parameters"
+msgstr "参数"
+
+#: 2d57bd7eb6304354a504cfbd67bb6ada of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:3
+msgid "The ChEMBL ID of the drug."
+msgstr "药物的ChEMBL ID。"
+
+#: 346fa19fae204f5699d2a40911490f9f of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:5
+msgid "Pagination settings."
+msgstr "分页设置"
+
+#: 013339d2832a4bc18c96cbfc5c70718c of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1e51d8b48d5e4495aac2fac6d000f630 of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 22db0eea733f4029bf967a9d822c55d2 of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.rst
+#: 70434f4fad5643cdb16a41ae2e151c92
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8fc7183006bf482ea7f99c4a62b70774 of
+#: tooluniverse.tools.OpenTargets_get_drug_adverse_events_by_chemblId.OpenTargets_get_drug_adverse_events_by_chemblId:14
+msgid ":py:class:`Any`"
+msgstr ""

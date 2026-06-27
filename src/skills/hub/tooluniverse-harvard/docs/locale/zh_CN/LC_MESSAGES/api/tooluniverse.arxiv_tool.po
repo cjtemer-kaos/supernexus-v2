@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.arxiv_tool.rst:2 4be0368b9ee3407c96193d0f7c3a7228
+msgid "tooluniverse.arxiv\\_tool module"
+msgstr "tooluniverse.arxiv_tool 模块"
+
+#: 26d3ccc4fa1e4517a17e0374f3ea77ed of tooluniverse.arxiv_tool.ArXivTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 6cbee02618a04e86b5168db403e1ae85 of tooluniverse.arxiv_tool.ArXivTool:1
+msgid "Search arXiv for papers by keyword using the public arXiv API."
+msgstr "使用公共 arXiv API 根据关键词搜索 arXiv 论文。"
+
+#: 279ae69625b946f48dc3ffb32fd700e8 of tooluniverse.arxiv_tool.ArXivTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: ec9e7057220a42a28835d4c761e2257b of tooluniverse.arxiv_tool.ArXivTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.arxiv_tool.rst e937d17c06244e0e9f8d1f3a2e7c5bcf
+msgid "Parameters"
+msgstr "参数"
+
+#: 46761f2154284fd6a975c911c746101c of tooluniverse.arxiv_tool.ArXivTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具特定参数"
+
+#: 1ebe77da108041e29e59b68c4a6e15ff of tooluniverse.arxiv_tool.ArXivTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 56b984c58b8041dcbd7cc7554cd948f9 of
+#: tooluniverse.arxiv_tool.ArXivTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 8ed718b885504bcea60b9956cb6024f6 of
+#: tooluniverse.arxiv_tool.ArXivTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 40d4b1652d2748b4a39cc8cb19ccc4d6 of
+#: tooluniverse.arxiv_tool.ArXivTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 902110eefdd64bfd922c8545fedf038c of
+#: tooluniverse.arxiv_tool.ArXivTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常运行——它们只会接收到 arguments 参数。"

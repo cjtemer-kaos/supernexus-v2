@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.rst:2
+#: 6b7405494ab545abab2168959b46ec08
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_abuse\\_dependence\\_info module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_abuse\\_dependence\\_info 模块"
+
+#: 748ba1f785f4488f9217b93ca0ee7903 of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info:1
+msgid "FDA_get_drug_names_by_abuse_dependence_info"
+msgstr ""
+"FDA_get_drug_names_by_abuse_dependence_info  \n"
+"FDA_根据滥用和依赖信息获取药物名称"
+
+#: de8ba6f8eda240738fc8cb387a7db042 fb086dea223e4758a4272d0f7c6660a7 of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info:3
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:1
+msgid ""
+"Retrieve the drug name based on information about drug abuse and dependence,"
+" including whether th..."
+msgstr "根据药物滥用和依赖相关信息检索药物名称，包括是否..."
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.rst
+#: c4dc8a1a655147f792135eef6953417b
+msgid "Parameters"
+msgstr "参数"
+
+#: 9972c7855fc64c5cabb394e9c2b05132 of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:3
+msgid "Information about drug abuse and dependence."
+msgstr "关于药物滥用和依赖的信息"
+
+#: 7f0af39640704da482144dba06221a0e of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: bfa4a65bf3324f45994bfa884b0b8f27 of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: afe8ab8e453c4c78b1f4044472df8dd5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d8bbd791d67a47b6847737b0f24f16cb of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 40dc9cd015c24a06abfe4a0ceb6fc91a of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.rst
+#: fa9049e9750941698e36230040617a4f
+msgid "Return type"
+msgstr "返回类型"
+
+#: cb048233598a44d08870941423e28fae of
+#: tooluniverse.tools.FDA_get_drug_names_by_abuse_dependence_info.FDA_get_drug_names_by_abuse_dependence_info:16
+msgid ":py:class:`Any`"
+msgstr ""

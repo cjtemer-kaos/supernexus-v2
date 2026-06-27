@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_toxicity.rst:2
+#: 006dde9391b54c0fb4dee043e2948daf
+msgid "tooluniverse.tools.ADMETAI\\_predict\\_toxicity module"
+msgstr "tooluniverse.tools.ADMETAI\\_predict\\_toxicity 模块"
+
+#: 02b545eb11d8467ca8b11eaa66e97a9c of
+#: tooluniverse.tools.ADMETAI_predict_toxicity:1
+msgid "ADMETAI_predict_toxicity"
+msgstr "ADMETAI_预测毒性"
+
+#: bc59112ca2eb40d2a5c1b1c65171523e f4529fea257e4398bc2687f2515aa0c8 of
+#: tooluniverse.tools.ADMETAI_predict_toxicity:3
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:1
+msgid ""
+"Predicts toxicity endpoints (AMES, Carcinogens_Lagunin, ClinTox, DILI, "
+"LD50_Zhu, Skin_Reaction, h..."
+msgstr ""
+"预测毒性终点（AMES、Carcinogens_Lagunin、ClinTox、DILI、LD50_Zhu、Skin_Reaction、h...）"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_toxicity.rst
+#: 9936ba7022a64627bd73cf40c7fe3312
+msgid "Parameters"
+msgstr "参数"
+
+#: 0b622f904302476899296324d089800f of
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:3
+msgid "The list of SMILES strings."
+msgstr "SMILES 字符串列表"
+
+#: 21f71bf008224ab18affb8b52b8e4d66 of
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6653afa3fb9d4c85bfebba4abad532c4 of
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 43852f75734b4fae85fa89d6faf33c77 of
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.ADMETAI_predict_toxicity.rst
+#: 5f2ca1b2c5514f4e804f0d43b1a820ed
+msgid "Return type"
+msgstr "返回类型"
+
+#: b23a5f3973794dbe92bbc57d34eb99e6 of
+#: tooluniverse.tools.ADMETAI_predict_toxicity.ADMETAI_predict_toxicity:12
+msgid ":py:class:`Any`"
+msgstr ""

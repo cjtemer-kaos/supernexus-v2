@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-19 13:50-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/remote/depmap_24q2.md:1 83289ea3fa574298aebff5c0082d7d26
+msgid "DepMap Gene Correlation Analysis Tool - MCP Server"
+msgstr "DepMap基因相关性分析工具 - MCP服务器"
+
+#: ../../tools/remote/depmap_24q2.md:3 7ee6c66f90b74e5fafc5b290d8e98c21
+#, fuzzy
+msgid ""
+"A MCP tool from [Prism ToolSpace](https://huggingface.co/datasets/mims-"
+"harvard/ToolSpace) for analyzing gene-gene correlations from the [DepMap "
+"(Dependency Map)](https://depmap.org/) CRISPR knockout screening dataset."
+" This tool processes systematic CRISPR-Cas9 knockout data from over 1,320"
+" cancer cell lines from DepMap 24Q2 to identify genetic dependencies and "
+"co-essential gene pairs."
+msgstr ""
+"来自 [Prism Space](https://huggingface.co/datasets/mims-harvard/Space) 的 "
+"MCP 工具，用于分析来自 [DepMap（Dependency Map）](https://depmap.org/) CRISPR "
+"敲除筛选数据集的基因-基因相关性。该工具处理 DepMap 24Q2 中超过 1,320 个癌症细胞系的系统性 CRISPR-Cas9 "
+"敲除数据，以识别基因依赖性及共必需基因对。"
+
+#: ../../tools/remote/depmap_24q2.md:5 33cf5136d87e4f7bbc23420f36b45c3d
+msgid "Prerequisites"
+msgstr "先决条件"
+
+#: ../../tools/remote/depmap_24q2.md:7 999b62e8c6e44abe80c47f1e44bb8a3b
+msgid "1. Install Required Dependencies"
+msgstr "1. 安装所需依赖项"
+
+#: ../../tools/remote/depmap_24q2.md:9 fc99481ce67f4437b4724cab350ca9d5
+msgid "Install the required Python packages for the DepMap correlation analysis:"
+msgstr "安装 DepMap 相关性分析所需的 Python 包："
+
+#: ../../tools/remote/depmap_24q2.md:19 72fd1ea7a33841f1bfff5df401041327
+msgid "Data Setup"
+msgstr "数据设置"
+
+#: ../../tools/remote/depmap_24q2.md:21 232204fe27c34ea39dc5d08ce965f557
+msgid "1. Download DepMap 24Q2 Dataset"
+msgstr "1. 下载 DepMap 24Q2 数据集"
+
+#: ../../tools/remote/depmap_24q2.md:23 a60213f7a49e4172bf6e4cb7a0d4f08f
+#, fuzzy
+msgid ""
+"Download the preprocessed DepMap correlation data from the Prism "
+"ToolSpace or prepare your own correlation matrices:"
+msgstr "从 Prism Space 下载预处理的 DepMap 相关性数据，或自行准备相关性矩阵："
+
+#: ../../tools/remote/depmap_24q2.md:35 25c25f1ee25e4652b7661d7233f87de2
+msgid "**Required Files:**"
+msgstr "**必需文件：**"
+
+#: ../../tools/remote/depmap_24q2.md:36 d23944d247d44f95810bdde4cf279a3c
+msgid "**Gene correlation matrix** - Pairwise correlations between genes"
+msgstr "**基因相关矩阵** - 基因之间的成对相关性"
+
+#: ../../tools/remote/depmap_24q2.md:37 8f8b6763b2924c14bf17ba483ded7665
+msgid "**P-value matrix** - Statistical significance of correlations"
+msgstr "**P 值矩阵** - 相关性的统计显著性"
+
+#: ../../tools/remote/depmap_24q2.md:38 fb0f3d78bc564ea78fc67ad52aa80b68
+msgid "**Gene index** - Mapping of gene symbols to matrix indices"
+msgstr "**基因索引** - 基因符号到矩阵索引的映射"
+
+#: ../../tools/remote/depmap_24q2.md:39 e78405fd6caa4714a257b962a2b7b61e
+msgid "**Adjusted p-values** (optional) - FDR-corrected p-values"
+msgstr "**调整后的 p 值**（可选）- FDR 校正的 p 值"
+
+#: ../../tools/remote/depmap_24q2.md:41 ad465558fb3444a7861d2474587b8b5b
+msgid "**Data Sources:**"
+msgstr "**数据源：**"
+
+#: ../../tools/remote/depmap_24q2.md:42 fa6608dbd78f4b96af85e9f4f5bbaeeb
+msgid "**DepMap Portal**: https://depmap.org/portal/download/"
+msgstr "**DepMap门户**: https://depmap.org/portal/download/"
+
+#: ../../tools/remote/depmap_24q2.md:43 0a27f2c0ca0f46e1b26e9922f2eb7090
+msgid ""
+"**DepMap 24Q2 Release**: Contains CRISPR knockout data for 1,320+ cell "
+"lines"
+msgstr "**DepMap 24Q2 发布版**：包含针对1,320+细胞系的CRISPR敲除数据"
+
+#: ../../tools/remote/depmap_24q2.md:44 3a1e0ee7264f4c9492d79971642f2b45
+msgid ""
+"**CERES Algorithm**: Standardized gene effect scores for dependency "
+"analysis"
+msgstr "**CERES 算法**：用于依赖性分析的标准化基因效应评分"
+
+#: ../../tools/remote/depmap_24q2.md:46 9004f16c45274f66b07af1d1aa36916e
+msgid "2. Directory Structure Setup"
+msgstr "2. 目录结构设置"
+
+#: ../../tools/remote/depmap_24q2.md:48 1ab3dd86b8bb41b68b352046ee317c8c
+msgid "Create the following directory structure for your DepMap data:"
+msgstr "为您的 DepMap 数据创建以下目录结构："
+
+#: ../../tools/remote/depmap_24q2.md:63 776392fc6e324adca633b51d689acb92
+msgid "3. Set Environment Variable"
+msgstr "3. 设置环境变量"
+
+#: ../../tools/remote/depmap_24q2.md:65 a052938c09d64ad7be5ba1020684e5cc
+msgid ""
+"Set the `DEPMAP_DATA_PATH` environment variable to point to your DepMap "
+"installation:"
+msgstr "将 `DEPMAP_DATA_PATH` 环境变量设置为指向您的 DepMap 安装位置："
+
+#: ../../tools/remote/depmap_24q2.md:72 bb944c1b512843da8a8832b8008589c3
+msgid "Input and Output Specifications"
+msgstr "输入和输出规格"
+
+#: ../../tools/remote/depmap_24q2.md:74 2aaaee6557964b369660a7d475afc248
+msgid "Input Format"
+msgstr "输入格式"
+
+#: ../../tools/remote/depmap_24q2.md:76 afa552e5e0a443a18b85826330085af5
+msgid "The tool accepts gene symbol pairs for correlation analysis:"
+msgstr "该工具接受基因符号对进行相关性分析："
+
+#: ../../tools/remote/depmap_24q2.md:78 3c2fc8d9df3f4bf780bbefd817f30408
+msgid ""
+"**Gene Symbols**: Standard HUGO gene nomenclature (e.g., \"BRAF\", "
+"\"TP53\", \"MAPK1\")"
+msgstr "**基因符号**：标准HUGO基因命名法（例如，“BRAF”、“TP53”、“MAPK1”）"
+
+#: ../../tools/remote/depmap_24q2.md:79 66ad8f4f1bf64de198d8bea0bcabbce8
+msgid "**Case Insensitive**: Tool automatically standardizes gene symbols"
+msgstr "**不区分大小写**：工具会自动标准化基因符号"
+
+#: ../../tools/remote/depmap_24q2.md:80 3b565ca37d30418b89089e68b51a147b
+msgid "**Validation**: Checks gene availability in the correlation matrix"
+msgstr "**验证**：检查相关矩阵中的基因可用性"
+
+#: ../../tools/remote/depmap_24q2.md:82 bff5347640364e27b7a42c602f2f1f7d
+msgid "Output Format"
+msgstr "输出格式"
+
+#: ../../tools/remote/depmap_24q2.md:84 c0735268b2fe49f28927766847ff5e84
+msgid ""
+"The tool returns a structured JSON response with comprehensive "
+"correlation analysis:"
+msgstr "该工具返回一个结构化的JSON响应，其中包含全面的相关性分析："
+
+#: ../../tools/remote/depmap_24q2.md:104 815524aff8c34ee0adee7d6ac3f59370
+msgid "**Output Fields:**"
+msgstr "**输出字段：**"
+
+#: ../../tools/remote/depmap_24q2.md:105 43767617df544be6aacbd1c60fd5da3b
+msgid "`correlation_data` (dict): Statistical measures"
+msgstr "`correlation_data`（字典）：统计指标"
+
+#: ../../tools/remote/depmap_24q2.md:106 053e56d3ab304147b24bd03a066297b7
+msgid "`correlation` (float): Pearson correlation coefficient (-1.0 to 1.0)"
+msgstr "`correlation`（浮点数）：皮尔逊相关系数（-1.0 至 1.0）"
+
+#: ../../tools/remote/depmap_24q2.md:107 31eb1bdf717b4024880d8153407a44c6
+msgid "`p_value` (float): Statistical significance of correlation"
+msgstr "`p_value`（浮点数）：相关性的统计显著性"
+
+#: ../../tools/remote/depmap_24q2.md:108 906701febd634f6da43b6a5b762041be
+msgid "`adjusted_p_value` (float, optional): FDR-corrected p-value"
+msgstr "`adjusted_p_value`（浮点数，可选）：FDR校正后的p值"
+
+#: ../../tools/remote/depmap_24q2.md:109 42e68f065a0c4ee6b7dad1eec4c457db
+msgid "`interpretation` (dict): Biological and statistical context"
+msgstr "`interpretation`（词典）：生物学和统计学背景"
+
+#: ../../tools/remote/depmap_24q2.md:110 e7285f90dfef44c48d71a3f9115e2917
+msgid "`strength` (str): Correlation strength classification"
+msgstr "`strength` (str)：相关强度分类"
+
+#: ../../tools/remote/depmap_24q2.md:111 6920bf3106544b27a6ab9a0208cb6921
+msgid "`significance` (str): Statistical significance interpretation"
+msgstr "`significance` (str)：统计显著性解释"
+
+#: ../../tools/remote/depmap_24q2.md:112 8aa085e949244776b4eaedff6930b534
+msgid "`direction` (str): Relationship type (similar vs opposing effects)"
+msgstr "`direction`（字符串）：关系类型（相似效果与相反效果）"
+
+#: ../../tools/remote/depmap_24q2.md:113 c79a79a4b6b64c84b23c928cc1fd8885
+msgid "`biological_relationship` (str): Biological interpretation"
+msgstr "`biological_relationship`（字符串）：生物学解释"
+
+#: ../../tools/remote/depmap_24q2.md:114 a81b128a27834c6591b5b466a24566b7
+msgid "`summary` (str): Comprehensive analysis summary"
+msgstr "`summary`（字符串）：综合分析摘要"
+
+#: ../../tools/remote/depmap_24q2.md:115 e98a0ad7c6b545b2aec1af7283e0ed95
+msgid "`context_info` (list): Analysis metadata and messages"
+msgstr "`context_info`（列表）：分析元数据和消息"
+
+#: ../../tools/remote/depmap_24q2.md:116 e6784a4d0f444541ae4e5f0a067c48ba
+msgid "`error` (str, optional): Error description if analysis failed"
+msgstr "`error`（字符串，可选）：分析失败时的错误描述"
+
+#: ../../tools/remote/depmap_24q2.md:118 dbdfd3ab68974034a3ef3bfa86a8655b
+msgid "Running the MCP Server"
+msgstr "运行 MCP 服务器"
+
+#: ../../tools/remote/depmap_24q2.md:120 2d987564337b499db6901ecc62e455cc
+msgid "1. Start the Server"
+msgstr "1. 启动服务器"
+
+#: ../../tools/remote/depmap_24q2.md:133 34433a230a4948ae89e4f45047d9c78b
+msgid "2. Server Configuration"
+msgstr "2. 服务器配置"
+
+#: ../../tools/remote/depmap_24q2.md:135 c540dddb4bed4dea959c913e2ced0631
+msgid "The server runs with the following default settings:"
+msgstr "服务器以以下默认设置运行："
+
+#: ../../tools/remote/depmap_24q2.md:136 ee687f0203d842b896cc01aaacc8fe8a
+msgid "**Host**: `0.0.0.0` (accepts connections from any IP)"
+msgstr "**主机**：`0.0.0.0`（接受来自任何IP的连接）"
+
+#: ../../tools/remote/depmap_24q2.md:137 9ec806d8a9bd4f54bc4607034067785b
+msgid "**Port**: `7002` (configured to avoid conflicts)"
+msgstr "**端口**：`7002`（已配置以避免冲突）"
+
+#: ../../tools/remote/depmap_24q2.md:138 1228e5dc40064992bf8899cd8cbcc0f4
+msgid "**Transport**: `streamable-http`"
+msgstr "**传输**：`streamable-http`"
+
+#: ../../tools/remote/depmap_24q2.md:139 d96f83f756e840c69cbcd40b5a7ecfdc
+msgid "**Mode**: Stateless HTTP"
+msgstr "**模式**：无状态 HTTP"
+
+#: ../../tools/remote/depmap_24q2.md:142 91efeae7571b4a389cca8752b4283dba
+msgid "Common Issues"
+msgstr "常见问题"
+
+#: ../../tools/remote/depmap_24q2.md:144 b87a9e88475d4998958695634d32a470
+msgid "**Data Directory Not Found**"
+msgstr "**未找到数据目录**"
+
+#: ../../tools/remote/depmap_24q2.md:148 2506eeceeaac4f91926f9b8ce0fb38e1
+msgid "Ensure `DEPMAP_DATA_PATH` is set correctly"
+msgstr "确保正确设置 `DEPMAP_DATA_PATH`"
+
+#: ../../tools/remote/depmap_24q2.md:149 bdcd96d4294c4e33b08f5a32d566bd3b
+msgid "Verify the `depmap_24q2/` subdirectory exists"
+msgstr "验证 `depmap_24q2/` 子目录是否存在"
+
+#: ../../tools/remote/depmap_24q2.md:150 0360f99bb4d34df180cd27d69a35594c
+msgid "Check that correlation matrices are properly downloaded"
+msgstr "检查相关矩阵是否已正确下载"
+
+#: ../../tools/remote/depmap_24q2.md:152 72ca2ad4803b4dccb5bc257c40543f1d
+msgid "**Gene Symbol Not Found**"
+msgstr "**未找到基因符号**"
+
+#: ../../tools/remote/depmap_24q2.md:156 f35e7c8b0be94419af7b7095011ea0e5
+msgid "Verify gene symbol spelling (use standard HUGO nomenclature)"
+msgstr "核实基因符号拼写（使用标准HUGO命名法）"
+
+#: ../../tools/remote/depmap_24q2.md:157 08af8eb3654a462a9e4b3eb90d4ca4d8
+msgid "Check if gene is present in the DepMap 24Q2 dataset"
+msgstr "检查基因是否存在于 DepMap 24Q2 数据集中"
+
+#: ../../tools/remote/depmap_24q2.md:158 f9c91b98658d4295be3984abd669f230
+msgid "Try alternative gene symbols or aliases"
+msgstr "尝试使用其他基因符号或别名"
+
+#: ../../tools/remote/depmap_24q2.md:160 62f7868996f04891bf381b2b527a69cd
+msgid "**Missing Correlation Data**"
+msgstr "**缺失的关联数据**"
+
+#: ../../tools/remote/depmap_24q2.md:164 9351261e47ca458aadf058cfc41d3ed0
+msgid "Ensure correlation matrices are in the correct format (.npy or .h5)"
+msgstr "确保相关矩阵格式正确（.npy 或 .h5）"
+
+#: ../../tools/remote/depmap_24q2.md:165 8108721831624572b891916f0fd9c2d1
+msgid ""
+"Verify gene index files are present (`gene_idx_array.npy` or "
+"`gene_names.txt`)"
+msgstr "确认基因索引文件是否存在（`gene_idx_array.npy` 或 `gene_names.txt`）"
+
+#: ../../tools/remote/depmap_24q2.md:166 9ec78232720244a68218c6f949dbafab
+msgid "Check file permissions and accessibility"
+msgstr "检查文件权限及可访问性"
+
+#: ../../tools/remote/depmap_24q2.md:169 7b971b343ac1478eb846ee6aaee10ab3
+msgid "References"
+msgstr "参考文献"
+
+#: ../../tools/remote/depmap_24q2.md:171 cdccfdffdc4c415fbbeb65841b42b772
+msgid "**DepMap Project**: [Broad Institute DepMap Portal](https://depmap.org/)"
+msgstr "**DepMap 项目**：[Broad Institute DepMap 入口网站](https://depmap.org/)"
+
+#: ../../tools/remote/depmap_24q2.md:172 16f8e61aea734ceb887635f0cc4411e5
+msgid ""
+"**DepMap Paper**: [Mapping the Cancer Dependency "
+"Map](https://www.nature.com/articles/s41586-019-1103-9)"
+msgstr ""
+"**DepMap "
+"论文**：[绘制癌症依赖性图谱](https://www.nature.com/articles/s41586-019-1103-9)"
+
+#: ../../tools/remote/depmap_24q2.md:173 1aa56e00f3c54689bdbbe00c5905357f
+msgid ""
+"**CERES Algorithm**: [Computational correction of copy number effect "
+"improves specificity of CRISPR-Cas9 essentiality screens in cancer "
+"cells](https://www.nature.com/articles/s41588-018-0194-x)"
+msgstr ""
+"**CERES算法**：[计算校正拷贝数效应提升CRISPR-"
+"Cas9在癌细胞中必需性筛选的特异性](https://www.nature.com/articles/s41588-018-0194-x)"
+
+#: ../../tools/remote/depmap_24q2.md:174 4bc0f5949cf54479bc11887c7fb9a2a5
+msgid "**Data Portal**: https://depmap.org/portal/download/"
+msgstr "**数据门户**：https://depmap.org/portal/download/"
+

@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.disease_target_score.rst:2
+#: 3b1f6aa5f66849cbadbb8b53d179c793
+msgid "tooluniverse.tools.disease\\_target\\_score module"
+msgstr "tooluniverse.tools.disease\\_target\\_score 模块"
+
+#: d308c1bf83334dee9f65fb82a34bce02 of
+#: tooluniverse.tools.disease_target_score:1
+msgid "disease_target_score"
+msgstr "疾病目标评分"
+
+#: 717e673dd6964dd08c1612aff6ce29a6 74363ddaa45f449f9de78774d44b9628 of
+#: tooluniverse.tools.disease_target_score:3
+#: tooluniverse.tools.disease_target_score.disease_target_score:1
+msgid ""
+"Extract disease-target association scores from a specific data source using "
+"GraphQL API. This too..."
+msgstr "使用 GraphQL API 从特定数据源中提取疾病-靶点关联评分。"
+
+#: ../../api/tooluniverse.tools.disease_target_score.rst
+#: bbc6faacfdb24c3f9c778a6ab7dcc1f6
+msgid "Parameters"
+msgstr "参数"
+
+#: 899ceed439cd436eba13b22be9d85973 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 4a00f040d4a04891ae0d3d654cd08dd3 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:5
+msgid ""
+"The datasource ID to extract scores from. Available options: 'chembl', "
+"'eva',..."
+msgstr "用于提取分数的数据源ID。可用选项：'chembl'、'eva'、..."
+
+#: c6bcc233e6df4edfbc466d6b21c23857 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:7
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: 31c27334c5db42018f7a2c634fdbb698 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ad4147f44bd6492ebcd34102765e309b of
+#: tooluniverse.tools.disease_target_score.disease_target_score:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: fa6b9b02589241c3a8651d0e9b433739 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.disease_target_score.rst
+#: 67166ceeab9a4d7ca1b05e2dc9b51ffc
+msgid "Return type"
+msgstr "返回类型"
+
+#: b9e1d17917f14e10aa2cc019815ee762 of
+#: tooluniverse.tools.disease_target_score.disease_target_score:16
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

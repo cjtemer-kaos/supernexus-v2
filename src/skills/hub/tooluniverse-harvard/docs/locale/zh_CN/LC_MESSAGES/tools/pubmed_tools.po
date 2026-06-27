@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 21:40-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/pubmed_tools.rst:2 c99d592553224636aae849c7b1399cfe
+msgid "Pubmed Tools"
+msgstr "Pubmed 工具"
+
+#: ../../tools/pubmed_tools.rst:4 6060b9537178488984035d0e217db56d
+msgid ""
+"**Configuration File**: ``pubmed_tools.json`` **Tool Type**: Local **Tools "
+"Count**: 1"
+msgstr ""
+"**配置文件**：``pubmed_tools.json``  \n"
+"**工具类型**：本地  \n"
+"**工具数量**：1"
+
+#: ../../tools/pubmed_tools.rst:8 e6a2662ab98f45b18ed809f165c1d12b
+msgid ""
+"This page contains all tools defined in the ``pubmed_tools.json`` "
+"configuration file."
+msgstr "此页面包含 ``pubmed_tools.json`` 配置文件中定义的所有工具。"
+
+#: ../../tools/pubmed_tools.rst:11 e8d7054857284c78b9c20d581a7a2044
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/pubmed_tools.rst:14 f5eaa746dd254c18a95e7de22818bf19
+msgid "**PubMed_search_articles** (Type: PubMedTool)"
+msgstr "**PubMed_search_articles**（类型：PubMed工具）"
+
+#: ../../tools/pubmed_tools.rst:16 197587238421451498f416932534aae7
+msgid ""
+"Search PubMed using NCBI E-utilities (esearch + esummary) and return "
+"articles. Returns articles w..."
+msgstr "使用NCBI E-utilities（esearch + esummary）搜索PubMed并返回文章。返回的文章包含..."
+
+#: ../../tools/pubmed_tools.rst 31492f9f30cf435eb299f399b81d7cb3
+msgid "PubMed_search_articles tool specification"
+msgstr "PubMed_search_articles 工具规范"
+
+#: ../../tools/pubmed_tools.rst:20 3ca0678d70544475913386ed37f6a8b3
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/pubmed_tools.rst:22 512362c5f7ed450baa500bc83adafaa2
+msgid "**Name**: ``PubMed_search_articles``"
+msgstr "**名称**：``PubMed_search_articles``"
+
+#: ../../tools/pubmed_tools.rst:23 32c557e5e18d42afac9281cf21b94a03
+msgid "**Type**: ``PubMedTool``"
+msgstr "**类型**：``PubMedTool``"
+
+#: ../../tools/pubmed_tools.rst:24 7d29e383ca5547f698c0e3eefde5fce2
+msgid ""
+"**Description**: Search PubMed using NCBI E-utilities (esearch + esummary) "
+"and return articles. Returns articles with title, journal, year, DOI, and "
+"PubMed URL."
+msgstr ""
+"**描述**：使用 NCBI E-utilities（esearch + esummary）搜索 PubMed "
+"并返回文章。返回包含标题、期刊、年份、DOI 及 PubMed 链接的文章信息。"
+
+#: ../../tools/pubmed_tools.rst:26 74456c1b266b4aa694ff12853c9be28f
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/pubmed_tools.rst:28 dd5624f04b0c4f3092fe08e44fe3a864
+msgid ""
+"``query`` (string) (required) Search query for PubMed articles. Use keywords"
+" separated by spaces to refine your search."
+msgstr "``query``（字符串）（必填）用于搜索PubMed文章的查询词。使用空格分隔的关键词以优化搜索结果。"
+
+#: ../../tools/pubmed_tools.rst:31 b4f9a2cd8bbc496e82dddb264fad655c
+msgid ""
+"``limit`` (integer) (optional) Number of articles to return. This sets the "
+"maximum number of articles retrieved from PubMed."
+msgstr "``limit``（整数）（可选） 返回的文章数量。此参数设置从PubMed检索的最大文章数。"
+
+#: ../../tools/pubmed_tools.rst:34 9e187fb0f23d4077a7b2ea4a7ea17cd4
+msgid ""
+"``api_key`` (string) (optional) Optional NCBI API key for higher rate "
+"limits. Get your free key at https://www.ncbi.nlm.nih.gov/account/"
+msgstr ""
+"``api_key``（字符串）（可选）可选的 NCBI API 密钥，用于提高访问速率限制。您可以在 "
+"https://www.ncbi.nlm.nih.gov/account/ 免费获取密钥。"
+
+#: ../../tools/pubmed_tools.rst:37 d1fc76bd1eda4e9da586b9a377548903
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/pubmed_tools.rst:51 54e4f576bdaa4eafb8f7db5a5a4728cd
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/pubmed_tools.rst:53 fba14d4e469c423e926f8abcdd07bf96
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/pubmed_tools.rst:54 cbf96815e8b748cda4595f8fe0e47d6a
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

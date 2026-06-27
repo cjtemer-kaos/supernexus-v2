@@ -1,0 +1,592 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.mcp_tool_registry.rst:2
+#: 673aaf53c41244838f01c466fb6b66d5
+msgid "tooluniverse.mcp\\_tool\\_registry module"
+msgstr "tooluniverse.mcp_tool_registry 模块"
+
+#: c1da2bf9252c4306b123fd7bea83e299 of tooluniverse.mcp_tool_registry:1
+msgid "MCP Tool Registration System for ToolUniverse"
+msgstr "ToolUniverse 的 MCP 工具注册系统"
+
+#: 90dcc908f0744fcb9052e3ee79c9d32e of tooluniverse.mcp_tool_registry:3
+msgid ""
+"This module provides functionality to register local tools as MCP tools and "
+"enables automatic loading of these tools on remote servers via ToolUniverse "
+"integration."
+msgstr "该模块提供将本地工具注册为MCP工具的功能，并通过ToolUniverse集成实现这些工具在远程服务器上的自动加载。"
+
+#: 9ee27f7ca55243649d946efa8e6c274a of tooluniverse.mcp_tool_registry:7
+msgid "Usage:"
+msgstr "用法："
+
+#: c6e38597cac547b4a2d361343adb38a5 of tooluniverse.mcp_tool_registry:9
+msgid ""
+"Server Side (Tool Provider): ```python from tooluniverse.mcp_tool_registry "
+"import register_mcp_tool, start_mcp_server"
+msgstr ""
+"服务器端（工具提供者）：```python\n"
+"from tooluniverse.mcp_tool_registry import register_mcp_tool, start_mcp_server\n"
+"```"
+
+#: 84d8cab7ab6d4caaa4fd4cc0f9e52d57 of tooluniverse.mcp_tool_registry:13
+msgid "@register_mcp_tool("
+msgstr "@注册_mcp_工具("
+
+#: 65281bdd35ca4c62aa708e2f8b4a8f25 of tooluniverse.mcp_tool_registry:14
+msgid "tool_type_name=\"my_analysis_tool\", config={"
+msgstr "tool_type_name=\"我的分析工具\", config={"
+
+#: 20666c644a5347dbaa86d8d9c558720b of tooluniverse.mcp_tool_registry:16
+msgid "\"description\": \"Performs custom data analysis\""
+msgstr "description\": \"执行自定义数据分析"
+
+#: ea0031db915641e09f6dcee8102abd96 of tooluniverse.mcp_tool_registry:17
+msgid "}, mcp_config={"
+msgstr ""
+
+#: 3684cab13ca24df49d382b8ddfab286a of tooluniverse.mcp_tool_registry:19
+msgid "\"server_name\": \"Custom Analysis Server\", \"host\": \"0.0.0.0\", \"port\": 8001"
+msgstr "\"server_name\": \"自定义分析服务器\", \"host\": \"0.0.0.0\", \"port\": 8001"
+
+#: 0c4d9eb3e2bb4ba498bb776383694245 of tooluniverse.mcp_tool_registry:22
+msgid "}"
+msgstr "请提供具体的英文文本内容，我将为您翻译成符合要求的中文。"
+
+#: 4d9c351b1ba14f469935c480eca29712 of tooluniverse.mcp_tool_registry:23
+msgid ") class MyAnalysisTool:"
+msgstr ") 类 MyAnalysisTool："
+
+#: 1159bb3ea72c406ca5fc05f58165cf8d 6f6e1b16c9d145609014b81320dfd970 of
+#: tooluniverse.mcp_tool_registry:25
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:23
+msgid "def run(self, arguments):"
+msgstr ""
+"```python\n"
+"def run(self, arguments):\n"
+"```"
+
+#: 6e26445bc5f5425396f5a8a5204d6984 of tooluniverse.mcp_tool_registry:26
+#, python-brace-format
+msgid "return {\"result\": \"analysis complete\"}"
+msgstr "return {\"result\": \"分析完成\"}"
+
+#: 667af4e6c5bf483faea3bef300df0aae of tooluniverse.mcp_tool_registry:28
+msgid "# Start MCP server with registered tools start_mcp_server() ```"
+msgstr ""
+"# 启动带有已注册工具的MCP服务器  \n"
+"start_mcp_server()  \n"
+"```"
+
+#: 021339219f7347718f1c00f1349e09dd of tooluniverse.mcp_tool_registry:32
+msgid ""
+"Client Side (Tool Consumer): ```python from tooluniverse import ToolUniverse"
+msgstr ""
+"客户端（工具消费者）：  \n"
+"```python  \n"
+"from tooluniverse import ToolUniverse  \n"
+"```"
+
+#: dd3c393a1b7f4e739ad78942dd9daf73 of tooluniverse.mcp_tool_registry:36
+msgid ""
+"# Auto-discover and load MCP tools from remote servers tu = ToolUniverse() "
+"tu.load_mcp_tools(server_urls=[\"http://localhost:8001\"])"
+msgstr ""
+"# 自动发现并从远程服务器加载MCP工具  \n"
+"tu = ToolUniverse()  \n"
+"tu.load_mcp_tools(server_urls=[\"http://localhost:8001\"])"
+
+#: 724d1625b0d449798d72e4814f33c9d7 of tooluniverse.mcp_tool_registry:40
+#, python-brace-format
+msgid ""
+"# Use the remote tool result = tu.run_tool(\"my_analysis_tool\", {\"data\": "
+"\"input\"}) ```"
+msgstr ""
+"```  \n"
+"# 使用远程工具  \n"
+"result = tu.run_tool(\"my_analysis_tool\", {\"data\": \"input\"})  \n"
+"```"
+
+#: cf49627fc413423284b93b47b2178ac1 of
+#: tooluniverse.mcp_tool_registry._get_smcp:1
+msgid "Get SMCP class with delayed import to avoid circular import"
+msgstr "获取具有延迟导入功能的SMCP类以避免循环导入"
+
+#: 197f32bbffec4e33a09a91cc03afc076 of
+#: tooluniverse.mcp_tool_registry._get_tooluniverse:1
+msgid "Get ToolUniverse class with delayed import to avoid circular import"
+msgstr "获取具有延迟导入功能的 ToolUniverse 类以避免循环导入"
+
+#: 556b38c14fe04aedad07388b494b2a5f of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:1
+msgid ""
+"Decorator to register a tool class exactly like register_tool, but also "
+"expose it as an MCP server."
+msgstr "用于注册工具类的装饰器，与 register_tool 完全相同，但同时将其暴露为 MCP 服务器。"
+
+#: 1abbd03e9bb0465bb431c84440c7b8b6 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:3
+msgid ""
+"This decorator does everything that register_tool does, PLUS exposes the "
+"tool via SMCP protocol for remote access. The parameters and behavior are "
+"identical to register_tool, with an optional mcp_config parameter for server"
+" configuration."
+msgstr ""
+"此装饰器不仅具备与 register_tool 相同的功能，还通过 SMCP 协议将工具公开以供远程访问。其参数和行为与 register_tool "
+"完全一致，但额外提供了一个可选的 mcp_config 参数用于服务器配置。"
+
+#: 76541b4c3c2b400085227b3dcbd147d7 8404b03f0a774a49ae3279e35126ea64
+#: 9065264325d741a385764bccdb51f7e6 c708cff581ab4a4d8e12e4ef1c9dc253
+#: e61c6f94106f4cbd899f0ce4696e63c4 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:4
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:8
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:9
+#: tooluniverse.mcp_tool_registry.start_mcp_server:4
+#: tooluniverse.mcp_tool_registry.stop_mcp_server:4
+msgid "Parameters:"
+msgstr ""
+"参数：\n"
+"\n"
+"上下文：文档"
+
+#: d77c6eb55f344f6c86698459708ed3da of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:9
+msgid "tool_type_name"
+msgstr "工具类型名称"
+
+#: 4f37f53a5444448e936055c073de1f45 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:-1
+msgid "str, optional"
+msgstr "字符串，可选"
+
+#: 5391926a68b94abfa5fdff7bba467d94 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:10
+msgid "Custom name for the tool type. Same as register_tool."
+msgstr "工具类型的自定义名称。与 register_tool 相同。"
+
+#: 8068f01f9b884858bbb7c18d779c5d0c affa7ea428904eec8665b27da48701e0 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:12
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:12
+msgid "config"
+msgstr "配置"
+
+#: 0694da5a2b324b0a9e95c9e753aa920b d967931190e74c2c895e8b9e5d0eb113 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:-1
+msgid "dict, optional"
+msgstr "dict，可选项"
+
+#: 38e28e53df434b9291403caee1ffb337 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:13
+msgid "Tool configuration dictionary. Same as register_tool."
+msgstr "工具配置字典。与 register_tool 相同。"
+
+#: a378911980cb40b680de57fa9cb50edb of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:15
+msgid "mcp_config"
+msgstr "mcp_config 配置"
+
+#: 43044bd7775c42c6a23209feb83031c5 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:16
+msgid ""
+"Additional MCP server configuration. Can include: - server_name: Name of the"
+" MCP server - host: Server host (default: \"localhost\") - port: Server port"
+" (default: 8000) - transport: \"http\" or \"stdio\" (default: \"http\") - "
+"auto_start: Whether to auto-start server when tool is registered"
+msgstr ""
+"额外的 MCP 服务器配置。可包括：  \n"
+"- server_name：MCP 服务器名称  \n"
+"- host：服务器主机（默认值：\"localhost\"）  \n"
+"- port：服务器端口（默认值：8000）  \n"
+"- transport：\"http\" 或 \"stdio\"（默认值：\"http\"）  \n"
+"- auto_start：工具注册时是否自动启动服务器"
+
+#: 050da55e053d4e68ad651bd0230e946e of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:24
+msgid "Returns:"
+msgstr "返回值："
+
+#: 41176d75e85346108b361f9e7161ea75 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:25
+msgid "function"
+msgstr "函数"
+
+#: df1e648813a54adb96f78014cbbeb3c1 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:26
+msgid ""
+"Decorator function that registers the tool class both locally and as MCP "
+"server."
+msgstr "装饰器函数，用于在本地及作为 MCP 服务器注册工具类。"
+
+#: 27c6632e44514aa9bc2074f01b2cb059 3852ed55acd0428282d71d2d2323cf93
+#: 700fe8664810484b90f59a264f875b7c 8f5b63f2d7484636acc315cb5bf58a14 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:11
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:29
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:20
+#: tooluniverse.mcp_tool_registry.start_mcp_server:11
+msgid "Examples:"
+msgstr "示例："
+
+#: 49eb0da1833a43eaac0b341eb4a9f0af of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:31
+#, python-brace-format
+msgid ""
+"Same as register_tool, just with MCP exposure: ```python "
+"@register_mcp_tool('CustomToolName', config={...}, mcp_config={\"port\": "
+"8001}) class MyTool:"
+msgstr ""
+"与 register_tool 相同，仅增加 MCP 暴露：```python @register_mcp_tool('CustomToolName',"
+" config={...}, mcp_config={\"port\": 8001}) class MyTool:"
+
+#: 90a7c817822d475e9c208f4a55bf9e42 fea986fdd0dd4f769f7cc7bf57ba4185 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:35
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:39
+msgid "pass"
+msgstr "通过"
+
+#: 354bfdc72cda4ae182b6b27984f29a4e of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:37
+msgid ""
+"@register_mcp_tool()  # Uses class name, default MCP config class "
+"AnotherTool:"
+msgstr "@register_mcp_tool()  # 使用类名，默认 MCP 配置类 AnotherTool："
+
+#: 9258b12ee25945f19427fd64f4134ef2 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool:40
+msgid "```"
+msgstr ""
+"```  \n"
+"上下文：文档  \n"
+"```"
+
+#: e016d0d107e14aaf9d6f00f220483450 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:1
+msgid "Register an existing tool class as MCP tool using configuration."
+msgstr "使用配置将现有工具类注册为 MCP 工具。"
+
+#: 834218427b784a059c2521996258f6d1 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:3
+msgid ""
+"This function provides a programmatic way to register tools as MCP tools "
+"without using decorators, useful for dynamic tool registration. Just like "
+"register_mcp_tool decorator, this does everything register_tool would do "
+"PLUS exposes the tool via MCP."
+msgstr ""
+"此函数提供了一种以编程方式注册工具为MCP工具的方法，无需使用装饰器，适用于动态工具注册。与register_mcp_tool装饰器类似，该函数完成了register_tool的所有功能，且额外通过MCP公开该工具。"
+
+#: 401c8fffd63541dc9c1c1c16c66967ba of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:10
+msgid "tool_class"
+msgstr "工具类别"
+
+#: 1643e626292c4044926934ede1691a54 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:-1
+msgid "type"
+msgstr "类型"
+
+#: 4f22aeb182944beb940fb426d0e94e41 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:11
+msgid "The tool class to register"
+msgstr "要注册的工具类"
+
+#: e15490dd3313467e8e25e8084ca5eb54 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:-1
+msgid "dict"
+msgstr "字典"
+
+#: 0f91c6da50464e3b9169d3e35885c1d7 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:13
+msgid ""
+"Configuration containing: - name: Tool name (required) - description: Tool "
+"description - parameter_schema: JSON schema for parameters - mcp_config: MCP"
+" server configuration"
+msgstr ""
+"配置包含：  \n"
+"- name：工具名称（必填）  \n"
+"- description：工具描述  \n"
+"- parameter_schema：参数的 JSON 模式  \n"
+"- mcp_config：MCP 服务器配置"
+
+#: 0fb044c9814e463c9046ec80e4e021ad of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:21
+msgid "```python class ExistingTool:"
+msgstr ""
+"```python\n"
+"class ExistingTool:\n"
+"```"
+
+#: 87d8923f25fb4166a902abeb5b2e1cf7 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:24
+#, python-brace-format
+msgid "return {\"status\": \"processed\"}"
+msgstr "return {\"status\": \"已处理\"}"
+
+#: 8de50b6b7efe497c924fc3ac4040c0d1 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:26
+msgid "register_mcp_tool_from_config(ExistingTool, {"
+msgstr ""
+
+#: d6a6698bc6134e2eb130401a17b6ff35 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:27
+#, python-brace-format
+msgid ""
+"\"name\": \"existing_tool\", \"description\": \"An existing tool exposed via"
+" MCP\", \"mcp_config\": {\"port\": 8002}"
+msgstr ""
+"\"name\": \"existing_tool\", \"description\": \"通过 MCP 暴露的现有工具\", "
+"\"mcp_config\": {\"port\": 8002}"
+
+#: 3b575a757f204d75a5ad7cecb2d9a2c2 of
+#: tooluniverse.mcp_tool_registry.register_mcp_tool_from_config:31
+msgid "})"
+msgstr "抱歉，您似乎没有提供完整的英文文本内容。请提供完整的英文内容，以便我为您准确翻译成中文。"
+
+#: 700f534bde4c441faac9491e783ba9d7 of
+#: tooluniverse.mcp_tool_registry.get_mcp_tool_registry:1
+msgid "Get the current MCP tool registry."
+msgstr "获取当前的 MCP 工具注册表。"
+
+#: 7f6bbe4266d44ba6b0185a6b7f94d80f of
+#: tooluniverse.mcp_tool_registry.get_registered_tools:1
+msgid "Get a list of all registered MCP tools with their information."
+msgstr "获取所有已注册MCP工具及其信息的列表。"
+
+#: ../../api/tooluniverse.mcp_tool_registry.rst
+#: 0690965538614c20b905e125759dc320
+msgid "Returns"
+msgstr "返回值"
+
+#: c23a822b5b1d4411a94292166e478c67 of
+#: tooluniverse.mcp_tool_registry.get_registered_tools:3
+msgid ""
+"List of dictionaries containing tool information including name, "
+"description, and port."
+msgstr "包含工具信息（包括名称、描述和端口）的字典列表。"
+
+#: ../../api/tooluniverse.mcp_tool_registry.rst
+#: 8128609ec9af4e119747aa76b1058053
+msgid "Return type"
+msgstr "返回类型"
+
+#: 29519fd570da44c68ede3d5b41ae878b of
+#: tooluniverse.mcp_tool_registry.get_mcp_server_configs:1
+msgid "Get the current MCP server configurations grouped by port."
+msgstr "获取按端口分组的当前 MCP 服务器配置。"
+
+#: f58a278e72814891b2db697bbafccef9 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:1
+msgid "Start MCP server(s) for registered tools."
+msgstr "启动已注册工具的 MCP 服务器。"
+
+#: a417874efa2743ebb89c50a4fef3d18b aedec39e780142079aae496088783717 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:5
+#: tooluniverse.mcp_tool_registry.stop_mcp_server:5
+msgid "port"
+msgstr "端口"
+
+#: 8eeebf4bbe35477782d5f5a080a4be33 c3f3e486699246aeb9872a9b7abdc545 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:-1
+#: tooluniverse.mcp_tool_registry.stop_mcp_server:-1
+msgid "int, optional"
+msgstr "int，可选项"
+
+#: 4725ea8921ea428283d94304f2f20645 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:6
+msgid ""
+"Specific port to start server for. If None, starts servers for all "
+"registered tools."
+msgstr "用于启动服务器的特定端口。如果为 None，则启动所有已注册工具的服务器。"
+
+#: 08bd82ff1e824493ab820ce42f653244 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:7
+msgid "**kwargs"
+msgstr "**kwargs（关键字参数）"
+
+#: 815d2bb4d240412b973280b3af9c6a7e of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:8
+msgid "Additional arguments passed to SMCP server"
+msgstr "传递给 SMCP 服务器的附加参数"
+
+#: 1ed62c8aba89414bbecc0251d5c79b62 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:12
+msgid "```python # Start server for specific port start_mcp_server(port=8001)"
+msgstr ""
+"```python\n"
+"# 启动指定端口的服务器\n"
+"start_mcp_server(port=8001)\n"
+"```"
+
+#: d9a67bf4e82b4fa392e1d5c1fe0c24e3 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:16
+msgid "# Start all servers start_mcp_server()"
+msgstr "# 启动所有服务器 start_mcp_server()"
+
+#: 77b1200eba4045db8a035c08a6ea8837 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server:19
+msgid ""
+"# Start with custom configuration start_mcp_server(max_workers=20, "
+"debug=True) ```"
+msgstr "# 从自定义配置开始 start_mcp_server(max_workers=20, debug=True) ```"
+
+#: 8a84a0e1a8744f33998b637088619ee9 of
+#: tooluniverse.mcp_tool_registry._start_server_for_port:1
+msgid "Start SMCP server for tools on a specific port."
+msgstr "在特定端口启动用于工具的SMCP服务器。"
+
+#: e7ae1dd4dffc4edda168a76b1805e750 of
+#: tooluniverse.mcp_tool_registry._add_tool_to_smcp_server:1
+msgid ""
+"Add a registered tool to an SMCP server instance by reusing SMCP's proven "
+"method."
+msgstr "通过复用 SMCP 的成熟方法，将已注册的工具添加到 SMCP 服务器实例中。"
+
+#: eaa35ff3cf8248b594fc61629c58c2e3 of
+#: tooluniverse.mcp_tool_registry._create_mcp_tool_from_tooluniverse_with_instance:1
+msgid ""
+"Create an MCP tool from a ToolUniverse tool configuration using a tool "
+"instance."
+msgstr "使用工具实例从 ToolUniverse 工具配置创建 MCP 工具。"
+
+#: d856ff90371c49dbb3a31c0e2387b67a of
+#: tooluniverse.mcp_tool_registry._create_mcp_tool_from_tooluniverse_with_instance:3
+msgid ""
+"This method reuses the proven approach from SMCP's "
+"_create_mcp_tool_from_tooluniverse method, but adapts it to work with tool "
+"instances instead of ToolUniverse. It creates functions with proper "
+"parameter signatures that match the ToolUniverse tool schema, enabling "
+"FastMCP's automatic parameter validation."
+msgstr ""
+"该方法复用了 SMCP 中 _create_mcp_tool_from_tooluniverse 方法的成熟方案，但进行了调整以适配工具实例而非 "
+"ToolUniverse。它创建了具有与 ToolUniverse 工具架构相匹配的正确参数签名的函数，从而实现了 FastMCP 的自动参数校验功能。"
+
+#: 6a6488924a5c46949296394a5252020f of
+#: tooluniverse.mcp_tool_registry._build_fastmcp_tool_function:1
+msgid ""
+"Build a FastMCP-compatible function with proper docstring and type "
+"annotations."
+msgstr "构建一个兼容 FastMCP 的函数，包含规范的文档字符串和类型注解。"
+
+#: 4b76672cd2e34b8b8ae53bcc340c2a27 of
+#: tooluniverse.mcp_tool_registry._build_fastmcp_tool_function:3
+msgid ""
+"FastMCP generates parameter schema from the function signature and "
+"docstring, so we need to create a function that matches the expected format "
+"exactly."
+msgstr "FastMCP 根据函数签名和文档字符串生成参数模式，因此我们需要创建一个与预期格式完全匹配的函数。"
+
+#: ae4c67971ccd4be892504bf310a8f1b8 of
+#: tooluniverse.mcp_tool_registry.start_mcp_server_for_tool:1
+msgid "Start MCP server for a specific tool."
+msgstr "启动特定工具的 MCP 服务器。"
+
+#: 364316c0fcae4091b70f2a581fb7c362 of
+#: tooluniverse.mcp_tool_registry.stop_mcp_server:1
+msgid "Stop MCP server(s)."
+msgstr "停止 MCP 服务器。"
+
+#: dc88ec21293c49a6a809ee45e0d5390f of
+#: tooluniverse.mcp_tool_registry.stop_mcp_server:6
+msgid "Specific port to stop server for. If None, stops all servers."
+msgstr "要停止服务器的特定端口。如果为 None，则停止所有服务器。"
+
+#: faab016b079e48b7a2e5f9011e6fa6c6 of
+#: tooluniverse.mcp_tool_registry.list_mcp_tools:1
+msgid "List all registered MCP tools with their configurations."
+msgstr "列出所有已注册的 MCP 工具及其配置。"
+
+#: aaf379f6459d44f88c8781300456a70a of
+#: tooluniverse.mcp_tool_registry.get_mcp_tool_urls:1
+msgid "Get list of MCP server URLs for all registered tools."
+msgstr "获取所有已注册工具的 MCP 服务器 URL 列表。"
+
+#: f680dc6ef5dc4095bb8e1aae4e3278ea of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:1
+msgid "Load MCP tools from servers into a ToolUniverse instance."
+msgstr "将 MCP 工具从服务器加载到 ToolUniverse 实例中。"
+
+#: bb09c5484e01460b916dbdd2cd438c16 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:5
+msgid "tu"
+msgstr "请提供完整的英文文本以便翻译。"
+
+#: c8acab97f3f14ccfa2dd633dac2980f8 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:-1
+msgid "ToolUniverse"
+msgstr "工具宇宙"
+
+#: b2b158f61fe542a8af1da145b8923c24 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:6
+msgid "ToolUniverse instance to load tools into"
+msgstr "用于加载工具的 ToolUniverse 实例"
+
+#: 95952b4dc813492d951a36bef05bcf0f of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:7
+msgid "server_urls"
+msgstr "服务器网址"
+
+#: bb247694b3884aa78bc1652929445b3a of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:-1
+msgid "list of str, optional"
+msgstr "可选的字符串列表"
+
+#: ab93de3a6e26447aa0e1d57b0091224c of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:8
+msgid "List of MCP server URLs. If None, uses all registered local servers."
+msgstr "MCP 服务器 URL 列表。若为 None，则使用所有已注册的本地服务器。"
+
+#: 8069dd4d8be44da3829bbd5027f4f855 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:12
+msgid ""
+"```python from tooluniverse import ToolUniverse from "
+"tooluniverse.mcp_tool_registry import load_mcp_tools_to_tooluniverse"
+msgstr ""
+"```python\n"
+"from tooluniverse import ToolUniverse\n"
+"from tooluniverse.mcp_tool_registry import load_mcp_tools_to_tooluniverse\n"
+"```"
+
+#: 52dbfa4e274f43259a9b24879dcaf01f of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:16
+msgid "tu = ToolUniverse()"
+msgstr "tu = 工具宇宙()"
+
+#: 2fc84372caa04e7f82e6638820716b9e of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:18
+msgid "# Load from specific servers load_mcp_tools_to_tooluniverse(tu, ["
+msgstr "# 从特定服务器加载 load_mcp_tools_to_tooluniverse(tu, ["
+
+#: b5b62fe67b934dcb8d50755e9f35ec4d of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:20
+msgid "\"http://localhost:8001\", \"http://analysis-server:8002\""
+msgstr "http://localhost:8001\", \"http://analysis-server:8002"
+
+#: 0187c5cf031840c0bf050a425a7b4153 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:22
+msgid "])"
+msgstr "请提供需要翻译的英文文本，我将为您提供符合要求的中文翻译。"
+
+#: 42e5af4b625648e899f8c790fd782e14 of
+#: tooluniverse.mcp_tool_registry.load_mcp_tools_to_tooluniverse:24
+msgid ""
+"# Load from all local registered servers load_mcp_tools_to_tooluniverse(tu) "
+"```"
+msgstr "# 从所有本地注册服务器加载 load_mcp_tools_to_tooluniverse(tu) ```"

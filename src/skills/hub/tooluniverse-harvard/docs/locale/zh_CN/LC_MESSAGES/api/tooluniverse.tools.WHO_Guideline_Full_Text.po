@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.WHO_Guideline_Full_Text.rst:2
+#: 0d76a6a904734938b751efc616f58e24
+msgid "tooluniverse.tools.WHO\\_Guideline\\_Full\\_Text module"
+msgstr "tooluniverse.tools.WHO\\_Guideline\\_Full\\_Text 模块"
+
+#: fb1c40e3af8e437bb13ff02fdfba2288 of
+#: tooluniverse.tools.WHO_Guideline_Full_Text:1
+msgid "WHO_Guideline_Full_Text"
+msgstr "请提供完整的英文文本，我将根据您的要求进行翻译。"
+
+#: 32e8b692396845ee94c5e2acc25c7eb1 da1a21cee2bb45a1b4416d6306d91dee of
+#: tooluniverse.tools.WHO_Guideline_Full_Text:3
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:1
+msgid ""
+"Fetch full text content from a WHO (World Health Organization) guideline "
+"publication page. Extrac..."
+msgstr "从世界卫生组织（WHO）指南发布页面获取完整文本内容。"
+
+#: ../../api/tooluniverse.tools.WHO_Guideline_Full_Text.rst
+#: 3cb02df173b349ea99105c3127a046e8
+msgid "Parameters"
+msgstr "参数"
+
+#: ef2bbf92d1fb4432b844f1b2283990a9 of
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:3
+msgid ""
+"Full URL of the WHO publication page (e.g., "
+"'https://www.who.int/publications..."
+msgstr "WHO出版页面的完整URL（例如，'https://www.who.int/publications..."
+
+#: a977354d43da4a71af0728411e0561c6 of
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 294d8bd8d7044e34a1233730adaf07e6 of
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: f419da4aa95a4580b3462c6faf98f9fd of
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.WHO_Guideline_Full_Text.rst
+#: 7e87d8a9b9764468b8469299aaa4576c
+msgid "Return type"
+msgstr "返回类型"
+
+#: 7fb678e36a924948801b77de18783232 of
+#: tooluniverse.tools.WHO_Guideline_Full_Text.WHO_Guideline_Full_Text:12
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

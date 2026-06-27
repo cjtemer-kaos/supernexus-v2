@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.rst:2
+#: ebf206305a4d487da00b07eb078da7cb
+msgid "tooluniverse.tools.FDA\\_get\\_medication\\_guide\\_info\\_by\\_drug\\_name module"
+msgstr "tooluniverse.tools.FDA\\_get\\_medication\\_guide\\_info\\_by\\_drug\\_name 模块"
+
+#: 02213ca9862044389976eb6c55cece4a of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name:1
+msgid "FDA_get_medication_guide_info_by_drug_name"
+msgstr "FDA_按药品名称获取用药指南信息"
+
+#: 581aaba6c55d4f62a4a0cda8da07b0ab db1aa160daee44f4a117d7d339975cc2 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name:3
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:1
+msgid "Retrieve medication guide information based on the drug name."
+msgstr "根据药物名称检索药物指南信息。"
+
+#: ../../api/tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.rst
+#: 8e63c643295143e58ff980c92e73cc64
+msgid "Parameters"
+msgstr "参数"
+
+#: d935170f063c4f42bb525888cdcafa14 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:3
+msgid "The name of the drug."
+msgstr "药物名称。"
+
+#: efe065d0e9b54f0bbb02fc39e265e114 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 76999e4982c542b29b7f4608cf47a741 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:7
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 16c0b4e1365047449fc729cfc814f272 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: c155b91d06424612a91289d164b7d379 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7f85d9611d624543be004df72e547428 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.rst
+#: b6d8122fd15846c0aa8031803df39fec
+msgid "Return type"
+msgstr "返回类型"
+
+#: 303de266075840b6ba24bdfac9c55bc3 of
+#: tooluniverse.tools.FDA_get_medication_guide_info_by_drug_name.FDA_get_medication_guide_info_by_drug_name:16
+msgid ":py:class:`Any`"
+msgstr ""

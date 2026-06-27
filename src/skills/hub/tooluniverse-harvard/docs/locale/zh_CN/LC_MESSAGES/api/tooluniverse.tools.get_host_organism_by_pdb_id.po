@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_host_organism_by_pdb_id.rst:2
+#: 5813e06e18a04f70abd73a7852ca725f
+msgid "tooluniverse.tools.get\\_host\\_organism\\_by\\_pdb\\_id module"
+msgstr "tooluniverse.tools.get\\_host\\_organism\\_by\\_pdb\\_id 模块"
+
+#: 71242656f6cb4a16ad99524dd6311205 of
+#: tooluniverse.tools.get_host_organism_by_pdb_id:1
+msgid "get_host_organism_by_pdb_id"
+msgstr "get_host_organism_by_pdb_id（通过PDB ID获取宿主生物）"
+
+#: 3b30ee7ea0ca4ec896a14d92f260ddc9 6575ed8862d24a59b90185ad46f5b748 of
+#: tooluniverse.tools.get_host_organism_by_pdb_id:3
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:1
+msgid "Get the host organism used for protein expression in a PDB entry."
+msgstr "获取用于蛋白质表达的宿主生物信息（在PDB条目中）。"
+
+#: ../../api/tooluniverse.tools.get_host_organism_by_pdb_id.rst
+#: da24681fdc3d4cbc8641f064ff4ee0e0
+msgid "Parameters"
+msgstr "参数"
+
+#: 2787676e436d404cbd25f2d59919aff5 of
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:3
+msgid "4-character PDB ID"
+msgstr "4字符PDB ID"
+
+#: a63780fe0600434da619efc84ac3561f of
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 9fe8a41c1d5a4ee28db6846517598cd4 of
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: ac7da95f411440298dc41286cadc8691 of
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_host_organism_by_pdb_id.rst
+#: c383423be1314474a699f494c798f8a1
+msgid "Return type"
+msgstr "返回类型"
+
+#: 91487090efb24ca7b766d464dbda575a of
+#: tooluniverse.tools.get_host_organism_by_pdb_id.get_host_organism_by_pdb_id:12
+msgid ":py:class:`Any`"
+msgstr ""

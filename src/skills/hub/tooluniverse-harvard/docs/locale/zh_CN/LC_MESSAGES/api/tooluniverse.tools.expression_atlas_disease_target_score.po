@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.expression_atlas_disease_target_score.rst:2
+#: a32744ef4a4348beb9ec74d385db3cd3
+msgid "tooluniverse.tools.expression\\_atlas\\_disease\\_target\\_score module"
+msgstr "tooluniverse.tools.expression\\_atlas\\_disease\\_target\\_score 模块"
+
+#: 5270b552b36d4910851acc8d11aef220 of
+#: tooluniverse.tools.expression_atlas_disease_target_score:1
+msgid "expression_atlas_disease_target_score"
+msgstr "expression_atlas_疾病_靶点_评分"
+
+#: e0fe959d8a50411f8d96c975d3ec1367 f8a05be87ef9447d8844df84f70a38a8 of
+#: tooluniverse.tools.expression_atlas_disease_target_score:3
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:1
+msgid ""
+"Extract disease-target association scores from Expression Atlas. This "
+"provides gene expression data."
+msgstr "从Expression Atlas提取疾病-靶点关联评分。此功能提供基因表达数据。"
+
+#: ../../api/tooluniverse.tools.expression_atlas_disease_target_score.rst
+#: cc4518a33d5941cdaf183d17f99a7700
+msgid "Parameters"
+msgstr "参数"
+
+#: 5208b11652ec4902852c06b04ef9da0d of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:3
+msgid ""
+"The EFO (Experimental Factor Ontology) ID of the disease, e.g., "
+"'EFO_0000339'..."
+msgstr "疾病的EFO（实验因素本体）ID，例如“EFO_0000339”…"
+
+#: 3b2ade4453ab4d22b4c5250e14cfc083 of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:5
+msgid "Number of results per page (default: 100, max: 100)"
+msgstr "每页结果数量（默认值：100，最大值：100）"
+
+#: 541445db465948e78b90ced624011ec7 of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: a7aedfec92664b25ac2fcec78126acb4 of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8a7afa59b24e43e898c09db96de8351c of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.expression_atlas_disease_target_score.rst
+#: 334a6510e450473c980a5f62b35e55c1
+msgid "Return type"
+msgstr "返回类型"
+
+#: af47162304674abe821be4fb927419be of
+#: tooluniverse.tools.expression_atlas_disease_target_score.expression_atlas_disease_target_score:14
+msgid ":py:class:`dict[str`, :py:class:`Any]`"
+msgstr ""

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.osf_preprints_tool.rst:2
+#: b3acb38ddc1a4ba08fab31d0aab5d9a5
+msgid "tooluniverse.osf\\_preprints\\_tool module"
+msgstr "tooluniverse.osf_preprints_tool 模块"
+
+#: 2996ab17028a44a5a89f7d12e0440152 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: c1e1a1127eac47879ba0db2f06868cc7 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool:1
+msgid "Search OSF Preprints via OSF API v2 filters."
+msgstr "通过 OSF API v2 过滤器搜索 OSF 预印本。"
+
+#: 787e6b5ae71144908edcbe769a86e31b of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool:3
+msgid "Parameters (arguments):"
+msgstr "参数（参数列表）："
+
+#: 56ec690010fc4f5cae20904d3647cee5 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool:4
+msgid ""
+"query (str): Query string max_results (int): Max results (default 10, max "
+"100) provider (str): Optional preprint provider (e.g., 'osf', 'psyarxiv')"
+msgstr ""
+"query (str)：查询字符串  \n"
+"max_results (int)：最大结果数（默认10，最大100）  \n"
+"provider (str)：可选预印本提供者（例如，'osf'，'psyarxiv'）"
+
+#: b77da15cebbd4360acb368cdd0d22287 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: b4b1b47c585042918b7896cbfc7b0e86 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.osf_preprints_tool.rst
+#: fea2feca905b49bc9961fcef112da913
+#, fuzzy
+msgid "Parameters"
+msgstr "参数（参数列表）："
+
+#: 848f29c787dd483da6814fe05b62ebae of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 0657df86a67a4bf3aa945ab833c0dbdc of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: a03f91249cc648abbc95ab5aa70e1858 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 41f79727d1bf4c6c81c6627999ce5479 of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 48afde33908f469292838b62e801fdfc of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: c98642df785442e5b4082bf7ee5dd82d of
+#: tooluniverse.osf_preprints_tool.OSFPreprintsTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

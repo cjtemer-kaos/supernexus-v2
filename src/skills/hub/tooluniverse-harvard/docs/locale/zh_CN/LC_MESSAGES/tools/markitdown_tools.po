@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/markitdown_tools.rst:2 ba2083a719a04714aa7d9059cfdcb759
+msgid "Markitdown Tools"
+msgstr "Markitdown 工具"
+
+#: ../../tools/markitdown_tools.rst:4 932f43b40d974b5898e1669008367dd2
+msgid ""
+"**Configuration File**: ``markitdown_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 1"
+msgstr "**配置文件**: ``markitdown_tools.json`` **工具类型**: 本地 **工具数量**: 1"
+
+#: ../../tools/markitdown_tools.rst:8 a37ec0ef21044be496f0dc98c4831288
+msgid ""
+"This page contains all tools defined in the ``markitdown_tools.json`` "
+"configuration file."
+msgstr "本页面包含在``markitdown_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/markitdown_tools.rst:11 75e20d84d63342c1adcd64a52bc8757d
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/markitdown_tools.rst:14 6e081fbbd8724298ae16648a74142760
+msgid "**convert_to_markdown** (Type: MarkItDownTool)"
+msgstr "**convert_to_markdown**（类型：MarkItDownTool）"
+
+#: ../../tools/markitdown_tools.rst:16 882ba2dc000d4b009c8812d2212b280a
+msgid ""
+"Convert a resource described by an http:, https:, file: or data: URI to "
+"markdown."
+msgstr "将由 http:、https:、file: 或 data: URI 描述的资源转换为 Markdown。"
+
+#: ../../tools/markitdown_tools.rst 4716f2d435b1454b98273250051cb80d
+msgid "convert_to_markdown tool specification"
+msgstr "convert_to_markdown 工具规范"
+
+#: ../../tools/markitdown_tools.rst:20 11b34016dc0048f2b1f89a86acbbece0
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/markitdown_tools.rst:22 7bbb92d8ec0b4780ae6b713fe5312e9d
+msgid "**Name**: ``convert_to_markdown``"
+msgstr "**名称**: ``convert_to_markdown``"
+
+#: ../../tools/markitdown_tools.rst:23 7bf61060d41a4fb6a8aa5bfc6b29a443
+msgid "**Type**: ``MarkItDownTool``"
+msgstr "**类型**: ``MarkItDownTool``"
+
+#: ../../tools/markitdown_tools.rst:24 89c302a6f6994e18801d45c12d27ba87
+msgid ""
+"**Description**: Convert a resource described by an http:, https:, file: or "
+"data: URI to markdown."
+msgstr "**描述**：将由 http:、https:、file: 或 data: URI 描述的资源转换为 Markdown。"
+
+#: ../../tools/markitdown_tools.rst:26 3ab00032150443359580add955892172
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/markitdown_tools.rst:28 6493cc36784041f28b52f13ee2943230
+msgid ""
+"``uri`` (string) (required) URI of the resource to convert (supports http:, "
+"https:, file:, data: URIs)"
+msgstr "``uri``（字符串）（必需）要转换的资源的URI（支持http:、https:、file:、data: URI）"
+
+#: ../../tools/markitdown_tools.rst:31 2ad527be3d284dd3b8db9b6792c3773e
+msgid "``output_path`` (string) (optional) Optional output file path"
+msgstr "``output_path``（字符串）（可选）可选的输出文件路径"
+
+#: ../../tools/markitdown_tools.rst:34 72b6049478fe42828e12568c2872b6a6
+msgid "``enable_plugins`` (boolean) (optional) Enable 3rd-party plugins"
+msgstr "``enable_plugins``（布尔值）（可选）启用第三方插件"
+
+#: ../../tools/markitdown_tools.rst:37 5c284bdb895a43b481dcb5cdd35cb382
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/markitdown_tools.rst:51 188b4f0dcbb841dba59afc17c14ae0c3
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/markitdown_tools.rst:53 e5ec4005955c49f09ac0ee6b824eaf38
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/markitdown_tools.rst:54 a3cb4cbbf1ad4342a23a1d0890df0e28
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

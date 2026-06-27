@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.rst:2
+#: 83bc078085fc48d0a70ea70b63c1f3c6
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_nonteratogenic\\_effects module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_nonteratogenic\\_effects 模块"
+
+#: 720a181901764d10b9be9ffbf0f03d5f of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects:1
+msgid "FDA_get_drug_names_by_nonteratogenic_effects"
+msgstr ""
+"FDA_get_drug_names_by_nonteratogenic_effects  \n"
+"获取非致畸效应药物名称"
+
+#: 2581df1a39084e979c5d35158bd1fca7 c88fc52fa7da4f899a7a9f947b70464b of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects:3
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:1
+msgid ""
+"Retrieve drug names based on the presence of nonteratogenic effects "
+"information."
+msgstr "根据非致畸作用信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.rst
+#: 4c8d23195c4545469e17cebe89cdc7bb
+msgid "Parameters"
+msgstr "参数"
+
+#: a1f321d5bcea43a8a7c14fc6c231d385 of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:3
+msgid "Information about the drug’s nonteratogenic effects."
+msgstr "关于药物的非致畸作用信息。"
+
+#: 7c918b4fe3f84b578b7d513a4c9253f1 of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: 2330b2674b6c4b75af4a1024a322b94a of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 9c173e1aa30e4096909a64124926add5 of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: c73aeaae89c14810baefe6990cc3bd02 of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 1e9887ff20864e28afc26cc60f319f18 of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 25bd72d57db54447bd8f8f87364e36af of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.rst
+#: e1e63ee64e9b4e6bae06cd51577b0a8f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 8488b3a47e1f4935990fdfc9a10eb7ae of
+#: tooluniverse.tools.FDA_get_drug_names_by_nonteratogenic_effects.FDA_get_drug_names_by_nonteratogenic_effects:18
+msgid ":py:class:`Any`"
+msgstr ""

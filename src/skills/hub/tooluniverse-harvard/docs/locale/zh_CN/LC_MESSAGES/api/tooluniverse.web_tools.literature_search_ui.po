@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-18 20:15-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:2
+#: 72d27fc1399945778a041cf0a0164de3
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui package"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:10
+#: e155dfe9eb9547daaceb0e622e616eb7
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:13
+#: e770ce65e47e43198318fae470a5fd6f
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.add\\_tool\\_example "
+"module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:21
+#: d57648477d0b498b83ea2c8f5a8cd9fa
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.agent\\_search\\_app "
+"module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:29
+#: d67e9c085f934ef5a4854a3c18676f8f
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.agentic\\_tools module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:37
+#: aa1c81b47d8c4433b2c7c39fc002080f
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.debug\\_summary module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:45
+#: eedac2b7dea64f708292034629054ade
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.demo module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:53
+#: 26e22d92b7234b67a582a2421e4ee293
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.multi\\_agent\\_compose"
+" module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:61
+#: 4450b7c4ea914c66aaf9af4a6d0e4d0f
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.regular\\_search\\_app "
+"module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:69
+#: 3c92a14ff3764fd2b2b162e2b469bd88
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.run module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:77
+#: 8a07936428924c44a11dd9952cafabca
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.simple\\_app module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:85
+#: f8cb50ca5b524c02b0e9620ecb948426
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.start module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:93
+#: c5d35c268de64f0da7a54720aac79b6b
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.start\\_agent\\_search "
+"module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:101
+#: d0cf432925c946f1aa89228648553aaa
+#, fuzzy
+msgid "tooluniverse.web\\_tools.literature\\_search\\_ui.start\\_both module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#: ../../api/tooluniverse.web_tools.literature_search_ui.rst:109
+#: 778193693e674b92af7f896176086e7d
+#, fuzzy
+msgid ""
+"tooluniverse.web\\_tools.literature\\_search\\_ui.start\\_regular\\_search"
+" module"
+msgstr "tooluniverse.web_tools.literature_search_ui 包"
+
+#~ msgid ""
+#~ "Literature Search Web UI A web "
+#~ "interface for searching academic literature"
+#~ " using multiple databases"
+#~ msgstr "文献检索网页界面 一个用于通过多个数据库搜索学术文献的网页界面"
+

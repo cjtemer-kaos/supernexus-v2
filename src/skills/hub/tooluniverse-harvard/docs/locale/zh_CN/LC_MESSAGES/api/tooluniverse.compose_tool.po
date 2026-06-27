@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-08 22:00-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_tool.rst:2 569869600828424c982afafac28735bf
+msgid "tooluniverse.compose\\_tool module"
+msgstr "tooluniverse.compose_tool 模块"
+
+#: f4db529e9e51489d935624bf04963475 of tooluniverse.compose_tool:1
+msgid ""
+"ComposeTool - A tool that composes other tools using custom code logic. "
+"Supports intelligent dependency management with automatic tool loading."
+msgstr "ComposeTool —— 一款通过自定义代码逻辑组合其他工具的工具。支持智能依赖管理及自动加载工具。"
+
+#: aa270b8907954167884711b5ca92a5a2 of tooluniverse.compose_tool.ComposeTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 41288688389d49db9ffe25de1e6925e4 of tooluniverse.compose_tool.ComposeTool:1
+msgid ""
+"A flexible tool that can compose other tools using custom code logic. "
+"Supports both inline composition_code and external Python files. Features "
+"intelligent dependency management with automatic tool loading."
+msgstr ""
+"一个灵活的工具，能够通过自定义代码逻辑组合其他工具。支持内联 composition_code 及外部 Python "
+"文件。具备智能依赖管理功能，实现自动加载工具。"
+
+#: 8ce011e616c24acc8caf567790632270 of
+#: tooluniverse.compose_tool.ComposeTool._discover_tool_dependencies:1
+msgid "Automatically discover tool dependencies from composition code."
+msgstr "自动从组合代码中发现工具依赖关系。"
+
+#: ../../api/tooluniverse.compose_tool.rst 632e13176dee4077a2268435dbd944a1
+#: 67a87cfafb6a4830b5fff0765ff0c19c 8111255bd9bf4a9a84225e407f10a973
+#: 826a8cf5095c49c396ae0af18ed1045d c23271c924b9418e815e06887e71aad6
+#: c99b83f8e0db4687aafcf69c9658ea65 dd9b447ac6824c6bbc5e5b08589dadfc
+#: eab5395afdc140839002a49e8c79e3b2 f2b70f24f1c0450e85abe7088465efcd
+msgid "Returns"
+msgstr "返回值"
+
+#: c78b09825fc844f887aa94f9301987dd of
+#: tooluniverse.compose_tool.ComposeTool._discover_tool_dependencies:3
+msgid "Set of tool names that this composition calls"
+msgstr "此组合调用的工具名称集合"
+
+#: ../../api/tooluniverse.compose_tool.rst 195ece548e42461eb2db41cfa3154a33
+#: 96c981e4dddd49169236290ade8ae8c3 a24c3e0b174f4106bc7a9cb24e2dae4d
+#: b7cc54316e3d48828d7be139955c10d5 c4943d26ee434a9ba570e18bb021a29e
+#: c73468afa58043a795357268c65528f4 f5868305a9404db4bad0413205f334e8
+#: f6b28a4d187645a0914f22ff3845c477 f9c7d74ea75249df8b6bbd2e9f6da346
+msgid "Return type"
+msgstr "返回类型"
+
+#: 6c7a884a79a945f689f7969f64a7b88b of
+#: tooluniverse.compose_tool.ComposeTool._get_tool_category_mapping:1
+msgid "Create a mapping from tool names to their categories."
+msgstr "创建工具名称到其类别的映射。"
+
+#: 394ec16d8d714d2a94297776c3534cb0 of
+#: tooluniverse.compose_tool.ComposeTool._get_tool_category_mapping:3
+msgid "Mapping of tool names to category names"
+msgstr "工具名称与类别名称的映射"
+
+#: 0d224e25baf3428493ccb547c69c09b0 of
+#: tooluniverse.compose_tool.ComposeTool._load_missing_dependencies:1
+msgid "Automatically load missing tool dependencies."
+msgstr "自动加载缺失的工具依赖项。"
+
+#: ../../api/tooluniverse.compose_tool.rst 4c15dcd0be2342ed82a6ccdf86d1b905
+#: 6ef1189a472a4791bb6030eac9abd43d 7b76af23901a4408999a36ecef6dd359
+#: b8591bc222834b34bbb5ab5d0475bc0a b9f82925df474ae587f4029c9836d55c
+#: c90b34ea94e44fd78698e728fc92079c f519d84883174c0a8fac24dad1c1b6b8
+msgid "Parameters"
+msgstr "参数"
+
+#: a96928670d4943b8a15658e772d41277 of
+#: tooluniverse.compose_tool.ComposeTool._load_missing_dependencies:3
+msgid "Set of missing tool names"
+msgstr "缺失工具名称集"
+
+#: ce8905d42ef643519778c719b556ac4d of
+#: tooluniverse.compose_tool.ComposeTool._load_missing_dependencies:6
+msgid "(successfully_loaded, failed_to_load)"
+msgstr "(successfully_loaded, 加载成功, failed_to_load, 加载失败)"
+
+#: 3fe08af69c9342558609a1f4d749c75f of
+#: tooluniverse.compose_tool.ComposeTool._load_code_from_file:1
+msgid "Load composition code from external Python file."
+msgstr "从外部 Python 文件加载组合代码。"
+
+#: 2e973034bb76437faa0905bd8c07eb1a of
+#: tooluniverse.compose_tool.ComposeTool._load_code_from_file:3
+msgid "The composition code as a string"
+msgstr "组成代码作为字符串"
+
+#: 8576cfddb02c4e179827e3365496e560 of
+#: tooluniverse.compose_tool.ComposeTool.run:1
+msgid "Execute the composed tool with custom code logic."
+msgstr "执行包含自定义代码逻辑的组合工具。"
+
+#: 85ebc958df8b4aa6bf374074cecab4c2 of
+#: tooluniverse.compose_tool.ComposeTool.run:3
+msgid "Input arguments for the composition"
+msgstr "组成的输入参数"
+
+#: 0cb0cad4bd83447c9a82da317c7f622f 15de0353901e441e94f6ec1bd8f774b7
+#: 20e7fb93b92041d0bf466bcb442d12e9 580e37dc9f1b40319fa18dfeed5ef0f8
+#: d87f7f799bc14b0592eaa41ec28599b2 of
+#: tooluniverse.compose_tool.ComposeTool._create_event_emitter:3
+#: tooluniverse.compose_tool.ComposeTool._emit_stream_chunk:5
+#: tooluniverse.compose_tool.ComposeTool._execute_from_file:5
+#: tooluniverse.compose_tool.ComposeTool._execute_inline_code:5
+#: tooluniverse.compose_tool.ComposeTool.run:5
+msgid "Callback function for streaming output"
+msgstr "用于流式输出的回调函数"
+
+#: b35b7e05652c4c3890a2379f895ca89e cf0982609d824f73920a2eca851cd735
+#: f1e7abfbda674116800e7bc4416935f5 of
+#: tooluniverse.compose_tool.ComposeTool._execute_from_file:8
+#: tooluniverse.compose_tool.ComposeTool._execute_inline_code:8
+#: tooluniverse.compose_tool.ComposeTool.run:8
+msgid "Result from the composition execution"
+msgstr "组合执行结果"
+
+#: a6861fcf4b764c798f372076dcbf0f11 of
+#: tooluniverse.compose_tool.ComposeTool._emit_stream_chunk:1
+msgid "Emit a stream chunk if callback is provided."
+msgstr "如果提供了回调函数，则发出一个数据流块。"
+
+#: b3c829d1157b4667a30a120cb5090a27 of
+#: tooluniverse.compose_tool.ComposeTool._emit_stream_chunk:3
+msgid "The chunk to emit"
+msgstr "要发出的块"
+
+#: 8778ff26d65d4522ab18df7d5d20e3a7 of
+#: tooluniverse.compose_tool.ComposeTool._create_event_emitter:1
+msgid "Create an event emitter function for the compose script."
+msgstr "为组合脚本创建一个事件触发器函数。"
+
+#: 3e611b7c1bda4cc6b6257b3fc91d0cd0 of
+#: tooluniverse.compose_tool.ComposeTool._create_event_emitter:6
+msgid "Event emitter function"
+msgstr "事件触发器函数"
+
+#: f11b37ff095c4a32bd4be381dbc0c718 of
+#: tooluniverse.compose_tool.ComposeTool._execute_from_file:1
+msgid "Execute composition code from external file."
+msgstr "从外部文件执行组合代码。"
+
+#: 415b3963b60e4cb6939d23b74e4be62b a41d3b58352c42559fb53ae862fa9c7b of
+#: tooluniverse.compose_tool.ComposeTool._execute_from_file:3
+#: tooluniverse.compose_tool.ComposeTool._execute_inline_code:3
+msgid "Input arguments"
+msgstr "输入参数"
+
+#: 7b69b5abad19442487f94ffe5dc249a6 of
+#: tooluniverse.compose_tool.ComposeTool._execute_inline_code:1
+msgid "Execute inline composition code (existing behavior)."
+msgstr "执行内联组合代码（现有行为）。"
+
+#: 95233c5846eb4eb8ba8bac051daaf253 of
+#: tooluniverse.compose_tool.ComposeTool._call_tool:1
+msgid "Helper function to call other tools from within composition code."
+msgstr "辅助函数，用于在组合代码中调用其他工具。"
+
+#: eb566be1200245d78bc0cf4b3fead4d7 of
+#: tooluniverse.compose_tool.ComposeTool._call_tool:3
+msgid "Name of the tool to call"
+msgstr "调用工具的名称"
+
+#: 1f9729518555447faa3d663c5b5aa1dd of
+#: tooluniverse.compose_tool.ComposeTool._call_tool:5
+msgid "Arguments to pass to the tool"
+msgstr "传递给工具的参数"
+
+#: 3a814abf5ff14b0982c5338420b37c26 of
+#: tooluniverse.compose_tool.ComposeTool._call_tool:8
+msgid "Result from the tool execution"
+msgstr "工具执行结果"

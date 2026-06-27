@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_seaborn_info.rst:2
+#: 70b0efdc97ad4ab1b78c667d38665eae
+msgid "tooluniverse.tools.get\\_seaborn\\_info module"
+msgstr "tooluniverse.tools.get\\_seaborn\\_info 模块"
+
+#: 0ae0b3ec570d43d88f8962c322a9adb7 of tooluniverse.tools.get_seaborn_info:1
+msgid "get_seaborn_info"
+msgstr "get_seaborn_信息"
+
+#: 3d532bcf88504edb841b68cbfb65aa22 4f0aa2b38a97467bbcf86f664fdca8d4 of
+#: tooluniverse.tools.get_seaborn_info:3
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:1
+msgid ""
+"Get comprehensive information about Seaborn – statistical data visualization"
+msgstr "获取有关 Seaborn 的全面信息——统计数据可视化"
+
+#: ../../api/tooluniverse.tools.get_seaborn_info.rst
+#: 2b666adda41d4d27b6a55da264424acd
+msgid "Parameters"
+msgstr "参数"
+
+#: 3907d45e0d514e0b8a6d77ec9e2dc5e2 of
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:3
+msgid "Whether to include usage examples and quick start guide"
+msgstr "是否包含使用示例和快速入门指南"
+
+#: 4c9cfbd3700e4f43aa00b6215bea0275 of
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: da6120b06e6b41c3a8bda0c18ccbd85c of
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c09cf86f252e4d45904594cdb04c50c0 of
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_seaborn_info.rst
+#: 814ab265762148738bb6d12151f0b1fd
+msgid "Return type"
+msgstr "返回类型"
+
+#: d03cb989b29445818fed0f692f2d6fbc of
+#: tooluniverse.tools.get_seaborn_info.get_seaborn_info:12
+msgid ":py:class:`Any`"
+msgstr ""

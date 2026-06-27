@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.rst:2
+#: 247fdf35d1e24ec3a36c4bd9924f3353
+msgid "tooluniverse.tools.OpenTargets\\_get\\_disease\\_synonyms\\_by\\_efoId module"
+msgstr "tooluniverse.tools.OpenTargets\\_get\\_disease\\_synonyms\\_by\\_efoId 模块"
+
+#: 33492e3696fb42f1a6abde3f53405659 of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId:1
+msgid "OpenTargets_get_disease_synonyms_by_efoId"
+msgstr "OpenTargets_通过EFO ID获取疾病同义词"
+
+#: 3831909107374850993d58ca8aa1f31c 4cf4a53a88c845d6897799a68cbe222e of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId:3
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:1
+msgid "Retrieve disease synonyms by its EFO ID."
+msgstr "通过其EFO ID检索疾病同义词。"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.rst
+#: 82fbaf46b51743228a69aba7089fa03b
+msgid "Parameters"
+msgstr "参数"
+
+#: 398ce0b2f3df475d8fed57375d65ace3 of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:3
+msgid "The EFO ID of the disease."
+msgstr "疾病的EFO ID。"
+
+#: b2ae047270f34abaa74ca8848492b82a of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 6c6dbd2c8d454220bbe02c0cc9f1f39a of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a134bdcc30ee45b992e2c747c6ba9a1b of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.rst
+#: ece035b7fbdb491b8130dc32f64f7a4a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 40e39ae21ad548e1b574bc9214e9c209 of
+#: tooluniverse.tools.OpenTargets_get_disease_synonyms_by_efoId.OpenTargets_get_disease_synonyms_by_efoId:12
+msgid ":py:class:`Any`"
+msgstr ""

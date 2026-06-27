@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.OSF_search_preprints.rst:2
+#: 737c468eba294004bf5abb9debb40913
+msgid "tooluniverse.tools.OSF\\_search\\_preprints module"
+msgstr "tooluniverse.tools.OSF\\_search\\_preprints 模块"
+
+#: 2639f03124614c5da8d22cab8e478d2c of
+#: tooluniverse.tools.OSF_search_preprints:1
+msgid "OSF_search_preprints"
+msgstr "OSF_预印本搜索"
+
+#: 60a7faba10ae49559fd026927a7b0bc8 b69d4529bde449fe9192e1ee443c05bf of
+#: tooluniverse.tools.OSF_search_preprints:3
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:1
+msgid ""
+"Search OSF (Open Science Framework) Preprints for research preprints and "
+"working papers. OSF Prep..."
+msgstr "搜索 OSF（开放科学框架）预印本以查找研究预印本和工作论文。OSF 预印本..."
+
+#: ../../api/tooluniverse.tools.OSF_search_preprints.rst
+#: 24526c7ef579488eb89d41166fadd65c
+msgid "Parameters"
+msgstr "参数"
+
+#: b4e6b92bb73a4ccdb93bae0cc44ff7d2 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:3
+msgid ""
+"Search query for OSF preprints. Use keywords to search across titles and "
+"abst..."
+msgstr "搜索 OSF 预印本的查询。使用关键词在标题和摘要中进行搜索。"
+
+#: 82816bfbb58448ce96f3138ca6a1a5a4 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:5
+msgid "Maximum number of results to return. Default is 10, maximum is 100."
+msgstr "返回结果的最大数量。默认值为10，最大值为100。"
+
+#: 19942883c67b4b13a3fe46f6cfa696b2 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:7
+msgid ""
+"Optional preprint provider filter (e.g., 'osf', 'psyarxiv', 'socarxiv'). If "
+"n..."
+msgstr "可选的预印本提供者筛选（例如：'osf'、'psyarxiv'、'socarxiv'）。如果 n..."
+
+#: bd7975e322cc4379b28af50ac95b8f12 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 2b2f2cdf027742b69440965c2cf3e598 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c98ec521766c4b68b597ec36664b2194 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.OSF_search_preprints.rst
+#: a2ced283d5704b82a2eeb1b761db4a2b
+msgid "Return type"
+msgstr "返回类型"
+
+#: 70b254e8a03a40b685dd22f335ec6d81 of
+#: tooluniverse.tools.OSF_search_preprints.OSF_search_preprints:16
+msgid ":py:class:`list[Any]`"
+msgstr ""

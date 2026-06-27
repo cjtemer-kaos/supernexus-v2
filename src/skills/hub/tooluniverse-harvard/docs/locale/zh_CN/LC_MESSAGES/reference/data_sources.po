@@ -1,0 +1,284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../reference/data_sources.rst:2 f8fa60f936ed4623b25635ef47400c5a
+msgid "Data Sources"
+msgstr "数据源"
+
+#: ../../reference/data_sources.rst:4 117fdeb2ba514396a88bc6edf602ba36
+msgid ""
+"ToolUniverse integrates with the following scientific sources, AI models, "
+"and services. We thank all the organizations and teams behind these valuable"
+" resources for making their data and tools publicly available."
+msgstr "ToolUniverse 集成了以下科学资源、人工智能模型和服务。我们感谢所有为公众开放其数据和工具的组织及团队，感谢他们提供的宝贵资源。"
+
+#: ../../reference/data_sources.rst:6 6b8a5571209943529853460da719e5e0
+msgid ""
+"**ADMET.ai** - `ADMET.ai "
+"<https://academic.oup.com/bioinformatics/article/40/7/btae416/7698030>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:7 50d6220645444985aa1b1df8338488a2
+msgid "**AlphaFold** - `AlphaFold <https://alphafold.ebi.ac.uk/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:8 d702c30294674dc8872e6df7606ad4fe
+msgid ""
+"**Azure OpenAI** - `Azure OpenAI <https://azure.microsoft.com/en-"
+"us/products/ai-services/openai-service>`_"
+msgstr ""
+"**Azure OpenAI** - `Azure OpenAI <https://azure.microsoft.com/zh-"
+"cn/products/ai-services/openai-service>`_"
+
+#: ../../reference/data_sources.rst:9 cf734168882f4566a5377aac24df501c
+msgid ""
+"**Boltz** - `Boltz "
+"<https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:10 49bc9ea498c24909b8c931fb8a9e688c
+msgid "**ChEBI** - `ChEBI <https://www.ebi.ac.uk/chebi/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:11 a72f40e4e97c48e0b68781bdbf213c57
+msgid "**ChEMBL** - `ChEMBL <https://www.ebi.ac.uk/chembl/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:12 770c0c2fa6de4b1e8899a0d0eb6eefc2
+msgid "**ChatGPT API** - `ChatGPT API <https://platform.openai.com/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:13 bf34e67316b3449a9fbf57870c7e4828
+msgid "**Claude Code** - `Claude Code <https://claude.ai/>`_"
+msgstr "**Claude代码** - `Claude代码 <https://claude.ai/>`_"
+
+#: ../../reference/data_sources.rst:14 ff3c3aa270c14be08d75559ccc4af126
+msgid ""
+"**ClinicalTrials.gov** - `ClinicalTrials.gov <https://clinicaltrials.gov/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:15 ee306039acd8463bb9446923eab03f78
+msgid ""
+"**COMPASS** - `COMPASS "
+"<https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v1>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:16 c31bb6d27f6749f7b50751535bbe8522
+msgid "**DailyMed** - `DailyMed <https://dailymed.nlm.nih.gov/>`_"
+msgstr "**每日药典** - `每日药典 <https://dailymed.nlm.nih.gov/>`_"
+
+#: ../../reference/data_sources.rst:17 0aa9f0189f6c463c92ffff6b44df9ff6
+msgid "**DeepSeek** - `DeepSeek <https://www.deepseek.com/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:18 9606e07215a44c26a632eec3c99e6c1a
+msgid "**DepMap** - `DepMap <https://depmap.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:19 c9673eb388b2442aac1187660de52d22
+msgid "**DrugBank** - `DrugBank <https://go.drugbank.com/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:20 c0ccbb0acfc64840adee3edac0240ef1
+msgid ""
+"**EFO (Experimental Factor Ontology)** - `EFO <https://www.ebi.ac.uk/efo/>`_"
+msgstr "**EFO（实验因素本体）** - `EFO <https://www.ebi.ac.uk/efo/>`_"
+
+#: ../../reference/data_sources.rst:21 bd0a55096b77425f93804149c0ebd490
+msgid ""
+"**EMBL-EBI OLS (Ontology Lookup Service)** - `EMBL-EBI OLS "
+"<https://www.ebi.ac.uk/ols/>`_"
+msgstr ""
+"**EMBL-EBI OLS（本体查询服务）** - `EMBL-EBI OLS <https://www.ebi.ac.uk/ols/>`_"
+
+#: ../../reference/data_sources.rst:22 3cf90b794aa840cc9394fac021e3c89c
+msgid "**Enrichr** - `Enrichr <https://maayanlab.cloud/Enrichr/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:23 24e6cbdef90a46f98df3815b88a07799
+msgid "**Ensembl** - `Ensembl <https://ensembl.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:24 c6adbac282b84536aa1d7f9efd510271
+msgid "**Europe PMC** - `Europe PMC <https://europepmc.org/>`_"
+msgstr "**欧洲PMC** - `欧洲PMC <https://europepmc.org/>`_"
+
+#: ../../reference/data_sources.rst:25 eaea59ecd23a4176b018543c1042ccac
+msgid "**FDA (FAERS)** - `FDA FAERS <https://open.fda.gov/>`_"
+msgstr "**FDA（FAERS）** - `FDA FAERS <https://open.fda.gov/>`_"
+
+#: ../../reference/data_sources.rst:26 7b93679e6be043d789c48898ec5cbd23
+msgid "**FDA OpenFDA API** - `FDA OpenFDA API <https://api.fda.gov/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:27 0d3332f173834499844a378e04440a3c
+msgid "**Gene Ontology** - `Gene Ontology <http://geneontology.org/>`_"
+msgstr "**基因本体论** - `基因本体论 <http://geneontology.org/>`_"
+
+#: ../../reference/data_sources.rst:28 d1ea88e4cc764ac28a8d74bc858cb184
+msgid "**Gemini** - `Gemini <https://gemini.google.com/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:29 4c16283a80384fda895012321c7cdfe5
+msgid "**GitHub** - `GitHub <https://github.com/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:30 3a25545ba94e4a11ab348bc29455b282
+msgid "**GPT Codex CLI** - `GPT Codex CLI <https://github.com/openai/codex>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:31 c9530b9d4cfe499eafe4aeb19f5f0901
+msgid "**GWAS Catalog** - `GWAS Catalog <https://www.ebi.ac.uk/gwas/>`_"
+msgstr "**GWAS目录** - `GWAS目录 <https://www.ebi.ac.uk/gwas/>`_"
+
+#: ../../reference/data_sources.rst:32 72404316fad24d9d86026a90a347dc60
+msgid "**Hugging Face** - `Hugging Face <https://huggingface.co/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:33 4fdd8cf8a1c34df78e75dfc29c1696e6
+msgid ""
+"**Human Protein Atlas** - `Human Protein Atlas "
+"<https://www.proteinatlas.org/>`_"
+msgstr "**人类蛋白质图谱** - `人类蛋白质图谱 <https://www.proteinatlas.org/>`_"
+
+#: ../../reference/data_sources.rst:34 ecf834504a944f40bbd300aff994f5e2
+msgid "**HumanBase** - `HumanBase <https://hb.flatironinstitute.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:35 c3f58ca722674225adca4d43030948a6
+msgid ""
+"**Immune Compass** - `Immune Compass <https://github.com/compass-ai/immune-"
+"compass>`_"
+msgstr "**免疫指南针** - `免疫指南针 <https://github.com/compass-ai/immune-compass>`_"
+
+#: ../../reference/data_sources.rst:36 6d56cd278fed4188a4914d1e7680bbc0
+msgid "**KEGG** - `KEGG <https://www.genome.jp/kegg/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:37 5192a67d69e14779bb5831f192faeb3e
+msgid ""
+"**Kempner Institute** - `Kempner Institute "
+"<https://kempnerinstitute.harvard.edu/>`_"
+msgstr "**肯普纳研究所** - `肯普纳研究所 <https://kempnerinstitute.harvard.edu/>`_"
+
+#: ../../reference/data_sources.rst:38 d2a6ca16c3a34e3e87e9c93eb3f079f8
+msgid "**MeSH** - `MeSH <https://www.nlm.nih.gov/mesh/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:39 6370df89d2d34697be94924058e62214
+msgid "**MedlinePlus** - `MedlinePlus <https://medlineplus.gov/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:40 51c1a581fa7d4fd2a029e892ca395799
+msgid ""
+"**Monarch Initiative** - `Monarch Initiative "
+"<https://monarchinitiative.org/>`_"
+msgstr "**Monarch 计划** - `Monarch 计划 <https://monarchinitiative.org/>`_"
+
+#: ../../reference/data_sources.rst:41 659910c54e8b402387241ef1248bf7bc
+msgid "**MyGene.info** - `MyGene.info <https://mygene.info/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:42 379291915790438ba010d5abdd1760f8
+msgid ""
+"**NCBI Entrez** - `NCBI Entrez "
+"<https://eutils.ncbi.nlm.nih.gov/entrez/eutils/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:43 e61e4edaa6a44d16825328ab84d6279a
+msgid "**OpenAlex** - `OpenAlex <https://openalex.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:44 07893cfe0f40423c9440d7e35780895f
+msgid "**OpenTargets** - `OpenTargets <https://www.opentargets.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:45 60189683ca27446cb9d93ec76f00de55
+msgid ""
+"**OpenTargets Genetics API** - `OpenTargets Genetics API "
+"<https://api.genetics.opentargets.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:46 7c464efe1f9c458a829b47f2e0f53137
+msgid ""
+"**OpenTargets Platform API** - `OpenTargets Platform API "
+"<https://api.platform.opentargets.org/>`_"
+msgstr ""
+"**OpenTargets 平台 API** - `OpenTargets 平台 API "
+"<https://api.platform.opentargets.org/>`_"
+
+#: ../../reference/data_sources.rst:47 7e99dc649a054a428c81cefb59e1aef5
+msgid ""
+"**PINNACLE** - `PINNACLE "
+"<https://zitniklab.hms.harvard.edu/projects/PINNACLE/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:48 a5e68691c7fa45ffbd5f49d9a8eba7b0
+msgid "**PubChem** - `PubChem <https://pubchem.ncbi.nlm.nih.gov/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:49 52137ccbccf746c288103f88fc9defb4
+msgid ""
+"**PubTator** - `PubTator <https://www.ncbi.nlm.nih.gov/research/pubtator/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:50 55853925b9f345af9a2e2727c98d2767
+msgid "**PyPI** - `PyPI <https://pypi.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:51 375e9afea12e4f56af7eafe2e3a4481e
+msgid "**Qwen Code** - `Qwen Code <https://qwenlm.github.io/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:52 499a9dd03f654961ad36284d2917d74e
+msgid "**RCSB PDB** - `RCSB PDB <https://www.rcsb.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:53 733f438951c64e5696048a287b691ab1
+msgid "**Reactome** - `Reactome <https://reactome.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:54 1c67f68771674831ba75907432d7ed84
+msgid ""
+"**Semantic Scholar** - `Semantic Scholar "
+"<https://www.semanticscholar.org/>`_"
+msgstr "**语义学者** - `语义学者 <https://www.semanticscholar.org/>`_"
+
+#: ../../reference/data_sources.rst:55 f34d6a5fe9c94d07983e6de39fa9833d
+msgid ""
+"**Chan Zuckerberg Initiative** - `Chan Zuckerberg Initiative "
+"<https://chanzuckerberg.com/>`_"
+msgstr "**陈·扎克伯格倡议** - `陈·扎克伯格倡议 <https://chanzuckerberg.com/>`_"
+
+#: ../../reference/data_sources.rst:56 a527bf3df5084022bb270c2ff2dcece9
+msgid ""
+"**Transcriptformer** - `Transcriptformer "
+"<https://chanzuckerberg.com/blog/transcriptformer-model-overview/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:57 9dd1d1cfaab4475884d18601f1fd7d6d
+msgid "**UniProt** - `UniProt <https://www.uniprot.org/>`_"
+msgstr ""
+
+#: ../../reference/data_sources.rst:58 209a3451300a4599b0cf8dc0c9e8ea06
+msgid "**USPTO** - `USPTO <https://www.uspto.gov/>`_"
+msgstr "**美国专利商标局（USPTO）** - `美国专利商标局 <https://www.uspto.gov/>`_"

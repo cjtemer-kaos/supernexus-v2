@@ -1,0 +1,64 @@
+[
+  {
+    "type": "RemoteTool",
+    "name": "run_pinnacle_ppi_retrieval",
+    "description": "Retrieves cell-type-specific protein-protein interaction embeddings from PINNACLE. This tool provides access to pre-computed PINNACLE (Protein Interaction Network Contextualized Learning) embeddings that represent protein-protein interactions in specific cellular contexts. These embeddings encode functional relationships between proteins as dense vector representations, capturing both direct physical interactions and functional associations.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "cell_type": {
+          "type": "string",
+          "description": "Target cell type for embedding retrieval. Supports flexible naming: Standard formats: 'b_cell', 'hepatocyte', 'cardiomyocyte'; Alternative formats: 'B-cell', 'T cell', 'NK cells'; Tissue types: 'liver', 'heart', 'brain', 'immune'. The tool performs intelligent matching to find the best available match."
+        },
+        "embed_path": {
+          "type": "string",
+          "description": "Path to the PINNACLE embeddings file (.pth format). If None, uses PINNACLE_DATA_PATH/pinnacle_embeds/ppi_embed_dict.pth."
+        }
+      },
+      "required": [
+        "cell_type",
+        "embed_path"
+      ]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "embeddings": {
+          "type": "object",
+          "description": "Protein-to-embedding mapping where keys are gene/protein symbols and values are embedding vectors as lists of floats",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "context_info": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Detailed information about the retrieval process including match quality, selected cell type name, number of proteins with embeddings, and available alternatives if no match found"
+        },
+        "error": {
+          "type": "string",
+          "description": "Error description if retrieval failed"
+        }
+      }
+    },
+    "remote_info": {
+      "server_type": "SMCP",
+      "transport": "http",
+      "original_type": "PinnaclePPITool",
+      "url": "https://zitniklab.hms.harvard.edu/ToolUniverse/expand_tooluniverse/remote/pinnacle.html",
+      "code_url": "https://github.com/mims-harvard/bioagent/tree/main/ToolUniverse/src/tooluniverse/remote/pinnacle",
+      "mcp_tool_name": "run_pinnacle_ppi_retrieval"
+    },
+    "test_examples": [
+      {
+        "cell_type": "example_string",
+        "embed_path": "example_string"
+      }
+    ]
+  }
+]

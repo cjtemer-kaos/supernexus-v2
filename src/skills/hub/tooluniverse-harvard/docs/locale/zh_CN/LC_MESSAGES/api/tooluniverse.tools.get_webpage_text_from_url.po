@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_webpage_text_from_url.rst:2
+#: e5dd4f3106d643a5a3573be02678f93a
+msgid "tooluniverse.tools.get\\_webpage\\_text\\_from\\_url module"
+msgstr "tooluniverse.tools.get\\_webpage\\_text\\_from\\_url 模块"
+
+#: ba4e26e717784c4288efacda4abca787 of
+#: tooluniverse.tools.get_webpage_text_from_url:1
+msgid "get_webpage_text_from_url"
+msgstr "从URL获取网页文本"
+
+#: 0afd094dcb974a519ed7a5c0b387845d 77aa5fe23d7047cdb80775fbb8d1819e of
+#: tooluniverse.tools.get_webpage_text_from_url:3
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:1
+msgid "Render a URL as PDF and extract its text (JavaScript supported)."
+msgstr "将 URL 渲染为 PDF 并提取其文本（支持 JavaScript）。"
+
+#: ../../api/tooluniverse.tools.get_webpage_text_from_url.rst
+#: b05c2adfe3714b10b6fabb6ae4952607
+msgid "Parameters"
+msgstr "参数"
+
+#: ba4abd7f4690416e9714cf6b14a11013 of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:3
+msgid "Webpage URL to fetch and render"
+msgstr "网页 URL 用于获取和渲染"
+
+#: 7d8b6c7de32149f2835c1bfad3f2600f of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:5
+msgid "Request timeout in seconds"
+msgstr "请求超时时间（以秒为单位）"
+
+#: 508ac454de35409f9c4fc4dcf81ccaeb of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: ad418c59eb2e4faca952e2f747e20a3c of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 7b21f3c0b92b4e369e66e75a9ef6ead8 of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_webpage_text_from_url.rst
+#: 06bbc93b11014d63866939200b1d310e
+msgid "Return type"
+msgstr "返回类型"
+
+#: 0b51858a4b75479bbe7aed163cb9e11b of
+#: tooluniverse.tools.get_webpage_text_from_url.get_webpage_text_from_url:14
+msgid ":py:class:`Any`"
+msgstr ""

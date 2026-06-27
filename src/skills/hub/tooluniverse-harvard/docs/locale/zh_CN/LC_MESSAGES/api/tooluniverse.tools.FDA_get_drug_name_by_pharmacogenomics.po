@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.rst:2
+#: 4b0e27d140b143d89c570a9c28470950
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_pharmacogenomics module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_name\\_by\\_pharmacogenomics 模块"
+
+#: 102ed45122d94271aead70c82cf8a9c8 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics:1
+msgid "FDA_get_drug_name_by_pharmacogenomics"
+msgstr "FDA_通过药物基因组学获取药物名称"
+
+#: 4a1a403fd6ba4711b85514a68fe3d16c f30fdd14e84248a081a465689ea307a1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics:3
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:1
+msgid "Retrieve the drug name based on pharmacogenomics field information."
+msgstr "根据药物基因组学领域信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.rst
+#: cce5ba0b82774b639ce0a44368e858b3
+msgid "Parameters"
+msgstr "参数"
+
+#: fb54018905074aedaea70943f20533e8 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:3
+msgid "Pharmacogenomics information to search for."
+msgstr "用于搜索的药物基因组学信息"
+
+#: 73d0a63d89f440c281d00c690aafff33 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:5
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 482fe58f42da470185cd521af8435036 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:7
+msgid "The number of records to skip."
+msgstr "跳过的记录数。"
+
+#: 7ab82c65f0e544f6b974055a9764e0e0 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: d22458b2e0744bfc84191ff154a408eb of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: a01cae7b629a4abc8c2b4429c69a8ba1 of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.rst
+#: 36ad51ed763c4d44a9df5d020aea95b7
+msgid "Return type"
+msgstr "返回类型"
+
+#: 2b8d8191a8df4ca9aaaa12cc765e3e8c of
+#: tooluniverse.tools.FDA_get_drug_name_by_pharmacogenomics.FDA_get_drug_name_by_pharmacogenomics:16
+msgid ":py:class:`Any`"
+msgstr ""

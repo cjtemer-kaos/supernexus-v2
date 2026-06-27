@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tools/cellosaurus_tools.rst:2 5b5ce67b76824eeaa5f38a40771b4d4a
+msgid "Cellosaurus Tools"
+msgstr "Cellosaurus 工具"
+
+#: ../../tools/cellosaurus_tools.rst:4 33b08cb60c8f40dc9afb97b012c45f51
+msgid ""
+"**Configuration File**: ``cellosaurus_tools.json`` **Tool Type**: Local "
+"**Tools Count**: 3"
+msgstr "**配置文件**: ``cellosaurus_tools.json`` **工具类型**: 本地 **工具数量**: 3"
+
+#: ../../tools/cellosaurus_tools.rst:8 60a97c1474534087b4df3cc6d93f2740
+msgid ""
+"This page contains all tools defined in the ``cellosaurus_tools.json`` "
+"configuration file."
+msgstr "本页面包含在``cellosaurus_tools.json``配置文件中定义的所有工具。"
+
+#: ../../tools/cellosaurus_tools.rst:11 6b9e531df7c2443eaac05af611e0ae1e
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: ../../tools/cellosaurus_tools.rst:14 754cd450391b410083366e66ef8de397
+msgid ""
+"**cellosaurus_get_cell_line_info** (Type: CellosaurusGetCellLineInfoTool)"
+msgstr "**cellosaurus_get_cell_line_info**（类型：CellosaurusGetCellLineInfoTool）"
+
+#: ../../tools/cellosaurus_tools.rst:16 8d5eed09caa64ddb8538852b50485d1d
+msgid ""
+"Get detailed information about a specific cell line using its Cellosaurus "
+"accession number (CVCL_..."
+msgstr "使用其Cellosaurus登录号（CVCL_...），获取有关特定细胞系的详细信息。"
+
+#: ../../tools/cellosaurus_tools.rst fc280f8748ea44e195c018a37d4c3191
+msgid "cellosaurus_get_cell_line_info tool specification"
+msgstr "cellosaurus_get_cell_line_info 工具规范"
+
+#: ../../tools/cellosaurus_tools.rst:20 ../../tools/cellosaurus_tools.rst:59
+#: ../../tools/cellosaurus_tools.rst:94 2e75d9cdf8a8459499f830eaddd30d40
+#: 69d9123a7ecf45c7b65242d7f2645fc8 cf6307377a5741008b191e7a4d5cf30f
+msgid "**Tool Information:**"
+msgstr "**工具信息：**"
+
+#: ../../tools/cellosaurus_tools.rst:22 ac99e0252c744bb8aa80ca98e7cb06c5
+msgid "**Name**: ``cellosaurus_get_cell_line_info``"
+msgstr "**名称**: ``cellosaurus_get_cell_line_info``"
+
+#: ../../tools/cellosaurus_tools.rst:23 36f5914fe96d49f99b1ac43895eba207
+msgid "**Type**: ``CellosaurusGetCellLineInfoTool``"
+msgstr "**类型**: ``CellosaurusGetCellLineInfoTool``"
+
+#: ../../tools/cellosaurus_tools.rst:24 75430eb4c044486d8f9ff2b2c2c6b3a6
+msgid ""
+"**Description**: Get detailed information about a specific cell line using "
+"its Cellosaurus accession number (CVCL_ format)."
+msgstr "**描述**：使用其Cellosaurus登录号（CVCL_格式）获取有关特定细胞系的详细信息。"
+
+#: ../../tools/cellosaurus_tools.rst:26 ../../tools/cellosaurus_tools.rst:65
+#: ../../tools/cellosaurus_tools.rst:100 b391fb33115544eba05cb1185077d331
+#: cd151f7a10864ea18984ad84d1d1b2a3 d1b4a4b8e93145ed93b6159e9d89a72c
+msgid "**Parameters:**"
+msgstr "**参数：**"
+
+#: ../../tools/cellosaurus_tools.rst:28 098fe227b1494d11a77159a1cfd50592
+msgid ""
+"``accession`` (string) (required) Cellosaurus accession number (must start "
+"with 'CVCL_')"
+msgstr "``accession``（字符串）（必填）Cellosaurus登录号（必须以“CVCL_”开头）"
+
+#: ../../tools/cellosaurus_tools.rst:31 c7808aa33de64c14945174d9bfe05921
+msgid "``format`` (string) (required) Response format"
+msgstr "``format``（字符串）（必填）响应格式"
+
+#: ../../tools/cellosaurus_tools.rst:34 b66ae4f7fa0e4696a093ba4520305254
+msgid ""
+"``fields`` (array) (required) Specific fields to retrieve (e.g., ['id', "
+"'ox', 'char']). If not specified, all fields are returned."
+msgstr "``fields``（数组）（必填）指定要检索的字段（例如：['id', 'ox', 'char']）。如果未指定，则返回所有字段。"
+
+#: ../../tools/cellosaurus_tools.rst:37 ../../tools/cellosaurus_tools.rst:73
+#: ../../tools/cellosaurus_tools.rst:111 0abba8d0d6704c3aad4c973f1317a0ab
+#: 150a4be96c504eb39b58a942da3b32b7 c834357af1c348bd986167bd455d49c3
+msgid "**Example Usage:**"
+msgstr "**示例用法：**"
+
+#: ../../tools/cellosaurus_tools.rst:53 febe5ffce3d6493495156c521924bb61
+msgid "**cellosaurus_query_converter** (Type: CellosaurusQueryConverterTool)"
+msgstr "**cellosaurus_query_converter**（类型：CellosaurusQueryConverterTool）"
+
+#: ../../tools/cellosaurus_tools.rst:55 971b040ef0614450aaddbb61f6bdfaa8
+msgid ""
+"Convert natural language queries to Solr syntax for Cellosaurus API "
+"searches. Uses semantic simil..."
+msgstr "将自然语言查询转换为Solr语法，用于Cellosaurus API搜索。使用语义相似性..."
+
+#: ../../tools/cellosaurus_tools.rst 17b636171ed34d7b8956329b9aeeb580
+msgid "cellosaurus_query_converter tool specification"
+msgstr "cellosaurus_query_converter 工具规范"
+
+#: ../../tools/cellosaurus_tools.rst:61 f2738bcf14b1403ba2254f1a04a90aaf
+msgid "**Name**: ``cellosaurus_query_converter``"
+msgstr "**名称**: ``cellosaurus_query_converter``"
+
+#: ../../tools/cellosaurus_tools.rst:62 df620aebce174b07ab6304fc281cf16d
+msgid "**Type**: ``CellosaurusQueryConverterTool``"
+msgstr "**类型**：``CellosaurusQueryConverterTool``"
+
+#: ../../tools/cellosaurus_tools.rst:63 c4057ce62d1948d592b5c7a82016f73c
+msgid ""
+"**Description**: Convert natural language queries to Solr syntax for "
+"Cellosaurus API searches. Uses semantic similarity to map terms to "
+"appropriate fields."
+msgstr "**描述**：将自然语言查询转换为适用于Cellosaurus API搜索的Solr语法。使用语义相似性将术语映射到适当的字段。"
+
+#: ../../tools/cellosaurus_tools.rst:67 ca2cede638cb49dda997604b876c9dc9
+msgid ""
+"``query`` (string) (required) Natural language query to convert to Solr "
+"syntax (e.g., 'human cancer cells', 'HeLa cells from lung tissue')"
+msgstr "``query``（字符串）（必填）将自然语言查询转换为 Solr 语法（例如：“人类癌细胞”、“来自肺组织的 HeLa 细胞”）"
+
+#: ../../tools/cellosaurus_tools.rst:70 87b1148de6814733ab7c044a30b95e3d
+msgid ""
+"``include_explanation`` (boolean) (required) Whether to include detailed "
+"explanation of the conversion process"
+msgstr "``include_explanation``（布尔值）（必填）是否包含转换过程的详细说明"
+
+#: ../../tools/cellosaurus_tools.rst:88 df5b46fcd7b5471b9acb0014f7d7304b
+msgid "**cellosaurus_search_cell_lines** (Type: CellosaurusSearchTool)"
+msgstr "**cellosaurus_search_cell_lines**（类型：CellosaurusSearchTool）"
+
+#: ../../tools/cellosaurus_tools.rst:90 4730bea3cba34a5e9e2550d4b7437f72
+msgid ""
+"Search Cellosaurus cell lines using the /search/cell-line endpoint. Supports"
+" Solr query syntax fo..."
+msgstr "使用 /search/cell-line 端点搜索 Cellosaurus 细胞系。支持 Solr 查询语法。"
+
+#: ../../tools/cellosaurus_tools.rst e6b1d06d34dc4cdeb4d94bdb5b3eeb4c
+msgid "cellosaurus_search_cell_lines tool specification"
+msgstr "cellosaurus_search_cell_lines 工具规范"
+
+#: ../../tools/cellosaurus_tools.rst:96 34dbf4dcf784445aa5a8a4a35590653e
+msgid "**Name**: ``cellosaurus_search_cell_lines``"
+msgstr "**名称**: ``cellosaurus_search_cell_lines``"
+
+#: ../../tools/cellosaurus_tools.rst:97 b9bc6cada81c451989b0a9f804f6578c
+msgid "**Type**: ``CellosaurusSearchTool``"
+msgstr "**类型**：``CellosaurusSearchTool``"
+
+#: ../../tools/cellosaurus_tools.rst:98 3752b5145dab455f9bcb917a0e25e12a
+msgid ""
+"**Description**: Search Cellosaurus cell lines using the /search/cell-line "
+"endpoint. Supports Solr query syntax for precise field-based searches."
+msgstr ""
+"**描述**：使用 /search/cell-line 端点搜索 Cellosaurus 细胞系。支持 Solr 查询语法以实现基于字段的精确搜索。"
+
+#: ../../tools/cellosaurus_tools.rst:102 0cfa63ac2bd64024927db9c96fde3d1e
+msgid ""
+"``q`` (string) (required) Search query. Supports Solr syntax for field-"
+"specific searches (e.g., 'id:HeLa', 'ox:9606', 'char:cancer'). See "
+"https://api.cellosaurus.org/api-fields for available fields."
+msgstr ""
+"``q``（字符串）（必填）搜索查询。支持 Solr "
+"语法进行字段特定搜索（例如：'id:HeLa'、'ox:9606'、'char:cancer'）。可访问 "
+"https://api.cellosaurus.org/api-fields 查看可用字段。"
+
+#: ../../tools/cellosaurus_tools.rst:105 c455885980994c608e33a5ac09dddbbc
+msgid ""
+"``offset`` (integer) (required) Number of results to skip (for pagination)"
+msgstr "``offset``（整数）（必填）跳过的结果数量（用于分页）"
+
+#: ../../tools/cellosaurus_tools.rst:108 215f984c92154dc586b6291367c44230
+msgid "``size`` (integer) (required) Maximum number of results to return"
+msgstr "``size``（整数）（必填）返回结果的最大数量"
+
+#: ../../tools/cellosaurus_tools.rst:127 98c1a21f10a14a15ae91afe78d6e7321
+msgid "Navigation"
+msgstr "导航"
+
+#: ../../tools/cellosaurus_tools.rst:129 49db11b7415641a98de66f134c09b079
+msgid ":doc:`tools_config_index` - Back to Tools Overview"
+msgstr ":doc:`tools_config_index` - 返回工具概览"
+
+#: ../../tools/cellosaurus_tools.rst:130 3cd53fcb029b45799ae890ebce5187e9
+msgid ":doc:`../guide/loading_tools` - Loading Local Tools"
+msgstr ":doc:`../guide/loading_tools` - 加载本地工具"

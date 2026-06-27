@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tool_finder_embedding.rst:2
+#: a7eb5217f1c44c3f9410722a7bbdcb78
+msgid "tooluniverse.tool\\_finder\\_embedding module"
+msgstr "tooluniverse.tool_finder_embedding 模块"
+
+#: 64b42168bfc048ffa1f61d43eb2149ea of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 8fe2d09251954143a56bef758dffcbec of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:1
+msgid ""
+"A tool finder model that uses RAG (Retrieval-Augmented Generation) to find "
+"relevant tools based on user queries using semantic similarity search."
+msgstr "一种工具查找模型，利用 RAG（检索增强生成）通过语义相似度搜索，根据用户查询查找相关工具。"
+
+#: e6df0c80561a44228990d078611af043 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:4
+msgid ""
+"This class leverages sentence transformers to encode tool descriptions and "
+"find the most relevant tools for a given query through embedding-based "
+"similarity matching."
+msgstr "该类利用句子转换器对工具描述进行编码，并通过基于嵌入的相似度匹配，找到与给定查询最相关的工具。"
+
+#: 6645bcd37be2458b9f42f685d73fc88f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:9
+msgid "Name of the sentence transformer model for embeddings"
+msgstr "用于生成嵌入的句子转换器模型名称"
+
+#: 32475ef354cd45a5b9f03cb8243fe351 4083051f5a8842f3b12caac031351daf
+#: 4ec01b802dc04a60b6e9e5d18b64c125 a9444eaadcde4c409cb6d13deeca41ff
+#: e34cb6bb117649c29213b950d1cdcfe3 ec26182c758c46829363f83462af1a06 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding
+msgid "type"
+msgstr "类型"
+
+#: 076f20e5913542a9bb8617f58ab596bc c7b70e1f45f9445d9a9c253a5fe1188f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:11
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:35
+msgid ":py:class:`str`"
+msgstr ""
+
+#: ea13ea1e6ab8464fa42ae74fe06325e2 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:15
+msgid "The loaded sentence transformer model"
+msgstr "已加载的句子转换器模型"
+
+#: 192ef5af61e94fffa80e837de60bfa00 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:17
+msgid ":py:class:`SentenceTransformer`"
+msgstr ""
+
+#: da331a1d1ac1474090e7bbe3b3e5b64c of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:21
+msgid "Cached embeddings of tool descriptions"
+msgstr "工具描述的缓存嵌入向量"
+
+#: f8500a1acf60450c9940d0196986412b of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:23
+msgid ":py:class:`torch.Tensor`"
+msgstr ""
+
+#: 2bf2552e7e2c4c93a64965489306797f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:27
+msgid "List of available tool names"
+msgstr "可用工具名称列表"
+
+#: 7e9a2a7ee4524c9cb724d2165d823f08 9721fffa4d2a4edc9111f40102a4079e of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:29
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:41
+msgid ":py:class:`list`"
+msgstr ":py:class:`列表`"
+
+#: d3ab253bdbb64959939fec0b234a8238 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:33
+msgid "Path to cached tool embeddings file"
+msgstr "缓存工具嵌入文件的路径"
+
+#: db6ce52f7e5c4e75a8c779b6ecdf2cab of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:39
+msgid "List of special tools to exclude from results"
+msgstr "排除结果的特殊工具列表"
+
+#: c75337712ff24b0b8d8620315e185ff9 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding:45
+msgid "Reference to the tool universe containing all tools"
+msgstr "参考包含所有工具的工具库"
+
+#: e407c55708044cf7a703cb9ebee1a63f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.__init__:1
+msgid "Initialize the ToolFinderEmbedding with configuration and RAG model."
+msgstr "使用配置和RAG模型初始化ToolFinderEmbedding。"
+
+#: ../../api/tooluniverse.tool_finder_embedding.rst
+#: 274f9010a15b4c5e9c149f5ac26ea2dd 31ff7b1ef74a404aaa72cc587681f469
+#: 8f7371f8a0c84408a90418d35e9424b0 a3f58c2d4419455d984f6d4b038e02c1
+#: e8fc8f62a6cc442ba873e125c76fff7e
+msgid "Parameters"
+msgstr "参数"
+
+#: afcbf82ac83a4927a794b831a23b9499 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.__init__:3
+msgid "Configuration dictionary for the tool"
+msgstr "工具的配置字典"
+
+#: 7074d2f8a4d34a939d537915e898a243 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_rag_model:1
+msgid "Load the sentence transformer model for RAG-based tool retrieval."
+msgstr "加载用于基于RAG工具检索的句子转换器模型。"
+
+#: 9ca6ebcbea41495dbeabb339d6700d69 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_rag_model:3
+msgid ""
+"Configures the model with appropriate sequence length and tokenizer settings"
+" for optimal performance in tool description encoding."
+msgstr "配置模型的适当序列长度和分词器设置，以实现工具描述编码的最佳性能。"
+
+#: f0fd10ad2bc2460789de922c2b842567 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:1
+msgid ""
+"Load or generate embeddings for tool descriptions from the tool universe."
+msgstr "从工具库中加载或生成工具描述的嵌入数据。"
+
+#: 68314d7d3ce74340b6469bf5f4158a64 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:3
+msgid ""
+"This method either loads cached embeddings from disk or generates new ones "
+"by encoding all tool descriptions. Embeddings are cached to disk for faster "
+"subsequent loads. Memory is properly cleaned up after embedding generation "
+"to avoid OOM issues."
+msgstr ""
+"此方法会从磁盘加载缓存的嵌入，或者通过编码所有工具描述生成新的嵌入。嵌入会被缓存到磁盘，以加快后续加载速度。在生成嵌入后，会适当清理内存以避免出现内存溢出（OOM）问题。"
+
+#: 120968b4b83e47d9821ae5b54d9b1050 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:7
+msgid "ToolUniverse instance containing all available tools"
+msgstr "ToolUniverse 实例，包含所有可用工具"
+
+#: 5bf66e38655e4567993160d375d487e3 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:8
+msgid "Specific tool names to include"
+msgstr "特定工具名称包括"
+
+#: 81fd468368bc4284b069aef3f39035bb of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:10
+msgid "Tool names to exclude"
+msgstr "要排除的工具名称"
+
+#: 7407f73d6d1e48cea216697d30d7faeb of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:12
+msgid "Tool categories to include"
+msgstr "工具类别包括"
+
+#: 3c5c05c3fb5e4b0b8cd22156f4c19d92 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.load_tool_desc_embedding:14
+msgid "Tool categories to exclude"
+msgstr "要排除的工具类别"
+
+#: de2aa228b2814e94a09f67c6ecd3363c of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:1
+msgid ""
+"Perform RAG inference to find the most relevant tools for a given query."
+msgstr "执行RAG推理以查找与给定查询最相关的工具。"
+
+#: b9474c82706f453e9b6cf7d74c1d339a of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:3
+msgid ""
+"Uses semantic similarity between the query embedding and pre-computed tool "
+"embeddings to identify the most relevant tools."
+msgstr "使用查询嵌入与预先计算的工具嵌入之间的语义相似度来识别最相关的工具。"
+
+#: 8a5c7ebb18c9474797ff9d9bcdf8cc9d of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:6
+msgid "User query or description of desired functionality"
+msgstr "用户查询或所需功能描述"
+
+#: 54fd880d69414ec380102e9b65a6d66f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:8
+msgid "Number of top tools to return. Defaults to 5."
+msgstr "返回的顶级工具数量。默认值为5。"
+
+#: ../../api/tooluniverse.tool_finder_embedding.rst
+#: 352e0cd2727e496fb0df40ecea31af65 4189c7ed8c1b4f3b9286e2161cee3076
+msgid "Returns"
+msgstr "返回值"
+
+#: ef7c066e80a149709b8911c4c1a92d16 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:11
+msgid "List of top-k tool names ranked by relevance to the query"
+msgstr "按与查询相关性排序的前 k 个工具名称列表"
+
+#: ../../api/tooluniverse.tool_finder_embedding.rst
+#: 78dd01fb5e564a67ace6eac078bfb665 8c728a89303e4c16bccc97f1a2414435
+msgid "Return type"
+msgstr "返回类型"
+
+#: ../../api/tooluniverse.tool_finder_embedding.rst
+#: a2ce7eb85294448bb544e79cb310e1e5 a47c44ecffaa4705b33fa8e764d9ddb5
+msgid "Raises"
+msgstr "引发"
+
+#: e2d98bbd4de6433dac3cee315f3b3625 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.rag_infer:14
+msgid "If tool_desc_embedding is not loaded"
+msgstr "如果未加载 tool_desc_embedding"
+
+#: 62924162234245e686a96bf43a8e320e of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:1
+msgid "Find relevant tools based on a message or pre-selected tool names."
+msgstr "根据消息或预先选择的工具名称查找相关工具。"
+
+#: 8d69caebe6e64932b6e5195b669fff95 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:3
+msgid ""
+"This method either uses RAG inference to find tools based on a message or "
+"processes a list of pre-selected tool names. It filters out special tools "
+"and returns tool prompts suitable for use in agent workflows."
+msgstr "该方法通过RAG推理根据消息查找工具，或处理预先选择的工具名称列表。它会过滤特殊工具，并返回适用于智能体工作流的工具提示。"
+
+#: a463c2cbbd7b4699acbe767d3384d553 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:7
+msgid ""
+"Query message to find tools for. Required if picked_tool_names is None."
+msgstr "查询消息以查找工具。若 picked_tool_names 为 None，则为必填项。"
+
+#: f6d4d817449142648f1608bbc32c247b of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:9
+msgid "Pre-selected tool names to process. Required if message is None."
+msgstr "预先选择的工具名称以进行处理。若消息为 None，则为必填项。"
+
+#: 720ed3a4d9df488bb44d0fcb76e35a9b of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:11
+msgid "Number of tools to return after filtering. Defaults to 5."
+msgstr "过滤后返回的工具数量。默认值为5。"
+
+#: 54b16d91f99042b2839d5ecf6101f92d of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:13
+msgid "If True, returns both prompts and tool names. Defaults to False."
+msgstr "如果为 True，则返回提示词和工具名称。默认值为 False。"
+
+#: 9c2de34c3b7648108211424c120dcc2f of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:15
+msgid ""
+"List of tool categories to filter by. Currently not implemented for "
+"embedding-based search."
+msgstr "可用于筛选的工具类别列表。目前尚未针对基于嵌入的搜索实现该功能。"
+
+#: c1b07515137446eab1f63f3ed1d1a0b2 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:18
+msgid ""
+"- If return_call_result is False: Tool prompts as a formatted string - If "
+"return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr ""
+"- 如果 return_call_result 为 False：工具提示为格式化字符串  \n"
+"- 如果 return_call_result 为 True：返回 (tool_prompts, tool_names) 元组"
+
+#: 4da177ab8f5f4960920a1a53ae611342 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:18
+msgid "If return_call_result is False: Tool prompts as a formatted string"
+msgstr "如果 return_call_result 为 False：工具以格式化字符串形式提示"
+
+#: 0d0dfaa40cd4430c9ff6aafe349fedeb of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:19
+msgid "If return_call_result is True: Tuple of (tool_prompts, tool_names)"
+msgstr "如果 return_call_result 为 True：返回 (tool_prompts, tool_names) 元组"
+
+#: ada2e617465446948c346288a0217cc5 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.find_tools:22
+msgid "If both message and picked_tool_names are None"
+msgstr "如果 message 和 picked_tool_names 均为 None"
+
+#: d0e6ae4938cc4ec3b1ae5525c69a5ffe of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.run:1
+msgid ""
+"Run the tool finder with given arguments following the standard tool "
+"interface."
+msgstr "按照标准工具接口，使用给定参数运行工具查找器。"
+
+#: 9a0516a69c00421d9c3db98cba87cfe3 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.run:3
+msgid ""
+"This is the main entry point for using ToolFinderEmbedding as a standard "
+"tool. It extracts parameters from the arguments dictionary and delegates to "
+"find_tools()."
+msgstr ""
+"这是使用 ToolFinderEmbedding 作为标准工具的主要入口点。它从参数字典中提取参数，并委托给 find_tools() 函数。"
+
+#: ed753b6bf42e43e9ade2a984296e95d5 of
+#: tooluniverse.tool_finder_embedding.ToolFinderEmbedding.run:6
+msgid ""
+"Dictionary containing: - description (str, optional): Query message to find "
+"tools for (maps to 'message') - limit (int, optional): Number of tools to "
+"return (maps to 'rag_num'). Defaults to 5. - picked_tool_names (list, "
+"optional): Pre-selected tool names to process - return_call_result (bool, "
+"optional): Whether to return both prompts and names. Defaults to False. - "
+"categories (list, optional): List of tool categories to filter by"
+msgstr ""
+"字典包含：  \n"
+"- description（字符串，可选）：查询消息，用于查找工具（对应于 'message'）  \n"
+"- limit（整数，可选）：返回的工具数量（对应于 'rag_num'），默认为5  \n"
+"- picked_tool_names（列表，可选）：预先选择的工具名称列表，用于处理  \n"
+"- return_call_result（布尔值，可选）：是否返回提示和名称，默认为False  \n"
+"- categories（列表，可选）：用于筛选的工具类别列表"

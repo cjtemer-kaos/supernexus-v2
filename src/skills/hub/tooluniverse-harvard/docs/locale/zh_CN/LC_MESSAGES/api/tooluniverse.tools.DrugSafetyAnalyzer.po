@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.DrugSafetyAnalyzer.rst:2
+#: d6ac58aae93549a5a5ba37884eb0e352
+msgid "tooluniverse.tools.DrugSafetyAnalyzer module"
+msgstr "tooluniverse.tools.DrugSafetyAnalyzer 模块"
+
+#: 18f18feb6a72443db45cf3c1186b7824 of tooluniverse.tools.DrugSafetyAnalyzer:1
+msgid "DrugSafetyAnalyzer"
+msgstr "药物安全分析器"
+
+#: 272dee2026604537845b286beb84f97c 391bd73a335843ed9a9712a777bf73d3 of
+#: tooluniverse.tools.DrugSafetyAnalyzer:3
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:1
+msgid ""
+"Comprehensive drug safety analysis combining adverse event data, literature "
+"review, and molecular..."
+msgstr "综合药物安全性分析结合不良事件数据、文献综述和分子..."
+
+#: ../../api/tooluniverse.tools.DrugSafetyAnalyzer.rst
+#: 62d1be62cdf148c6adc58dc1b2863e16
+msgid "Parameters"
+msgstr "参数"
+
+#: 4444db829b7948dfa3a8846885b9cec7 of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:3
+msgid "Name of the drug to analyze"
+msgstr "需分析的药物名称"
+
+#: e9046557031d4922b07321b38d8dcf9e of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:5
+msgid "Filter by patient sex (optional)"
+msgstr "按患者性别筛选（可选）"
+
+#: efa50e0c192f4e11aea3668d3a684552 of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:7
+msgid "Focus only on serious adverse events"
+msgstr "仅关注严重不良事件"
+
+#: 3337488c812041f6a97960a6f0dd30f3 of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:9
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4dbbda1cdecc42b1bcd5c78eddd0b93c of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:11
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 53e88f3efed64475b9cf14bdf2767f3e of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:13
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.DrugSafetyAnalyzer.rst
+#: 7bc83ddbdd9b44458f1983344b0791e4
+msgid "Return type"
+msgstr "返回类型"
+
+#: 5744f032dd9b42008e0d2e81902d2754 of
+#: tooluniverse.tools.DrugSafetyAnalyzer.DrugSafetyAnalyzer:16
+msgid ":py:class:`Any`"
+msgstr ""

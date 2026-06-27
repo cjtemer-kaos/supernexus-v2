@@ -1,0 +1,94 @@
+[
+    {
+        "type": "Boltz2DockingTool",
+        "name": "boltz2_docking",
+        "description": "Perform protein-ligand docking via Boltz-2: input a protein sequence plus one or more ligands (SMILES), get back predicted structures and confidence scores.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "sequence": {
+                    "type": "string",
+                    "description": "One-letter amino acid sequence of the target protein (FASTA format, without header)."
+                },
+                "ligands": {
+                    "type": "array",
+                    "description": "List of ligand definitions to dock against the protein.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "description": "Arbitrary ligand identifier (e.g. \"L1\")."
+                            },
+                            "smiles": {
+                                "type": "string",
+                                "description": "Ligand SMILES string."
+                            }
+                        },
+                        "required": ["id", "smiles"]
+                    }
+                },
+                "recycling_steps": {
+                    "type": "integer",
+                    "description": "Number of recycling steps (overfold iterations).",
+                    "default": 3,
+                    "minimum": 0
+                },
+                "sampling_steps": {
+                    "type": "integer",
+                    "description": "Number of sampling steps for diffusion process.",
+                    "default": 200,
+                    "minimum": 1
+                },
+                "diffusion_samples": {
+                    "type": "integer",
+                    "description": "How many diffusion-sampled structures to generate.",
+                    "default": 1,
+                    "minimum": 1
+                },
+                "step_scale": {
+                    "type": "number",
+                    "description": "Scaling factor for diffusion step size.",
+                    "default": 1.638
+                },
+                "use_potentials": {
+                    "type": "boolean",
+                    "description": "If true, omit external force-field potentials from the diffusion process.",
+                    "default": false
+                },
+                "return_structure": {
+                    "type": "boolean",
+                    "description": "If false, the predicted structure will not be read or returned. Defaults to false.",
+                    "default": false
+                }
+            },
+            "required": ["sequence", "ligands"]
+        },
+        "required_api_keys": ["NVIDIA_API_KEY"],
+        "return_schema": {
+            "type": "object",
+            "properties": {
+                "predicted_structure": {
+                    "type": "string",
+                    "description": "The predicted protein-ligand complex structure in CIF format."
+                },
+                "structure_format": {
+                    "type": "string",
+                    "description": "Format of the structure file (typically 'cif') if structure is returned."
+                },
+                "structure_error": {
+                    "type": "string",
+                    "description": "Error message if structure file is missing."
+                },
+                "affinity_prediction": {
+                    "type": "object",
+                    "description": "JSON object containing affinity predictions and related data."
+                },
+                "affinity_error": {
+                    "type": "string",
+                    "description": "Error message if affinity file is missing."
+                }
+            }
+        }
+    }
+]

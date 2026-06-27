@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.restful_tool.rst:2 6204095527584fc6a4acd01e326ef931
+msgid "tooluniverse.restful\\_tool module"
+msgstr "tooluniverse.restful_tool 模块"
+
+#: a85438473f2f48c68e25ebe12713f033 of tooluniverse.restful_tool.RESTfulTool:1
+msgid "Bases: :py:class:`~tooluniverse.graphql_tool.GraphQLTool`"
+msgstr "基类：:py:class:`~tooluniverse.graphql_tool.GraphQLTool`"
+
+#: 7012e2188ab44b57906c4e45e7706470 bf0ded1a78274cf4bb63ea479c8f3080
+#: cd9a23957b894835ac0363f3ec08ca27 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:1
+#: tooluniverse.restful_tool.MonarchTool.run:1
+#: tooluniverse.restful_tool.RESTfulTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: 113820b319ab482b80ccc179d5c95a71 b5ea19763a6d4429968e31f3c79d63d0
+#: d3f4f5c37294402eab3b190be43d1568 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:3
+#: tooluniverse.restful_tool.MonarchTool.run:3
+#: tooluniverse.restful_tool.RESTfulTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.restful_tool.rst 66ea9749482b4ed4bb718f22c862a309
+#: 8252c3080279477dbdf0aac5e8498276 e05c1fd56a15458b8a818b5df3deebec
+msgid "Parameters"
+msgstr "参数"
+
+#: 0bb46b8b07a14fee98087cdb07880d1c 43665fb99dd8423aa6735710531001f8
+#: 7c6947322a1949ed988e3da09e8ee757 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:7
+#: tooluniverse.restful_tool.MonarchTool.run:7
+#: tooluniverse.restful_tool.RESTfulTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具专用参数"
+
+#: 17a30d1cb57f4f0a8868afcfa4c9558e eabd894463ab4bfbb422b4e88cbf909d
+#: fdbd5b6539474b99ba04000e7b65b6a1 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:9
+#: tooluniverse.restful_tool.MonarchTool.run:9
+#: tooluniverse.restful_tool.RESTfulTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 425adf8fcea647dba20041055f889f80 5018d9f5b3f040069c6de404440b26e3
+#: 745c9d499380452ba9ef3e02ec7bf8e8 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:11
+#: tooluniverse.restful_tool.MonarchTool.run:11
+#: tooluniverse.restful_tool.RESTfulTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: 2325e264363e49abbb9d47651f2721bc 6bd434ab57f74c9fa557c28d96d3adde
+#: e41e4d434b9842129bf53a9e84a15625 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:13
+#: tooluniverse.restful_tool.MonarchTool.run:13
+#: tooluniverse.restful_tool.RESTfulTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 1e0ec911369143da8ca7aa37a672f836 89fed4d067d84b36a399328cd5c7c19b
+#: b0981197100142f4acce1248b13a7724 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:18
+#: tooluniverse.restful_tool.MonarchTool.run:18
+#: tooluniverse.restful_tool.RESTfulTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 430387e6712948f5b4e400d5cba7b238 d3940670502944feae2e59403cc1157e
+#: d9787d077568416c887fabd25951e36c of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool.run:22
+#: tooluniverse.restful_tool.MonarchTool.run:22
+#: tooluniverse.restful_tool.RESTfulTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"
+
+#: 6b15a16337254df9ace24b1b7396c2ff of tooluniverse.restful_tool.MonarchTool:1
+msgid "Bases: :py:class:`~tooluniverse.restful_tool.RESTfulTool`"
+msgstr "基础：:py:class:`~tooluniverse.restful_tool.RESTfulTool`"
+
+#: 6305fff7da0c41f7bbf62025615f12f4 of
+#: tooluniverse.restful_tool.MonarchDiseasesForMultiplePhenoTool:1
+msgid "Bases: :py:class:`~tooluniverse.restful_tool.MonarchTool`"
+msgstr "基类：:py:class:`~tooluniverse.restful_tool.MonarchTool`"

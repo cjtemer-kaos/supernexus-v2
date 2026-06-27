@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.uspto_tool.rst:2 445020817b204cb5a602f4dc05cef139
+msgid "tooluniverse.uspto\\_tool module"
+msgstr "tooluniverse.uspto_tool 模块"
+
+#: f938afdd5e774e94abb51c4ad0237b0d of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: 7e96b2e2dff5463084e0a865740c4ab8 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool:1
+msgid ""
+"A tool for interacting with the USPTO Open Data Portal API to search for and"
+" retrieve patent information. The run method dynamically constructs API "
+"requests based on the provided tool configuration."
+msgstr "一个用于与USPTO开放数据门户API交互以搜索和检索专利信息的工具。run方法根据提供的工具配置动态构建API请求。"
+
+#: 84d568b1208741d2bacaccb7964d1448 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.__init__:1
+msgid "Initializes the USPTOOpenDataPortalTool."
+msgstr "初始化 USPTOOpenDataPortalTool。"
+
+#: ../../api/tooluniverse.uspto_tool.rst 818f35bfd0f54f0ab4e4914286df92c8
+#: aa9fc2830d7e495980e99b69fd71c6b7
+msgid "Parameters"
+msgstr "参数"
+
+#: 5b95010929e040bc82920c3ae616f040 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.__init__:3
+msgid "The configuration for the specific tool being run."
+msgstr "正在运行的特定工具的配置。"
+
+#: 5db68bb07dd947c38aecbd9d74a68198 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.__init__:4
+msgid "Your USPTO Open Data Portal API key."
+msgstr "您的USPTO开放数据门户API密钥。"
+
+#: 0b88cefddd714d2c894fb8ec597f0419 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.__init__:5
+msgid "The base URL for the USPTO API."
+msgstr "USPTO API 的基础 URL。"
+
+#: fda8e114a1e54667857580f1737dc203 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.get_by_path:1
+msgid "Safely navigate nested dicts by a list of keys."
+msgstr "通过键列表安全地访问嵌套字典。"
+
+#: c2df02acd35f41b8bcbbec7df2f74a59 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.assign_by_path:1
+msgid "Create nested dicts for a dot‑path and set the final key to value."
+msgstr "为点路径创建嵌套字典，并将最终键设置为对应的值。"
+
+#: e7c2ff16c5c144dab1c993e808eef27b of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.run:1
+msgid ""
+"Runs the specified tool by constructing and executing an API call based on "
+"the tool's configuration."
+msgstr "根据工具的配置，构建并执行API调用以运行指定的工具。"
+
+#: 4f276d2a1f2a43b988dc020257483126 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.run:3
+msgid ""
+"A dictionary of arguments for the tool, matching the parameters in the tool "
+"definition."
+msgstr "与工具定义中的参数相匹配的工具参数字典。"
+
+#: ../../api/tooluniverse.uspto_tool.rst c707f9efefcf4f70bc81ae5ef49cd6f1
+msgid "Returns"
+msgstr "返回"
+
+#: 4d4e58c9f40c4bfe9ff55ed4a4fdab66 of
+#: tooluniverse.uspto_tool.USPTOOpenDataPortalTool.run:5
+msgid ""
+"The result of the API call, either as a dictionary (for JSON) or a string "
+"(for CSV)."
+msgstr "API调用的结果，可以是字典格式（用于JSON）或字符串格式（用于CSV）。"

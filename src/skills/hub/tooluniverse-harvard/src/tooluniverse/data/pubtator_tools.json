@@ -1,0 +1,115 @@
+[
+  {
+    "type": "PubTatorTool",
+    "name": "PubTator3_EntityAutocomplete",
+    "description": "Provides suggestions for the best\u2010matching standardized PubTator IDs for a partial biomedical term (gene, disease, chemical, or variant). Use this tool first to convert free\u2010text names into the stable @IDs required by the other PubTator APIs.",
+    "endpoint_path": "/entity/autocomplete/",
+    "method": "GET",
+    "param_map": {
+      "text": "query",
+      "entity_type": "concept",
+      "max_results": "limit"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "A few characters or the full name of the biomedical concept you are trying to look up (e.g. \u201cBRAF V6\u201d)."
+        },
+        "entity_type": {
+          "type": "string",
+          "description": "Optional filter to restrict suggestions to a single category such as GENE, DISEASE, CHEMICAL, or VARIANT."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of suggestions to return (1 - 50, default = 10)."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    },
+    "fields": {
+      "tool_subtype": "PubTatorEntity"
+    },
+    "test_examples": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "entity_type": "gene",
+        "max_results": 5
+      }
+    ],
+    "return_schema": {
+      "type": "array"
+    }
+  },
+  {
+    "type": "PubTatorTool",
+    "name": "PubTator3_LiteratureSearch",
+    "description": "Find PubMed articles that match a keyword, a PubTator entity ID (e.g. \u201c@GENE_BRAF\u201d), or an entity-to-entity relation expression (e.g. \u201crelations:treat|@CHEMICAL_Doxorubicin|@DISEASE_Neoplasms\u201d).",
+    "endpoint_path": "/search/",
+    "method": "GET",
+    "param_map": {
+      "query": "text",
+      "page": "page",
+      "page_size": "page_size"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "What you want to search for. This can be plain keywords, a single PubTator ID, or the special relation syntax shown above."
+        },
+        "page": {
+          "type": "integer",
+          "description": "Zero-based results page (optional; default = 0).",
+          "default": 0
+        },
+        "page_size": {
+          "type": "integer",
+          "description": "How many PMIDs to return per page (optional; default = 10; note: the PubTator3 API always returns 10 per page regardless of this value).",
+          "default": 10
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return (applied client-side). The PubTator3 API returns 10 results per page; this parameter truncates the results to the requested count."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "fields": {
+      "tool_subtype": "PubTatorSearch"
+    },
+    "test_examples": [
+      {
+        "query": "cancer",
+        "page": 1,
+        "page_size": 1
+      }
+    ],
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array"
+        },
+        "page_size": {
+          "type": "integer"
+        },
+        "current": {
+          "type": "integer"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "total_pages": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+]

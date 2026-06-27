@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.rst:2
+#: 3b600716a6ef4c4992578bc676ce9e96
+msgid ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_information\\_for\\_owners\\_or\\_caregivers"
+" module"
+msgstr ""
+"tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_information\\_for\\_owners\\_or\\_caregivers"
+" 模块"
+
+#: 3cae444ad0ee4a62bdc088188c6b6cd7 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers:1
+msgid "FDA_get_drug_names_by_information_for_owners_or_caregivers"
+msgstr "FDA_根据业主或护理人员信息获取药物名称"
+
+#: 1bfc34870cbd481c9bdf3fd6b18028f3 81ef999678e24916949c02a461269e9e of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers:3
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:1
+msgid "Retrieve drug names based on information for owners or caregivers."
+msgstr "根据所有者或护理人员的信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.rst
+#: 827dca529fd042ddb40202bc6fcdec80
+msgid "Parameters"
+msgstr "参数"
+
+#: e92045d56ff64fa0ad331d20c193c063 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:3
+msgid ""
+"The specific information related to owners or caregivers to search for."
+msgstr "与所有者或护理人员相关的具体信息以供搜索。"
+
+#: a63aa22be69148e8b291c49acc699844 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: ce8079f39d72403796200ea7e2982526 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 78f302e2776647f08af1b8863d071f75 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数量。"
+
+#: cc95b434175848159de413b6f7696deb of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 4547e084ab4c49eaae8bba6fd56fa449 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 74e39b1fde77420bbab21940ed6c6997 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.rst
+#: b5128f860d1c477ea92ef463d3e3e01f
+msgid "Return type"
+msgstr "返回类型"
+
+#: 29b19c165ab84b64ba0b2ad82a2cad03 of
+#: tooluniverse.tools.FDA_get_drug_names_by_information_for_owners_or_caregivers.FDA_get_drug_names_by_information_for_owners_or_caregivers:18
+msgid ":py:class:`Any`"
+msgstr ""

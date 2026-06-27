@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_residue_warning.rst:2
+#: 85b26ab860b9456a9df507d0f59d1f8f
+msgid "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_residue\\_warning module"
+msgstr "tooluniverse.tools.FDA\\_get\\_drug\\_names\\_by\\_residue\\_warning 模块"
+
+#: 8144af6974b84634b9dd82ba2c04f402 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning:1
+msgid "FDA_get_drug_names_by_residue_warning"
+msgstr ""
+
+#: 2a40ed1e20314005976b248e4fdce032 d02cf1f8e0fa4cc9a59dec06fcee105d of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning:3
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:1
+msgid "Retrieve drug names based on the presence of residue warnings."
+msgstr "根据残留警告信息检索药物名称。"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_residue_warning.rst
+#: efd77f3407534d63a526fbe8ff54683e
+msgid "Parameters"
+msgstr "参数"
+
+#: de916fb1c1964de682c570f968f27878 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:3
+msgid "The residue warning information to search for."
+msgstr "用于搜索的残留警告信息。"
+
+#: 0a0411ec3f91443289d7ba42dc25a291 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:5
+msgid "The indication or usage of the drug."
+msgstr "药物的适应症或用途。"
+
+#: bd769ede84f54173b2bb912496e4a5c3 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:7
+msgid "The number of records to return."
+msgstr "返回的记录数量。"
+
+#: 1f559c86c4224ec28755328016f49ef4 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:9
+msgid "The number of records to skip."
+msgstr "要跳过的记录数。"
+
+#: 7f7682d45a0545b1b4eefa65d65aaea3 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:11
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 3294cc35d8304769981b127ae1c2ec86 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:13
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: aed1d29027f140b3a4e29faa9dbcbf81 of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:15
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.FDA_get_drug_names_by_residue_warning.rst
+#: 40942b49ae3a42168ea27fbe976e40de
+msgid "Return type"
+msgstr "返回类型"
+
+#: 39a604ee400d4b47b58258adbc30e68f of
+#: tooluniverse.tools.FDA_get_drug_names_by_residue_warning.FDA_get_drug_names_by_residue_warning:18
+msgid ":py:class:`Any`"
+msgstr ""

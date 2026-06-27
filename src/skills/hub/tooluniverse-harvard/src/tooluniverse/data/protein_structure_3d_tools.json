@@ -1,0 +1,153 @@
+[
+  {
+    "name": "visualize_protein_structure_3d",
+    "description": "Visualize 3D protein structures using py3Dmol. Supports PDB IDs, PDB file content, and various visualization styles including cartoon, surface, and stick representations. Prerequisites: Requires 'py3Dmol' package (install: pip install tooluniverse[visualization]).",
+    "type": "ProteinStructure3DTool",
+    "required_packages": [
+      "py3Dmol"
+    ],
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "pdb_id": {
+          "type": "string",
+          "description": "PDB identifier (e.g., '1CRN', '7CGO'). Either pdb_id or pdb_content must be provided."
+        },
+        "pdb_content": {
+          "type": "string",
+          "description": "Raw PDB file content as string. Either pdb_id or pdb_content must be provided."
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "cartoon",
+            "stick",
+            "sphere",
+            "line"
+          ],
+          "default": "cartoon",
+          "description": "Visualization style"
+        },
+        "color_scheme": {
+          "type": "string",
+          "enum": [
+            "spectrum",
+            "rainbow",
+            "ssPyMOL",
+            "ssJmol",
+            "Jmol",
+            "amino",
+            "shapely",
+            "nucleic",
+            "chain",
+            "default"
+          ],
+          "default": "spectrum",
+          "description": "Color scheme for the structure"
+        },
+        "width": {
+          "type": "integer",
+          "default": 800,
+          "description": "Width of the visualization in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "default": 600,
+          "description": "Height of the visualization in pixels"
+        },
+        "show_sidechains": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show sidechain atoms"
+        },
+        "show_surface": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show molecular surface"
+        }
+      },
+      "required": [
+        "pdb_id",
+        "pdb_content"
+      ]
+    },
+    "default_width": 800,
+    "default_height": 600,
+    "default_style": {
+      "style": "cartoon",
+      "color_scheme": "spectrum"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Whether the visualization was created successfully"
+        },
+        "visualization": {
+          "type": "object",
+          "properties": {
+            "html": {
+              "type": "string",
+              "description": "Complete HTML content for the 3D protein visualization"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of visualization (protein_structure_3d)"
+            },
+            "data": {
+              "type": "object",
+              "description": "Raw PDB data used for visualization"
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "style": {
+                  "type": "string"
+                },
+                "color_scheme": {
+                  "type": "string"
+                },
+                "pdb_id": {
+                  "type": "string"
+                },
+                "show_sidechains": {
+                  "type": "boolean"
+                },
+                "show_surface": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if visualization failed"
+        },
+        "error_type": {
+          "type": "string",
+          "description": "Type of error if visualization failed"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "pdb_id": "1CRN",
+        "pdb_content": "",
+        "style": "cartoon",
+        "color_scheme": "spectrum",
+        "width": 800,
+        "height": 600,
+        "show_sidechains": false,
+        "show_surface": false
+      }
+    ]
+  }
+]

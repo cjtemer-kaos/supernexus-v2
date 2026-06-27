@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 10:37-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:1
+#: fabf1e9b87cc435bb7a854af2d108161
+msgid "ToolUniverse Quick Reference - Adding Tools"
+msgstr "ToolUniverse 快速参考 - 添加工具"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:3
+#: 36592fd04e164e02b8688a2dc01c72f1
+msgid "🚀 Quick Start (30 seconds)"
+msgstr "🚀 快速开始（30秒）"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:35
+#: 64b8b8c17fb34faabfa22d04ba88e9d7
+msgid "📋 Common Patterns"
+msgstr "📋 常见模式"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:37
+#: 933e2ba9f5d546c39c68984f9aa12d19
+msgid "API Wrapper Tool"
+msgstr "API封装工具"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:49
+#: 445a49083e994df08c7900afb9508201
+msgid "File Processor Tool"
+msgstr "文件处理工具"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:60
+#: f09e412fff404b22b092efed9c684ea0
+msgid "Database Tool"
+msgstr "数据库工具"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:72
+#: 889ac36efdfd494e88c26b2186ffa564
+msgid "🔧 Configuration Templates"
+msgstr "🔧 配置模板"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:74
+#: 2fd982ef76af45349ce122a292bc281b
+msgid "Simple Tool Config"
+msgstr "简单工具配置"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:90
+#: 3b77e1e5d149426da8712b3b9be4e618
+msgid "Advanced Tool Config"
+msgstr "高级工具配置"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:112
+#: f6eabfbc7553499fb8867170d2b95b5b
+msgid "❌ Common Mistakes"
+msgstr "❌ 常见错误"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:114
+#: 18aa24a3e452428e85167a275d95e977
+msgid "❌ Wrong: Missing required methods"
+msgstr "❌ 错误：缺少必要的方法"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:121
+#: 62fbc58f2d70462797fa4cd2b512bcca
+msgid "✅ Correct: Proper structure"
+msgstr "✅ 正确：结构合理"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:131
+#: 28790e7de80b4ba3aa50e3391f406a10
+msgid "❌ Wrong: No error handling"
+msgstr "❌ 错误：没有错误处理"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:138
+#: 0727fc7bd9d641f1a462518a9ed50dc0
+msgid "✅ Correct: With error handling"
+msgstr "✅ 正确：带有错误处理"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:148
+#: 8e4b6eefc0b040ab848856bc7c17f387
+msgid "🧪 Testing Checklist"
+msgstr "🧪 测试清单"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:150
+#: ec1f185acfe548fe98f302b457f9170a
+msgid "[ ] File ends with `_tool.py`"
+msgstr "[ ] 文件以 `_tool.py` 结尾"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:151
+#: a5f275b7ad894a89a678c3641170f060
+msgid "[ ] Placed in `src/tooluniverse/`"
+msgstr "[ ] 放置于 `src/tooluniverse/`"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:152
+#: 31e721a4ce714f14a4203338a1949cd2
+msgid "[ ] Class has `__init__(self, tool_config=None)`"
+msgstr "[ ] 类具有 `__init__(self, tool_config=None)`"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:153
+#: ba258e7e8fda474f925fd1e0875c37ec
+msgid "[ ] Class has `run(self, arguments)` method"
+msgstr "[ ] 类具有 `run(self, arguments)` 方法"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:154
+#: ee01d1c6172e4d1680bc14f15b049340
+msgid ""
+"[ ] Config has all required fields (`name`, `type`, `description`, "
+"`parameter`)"
+msgstr "[ ] Config 包含所有必填字段（`name`、`type`、`description`、`parameter`）"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:155
+#: d0778b8f7abd4232b2ff805c52bc66c9
+msgid "[ ] Returns consistent format (`success: True/False`)"
+msgstr "[ ] 返回一致的格式（`success: True/False`）"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:156
+#: 8148f899bbf54e84a8661d816851eac6
+msgid "[ ] Error handling implemented"
+msgstr "[ ] 已实现错误处理"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:157
+#: 757efbc1b3dc46daa521e899ec01eab5
+msgid "[ ] Test script works:"
+msgstr "[ ] 测试脚本运行正常："
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:166
+#: 0f3359327e50453d949a71dbef6d010f
+msgid "🆘 Troubleshooting"
+msgstr "🆘 故障排除"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 48e38b8d31dd4f3381da4e56f2d22ca9
+msgid "Problem"
+msgstr "问题"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 2ee58439447d494bb93eb042ec74119d
+msgid "Solution"
+msgstr "解决方案"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: fd9ebc80709e4bedbc4ba56597e2bb97
+msgid "Tool not found"
+msgstr "未找到工具"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 1f1548667c734fccb8ad12ce6009e0b7
+msgid "Check file name ends with `_tool.py`"
+msgstr "检查文件名是否以 `_tool.py` 结尾"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 1896074bef05492392f76402317ef173
+msgid "Import error"
+msgstr "导入错误"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: f310a3c4fbd84392bfd1003225d51018
+msgid "Test: `python -c \"from tooluniverse.your_tool import YourTool\"`"
+msgstr ""
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: a7136e5b423c4b6d80a0e10c71008f46
+msgid "Config error"
+msgstr "配置错误"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 7830b32c62714ba1b371c8bd2eb55ca3
+msgid "Validate JSON: `json.loads(json.dumps(config))`"
+msgstr "验证 JSON：`json.loads(json.dumps(config))`"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 0bbecbddb8534f38ac182445f269c569
+msgid "Runtime error"
+msgstr "运行时错误"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 7f9535f4ae1347849bdb76d72578f510
+#, python-brace-format
+msgid "Add try/catch, return `{\"error\": str(e), \"success\": False}`"
+msgstr "添加 try/catch，返回 `{\"error\": str(e), \"success\": False}`"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 350b54b71b8e47cc9c0f58e2d9ae5c57
+msgid "Wrong parameters"
+msgstr "参数错误"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md
+#: 64b09858dc2b4709873867d13001c49f
+msgid "Check parameter schema matches your `run()` method"
+msgstr "检查参数模式是否与您的 `run()` 方法匹配"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:176
+#: dc1792998c0e4c4fbe8bc270223b81ea
+msgid "📚 Full Documentation"
+msgstr "📚 完整文档"
+
+#: ../../tutorials/addtools/Adding_Tools_Quick_Reference.md:178
+#: bd435431893540db9a8c9edf6c39d867
+msgid ""
+"For complete examples and advanced usage, see "
+"[Adding_Tools_Tutorial.md](Adding_Tools_Tutorial.md)"
+msgstr "有关完整示例和高级用法，请参见 [Adding_Tools_Tutorial.md](Adding_Tools_Tutorial.md)"

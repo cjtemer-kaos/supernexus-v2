@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_plantcv_info.rst:2
+#: 774fa3738bb94604a7cacb1a15eb016c
+msgid "tooluniverse.tools.get\\_plantcv\\_info module"
+msgstr "tooluniverse.tools.get\\_plantcv\\_info 模块"
+
+#: fd71c4142c3548ada7d82a0555ebb7db of tooluniverse.tools.get_plantcv_info:1
+msgid "get_plantcv_info"
+msgstr "get_plantcv_信息"
+
+#: 72b6ebdcac994a74a3023d7172cb8242 b7d156a59a074ee6a31204ec7e3bd13f of
+#: tooluniverse.tools.get_plantcv_info:3
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:1
+msgid ""
+"Get comprehensive information about PlantCV – plant phenotyping with image "
+"analysis"
+msgstr "获取关于PlantCV的全面信息——通过图像分析进行植物表型分析"
+
+#: ../../api/tooluniverse.tools.get_plantcv_info.rst
+#: a94c4a219670439fa980d6f1d59dd588
+msgid "Parameters"
+msgstr "参数"
+
+#: fcddfea31eeb4707a947ed1889dfa7ea of
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:3
+msgid "Type of information to retrieve about PlantCV"
+msgstr "关于PlantCV可检索的信息类型"
+
+#: bbec25601ac94a2099e129a6806d10df of
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:5
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 5f2272ac35b9490489175bc9fb72f880 of
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:7
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 931fb4d9f80749bd8822f0c5ca2a7ca5 of
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:9
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_plantcv_info.rst
+#: e5103d57da034caaa81bc0e6a466bd73
+msgid "Return type"
+msgstr "返回类型"
+
+#: 32159e691f3946e4a68eb46ed2ec6abd of
+#: tooluniverse.tools.get_plantcv_info.get_plantcv_info:12
+msgid ":py:class:`Any`"
+msgstr ""

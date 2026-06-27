@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.compose_scripts.output_summarizer.rst:2
+#: b3c373f2fbad4c6f836331dbc761a42b
+msgid "tooluniverse.compose\\_scripts.output\\_summarizer module"
+msgstr "tooluniverse.compose_scripts.output_summarizer 模块"
+
+#: 13fdfbf1791a494b8f7fb23dba19895b of
+#: tooluniverse.compose_scripts.output_summarizer:1
+msgid "Output Summarization Composer Script"
+msgstr "输出汇总生成脚本"
+
+#: 140e38bf76004e608e6454ccccdc1e56 of
+#: tooluniverse.compose_scripts.output_summarizer:3
+msgid ""
+"This script handles the intelligent summarization of tool outputs by: 1. "
+"Chunking large outputs into manageable pieces 2. Processing each chunk with "
+"AI-powered summarization 3. Merging the summarized chunks into a coherent "
+"final summary"
+msgstr ""
+"该脚本通过以下步骤实现工具输出的智能摘要：1. 将大型输出拆分为可管理的块 2. 使用人工智能驱动的摘要技术处理每个块 3. "
+"将各摘要块合并为连贯的最终摘要"
+
+#: b4d73ac131884ea0b1a456656ee749e3 of
+#: tooluniverse.compose_scripts.output_summarizer:8
+msgid ""
+"The script leverages ToolUniverse's AgenticTool infrastructure to provide "
+"intelligent, context-aware summarization that focuses on information "
+"relevant to the original query."
+msgstr "该脚本利用 ToolUniverse 的 AgenticTool 基础架构，提供智能且具上下文感知的摘要，重点突出与原始查询相关的信息。"
+
+#: 02346a6f354443a6a198f4eb042a66d9 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:1
+msgid "Main composition function for output summarization."
+msgstr "用于输出摘要的主要组合功能。"
+
+#: 30927d646dcb4ada8aaf306f92f89b31 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:3
+msgid ""
+"This function orchestrates the complete summarization workflow: - Chunks the"
+" input text into manageable pieces - Summarizes each chunk using AI - Merges"
+" the summaries into a final coherent result"
+msgstr ""
+"此功能负责协调完整的摘要工作流程：  \n"
+"- 将输入文本拆分为可管理的片段  \n"
+"- 使用人工智能对每个片段进行摘要  \n"
+"- 将各片段摘要合并为最终连贯的结果"
+
+#: ../../api/tooluniverse.compose_scripts.output_summarizer.rst
+#: 271be6a6f09e4f1297f905d461fec74a 4e19833994b5400da672ccb30777a781
+#: 6edeca4a269a472e8f15827f51220137 bb39bd57fe0a4ae1a88b4eb8b3624df4
+msgid "Parameters"
+msgstr "参数"
+
+#: 93dc0cf61f624d5c9843472fe1e3e056 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:8
+#, fuzzy
+msgid ""
+"Dictionary containing: - tool_output (str): The original tool output to be "
+"summarized - query_context (str): Context about the original query - "
+"tool_name (str): Name of the tool that generated the output - chunk_size "
+"(int, optional): Size of each chunk for processing - focus_areas (str, "
+"optional): Areas to focus on in summarization - max_summary_length (int, "
+"optional): Maximum length of final   summary"
+msgstr ""
+"包含字典：  \n"
+"- tool_output（字符串）：需总结的原始工具输出  \n"
+"- query_context（字符串）：关于原始查询的上下文信息  \n"
+"- tool_name（字符串）：生成输出的工具名称  \n"
+"- chunk_size（整数，可选）：处理时每个分块的大小  \n"
+"- focus_areas（字符串，可选）：总结时需重点关注的领域  \n"
+"- max_summary_length（整数，可选）：最终摘要的最大长度"
+
+#: 95ae8f1d7a144b0caf75a867231128ca of
+#: tooluniverse.compose_scripts.output_summarizer.compose:8
+#, fuzzy
+msgid ""
+"Dictionary containing: - tool_output (str): The original tool output to be "
+"summarized - query_context (str): Context about the original query - "
+"tool_name (str): Name of the tool that generated the output - chunk_size "
+"(int, optional): Size of each chunk for processing - focus_areas (str, "
+"optional): Areas to focus on in summarization - max_summary_length (int, "
+"optional): Maximum length of final"
+msgstr ""
+"包含字典：  \n"
+"- tool_output（字符串）：需总结的原始工具输出  \n"
+"- query_context（字符串）：关于原始查询的上下文信息  \n"
+"- tool_name（字符串）：生成输出的工具名称  \n"
+"- chunk_size（整数，可选）：处理时每个分块的大小  \n"
+"- focus_areas（字符串，可选）：总结时需重点关注的领域  \n"
+"- max_summary_length（整数，可选）：最终摘要的最大长度"
+
+#: a09fa8d71c7142bda6bdf27da65a109b of
+#: tooluniverse.compose_scripts.output_summarizer.compose:15
+msgid "summary"
+msgstr "摘要"
+
+#: c997b20e73744e7fb0b65ba8c04225a2 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:17
+msgid "ToolUniverse instance for tool execution"
+msgstr "用于工具执行的 ToolUniverse 实例"
+
+#: 9a02468d57fa41658788cfb9034ea01f of
+#: tooluniverse.compose_scripts.output_summarizer.compose:18
+msgid "Function to call other tools within the composition"
+msgstr "在组合内调用其他工具的功能"
+
+#: ../../api/tooluniverse.compose_scripts.output_summarizer.rst
+#: 22eb7161296a425c8995fa7b135de3f4 2572e02f0abd47c18960986f40679d95
+#: 29d93b26a1234363ad4a80d447e6defc b135a15a5491430db3ed01b0164549bd
+msgid "Returns"
+msgstr "退货"
+
+#: 54254b299dee45c1b635f402f3d014ba of
+#: tooluniverse.compose_scripts.output_summarizer.compose:20
+msgid ""
+"Dictionary containing:     - success (bool): Whether summarization was "
+"successful     - original_length (int): Length of original output     - "
+"summary_length (int): Length of final summary     - chunks_processed (int): "
+"Number of chunks processed     - summary (str): The summarized output     - "
+"tool_name (str): Name of the original tool     - error (str, optional): "
+"Error message if summarization failed"
+msgstr ""
+"字典包含：  \n"
+"- success (bool)：是否成功完成摘要  \n"
+"- original_length (int)：原始输出的长度  \n"
+"- summary_length (int)：最终摘要的长度  \n"
+"- chunks_processed (int)：已处理的块数量  \n"
+"- summary (str)：摘要后的输出内容  \n"
+"- tool_name (str)：原始工具的名称  \n"
+"- error (str, 可选)：如果摘要失败，则显示的错误信息"
+
+#: e840f6b31b87427f998d940d1bc0afa1 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:22
+msgid "Dictionary containing:"
+msgstr "包含以下内容的字典："
+
+#: 0d3e14930547415b8c6023275cd64abd of
+#: tooluniverse.compose_scripts.output_summarizer.compose:23
+msgid "success (bool): Whether summarization was successful"
+msgstr "success (bool): 是否成功完成摘要"
+
+#: 24f05bdee970480b9ea8f0fb463b01f0 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:24
+msgid "original_length (int): Length of original output"
+msgstr "original_length（int）：原始输出的长度"
+
+#: 3a0188812d444baaa15ce22222f4487a of
+#: tooluniverse.compose_scripts.output_summarizer.compose:25
+msgid "summary_length (int): Length of final summary"
+msgstr "summary_length (int)：最终摘要的长度"
+
+#: 22c66917899747d7bcee68de722df49c of
+#: tooluniverse.compose_scripts.output_summarizer.compose:26
+msgid "chunks_processed (int): Number of chunks processed"
+msgstr "chunks_processed（整数）：已处理的数据块数量"
+
+#: 794584ca045945388301ac09680aaf22 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:27
+msgid "summary (str): The summarized output"
+msgstr "摘要 (str): 汇总输出"
+
+#: cd1eda96bebf42b6b670bdf0cbf16532 of
+#: tooluniverse.compose_scripts.output_summarizer.compose:28
+msgid "tool_name (str): Name of the original tool"
+msgstr "tool_name（字符串）：原始工具的名称"
+
+#: 2feeb84ed2e94dbdab5d9d4d2fb6a5bd of
+#: tooluniverse.compose_scripts.output_summarizer.compose:29
+msgid "error (str, optional): Error message if summarization failed"
+msgstr "error（str，可选）：若摘要失败时的错误信息"
+
+#: ../../api/tooluniverse.compose_scripts.output_summarizer.rst
+#: 38fd9b9e91444045992212d8e244273c 3aec19c728064f10af802a8c68664006
+#: e47de01f505f4ddd897b3b41547dc99b fbfb922d498e47018a3e6cf90ce38ad6
+msgid "Return type"
+msgstr "返回类型"
+
+#: b30fc57c9a184b65a061092069470730 of
+#: tooluniverse.compose_scripts.output_summarizer._chunk_output:1
+msgid ""
+"Split text into chunks of specified size with intelligent boundary "
+"detection."
+msgstr "将文本拆分为指定大小的块，同时实现智能边界检测。"
+
+#: 02285b604c88480f8648e62f80c2175c of
+#: tooluniverse.compose_scripts.output_summarizer._chunk_output:4
+msgid ""
+"This function attempts to break text at natural boundaries (sentences) to "
+"maintain coherence within chunks while respecting the size limit."
+msgstr "此函数尝试在自然边界（句子）处对文本进行分割，以在保持块内连贯性的同时遵守大小限制。"
+
+#: b25f26fa53ad46ddaaa7d69e2a2c0788 of
+#: tooluniverse.compose_scripts.output_summarizer._chunk_output:7
+msgid "The text to be chunked"
+msgstr "请提供需要翻译的英文文本，我将为您提供符合要求的中文翻译。"
+
+#: e64ce13c0de34d2ba8baf7c78d9f87d6 of
+#: tooluniverse.compose_scripts.output_summarizer._chunk_output:9
+msgid "Maximum size of each chunk"
+msgstr "每个块的最大大小"
+
+#: 8966b5166e0c492dbef7129101f1b8ed of
+#: tooluniverse.compose_scripts.output_summarizer._chunk_output:12
+msgid "List of text chunks"
+msgstr "文本块列表"
+
+#: 03a2ac71e414475e8e54ae068059256b of
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:1
+msgid "Summarize a single chunk using the AgenticTool summarizer."
+msgstr "使用 AgenticTool 摘要工具对单个块进行摘要。"
+
+#: 91d43573a2dd40d885425606d18d6c7a of
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:3
+msgid "The text chunk to summarize"
+msgstr "请提供您需要翻译的具体英文文本内容，我将为您进行专业翻译。"
+
+#: bf936978196a450085acffeec8e037e6 c9ca7451e7044d42a9804b6325454a67 of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:8
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:5
+msgid "Context about the original query"
+msgstr "上下文：文档"
+
+#: 08543d7aad814f139c5fb308384077d9 f1c1aa195d394b51b36173c52a4c00f5 of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:10
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:7
+msgid "Name of the tool that generated the output"
+msgstr "生成输出的工具名称"
+
+#: b2332157bdf84693b00abdb85c7f890f of
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:9
+msgid "Areas to focus on during summarization"
+msgstr "总结时需重点关注的领域"
+
+#: 03d7eac26cd340babe7626b0e91c009b 8d0f69391648446d83cbf380cba25eea of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:14
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:11
+msgid "Function to call the summarizer tool"
+msgstr "调用摘要工具的函数"
+
+#: 637cd55cdce64eb7be75aad268c54a37 of
+#: tooluniverse.compose_scripts.output_summarizer._summarize_chunk:13
+msgid "Summarized chunk text, or empty string if summarization fails"
+msgstr "总结的文本块，若摘要失败则为空字符串"
+
+#: 9add42fdf7214505bb077a52f62229bb of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:1
+msgid "Merge chunk summaries into a final coherent summary."
+msgstr "将各部分摘要合并为最终连贯的总结。"
+
+#: 21d3b5d1f6544907a7ac57766a45106c of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:3
+msgid ""
+"If the combined summaries exceed the maximum length, they are further "
+"summarized to create a concise final result."
+msgstr "如果合并后的摘要超过最大长度，则会进一步进行摘要，以生成简洁的最终结果。"
+
+#: 042749ef04a544a58758ec8b74595899 of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:6
+msgid "List of summarized chunks"
+msgstr "汇总块列表"
+
+#: c48367a2b65345a488a99bf130c46c49 of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:12
+msgid "Maximum length of final summary"
+msgstr "最终摘要的最大长度"
+
+#: d11711543d9d4fad831e5b99729dda2f of
+#: tooluniverse.compose_scripts.output_summarizer._merge_summaries:16
+msgid "Final merged summary"
+msgstr "最终合并摘要"

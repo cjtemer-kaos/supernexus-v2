@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.zenodo_tool.rst:2 b0c8d160c5424fe5b54c762d5b46f264
+msgid "tooluniverse.zenodo\\_tool module"
+msgstr "tooluniverse.zenodo_tool 模块"
+
+#: db581b57515948a38893dfa1cf52432b of tooluniverse.zenodo_tool.ZenodoTool:1
+msgid "Bases: :py:class:`~tooluniverse.base_tool.BaseTool`"
+msgstr "基础类：:py:class:`~tooluniverse.base_tool.BaseTool`"
+
+#: f786ad5516aa45d8bf468fba1bff379d of tooluniverse.zenodo_tool.ZenodoTool:1
+msgid "Search Zenodo records with optional community filter."
+msgstr "使用可选的社区筛选搜索 Zenodo 记录。"
+
+#: 1433471cf12b4a83b8c355767feec6fa of tooluniverse.zenodo_tool.ZenodoTool:3
+msgid "Parameters (arguments):"
+msgstr "参数（参数列表）："
+
+#: 7bbd5c2b221b48feaad11c47c9ae1969 of tooluniverse.zenodo_tool.ZenodoTool:4
+msgid ""
+"query (str): Free text query max_results (int): Max results (default 10, max"
+" 200) community (str): Optional community slug to filter"
+msgstr ""
+"query (str)：自由文本查询  \n"
+"max_results (int)：最大结果数（默认10，最大200）  \n"
+"community (str)：可选的社区标识符，用于筛选"
+
+#: 3ff0a7a11948492cabb72c1dafa1fb2c of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:1
+msgid "Execute the tool."
+msgstr "执行该工具。"
+
+#: cf8e8708581f491f97c9a3654daba943 of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:3
+msgid ""
+"The default BaseTool implementation accepts an optional arguments mapping to"
+" align with most concrete tool implementations which expect a dictionary of "
+"inputs."
+msgstr "默认的 BaseTool 实现接受一个可选的参数映射，以符合大多数具体工具实现所期望的输入字典。"
+
+#: ../../api/tooluniverse.zenodo_tool.rst 7d64b059403e4101976e4ab5bb154b22
+#, fuzzy
+msgid "Parameters"
+msgstr "参数（参数列表）："
+
+#: 9ab49f9cd0084177a29d02207180eb8c of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:7
+msgid "Tool-specific arguments"
+msgstr "工具特定参数"
+
+#: b72a81d3e1f74aaea1e9648ff0dcc44c of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:9
+msgid "Callback for streaming responses"
+msgstr "用于流式响应的回调"
+
+#: 1aadb98f41744888bfd1e27b3b4d3905 of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:11
+msgid "Whether result caching is enabled"
+msgstr "是否启用了结果缓存"
+
+#: f5f4e74ff42f4f7da6049c864c3f436c of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:13
+msgid "Whether parameter validation was performed"
+msgstr "是否已执行参数验证"
+
+#: 388e524b6e2c41fb9e7e77fe926bb70e of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:18
+msgid ""
+"These additional parameters (stream_callback, use_cache, validate) are "
+"passed from run_one_function() to provide context about the execution. Tools"
+" can use these for optimization or special handling."
+msgstr ""
+"这些附加参数（stream_callback、use_cache、validate）由 run_one_function() "
+"传递，用于提供有关执行的上下文。工具可以利用这些参数进行优化或特殊处理。"
+
+#: 6c994df302c14c16927851f468fc44e1 of
+#: tooluniverse.zenodo_tool.ZenodoTool.run:22
+msgid ""
+"For backward compatibility, tools that don't accept these parameters will "
+"still work - they will only receive the arguments parameter."
+msgstr "为了向后兼容，不接受这些参数的工具仍然可以正常工作——它们只会接收到 arguments 参数。"

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.get_pyvcf_info.rst:2
+#: 9f63181b1b6e4d2c968c808a9b4abbda
+msgid "tooluniverse.tools.get\\_pyvcf\\_info module"
+msgstr "tooluniverse.tools.get\\_pyvcf\\_info 模块"
+
+#: c29e5c1256ac4ead8e07bc323ae17c75 of tooluniverse.tools.get_pyvcf_info:1
+msgid "get_pyvcf_info"
+msgstr ""
+
+#: b293caacd9624d0ba90f28838dc51392 ce8df5e68b0e4389986368244e7e88b1 of
+#: tooluniverse.tools.get_pyvcf_info:3
+#: tooluniverse.tools.get_pyvcf_info.get_pyvcf_info:1
+msgid ""
+"Get information about the pyvcf package. Python library for parsing and "
+"manipulating VCF files"
+msgstr "获取有关 pyvcf 包的信息。Python 库用于解析和操作 VCF 文件。"
+
+#: ../../api/tooluniverse.tools.get_pyvcf_info.rst
+#: 6d210a5ab36b41d7b8f2fadf3f2cf468
+msgid "Parameters"
+msgstr "参数"
+
+#: 1c14e714e7474f51a7d0caa460ecd27d of
+#: tooluniverse.tools.get_pyvcf_info.get_pyvcf_info:4
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 60927fc936be4d60a24062bb25a80e7b of
+#: tooluniverse.tools.get_pyvcf_info.get_pyvcf_info:6
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 8ec4c09a21f3425d8bf426f8e17ce575 of
+#: tooluniverse.tools.get_pyvcf_info.get_pyvcf_info:8
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.get_pyvcf_info.rst
+#: a6a5ced200c64adab31bd93cb192a83a
+msgid "Return type"
+msgstr "返回类型"
+
+#: 02babf8f0f154584a41699365bf76e1e of
+#: tooluniverse.tools.get_pyvcf_info.get_pyvcf_info:11
+msgid ":py:class:`Any`"
+msgstr ""

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.CMA_Guidelines_Search.rst:2
+#: f25644ef1a2b4c90bcc18e9d10e4e322
+msgid "tooluniverse.tools.CMA\\_Guidelines\\_Search module"
+msgstr "tooluniverse.tools.CMA\\_Guidelines\\_Search 模块"
+
+#: ab6093616bd44fe0aef38c47a9c0e5b0 of
+#: tooluniverse.tools.CMA_Guidelines_Search:1
+msgid "CMA_Guidelines_Search"
+msgstr "CMA_指南_搜索"
+
+#: 2f5e516f0f344bf6925c981c3de6adb0 b57ce0a8819e42b591472fbc9d45a784 of
+#: tooluniverse.tools.CMA_Guidelines_Search:3
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:1
+msgid ""
+"Search Canadian Medical Association (CMA) Infobase guidelines. Contains over"
+" 1200 evidence-based ..."
+msgstr "搜索加拿大医学协会 (CMA) Infobase 指南。包含超过1200条基于证据的..."
+
+#: ../../api/tooluniverse.tools.CMA_Guidelines_Search.rst
+#: 8c0e20ea33f24a3d96544e072bb41792
+msgid "Parameters"
+msgstr "参数"
+
+#: 578bfce02bda42708ce6c84f5b2e22e2 of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:3
+msgid ""
+"Medical condition, treatment, or clinical topic to search for in CMA "
+"guidelin..."
+msgstr "医疗状况、治疗或临床主题以搜索CMA指南..."
+
+#: bf34579cf87b4bc491316507c86332e7 of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:5
+msgid "Maximum number of guidelines to return (default: 10)"
+msgstr "返回的指南最大数量（默认值：10）"
+
+#: 9996641579d94e128240c37181ab4a95 of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:7
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 359a2946b33b4a73b2a711337bd7300e of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:9
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: c879751dbbd6416396d1640d4edab7c7 of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:11
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.CMA_Guidelines_Search.rst
+#: 069b9b33553b4063bfce4ffd7a750573
+msgid "Return type"
+msgstr "返回类型"
+
+#: e35e82d5719c4a54b3c36093be3d11e6 of
+#: tooluniverse.tools.CMA_Guidelines_Search.CMA_Guidelines_Search:14
+msgid ":py:class:`list[Any]`"
+msgstr ""

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Shanghua Gao
+# This file is distributed under the same license as the ToolUniverse
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ToolUniverse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 01:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api/tooluniverse.tools.LabelGenerator.rst:2
+#: ed6e3bb0d8fa40ab99a96ebef1726ddf
+msgid "tooluniverse.tools.LabelGenerator module"
+msgstr "tooluniverse.tools.LabelGenerator 模块"
+
+#: 72b1a34fe8c54e4392b1e2e3af09e70f of tooluniverse.tools.LabelGenerator:1
+msgid "LabelGenerator"
+msgstr "标签生成器"
+
+#: 0fe2d212dffe4b0092e633d4d4005b4d 650557381a5048f49695285c2f01e8aa of
+#: tooluniverse.tools.LabelGenerator:3
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:1
+msgid ""
+"Generates relevant keyword labels for tools based on their name, "
+"description, parameters, and cat..."
+msgstr "根据工具的名称、描述、参数和类别生成相关的关键词标签。"
+
+#: ../../api/tooluniverse.tools.LabelGenerator.rst
+#: 9f9a1b89b6e64effa44c6c8add1f6502
+msgid "Parameters"
+msgstr "参数"
+
+#: 8d9c8dbae19c401abe8559610fbc0f3b of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:3
+msgid "The name of the tool"
+msgstr "工具名称"
+
+#: 5e6d6d6e43364c87a1e8d3e07d3fc5eb of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:5
+msgid "Detailed description of what the tool does"
+msgstr "工具功能的详细描述"
+
+#: 33b03fdd10094529988e9a9d41c0612e of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:7
+msgid "JSON string describing the tool's input parameters and their types"
+msgstr "描述工具输入参数及其类型的JSON字符串"
+
+#: 8637ed91d8484cf6805942247201b30f of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:9
+msgid "The general category or domain the tool belongs to"
+msgstr "工具所属的一般类别或领域"
+
+#: a814d79d599841aca453199d5cf83597 of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:11
+msgid "JSON array string of existing labels to consider reusing (optional)"
+msgstr "现有标签的 JSON 数组字符串以供考虑重复使用（可选）"
+
+#: 4a8ff22763e14b2fb610f8605f6272d3 of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:13
+msgid "Callback for streaming output"
+msgstr "用于流式输出的回调"
+
+#: 0ecbac64ff024802a2bf9fdcac241478 of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:15
+msgid "Enable caching"
+msgstr "启用缓存"
+
+#: 644736b27ebc4c7ea95cf88467e143d5 of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:17
+msgid "Validate parameters"
+msgstr "验证参数"
+
+#: ../../api/tooluniverse.tools.LabelGenerator.rst
+#: 718eab00bfbe4d8f8105b0c2c9a30420
+msgid "Return type"
+msgstr "返回类型"
+
+#: 705cf8822f9641e086f8a26e1367f9a7 of
+#: tooluniverse.tools.LabelGenerator.LabelGenerator:20
+msgid ":py:class:`Any`"
+msgstr ""
