@@ -72,6 +72,7 @@ from src.security.auth import AuthManager
 from src.security.permission_manager import manager as permission_manager
 from src.optimization.resource_monitor import get_system_stats, is_safe_to_run_local
 from src.core.rate_limiter import rate_limit_middleware
+from src.core.voice_engine import VoiceEngine, get_engine as get_voice_engine
 from src.core.swarm_memory import SwarmMemory
 from src.core.swarm_lifecycle import SwarmLifecycle
 from src.core.connection_manager import load_connections, get_connection, add_connection, remove_connection, check_health, check_all_connections, sync_to_hive_agents
@@ -285,7 +286,16 @@ class SuperNEXUSBackend:
         self.biblioteca = self._safe_init("BibliotecaGem", BibliotecaGem)
 
     def _init_voice(self):
-        pass  # voice subsystem removed (was JARVIS/Mark)
+        try:
+            self.voice = get_voice_engine()
+            if self.voice.available:
+                logger.info(f"Voice engine initialized: {self.voice.voice_name} ({self.voice.sample_rate}Hz)")
+            else:
+                logger.warning("Voice engine not available")
+                self.voice = None
+        except Exception as e:
+            logger.warning(f"Voice engine init failed: {e}")
+            self.voice = None
 
     def _init_integrations(self):
         self.pc_control = self._safe_init("ComputerControl", ComputerControl)
@@ -582,7 +592,6 @@ class SuperNEXUSBackend:
         files: Optional[List[Dict]] = None,
         session_id: Optional[str] = None,
     ) -> Dict:
-        _ = voice  # voice subsystem removed
         if project != self.director.current_project:
             await self.director.change_project(project)
 
@@ -1023,6 +1032,21 @@ class SuperNEXUSBackend:
                 pass
 
         audio_path = None
+
+        # Voz: Sintetizar respuesta si se solicito
+        if voice and reply and self.voice and self.voice.available:
+            try:
+                import os
+                out_dir = Path(__file__).parent.parent.parent / "ui" / "assets" / "voice"
+                out_dir.mkdir(parents=True, exist_ok=True)
+                clean_text = reply[:500].replace("**", "").replace("*", "").replace("#", "").replace("`", "")
+                filename = f"voice_{abs(hash(reply)) % 100000}.wav"
+                out_path = str(out_dir / filename)
+                result = self.voice.speak(clean_text, out_path)
+                if result:
+                    audio_path = f"/ui/assets/voice/{filename}"
+            except Exception as e:
+                logger.warning(f"Voice synthesis failed: {e}")
 
         # DataCollector: Recolectar conversacion
         if self.data_collector:
@@ -1874,6 +1898,7 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                 message = data.get("message", "")
                 gem = data.get("gem", "auto")
                 project = data.get("project", "default")
+                voice = data.get("voice", False)
                 images = data.get("images", [])
                 files = data.get("files", [])
                 session_id = (data.get("session_id") or "").strip() or None
@@ -1940,7 +1965,7 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                         logger.warning(f"proactive scholar (phase 0) failed: {e}")
 
                     # Phase 1: ALWAYS run process_message (tools work without Ollama)
-                    result = await backend.process_message(message, gem if not proactive_data else gem_override, project, images=images, files=files, session_id=session_id)
+                    result = await backend.process_message(message, gem if not proactive_data else gem_override, project, voice=voice, images=images, files=files, session_id=session_id)
                     tool_context = result.get("tool_result")
                     primary_gem = result.get("gem_used", gem if not proactive_data else gem_override)
                     has_images = images and len(images) > 0
@@ -8076,6 +8101,10 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
         app.router.add_get("/{name}.svg", handle_root_asset)
         app.router.add_get("/ui/{path:.*}", handle_ui_spa)
         app.router.add_static("/ui/assets/", ui_dist_path / "assets", name="ui_assets")
+        # Voice output static files
+        voice_assets_path = Path(__file__).parent.parent.parent / "ui" / "assets" / "voice"
+        voice_assets_path.mkdir(parents=True, exist_ok=True)
+        app.router.add_static("/ui/assets/voice/", voice_assets_path, name="voice_assets")
         logger.info(f"Serving UI from {ui_dist_path}")
 
     return app
