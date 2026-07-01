@@ -11,6 +11,7 @@ import logging
 import re
 import sys
 import os
+import time
 import base64
 import shlex
 import webbrowser
@@ -153,31 +154,7 @@ def _merge_ollama_models(api_models: list[dict], manifest_models: list[dict]) ->
 
 async def _get_ollama_models_merged() -> dict:
     """Fetch Ollama models from API and manifests, merge, return dict for status."""
-    try:
-        import httpx
-        async with httpx.AsyncClient(timeout=3.0) as c:
-            r = await c.get("http://localhost:11434/api/tags")
-            api_models = []
-            if r.status_code == 200:
-                data = r.json()
-                api_models = [
-                    {
-                        "name": m.get("name", ""),
-                        "size_gb": round(m.get("size", 0) / 1e9, 2),
-                        "modified": m.get("modified_at", ""),
-                        "family": (m.get("details") or {}).get("family", ""),
-                        "param_size": (m.get("details") or {}).get("parameter_size", ""),
-                        "source": "ollama",
-                    }
-                    for m in data.get("models", [])
-                ]
-        manifest_models = _scan_ollama_manifests()
-        models = _merge_ollama_models(api_models, manifest_models)
-        return {"models": models, "count": len(models)}
-    except Exception as e:
-        manifest_models = _scan_ollama_manifests()
-        models = _merge_ollama_models([], manifest_models)
-        return {"models": models, "count": len(models), "error": str(e)}
+    return await _fetch_ollama_models()
 
 
 async def _parse_json(request: web.Request) -> dict:
@@ -1646,8 +1623,15 @@ async def handle_cloud_providers_delete(request: web.Request) -> web.Response:
     return web.json_response({"ok": True, "removed": n0 - len(items)})
 
 
-async def handle_ollama_tags(request: web.Request) -> web.Response:
-    """GET /api/ollama/tags — proxy live Ollama model list + manifest scan fallback."""
+_OLLAMA_CACHE = {"models": [], "count": 0, "cached_at": 0.0}
+_OLLAMA_CACHE_TTL = 10.0
+
+async def _fetch_ollama_models() -> dict:
+    """Fetch Ollama models from live API, with short TTL cache."""
+    global _OLLAMA_CACHE
+    now = time.time()
+    if now - _OLLAMA_CACHE.get("cached_at", 0) < _OLLAMA_CACHE_TTL and _OLLAMA_CACHE.get("models"):
+        return _OLLAMA_CACHE
     try:
         import httpx as _httpx
         async with _httpx.AsyncClient(timeout=3.0) as c:
@@ -1668,9 +1652,34 @@ async def handle_ollama_tags(request: web.Request) -> web.Response:
                 ]
             manifest_models = _scan_ollama_manifests()
             models = _merge_ollama_models(api_models, manifest_models)
-            return web.json_response({"models": models, "count": len(models)})
+            _OLLAMA_CACHE = {"models": models, "count": len(models), "cached_at": time.time()}
+            return _OLLAMA_CACHE
     except Exception as e:
-        return web.json_response({"models": [], "error": str(e)}, status=200)
+        manifest_models = _scan_ollama_manifests()
+        models = _merge_ollama_models([], manifest_models)
+        _OLLAMA_CACHE = {"models": models, "count": len(models), "cached_at": time.time(), "error": str(e)}
+        return _OLLAMA_CACHE
+
+
+async def handle_ollama_tags(request: web.Request) -> web.Response:
+    """GET /api/ollama/tags — proxy live Ollama model list + manifest scan fallback."""
+    result = await _fetch_ollama_models()
+    return web.json_response(result, headers={"Cache-Control": "no-store, max-age=0"})
+
+
+async def handle_ollama_refresh(request: web.Request) -> web.Response:
+    """POST /api/ollama/refresh — force refresh Ollama model cache + provider discovery."""
+    global _OLLAMA_CACHE
+    _OLLAMA_CACHE = {"models": [], "count": 0, "cached_at": 0.0}
+    from src.core.provider_discovery import discover_providers
+    providers = await discover_providers(force=True)
+    result = await _fetch_ollama_models()
+    return web.json_response({
+        "status": "refreshed",
+        "models": result["models"],
+        "count": result["count"],
+        "providers_detected": len(providers),
+    }, headers={"Cache-Control": "no-store, max-age=0"})
 
 
 async def handle_projects(request: web.Request) -> web.Response:
@@ -5953,6 +5962,148 @@ async def handle_devloop_status(request: web.Request) -> web.Response:
     return web.json_response(loop.status())
 
 
+# ==================== COMPOSE WORKFLOW ====================
+
+async def handle_compose_create(request: web.Request) -> web.Response:
+    """POST /api/compose — Create a new compose run"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    try:
+        data = await request.json()
+    except Exception:
+        return web.json_response({"error": "Invalid JSON"}, status=400)
+    spec = data.get("spec", "")
+    if not spec:
+        return web.json_response({"error": "spec required"}, status=400)
+    run = await backend.director.compose.create(
+        spec=spec,
+        goal=data.get("goal", ""),
+        project=data.get("project", "default"),
+    )
+    return web.json_response({
+        "id": run.id, "status": run.status.value,
+        "created_at": run.created_at,
+    })
+
+
+async def handle_compose_execute(request: web.Request) -> web.Response:
+    """POST /api/compose/{run_id}/execute — Execute a compose run"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    run_id = request.match_info["run_id"]
+    run = await backend.director.compose.execute(run_id)
+    return web.json_response({
+        "id": run.id,
+        "status": run.status.value,
+        "current_phase": run.current_phase.value,
+        "phases": list(run.phases.keys()),
+        "tasks": [
+            {"id": t.id, "title": t.title, "status": t.status}
+            for t in run.tasks
+        ],
+        "summary": run.summary[:200],
+    })
+
+
+async def handle_compose_get(request: web.Request) -> web.Response:
+    """GET /api/compose/{run_id} — Get compose run status"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    run_id = request.match_info["run_id"]
+    run = backend.director.compose.get_run(run_id)
+    if not run:
+        return web.json_response({"error": "Run not found"}, status=404)
+    return web.json_response({
+        "id": run.id,
+        "spec": run.spec[:500],
+        "goal": run.goal,
+        "status": run.status.value,
+        "current_phase": run.current_phase.value,
+        "phases": list(run.phases.keys()),
+        "tasks": [
+            {"id": t.id, "title": t.title, "status": t.status, "assignee": t.assignee}
+            for t in run.tasks
+        ],
+        "summary": run.summary,
+        "created_at": run.created_at,
+        "duration_s": run.metadata.get("duration_s", 0),
+    })
+
+
+async def handle_compose_list(request: web.Request) -> web.Response:
+    """GET /api/compose — List compose runs"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    project = request.query.get("project")
+    limit = int(request.query.get("limit", 20))
+    runs = backend.director.compose.list_runs(project=project, limit=limit)
+    return web.json_response({"runs": runs, "count": len(runs)})
+
+
+async def handle_compose_stats(request: web.Request) -> web.Response:
+    """GET /api/compose/stats — Compose workflow stats"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    return web.json_response(backend.director.compose.get_stats())
+
+
+# ==================== DREAM / DISTILL ====================
+
+async def handle_dream_run(request: web.Request) -> web.Response:
+    """POST /api/dream/run — Ejecuta ciclo Dream (consolidacion semanal)"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    if not hasattr(backend.director, "dream"):
+        return web.json_response({"error": "Dream engine not initialized"}, status=503)
+    cycle = await backend.director.dream.dream()
+    return web.json_response({
+        "id": cycle.id, "cycle": cycle.cycle,
+        "status": cycle.status, "insight_count": cycle.insight_count,
+        "summary": cycle.summary,
+        "duration_s": cycle.metadata.get("duration_s", 0),
+    })
+
+
+async def handle_distill_run(request: web.Request) -> web.Response:
+    """POST /api/distill/run — Ejecuta ciclo Distill (descubrimiento mensual)"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    if not hasattr(backend.director, "dream"):
+        return web.json_response({"error": "Dream engine not initialized"}, status=503)
+    cycle = await backend.director.dream.distill()
+    return web.json_response({
+        "id": cycle.id, "cycle": cycle.cycle,
+        "status": cycle.status, "insight_count": cycle.insight_count,
+        "summary": cycle.summary,
+        "duration_s": cycle.metadata.get("duration_s", 0),
+    })
+
+
+async def handle_dream_insights(request: web.Request) -> web.Response:
+    """GET /api/dream/insights — Lista insights (dream o distill)"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    dream_type = request.query.get("type", "dream")
+    limit = int(request.query.get("limit", 50))
+    insights = backend.director.dream.get_insights(dream_type=dream_type, limit=limit)
+    return web.json_response({"insights": insights, "count": len(insights)})
+
+
+async def handle_dream_cycles(request: web.Request) -> web.Response:
+    """GET /api/dream/cycles — Lista ciclos"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    dream_type = request.query.get("type", "")
+    limit = int(request.query.get("limit", 20))
+    cycles = backend.director.dream.get_cycles(dream_type=dream_type, limit=limit)
+    return web.json_response({"cycles": cycles, "count": len(cycles)})
+
+
+async def handle_dream_logs(request: web.Request) -> web.Response:
+    """GET /api/dream/logs — Logs del engine"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    limit = int(request.query.get("limit", 50))
+    logs = backend.director.dream.get_logs(limit=limit)
+    return web.json_response({"logs": logs, "count": len(logs)})
+
+
+async def handle_dream_stats(request: web.Request) -> web.Response:
+    """GET /api/dream/stats — Estadisticas del Dream engine"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    return web.json_response(backend.director.dream.get_stats())
+
+
 async def handle_conductor_spawn(request: web.Request) -> web.Response:
     """POST /api/conductor/spawn - Crea nuevo work stream."""
     try:
@@ -6460,6 +6611,42 @@ async def handle_checkpoint_save(request: web.Request) -> web.Response:
     return web.json_response({"checkpoint_id": cp.id})
 
 
+async def handle_auto_checkpoint_status(request: web.Request) -> web.Response:
+    """GET /api/checkpoints/auto — auto-checkpoint trigger status"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    run_id = request.query.get("run_id")
+    status = backend.director.checkpoints.get_auto_checkpoint_status(run_id)
+    return web.json_response(status)
+
+
+async def handle_auto_checkpoint_inject(request: web.Request) -> web.Response:
+    """POST /api/checkpoints/auto/inject — inject budgeted context"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    try:
+        data = await request.json()
+    except Exception:
+        return web.json_response({"error": "Invalid JSON"}, status=400)
+
+    result = backend.director.checkpoints.budgeted_inject(
+        backend.director.sessions,
+        session_id=data.get("session_id"),
+        max_tokens=data.get("max_tokens", 2000),
+        run_id=data.get("run_id"),
+    )
+    return web.json_response({"injected": result is not None, "context": result})
+
+
+async def handle_auto_checkpoint_reconstruct(request: web.Request) -> web.Response:
+    """GET /api/checkpoints/auto/reconstruct — reconstruct context from checkpoints"""
+    backend: SuperNEXUSBackend = request.app["backend"]
+    session_id = request.query.get("session_id")
+    run_id = request.query.get("run_id")
+    result = backend.director.checkpoints.reconstruct_context(
+        backend.director.sessions, session_id=session_id, run_id=run_id,
+    )
+    return web.json_response(result)
+
+
 # ==================== F8: RECIPES ====================
 
 async def handle_recipes_list(request: web.Request) -> web.Response:
@@ -6815,7 +7002,7 @@ AUTH_PUBLIC_PATHS = {
     # Providers (UI needs this)
     "/api/providers",
     "/api/cloud-providers",
-    "/api/ollama/tags",
+    "/api/ollama/tags", "/api/ollama/refresh",
     # File system (UI terminal needs this)
     "/api/fs/list", "/api/fs/read",
     # Memory
@@ -7665,6 +7852,7 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_post("/api/cloud-providers", handle_cloud_providers_save)
     app.router.add_delete("/api/cloud-providers/{id}", handle_cloud_providers_delete)
     app.router.add_get("/api/ollama/tags", handle_ollama_tags)
+    app.router.add_post("/api/ollama/refresh", handle_ollama_refresh)
     app.router.add_get("/api/gems", handle_gems)
     app.router.add_get("/api/knowledge/graph", handle_knowledge_graph)
     app.router.add_get("/api/tailscale/nodes", handle_tailscale_nodes)
@@ -7830,6 +8018,21 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_post("/api/devloop/run", handle_devloop_run)
     app.router.add_get("/api/devloop/status", handle_devloop_status)
 
+    # Compose: Specs-driven autonomous development workflow
+    app.router.add_post("/api/compose", handle_compose_create)
+    app.router.add_post("/api/compose/{run_id}/execute", handle_compose_execute)
+    app.router.add_get("/api/compose/{run_id}", handle_compose_get)
+    app.router.add_get("/api/compose", handle_compose_list)
+    app.router.add_get("/api/compose/stats", handle_compose_stats)
+
+    # Dream / Distill: Self-improvement cycles (7d consolidation, 30d pattern discovery)
+    app.router.add_post("/api/dream/run", handle_dream_run)
+    app.router.add_post("/api/distill/run", handle_distill_run)
+    app.router.add_get("/api/dream/insights", handle_dream_insights)
+    app.router.add_get("/api/dream/cycles", handle_dream_cycles)
+    app.router.add_get("/api/dream/logs", handle_dream_logs)
+    app.router.add_get("/api/dream/stats", handle_dream_stats)
+
     # Conductor: Parallel Worktree Coordinator (gstack pattern)
     app.router.add_post("/api/conductor/spawn", handle_conductor_spawn)
     app.router.add_post("/api/conductor/merge", handle_conductor_merge)
@@ -7895,6 +8098,9 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_get("/api/checkpoints", handle_checkpoints_list)
     app.router.add_get("/api/checkpoints/incomplete", handle_checkpoints_incomplete)
     app.router.add_post("/api/checkpoints/{run_id}/save", handle_checkpoint_save)
+    app.router.add_get("/api/checkpoints/auto", handle_auto_checkpoint_status)
+    app.router.add_post("/api/checkpoints/auto/inject", handle_auto_checkpoint_inject)
+    app.router.add_get("/api/checkpoints/auto/reconstruct", handle_auto_checkpoint_reconstruct)
 
     # F8: Recipes
     app.router.add_get("/api/recipes", handle_recipes_list)
