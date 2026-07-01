@@ -1,12 +1,93 @@
-import { app, BrowserWindow, ipcMain } from "electron";
+import { app, BrowserWindow, ipcMain, Tray, Menu, nativeImage, dialog } from "electron";
 import * as path from "path";
 import * as fs from "fs";
+import { spawn, ChildProcess } from "child_process";
 
 const NEXUS_BACKEND_URL = "http://127.0.0.1:9000";
 const CONFIG_PATH = path.join(app.getPath("userData"), "nexus-config.json");
+const isDev = process.env.NODE_ENV === "development" || process.env.DEBUG === "true";
 
 let mainWindow: BrowserWindow | null = null;
 let avatarWindow: BrowserWindow | null = null;
+let backendProcess: ChildProcess | null = null;
+let tray: Tray | null = null;
+
+function getProjectRoot(): string {
+  if (isDev) {
+    return path.resolve(__dirname, "..", "..", "..", "..");
+  }
+  return path.resolve(process.resourcesPath);
+}
+
+function startBackend(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const root = getProjectRoot();
+    const python = "python";
+    const serverScript = path.join(root, "src", "api", "server.py");
+    const port = "9000";
+
+    if (!fs.existsSync(serverScript)) {
+      console.error(`Server script not found: ${serverScript}`);
+      reject(new Error(`Server script not found: ${serverScript}`));
+      return;
+    }
+
+    const env = {
+      ...process.env,
+      NEXUS_BRAIN: path.join(root, "brain"),
+      PYTHONPATH: root,
+      PYTHONDONTWRITEBYTECODE: "1",
+    };
+
+    backendProcess = spawn(python, [serverScript, port], {
+      cwd: root,
+      env,
+      stdio: ["ignore", "pipe", "pipe"],
+      windowsHide: true,
+    });
+
+    backendProcess.stdout?.on("data", (data: Buffer) => {
+      console.log(`[backend] ${data.toString().trim()}`);
+    });
+
+    backendProcess.stderr?.on("data", (data: Buffer) => {
+      console.error(`[backend] ${data.toString().trim()}`);
+    });
+
+    backendProcess.on("error", (err) => {
+      console.error("Failed to start backend:", err);
+      reject(err);
+    });
+
+    backendProcess.on("exit", (code) => {
+      console.log(`Backend exited with code ${code}`);
+      backendProcess = null;
+    });
+
+    let attempts = 0;
+    const maxAttempts = 30;
+    const ping = async () => {
+      attempts++;
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 2000);
+        const res = await fetch(`${NEXUS_BACKEND_URL}/api/status`, { signal: controller.signal });
+        clearTimeout(timeout);
+        if (res.ok) {
+          console.log("Backend ready after", attempts, "attempts");
+          resolve();
+          return;
+        }
+      } catch {}
+      if (attempts >= maxAttempts) {
+        reject(new Error("Backend did not start in time"));
+        return;
+      }
+      setTimeout(ping, 1000);
+    };
+    setTimeout(ping, 1500);
+  });
+}
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -14,9 +95,10 @@ function createWindow() {
     height: 900,
     minWidth: 800,
     minHeight: 600,
-    title: "NEXUS IA - Director Avatar",
+    title: "SuperNEXUS v2",
     frame: true,
     backgroundColor: "#0a0a0f",
+    icon: path.join(__dirname, "..", "..", "public", "favicon.svg"),
     webPreferences: {
       preload: path.join(__dirname, "../preload/preload.js"),
       contextIsolation: true,
@@ -25,11 +107,19 @@ function createWindow() {
     },
   });
 
-  if (process.env.NODE_ENV === "development") {
+  if (isDev) {
     mainWindow.loadURL("http://localhost:5173/");
+    mainWindow.webContents.openDevTools();
   } else {
-    mainWindow.loadFile(path.join(__dirname, "../renderer/index.html"));
+    mainWindow.loadFile(path.join(__dirname, "../index.html"));
   }
+
+  mainWindow.on("close", (event) => {
+    if (tray) {
+      event.preventDefault();
+      mainWindow?.hide();
+    }
+  });
 
   mainWindow.on("closed", () => {
     mainWindow = null;
@@ -47,7 +137,7 @@ function createAvatarWindow() {
     height: 600,
     minWidth: 400,
     minHeight: 500,
-    title: "NEXUS IA - Avatar",
+    title: "SuperNEXUS - Avatar",
     frame: true,
     backgroundColor: "#0a0a0f",
     webPreferences: {
@@ -58,10 +148,10 @@ function createAvatarWindow() {
     },
   });
 
-  if (process.env.NODE_ENV === "development") {
+  if (isDev) {
     avatarWindow.loadURL("http://localhost:5173/avatar.html");
   } else {
-    avatarWindow.loadFile(path.join(__dirname, "../renderer/avatar.html"));
+    avatarWindow.loadFile(path.join(__dirname, "../avatar.html"));
   }
 
   avatarWindow.on("closed", () => {
@@ -69,6 +159,77 @@ function createAvatarWindow() {
   });
 }
 
+function createTray() {
+  const iconSize = 16;
+  const icon = nativeImage.createEmpty();
+  tray = new Tray(icon);
+  tray.setToolTip("SuperNEXUS v2");
+
+  const contextMenu = Menu.buildFromTemplate([
+    {
+      label: "Abrir SuperNEXUS",
+      click: () => {
+        if (mainWindow) {
+          mainWindow.show();
+          mainWindow.focus();
+        }
+      },
+    },
+    { type: "separator" },
+    {
+      label: "Estado del servidor",
+      click: async () => {
+        try {
+          const res = await fetch(`${NEXUS_BACKEND_URL}/api/status`);
+          const data = await res.json() as Record<string, unknown>;
+          dialog.showMessageBox({
+            type: "info",
+            title: "SuperNEXUS - Estado",
+            message: `Servidor: ${data.online ? "🟢 Online" : "🔴 Offline"}`,
+            detail: JSON.stringify(data, null, 2),
+          });
+        } catch {
+          dialog.showMessageBox({
+            type: "error",
+            title: "SuperNEXUS - Estado",
+            message: "Servidor no disponible",
+          });
+        }
+      },
+    },
+    { type: "separator" },
+    {
+      label: "Salir",
+      click: () => {
+        tray?.destroy();
+        tray = null;
+        app.quit();
+      },
+    },
+  ]);
+
+  tray.setContextMenu(contextMenu);
+  tray.on("double-click", () => {
+    if (mainWindow) {
+      mainWindow.show();
+      mainWindow.focus();
+    }
+  });
+}
+
+function cleanupBackend() {
+  if (backendProcess) {
+    console.log("Stopping backend...");
+    if (process.platform === "win32") {
+      spawn("taskkill", ["/pid", String(backendProcess.pid), "/f", "/t"]);
+    } else {
+      backendProcess.kill("SIGTERM");
+    }
+    backendProcess = null;
+  }
+}
+
+// IPC handlers
 ipcMain.handle("nexus:chat", async (_event, { message, gem, project, model, attachments, voice }: { message: string; gem?: string; project?: string; model?: string; attachments?: string[]; voice?: boolean }) => {
   try {
     const response = await fetch(`${NEXUS_BACKEND_URL}/api/chat`, {
@@ -78,7 +239,7 @@ ipcMain.handle("nexus:chat", async (_event, { message, gem, project, model, atta
     });
     return await response.json();
   } catch (error) {
-    return { error: "Backend not available", details: error };
+    return { error: "Backend not available", details: String(error) };
   }
 });
 
@@ -166,7 +327,7 @@ ipcMain.handle("nexus:voice:listen", async (_event, { timeout }: { timeout?: num
     const response = await fetch(`${NEXUS_BACKEND_URL}/api/voice/listen?timeout=${timeout || 5}`);
     return await response.json();
   } catch (error) {
-    return { error: "Voice listen failed", details: error };
+    return { error: "Voice listen failed", details: String(error) };
   }
 });
 
@@ -179,7 +340,7 @@ ipcMain.handle("nexus:voice:speak", async (_event, { text }: { text: string }) =
     });
     return await response.json();
   } catch (error) {
-    return { error: "Voice speak failed", details: error };
+    return { error: "Voice speak failed", details: String(error) };
   }
 });
 
@@ -210,7 +371,7 @@ ipcMain.handle("nexus:voice:set-personality", async (_event, { personality }: { 
     });
     return await response.json();
   } catch (error) {
-    return { error: "Set personality failed", details: error };
+    return { error: "Set personality failed", details: String(error) };
   }
 });
 
@@ -223,7 +384,7 @@ ipcMain.handle("nexus:voice:route", async (_event, { query }: { query: string })
     });
     return await response.json();
   } catch (error) {
-    return { error: "Route failed", details: error };
+    return { error: "Route failed", details: String(error) };
   }
 });
 
@@ -248,14 +409,40 @@ ipcMain.handle("nexus:set-config", async (_event, config: any) => {
     fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
     return { success: true };
   } catch (error) {
-    return { success: false, error };
+    return { success: false, error: String(error) };
   }
 });
 
-app.whenReady().then(createWindow);
+ipcMain.handle("nexus:backend:restart", async () => {
+  cleanupBackend();
+  try {
+    await startBackend();
+    return { success: true };
+  } catch (error) {
+    return { success: false, error: String(error) };
+  }
+});
+
+ipcMain.handle("nexus:backend:status", () => {
+  return { running: backendProcess !== null && backendProcess.exitCode === null };
+});
+
+app.whenReady().then(async () => {
+  createTray();
+
+  try {
+    await startBackend();
+  } catch (err) {
+    console.error("Backend startup failed:", err);
+    dialog.showErrorBox("Error del servidor", `No se pudo iniciar el backend de SuperNEXUS.\n\n${err}`);
+  }
+
+  createWindow();
+});
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
+    cleanupBackend();
     app.quit();
   }
 });
@@ -264,4 +451,10 @@ app.on("activate", () => {
   if (mainWindow === null) {
     createWindow();
   }
+});
+
+app.on("before-quit", () => {
+  cleanupBackend();
+  tray?.destroy();
+  tray = null;
 });

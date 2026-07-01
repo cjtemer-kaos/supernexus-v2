@@ -60,3 +60,9 @@ scripts/
 
 # Git
 .git/
+
+# Electron build
+ui/release/
+ui/dist/
+ui/node_modules/
+*.log
