@@ -13,10 +13,7 @@ let backendProcess: ChildProcess | null = null;
 let tray: Tray | null = null;
 
 function getProjectRoot(): string {
-  if (isDev) {
-    return path.resolve(__dirname, "..", "..", "..", "..");
-  }
-  return path.resolve(process.resourcesPath);
+  return "D:\\ias\\proyectos\\supernexus-v2";
 }
 
 function startBackend(): Promise<void> {
