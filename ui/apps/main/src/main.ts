@@ -16,15 +16,30 @@ function getProjectRoot(): string {
   return "D:\\ias\\proyectos\\supernexus-v2";
 }
 
+const NEXUS_PORT = 9000;
+
+async function isPortInUse(port: number): Promise<boolean> {
+  try {
+    const res = await fetch(`http://127.0.0.1:${port}/api/status`, { signal: AbortSignal.timeout(2000) });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 function startBackend(): Promise<void> {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
+    if (await isPortInUse(NEXUS_PORT)) {
+      console.log(`Port ${NEXUS_PORT} already in use — reusing existing backend`);
+      resolve();
+      return;
+    }
+
     const root = getProjectRoot();
     const python = "python";
     const serverScript = path.join(root, "src", "api", "server.py");
-    const port = "9000";
 
     if (!fs.existsSync(serverScript)) {
-      console.error(`Server script not found: ${serverScript}`);
       reject(new Error(`Server script not found: ${serverScript}`));
       return;
     }
@@ -36,27 +51,29 @@ function startBackend(): Promise<void> {
       PYTHONDONTWRITEBYTECODE: "1",
     };
 
-    backendProcess = spawn(python, [serverScript, port], {
+    const proc = spawn(python, [serverScript, String(NEXUS_PORT)], {
       cwd: root,
       env,
       stdio: ["ignore", "pipe", "pipe"],
       windowsHide: true,
-    });
+      ...(process.platform === "win32" ? { creationFlags: 0x08000000 } : {}),
+    } as any);
+    backendProcess = proc;
 
-    backendProcess.stdout?.on("data", (data: Buffer) => {
+    proc.stdout?.on("data", (data: Buffer) => {
       console.log(`[backend] ${data.toString().trim()}`);
     });
 
-    backendProcess.stderr?.on("data", (data: Buffer) => {
+    proc.stderr?.on("data", (data: Buffer) => {
       console.error(`[backend] ${data.toString().trim()}`);
     });
 
-    backendProcess.on("error", (err) => {
+    proc.on("error", (err) => {
       console.error("Failed to start backend:", err);
       reject(err);
     });
 
-    backendProcess.on("exit", (code) => {
+    proc.on("exit", (code) => {
       console.log(`Backend exited with code ${code}`);
       backendProcess = null;
     });
