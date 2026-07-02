@@ -9,6 +9,11 @@ import logging
 import re
 from typing import Dict, List, Optional
 
+try:
+    from src.core.security_utils import check_outbound_url
+except ImportError:
+    check_outbound_url = None
+
 logger = logging.getLogger(__name__)
 
 

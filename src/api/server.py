@@ -30,6 +30,7 @@ from src.core.connectivity import ConnectivityLayer
 from src.core.ollama import OllamaClient, LLMRouter
 from src.core.event_bus import EventBus
 from src.core.realtime_hub import RealtimeHub
+from src.core.event_store import EventStore
 from src.core import nexus_config
 from src.core.communication import CommunicationFlow, AgentCapability
 from src.core.runtime import AgentRuntime
@@ -45,11 +46,16 @@ from src.memory.qa_loop import QALoop
 from src.memory.active_learning import ActiveLearningLoop
 # PC2Bridge removed for distro
 from src.bridges.tailscale_bridge import TailscaleBridge
-from src.bridges.mcp_bridge_server import send_message, read_messages, brain_remember, brain_recall, brain_stats, memory_set, memory_get, nexus_status, list_nodes, execute_remote_task, execute_on_remote_node, list_skills, load_skill, load_skill_section, send_task_to_antigravity, get_system_info, add_finding, add_decision, read_cloud, check_permissions, router_select, router_stats, self_learning_status, memory_hierarchical_stats, memory_hierarchical_store, memory_hierarchical_search, retrieval_search, add_observation, search_observations, get_observation, add_task_finding, list_findings, memory_stats, optimize_prompt, select_model, token_report, system_resources, agent_cu_execute
+from src.bridges.mcp_bridge_server import send_message, read_messages, brain_remember, brain_recall, brain_stats, memory_set, memory_get, nexus_status, list_nodes, execute_remote_task, execute_on_remote_node, list_skills, load_skill, load_skill_section, send_task_to_antigravity, get_system_info, add_finding, add_decision, read_cloud, check_permissions, router_select, router_stats, self_learning_status, memory_hierarchical_stats, memory_hierarchical_store, memory_hierarchical_search, retrieval_search, add_observation, search_observations, get_observation, add_task_finding, list_findings, memory_stats, optimize_prompt, select_model, token_report, system_resources, agent_cu_execute, codebase_context, codebase_query, sandbox_execute
 from src.core.nexus_hive import NexusHive
 from src.agents.scholar_gem import ScholarGem
 from src.agents.sage_gem import SageGem
 from src.agents.biblioteca_gem import BibliotecaGem
+
+try:
+    from src.core.response_builder import ResponseBuilder
+except ImportError:
+    ResponseBuilder = None
 
 # Modulos portados de NEXUS_MASTER
 from src.control.computer_control import ComputerControl
@@ -197,7 +203,8 @@ class SuperNEXUSBackend:
         self.connectivity = ConnectivityLayer()
         self.ollama = OllamaClient()
         self.llm_router = LLMRouter(self.ollama)
-        self.realtime_hub = RealtimeHub()
+        self.event_store = EventStore()
+        self.realtime_hub = RealtimeHub(event_store=self.event_store)
         self.event_bus = EventBus(hub=self.realtime_hub)
         self.comm_flow = CommunicationFlow(self.event_bus)
         self.runtime = AgentRuntime(self.event_bus)
@@ -245,6 +252,9 @@ class SuperNEXUSBackend:
             "token_report": token_report,
             "system_resources": system_resources,
             "agent_cu_execute": agent_cu_execute,
+            "codebase_context": codebase_context,
+            "codebase_query": codebase_query,
+            "sandbox_execute": sandbox_execute,
         }
 
     def _init_memory(self):
@@ -306,6 +316,12 @@ class SuperNEXUSBackend:
     async def initialize(self):
         logger.info("Initializing SuperNEXUS backend...")
 
+        # Sync connections.json -> hive_agents.json so Hive Hub has agents
+        try:
+            sync_to_hive_agents()
+        except Exception as e:
+            logger.warning(f"Hive agents sync failed (non-critical): {e}")
+
         if self.scholar:
             self.comm_flow.register_agent("scholar", AgentCapability(
                 name="scholar", description="Research", tags=["research"], can_handle=["research", "web"]
@@ -353,6 +369,7 @@ class SuperNEXUSBackend:
 
         asyncio.create_task(self._message_poller())
         asyncio.create_task(self._memory_maintenance_loop())
+        asyncio.create_task(self._graph_regenerator())
 
         # Background workers: disabled by default — enable with NEXUS_WORKERS=true
         # Reason: Windows ProactorEventLoop stalls with 50+ tasks doing concurrent I/O.
@@ -382,6 +399,40 @@ class SuperNEXUSBackend:
             logger.info("Provider discovery: initial probe complete")
         except Exception as e:
             logger.debug(f"Provider discovery initial probe: {e}")
+
+    async def _graph_regenerator(self):
+        """Regenera static/graph.json al startup y cada 5 min."""
+        import subprocess
+        graph_script = os.path.join(os.path.dirname(__file__), "..", "..", "scripts", "graph_scanner.py")
+        graph_script = os.path.normpath(graph_script)
+        if not os.path.exists(graph_script):
+            logger.debug(f"Graph scanner not found: {graph_script}")
+            return
+
+        async def _run_graph_scan():
+            try:
+                proc = await asyncio.create_subprocess_exec(
+                    sys.executable, graph_script,
+                    stdout=asyncio.subprocess.PIPE,
+                    stderr=asyncio.subprocess.PIPE,
+                )
+                stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=30)
+                if proc.returncode == 0:
+                    out = stdout.decode(errors="ignore").strip()
+                    logger.info(f"Graph regenerated: {out}")
+                else:
+                    logger.debug(f"Graph scan failed: {stderr.decode(errors='ignore')[:200]}")
+            except Exception as e:
+                logger.debug(f"Graph regen error: {e}")
+
+        # Initial scan on startup
+        await asyncio.sleep(3)
+        await _run_graph_scan()
+
+        # Periodic refresh every 5 minutes
+        while True:
+            await asyncio.sleep(300)
+            await _run_graph_scan()
 
     async def _deferred_pc2_connect(self):
         pc2 = getattr(self, "pc2", None)
@@ -1468,7 +1519,7 @@ async def handle_providers(request: web.Request) -> web.Response:
     from src.core.provider_discovery import discover_providers, get_discovered_providers
     await discover_providers()
     providers = get_discovered_providers()
-    return web.json_response([
+    result = [
         {
             "id": p.def_.id,
             "name": p.def_.name,
@@ -1476,7 +1527,27 @@ async def handle_providers(request: web.Request) -> web.Response:
             "models": [{"id": m.id, "name": m.name} for m in p.models],
         }
         for p in providers
-    ])
+    ]
+    # Add cloud providers from env (.env config)
+    try:
+        import os
+        seen_ids = {p["id"] for p in result}
+        zen_key = os.environ.get("OPENCODE_API_KEY", "")
+        if zen_key and "opencode-zen" not in seen_ids:
+            result.append({
+                "id": "opencode-zen",
+                "name": "OpenCode Zen (Cloud)",
+                "online": True,
+                "models": [
+                    {"id": "deepseek-v4-flash-free", "name": "DeepSeek V4 Flash Free"},
+                    {"id": "mimo-v2.5-free", "name": "MiMo V2.5 Free"},
+                    {"id": "nemotron-3-ultra-free", "name": "Nemotron 3 Ultra Free"},
+                    {"id": "north-mini-code-free", "name": "North Mini Code Free"},
+                ],
+            })
+    except Exception:
+        pass
+    return web.json_response(result)
 
 
 async def handle_provider_catalog(request: web.Request) -> web.Response:
@@ -1686,6 +1757,17 @@ async def handle_projects(request: web.Request) -> web.Response:
     backend: SuperNEXUSBackend = request.app["backend"]
     data = await backend.get_projects()
     return web.json_response(data)
+
+
+async def handle_project_activate(request: web.Request) -> web.Response:
+    backend: SuperNEXUSBackend = request.app["backend"]
+    body = await request.json()
+    name = body.get("project", "default")
+    projects_dir = Path(__file__).parent.parent.parent / "data" / "projects"
+    if name != "default" and not (projects_dir / name).exists():
+        return web.json_response({"error": f"Project '{name}' not found"}, status=404)
+    await backend.director.change_project(name)
+    return web.json_response({"status": "ok", "current": name})
 
 
 async def handle_project_context_get(request: web.Request) -> web.Response:
@@ -1926,55 +2008,26 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
 
                 # Send start marker
                 await ws.send_json({"type": "start", "gem": gem})
+                logger.info(f"[WS] start marker sent for gem={gem}, msg={message[:50]}")
+                await ws.send_json({"type": "thinking", "content": "Procesando..."})
 
                 try:
-                    # Phase 0: Proactive live-data check — corre ANTES de process_message
-                    # Para que TODAS las gemas sepan que tienen internet, no solo el LLM stream
-                    proactive_data = None  # dict or None
-                    try:
-                        from src.agents.scholar_gem import ScholarGem
-                        if _requires_live_data(message):
-                            gem_override = "scholar"
-                            await ws.send_json({
-                                "type": "thinking",
-                                "content": "Requiere datos en vivo. Buscando en internet...",
-                            })
-                            mcp = getattr(backend.director, "mcp_client", None)
-                            proactive = ScholarGem(mcp_client=mcp)
-                            proactive_data = await proactive.research(message, max_sources=3)
-                            # Si el mensaje contiene una URL, persiste automaticamente
-                            url_match = re.search(r'https?://[^\s"\']+', message)
-                            if url_match and proactive_data:
-                                url = url_match.group()
-                                sources = proactive_data.get("sources", [])
-                                summary = proactive_data.get("summary", "")
-                                content = summary or " ".join(s.get("summary", "") for s in sources[:3])
-                                # Auto-persist: Sage escribe a cerebro.db directamente
-                                try:
-                                    from src.agents.sage_gem import SageGem
-                                    sage = SageGem()
-                                    topic = f"url:{url}"
-                                    sage_result = await sage.analyze_and_persist(content, url, "web", topic=topic)
-                                    await backend.cerebro.aprender_interaccion(
-                                        f"Aprender de URL: {url}",
-                                        f"Sage: {sage_result.get('fact_id','?')}",
-                                        "scholar",
-                                    )
-                                    from src.agents.biblioteca_gem import BibliotecaGem
-                                    biblio = BibliotecaGem()
-                                    await biblio.organize(
-                                        title=topic,
-                                        content=f"# {topic}\n\nSource: {url}\n{content[:1000]}",
-                                        category="Web",
-                                        tags=["auto-ingested", "web", topic],
-                                    )
-                                except Exception as persist_e:
-                                    logger.warning(f"URL auto-persist failed: {persist_e}")
-                    except Exception as e:
-                        logger.warning(f"proactive scholar (phase 0) failed: {e}")
+                    # Phase 0: Skip proactive for WS — POST handles it
+                    proactive_data = None
+                    gem_override = gem
 
                     # Phase 1: ALWAYS run process_message (tools work without Ollama)
-                    result = await backend.process_message(message, gem if not proactive_data else gem_override, project, voice=voice, images=images, files=files, session_id=session_id)
+                    try:
+                        async with asyncio.timeout(45):
+                            result = await backend.process_message(message, gem if not proactive_data else gem_override, project, voice=voice, images=images, files=files, session_id=session_id)
+                        logger.info(f"[WS] process_message completed, gem_used={result.get('gem_used')}, reply_len={len(result.get('reply',''))}")
+                    except (asyncio.TimeoutError, TimeoutError):
+                        logger.warning("process_message timeout after 45s, using fallback reply")
+                        result = {
+                            "reply": "Estoy procesando tu mensaje. El Director esta respondiendo, por favor espera un momento.",
+                            "gem_used": gem if not proactive_data else gem_override,
+                            "success": True,
+                        }
                     tool_context = result.get("tool_result")
                     primary_gem = result.get("gem_used", gem if not proactive_data else gem_override)
                     has_images = images and len(images) > 0
@@ -2013,7 +2066,7 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                             gem_model = (
                                 backend.director.gemas[primary_gem].model
                                 if primary_gem in backend.director.gemas
-                                else "deepseek-r1:8b"
+                                else "deepseek-v4-flash-free"
                             )
                             synth_prompt = (
                                 f"El usuario pidio: {message}\n\n"
@@ -2026,16 +2079,24 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                                 f"TIENES ACCESO A INTERNET — si los datos son insuficientes, dilo y busca mas."
                             )
                             try:
-                                async for content in backend.ollama.chat_stream(
+                                synth_stream = backend.ollama.chat_stream(
                                     model=gem_model,
                                     messages=[
                                         {"role": "system", "content": f"Eres {primary_gem}, una gema de SuperNEXUS. Responde en espanol de forma clara y concisa."},
                                         {"role": "user", "content": synth_prompt},
                                     ],
                                     options={"temperature": 0.5, "num_predict": 1024},
-                                ):
-                                    full_reply += content
-                                    await ws.send_json({"type": "token", "content": content})
+                                )
+                                async with asyncio.timeout(30):
+                                    async for content in synth_stream:
+                                        full_reply += content
+                                        await ws.send_json({"type": "token", "content": content})
+                            except (asyncio.TimeoutError, TimeoutError):
+                                logger.warning(f"tool synthesis timeout, using raw result")
+                                for i in range(0, len(reply_with_tools), 8):
+                                    chunk = reply_with_tools[i:i+8]
+                                    await ws.send_json({"type": "token", "content": chunk})
+                                full_reply = reply_with_tools
                             except Exception as e:
                                 logger.warning(f"tool synthesis failed: {e}")
                                 # Fallback: stream raw tool result
@@ -2050,52 +2111,42 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                                 await ws.send_json({"type": "token", "content": chunk})
                             full_reply = reply_with_tools
                     elif await backend.ollama.is_available():
-                        # Phase 2: LLM streaming (only if Ollama available)
-                        system_prompt = (
-                            f"Eres el Director de SuperNEXUS. TIENES ACCESO COMPLETO A INTERNET mediante web_fetch y web_search. "
-                            f"Gema activa: {primary_gem}. Tienes 37 herramientas: read_file, write_file, edit_file, grep, glob, git, terminal, LSP, web_fetch, web_search, code_search. "
-                            f"Proyecto actual: NEXUS_PROJECT_DIR. Puedes leer, editar, crear archivos y ejecutar comandos. "
-                            f"Responde en español, conciso y directo.\n"
-                            f"\n"
-                            f"REGLAS OBLIGATORIAS:\n"
-                            f"1. TIENES ACCESO A INTERNET. No digas que no. Asume que la red esta disponible a menos que un comando falle.\n"
-                            f"2. Si la pregunta requiere datos actualizados (precios, versiones, noticias, clima, documentacion): USA web_fetch o web_search.\n"
-                            f"3. Si no sabes la respuesta: BUSCA en internet. No digas 'no se' sin haber intentado una busqueda.\n"
-                            f"4. Si una herramienta falla: reporta el error exacto. No digas 'no tengo acceso'."
-                        )
-
-                        if has_images:
-                            img_clean = images[0]
-                            if img_clean.startswith("data:"):
-                                img_clean = img_clean.split(",", 1)[1]
-                            msgs = [{"role": "user", "content": message or "Describe esta imagen brevemente.", "images": [img_clean]}]
+                        # Phase 2: Use process_message reply directly (fast path)
+                        # Ollama re-generation was causing 30s+ delays; skip it
+                        director_reply = result.get("reply", "")
+                        if director_reply:
+                            # Stream the Director's reply directly to client
+                            for i in range(0, len(director_reply), 4):
+                                chunk = director_reply[i:i+4]
+                                await ws.send_json({"type": "token", "content": chunk})
+                            full_reply = director_reply
                         else:
-                            director_reply = result.get("reply", "")
-                            user_message_with_context = message + proactive_context if proactive_context else message
-                            if director_reply and not director_reply.startswith("Task executed"):
-                                msgs = [
-                                    {"role": "system", "content": system_prompt},
-                                    {"role": "user", "content": user_message_with_context},
-                                    {"role": "assistant", "content": director_reply},
-                                    {"role": "user", "content": "Responde al usuario basandote en el contexto anterior. Se conciso."},
-                                ]
-                            else:
-                                msgs = [
-                                    {"role": "system", "content": system_prompt},
-                                    {"role": "user", "content": user_message_with_context},
-                                ]
-
-                        gem_model = "qwen2.5vl:7b" if has_images else (
-                            backend.director.gemas[primary_gem].model if primary_gem in backend.director.gemas else "qwen2.5-coder:7b"
-                        )
-
-                        async for content in backend.ollama.chat_stream(
-                            model=gem_model,
-                            messages=msgs,
-                            options={"temperature": 0.7, "num_predict": 2048},
-                        ):
-                            full_reply += content
-                            await ws.send_json({"type": "token", "content": content})
+                            # Fallback: Ollama streaming
+                            system_prompt = (
+                                f"Eres el Director de SuperNEXUS. Gema activa: {primary_gem}. "
+                                f"Responde en espanol, conciso y directo."
+                            )
+                            msgs = [
+                                {"role": "system", "content": system_prompt},
+                                {"role": "user", "content": message + proactive_context if proactive_context else message},
+                            ]
+                            gem_model = "qwen2.5vl:7b" if has_images else (
+                                backend.director.gemas[primary_gem].model if primary_gem in backend.director.gemas else "deepseek-v4-flash-free"
+                            )
+                            try:
+                                stream_task = backend.ollama.chat_stream(
+                                    model=gem_model,
+                                    messages=msgs,
+                                    options={"temperature": 0.7, "num_predict": 2048},
+                                )
+                                async with asyncio.timeout(30):
+                                    async for content in stream_task:
+                                        full_reply += content
+                                        await ws.send_json({"type": "token", "content": content})
+                            except (asyncio.TimeoutError, TimeoutError):
+                                logger.warning("Ollama stream timeout, no fallback reply available")
+                            except Exception as stream_err:
+                                logger.warning(f"Ollama stream error: {stream_err}")
                     else:
                         # Ollama down but no tool matched — return Director's raw reply
                         fallback = result.get("reply", "Director operando sin LLM. Las herramientas de archivo y terminal siguen disponibles.")
@@ -2984,12 +3035,16 @@ async def handle_producer_schedule(request: web.Request) -> web.Response:
 async def handle_hive_status(request: web.Request) -> web.Response:
     """Estado de NexusHive y nodos conectados"""
     backend: SuperNEXUSBackend = request.app["backend"]
+    if not backend.nexus_hive:
+        return web.json_response({"status": "unavailable", "nodes": []})
     return web.json_response(backend.nexus_hive.get_status())
 
 
 async def handle_hive_send_command(request: web.Request) -> web.Response:
     """Envía comando a un nodo via NexusHive"""
     backend: SuperNEXUSBackend = request.app["backend"]
+    if not backend.nexus_hive:
+        return web.json_response({"error": "NexusHive unavailable"}, status=503)
     try:
         data = await request.json()
     except Exception:
@@ -3011,6 +3066,8 @@ async def handle_hive_send_command(request: web.Request) -> web.Response:
 async def handle_hive_nodes(request: web.Request) -> web.Response:
     """Lista nodos en la red NexusHive"""
     backend: SuperNEXUSBackend = request.app["backend"]
+    if not backend.nexus_hive:
+        return web.json_response({"nodes": []})
     return web.json_response(backend.nexus_hive.get_nodes())
 
 
@@ -6985,6 +7042,8 @@ AUTH_PUBLIC_PATHS = {
 
     # Hive
     "/api/hive/status", "/api/hive/send", "/api/hive/nodes",
+    "/api/hive/agents", "/api/hive/dispatch", "/api/hive/registry",
+    "/api/hive/stream", "/api/hive/result",
     # Training
     "/api/training/collect", "/api/training/pipeline", "/api/training/sft",
     "/api/training/dpo", "/api/training/jobs", "/api/training/job",
@@ -7834,6 +7893,7 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_get("/api/v3/capabilities", handle_v3_capabilities)
     app.router.add_get("/api/v3/capabilities/audit", handle_v3_capabilities_audit)
     app.router.add_get("/api/projects", handle_projects)
+    app.router.add_post("/api/projects/activate", handle_project_activate)
     app.router.add_get("/api/projects/{name}/context", handle_project_context_get)
     app.router.add_put("/api/projects/{name}/context", handle_project_context_put)
 
@@ -8161,10 +8221,7 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_post("/api/guardrails/configure", handle_guardrails_configure)
     app.router.add_post("/api/guardrails/reset", handle_guardrails_reset)
 
-    # NexusHive routes (comunicación en tiempo real)
-    app.router.add_get("/api/hive/status", handle_hive_status)
-    app.router.add_post("/api/hive/send", handle_hive_send_command)
-    app.router.add_get("/api/hive/nodes", handle_hive_nodes)
+    # NexusHive legacy routes — DISABLED (hive_hub.py handles /api/hive/* now)
 
     # Filesystem routes (Editor UI)
     app.router.add_post("/api/fs/list", handle_fs_list)
@@ -8311,6 +8368,20 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
         voice_assets_path = Path(__file__).parent.parent.parent / "ui" / "assets" / "voice"
         voice_assets_path.mkdir(parents=True, exist_ok=True)
         app.router.add_static("/ui/assets/voice/", voice_assets_path, name="voice_assets")
+        # Static files (graph visualizer, etc.)
+        static_path = Path(__file__).parent.parent.parent / "static"
+        if static_path.exists():
+            app.router.add_static("/static/", static_path, name="static_files")
+            logger.info(f"Serving static files from {static_path}")
+
+            # /graph shortcut -> /static/graph.html
+            async def handle_graph_redirect(request: web.Request) -> web.Response:
+                graph_html = static_path / "graph.html"
+                if graph_html.exists():
+                    return web.FileResponse(graph_html)
+                return web.Response(status=404, text="graph.html not found")
+            app.router.add_get("/graph", handle_graph_redirect)
+
         logger.info(f"Serving UI from {ui_dist_path}")
 
     return app

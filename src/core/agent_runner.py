@@ -257,11 +257,30 @@ class AgentRunner:
 
         if spec.on_stream and self.provider.supports_streaming:
             collected: list[str] = []
+            # Scrub think blocks from streaming output
+            try:
+                from src.core.think_scrubber import StreamingThinkScrubber
+                _scrubber = StreamingThinkScrubber()
+            except ImportError:
+                _scrubber = None
             def on_chunk(chunk: str) -> None:
-                collected.append(chunk)
-                spec.on_stream(chunk)
+                if _scrubber:
+                    visible = _scrubber.feed(chunk)
+                    if visible:
+                        collected.append(visible)
+                        spec.on_stream(visible)
+                else:
+                    collected.append(chunk)
+                    spec.on_stream(chunk)
             kwargs["on_content"] = on_chunk
-            return await self.provider.chat_stream(**kwargs)
+            resp = await self.provider.chat_stream(**kwargs)
+            # Flush any remaining scrubber state
+            if _scrubber:
+                tail = _scrubber.flush()
+                if tail:
+                    collected.append(tail)
+                    spec.on_stream(tail)
+            return resp
 
         return await self.provider.chat_with_retry(**kwargs)
 

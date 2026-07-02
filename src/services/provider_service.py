@@ -83,6 +83,21 @@ class ProviderService:
             tags=["gema", "fallback-chain", "primary"],
         ))
 
+        # 1b. Perfiles individuales por modelo Zen (para seleccion dinamica)
+        for zen_model, zen_name, zen_tags in [
+            ("deepseek-v4-flash-free", "Zen DeepSeek Flash", ["cloud", "reasoning", "fast"]),
+            ("mimo-v2.5-free", "Zen MiMo Vision", ["cloud", "vision", "reasoning"]),
+            ("nemotron-3-ultra-free", "Zen Nemotron Ultra", ["cloud", "analysis", "reasoning"]),
+            ("north-mini-code-free", "Zen North Code", ["cloud", "code", "fast"]),
+        ]:
+            PROFILES.append(ProviderProfile(
+                name=f"zen-{zen_model}", model=zen_model,
+                base_url="https://opencode.ai/zen/v1", provider_type="openai",
+                api_key=_zen_api_key,
+                description=zen_name,
+                tags=zen_tags,
+            ))
+
         # 2. Perfiles legacy ollama (backward-compat y fallback)
         for pname, model, tags, desc in [
             ("ollama", "qwen2.5-coder:7b", ["gema", "fallback"], "Fallback generico para GemaActors"),
@@ -106,12 +121,15 @@ class ProviderService:
             if not api_key and entry.get("api_key_env"):
                 continue
 
+            # Ollama local siempre usa provider_type ollama (no openai)
+            ptype = "ollama" if entry["id"] == "ollama" else ("anthropic" if entry.get("auth_style") == "anthropic" else "openai")
+
             PROFILES.append(ProviderProfile(
                 name=entry["id"],
                 model=entry["default_model"],
                 base_url=base_url,
                 api_key_env=entry.get("api_key_env", ""),
-                provider_type="anthropic" if entry.get("auth_style") == "anthropic" else "openai",
+                provider_type=ptype,
                 description=entry["description"],
                 tags=entry.get("tags", []),
             ))

@@ -298,9 +298,14 @@ async def sse_stream(request: web.Request) -> web.StreamResponse:
 
 @routes.get("/api/hive/status")
 async def status(_request: web.Request) -> web.Response:
-    from ..bridges.hive_runner import get_registry_warnings
+    from ..bridges.hive_runner import get_registry_warnings, load_registry
+    registry = load_registry()
+    agents = registry.get("agents", {})
+    enabled = sum(1 for a in agents.values() if a.get("enabled", True))
     return web.json_response({
         "ok": True,
+        "agents_total": len(agents),
+        "agents_enabled": enabled,
         "subscribers_ws": len(_ws_clients),
         "subscribers_sse": len(_sse_subscribers),
         "results_cached": len(_recent_results),

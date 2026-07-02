@@ -293,20 +293,57 @@ class OpenAIProvider(LLMProvider):
         self._call_count += 1
         start = time.perf_counter()
 
+        def _content_str(c):
+            if c is None:
+                return ""
+            if isinstance(c, str):
+                return c
+            if isinstance(c, list):
+                parts = []
+                for b in c:
+                    if isinstance(b, dict):
+                        parts.append(b.get("text", str(b)))
+                    else:
+                        parts.append(str(b))
+                return "\n".join(parts)
+            return str(c)
+
         payload: dict[str, Any] = {
             "model": self.model,
             "messages": [
-                {"role": m.role.value if isinstance(m.role, MessageRole) else m.role,
-                 "content": m.content or ""}
+                {
+                    "role": m.role.value if isinstance(m.role, MessageRole) else m.role,
+                    "content": _content_str(m.content),
+                    **({"tool_call_id": m.tool_call_id} if getattr(m, "tool_call_id", None) else {}),
+                }
                 for m in messages
             ],
         }
+        # Add tool_calls for assistant messages (must be outside list comprehension for clarity)
+        for i, m in enumerate(messages):
+            if getattr(m, "tool_calls", None):
+                payload["messages"][i]["tool_calls"] = [
+                    {"id": tc.id, "type": "function", "function": {"name": tc.name, "arguments": tc.arguments if isinstance(tc.arguments, str) else __import__("json").dumps(tc.arguments)}}
+                    for tc in m.tool_calls
+                ]
         if tools:
             payload["tools"] = tools
         if kwargs.get("temperature"):
             payload["temperature"] = kwargs["temperature"]
         if kwargs.get("max_tokens"):
             payload["max_tokens"] = kwargs["max_tokens"]
+
+        # Apply Anthropic prompt caching for Anthropic models
+        if "anthropic" in self.base_url.lower() or "claude" in self.model.lower():
+            try:
+                from src.core.prompt_caching import apply_anthropic_cache_control
+                payload["messages"] = apply_anthropic_cache_control(
+                    payload["messages"],
+                    cache_ttl=kwargs.get("cache_ttl", "5m"),
+                    native_anthropic="anthropic" in self.base_url.lower(),
+                )
+            except ImportError:
+                pass
 
         headers = {
             "Authorization": f"Bearer {self.api_key}",
@@ -349,8 +386,13 @@ class OpenAIProvider(LLMProvider):
                 )
         except httpx.HTTPStatusError as e:
             self._error_count += 1
-            logger.error("OpenAI HTTP %d: %s", e.response.status_code, e)
-            return LLMResponse(content=f"Error HTTP {e.response.status_code}", finish_reason="error", model=self.model)
+            resp_body = ""
+            try:
+                resp_body = e.response.text[:500]
+            except Exception:
+                pass
+            logger.error("OpenAI HTTP %d for %s: %s | body: %s", e.response.status_code, self.model, e, resp_body)
+            return LLMResponse(content=f"Error HTTP {e.response.status_code}: {resp_body}", finish_reason="error", model=self.model)
         except httpx.RequestError as e:
             self._error_count += 1
             logger.error("OpenAI connection error: %s", e)
@@ -563,7 +605,7 @@ class FallbackProvider(LLMProvider):
 
         errors: list[str] = []
         for fb in self._fallbacks:
-            logger.info("FallbackProvider: trying %s (%s)", fb.name, fb.model)
+            logger.info("FallbackProvider: trying %s (%s) [class=%s]", fb.name, fb.model, type(fb).__name__)
             resp = await fb.chat(messages, tools, **kwargs)
             if resp.finish_reason != "error":
                 self._consecutive_failures = 0

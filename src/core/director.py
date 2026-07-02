@@ -63,6 +63,12 @@ from src.core.code_absorber import CodeAbsorber
 from src.core.circuit_breaker import CircuitBreaker, HealthChecker
 from src.core.token_monitor import TokenMonitor
 
+# --- Auth Vault (credential storage) ---
+try:
+    from src.core.auth_vault import AuthVault
+except ImportError:
+    AuthVault = None
+
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 

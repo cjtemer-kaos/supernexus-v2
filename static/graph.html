@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNEXUS - Grafo de Arquitectura</title>
+    <script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0a0f; color: #e0e0e0; overflow: hidden; }
+        
+        #graph { width: 100vw; height: 100vh; }
+        
+        /* Control Panel */
+        #controls {
+            position: fixed; top: 16px; left: 16px; z-index: 100;
+            background: rgba(15, 15, 25, 0.92); border: 1px solid #2a2a3a;
+            border-radius: 12px; padding: 16px; width: 280px;
+            backdrop-filter: blur(12px); box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+        #controls h1 { font-size: 16px; color: #7c8aff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        #controls h1::before { content: ""; display: inline-block; width: 8px; height: 8px; background: #7c8aff; border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        
+        .stat-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; border-bottom: 1px solid #1a1a2a; }
+        .stat-val { color: #7c8aff; font-weight: 600; }
+        
+        .search-box { width: 100%; padding: 8px 12px; margin: 10px 0; background: #12121f; border: 1px solid #2a2a3a; border-radius: 8px; color: #e0e0e0; font-size: 13px; outline: none; }
+        .search-box:focus { border-color: #7c8aff; }
+        .search-box::placeholder { color: #555; }
+        
+        .filter-group { margin: 8px 0; }
+        .filter-group label { font-size: 12px; color: #888; display: block; margin-bottom: 4px; }
+        .filter-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+        .chip {
+            padding: 3px 10px; border-radius: 12px; font-size: 11px; cursor: pointer;
+            border: 1px solid #333; background: #1a1a2a; transition: all 0.2s;
+        }
+        .chip:hover { border-color: #7c8aff; }
+        .chip.active { background: #7c8aff22; border-color: #7c8aff; color: #7c8aff; }
+        
+        /* Detail Panel */
+        #detail {
+            position: fixed; top: 16px; right: 16px; z-index: 100;
+            background: rgba(15, 15, 25, 0.92); border: 1px solid #2a2a3a;
+            border-radius: 12px; padding: 16px; width: 320px; max-height: 80vh; overflow-y: auto;
+            backdrop-filter: blur(12px); box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            display: none;
+        }
+        #detail h2 { font-size: 14px; color: #7c8aff; margin-bottom: 8px; word-break: break-all; }
+        #detail .path { font-size: 11px; color: #666; margin-bottom: 8px; }
+        #detail .section { margin: 8px 0; }
+        #detail .section-title { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        #detail .tag { display: inline-block; padding: 2px 8px; margin: 2px; border-radius: 4px; font-size: 11px; background: #1a1a2a; border: 1px solid #333; }
+        #detail .tag.class { border-color: #e74c3c44; color: #e74c3c; }
+        #detail .tag.func { border-color: #3498db44; color: #3498db; }
+        #detail .close-btn { position: absolute; top: 8px; right: 12px; cursor: pointer; color: #666; font-size: 18px; }
+        #detail .close-btn:hover { color: #e74c3c; }
+        
+        /* Legend */
+        #legend {
+            position: fixed; bottom: 16px; left: 16px; z-index: 100;
+            background: rgba(15, 15, 25, 0.92); border: 1px solid #2a2a3a;
+            border-radius: 12px; padding: 12px 16px;
+            backdrop-filter: blur(12px);
+        }
+        #legend h3 { font-size: 12px; color: #888; margin-bottom: 6px; }
+        .legend-item { display: flex; align-items: center; gap: 8px; padding: 2px 0; font-size: 11px; }
+        .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        
+        /* Loading */
+        #loading {
+            position: fixed; inset: 0; z-index: 200;
+            display: flex; align-items: center; justify-content: center;
+            background: #0a0a0f;
+        }
+        #loading .spinner { width: 40px; height: 40px; border: 3px solid #1a1a2a; border-top-color: #7c8aff; border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        /* Physics toggle */
+        .toggle-row { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 12px; }
+        .toggle { position: relative; width: 36px; height: 20px; cursor: pointer; }
+        .toggle input { opacity: 0; width: 0; height: 0; }
+        .toggle .slider { position: absolute; inset: 0; background: #333; border-radius: 10px; transition: 0.3s; }
+        .toggle .slider::before { content: ""; position: absolute; width: 16px; height: 16px; left: 2px; top: 2px; background: #888; border-radius: 50%; transition: 0.3s; }
+        .toggle input:checked + .slider { background: #7c8aff44; }
+        .toggle input:checked + .slider::before { transform: translateX(16px); background: #7c8aff; }
+    </style>
+</head>
+<body>
+    <div id="loading"><div class="spinner"></div></div>
+    
+    <div id="controls">
+        <h1>SuperNEXUS Grafo</h1>
+        <div class="stat-row"><span>Archivos</span><span class="stat-val" id="stat-files">-</span></div>
+        <div class="stat-row"><span>Conexiones</span><span class="stat-val" id="stat-edges">-</span></div>
+        <div class="stat-row"><span>Clases</span><span class="stat-val" id="stat-classes">-</span></div>
+        <div class="stat-row"><span>Funciones</span><span class="stat-val" id="stat-functions">-</span></div>
+        
+        <input type="text" class="search-box" id="search" placeholder="Buscar archivo...">
+        
+        <div class="filter-group">
+            <label>Directorio</label>
+            <div class="filter-chips" id="dir-filters"></div>
+        </div>
+        
+        <div class="toggle-row">
+            <label class="toggle"><input type="checkbox" id="physics-toggle" checked><span class="slider"></span></label>
+            <span>Fisica (layout automatico)</span>
+        </div>
+        <div class="toggle-row">
+            <label class="toggle"><input type="checkbox" id="labels-toggle" checked><span class="slider"></span></label>
+            <span>Mostrar labels</span>
+        </div>
+    </div>
+    
+    <div id="detail">
+        <span class="close-btn" onclick="document.getElementById('detail').style.display='none'">&times;</span>
+        <h2 id="detail-name"></h2>
+        <div class="path" id="detail-path"></div>
+        <div class="section">
+            <div class="section-title">Clases</div>
+            <div id="detail-classes"></div>
+        </div>
+        <div class="section">
+            <div class="section-title">Funciones</div>
+            <div id="detail-functions"></div>
+        </div>
+        <div class="section">
+            <div class="section-title">Conexiones</div>
+            <div id="detail-connections"></div>
+        </div>
+    </div>
+    
+    <div id="legend">
+        <h3>Leyenda</h3>
+        <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div>raiz</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#3498db"></div>src/</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div>src/core/</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f39c12"></div>src/core/xxx/</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div>profundo</div>
+    </div>
+    
+    <div id="graph"></div>
+
+    <script>
+    let network = null;
+    let allNodes = [];
+    let allEdges = [];
+    let activeFilters = new Set();
+
+    async function loadData() {
+        try {
+            const resp = await fetch('/static/graph.json');
+            if (!resp.ok) throw new Error('graph.json not found');
+            return await resp.json();
+        } catch (e) {
+            console.error('Failed to load graph.json:', e);
+            document.getElementById('loading').innerHTML = 
+                '<div style="text-align:center;color:#e74c3c"><p>No se pudo cargar graph.json</p><p style="font-size:12px;color:#888">Ejecuta: python scripts/graph_scanner.py</p></div>';
+            return null;
+        }
+    }
+
+    function buildGraph(data) {
+        allNodes = data.nodes;
+        allEdges = data.edges;
+
+        // Stats
+        document.getElementById('stat-files').textContent = data.stats.total_files;
+        document.getElementById('stat-edges').textContent = data.stats.total_edges;
+        document.getElementById('stat-classes').textContent = data.stats.total_classes;
+        document.getElementById('stat-functions').textContent = data.stats.total_functions;
+
+        // Directory filters
+        const dirs = new Set();
+        allNodes.forEach(n => {
+            const parts = n.file.split(/[/\\]/);
+            if (parts.length > 1) dirs.add(parts[0]);
+        });
+        const filterContainer = document.getElementById('dir-filters');
+        dirs.forEach(d => {
+            const chip = document.createElement('span');
+            chip.className = 'chip active';
+            chip.textContent = d;
+            chip.dataset.dir = d;
+            chip.onclick = () => {
+                chip.classList.toggle('active');
+                if (activeFilters.has(d)) activeFilters.delete(d);
+                else activeFilters.add(d);
+                applyFilters();
+            };
+            filterContainer.appendChild(chip);
+            activeFilters.add(d);
+        });
+
+        // vis.js datasets
+        const nodes = new vis.DataSet(allNodes.map(n => ({
+            id: n.id,
+            label: n.label,
+            title: n.title,
+            color: n.color,
+            size: n.size,
+            font: n.font,
+            group: n.group,
+        })));
+
+        const edges = new vis.DataSet(allEdges.map(e => ({
+            from: e.from,
+            to: e.to,
+            arrows: e.arrows,
+            color: e.color,
+            width: e.width,
+        })));
+
+        const container = document.getElementById('graph');
+        const options = {
+            nodes: {
+                shape: 'dot',
+                borderWidth: 1,
+                borderWidthSelected: 3,
+                scaling: { min: 6, max: 30 },
+                font: { color: '#ccc', face: 'monospace' },
+            },
+            edges: {
+                smooth: { type: 'continuous', roundness: 0.15 },
+                hoverWidth: 2,
+            },
+            physics: {
+                enabled: true,
+                solver: 'forceAtlas2Based',
+                forceAtlas2Based: {
+                    gravitationalConstant: -40,
+                    centralGravity: 0.008,
+                    springLength: 120,
+                    springConstant: 0.02,
+                    damping: 0.5,
+                },
+                stabilization: { iterations: 200 },
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                zoomView: true,
+                dragView: true,
+                multiselect: true,
+                navigationButtons: true,
+                keyboard: { enabled: true },
+            },
+            layout: { improvedLayout: true },
+        };
+
+        network = new vis.Network(container, { nodes, edges }, options);
+
+        // Click handler
+        network.on('click', params => {
+            if (params.nodes.length > 0) {
+                const nodeId = params.nodes[0];
+                showDetail(nodeId);
+                highlightConnections(nodeId);
+            } else {
+                document.getElementById('detail').style.display = 'none';
+                resetHighlight();
+            }
+        });
+
+        // Physics toggle
+        document.getElementById('physics-toggle').onchange = e => {
+            network.setOptions({ physics: { enabled: e.target.checked } });
+        };
+
+        // Labels toggle
+        document.getElementById('labels-toggle').onchange = e => {
+            network.setOptions({
+                nodes: { font: { enabled: e.target.checked } },
+            });
+        };
+
+        // Search
+        document.getElementById('search').oninput = e => {
+            const q = e.target.value.toLowerCase();
+            if (!q) { resetHighlight(); return; }
+            const matches = allNodes.filter(n =>
+                n.label.toLowerCase().includes(q) ||
+                n.file.toLowerCase().includes(q) ||
+                n.classes.some(c => c.toLowerCase().includes(q)) ||
+                n.functions.some(f => f.toLowerCase().includes(q))
+            );
+            if (matches.length > 0) {
+                const ids = matches.map(m => m.id);
+                network.selectNodes(ids);
+                network.fit({ nodes: ids, animation: true });
+            }
+        };
+
+        document.getElementById('loading').style.display = 'none';
+    }
+
+    function showDetail(nodeId) {
+        const node = allNodes.find(n => n.id === nodeId);
+        if (!node) return;
+
+        document.getElementById('detail-name').textContent = node.label;
+        document.getElementById('detail-path').textContent = node.file;
+
+        const classesEl = document.getElementById('detail-classes');
+        classesEl.innerHTML = node.classes.length
+            ? node.classes.map(c => `<span class="tag class">${c}</span>`).join('')
+            : '<span style="color:#555;font-size:11px">ninguna</span>';
+
+        const funcsEl = document.getElementById('detail-functions');
+        funcsEl.innerHTML = node.functions.length
+            ? node.functions.map(f => `<span class="tag func">${f}</span>`).join('')
+            : '<span style="color:#555;font-size:11px">ninguna</span>';
+
+        // Connections
+        const incoming = allEdges.filter(e => e.to === nodeId).map(e => e.from);
+        const outgoing = allEdges.filter(e => e.from === nodeId).map(e => e.to);
+        const connEl = document.getElementById('detail-connections');
+        connEl.innerHTML = `
+            <div style="font-size:11px;margin-bottom:4px">
+                <span style="color:#3498db">→ importa ${outgoing.length}</span> · 
+                <span style="color:#e74c3c">← importado por ${incoming.length}</span>
+            </div>
+            ${outgoing.map(id => {
+                const n = allNodes.find(x => x.id === id);
+                return `<span class="tag" style="cursor:pointer" onclick="network.selectNodes(['${id}']);network.fit({nodes:['${id}'],animation:true})">${n ? n.label : id}</span>`;
+            }).join('')}
+            ${incoming.map(id => {
+                const n = allNodes.find(x => x.id === id);
+                return `<span class="tag" style="cursor:pointer;border-color:#e74c3c44;color:#e74c3c" onclick="network.selectNodes(['${id}']);network.fit({nodes:['${id}'],animation:true})">${n ? n.label : id}</span>`;
+            }).join('')}
+        `;
+
+        document.getElementById('detail').style.display = 'block';
+    }
+
+    function highlightConnections(nodeId) {
+        const connected = new Set([nodeId]);
+        allEdges.forEach(e => {
+            if (e.from === nodeId) connected.add(e.to);
+            if (e.to === nodeId) connected.add(e.from);
+        });
+
+        const updates = allNodes.map(n => ({
+            id: n.id,
+            opacity: connected.has(n.id) ? 1.0 : 0.15,
+            font: { color: connected.has(n.id) ? '#fff' : '#333' },
+        }));
+        network.body.data.nodes.update(updates);
+
+        const edgeUpdates = allEdges.map(e => ({
+            id: e.from + '-' + e.to,
+            color: (e.from === nodeId || e.to === nodeId)
+                ? { color: '#7c8aff', highlight: '#e74c3c' }
+                : { color: '#1a1a2a', highlight: '#1a1a2a' },
+            width: (e.from === nodeId || e.to === nodeId) ? 2 : 0.5,
+        }));
+        // vis.js edge IDs are auto-generated, use index
+        const edgeIds = network.body.data.edges.getIds();
+        edgeUpdates.forEach((u, i) => {
+            if (i < edgeIds.length) {
+                network.body.data.edges.update({ id: edgeIds[i], ...u });
+            }
+        });
+    }
+
+    function resetHighlight() {
+        const updates = allNodes.map(n => ({
+            id: n.id,
+            opacity: 1.0,
+            font: { color: '#ccc' },
+        }));
+        network.body.data.nodes.update(updates);
+
+        const edgeUpdates = allEdges.map((e, i) => ({
+            color: { color: '#888', highlight: '#e74c3c' },
+            width: 1,
+        }));
+        const edgeIds = network.body.data.edges.getIds();
+        edgeUpdates.forEach((u, i) => {
+            if (i < edgeIds.length) {
+                network.body.data.edges.update({ id: edgeIds[i], ...u });
+            }
+        });
+    }
+
+    function applyFilters() {
+        if (activeFilters.size === 0) {
+            network.body.data.nodes.clear();
+            network.body.data.edges.clear();
+            return;
+        }
+        const visibleNodes = new Set(
+            allNodes.filter(n => {
+                const dir = n.file.split(/[/\\]/)[0];
+                return activeFilters.has(dir);
+            }).map(n => n.id)
+        );
+        const visNodes = allNodes.filter(n => visibleNodes.has(n.id));
+        const visEdges = allEdges.filter(e => visibleNodes.has(e.from) && visibleNodes.has(e.to));
+        network.body.data.nodes.setData(visNodes.map(n => ({
+            id: n.id, label: n.label, title: n.title,
+            color: n.color, size: n.size, font: n.font, group: n.group,
+        })));
+        network.body.data.edges.setData(visEdges.map(e => ({
+            from: e.from, to: e.to, arrows: e.arrows, color: e.color, width: e.width,
+        })));
+    }
+
+    // Boot
+    loadData().then(data => { if (data) buildGraph(data); });
+    </script>
+</body>
+</html>
