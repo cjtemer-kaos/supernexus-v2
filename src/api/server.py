@@ -610,6 +610,55 @@ class SuperNEXUSBackend:
         finally:
             self._busy = False
 
+    def _clean_response(self, reply: str) -> str:
+        """Limpia el razonamiento interno de la respuesta para mostrar solo la respuesta final."""
+        if not reply:
+            return reply
+
+        # Patrones de razonamiento interno a eliminar
+        internal_patterns = [
+            # Secciones de investigación y análisis
+            r'(?i)##\s*(?:Investigacion|Investigación|Análisis|Analisis|Problema|Desglose|Solución|Solucion|Evaluación|Evaluacion|Recomendación|Recomendacion|Conclusión|Conclusion|Resumen Ejecutivo|Executive Summary|Resumen)\s*##',
+            # Bloques de investigación
+            r'(?i)---\s*\n\s*\*?\*?(?:INVESTIGACION AUTOMATICA|Informacion encontrada|Fuentes encontradas|Fuentes consultadas|Fuentes|Sources|References|Referencias)\s*\*?\*?\s*\n',
+            # Instrucciones de investigación
+            r'(?i)(?:Revisa si este conocimiento responde|Si NO es relevante|USA research_scholar|CONOCIMIENTO QUE HAS ESTUDIADO|Conocimiento que has estudiado|DIRECTAMENTE la tarea|para investigar)',
+            # Metadatos de investigación
+            r'(?i)(?:\[Conocimiento que has estudiado:\]|\[Conversaciones previas relacionadas:\]|\[Contexto adicional:\]|\[:\])',
+            # Razonamiento paso a paso
+            r'(?i)(?:Primero|Secondly|Thirdly|Finally|En primer lugar|En segundo lugar|En tercer lugar|Para concluir|En conclusión|En conclusion|Asimismo|Además|Ademas|Por otro lado|Por último|Por ultimo|En resumen|En definitiva)\s*[,:]',
+            # Métodos y procesos
+            r'(?i)(?:Metodología|Metodologia|Método|Metodo|Proceso|Algoritmo|Enfoque|Estrategia|Protocolo)\s*:',
+            # Notas al pie y referencias
+            r'(?i)(?:Notas?|Notes?|Fuentes?|Sources?|Referenced?|Citado de?|Según|According to|De acuerdo con)\s*:',
+        ]
+
+        cleaned = reply
+        for pattern in internal_patterns:
+            cleaned = re.sub(pattern, '', cleaned)
+
+        # Eliminar líneas que son solo guiones o separadores
+        cleaned = re.sub(r'^-{3,}\s*$', '', cleaned, flags=re.MULTILINE)
+
+        # Eliminar bloques de código que contienen solo metadatos
+        cleaned = re.sub(r'```[\s\S]*?```', '', cleaned)
+
+        # Eliminar líneas que empiezan con ## y contienen instrucciones
+        cleaned = re.sub(r'^##\s*[^#]+\s*##\s*$', '', cleaned, flags=re.MULTILINE)
+
+        # Eliminar líneas que contienen solo metadatos
+        cleaned = re.sub(r'^\[.*\]:\s*$', '', cleaned, flags=re.MULTILINE)
+
+        # Eliminar espacios múltiples y líneas vacías en exceso
+        cleaned = re.sub(r'\n{3,}', '\n\n', cleaned)
+        cleaned = re.sub(r' {2,}', ' ', cleaned)
+
+        # Si después de limpiar queda muy corto, devolver el original
+        if len(cleaned.strip()) < 20:
+            return reply
+
+        return cleaned.strip()
+
     async def process_message(
         self,
         message: str,
@@ -653,6 +702,28 @@ class SuperNEXUSBackend:
             if hook_ctx.should_abort:
                 return {"reply": hook_ctx.abort_reason, "success": False}
             message = hook_ctx.data
+
+        # Saludos: Respuesta inmediata sin investigación ni tools
+        _greeting_pattern = re.compile(
+            r'^(hola|hello|hi|hey|buenas|buenos dias|buenas tardes|buenas noches|que tal|que onda|que hubo|saludos|como estas|como te va|que pasa|que pex|epa|buenas|ey|holis|holi|holaa|holaaa|holaaaa|que onda|wepa|dale|yepa|a huevo|va|sale|simon|nel|no mames|que pedo|que ondas|como andas|como va|que mas|que hay|que mas pues|que lo que|parcero|parce|mano|bro|dude|hey|oi|ola|salve|eae|buenasnoches|buenastardes|buenosdias)',
+            re.IGNORECASE
+        )
+        _msg_clean = message.strip().rstrip('!?.,;:¡¿')
+        if _greeting_pattern.match(_msg_clean) and len(_msg_clean.split()) <= 4:
+            _replies = [
+                "¡Hola! Soy NEXUS IA v2.0, ¿en qué puedo ayudarte?",
+                "¡Hola! ¿Qué necesitas? Estoy listo para ayudarte.",
+                "¡Hola! ¿En qué te puedo ayudar hoy?",
+                "Hola, ¿qué tal? Pregúntame lo que quieras.",
+                "¡Hey! ¿Qué necesitas?",
+            ]
+            import random
+            return {
+                "reply": random.choice(_replies),
+                "gem_used": "auto",
+                "engines": ["greeting"],
+                "success": True,
+            }
 
         # Detectar si hay imágenes
         has_images = images and len(images) > 0
@@ -991,34 +1062,9 @@ class SuperNEXUSBackend:
                 "cerebro_stats": self.cerebro.obtener_estadisticas() if self.cerebro else {},
             }
 
-        # Auto-research: si es pregunta (no accion), investigar en paralelo para enriquecer contexto
-        _action_kw = {"escribe","crea","haz","genera","programa","codigo","funcion","implementa",
-                      "refactoriza","arregla","debug","test","prueba","instala","configura",
-                      "convierte","compara","analiza","disena","construye","despliega"}
-        _is_action = any(kw in message.lower().split() for kw in _action_kw)
+        # Auto-research: DESHABILITADO temporalmente - el Director responde directamente
+        # El auto-research agregaba contexto verboso que el LLM ecoaba en lugar de sintetizar
         _research_result = None
-        if not _is_action and len(message) < 200 and self.director:
-            try:
-                from src.agents.scholar_gem import ScholarGem
-                mem = self.director._get_memory_context(message, limit=3)
-                mem_relevant = len(mem) > 100 and any(w in mem.lower() for w in message.lower().split() if len(w) > 4)
-                if not mem_relevant:
-                    scholar = ScholarGem(
-                        web_researcher=getattr(self.director, 'web_researcher', None),
-                        mcp_client=getattr(self.director, 'mcp_client', None),
-                    )
-                    sr = await scholar.research(message, max_sources=3)
-                    if sr.get("sources"):
-                        snippets = []
-                        for s in sr["sources"][:3]:
-                            t = s.get("title", "")
-                            sn = (s.get("snippet", "") or s.get("summary", ""))[:300]
-                            if t or sn:
-                                snippets.append(f"- {t}: {sn}")
-                        if snippets:
-                            _research_result = "\n\n[INVESTIGACION AUTOMATICA DE SCHOLAR]\n" + "\n".join(snippets)
-            except Exception as e:
-                logger.debug(f"Auto-research failed: {e}")
 
         if _research_result:
             message = message + _research_result
@@ -1051,6 +1097,13 @@ class SuperNEXUSBackend:
                     reply = output_check["sanitized"]
             except Exception:
                 pass
+
+        # Auto-research post-processing: DESHABILITADO temporalmente
+        # El LLM ecoaba las instrucciones de investigación en lugar de ejecutarlas
+
+        # Limpiar razonamiento interno de la respuesta
+        if reply:
+            reply = self._clean_response(reply)
 
         # Cerebro: Guardar respuesta
         if self.cerebro and reply:

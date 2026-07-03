@@ -36,6 +36,17 @@ def _allowed_guilds() -> Optional[Set[int]]:
     return out or None
 
 
+import re
+
+_RESEARCH_INDICATORS = [
+    r"research_scholar",
+    r"investigar",
+    r"contexto no relevante",
+    r"necesito investigar",
+    r"debo investigar",
+    r"voy a investigar",
+]
+
 async def _post_chat(client, api_url: str, text: str, channel_id: int) -> str:
     try:
         r = await client.post(
@@ -45,7 +56,35 @@ async def _post_chat(client, api_url: str, text: str, channel_id: int) -> str:
         )
         if r.status_code >= 400:
             return f"NEXUS HTTP {r.status_code}"
-        return r.json().get("reply") or "(empty reply)"
+        reply = r.json().get("reply") or "(empty reply)"
+        
+        # Auto-research: if LLM recommends research but didn't execute it
+        needs_research = any(re.search(p, reply, re.IGNORECASE) for p in _RESEARCH_INDICATORS)
+        if needs_research:
+            # Extract query from original message
+            query = text.strip()
+            if len(query) > 100:
+                query = query[:100]
+            
+            # Execute research_scholar via API
+            try:
+                research_r = await client.post(
+                    f"{api_url}/api/chat",
+                    json={
+                        "message": f"research_scholar {query}",
+                        "session_id": f"discord:{channel_id}",
+                        "gem": "auto"
+                    },
+                    timeout=180.0,
+                )
+                if research_r.status_code == 200:
+                    research_reply = research_r.json().get("reply", "")
+                    if research_reply and len(research_reply) > 50:
+                        return f"**Investigación sobre {query}:**\n\n{research_reply[:1800]}"
+            except Exception as e:
+                print(f"[discord] auto-research failed: {e}", flush=True)
+        
+        return reply
     except Exception as e:
         return f"NEXUS error: {type(e).__name__}: {e}"
 

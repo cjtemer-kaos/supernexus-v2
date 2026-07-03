@@ -1,15 +1,15 @@
 /**
  * providers-sync.js — Synchronous provider sync via XHR (runs before React)
- * This script must be loaded as a regular <script> in <head>, BEFORE the deferred main bundle.
+ * Forces OpenCode Zen + deepseek-v4-flash-free as default on every load.
  */
 (function() {
   var STORAGE_KEY = 'nexus-ai-providers';
   var DEFAULT_KEY = 'nexus-default-provider';
+  var DEFAULT_MODEL_KEY = 'nexus-default-model';
 
-  // Use synchronous XHR so providers are in localStorage before React reads them
   try {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/api/providers', false); // false = synchronous
+    xhr.open('GET', '/api/providers', false);
     xhr.send();
     if (xhr.status !== 200) return;
     var serverProviders = JSON.parse(xhr.responseText);
@@ -28,7 +28,6 @@
         if (current[j].id === sp.id) { existing = current[j]; break; }
       }
       if (sp.id === 'ollama') {
-        // Keep existing Ollama config, just sync models list
         if (existing) {
           var newModels = sp.models.map(function(m) { return m.id; });
           if (JSON.stringify(existing.models) !== JSON.stringify(newModels)) {
@@ -37,7 +36,6 @@
           }
         }
       } else {
-        // Cloud/other: add or update
         var providerModels = sp.models.map(function(m) { return m.id; });
         if (existing) {
           if (JSON.stringify(existing.models) !== JSON.stringify(providerModels)) {
@@ -64,18 +62,21 @@
       localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
     }
 
-    // Set opencode-zen as favorite if no favorite is set
-    if (!localStorage.getItem(DEFAULT_KEY)) {
-      for (var k = 0; k < current.length; k++) {
-        if (current[k].id === 'opencode-zen' && current[k].models.length > 0) {
-          current[k].favorite = true;
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
-          localStorage.setItem(DEFAULT_KEY, current[k].id);
-          break;
-        }
+    // ALWAYS force OpenCode Zen as default provider
+    var zenExists = false;
+    for (var k = 0; k < current.length; k++) {
+      if (current[k].id === 'opencode-zen') {
+        zenExists = true;
+        current[k].favorite = true;
+        break;
       }
     }
+    if (zenExists) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+      localStorage.setItem(DEFAULT_KEY, 'opencode-zen');
+      localStorage.setItem(DEFAULT_MODEL_KEY, 'deepseek-v4-flash-free');
+    }
   } catch (e) {
-    // Silent fail — Ollama defaults will be used
+    // Silent fail
   }
 })();

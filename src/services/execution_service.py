@@ -51,29 +51,36 @@ class ExecutionService:
             from src.agents.scholar_gem import ScholarGem
 
             # Extract original task from brain-injected context
-            # Director wraps task as: "## CONOCIMIENTO... --- Tarea: {original_task}"
             search_query = task
             if "--- Tarea:" in task:
                 search_query = task.split("--- Tarea:")[-1].strip()
 
-            # Build LLM caller from director's provider (for synthesis)
-            provider = director.provider_registry.get("gema-con-fallback")
-            async def llm_caller(prompt: str, temperature: float = 0.3, max_tokens: int = 1500) -> str:
-                from src.core.provider_base import LLMMessage
-                messages = [LLMMessage(role="user", content=prompt)]
-                result = await provider.complete(messages, model=provider.model, temperature=temperature, max_tokens=max_tokens)
-                return result.get("content", "") if isinstance(result, dict) else str(result)
-
-            scholar = ScholarGem(web_researcher=director.web_researcher, llm_caller=llm_caller)
-            research_result = await scholar.research(search_query, max_sources=5)
+            # Scholar investiga SIN LLM - solo fuentes crudas
+            scholar = ScholarGem(web_researcher=director.web_researcher, llm_caller=None)
+            research_result = await scholar.research(search_query, max_sources=3)
             await scholar.close()
-            sources_text = "\n".join(
-                f"- {s['title']}: {s.get('snippet', '')[:200]}"
+            
+            if not research_result.get("sources"):
+                return None
+            
+            # Guardar en Sage (biblioteca + memoria)
+            from src.agents.sage_gem import SageGem
+            sage = SageGem()
+            sources_text = "\n".join([
+                f"- {s.get('title', '')}: {s.get('snippet', '')[:200]}"
                 for s in research_result.get("sources", [])
+            ])
+            content_to_save = f"## {task}\n\n{sources_text}"
+            sage.save_to_library(
+                title=task[:100],
+                content=content_to_save,
+                topic=sage._infer_topic(content_to_save, task),
+                source="scholar_research"
             )
-            content = f"## Investigacion sobre: {task}\n\nFuentes encontradas:\n{sources_text}\n\nResumen:\n{research_result.get('summary', '')}"
+            
+            # Retornar SOLO las fuentes crudas
             logger.info(f"Routed to ScholarGem ({len(research_result.get('sources', []))} sources)")
-            return {"success": True, "content": content, "tool": "scholar", "model": "scholar_research",
+            return {"success": True, "content": sources_text, "tool": "scholar", "model": "scholar_research",
                     "tokens_used": 0, "duration_ms": 0}
         except Exception as e:
             logger.warning(f"ScholarGem failed: {e}")
