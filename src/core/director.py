@@ -749,7 +749,7 @@ class DirectorNexus:
             from src.agents.scholar_gem import ScholarGem
             from src.agents.sage_gem import SageGem
             
-            # 1. Scholar investiga (sin LLM - solo fuentes crudas)
+            # 1. Scholar investiga (solo fuentes crudas, sin LLM)
             scholar = ScholarGem(web_researcher=self.web_researcher, llm_caller=None)
             research = await scholar.research(task, max_sources=3)
             await scholar.close()
@@ -772,7 +772,50 @@ class DirectorNexus:
                 source="scholar_research"
             )
             
-            # 3. Retornar SOLO las fuentes crudas para que Director genere la respuesta
+            # 3. Director genera respuesta sintetizada con su propio LLM
+            context_from_sources = "\n".join([
+                f"[{s.get('title', '')}]({s.get('url', '')})\n{s.get('snippet', '')[:300]}"
+                for s in research.get("sources", [])
+            ])
+            
+            synthesis_prompt = f"""Basándote en estas fuentes web, responde la pregunta del usuario de forma completa y concisa.
+Usa español. Si la información es de fuentes en otro idioma, traduce y adapta.
+Incluye los enlaces de las fuentes al final.
+
+PREGUNTA: {task}
+
+FUENTES:
+{context_from_sources}
+
+RESPUESTA:"""
+            
+            try:
+                synthesized = await self.ai_tools.quick_response(
+                    task=synthesis_prompt,
+                    gem="director",
+                    context="",
+                    model_override="deepseek-v4-flash-free"
+                )
+                reply_content = synthesized.get("content", "") if isinstance(synthesized, dict) else str(synthesized)
+                
+                if reply_content and len(reply_content) > 50:
+                    # Agregar enlaces de fuentes al final
+                    links = "\n\n**Fuentes:**\n" + "\n".join(
+                        f"- [{s.get('title', s.get('url', ''))}]({s.get('url', '')})"
+                        for s in research.get("sources", []) if s.get("url")
+                    )
+                    return {
+                        "success": True,
+                        "content": reply_content + links,
+                        "tool": "scholar_research",
+                        "model": "deepseek-v4-flash-free",
+                        "tokens_used": synthesized.get("tokens_used", 0) if isinstance(synthesized, dict) else 0,
+                        "duration_ms": 0,
+                    }
+            except Exception as e:
+                logger.debug(f"LLM synthesis failed: {e}")
+            
+            # Fallback: retornar fuentes crudas si la sintesis falla
             return {
                 "success": True,
                 "content": sources_text,
