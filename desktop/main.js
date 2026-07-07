@@ -122,10 +122,15 @@ function createWindow() {
   mainWindow.loadURL(SERVER_URL);
 
   // Capture console errors from the page
+  // Log ALL console messages for debugging
   mainWindow.webContents.on('console-message', (event, level, message, line, sourceId) => {
-    if (level >= 2) { // warnings and errors
-      console.log(`[PAGE ${level === 2 ? 'WARN' : 'ERROR'}] ${message} (${sourceId}:${line})`);
-    }
+    const tags = ['VERBOSE', 'INFO', 'WARN', 'ERROR'];
+    console.log(`[PAGE ${tags[level] || level}] ${message} (${sourceId}:${line})`);
+  });
+
+  // Log renderer crashes
+  mainWindow.webContents.on('render-process-gone', (event, details) => {
+    console.error('[SuperNEXUS] Renderer CRASHED:', details.reason, details.exitCode);
   });
 
   mainWindow.webContents.on('did-finish-load', () => {
@@ -134,13 +139,22 @@ function createWindow() {
   });
 
   // Retry on load failure (server not ready yet)
-  mainWindow.webContents.on('did-fail-load', (event, errorCode, errorDesc) => {
-    console.log('[SuperNEXUS] Load failed:', errorCode, errorDesc, '- retrying in 3s...');
+  mainWindow.webContents.on('did-fail-load', (event, errorCode, errorDesc, validatedURL) => {
+    console.error('[SuperNEXUS] Load failed:', errorCode, errorDesc, validatedURL, '- retrying in 3s...');
     setTimeout(() => {
       if (mainWindow && !mainWindow.isDestroyed()) {
         mainWindow.loadURL(SERVER_URL);
       }
     }, 3000);
+  });
+
+  // Capture unhandled errors in renderer
+  mainWindow.webContents.on('unresponsive', () => {
+    console.error('[SuperNEXUS] Page became UNRESPONSIVE');
+  });
+
+  mainWindow.webContents.on('responsive', () => {
+    console.log('[SuperNEXUS] Page responsive again');
   });
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
