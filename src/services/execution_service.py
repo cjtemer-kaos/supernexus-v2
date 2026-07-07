@@ -6,8 +6,28 @@ from typing import Any
 
 from src.core.provider_base import LLMMessage
 from src.core.agent_runner import AgentRunner, AgentRunSpec
+from src.core.model_registry import select_model, classify_task_type, TaskType
+from src.core.gema_profiles import get_profile, filter_tools
+
+try:
+    from src.core.task_lifecycle import TaskLifecycle, TaskStatus
+except ImportError:
+    TaskLifecycle = None
+    TaskStatus = None
 
 logger = logging.getLogger(__name__)
+
+# Map TaskType to provider names for dynamic selection
+_TASK_PROVIDER_MAP = {
+    TaskType.CODE: ["zen-north-mini-code-free", "zen-deepseek-v4-flash-free", "gema-con-fallback"],
+    TaskType.RESEARCH: ["zen-deepseek-v4-flash-free", "gema-con-fallback"],
+    TaskType.REASONING: ["zen-deepseek-v4-flash-free", "zen-nemotron-3-ultra-free", "gema-con-fallback"],
+    TaskType.VISION: ["zen-mimo-v2.5-free", "gema-con-fallback"],
+    TaskType.CREATIVE: ["zen-deepseek-v4-flash-free", "gema-con-fallback"],
+    TaskType.ANALYSIS: ["zen-nemotron-3-ultra-free", "zen-deepseek-v4-flash-free", "gema-con-fallback"],
+    TaskType.CHAT: ["zen-deepseek-v4-flash-free", "gema-con-fallback"],
+    TaskType.FAST: ["zen-north-mini-code-free", "zen-deepseek-v4-flash-free", "gema-con-fallback"],
+}
 
 
 class ExecutionService:
@@ -29,16 +49,38 @@ class ExecutionService:
             return None
         try:
             from src.agents.scholar_gem import ScholarGem
-            scholar = ScholarGem(web_researcher=director.web_researcher)
-            research_result = await scholar.research(task, max_sources=5)
+
+            # Extract original task from brain-injected context
+            search_query = task
+            if "--- Tarea:" in task:
+                search_query = task.split("--- Tarea:")[-1].strip()
+
+            # Scholar investiga SIN LLM - solo fuentes crudas
+            scholar = ScholarGem(web_researcher=director.web_researcher, llm_caller=None)
+            research_result = await scholar.research(search_query, max_sources=3)
             await scholar.close()
-            sources_text = "\n".join(
-                f"- {s['title']}: {s.get('snippet', '')[:200]}"
+            
+            if not research_result.get("sources"):
+                return None
+            
+            # Guardar en Sage (biblioteca + memoria)
+            from src.agents.sage_gem import SageGem
+            sage = SageGem()
+            sources_text = "\n".join([
+                f"- {s.get('title', '')}: {s.get('snippet', '')[:200]}"
                 for s in research_result.get("sources", [])
+            ])
+            content_to_save = f"## {task}\n\n{sources_text}"
+            sage.save_to_library(
+                title=task[:100],
+                content=content_to_save,
+                topic=sage._infer_topic(content_to_save, task),
+                source="scholar_research"
             )
-            content = f"## Investigacion sobre: {task}\n\nFuentes encontradas:\n{sources_text}\n\nResumen:\n{research_result.get('summary', '')}"
+            
+            # Retornar SOLO las fuentes crudas
             logger.info(f"Routed to ScholarGem ({len(research_result.get('sources', []))} sources)")
-            return {"success": True, "content": content, "tool": "scholar", "model": "scholar_research",
+            return {"success": True, "content": sources_text, "tool": "scholar", "model": "scholar_research",
                     "tokens_used": 0, "duration_ms": 0}
         except Exception as e:
             logger.warning(f"ScholarGem failed: {e}")
@@ -49,58 +91,50 @@ class ExecutionService:
         """Retorna los schemas de tools relevantes para la gema, NO todas.
 
         Patron openhuman profiles.rs: cada agente tiene allowed_tools especificos.
-        Esto evita saturar el contexto del LLM (Zen free tiene 8K context).
+        Usa gema_profiles.get_profile() como source of truth (single source).
         """
-        _CONVERSATIONAL = {"ayuda", "sage"}
-        if primary_gem in _CONVERSATIONAL:
+        profile = get_profile(primary_gem)
+        if profile.tools is None:
             return []
         if not hasattr(director, 'tool_caller'):
             return []
-
-        # Whitelist por gema — solo tools relevantes (inspirado en openhuman profiles.allowed_tools)
-        _GEMA_TOOLS = {
-            "code": ["read_file", "write_file", "grep_content", "list_dir", "execute_command", "research_scholar", "search_knowledge"],
-            "engineer": ["read_file", "list_dir", "grep_content", "execute_command"],
-            "debugger": ["read_file", "grep_content", "execute_command", "list_dir", "research_scholar"],
-            "analyst": ["read_file", "grep_content", "list_dir", "execute_command"],
-            "architect": ["read_file", "list_dir", "grep_content", "research_scholar"],
-            "optimizer": ["read_file", "grep_content", "execute_command"],
-            "tester": ["read_file", "execute_command", "grep_content", "list_dir"],
-            "devops": ["execute_command", "read_file", "list_dir", "grep_content"],
-            "security": ["read_file", "grep_content", "execute_command", "list_dir"],
-            "scholar": ["web_search", "web_navigate", "web_fetch"],
-            "vision": ["screenshot", "browser", "browser_snapshot", "browser_interact"],
-            "design": ["read_file", "list_dir", "browser", "browser_snapshot"],
-            "music": ["list_dir", "read_file"],
-            "director": ["research_scholar", "search_knowledge", "web_search", "web_navigate", "web_fetch"],
-            "creative": ["research_scholar", "search_knowledge"],
-            "producer": ["execute_command", "read_file", "list_dir"],
-            "prompter": ["read_file"],
-            "trainer": ["read_file", "list_dir"],
-            "biblioteca": ["read_file", "grep_content", "list_dir"],
-            "opencode": ["read_file", "write_file", "grep_content", "execute_command", "list_dir", "web_search", "browser", "research_scholar", "search_knowledge"],
-        }
 
         all_schemas = director.tool_caller.get_tool_schemas()
         if not all_schemas:
             return []
 
-        allowed_names = _GEMA_TOOLS.get(primary_gem)
-        if allowed_names is None:
-            # gema desconocida → conservative: sin tools (chat puro)
-            return []
-        # Filtrar schemas por nombre
-        return [s for s in all_schemas if s.get("function", {}).get("name") in allowed_names]
+        all_names = [s.get("function", {}).get("name", "") for s in all_schemas]
+        allowed = filter_tools(all_names, profile)
+        allowed_set = set(allowed)
+        return [s for s in all_schemas if s.get("function", {}).get("name") in allowed_set]
 
     @staticmethod
     async def try_agent_runner(director, task: str, context: str, primary_gem: str, session) -> dict | None:
-        provider = director.provider_registry.get("gema-con-fallback")
+        # Dynamic model selection based on task type
+        task_type = classify_task_type(task)
+        provider_candidates = _TASK_PROVIDER_MAP.get(task_type, ["gema-con-fallback"])
+
+        provider = None
+        selected_provider_name = "gema-con-fallback"
+        for pname in provider_candidates:
+            p = director.provider_registry.get(pname)
+            if p is not None:
+                provider = p
+                selected_provider_name = pname
+                break
+
         if provider is None:
             return None
+
         try:
             task_prompt = f"Context:\n{context}\n\nTask: {task}" if context else task
             tool_schemas = ExecutionService.tool_schemas_for_gem(director, primary_gem)
             system_prompt = director._build_director_system_prompt()
+
+            # Inject model capability awareness into system prompt
+            from src.core.model_registry import select_model as registry_select, TaskType as _TT
+            best_model = registry_select(task, task_type=task_type)
+            system_prompt += f"\n\n[MODELO ACTIVO: {best_model.name} ({best_model.provider}) — {best_model.description}]"
 
             memory_ctx = director._get_memory_context(task)
             if memory_ctx:
@@ -122,18 +156,19 @@ Este conocimiento se inyectó automáticamente. REVISA si responde DIRECTAMENTE 
             messages.append(LLMMessage(role="user", content=task_prompt))
 
             runner = AgentRunner(provider, tool_executor=director._multi_motor_tool_executor)
-            spec = AgentRunSpec(messages=messages, tools_definitions=tool_schemas, max_iterations=8)
+            profile = get_profile(primary_gem)
+            spec = AgentRunSpec(messages=messages, tools_definitions=tool_schemas, max_iterations=8,
+                               temperature=profile.temperature)
             runner_result = await runner.run(spec)
             if runner_result.stop_reason not in ("error", "empty_final_response"):
                 total_tokens = runner_result.usage.get("prompt_tokens", 0) + runner_result.usage.get("completion_tokens", 0)
-                # Patron nanobot: content vacio no es success
                 content = runner_result.content or ""
                 if not content.strip():
                     logger.warning(f"AgentRunner: gema {primary_gem} devolvio content vacio, marcando como failed")
                     return None
                 return {"success": True, "content": content, "tool": primary_gem,
                         "model": provider.model, "tokens_used": total_tokens, "duration_ms": 0,
-                        "tools_used": runner_result.tools_used}
+                        "tools_used": runner_result.tools_used, "provider_used": selected_provider_name}
         except Exception:
             logger.exception("AgentRunner failed, falling back")
         return None

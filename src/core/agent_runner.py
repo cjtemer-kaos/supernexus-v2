@@ -257,11 +257,30 @@ class AgentRunner:
 
         if spec.on_stream and self.provider.supports_streaming:
             collected: list[str] = []
+            # Scrub think blocks from streaming output
+            try:
+                from src.core.think_scrubber import StreamingThinkScrubber
+                _scrubber = StreamingThinkScrubber()
+            except ImportError:
+                _scrubber = None
             def on_chunk(chunk: str) -> None:
-                collected.append(chunk)
-                spec.on_stream(chunk)
+                if _scrubber:
+                    visible = _scrubber.feed(chunk)
+                    if visible:
+                        collected.append(visible)
+                        spec.on_stream(visible)
+                else:
+                    collected.append(chunk)
+                    spec.on_stream(chunk)
             kwargs["on_content"] = on_chunk
-            return await self.provider.chat_stream(**kwargs)
+            resp = await self.provider.chat_stream(**kwargs)
+            # Flush any remaining scrubber state
+            if _scrubber:
+                tail = _scrubber.flush()
+                if tail:
+                    collected.append(tail)
+                    spec.on_stream(tail)
+            return resp
 
         return await self.provider.chat_with_retry(**kwargs)
 
@@ -287,31 +306,73 @@ class AgentRunner:
 
     @staticmethod
     def _detect_text_tool_call(text: str) -> dict | None:
-        """Detecta tool_calls en texto plano tipo JSON (fallback modelos locales)."""
+        """Detecta tool_calls en texto plano tipo JSON (fallback modelos locales).
+
+        Detecta dos formatos:
+        1. {"name": "tool_name", "arguments": {...}}  (formato estándar)
+        2. {"tool_name": {"arg1": "val1"}}  (formato alternativo del LLM)
+        """
         # Quitar wrappers markdown
         text = re.sub(r'```(?:json)?\s*|\s*```', '', text)
+
+        # Formato 1: {"name": "...", "arguments": {...}}
         m = re.search(r'\{"name"\s*:\s*"[^"]+"\s*,\s*"arguments"\s*:', text)
-        if not m:
-            return None
-        start = m.start()
-        # buscar llave de cierre equilibrada
-        depth, end = 0, start
-        for i in range(start, len(text)):
-            if text[i] == '{':
-                depth += 1
-            elif text[i] == '}':
-                depth -= 1
-                if depth == 0:
-                    end = i + 1
-                    break
-        if end <= start:
-            return None
-        try:
-            obj = json.loads(text[start:end])
-            if isinstance(obj, dict) and "name" in obj and "arguments" in obj:
-                return {"name": obj["name"], "arguments": obj.get("arguments", {})}
-        except json.JSONDecodeError:
-            pass
+        if m:
+            start = m.start()
+            depth, end = 0, start
+            for i in range(start, len(text)):
+                if text[i] == '{':
+                    depth += 1
+                elif text[i] == '}':
+                    depth -= 1
+                    if depth == 0:
+                        end = i + 1
+                        break
+            if end > start:
+                try:
+                    obj = json.loads(text[start:end])
+                    if isinstance(obj, dict) and "name" in obj and "arguments" in obj:
+                        return {"name": obj["name"], "arguments": obj.get("arguments", {})}
+                except json.JSONDecodeError:
+                    pass
+
+        # Formato 2: {"tool_name": {"arg1": "val1"}}  (sin "name"/"arguments" keys)
+        m = re.search(r'\{"([a-z_]+)"\s*:\s*\{', text)
+        if m:
+            start = m.start()
+            depth, end = 0, start
+            for i in range(start, len(text)):
+                if text[i] == '{':
+                    depth += 1
+                elif text[i] == '}':
+                    depth -= 1
+                    if depth == 0:
+                        end = i + 1
+                        break
+            if end > start:
+                try:
+                    obj = json.loads(text[start:end])
+                    if isinstance(obj, dict):
+                        for key, val in obj.items():
+                            if isinstance(val, dict):
+                                return {"name": key, "arguments": val}
+                except json.JSONDecodeError:
+                    pass
+
+        # Formato 3: **Tool Call:** `tool_name`  (solo mención del tool sin JSON)
+        m = re.search(r'`([a-z_]+)`', text, re.IGNORECASE)
+        if m:
+            tool_name = m.group(1)
+            known_tools = {"research_scholar", "web_search", "web_fetch", "read_file", "write_file",
+                          "execute_command", "list_dir", "search_files", "find_files", "browser"}
+            if tool_name in known_tools:
+                # Try to extract arguments from the text
+                args = {}
+                q_match = re.search(r'(?:query|q|search)\s*[:=]\s*["\']([^"\']+)["\']', text, re.IGNORECASE)
+                if q_match:
+                    args["query"] = q_match.group(1)
+                return {"name": tool_name, "arguments": args}
+
         return None
 
     @staticmethod

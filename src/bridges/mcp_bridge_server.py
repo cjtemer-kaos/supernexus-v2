@@ -61,6 +61,13 @@ import src.core.nexus_config as nexus_config
 BRAIN_DIR = Path(os.environ.get("NEXUS_BRAIN", str(Path.home() / ".nexus" / "brain")))
 BRAIN_DIR.mkdir(parents=True, exist_ok=True)
 
+# Connection pool for MCP servers
+try:
+    from src.core.mcp_connection_manager import MCPConnectionPool
+    _mcp_pool = MCPConnectionPool()
+except ImportError:
+    _mcp_pool = None
+
 # ============================================================
 # Shared state: message board + brain DB
 # ============================================================
@@ -1444,6 +1451,103 @@ async def retrieval_search(query: str, top_k: int = 10) -> str:
             "note": "Connect vector_search_fn and keyword_search_fn for full multi-signal results",
         }, indent=2, ensure_ascii=False)
     except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2, ensure_ascii=False)
+
+
+# ============================================================
+# Codebase Context (repomix + Tree-sitter compression)
+# ============================================================
+
+
+@mcp.tool()
+async def codebase_context(
+    scope: str = "",
+    max_chars: int = 0,
+) -> str:
+    """Get compressed codebase dump using repomix + Tree-sitter structural compression.
+    scope: paths to include (e.g. "src/core" or "src/core,src/brain"), empty = full project.
+    max_chars: truncate to N chars (0 = no truncation).
+    Use this to understand project structure before making changes.
+    """
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.codebase_context import get_instance
+        ctx = get_instance()
+        dump = await ctx.get_context(scope=scope, max_chars=max_chars)
+        return json.dumps({
+            "scope": scope or "full",
+            "chars": len(dump),
+            "truncated": max_chars > 0 and len(dump) >= max_chars,
+            "content": dump,
+        }, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codebase_query(
+    query: str,
+    scope: str = "",
+    max_results: int = 5,
+    context_lines: int = 10,
+) -> str:
+    """Search codebase for relevant code sections matching a query.
+    Uses cached repomix dump and scores sections by relevance.
+    Returns top matching file sections with context around matches.
+    """
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.codebase_context import get_instance
+        ctx = get_instance()
+        results = await ctx.query_context(
+            query=query, scope=scope,
+            max_results=max_results, context_lines=context_lines,
+        )
+        return json.dumps({
+            "query": query,
+            "scope": scope or "full",
+            "content": results,
+        }, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+# ============================================================
+# SandboxService — sandboxed code/command execution
+# ============================================================
+
+
+@mcp.tool()
+async def sandbox_execute(
+    code: str = "",
+    command: str = "",
+    language: str = "python",
+    timeout: int = 30,
+) -> str:
+    """Execute code or shell commands in a sandboxed environment with timeout and concurrency limits.
+    Pass `code` + `language` to run a code snippet (python/javascript/bash/go).
+    Pass `command` to run a shell command directly.
+    Returns output, errors, return code, and execution duration.
+    """
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.sandbox_service import SandboxService, SandboxConfig
+        config = SandboxConfig(timeout_seconds=timeout)
+        svc = SandboxService(config)
+        if command:
+            result = await svc.run_command(command)
+        elif code:
+            result = await svc.run_code(code, language=language)
+        else:
+            return json.dumps({"error": "Provide either 'code' or 'command'"}, indent=2)
+        return json.dumps({
+            "success": result.success,
+            "output": result.output,
+            "error": result.error,
+            "return_code": result.return_code,
+            "duration_ms": round(result.duration_ms, 1),
+        }, indent=2, ensure_ascii=False)
+    except Exception as e:
         return json.dumps({"error": str(e)}, indent=2)
 
 
@@ -2086,6 +2190,85 @@ async def agent_cu_execute(
         return json.dumps({"error": str(e)})
     except Exception as e:
         return json.dumps({"error": str(e)})
+
+
+# ============================================================
+# CodeGraph tools — code knowledge graph queries
+# ============================================================
+
+@mcp.tool()
+async def codegraph_build(source_dir: str = "src", force: bool = False) -> str:
+    """Build or rebuild the code knowledge graph from source files.
+    Returns node count, edge count, community count."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import build_graph
+        result = await build_graph(source_dir=source_dir, force=force)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codegraph_query(query: str, top_k: int = 10) -> str:
+    """Search the code graph for nodes matching a query (TF-IDF scoring).
+    Returns ranked matches with label, source_file, score."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import query_graph
+        result = await query_graph(query=query, top_k=top_k)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codegraph_neighbors(node_id: str, relation: str = "", max_depth: int = 1) -> str:
+    """Explore neighbors of a node in the code graph.
+    Returns connected nodes with their relationships."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import get_neighbors
+        result = await get_neighbors(node_id=node_id, relation=relation, max_depth=max_depth)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codegraph_god_nodes(top_n: int = 10) -> str:
+    """Find the most connected entities in the code graph (highest degree centrality)."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import get_god_nodes
+        result = await get_god_nodes(top_n=top_n)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codegraph_surprising(top_n: int = 5) -> str:
+    """Find surprising cross-community connections in the code graph."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import find_surprising
+        result = await find_surprising(top_n=top_n)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def codegraph_cycles() -> str:
+    """Detect circular imports in the code graph."""
+    try:
+        sys.path.insert(0, os.getcwd())
+        from tools.codegraph_tool import find_cycles
+        result = await find_cycles()
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
 
 
 # ============================================================

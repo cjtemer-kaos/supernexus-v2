@@ -1,0 +1,232 @@
+{
+  "version": "0.1.0",
+  "schema": "hive_agents/v1",
+  "description": "Auto-synced from data/connections/connections.json",
+  "defaults": {
+    "timeout_s": 120,
+    "env_passthrough": [
+      "PATH",
+      "SYSTEMROOT",
+      "USERPROFILE",
+      "TEMP",
+      "TMP"
+    ],
+    "encoding": "utf-8",
+    "psk_env": "HIVE_PSK"
+  },
+  "agents": {
+    "director": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "curl.exe",
+      "args": [
+        "-s",
+        "-m",
+        "120",
+        "-X",
+        "POST",
+        "http://localhost:9000/api/chat",
+        "-H",
+        "Content-Type: application/json",
+        "-d",
+        "{\"message\":\"{task}\"}"
+      ],
+      "timeout_s": 120,
+      "description": "Cerebro central del ecosistema",
+      "tags": [
+        "orchestrator",
+        "nexus",
+        "core"
+      ],
+      "enabled": true,
+      "post_parse": "jsonpath:$.reply"
+    },
+    "hermes": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "hermes",
+      "args": [
+        "chat",
+        "-Q",
+        "-q",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 120,
+      "description": "Self-improving open source AI agent (Nous Research)",
+      "tags": [
+        "orchestration",
+        "browser",
+        "autonomous"
+      ],
+      "enabled": true
+    },
+    "opencode": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "opencode",
+      "args": [
+        "run",
+        "-m",
+        "opencode/minimax-m3-free",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 180,
+      "description": "OpenCode free tier: MiniMax M3",
+      "tags": [
+        "reasoning",
+        "opencode",
+        "free"
+      ],
+      "enabled": true
+    },
+    "oc-deepseek": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "opencode",
+      "args": [
+        "run",
+        "-m",
+        "opencode/deepseek-v4-flash-free",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 180,
+      "description": "OpenCode free tier: DeepSeek V4 Flash",
+      "tags": [
+        "reasoning",
+        "opencode",
+        "free"
+      ],
+      "enabled": true
+    },
+    "oc-mimo": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "opencode",
+      "args": [
+        "run",
+        "-m",
+        "opencode/mimo-v2.5-free",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 180,
+      "description": "OpenCode free tier: MiMo V2.5",
+      "tags": [
+        "fast",
+        "opencode",
+        "free"
+      ],
+      "enabled": true
+    },
+    "oc-nemotron": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "opencode",
+      "args": [
+        "run",
+        "-m",
+        "opencode/nemotron-3-super-free",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 180,
+      "description": "OpenCode free tier: Nemotron 3 Super",
+      "tags": [
+        "reasoning",
+        "opencode",
+        "free"
+      ],
+      "enabled": true
+    },
+    "oc-bigpickle": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "opencode",
+      "args": [
+        "run",
+        "-m",
+        "opencode/big-pickle",
+        "{task}"
+      ],
+      "cwd": ".",
+      "timeout_s": 180,
+      "description": "OpenCode free tier: Big Pickle",
+      "tags": [
+        "experimental",
+        "opencode",
+        "free"
+      ],
+      "enabled": true
+    },
+    "openclaw": {
+      "type": "mcp",
+      "transport": "http",
+      "url": "http://127.0.0.1:8765/",
+      "headers": {
+        "Authorization": "Bearer 8RjHqMKfgwKgPWRFj4bhJGd45jIMCzKyE8yvoOcPUuo"
+      },
+      "default_tool": "system.run",
+      "timeout_s": 120,
+      "description": "OpenClaw Tray MCP (JSON-RPC, system tools)",
+      "tags": [
+        "orchestration",
+        "mcp",
+        "windows"
+      ],
+      "enabled": true
+    },
+    "antigravity": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "python",
+      "args": [
+        "hive_runner_bridge.py"
+      ],
+      "cwd": null,
+      "timeout_s": 200,
+      "description": "Google Gemini via file-mailbox bridge",
+      "tags": [
+        "reasoning",
+        "google",
+        "gemini"
+      ],
+      "enabled": true,
+      "stdin_json": true,
+      "env": {
+        "ANTIGRAVITY_APP_DATA": "~/.gemini/antigravity"
+      },
+      "post_parse": "antigravity_bridge"
+    },
+    "agent-zero": {
+      "type": "cli",
+      "transport": "subprocess",
+      "binary": "curl.exe",
+      "args": [
+        "-s",
+        "-m",
+        "120",
+        "-X",
+        "POST",
+        "http://localhost:50080/api/api_message",
+        "-H",
+        "Content-Type: application/json",
+        "-H",
+        "X-API-KEY: EnOpxcoaJDw7K0TW",
+        "-d",
+        "{\"message\":\"{task}\"}"
+      ],
+      "timeout_s": 120,
+      "description": "Agent Zero Docker (sandboxed Python)",
+      "tags": [
+        "sandbox",
+        "docker",
+        "code-exec"
+      ],
+      "enabled": true,
+      "post_parse": "jsonpath:$.response"
+    }
+  }
+}

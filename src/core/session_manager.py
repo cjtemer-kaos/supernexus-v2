@@ -211,6 +211,7 @@ class SessionManager:
         self._lock = threading.RLock()  # RLock para evitar deadlock en llamadas anidadas
         self._db_lock = threading.Lock()
         self.compressor = None  # TrajectoryCompressor (set externally or lazily)
+        self._checkpoint_store = None  # Auto-trigger checkpoint store
 
         if db_path is None:
             db_path = str(Path.home() / ".nexus" / "brain" / "sessions.db")
@@ -329,10 +330,29 @@ class SessionManager:
                 return session
         return self.create_session()
 
+    def set_checkpoint_store(self, store):
+        """Connect a CheckpointStore for auto-trigger on context pressure"""
+        self._checkpoint_store = store
+
     def add_message(self, role: str, content: str, tokens: int = 0, model: str = "", session_id: str = None):
         session = self.get_session(session_id)
         session.add_message(role, content, tokens, model)
         self._save_session(session)
+
+        # Auto-trigger checkpoint at 20%/45%/70% context pressure
+        if self._checkpoint_store is not None:
+            try:
+                result = self._checkpoint_store.check_and_auto_checkpoint(
+                    self, session_id=session_id, project=session.project
+                )
+                if result:
+                    import logging
+                    logging.getLogger("nexus-sessions").info(
+                        f"Auto-checkpoint: {result['checkpoint_id']} @ {result['threshold']:.0%}"
+                    )
+            except Exception as e:
+                import logging
+                logging.getLogger("nexus-sessions").warning(f"Auto-checkpoint failed: {e}")
 
     def needs_compact(self, session_id: str = None) -> bool:
         session = self.get_session(session_id)

@@ -5,7 +5,7 @@ __pycache__/
 *.pyd
 .Python
 *.egg-info/
-dist/
+/dist/
 build/
 .eggs/
 
@@ -24,17 +24,12 @@ env/
 .DS_Store
 Thumbs.db
 
-# Nexus runtime data (anchored = top-level only)
+# Nexus runtime data
 .nexus/
 /screenshots/
 /voice_models/
 *.log
 *.log.*
-
-# Include brain, data, memory (seed knowledge for fresh installs)
-!/brain/
-!/data/
-!/memory/
 
 # Secrets
 .env
@@ -49,14 +44,27 @@ node_modules/
 
 # Scratch
 scratch/
-scripts/
 
-# Large model binaries (use Ollama pull instead, see INSTALL.md)
+# Large model binaries
 /models/nexus-director-v6/nexus-director-v6-Q8_0.gguf
 
-# Built UI (excluded from general dist/ rule)
-!ui/dist/
-!ui/dist/**
+# Test files
+test_*.py
+test_*.png
+
+# Electron build artifacts
+desktop/node_modules/
+desktop/release/
+ui/release/
+
+# UI source (we ship pre-built dist only)
+ui/src/
+ui/apps/
+ui/vite.config.ts
+ui/vitest.config.ts
+ui/tsconfig*.json
+ui/package.json
+ui/package-lock.json
 
 # Git
 .git/

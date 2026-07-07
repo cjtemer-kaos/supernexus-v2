@@ -63,6 +63,12 @@ from src.core.code_absorber import CodeAbsorber
 from src.core.circuit_breaker import CircuitBreaker, HealthChecker
 from src.core.token_monitor import TokenMonitor
 
+# --- Auth Vault (credential storage) ---
+try:
+    from src.core.auth_vault import AuthVault
+except ImportError:
+    AuthVault = None
+
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -506,13 +512,11 @@ class DirectorNexus:
             context = hook_result.modified_input.get("context", context)
 
         try:
-            mem_ctx = self._get_memory_context(task, limit=5)
+            mem_ctx = self._get_memory_context(task, limit=3)
             if mem_ctx and mem_ctx.strip():
-                task = f"""## CONOCIMIENTO QUE HAS ESTUDIADO
-Revisa si este conocimiento responde DIRECTAMENTE la tarea. Si NO es relevante, USA research_scholar para investigar.
-{mem_ctx}
+                task = f"""{task}
 
---- Tarea: {task}"""
+[Contexto]: {mem_ctx[:500]}"""
         except Exception:
             pass
 
@@ -543,7 +547,19 @@ Revisa si este conocimiento responde DIRECTAMENTE la tarea. Si NO es relevante, 
                                 duration_ms=(datetime.now() - start).total_seconds() * 1000)
 
         # Dispatch pipeline (S4: extracted to ExecutionService)
-        ai_result = await ES.try_scholar_gem(self, task, primary_gem, classification)
+        # Para preguntas: Scholar investiga → Sage guarda → Director responde
+        ai_result = None
+        _action_kw = {"escribe","crea","haz","genera","programa","codigo","funcion","implementa",
+                      "refactoriza","arregla","debug","test","prueba","instala","configura",
+                      "convierte","compara","analiza","disena","construye","despliega"}
+        _is_action = any(kw in task.lower().split() for kw in _action_kw)
+        
+        if not _is_action:
+            # Es pregunta - Scholar investiga → Sage guarda
+            ai_result = await self._research_and_persist(task, context, session)
+        
+        if ai_result is None:
+            ai_result = await ES.try_scholar_gem(self, task, primary_gem, classification)
         if ai_result is None:
             ai_result = await ES.try_agent_runner(self, task, context, primary_gem, session)
         if ai_result is None:
@@ -726,6 +742,92 @@ Revisa si este conocimiento responde DIRECTAMENTE la tarea. Si NO es relevante, 
                 logger.debug(f"Webhook fire skipped: {e}")
 
         return final_result
+
+    async def _research_and_persist(self, task: str, context: str, session) -> dict | None:
+        """Flujo: Scholar investiga → Sage guarda → Director responde con la info."""
+        try:
+            from src.agents.scholar_gem import ScholarGem
+            from src.agents.sage_gem import SageGem
+            
+            # 1. Scholar investiga (solo fuentes crudas, sin LLM)
+            scholar = ScholarGem(web_researcher=self.web_researcher, llm_caller=None)
+            research = await scholar.research(task, max_sources=3)
+            await scholar.close()
+            
+            if not research.get("sources"):
+                return None
+            
+            # 2. Sage guarda en biblioteca y memoria
+            sage = SageGem()
+            sources_text = "\n".join([
+                f"- {s.get('title', '')}: {s.get('snippet', '')[:200]}"
+                for s in research.get("sources", [])
+            ])
+            content_to_save = f"## {task}\n\nFuentes encontradas:\n{sources_text}"
+            
+            sage.save_to_library(
+                title=task[:100],
+                content=content_to_save,
+                topic=sage._infer_topic(content_to_save, task),
+                source="scholar_research"
+            )
+            
+            # 3. Director genera respuesta sintetizada con su propio LLM
+            context_from_sources = "\n".join([
+                f"[{s.get('title', '')}]({s.get('url', '')})\n{s.get('snippet', '')[:300]}"
+                for s in research.get("sources", [])
+            ])
+            
+            synthesis_prompt = f"""Basándote en estas fuentes web, responde la pregunta del usuario de forma completa y concisa.
+Usa español. Si la información es de fuentes en otro idioma, traduce y adapta.
+Incluye los enlaces de las fuentes al final.
+
+PREGUNTA: {task}
+
+FUENTES:
+{context_from_sources}
+
+RESPUESTA:"""
+            
+            try:
+                synthesized = await self.ai_tools.quick_response(
+                    task=synthesis_prompt,
+                    gem="director",
+                    context="",
+                    model_override="deepseek-v4-flash-free"
+                )
+                reply_content = synthesized.get("content", "") if isinstance(synthesized, dict) else str(synthesized)
+                
+                if reply_content and len(reply_content) > 50:
+                    # Agregar enlaces de fuentes al final
+                    links = "\n\n**Fuentes:**\n" + "\n".join(
+                        f"- [{s.get('title', s.get('url', ''))}]({s.get('url', '')})"
+                        for s in research.get("sources", []) if s.get("url")
+                    )
+                    return {
+                        "success": True,
+                        "content": reply_content + links,
+                        "tool": "scholar_research",
+                        "model": "deepseek-v4-flash-free",
+                        "tokens_used": synthesized.get("tokens_used", 0) if isinstance(synthesized, dict) else 0,
+                        "duration_ms": 0,
+                    }
+            except Exception as e:
+                logger.debug(f"LLM synthesis failed: {e}")
+            
+            # Fallback: retornar fuentes crudas si la sintesis falla
+            return {
+                "success": True,
+                "content": sources_text,
+                "tool": "scholar_research",
+                "model": "scholar",
+                "tokens_used": 0,
+                "duration_ms": 0,
+            }
+            
+        except Exception as e:
+            logger.debug(f"Research and persist failed: {e}")
+            return None
 
     async def get_dynamic_identity(self) -> Dict:
         # Delegado a IdentityBrain (src/brain/identity.py)

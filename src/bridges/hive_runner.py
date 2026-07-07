@@ -89,6 +89,9 @@ def load_registry() -> dict[str, Any]:
     """Load hive_agents.json — the declarative agent registry.
     On first call, validates all cwd/binary/args paths and caches any legacy-path warnings."""
     global _REGISTRY_WARNINGS
+    if not HIVE_CONFIG.exists():
+        log.warning(f"hive_agents.json not found at {HIVE_CONFIG}")
+        return {"agents": {}, "version": "2.0"}
     reg = json.loads(HIVE_CONFIG.read_text(encoding="utf-8"))
     if not _REGISTRY_WARNINGS:
         _REGISTRY_WARNINGS = _validate_registry(reg)

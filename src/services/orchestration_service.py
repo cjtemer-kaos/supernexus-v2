@@ -25,7 +25,14 @@ class OrchestrationService:
         director.goal_detector = GoalDetector()
         director.dag = DAGCoordinator()
         director.checkpoints = CheckpointStore()
+        # Wire auto-trigger: connect checkpoint store to session manager
+        if hasattr(director, 'sessions') and director.sessions:
+            director.sessions.set_checkpoint_store(director.checkpoints)
         director.recipes = RecipeEngine()
+        from src.core.compose_workflow import ComposeWorkflow
+        director.compose = ComposeWorkflow(director=director)
+        from src.core.dream_distill import DreamDistillEngine
+        director.dream = DreamDistillEngine(director=director)
         director.loop_guard = LoopGuard(max_history=50, exact_threshold=3, semantic_threshold=0.8)
         director.approval = ApprovalGate()
         director.risk = RiskAssessor()

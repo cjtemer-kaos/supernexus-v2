@@ -20,6 +20,11 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 
+try:
+    from src.core.task_heartbeat import TaskHeartbeat
+except ImportError:
+    TaskHeartbeat = None
+
 logger = logging.getLogger(__name__)
 
 
@@ -76,6 +81,7 @@ class AgentLoop:
     Sprint Contract: Define done condition before loop starts.
     Takeover: Pause after 3 consecutive errors.
     Error Classification: RETRY/SKIP/REPLAN/ABORT.
+    Loop Detection: Break out of repetitive action patterns.
     """
 
     MODEL_ROUTING = {
@@ -143,6 +149,12 @@ class AgentLoop:
         self.max_retries = max_retries
         self.workdir = workdir
         self._error_compactor = None
+
+        try:
+            from src.core.loop_detector import LoopDetector
+            self._loop_detector = LoopDetector()
+        except Exception:
+            self._loop_detector = None
 
     def _get_error_compactor(self):
         if self._error_compactor is None:
@@ -234,6 +246,22 @@ class AgentLoop:
         logger.info(f"Sprint contract: {done_condition}")
 
         for i in range(self.max_iterations):
+            # Loop Detection: break if agent is stuck in repetitive pattern
+            if self._loop_detector:
+                should_stop, loop_pattern = self._loop_detector.should_terminate("agent_loop")
+                if should_stop:
+                    logger.warning(f"LOOP DETECTED — terminating agent_loop: {loop_pattern}")
+                    duration = (datetime.now() - start).total_seconds() * 1000
+                    return AgentLoopResult(
+                        task=task,
+                        success=False,
+                        final_output=f"LOOP DETECTED: Agent stuck in pattern [{loop_pattern.actions}] x{loop_pattern.count}. Breaking out.",
+                        steps=steps,
+                        iterations=i + 1,
+                        total_tokens=total_tokens,
+                        total_duration_ms=duration,
+                    )
+
             # Takeover: pause after 3 consecutive errors
             if consecutive_errors >= self.MAX_CONSECUTIVE_ERRORS:
                 duration = (datetime.now() - start).total_seconds() * 1000
@@ -289,6 +317,10 @@ class AgentLoop:
                             retries += 1
                             if retries >= self.max_retries:
                                 break
+
+                        if self._loop_detector:
+                            self._loop_detector.record_action("agent_loop", f"tool:{tool_name}", str(tool_args), result.output or result.error)
+                            self._loop_detector.record_tool_calls("agent_loop", [{"tool_name": tool_name, "tool_input": tool_args}])
                     except Exception as e:
                         compactor = self._get_error_compactor()
                         error_msg = compactor.compact(str(e)) if compactor else str(e)
@@ -334,6 +366,8 @@ class AgentLoop:
                 steps.append(LoopStep(i, "observe", output[:500]))
                 context += f"\n\nGenerated:\n{output[:1000]}"
                 consecutive_errors = 0
+                if self._loop_detector:
+                    self._loop_detector.record_action("agent_loop", f"generate:{model}", gen_prompt[:100], output[:200])
 
         duration = (datetime.now() - start).total_seconds() * 1000
         last_output = steps[-1].content if steps else "No output"
