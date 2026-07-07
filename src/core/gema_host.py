@@ -108,6 +108,8 @@ class GemaProcess:
                 env["PYTHONIOENCODING"] = "utf-8"
                 env["NEXUS_GEMA_NAME"] = self.manifest.name
                 env["NEXUS_PROJECT_ROOT"] = self.project_root
+                from src.core import nexus_config
+                env["NEXUS_API_BASE"] = nexus_config.get_nexus_url()
 
                 self._process = subprocess.Popen(
                     [
