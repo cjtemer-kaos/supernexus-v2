@@ -270,33 +270,49 @@ class CdpBrowser:
 
     def _build_ax_tree(self, nodes: List[Dict], verbose: bool = False,
                         parent_id: str = "") -> Optional[AccessibilitySnapshotNode]:
-        props = {}
+        """Build accessibility tree from flat node list. Returns root node."""
+        if not nodes:
+            return None
+        
+        # First pass: find root nodes (no parentId or parentId not in list)
+        node_ids = {n.get("nodeId") for n in nodes}
+        roots = []
         for n in nodes:
-            if not parent_id or n.get("parentId", "") == parent_id:
-                node_id = n.get("nodeId", "")
-                role = n.get("role", {}).get("value", "unknown")
-                name = ""
-                value = ""
-                for prop in n.get("properties", []):
-                    if prop.get("name") == "name":
-                        name = prop.get("value", {}).get("value", "")
-                    elif prop.get("name") == "value":
-                        value = prop.get("value", {}).get("value", "")
-                    elif verbose:
-                        pname = prop.get("name", "")
-                        pval = prop.get("value", {}).get("value", "")
-                        if pval:
-                            props[pname] = str(pval)[:60]
-                if not verbose and role in ("InlineTextBox", "StaticText", "generic"):
-                    continue
-                if not verbose and not name and role not in ("heading", "link", "button"):
-                    continue
-                children = self._build_ax_tree(nodes, verbose, node_id)
-                xn = AccessibilitySnapshotNode(node_id, role, name, value, children, dict(props))
-                if not verbose and not children and not name:
-                    continue
-                return xn
-        return None
+            pid = n.get("parentId", "")
+            if not pid or pid not in node_ids:
+                roots.append(n)
+        
+        if not roots:
+            # Fallback: use first node as root
+            roots = [nodes[0]]
+        
+        def build_node(n, depth=0):
+            if depth > 10:  # Prevent infinite recursion
+                return None
+            node_id = n.get("nodeId", "")
+            role = n.get("role", {}).get("value", "unknown")
+            
+            # Name is directly in name.value
+            name_obj = n.get("name", {})
+            name = name_obj.get("value", "") if isinstance(name_obj, dict) else str(name_obj)
+            
+            # Value is directly in value.value
+            value_obj = n.get("value", {})
+            value = value_obj.get("value", "") if isinstance(value_obj, dict) else str(value_obj) if value_obj else ""
+            
+            # Find children
+            children = []
+            for child_n in nodes:
+                if child_n.get("parentId") == node_id:
+                    child = build_node(child_n, depth + 1)
+                    if child:
+                        children.append(child)
+            
+            return AccessibilitySnapshotNode(node_id, role, name, value, children)
+        
+        # Build tree from first root
+        root = build_node(roots[0])
+        return root
 
     async def _wait_for_page_ready(self, timeout: float = 5.0):
         deadline = time.time() + timeout

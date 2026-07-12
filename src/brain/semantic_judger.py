@@ -23,8 +23,8 @@ from typing import List, Optional, Tuple
 
 logger = logging.getLogger(__name__)
 
-BASE_DIR = Path(__file__).parent.parent.parent
-MEMORY_DB = BASE_DIR / "memory" / "nexus_memory.db"
+NEXUS_HOME = Path.home() / ".nexus"
+MEMORY_DB = NEXUS_HOME / "brain" / "nexus_memory.db"
 
 
 class Judgment(Enum):

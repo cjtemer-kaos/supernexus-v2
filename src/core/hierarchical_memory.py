@@ -68,6 +68,17 @@ class MemoryItem:
         })
 
 
+_singleton_instance: HierarchicalMemory | None = None
+
+
+def get_hierarchical_memory() -> HierarchicalMemory:
+    """Get or create the singleton HierarchicalMemory instance."""
+    global _singleton_instance
+    if _singleton_instance is None:
+        _singleton_instance = HierarchicalMemory()
+    return _singleton_instance
+
+
 class HierarchicalMemory:
     def __init__(self, working_capacity: int = 100, episodic_capacity: int = 500,
                  triage: MemoryTriage | None = None):

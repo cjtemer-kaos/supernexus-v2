@@ -208,6 +208,32 @@ class SuperNEXUSBackend:
         self.event_bus = EventBus(hub=self.realtime_hub)
         self.comm_flow = CommunicationFlow(self.event_bus)
         self.runtime = AgentRuntime(self.event_bus)
+
+        # SelfLearningLoop: subscribe to TASK_COMPLETE events
+        try:
+            from src.core.self_learning_loop import get_self_learning_loop
+            self._self_learning = get_self_learning_loop()
+            async def _on_task_complete(msg):
+                try:
+                    from src.core.self_learning_loop import ActorMessage
+                    actor_msg = ActorMessage(
+                        msg_type="learn",
+                        content=json.dumps({
+                            "task": msg.metadata.get("task", "")[:200],
+                            "model": msg.metadata.get("gem", ""),
+                            "outcome": "completed" if msg.metadata.get("success") else "failed",
+                            "quality": 0.8 if msg.metadata.get("success") else 0.2,
+                        })
+                    )
+                    await self._self_learning.handle_message(actor_msg)
+                except Exception as e:
+                    logger.debug(f"SelfLearning hook error: {e}")
+            asyncio.get_event_loop().create_task(
+                self.event_bus.subscribe("task_complete", _on_task_complete)
+            )
+            logger.info("SelfLearningLoop subscribed to task_complete events")
+        except Exception as e:
+            logger.debug(f"SelfLearning subscription skipped: {e}")
         # self.pc2 = self._safe_init("PC2Bridge", PC2Bridge)  # REMOTE
         self.tailscale = self._safe_init("TailscaleBridge", TailscaleBridge)
         self.nexus_hive = self._safe_init("NexusHive", NexusHive)
@@ -8389,6 +8415,191 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     except Exception as e:
         logger.warning(f"Could not add improvement routes (non-critical): {e}")
 
+    # Blueprints routes
+    async def handle_blueprints_list(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        category = request.query.get("category")
+        bps = engine.list_blueprints(category)
+        return web.json_response([bp.to_dict() for bp in bps])
+
+    async def handle_blueprint_get(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        bp_id = request.match_info["bp_id"]
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        bp = engine.get_blueprint(bp_id)
+        if not bp:
+            return web.json_response({"error": "Blueprint not found"}, status=404)
+        return web.json_response(bp.to_dict())
+
+    async def handle_blueprint_form(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        bp_id = request.match_info["bp_id"]
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        form = engine.render_form(bp_id)
+        if not form:
+            return web.json_response({"error": "Blueprint not found"}, status=404)
+        return web.json_response(form)
+
+    async def handle_blueprint_execute(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        bp_id = request.match_info["bp_id"]
+        body = await request.json() if request.content_length else {}
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        prompt = engine.execute(bp_id, body.get("slots"))
+        if not prompt:
+            return web.json_response({"error": "Blueprint not found"}, status=404)
+        return web.json_response({"prompt": prompt})
+
+    async def handle_blueprint_activate(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        bp_id = request.match_info["bp_id"]
+        body = await request.json() if request.content_length else {}
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        ok = engine.activate(bp_id, body.get("schedule"))
+        if not ok:
+            return web.json_response({"error": "Blueprint not found"}, status=404)
+        return web.json_response({"ok": True})
+
+    async def handle_blueprint_deactivate(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        bp_id = request.match_info["bp_id"]
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        ok = engine.deactivate(bp_id)
+        if not ok:
+            return web.json_response({"error": "Blueprint not found"}, status=404)
+        return web.json_response({"ok": True})
+
+    async def handle_blueprint_stats(request: web.Request) -> web.Response:
+        from src.blueprints import BlueprintEngine
+        engine = BlueprintEngine()
+        engine.load_catalog()
+        return web.json_response(engine.get_stats())
+
+    app.router.add_get("/api/blueprints", handle_blueprints_list)
+    app.router.add_get("/api/blueprints/stats", handle_blueprint_stats)
+    app.router.add_get("/api/blueprints/{bp_id}", handle_blueprint_get)
+    app.router.add_get("/api/blueprints/{bp_id}/form", handle_blueprint_form)
+    app.router.add_post("/api/blueprints/{bp_id}/execute", handle_blueprint_execute)
+    app.router.add_post("/api/blueprints/{bp_id}/activate", handle_blueprint_activate)
+    app.router.add_post("/api/blueprints/{bp_id}/deactivate", handle_blueprint_deactivate)
+
+    # Learning Graph routes
+    async def handle_learning_graph_stats(request: web.Request) -> web.Response:
+        from src.core.learning_graph import LearningGraph
+        lg = LearningGraph()
+        days = int(request.query.get("days", "30"))
+        stats = lg.get_stats(days)
+        return web.json_response({
+            "total_events": stats.total_events,
+            "events_by_type": stats.events_by_type,
+            "events_by_category": stats.events_by_category,
+            "top_skills": stats.top_skills,
+            "streak_days": stats.streak_days,
+            "total_skills": stats.total_skills,
+            "proficiency_avg": stats.proficiency_avg,
+        })
+
+    async def handle_learning_graph_timeline(request: web.Request) -> web.Response:
+        from src.core.learning_graph import LearningGraph
+        lg = LearningGraph()
+        days = int(request.query.get("days", "7"))
+        return web.json_response(lg.get_timeline(days))
+
+    async def handle_learning_graph_skills(request: web.Request) -> web.Response:
+        from src.core.learning_graph import LearningGraph
+        lg = LearningGraph()
+        skills = lg.get_skills()
+        return web.json_response([s.__dict__ for s in skills])
+
+    async def handle_learning_graph_record(request: web.Request) -> web.Response:
+        from src.core.learning_graph import LearningGraph
+        body = await request.json()
+        lg = LearningGraph()
+        event_id = lg.record_event(
+            event_type=body.get("event_type", "task_completed"),
+            category=body.get("category", "general"),
+            description=body.get("description", ""),
+            metadata=body.get("metadata"),
+        )
+        return web.json_response({"id": event_id})
+
+    app.router.add_get("/api/learning/stats", handle_learning_graph_stats)
+    app.router.add_get("/api/learning/timeline", handle_learning_graph_timeline)
+    app.router.add_get("/api/learning/skills", handle_learning_graph_skills)
+    app.router.add_post("/api/learning/record", handle_learning_graph_record)
+
+    # Onboarding routes
+    async def handle_onboarding_status(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager
+        ob = OnboardingManager()
+        return web.json_response(ob.get_current_step())
+
+    async def handle_onboarding_start(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager
+        ob = OnboardingManager()
+        return web.json_response(ob.start())
+
+    async def handle_onboarding_consent(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager, ConsentData
+        body = await request.json()
+        ob = OnboardingManager()
+        data = ConsentData(
+            analytics=body.get("analytics", False),
+            error_reporting=body.get("error_reporting", True),
+            skill_sharing=body.get("skill_sharing", False),
+        )
+        return web.json_response(ob.consent(data))
+
+    async def handle_onboarding_profile(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager, ProfileData
+        body = await request.json()
+        ob = OnboardingManager()
+        data = ProfileData(
+            name=body.get("name", ""),
+            role=body.get("role", ""),
+            interests=body.get("interests", []),
+            experience=body.get("experience", ""),
+        )
+        return web.json_response(ob.profile(data))
+
+    async def handle_onboarding_connect(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager, ConnectData
+        body = await request.json()
+        ob = OnboardingManager()
+        data = ConnectData(
+            telegram=body.get("telegram", False),
+            discord=body.get("discord", False),
+            github=body.get("github", False),
+        )
+        return web.json_response(ob.connect(data))
+
+    async def handle_onboarding_back(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager
+        ob = OnboardingManager()
+        return web.json_response(ob.go_back())
+
+    async def handle_onboarding_reset(request: web.Request) -> web.Response:
+        from src.core.onboarding import OnboardingManager
+        ob = OnboardingManager()
+        ob.reset()
+        return web.json_response({"ok": True})
+
+    app.router.add_get("/api/onboarding", handle_onboarding_status)
+    app.router.add_get("/api/onboarding/status", handle_onboarding_status)
+    app.router.add_post("/api/onboarding/start", handle_onboarding_start)
+    app.router.add_post("/api/onboarding/consent", handle_onboarding_consent)
+    app.router.add_post("/api/onboarding/profile", handle_onboarding_profile)
+    app.router.add_post("/api/onboarding/connect", handle_onboarding_connect)
+    app.router.add_post("/api/onboarding/back", handle_onboarding_back)
+    app.router.add_post("/api/onboarding/reset", handle_onboarding_reset)
+
     # Static files (UI)
     ui_dist_path = Path(__file__).parent.parent.parent / "ui" / "dist"
     if ui_dist_path.exists() and (ui_dist_path / "index.html").exists():
@@ -8434,7 +8645,6 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
                     return web.FileResponse(graph_html)
                 return web.Response(status=404, text="graph.html not found")
             app.router.add_get("/graph", handle_graph_redirect)
-
         logger.info(f"Serving UI from {ui_dist_path}")
 
     return app
@@ -8491,6 +8701,58 @@ async def run_server(port: int = 9000):
                 print(f'  [!] FIRST RUN: POST {"username": "admin", "password": "..."} -> /api/auth/setup')
             elif auth:
                 print(f"  Auth: http://localhost:{port}/api/auth/login")
+
+            # --- Start messaging gateways (Discord, Telegram, WhatsApp) ---
+            try:
+                from src.gateways import GatewayManager, DiscordAdapter, GatewayConfig, Platform
+
+                async def _gateway_handler(msg):
+                    """Route incoming gateway messages through the backend."""
+                    result = await backend.process_message(
+                        msg.content, gem="auto", project="default",
+                        session_id=f"{msg.platform.value}:{msg.channel_id}",
+                    )
+                    return result.get("reply", "(no reply)")
+
+                gw_manager = GatewayManager()
+                gw_manager.set_message_handler(_gateway_handler)
+
+                # Discord: auto-start if token present
+                discord_token = (
+                    os.environ.get("DISCORD_BOT_TOKEN")
+                    or os.environ.get("DISCORD_TOKEN")
+                )
+                if discord_token:
+                    dc_config = GatewayConfig(platform=Platform.DISCORD, bot_token=discord_token)
+                    gw_manager.register_adapter(DiscordAdapter(dc_config))
+                    logger.info("Discord gateway registered")
+
+                # Telegram: auto-start if token present
+                tg_token = os.environ.get("TELEGRAM_BOT_TOKEN")
+                if tg_token:
+                    from src.gateways import TelegramAdapter
+                    tg_config = GatewayConfig(platform=Platform.TELEGRAM, bot_token=tg_token)
+                    gw_manager.register_adapter(TelegramAdapter(tg_config))
+                    logger.info("Telegram gateway registered")
+
+                # WhatsApp: auto-start if token present
+                wa_token = os.environ.get("WHATSAPP_TOKEN")
+                if wa_token:
+                    from src.gateways import WhatsAppAdapter
+                    wa_config = GatewayConfig(platform=Platform.WHATSAPP, bot_token=wa_token)
+                    gw_manager.register_adapter(WhatsAppAdapter(wa_config))
+                    logger.info("WhatsApp gateway registered")
+
+                if gw_manager._adapters:
+                    app["gateway_manager"] = gw_manager
+                    asyncio.create_task(gw_manager.start_all(), name="gw-start")
+                    logger.info(f"Started {len(gw_manager._adapters)} gateway(s)")
+                else:
+                    logger.info("No gateway tokens found — gateways not started")
+
+            except Exception as e:
+                logger.warning(f"Gateway init failed (non-fatal): {e}")
+
             logger.info("SuperNEXUS backend fully initialized")
         except Exception as e:
             logger.error(f"Backend init failed (degraded): {e}")

@@ -23,6 +23,17 @@ class LearningRecord:
     metadata: dict = field(default_factory=dict)
 
 
+_self_learning_singleton: SelfLearningLoop | None = None
+
+
+def get_self_learning_loop() -> SelfLearningLoop:
+    """Get or create the singleton SelfLearningLoop instance."""
+    global _self_learning_singleton
+    if _self_learning_singleton is None:
+        _self_learning_singleton = SelfLearningLoop()
+    return _self_learning_singleton
+
+
 class SelfLearningLoop(Actor):
     name = "self_learning_loop"
 
@@ -153,3 +164,15 @@ class SelfLearningLoop(Actor):
             }))
 
         return ActorResult(success=False, content="", error=f"Unknown msg_type: {msg.msg_type}")
+
+    def get_stats(self) -> dict:
+        """Return current learning loop statistics."""
+        return {
+            "status": "running" if self._loop_task and not self._loop_task.done() else "stopped",
+            "cycles": self._cycles,
+            "pending_records": len(self._records),
+            "last_cycle": self._last_cycle,
+            "has_judge": self._judge_fn is not None,
+            "has_memory": self._memory_store_fn is not None,
+            "has_router": self._adaptive_router is not None,
+        }

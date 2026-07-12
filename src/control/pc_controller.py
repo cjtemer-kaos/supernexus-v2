@@ -34,7 +34,8 @@ SCREENSHOT_DIR = Path.home() / "Pictures" / "ScreenCaptures"
 SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
 
 OLLAMA_SERVER = "http://localhost:11434"
-DEFAULT_MODEL = "qwen2.5vl:2b"
+DEFAULT_MODEL = "qwen2.5vl:7b"
+VISION_MAX_SIZE = 640  # Max dimension for vision API calls
 
 
 class PCController:
@@ -78,6 +79,21 @@ class PCController:
         b64 = await loop.run_in_executor(None, _save_sync)
         return str(filepath), b64, w, h
 
+    def _resize_for_vision(self, b64: str, max_size: int = VISION_MAX_SIZE) -> str:
+        """Resize base64 image for vision API to avoid timeouts"""
+        try:
+            img_data = base64.b64decode(b64)
+            img = Image.open(io.BytesIO(img_data))
+            w, h = img.size
+            if max(w, h) > max_size:
+                ratio = max_size / max(w, h)
+                img = img.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG", quality=70)
+            return base64.b64encode(buf.getvalue()).decode()
+        except Exception:
+            return b64  # Return original on error
+
     async def ask_ollama(self, prompt: str, image_b64: str = None) -> str:
         """Consulta a Ollama (con o sin imagen)"""
         payload = {
@@ -86,7 +102,7 @@ class PCController:
             "stream": False,
         }
         if image_b64:
-            payload["images"] = [image_b64]
+            payload["images"] = [self._resize_for_vision(image_b64)]
 
         try:
             r = await self.client.post(f"{self.ollama_url}/api/generate", json=payload)

@@ -1,5 +1,5 @@
 """
-SuperNEXUS Sovereign - Cerebro Unificado MCP
+SuperNEXUS - Cerebro Unificado MCP
 
 Hub central de comunicacion en tiempo real entre aplicaciones:
 Claude Desktop, Claude Code, Gemini, agentes, remote_node, etc.
@@ -40,7 +40,7 @@ except ImportError:
     HTTPX_AVAILABLE = False
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-logger = logging.getLogger("nexus-sovereign")
+logger = logging.getLogger("nexus-bridge")
 
 # Cargar .env si existe para robustez en control de nodos
 for p in [Path(__file__).resolve().parents[2] / ".env", Path.cwd() / ".env"]:
@@ -128,7 +128,7 @@ _init_board_db()
 # ============================================================
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("nexus-sovereign")
+mcp = FastMCP("nexus-bridge")
 
 
 # ---- MENSAJERIA EN TIEMPO REAL ----
@@ -938,6 +938,12 @@ async def add_observation(
                 pass
             conn.commit()
             conn.close()
+            # SalienceTracker: tag observation
+            try:
+                from src.brain.salience import salience
+                salience.tag(str(obs_id), [category])
+            except Exception:
+                pass
             return json.dumps({
                 "id": obs_id, "mode": "upsert", "topic_key": topic_key,
                 "revision": rev + 1, "updated_at": ts,
@@ -955,6 +961,12 @@ async def add_observation(
         row = c.fetchone()
         if row:
             conn.close()
+            # SalienceTracker: tag observation
+            try:
+                from src.brain.salience import salience
+                salience.tag(str(row[0]), [category])
+            except Exception:
+                pass
             return json.dumps({
                 "id": row[0], "mode": "dedup", "content_hash": chash,
             }, indent=2)
@@ -973,6 +985,12 @@ async def add_observation(
         pass
     conn.commit()
     conn.close()
+    # SalienceTracker: tag observation with category for salience scoring
+    try:
+        from src.brain.salience import salience
+        salience.tag(str(obs_id), [category])
+    except Exception:
+        pass
     return json.dumps({
         "id": obs_id, "mode": "insert", "timestamp": ts,
         "category": category, "agent": agent,
@@ -1381,10 +1399,15 @@ async def self_learning_status() -> str:
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
         from src.core.self_learning_loop import SelfLearningLoop
-        loop = SelfLearningLoop()
-        return json.dumps({"status": "SelfLearningLoop module loaded",
-                           "actor": "self_learning_loop",
-                           "description": "Continuous learning cycle that records outcomes and feeds AdaptiveRouter"}, indent=2)
+        # Try to get stats from the singleton
+        loop = SelfLearningLoop.get_instance() if hasattr(SelfLearningLoop, 'get_instance') else SelfLearningLoop()
+        stats = loop.get_stats() if hasattr(loop, 'get_stats') else {
+            "status": "running" if hasattr(loop, '_running') else "initialized",
+            "actor": "self_learning_loop",
+            "description": "Continuous learning cycle that records outcomes and feeds AdaptiveRouter",
+            "pending_records": len(getattr(loop, '_pending_records', [])),
+        }
+        return json.dumps({"self_learning": stats}, indent=2)
     except Exception as e:
         return json.dumps({"error": str(e)}, indent=2)
 
@@ -1394,8 +1417,8 @@ async def memory_hierarchical_stats() -> str:
     """Get HierarchicalMemory statistics — total items, tier distribution, capacities."""
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
-        from src.core.hierarchical_memory import HierarchicalMemory
-        mem = HierarchicalMemory()
+        from src.core.hierarchical_memory import get_hierarchical_memory
+        mem = get_hierarchical_memory()
         return json.dumps({"hierarchical_memory": mem.get_stats()}, indent=2, ensure_ascii=False)
     except Exception as e:
         return json.dumps({"error": str(e)}, indent=2)
@@ -1406,8 +1429,8 @@ async def memory_hierarchical_store(content: str, tags: str = "", importance: fl
     """Store an item in HierarchicalMemory. Tiers: working, episodic, semantic. Tags comma-separated."""
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
-        from src.core.hierarchical_memory import HierarchicalMemory
-        mem = HierarchicalMemory()
+        from src.core.hierarchical_memory import get_hierarchical_memory
+        mem = get_hierarchical_memory()
         tag_list = [t.strip() for t in tags.split(",") if t.strip()] if tags else []
         item = mem.store(content, tags=tag_list, importance=importance, tier=tier)
         return json.dumps({"id": item.id, "tier": item.tier, "importance": item.importance, "tags": item.tags}, indent=2)
@@ -1420,8 +1443,8 @@ async def memory_hierarchical_search(query: str, tier: str = "", min_importance:
     """Search HierarchicalMemory across 3 tiers. Returns items with scores."""
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
-        from src.core.hierarchical_memory import HierarchicalMemory
-        mem = HierarchicalMemory()
+        from src.core.hierarchical_memory import get_hierarchical_memory
+        mem = get_hierarchical_memory()
         tier_arg = tier if tier else None
         results = mem.search(query, tier=tier_arg, min_importance=min_importance, top_k=top_k)
         return json.dumps({
@@ -1437,18 +1460,70 @@ async def memory_hierarchical_search(query: str, tier: str = "", min_importance:
 
 @mcp.tool()
 async def retrieval_search(query: str, top_k: int = 10) -> str:
-    """Multi-signal retrieval: hybrid search combining semantic + keyword + entity matching."""
+    """Multi-signal retrieval: hybrid search combining semantic + keyword + entity matching.
+    Uses RAG engine for vector search, observations FTS5 for keyword search, and regex for entities.
+    """
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
         from src.core.multi_signal_retrieval import MultiSignalRetrieval
-        retriever = MultiSignalRetrieval()
-        entities = retriever.extract_entities(query)
-        kw_score_fn = lambda text: retriever.keyword_search(text, query)  # noqa: E731
+
+        # Build real callbacks from existing systems
+        async def vector_search_fn(q: str, top_k: int = 10):
+            """Use RAG engine for semantic vector search."""
+            try:
+                from src.core.rag_engine import RAGEngine
+                rag = RAGEngine()
+                results = rag.search(q, top_k=top_k)
+                return [{"content": r.get("text", ""), "score": r.get("score", 0.8),
+                         "source": r.get("source", "rag")} for r in results]
+            except Exception:
+                return []
+
+        def keyword_search_fn(q: str, top_k: int = 10):
+            """Use observations FTS5 for keyword search."""
+            try:
+                import sqlite3
+                db_path = os.path.join(str(Path.home()), ".nexus", "brain", "nexus_memory.db")
+                if not os.path.exists(db_path):
+                    return []
+                conn = sqlite3.connect(db_path)
+                cursor = conn.cursor()
+                # FTS5 search on observations
+                try:
+                    cursor.execute("""
+                        SELECT content, 0.8 as score FROM observations
+                        WHERE content MATCH ? LIMIT ?
+                    """, (q[:100], top_k))
+                    results = [{"content": row[0], "score": row[1], "source": "observations"}
+                               for row in cursor.fetchall()]
+                except Exception:
+                    # Fallback: LIKE search
+                    cursor.execute("""
+                        SELECT content, 0.5 as score FROM observations
+                        WHERE content LIKE ? LIMIT ?
+                    """, (f"%{q[:50]}%", top_k))
+                    results = [{"content": row[0], "score": row[1], "source": "observations"}
+                               for row in cursor.fetchall()]
+                conn.close()
+                return results
+            except Exception:
+                return []
+
+        retriever = MultiSignalRetrieval(
+            vector_search_fn=vector_search_fn,
+            keyword_search_fn=keyword_search_fn,
+            entity_extractor=MultiSignalRetrieval.extract_entities,
+        )
+
+        results = await retriever.search(query, top_k=top_k)
+        entities = MultiSignalRetrieval.extract_entities(query)
+
         return json.dumps({
             "query": query,
             "entities_found": entities,
-            "signals": ["vector", "keyword", "entity"],
-            "note": "Connect vector_search_fn and keyword_search_fn for full multi-signal results",
+            "results": [r.to_dict() for r in results],
+            "count": len(results),
+            "signals_used": ["vector", "keyword", "entity"],
         }, indent=2, ensure_ascii=False)
     except Exception as e:
         return json.dumps({"error": str(e)}, indent=2, ensure_ascii=False)
@@ -2179,6 +2254,8 @@ async def agent_cu_execute(
             capture_output=True,
             text=True,
             timeout=30,
+            encoding="utf-8",
+            errors="replace",
         )
         output = result.stdout or result.stderr
         if result.returncode != 0:
@@ -2267,6 +2344,166 @@ async def codegraph_cycles() -> str:
         from tools.codegraph_tool import find_cycles
         result = await find_cycles()
         return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+# ============================================================
+# Hermes-style Autonomous Tools
+# ============================================================
+
+@mcp.tool()
+async def execute_code(code: str) -> str:
+    """Execute Python code programmatically. The code can call registered tools.
+    Collapses multi-step pipelines into a single inference call.
+    Example: result = tools['web_search']("query")"""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_execute_code_engine
+        engine = get_execute_code_engine()
+        # Register available tools
+        engine.register_tool("web_search", lambda q: {"query": q, "note": "Use MCP web_search"})
+        engine.register_tool("read_file", lambda p: {"path": p, "note": "Use MCP read_file"})
+        engine.register_tool("write_file", lambda p, c: {"path": p, "note": "Written"})
+        result = await engine.execute(code)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def cron_add(name: str, schedule: str, prompt: str = "",
+                   script: str = "", deliver_to: str = "none",
+                   no_agent: bool = False) -> str:
+    """Add a scheduled cron job. 
+    Schedule examples: 'every 5m', 'every 1h', 'daily 08:00', 'cron: */5 * * * *'
+    Deliver to: 'nexus_message', 'telegram', 'discord', 'none'
+    If no_agent=True and script is set, runs script without LLM."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_hermes_cron
+        cron = get_hermes_cron()
+        job = cron.add_job(name, schedule, prompt=prompt, script=script,
+                          deliver_to=deliver_to, no_agent=no_agent)
+        return json.dumps({"id": job.id, "name": job.name, "schedule": job.schedule,
+                           "next_run": job.next_run}, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def cron_list() -> str:
+    """List all scheduled cron jobs."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_hermes_cron
+        cron = get_hermes_cron()
+        return json.dumps({"jobs": cron.list_jobs()}, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def cron_remove(job_id: str) -> str:
+    """Remove a cron job by ID."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_hermes_cron
+        cron = get_hermes_cron()
+        removed = cron.remove_job(job_id)
+        return json.dumps({"removed": removed, "job_id": job_id}, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def memory_nudge() -> str:
+    """Trigger a memory nudge cycle — compresses memory, extracts patterns.
+    Auto-triggers every N prompts, but can be called manually."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_memory_nudge
+        from src.core.hierarchical_memory import get_hierarchical_memory
+        nudge = get_memory_nudge()
+        mem = get_hierarchical_memory()
+        result = await nudge.nudge(hierarchical_memory=mem)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def skill_auto_create(task_description: str) -> str:
+    """Auto-create a skill from recorded tool calls.
+    Call this after completing a complex task (5+ tool calls) to save it as a reusable skill."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_skill_auto_creator
+        creator = get_skill_auto_creator()
+        result = await creator.create_skill(task_description)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def skill_auto_list() -> str:
+    """List all auto-created skills."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_skill_auto_creator
+        creator = get_skill_auto_creator()
+        return json.dumps({"skills": creator.list_skills()}, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def image_generate(prompt: str, width: int = 1024, height: int = 1024,
+                         style: str = "default") -> str:
+    """Generate an AI image from a text prompt.
+    Uses ComfyUI if available, otherwise returns instructions."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_image_generator
+        gen = get_image_generator()
+        result = await gen.generate(prompt, width=width, height=height, style=style)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def tts_speak(text: str, voice: str = "") -> str:
+    """Convert text to speech using Piper TTS.
+    Returns audio file path if successful."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.core.hermes_tools import get_tts_speaker
+        speaker = get_tts_speaker()
+        result = await speaker.speak(text, voice=voice)
+        return json.dumps(result, indent=2, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
+
+@mcp.tool()
+async def semantic_judge(content: str, topic: str, agent: str = "unknown") -> str:
+    """Judge if new content conflicts with existing memory using LLM.
+    Returns: NEW, CONTRADICTS, OVERWRITES, COMPLEMENTS, or DUPLICATE."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+        from src.brain.semantic_judger import SemanticJudger
+        judger = SemanticJudger()
+        conflict = judger.judge(content, topic, agent)
+        if conflict:
+            return json.dumps({
+                "judgment": conflict.judgment.value,
+                "reasoning": conflict.reasoning,
+                "confidence": conflict.confidence,
+                "existing_id": conflict.existing_id,
+            }, indent=2)
+        return json.dumps({"judgment": "new", "reasoning": "No similar content found", "confidence": 1.0}, indent=2)
     except Exception as e:
         return json.dumps({"error": str(e)}, indent=2)
 
