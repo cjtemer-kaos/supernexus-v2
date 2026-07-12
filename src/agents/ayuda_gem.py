@@ -184,7 +184,9 @@ Actualmente configurados:
 
 ZEN (principal, gratis):
   - deepseek-v4-flash-free: rapido, proposito general
-  - nemotron-3-super-free: razonamiento profundo
+  - mimo-v2.5-free: razonamiento profundo
+  - nemotron-3-ultra-free: analisis avanzado
+  - north-mini-code-free: codigo
   - Se conecta via OPENCODE_API_KEY
 
 OLLAMA (local, 11 modelos):
@@ -546,9 +548,21 @@ class AyudaGem:
         intent = await self.analyze_intent(task)
         depth_guide = await self.get_guided_response(task)
 
+        response_parts = [f"Sistema: SuperNEXUS v2.0\n"]
+        if intent.get("is_help_request"):
+            response_parts.append(f"Nivel de usuario: {self.profile['user_level']}")
+            if self.profile["features_used"]:
+                response_parts.append(f"Funcionalidades usadas: {', '.join(self.profile['features_used'][-5:])}")
+        features = intent.get("features_mentioned", [])
+        if features:
+            response_parts.append(f"Gemas relevantes: {', '.join(features)}")
+        response_parts.append(depth_guide)
+
         return {
             "success": True,
             "gema": "AyudaGem",
+            "response": "\n".join(response_parts),
+            "content": "\n".join(response_parts),
             "intent": intent,
             "profile": {
                 "level": self.profile["user_level"],
