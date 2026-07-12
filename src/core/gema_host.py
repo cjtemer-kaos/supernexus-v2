@@ -119,7 +119,7 @@ class GemaProcess:
                     ],
                     stdin=subprocess.PIPE,
                     stdout=subprocess.PIPE,
-                    stderr=subprocess.DEVNULL,
+                    stderr=subprocess.PIPE,
                     cwd=self.project_root,
                     env=env,
                     text=True,
@@ -129,6 +129,9 @@ class GemaProcess:
                 self._start_time = time.time()
                 self.state = GemaState.RUNNING
 
+                # Join old reader thread before creating new one
+                if self._reader_thread and self._reader_thread.is_alive():
+                    self._reader_thread.join(timeout=2)
                 # Iniciar thread de lectura
                 self._reader_thread = threading.Thread(
                     target=self._read_output,
@@ -205,7 +208,12 @@ class GemaProcess:
         with self._lock:
             self._request_id += 1
             req_id = self._request_id
-            future = asyncio.get_event_loop().create_future()
+            try:
+                loop = asyncio.get_running_loop()
+            except RuntimeError:
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+            future = loop.create_future()
             self._pending_requests[req_id] = future
 
         request = {
@@ -289,6 +297,14 @@ class GemaProcess:
         except Exception as e:
             logger.error(f"Gema reader error for {self.manifest.name}: {e}")
         finally:
+            # Log stderr if process crashed
+            if self._process.poll() is not None and self._process.stderr:
+                try:
+                    stderr_data = self._process.stderr.read(4096)
+                    if stderr_data:
+                        logger.error(f"[{self.manifest.name}] stderr: {stderr_data[:500]}")
+                except Exception:
+                    pass
             # Si el proceso termino inesperadamente
             if self._process.poll() is not None and self.state == GemaState.RUNNING:
                 exit_code = self._process.poll()
@@ -530,10 +546,7 @@ class GemaHost:
             if not hook_ctx.should_abort:
                 result = hook_ctx.data
 
-        # Actualizar stats
-        with self._lock:
-            if "error" not in result:
-                gema.stats.total_executions += 1
+        # Stats already incremented in send_request()
                 gema.stats.successful_executions += 1
             else:
                 gema.stats.failed_executions += 1

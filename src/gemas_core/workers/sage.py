@@ -121,7 +121,9 @@ class SageGem(GemaBase):
         """Búsqueda full-text simple (LIKE). FTS5 es client-overridable."""
         if not query or not query.strip():
             return []
-        like = f"%{query}%"
+        # Escapar caracteres especiales de LIKE
+        safe_query = query.replace("%", "\\%").replace("_", "\\_")
+        like = f"%{safe_query}%"
         sql = (
             "SELECT id, content, category, project, metadata, created_at "
             "FROM observations WHERE content LIKE ?"

@@ -48,16 +48,17 @@ class PersistentShell:
     @classmethod
     def is_safe_command(cls, command: str) -> Tuple[bool, str]:
         """Verifica si un comando es seguro para ejecutar"""
-        cmd_lower = command.lower().strip()
+        # Normalize: collapse multiple whitespace to single, strip, lowercase
+        cmd_normalized = re.sub(r'\s+', ' ', command.lower().strip())
 
         # Check destructive commands
         for pattern in cls.DESTRUCTIVE_COMMANDS:
-            if pattern.lower() in cmd_lower:
+            if pattern.lower() in cmd_normalized:
                 return False, f"Command blocked: matches destructive pattern '{pattern}'"
 
         # Check injection patterns
         for pattern in cls.INJECTION_PATTERNS:
-            if re.search(pattern, cmd_lower):
+            if re.search(pattern, cmd_normalized):
                 return False, f"Command blocked: matches injection pattern '{pattern}'"
 
         return True, ""
@@ -80,8 +81,8 @@ class PersistentShell:
             self._proc = subprocess.Popen(
                 ["cmd.exe"] if os.name == "nt" else ["/bin/bash", "-l"],
                 stdin=subprocess.PIPE,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
+                stdout=subprocess.DEVNULL,  # stdout captured via temp files
+                stderr=subprocess.PIPE,  # capture stderr for diagnostics
                 cwd=self.cwd,
                 creationflags=creationflags,
                 text=True,
@@ -176,10 +177,11 @@ class PersistentShell:
                 if os.path.exists(status_file):
                     with open(status_file, "r") as f:
                         code_str = f.read().strip()
-                        if code_str.isdigit():
+                        try:
                             exit_code = int(code_str)
-                        elif interrupted:
-                            exit_code = 143
+                        except (ValueError, TypeError):
+                            if interrupted:
+                                exit_code = 143
                 if os.path.exists(cwd_file):
                     with open(cwd_file, "r") as f:
                         new_cwd = f.read().strip()

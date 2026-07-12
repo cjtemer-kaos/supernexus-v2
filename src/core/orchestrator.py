@@ -102,6 +102,7 @@ class NexusOrchestrator:
         self.config = config
         self.dag_coordinator = DAGCoordinator()
         self._dags: dict[str, TaskDAG] = {}
+        self._max_dags = 50  # Cap to prevent memory leak
         self._run_count = 0
         self._total_duration_s = 0.0
 
@@ -139,6 +140,11 @@ class NexusOrchestrator:
             max_parallel=self.config.max_concurrent_tasks,
         )
         self._dags[dag.id] = dag
+        # Evict oldest when cap exceeded
+        if len(self._dags) > self._max_dags:
+            oldest_id = next(iter(self._dags))
+            if oldest_id != dag.id:
+                del self._dags[oldest_id]
         logger.info(f"LLM DAG created: {dag.id} with {len(nodes)} tasks")
         return dag
 

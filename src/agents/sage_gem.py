@@ -26,9 +26,36 @@ class SageGem:
     Punto de entrada unico para persistir, recuperar y consolidar conocimiento.
     Escribe a cerebro.db como fuente de verdad unica.
     """
-
+    
     def __init__(self):
         self.cerebro_db = Path.home() / ".nexus" / "brain" / "cerebro.db"
+        self._ensure_fts5()
+
+    def _ensure_fts5(self):
+        """Crea tabla FTS5 si no existe para busqueda full-text."""
+        try:
+            conn = sqlite3.connect(str(self.cerebro_db), timeout=10)
+            try:
+                c = conn.cursor()
+                c.execute("""CREATE VIRTUAL TABLE IF NOT EXISTS conocimientos_fts 
+                             USING fts5(tema, contenido, fuente, content='conocimientos', content_rowid='id')""")
+                # Triggers para mantener FTS sincronizado
+                c.execute("""CREATE TRIGGER IF NOT EXISTS conocimientos_ai AFTER INSERT ON conocimientos BEGIN
+                             INSERT INTO conocimientos_fts(rowid, tema, contenido, fuente) 
+                             VALUES (new.id, new.tema, new.contenido, new.fuente); END""")
+                c.execute("""CREATE TRIGGER IF NOT EXISTS conocimientos_ad AFTER DELETE ON conocimientos BEGIN
+                             INSERT INTO conocimientos_fts(conocimientos_fts, rowid, tema, contenido, fuente) 
+                             VALUES('delete', old.id, old.tema, old.contenido, old.fuente); END""")
+                c.execute("""CREATE TRIGGER IF NOT EXISTS conocimientos_au AFTER UPDATE ON conocimientos BEGIN
+                             INSERT INTO conocimientos_fts(conocimientos_fts, rowid, tema, contenido, fuente) 
+                             VALUES('delete', old.id, old.tema, old.contenido, old.fuente);
+                             INSERT INTO conocimientos_fts(rowid, tema, contenido, fuente) 
+                             VALUES (new.id, new.tema, new.contenido, new.fuente); END""")
+                conn.commit()
+            finally:
+                conn.close()
+        except Exception as e:
+                logger.warning(f"FTS5 setup failed: {e}")
 
     # ── Persistir conocimiento ─────────────────────────────────────────
 
@@ -176,12 +203,12 @@ class SageGem:
     # ── Recuperar conocimiento ─────────────────────────────────────────
 
     async def recall(self, query: str, limit: int = 5) -> List[Dict]:
-        """Busca conocimiento relevante en cerebro.db por keywords.
-
+        """Busca conocimiento relevante en cerebro.db via FTS5.
+        
         Args:
-            query: Texto de busqueda
+            query: Texto de busqueda (soporta sintaxis FTS5: OR, NOT, "frase exacta")
             limit: Maximo de resultados
-
+        
         Returns:
             Lista de dicts con tema, contenido, fuente, fecha, utilidad
         """
@@ -196,43 +223,68 @@ class SageGem:
         if not words:
             return []
 
-        conn = sqlite3.connect(str(self.cerebro_db), timeout=10)
-        c = conn.cursor()
-        c.execute("SELECT id, tema, contenido, fuente, fecha, utilidad, veces_revisado FROM conocimientos ORDER BY utilidad DESC")
-        rows = c.fetchall()
-        conn.close()
-
-        now = datetime.now(timezone.utc)
+        # Intentar FTS5 primero
+        fts_query = " OR ".join(words)
         matched = []
-        for r in rows:
-            tema = (r[1] or "").lower()
-            contenido = (r[2] or "").lower()
-            fuente = (r[3] or "").lower()
-            haystack = " ".join([tema, contenido, fuente])
-            if not any(w in haystack for w in words):
-                continue
-            score = 0
-            for w in words:
-                if w in tema or w in fuente:
-                    score += 3
-                elif w in contenido:
-                    score += 1
-            # Recency
-            if r[4]:
-                try:
-                    f = datetime.fromisoformat(r[4])
-                    if f.tzinfo is None:
-                        f = f.replace(tzinfo=timezone.utc)
-                    days_old = (now - f).days
-                    if days_old < 7:
-                        score += 2
-                    elif days_old < 30:
-                        score += 1
-                except Exception:
-                    pass
-            # Revision boost
-            score += (r[6] or 0) // 5
-            matched.append((score, r))
+        try:
+            conn = sqlite3.connect(str(self.cerebro_db), timeout=10)
+            c = conn.cursor()
+            # Rebuild FTS si esta vacio o corrupto
+            c.execute("SELECT COUNT(*) FROM conocimientos_fts")
+            fts_count = c.fetchone()[0]
+            if fts_count == 0:
+                c.execute("INSERT INTO conocimientos_fts(conocimientos_fts) VALUES('rebuild')")
+                conn.commit()
+            
+            c.execute("""SELECT k.id, k.tema, k.contenido, k.fuente, k.fecha, k.utilidad, k.veces_revisado,
+                                rank
+                         FROM conocimientos_fts fts
+                         JOIN conocimientos k ON k.id = fts.rowid
+                         WHERE conocimientos_fts MATCH ?
+                         ORDER BY rank
+                         LIMIT ?""", (fts_query, limit * 3))
+            rows = c.fetchall()
+            conn.close()
+            
+            now = datetime.now(timezone.utc)
+            for r in rows:
+                score = abs(r[7]) or 1.0  # rank es negativo (menor = mejor)
+                # Recency boost
+                if r[4]:
+                    try:
+                        f = datetime.fromisoformat(r[4])
+                        if f.tzinfo is None:
+                            f = f.replace(tzinfo=timezone.utc)
+                        days_old = (now - f).days
+                        if days_old < 7: score += 2
+                        elif days_old < 30: score += 1
+                    except Exception: pass
+                # Revision boost
+                score += (r[6] or 0) // 5
+                matched.append((score, r))
+        except Exception as e:
+            logger.warning(f"FTS5 search failed, falling back to keyword: {e}")
+            # Fallback: keyword matching legacy
+            conn = sqlite3.connect(str(self.cerebro_db), timeout=10)
+            c = conn.cursor()
+            c.execute("SELECT id, tema, contenido, fuente, fecha, utilidad, veces_revisado FROM conocimientos ORDER BY utilidad DESC")
+            rows = c.fetchall()
+            conn.close()
+            now = datetime.now(timezone.utc)
+            for r in rows:
+                haystack = " ".join([(r[1] or ""), (r[2] or ""), (r[3] or "")]).lower()
+                if not any(w in haystack for w in words): continue
+                score = sum(3 if w in (r[1] or "").lower() or w in (r[3] or "").lower() else 1 for w in words)
+                if r[4]:
+                    try:
+                        f = datetime.fromisoformat(r[4])
+                        if f.tzinfo is None: f = f.replace(tzinfo=timezone.utc)
+                        days_old = (now - f).days
+                        if days_old < 7: score += 2
+                        elif days_old < 30: score += 1
+                    except Exception: pass
+                score += (r[6] or 0) // 5
+                matched.append((score, r))
 
         matched.sort(key=lambda x: (x[0], x[1][5]), reverse=True)
         return [
@@ -246,7 +298,7 @@ class SageGem:
         """Mantenimiento completo de la base de conocimiento.
 
         Operaciones:
-        1. Dedup por contenido similar (Jaccard > 0.5): merge
+        1. Dedup por contenido similar (MinHash LSH, Jaccard > 0.5): merge
         2. Pruning: eliminar entradas con utilidad < 3 y edad > 90 dias
         3. Pruning: eliminar entradas sin fuente y sin revisiones
         4. Compact: reindexar FTS5 si existe
@@ -262,43 +314,56 @@ class SageGem:
         now = datetime.now(timezone.utc)
         result = {"dedup_merged": 0, "pruned_low_utility": 0, "pruned_orphan": 0, "errors": []}
 
-        # 1. Dedup por contenido similar
-        c.execute("SELECT id, tema, contenido, fuente, utilidad FROM conocimientos ORDER BY id")
-        rows = c.fetchall()
-        for i in range(len(rows)):
-            if rows[i] is None:
-                continue
-            id_a, tema_a, cont_a, src_a, util_a = rows[i]
-            if not cont_a or len(cont_a) < 50:
-                continue
-            words_a = set(cont_a.lower().split())
-            if len(words_a) < 10:
-                continue
-            for j in range(i + 1, len(rows)):
-                if rows[j] is None:
+        # 1. Dedup por contenido similar via MinHash LSH
+        try:
+            from datasketch import MinHash, MinHashLSH
+            lsh = MinHashLSH(threshold=0.5, num_perm=128)
+            c.execute("SELECT id, tema, contenido, fuente, utilidad FROM conocimientos ORDER BY id")
+            rows = c.fetchall()
+            to_merge = []  # (id_a, id_b, util_a, util_b, cont_a, cont_b, tema_a, tema_b)
+            
+            for r in rows:
+                rid, tema, cont, src, util = r
+                if not cont or len(cont) < 50:
                     continue
-                id_b, tema_b, cont_b, src_b, util_b = rows[j]
-                if not cont_b or len(cont_b) < 50:
-                    continue
-                words_b = set(cont_b.lower().split())
-                if len(words_b) < 10:
-                    continue
-                # Jaccard similarity
-                intersection = words_a & words_b
-                union = words_a | words_b
-                if len(union) == 0:
-                    continue
-                jaccard = len(intersection) / len(union)
-                if jaccard > 0.5:
-                    if not dry_run:
-                        new_util = min((util_a or 5) + (util_b or 5), 10)
-                        new_cont = cont_a if len(cont_a) >= len(cont_b) else cont_b
-                        new_tema = tema_a if len(tema_a) <= len(tema_b) else tema_b
-                        c.execute("""UPDATE conocimientos SET contenido=?, utilidad=?, veces_revisado=veces_revisado+1 WHERE id=?""",
-                                 (new_cont, new_util, id_a))
-                        c.execute("DELETE FROM conocimientos WHERE id=?", (id_b,))
-                    rows[j] = None
-                    result["dedup_merged"] += 1
+                # Crear MinHash
+                m = MinHash(num_perm=128)
+                for word in cont.lower().split():
+                    m.update(word.encode('utf8'))
+                # Buscar duplicados
+                try:
+                    candidates = lsh.query(m)
+                    for cand_id in candidates:
+                        if cand_id == str(rid):
+                            continue
+                        # Obtener datos del candidato
+                        c2 = conn.cursor()
+                        c2.execute("SELECT tema, contenido, utilidad FROM conocimientos WHERE id=?", (int(cand_id),))
+                        cand = c2.fetchone()
+                        if cand:
+                            to_merge.append((rid, int(cand_id), util or 5, cand[2] or 5, cont, cand[1], tema, cand[0]))
+                except Exception:
+                    pass
+                # Insertar en LSH
+                lsh.insert(str(rid), m)
+            
+            if not dry_run:
+                seen = set()
+                for id_a, id_b, util_a, util_b, cont_a, cont_b, tema_a, tema_b in to_merge:
+                    if id_b in seen:
+                        continue
+                    seen.add(id_b)
+                    new_util = min(util_a + util_b, 10)
+                    new_cont = cont_a if len(cont_a) >= len(cont_b) else cont_b
+                    new_tema = tema_a if len(tema_a) <= len(tema_b) else tema_b
+                    c.execute("UPDATE conocimientos SET contenido=?, utilidad=?, veces_revisado=veces_revisado+1 WHERE id=?",
+                              (new_cont, new_util, id_a))
+                    c.execute("DELETE FROM conocimientos WHERE id=?", (id_b,))
+            result["dedup_merged"] = len(set(b for _, b, *_ in to_merge))
+        except ImportError:
+            logger.warning("datasketch not installed, skipping MinHash dedup")
+        except Exception as e:
+            result["errors"].append(f"minhash_dedup: {e}")
 
         # 2. Pruning: baja utilidad y antigua
         cutoff_90 = now.isoformat()

@@ -603,11 +603,15 @@ class DirectorNexus:
             from src.core.memory_extractor import get_memory_extractor
             extractor = get_memory_extractor(director=self)
             session_msgs = session.get_messages_for_llm(max_messages=CONTEXT_WINDOW, scrub=False)
-            asyncio.create_task(extractor.after_response(
+            task = asyncio.create_task(extractor.after_response(
                 messages=[{"role": m["role"], "content": m["content"]} for m in session_msgs if m.get("content")],
                 session_id=session.id,
                 owner=getattr(session, 'owner', ''),
             ))
+            if not hasattr(self, '_background_tasks'):
+                self._background_tasks = set()
+            self._background_tasks.add(task)
+            task.add_done_callback(self._background_tasks.discard)
         except Exception as e:
             logger.debug(f"Memory extraction skipped: {e}")
 
@@ -1078,7 +1082,7 @@ RESPUESTA:"""
     async def _a2a_execute(self, task: str) -> dict:
         if hasattr(self, 'nexus_execute'):
             return await self.nexus_execute(task)
-        return {"error": "Sovereign execute not available"}
+        return {"error": "Execute not available"}
 
     def _absorb_to_brain(self, content: str) -> None:
         if hasattr(self, 'hierarchical_memory'):

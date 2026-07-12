@@ -393,8 +393,12 @@ async def web_research(
         gem.bind_fetcher(fetcher)
     if embedder is not None:
         gem.bind_embedder(embedder)
-    return await gem.research(
-        query=query,
-        start_urls=start_urls,
-        top_k=top_k,
-    )
+    try:
+        return await gem.research(
+            query=query,
+            start_urls=start_urls,
+            top_k=top_k,
+        )
+    finally:
+        if gem._owns_fetcher and gem._fetcher:
+            await gem._fetcher.close()

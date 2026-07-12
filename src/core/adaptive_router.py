@@ -86,9 +86,12 @@ DEFAULT_CATALOG: dict[str, ModelEntry] = {
 
 
 class ThompsonSampler:
-    def __init__(self, catalog: dict[str, ModelEntry] | None = None):
-        self._catalog = catalog or dict(DEFAULT_CATALOG)
+    def __init__(self, catalog: dict[str, ModelEntry]):
+        import threading
+        self._catalog = catalog
         self._outcomes: dict[str, ModelOutcome] = {}
+        self._lock = threading.Lock()
+        self._save_count = 0  # Throttle saves
         self._load()
 
     def get_candidates(self, task: str, required_context: int = 0) -> list[ModelEntry]:
@@ -152,22 +155,27 @@ class ThompsonSampler:
         return best_model
 
     def record_outcome(self, model: str, reward: float, latency_ms: float = 0, cost: float = 0):
-        if model not in self._outcomes:
-            self._outcomes[model] = ModelOutcome()
-        self._outcomes[model].update(reward, latency_ms, cost)
-        self._save()
+        with self._lock:
+            if model not in self._outcomes:
+                self._outcomes[model] = ModelOutcome()
+            self._outcomes[model].update(reward, latency_ms, cost)
+            self._save_count += 1
+            # Throttle: save every 10 outcomes instead of every single one
+            if self._save_count % 10 == 0:
+                self._save()
 
     def get_stats(self) -> dict[str, Any]:
-        return {
-            name: {
-                "calls": o.total_calls,
-                "success_rate": round(o.success_rate, 3),
-                "avg_latency_ms": round(o.avg_latency_ms, 1),
-                "alpha": round(o.alpha, 2),
-                "beta": round(o.beta, 2),
+        with self._lock:
+            return {
+                name: {
+                    "calls": o.total_calls,
+                    "success_rate": round(o.success_rate, 3),
+                    "avg_latency_ms": round(o.avg_latency_ms, 1),
+                    "alpha": round(o.alpha, 2),
+                    "beta": round(o.beta, 2),
+                }
+                for name, o in self._outcomes.items()
             }
-            for name, o in self._outcomes.items()
-        }
 
     def _save(self):
         try:

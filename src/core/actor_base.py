@@ -105,6 +105,7 @@ class ActorState(Enum):
     PAUSED = "paused"
     STOPPED = "stopped"
     CRASHED = "crashed"
+    RESTARTING = "restarting"
 
 
 class SupervisorStrategy(Enum):
@@ -187,14 +188,10 @@ class Actor(ABC):
         response_queue: asyncio.Queue[ActorResult] = asyncio.Queue()
         msg = ActorMessage(content=content, msg_type=msg_type, metadata={"__response_queue": response_queue})
         self._mailbox.put_nowait(msg)
-        deadline = time.monotonic() + timeout
-        while True:
-            try:
-                return response_queue.get_nowait()
-            except asyncio.QueueEmpty:
-                if time.monotonic() >= deadline:
-                    return ActorResult(success=False, content="", error="Actor response timeout")
-                await asyncio.sleep(0.2)
+        try:
+            return await asyncio.wait_for(response_queue.get(), timeout=timeout)
+        except asyncio.TimeoutError:
+            return ActorResult(success=False, content="", error="Actor response timeout")
 
     async def spawn(self) -> None:
         """Inicia el procesamiento del buzón."""

@@ -153,7 +153,9 @@ class BibliotecaGem(GemaBase):
         """Búsqueda por LIKE en source/title/content."""
         if not query or not query.strip():
             return []
-        like = f"%{query}%"
+        # Escapar caracteres especiales de LIKE
+        safe_query = query.replace("%", "\\%").replace("_", "\\_")
+        like = f"%{safe_query}%"
         sql = (
             "SELECT id, source, title, category, project, tags, created_at "
             "FROM documents WHERE (source LIKE ? OR title LIKE ? OR content LIKE ?)"

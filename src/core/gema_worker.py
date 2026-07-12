@@ -200,13 +200,16 @@ class GemaWorker:
 
                 try:
                     request = json.loads(line)
-                    # Ejecutar en event loop
-                    loop = asyncio.new_event_loop()
-                    asyncio.set_event_loop(loop)
+                    # Ejecutar en event loop (reusar si existe)
                     try:
-                        response = loop.run_until_complete(self.handle_request(request))
-                    finally:
-                        loop.close()
+                        loop = asyncio.get_event_loop()
+                        if loop.is_closed():
+                            loop = asyncio.new_event_loop()
+                            asyncio.set_event_loop(loop)
+                    except RuntimeError:
+                        loop = asyncio.new_event_loop()
+                        asyncio.set_event_loop(loop)
+                    response = loop.run_until_complete(self.handle_request(request))
 
                     sys.stdout.write(json.dumps(response) + "\n")
                     sys.stdout.flush()

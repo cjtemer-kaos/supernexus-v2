@@ -9,6 +9,7 @@ NUEVO: Deep Research iterativo (inspirado en Odysseus/IterResearch):
   Loop Think->Search->Extract->Synthesize con planning LLM y stop criteria
 """
 
+import asyncio
 import logging
 from typing import Dict, List, Optional, Callable
 from datetime import datetime
@@ -22,6 +23,8 @@ class ScholarGem:
         self.web = web_researcher
         self.mcp = mcp_client
         self.llm_caller = llm_caller  # async function(prompt, temperature, max_tokens) -> str
+        self._search_cache: Dict[str, tuple] = {}  # query -> (result, timestamp)
+        self._cache_ttl = 3600  # 1 hora
 
     async def execute(self, task: str, context: str = "") -> Dict:
         return await self.research(task)
@@ -74,7 +77,16 @@ class ScholarGem:
             return {"url": url, "error": str(e), "status": "exception"}
 
     async def _simple_research(self, query: str, max_sources: int, include_tor: bool = False) -> Dict:
-        """Investigacion simple (single-pass) - rapida."""
+        """Investigacion simple (single-pass) - rapida con cache y fetch paralelo."""
+        # Check cache
+        cache_key = f"{query}:{max_sources}:{include_tor}"
+        if cache_key in self._search_cache:
+            cached_result, cached_time = self._search_cache[cache_key]
+            import time
+            if time.time() - cached_time < self._cache_ttl:
+                logger.info(f"ScholarGem cache hit for '{query[:50]}'")
+                return cached_result
+        
         result = {
             "query": query,
             "mode": "simple",
@@ -85,19 +97,34 @@ class ScholarGem:
 
         sources = await self._search_web(query, max_sources, include_tor=include_tor)
 
-        for source in sources:
-            content = await self._fetch_and_analyze(source["url"])
-            if content:
-                result["sources"].append({
-                    "url": source["url"],
-                    "title": source.get("title", ""),
-                    "snippet": source.get("snippet", ""),
-                    "source": source.get("source", "unknown"),
-                    "summary": content[:500],
-                })
+        # Fetch paralelo con semáforo (max 3 concurrentes)
+        sem = asyncio.Semaphore(3)
+        async def fetch_one(source):
+            async with sem:
+                content = await self._fetch_and_analyze(source["url"])
+                if content:
+                    return {
+                        "url": source["url"],
+                        "title": source.get("title", ""),
+                        "snippet": source.get("snippet", ""),
+                        "source": source.get("source", "unknown"),
+                        "summary": content[:500],
+                    }
+                return None
+        
+        tasks = [fetch_one(s) for s in sources]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        for r in results:
+            if isinstance(r, dict):
+                result["sources"].append(r)
 
         result["summary"] = await self._synthesize(result["sources"], query)
         self.search_history.append(result)
+        
+        # Cache result
+        import time
+        self._search_cache[cache_key] = (result, time.time())
+        
         return result
 
     async def _deep_research(self, query: str, progress_callback: Optional[Callable] = None) -> Dict:
@@ -221,15 +248,6 @@ class ScholarGem:
                 return results
         except Exception as e:
             logger.warning(f"WebResearcher failed: {e}")
-
-        # Fallback: direct web_search via ai_tools (if mcp_client available)
-        try:
-            from src.core.ai_tools import AIToolsManager
-            tools = AIToolsManager(...)
-            # AIToolsManager needs director context, skip if no mcp
-            pass
-        except Exception:
-            pass
 
         # Final fallback: DDGS direct
         try:

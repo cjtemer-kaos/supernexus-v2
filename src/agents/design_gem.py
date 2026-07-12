@@ -16,6 +16,8 @@ NEXUS_API = os.environ.get("NEXUS_API_BASE", "http://localhost:9000")
 
 
 class DesignGem:
+    MAX_HISTORY = 100
+
     def __init__(self):
         self.history = []
 
@@ -43,6 +45,8 @@ class DesignGem:
             "content": html,
         }
         self.history.append(result)
+        if len(self.history) > self.MAX_HISTORY:
+            self.history = self.history[-self.MAX_HISTORY:]
         return result
 
     def _build_prompt(self, task: str, context: str) -> str:

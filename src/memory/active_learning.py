@@ -97,14 +97,29 @@ class ActiveLearningLoop:
             "success": persist_result.get("success", False),
         })
 
-        # Paso 4: Biblioteca organiza
-        logger.info("Step 4: Biblioteca organizing...")
-        org_result = await self.biblioteca.organize(
+        # Paso 4+5: Biblioteca + RAG en paralelo
+        logger.info("Step 4+5: Organizing + RAG indexing (parallel)...")
+        org_task = self.biblioteca.organize(
             title=f"Learned: {query[:80]}",
             content=combined_content[:3000],
             category="Learned",
             tags=["auto-learned", query[:30]],
         )
+        rag_id = f"learned_{datetime.now().strftime('%Y%m%d%H%M%S')}"
+        rag_task = self.rag.add(
+            entry_id=rag_id,
+            text=combined_content[:5000],
+            source=f"learning:{query}",
+            tags=["learned", query[:30]],
+        )
+        org_result, rag_result = await asyncio.gather(org_task, rag_task, return_exceptions=True)
+        
+        # Handle exceptions gracefully
+        if isinstance(org_result, Exception):
+            org_result = {"success": False, "error": str(org_result)}
+        if isinstance(rag_result, Exception):
+            rag_result = {"success": False, "error": str(rag_result)}
+        
         result["steps"].append({
             "step": "organization",
             "gem": "biblioteca",
@@ -112,16 +127,6 @@ class ActiveLearningLoop:
             "path": org_result.get("path", ""),
             "success": org_result.get("success", False),
         })
-
-        # Paso 5: Agregar a RAG
-        logger.info("Step 5: Adding to RAG memory...")
-        rag_id = f"learned_{datetime.now().strftime('%Y%m%d%H%M%S')}"
-        rag_result = self.rag.add(
-            entry_id=rag_id,
-            text=combined_content[:5000],
-            source=f"learning:{query}",
-            tags=["learned", query[:30]],
-        )
         result["steps"].append({
             "step": "rag_indexing",
             "gem": "rag",
@@ -203,4 +208,23 @@ class ActiveLearningLoop:
         }
 
     async def close(self):
-        await self.scholar.close()
+        """Cierra todos los recursos abiertos"""
+        try:
+            await self.scholar.close()
+        except Exception:
+            pass
+        # Close sage if it has a close method
+        if hasattr(self.sage, 'close'):
+            try:
+                await self.sage.close()
+            except Exception:
+                pass
+        # Close biblioteca if it has a close method
+        if hasattr(self.biblioteca, 'close'):
+            try:
+                await self.biblioteca.close()
+            except Exception:
+                pass
+        # Trim learning_history to prevent memory leak
+        if len(self.learning_history) > 1000:
+            self.learning_history = self.learning_history[-1000:]

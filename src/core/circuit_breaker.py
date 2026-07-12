@@ -3,8 +3,9 @@ Circuit Breaker + Health Checks for agent/services reliability.
 """
 from __future__ import annotations
 import logging
+import threading
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Callable, Awaitable
 
@@ -22,51 +23,69 @@ class CircuitBreaker:
     name: str
     failure_threshold: int = 5
     recovery_timeout_s: float = 30.0
-    state: CircuitState = CircuitState.CLOSED
-    failure_count: int = 0
-    last_failure_time: float = 0.0
-    success_count: int = 0
+    _state: CircuitState = field(default=CircuitState.CLOSED, repr=False)
+    _failure_count: int = field(default=0, repr=False)
+    _last_failure_time: float = field(default=0.0, repr=False)
+    _success_count: int = field(default=0, repr=False)
+    _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
+
+    @property
+    def state(self) -> CircuitState:
+        return self._state
+
+    @property
+    def failure_count(self) -> int:
+        return self._failure_count
+
+    @property
+    def success_count(self) -> int:
+        return self._success_count
 
     def record_success(self) -> None:
-        self.success_count += 1
-        if self.state == CircuitState.HALF_OPEN:
-            logger.info(f"CircuitBreaker '{self.name}': closed on success in half-open")
-            self.state = CircuitState.CLOSED
-            self.failure_count = 0
+        with self._lock:
+            self._success_count += 1
+            if self._state == CircuitState.HALF_OPEN:
+                logger.info(f"CircuitBreaker '{self.name}': closed on success in half-open")
+                self._state = CircuitState.CLOSED
+                self._failure_count = 0
 
     def record_failure(self) -> None:
-        self.failure_count += 1
-        self.last_failure_time = time.time()
-        if self.failure_count >= self.failure_threshold:
-            self.state = CircuitState.OPEN
-            logger.warning(f"CircuitBreaker '{self.name}': OPEN after {self.failure_count} failures")
+        with self._lock:
+            self._failure_count += 1
+            self._last_failure_time = time.time()
+            if self._failure_count >= self.failure_threshold:
+                self._state = CircuitState.OPEN
+                logger.warning(f"CircuitBreaker '{self.name}': OPEN after {self._failure_count} failures")
 
     def can_call(self) -> bool:
-        if self.state == CircuitState.CLOSED:
-            return True
-        if self.state == CircuitState.OPEN:
-            if (time.time() - self.last_failure_time) >= self.recovery_timeout_s:
-                self.state = CircuitState.HALF_OPEN
-                logger.info(f"CircuitBreaker '{self.name}': HALF_OPEN after timeout")
+        with self._lock:
+            if self._state == CircuitState.CLOSED:
                 return True
-            return False
-        # HALF_OPEN — allow one call
-        return True
+            if self._state == CircuitState.OPEN:
+                if (time.time() - self._last_failure_time) >= self.recovery_timeout_s:
+                    self._state = CircuitState.HALF_OPEN
+                    logger.info(f"CircuitBreaker '{self.name}': HALF_OPEN after timeout")
+                    return True
+                return False
+            # HALF_OPEN — allow one call
+            return True
 
     def reset(self) -> None:
-        self.state = CircuitState.CLOSED
-        self.failure_count = 0
-        self.success_count = 0
-        self.last_failure_time = 0.0
-        logger.info(f"CircuitBreaker '{self.name}': reset to CLOSED")
+        with self._lock:
+            self._state = CircuitState.CLOSED
+            self._failure_count = 0
+            self._success_count = 0
+            self._last_failure_time = 0.0
+            logger.info(f"CircuitBreaker '{self.name}': reset to CLOSED")
 
     def to_dict(self) -> dict:
-        return {
-            "name": self.name, "state": self.state.value,
-            "failure_count": self.failure_count, "failure_threshold": self.failure_threshold,
-            "recovery_timeout_s": self.recovery_timeout_s,
-            "success_count": self.success_count,
-        }
+        with self._lock:
+            return {
+                "name": self.name, "state": self._state.value,
+                "failure_count": self._failure_count, "failure_threshold": self.failure_threshold,
+                "recovery_timeout_s": self.recovery_timeout_s,
+                "success_count": self._success_count,
+            }
 
     async def call(self, fn: Callable[[], Awaitable[Any]]) -> Any:
         """Execute a function with circuit breaker protection."""

@@ -23,6 +23,7 @@ class BibliotecaGem:
     def __init__(self):
         self.knowledge_path = Path(__file__).parent.parent.parent / "data" / "knowledge"
         self.index_file = self.knowledge_path / "index.json"
+        self._lock = asyncio.Lock()
         self._ensure_index()
 
     def _ensure_index(self):
@@ -43,7 +44,7 @@ class BibliotecaGem:
         logger.info(f"BibliotecaGem organizing: {title}")
 
         # Create note with safe filename (Windows doesn't allow : in paths)
-        safe_title = title.lower().replace(" ", "_").replace("/", "_").replace(":", "_")
+        safe_title = title.lower().replace(" ", "_").replace("/", "_").replace(":", "_").replace("?", "_").replace('"', "_").replace("<", "_").replace(">", "_").replace("|", "_").replace("*", "_")
         note_id = safe_title[:50]
         note_dir = self.knowledge_path / category.lower().replace(" ", "_")
         note_dir.mkdir(parents=True, exist_ok=True)

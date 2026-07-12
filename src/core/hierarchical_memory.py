@@ -69,13 +69,17 @@ class MemoryItem:
 
 
 _singleton_instance: HierarchicalMemory | None = None
+_singleton_lock = __import__('threading').Lock()
 
 
-def get_hierarchical_memory() -> HierarchicalMemory:
-    """Get or create the singleton HierarchicalMemory instance."""
+def get_memory() -> HierarchicalMemory:
+    """Get or create the singleton HierarchicalMemory instance (thread-safe)."""
     global _singleton_instance
-    if _singleton_instance is None:
-        _singleton_instance = HierarchicalMemory()
+    if _singleton_instance is not None:
+        return _singleton_instance
+    with _singleton_lock:
+        if _singleton_instance is None:
+            _singleton_instance = HierarchicalMemory()
     return _singleton_instance
 
 

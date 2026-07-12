@@ -65,8 +65,10 @@ class CircuitBreaker:
                     self.failures = 0
                     logger.info(f"Circuit breaker {self.name} → CLOSED (recovered)")
             elif self.state == CircuitState.OPEN:
-                self.state = CircuitState.CLOSED
-                self.failures = 0
+                # Don't skip HALF_OPEN — just log that we're transitioning
+                self.state = CircuitState.HALF_OPEN
+                self.half_open_calls = 0
+                logger.info(f"Circuit breaker {self.name} → HALF_OPEN (success in OPEN state)")
             else:
                 self.failures = max(0, self.failures - 1)
     
@@ -194,8 +196,12 @@ class ResilienceLayer:
         task: str,
         engines: Optional[List[str]] = None,
         execute_func: Optional[Callable] = None,
+        depth: int = 0,
+        visited: Optional[set] = None,
         **kwargs
     ) -> Dict[str, Any]:
+        if visited is None:
+            visited = set()
         """
         Ejecuta tarea con fallback automático entre motores.
         
@@ -245,13 +251,15 @@ class ResilienceLayer:
                 health.total_checks += 1
                 health.failed_checks += 1
                 
-                if engine in self._fallback_chain:
+                if engine in self._fallback_chain and depth < 5 and engine not in (visited or set()):
                     fallback_engines = self._fallback_chain[engine]
                     logger.info(f"Trying fallback engines: {fallback_engines}")
                     return await self.execute_with_fallback(
                         task=task,
                         engines=fallback_engines,
                         execute_func=execute_func,
+                        depth=depth + 1,
+                        visited=visited | {engine},
                         **kwargs
                     )
         

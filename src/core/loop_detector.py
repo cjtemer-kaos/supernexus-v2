@@ -165,13 +165,16 @@ class LoopDetector:
 
         self._history: Dict[str, List[ActionRecord]] = defaultdict(list)
         self._detected_loops: List[LoopPattern] = []
+        self._max_detected_loops = 200  # Cap to prevent memory leak
         self._terminated: Dict[str, int] = defaultdict(int)
 
         # Para deteccion semantica
         self._recent_responses: Dict[str, List[str]] = defaultdict(list)
+        self._max_responses_per_agent = 50
 
         # Para deteccion de tool doom loops
         self._recent_tool_fingerprints: Dict[str, List[List[Tuple[str, str]]]] = defaultdict(list)
+        self._max_fingerprints_per_agent = 20
 
     def record_action(self, agent_id: str, action: str, params: str = "", result: str = "", response_text: str = ""):
         """Registra una accion para deteccion de loops"""
@@ -288,13 +291,15 @@ class LoopDetector:
             loop_type=loop_type,
         )
         self._detected_loops.append(loop)
+        # Cap to prevent memory leak
+        if len(self._detected_loops) > self._max_detected_loops:
+            self._detected_loops = self._detected_loops[-self._max_detected_loops:]
         logger.warning(f"LOOP DETECTED [{loop_type}]: Agent {agent_id} pattern [{pattern_key}] x{count}")
 
     def should_terminate(self, agent_id: str) -> Tuple[bool, Optional[LoopPattern]]:
         """Verifica si el agente debe ser terminado por loop"""
         for loop in self._detected_loops:
             if loop.agent_id == agent_id and loop.count >= self.repetition_threshold * 2:
-                self._terminated[agent_id] += 1
                 return True, loop
         return False, None
 

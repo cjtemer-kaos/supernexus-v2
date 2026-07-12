@@ -333,6 +333,8 @@ class RoutingBrain:
 
     # ── Sticky cache ────────────────────────────────────────────────────
 
+    MAX_CACHE_SIZE = 200
+
     def _check_sticky_cache(self, session_id: str) -> Optional[dict]:
         if not session_id or session_id not in self._sticky_cache:
             return None
@@ -353,6 +355,13 @@ class RoutingBrain:
             "engines": result.selected_engines,
             "timestamp": time.time(),
         }
+        # Evict expired entries periodically
+        if len(self._sticky_cache) > 100:
+            now = time.time()
+            expired = [k for k, v in self._sticky_cache.items()
+                       if now - v["timestamp"] >= self.sticky_ttl_s]
+            for k in expired:
+                del self._sticky_cache[k]
 
     def clear_cache(self, session_id: Optional[str] = None) -> None:
         """Invalida cache (un session_id o todo)."""

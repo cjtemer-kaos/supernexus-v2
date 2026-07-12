@@ -24,6 +24,32 @@ class GemaMetrics:
 
 
 _tracker: Dict[str, GemaMetrics] = defaultdict(GemaMetrics)
+_DB_PATH = Path.home() / ".nexus" / "brain" / "checkpoint_metrics.db"
+
+
+def _ensure_db():
+    """Crea tabla si no existe."""
+    import sqlite3
+    _DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(str(_DB_PATH), timeout=5)
+    c = conn.cursor()
+    c.execute("""CREATE TABLE IF NOT EXISTS metrics (
+        gema TEXT PRIMARY KEY, total INT, passed INT, failed INT, vague INT, last_run TEXT
+    )""")
+    conn.commit()
+    conn.close()
+
+
+def _persist(gema_name: str):
+    """Guarda métricas en SQLite."""
+    import sqlite3
+    m = _tracker[gema_name]
+    conn = sqlite3.connect(str(_DB_PATH), timeout=5)
+    c = conn.cursor()
+    c.execute("INSERT OR REPLACE INTO metrics VALUES (?, ?, ?, ?, ?, ?)",
+              (gema_name, m.total, m.passed, m.failed, m.vague, m.last_run))
+    conn.commit()
+    conn.close()
 
 
 def record(gema_name: str, valid: bool, vague_rejected: bool = False) -> None:
@@ -37,6 +63,7 @@ def record(gema_name: str, valid: bool, vague_rejected: bool = False) -> None:
         m.passed += 1
     else:
         m.failed += 1
+    _persist(gema_name)
 
 
 def get_metrics() -> Dict[str, Any]:

@@ -136,8 +136,8 @@ class GemaExtension(GemaBase, ABC):
     name: str = ""
     description: str = ""
     category: str = "general"
-    tag_vocabulary: List[TagLike] = None
-    examples: List[TagLike] = None
+    tag_vocabulary: List[TagLike] = field(default_factory=list)
+    examples: List[TagLike] = field(default_factory=list)
     format_instructions: Optional[str] = None
     root_tag: str = "response"
     included_in_system_prompt: bool = True

@@ -13,6 +13,7 @@ Arquitectura:
 4. Fallback a LLM solo si confidence < threshold
 """
 
+import asyncio
 import logging
 import math
 import re
@@ -184,7 +185,12 @@ class FastRouter:
         for gem, profile in self._gemas.items():
             if scores[gem] == 0:
                 for kw in profile.keywords:
-                    overlap = task_bigrams & self._n_gram_index_bigrams(kw)
+                    kw_bigrams = set()
+                    for i in range(len(kw) - 2):
+                        bg = kw[i:i+3]
+                        if bg.isalpha():
+                            kw_bigrams.add(bg)
+                    overlap = task_bigrams & kw_bigrams
                     if len(overlap) >= min(3, len(kw) - 1):
                         scores[gem] += 0.1 * len(overlap)
 
@@ -228,7 +234,7 @@ class FastRouter:
                 result.add(bg)
         return result
 
-    def classify_with_fallback(
+    async def classify_with_fallback(
         self,
         task: str,
         multi_word_patterns: Dict[str, str],
@@ -269,13 +275,13 @@ class FastRouter:
 
         # Nivel 3: LLM fallback (opcional)
         if llm_classify_fn and result.confidence < self._confidence_threshold:
-            llm_gem = llm_classify_fn(task)
-            if llm_gem:
+            llm_result = await llm_classify_fn(task) if asyncio.iscoroutinefunction(llm_classify_fn) else llm_classify_fn(task)
+            if llm_result:
                 return FastRouteResult(
-                    gem=llm_gem,
+                    gem=llm_result,
                     confidence=0.6,
-                    all_scores={**result.all_scores, llm_gem: 0.6},
-                    top_n=[(llm_gem, 0.6), *result.top_n],
+                    all_scores={**result.all_scores, llm_result: 0.6},
+                    top_n=[(llm_result, 0.6), *result.top_n],
                     source="llm_fallback",
                 )
 

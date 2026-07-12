@@ -57,11 +57,14 @@ ACTIVE_DECAY_HALF_LIFE_S = 1800  # 30 min
 
 
 class SalienceTracker:
+    MAX_ENTRIES = 5000  # Evict oldest when exceeded
+
     def __init__(self):
         self._scores: Dict[str, float] = {}        # entry_id → score 0..1
         self._tags: Dict[str, List[str]] = {}      # entry_id → tag list
         self._active: Dict[str, Tuple[float, float]] = {}  # tag → (weight, ts)
         self._lock = threading.Lock()
+        self._insertion_order: List[str] = []  # For LRU eviction
 
     def tag(self, entry_id: str, tags: Iterable[str]) -> float:
         """Add tags to an entry. Returns the new score (clipped 0..1)."""
@@ -81,6 +84,12 @@ class SalienceTracker:
                 self._active[t] = (min(1.0, cur_w + 0.1), now)
             base = max(0.0, min(1.0, base))
             self._scores[entry_id] = base
+            if entry_id not in self._insertion_order:
+                self._insertion_order.append(entry_id)
+                if len(self._insertion_order) > self.MAX_ENTRIES:
+                    old_id = self._insertion_order.pop(0)
+                    self._scores.pop(old_id, None)
+                    self._tags.pop(old_id, None)
             return base
 
     def score_of(self, entry_id: str) -> float:

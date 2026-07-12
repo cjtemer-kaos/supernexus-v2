@@ -391,8 +391,12 @@ class AyudaGem:
 
     def _load_profile(self):
         if self.profile_file.exists():
-            self.profile = json.loads(self.profile_file.read_text(encoding="utf-8"))
-        else:
+            try:
+                self.profile = json.loads(self.profile_file.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, ValueError):
+                logger.warning(f"Corrupt profile JSON, recreating: {self.profile_file}")
+                self.profile = None
+        if not self.profile:
             self.profile = {
                 "user_level": "novice",
                 "features_used": [],

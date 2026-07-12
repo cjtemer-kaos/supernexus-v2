@@ -51,6 +51,35 @@ class SelfLearningLoop(Actor):
         self._last_cycle: float = 0.0
         self._cycles: int = 0
         self._loop_task: asyncio.Task | None = None
+        # Persistencia en SQLite
+        from pathlib import Path
+        self._db_path = Path.home() / ".nexus" / "brain" / "learning_loop.db"
+        self._db_path.parent.mkdir(parents=True, exist_ok=True)
+        self._init_db()
+    
+    def _init_db(self):
+        """Crea tabla para records persistentes."""
+        import sqlite3
+        conn = sqlite3.connect(str(self._db_path), timeout=10)
+        c = conn.cursor()
+        c.execute("""CREATE TABLE IF NOT EXISTS learning_records (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            task TEXT, model_used TEXT, outcome TEXT,
+            quality_score REAL, pattern TEXT, timestamp REAL,
+            processed INTEGER DEFAULT 0
+        )""")
+        conn.commit()
+        conn.close()
+    
+    def _persist_record(self, record: LearningRecord):
+        """Guarda record en SQLite."""
+        import sqlite3
+        conn = sqlite3.connect(str(self._db_path), timeout=10)
+        c = conn.cursor()
+        c.execute("INSERT INTO learning_records (task, model_used, outcome, quality_score, pattern, timestamp) VALUES (?, ?, ?, ?, ?, ?)",
+                  (record.task, record.model_used, record.outcome, record.quality_score, record.pattern, record.timestamp))
+        conn.commit()
+        conn.close()
 
     async def on_start(self):
         self._loop_task = asyncio.create_task(self._learning_loop(), name=f"self-learn:{self.actor_id}")
@@ -81,13 +110,15 @@ class SelfLearningLoop(Actor):
             logger.debug("SelfLearning: no records to process")
             return
 
-        recent = self._records[-50:]
-        self._records = []
+        recent = self._records[:50]
+        self._records = self._records[50:]
 
         for record in recent:
             if self._judge_fn:
                 try:
                     judge_result = self._judge_fn(record.task, record.outcome)
+                    if asyncio.iscoroutine(judge_result):
+                        judge_result = await judge_result
                     if hasattr(judge_result, 'action') and hasattr(judge_result, 'confidence'):
                         multiplier = 1.0 if judge_result.action == "ACCEPT" else 0.3
                         record.quality_score = judge_result.confidence * multiplier
@@ -104,6 +135,7 @@ class SelfLearningLoop(Actor):
                 )
 
             record.pattern = self._extract_pattern(record)
+            self._persist_record(record)  # Persistir en SQLite
 
             if self._memory_store_fn and record.pattern:
                 try:

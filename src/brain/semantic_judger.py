@@ -56,23 +56,40 @@ class SemanticJudger:
         self._ensure_db()
 
     def _ensure_db(self):
-        """Asegura que la tabla de memoria existe"""
+        """Asegura que las tablas findings + FTS5 existen"""
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         conn = sqlite3.connect(str(self.db_path))
-        cursor = conn.cursor()
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS semantic_memory (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                timestamp TEXT,
-                agent TEXT,
-                content TEXT,
-                topic TEXT,
-                embedding TEXT,
-                status TEXT DEFAULT 'active'
-            )
-        """)
-        conn.commit()
-        conn.close()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS findings (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    timestamp TEXT,
+                    agent TEXT,
+                    content TEXT,
+                    topic TEXT,
+                    status TEXT DEFAULT 'active'
+                )
+            """)
+            # FTS5 virtual table for full-text search
+            cursor.execute("""
+                CREATE VIRTUAL TABLE IF NOT EXISTS findings_fts
+                USING fts5(content, topic, content='findings', content_rowid='id')
+            """)
+            # Triggers to keep FTS in sync
+            cursor.execute("""
+                CREATE TRIGGER IF NOT EXISTS findings_ai AFTER INSERT ON findings BEGIN
+                    INSERT INTO findings_fts(rowid, content, topic)
+                    VALUES (new.id, new.content, new.topic);
+            END""")
+            cursor.execute("""
+                CREATE TRIGGER IF NOT EXISTS findings_ad AFTER DELETE ON findings BEGIN
+                    INSERT INTO findings_fts(findings_fts, rowid, content, topic)
+                    VALUES('delete', old.id, old.content, old.topic);
+            END""")
+            conn.commit()
+        finally:
+            conn.close()
 
     def judge(self, new_content: str, topic: str, agent: str = "unknown") -> Optional[MemoryConflict]:
         """Juzga si el nuevo contenido tiene conflicto con memoria existente"""
@@ -107,37 +124,38 @@ class SemanticJudger:
             return []
 
         conn = sqlite3.connect(str(self.db_path))
-        cursor = conn.cursor()
-
-        # Busqueda FTS5 si existe
         try:
+            cursor = conn.cursor()
+
+            # FTS5 search
+            try:
+                cursor.execute("""
+                    SELECT f.id, f.timestamp, f.agent, f.content, f.topic
+                    FROM findings f
+                    JOIN findings_fts fts ON f.rowid = fts.rowid
+                    WHERE findings_fts MATCH ?
+                    AND f.status != 'archived'
+                    ORDER BY rank
+                    LIMIT 5
+                """, (content[:100],))
+                results = cursor.fetchall()
+                if results:
+                    return results
+            except Exception:
+                pass
+
+            # Fallback: busqueda por topic
             cursor.execute("""
                 SELECT id, timestamp, agent, content, topic
                 FROM findings
-                WHERE content MATCH ?
+                WHERE topic = ?
                 AND status != 'archived'
-                ORDER BY rank
-                LIMIT 5
-            """, (content[:100],))
-            results = cursor.fetchall()
-            if results:
-                conn.close()
-                return results
-        except Exception:
-            pass
-
-        # Fallback: busqueda por topic
-        cursor.execute("""
-            SELECT id, timestamp, agent, content, topic
-            FROM findings
-            WHERE topic = ?
-            AND status != 'archived'
-            ORDER BY timestamp DESC
-            LIMIT 3
-        """, (topic,))
-        results = cursor.fetchall()
-        conn.close()
-        return results
+                ORDER BY timestamp DESC
+                LIMIT 3
+            """, (topic,))
+            return cursor.fetchall()
+        finally:
+            conn.close()
 
     def _llm_judge(self, new_content: str, existing: Tuple) -> Tuple[Judgment, str, float]:
         """Usa LLM local para juzgar el conflicto"""
@@ -205,49 +223,48 @@ Reglas:
     def _resolve_conflict(self, conflict: MemoryConflict):
         """Resuelve el conflicto segun el veredicto"""
         conn = sqlite3.connect(str(self.db_path))
-        cursor = conn.cursor()
+        try:
+            cursor = conn.cursor()
 
-        if conflict.judgment == Judgment.CONTRADICTS:
-            # Marcar existente como conflictivo, guardar nuevo
-            cursor.execute(
-                "UPDATE findings SET status = 'conflict' WHERE id = ?",
-                (conflict.existing_id,)
-            )
-            self._save_memory_raw(cursor, conflict.new_content)
-            logger.info(f"Conflicto resuelto: existente #{conflict.existing_id} marcado como conflictivo")
+            if conflict.judgment == Judgment.CONTRADICTS:
+                cursor.execute(
+                    "UPDATE findings SET status = 'conflict' WHERE id = ?",
+                    (conflict.existing_id,)
+                )
+                self._save_memory_raw(cursor, conflict.new_content)
+                logger.info(f"Conflicto resuelto: existente #{conflict.existing_id} marcado como conflictivo")
 
-        elif conflict.judgment == Judgment.OVERWRITES:
-            # Archivar existente, guardar nuevo
-            cursor.execute(
-                "UPDATE findings SET status = 'archived' WHERE id = ?",
-                (conflict.existing_id,)
-            )
-            self._save_memory_raw(cursor, conflict.new_content)
-            logger.info(f"Sobrescritura: existente #{conflict.existing_id} archivado")
+            elif conflict.judgment == Judgment.OVERWRITES:
+                cursor.execute(
+                    "UPDATE findings SET status = 'archived' WHERE id = ?",
+                    (conflict.existing_id,)
+                )
+                self._save_memory_raw(cursor, conflict.new_content)
+                logger.info(f"Sobrescritura: existente #{conflict.existing_id} archivado")
 
-        elif conflict.judgment == Judgment.COMPLEMENTS:
-            # Guardar nuevo sin modificar existente
-            self._save_memory_raw(cursor, conflict.new_content)
-            logger.info("Complemento: nuevo contenido agregado junto al existente")
+            elif conflict.judgment == Judgment.COMPLEMENTS:
+                self._save_memory_raw(cursor, conflict.new_content)
+                logger.info("Complemento: nuevo contenido agregado junto al existente")
 
-        elif conflict.judgment == Judgment.DUPLICATE:
-            # No guardar duplicado
-            logger.info("Duplicado detectado, no se guarda")
+            elif conflict.judgment == Judgment.DUPLICATE:
+                logger.info("Duplicado detectado, no se guarda")
 
-        elif conflict.judgment == Judgment.NEW:
-            # Guardar como nuevo
-            self._save_memory_raw(cursor, conflict.new_content)
+            elif conflict.judgment == Judgment.NEW:
+                self._save_memory_raw(cursor, conflict.new_content)
 
-        conn.commit()
-        conn.close()
+            conn.commit()
+        finally:
+            conn.close()
 
     def _save_memory(self, content: str, topic: str, agent: str):
         """Guarda memoria sin conflicto"""
         conn = sqlite3.connect(str(self.db_path))
-        cursor = conn.cursor()
-        self._save_memory_raw(cursor, content, topic, agent)
-        conn.commit()
-        conn.close()
+        try:
+            cursor = conn.cursor()
+            self._save_memory_raw(cursor, content, topic, agent)
+            conn.commit()
+        finally:
+            conn.close()
 
     def _save_memory_raw(self, cursor, content: str, topic: str = None, agent: str = None):
         """Guarda memoria directamente"""
@@ -258,5 +275,11 @@ Reglas:
         )
 
 
-# Singleton global
-semantic_judger = SemanticJudger()
+# Lazy singleton - no auto-create on import
+def get_semantic_judger(**kwargs):
+    global _semantic_judger
+    if _semantic_judger is None:
+        _semantic_judger = SemanticJudger(**kwargs)
+    return _semantic_judger
+
+_semantic_judger = None

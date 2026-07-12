@@ -73,6 +73,8 @@ class CdpBrowser:
         self._state = BrowserState()
         self._page_counter = 0
         self._collectors: Dict[str, Dict] = {}
+        self._chrome_proc = None
+        self._temp_dir = None
 
     async def connect(self) -> bool:
         try:
@@ -99,12 +101,13 @@ class CdpBrowser:
             chrome = self.executable_path or self._find_chrome()
             if not chrome:
                 return False
-            user_data = tempfile.mkdtemp(prefix="nexus-cdp-")
+            self._temp_dir = tempfile.mkdtemp(prefix="nexus-cdp-")
             cmd = [chrome, "--remote-debugging-port=9222",
-                   f"--user-data-dir={user_data}"]
+                   f"--user-data-dir={self._temp_dir}"]
             if self.headless:
                 cmd.append("--headless=new")
-            subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            self._chrome_proc = subprocess.Popen(
+                cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             for attempt in range(15):
                 if await self.connect():
                     return True
@@ -112,6 +115,31 @@ class CdpBrowser:
         except Exception as e:
             logger.error(f"Browser launch failed: {e}")
         return False
+
+    async def disconnect(self):
+        """Clean up browser process and temp directory."""
+        self._state.status = "disconnected"
+        self._ws_url = None
+        self._pages.clear()
+        # Kill Chrome process if we launched it
+        proc = getattr(self, '_chrome_proc', None)
+        if proc and proc.poll() is None:
+            try:
+                proc.terminate()
+                proc.wait(timeout=5)
+            except Exception:
+                try:
+                    proc.kill()
+                except Exception:
+                    pass
+        # Clean temp dir
+        import shutil
+        temp_dir = getattr(self, '_temp_dir', None)
+        if temp_dir and os.path.exists(temp_dir):
+            try:
+                shutil.rmtree(temp_dir, ignore_errors=True)
+            except Exception:
+                pass
 
     def _find_chrome(self) -> Optional[str]:
         candidates = [

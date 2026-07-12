@@ -150,32 +150,34 @@ class Cerebro:
         - Programa consolidación si es necesario
         """
         conn = self._get_conn()
-        c = conn.cursor()
-        
-        # Guardar conversación
-        c.execute("INSERT INTO conversaciones (fecha, gem, mensaje, respuesta, contexto) VALUES (?, ?, ?, ?, ?)",
-                  (datetime.now().isoformat(), gem, prompt, respuesta, contexto))
-        self.learning["conversations"] += 1
+        try:
+            c = conn.cursor()
+            
+            # Guardar conversación
+            c.execute("INSERT INTO conversaciones (fecha, gem, mensaje, respuesta, contexto) VALUES (?, ?, ?, ?, ?)",
+                      (datetime.now().isoformat(), gem, prompt, respuesta, contexto))
+            self.learning["conversations"] += 1
 
-        # Detectar temas
-        temas = self._detectar_temas(prompt)
-        for tema in temas:
-            self.learning["topics_interests"][tema] = \
-                self.learning["topics_interests"].get(tema, 0) + 1
+            # Detectar temas
+            temas = self._detectar_temas(prompt)
+            for tema in temas:
+                self.learning["topics_interests"][tema] = \
+                    self.learning["topics_interests"].get(tema, 0) + 1
 
-        # Actualizar preferencia de gem
-        c.execute("SELECT COUNT(*) FROM conversaciones WHERE gem = ?", (gem,))
-        count = c.fetchone()[0]
-        c.execute("INSERT OR REPLACE INTO memoria (timestamp, tipo, clave, valor, importancia) VALUES (?, 'preferencia', ?, ?, ?)",
-                  (datetime.now().isoformat(), f"gem_{gem}", str(count), 5))
-        
-        # Guardar como evento episódico
-        c.execute("""INSERT INTO eventos (fecha, tipo, descripcion, contexto, importancia) 
-                     VALUES (?, 'interaccion', ?, ?, ?)""",
-                  (datetime.now().isoformat(), prompt[:200], contexto, 3))
-        
-        conn.commit()
-        conn.close()
+            # Actualizar preferencia de gem
+            c.execute("SELECT COUNT(*) FROM conversaciones WHERE gem = ?", (gem,))
+            count = c.fetchone()[0]
+            c.execute("INSERT OR REPLACE INTO memoria (timestamp, tipo, clave, valor, importancia) VALUES (?, 'preferencia', ?, ?, ?)",
+                      (datetime.now().isoformat(), f"gem_{gem}", str(count), 5))
+            
+            # Guardar como evento episódico
+            c.execute("""INSERT INTO eventos (fecha, tipo, descripcion, contexto, importancia) 
+                         VALUES (?, 'interaccion', ?, ?, ?)""",
+                      (datetime.now().isoformat(), prompt[:200], contexto, 3))
+            
+            conn.commit()
+        finally:
+            conn.close()
         
         # Actualizar memoria de trabajo
         self.working_memory.append({
@@ -196,20 +198,22 @@ class Cerebro:
     async def aprender_patron(self, tipo: str, contexto: str, respuesta: str):
         """Aprende patrones de comportamiento (memoria procedimental)"""
         conn = self._get_conn()
-        c = conn.cursor()
-        c.execute("SELECT frecuencia, respuesta_preferida FROM patrones WHERE patron = ?", (tipo,))
-        row = c.fetchone()
-        if row:
-            nueva_frecuencia = row[0] + 1
-            respuesta_preferida = respuesta if respuesta != row[1] and nueva_frecuencia > 3 else row[1]
-            c.execute("UPDATE patrones SET frecuencia = ?, ultima_vez = ?, respuesta_preferida = ? WHERE patron = ?",
-                      (nueva_frecuencia, datetime.now().isoformat(), respuesta_preferida, tipo))
-        else:
-            c.execute("INSERT INTO patrones (patron, frecuencia, ultima_vez, respuesta_preferida, contexto) VALUES (?, 1, ?, ?, ?)",
-                      (tipo, datetime.now().isoformat(), respuesta, contexto))
-        self.learning["commands_executed"] += 1
-        conn.commit()
-        conn.close()
+        try:
+            c = conn.cursor()
+            c.execute("SELECT frecuencia, respuesta_preferida FROM patrones WHERE patron = ?", (tipo,))
+            row = c.fetchone()
+            if row:
+                nueva_frecuencia = row[0] + 1
+                respuesta_preferida = respuesta if respuesta != row[1] and nueva_frecuencia > 3 else row[1]
+                c.execute("UPDATE patrones SET frecuencia = ?, ultima_vez = ?, respuesta_preferida = ? WHERE patron = ?",
+                          (nueva_frecuencia, datetime.now().isoformat(), respuesta_preferida, tipo))
+            else:
+                c.execute("INSERT INTO patrones (patron, frecuencia, ultima_vez, respuesta_preferida, contexto) VALUES (?, 1, ?, ?, ?)",
+                          (tipo, datetime.now().isoformat(), respuesta, contexto))
+            self.learning["commands_executed"] += 1
+            conn.commit()
+        finally:
+            conn.close()
         self._save_learning_state()
 
     async def aprender_herramienta(self, tool_name: str):
@@ -225,16 +229,18 @@ class Cerebro:
         - Utilidad determina prioridad de retención
         """
         conn = self._get_conn()
-        c = conn.cursor()
-        c.execute("SELECT id FROM conocimientos WHERE tema = ?", (tema,))
-        if c.fetchone():
-            c.execute("UPDATE conocimientos SET contenido = ?, fuente = ?, fecha = ?, veces_revisado = veces_revisado + 1 WHERE tema = ?",
-                      (contenido, fuente, datetime.now().isoformat(), tema))
-        else:
-            c.execute("INSERT INTO conocimientos (tema, contenido, fuente, fecha, utilidad) VALUES (?, ?, ?, ?, ?)",
-                      (tema, contenido, fuente, datetime.now().isoformat(), utilidad))
-        conn.commit()
-        conn.close()
+        try:
+            c = conn.cursor()
+            c.execute("SELECT id FROM conocimientos WHERE tema = ?", (tema,))
+            if c.fetchone():
+                c.execute("UPDATE conocimientos SET contenido = ?, fuente = ?, fecha = ?, veces_revisado = veces_revisado + 1 WHERE tema = ?",
+                          (contenido, fuente, datetime.now().isoformat(), tema))
+            else:
+                c.execute("INSERT INTO conocimientos (tema, contenido, fuente, fecha, utilidad) VALUES (?, ?, ?, ?, ?)",
+                          (tema, contenido, fuente, datetime.now().isoformat(), utilidad))
+            conn.commit()
+        finally:
+            conn.close()
 
     def _detectar_temas(self, texto: str) -> list:
         temas_palabras = {
@@ -253,68 +259,76 @@ class Cerebro:
 
     def obtener_patrones(self, tipo: str = None) -> list:
         conn = self._get_conn()
-        c = conn.cursor()
-        if tipo:
-            c.execute("SELECT * FROM patrones WHERE patron = ?", (tipo,))
-        else:
-            c.execute("SELECT * FROM patrones ORDER BY frecuencia DESC")
-        resultados = c.fetchall()
-        conn.close()
-        return [{"patron": r[1], "frecuencia": r[2], "respuesta": r[4]} for r in resultados]
+        try:
+            c = conn.cursor()
+            if tipo:
+                c.execute("SELECT * FROM patrones WHERE patron = ?", (tipo,))
+            else:
+                c.execute("SELECT * FROM patrones ORDER BY frecuencia DESC")
+            resultados = c.fetchall()
+            return [{"patron": r[1], "frecuencia": r[2], "respuesta": r[4]} for r in resultados]
+        finally:
+            conn.close()
 
     def obtener_conocimientos(self, tema: str = None) -> list:
         conn = self._get_conn()
-        c = conn.cursor()
-        if tema:
-            c.execute("SELECT * FROM conocimientos WHERE tema LIKE ?", (f"%{tema}%",))
-        else:
-            c.execute("SELECT * FROM conocimientos ORDER BY utilidad DESC")
-        resultados = c.fetchall()
-        conn.close()
-        return [{"tema": r[1], "contenido": r[2], "fuente": r[3], "fecha": r[4], "veces_revisado": r[5], "utilidad": r[6], "consolidado": r[7]} for r in resultados]
+        try:
+            c = conn.cursor()
+            if tema:
+                c.execute("SELECT * FROM conocimientos WHERE tema LIKE ?", (f"%{tema}%",))
+            else:
+                c.execute("SELECT * FROM conocimientos ORDER BY utilidad DESC")
+            resultados = c.fetchall()
+            return [{"tema": r[1], "contenido": r[2], "fuente": r[3], "fecha": r[4], "veces_revisado": r[5], "utilidad": r[6], "consolidado": r[7]} for r in resultados]
+        finally:
+            conn.close()
 
     def obtener_preferencias(self) -> dict:
         conn = self._get_conn()
-        c = conn.cursor()
-        c.execute("SELECT clave, valor, importancia FROM memoria WHERE tipo = 'preferencia'")
-        prefs = {row[0]: {"valor": row[1], "importancia": row[2]} for row in c.fetchall()}
-        prefs["learning"] = {
-            "conversations": self.learning["conversations"],
-            "commands_executed": self.learning["commands_executed"],
-            "tools_used": list(self.learning["tools_used"]),
-            "top_topics": sorted(self.learning["topics_interests"].items(), key=lambda x: x[1], reverse=True)[:5],
-            "preferred_gem": self.learning["preferred_gem"],
-            "complexity_level": self.learning["complexity_level"],
-        }
-        conn.close()
-        return prefs
+        try:
+            c = conn.cursor()
+            c.execute("SELECT clave, valor, importancia FROM memoria WHERE tipo = 'preferencia'")
+            prefs = {row[0]: {"valor": row[1], "importancia": row[2]} for row in c.fetchall()}
+            prefs["learning"] = {
+                "conversations": self.learning["conversations"],
+                "commands_executed": self.learning["commands_executed"],
+                "tools_used": list(self.learning["tools_used"]),
+                "top_topics": sorted(self.learning["topics_interests"].items(), key=lambda x: x[1], reverse=True)[:5],
+                "preferred_gem": self.learning["preferred_gem"],
+                "complexity_level": self.learning["complexity_level"],
+            }
+            return prefs
+        finally:
+            conn.close()
 
     def obtener_estadisticas(self) -> dict:
         conn = self._get_conn()
-        c = conn.cursor()
-        c.execute("SELECT COUNT(*) FROM conversaciones")
-        conv_count = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM conocimientos")
-        know_count = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM patrones")
-        pattern_count = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM memoria")
-        mem_count = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM eventos")
-        event_count = c.fetchone()[0]
-        conn.close()
-        return {
-            "conversaciones": conv_count, "conocimientos": know_count,
-            "patrones": pattern_count, "memorias": mem_count,
-            "eventos": event_count,
-            "interacciones": self.learning["conversations"],
-            "herramientas_usadas": len(self.learning["tools_used"]),
-            "temas_de_interes": len(self.learning["topics_interests"]),
-            "working_memory_size": len(self.working_memory),
-        }
+        try:
+            c = conn.cursor()
+            c.execute("SELECT COUNT(*) FROM conversaciones")
+            conv_count = c.fetchone()[0]
+            c.execute("SELECT COUNT(*) FROM conocimientos")
+            know_count = c.fetchone()[0]
+            c.execute("SELECT COUNT(*) FROM patrones")
+            pattern_count = c.fetchone()[0]
+            c.execute("SELECT COUNT(*) FROM memoria")
+            mem_count = c.fetchone()[0]
+            c.execute("SELECT COUNT(*) FROM eventos")
+            event_count = c.fetchone()[0]
+            return {
+                "conversaciones": conv_count, "conocimientos": know_count,
+                "patrones": pattern_count, "memorias": mem_count,
+                "eventos": event_count,
+                "interacciones": self.learning["conversations"],
+                "herramientas_usadas": len(self.learning["tools_used"]),
+                "temas_de_interes": len(self.learning["topics_interests"]),
+                "working_memory_size": len(self.working_memory),
+            }
+        finally:
+            conn.close()
 
-    def get_system_prompt_adaptado(self) -> str:
-        prefs = self.obtener_preferencias()
+
+
         stats = self.obtener_estadisticas()
         estilo = self.config.get("estilo", "directo")
         prompt_parts = [
@@ -408,20 +422,22 @@ class Cerebro:
         """
         logger.info("Consolidando memorias...")
         conn = self._get_conn()
-        c = conn.cursor()
-        
-        # Consolidar conocimientos con alta utilidad y revisiones
-        c.execute("""UPDATE conocimientos SET consolidado = 1 
-                     WHERE veces_revisado >= 3 AND utilidad >= 7 AND consolidado = 0""")
-        consolidados = c.rowcount
-        
-        # Consolidar eventos frecuentes
-        c.execute("""UPDATE eventos SET consolidado = 1 
-                     WHERE importancia >= 7 AND consolidado = 0""")
-        eventos_consolidados = c.rowcount
-        
-        conn.commit()
-        conn.close()
+        try:
+            c = conn.cursor()
+            
+            # Consolidar conocimientos con alta utilidad y revisiones
+            c.execute("""UPDATE conocimientos SET consolidado = 1 
+                         WHERE veces_revisado >= 3 AND utilidad >= 7 AND consolidado = 0""")
+            consolidados = c.rowcount
+            
+            # Consolidar eventos frecuentes
+            c.execute("""UPDATE eventos SET consolidado = 1 
+                         WHERE importancia >= 7 AND consolidado = 0""")
+            eventos_consolidados = c.rowcount
+            
+            conn.commit()
+        finally:
+            conn.close()
         
         self.learning["last_consolidation"] = datetime.now().isoformat()
         self._save_learning_state()
@@ -438,20 +454,22 @@ class Cerebro:
         
         logger.info(f"Ejecutando olvido selectivo (umbral: {dias_umbral} dias)...")
         conn = self._get_conn()
-        c = conn.cursor()
-        
-        cutoff = (datetime.now() - timedelta(days=dias_umbral)).isoformat()
-        
-        # Eliminar conversaciones antiguas no aprendidas
-        c.execute("DELETE FROM conversaciones WHERE fecha < ? AND aprendio = 0", (cutoff,))
-        conv_eliminadas = c.rowcount
-        
-        # Eliminar eventos antiguos no consolidados
-        c.execute("DELETE FROM eventos WHERE fecha < ? AND consolidado = 0", (cutoff,))
-        eventos_eliminados = c.rowcount
-        
-        conn.commit()
-        conn.close()
+        try:
+            c = conn.cursor()
+            
+            cutoff = (datetime.now() - timedelta(days=dias_umbral)).isoformat()
+            
+            # Eliminar conversaciones antiguas no aprendidas
+            c.execute("DELETE FROM conversaciones WHERE fecha < ? AND aprendio = 0", (cutoff,))
+            conv_eliminadas = c.rowcount
+            
+            # Eliminar eventos antiguos no consolidados
+            c.execute("DELETE FROM eventos WHERE fecha < ? AND consolidado = 0", (cutoff,))
+            eventos_eliminados = c.rowcount
+            
+            conn.commit()
+        finally:
+            conn.close()
         
         logger.info(f"Olvido selectivo: {conv_eliminadas} conversaciones, {eventos_eliminados} eventos eliminados")
         return {"success": True, "conversaciones_eliminadas": conv_eliminadas, "eventos_eliminados": eventos_eliminados}
@@ -463,18 +481,23 @@ class Cerebro:
     def obtener_conocimientos_consolidados(self) -> list:
         """Obtiene conocimientos de largo plazo (consolidados)"""
         conn = self._get_conn()
-        c = conn.cursor()
-        c.execute("SELECT * FROM conocimientos WHERE consolidado = 1 ORDER BY utilidad DESC")
-        resultados = c.fetchall()
-        conn.close()
-        return [{"tema": r[1], "contenido": r[2], "utilidad": r[6]} for r in resultados]
+        try:
+            c = conn.cursor()
+            c.execute("SELECT * FROM conocimientos WHERE consolidado = 1 ORDER BY utilidad DESC")
+            resultados = c.fetchall()
+            return [{"tema": r[1], "contenido": r[2], "utilidad": r[6]} for r in resultados]
+        finally:
+            conn.close()
 
     def obtener_eventos_recientes(self, dias: int = 7) -> list:
         """Obtiene eventos recientes (memoria episódica)"""
         conn = self._get_conn()
-        c = conn.cursor()
-        cutoff = (datetime.now() - timedelta(days=dias)).isoformat()
-        c.execute("SELECT * FROM eventos WHERE fecha > ? ORDER BY fecha DESC", (cutoff,))
-        resultados = c.fetchall()
-        conn.close()
+        try:
+            c = conn.cursor()
+            cutoff = (datetime.now() - timedelta(days=dias)).isoformat()
+            c.execute("SELECT * FROM eventos WHERE fecha > ? ORDER BY fecha DESC", (cutoff,))
+            resultados = c.fetchall()
+            return [{"fecha": r[1], "tipo": r[2], "descripcion": r[3], "contexto": r[4], "importancia": r[5]} for r in resultados]
+        finally:
+            conn.close()
         return [{"tipo": r[2], "descripcion": r[3], "importancia": r[5]} for r in resultados]
