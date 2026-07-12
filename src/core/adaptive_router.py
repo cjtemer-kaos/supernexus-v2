@@ -86,9 +86,9 @@ DEFAULT_CATALOG: dict[str, ModelEntry] = {
 
 
 class ThompsonSampler:
-    def __init__(self, catalog: dict[str, ModelEntry]):
+    def __init__(self, catalog: dict[str, ModelEntry] | None = None):
         import threading
-        self._catalog = catalog
+        self._catalog = catalog if catalog is not None else dict(DEFAULT_CATALOG)
         self._outcomes: dict[str, ModelOutcome] = {}
         self._lock = threading.Lock()
         self._save_count = 0  # Throttle saves

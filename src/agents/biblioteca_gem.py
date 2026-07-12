@@ -4,6 +4,7 @@ Gema Biblioteca - Organizacion de conocimiento para SuperNEXUS v2.0
 Organiza, indexa y clasifica la investigacion y el conocimiento.
 """
 
+import asyncio
 import json
 import logging
 from pathlib import Path
