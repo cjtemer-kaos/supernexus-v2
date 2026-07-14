@@ -555,8 +555,34 @@ class DirectorNexus:
         _is_action = any(kw in task.lower().split() for kw in _action_kw)
         
         if not _is_action:
-            # Es pregunta - Scholar investiga → Sage guarda
+            # Es pregunta - SIEMPRE intentar investigación web primero
             ai_result = await self._research_and_persist(task, context, session)
+            
+            # Si investigación no encontró fuentes, igualmente usar LLM con contexto web
+            if ai_result is None:
+                logger.info(f"No web sources, using LLM with web context for: {task[:50]}")
+                try:
+                    synthesis_prompt = f"""Responde la siguiente pregunta usando tu conocimiento y búsqueda web si es posible.
+Sé directo y conciso. Si no tienes datos actualizados, indícalo.
+
+PREGUNTA: {task}
+
+RESPUESTA:"""
+                    synthesized = await self.ai_tools.quick_response(
+                        task=synthesis_prompt, gem="director", context=context,
+                        model_override="deepseek-v4-flash-free"
+                    )
+                    if synthesized and isinstance(synthesized, dict) and synthesized.get("content"):
+                        ai_result = {
+                            "success": True,
+                            "content": synthesized["content"],
+                            "tool": "scholar_llm",
+                            "model": synthesized.get("model", "deepseek-v4-flash-free"),
+                            "tokens_used": synthesized.get("tokens_used", 0),
+                            "duration_ms": 0,
+                        }
+                except Exception as e:
+                    logger.debug(f"LLM fallback failed: {e}")
         
         if ai_result is None:
             ai_result = await ES.try_scholar_gem(self, task, primary_gem, classification)
@@ -590,6 +616,25 @@ class DirectorNexus:
             except Exception as e:
                 logger.debug(f"Human layer skipped: {e}")
 
+        # Auto-fallback: si la gema no sabe, investiga en internet
+        if ai_result and ai_result.get("content") and primary_gem != "scholar":
+            content_lower = ai_result["content"].lower()
+            _ignorance = [
+                "no tengo datos", "no tengo información", "no tengo acceso",
+                "no puedo", "no sé", "no conozco", "no dispongo",
+                "sin acceso a datos", "no tengo conocimiento",
+                "no puedo responder", "no puedo decirte",
+                "no es posible", "no tengo certeza",
+                "desconozco", "no manejo esa información",
+                "no tengo esa información", "no cuento con",
+            ]
+            if any(phrase in content_lower for phrase in _ignorance):
+                logger.info(f"Gema '{primary_gem}' no sabe, fallback a scholar: {task[:60]}")
+                try:
+                    from src.agents.scholar_gem import ScholarGem
+                except Exception as e:
+                    logger.debug(f"Scholar fallback failed: {e}")
+
         tokens_used = ai_result.get("tokens_used", 0)
         budget_check = self.token_budget.record_tokens(tokens_used, source=f"gem:{primary_gem}")
 
@@ -603,15 +648,15 @@ class DirectorNexus:
             from src.core.memory_extractor import get_memory_extractor
             extractor = get_memory_extractor(director=self)
             session_msgs = session.get_messages_for_llm(max_messages=CONTEXT_WINDOW, scrub=False)
-            task = asyncio.create_task(extractor.after_response(
+            _extraction_task = asyncio.create_task(extractor.after_response(
                 messages=[{"role": m["role"], "content": m["content"]} for m in session_msgs if m.get("content")],
                 session_id=session.id,
                 owner=getattr(session, 'owner', ''),
             ))
             if not hasattr(self, '_background_tasks'):
                 self._background_tasks = set()
-            self._background_tasks.add(task)
-            task.add_done_callback(self._background_tasks.discard)
+            self._background_tasks.add(_extraction_task)
+            _extraction_task.add_done_callback(self._background_tasks.discard)
         except Exception as e:
             logger.debug(f"Memory extraction skipped: {e}")
 
@@ -748,33 +793,88 @@ class DirectorNexus:
         return final_result
 
     async def _research_and_persist(self, task: str, context: str, session) -> dict | None:
-        """Flujo: Scholar investiga → Sage guarda → Director responde con la info."""
+        """Flujo: Web research → LLM synthesis → respuesta con fuentes."""
         try:
-            from src.agents.scholar_gem import ScholarGem
-            from src.agents.sage_gem import SageGem
-            
-            # 1. Scholar investiga (solo fuentes crudas, sin LLM)
-            scholar = ScholarGem(web_researcher=self.web_researcher, llm_caller=None)
-            research = await scholar.research(task, max_sources=3)
-            await scholar.close()
-            
-            if not research.get("sources"):
+            # 1. Buscar en web directamente (sin pasar por scholar gem)
+            if not hasattr(self, 'web_researcher') or not self.web_researcher:
+                logger.debug("No web_researcher available")
                 return None
             
-            # 2. Sage guarda en biblioteca y memoria
-            sage = SageGem()
+            sources = await self.web_researcher.search(task, max_results=3)
+            if not sources:
+                logger.debug(f"No web sources for: {task[:50]}")
+                return None
+            
+            # 2. Construir contexto de fuentes
             sources_text = "\n".join([
                 f"- {s.get('title', '')}: {s.get('snippet', '')[:200]}"
-                for s in research.get("sources", [])
+                for s in sources
             ])
-            content_to_save = f"## {task}\n\nFuentes encontradas:\n{sources_text}"
+            context_from_sources = "\n".join([
+                f"[{s.get('title', '')}]({s.get('url', '')})\n{s.get('snippet', '')[:300]}"
+                for s in sources
+            ])
             
-            sage.save_to_library(
-                title=task[:100],
-                content=content_to_save,
-                topic=sage._infer_topic(content_to_save, task),
-                source="scholar_research"
-            )
+            # 3. Sintetizar respuesta con LLM
+            synthesis_prompt = f"""Basándote en estas fuentes web, responde la pregunta del usuario de forma completa y precisa.
+Usa español. Si la información es de fuentes en otro idioma, traduce y adapta.
+Incluye los enlaces de las fuentes al final.
+
+PREGUNTA: {task}
+
+FUENTES:
+{context_from_sources}
+
+RESPUESTA:"""
+            
+            try:
+                from src.agents.sage_gem import SageGem
+                sage = SageGem()
+                sage.save_to_library(
+                    title=task[:100],
+                    content=f"## {task}\n\nFuentes encontradas:\n{sources_text}",
+                    topic=sage._infer_topic(sources_text, task),
+                    source="web_research"
+                )
+            except Exception as e:
+                logger.debug(f"Sage save failed: {e}")
+            
+            try:
+                synthesized = await self.ai_tools.quick_response(
+                    task=synthesis_prompt, gem="director", context="",
+                    model_override="deepseek-v4-flash-free"
+                )
+                reply_content = synthesized.get("content", "") if isinstance(synthesized, dict) else str(synthesized)
+                
+                if reply_content and len(reply_content) > 50:
+                    links = "\n\n**Fuentes:**\n" + "\n".join(
+                        f"- [{s.get('title', s.get('url', ''))}]({s.get('url', '')})"
+                        for s in sources if s.get("url")
+                    )
+                    return {
+                        "success": True,
+                        "content": reply_content + links,
+                        "tool": "web_research",
+                        "model": "deepseek-v4-flash-free",
+                        "tokens_used": synthesized.get("tokens_used", 0) if isinstance(synthesized, dict) else 0,
+                        "duration_ms": 0,
+                    }
+            except Exception as e:
+                logger.debug(f"LLM synthesis failed: {e}")
+            
+            # Fallback: retornar fuentes crudas
+            return {
+                "success": True,
+                "content": sources_text,
+                "tool": "web_research_raw",
+                "model": "web",
+                "tokens_used": 0,
+                "duration_ms": 0,
+            }
+            
+        except Exception as e:
+            logger.debug(f"Research failed: {e}")
+            return None
             
             # 3. Director genera respuesta sintetizada con su propio LLM
             context_from_sources = "\n".join([

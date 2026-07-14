@@ -364,6 +364,11 @@ class LLMProvider:
                 last_user_msg["images"] = images
 
         response = await self._client.post(url, json=payload, timeout=timeout_seconds)
+        # Retry on 502 (Ollama model loading — transient)
+        if response.status_code == 502:
+            logger.warning(f"Ollama 502 for {model}, retrying in 3s...")
+            await asyncio.sleep(3)
+            response = await self._client.post(url, json=payload, timeout=timeout_seconds)
         response.raise_for_status()
         data = response.json()
 

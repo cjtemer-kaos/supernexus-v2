@@ -315,8 +315,8 @@ class AgentRunner:
         # Quitar wrappers markdown
         text = re.sub(r'```(?:json)?\s*|\s*```', '', text)
 
-        # Formato 1: {"name": "...", "arguments": {...}}
-        m = re.search(r'\{"name"\s*:\s*"[^"]+"\s*,\s*"arguments"\s*:', text)
+        # Formato 1: {"name": "...", "arguments": {...}}  OR  {"tool": "...", "params": {...}}
+        m = re.search(r'\{[\s]*"?(?:name|tool)"?\s*:\s*"[^"]+"\s*,\s*"(?:arguments|params)"\s*:', text)
         if m:
             start = m.start()
             depth, end = 0, start
@@ -331,8 +331,11 @@ class AgentRunner:
             if end > start:
                 try:
                     obj = json.loads(text[start:end])
-                    if isinstance(obj, dict) and "name" in obj and "arguments" in obj:
-                        return {"name": obj["name"], "arguments": obj.get("arguments", {})}
+                    if isinstance(obj, dict):
+                        name = obj.get("name") or obj.get("tool")
+                        args = obj.get("arguments") or obj.get("params") or {}
+                        if name:
+                            return {"name": name, "arguments": args}
                 except json.JSONDecodeError:
                     pass
 
@@ -359,7 +362,26 @@ class AgentRunner:
                 except json.JSONDecodeError:
                     pass
 
-        # Formato 3: **Tool Call:** `tool_name`  (solo mención del tool sin JSON)
+        # Formato 3: tool_name(arg1="val1", arg2="val2") — Python-style function call
+        m = re.search(r'([a-z_]+)\s*\(([^)]*)\)', text, re.IGNORECASE)
+        if m:
+            tool_name = m.group(1)
+            known_tools = {"research_scholar", "web_search", "web_fetch", "read_file", "write_file",
+                          "execute_command", "list_dir", "search_files", "find_files", "browser"}
+            if tool_name in known_tools:
+                args_str = m.group(2)
+                args = {}
+                # Parse key="value" or key=value patterns
+                for arg_match in re.finditer(r'(\w+)\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|(\w+))', args_str):
+                    key = arg_match.group(1)
+                    val = arg_match.group(2) or arg_match.group(3) or arg_match.group(4)
+                    # Convert booleans
+                    if val.lower() == 'true': val = True
+                    elif val.lower() == 'false': val = False
+                    args[key] = val
+                return {"name": tool_name, "arguments": args}
+
+        # Formato 4: **Tool Call:** `tool_name`  (solo mención del tool sin JSON)
         m = re.search(r'`([a-z_]+)`', text, re.IGNORECASE)
         if m:
             tool_name = m.group(1)

@@ -16,6 +16,7 @@ Features:
 - Smart routing by task type
 """
 
+import asyncio
 import logging
 import time
 from dataclasses import dataclass, field
@@ -297,6 +298,15 @@ class LLMGateway:
                 json=payload,
                 headers=headers,
             )
+            # Retry on 502 (Ollama model loading — transient)
+            if response.status_code == 502:
+                logger.warning(f"Ollama 502 for {model}, retrying in 3s...")
+                await asyncio.sleep(3)
+                response = await client.post(
+                    f"{provider.base_url}/api/chat",
+                    json=payload,
+                    headers=headers,
+                )
             response.raise_for_status()
 
             data = response.json()
