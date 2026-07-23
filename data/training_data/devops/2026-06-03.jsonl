@@ -1,1 +1,0 @@
-{"messages": [{"role": "user", "content": "deploy docker compose con postgres y redis"}, {"role": "assistant", "content": ""}], "gem_used": "devops", "project": "default", "timestamp": "2026-06-03T08:13:04.390484", "quality_score": 0.8, "tags": ["devops"], "user_feedback": null}

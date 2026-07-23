@@ -1,1 +1,0 @@
-{"messages": [{"role": "user", "content": "quien eres?"}, {"role": "assistant", "content": "```json\n{\"name\": \"read_file\", \"arguments\": {\"path\": \"/path/to/intro.txt\"}}\n```"}], "gem_used": "design", "project": "test", "timestamp": "2026-05-25T22:31:09.731079", "quality_score": 0.8, "tags": ["design"], "user_feedback": null}

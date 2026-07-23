@@ -2,10 +2,21 @@
 
 MANIFEST = {
     "name": "music",
+    "main": "src.plugins.gemas.music",
+    "model": "gemma4:12b",
     "tags": ['music', 'audio', 'sound', 'voice', 'tts', 'stt'],
     "description": "Audio, voz y musica - sintesis de voz local con Piper TTS",
-    "model": "carstenuhlig/omnicoder-2-9b:q4_k_m",
+    "icon": "🎵",
+    "color": "#A855F7",
+    "division": "creative",
+    "personality": "Productor musical. Audio, voz, composición, mezcla.",
+    "workflow": "Compose → Arrange → Produce → Mix → Master",
 }
+
+
+def execute(task, context=""):
+    """Execute a music/audio task via handle()."""
+    return handle("tts", text=task)
 
 
 def handle(action, text=None, voice=None):

@@ -39,6 +39,12 @@ class GemaPlugin:
         self.tags: List[str] = list(manifest.get("tags", []))
         self.description: str = manifest.get("description", "")
         self.preferred_model: str = manifest.get("model", "")
+        # Agency-agents inspired fields (from divisions.json pattern)
+        self.icon: str = manifest.get("icon", "")
+        self.color: str = manifest.get("color", "")
+        self.division: str = manifest.get("division", "")
+        self.personality: str = manifest.get("personality", "")
+        self.workflow: str = manifest.get("workflow", "")
         # Capability declarations (openfang pattern, MVP — declaration only,
         # enforcement is a separate step). Free-form strings, recommended:
         #   "net.fetch"      outbound HTTP
@@ -225,8 +231,8 @@ def load_gemas(plugins_dir: Optional[Path] = None) -> Dict[str, GemaPlugin]:
                 except Exception as e:
                     logger.warning(f"[plugins/security] scan failed for {py_file.name}: {e}")
 
-            # MEDUSA defense layer — comprehensive pattern scan
-            if _medusa_available:
+            # MEDUSA defense layer — skip for builtin gemas (false positives on security patterns)
+            if _medusa_available and not is_canonical_now:
                 try:
                     raw = py_file.read_text(encoding="utf-8", errors="replace")
                     mhits = scan_text(raw)

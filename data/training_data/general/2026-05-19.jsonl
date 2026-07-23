@@ -1,1 +1,0 @@
-{"messages": [{"role": "user", "content": "di hola y que modelo eres, responde en 1 linea"}, {"role": "assistant", "content": "¡Hola! Soy DirectorNexus, versión DeepSeek-R1. ¿En qué puedo ayudarte? 😄"}], "gem_used": "director", "project": "default", "timestamp": "2026-05-19T11:29:27.659400", "quality_score": 0.8, "tags": ["general"], "user_feedback": null}

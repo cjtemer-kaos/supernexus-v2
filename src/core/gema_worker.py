@@ -29,6 +29,8 @@ logging.basicConfig(
 logger = logging.getLogger("gema-worker")
 
 
+import os, json
+
 class GemaWorker:
     """
     Worker aislado para una gema especifica.
@@ -41,9 +43,17 @@ class GemaWorker:
         self._running = True
         self._request_count = 0
 
-        # Cargar manifiesto si existe
+        # Cargar manifiesto: primero JSON file, luego env var NEXUS_GEMA_MANIFEST
         self.manifest = {}
-        if manifest_path and Path(manifest_path).exists():
+        # Try env var first (set by GemaHost)
+        manifest_data = os.environ.get("NEXUS_GEMA_MANIFEST", "")
+        if manifest_data:
+            try:
+                self.manifest = json.loads(manifest_data)
+            except Exception as e:
+                logger.error(f"Failed to load manifest from env: {e}")
+        # Fallback to file
+        if not self.manifest and manifest_path and Path(manifest_path).exists():
             try:
                 with open(manifest_path, "r", encoding="utf-8") as f:
                     self.manifest = json.load(f)
@@ -61,10 +71,16 @@ class GemaWorker:
             if gema_module_name:
                 import importlib
                 module = importlib.import_module(gema_module_name)
-                # Buscar clase principal
+                # Buscar clase principal (excluir base LLMGema)
+                from src.plugins.gemas.llm_base import LLMGema
                 for attr_name in dir(module):
                     attr = getattr(module, attr_name)
-                    if isinstance(attr, type) and attr_name.lower() == f"{self.gema_name}gem":
+                    if isinstance(attr, type) and "Gem" in attr_name and attr is not LLMGema:
+                        return attr()
+                # Fallback: buscar con "Gem" sin filtro
+                for attr_name in dir(module):
+                    attr = getattr(module, attr_name)
+                    if isinstance(attr, type) and "Gem" in attr_name:
                         return attr()
                 return module
             else:

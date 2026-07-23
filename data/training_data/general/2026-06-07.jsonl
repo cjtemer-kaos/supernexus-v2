@@ -1,2 +1,0 @@
-{"messages": [{"role": "user", "content": "hi"}, {"role": "assistant", "content": "¡Hola! ¿Cómo puedo ayudarte hoy?"}], "gem_used": "director", "project": "default", "timestamp": "2026-06-07T02:30:41.916727", "quality_score": 0.8, "tags": ["general"], "user_feedback": null}
-{"messages": [{"role": "user", "content": "say hi"}, {"role": "assistant", "content": "¡Hola! ¿Cómo puedo ayudarte hoy?"}], "gem_used": "director", "project": "default", "timestamp": "2026-06-07T02:30:45.626391", "quality_score": 0.8, "tags": ["general"], "user_feedback": null}
