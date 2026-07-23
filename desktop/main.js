@@ -26,7 +26,8 @@ function startServer() {
   const projectDir = path.join(__dirname, '..');
   const pythonPath = process.env.PYTHON_PATH || 'C:\\Users\\cjtr\\AppData\\Local\\Programs\\Python\\Python313\\python.exe';
   serverProcess = spawn(pythonPath, ['start_server.py', '9000'], {
-    cwd: projectDir,
+      cwd: projectDir,
+      env: { ...process.env, PYTHONPATH: '' },
     stdio: 'ignore',
     detached: false,
     windowsHide: true,

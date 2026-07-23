@@ -283,6 +283,9 @@ def load_gemas(plugins_dir: Optional[Path] = None) -> Dict[str, GemaPlugin]:
                 continue
 
             manifest = getattr(mod, "MANIFEST", None)
+            if manifest is None:
+                logger.debug(f"[plugins] {py_file.name}: no MANIFEST, skipping")
+                continue
             validation_error = _validate_gema_manifest(manifest, py_file.name)
             if validation_error:
                 errors.append(validation_error)

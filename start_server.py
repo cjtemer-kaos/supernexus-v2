@@ -1,4 +1,7 @@
 import os, sys
+os.environ.pop('PYTHONPATH', None)
+_hermes = os.path.expanduser('~/AppData/Local/hermes/hermes-agent')
+sys.path = [p for p in sys.path if _hermes not in p and 'hermes-agent' not in p]
 # Brain canonico: ~/.nexus/brain/ (donde todos los agentes escriben)
 # No sobreescribir NEXUS_BRAIN — el default es ~/.nexus/brain
 sys.path.insert(0, '.')
