@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Generador de manuales, guias y tutoriales interactivos",
   "main": "src.agents.trainer_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:teach",
     "onCommand:train",

@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Creador de suites de QA, mocks y tests unitarios",
   "main": "src.agents.tester_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:test",
     "onCommand:qa",

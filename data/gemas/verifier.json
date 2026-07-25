@@ -1,0 +1,24 @@
+{
+  "name": "verifier",
+  "version": "1.0.0",
+  "description": "Verificaci\u00f3n y QA con LLM local (Gemma4:12b)",
+  "main": "src.plugins.gemas.verifier",
+  "model": "gemma4:12b",
+  "tags": [
+    "verification",
+    "qa",
+    "validation",
+    "review",
+    "quality",
+    "audit"
+  ],
+  "semanticKeywords": [
+    "verification",
+    "review",
+    "validate",
+    "qa",
+    "audit"
+  ],
+  "category": "development",
+  "timeoutSeconds": 180
+}

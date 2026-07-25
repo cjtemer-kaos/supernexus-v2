@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Guia reactiva del sistema - ensena capacidades, sugiere opciones, se adapta al usuario",
   "main": "src.agents.ayuda_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:ayuda",
     "onCommand:help",

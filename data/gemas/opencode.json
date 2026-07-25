@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Agente ejecutor interactivo CLI con aprobacion dinamica",
   "main": "src.agents.opencode_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:cli",
     "onCommand:execute",

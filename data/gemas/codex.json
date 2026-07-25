@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Ejecutor de codigo en sandboxes locales y compilacion",
   "main": "src.agents.codex_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:codex",
     "onCommand:compile",

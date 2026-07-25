@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Prompt engineering con knowledge base de 13 templates validados y 37 credit-killing patterns (nidhinjs/prompt-master v1.6.0, MIT)",
   "main": "gemas_core.workers.prompter.PrompterGem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:prompt",
     "onCommand:compress",

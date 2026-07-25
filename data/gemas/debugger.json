@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Analista de trazas de error y excepciones",
   "main": "src.agents.debugger_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:debug",
     "onCommand:fix",

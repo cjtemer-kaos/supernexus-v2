@@ -694,6 +694,7 @@ class SuperNEXUSBackend:
         images: Optional[List[str]] = None,
         files: Optional[List[Dict]] = None,
         session_id: Optional[str] = None,
+        selected_model: str = "",
     ) -> Dict:
         if project != self.director.current_project:
             await self.director.change_project(project)
@@ -1097,7 +1098,7 @@ class SuperNEXUSBackend:
 
         # Director execute: maneja memoria, tools, y gemas
         try:
-            result = await self.director.execute(message, gem=gem, session_id=session_id)
+            result = await self.director.execute(message, gem=gem, session_id=session_id, selected_model=selected_model)
             reply = result.data.get("content", str(result.data)) if result.data else "Task executed"
         except Exception as e:
             import traceback
@@ -1935,6 +1936,7 @@ async def handle_chat(request: web.Request) -> web.Response:
     images = data.get("images", [])
     files = data.get("files", [])
     session_id = (data.get("session_id") or "").strip() or None
+    selected_model = data.get("selected_model", "") or data.get("model", "")
 
     # Propagate session_id through the async chain via contextvars so any
     # downstream emit (LLM_TOKEN_USAGE, MCP events, etc.) can attribute
@@ -1984,7 +1986,7 @@ async def handle_chat(request: web.Request) -> web.Response:
         except Exception:
             _run = None
 
-    result = await backend.process_message(message, gem, project, voice=voice, images=images, files=files)
+    result = await backend.process_message(message, gem, project, voice=voice, images=images, files=files, selected_model=selected_model)
     # Echo session_id back so client knows where its cost/logs are landing
     if session_id:
         result.setdefault("session_id", session_id)
@@ -2072,6 +2074,7 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                 images = data.get("images", [])
                 files = data.get("files", [])
                 session_id = (data.get("session_id") or "").strip() or None
+                selected_model = data.get("selected_model", "") or data.get("model", "")
 
                 # Propagate session_id so sticky routing + cost tracking work
                 if session_id:
@@ -2098,7 +2101,7 @@ async def handle_chat_ws(request: web.Request) -> web.WebSocketResponse:
                     # Phase 1: ALWAYS run process_message (tools work without Ollama)
                     try:
                         async with asyncio.timeout(45):
-                            result = await backend.process_message(message, gem if not proactive_data else gem_override, project, voice=voice, images=images, files=files, session_id=session_id)
+                            result = await backend.process_message(message, gem if not proactive_data else gem_override, project, voice=voice, images=images, files=files, session_id=session_id, selected_model=selected_model)
                         logger.info(f"[WS] process_message completed, gem_used={result.get('gem_used')}, reply_len={len(result.get('reply',''))}")
                     except (asyncio.TimeoutError, TimeoutError):
                         logger.warning("process_message timeout after 45s, using fallback reply")
@@ -4566,7 +4569,7 @@ async def handle_api_config(request: web.Request) -> web.Response:
     port = nexus_config.get_port()
     host = nexus_config.get_host()
     # Obtener modelo por defecto actual
-    default_model = "deepseek-v4-flash-free"
+    default_model = "qwen2.5-coder:7b"
     try:
         backend = request.app.get("backend")
         if backend and hasattr(backend, 'ai_tools') and backend.ai_tools:
@@ -8218,6 +8221,22 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     except Exception as e:
         logger.warning(f"Failed to register skill index routes: {e}")
 
+    # ─── Market Parity Routes (16 new modules) ────────────────────────
+    try:
+        from src.api.market_parity_routes import register_parity_routes
+        register_parity_routes(app)
+    except Exception as e:
+        logger.warning(f"Failed to register market parity routes: {e}")
+
+    # ─── Model Registry Routes ──────────────────────────────────────────
+    try:
+        from src.api.models_routes import register_model_routes
+        register_model_routes(app)
+    except Exception as e:
+        logger.warning(f"Failed to register model routes: {e}")
+    except Exception as e:
+        logger.warning(f"Failed to register skill index routes: {e}")
+
     # F6: Code Absorption
     app.router.add_post("/api/absorb/repo", handle_absorb_repo)
     app.router.add_get("/api/absorb/status", handle_absorb_status)
@@ -8600,6 +8619,72 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
     app.router.add_post("/api/onboarding/back", handle_onboarding_back)
     app.router.add_post("/api/onboarding/reset", handle_onboarding_reset)
 
+    # ─── Voice API endpoints ────────────────────────────────────────────────
+    async def handle_voice_status(request: web.Request) -> web.Response:
+        try:
+            backend = request.app["backend"]
+            voice = getattr(backend, "voice", None)
+            if voice and voice.available:
+                return web.json_response({
+                    "available": True,
+                    "voice_name": voice.voice_name,
+                    "sample_rate": voice.sample_rate,
+                })
+        except Exception:
+            pass
+        return web.json_response({"available": False})
+
+    async def handle_voice_voices(request: web.Request) -> web.Response:
+        try:
+            backend = request.app["backend"]
+            voice = getattr(backend, "voice", None)
+            if voice and hasattr(voice, "list_voices"):
+                voices = voice.list_voices()
+                return web.json_response({"voices": voices})
+        except Exception:
+            pass
+        return web.json_response({"voices": []})
+
+    async def handle_voice_personalities(request: web.Request) -> web.Response:
+        return web.json_response({"personalities": []})
+
+    async def handle_voice_speak(request: web.Request) -> web.Response:
+        try:
+            body = await request.json()
+        except Exception:
+            return web.json_response({"error": "Invalid JSON"}, status=400)
+        text = (body.get("text") or "").strip()
+        if not text:
+            return web.json_response({"error": "'text' required"}, status=400)
+        try:
+            backend = request.app["backend"]
+            voice = getattr(backend, "voice", None)
+            if not voice or not voice.available:
+                return web.json_response({"error": "Voice engine not available"}, status=503)
+            from pathlib import Path
+            out_dir = Path(__file__).parent.parent.parent / "ui" / "assets" / "voice"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            filename = f"voice_{abs(hash(text)) % 100000}.wav"
+            out_path = out_dir / filename
+            result = voice.speak(text, out_path)
+            if result:
+                return web.json_response({
+                    "ok": True,
+                    "audio_url": f"/ui/assets/voice/{filename}",
+                })
+            return web.json_response({"error": "TTS failed"}, status=500)
+        except Exception as e:
+            return web.json_response({"error": str(e)}, status=500)
+
+    async def handle_voice_set_personality(request: web.Request) -> web.Response:
+        return web.json_response({"ok": True, "message": "Personality set"})
+
+    app.router.add_get("/api/voice/status", handle_voice_status)
+    app.router.add_get("/api/voice/voices", handle_voice_voices)
+    app.router.add_get("/api/voice/personalities", handle_voice_personalities)
+    app.router.add_post("/api/voice/speak", handle_voice_speak)
+    app.router.add_post("/api/voice/set-personality", handle_voice_set_personality)
+
     # Static files (UI)
     ui_dist_path = Path(__file__).parent.parent.parent / "ui" / "dist"
     if ui_dist_path.exists() and (ui_dist_path / "index.html").exists():
@@ -8628,6 +8713,8 @@ def create_app(backend: SuperNEXUSBackend) -> web.Application:
         app.router.add_get("/{name}.svg", handle_root_asset)
         app.router.add_get("/ui/{path:.*}", handle_ui_spa)
         app.router.add_static("/ui/assets/", ui_dist_path / "assets", name="ui_assets")
+        # Assets root path (HTML references ./assets/...)
+        app.router.add_static("/assets/", ui_dist_path / "assets", name="assets_root")
         # Voice output static files
         voice_assets_path = Path(__file__).parent.parent.parent / "ui" / "assets" / "voice"
         voice_assets_path.mkdir(parents=True, exist_ok=True)
@@ -8683,11 +8770,29 @@ async def run_server(port: int = 9000):
     print(f"  API: http://localhost:{port}")
     ui_url = f"http://localhost:{port}/"
     if os.environ.get("NEXUS_NO_BROWSER", "").lower() not in ("1", "true"):
+        _electron_launched = False
+        # Try to launch Electron desktop app instead of browser
         try:
-            webbrowser.open(ui_url)
-            print(f"  UI: {ui_url} (opened in browser)")
-        except Exception:
-            print(f"  UI: {ui_url}")
+            _desktop_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "desktop")
+            _electron_exe = os.path.join(_desktop_dir, "release", "SuperNEXUS v2-2.2.0-portable.exe")
+            _electron_src = os.path.join(_desktop_dir, "main.js")
+            if os.path.isfile(_electron_exe):
+                # Use os.startfile for reliable Windows launching (no blocking, no shell)
+                os.startfile(os.path.abspath(_electron_exe))
+                print(f"  UI: Electron (SuperNEXUS v2 portable)")
+                _electron_launched = True
+            elif os.path.isfile(_electron_src):
+                subprocess.Popen(["npx", "electron", _electron_src], cwd=_desktop_dir)
+                print(f"  UI: Electron (npx)")
+                _electron_launched = True
+        except Exception as e:
+            print(f"  UI: Electron launch failed: {e}")
+        if not _electron_launched:
+            try:
+                webbrowser.open(ui_url)
+                print(f"  UI: {ui_url} (opened in browser)")
+            except Exception:
+                print(f"  UI: {ui_url}")
     else:
         print(f"  UI: {ui_url}")
     print()
@@ -8707,12 +8812,37 @@ async def run_server(port: int = 9000):
                 from src.gateways import GatewayManager, DiscordAdapter, GatewayConfig, Platform
 
                 async def _gateway_handler(msg):
-                    """Route incoming gateway messages through the backend."""
+                    """Route incoming gateway messages through the backend.
+                    
+                    Also forwards to Hermes via Redis PubSub so Hermes can
+                    process and respond to Discord/Telegram/WhatsApp messages.
+                    """
+                    # 1. Local processing via SuperNEXUS backend
                     result = await backend.process_message(
                         msg.content, gem="auto", project="default",
                         session_id=f"{msg.platform.value}:{msg.channel_id}",
                     )
-                    return result.get("reply", "(no reply)")
+                    reply = result.get("reply", "(no reply)")
+                    
+                    # 2. Forward to Hermes via Redis for enhanced processing
+                    try:
+                        import json
+                        import redis.asyncio as aioredis
+                        r = aioredis.from_url("redis://localhost:6379", decode_responses=True)
+                        await r.publish("nexus:discord", json.dumps({
+                            "platform": msg.platform.value,
+                            "channel_id": msg.channel_id,
+                            "sender_id": msg.sender_id,
+                            "sender_name": msg.sender_name,
+                            "content": msg.content,
+                            "reply": reply,
+                            "timestamp": msg.timestamp,
+                        }, ensure_ascii=False))
+                        await r.aclose()
+                    except Exception as e:
+                        logger.warning(f"Redis forward to Hermes failed (non-fatal): {e}")
+                    
+                    return reply
 
                 gw_manager = GatewayManager()
                 gw_manager.set_message_handler(_gateway_handler)
@@ -8752,6 +8882,14 @@ async def run_server(port: int = 9000):
 
             except Exception as e:
                 logger.warning(f"Gateway init failed (non-fatal): {e}")
+
+            # Auto-detect Ollama models on startup
+            try:
+                from src.core.model_registry import get_model_registry
+                _reg = get_model_registry()
+                await _reg.auto_detect_ollama()
+            except Exception as e:
+                logger.info(f"Ollama auto-detect skipped: {e}")
 
             logger.info("SuperNEXUS backend fully initialized")
         except Exception as e:

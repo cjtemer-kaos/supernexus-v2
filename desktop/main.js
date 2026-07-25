@@ -4,7 +4,7 @@ const path = require('path');
 const net = require('net');
 const http = require('http');
 
-const SERVER_URL = 'http://localhost:9000/ui/';
+const SERVER_URL = 'http://localhost:9000/';
 const SERVER_API = 'http://localhost:9000/api/status';
 let mainWindow = null;
 let tray = null;
@@ -24,10 +24,10 @@ function serverRunning() {
 
 function startServer() {
   const projectDir = path.join(__dirname, '..');
-  const pythonPath = process.env.PYTHON_PATH || 'C:\\Users\\cjtr\\AppData\\Local\\Programs\\Python\\Python313\\python.exe';
+  const pythonPath = process.env.PYTHON_PATH || 'D:\\ias\\proyectos\\supernexus-v2\\.venv-py313\\Scripts\\python.exe';
   serverProcess = spawn(pythonPath, ['start_server.py', '9000'], {
-      cwd: projectDir,
-      env: { ...process.env, PYTHONPATH: '' },
+    cwd: projectDir,
+    env: { ...process.env, PYTHONPATH: '' },  // Prevent venv contamination
     stdio: 'ignore',
     detached: false,
     windowsHide: true,
@@ -42,7 +42,10 @@ function setupPermissions() {
     const allowed = ['media', 'microphone', 'camera', 'notifications', 'display-capture'];
     callback(allowed.includes(permission));
   });
-  session.defaultSession.setPermissionCheckHandler(() => true);
+  session.defaultSession.setPermissionCheckHandler((webContents, permission) => {
+    const allowed = ['media', 'microphone', 'camera', 'notifications', 'display-capture'];
+    return allowed.includes(permission);
+  });
 }
 
 // ─── Zoom IPC Handlers ───────────────────────────────────────────────────────
@@ -116,8 +119,10 @@ function createWindow() {
       contextIsolation: true,
       nodeIntegration: false,
       spellcheck: false,
+      cache: false,
     },
     autoHideMenuBar: true,
+    show: false,
   });
 
   mainWindow.loadURL(SERVER_URL);
@@ -159,6 +164,25 @@ function createWindow() {
   });
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    // Local URLs: open in a new child window (not navigate main)
+    if (url.startsWith('http://localhost:') || url.startsWith('http://127.0.0.1:')) {
+      const child = new BrowserWindow({
+        width: 1200,
+        height: 800,
+        parent: mainWindow,
+        title: 'SuperNEXUS — Grafo',
+        backgroundColor: '#0a0a0f',
+        webPreferences: {
+          preload: path.join(__dirname, 'preload.js'),
+          contextIsolation: true,
+          nodeIntegration: false,
+        },
+        autoHideMenuBar: true,
+      });
+      child.loadURL(url);
+      child.setMenu(null);
+      return { action: 'deny' };
+    }
     shell.openExternal(url);
     return { action: 'deny' };
   });

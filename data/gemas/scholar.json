@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Investigador web y sintetizador de informacion",
   "main": "src.agents.scholar_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:research",
     "onCommand:search",

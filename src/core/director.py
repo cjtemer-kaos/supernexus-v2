@@ -63,6 +63,72 @@ from src.core.code_absorber import CodeAbsorber
 from src.core.circuit_breaker import CircuitBreaker, HealthChecker
 from src.core.token_monitor import TokenMonitor
 
+# --- Market Parity: 16 new core modules ---
+try:
+    from src.core.typed_events import typed_event_bus as _typed_events
+except ImportError:
+    _typed_events = None
+try:
+    from src.brain.episodic_memory import EpisodicMemory
+except ImportError:
+    EpisodicMemory = None
+try:
+    from src.core.capability_security import get_capability_manager
+except ImportError:
+    get_capability_manager = None
+try:
+    from src.core.prompt_compressor import get_compressor
+except ImportError:
+    get_compressor = None
+try:
+    from src.core.self_improving import get_self_improving_loop
+except ImportError:
+    get_self_improving_loop = None
+try:
+    from src.core.smart_codebase_indexer import SmartCodebaseIndexer
+except ImportError:
+    SmartCodebaseIndexer = None
+try:
+    from src.core.multi_file_editor import MultiFileEditor
+except ImportError:
+    MultiFileEditor = None
+try:
+    from src.core.task_executor import TaskExecutor
+except ImportError:
+    TaskExecutor = None
+try:
+    from src.core.context_manager import ContextManager
+except ImportError:
+    ContextManager = None
+try:
+    from src.core.planning_engine import PlanningEngine
+except ImportError:
+    PlanningEngine = None
+try:
+    from src.core.quality_judge import QualityJudge
+except ImportError:
+    QualityJudge = None
+try:
+    from src.core.auto_skill_creator import AutoSkillCreator
+except ImportError:
+    AutoSkillCreator = None
+try:
+    from src.core.skill_lifecycle import get_skill_lifecycle
+except ImportError:
+    get_skill_lifecycle = None
+try:
+    from src.core.curator import get_curator
+except ImportError:
+    get_curator = None
+try:
+    from src.core.learning_graph import get_learning_graph
+except ImportError:
+    get_learning_graph = None
+try:
+    from src.core.voice_engine import get_engine as get_voice_engine
+except ImportError:
+    get_voice_engine = None
+
 # --- Auth Vault (credential storage) ---
 try:
     from src.core.auth_vault import AuthVault
@@ -225,6 +291,11 @@ class DirectorNexus:
         self.tool_registry = DirectorToolRegistry()
         self.tool_registry.rebuild(self)
 
+        # ── Market Parity modules (lazy init) ──────────────────────────
+        self._market_parity_modules = {}
+        self._voice_engine = None
+        self._init_market_parity()
+
         logger.info(f"DirectorNexus v2 initialized (project: {project}, architecture: Brain + Tools)")
 
     def _init_learning_systems(self):
@@ -237,6 +308,114 @@ class DirectorNexus:
             interval_s=180.0,
         )
         logger.info("AdaptiveRouter + SelfLearningLoop initialized")
+
+    def _init_market_parity(self):
+        """Initialize market parity modules (lazy, non-blocking)."""
+        modules = {}
+        try:
+            if EpisodicMemory:
+                modules["episodic_memory"] = EpisodicMemory()
+        except Exception as e:
+            logger.warning(f"EpisodicMemory init failed: {e}")
+
+        try:
+            if get_capability_manager:
+                modules["capability_manager"] = get_capability_manager()
+        except Exception as e:
+            logger.warning(f"CapabilityManager init failed: {e}")
+
+        try:
+            if get_compressor:
+                modules["prompt_compressor"] = get_compressor()
+        except Exception as e:
+            logger.warning(f"PromptCompressor init failed: {e}")
+
+        try:
+            if get_self_improving_loop:
+                modules["self_improving"] = get_self_improving_loop()
+        except Exception as e:
+            logger.warning(f"SelfImprovingLoop init failed: {e}")
+
+        try:
+            if SmartCodebaseIndexer:
+                modules["codebase_indexer"] = SmartCodebaseIndexer()
+        except Exception as e:
+            logger.warning(f"SmartCodebaseIndexer init failed: {e}")
+
+        try:
+            if MultiFileEditor:
+                modules["multi_file_editor"] = MultiFileEditor()
+        except Exception as e:
+            logger.warning(f"MultiFileEditor init failed: {e}")
+
+        try:
+            if TaskExecutor:
+                modules["task_executor"] = TaskExecutor()
+        except Exception as e:
+            logger.warning(f"TaskExecutor init failed: {e}")
+
+        try:
+            if ContextManager:
+                modules["context_manager"] = ContextManager()
+        except Exception as e:
+            logger.warning(f"ContextManager init failed: {e}")
+
+        try:
+            if PlanningEngine:
+                modules["planning_engine"] = PlanningEngine()
+        except Exception as e:
+            logger.warning(f"PlanningEngine init failed: {e}")
+
+        try:
+            if QualityJudge:
+                modules["quality_judge"] = QualityJudge()
+        except Exception as e:
+            logger.warning(f"QualityJudge init failed: {e}")
+
+        try:
+            if AutoSkillCreator:
+                modules["auto_skill_creator"] = AutoSkillCreator()
+        except Exception as e:
+            logger.warning(f"AutoSkillCreator init failed: {e}")
+
+        try:
+            if get_skill_lifecycle:
+                modules["skill_lifecycle"] = get_skill_lifecycle()
+        except Exception as e:
+            logger.warning(f"SkillLifecycle init failed: {e}")
+
+        try:
+            if get_curator:
+                modules["curator"] = get_curator()
+        except Exception as e:
+            logger.warning(f"Curator init failed: {e}")
+
+        try:
+            if get_learning_graph:
+                modules["learning_graph"] = get_learning_graph()
+        except Exception as e:
+            logger.warning(f"LearningGraph init failed: {e}")
+
+        try:
+            if get_voice_engine:
+                self._voice_engine = get_voice_engine()
+                if self._voice_engine and self._voice_engine.available:
+                    modules["voice_engine"] = self._voice_engine
+        except Exception as e:
+            logger.warning(f"VoiceEngine init failed: {e}")
+
+        # Typed event bus is a module-level singleton
+        if _typed_events:
+            modules["typed_events"] = _typed_events
+
+        self._market_parity_modules = modules
+        n = len(modules)
+        names = ", ".join(sorted(modules.keys()))
+        logger.info(f"Market parity modules initialized: {n} ({names})")
+
+    def get_market_parity(self, name: str):
+        """Get a market parity module by name."""
+        return self._market_parity_modules.get(name)
 
     # ── Ruta determinista (sin LLM) ─────────────────────────────
 
@@ -484,10 +663,11 @@ class DirectorNexus:
             "orchestrator": orch_status,
         }
 
-    async def execute(self, task: str, gem: str = "auto", context: str = "", images: list = None, session_id: str = None) -> EngineResult:
+    async def execute(self, task: str, gem: str = "auto", context: str = "", images: list = None, session_id: str = None, selected_model: str = "") -> EngineResult:
         """Ejecuta tarea: clasifica -> dispatch -> aprende. S4 refactor: delegacion a ExecutionService."""
         from src.services.execution_service import ExecutionService as ES
         start = datetime.now()
+        self._request_selected_model = selected_model or ""
 
         context = (f"{ES.identity_blurb(self)}\n\n{context}") if context else ES.identity_blurb(self)
 
@@ -553,36 +733,134 @@ class DirectorNexus:
                       "refactoriza","arregla","debug","test","prueba","instala","configura",
                       "convierte","compara","analiza","disena","construye","despliega"}
         _is_action = any(kw in task.lower().split() for kw in _action_kw)
-        
-        if not _is_action:
-            # Es pregunta - SIEMPRE intentar investigación web primero
-            ai_result = await self._research_and_persist(task, context, session)
-            
-            # Si investigación no encontró fuentes, igualmente usar LLM con contexto web
-            if ai_result is None:
-                logger.info(f"No web sources, using LLM with web context for: {task[:50]}")
+
+        # Heuristica: preguntas conversacionales/self-referenciales NO necesitan web research
+        _conversational_kw = {
+            "tu", "tu/", "tus", "como funciona tu", "que puedes", "que sabes",
+            "capacidades", "ayuda", "help", "hola", "hello", "que onda",
+            "quien eres", "que eres", "cuantos", "cuales son tus",
+            "ensename", "explicame", "hablame", "cuentame",
+            "como estas", "que tal", "buenas",
+        }
+        _is_conversational = any(kw in task.lower() for kw in _conversational_kw)
+
+        if not _is_action and not _is_conversational:
+            # Es pregunta factual — PRIMERO buscar en el cerebro/biblioteca
+            brain_answer = None
+            try:
+                from src.brain.cerebro import Cerebro
+                cerebro = Cerebro()
+                brain_results = cerebro.obtener_conocimientos()
+                # Buscar conocimientos relevantes a la pregunta
+                task_words = set(re.findall(r'\w+', task.lower()))
+                relevant = []
+                for k in brain_results:
+                    tema = (k.get('tema', '') or '').lower()
+                    contenido = (k.get('contenido', '') or '').lower()
+                    if any(w in tema or w in contenido for w in task_words if len(w) > 3):
+                        relevant.append(k)
+                if relevant:
+                    brain_context = "\n".join([
+                        f"- [{r.get('tema','')}]: {r.get('contenido','')[:500]}"
+                        for r in relevant[:3]
+                    ])
+                    logger.info(f"Brain hit for: {task[:50]} ({len(relevant)} results)")
+                    brain_answer = brain_context
+            except Exception as e:
+                logger.debug(f"Brain recall failed: {e}")
+
+            if brain_answer:
+                # El cerebro tiene la respuesta — usar LLM para sintetizar
                 try:
-                    synthesis_prompt = f"""Responde la siguiente pregunta usando tu conocimiento y búsqueda web si es posible.
-Sé directo y conciso. Si no tienes datos actualizados, indícalo.
+                    from src.agents.sage_gem import SageGem
+                    sage = SageGem()
+                    sage.save_to_library(
+                        title=task[:100],
+                        content=f"## {task}\n\nConocimiento del cerebro:\n{brain_answer}",
+                        topic=sage._infer_topic(brain_answer, task),
+                        source="brain_recall"
+                    )
+                except Exception:
+                    pass
+
+                try:
+                    _user_model = self._request_selected_model or self.ai_tools.get_default_model()
+                    synthesis_prompt = f"""Responde la siguiente pregunta usando el conocimiento del cerebro de NEXUS.
+Sé directo y conciso. No inventes información adicional.
+
+CONOCIMIENTO DEL CEREBRO:
+{brain_answer}
 
 PREGUNTA: {task}
 
 RESPUESTA:"""
                     synthesized = await self.ai_tools.quick_response(
+                        synthesis_prompt, model=_user_model
+                    )
+                    return {
+                        "reply": synthesized.get("reply", ""),
+                        "gem_used": "director",
+                        "engines": ["nexus_master"],
+                    }
+                except Exception as e:
+                    logger.debug(f"Brain synthesis failed: {e}")
+
+            # Si el cerebro no tiene la respuesta, buscar en web
+            ai_result = await self._research_and_persist(task, context, session)
+            
+            # Si investigación no encontró fuentes, usar LLM directamente
+            if ai_result is None:
+                logger.info(f"No web sources, using LLM for: {task[:50]}")
+                try:
+                    synthesis_prompt = f"""Responde la siguiente pregunta de forma directa y concisa.
+Si no tienes datos actualizados, indícalo. No inventes información.
+
+PREGUNTA: {task}
+
+RESPUESTA:"""
+                    _user_model = self._request_selected_model or self.ai_tools.get_default_model()
+                    synthesized = await self.ai_tools.quick_response(
                         task=synthesis_prompt, gem="director", context=context,
-                        model_override="deepseek-v4-flash-free"
+                        model_override=_user_model
                     )
                     if synthesized and isinstance(synthesized, dict) and synthesized.get("content"):
                         ai_result = {
                             "success": True,
                             "content": synthesized["content"],
                             "tool": "scholar_llm",
-                            "model": synthesized.get("model", "deepseek-v4-flash-free"),
+                            "model": synthesized.get("model", _user_model),
                             "tokens_used": synthesized.get("tokens_used", 0),
                             "duration_ms": 0,
                         }
                 except Exception as e:
                     logger.debug(f"LLM fallback failed: {e}")
+        elif _is_conversational:
+            # Pregunta conversacional - responder directamente con LLM sin web research
+            logger.info(f"Conversational question, skipping web research: {task[:50]}")
+            try:
+                synthesis_prompt = f"""Responde la siguiente pregunta de forma natural y directa. 
+Sé conciso. No inventes información. Si no sabes algo, di que no sabes.
+
+PREGUNTA: {task}
+
+RESPUESTA:"""
+                _user_model = self._request_selected_model or self.ai_tools.get_default_model()
+                logger.info(f"Conversational LLM using model: {_user_model}")
+                synthesized = await self.ai_tools.quick_response(
+                    task=synthesis_prompt, gem="director", context=context,
+                    model_override=_user_model
+                )
+                if synthesized and isinstance(synthesized, dict) and synthesized.get("content"):
+                    ai_result = {
+                        "success": True,
+                        "content": synthesized["content"],
+                        "tool": "llm_direct",
+                        "model": synthesized.get("model", _user_model),
+                        "tokens_used": synthesized.get("tokens_used", 0),
+                        "duration_ms": 0,
+                    }
+            except Exception as e:
+                logger.debug(f"LLM direct failed: {e}")
         
         if ai_result is None:
             ai_result = await ES.try_scholar_gem(self, task, primary_gem, classification)
@@ -840,9 +1118,10 @@ RESPUESTA:"""
                 logger.debug(f"Sage save failed: {e}")
             
             try:
+                _user_model = self._request_selected_model or self.ai_tools.get_default_model()
                 synthesized = await self.ai_tools.quick_response(
                     task=synthesis_prompt, gem="director", context="",
-                    model_override="deepseek-v4-flash-free"
+                    model_override=_user_model
                 )
                 reply_content = synthesized.get("content", "") if isinstance(synthesized, dict) else str(synthesized)
                 
@@ -894,11 +1173,12 @@ FUENTES:
 RESPUESTA:"""
             
             try:
+                _user_model = self._request_selected_model or self.ai_tools.get_default_model()
                 synthesized = await self.ai_tools.quick_response(
                     task=synthesis_prompt,
                     gem="director",
                     context="",
-                    model_override="deepseek-v4-flash-free"
+                    model_override=_user_model
                 )
                 reply_content = synthesized.get("content", "") if isinstance(synthesized, dict) else str(synthesized)
                 
@@ -1033,7 +1313,15 @@ RESPUESTA:"""
             "identity": self.identity, "current_project": self.current_project,
             "gemas_count": len(self.gemas), "executions": len(self.execution_log),
             "tool_registry": self.tool_registry.get_summary() if hasattr(self, 'tool_registry') else {},
-            "gemas": {n: {"execution_count": g.execution_count, "success_rate": g.success_count / g.execution_count if g.execution_count > 0 else 0} for n, g in self.gemas.items()},
+            "gemas": {n: {
+                "execution_count": g.execution_count,
+                "success_rate": g.success_count / g.execution_count if g.execution_count > 0 else 0,
+                "icon": getattr(g, "icon", ""),
+                "color": getattr(g, "color", ""),
+                "division": getattr(g, "division", ""),
+                "personality": getattr(g, "personality", ""),
+                "workflow": getattr(g, "workflow", ""),
+            } for n, g in self.gemas.items()},
             **{k: _s(*v) if isinstance(v, tuple) else _s(v) for k, v in {
                 "sessions": "sessions", "token_budget": ("token_budget", "get_status"),
                 "goal_detector": "goal_detector", "dag": "dag", "checkpoints": "checkpoints",

@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Orquestador principal y planificador de la colmena",
   "main": "src.core.director",
-  "model": "nexus-director-v6",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:orchestrate",
     "onCommand:plan",

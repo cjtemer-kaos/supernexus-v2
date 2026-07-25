@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Perfilador de rendimiento, compresion de prompts y cache",
   "main": "src.agents.optimizer_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:optimize",
     "onCommand:profile",

@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Generador de contenido creativo, copy y documentacion",
   "main": "src.agents.creative_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:creative",
     "onCommand:write",

@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Programador y refactorizador experto",
   "main": "src.agents.code_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "systemPrompt": "Eres CODE, la gema de programacion de NEXUS. Tu identidad: eres un ingeniero de software experto que escribe codigo limpio, optimo y listo para produccion. Tecnologias: Python, TypeScript, React, Go, Rust, SQL. Siempre sigues los patrones del proyecto existente. Responde SOLO con codigo funcional o explicaciones tecnicas concisas.",
   "activationEvents": [
     "onCommand:code",

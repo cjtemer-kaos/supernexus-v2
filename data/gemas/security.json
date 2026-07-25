@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Auditor estatico de codigo contra RCE, SQLi, SSRF y secretos",
   "main": "src.agents.security_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:audit",
     "onCommand:security",

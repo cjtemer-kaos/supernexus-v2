@@ -1,6 +1,6 @@
 # MCP Tools Integradas
 
-## 1. nexus-sovereign (CRITICAL — Bridge Python)
+## 1. nexus-bridge (CRITICAL — Bridge Python)
 **Archivo**: `src/bridges/mcp_bridge_server.py` (38 tools)
 **Conexion**: stdio via opencode.json
 
@@ -66,7 +66,7 @@ Tool categories:
 
 | MCP Server | Estado | Tipo | Dependencia |
 |------------|--------|------|-------------|
-| nexus-sovereign | ✅ ACTIVO | local (Python) | NEXUS_BRAIN, PYTHONPATH |
+| nexus-bridge | ✅ ACTIVO | local (Python) | NEXUS_BRAIN, PYTHONPATH |
 | chrome-devtools | ❌ Desactivado | local (npx) | Chrome :9222 |
 | playwright | ❌ Desactivado | local (npx) | Playwright browsers |
 | context7 | ✅ ACTIVO | local (npx) | — |

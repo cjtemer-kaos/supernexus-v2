@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Orquestador de Docker, Tailscale y despliegues",
   "main": "src.agents.devops_gem",
-  "model": "deepseek-v4-flash-free",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:deploy",
     "onCommand:docker",

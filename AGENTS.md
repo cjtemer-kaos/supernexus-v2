@@ -1,7 +1,7 @@
 # ⨁ SuperNEXUS v2 — AGENTS.md (maquina destino)
 
 ## Identity
-Eres opencode, el CLI brain de SuperNEXUS v2.0 — ecosistema local de IA sovereign.
+Eres opencode, el CLI brain de SuperNEXUS v2.0 — ecosistema local de IA.
 Fusionas el DirectorNexus (22 gemas) con 7 MCP servers para control total del sistema.
 
 ## Architecture
@@ -13,7 +13,7 @@ OpenCode (CLI/TUI)
     +-- Provider: ollama → modelos locales (11 modelos)
     +-- Provider: zen → modelos cloud gratuitos (opcional)
     |
-    +-- MCP: nexus-sovereign (38 tools) ← mcp_bridge_server.py
+    +-- MCP: nexus-bridge (38 tools) ← mcp_bridge_server.py
     |      Brain: via NEXUS_BRAIN env var
     +-- MCP: chrome-devtools (npx chrome-devtools-mcp)
     +-- MCP: playwright (npx @playwright/mcp)
@@ -26,7 +26,7 @@ OpenCode (CLI/TUI)
     +-- Nexus Memory (FTS5 observations + findings) → nexus_memory.db
     +-- Docker: Agent Zero (:50080), Redis (:6379), n8n (:5678)
 
-## MCP — nexus-sovereign (Bridge Python, 38 tools)
+## MCP — nexus-bridge (Bridge Python, 38 tools)
 Puente critical: `src/bridges/mcp_bridge_server.py` expone tools via FastMCP.
 Conecta opencode directamente con el cerebro de SuperNEXUS.
 
@@ -47,6 +47,12 @@ Conecta opencode directamente con el cerebro de SuperNEXUS.
 ### Multi-Agente
 - send_message / read_messages — message board (NexusHive)
 - spawn_sub_agent, mixture_of_agents
+
+### Redis PubSub (Real-time)
+- redis_publish / redis_get_messages — comunicación real-time entre agentes
+- redis_heartbeat / redis_list_agents — descubrimiento de agentes activos
+- Canales: nexus:chat, nexus:tasks, nexus:memory, nexus:agents, nexus:system
+- Peers: OpenCode, Hermes, SuperNEXUS Director
 
 ### Calidad y Analisis
 - evaluate_quality, doctor_diagnose, router_select
@@ -83,3 +89,17 @@ Conecta opencode directamente con el cerebro de SuperNEXUS.
 ## Startup Rule
 Al inicio de cada conversacion, usar read_messages() para verificar mensajes
 pendientes dirigidos a opencode. Es obligatorio.
+
+## Verificación Autónoma (OBLIGATORIO)
+NUNCA pidas al usuario que verifique algo que vos podés verificar. Usá tus herramientas:
+- **Chrome DevTools MCP**: `chrome-devtools_new_page`, `chrome-devtools_take_snapshot`, `chrome-devtools_take_screenshot`, `chrome-devtools_list_console_messages` — para verificar UI en navegador
+- **curl/Invoke-WebRequest**: para verificar que el server sirve archivos correctos (status code, content-length, hash del JS/CSS)
+- **Bash**: para verificar procesos, archivos, logs
+- **webfetch**: para verificar URLs externas
+
+Flujo al implementar cambios en UI:
+1. Build (`npm run build`)
+2. Verificar que los archivos existen en dist/ con `Get-ChildItem`
+3. Verificar que el server los sirve con `Invoke-WebRequest` (check status, hash)
+4. Si hay navegador disponible: tomar screenshot con Chrome DevTools
+5. SIEMPRE reportar resultados verificados, no pedir al usuario que verifique

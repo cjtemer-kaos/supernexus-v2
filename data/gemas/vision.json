@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Captura de pantalla, analisis de imagenes y OCR",
   "main": "src.agents.vision_gem",
-  "model": "qwen2.5vl:7b",
+  "model": "gemma4:12b",
   "activationEvents": [
     "onCommand:screenshot",
     "onCommand:vision",

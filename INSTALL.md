@@ -218,7 +218,7 @@ OpenCode (CLI/TUI)
    |      Brain: ${NEXUS_PROJECT_DIR}/brain/
    |
    |-- MCP Servers:
-   |      nexus-sovereign (38 tools via mcp_bridge_server.py)
+   |      nexus-bridge (38 tools via mcp_bridge_server.py)
    |      chrome-devtools (CDP browser automation)
    |      playwright (browser E2E)
    |      context7 (documentacion live)
